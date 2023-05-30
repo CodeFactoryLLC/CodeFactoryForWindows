@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd" >
+	<metadata>
+		<id>CodeFactory.WinVs.SDK</id>
+		<version>2.23149.1-PreRelease</version>
+		<title>CodeFactory Software Development Kit for Visual Studio - Windows</title>
+		<authors>CodeFactory, LLC.</authors>
+		<owners>CodeFactory, LLC.</owners>
+		<license type="expression">MIT</license>
+		<requireLicenseAcceptance>true</requireLicenseAcceptance>
+		<description>Software development kit for building CodeFactory automation in Visual Studio - Windows.</description>
+		<releaseNotes>Pre release of CodeFactory for Windows Version 2.0. No documentation or site access at this time.</releaseNotes>
+		<copyright>Copyright © 2023 CodeFactory, LLC.</copyright>
+		<tags>Factory Automation</tags>
+		<dependencies>
+			<dependency id="CodeFactory" version="2.23149.1-PreRelease"/>
+			<dependency id="CodeFactory.WinVs" version="2.23149.1-PreRelease"/>
+			<dependency id="CodeFactory.WinVs.Wpf" version="2.23149.1-PreRelease"/>
+		</dependencies>
+		<icon>CFLogo128.png</icon>
+	</metadata>
+	<files>
+		<file src="Images\CFLogo128.png" target=""/>
+		<file src="bin\Debug\CodeFactory.WinVs.SDK.targets" target="build/net48/CodeFactory.WinVs.SDK.targets"/>
+		<file src="bin\Debug\PackagerWinVs.targets" target="tools/PackagerWinVs.targets"/>
+		<file src="bin\Debug\CodeFactory*.dll" target="tools/net48/"/>
+		<file src="bin\Debug\MessagePack*.dll" target="tools/net48/"/>
+		<file src="bin\Debug\Microsoft.Extensions.CommandLineUtils.dll" target="tools/net48/Microsoft.Extensions.CommandLineUtils.dll"/>
+		<file src="bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll" target="tools/net48/Microsoft.Bcl.AsyncInterfaces.dll"/>
+		<file src="bin\Debug\Microsoft.NET.StringTools.dll" target="tools/net48/Microsoft.NET.StringTools.dll"/>
+		<file src="bin\Debug\Serilog.dll" target="tools/net48/Serilog.dll"/>
+		<file src="bin\Debug\System.Buffers.dll" target="tools/net48/System.Buffers.dll"/>
+		<file src="bin\Debug\System.Collections.Immutable.dll" target="tools/net48/System.Collections.Immutable.dll"/>
+		<file src="bin\Debug\System.IO.Packaging.dll" target="tools/net48/System.IO.Packaging.dll"/>
+		<file src="bin\Debug\System.Memory.dll" target="tools/net48/System.Memory.dll"/>
+		<file src="bin\Debug\System.Numerics.Vectors.dll" target="tools/net48/System.Numerics.Vectors.dll"/>
+		<file src="bin\Debug\System.Runtime.CompilerServices.Unsafe.dll" target="tools/net48/System.Runtime.CompilerServices.Unsafe.dll"/>
+		<file src="bin\Debug\System.Threading.Tasks.Extensions.dll" target="tools/net48/System.Threading.Tasks.Extensions.dll"/>
+		<file src="bin\Debug\CodeFactory.Packager.WinVs.exe" target="tools/net48/CodeFactory.Packager.WinVs.exe"/>
+		<file src="bin\Debug\CodeFactory.Packager.WinVs.exe.config" target="tools/net48/CodeFactory.Packager.WinVs.exe.config"/>
+	</files>
+</package>	

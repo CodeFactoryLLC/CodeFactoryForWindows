@@ -1,0 +1,33 @@
+﻿//*****************************************************************************
+//* Code Factory SDK
+//* Copyright (c) 2020-2023 CodeFactory, LLC
+//*****************************************************************************
+
+namespace CodeFactory.WinVs.Models.CSharp
+{
+    /// <summary>
+    /// Enumeration that determines the type of default value that is assigned to the value type.
+    /// </summary>
+    public enum ParameterDefaultValueType
+    {
+        /// <summary>
+        /// There is no default value or it is unknown
+        /// </summary>
+        None = 0,
+
+        /// <summary>
+        /// The provided literal value should be used for the default type.
+        /// </summary>
+        Value = 1,
+
+        /// <summary>
+        /// The default keyword for the type should be used.
+        /// </summary>
+        DefaultKeyWord = 2,
+
+        /// <summary>
+        /// The keyword that represents a null implementation of the type should be used.
+        /// </summary>
+        NullKeyword = 3
+    }
+}

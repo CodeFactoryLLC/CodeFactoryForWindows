@@ -1,0 +1,52 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+	<TargetFramework>netstandard2.0</TargetFramework>
+    <SignAssembly>True</SignAssembly>
+    <AssemblyOriginatorKeyFile>CFSigner.snk</AssemblyOriginatorKeyFile>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <Version>2.23149.1-PreRelease</Version>
+    <Authors>CodeFactory, LLC.</Authors>
+    <Company>CodeFactory, LLC.</Company>
+    <Product>CodeFactory Base Library</Product>
+    <Copyright>Copyright ©  2023 CodeFactory, LLC.</Copyright>
+    <Description>The base contracts and logic used by CodeFactory automation.</Description>
+    <PackageLicenseExpression> MIT</PackageLicenseExpression>
+    <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
+    <IncludeSymbols>False</IncludeSymbols>
+    <Title>CodeFactory Base Libraries </Title>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <FileVersion>2.23149.0.1</FileVersion>
+    <PackageIcon>CFLogo128.png</PackageIcon>
+    <RepositoryType>git</RepositoryType>
+    <PackageReleaseNotes>Pre release of CodeFactory for Windows Version 2.0. No documentation or site access at this time.</PackageReleaseNotes>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Images\CFLogo128.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Images\CFLogo128.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="CodeFactoryMessages.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>CodeFactoryMessages.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="CodeFactoryMessages.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>CodeFactoryMessages.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+
+</Project>

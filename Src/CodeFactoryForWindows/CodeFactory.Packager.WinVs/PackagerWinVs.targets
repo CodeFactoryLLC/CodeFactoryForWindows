@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Project>
+	<PropertyGroup>
+		<VsPackagerExe>"$(MSBuildThisFileDirectory)net48\CodeFactory.Packager.WinVs.exe"</VsPackagerExe>
+	</PropertyGroup>
+	<Target Name="BeforeBuild">
+		<Exec Command='$(VsPackagerExe) -p "$(MSBuildProjectDirectory)"' />
+	</Target>
+	<Target Name="AfterBuild">
+		<Exec Command='$(VsPackagerExe) -a "$(TargetPath)"' />
+	</Target>
+</Project>

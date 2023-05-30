@@ -1,0 +1,48 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace CodeFactory.WinVs.Models.CSharp.Builder
+{
+    /// <summary>
+    /// Finally basic code block standard implementation. Supports injection of syntax inside the finally block.
+    /// </summary>
+    public class FinallyBlockStandard : BaseFinallyBlock
+    {
+        /// <summary>
+        /// Creates a instance of the code block.
+        /// </summary>
+        /// <param name="loggerBlock">Optional parameter that provides the loggerblock.</param>
+        FinallyBlockStandard(ILoggerBlock loggerBlock = null):base(loggerBlock) 
+        { 
+            //intentionally blank
+        }
+
+        /// <summary>
+        /// Builds the finally block
+        /// </summary>
+        /// <param name="syntax">Syntax to be injected into the finally block, optional parameter.</param>
+        /// <param name="multipleSyntax">Mutiple sytnax statements has been provided to be used by the finally block,optional parameter.</param>
+        /// <returns>Returns the generated finally block</returns>
+        protected override string BuildFinallyBlock(string syntax = null, IEnumerable<NamedSyntax> mutipleSyntax = null, string memberName = null)
+        {
+            SourceFormatter formatter = new SourceFormatter();
+
+            bool hasSyntax = !string.IsNullOrEmpty(syntax);
+            formatter.AppendCodeLine(0, "finally");
+            formatter.AppendCodeLine(0, "{");
+
+            if (hasSyntax)
+            {
+                formatter.AppendCodeBlock(1, syntax);
+            }
+            else
+            {
+                if(string.IsNullOrEmpty(memberName)) formatter.AppendCodeLine(1,"//TODO:Implement finally logic");
+                else formatter.AppendCodeLine(1, $"//TODO:Implement finally logic for '{memberName}'");
+            }
+            formatter.AppendCodeLine(0, "}");
+            return formatter.ReturnSource();
+        }
+    }
+}
