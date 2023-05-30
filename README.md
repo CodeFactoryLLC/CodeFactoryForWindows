@@ -8,7 +8,7 @@ The reason for the change is future planning for the usage of CodeFactory.
 In the future CodeFactory will run on multiple IDE environments.
 Right now we are focusing on VisualStudio for Windows.
 
-The following are some future IDE's we are investing for integration.
+The following are some future IDE's we are looking in to.
 - **Microsoft Visual Studio Code**
 - **Jet Brains Rider**
 
