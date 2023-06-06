@@ -1,0 +1,473 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+    <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Interface IVsProjectActions
+ | CodeFactory for Windows </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Interface IVsProjectActions
+ | CodeFactory for Windows ">
+      <meta name="generator" content="docfx ">
+  
+      <link rel="shortcut icon" href="../images/favicon.png">
+      <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/night-owl.min.css">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" integrity="sha384-EvBWSlnoFgZlXJvpzS+MAUEjvN7+gcCwH+qh7GRFOGgZO0PuwOFro7qPOJnLfe7l" crossorigin="anonymous">
+      <link rel="stylesheet" href="../styles/config.css">
+      <link rel="stylesheet" href="../styles/discord.css">
+      <link rel="stylesheet" href="../styles/singulink.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+  
+  <meta property="docfx:rel" content="../">
+  <meta property="docfx:newtab" content="true">
+    </head>
+    <body>
+        <div class="top-navbar">
+            <a class="burger-icon" onclick="toggleMenu()">
+                <svg name="Hamburger" style="vertical-align: middle;" width="34" height="34" viewbox="0 0 24 24"><path fill="currentColor" fill-rule="evenodd" clip-rule="evenodd" d="M20 6H4V9H20V6ZM4 10.999H20V13.999H4V10.999ZM4 15.999H20V18.999H4V15.999Z"></path></svg>
+            </a>
+
+
+            <a class="brand" href="../index.html">
+              <img src="../images/logo.png" alt="CodeFactory for Windows" class="logomark">
+              <span class="brand-title">CodeFactory for Windows</span>
+            </a>        </div>
+
+        <div class="body-content">
+            <div id="blackout" class="blackout" onclick="toggleMenu()"></div>
+
+            <nav id="sidebar" role="navigation">
+                <div class="sidebar">
+
+                    <div>
+                      <div class="mobile-hide">
+
+                        <a class="brand" href="../index.html">
+                          <img src="../images/logo.png" alt="CodeFactory for Windows" class="logomark">
+                          <span class="brand-title">CodeFactory for Windows</span>
+                        </a>                      </div>
+
+                      <div class="sidesearch">
+                        <form id="search" role="search" class="search">
+                            <i class="bi bi-search search-icon"></i>
+                            <input type="text" id="search-query" placeholder="Search" autocomplete="off">
+                        </form>
+                      </div>
+
+                      <div id="navbar">
+                      </div>
+                    </div>                    <div class="sidebar-item-separator"></div>
+
+                        <div id="sidetoggle">
+                          <div id="sidetoc"></div>
+                        </div>
+                </div>
+                <div class="footer">
+  
+  <strong><a href='https://www.codefactory.software'>CodeFactory</a></strong>
+                </div>            </nav>
+
+            <main class="main-panel">
+
+                <div id="search-results" style="display: none;">
+                  <h1 class="search-list">Search Results for <span></span></h1>
+                  <div class="sr-items">
+                    <p><i class="bi bi-hourglass-split index-loading"></i></p>
+                  </div>
+                  <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+                </div>
+ 
+
+                <div role="main" class="hide-when-search">
+
+                        <div class="subnav navbar navbar-default">
+                          <div class="container hide-when-search" id="breadcrumb">
+                            <ul class="breadcrumb">
+                              <li></li>
+                            </ul>
+                          </div>
+                        </div>
+
+
+                    <article class="content wrap" id="_content" data-uid="CodeFactory.WinVs.Models.ProjectSystem.IVsProjectActions">
+
+
+
+  <h1 id="CodeFactory_WinVs_Models_ProjectSystem_IVsProjectActions" data-uid="CodeFactory.WinVs.Models.ProjectSystem.IVsProjectActions" class="text-break">Interface IVsProjectActions
+</h1>
+  <div class="markdown level0 summary"><p>Visual studio actions that support the <a class="xref" href="CodeFactory.WinVs.Models.ProjectSystem.IVsProject.html">IVsProject</a> model.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="CodeFactory.html">CodeFactory</a>.<a class="xref" href="CodeFactory.WinVs.html">WinVs</a>.<a class="xref" href="CodeFactory.WinVs.Models.html">Models</a>.<a class="xref" href="CodeFactory.WinVs.Models.ProjectSystem.html">ProjectSystem</a></h6>
+  <h6><strong>Assembly</strong>: CodeFactory.WinVs.dll</h6>
+  <h5 id="CodeFactory_WinVs_Models_ProjectSystem_IVsProjectActions_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public interface IVsProjectActions</code></pre>
+  </div>
+  <h3 id="methods">Methods
+</h3>
+  <a id="CodeFactory_WinVs_Models_ProjectSystem_IVsProjectActions_AddDocumentAsync_" data-uid="CodeFactory.WinVs.Models.ProjectSystem.IVsProjectActions.AddDocumentAsync*"></a>
+  <h4 id="CodeFactory_WinVs_Models_ProjectSystem_IVsProjectActions_AddDocumentAsync_CodeFactory_WinVs_Models_ProjectSystem_VsProject_System_String_System_String_" data-uid="CodeFactory.WinVs.Models.ProjectSystem.IVsProjectActions.AddDocumentAsync(CodeFactory.WinVs.Models.ProjectSystem.VsProject,System.String,System.String)">AddDocumentAsync(VsProject, string, string)</h4>
+  <div class="markdown level1 summary"><p>Adds a project document to the root of the project.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;VsDocument&gt; AddDocumentAsync(VsProject source, string fileName, string content = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CodeFactory.WinVs.Models.ProjectSystem.VsProject.html">VsProject</a></td>
+        <td><span class="parametername">source</span></td>
+        <td><p>The project to be added to.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">fileName</span></td>
+        <td><p>The file name of the document. This should be the name only with no file path.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">content</span></td>
+        <td><p>The content that will be initially added to the document. This is an optional parameter.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="CodeFactory.WinVs.Models.ProjectSystem.VsDocument.html">VsDocument</a>&gt;</td>
+        <td><p>The created project document.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="CodeFactory_WinVs_Models_ProjectSystem_IVsProjectActions_AddExistingDocumentAsync_" data-uid="CodeFactory.WinVs.Models.ProjectSystem.IVsProjectActions.AddExistingDocumentAsync*"></a>
+  <h4 id="CodeFactory_WinVs_Models_ProjectSystem_IVsProjectActions_AddExistingDocumentAsync_CodeFactory_WinVs_Models_ProjectSystem_VsProject_System_String_" data-uid="CodeFactory.WinVs.Models.ProjectSystem.IVsProjectActions.AddExistingDocumentAsync(CodeFactory.WinVs.Models.ProjectSystem.VsProject,System.String)">AddExistingDocumentAsync(VsProject, string)</h4>
+  <div class="markdown level1 summary"><p>Adds an existing document to the project.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;VsDocument&gt; AddExistingDocumentAsync(VsProject source, string fileName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CodeFactory.WinVs.Models.ProjectSystem.VsProject.html">VsProject</a></td>
+        <td><span class="parametername">source</span></td>
+        <td><p>The project to be added to.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">fileName</span></td>
+        <td><p>The file name for the document. This should be the file name only with extension. The file must already be in the projects folder.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="CodeFactory.WinVs.Models.ProjectSystem.VsDocument.html">VsDocument</a>&gt;</td>
+        <td><p>The model of the created project document.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="CodeFactory_WinVs_Models_ProjectSystem_IVsProjectActions_AddProjectFolderAsync_" data-uid="CodeFactory.WinVs.Models.ProjectSystem.IVsProjectActions.AddProjectFolderAsync*"></a>
+  <h4 id="CodeFactory_WinVs_Models_ProjectSystem_IVsProjectActions_AddProjectFolderAsync_CodeFactory_WinVs_Models_ProjectSystem_VsProject_System_String_" data-uid="CodeFactory.WinVs.Models.ProjectSystem.IVsProjectActions.AddProjectFolderAsync(CodeFactory.WinVs.Models.ProjectSystem.VsProject,System.String)">AddProjectFolderAsync(VsProject, string)</h4>
+  <div class="markdown level1 summary"><p>Adds a project folder to the root of the project.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;VsProjectFolder&gt; AddProjectFolderAsync(VsProject source, string folderName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CodeFactory.WinVs.Models.ProjectSystem.VsProject.html">VsProject</a></td>
+        <td><span class="parametername">source</span></td>
+        <td><p>The project to be added to.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">folderName</span></td>
+        <td><p>The name of the project folder. This should be the name only with no path.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="CodeFactory.WinVs.Models.ProjectSystem.VsProjectFolder.html">VsProjectFolder</a>&gt;</td>
+        <td><p>The created project folder.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="CodeFactory_WinVs_Models_ProjectSystem_IVsProjectActions_GetChildrenAsync_" data-uid="CodeFactory.WinVs.Models.ProjectSystem.IVsProjectActions.GetChildrenAsync*"></a>
+  <h4 id="CodeFactory_WinVs_Models_ProjectSystem_IVsProjectActions_GetChildrenAsync_CodeFactory_WinVs_Models_ProjectSystem_VsProject_System_Boolean_System_Boolean_" data-uid="CodeFactory.WinVs.Models.ProjectSystem.IVsProjectActions.GetChildrenAsync(CodeFactory.WinVs.Models.ProjectSystem.VsProject,System.Boolean,System.Boolean)">GetChildrenAsync(VsProject, bool, bool)</h4>
+  <div class="markdown level1 summary"><p>Get all the children that are direct children of the project.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;IReadOnlyList&lt;VsModel&gt;&gt; GetChildrenAsync(VsProject source, bool allChildren, bool loadSourceCode = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CodeFactory.WinVs.Models.ProjectSystem.VsProject.html">VsProject</a></td>
+        <td><span class="parametername">source</span></td>
+        <td><p>the project to get the children from.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">allChildren</span></td>
+        <td><p>Flag that determines if it should return all children of the project and not just the top level children.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">loadSourceCode</span></td>
+        <td><p>Flag that determines if code factory managed source code models should be loaded instead of the standard <a class="xref" href="CodeFactory.WinVs.Models.ProjectSystem.VsDocument.html">VsDocument</a> model.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1">IReadOnlyList</a>&lt;<a class="xref" href="CodeFactory.WinVs.Models.ProjectSystem.VsModel.html">VsModel</a>&gt;&gt;</td>
+        <td><p>The children of the project, if no children are found and empty enumeration will be returned.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="CodeFactory_WinVs_Models_ProjectSystem_IVsProjectActions_GetParentAsync_" data-uid="CodeFactory.WinVs.Models.ProjectSystem.IVsProjectActions.GetParentAsync*"></a>
+  <h4 id="CodeFactory_WinVs_Models_ProjectSystem_IVsProjectActions_GetParentAsync_CodeFactory_WinVs_Models_ProjectSystem_VsProject_" data-uid="CodeFactory.WinVs.Models.ProjectSystem.IVsProjectActions.GetParentAsync(CodeFactory.WinVs.Models.ProjectSystem.VsProject)">GetParentAsync(VsProject)</h4>
+  <div class="markdown level1 summary"><p>Gets the parent solution folder that holds the project.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;VsSolutionFolder&gt; GetParentAsync(VsProject source)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CodeFactory.WinVs.Models.ProjectSystem.VsProject.html">VsProject</a></td>
+        <td><span class="parametername">source</span></td>
+        <td><p>Project to get the parent for.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="CodeFactory.WinVs.Models.ProjectSystem.VsSolutionFolder.html">VsSolutionFolder</a>&gt;</td>
+        <td><p>Returns a solution folder if the project has a parent or null if the project has no parent.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="CodeFactory_WinVs_Models_ProjectSystem_IVsProjectActions_GetReferencedProjects_" data-uid="CodeFactory.WinVs.Models.ProjectSystem.IVsProjectActions.GetReferencedProjects*"></a>
+  <h4 id="CodeFactory_WinVs_Models_ProjectSystem_IVsProjectActions_GetReferencedProjects_CodeFactory_WinVs_Models_ProjectSystem_VsProject_" data-uid="CodeFactory.WinVs.Models.ProjectSystem.IVsProjectActions.GetReferencedProjects(CodeFactory.WinVs.Models.ProjectSystem.VsProject)">GetReferencedProjects(VsProject)</h4>
+  <div class="markdown level1 summary"><p>Get the <a class="xref" href="CodeFactory.WinVs.Models.ProjectSystem.VsProject.html">VsProject</a> models for all projects that are referenced by this project.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;IReadOnlyList&lt;VsProject&gt;&gt; GetReferencedProjects(VsProject source)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CodeFactory.WinVs.Models.ProjectSystem.VsProject.html">VsProject</a></td>
+        <td><span class="parametername">source</span></td>
+        <td><p>Source project to get referenced projects from.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1">IReadOnlyList</a>&lt;<a class="xref" href="CodeFactory.WinVs.Models.ProjectSystem.VsProject.html">VsProject</a>&gt;&gt;</td>
+        <td><p>Readonly list of the referenced projects or an empty list if there is no referenced projects.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="CodeFactory_WinVs_Models_ProjectSystem_IVsProjectActions_GetReferencesAsync_" data-uid="CodeFactory.WinVs.Models.ProjectSystem.IVsProjectActions.GetReferencesAsync*"></a>
+  <h4 id="CodeFactory_WinVs_Models_ProjectSystem_IVsProjectActions_GetReferencesAsync_CodeFactory_WinVs_Models_ProjectSystem_VsProject_" data-uid="CodeFactory.WinVs.Models.ProjectSystem.IVsProjectActions.GetReferencesAsync(CodeFactory.WinVs.Models.ProjectSystem.VsProject)">GetReferencesAsync(VsProject)</h4>
+  <div class="markdown level1 summary"><p>Gets the references assigned to this project.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;IReadOnlyList&lt;VsReference&gt;&gt; GetReferencesAsync(VsProject source)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CodeFactory.WinVs.Models.ProjectSystem.VsProject.html">VsProject</a></td>
+        <td><span class="parametername">source</span></td>
+        <td><p>The source project to get the references from.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1">IReadOnlyList</a>&lt;<a class="xref" href="CodeFactory.WinVs.Models.ProjectSystem.VsReference.html">VsReference</a>&gt;&gt;</td>
+        <td><p>Readonly list of the references.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+</article>
+                </div>
+
+                <div class="copyright-footer">
+                    <span>&#169; CodeFactory, LLC. All rights reserved.</span>
+                </div>
+            </main>
+        </div>
+
+
+        <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+        <script type="text/javascript" src="../styles/jquery.twbsPagination.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/mark.js@8.11.1/dist/jquery.mark.min.js"></script>
+        <script type="text/javascript" src="../styles/url.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/anchor-js@5.0.0/anchor.min.js"></script>
+        <script type="text/javascript" src="../styles/docfx.js"></script>
+        <script type="text/javascript" src="../styles/main.js"></script>
+        <script type="text/javascript" src="../styles/singulink.js"></script>    </body>
+</html>
