@@ -1,0 +1,67 @@
+{
+  "metadata": [
+    {
+      "src": [
+        {
+          "files": [
+            "CodeFactoryForWindows/CodeFactory/CodeFactory.csproj",
+            "CodeFactoryForWindows/CodeFactory.WinVs/CodeFactory.WinVs.csproj",
+            "CodeFactoryForWindows/CodeFactory.WinVs.Wpf/CodeFactory.WinVs.wpf.csproj"
+          ],
+          "src": "../src"
+        }
+      ],
+      "dest": "api",
+      "includePrivateMembers": false,
+      "disableGitFeatures": false,
+      "disableDefaultFilter": false,
+      "noRestore": false,
+      "namespaceLayout": "flattened",
+      "memberLayout": "samePage",
+      "allowCompilationErrors": false
+    }
+  ],
+  "build": {
+    "globalMetadata": {
+      "_appTitle": "CodeFactory for Windows",
+      "_appName": "CodeFactory for Windows",
+      "_appLogoPath": "images/logo.png",
+      "_appFaviconPath": "images/favicon.png",
+      "_copyrightFooter": "© CodeFactory, LLC. All rights reserved.",
+      "_enableSearch": true,
+      "_enableNewTab": true,
+      "_disableContribution": true,
+      "_disableBreadcrumb": false
+    },
+    "content": [
+      {
+        "files": [
+          "api/**.yml",
+          "api/index.md"
+        ]
+      },
+      {
+        "files": [
+          "gettingstarted/**.md",
+          "gettingstarted/**/toc.yml",
+          "toc.yml",
+          "*.md"
+        ]
+      }
+    ],
+    "resource": [
+      {
+        "files": [
+          "images/**"
+        ]
+      }
+    ],
+    "output": "../docs",
+    "globalMetadataFiles": [],
+    "fileMetadataFiles": [],
+    "template": ["default","templates/singulinkfx"],
+    "postProcessors": [],
+    "keepFileLink": false,
+    "disableGitFeatures": false
+  }
+}

@@ -1,0 +1,692 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+    <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Class ConfigManager
+ | CodeFactory for Windows </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Class ConfigManager
+ | CodeFactory for Windows ">
+      <meta name="generator" content="docfx ">
+  
+      <link rel="shortcut icon" href="../images/favicon.png">
+      <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/night-owl.min.css">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" integrity="sha384-EvBWSlnoFgZlXJvpzS+MAUEjvN7+gcCwH+qh7GRFOGgZO0PuwOFro7qPOJnLfe7l" crossorigin="anonymous">
+      <link rel="stylesheet" href="../styles/config.css">
+      <link rel="stylesheet" href="../styles/discord.css">
+      <link rel="stylesheet" href="../styles/singulink.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+  
+  <meta property="docfx:rel" content="../">
+  <meta property="docfx:newtab" content="true">
+    </head>
+    <body>
+        <div class="top-navbar">
+            <a class="burger-icon" onclick="toggleMenu()">
+                <svg name="Hamburger" style="vertical-align: middle;" width="34" height="34" viewbox="0 0 24 24"><path fill="currentColor" fill-rule="evenodd" clip-rule="evenodd" d="M20 6H4V9H20V6ZM4 10.999H20V13.999H4V10.999ZM4 15.999H20V18.999H4V15.999Z"></path></svg>
+            </a>
+
+
+            <a class="brand" href="../index.html">
+              <img src="../images/logo.png" alt="CodeFactory for Windows" class="logomark">
+              <span class="brand-title">CodeFactory for Windows</span>
+            </a>        </div>
+
+        <div class="body-content">
+            <div id="blackout" class="blackout" onclick="toggleMenu()"></div>
+
+            <nav id="sidebar" role="navigation">
+                <div class="sidebar">
+
+                    <div>
+                      <div class="mobile-hide">
+
+                        <a class="brand" href="../index.html">
+                          <img src="../images/logo.png" alt="CodeFactory for Windows" class="logomark">
+                          <span class="brand-title">CodeFactory for Windows</span>
+                        </a>                      </div>
+
+                      <div class="sidesearch">
+                        <form id="search" role="search" class="search">
+                            <i class="bi bi-search search-icon"></i>
+                            <input type="text" id="search-query" placeholder="Search" autocomplete="off">
+                        </form>
+                      </div>
+
+                      <div id="navbar">
+                      </div>
+                    </div>                    <div class="sidebar-item-separator"></div>
+
+                        <div id="sidetoggle">
+                          <div id="sidetoc"></div>
+                        </div>
+                </div>
+                <div class="footer">
+  
+  <strong><a href='https://www.codefactory.software'>CodeFactory</a></strong>
+                </div>            </nav>
+
+            <main class="main-panel">
+
+                <div id="search-results" style="display: none;">
+                  <h1 class="search-list">Search Results for <span></span></h1>
+                  <div class="sr-items">
+                    <p><i class="bi bi-hourglass-split index-loading"></i></p>
+                  </div>
+                  <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+                </div>
+ 
+
+                <div role="main" class="hide-when-search">
+
+                        <div class="subnav navbar navbar-default">
+                          <div class="container hide-when-search" id="breadcrumb">
+                            <ul class="breadcrumb">
+                              <li></li>
+                            </ul>
+                          </div>
+                        </div>
+
+
+                    <article class="content wrap" id="_content" data-uid="CodeFactory.WinVs.Commands.ConfigManager">
+
+
+
+  <h1 id="CodeFactory_WinVs_Commands_ConfigManager" data-uid="CodeFactory.WinVs.Commands.ConfigManager" class="text-break">Class ConfigManager
+</h1>
+  <div class="markdown level0 summary"><p>Managers the loading and saving of solution configurations.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+    <div class="level1"><span class="xref">ConfigManager</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="CodeFactory.html">CodeFactory</a>.<a class="xref" href="CodeFactory.WinVs.html">WinVs</a>.<a class="xref" href="CodeFactory.WinVs.Commands.html">Commands</a></h6>
+  <h6><strong>Assembly</strong>: CodeFactory.WinVs.dll</h6>
+  <h5 id="CodeFactory_WinVs_Commands_ConfigManager_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class ConfigManager</code></pre>
+  </div>
+  <h3 id="properties">Properties
+</h3>
+  <a id="CodeFactory_WinVs_Commands_ConfigManager_Configuration_" data-uid="CodeFactory.WinVs.Commands.ConfigManager.Configuration*"></a>
+  <h4 id="CodeFactory_WinVs_Commands_ConfigManager_Configuration" data-uid="CodeFactory.WinVs.Commands.ConfigManager.Configuration">Configuration</h4>
+  <div class="markdown level1 summary"><p>The configuration loaded into the configuration manager, will be null if not loaded.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ConfigSolution Configuration { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CodeFactory.WinVs.Commands.ConfigSolution.html">ConfigSolution</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="CodeFactory_WinVs_Commands_ConfigManager_ConfigurationName_" data-uid="CodeFactory.WinVs.Commands.ConfigManager.ConfigurationName*"></a>
+  <h4 id="CodeFactory_WinVs_Commands_ConfigManager_ConfigurationName" data-uid="CodeFactory.WinVs.Commands.ConfigManager.ConfigurationName">ConfigurationName</h4>
+  <div class="markdown level1 summary"><p>The name of the loaded configuration. Will be null if the configuration is not loaded.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string ConfigurationName { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="CodeFactory_WinVs_Commands_ConfigManager_HasConfiguration_" data-uid="CodeFactory.WinVs.Commands.ConfigManager.HasConfiguration*"></a>
+  <h4 id="CodeFactory_WinVs_Commands_ConfigManager_HasConfiguration" data-uid="CodeFactory.WinVs.Commands.ConfigManager.HasConfiguration">HasConfiguration</h4>
+  <div class="markdown level1 summary"><p>Flag that determines if a configuration has been loaded.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool HasConfiguration { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="CodeFactory_WinVs_Commands_ConfigManager_HasDefaultConfiguration_" data-uid="CodeFactory.WinVs.Commands.ConfigManager.HasDefaultConfiguration*"></a>
+  <h4 id="CodeFactory_WinVs_Commands_ConfigManager_HasDefaultConfiguration" data-uid="CodeFactory.WinVs.Commands.ConfigManager.HasDefaultConfiguration">HasDefaultConfiguration</h4>
+  <div class="markdown level1 summary"><p>Flag that determines if a default configuration has been loaded.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool HasDefaultConfiguration { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+</h3>
+  <a id="CodeFactory_WinVs_Commands_ConfigManager_CreateDefaultConfigurationAsync_" data-uid="CodeFactory.WinVs.Commands.ConfigManager.CreateDefaultConfigurationAsync*"></a>
+  <h4 id="CodeFactory_WinVs_Commands_ConfigManager_CreateDefaultConfigurationAsync_CodeFactory_WinVs_Models_ProjectSystem_VsSolution_System_String_System_String_" data-uid="CodeFactory.WinVs.Commands.ConfigManager.CreateDefaultConfigurationAsync(CodeFactory.WinVs.Models.ProjectSystem.VsSolution,System.String,System.String)">CreateDefaultConfigurationAsync(VsSolution, string, string)</h4>
+  <div class="markdown level1 summary"><p>Will check to see if a default configuration exists. if it does not will create a new default configuration.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Task CreateDefaultConfigurationAsync(VsSolution solution, string configName, string fileName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CodeFactory.WinVs.Models.ProjectSystem.VsSolution.html">VsSolution</a></td>
+        <td><span class="parametername">solution</span></td>
+        <td><p>The solution model from code factory.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">configName</span></td>
+        <td><p>The name assigned to configuration.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">fileName</span></td>
+        <td><p>The file name without the extension.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="CodeFactory_WinVs_Commands_ConfigManager_HasAutomationConfigAsync_" data-uid="CodeFactory.WinVs.Commands.ConfigManager.HasAutomationConfigAsync*"></a>
+  <h4 id="CodeFactory_WinVs_Commands_ConfigManager_HasAutomationConfigAsync_CodeFactory_WinVs_Models_ProjectSystem_VsSolution_System_String_" data-uid="CodeFactory.WinVs.Commands.ConfigManager.HasAutomationConfigAsync(CodeFactory.WinVs.Models.ProjectSystem.VsSolution,System.String)">HasAutomationConfigAsync(VsSolution, string)</h4>
+  <div class="markdown level1 summary"><p>Determines if a ADK configuration is stored in the solution.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Task&lt;bool&gt; HasAutomationConfigAsync(VsSolution solution, string fileName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CodeFactory.WinVs.Models.ProjectSystem.VsSolution.html">VsSolution</a></td>
+        <td><span class="parametername">solution</span></td>
+        <td><p>Solution model hosting the configuration model.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">fileName</span></td>
+        <td><p>The file name without the extension.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>&gt;</td>
+        <td><p>True file exists or false if not.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="CodeFactory_WinVs_Commands_ConfigManager_LoadCommandByFolderAsync_" data-uid="CodeFactory.WinVs.Commands.ConfigManager.LoadCommandByFolderAsync*"></a>
+  <h4 id="CodeFactory_WinVs_Commands_ConfigManager_LoadCommandByFolderAsync_System_String_System_String_CodeFactory_WinVs_Models_ProjectSystem_VsModel_CodeFactory_WinVs_Commands_FolderLoadType_" data-uid="CodeFactory.WinVs.Commands.ConfigManager.LoadCommandByFolderAsync(System.String,System.String,CodeFactory.WinVs.Models.ProjectSystem.VsModel,CodeFactory.WinVs.Commands.FolderLoadType)">LoadCommandByFolderAsync(string, string, VsModel, FolderLoadType)</h4>
+  <div class="markdown level1 summary"><p>Identifies the command source for the executing command where the command is expected to execute from a project folder.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Task&lt;ConfigCommand&gt; LoadCommandByFolderAsync(string commandType, string projectFolder, VsModel commandResult, FolderLoadType loadType = FolderLoadType.TargetFolderOnly)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">commandType</span></td>
+        <td><p>The fully qualified name of the command type to evaluated.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">projectFolder</span></td>
+        <td><p>the name of the Project Source project folder to be loaded.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="CodeFactory.WinVs.Models.ProjectSystem.VsModel.html">VsModel</a></td>
+        <td><span class="parametername">commandResult</span></td>
+        <td><p>The loaded model from the requesting command to load the command source.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="CodeFactory.WinVs.Commands.FolderLoadType.html">FolderLoadType</a></td>
+        <td><span class="parametername">loadType</span></td>
+        <td><p>The type of evaluation that should be performed.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="CodeFactory.WinVs.Commands.ConfigCommand.html">ConfigCommand</a>&gt;</td>
+        <td><p>The command source that meetings the criteria or null if no command source meet the criteria.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="CodeFactory_WinVs_Commands_ConfigManager_LoadCommandByProjectAsync_" data-uid="CodeFactory.WinVs.Commands.ConfigManager.LoadCommandByProjectAsync*"></a>
+  <h4 id="CodeFactory_WinVs_Commands_ConfigManager_LoadCommandByProjectAsync_System_String_CodeFactory_WinVs_Models_ProjectSystem_VsModel_" data-uid="CodeFactory.WinVs.Commands.ConfigManager.LoadCommandByProjectAsync(System.String,CodeFactory.WinVs.Models.ProjectSystem.VsModel)">LoadCommandByProjectAsync(string, VsModel)</h4>
+  <div class="markdown level1 summary"><p>Identifies the command source for the executing command where the command is expected to execute from a target project.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Task&lt;ConfigCommand&gt; LoadCommandByProjectAsync(string commandType, VsModel commandResult)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">commandType</span></td>
+        <td><p>The fully qualified name of the command type to evaluated.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="CodeFactory.WinVs.Models.ProjectSystem.VsModel.html">VsModel</a></td>
+        <td><span class="parametername">commandResult</span></td>
+        <td><p>The loaded model from the requesting command to load the command source.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="CodeFactory.WinVs.Commands.ConfigCommand.html">ConfigCommand</a>&gt;</td>
+        <td><p>The command source that meetings the criteria or null if no command source meet the criteria.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="CodeFactory_WinVs_Commands_ConfigManager_LoadConfiguration_" data-uid="CodeFactory.WinVs.Commands.ConfigManager.LoadConfiguration*"></a>
+  <h4 id="CodeFactory_WinVs_Commands_ConfigManager_LoadConfiguration_CodeFactory_WinVs_Models_ProjectSystem_VsSolution_System_String_CodeFactory_WinVs_IVsActions_" data-uid="CodeFactory.WinVs.Commands.ConfigManager.LoadConfiguration(CodeFactory.WinVs.Models.ProjectSystem.VsSolution,System.String,CodeFactory.WinVs.IVsActions)">LoadConfiguration(VsSolution, string, IVsActions)</h4>
+  <div class="markdown level1 summary"><p>Loads a ADK configuration from a target configuration file.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ConfigSolution LoadConfiguration(VsSolution solution, string fileName, IVsActions actions)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CodeFactory.WinVs.Models.ProjectSystem.VsSolution.html">VsSolution</a></td>
+        <td><span class="parametername">solution</span></td>
+        <td><p>The solution model used to locate the configuration to be loaded.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">fileName</span></td>
+        <td><p>The file name without the extension.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="CodeFactory.WinVs.IVsActions.html">IVsActions</a></td>
+        <td><span class="parametername">actions</span></td>
+        <td><p>The Visual Studio automation for CodeFactory.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CodeFactory.WinVs.Commands.ConfigSolution.html">ConfigSolution</a></td>
+        <td><p>Loaded solution configuration.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="CodeFactory_WinVs_Commands_ConfigManager_RegisterCommandWithDefaultConfiguration_" data-uid="CodeFactory.WinVs.Commands.ConfigManager.RegisterCommandWithDefaultConfiguration*"></a>
+  <h4 id="CodeFactory_WinVs_Commands_ConfigManager_RegisterCommandWithDefaultConfiguration_CodeFactory_WinVs_Commands_ConfigCommand_" data-uid="CodeFactory.WinVs.Commands.ConfigManager.RegisterCommandWithDefaultConfiguration(CodeFactory.WinVs.Commands.ConfigCommand)">RegisterCommandWithDefaultConfiguration(ConfigCommand)</h4>
+  <div class="markdown level1 summary"><p>Registers a command configuration with the configuration manager to be used when building a default configuration.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void RegisterCommandWithDefaultConfiguration(this ConfigCommand command)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CodeFactory.WinVs.Commands.ConfigCommand.html">ConfigCommand</a></td>
+        <td><span class="parametername">command</span></td>
+        <td><p>Command configuration to be registered</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="CodeFactory_WinVs_Commands_ConfigManager_SaveConfigurationAsync_" data-uid="CodeFactory.WinVs.Commands.ConfigManager.SaveConfigurationAsync*"></a>
+  <h4 id="CodeFactory_WinVs_Commands_ConfigManager_SaveConfigurationAsync_CodeFactory_WinVs_Models_ProjectSystem_VsSolution_CodeFactory_WinVs_Commands_ConfigSolution_CodeFactory_WinVs_IVsActions_System_String_" data-uid="CodeFactory.WinVs.Commands.ConfigManager.SaveConfigurationAsync(CodeFactory.WinVs.Models.ProjectSystem.VsSolution,CodeFactory.WinVs.Commands.ConfigSolution,CodeFactory.WinVs.IVsActions,System.String)">SaveConfigurationAsync(VsSolution, ConfigSolution, IVsActions, string)</h4>
+  <div class="markdown level1 summary"><p>Saves a ADK configuration to a target directory.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Task SaveConfigurationAsync(VsSolution solution, ConfigSolution configuration, IVsActions actions, string fileName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CodeFactory.WinVs.Models.ProjectSystem.VsSolution.html">VsSolution</a></td>
+        <td><span class="parametername">solution</span></td>
+        <td><p>The CodeFactory solution model to save the configuration to.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="CodeFactory.WinVs.Commands.ConfigSolution.html">ConfigSolution</a></td>
+        <td><span class="parametername">configuration</span></td>
+        <td><p>The solution configuration to be saved to disk.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="CodeFactory.WinVs.IVsActions.html">IVsActions</a></td>
+        <td><span class="parametername">actions</span></td>
+        <td><p>The Visual Studio automation for CodeFactory.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">fileName</span></td>
+        <td><p>The file name of the configuration file without the extension.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></td>
+        <td><p>Raised if provided parameters are null.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentexception">ArgumentException</a></td>
+        <td><p>Raised if the file path is not provided.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="CodeFactory.CodeFactoryException.html">CodeFactoryException</a></td>
+        <td><p>Raised if the save cannot be completed.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="CodeFactory_WinVs_Commands_ConfigManager_SetConfiguration_" data-uid="CodeFactory.WinVs.Commands.ConfigManager.SetConfiguration*"></a>
+  <h4 id="CodeFactory_WinVs_Commands_ConfigManager_SetConfiguration_CodeFactory_WinVs_Commands_ConfigSolution_CodeFactory_WinVs_IVsActions_" data-uid="CodeFactory.WinVs.Commands.ConfigManager.SetConfiguration(CodeFactory.WinVs.Commands.ConfigSolution,CodeFactory.WinVs.IVsActions)">SetConfiguration(ConfigSolution, IVsActions)</h4>
+  <div class="markdown level1 summary"><p>Register a loaded configuration with the configuration manager.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetConfiguration(ConfigSolution configuration, IVsActions actions)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CodeFactory.WinVs.Commands.ConfigSolution.html">ConfigSolution</a></td>
+        <td><span class="parametername">configuration</span></td>
+        <td><p>The loaded configuration.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="CodeFactory.WinVs.IVsActions.html">IVsActions</a></td>
+        <td><span class="parametername">actions</span></td>
+        <td><p>The Visual Studio automation for CodeFactory.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+</article>
+                </div>
+
+                <div class="copyright-footer">
+                    <span>&#169; CodeFactory, LLC. All rights reserved.</span>
+                </div>
+            </main>
+        </div>
+
+
+        <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+        <script type="text/javascript" src="../styles/jquery.twbsPagination.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/mark.js@8.11.1/dist/jquery.mark.min.js"></script>
+        <script type="text/javascript" src="../styles/url.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/anchor-js@5.0.0/anchor.min.js"></script>
+        <script type="text/javascript" src="../styles/docfx.js"></script>
+        <script type="text/javascript" src="../styles/main.js"></script>
+        <script type="text/javascript" src="../styles/singulink.js"></script>    </body>
+</html>

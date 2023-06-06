@@ -1,0 +1,2814 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+    <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Interface ISourceManager
+ | CodeFactory for Windows </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Interface ISourceManager
+ | CodeFactory for Windows ">
+      <meta name="generator" content="docfx ">
+  
+      <link rel="shortcut icon" href="../images/favicon.png">
+      <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/night-owl.min.css">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" integrity="sha384-EvBWSlnoFgZlXJvpzS+MAUEjvN7+gcCwH+qh7GRFOGgZO0PuwOFro7qPOJnLfe7l" crossorigin="anonymous">
+      <link rel="stylesheet" href="../styles/config.css">
+      <link rel="stylesheet" href="../styles/discord.css">
+      <link rel="stylesheet" href="../styles/singulink.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+  
+  <meta property="docfx:rel" content="../">
+  <meta property="docfx:newtab" content="true">
+    </head>
+    <body>
+        <div class="top-navbar">
+            <a class="burger-icon" onclick="toggleMenu()">
+                <svg name="Hamburger" style="vertical-align: middle;" width="34" height="34" viewbox="0 0 24 24"><path fill="currentColor" fill-rule="evenodd" clip-rule="evenodd" d="M20 6H4V9H20V6ZM4 10.999H20V13.999H4V10.999ZM4 15.999H20V18.999H4V15.999Z"></path></svg>
+            </a>
+
+
+            <a class="brand" href="../index.html">
+              <img src="../images/logo.png" alt="CodeFactory for Windows" class="logomark">
+              <span class="brand-title">CodeFactory for Windows</span>
+            </a>        </div>
+
+        <div class="body-content">
+            <div id="blackout" class="blackout" onclick="toggleMenu()"></div>
+
+            <nav id="sidebar" role="navigation">
+                <div class="sidebar">
+
+                    <div>
+                      <div class="mobile-hide">
+
+                        <a class="brand" href="../index.html">
+                          <img src="../images/logo.png" alt="CodeFactory for Windows" class="logomark">
+                          <span class="brand-title">CodeFactory for Windows</span>
+                        </a>                      </div>
+
+                      <div class="sidesearch">
+                        <form id="search" role="search" class="search">
+                            <i class="bi bi-search search-icon"></i>
+                            <input type="text" id="search-query" placeholder="Search" autocomplete="off">
+                        </form>
+                      </div>
+
+                      <div id="navbar">
+                      </div>
+                    </div>                    <div class="sidebar-item-separator"></div>
+
+                        <div id="sidetoggle">
+                          <div id="sidetoc"></div>
+                        </div>
+                </div>
+                <div class="footer">
+  
+  <strong><a href='https://www.codefactory.software'>CodeFactory</a></strong>
+                </div>            </nav>
+
+            <main class="main-panel">
+
+                <div id="search-results" style="display: none;">
+                  <h1 class="search-list">Search Results for <span></span></h1>
+                  <div class="sr-items">
+                    <p><i class="bi bi-hourglass-split index-loading"></i></p>
+                  </div>
+                  <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+                </div>
+ 
+
+                <div role="main" class="hide-when-search">
+
+                        <div class="subnav navbar navbar-default">
+                          <div class="container hide-when-search" id="breadcrumb">
+                            <ul class="breadcrumb">
+                              <li></li>
+                            </ul>
+                          </div>
+                        </div>
+
+
+                    <article class="content wrap" id="_content" data-uid="CodeFactory.WinVs.Models.CSharp.Builder.ISourceManager">
+
+
+
+  <h1 id="CodeFactory_WinVs_Models_CSharp_Builder_ISourceManager" data-uid="CodeFactory.WinVs.Models.CSharp.Builder.ISourceManager" class="text-break">Interface ISourceManager
+</h1>
+  <div class="markdown level0 summary"><p>Contract that manages the update to the source tracked by the manager implementation</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="CodeFactory.WinVs.Models.CSharp.Builder.IBuildManagement.html#CodeFactory_WinVs_Models_CSharp_Builder_IBuildManagement_VsActions">IBuildManagement.VsActions</a>
+    </div>
+    <div>
+      <a class="xref" href="CodeFactory.WinVs.Models.CSharp.Builder.IBuildManagement.html#CodeFactory_WinVs_Models_CSharp_Builder_IBuildManagement_NamespaceManager">IBuildManagement.NamespaceManager</a>
+    </div>
+    <div>
+      <a class="xref" href="CodeFactory.WinVs.Models.CSharp.Builder.IBuildManagement.html#CodeFactory_WinVs_Models_CSharp_Builder_IBuildManagement_MappedNamespaces">IBuildManagement.MappedNamespaces</a>
+    </div>
+    <div>
+      <a class="xref" href="CodeFactory.WinVs.Models.CSharp.Builder.IBuildManagement.html#CodeFactory_WinVs_Models_CSharp_Builder_IBuildManagement_UpdateMappedNamespaces_System_Collections_Generic_List_CodeFactory_WinVs_Models_CSharp_MapNamespace__">IBuildManagement.UpdateMappedNamespaces(List&lt;MapNamespace&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="CodeFactory.WinVs.Models.CSharp.Builder.IBuildManagement.html#CodeFactory_WinVs_Models_CSharp_Builder_IBuildManagement_UpdateNamespaceManager_CodeFactory_WinVs_Models_CSharp_NamespaceManager_">IBuildManagement.UpdateNamespaceManager(NamespaceManager)</a>
+    </div>
+    <div>
+      <a class="xref" href="CodeFactory.WinVs.Models.CSharp.Builder.IBuildManagement.html#CodeFactory_WinVs_Models_CSharp_Builder_IBuildManagement_LoadNamespaceManager">IBuildManagement.LoadNamespaceManager()</a>
+    </div>
+    <div>
+      <a class="xref" href="CodeFactory.WinVs.Models.CSharp.Builder.IBuildManagement.html#CodeFactory_WinVs_Models_CSharp_Builder_IBuildManagement_UsingStatementAddAsync_System_String_System_String_">IBuildManagement.UsingStatementAddAsync(string, string)</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="CodeFactory.html">CodeFactory</a>.<a class="xref" href="CodeFactory.WinVs.html">WinVs</a>.<a class="xref" href="CodeFactory.WinVs.Models.html">Models</a>.<a class="xref" href="CodeFactory.WinVs.Models.CSharp.html">CSharp</a>.<a class="xref" href="CodeFactory.WinVs.Models.CSharp.Builder.html">Builder</a></h6>
+  <h6><strong>Assembly</strong>: CodeFactory.WinVs.dll</h6>
+  <h5 id="CodeFactory_WinVs_Models_CSharp_Builder_ISourceManager_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public interface ISourceManager : IBuildManagement</code></pre>
+  </div>
+  <h3 id="properties">Properties
+</h3>
+  <a id="CodeFactory_WinVs_Models_CSharp_Builder_ISourceManager_Source_" data-uid="CodeFactory.WinVs.Models.CSharp.Builder.ISourceManager.Source*"></a>
+  <h4 id="CodeFactory_WinVs_Models_CSharp_Builder_ISourceManager_Source" data-uid="CodeFactory.WinVs.Models.CSharp.Builder.ISourceManager.Source">Source</h4>
+  <div class="markdown level1 summary"><p>Target source that is being updated.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">CsSource Source { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CodeFactory.WinVs.Models.CSharp.CsSource.html">CsSource</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+</h3>
+  <a id="CodeFactory_WinVs_Models_CSharp_Builder_ISourceManager_AddByInjectionLocationAsync_" data-uid="CodeFactory.WinVs.Models.CSharp.Builder.ISourceManager.AddByInjectionLocationAsync*"></a>
+  <h4 id="CodeFactory_WinVs_Models_CSharp_Builder_ISourceManager_AddByInjectionLocationAsync_System_String_CodeFactory_WinVs_Models_CSharp_Builder_InjectionLocation_" data-uid="CodeFactory.WinVs.Models.CSharp.Builder.ISourceManager.AddByInjectionLocationAsync(System.String,CodeFactory.WinVs.Models.CSharp.Builder.InjectionLocation)">AddByInjectionLocationAsync(string, InjectionLocation)</h4>
+  <div class="markdown level1 summary"><p>Adds the provided syntax to the target injection location provided.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task AddByInjectionLocationAsync(string syntax, InjectionLocation location)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">syntax</span></td>
+        <td><p>Target syntax to be added.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="CodeFactory.WinVs.Models.CSharp.Builder.InjectionLocation.html">InjectionLocation</a></td>
+        <td><span class="parametername">location</span></td>
+        <td><p>The location within the source code file to inject at.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></td>
+        <td><p>Thrown if either the source or the container is null after updating.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="CodeFactory_WinVs_Models_CSharp_Builder_ISourceManager_AddMissingUsingStatementsAsync_" data-uid="CodeFactory.WinVs.Models.CSharp.Builder.ISourceManager.AddMissingUsingStatementsAsync*"></a>
+  <h4 id="CodeFactory_WinVs_Models_CSharp_Builder_ISourceManager_AddMissingUsingStatementsAsync_CodeFactory_WinVs_Models_CSharp_CsAttribute_" data-uid="CodeFactory.WinVs.Models.CSharp.Builder.ISourceManager.AddMissingUsingStatementsAsync(CodeFactory.WinVs.Models.CSharp.CsAttribute)">AddMissingUsingStatementsAsync(CsAttribute)</h4>
+  <div class="markdown level1 summary"><p>Checks all types definitions and makes sure they are included in the namespace manager for the target update source.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task AddMissingUsingStatementsAsync(CsAttribute sourceAttribute)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CodeFactory.WinVs.Models.CSharp.CsAttribute.html">CsAttribute</a></td>
+        <td><span class="parametername">sourceAttribute</span></td>
+        <td><p>The target model to check using statements on.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
+        <td><p>Missing using statements added or the original update source if no additional using statements needed.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="CodeFactory_WinVs_Models_CSharp_Builder_ISourceManager_AddMissingUsingStatementsAsync_" data-uid="CodeFactory.WinVs.Models.CSharp.Builder.ISourceManager.AddMissingUsingStatementsAsync*"></a>
+  <h4 id="CodeFactory_WinVs_Models_CSharp_Builder_ISourceManager_AddMissingUsingStatementsAsync_CodeFactory_WinVs_Models_CSharp_CsEvent_" data-uid="CodeFactory.WinVs.Models.CSharp.Builder.ISourceManager.AddMissingUsingStatementsAsync(CodeFactory.WinVs.Models.CSharp.CsEvent)">AddMissingUsingStatementsAsync(CsEvent)</h4>
+  <div class="markdown level1 summary"><p>Checks all types definitions and makes sure they are included in the namespace manager for the target update source.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task AddMissingUsingStatementsAsync(CsEvent sourceEvent)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CodeFactory.WinVs.Models.CSharp.CsEvent.html">CsEvent</a></td>
+        <td><span class="parametername">sourceEvent</span></td>
+        <td><p>The target model to check using statements on.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="CodeFactory_WinVs_Models_CSharp_Builder_ISourceManager_AddMissingUsingStatementsAsync_" data-uid="CodeFactory.WinVs.Models.CSharp.Builder.ISourceManager.AddMissingUsingStatementsAsync*"></a>
+  <h4 id="CodeFactory_WinVs_Models_CSharp_Builder_ISourceManager_AddMissingUsingStatementsAsync_CodeFactory_WinVs_Models_CSharp_CsField_" data-uid="CodeFactory.WinVs.Models.CSharp.Builder.ISourceManager.AddMissingUsingStatementsAsync(CodeFactory.WinVs.Models.CSharp.CsField)">AddMissingUsingStatementsAsync(CsField)</h4>
+  <div class="markdown level1 summary"><p>Checks all types definitions and makes sure they are included in the namespace manager for the target update source.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task AddMissingUsingStatementsAsync(CsField sourceField)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CodeFactory.WinVs.Models.CSharp.CsField.html">CsField</a></td>
+        <td><span class="parametername">sourceField</span></td>
+        <td><p>The target model to check using statements on.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="CodeFactory_WinVs_Models_CSharp_Builder_ISourceManager_AddMissingUsingStatementsAsync_" data-uid="CodeFactory.WinVs.Models.CSharp.Builder.ISourceManager.AddMissingUsingStatementsAsync*"></a>
+  <h4 id="CodeFactory_WinVs_Models_CSharp_Builder_ISourceManager_AddMissingUsingStatementsAsync_CodeFactory_WinVs_Models_CSharp_CsMethod_" data-uid="CodeFactory.WinVs.Models.CSharp.Builder.ISourceManager.AddMissingUsingStatementsAsync(CodeFactory.WinVs.Models.CSharp.CsMethod)">AddMissingUsingStatementsAsync(CsMethod)</h4>
+  <div class="markdown level1 summary"><p>Checks all types definitions and makes sure they are included in the namespace manager for the target update source.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task AddMissingUsingStatementsAsync(CsMethod sourceMethod)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CodeFactory.WinVs.Models.CSharp.CsMethod.html">CsMethod</a></td>
+        <td><span class="parametername">sourceMethod</span></td>
+        <td><p>The target model to check using statements on.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="CodeFactory_WinVs_Models_CSharp_Builder_ISourceManager_AddMissingUsingStatementsAsync_" data-uid="CodeFactory.WinVs.Models.CSharp.Builder.ISourceManager.AddMissingUsingStatementsAsync*"></a>
+  <h4 id="CodeFactory_WinVs_Models_CSharp_Builder_ISourceManager_AddMissingUsingStatementsAsync_CodeFactory_WinVs_Models_CSharp_CsProperty_" data-uid="CodeFactory.WinVs.Models.CSharp.Builder.ISourceManager.AddMissingUsingStatementsAsync(CodeFactory.WinVs.Models.CSharp.CsProperty)">AddMissingUsingStatementsAsync(CsProperty)</h4>
+  <div class="markdown level1 summary"><p>Checks all types definitions and makes sure they are included in the namespace manager for the target update source.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task AddMissingUsingStatementsAsync(CsProperty sourceProperty)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CodeFactory.WinVs.Models.CSharp.CsProperty.html">CsProperty</a></td>
+        <td><span class="parametername">sourceProperty</span></td>
+        <td><p>The target model to check using statements on.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="CodeFactory_WinVs_Models_CSharp_Builder_ISourceManager_AddMissingUsingStatementsAsync_" data-uid="CodeFactory.WinVs.Models.CSharp.Builder.ISourceManager.AddMissingUsingStatementsAsync*"></a>
+  <h4 id="CodeFactory_WinVs_Models_CSharp_Builder_ISourceManager_AddMissingUsingStatementsAsync_CodeFactory_WinVs_Models_CSharp_CsType_" data-uid="CodeFactory.WinVs.Models.CSharp.Builder.ISourceManager.AddMissingUsingStatementsAsync(CodeFactory.WinVs.Models.CSharp.CsType)">AddMissingUsingStatementsAsync(CsType)</h4>
+  <div class="markdown level1 summary"><p>Checks all types definitions and makes sure they are included in the namespace manager for the target update source.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task AddMissingUsingStatementsAsync(CsType sourceType)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CodeFactory.WinVs.Models.CSharp.CsType.html">CsType</a></td>
+        <td><span class="parametername">sourceType</span></td>
+        <td><p>The target model to check using statements on.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
+        <td><p>Missing using statements added or the original update source if no additional using statements needed.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="CodeFactory_WinVs_Models_CSharp_Builder_ISourceManager_ConstructorsAddAfterAsync_" data-uid="CodeFactory.WinVs.Models.CSharp.Builder.ISourceManager.ConstructorsAddAfterAsync*"></a>
+  <h4 id="CodeFactory_WinVs_Models_CSharp_Builder_ISourceManager_ConstructorsAddAfterAsync_System_String_" data-uid="CodeFactory.WinVs.Models.CSharp.Builder.ISourceManager.ConstructorsAddAfterAsync(System.String)">ConstructorsAddAfterAsync(string)</h4>
+  <div class="markdown level1 summary"><p>Add the provided syntax after the constructor definitions.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task ConstructorsAddAfterAsync(string syntax)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">syntax</span></td>
+        <td><p>Target syntax to be added.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></td>
+        <td><p>Thrown if either the source or the container is null after updating.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="CodeFactory_WinVs_Models_CSharp_Builder_ISourceManager_ConstructorsAddBeforeAsync_" data-uid="CodeFactory.WinVs.Models.CSharp.Builder.ISourceManager.ConstructorsAddBeforeAsync*"></a>
+  <h4 id="CodeFactory_WinVs_Models_CSharp_Builder_ISourceManager_ConstructorsAddBeforeAsync_System_String_" data-uid="CodeFactory.WinVs.Models.CSharp.Builder.ISourceManager.ConstructorsAddBeforeAsync(System.String)">ConstructorsAddBeforeAsync(string)</h4>
+  <div class="markdown level1 summary"><p>Add the provided syntax before the constructor definitions.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task ConstructorsAddBeforeAsync(string syntax)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">syntax</span></td>
+        <td><p>Target syntax to be added.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></td>
+        <td><p>Thrown if either the source or the container is null after updating.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="CodeFactory_WinVs_Models_CSharp_Builder_ISourceManager_ContainerAddAfterAsync_" data-uid="CodeFactory.WinVs.Models.CSharp.Builder.ISourceManager.ContainerAddAfterAsync*"></a>
+  <h4 id="CodeFactory_WinVs_Models_CSharp_Builder_ISourceManager_ContainerAddAfterAsync_System_String_" data-uid="CodeFactory.WinVs.Models.CSharp.Builder.ISourceManager.ContainerAddAfterAsync(System.String)">ContainerAddAfterAsync(string)</h4>
+  <div class="markdown level1 summary"><p>Adds the provided syntax after containers definition.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task ContainerAddAfterAsync(string syntax)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">syntax</span></td>
+        <td><p>Target syntax to be added.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></td>
+        <td><p>Thrown if either the source or the container is null after updating.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="CodeFactory_WinVs_Models_CSharp_Builder_ISourceManager_ContainerAddBeforeAsync_" data-uid="CodeFactory.WinVs.Models.CSharp.Builder.ISourceManager.ContainerAddBeforeAsync*"></a>
+  <h4 id="CodeFactory_WinVs_Models_CSharp_Builder_ISourceManager_ContainerAddBeforeAsync_System_String_" data-uid="CodeFactory.WinVs.Models.CSharp.Builder.ISourceManager.ContainerAddBeforeAsync(System.String)">ContainerAddBeforeAsync(string)</h4>
+  <div class="markdown level1 summary"><p>Adds the provided syntax before the containers definition.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task ContainerAddBeforeAsync(string syntax)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">syntax</span></td>
+        <td><p>Target syntax to be added.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></td>
+        <td><p>Thrown if either the source or the container is null after updating.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="CodeFactory_WinVs_Models_CSharp_Builder_ISourceManager_ContainerAddToBeginningAsync_" data-uid="CodeFactory.WinVs.Models.CSharp.Builder.ISourceManager.ContainerAddToBeginningAsync*"></a>
+  <h4 id="CodeFactory_WinVs_Models_CSharp_Builder_ISourceManager_ContainerAddToBeginningAsync_System_String_" data-uid="CodeFactory.WinVs.Models.CSharp.Builder.ISourceManager.ContainerAddToBeginningAsync(System.String)">ContainerAddToBeginningAsync(string)</h4>
+  <div class="markdown level1 summary"><p>Adds the provided syntax to the beginning of the containers definition.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task ContainerAddToBeginningAsync(string syntax)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">syntax</span></td>
+        <td><p>Target syntax to be added.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></td>
+        <td><p>Thrown if either the source or the container is null after updating.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="CodeFactory_WinVs_Models_CSharp_Builder_ISourceManager_ContainerAddToEndAsync_" data-uid="CodeFactory.WinVs.Models.CSharp.Builder.ISourceManager.ContainerAddToEndAsync*"></a>
+  <h4 id="CodeFactory_WinVs_Models_CSharp_Builder_ISourceManager_ContainerAddToEndAsync_System_String_" data-uid="CodeFactory.WinVs.Models.CSharp.Builder.ISourceManager.ContainerAddToEndAsync(System.String)">ContainerAddToEndAsync(string)</h4>
+  <div class="markdown level1 summary"><p>Adds the provided syntax to the end of the containers definition.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task ContainerAddToEndAsync(string syntax)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">syntax</span></td>
+        <td><p>Target syntax to be added.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></td>
+        <td><p>Thrown if either the source or the container is null after updating.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="CodeFactory_WinVs_Models_CSharp_Builder_ISourceManager_EventsAddAfterAsync_" data-uid="CodeFactory.WinVs.Models.CSharp.Builder.ISourceManager.EventsAddAfterAsync*"></a>
+  <h4 id="CodeFactory_WinVs_Models_CSharp_Builder_ISourceManager_EventsAddAfterAsync_System_String_" data-uid="CodeFactory.WinVs.Models.CSharp.Builder.ISourceManager.EventsAddAfterAsync(System.String)">EventsAddAfterAsync(string)</h4>
+  <div class="markdown level1 summary"><p>Add the provided syntax after the event definitions.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task EventsAddAfterAsync(string syntax)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">syntax</span></td>
+        <td><p>Target syntax to be added.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></td>
+        <td><p>Thrown if either the source or the container is null after updating.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="CodeFactory_WinVs_Models_CSharp_Builder_ISourceManager_EventsAddBeforeAsync_" data-uid="CodeFactory.WinVs.Models.CSharp.Builder.ISourceManager.EventsAddBeforeAsync*"></a>
+  <h4 id="CodeFactory_WinVs_Models_CSharp_Builder_ISourceManager_EventsAddBeforeAsync_System_String_" data-uid="CodeFactory.WinVs.Models.CSharp.Builder.ISourceManager.EventsAddBeforeAsync(System.String)">EventsAddBeforeAsync(string)</h4>
+  <div class="markdown level1 summary"><p>Add the provided syntax before the event definitions.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task EventsAddBeforeAsync(string syntax)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">syntax</span></td>
+        <td><p>Target syntax to be added.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></td>
+        <td><p>Thrown if either the source or the container is null after updating.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="CodeFactory_WinVs_Models_CSharp_Builder_ISourceManager_FieldsAddAfterAsync_" data-uid="CodeFactory.WinVs.Models.CSharp.Builder.ISourceManager.FieldsAddAfterAsync*"></a>
+  <h4 id="CodeFactory_WinVs_Models_CSharp_Builder_ISourceManager_FieldsAddAfterAsync_System_String_" data-uid="CodeFactory.WinVs.Models.CSharp.Builder.ISourceManager.FieldsAddAfterAsync(System.String)">FieldsAddAfterAsync(string)</h4>
+  <div class="markdown level1 summary"><p>Adds the provided syntax after the field definitions.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task FieldsAddAfterAsync(string syntax)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">syntax</span></td>
+        <td><p>Target syntax to be added.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></td>
+        <td><p>Thrown if either the source or the container is null after updating.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="CodeFactory_WinVs_Models_CSharp_Builder_ISourceManager_FieldsAddBeforeAsync_" data-uid="CodeFactory.WinVs.Models.CSharp.Builder.ISourceManager.FieldsAddBeforeAsync*"></a>
+  <h4 id="CodeFactory_WinVs_Models_CSharp_Builder_ISourceManager_FieldsAddBeforeAsync_System_String_" data-uid="CodeFactory.WinVs.Models.CSharp.Builder.ISourceManager.FieldsAddBeforeAsync(System.String)">FieldsAddBeforeAsync(string)</h4>
+  <div class="markdown level1 summary"><p>Adds the provided syntax before the field definitions.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task FieldsAddBeforeAsync(string syntax)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">syntax</span></td>
+        <td><p>Target syntax to be added.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></td>
+        <td><p>Thrown if either the source or the container is null after updating.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="CodeFactory_WinVs_Models_CSharp_Builder_ISourceManager_MemberAddAfterAsync_" data-uid="CodeFactory.WinVs.Models.CSharp.Builder.ISourceManager.MemberAddAfterAsync*"></a>
+  <h4 id="CodeFactory_WinVs_Models_CSharp_Builder_ISourceManager_MemberAddAfterAsync_CodeFactory_WinVs_Models_CSharp_CsMember_System_String_" data-uid="CodeFactory.WinVs.Models.CSharp.Builder.ISourceManager.MemberAddAfterAsync(CodeFactory.WinVs.Models.CSharp.CsMember,System.String)">MemberAddAfterAsync(CsMember, string)</h4>
+  <div class="markdown level1 summary"><p>Add the syntax after the target member.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task MemberAddAfterAsync(CsMember member, string syntax)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CodeFactory.WinVs.Models.CSharp.CsMember.html">CsMember</a></td>
+        <td><span class="parametername">member</span></td>
+        <td><p>Target member.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">syntax</span></td>
+        <td><p>The syntax to be added.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></td>
+        <td><p>Thrown if either the source or the container is null after updating.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="CodeFactory_WinVs_Models_CSharp_Builder_ISourceManager_MemberAddBeforeAsync_" data-uid="CodeFactory.WinVs.Models.CSharp.Builder.ISourceManager.MemberAddBeforeAsync*"></a>
+  <h4 id="CodeFactory_WinVs_Models_CSharp_Builder_ISourceManager_MemberAddBeforeAsync_CodeFactory_WinVs_Models_CSharp_CsMember_System_String_" data-uid="CodeFactory.WinVs.Models.CSharp.Builder.ISourceManager.MemberAddBeforeAsync(CodeFactory.WinVs.Models.CSharp.CsMember,System.String)">MemberAddBeforeAsync(CsMember, string)</h4>
+  <div class="markdown level1 summary"><p>Add the syntax before the target member.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task MemberAddBeforeAsync(CsMember member, string syntax)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CodeFactory.WinVs.Models.CSharp.CsMember.html">CsMember</a></td>
+        <td><span class="parametername">member</span></td>
+        <td><p>Target member.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">syntax</span></td>
+        <td><p>The syntax to be added.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></td>
+        <td><p>Thrown if either the source or the container is null after updating.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="CodeFactory_WinVs_Models_CSharp_Builder_ISourceManager_MemberCommentOut_" data-uid="CodeFactory.WinVs.Models.CSharp.Builder.ISourceManager.MemberCommentOut*"></a>
+  <h4 id="CodeFactory_WinVs_Models_CSharp_Builder_ISourceManager_MemberCommentOut_CodeFactory_WinVs_Models_CSharp_CsMember_System_String_" data-uid="CodeFactory.WinVs.Models.CSharp.Builder.ISourceManager.MemberCommentOut(CodeFactory.WinVs.Models.CSharp.CsMember,System.String)">MemberCommentOut(CsMember, string)</h4>
+  <div class="markdown level1 summary"><p>Comments out member from the source container.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task MemberCommentOut(CsMember member, string commentSyntax = &quot;//&quot;)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CodeFactory.WinVs.Models.CSharp.CsMember.html">CsMember</a></td>
+        <td><span class="parametername">member</span></td>
+        <td><p>Target member.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">commentSyntax</span></td>
+        <td><p>Optional parameters sets the syntax to use when commenting out the member. This will default to use '//'</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></td>
+        <td><p>Thrown if either the source or the container is null after updating.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="CodeFactory_WinVs_Models_CSharp_Builder_ISourceManager_MemberRemoveAsync_" data-uid="CodeFactory.WinVs.Models.CSharp.Builder.ISourceManager.MemberRemoveAsync*"></a>
+  <h4 id="CodeFactory_WinVs_Models_CSharp_Builder_ISourceManager_MemberRemoveAsync_CodeFactory_WinVs_Models_CSharp_CsMember_" data-uid="CodeFactory.WinVs.Models.CSharp.Builder.ISourceManager.MemberRemoveAsync(CodeFactory.WinVs.Models.CSharp.CsMember)">MemberRemoveAsync(CsMember)</h4>
+  <div class="markdown level1 summary"><p>Removes the target member.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task MemberRemoveAsync(CsMember member)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CodeFactory.WinVs.Models.CSharp.CsMember.html">CsMember</a></td>
+        <td><span class="parametername">member</span></td>
+        <td><p>Target member.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></td>
+        <td><p>Thrown if either the source or the container is null after updating.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="CodeFactory_WinVs_Models_CSharp_Builder_ISourceManager_MemberReplaceAsync_" data-uid="CodeFactory.WinVs.Models.CSharp.Builder.ISourceManager.MemberReplaceAsync*"></a>
+  <h4 id="CodeFactory_WinVs_Models_CSharp_Builder_ISourceManager_MemberReplaceAsync_CodeFactory_WinVs_Models_CSharp_CsMember_System_String_" data-uid="CodeFactory.WinVs.Models.CSharp.Builder.ISourceManager.MemberReplaceAsync(CodeFactory.WinVs.Models.CSharp.CsMember,System.String)">MemberReplaceAsync(CsMember, string)</h4>
+  <div class="markdown level1 summary"><p>Syntax replaces the target member.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task MemberReplaceAsync(CsMember member, string syntax)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CodeFactory.WinVs.Models.CSharp.CsMember.html">CsMember</a></td>
+        <td><span class="parametername">member</span></td>
+        <td><p>Target member.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">syntax</span></td>
+        <td><p>The syntax to be added.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></td>
+        <td><p>Thrown if either the source or the container is null after updating.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="CodeFactory_WinVs_Models_CSharp_Builder_ISourceManager_MethodsAddAfterAsync_" data-uid="CodeFactory.WinVs.Models.CSharp.Builder.ISourceManager.MethodsAddAfterAsync*"></a>
+  <h4 id="CodeFactory_WinVs_Models_CSharp_Builder_ISourceManager_MethodsAddAfterAsync_System_String_" data-uid="CodeFactory.WinVs.Models.CSharp.Builder.ISourceManager.MethodsAddAfterAsync(System.String)">MethodsAddAfterAsync(string)</h4>
+  <div class="markdown level1 summary"><p>Add the provided syntax after the method definitions.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task MethodsAddAfterAsync(string syntax)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">syntax</span></td>
+        <td><p>Target syntax to be added.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></td>
+        <td><p>Thrown if either the source or the container is null after updating.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="CodeFactory_WinVs_Models_CSharp_Builder_ISourceManager_MethodsAddBeforeAsync_" data-uid="CodeFactory.WinVs.Models.CSharp.Builder.ISourceManager.MethodsAddBeforeAsync*"></a>
+  <h4 id="CodeFactory_WinVs_Models_CSharp_Builder_ISourceManager_MethodsAddBeforeAsync_System_String_" data-uid="CodeFactory.WinVs.Models.CSharp.Builder.ISourceManager.MethodsAddBeforeAsync(System.String)">MethodsAddBeforeAsync(string)</h4>
+  <div class="markdown level1 summary"><p>Add the provided syntax before the method definitions.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task MethodsAddBeforeAsync(string syntax)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">syntax</span></td>
+        <td><p>Target syntax to be added.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></td>
+        <td><p>Thrown if either the source or the container is null after updating.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="CodeFactory_WinVs_Models_CSharp_Builder_ISourceManager_NestedClassesAddAfterAsync_" data-uid="CodeFactory.WinVs.Models.CSharp.Builder.ISourceManager.NestedClassesAddAfterAsync*"></a>
+  <h4 id="CodeFactory_WinVs_Models_CSharp_Builder_ISourceManager_NestedClassesAddAfterAsync_System_String_" data-uid="CodeFactory.WinVs.Models.CSharp.Builder.ISourceManager.NestedClassesAddAfterAsync(System.String)">NestedClassesAddAfterAsync(string)</h4>
+  <div class="markdown level1 summary"><p>Add the provided syntax after the nested classes definitions.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task NestedClassesAddAfterAsync(string syntax)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">syntax</span></td>
+        <td><p>Target syntax to be added.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></td>
+        <td><p>Thrown if either the source or the container is null after updating.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="CodeFactory_WinVs_Models_CSharp_Builder_ISourceManager_NestedClassesAddBeforeAsync_" data-uid="CodeFactory.WinVs.Models.CSharp.Builder.ISourceManager.NestedClassesAddBeforeAsync*"></a>
+  <h4 id="CodeFactory_WinVs_Models_CSharp_Builder_ISourceManager_NestedClassesAddBeforeAsync_System_String_" data-uid="CodeFactory.WinVs.Models.CSharp.Builder.ISourceManager.NestedClassesAddBeforeAsync(System.String)">NestedClassesAddBeforeAsync(string)</h4>
+  <div class="markdown level1 summary"><p>Add the provided syntax before the nested classes definitions.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task NestedClassesAddBeforeAsync(string syntax)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">syntax</span></td>
+        <td><p>Target syntax to be added.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></td>
+        <td><p>Thrown if either the source or the container is null after updating.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="CodeFactory_WinVs_Models_CSharp_Builder_ISourceManager_NestedClassesRemoveAsync_" data-uid="CodeFactory.WinVs.Models.CSharp.Builder.ISourceManager.NestedClassesRemoveAsync*"></a>
+  <h4 id="CodeFactory_WinVs_Models_CSharp_Builder_ISourceManager_NestedClassesRemoveAsync_CodeFactory_WinVs_Models_CSharp_CsClass_" data-uid="CodeFactory.WinVs.Models.CSharp.Builder.ISourceManager.NestedClassesRemoveAsync(CodeFactory.WinVs.Models.CSharp.CsClass)">NestedClassesRemoveAsync(CsClass)</h4>
+  <div class="markdown level1 summary"><p>Removes the nested class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task NestedClassesRemoveAsync(CsClass nested)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CodeFactory.WinVs.Models.CSharp.CsClass.html">CsClass</a></td>
+        <td><span class="parametername">nested</span></td>
+        <td><p>The target nested class.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></td>
+        <td><p>Thrown if either the source or the container is null after updating.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="CodeFactory_WinVs_Models_CSharp_Builder_ISourceManager_NestedClassesReplaceAsync_" data-uid="CodeFactory.WinVs.Models.CSharp.Builder.ISourceManager.NestedClassesReplaceAsync*"></a>
+  <h4 id="CodeFactory_WinVs_Models_CSharp_Builder_ISourceManager_NestedClassesReplaceAsync_CodeFactory_WinVs_Models_CSharp_CsClass_System_String_" data-uid="CodeFactory.WinVs.Models.CSharp.Builder.ISourceManager.NestedClassesReplaceAsync(CodeFactory.WinVs.Models.CSharp.CsClass,System.String)">NestedClassesReplaceAsync(CsClass, string)</h4>
+  <div class="markdown level1 summary"><p>Replaces the nested class with the provided syntax</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task NestedClassesReplaceAsync(CsClass nested, string syntax)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CodeFactory.WinVs.Models.CSharp.CsClass.html">CsClass</a></td>
+        <td><span class="parametername">nested</span></td>
+        <td><p>The target nested class.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">syntax</span></td>
+        <td><p>Target syntax to be added.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></td>
+        <td><p>Thrown if either the source or the container is null after updating.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="CodeFactory_WinVs_Models_CSharp_Builder_ISourceManager_NestedEnumAddAfterAsync_" data-uid="CodeFactory.WinVs.Models.CSharp.Builder.ISourceManager.NestedEnumAddAfterAsync*"></a>
+  <h4 id="CodeFactory_WinVs_Models_CSharp_Builder_ISourceManager_NestedEnumAddAfterAsync_System_String_" data-uid="CodeFactory.WinVs.Models.CSharp.Builder.ISourceManager.NestedEnumAddAfterAsync(System.String)">NestedEnumAddAfterAsync(string)</h4>
+  <div class="markdown level1 summary"><p>Add the provided syntax after the nested enumeration definitions.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task NestedEnumAddAfterAsync(string syntax)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">syntax</span></td>
+        <td><p>Target syntax to be added.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></td>
+        <td><p>Thrown if either the source or the container is null after updating.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="CodeFactory_WinVs_Models_CSharp_Builder_ISourceManager_NestedEnumAddBeforeAsync_" data-uid="CodeFactory.WinVs.Models.CSharp.Builder.ISourceManager.NestedEnumAddBeforeAsync*"></a>
+  <h4 id="CodeFactory_WinVs_Models_CSharp_Builder_ISourceManager_NestedEnumAddBeforeAsync_System_String_" data-uid="CodeFactory.WinVs.Models.CSharp.Builder.ISourceManager.NestedEnumAddBeforeAsync(System.String)">NestedEnumAddBeforeAsync(string)</h4>
+  <div class="markdown level1 summary"><p>Add the provided syntax before the nested enumeration definitions.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task NestedEnumAddBeforeAsync(string syntax)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">syntax</span></td>
+        <td><p>Target syntax to be added.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></td>
+        <td><p>Thrown if either the source or the container is null after updating.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="CodeFactory_WinVs_Models_CSharp_Builder_ISourceManager_NestedEnumRemoveAsync_" data-uid="CodeFactory.WinVs.Models.CSharp.Builder.ISourceManager.NestedEnumRemoveAsync*"></a>
+  <h4 id="CodeFactory_WinVs_Models_CSharp_Builder_ISourceManager_NestedEnumRemoveAsync_CodeFactory_WinVs_Models_CSharp_CsEnum_" data-uid="CodeFactory.WinVs.Models.CSharp.Builder.ISourceManager.NestedEnumRemoveAsync(CodeFactory.WinVs.Models.CSharp.CsEnum)">NestedEnumRemoveAsync(CsEnum)</h4>
+  <div class="markdown level1 summary"><p>Removes the nested enumeration.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task NestedEnumRemoveAsync(CsEnum nested)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CodeFactory.WinVs.Models.CSharp.CsEnum.html">CsEnum</a></td>
+        <td><span class="parametername">nested</span></td>
+        <td><p>The target nested enumeration.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></td>
+        <td><p>Thrown if either the source or the container is null after updating.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="CodeFactory_WinVs_Models_CSharp_Builder_ISourceManager_NestedEnumReplaceAsync_" data-uid="CodeFactory.WinVs.Models.CSharp.Builder.ISourceManager.NestedEnumReplaceAsync*"></a>
+  <h4 id="CodeFactory_WinVs_Models_CSharp_Builder_ISourceManager_NestedEnumReplaceAsync_CodeFactory_WinVs_Models_CSharp_CsEnum_System_String_" data-uid="CodeFactory.WinVs.Models.CSharp.Builder.ISourceManager.NestedEnumReplaceAsync(CodeFactory.WinVs.Models.CSharp.CsEnum,System.String)">NestedEnumReplaceAsync(CsEnum, string)</h4>
+  <div class="markdown level1 summary"><p>Replaces the nested enumeration with the provided syntax</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task NestedEnumReplaceAsync(CsEnum nested, string syntax)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CodeFactory.WinVs.Models.CSharp.CsEnum.html">CsEnum</a></td>
+        <td><span class="parametername">nested</span></td>
+        <td><p>The target nested enumeration.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">syntax</span></td>
+        <td><p>Target syntax to be added.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></td>
+        <td><p>Thrown if either the source or the container is null after updating.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="CodeFactory_WinVs_Models_CSharp_Builder_ISourceManager_NestedInterfaceAddAfterAsync_" data-uid="CodeFactory.WinVs.Models.CSharp.Builder.ISourceManager.NestedInterfaceAddAfterAsync*"></a>
+  <h4 id="CodeFactory_WinVs_Models_CSharp_Builder_ISourceManager_NestedInterfaceAddAfterAsync_System_String_" data-uid="CodeFactory.WinVs.Models.CSharp.Builder.ISourceManager.NestedInterfaceAddAfterAsync(System.String)">NestedInterfaceAddAfterAsync(string)</h4>
+  <div class="markdown level1 summary"><p>Add the provided syntax after the nested interface definitions.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task NestedInterfaceAddAfterAsync(string syntax)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">syntax</span></td>
+        <td><p>Target syntax to be added.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></td>
+        <td><p>Thrown if either the source or the container is null after updating.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="CodeFactory_WinVs_Models_CSharp_Builder_ISourceManager_NestedInterfaceAddBeforeAsync_" data-uid="CodeFactory.WinVs.Models.CSharp.Builder.ISourceManager.NestedInterfaceAddBeforeAsync*"></a>
+  <h4 id="CodeFactory_WinVs_Models_CSharp_Builder_ISourceManager_NestedInterfaceAddBeforeAsync_System_String_" data-uid="CodeFactory.WinVs.Models.CSharp.Builder.ISourceManager.NestedInterfaceAddBeforeAsync(System.String)">NestedInterfaceAddBeforeAsync(string)</h4>
+  <div class="markdown level1 summary"><p>Add the provided syntax before the nested interface definitions.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task NestedInterfaceAddBeforeAsync(string syntax)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">syntax</span></td>
+        <td><p>Target syntax to be added.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></td>
+        <td><p>Thrown if either the source or the container is null after updating.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="CodeFactory_WinVs_Models_CSharp_Builder_ISourceManager_NestedInterfaceRemoveAsync_" data-uid="CodeFactory.WinVs.Models.CSharp.Builder.ISourceManager.NestedInterfaceRemoveAsync*"></a>
+  <h4 id="CodeFactory_WinVs_Models_CSharp_Builder_ISourceManager_NestedInterfaceRemoveAsync_CodeFactory_WinVs_Models_CSharp_CsInterface_" data-uid="CodeFactory.WinVs.Models.CSharp.Builder.ISourceManager.NestedInterfaceRemoveAsync(CodeFactory.WinVs.Models.CSharp.CsInterface)">NestedInterfaceRemoveAsync(CsInterface)</h4>
+  <div class="markdown level1 summary"><p>Removes the nested interface.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task NestedInterfaceRemoveAsync(CsInterface nested)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CodeFactory.WinVs.Models.CSharp.CsInterface.html">CsInterface</a></td>
+        <td><span class="parametername">nested</span></td>
+        <td><p>The target nested interface.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></td>
+        <td><p>Thrown if either the source or the container is null after updating.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="CodeFactory_WinVs_Models_CSharp_Builder_ISourceManager_NestedInterfaceReplaceAsync_" data-uid="CodeFactory.WinVs.Models.CSharp.Builder.ISourceManager.NestedInterfaceReplaceAsync*"></a>
+  <h4 id="CodeFactory_WinVs_Models_CSharp_Builder_ISourceManager_NestedInterfaceReplaceAsync_CodeFactory_WinVs_Models_CSharp_CsInterface_System_String_" data-uid="CodeFactory.WinVs.Models.CSharp.Builder.ISourceManager.NestedInterfaceReplaceAsync(CodeFactory.WinVs.Models.CSharp.CsInterface,System.String)">NestedInterfaceReplaceAsync(CsInterface, string)</h4>
+  <div class="markdown level1 summary"><p>Replaces the nested interface with the provided syntax</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task NestedInterfaceReplaceAsync(CsInterface nested, string syntax)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CodeFactory.WinVs.Models.CSharp.CsInterface.html">CsInterface</a></td>
+        <td><span class="parametername">nested</span></td>
+        <td><p>The target nested interface.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">syntax</span></td>
+        <td><p>Target syntax to be added.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></td>
+        <td><p>Thrown if either the source or the container is null after updating.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="CodeFactory_WinVs_Models_CSharp_Builder_ISourceManager_NestedStructureRemoveAsync_" data-uid="CodeFactory.WinVs.Models.CSharp.Builder.ISourceManager.NestedStructureRemoveAsync*"></a>
+  <h4 id="CodeFactory_WinVs_Models_CSharp_Builder_ISourceManager_NestedStructureRemoveAsync_CodeFactory_WinVs_Models_CSharp_CsStructure_" data-uid="CodeFactory.WinVs.Models.CSharp.Builder.ISourceManager.NestedStructureRemoveAsync(CodeFactory.WinVs.Models.CSharp.CsStructure)">NestedStructureRemoveAsync(CsStructure)</h4>
+  <div class="markdown level1 summary"><p>Removes the nested structure.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task NestedStructureRemoveAsync(CsStructure nested)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CodeFactory.WinVs.Models.CSharp.CsStructure.html">CsStructure</a></td>
+        <td><span class="parametername">nested</span></td>
+        <td><p>The target nested structure.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></td>
+        <td><p>Thrown if either the source or the container is null after updating.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="CodeFactory_WinVs_Models_CSharp_Builder_ISourceManager_NestedStructureReplaceAsync_" data-uid="CodeFactory.WinVs.Models.CSharp.Builder.ISourceManager.NestedStructureReplaceAsync*"></a>
+  <h4 id="CodeFactory_WinVs_Models_CSharp_Builder_ISourceManager_NestedStructureReplaceAsync_CodeFactory_WinVs_Models_CSharp_CsStructure_System_String_" data-uid="CodeFactory.WinVs.Models.CSharp.Builder.ISourceManager.NestedStructureReplaceAsync(CodeFactory.WinVs.Models.CSharp.CsStructure,System.String)">NestedStructureReplaceAsync(CsStructure, string)</h4>
+  <div class="markdown level1 summary"><p>Replaces the nested structure with the provided syntax</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task NestedStructureReplaceAsync(CsStructure nested, string syntax)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CodeFactory.WinVs.Models.CSharp.CsStructure.html">CsStructure</a></td>
+        <td><span class="parametername">nested</span></td>
+        <td><p>The target nested structure.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">syntax</span></td>
+        <td><p>Target syntax to be added.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></td>
+        <td><p>Thrown if either the source or the container is null after updating.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="CodeFactory_WinVs_Models_CSharp_Builder_ISourceManager_NestedStructuresAddAfterAsync_" data-uid="CodeFactory.WinVs.Models.CSharp.Builder.ISourceManager.NestedStructuresAddAfterAsync*"></a>
+  <h4 id="CodeFactory_WinVs_Models_CSharp_Builder_ISourceManager_NestedStructuresAddAfterAsync_System_String_" data-uid="CodeFactory.WinVs.Models.CSharp.Builder.ISourceManager.NestedStructuresAddAfterAsync(System.String)">NestedStructuresAddAfterAsync(string)</h4>
+  <div class="markdown level1 summary"><p>Add the provided syntax after the nested structures definitions.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task NestedStructuresAddAfterAsync(string syntax)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">syntax</span></td>
+        <td><p>Target syntax to be added.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></td>
+        <td><p>Thrown if either the source or the container is null after updating.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="CodeFactory_WinVs_Models_CSharp_Builder_ISourceManager_NestedStructuresAddBeforeAsync_" data-uid="CodeFactory.WinVs.Models.CSharp.Builder.ISourceManager.NestedStructuresAddBeforeAsync*"></a>
+  <h4 id="CodeFactory_WinVs_Models_CSharp_Builder_ISourceManager_NestedStructuresAddBeforeAsync_System_String_" data-uid="CodeFactory.WinVs.Models.CSharp.Builder.ISourceManager.NestedStructuresAddBeforeAsync(System.String)">NestedStructuresAddBeforeAsync(string)</h4>
+  <div class="markdown level1 summary"><p>Add the provided syntax before the nested structures definitions.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task NestedStructuresAddBeforeAsync(string syntax)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">syntax</span></td>
+        <td><p>Target syntax to be added.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></td>
+        <td><p>Thrown if either the source or the container is null after updating.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="CodeFactory_WinVs_Models_CSharp_Builder_ISourceManager_PropertiesAddAfterAsync_" data-uid="CodeFactory.WinVs.Models.CSharp.Builder.ISourceManager.PropertiesAddAfterAsync*"></a>
+  <h4 id="CodeFactory_WinVs_Models_CSharp_Builder_ISourceManager_PropertiesAddAfterAsync_System_String_" data-uid="CodeFactory.WinVs.Models.CSharp.Builder.ISourceManager.PropertiesAddAfterAsync(System.String)">PropertiesAddAfterAsync(string)</h4>
+  <div class="markdown level1 summary"><p>Add the provided syntax after the property definitions.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task PropertiesAddAfterAsync(string syntax)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">syntax</span></td>
+        <td><p>Target syntax to be added.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></td>
+        <td><p>Thrown if either the source or the container is null after updating.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="CodeFactory_WinVs_Models_CSharp_Builder_ISourceManager_PropertiesAddBeforeAsync_" data-uid="CodeFactory.WinVs.Models.CSharp.Builder.ISourceManager.PropertiesAddBeforeAsync*"></a>
+  <h4 id="CodeFactory_WinVs_Models_CSharp_Builder_ISourceManager_PropertiesAddBeforeAsync_System_String_" data-uid="CodeFactory.WinVs.Models.CSharp.Builder.ISourceManager.PropertiesAddBeforeAsync(System.String)">PropertiesAddBeforeAsync(string)</h4>
+  <div class="markdown level1 summary"><p>Add the provided syntax before the property definitions.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task PropertiesAddBeforeAsync(string syntax)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">syntax</span></td>
+        <td><p>Target syntax to be added.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></td>
+        <td><p>Thrown if either the source or the container is null after updating.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="CodeFactory_WinVs_Models_CSharp_Builder_ISourceManager_SourceAddToBeginningAsync_" data-uid="CodeFactory.WinVs.Models.CSharp.Builder.ISourceManager.SourceAddToBeginningAsync*"></a>
+  <h4 id="CodeFactory_WinVs_Models_CSharp_Builder_ISourceManager_SourceAddToBeginningAsync_System_String_" data-uid="CodeFactory.WinVs.Models.CSharp.Builder.ISourceManager.SourceAddToBeginningAsync(System.String)">SourceAddToBeginningAsync(string)</h4>
+  <div class="markdown level1 summary"><p>Adds the provided syntax to the beginning of the source file.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task SourceAddToBeginningAsync(string syntax)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">syntax</span></td>
+        <td><p>Target syntax to be added.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></td>
+        <td><p>Thrown if either the source or the container is null after updating.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="CodeFactory_WinVs_Models_CSharp_Builder_ISourceManager_SourceAddToEndAsync_" data-uid="CodeFactory.WinVs.Models.CSharp.Builder.ISourceManager.SourceAddToEndAsync*"></a>
+  <h4 id="CodeFactory_WinVs_Models_CSharp_Builder_ISourceManager_SourceAddToEndAsync_System_String_" data-uid="CodeFactory.WinVs.Models.CSharp.Builder.ISourceManager.SourceAddToEndAsync(System.String)">SourceAddToEndAsync(string)</h4>
+  <div class="markdown level1 summary"><p>Adds the provided syntax to the end of the source file.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task SourceAddToEndAsync(string syntax)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">syntax</span></td>
+        <td><p>Target syntax to be added.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></td>
+        <td><p>Thrown if either the source or the container is null after updating.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="CodeFactory_WinVs_Models_CSharp_Builder_ISourceManager_UsingStatementsAddAfterAsync_" data-uid="CodeFactory.WinVs.Models.CSharp.Builder.ISourceManager.UsingStatementsAddAfterAsync*"></a>
+  <h4 id="CodeFactory_WinVs_Models_CSharp_Builder_ISourceManager_UsingStatementsAddAfterAsync_System_String_" data-uid="CodeFactory.WinVs.Models.CSharp.Builder.ISourceManager.UsingStatementsAddAfterAsync(System.String)">UsingStatementsAddAfterAsync(string)</h4>
+  <div class="markdown level1 summary"><p>Adds the provided syntax before the first using statement definition.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task UsingStatementsAddAfterAsync(string syntax)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">syntax</span></td>
+        <td><p>Target syntax to be added</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></td>
+        <td><p>Thrown if either the source or the container is null after updating.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="CodeFactory_WinVs_Models_CSharp_Builder_ISourceManager_UsingStatementsAddBeforeAsync_" data-uid="CodeFactory.WinVs.Models.CSharp.Builder.ISourceManager.UsingStatementsAddBeforeAsync*"></a>
+  <h4 id="CodeFactory_WinVs_Models_CSharp_Builder_ISourceManager_UsingStatementsAddBeforeAsync_System_String_" data-uid="CodeFactory.WinVs.Models.CSharp.Builder.ISourceManager.UsingStatementsAddBeforeAsync(System.String)">UsingStatementsAddBeforeAsync(string)</h4>
+  <div class="markdown level1 summary"><p>Adds the provided syntax before the first using statement definition.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task UsingStatementsAddBeforeAsync(string syntax)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">syntax</span></td>
+        <td><p>Target syntax to be added</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></td>
+        <td><p>Thrown if either the source or the container is null after updating.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+</article>
+                </div>
+
+                <div class="copyright-footer">
+                    <span>&#169; CodeFactory, LLC. All rights reserved.</span>
+                </div>
+            </main>
+        </div>
+
+
+        <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+        <script type="text/javascript" src="../styles/jquery.twbsPagination.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/mark.js@8.11.1/dist/jquery.mark.min.js"></script>
+        <script type="text/javascript" src="../styles/url.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/anchor-js@5.0.0/anchor.min.js"></script>
+        <script type="text/javascript" src="../styles/docfx.js"></script>
+        <script type="text/javascript" src="../styles/main.js"></script>
+        <script type="text/javascript" src="../styles/singulink.js"></script>    </body>
+</html>
