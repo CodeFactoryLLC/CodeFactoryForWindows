@@ -23,12 +23,12 @@ namespace CodeFactory.WinVs.Loader
         /// <summary>
         /// The maximum version of the SDK that can be loaded and used.
         /// </summary>
-        public const string MaxVersion = "2.23149.0.1";
+        public const string MaxVersion = "2.23157.0.1";
 
         /// <summary>
         /// The target version of the NuGet package this SDK is deployed from.
         /// </summary>
-        public const string NuGetSdkVersion = "2.23149.1";
+        public const string NuGetSdkVersion = "2.23157.1-PreRelease";
 
         /// <summary>
         /// The name of the assembly type for the CodeFactory SDK version attribute.

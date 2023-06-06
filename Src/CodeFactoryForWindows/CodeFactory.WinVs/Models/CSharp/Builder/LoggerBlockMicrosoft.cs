@@ -10,8 +10,14 @@ namespace CodeFactory.WinVs.Models.CSharp.Builder
     /// </summary>
     public class LoggerBlockMicrosoft : BaseLoggerBlock
     {
-        public LoggerBlockMicrosoft(string fieldName, string traceMethodName, string debugMethodName, string informationMethodName, string warningMethodName, string errorMethodName, string criticalMethodName) 
-            : base(fieldName, "LogTrace", "LogDebug", "LogInformation", "LogWarning", "LogError", "LogCritical")
+        /// <summary>
+        /// Creates a new instance of the <see cref="LoggerBlockMicrosoft"/>
+        /// </summary>
+        /// <param name="fieldName">The name of the logger field.</param>
+        public LoggerBlockMicrosoft(string fieldName) 
+            : base(fieldName, "LogTrace", "LogDebug",
+                "LogInformation", "LogWarning",
+                "LogError", "LogCritical")
         {
             //Intentionally blank
         }
@@ -23,7 +29,7 @@ namespace CodeFactory.WinVs.Models.CSharp.Builder
         /// <param name="message">the target message for logging.</param>
         /// <param name="isFormattedMessage">optional parameter that determines if the string uses a $ formatted string for the message with double quotes in the formatted output.</param>
         /// <param name="exceptionName">Optional parameter to pass the exception field name to be included with the logging.</param>
-        /// <returns>The formatted logging Name to be Generateed. If no message is provided will return null.</returns>
+        /// <returns>The formatted logging Name to be Generated. If no message is provided will return null.</returns>
         public override string GenerateLogging(LogLevel level, string message, bool isFormattedMessage = false, string exceptionName = null)
         {
             if (string.IsNullOrEmpty(message)) return null;

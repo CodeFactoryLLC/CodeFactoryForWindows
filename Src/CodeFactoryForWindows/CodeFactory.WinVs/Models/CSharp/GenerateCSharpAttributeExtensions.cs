@@ -20,7 +20,14 @@ namespace CodeFactory.WinVs.Models.CSharp
         /// <returns>The formatted attribute signature or null if data was missing to create the attribute.</returns>
         public static string GenerateCSharpAttributeSignature(this CsAttribute source, NamespaceManager manager = null, List<MapNamespace> mappedNamespaces = null)
         {
-            return source == null || !source.IsLoaded ? (string)null : (!source.HasParameters ? "[" + source.Type.GenerateCSharpTypeName(manager, mappedNamespaces) + "()]" : "[" + source.Type.GenerateCSharpTypeName(manager, mappedNamespaces) + source.Parameters.GenerateCSharpAttributeParametersSignature() + "]");
+            string formattedSyntax = null;
+
+            if(source == null || !source.IsLoaded) return formattedSyntax;
+            formattedSyntax = source.HasParameters == false
+                ? $"[{source.Type.GenerateCSharpTypeName(manager, mappedNamespaces)}()]"
+                : $"[{source.Type.GenerateCSharpTypeName(manager, mappedNamespaces)}{source.Parameters.GenerateCSharpAttributeParametersSignature()}]";
+
+            return formattedSyntax;
         }
 
         /// <summary>
@@ -31,7 +38,7 @@ namespace CodeFactory.WinVs.Models.CSharp
         /// <param name="mappedNamespaces">Optional parameter that provides namespaces to be mapped to.</param>
         /// <returns>Fully formatted syntax for the attribute.</returns>
         public static IEnumerable<string> GenerateCSharpAttributeDeclarationEnumerator(this IReadOnlyList<CsAttribute> source,
-            NamespaceManager manager = null,List<MapNamespace> mapNamespaces = null)
+            NamespaceManager manager = null,List<MapNamespace> mappedNamespaces = null)
         {
             //No documentation was found for the model, stop the enumeration.
             if (source == null) yield break;
@@ -45,7 +52,7 @@ namespace CodeFactory.WinVs.Models.CSharp
                 if (attributeData == null) continue;
                 if (!attributeData.IsLoaded) continue;
 
-                var declaration = attributeData.GenerateCSharpAttributeSignature(manager);
+                var declaration = attributeData.GenerateCSharpAttributeSignature(manager,mappedNamespaces);
 
                 if (string.IsNullOrEmpty(declaration)) continue;
 
@@ -70,7 +77,9 @@ namespace CodeFactory.WinVs.Models.CSharp
             foreach (var sourceParameter in source)
             {
                 currentParameter++;
-                string parameter = !sourceParameter.HasNamedParameter ? $"{sourceParameter.Value.GenerateCSharpAttributeParameterValueSignature()}" : $"{sourceParameter.Name} = {sourceParameter.Value.GenerateCSharpAttributeParameterValueSignature()}";
+                string parameter = sourceParameter.HasNamedParameter == false 
+                    ? $"{sourceParameter.Value.GenerateCSharpAttributeParameterValueSignature()}" 
+                    : $"{sourceParameter.Name} = {sourceParameter.Value.GenerateCSharpAttributeParameterValueSignature()}";
 
                 attributeParameterSignature.Append(parameter);
                 if (totalParameters > currentParameter) attributeParameterSignature.Append(", ");
@@ -91,7 +100,9 @@ namespace CodeFactory.WinVs.Models.CSharp
             if (source == null) return null;
 
             if (source.ParameterKind != AttributeParameterKind.Array)
-                return source.TypeValue.GenerateCSharpValueSyntax(source.Value);
+                return source.ParameterKind == AttributeParameterKind.Enum
+                    ? source.EnumValue 
+                    : source.TypeValue.GenerateCSharpValueSyntax(source.Value);
 
             StringBuilder attributeValueSignature = new StringBuilder($"{Symbols.MultipleStatementStart}");
 

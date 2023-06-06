@@ -38,7 +38,7 @@ namespace CodeFactory.WinVs.Models.CSharp.Builder
         /// <summary>
         /// Generates the block
         /// </summary>
-        /// <param name="multipleSyntax">Mutiple sytnax statements has been provided to be used by the  block.</param>
+        /// <param name="multipleSyntax">Multiple syntax statements has been provided to be used by the  block.</param>
         /// <param name="memberName">Optional parameter that determines the target member the  block is implemented in.</param>
         /// <returns>Returns the generated  block</returns>
         public string GenerateBlock(IEnumerable<NamedSyntax> multipleSyntax, string memberName = null)
@@ -50,12 +50,12 @@ namespace CodeFactory.WinVs.Models.CSharp.Builder
         /// Generates the block
         /// </summary>
         /// <param name="syntax">Syntax to be injected into the block.</param>
-        /// <param name="multipleSyntax">Mutiple sytnax statements has been provided to be used by the block.</param>
+        /// <param name="multipleSyntax">Multiple syntax statements has been provided to be used by the block.</param>
         /// <param name="memberName">Optional parameter that determines the target member the  block is implemented in.</param>
         /// <returns>Returns the generated  block</returns>
-        public string GenerateBlock(string sytnax, IEnumerable<NamedSyntax> multipleSyntax, string memberName = null)
+        public string GenerateBlock(string syntax, IEnumerable<NamedSyntax> multipleSyntax, string memberName = null)
         { 
-            return BuildBlock(sytnax, multipleSyntax, memberName);
+            return BuildBlock(syntax, multipleSyntax, memberName);
         }
 
 
@@ -64,10 +64,10 @@ namespace CodeFactory.WinVs.Models.CSharp.Builder
         /// Generates the block
         /// </summary>
         /// <param name="syntax">Syntax to be injected into the block, optional parameter.</param>
-        /// <param name="multipleSyntax">Mutiple sytnax statements has been provided to be used by the block, optional parameter.</param>
+        /// <param name="multipleSyntax">Multiple syntax statements has been provided to be used by the block, optional parameter.</param>
         /// <param name="memberName">Optional parameter that determines the target member the  block is implemented in.</param>
         /// <returns>Returns the generated  block</returns>
-        protected abstract string BuildBlock(string sytnax = null, IEnumerable<NamedSyntax> multipleSyntax = null, string memberName = null);
+        protected abstract string BuildBlock(string syntax = null, IEnumerable<NamedSyntax> multipleSyntax = null, string memberName = null);
 
     }
 }

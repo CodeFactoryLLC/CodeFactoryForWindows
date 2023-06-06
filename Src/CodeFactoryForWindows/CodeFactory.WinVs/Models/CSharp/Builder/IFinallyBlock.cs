@@ -32,7 +32,7 @@ namespace CodeFactory.WinVs.Models.CSharp.Builder
         /// <summary>
         /// Generates the finally block
         /// </summary>
-        /// <param name="multipleSyntax">Mutiple sytnax statements has been provided to be used by the finally block.</param>
+        /// <param name="multipleSyntax">Multiple syntax statements has been provided to be used by the finally block.</param>
         /// <param name="memberName">Optional parameter that determines the target member the finally block is implemented in.</param>
         /// <returns>Returns the generated finally block</returns>
         string GenerateFinallyBlock(IEnumerable<NamedSyntax> multipleSyntax, string memberName = null);
@@ -41,9 +41,9 @@ namespace CodeFactory.WinVs.Models.CSharp.Builder
         /// Generates the Finally block
         /// </summary>
         /// <param name="syntax">Syntax to be injected into the Finally block.</param>
-        /// <param name="multipleSyntax">Mutiple sytnax statements has been provided to be used by the Finally block.</param>
+        /// <param name="multipleSyntax">Multiple syntax statements has been provided to be used by the Finally block.</param>
         /// <param name="memberName">Optional parameter that determines the target member the finally block is implemented in.</param>
         /// <returns>Returns the generated finally block</returns>
-        string GenerateFinallyBlock(string sytnax, IEnumerable<NamedSyntax> multipleSyntax, string memberName = null);
+        string GenerateFinallyBlock(string syntax, IEnumerable<NamedSyntax> multipleSyntax, string memberName = null);
     }
 }

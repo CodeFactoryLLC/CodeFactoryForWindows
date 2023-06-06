@@ -55,12 +55,12 @@ namespace CodeFactory.WinVs.Models.CSharp.Builder
         /// <summary>
         /// Generates the finally block
         /// </summary>
-        /// <param name="multipleSyntax">Mutiple sytnax statements has been provided to be used by the finally block.</param>
+        /// <param name="multipleSyntax">Multiple syntax statements has been provided to be used by the finally block.</param>
         /// <param name="memberName">Optional parameter that determines the target member the finally block is implemented in.</param>
         /// <returns>Returns the generated finally block</returns>
         public string GenerateFinallyBlock(IEnumerable<NamedSyntax> multipleSyntax, string memberName = null)
         {
-            return BuildFinallyBlock(mutipleSyntax: multipleSyntax);
+            return BuildFinallyBlock(multipleSyntax: multipleSyntax);
         }
 
 
@@ -68,22 +68,22 @@ namespace CodeFactory.WinVs.Models.CSharp.Builder
         /// Generates the finally block
         /// </summary>
         /// <param name="syntax">Syntax to be injected into the finally block.</param>
-        /// <param name="multipleSyntax">Mutiple sytnax statements has been provided to be used by the finally block.</param>
+        /// <param name="multipleSyntax">Multiple syntax statements has been provided to be used by the finally block.</param>
         /// <param name="memberName">Optional parameter that determines the target member the finally block is implemented in.</param>
         /// <returns>Returns the generated finally block</returns>
-        public string GenerateFinallyBlock(string sytnax, IEnumerable<NamedSyntax> multipleSyntax, string memberName = null)
+        public string GenerateFinallyBlock(string syntax, IEnumerable<NamedSyntax> multipleSyntax, string memberName = null)
         {
-            return BuildFinallyBlock(sytnax, multipleSyntax);
+            return BuildFinallyBlock(syntax, multipleSyntax);
         }
 
         /// <summary>
         /// Builds the finally block
         /// </summary>
         /// <param name="syntax">Syntax to be injected into the finally block, optional parameter.</param>
-        /// <param name="multipleSyntax">Mutiple sytnax statements has been provided to be used by the finally block,optional parameter.</param>
+        /// <param name="multipleSyntax">Multiple syntax statements has been provided to be used by the finally block,optional parameter.</param>
         /// <param name="memberName">Optional parameter that determines the target member the finally block is implemented in.</param>
         /// <returns>Returns the generated finally block</returns>
-        protected abstract string BuildFinallyBlock(string syntax = null, IEnumerable<NamedSyntax> mutipleSyntax = null, string memberName = null);
+        protected abstract string BuildFinallyBlock(string syntax = null, IEnumerable<NamedSyntax> multipleSyntax = null, string memberName = null);
 
     }
 }

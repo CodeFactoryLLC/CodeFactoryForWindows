@@ -12,8 +12,8 @@ namespace CodeFactory.WinVs.Models.CSharp.Builder
         /// <summary>
         /// Creates a instance of the code block.
         /// </summary>
-        /// <param name="loggerBlock">Optional parameter that provides the loggerblock.</param>
-        FinallyBlockStandard(ILoggerBlock loggerBlock = null):base(loggerBlock) 
+        /// <param name="loggerBlock">Optional parameter that provides the logger block.</param>
+        public FinallyBlockStandard(ILoggerBlock loggerBlock = null):base(loggerBlock) 
         { 
             //intentionally blank
         }
@@ -22,9 +22,9 @@ namespace CodeFactory.WinVs.Models.CSharp.Builder
         /// Builds the finally block
         /// </summary>
         /// <param name="syntax">Syntax to be injected into the finally block, optional parameter.</param>
-        /// <param name="multipleSyntax">Mutiple sytnax statements has been provided to be used by the finally block,optional parameter.</param>
+        /// <param name="multipleSyntax">Multiple syntax statements has been provided to be used by the finally block,optional parameter.</param>
         /// <returns>Returns the generated finally block</returns>
-        protected override string BuildFinallyBlock(string syntax = null, IEnumerable<NamedSyntax> mutipleSyntax = null, string memberName = null)
+        protected override string BuildFinallyBlock(string syntax = null, IEnumerable<NamedSyntax> multipleSyntax = null, string memberName = null)
         {
             SourceFormatter formatter = new SourceFormatter();
 
@@ -38,8 +38,9 @@ namespace CodeFactory.WinVs.Models.CSharp.Builder
             }
             else
             {
-                if(string.IsNullOrEmpty(memberName)) formatter.AppendCodeLine(1,"//TODO:Implement finally logic");
-                else formatter.AppendCodeLine(1, $"//TODO:Implement finally logic for '{memberName}'");
+                formatter.AppendCodeLine(1, string.IsNullOrEmpty(memberName)
+                        ? "//TODO:Implement finally logic"
+                        : $"//TODO:Implement finally logic for '{memberName}'");
             }
             formatter.AppendCodeLine(0, "}");
             return formatter.ReturnSource();

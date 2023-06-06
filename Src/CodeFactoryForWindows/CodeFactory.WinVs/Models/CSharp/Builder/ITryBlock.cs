@@ -42,7 +42,7 @@ namespace CodeFactory.WinVs.Models.CSharp.Builder
         /// <summary>
         /// Generates the try block
         /// </summary>
-        /// <param name="multipleSyntax">Mutiple sytnax statements has been provided to be used by the try block.</param>
+        /// <param name="multipleSyntax">Multiple syntax statements has been provided to be used by the try block.</param>
         /// <param name="memberName">Optional parameter that determines the target member the try block is implemented in.</param>
         /// <returns>Returns the generated try block</returns>
         string GenerateTryBlock(IEnumerable < NamedSyntax> multipleSyntax, string memberName = null);
@@ -51,9 +51,9 @@ namespace CodeFactory.WinVs.Models.CSharp.Builder
         /// Generates the Try block
         /// </summary>
         /// <param name="syntax">Syntax to be injected into the Try block.</param>
-        /// <param name="multipleSyntax">Mutiple sytnax statements has been provided to be used by the Try block.</param>
+        /// <param name="multipleSyntax">Multiple syntax statements has been provided to be used by the Try block.</param>
         /// <param name="memberName">Optional parameter that determines the target member the try block is implemented in.</param>
         /// <returns>Returns the generated try block</returns>
-        string GenerateTryBlock(string sytnax, IEnumerable<NamedSyntax> multipleSyntax, string memberName = null);
+        string GenerateTryBlock(string syntax, IEnumerable<NamedSyntax> multipleSyntax, string memberName = null);
     }
 }

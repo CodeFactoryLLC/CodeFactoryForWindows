@@ -27,7 +27,7 @@ namespace CodeFactory.WinVs.Models.CSharp.Builder
         /// <summary>
         /// Generates the block
         /// </summary>
-        /// <param name="multipleSyntax">Mutiple sytnax statements has been provided to be used by the  block.</param>
+        /// <param name="multipleSyntax">Multiple syntax statements has been provided to be used by the  block.</param>
         /// <param name="memberName">Optional parameter that determines the target member the  block is implemented in.</param>
         /// <returns>Returns the generated  block</returns>
         string GenerateBlock(IEnumerable<NamedSyntax> multipleSyntax, string memberName = null);
@@ -36,9 +36,9 @@ namespace CodeFactory.WinVs.Models.CSharp.Builder
         /// Generates the block
         /// </summary>
         /// <param name="syntax">Syntax to be injected into the block.</param>
-        /// <param name="multipleSyntax">Mutiple sytnax statements has been provided to be used by the block.</param>
+        /// <param name="multipleSyntax">Multiple syntax statements has been provided to be used by the block.</param>
         /// <param name="memberName">Optional parameter that determines the target member the  block is implemented in.</param>
         /// <returns>Returns the generated  block</returns>
-        string GenerateBlock(string sytnax,IEnumerable<NamedSyntax> multipleSyntax, string memberName = null);
+        string GenerateBlock(string syntax,IEnumerable<NamedSyntax> multipleSyntax, string memberName = null);
     }
 }

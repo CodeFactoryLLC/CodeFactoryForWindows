@@ -21,7 +21,8 @@ namespace CodeFactory.WinVs.Models.CSharp
         public static string GenerateCSharpInterfaceEventDeclaration(this CsEvent source, NamespaceManager manager = null,
             List<MapNamespace> mappedNamespaces = null, string namePrefix = null, string nameSuffix = null)
         {
-            return source.GenerateCSharpEventDeclaration(manager,mappedNamespaces, false, CsSecurity.Unknown, false, false,namePrefix,nameSuffix);
+            return source.GenerateCSharpEventDeclaration(manager, mappedNamespaces, namePrefix: namePrefix,
+                nameSuffix: nameSuffix);
         }
 
         /// <summary>
@@ -34,16 +35,23 @@ namespace CodeFactory.WinVs.Models.CSharp
         /// <param name="source">The source <see cref="CsEvent"/> model to generate.</param>
         /// <param name="manager">Namespace manager used to format type names.This is an optional parameter.</param>
         /// <param name="mappedNamespaces">Optional parameter that provides namespaces to be mapped to.</param>
+        /// <param name="eventName">Optional parameter that will set the event name to the provided name, default is null.</param>
         /// <param name="includeSecurity">Includes the security scope which was defined in the model.</param>
         /// <param name="eventSecurity">Optional parameter that sets the target security scope for the event.</param>
         /// <param name="includeKeywords">Optional parameter that determines if it will include all keywords assigned to the source model, default is false.</param>
         /// <param name="includeAbstractKeyword">Optional parameter that determines if it will include the definition for the abstract keyword in the definition if it is defined. default is false.</param>
-        /// <param name="namePrefix">Optional prameter that determines if the name will have a prefix assigned to it, default is null.</param>
+        /// <param name="overrideKeyword">Optional flag that determines if the override keyword is added to the event, default is false.</param>
+        /// <param name="namePrefix">Optional parameter that determines if the name will have a prefix assigned to it, default is null.</param>
         /// <param name="nameSuffix">Optional parameter that determines if the name will have a prefix assigned to it, default is null.</param>
+        /// <param name="abstractKeyword">Optional flag that determines if the abstract keyword is added to the event, default is false.</param>
+        /// <param name="sealedKeyword">Optional flag that determines if the sealed keyword is added to the event, default is false.</param>
+        /// <param name="staticKeyword">Optional flag that determines if the static keyword is added to the event, default is false.</param>
+        /// <param name="virtualKeyword">Optional flag that determines if the virtual keyword is added to the event, default is false.</param>
         /// <returns>Fully formatted event definition or null if the event data could not be generated.</returns>
         public static string GenerateCSharpEventDeclaration(this CsEvent source, NamespaceManager manager = null, List<MapNamespace> mappedNamespaces = null,
-            bool includeSecurity = true, CsSecurity eventSecurity = CsSecurity.Unknown,
-           bool includeKeywords = true, bool includeAbstractKeyword = false, string namePrefix = null, string nameSuffix = null)
+            string eventName = null, bool includeSecurity = true, CsSecurity eventSecurity = CsSecurity.Unknown,
+           bool includeKeywords = true, bool includeAbstractKeyword = false, bool abstractKeyword = false, bool sealedKeyword = false,
+            bool staticKeyword = false, bool virtualKeyword = false, bool overrideKeyword = false, string namePrefix = null, string nameSuffix = null)
         {
             if (source == null) return null;
             if (!source.IsLoaded) return null;
@@ -60,14 +68,15 @@ namespace CodeFactory.WinVs.Models.CSharp
 
             if (includeKeywords)
             {
-                if (source.IsStatic) eventFormatting.Append($"{Keywords.Static} ");
-                if (includeAbstractKeyword & source.IsAbstract) eventFormatting.Append($"{Keywords.Abstract} ");
-                if (source.IsOverride) eventFormatting.Append($"{Keywords.Override} ");
-                if (source.IsVirtual) eventFormatting.Append($"{Keywords.Virtual} ");
+                if (source.IsStatic | staticKeyword) eventFormatting.Append($"{Keywords.Static} ");
+                if (source.IsSealed | sealedKeyword) eventFormatting.Append($"{Keywords.Sealed} ");
+                if (includeAbstractKeyword & (source.IsAbstract | abstractKeyword)) eventFormatting.Append($"{Keywords.Abstract} ");
+                if (source.IsOverride |overrideKeyword ) eventFormatting.Append($"{Keywords.Override} ");
+                if (source.IsVirtual | virtualKeyword) eventFormatting.Append($"{Keywords.Virtual} ");
             }
 
-            var eventName = source.Name.GenerateCSharpFormattedName(namePrefix, nameSuffix);
-            eventFormatting.Append($"{Keywords.Event} {source.EventType.GenerateCSharpTypeName(manager,mappedNamespaces)} {eventName};");
+            var name = eventName ?? source.Name.GenerateCSharpFormattedName(namePrefix, nameSuffix);
+            eventFormatting.Append($"{Keywords.Event} {source.EventType.GenerateCSharpTypeName(manager,mappedNamespaces)} {name};");
 
             return eventFormatting.ToString();
         }

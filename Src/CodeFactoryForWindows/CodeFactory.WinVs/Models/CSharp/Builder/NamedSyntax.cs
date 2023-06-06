@@ -16,8 +16,8 @@ namespace CodeFactory.WinVs.Models.CSharp.Builder
         /// <summary>
         /// Creates a new instance of <see cref="NamedSyntax"/>
         /// </summary>
-        /// <param name="name">The name to be used to identify the sytnax.</param>
-        /// <param name="syntax">Sytnax used to be used in blocks or builders.</param>
+        /// <param name="name">The name to be used to identify the syntax.</param>
+        /// <param name="syntax">syntax used to be used in blocks or builders.</param>
         public NamedSyntax(string name, string syntax)
         {
             _name = name;
@@ -25,20 +25,20 @@ namespace CodeFactory.WinVs.Models.CSharp.Builder
         }
 
         /// <summary>
-        /// The name to be used to identify the sytnax.
+        /// The name to be used to identify the syntax.
         /// </summary>
         public string Name => _name;
 
         /// <summary>
-        /// Sytnax used to be used in blocks or builders.
+        /// syntax used to be used in blocks or builders.
         /// </summary>
         public string Syntax => _syntax;
 
         /// <summary>
         /// Creates a new instance of <see cref="NamedSyntax"/>
         /// </summary>
-        /// <param name="name">The name to be used to identify the sytnax.</param>
-        /// <param name="syntax">Sytnax used to be used in blocks or builders.</param>
+        /// <param name="name">The name to be used to identify the syntax.</param>
+        /// <param name="syntax">syntax used to be used in blocks or builders.</param>
         public static NamedSyntax Create(string name, string syntax)
         {
             return new NamedSyntax(name, syntax);

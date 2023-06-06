@@ -14,8 +14,8 @@ namespace CodeFactory.WinVs.Models.CSharp.Builder
         /// <summary>
         /// Creates a instance of the code block.
         /// </summary>
-        /// <param name="loggerBlock">Optional parameter that provides the loggerblock.</param>
-        CatchBlockStandard(ILoggerBlock loggerBlock = null):base(loggerBlock) 
+        /// <param name="loggerBlock">Optional parameter that provides the logger block.</param>
+        public CatchBlockStandard(ILoggerBlock loggerBlock = null):base(loggerBlock) 
         { 
             //intentionally blank
         }
@@ -25,10 +25,10 @@ namespace CodeFactory.WinVs.Models.CSharp.Builder
         /// Builds the catch block
         /// </summary>
         /// <param name="syntax">Syntax to be injected into the catch block, optional parameter.</param>
-        /// <param name="multipleSyntax">Mutiple sytnax statements has been provided to be used by the catch block,optional parameter.</param>
+        /// <param name="multipleSyntax">Multiple syntax statements has been provided to be used by the catch block,optional parameter.</param>
         /// <param name="memberName">Optional parameter that determines the target member the catch block is implemented in.</param>
         /// <returns>Returns the generated catch block</returns>
-        protected override string BuildCatchBlock(string syntax = null, IEnumerable<NamedSyntax> mutipleSyntax = null, string memberName = null)
+        protected override string BuildCatchBlock(string syntax = null, IEnumerable<NamedSyntax> multipleSyntax = null, string memberName = null)
         {
             SourceFormatter formatter = new SourceFormatter();
 

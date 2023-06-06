@@ -13,9 +13,9 @@ namespace CodeFactory.WinVs.Models.CSharp.Builder
         private readonly ILoggerBlock _loggerBlock;
 
         /// <summary>
-        /// Base constructure for the <see cref="BaseCatchBlock"/>
+        /// Base constructor for the <see cref="BaseCatchBlock"/>
         /// </summary>
-        /// <param name="loggerBlock">Optional parameter that provides the loggerblock.</param>
+        /// <param name="loggerBlock">Optional parameter that provides the logger block.</param>
         protected BaseCatchBlock( ILoggerBlock loggerBlock = null) 
         { 
             _loggerBlock = loggerBlock;
@@ -55,12 +55,12 @@ namespace CodeFactory.WinVs.Models.CSharp.Builder
         /// <summary>
         /// Generates the catch block
         /// </summary>
-        /// <param name="multipleSyntax">Mutiple sytnax statements has been provided to be used by the catch block.</param>
+        /// <param name="multipleSyntax">Multiple syntax statements has been provided to be used by the catch block.</param>
         /// <param name="memberName">Optional parameter that determines the target member the catch block is implemented in.</param>
         /// <returns>Returns the generated catch block</returns>
         public string GenerateCatchBlock(IEnumerable<NamedSyntax> multipleSyntax, string memberName = null)
         {
-            return BuildCatchBlock(mutipleSyntax: multipleSyntax);
+            return BuildCatchBlock(multipleSyntax: multipleSyntax);
         }
 
 
@@ -68,22 +68,22 @@ namespace CodeFactory.WinVs.Models.CSharp.Builder
         /// Generates the catch block
         /// </summary>
         /// <param name="syntax">Syntax to be injected into the catch block.</param>
-        /// <param name="multipleSyntax">Mutiple sytnax statements has been provided to be used by the catch block.</param>
+        /// <param name="multipleSyntax">Multiple syntax statements has been provided to be used by the catch block.</param>
         /// <param name="memberName">Optional parameter that determines the target member the catch block is implemented in.</param>
         /// <returns>Returns the generated catch block</returns>
-        public string GenerateCatchBlock(string sytnax, IEnumerable<NamedSyntax> multipleSyntax, string memberName = null)
+        public string GenerateCatchBlock(string syntax, IEnumerable<NamedSyntax> multipleSyntax, string memberName = null)
         { 
-            return BuildCatchBlock(sytnax, multipleSyntax);
+            return BuildCatchBlock(syntax, multipleSyntax);
         }
 
         /// <summary>
         /// Builds the catch block
         /// </summary>
         /// <param name="syntax">Syntax to be injected into the catch block, optional parameter.</param>
-        /// <param name="multipleSyntax">Mutiple sytnax statements has been provided to be used by the catch block,optional parameter.</param>
+        /// <param name="multipleSyntax">Multiple syntax statements has been provided to be used by the catch block,optional parameter.</param>
         /// <param name="memberName">Optional parameter that determines the target member the catch block is implemented in.</param>
         /// <returns>Returns the generated catch block</returns>
-        protected abstract string BuildCatchBlock(string syntax = null, IEnumerable<NamedSyntax> mutipleSyntax = null, string memberName = null);
+        protected abstract string BuildCatchBlock(string syntax = null, IEnumerable<NamedSyntax> multipleSyntax = null, string memberName = null);
         
     }
 }

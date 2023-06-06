@@ -1,7 +1,4 @@
 ﻿using Microsoft.Extensions.Logging;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace CodeFactory.WinVs.Models.CSharp.Builder
 {
@@ -49,7 +46,7 @@ namespace CodeFactory.WinVs.Models.CSharp.Builder
         public CodeBlockType BlockType => CodeBlockType.Logging;
 
         /// <summary>
-        /// the field name used for Generateing logger Name.
+        /// the field name used for Generating logger Name.
         /// </summary>
         public string LoggerFieldName => _fieldName;
 
@@ -130,7 +127,7 @@ namespace CodeFactory.WinVs.Models.CSharp.Builder
         /// <param name="message">the target message for logging.</param>
         /// <param name="isFormattedMessage">optional parameter that determines if the string uses a $ formatted string for the message with double quotes in the formatted output.</param>
         /// <param name="exceptionName">Optional parameter to pass the exception field name to be included with the logging.</param>
-        /// <returns>The formatted logging Name to be Generateed. If no message is provided will return null.</returns>
+        /// <returns>The formatted logging Name to be Generated. If no message is provided will return null.</returns>
         public abstract string GenerateLogging(LogLevel level, string message, bool isFormattedMessage = false, string exceptionName = null);
 
 

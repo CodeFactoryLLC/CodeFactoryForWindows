@@ -13,10 +13,9 @@ namespace CodeFactory.WinVs.Models.CSharp.Builder
         /// <summary>
         /// Initializes the bounds check block.
         /// </summary>
-        /// <param name="name">The unique name that identifies the type of bounds check being implemented.</param>
         /// <param name="ignoreWhenDefaultValueIsSet">Flag that determines if the bounds checking should be ignored if a default value is set.</param>
         /// <param name="loggerBlock">Logger block used with bounds check logic.</param>
-        public BoundsCheckBlockNull(string name, bool ignoreWhenDefaultValueIsSet, ILoggerBlock loggerBlock) : base(nameof(BoundsCheckBlockNull), ignoreWhenDefaultValueIsSet, loggerBlock)
+        public BoundsCheckBlockNull(bool ignoreWhenDefaultValueIsSet, ILoggerBlock loggerBlock) : base(nameof(BoundsCheckBlockNull), ignoreWhenDefaultValueIsSet, loggerBlock)
         {
             //Intentionally blank
         }

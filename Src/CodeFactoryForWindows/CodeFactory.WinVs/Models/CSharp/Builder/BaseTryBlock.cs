@@ -71,12 +71,12 @@ namespace CodeFactory.WinVs.Models.CSharp.Builder
         /// <summary>
         /// Generates the try block
         /// </summary>
-        /// <param name="multipleSyntax">Mutiple sytnax statements has been provided to be used by the try block.</param>
+        /// <param name="multipleSyntax">Multiple syntax statements has been provided to be used by the try block.</param>
         /// <param name="memberName">Optional parameter that determines the target member the try block is implemented in.</param>
         /// <returns>Returns the generated try block</returns>
         public string GenerateTryBlock(IEnumerable<NamedSyntax> multipleSyntax, string memberName = null)
         {
-            return BuildTryBlock(mutipleSyntax: multipleSyntax);
+            return BuildTryBlock(multipleSyntax: multipleSyntax);
         }
 
 
@@ -84,22 +84,22 @@ namespace CodeFactory.WinVs.Models.CSharp.Builder
         /// Generates the try block
         /// </summary>
         /// <param name="syntax">Syntax to be injected into the try block.</param>
-        /// <param name="multipleSyntax">Mutiple sytnax statements has been provided to be used by the try block.</param>
+        /// <param name="multipleSyntax">Multiple syntax statements has been provided to be used by the try block.</param>
         /// <param name="memberName">Optional parameter that determines the target member the try block is implemented in.</param>
         /// <returns>Returns the generated try block</returns>
-        public string GenerateTryBlock(string sytnax, IEnumerable<NamedSyntax> multipleSyntax, string memberName = null)
+        public string GenerateTryBlock(string syntax, IEnumerable<NamedSyntax> multipleSyntax, string memberName = null)
         { 
-            return BuildTryBlock(sytnax, multipleSyntax);
+            return BuildTryBlock(syntax, multipleSyntax);
         }
 
         /// <summary>
         /// Builds the try block
         /// </summary>
         /// <param name="syntax">Syntax to be injected into the try block, optional parameter.</param>
-        /// <param name="multipleSyntax">Mutiple sytnax statements has been provided to be used by the try block,optional parameter.</param>
+        /// <param name="multipleSyntax">Multiple syntax statements has been provided to be used by the try block,optional parameter.</param>
         /// <param name="memberName">Optional parameter that determines the target member the try block is implemented in.</param>
         /// <returns>Returns the generated try block</returns>
-        protected abstract string BuildTryBlock(string syntax = null, IEnumerable<NamedSyntax> mutipleSyntax = null, string memberName = null);
+        protected abstract string BuildTryBlock(string syntax = null, IEnumerable<NamedSyntax> multipleSyntax = null, string memberName = null);
         
     }
 }
