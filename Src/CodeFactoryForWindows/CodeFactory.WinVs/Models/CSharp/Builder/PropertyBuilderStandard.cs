@@ -135,7 +135,7 @@ namespace CodeFactory.WinVs.Models.CSharp.Builder
                 propertyBuilder.Append(setSec != propSec ? $"{setSec.GenerateCSharpKeyword()} set; " : "set; ");
             }
 
-            propertyBuilder.Append("};");
+            propertyBuilder.Append("}");
 
             propertyFormatter.AppendCodeLine(indentLevel,propertyBuilder.ToString());
             propertyFormatter.AppendCodeLine(indentLevel);

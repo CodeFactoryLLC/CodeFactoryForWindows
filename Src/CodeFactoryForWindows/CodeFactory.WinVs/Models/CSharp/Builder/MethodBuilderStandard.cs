@@ -130,7 +130,7 @@ namespace CodeFactory.WinVs.Models.CSharp.Builder
                         .FirstOrDefault((r => r.hasBoundsCheck));
 
                     //if bounds check functionality was generated write it to the method.
-                    if(hasBoundsCheck & syntax != null) methodFormatter.AppendCodeBlock(indentLevel1,boundsCheckSyntax);
+                    if(hasBoundsCheck & boundsCheckSyntax != null) methodFormatter.AppendCodeBlock(indentLevel1,boundsCheckSyntax);
                 }
             }
 
@@ -193,7 +193,7 @@ namespace CodeFactory.WinVs.Models.CSharp.Builder
             {
                 var trySyntax = TryBlock.GenerateTryBlock(syntax, multipleSyntax, formattedMethodName);
 
-                if(!string.IsNullOrEmpty(trySyntax)) methodFormatter.AppendCodeLine(indentLevel1, trySyntax);
+                if(!string.IsNullOrEmpty(trySyntax)) methodFormatter.AppendCodeBlock(indentLevel1, trySyntax);
 
             }
             else

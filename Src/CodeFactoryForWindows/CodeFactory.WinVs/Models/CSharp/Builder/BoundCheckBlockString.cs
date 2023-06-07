@@ -49,7 +49,7 @@ namespace CodeFactory.WinVs.Models.CSharp.Builder
             formatter.AppendCodeLine(1, $"throw new ArgumentException(nameof({checkParameter.Name}));");
             formatter.AppendCodeLine(0, "}");
 
-            return (true, formatter.ReturnSource());
+             return (true, formatter.ReturnSource());
         }
     }
 }
