@@ -381,7 +381,7 @@ namespace CodeFactory.WinVs.Models.CSharp.Builder
             }
             else
             {
-                await this.ContainerAddToBeginningAsync(syntax);
+                await this.ConstructorsAddAfterAsync(syntax);
             }
 
         }
@@ -413,7 +413,7 @@ namespace CodeFactory.WinVs.Models.CSharp.Builder
             }
             else
             {
-                await this.ContainerAddToBeginningAsync(syntax);
+                await this.ConstructorsAddAfterAsync(syntax);
             }
         }
 
