@@ -2,6 +2,12 @@
 
 This project hosts the full SDK that is used by CodeFactory for Windows. 
 
+## Runtime Install Change
+**CodeFactory for Windows Runtime** is a seperate install from the orginial runtime for **CodeFactory for VS2022**. 
+
+You can install this version directly from marketplace.
+- [CodeFactory for Windows](https://marketplace.visualstudio.com/items?itemName=CodeFactoryLLC.CodeFactoryForWindows)
+
 ## Overview
 This repository is the offical home of version 2.0 of CodeFactory. 
 The reason for the change is future planning for the usage of CodeFactory. 
