@@ -9,7 +9,7 @@ namespace CodeFactory.WinVs.Commands
      /// <summary>
     /// Holds the configuration for a target project and any target project folder under the project that are needed in the configuration.
     /// </summary>
-    public class ConfigProject:IConfigGuidance
+    public class ConfigProject:IExternalConfig
     {
         /// <summary>
         /// Backing fields for properties
@@ -19,6 +19,7 @@ namespace CodeFactory.WinVs.Commands
         private ImmutableList<ConfigFolder> _folders = ImmutableList<ConfigFolder>.Empty;
         private ImmutableList<ConfigParameter> _parameters = ImmutableList<ConfigParameter>.Empty;
         private string _guidance;
+        private bool _required = false;
 
         /// <summary>
         /// The configuration name assigned to the project.
@@ -64,6 +65,11 @@ namespace CodeFactory.WinVs.Commands
             get => _guidance;
             set => _guidance = value;
         }
+
+        /// <summary>
+        /// Flag that determines if the folder is required in order for the automation to run.
+        /// </summary>
+        public bool Required { get => _required; set => _required = value; }
 
         /// <summary>
         /// Fluent method that adds a folder to the project source.
@@ -121,6 +127,21 @@ namespace CodeFactory.WinVs.Commands
         public string ParameterValue(string name)
         {
             return string.IsNullOrEmpty(name)? null: _parameters.FirstOrDefault(p => p.Name == name)?.Value;
+        }
+
+        /// <summary>
+        /// Get the values for a parameter that is hosted in the project.
+        /// </summary>
+        /// <param name="name">The name of the parameter to get the value from.</param>
+        /// <returns>The list of values for the parameter or an empty list if not found.</returns>
+        public List<string> ParameterValues(string name)
+        {
+
+            if (string.IsNullOrEmpty(name)) return new List<string>();
+
+            var paramData = _parameters.FirstOrDefault(p => p.Name == name)?.Values;
+
+            return paramData != null ? paramData : new List<string>();
         }
     }
 }

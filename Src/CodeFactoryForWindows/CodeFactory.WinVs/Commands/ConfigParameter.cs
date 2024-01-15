@@ -7,12 +7,16 @@ namespace CodeFactory.WinVs.Commands
     /// <summary>
     /// Configuration information about a target parameter to be used in CodeFactory automation.
     /// </summary>
-    public class ConfigParameter:IConfigGuidance
+    public class ConfigParameter:IExternalConfig
     {
         //Backing fields for properties
         private string _name;
         private string _value;
         private string _guidance;
+        private List<string> _values = new List<string>();
+        private bool _required = false;
+
+        private ParameterType _parameterType = ParameterType.Value;
 
         /// <summary>
         /// Name of the parameter itself.
@@ -33,6 +37,20 @@ namespace CodeFactory.WinVs.Commands
         }
 
         /// <summary>
+        /// Values that are assigned to the parameter.
+        /// </summary>
+        public List<string> Values
+        { 
+            get => _values; 
+            set => _values = value;
+        }
+
+        /// <summary>
+        /// Identification of the type of parameter value that is stored in this parameter.
+        /// </summary>
+        public ParameterType ParameterType { get => _parameterType; set => _parameterType = value; }
+
+        /// <summary>
         /// Instructions for what data is to go into the configuration. 
         /// </summary>
         public string Guidance 
@@ -40,5 +58,10 @@ namespace CodeFactory.WinVs.Commands
             get => _guidance; 
             set => _guidance = value;
         }
+
+        /// <summary>
+        /// Flag that determines if the folder is required in order for the automation to run.
+        /// </summary>
+        public bool Required { get => _required; set => _required = value; }
     }
 }

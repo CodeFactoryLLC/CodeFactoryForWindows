@@ -7,7 +7,7 @@ namespace CodeFactory.WinVs.Commands
     /// <summary>
     /// Configuration information about a target project folder.
     /// </summary>
-    public class ConfigFolder:IConfigGuidance
+    public class ConfigFolder:IExternalConfig
     {
         //Backing fields for properties
         private string _name;

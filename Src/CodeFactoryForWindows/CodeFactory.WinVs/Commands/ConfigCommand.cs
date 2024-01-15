@@ -160,5 +160,20 @@ namespace CodeFactory.WinVs.Commands
         {
             return string.IsNullOrEmpty(name) ? null : _parameters.FirstOrDefault(p => p.Name == name)?.Value;
         }
+
+        /// <summary>
+        /// Get the values for a parameter that is hosted in the command.
+        /// </summary>
+        /// <param name="name">The name of the parameter to get the value from.</param>
+        /// <returns>The list of values for the parameter or an empty list if not found.</returns>
+        public List<string> ParameterValues(string name)
+        {
+
+            if (string.IsNullOrEmpty(name)) return new List<string>();
+
+            var paramData = _parameters.FirstOrDefault(p => p.Name == name)?.Values;
+
+            return paramData != null ? paramData : new List<string>();
+        }
     }
 }
