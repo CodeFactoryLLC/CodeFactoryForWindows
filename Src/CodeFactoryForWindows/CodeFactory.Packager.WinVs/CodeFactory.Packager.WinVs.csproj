@@ -34,6 +34,12 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>CFSigner.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="CodeFactory, Version=2.0.0.0, Culture=neutral, PublicKeyToken=6f4b2344c7d1e83a, processorArchitecture=MSIL">
       <HintPath>..\packages\CodeFactory.2.23151.1-PreRelease\lib\netstandard2.0\CodeFactory.dll</HintPath>
@@ -114,6 +120,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="CFSigner.snk" />
     <None Include="CodeFactoryWinVsSDK.nuspec" />
     <None Include="CodeFactory.WinVs.SDK.targets">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>

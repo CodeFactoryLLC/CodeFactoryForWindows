@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd" >
 	<metadata>
 		<id>CodeFactory.WinVs.SDK</id>
-		<version>2.23160.1-PreRelease</version>
+		<version>2.24224.0.1-PreRelease</version>
 		<title>CodeFactory Software Development Kit for Visual Studio - Windows</title>
 		<authors>CodeFactory, LLC.</authors>
 		<owners>CodeFactory, LLC.</owners>
@@ -10,22 +10,18 @@
 		<requireLicenseAcceptance>true</requireLicenseAcceptance>
 		<description>Software development kit for building CodeFactory automation in Visual Studio - Windows.</description>
 		<releaseNotes>
-			Notes
-			Daily build focused on bug fixes.
+			WPF Updates:
+			- ViewUserControl now imports the current style in visual studio to all standard WPF controls.
 
-			PropertyBuilderStandard Fixes
-			- Extra ; added to the end of property generation removed.
-
-			MethodBuilderStandard Fixes
-			- Fixed generation logic to correctly inject bounds check logic when found.
-			- Fixed formatting of try catch finally logic to correctly indent at the right level.
+			Command Notifications:
+			- Commands will now log notifications to the CodeFactory output window. You can add notifications to any command being built by calling the static class method CommandNotifications.SendCommandNotificationAsync
 		</releaseNotes>
-		<copyright>Copyright © 2023 CodeFactory, LLC.</copyright>
+		<copyright>Copyright © 2024 CodeFactory, LLC.</copyright>
 		<tags>Factory Automation</tags>
 		<dependencies>
-			<dependency id="CodeFactory" version="2.23151.1-PreRelease"/>
-			<dependency id="CodeFactory.WinVs" version="2.23160.1-PreRelease"/>
-			<dependency id="CodeFactory.WinVs.Wpf" version="2.23151.1-PreRelease"/>
+			<dependency id="CodeFactory" version="2.24224.0.1-PreRelease"/>
+			<dependency id="CodeFactory.WinVs" version="2.24224.0.1-PreRelease"/>
+			<dependency id="CodeFactory.WinVs.Wpf" version="2.24224.0.1-PreRelease"/>
 		</dependencies>
 		<icon>CFLogo128.png</icon>
 	</metadata>
