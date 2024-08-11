@@ -41,12 +41,6 @@
     <AssemblyOriginatorKeyFile>CFSigner.snk</AssemblyOriginatorKeyFile>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="CodeFactory, Version=2.0.0.0, Culture=neutral, PublicKeyToken=6f4b2344c7d1e83a, processorArchitecture=MSIL">
-      <HintPath>..\packages\CodeFactory.2.23151.1-PreRelease\lib\netstandard2.0\CodeFactory.dll</HintPath>
-    </Reference>
-    <Reference Include="CodeFactory.WinVs, Version=2.0.0.0, Culture=neutral, PublicKeyToken=6f4b2344c7d1e83a, processorArchitecture=MSIL">
-      <HintPath>..\packages\CodeFactory.WinVs.2.23160.1-PreRelease\lib\netstandard2.0\CodeFactory.WinVs.dll</HintPath>
-    </Reference>
     <Reference Include="MessagePack, Version=2.5.0.0, Culture=neutral, PublicKeyToken=b4a0369545f0a1be, processorArchitecture=MSIL">
       <HintPath>..\packages\MessagePack.2.5.108\lib\netstandard2.0\MessagePack.dll</HintPath>
     </Reference>
@@ -132,6 +126,16 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Images\CFLogo128.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CodeFactory.WinVs\CodeFactory.WinVs.csproj">
+      <Project>{0cc0c774-5146-4c0d-98c0-9a19d31030a1}</Project>
+      <Name>CodeFactory.WinVs</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CodeFactory\CodeFactory.csproj">
+      <Project>{f2c8337f-79ea-4908-824c-d1ad96fafdb6}</Project>
+      <Name>CodeFactory</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\Microsoft.Extensions.Logging.Abstractions.6.0.0\build\Microsoft.Extensions.Logging.Abstractions.targets" Condition="Exists('..\packages\Microsoft.Extensions.Logging.Abstractions.6.0.0\build\Microsoft.Extensions.Logging.Abstractions.targets')" />
