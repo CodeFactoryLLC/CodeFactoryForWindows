@@ -1,0 +1,773 @@
+### YamlMime:ManagedReference
+items:
+- uid: MessagePack.Formatters.ArraySegmentFormatter`1
+  commentId: T:MessagePack.Formatters.ArraySegmentFormatter`1
+  id: ArraySegmentFormatter`1
+  parent: MessagePack.Formatters
+  children:
+  - MessagePack.Formatters.ArraySegmentFormatter`1.#ctor
+  - MessagePack.Formatters.ArraySegmentFormatter`1.Deserialize(MessagePack.MessagePackReader@,MessagePack.MessagePackSerializerOptions)
+  - MessagePack.Formatters.ArraySegmentFormatter`1.Serialize(MessagePack.MessagePackWriter@,System.ArraySegment{`0},MessagePack.MessagePackSerializerOptions)
+  langs:
+  - csharp
+  - vb
+  name: ArraySegmentFormatter<T>
+  nameWithType: ArraySegmentFormatter<T>
+  fullName: MessagePack.Formatters.ArraySegmentFormatter<T>
+  type: Class
+  assemblies:
+  - MessagePack
+  namespace: MessagePack.Formatters
+  syntax:
+    content: 'public sealed class ArraySegmentFormatter<T> : IMessagePackFormatter<ArraySegment<T>>'
+    typeParameters:
+    - id: T
+    content.vb: Public NotInheritable Class ArraySegmentFormatter(Of T) Implements IMessagePackFormatter(Of ArraySegment(Of T))
+  inheritance:
+  - System.Object
+  implements:
+  - MessagePack.Formatters.IMessagePackFormatter{System.ArraySegment{{T}}}
+  inheritedMembers:
+  - System.Object.GetType
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  nameWithType.vb: ArraySegmentFormatter(Of T)
+  fullName.vb: MessagePack.Formatters.ArraySegmentFormatter(Of T)
+  name.vb: ArraySegmentFormatter(Of T)
+- uid: MessagePack.Formatters.ArraySegmentFormatter`1.Serialize(MessagePack.MessagePackWriter@,System.ArraySegment{`0},MessagePack.MessagePackSerializerOptions)
+  commentId: M:MessagePack.Formatters.ArraySegmentFormatter`1.Serialize(MessagePack.MessagePackWriter@,System.ArraySegment{`0},MessagePack.MessagePackSerializerOptions)
+  id: Serialize(MessagePack.MessagePackWriter@,System.ArraySegment{`0},MessagePack.MessagePackSerializerOptions)
+  parent: MessagePack.Formatters.ArraySegmentFormatter`1
+  langs:
+  - csharp
+  - vb
+  name: Serialize(ref MessagePackWriter, ArraySegment<T>, MessagePackSerializerOptions)
+  nameWithType: ArraySegmentFormatter<T>.Serialize(ref MessagePackWriter, ArraySegment<T>, MessagePackSerializerOptions)
+  fullName: MessagePack.Formatters.ArraySegmentFormatter<T>.Serialize(ref MessagePack.MessagePackWriter, System.ArraySegment<T>, MessagePack.MessagePackSerializerOptions)
+  type: Method
+  assemblies:
+  - MessagePack
+  namespace: MessagePack.Formatters
+  summary: Serializes a value.
+  example: []
+  syntax:
+    content: public void Serialize(ref MessagePackWriter writer, ArraySegment<T> value, MessagePackSerializerOptions options)
+    parameters:
+    - id: writer
+      type: MessagePack.MessagePackWriter
+      description: The writer to use when serializing the value.
+    - id: value
+      type: System.ArraySegment{{T}}
+      description: The value to be serialized.
+    - id: options
+      type: MessagePack.MessagePackSerializerOptions
+      description: The serialization settings to use, including the resolver to use to obtain formatters for types that make up the composite type <xref href="System.ArraySegment%7b%600%7d" data-throw-if-not-resolved="false"></xref>.
+    content.vb: Public Sub Serialize(writer As MessagePackWriter, value As ArraySegment(Of T), options As MessagePackSerializerOptions)
+  overload: MessagePack.Formatters.ArraySegmentFormatter`1.Serialize*
+  implements:
+  - MessagePack.Formatters.IMessagePackFormatter{System.ArraySegment{{T}}}.Serialize(MessagePack.MessagePackWriter@,System.ArraySegment{{T}},MessagePack.MessagePackSerializerOptions)
+  nameWithType.vb: ArraySegmentFormatter(Of T).Serialize(MessagePackWriter, ArraySegment(Of T), MessagePackSerializerOptions)
+  fullName.vb: MessagePack.Formatters.ArraySegmentFormatter(Of T).Serialize(MessagePack.MessagePackWriter, System.ArraySegment(Of T), MessagePack.MessagePackSerializerOptions)
+  name.vb: Serialize(MessagePackWriter, ArraySegment(Of T), MessagePackSerializerOptions)
+- uid: MessagePack.Formatters.ArraySegmentFormatter`1.Deserialize(MessagePack.MessagePackReader@,MessagePack.MessagePackSerializerOptions)
+  commentId: M:MessagePack.Formatters.ArraySegmentFormatter`1.Deserialize(MessagePack.MessagePackReader@,MessagePack.MessagePackSerializerOptions)
+  id: Deserialize(MessagePack.MessagePackReader@,MessagePack.MessagePackSerializerOptions)
+  parent: MessagePack.Formatters.ArraySegmentFormatter`1
+  langs:
+  - csharp
+  - vb
+  name: Deserialize(ref MessagePackReader, MessagePackSerializerOptions)
+  nameWithType: ArraySegmentFormatter<T>.Deserialize(ref MessagePackReader, MessagePackSerializerOptions)
+  fullName: MessagePack.Formatters.ArraySegmentFormatter<T>.Deserialize(ref MessagePack.MessagePackReader, MessagePack.MessagePackSerializerOptions)
+  type: Method
+  assemblies:
+  - MessagePack
+  namespace: MessagePack.Formatters
+  summary: Deserializes a value.
+  example: []
+  syntax:
+    content: public ArraySegment<T> Deserialize(ref MessagePackReader reader, MessagePackSerializerOptions options)
+    parameters:
+    - id: reader
+      type: MessagePack.MessagePackReader
+      description: The reader to deserialize from.
+    - id: options
+      type: MessagePack.MessagePackSerializerOptions
+      description: The serialization settings to use, including the resolver to use to obtain formatters for types that make up the composite type <xref href="System.ArraySegment%7b%600%7d" data-throw-if-not-resolved="false"></xref>.
+    return:
+      type: System.ArraySegment{{T}}
+      description: The deserialized value.
+    content.vb: Public Function Deserialize(reader As MessagePackReader, options As MessagePackSerializerOptions) As ArraySegment(Of T)
+  overload: MessagePack.Formatters.ArraySegmentFormatter`1.Deserialize*
+  implements:
+  - MessagePack.Formatters.IMessagePackFormatter{System.ArraySegment{{T}}}.Deserialize(MessagePack.MessagePackReader@,MessagePack.MessagePackSerializerOptions)
+  nameWithType.vb: ArraySegmentFormatter(Of T).Deserialize(MessagePackReader, MessagePackSerializerOptions)
+  fullName.vb: MessagePack.Formatters.ArraySegmentFormatter(Of T).Deserialize(MessagePack.MessagePackReader, MessagePack.MessagePackSerializerOptions)
+  name.vb: Deserialize(MessagePackReader, MessagePackSerializerOptions)
+- uid: MessagePack.Formatters.ArraySegmentFormatter`1.#ctor
+  commentId: M:MessagePack.Formatters.ArraySegmentFormatter`1.#ctor
+  id: '#ctor'
+  parent: MessagePack.Formatters.ArraySegmentFormatter`1
+  langs:
+  - csharp
+  - vb
+  name: ArraySegmentFormatter()
+  nameWithType: ArraySegmentFormatter<T>.ArraySegmentFormatter()
+  fullName: MessagePack.Formatters.ArraySegmentFormatter<T>.ArraySegmentFormatter()
+  type: Constructor
+  assemblies:
+  - MessagePack
+  namespace: MessagePack.Formatters
+  syntax:
+    content: public ArraySegmentFormatter()
+    content.vb: Public Sub New()
+  overload: MessagePack.Formatters.ArraySegmentFormatter`1.#ctor*
+  nameWithType.vb: ArraySegmentFormatter(Of T).New()
+  fullName.vb: MessagePack.Formatters.ArraySegmentFormatter(Of T).New()
+  name.vb: New()
+references:
+- uid: MessagePack.Formatters
+  commentId: N:MessagePack.Formatters
+  isExternal: true
+  href: MessagePack.html
+  name: MessagePack.Formatters
+  nameWithType: MessagePack.Formatters
+  fullName: MessagePack.Formatters
+  spec.csharp:
+  - uid: MessagePack
+    name: MessagePack
+    isExternal: true
+    href: MessagePack.html
+  - name: .
+  - uid: MessagePack.Formatters
+    name: Formatters
+    isExternal: true
+    href: MessagePack.Formatters.html
+  spec.vb:
+  - uid: MessagePack
+    name: MessagePack
+    isExternal: true
+    href: MessagePack.html
+  - name: .
+  - uid: MessagePack.Formatters
+    name: Formatters
+    isExternal: true
+    href: MessagePack.Formatters.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: MessagePack.Formatters.IMessagePackFormatter{System.ArraySegment{{T}}}
+  commentId: T:MessagePack.Formatters.IMessagePackFormatter{System.ArraySegment{`0}}
+  parent: MessagePack.Formatters
+  definition: MessagePack.Formatters.IMessagePackFormatter`1
+  href: MessagePack.Formatters.IMessagePackFormatter-1.html
+  name: IMessagePackFormatter<ArraySegment<T>>
+  nameWithType: IMessagePackFormatter<ArraySegment<T>>
+  fullName: MessagePack.Formatters.IMessagePackFormatter<System.ArraySegment<T>>
+  nameWithType.vb: IMessagePackFormatter(Of ArraySegment(Of T))
+  fullName.vb: MessagePack.Formatters.IMessagePackFormatter(Of System.ArraySegment(Of T))
+  name.vb: IMessagePackFormatter(Of ArraySegment(Of T))
+  spec.csharp:
+  - uid: MessagePack.Formatters.IMessagePackFormatter`1
+    name: IMessagePackFormatter
+    isExternal: true
+    href: MessagePack.Formatters.IMessagePackFormatter-1.html
+  - name: <
+  - uid: System.ArraySegment`1
+    name: ArraySegment
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.arraysegment-1
+  - name: <
+  - name: T
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: MessagePack.Formatters.IMessagePackFormatter`1
+    name: IMessagePackFormatter
+    isExternal: true
+    href: MessagePack.Formatters.IMessagePackFormatter-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.ArraySegment`1
+    name: ArraySegment
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.arraysegment-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: MessagePack.Formatters.IMessagePackFormatter`1
+  commentId: T:MessagePack.Formatters.IMessagePackFormatter`1
+  isExternal: true
+  href: MessagePack.Formatters.IMessagePackFormatter-1.html
+  name: IMessagePackFormatter<T>
+  nameWithType: IMessagePackFormatter<T>
+  fullName: MessagePack.Formatters.IMessagePackFormatter<T>
+  nameWithType.vb: IMessagePackFormatter(Of T)
+  fullName.vb: MessagePack.Formatters.IMessagePackFormatter(Of T)
+  name.vb: IMessagePackFormatter(Of T)
+  spec.csharp:
+  - uid: MessagePack.Formatters.IMessagePackFormatter`1
+    name: IMessagePackFormatter
+    isExternal: true
+    href: MessagePack.Formatters.IMessagePackFormatter-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: MessagePack.Formatters.IMessagePackFormatter`1
+    name: IMessagePackFormatter
+    isExternal: true
+    href: MessagePack.Formatters.IMessagePackFormatter-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.ArraySegment{`0}
+  commentId: T:System.ArraySegment{`0}
+  isExternal: true
+- uid: MessagePack.Formatters.ArraySegmentFormatter`1.Serialize*
+  commentId: Overload:MessagePack.Formatters.ArraySegmentFormatter`1.Serialize
+  isExternal: true
+  href: MessagePack.Formatters.ArraySegmentFormatter-1.html#MessagePack_Formatters_ArraySegmentFormatter_1_Serialize_MessagePack_MessagePackWriter__System_ArraySegment__0__MessagePack_MessagePackSerializerOptions_
+  name: Serialize
+  nameWithType: ArraySegmentFormatter<T>.Serialize
+  fullName: MessagePack.Formatters.ArraySegmentFormatter<T>.Serialize
+  nameWithType.vb: ArraySegmentFormatter(Of T).Serialize
+  fullName.vb: MessagePack.Formatters.ArraySegmentFormatter(Of T).Serialize
+- uid: MessagePack.Formatters.IMessagePackFormatter{System.ArraySegment{{T}}}.Serialize(MessagePack.MessagePackWriter@,System.ArraySegment{{T}},MessagePack.MessagePackSerializerOptions)
+  commentId: M:MessagePack.Formatters.IMessagePackFormatter{System.ArraySegment{`0}}.Serialize(MessagePack.MessagePackWriter@,System.ArraySegment{`0},MessagePack.MessagePackSerializerOptions)
+  parent: MessagePack.Formatters.IMessagePackFormatter{System.ArraySegment{{T}}}
+  definition: MessagePack.Formatters.IMessagePackFormatter`1.Serialize(MessagePack.MessagePackWriter@,`0,MessagePack.MessagePackSerializerOptions)
+  href: MessagePack.Formatters.IMessagePackFormatter-1.html#MessagePack_Formatters_IMessagePackFormatter_1_Serialize_MessagePack_MessagePackWriter___0_MessagePack_MessagePackSerializerOptions_
+  name: Serialize(ref MessagePackWriter, ArraySegment<T>, MessagePackSerializerOptions)
+  nameWithType: IMessagePackFormatter<ArraySegment<T>>.Serialize(ref MessagePackWriter, ArraySegment<T>, MessagePackSerializerOptions)
+  fullName: MessagePack.Formatters.IMessagePackFormatter<System.ArraySegment<T>>.Serialize(ref MessagePack.MessagePackWriter, System.ArraySegment<T>, MessagePack.MessagePackSerializerOptions)
+  nameWithType.vb: IMessagePackFormatter(Of ArraySegment(Of T)).Serialize(MessagePackWriter, ArraySegment(Of T), MessagePackSerializerOptions)
+  fullName.vb: MessagePack.Formatters.IMessagePackFormatter(Of System.ArraySegment(Of T)).Serialize(MessagePack.MessagePackWriter, System.ArraySegment(Of T), MessagePack.MessagePackSerializerOptions)
+  name.vb: Serialize(MessagePackWriter, ArraySegment(Of T), MessagePackSerializerOptions)
+  spec.csharp:
+  - uid: MessagePack.Formatters.IMessagePackFormatter{System.ArraySegment{`0}}.Serialize(MessagePack.MessagePackWriter@,System.ArraySegment{`0},MessagePack.MessagePackSerializerOptions)
+    name: Serialize
+    isExternal: true
+    href: MessagePack.Formatters.IMessagePackFormatter-1.html#MessagePack_Formatters_IMessagePackFormatter_1_Serialize_MessagePack_MessagePackWriter___0_MessagePack_MessagePackSerializerOptions_
+  - name: (
+  - name: ref
+  - name: " "
+  - uid: MessagePack.MessagePackWriter
+    name: MessagePackWriter
+    isExternal: true
+    href: MessagePack.MessagePackWriter.html
+  - name: ','
+  - name: " "
+  - uid: System.ArraySegment`1
+    name: ArraySegment
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.arraysegment-1
+  - name: <
+  - name: T
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: MessagePack.MessagePackSerializerOptions
+    name: MessagePackSerializerOptions
+    isExternal: true
+    href: MessagePack.MessagePackSerializerOptions.html
+  - name: )
+  spec.vb:
+  - uid: MessagePack.Formatters.IMessagePackFormatter{System.ArraySegment{`0}}.Serialize(MessagePack.MessagePackWriter@,System.ArraySegment{`0},MessagePack.MessagePackSerializerOptions)
+    name: Serialize
+    isExternal: true
+    href: MessagePack.Formatters.IMessagePackFormatter-1.html#MessagePack_Formatters_IMessagePackFormatter_1_Serialize_MessagePack_MessagePackWriter___0_MessagePack_MessagePackSerializerOptions_
+  - name: (
+  - uid: MessagePack.MessagePackWriter
+    name: MessagePackWriter
+    isExternal: true
+    href: MessagePack.MessagePackWriter.html
+  - name: ','
+  - name: " "
+  - uid: System.ArraySegment`1
+    name: ArraySegment
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.arraysegment-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: MessagePack.MessagePackSerializerOptions
+    name: MessagePackSerializerOptions
+    isExternal: true
+    href: MessagePack.MessagePackSerializerOptions.html
+  - name: )
+- uid: MessagePack.MessagePackWriter
+  commentId: T:MessagePack.MessagePackWriter
+  parent: MessagePack
+  isExternal: true
+  href: MessagePack.MessagePackWriter.html
+  name: MessagePackWriter
+  nameWithType: MessagePackWriter
+  fullName: MessagePack.MessagePackWriter
+- uid: System.ArraySegment{{T}}
+  commentId: T:System.ArraySegment{`0}
+  parent: System
+  definition: System.ArraySegment`1
+  href: https://learn.microsoft.com/dotnet/api/system.arraysegment-1
+  name: ArraySegment<T>
+  nameWithType: ArraySegment<T>
+  fullName: System.ArraySegment<T>
+  nameWithType.vb: ArraySegment(Of T)
+  fullName.vb: System.ArraySegment(Of T)
+  name.vb: ArraySegment(Of T)
+  spec.csharp:
+  - uid: System.ArraySegment`1
+    name: ArraySegment
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.arraysegment-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.ArraySegment`1
+    name: ArraySegment
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.arraysegment-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: MessagePack.MessagePackSerializerOptions
+  commentId: T:MessagePack.MessagePackSerializerOptions
+  parent: MessagePack
+  isExternal: true
+  href: MessagePack.MessagePackSerializerOptions.html
+  name: MessagePackSerializerOptions
+  nameWithType: MessagePackSerializerOptions
+  fullName: MessagePack.MessagePackSerializerOptions
+- uid: MessagePack.Formatters.IMessagePackFormatter`1.Serialize(MessagePack.MessagePackWriter@,`0,MessagePack.MessagePackSerializerOptions)
+  commentId: M:MessagePack.Formatters.IMessagePackFormatter`1.Serialize(MessagePack.MessagePackWriter@,`0,MessagePack.MessagePackSerializerOptions)
+  isExternal: true
+  href: MessagePack.Formatters.IMessagePackFormatter-1.html#MessagePack_Formatters_IMessagePackFormatter_1_Serialize_MessagePack_MessagePackWriter___0_MessagePack_MessagePackSerializerOptions_
+  name: Serialize(ref MessagePackWriter, T, MessagePackSerializerOptions)
+  nameWithType: IMessagePackFormatter<T>.Serialize(ref MessagePackWriter, T, MessagePackSerializerOptions)
+  fullName: MessagePack.Formatters.IMessagePackFormatter<T>.Serialize(ref MessagePack.MessagePackWriter, T, MessagePack.MessagePackSerializerOptions)
+  nameWithType.vb: IMessagePackFormatter(Of T).Serialize(MessagePackWriter, T, MessagePackSerializerOptions)
+  fullName.vb: MessagePack.Formatters.IMessagePackFormatter(Of T).Serialize(MessagePack.MessagePackWriter, T, MessagePack.MessagePackSerializerOptions)
+  name.vb: Serialize(MessagePackWriter, T, MessagePackSerializerOptions)
+  spec.csharp:
+  - uid: MessagePack.Formatters.IMessagePackFormatter`1.Serialize(MessagePack.MessagePackWriter@,`0,MessagePack.MessagePackSerializerOptions)
+    name: Serialize
+    isExternal: true
+    href: MessagePack.Formatters.IMessagePackFormatter-1.html#MessagePack_Formatters_IMessagePackFormatter_1_Serialize_MessagePack_MessagePackWriter___0_MessagePack_MessagePackSerializerOptions_
+  - name: (
+  - name: ref
+  - name: " "
+  - uid: MessagePack.MessagePackWriter
+    name: MessagePackWriter
+    isExternal: true
+    href: MessagePack.MessagePackWriter.html
+  - name: ','
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: MessagePack.MessagePackSerializerOptions
+    name: MessagePackSerializerOptions
+    isExternal: true
+    href: MessagePack.MessagePackSerializerOptions.html
+  - name: )
+  spec.vb:
+  - uid: MessagePack.Formatters.IMessagePackFormatter`1.Serialize(MessagePack.MessagePackWriter@,`0,MessagePack.MessagePackSerializerOptions)
+    name: Serialize
+    isExternal: true
+    href: MessagePack.Formatters.IMessagePackFormatter-1.html#MessagePack_Formatters_IMessagePackFormatter_1_Serialize_MessagePack_MessagePackWriter___0_MessagePack_MessagePackSerializerOptions_
+  - name: (
+  - uid: MessagePack.MessagePackWriter
+    name: MessagePackWriter
+    isExternal: true
+    href: MessagePack.MessagePackWriter.html
+  - name: ','
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: MessagePack.MessagePackSerializerOptions
+    name: MessagePackSerializerOptions
+    isExternal: true
+    href: MessagePack.MessagePackSerializerOptions.html
+  - name: )
+- uid: MessagePack
+  commentId: N:MessagePack
+  isExternal: true
+  href: MessagePack.html
+  name: MessagePack
+  nameWithType: MessagePack
+  fullName: MessagePack
+- uid: System.ArraySegment`1
+  commentId: T:System.ArraySegment`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.arraysegment-1
+  name: ArraySegment<T>
+  nameWithType: ArraySegment<T>
+  fullName: System.ArraySegment<T>
+  nameWithType.vb: ArraySegment(Of T)
+  fullName.vb: System.ArraySegment(Of T)
+  name.vb: ArraySegment(Of T)
+  spec.csharp:
+  - uid: System.ArraySegment`1
+    name: ArraySegment
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.arraysegment-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.ArraySegment`1
+    name: ArraySegment
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.arraysegment-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: MessagePack.Formatters.ArraySegmentFormatter`1.Deserialize*
+  commentId: Overload:MessagePack.Formatters.ArraySegmentFormatter`1.Deserialize
+  isExternal: true
+  href: MessagePack.Formatters.ArraySegmentFormatter-1.html#MessagePack_Formatters_ArraySegmentFormatter_1_Deserialize_MessagePack_MessagePackReader__MessagePack_MessagePackSerializerOptions_
+  name: Deserialize
+  nameWithType: ArraySegmentFormatter<T>.Deserialize
+  fullName: MessagePack.Formatters.ArraySegmentFormatter<T>.Deserialize
+  nameWithType.vb: ArraySegmentFormatter(Of T).Deserialize
+  fullName.vb: MessagePack.Formatters.ArraySegmentFormatter(Of T).Deserialize
+- uid: MessagePack.Formatters.IMessagePackFormatter{System.ArraySegment{{T}}}.Deserialize(MessagePack.MessagePackReader@,MessagePack.MessagePackSerializerOptions)
+  commentId: M:MessagePack.Formatters.IMessagePackFormatter{System.ArraySegment{`0}}.Deserialize(MessagePack.MessagePackReader@,MessagePack.MessagePackSerializerOptions)
+  parent: MessagePack.Formatters.IMessagePackFormatter{System.ArraySegment{{T}}}
+  definition: MessagePack.Formatters.IMessagePackFormatter`1.Deserialize(MessagePack.MessagePackReader@,MessagePack.MessagePackSerializerOptions)
+  href: MessagePack.Formatters.IMessagePackFormatter-1.html#MessagePack_Formatters_IMessagePackFormatter_1_Deserialize_MessagePack_MessagePackReader__MessagePack_MessagePackSerializerOptions_
+  name: Deserialize(ref MessagePackReader, MessagePackSerializerOptions)
+  nameWithType: IMessagePackFormatter<ArraySegment<T>>.Deserialize(ref MessagePackReader, MessagePackSerializerOptions)
+  fullName: MessagePack.Formatters.IMessagePackFormatter<System.ArraySegment<T>>.Deserialize(ref MessagePack.MessagePackReader, MessagePack.MessagePackSerializerOptions)
+  nameWithType.vb: IMessagePackFormatter(Of ArraySegment(Of T)).Deserialize(MessagePackReader, MessagePackSerializerOptions)
+  fullName.vb: MessagePack.Formatters.IMessagePackFormatter(Of System.ArraySegment(Of T)).Deserialize(MessagePack.MessagePackReader, MessagePack.MessagePackSerializerOptions)
+  name.vb: Deserialize(MessagePackReader, MessagePackSerializerOptions)
+  spec.csharp:
+  - uid: MessagePack.Formatters.IMessagePackFormatter{System.ArraySegment{`0}}.Deserialize(MessagePack.MessagePackReader@,MessagePack.MessagePackSerializerOptions)
+    name: Deserialize
+    isExternal: true
+    href: MessagePack.Formatters.IMessagePackFormatter-1.html#MessagePack_Formatters_IMessagePackFormatter_1_Deserialize_MessagePack_MessagePackReader__MessagePack_MessagePackSerializerOptions_
+  - name: (
+  - name: ref
+  - name: " "
+  - uid: MessagePack.MessagePackReader
+    name: MessagePackReader
+    isExternal: true
+    href: MessagePack.MessagePackReader.html
+  - name: ','
+  - name: " "
+  - uid: MessagePack.MessagePackSerializerOptions
+    name: MessagePackSerializerOptions
+    isExternal: true
+    href: MessagePack.MessagePackSerializerOptions.html
+  - name: )
+  spec.vb:
+  - uid: MessagePack.Formatters.IMessagePackFormatter{System.ArraySegment{`0}}.Deserialize(MessagePack.MessagePackReader@,MessagePack.MessagePackSerializerOptions)
+    name: Deserialize
+    isExternal: true
+    href: MessagePack.Formatters.IMessagePackFormatter-1.html#MessagePack_Formatters_IMessagePackFormatter_1_Deserialize_MessagePack_MessagePackReader__MessagePack_MessagePackSerializerOptions_
+  - name: (
+  - uid: MessagePack.MessagePackReader
+    name: MessagePackReader
+    isExternal: true
+    href: MessagePack.MessagePackReader.html
+  - name: ','
+  - name: " "
+  - uid: MessagePack.MessagePackSerializerOptions
+    name: MessagePackSerializerOptions
+    isExternal: true
+    href: MessagePack.MessagePackSerializerOptions.html
+  - name: )
+- uid: MessagePack.MessagePackReader
+  commentId: T:MessagePack.MessagePackReader
+  parent: MessagePack
+  isExternal: true
+  href: MessagePack.MessagePackReader.html
+  name: MessagePackReader
+  nameWithType: MessagePackReader
+  fullName: MessagePack.MessagePackReader
+- uid: MessagePack.Formatters.IMessagePackFormatter`1.Deserialize(MessagePack.MessagePackReader@,MessagePack.MessagePackSerializerOptions)
+  commentId: M:MessagePack.Formatters.IMessagePackFormatter`1.Deserialize(MessagePack.MessagePackReader@,MessagePack.MessagePackSerializerOptions)
+  isExternal: true
+  href: MessagePack.Formatters.IMessagePackFormatter-1.html#MessagePack_Formatters_IMessagePackFormatter_1_Deserialize_MessagePack_MessagePackReader__MessagePack_MessagePackSerializerOptions_
+  name: Deserialize(ref MessagePackReader, MessagePackSerializerOptions)
+  nameWithType: IMessagePackFormatter<T>.Deserialize(ref MessagePackReader, MessagePackSerializerOptions)
+  fullName: MessagePack.Formatters.IMessagePackFormatter<T>.Deserialize(ref MessagePack.MessagePackReader, MessagePack.MessagePackSerializerOptions)
+  nameWithType.vb: IMessagePackFormatter(Of T).Deserialize(MessagePackReader, MessagePackSerializerOptions)
+  fullName.vb: MessagePack.Formatters.IMessagePackFormatter(Of T).Deserialize(MessagePack.MessagePackReader, MessagePack.MessagePackSerializerOptions)
+  name.vb: Deserialize(MessagePackReader, MessagePackSerializerOptions)
+  spec.csharp:
+  - uid: MessagePack.Formatters.IMessagePackFormatter`1.Deserialize(MessagePack.MessagePackReader@,MessagePack.MessagePackSerializerOptions)
+    name: Deserialize
+    isExternal: true
+    href: MessagePack.Formatters.IMessagePackFormatter-1.html#MessagePack_Formatters_IMessagePackFormatter_1_Deserialize_MessagePack_MessagePackReader__MessagePack_MessagePackSerializerOptions_
+  - name: (
+  - name: ref
+  - name: " "
+  - uid: MessagePack.MessagePackReader
+    name: MessagePackReader
+    isExternal: true
+    href: MessagePack.MessagePackReader.html
+  - name: ','
+  - name: " "
+  - uid: MessagePack.MessagePackSerializerOptions
+    name: MessagePackSerializerOptions
+    isExternal: true
+    href: MessagePack.MessagePackSerializerOptions.html
+  - name: )
+  spec.vb:
+  - uid: MessagePack.Formatters.IMessagePackFormatter`1.Deserialize(MessagePack.MessagePackReader@,MessagePack.MessagePackSerializerOptions)
+    name: Deserialize
+    isExternal: true
+    href: MessagePack.Formatters.IMessagePackFormatter-1.html#MessagePack_Formatters_IMessagePackFormatter_1_Deserialize_MessagePack_MessagePackReader__MessagePack_MessagePackSerializerOptions_
+  - name: (
+  - uid: MessagePack.MessagePackReader
+    name: MessagePackReader
+    isExternal: true
+    href: MessagePack.MessagePackReader.html
+  - name: ','
+  - name: " "
+  - uid: MessagePack.MessagePackSerializerOptions
+    name: MessagePackSerializerOptions
+    isExternal: true
+    href: MessagePack.MessagePackSerializerOptions.html
+  - name: )
+- uid: MessagePack.Formatters.ArraySegmentFormatter`1.#ctor*
+  commentId: Overload:MessagePack.Formatters.ArraySegmentFormatter`1.#ctor
+  isExternal: true
+  href: MessagePack.Formatters.ArraySegmentFormatter-1.html#MessagePack_Formatters_ArraySegmentFormatter_1__ctor
+  name: ArraySegmentFormatter
+  nameWithType: ArraySegmentFormatter<T>.ArraySegmentFormatter
+  fullName: MessagePack.Formatters.ArraySegmentFormatter<T>.ArraySegmentFormatter
+  nameWithType.vb: ArraySegmentFormatter(Of T).New
+  fullName.vb: MessagePack.Formatters.ArraySegmentFormatter(Of T).New
+  name.vb: New

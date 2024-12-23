@@ -1,0 +1,1495 @@
+### YamlMime:ManagedReference
+items:
+- uid: System.Threading.Tasks.ValueTask`1
+  commentId: T:System.Threading.Tasks.ValueTask`1
+  id: ValueTask`1
+  parent: System.Threading.Tasks
+  children:
+  - System.Threading.Tasks.ValueTask`1.#ctor(System.Threading.Tasks.Sources.IValueTaskSource{`0},System.Int16)
+  - System.Threading.Tasks.ValueTask`1.#ctor(System.Threading.Tasks.Task{`0})
+  - System.Threading.Tasks.ValueTask`1.#ctor(`0)
+  - System.Threading.Tasks.ValueTask`1.AsTask
+  - System.Threading.Tasks.ValueTask`1.ConfigureAwait(System.Boolean)
+  - System.Threading.Tasks.ValueTask`1.Equals(System.Object)
+  - System.Threading.Tasks.ValueTask`1.Equals(System.Threading.Tasks.ValueTask{`0})
+  - System.Threading.Tasks.ValueTask`1.GetAwaiter
+  - System.Threading.Tasks.ValueTask`1.GetHashCode
+  - System.Threading.Tasks.ValueTask`1.IsCanceled
+  - System.Threading.Tasks.ValueTask`1.IsCompleted
+  - System.Threading.Tasks.ValueTask`1.IsCompletedSuccessfully
+  - System.Threading.Tasks.ValueTask`1.IsFaulted
+  - System.Threading.Tasks.ValueTask`1.Preserve
+  - System.Threading.Tasks.ValueTask`1.Result
+  - System.Threading.Tasks.ValueTask`1.ToString
+  - System.Threading.Tasks.ValueTask`1.op_Equality(System.Threading.Tasks.ValueTask{`0},System.Threading.Tasks.ValueTask{`0})
+  - System.Threading.Tasks.ValueTask`1.op_Inequality(System.Threading.Tasks.ValueTask{`0},System.Threading.Tasks.ValueTask{`0})
+  langs:
+  - csharp
+  - vb
+  name: ValueTask<TResult>
+  nameWithType: ValueTask<TResult>
+  fullName: System.Threading.Tasks.ValueTask<TResult>
+  type: Struct
+  assemblies:
+  - System.Threading.Tasks.Extensions
+  namespace: System.Threading.Tasks
+  summary: Provides a value type that wraps a <see cref="Task{TResult}"></see> and a <code class="typeparamref">TResult</code>, only one of which is used.
+  example: []
+  syntax:
+    content: 'public readonly struct ValueTask<TResult> : IEquatable<ValueTask<TResult>>'
+    typeParameters:
+    - id: TResult
+      description: The result.
+    content.vb: Public Structure ValueTask(Of TResult) Implements IEquatable(Of ValueTask(Of TResult))
+  implements:
+  - System.IEquatable{System.Threading.Tasks.ValueTask`1}
+  inheritedMembers:
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetType
+  nameWithType.vb: ValueTask(Of TResult)
+  fullName.vb: System.Threading.Tasks.ValueTask(Of TResult)
+  name.vb: ValueTask(Of TResult)
+- uid: System.Threading.Tasks.ValueTask`1.#ctor(`0)
+  commentId: M:System.Threading.Tasks.ValueTask`1.#ctor(`0)
+  id: '#ctor(`0)'
+  parent: System.Threading.Tasks.ValueTask`1
+  langs:
+  - csharp
+  - vb
+  name: ValueTask(TResult)
+  nameWithType: ValueTask<TResult>.ValueTask(TResult)
+  fullName: System.Threading.Tasks.ValueTask<TResult>.ValueTask(TResult)
+  type: Constructor
+  assemblies:
+  - System.Threading.Tasks.Extensions
+  namespace: System.Threading.Tasks
+  summary: Initializes a new instance of the <see cref="ValueTask{TResult}"></see> class using the supplied result of a successful operation.
+  example: []
+  syntax:
+    content: public ValueTask(TResult result)
+    parameters:
+    - id: result
+      type: '{TResult}'
+      description: The result.
+    content.vb: Public Sub New(result As TResult)
+  overload: System.Threading.Tasks.ValueTask`1.#ctor*
+  nameWithType.vb: ValueTask(Of TResult).New(TResult)
+  fullName.vb: System.Threading.Tasks.ValueTask(Of TResult).New(TResult)
+  name.vb: New(TResult)
+- uid: System.Threading.Tasks.ValueTask`1.#ctor(System.Threading.Tasks.Task{`0})
+  commentId: M:System.Threading.Tasks.ValueTask`1.#ctor(System.Threading.Tasks.Task{`0})
+  id: '#ctor(System.Threading.Tasks.Task{`0})'
+  parent: System.Threading.Tasks.ValueTask`1
+  langs:
+  - csharp
+  - vb
+  name: ValueTask(Task<TResult>)
+  nameWithType: ValueTask<TResult>.ValueTask(Task<TResult>)
+  fullName: System.Threading.Tasks.ValueTask<TResult>.ValueTask(System.Threading.Tasks.Task<TResult>)
+  type: Constructor
+  assemblies:
+  - System.Threading.Tasks.Extensions
+  namespace: System.Threading.Tasks
+  summary: Initializes a new instance of the <see cref="ValueTask{TResult}"></see> class using the supplied task that represents the operation.
+  example: []
+  syntax:
+    content: public ValueTask(Task<TResult> task)
+    parameters:
+    - id: task
+      type: System.Threading.Tasks.Task{{TResult}}
+      description: The task.
+    content.vb: Public Sub New(task As Task(Of TResult))
+  overload: System.Threading.Tasks.ValueTask`1.#ctor*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: The <code class="paramref">task</code> argument is null.
+  nameWithType.vb: ValueTask(Of TResult).New(Task(Of TResult))
+  fullName.vb: System.Threading.Tasks.ValueTask(Of TResult).New(System.Threading.Tasks.Task(Of TResult))
+  name.vb: New(Task(Of TResult))
+- uid: System.Threading.Tasks.ValueTask`1.#ctor(System.Threading.Tasks.Sources.IValueTaskSource{`0},System.Int16)
+  commentId: M:System.Threading.Tasks.ValueTask`1.#ctor(System.Threading.Tasks.Sources.IValueTaskSource{`0},System.Int16)
+  id: '#ctor(System.Threading.Tasks.Sources.IValueTaskSource{`0},System.Int16)'
+  parent: System.Threading.Tasks.ValueTask`1
+  langs:
+  - csharp
+  - vb
+  name: ValueTask(IValueTaskSource<TResult>, short)
+  nameWithType: ValueTask<TResult>.ValueTask(IValueTaskSource<TResult>, short)
+  fullName: System.Threading.Tasks.ValueTask<TResult>.ValueTask(System.Threading.Tasks.Sources.IValueTaskSource<TResult>, short)
+  type: Constructor
+  assemblies:
+  - System.Threading.Tasks.Extensions
+  namespace: System.Threading.Tasks
+  syntax:
+    content: public ValueTask(IValueTaskSource<TResult> source, short token)
+    parameters:
+    - id: source
+      type: System.Threading.Tasks.Sources.IValueTaskSource{{TResult}}
+    - id: token
+      type: System.Int16
+    content.vb: Public Sub New(source As IValueTaskSource(Of TResult), token As Short)
+  overload: System.Threading.Tasks.ValueTask`1.#ctor*
+  nameWithType.vb: ValueTask(Of TResult).New(IValueTaskSource(Of TResult), Short)
+  fullName.vb: System.Threading.Tasks.ValueTask(Of TResult).New(System.Threading.Tasks.Sources.IValueTaskSource(Of TResult), Short)
+  name.vb: New(IValueTaskSource(Of TResult), Short)
+- uid: System.Threading.Tasks.ValueTask`1.GetHashCode
+  commentId: M:System.Threading.Tasks.ValueTask`1.GetHashCode
+  id: GetHashCode
+  parent: System.Threading.Tasks.ValueTask`1
+  langs:
+  - csharp
+  - vb
+  name: GetHashCode()
+  nameWithType: ValueTask<TResult>.GetHashCode()
+  fullName: System.Threading.Tasks.ValueTask<TResult>.GetHashCode()
+  type: Method
+  assemblies:
+  - System.Threading.Tasks.Extensions
+  namespace: System.Threading.Tasks
+  summary: Returns the hash code for this instance.
+  example: []
+  syntax:
+    content: public override int GetHashCode()
+    return:
+      type: System.Int32
+      description: The hash code for the current object.
+    content.vb: Public Overrides Function GetHashCode() As Integer
+  overridden: System.ValueType.GetHashCode
+  overload: System.Threading.Tasks.ValueTask`1.GetHashCode*
+  nameWithType.vb: ValueTask(Of TResult).GetHashCode()
+  fullName.vb: System.Threading.Tasks.ValueTask(Of TResult).GetHashCode()
+- uid: System.Threading.Tasks.ValueTask`1.Equals(System.Object)
+  commentId: M:System.Threading.Tasks.ValueTask`1.Equals(System.Object)
+  id: Equals(System.Object)
+  parent: System.Threading.Tasks.ValueTask`1
+  langs:
+  - csharp
+  - vb
+  name: Equals(object)
+  nameWithType: ValueTask<TResult>.Equals(object)
+  fullName: System.Threading.Tasks.ValueTask<TResult>.Equals(object)
+  type: Method
+  assemblies:
+  - System.Threading.Tasks.Extensions
+  namespace: System.Threading.Tasks
+  summary: Determines whether the specified object is equal to the current object.
+  example: []
+  syntax:
+    content: public override bool Equals(object obj)
+    parameters:
+    - id: obj
+      type: System.Object
+      description: The object to compare with the current object.
+    return:
+      type: System.Boolean
+      description: true if the specified object is equal to the current object; otherwise, false.
+    content.vb: Public Overrides Function Equals(obj As Object) As Boolean
+  overridden: System.ValueType.Equals(System.Object)
+  overload: System.Threading.Tasks.ValueTask`1.Equals*
+  nameWithType.vb: ValueTask(Of TResult).Equals(Object)
+  fullName.vb: System.Threading.Tasks.ValueTask(Of TResult).Equals(Object)
+  name.vb: Equals(Object)
+- uid: System.Threading.Tasks.ValueTask`1.Equals(System.Threading.Tasks.ValueTask{`0})
+  commentId: M:System.Threading.Tasks.ValueTask`1.Equals(System.Threading.Tasks.ValueTask{`0})
+  id: Equals(System.Threading.Tasks.ValueTask{`0})
+  parent: System.Threading.Tasks.ValueTask`1
+  langs:
+  - csharp
+  - vb
+  name: Equals(ValueTask<TResult>)
+  nameWithType: ValueTask<TResult>.Equals(ValueTask<TResult>)
+  fullName: System.Threading.Tasks.ValueTask<TResult>.Equals(System.Threading.Tasks.ValueTask<TResult>)
+  type: Method
+  assemblies:
+  - System.Threading.Tasks.Extensions
+  namespace: System.Threading.Tasks
+  summary: Determines whether the specified <see cref="ValueTask{TResult}"></see> object is equal to the current <see cref="ValueTask{TResult}"></see> object.
+  example: []
+  syntax:
+    content: public bool Equals(ValueTask<TResult> other)
+    parameters:
+    - id: other
+      type: System.Threading.Tasks.ValueTask`1
+      description: The object to compare with the current object.
+    return:
+      type: System.Boolean
+      description: true if the specified object is equal to the current object; otherwise, false.
+    content.vb: Public Function Equals(other As ValueTask(Of TResult)) As Boolean
+  overload: System.Threading.Tasks.ValueTask`1.Equals*
+  implements:
+  - System.IEquatable{System.Threading.Tasks.ValueTask`1}.Equals(System.Threading.Tasks.ValueTask{{TResult}})
+  nameWithType.vb: ValueTask(Of TResult).Equals(ValueTask(Of TResult))
+  fullName.vb: System.Threading.Tasks.ValueTask(Of TResult).Equals(System.Threading.Tasks.ValueTask(Of TResult))
+  name.vb: Equals(ValueTask(Of TResult))
+- uid: System.Threading.Tasks.ValueTask`1.op_Equality(System.Threading.Tasks.ValueTask{`0},System.Threading.Tasks.ValueTask{`0})
+  commentId: M:System.Threading.Tasks.ValueTask`1.op_Equality(System.Threading.Tasks.ValueTask{`0},System.Threading.Tasks.ValueTask{`0})
+  id: op_Equality(System.Threading.Tasks.ValueTask{`0},System.Threading.Tasks.ValueTask{`0})
+  parent: System.Threading.Tasks.ValueTask`1
+  langs:
+  - csharp
+  - vb
+  name: operator ==(ValueTask<TResult>, ValueTask<TResult>)
+  nameWithType: ValueTask<TResult>.operator ==(ValueTask<TResult>, ValueTask<TResult>)
+  fullName: System.Threading.Tasks.ValueTask<TResult>.operator ==(System.Threading.Tasks.ValueTask<TResult>, System.Threading.Tasks.ValueTask<TResult>)
+  type: Operator
+  assemblies:
+  - System.Threading.Tasks.Extensions
+  namespace: System.Threading.Tasks
+  summary: Compares two values for equality.
+  example: []
+  syntax:
+    content: public static bool operator ==(ValueTask<TResult> left, ValueTask<TResult> right)
+    parameters:
+    - id: left
+      type: System.Threading.Tasks.ValueTask`1
+      description: The first value to compare.
+    - id: right
+      type: System.Threading.Tasks.ValueTask`1
+      description: The second value to compare.
+    return:
+      type: System.Boolean
+      description: true if the two <see cref="ValueTask{TResult}"></see> values are equal; otherwise, false.
+    content.vb: Public Shared Operator =(left As ValueTask(Of TResult), right As ValueTask(Of TResult)) As Boolean
+  overload: System.Threading.Tasks.ValueTask`1.op_Equality*
+  nameWithType.vb: ValueTask(Of TResult).=(ValueTask(Of TResult), ValueTask(Of TResult))
+  fullName.vb: System.Threading.Tasks.ValueTask(Of TResult).=(System.Threading.Tasks.ValueTask(Of TResult), System.Threading.Tasks.ValueTask(Of TResult))
+  name.vb: =(ValueTask(Of TResult), ValueTask(Of TResult))
+- uid: System.Threading.Tasks.ValueTask`1.op_Inequality(System.Threading.Tasks.ValueTask{`0},System.Threading.Tasks.ValueTask{`0})
+  commentId: M:System.Threading.Tasks.ValueTask`1.op_Inequality(System.Threading.Tasks.ValueTask{`0},System.Threading.Tasks.ValueTask{`0})
+  id: op_Inequality(System.Threading.Tasks.ValueTask{`0},System.Threading.Tasks.ValueTask{`0})
+  parent: System.Threading.Tasks.ValueTask`1
+  langs:
+  - csharp
+  - vb
+  name: operator !=(ValueTask<TResult>, ValueTask<TResult>)
+  nameWithType: ValueTask<TResult>.operator !=(ValueTask<TResult>, ValueTask<TResult>)
+  fullName: System.Threading.Tasks.ValueTask<TResult>.operator !=(System.Threading.Tasks.ValueTask<TResult>, System.Threading.Tasks.ValueTask<TResult>)
+  type: Operator
+  assemblies:
+  - System.Threading.Tasks.Extensions
+  namespace: System.Threading.Tasks
+  summary: Determines whether two <see cref="ValueTask{TResult}"></see> values are unequal.
+  example: []
+  syntax:
+    content: public static bool operator !=(ValueTask<TResult> left, ValueTask<TResult> right)
+    parameters:
+    - id: left
+      type: System.Threading.Tasks.ValueTask`1
+      description: The first value to compare.
+    - id: right
+      type: System.Threading.Tasks.ValueTask`1
+      description: The seconed value to compare.
+    return:
+      type: System.Boolean
+      description: true if the two <see cref="ValueTask{TResult}"></see> values are not equal; otherwise, false.
+    content.vb: Public Shared Operator <>(left As ValueTask(Of TResult), right As ValueTask(Of TResult)) As Boolean
+  overload: System.Threading.Tasks.ValueTask`1.op_Inequality*
+  nameWithType.vb: ValueTask(Of TResult).<>(ValueTask(Of TResult), ValueTask(Of TResult))
+  fullName.vb: System.Threading.Tasks.ValueTask(Of TResult).<>(System.Threading.Tasks.ValueTask(Of TResult), System.Threading.Tasks.ValueTask(Of TResult))
+  name.vb: <>(ValueTask(Of TResult), ValueTask(Of TResult))
+- uid: System.Threading.Tasks.ValueTask`1.AsTask
+  commentId: M:System.Threading.Tasks.ValueTask`1.AsTask
+  id: AsTask
+  parent: System.Threading.Tasks.ValueTask`1
+  langs:
+  - csharp
+  - vb
+  name: AsTask()
+  nameWithType: ValueTask<TResult>.AsTask()
+  fullName: System.Threading.Tasks.ValueTask<TResult>.AsTask()
+  type: Method
+  assemblies:
+  - System.Threading.Tasks.Extensions
+  namespace: System.Threading.Tasks
+  summary: Retrieves a <see cref="Task{TResult}"></see> object that represents this <see cref="ValueTask{TResult}"></see>.
+  example: []
+  syntax:
+    content: public Task<TResult> AsTask()
+    return:
+      type: System.Threading.Tasks.Task{{TResult}}
+      description: The <see cref="Task{TResult}"></see> object that is wrapped in this <see cref="ValueTask{TResult}"></see> if one exists, or a new <see cref="Task{TResult}"></see> object that represents the result.
+    content.vb: Public Function AsTask() As Task(Of TResult)
+  overload: System.Threading.Tasks.ValueTask`1.AsTask*
+  nameWithType.vb: ValueTask(Of TResult).AsTask()
+  fullName.vb: System.Threading.Tasks.ValueTask(Of TResult).AsTask()
+- uid: System.Threading.Tasks.ValueTask`1.Preserve
+  commentId: M:System.Threading.Tasks.ValueTask`1.Preserve
+  id: Preserve
+  parent: System.Threading.Tasks.ValueTask`1
+  langs:
+  - csharp
+  - vb
+  name: Preserve()
+  nameWithType: ValueTask<TResult>.Preserve()
+  fullName: System.Threading.Tasks.ValueTask<TResult>.Preserve()
+  type: Method
+  assemblies:
+  - System.Threading.Tasks.Extensions
+  namespace: System.Threading.Tasks
+  syntax:
+    content: public ValueTask<TResult> Preserve()
+    return:
+      type: System.Threading.Tasks.ValueTask`1
+    content.vb: Public Function Preserve() As ValueTask(Of TResult)
+  overload: System.Threading.Tasks.ValueTask`1.Preserve*
+  nameWithType.vb: ValueTask(Of TResult).Preserve()
+  fullName.vb: System.Threading.Tasks.ValueTask(Of TResult).Preserve()
+- uid: System.Threading.Tasks.ValueTask`1.GetAwaiter
+  commentId: M:System.Threading.Tasks.ValueTask`1.GetAwaiter
+  id: GetAwaiter
+  parent: System.Threading.Tasks.ValueTask`1
+  langs:
+  - csharp
+  - vb
+  name: GetAwaiter()
+  nameWithType: ValueTask<TResult>.GetAwaiter()
+  fullName: System.Threading.Tasks.ValueTask<TResult>.GetAwaiter()
+  type: Method
+  assemblies:
+  - System.Threading.Tasks.Extensions
+  namespace: System.Threading.Tasks
+  summary: Creates an awaiter for this value.
+  example: []
+  syntax:
+    content: public ValueTaskAwaiter<TResult> GetAwaiter()
+    return:
+      type: System.Runtime.CompilerServices.ValueTaskAwaiter{{TResult}}
+      description: The awaiter.
+    content.vb: Public Function GetAwaiter() As ValueTaskAwaiter(Of TResult)
+  overload: System.Threading.Tasks.ValueTask`1.GetAwaiter*
+  nameWithType.vb: ValueTask(Of TResult).GetAwaiter()
+  fullName.vb: System.Threading.Tasks.ValueTask(Of TResult).GetAwaiter()
+- uid: System.Threading.Tasks.ValueTask`1.ConfigureAwait(System.Boolean)
+  commentId: M:System.Threading.Tasks.ValueTask`1.ConfigureAwait(System.Boolean)
+  id: ConfigureAwait(System.Boolean)
+  parent: System.Threading.Tasks.ValueTask`1
+  langs:
+  - csharp
+  - vb
+  name: ConfigureAwait(bool)
+  nameWithType: ValueTask<TResult>.ConfigureAwait(bool)
+  fullName: System.Threading.Tasks.ValueTask<TResult>.ConfigureAwait(bool)
+  type: Method
+  assemblies:
+  - System.Threading.Tasks.Extensions
+  namespace: System.Threading.Tasks
+  summary: Configures an awaiter for this value.
+  example: []
+  syntax:
+    content: public ConfiguredValueTaskAwaitable<TResult> ConfigureAwait(bool continueOnCapturedContext)
+    parameters:
+    - id: continueOnCapturedContext
+      type: System.Boolean
+      description: true to attempt to marshal the continuation back to the captured context; otherwise, false.
+    return:
+      type: System.Runtime.CompilerServices.ConfiguredValueTaskAwaitable{{TResult}}
+      description: The configured awaiter.
+    content.vb: Public Function ConfigureAwait(continueOnCapturedContext As Boolean) As ConfiguredValueTaskAwaitable(Of TResult)
+  overload: System.Threading.Tasks.ValueTask`1.ConfigureAwait*
+  nameWithType.vb: ValueTask(Of TResult).ConfigureAwait(Boolean)
+  fullName.vb: System.Threading.Tasks.ValueTask(Of TResult).ConfigureAwait(Boolean)
+  name.vb: ConfigureAwait(Boolean)
+- uid: System.Threading.Tasks.ValueTask`1.ToString
+  commentId: M:System.Threading.Tasks.ValueTask`1.ToString
+  id: ToString
+  parent: System.Threading.Tasks.ValueTask`1
+  langs:
+  - csharp
+  - vb
+  name: ToString()
+  nameWithType: ValueTask<TResult>.ToString()
+  fullName: System.Threading.Tasks.ValueTask<TResult>.ToString()
+  type: Method
+  assemblies:
+  - System.Threading.Tasks.Extensions
+  namespace: System.Threading.Tasks
+  summary: Returns a string that represents the current object.
+  example: []
+  syntax:
+    content: public override string ToString()
+    return:
+      type: System.String
+      description: A string that represents the current object.
+    content.vb: Public Overrides Function ToString() As String
+  overridden: System.ValueType.ToString
+  overload: System.Threading.Tasks.ValueTask`1.ToString*
+  nameWithType.vb: ValueTask(Of TResult).ToString()
+  fullName.vb: System.Threading.Tasks.ValueTask(Of TResult).ToString()
+- uid: System.Threading.Tasks.ValueTask`1.IsCompleted
+  commentId: P:System.Threading.Tasks.ValueTask`1.IsCompleted
+  id: IsCompleted
+  parent: System.Threading.Tasks.ValueTask`1
+  langs:
+  - csharp
+  - vb
+  name: IsCompleted
+  nameWithType: ValueTask<TResult>.IsCompleted
+  fullName: System.Threading.Tasks.ValueTask<TResult>.IsCompleted
+  type: Property
+  assemblies:
+  - System.Threading.Tasks.Extensions
+  namespace: System.Threading.Tasks
+  summary: Gets a value that indicates whether this object represents a completed operation.
+  example: []
+  syntax:
+    content: public bool IsCompleted { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+      description: true if this object represents a completed operation; otherwise, false.
+    content.vb: Public ReadOnly Property IsCompleted As Boolean
+  overload: System.Threading.Tasks.ValueTask`1.IsCompleted*
+  nameWithType.vb: ValueTask(Of TResult).IsCompleted
+  fullName.vb: System.Threading.Tasks.ValueTask(Of TResult).IsCompleted
+- uid: System.Threading.Tasks.ValueTask`1.IsCompletedSuccessfully
+  commentId: P:System.Threading.Tasks.ValueTask`1.IsCompletedSuccessfully
+  id: IsCompletedSuccessfully
+  parent: System.Threading.Tasks.ValueTask`1
+  langs:
+  - csharp
+  - vb
+  name: IsCompletedSuccessfully
+  nameWithType: ValueTask<TResult>.IsCompletedSuccessfully
+  fullName: System.Threading.Tasks.ValueTask<TResult>.IsCompletedSuccessfully
+  type: Property
+  assemblies:
+  - System.Threading.Tasks.Extensions
+  namespace: System.Threading.Tasks
+  summary: Gets a value that indicates whether this object represents a successfully completed operation.
+  example: []
+  syntax:
+    content: public bool IsCompletedSuccessfully { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+      description: true if this object represents a successfully completed operation; otherwise, false.
+    content.vb: Public ReadOnly Property IsCompletedSuccessfully As Boolean
+  overload: System.Threading.Tasks.ValueTask`1.IsCompletedSuccessfully*
+  nameWithType.vb: ValueTask(Of TResult).IsCompletedSuccessfully
+  fullName.vb: System.Threading.Tasks.ValueTask(Of TResult).IsCompletedSuccessfully
+- uid: System.Threading.Tasks.ValueTask`1.IsFaulted
+  commentId: P:System.Threading.Tasks.ValueTask`1.IsFaulted
+  id: IsFaulted
+  parent: System.Threading.Tasks.ValueTask`1
+  langs:
+  - csharp
+  - vb
+  name: IsFaulted
+  nameWithType: ValueTask<TResult>.IsFaulted
+  fullName: System.Threading.Tasks.ValueTask<TResult>.IsFaulted
+  type: Property
+  assemblies:
+  - System.Threading.Tasks.Extensions
+  namespace: System.Threading.Tasks
+  summary: Gets a value that indicates whether this object represents a failed operation.
+  example: []
+  syntax:
+    content: public bool IsFaulted { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+      description: true if this object represents a failed operation; otherwise, false.
+    content.vb: Public ReadOnly Property IsFaulted As Boolean
+  overload: System.Threading.Tasks.ValueTask`1.IsFaulted*
+  nameWithType.vb: ValueTask(Of TResult).IsFaulted
+  fullName.vb: System.Threading.Tasks.ValueTask(Of TResult).IsFaulted
+- uid: System.Threading.Tasks.ValueTask`1.IsCanceled
+  commentId: P:System.Threading.Tasks.ValueTask`1.IsCanceled
+  id: IsCanceled
+  parent: System.Threading.Tasks.ValueTask`1
+  langs:
+  - csharp
+  - vb
+  name: IsCanceled
+  nameWithType: ValueTask<TResult>.IsCanceled
+  fullName: System.Threading.Tasks.ValueTask<TResult>.IsCanceled
+  type: Property
+  assemblies:
+  - System.Threading.Tasks.Extensions
+  namespace: System.Threading.Tasks
+  summary: Gets a value that indicates whether this object represents a canceled operation.
+  example: []
+  syntax:
+    content: public bool IsCanceled { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+      description: true if this object represents a canceled operation; otherwise, false.
+    content.vb: Public ReadOnly Property IsCanceled As Boolean
+  overload: System.Threading.Tasks.ValueTask`1.IsCanceled*
+  nameWithType.vb: ValueTask(Of TResult).IsCanceled
+  fullName.vb: System.Threading.Tasks.ValueTask(Of TResult).IsCanceled
+- uid: System.Threading.Tasks.ValueTask`1.Result
+  commentId: P:System.Threading.Tasks.ValueTask`1.Result
+  id: Result
+  parent: System.Threading.Tasks.ValueTask`1
+  langs:
+  - csharp
+  - vb
+  name: Result
+  nameWithType: ValueTask<TResult>.Result
+  fullName: System.Threading.Tasks.ValueTask<TResult>.Result
+  type: Property
+  assemblies:
+  - System.Threading.Tasks.Extensions
+  namespace: System.Threading.Tasks
+  summary: Gets the result.
+  example: []
+  syntax:
+    content: public TResult Result { get; }
+    parameters: []
+    return:
+      type: '{TResult}'
+      description: The result.
+    content.vb: Public ReadOnly Property Result As TResult
+  overload: System.Threading.Tasks.ValueTask`1.Result*
+  nameWithType.vb: ValueTask(Of TResult).Result
+  fullName.vb: System.Threading.Tasks.ValueTask(Of TResult).Result
+references:
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: System.IEquatable{System.Threading.Tasks.ValueTask`1}
+  commentId: T:System.IEquatable{System.Threading.Tasks.ValueTask`1}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<ValueTask<TResult>>
+  nameWithType: IEquatable<ValueTask<TResult>>
+  fullName: System.IEquatable<System.Threading.Tasks.ValueTask<TResult>>
+  nameWithType.vb: IEquatable(Of ValueTask(Of TResult))
+  fullName.vb: System.IEquatable(Of System.Threading.Tasks.ValueTask(Of TResult))
+  name.vb: IEquatable(Of ValueTask(Of TResult))
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: System.Threading.Tasks.ValueTask`1
+    name: ValueTask
+    isExternal: true
+    href: System.Threading.Tasks.ValueTask-1.html
+  - name: <
+  - name: TResult
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Threading.Tasks.ValueTask`1
+    name: ValueTask
+    isExternal: true
+    href: System.Threading.Tasks.ValueTask-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.IEquatable`1
+  commentId: T:System.IEquatable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<T>
+  nameWithType: IEquatable<T>
+  fullName: System.IEquatable<T>
+  nameWithType.vb: IEquatable(Of T)
+  fullName.vb: System.IEquatable(Of T)
+  name.vb: IEquatable(Of T)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Threading.Tasks.ValueTask`1.#ctor*
+  commentId: Overload:System.Threading.Tasks.ValueTask`1.#ctor
+  isExternal: true
+  href: System.Threading.Tasks.ValueTask-1.html#System_Threading_Tasks_ValueTask_1__ctor__0_
+  name: ValueTask
+  nameWithType: ValueTask<TResult>.ValueTask
+  fullName: System.Threading.Tasks.ValueTask<TResult>.ValueTask
+  nameWithType.vb: ValueTask(Of TResult).New
+  fullName.vb: System.Threading.Tasks.ValueTask(Of TResult).New
+  name.vb: New
+- uid: '{TResult}'
+  commentId: '!:TResult'
+  definition: TResult
+  name: TResult
+  nameWithType: TResult
+  fullName: TResult
+- uid: TResult
+  name: TResult
+  nameWithType: TResult
+  fullName: TResult
+- uid: System.ArgumentNullException
+  commentId: T:System.ArgumentNullException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.argumentnullexception
+  name: ArgumentNullException
+  nameWithType: ArgumentNullException
+  fullName: System.ArgumentNullException
+- uid: System.Threading.Tasks.Task{{TResult}}
+  commentId: T:System.Threading.Tasks.Task{`0}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Threading.Tasks.Sources.IValueTaskSource{{TResult}}
+  commentId: T:System.Threading.Tasks.Sources.IValueTaskSource{`0}
+  parent: System.Threading.Tasks.Sources
+  definition: System.Threading.Tasks.Sources.IValueTaskSource`1
+  href: System.Threading.Tasks.Sources.IValueTaskSource-1.html
+  name: IValueTaskSource<TResult>
+  nameWithType: IValueTaskSource<TResult>
+  fullName: System.Threading.Tasks.Sources.IValueTaskSource<TResult>
+  nameWithType.vb: IValueTaskSource(Of TResult)
+  fullName.vb: System.Threading.Tasks.Sources.IValueTaskSource(Of TResult)
+  name.vb: IValueTaskSource(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Sources.IValueTaskSource`1
+    name: IValueTaskSource
+    isExternal: true
+    href: System.Threading.Tasks.Sources.IValueTaskSource-1.html
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Sources.IValueTaskSource`1
+    name: IValueTaskSource
+    isExternal: true
+    href: System.Threading.Tasks.Sources.IValueTaskSource-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Int16
+  commentId: T:System.Int16
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int16
+  name: short
+  nameWithType: short
+  fullName: short
+  nameWithType.vb: Short
+  fullName.vb: Short
+  name.vb: Short
+- uid: System.Threading.Tasks.Sources.IValueTaskSource`1
+  commentId: T:System.Threading.Tasks.Sources.IValueTaskSource`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.sources.ivaluetasksource-1
+  name: IValueTaskSource<TResult>
+  nameWithType: IValueTaskSource<TResult>
+  fullName: System.Threading.Tasks.Sources.IValueTaskSource<TResult>
+  nameWithType.vb: IValueTaskSource(Of TResult)
+  fullName.vb: System.Threading.Tasks.Sources.IValueTaskSource(Of TResult)
+  name.vb: IValueTaskSource(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Sources.IValueTaskSource`1
+    name: IValueTaskSource
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.sources.ivaluetasksource-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Sources.IValueTaskSource`1
+    name: IValueTaskSource
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.sources.ivaluetasksource-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Threading.Tasks.Sources
+  commentId: N:System.Threading.Tasks.Sources
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks.Sources
+  nameWithType: System.Threading.Tasks.Sources
+  fullName: System.Threading.Tasks.Sources
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  - name: .
+  - uid: System.Threading.Tasks.Sources
+    name: Sources
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.sources
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  - name: .
+  - uid: System.Threading.Tasks.Sources
+    name: Sources
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.sources
+- uid: System.ValueType.GetHashCode
+  commentId: M:System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  name: GetHashCode()
+  nameWithType: ValueType.GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+- uid: System.Threading.Tasks.ValueTask`1.GetHashCode*
+  commentId: Overload:System.Threading.Tasks.ValueTask`1.GetHashCode
+  isExternal: true
+  href: System.Threading.Tasks.ValueTask-1.html#System_Threading_Tasks_ValueTask_1_GetHashCode
+  name: GetHashCode
+  nameWithType: ValueTask<TResult>.GetHashCode
+  fullName: System.Threading.Tasks.ValueTask<TResult>.GetHashCode
+  nameWithType.vb: ValueTask(Of TResult).GetHashCode
+  fullName.vb: System.Threading.Tasks.ValueTask(Of TResult).GetHashCode
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.ValueType
+  commentId: T:System.ValueType
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype
+  name: ValueType
+  nameWithType: ValueType
+  fullName: System.ValueType
+- uid: System.ValueType.Equals(System.Object)
+  commentId: M:System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  name: Equals(object)
+  nameWithType: ValueType.Equals(object)
+  fullName: System.ValueType.Equals(object)
+  nameWithType.vb: ValueType.Equals(Object)
+  fullName.vb: System.ValueType.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Threading.Tasks.ValueTask`1.Equals*
+  commentId: Overload:System.Threading.Tasks.ValueTask`1.Equals
+  isExternal: true
+  href: System.Threading.Tasks.ValueTask-1.html#System_Threading_Tasks_ValueTask_1_Equals_System_Object_
+  name: Equals
+  nameWithType: ValueTask<TResult>.Equals
+  fullName: System.Threading.Tasks.ValueTask<TResult>.Equals
+  nameWithType.vb: ValueTask(Of TResult).Equals
+  fullName.vb: System.Threading.Tasks.ValueTask(Of TResult).Equals
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System.IEquatable{System.Threading.Tasks.ValueTask`1}.Equals(System.Threading.Tasks.ValueTask{{TResult}})
+  commentId: M:System.IEquatable{System.Threading.Tasks.ValueTask`1}.Equals(System.Threading.Tasks.ValueTask{`0})
+  parent: System.IEquatable{System.Threading.Tasks.ValueTask`1}
+  definition: System.IEquatable`1.Equals(`0)
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  name: Equals(ValueTask<TResult>)
+  nameWithType: IEquatable<ValueTask<TResult>>.Equals(ValueTask<TResult>)
+  fullName: System.IEquatable<System.Threading.Tasks.ValueTask<TResult>>.Equals(System.Threading.Tasks.ValueTask<TResult>)
+  nameWithType.vb: IEquatable(Of ValueTask(Of TResult)).Equals(ValueTask(Of TResult))
+  fullName.vb: System.IEquatable(Of System.Threading.Tasks.ValueTask(Of TResult)).Equals(System.Threading.Tasks.ValueTask(Of TResult))
+  name.vb: Equals(ValueTask(Of TResult))
+  spec.csharp:
+  - uid: System.IEquatable{System.Threading.Tasks.ValueTask`1}.Equals(System.Threading.Tasks.ValueTask{`0})
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - uid: System.Threading.Tasks.ValueTask`1
+    name: ValueTask
+    isExternal: true
+    href: System.Threading.Tasks.ValueTask-1.html
+  - name: <
+  - name: TResult
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: System.IEquatable{System.Threading.Tasks.ValueTask`1}.Equals(System.Threading.Tasks.ValueTask{`0})
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - uid: System.Threading.Tasks.ValueTask`1
+    name: ValueTask
+    isExternal: true
+    href: System.Threading.Tasks.ValueTask-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+  - name: )
+- uid: System.Threading.Tasks.ValueTask`1
+  commentId: T:System.Threading.Tasks.ValueTask`1
+  parent: System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.valuetask-1
+  name: ValueTask<TResult>
+  nameWithType: ValueTask<TResult>
+  fullName: System.Threading.Tasks.ValueTask<TResult>
+  nameWithType.vb: ValueTask(Of TResult)
+  fullName.vb: System.Threading.Tasks.ValueTask(Of TResult)
+  name.vb: ValueTask(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.ValueTask`1
+    name: ValueTask
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.valuetask-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.ValueTask`1
+    name: ValueTask
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.valuetask-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.IEquatable`1.Equals(`0)
+  commentId: M:System.IEquatable`1.Equals(`0)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  name: Equals(T)
+  nameWithType: IEquatable<T>.Equals(T)
+  fullName: System.IEquatable<T>.Equals(T)
+  nameWithType.vb: IEquatable(Of T).Equals(T)
+  fullName.vb: System.IEquatable(Of T).Equals(T)
+  spec.csharp:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - name: T
+  - name: )
+- uid: System.Threading.Tasks.ValueTask`1.op_Equality*
+  commentId: Overload:System.Threading.Tasks.ValueTask`1.op_Equality
+  isExternal: true
+  href: System.Threading.Tasks.ValueTask-1.html#System_Threading_Tasks_ValueTask_1_op_Equality_System_Threading_Tasks_ValueTask__0__System_Threading_Tasks_ValueTask__0__
+  name: operator ==
+  nameWithType: ValueTask<TResult>.operator ==
+  fullName: System.Threading.Tasks.ValueTask<TResult>.operator ==
+  nameWithType.vb: ValueTask(Of TResult).=
+  fullName.vb: System.Threading.Tasks.ValueTask(Of TResult).=
+  name.vb: =
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: System.Threading.Tasks.ValueTask`1.op_Equality*
+    name: ==
+    isExternal: true
+    href: System.Threading.Tasks.ValueTask-1.html#System_Threading_Tasks_ValueTask_1_op_Equality_System_Threading_Tasks_ValueTask__0__System_Threading_Tasks_ValueTask__0__
+- uid: System.Threading.Tasks.ValueTask`1.op_Inequality*
+  commentId: Overload:System.Threading.Tasks.ValueTask`1.op_Inequality
+  isExternal: true
+  href: System.Threading.Tasks.ValueTask-1.html#System_Threading_Tasks_ValueTask_1_op_Inequality_System_Threading_Tasks_ValueTask__0__System_Threading_Tasks_ValueTask__0__
+  name: operator !=
+  nameWithType: ValueTask<TResult>.operator !=
+  fullName: System.Threading.Tasks.ValueTask<TResult>.operator !=
+  nameWithType.vb: ValueTask(Of TResult).<>
+  fullName.vb: System.Threading.Tasks.ValueTask(Of TResult).<>
+  name.vb: <>
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: System.Threading.Tasks.ValueTask`1.op_Inequality*
+    name: '!='
+    isExternal: true
+    href: System.Threading.Tasks.ValueTask-1.html#System_Threading_Tasks_ValueTask_1_op_Inequality_System_Threading_Tasks_ValueTask__0__System_Threading_Tasks_ValueTask__0__
+- uid: System.Threading.Tasks.ValueTask`1.AsTask*
+  commentId: Overload:System.Threading.Tasks.ValueTask`1.AsTask
+  isExternal: true
+  href: System.Threading.Tasks.ValueTask-1.html#System_Threading_Tasks_ValueTask_1_AsTask
+  name: AsTask
+  nameWithType: ValueTask<TResult>.AsTask
+  fullName: System.Threading.Tasks.ValueTask<TResult>.AsTask
+  nameWithType.vb: ValueTask(Of TResult).AsTask
+  fullName.vb: System.Threading.Tasks.ValueTask(Of TResult).AsTask
+- uid: System.Threading.Tasks.ValueTask`1.Preserve*
+  commentId: Overload:System.Threading.Tasks.ValueTask`1.Preserve
+  isExternal: true
+  href: System.Threading.Tasks.ValueTask-1.html#System_Threading_Tasks_ValueTask_1_Preserve
+  name: Preserve
+  nameWithType: ValueTask<TResult>.Preserve
+  fullName: System.Threading.Tasks.ValueTask<TResult>.Preserve
+  nameWithType.vb: ValueTask(Of TResult).Preserve
+  fullName.vb: System.Threading.Tasks.ValueTask(Of TResult).Preserve
+- uid: System.Threading.Tasks.ValueTask`1.GetAwaiter*
+  commentId: Overload:System.Threading.Tasks.ValueTask`1.GetAwaiter
+  isExternal: true
+  href: System.Threading.Tasks.ValueTask-1.html#System_Threading_Tasks_ValueTask_1_GetAwaiter
+  name: GetAwaiter
+  nameWithType: ValueTask<TResult>.GetAwaiter
+  fullName: System.Threading.Tasks.ValueTask<TResult>.GetAwaiter
+  nameWithType.vb: ValueTask(Of TResult).GetAwaiter
+  fullName.vb: System.Threading.Tasks.ValueTask(Of TResult).GetAwaiter
+- uid: System.Runtime.CompilerServices.ValueTaskAwaiter{{TResult}}
+  commentId: T:System.Runtime.CompilerServices.ValueTaskAwaiter{`0}
+  parent: System.Runtime.CompilerServices
+  definition: System.Runtime.CompilerServices.ValueTaskAwaiter`1
+  href: System.Runtime.CompilerServices.ValueTaskAwaiter-1.html
+  name: ValueTaskAwaiter<TResult>
+  nameWithType: ValueTaskAwaiter<TResult>
+  fullName: System.Runtime.CompilerServices.ValueTaskAwaiter<TResult>
+  nameWithType.vb: ValueTaskAwaiter(Of TResult)
+  fullName.vb: System.Runtime.CompilerServices.ValueTaskAwaiter(Of TResult)
+  name.vb: ValueTaskAwaiter(Of TResult)
+  spec.csharp:
+  - uid: System.Runtime.CompilerServices.ValueTaskAwaiter`1
+    name: ValueTaskAwaiter
+    isExternal: true
+    href: System.Runtime.CompilerServices.ValueTaskAwaiter-1.html
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Runtime.CompilerServices.ValueTaskAwaiter`1
+    name: ValueTaskAwaiter
+    isExternal: true
+    href: System.Runtime.CompilerServices.ValueTaskAwaiter-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Runtime.CompilerServices.ValueTaskAwaiter`1
+  commentId: T:System.Runtime.CompilerServices.ValueTaskAwaiter`1
+  isExternal: true
+  href: System.Runtime.CompilerServices.ValueTaskAwaiter-1.html
+  name: ValueTaskAwaiter<TResult>
+  nameWithType: ValueTaskAwaiter<TResult>
+  fullName: System.Runtime.CompilerServices.ValueTaskAwaiter<TResult>
+  nameWithType.vb: ValueTaskAwaiter(Of TResult)
+  fullName.vb: System.Runtime.CompilerServices.ValueTaskAwaiter(Of TResult)
+  name.vb: ValueTaskAwaiter(Of TResult)
+  spec.csharp:
+  - uid: System.Runtime.CompilerServices.ValueTaskAwaiter`1
+    name: ValueTaskAwaiter
+    isExternal: true
+    href: System.Runtime.CompilerServices.ValueTaskAwaiter-1.html
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Runtime.CompilerServices.ValueTaskAwaiter`1
+    name: ValueTaskAwaiter
+    isExternal: true
+    href: System.Runtime.CompilerServices.ValueTaskAwaiter-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Runtime.CompilerServices
+  commentId: N:System.Runtime.CompilerServices
+  isExternal: true
+  href: System.html
+  name: System.Runtime.CompilerServices
+  nameWithType: System.Runtime.CompilerServices
+  fullName: System.Runtime.CompilerServices
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: System.html
+  - name: .
+  - uid: System.Runtime
+    name: Runtime
+    isExternal: true
+    href: System.Runtime.html
+  - name: .
+  - uid: System.Runtime.CompilerServices
+    name: CompilerServices
+    isExternal: true
+    href: System.Runtime.CompilerServices.html
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: System.html
+  - name: .
+  - uid: System.Runtime
+    name: Runtime
+    isExternal: true
+    href: System.Runtime.html
+  - name: .
+  - uid: System.Runtime.CompilerServices
+    name: CompilerServices
+    isExternal: true
+    href: System.Runtime.CompilerServices.html
+- uid: System.Threading.Tasks.ValueTask`1.ConfigureAwait*
+  commentId: Overload:System.Threading.Tasks.ValueTask`1.ConfigureAwait
+  isExternal: true
+  href: System.Threading.Tasks.ValueTask-1.html#System_Threading_Tasks_ValueTask_1_ConfigureAwait_System_Boolean_
+  name: ConfigureAwait
+  nameWithType: ValueTask<TResult>.ConfigureAwait
+  fullName: System.Threading.Tasks.ValueTask<TResult>.ConfigureAwait
+  nameWithType.vb: ValueTask(Of TResult).ConfigureAwait
+  fullName.vb: System.Threading.Tasks.ValueTask(Of TResult).ConfigureAwait
+- uid: System.Runtime.CompilerServices.ConfiguredValueTaskAwaitable{{TResult}}
+  commentId: T:System.Runtime.CompilerServices.ConfiguredValueTaskAwaitable{`0}
+  parent: System.Runtime.CompilerServices
+  definition: System.Runtime.CompilerServices.ConfiguredValueTaskAwaitable`1
+  href: System.Runtime.CompilerServices.ConfiguredValueTaskAwaitable-1.html
+  name: ConfiguredValueTaskAwaitable<TResult>
+  nameWithType: ConfiguredValueTaskAwaitable<TResult>
+  fullName: System.Runtime.CompilerServices.ConfiguredValueTaskAwaitable<TResult>
+  nameWithType.vb: ConfiguredValueTaskAwaitable(Of TResult)
+  fullName.vb: System.Runtime.CompilerServices.ConfiguredValueTaskAwaitable(Of TResult)
+  name.vb: ConfiguredValueTaskAwaitable(Of TResult)
+  spec.csharp:
+  - uid: System.Runtime.CompilerServices.ConfiguredValueTaskAwaitable`1
+    name: ConfiguredValueTaskAwaitable
+    isExternal: true
+    href: System.Runtime.CompilerServices.ConfiguredValueTaskAwaitable-1.html
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Runtime.CompilerServices.ConfiguredValueTaskAwaitable`1
+    name: ConfiguredValueTaskAwaitable
+    isExternal: true
+    href: System.Runtime.CompilerServices.ConfiguredValueTaskAwaitable-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Runtime.CompilerServices.ConfiguredValueTaskAwaitable`1
+  commentId: T:System.Runtime.CompilerServices.ConfiguredValueTaskAwaitable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.runtime.compilerservices.configuredvaluetaskawaitable-1
+  name: ConfiguredValueTaskAwaitable<TResult>
+  nameWithType: ConfiguredValueTaskAwaitable<TResult>
+  fullName: System.Runtime.CompilerServices.ConfiguredValueTaskAwaitable<TResult>
+  nameWithType.vb: ConfiguredValueTaskAwaitable(Of TResult)
+  fullName.vb: System.Runtime.CompilerServices.ConfiguredValueTaskAwaitable(Of TResult)
+  name.vb: ConfiguredValueTaskAwaitable(Of TResult)
+  spec.csharp:
+  - uid: System.Runtime.CompilerServices.ConfiguredValueTaskAwaitable`1
+    name: ConfiguredValueTaskAwaitable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.compilerservices.configuredvaluetaskawaitable-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Runtime.CompilerServices.ConfiguredValueTaskAwaitable`1
+    name: ConfiguredValueTaskAwaitable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.compilerservices.configuredvaluetaskawaitable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.ValueType.ToString
+  commentId: M:System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  name: ToString()
+  nameWithType: ValueType.ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+- uid: System.Threading.Tasks.ValueTask`1.ToString*
+  commentId: Overload:System.Threading.Tasks.ValueTask`1.ToString
+  isExternal: true
+  href: System.Threading.Tasks.ValueTask-1.html#System_Threading_Tasks_ValueTask_1_ToString
+  name: ToString
+  nameWithType: ValueTask<TResult>.ToString
+  fullName: System.Threading.Tasks.ValueTask<TResult>.ToString
+  nameWithType.vb: ValueTask(Of TResult).ToString
+  fullName.vb: System.Threading.Tasks.ValueTask(Of TResult).ToString
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Threading.Tasks.ValueTask`1.IsCompleted*
+  commentId: Overload:System.Threading.Tasks.ValueTask`1.IsCompleted
+  isExternal: true
+  href: System.Threading.Tasks.ValueTask-1.html#System_Threading_Tasks_ValueTask_1_IsCompleted
+  name: IsCompleted
+  nameWithType: ValueTask<TResult>.IsCompleted
+  fullName: System.Threading.Tasks.ValueTask<TResult>.IsCompleted
+  nameWithType.vb: ValueTask(Of TResult).IsCompleted
+  fullName.vb: System.Threading.Tasks.ValueTask(Of TResult).IsCompleted
+- uid: System.Threading.Tasks.ValueTask`1.IsCompletedSuccessfully*
+  commentId: Overload:System.Threading.Tasks.ValueTask`1.IsCompletedSuccessfully
+  isExternal: true
+  href: System.Threading.Tasks.ValueTask-1.html#System_Threading_Tasks_ValueTask_1_IsCompletedSuccessfully
+  name: IsCompletedSuccessfully
+  nameWithType: ValueTask<TResult>.IsCompletedSuccessfully
+  fullName: System.Threading.Tasks.ValueTask<TResult>.IsCompletedSuccessfully
+  nameWithType.vb: ValueTask(Of TResult).IsCompletedSuccessfully
+  fullName.vb: System.Threading.Tasks.ValueTask(Of TResult).IsCompletedSuccessfully
+- uid: System.Threading.Tasks.ValueTask`1.IsFaulted*
+  commentId: Overload:System.Threading.Tasks.ValueTask`1.IsFaulted
+  isExternal: true
+  href: System.Threading.Tasks.ValueTask-1.html#System_Threading_Tasks_ValueTask_1_IsFaulted
+  name: IsFaulted
+  nameWithType: ValueTask<TResult>.IsFaulted
+  fullName: System.Threading.Tasks.ValueTask<TResult>.IsFaulted
+  nameWithType.vb: ValueTask(Of TResult).IsFaulted
+  fullName.vb: System.Threading.Tasks.ValueTask(Of TResult).IsFaulted
+- uid: System.Threading.Tasks.ValueTask`1.IsCanceled*
+  commentId: Overload:System.Threading.Tasks.ValueTask`1.IsCanceled
+  isExternal: true
+  href: System.Threading.Tasks.ValueTask-1.html#System_Threading_Tasks_ValueTask_1_IsCanceled
+  name: IsCanceled
+  nameWithType: ValueTask<TResult>.IsCanceled
+  fullName: System.Threading.Tasks.ValueTask<TResult>.IsCanceled
+  nameWithType.vb: ValueTask(Of TResult).IsCanceled
+  fullName.vb: System.Threading.Tasks.ValueTask(Of TResult).IsCanceled
+- uid: System.Threading.Tasks.ValueTask`1.Result*
+  commentId: Overload:System.Threading.Tasks.ValueTask`1.Result
+  isExternal: true
+  href: System.Threading.Tasks.ValueTask-1.html#System_Threading_Tasks_ValueTask_1_Result
+  name: Result
+  nameWithType: ValueTask<TResult>.Result
+  fullName: System.Threading.Tasks.ValueTask<TResult>.Result
+  nameWithType.vb: ValueTask(Of TResult).Result
+  fullName.vb: System.Threading.Tasks.ValueTask(Of TResult).Result

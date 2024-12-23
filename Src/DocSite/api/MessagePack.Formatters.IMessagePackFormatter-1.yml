@@ -1,0 +1,183 @@
+### YamlMime:ManagedReference
+items:
+- uid: MessagePack.Formatters.IMessagePackFormatter`1
+  commentId: T:MessagePack.Formatters.IMessagePackFormatter`1
+  id: IMessagePackFormatter`1
+  parent: MessagePack.Formatters
+  children:
+  - MessagePack.Formatters.IMessagePackFormatter`1.Deserialize(MessagePack.MessagePackReader@,MessagePack.MessagePackSerializerOptions)
+  - MessagePack.Formatters.IMessagePackFormatter`1.Serialize(MessagePack.MessagePackWriter@,`0,MessagePack.MessagePackSerializerOptions)
+  langs:
+  - csharp
+  - vb
+  name: IMessagePackFormatter<T>
+  nameWithType: IMessagePackFormatter<T>
+  fullName: MessagePack.Formatters.IMessagePackFormatter<T>
+  type: Interface
+  assemblies:
+  - MessagePack
+  namespace: MessagePack.Formatters
+  summary: The contract for serialization of some specific type.
+  example: []
+  syntax:
+    content: public interface IMessagePackFormatter<T>
+    typeParameters:
+    - id: T
+      description: The type to be serialized or deserialized.
+    content.vb: Public Interface IMessagePackFormatter(Of T)
+  nameWithType.vb: IMessagePackFormatter(Of T)
+  fullName.vb: MessagePack.Formatters.IMessagePackFormatter(Of T)
+  name.vb: IMessagePackFormatter(Of T)
+- uid: MessagePack.Formatters.IMessagePackFormatter`1.Serialize(MessagePack.MessagePackWriter@,`0,MessagePack.MessagePackSerializerOptions)
+  commentId: M:MessagePack.Formatters.IMessagePackFormatter`1.Serialize(MessagePack.MessagePackWriter@,`0,MessagePack.MessagePackSerializerOptions)
+  id: Serialize(MessagePack.MessagePackWriter@,`0,MessagePack.MessagePackSerializerOptions)
+  parent: MessagePack.Formatters.IMessagePackFormatter`1
+  langs:
+  - csharp
+  - vb
+  name: Serialize(ref MessagePackWriter, T, MessagePackSerializerOptions)
+  nameWithType: IMessagePackFormatter<T>.Serialize(ref MessagePackWriter, T, MessagePackSerializerOptions)
+  fullName: MessagePack.Formatters.IMessagePackFormatter<T>.Serialize(ref MessagePack.MessagePackWriter, T, MessagePack.MessagePackSerializerOptions)
+  type: Method
+  assemblies:
+  - MessagePack
+  namespace: MessagePack.Formatters
+  summary: Serializes a value.
+  example: []
+  syntax:
+    content: void Serialize(ref MessagePackWriter writer, T value, MessagePackSerializerOptions options)
+    parameters:
+    - id: writer
+      type: MessagePack.MessagePackWriter
+      description: The writer to use when serializing the value.
+    - id: value
+      type: '{T}'
+      description: The value to be serialized.
+    - id: options
+      type: MessagePack.MessagePackSerializerOptions
+      description: The serialization settings to use, including the resolver to use to obtain formatters for types that make up the composite type <code class="typeparamref">T</code>.
+    content.vb: Sub Serialize(writer As MessagePackWriter, value As T, options As MessagePackSerializerOptions)
+  overload: MessagePack.Formatters.IMessagePackFormatter`1.Serialize*
+  nameWithType.vb: IMessagePackFormatter(Of T).Serialize(MessagePackWriter, T, MessagePackSerializerOptions)
+  fullName.vb: MessagePack.Formatters.IMessagePackFormatter(Of T).Serialize(MessagePack.MessagePackWriter, T, MessagePack.MessagePackSerializerOptions)
+  name.vb: Serialize(MessagePackWriter, T, MessagePackSerializerOptions)
+- uid: MessagePack.Formatters.IMessagePackFormatter`1.Deserialize(MessagePack.MessagePackReader@,MessagePack.MessagePackSerializerOptions)
+  commentId: M:MessagePack.Formatters.IMessagePackFormatter`1.Deserialize(MessagePack.MessagePackReader@,MessagePack.MessagePackSerializerOptions)
+  id: Deserialize(MessagePack.MessagePackReader@,MessagePack.MessagePackSerializerOptions)
+  parent: MessagePack.Formatters.IMessagePackFormatter`1
+  langs:
+  - csharp
+  - vb
+  name: Deserialize(ref MessagePackReader, MessagePackSerializerOptions)
+  nameWithType: IMessagePackFormatter<T>.Deserialize(ref MessagePackReader, MessagePackSerializerOptions)
+  fullName: MessagePack.Formatters.IMessagePackFormatter<T>.Deserialize(ref MessagePack.MessagePackReader, MessagePack.MessagePackSerializerOptions)
+  type: Method
+  assemblies:
+  - MessagePack
+  namespace: MessagePack.Formatters
+  summary: Deserializes a value.
+  example: []
+  syntax:
+    content: T Deserialize(ref MessagePackReader reader, MessagePackSerializerOptions options)
+    parameters:
+    - id: reader
+      type: MessagePack.MessagePackReader
+      description: The reader to deserialize from.
+    - id: options
+      type: MessagePack.MessagePackSerializerOptions
+      description: The serialization settings to use, including the resolver to use to obtain formatters for types that make up the composite type <code class="typeparamref">T</code>.
+    return:
+      type: '{T}'
+      description: The deserialized value.
+    content.vb: Function Deserialize(reader As MessagePackReader, options As MessagePackSerializerOptions) As T
+  overload: MessagePack.Formatters.IMessagePackFormatter`1.Deserialize*
+  nameWithType.vb: IMessagePackFormatter(Of T).Deserialize(MessagePackReader, MessagePackSerializerOptions)
+  fullName.vb: MessagePack.Formatters.IMessagePackFormatter(Of T).Deserialize(MessagePack.MessagePackReader, MessagePack.MessagePackSerializerOptions)
+  name.vb: Deserialize(MessagePackReader, MessagePackSerializerOptions)
+references:
+- uid: MessagePack.Formatters
+  commentId: N:MessagePack.Formatters
+  isExternal: true
+  href: MessagePack.html
+  name: MessagePack.Formatters
+  nameWithType: MessagePack.Formatters
+  fullName: MessagePack.Formatters
+  spec.csharp:
+  - uid: MessagePack
+    name: MessagePack
+    isExternal: true
+    href: MessagePack.html
+  - name: .
+  - uid: MessagePack.Formatters
+    name: Formatters
+    isExternal: true
+    href: MessagePack.Formatters.html
+  spec.vb:
+  - uid: MessagePack
+    name: MessagePack
+    isExternal: true
+    href: MessagePack.html
+  - name: .
+  - uid: MessagePack.Formatters
+    name: Formatters
+    isExternal: true
+    href: MessagePack.Formatters.html
+- uid: MessagePack.Formatters.IMessagePackFormatter`1.Serialize*
+  commentId: Overload:MessagePack.Formatters.IMessagePackFormatter`1.Serialize
+  isExternal: true
+  href: MessagePack.Formatters.IMessagePackFormatter-1.html#MessagePack_Formatters_IMessagePackFormatter_1_Serialize_MessagePack_MessagePackWriter___0_MessagePack_MessagePackSerializerOptions_
+  name: Serialize
+  nameWithType: IMessagePackFormatter<T>.Serialize
+  fullName: MessagePack.Formatters.IMessagePackFormatter<T>.Serialize
+  nameWithType.vb: IMessagePackFormatter(Of T).Serialize
+  fullName.vb: MessagePack.Formatters.IMessagePackFormatter(Of T).Serialize
+- uid: MessagePack.MessagePackWriter
+  commentId: T:MessagePack.MessagePackWriter
+  parent: MessagePack
+  isExternal: true
+  href: MessagePack.MessagePackWriter.html
+  name: MessagePackWriter
+  nameWithType: MessagePackWriter
+  fullName: MessagePack.MessagePackWriter
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: MessagePack.MessagePackSerializerOptions
+  commentId: T:MessagePack.MessagePackSerializerOptions
+  parent: MessagePack
+  isExternal: true
+  href: MessagePack.MessagePackSerializerOptions.html
+  name: MessagePackSerializerOptions
+  nameWithType: MessagePackSerializerOptions
+  fullName: MessagePack.MessagePackSerializerOptions
+- uid: MessagePack
+  commentId: N:MessagePack
+  isExternal: true
+  href: MessagePack.html
+  name: MessagePack
+  nameWithType: MessagePack
+  fullName: MessagePack
+- uid: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: MessagePack.Formatters.IMessagePackFormatter`1.Deserialize*
+  commentId: Overload:MessagePack.Formatters.IMessagePackFormatter`1.Deserialize
+  isExternal: true
+  href: MessagePack.Formatters.IMessagePackFormatter-1.html#MessagePack_Formatters_IMessagePackFormatter_1_Deserialize_MessagePack_MessagePackReader__MessagePack_MessagePackSerializerOptions_
+  name: Deserialize
+  nameWithType: IMessagePackFormatter<T>.Deserialize
+  fullName: MessagePack.Formatters.IMessagePackFormatter<T>.Deserialize
+  nameWithType.vb: IMessagePackFormatter(Of T).Deserialize
+  fullName.vb: MessagePack.Formatters.IMessagePackFormatter(Of T).Deserialize
+- uid: MessagePack.MessagePackReader
+  commentId: T:MessagePack.MessagePackReader
+  parent: MessagePack
+  isExternal: true
+  href: MessagePack.MessagePackReader.html
+  name: MessagePackReader
+  nameWithType: MessagePackReader
+  fullName: MessagePack.MessagePackReader

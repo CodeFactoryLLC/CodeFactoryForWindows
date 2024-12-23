@@ -86,6 +86,13 @@ namespace CodeFactory.WinVs.Models.CSharp
         /// <returns>A newly loaded copy of the <see cref="ICsSource"/> model after the changes have been applied.</returns>
         /// <exception cref="DocumentException">Error is raised when errors occur updating the source document.</exception>
         public abstract Task<CsSource> AddBeforeAsync(string sourceCode);
+        /// <summary>
+        /// Adds the source code directly before the definition of the <see cref="ICsAttribute"/>in the target document.
+        /// </summary>
+        /// <param name="sourceCode">The source code that is to be added to the document.</param>
+        /// <returns>Updated source model and the transaction details.</returns>
+        /// <exception cref="DocumentException">Error is raised when errors occur updating the source document.</exception>
+        public abstract Task<CsSourceTransaction> AddBeforeTransactionAsync(string sourceCode);
 
 
         /// <summary>
@@ -105,6 +112,14 @@ namespace CodeFactory.WinVs.Models.CSharp
         /// <returns>A newly loaded copy of the <see cref="CsSource"/> model after the changes have been applied.</returns>
         /// <exception cref="DocumentException">Error is raised when errors occur updating the source document.</exception>
         public abstract Task<CsSource> AddAfterAsync(string sourceCode);
+
+        /// <summary>
+        /// Adds the source code directly after the definition of the <see cref="CsAttribute"/>in the target document.
+        /// </summary>
+        /// <param name="sourceCode">The source code that is to be added to the document.</param>
+        /// <returns>Updated source model and the transaction details.</returns>
+        /// <exception cref="DocumentException">Error is raised when errors occur updating the source document.</exception>
+        public abstract Task<CsSourceTransaction> AddAfterTransactionAsync(string sourceCode);
 
         /// <summary>
         /// Deletes the definition of the attribute from the source document. 
@@ -155,6 +170,14 @@ namespace CodeFactory.WinVs.Models.CSharp
         /// <returns>A newly loaded copy of the <see cref="CsSource"/> model after the changes have been applied.</returns>
         /// <exception cref="DocumentException">Error is raised when errors occur updating the source document.</exception>
         public abstract Task<CsSource> ReplaceAsync(string sourceCode);
+
+        /// <summary>
+        /// Replaces the current attribute with the provided source code.
+        /// </summary>
+        /// <param name="sourceCode">The source code that is to be used to replace the original definition in the document.</param>
+        /// <returns>Updated source model and the transaction details.</returns>
+        /// <exception cref="DocumentException">Error is raised when errors occur updating the source document.</exception>
+        public abstract Task<CsSourceTransaction> ReplaceTransactionAsync(string sourceCode);
 
         /// <summary>
         ///     Flag that determines if the attribute has parameters

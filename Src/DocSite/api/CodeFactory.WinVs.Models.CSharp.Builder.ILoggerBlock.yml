@@ -1,0 +1,577 @@
+### YamlMime:ManagedReference
+items:
+- uid: CodeFactory.WinVs.Models.CSharp.Builder.ILoggerBlock
+  commentId: T:CodeFactory.WinVs.Models.CSharp.Builder.ILoggerBlock
+  id: ILoggerBlock
+  parent: CodeFactory.WinVs.Models.CSharp.Builder
+  children:
+  - CodeFactory.WinVs.Models.CSharp.Builder.ILoggerBlock.CriticalMethodName
+  - CodeFactory.WinVs.Models.CSharp.Builder.ILoggerBlock.DebugMethodName
+  - CodeFactory.WinVs.Models.CSharp.Builder.ILoggerBlock.ErrorMethodName
+  - CodeFactory.WinVs.Models.CSharp.Builder.ILoggerBlock.GenerateEnterLogging(Microsoft.Extensions.Logging.LogLevel,System.String)
+  - CodeFactory.WinVs.Models.CSharp.Builder.ILoggerBlock.GenerateExitLogging(Microsoft.Extensions.Logging.LogLevel,System.String)
+  - CodeFactory.WinVs.Models.CSharp.Builder.ILoggerBlock.GenerateLogging(Microsoft.Extensions.Logging.LogLevel,System.String,System.Boolean,System.String)
+  - CodeFactory.WinVs.Models.CSharp.Builder.ILoggerBlock.InformationMethodName
+  - CodeFactory.WinVs.Models.CSharp.Builder.ILoggerBlock.LogMethodName(Microsoft.Extensions.Logging.LogLevel)
+  - CodeFactory.WinVs.Models.CSharp.Builder.ILoggerBlock.LoggerFieldName
+  - CodeFactory.WinVs.Models.CSharp.Builder.ILoggerBlock.TraceMethodName
+  - CodeFactory.WinVs.Models.CSharp.Builder.ILoggerBlock.WarningMethodName
+  langs:
+  - csharp
+  - vb
+  name: ILoggerBlock
+  nameWithType: ILoggerBlock
+  fullName: CodeFactory.WinVs.Models.CSharp.Builder.ILoggerBlock
+  type: Interface
+  source:
+    href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/19e816ffdf1ba504be6987736bbac42e2d241405/Src/CodeFactoryForWindows/CodeFactory.WinVs/Models/CSharp/Builder/ILoggerBlock.cs
+  assemblies:
+  - CodeFactory.WinVs
+  namespace: CodeFactory.WinVs.Models.CSharp.Builder
+  summary: Contract definition for implementation of a logger block.
+  example: []
+  syntax:
+    content: 'public interface ILoggerBlock : IBlock'
+    content.vb: Public Interface ILoggerBlock Inherits IBlock
+  inheritedMembers:
+  - CodeFactory.WinVs.Models.CSharp.Builder.IBlock.BlockType
+- uid: CodeFactory.WinVs.Models.CSharp.Builder.ILoggerBlock.LogMethodName(Microsoft.Extensions.Logging.LogLevel)
+  commentId: M:CodeFactory.WinVs.Models.CSharp.Builder.ILoggerBlock.LogMethodName(Microsoft.Extensions.Logging.LogLevel)
+  id: LogMethodName(Microsoft.Extensions.Logging.LogLevel)
+  parent: CodeFactory.WinVs.Models.CSharp.Builder.ILoggerBlock
+  langs:
+  - csharp
+  - vb
+  name: LogMethodName(LogLevel)
+  nameWithType: ILoggerBlock.LogMethodName(LogLevel)
+  fullName: CodeFactory.WinVs.Models.CSharp.Builder.ILoggerBlock.LogMethodName(Microsoft.Extensions.Logging.LogLevel)
+  type: Method
+  source:
+    href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/19e816ffdf1ba504be6987736bbac42e2d241405/Src/CodeFactoryForWindows/CodeFactory.WinVs/Models/CSharp/Builder/ILoggerBlock.cs
+  assemblies:
+  - CodeFactory.WinVs
+  namespace: CodeFactory.WinVs.Models.CSharp.Builder
+  summary: Returns the name of the method used by the logging framework based on the provided logging level.
+  example: []
+  syntax:
+    content: string LogMethodName(LogLevel level)
+    parameters:
+    - id: level
+      type: Microsoft.Extensions.Logging.LogLevel
+      description: The logging level to get the method name for.
+    return:
+      type: System.String
+      description: The logging method name based on the logging level.
+    content.vb: Function LogMethodName(level As LogLevel) As String
+  overload: CodeFactory.WinVs.Models.CSharp.Builder.ILoggerBlock.LogMethodName*
+- uid: CodeFactory.WinVs.Models.CSharp.Builder.ILoggerBlock.GenerateLogging(Microsoft.Extensions.Logging.LogLevel,System.String,System.Boolean,System.String)
+  commentId: M:CodeFactory.WinVs.Models.CSharp.Builder.ILoggerBlock.GenerateLogging(Microsoft.Extensions.Logging.LogLevel,System.String,System.Boolean,System.String)
+  id: GenerateLogging(Microsoft.Extensions.Logging.LogLevel,System.String,System.Boolean,System.String)
+  parent: CodeFactory.WinVs.Models.CSharp.Builder.ILoggerBlock
+  langs:
+  - csharp
+  - vb
+  name: GenerateLogging(LogLevel, string, bool, string)
+  nameWithType: ILoggerBlock.GenerateLogging(LogLevel, string, bool, string)
+  fullName: CodeFactory.WinVs.Models.CSharp.Builder.ILoggerBlock.GenerateLogging(Microsoft.Extensions.Logging.LogLevel, string, bool, string)
+  type: Method
+  source:
+    href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/19e816ffdf1ba504be6987736bbac42e2d241405/Src/CodeFactoryForWindows/CodeFactory.WinVs/Models/CSharp/Builder/ILoggerBlock.cs
+  assemblies:
+  - CodeFactory.WinVs
+  namespace: CodeFactory.WinVs.Models.CSharp.Builder
+  summary: Create formatted logging to be used with automation.
+  example: []
+  syntax:
+    content: string GenerateLogging(LogLevel level, string message, bool isFormattedMessage = false, string exceptionName = null)
+    parameters:
+    - id: level
+      type: Microsoft.Extensions.Logging.LogLevel
+      description: The logging level for the logger Name.
+    - id: message
+      type: System.String
+      description: the target message for logging.
+    - id: isFormattedMessage
+      type: System.Boolean
+      description: optional parameter that determines if the string uses a $ formatted string for the message.
+    - id: exceptionName
+      type: System.String
+      description: Optional parameter to pass the exception field name to be included with the logging.
+    return:
+      type: System.String
+      description: The formatted logging Name to be Generateed. If no message is provided will return null.
+    content.vb: Function GenerateLogging(level As LogLevel, message As String, isFormattedMessage As Boolean = False, exceptionName As String = Nothing) As String
+  overload: CodeFactory.WinVs.Models.CSharp.Builder.ILoggerBlock.GenerateLogging*
+  nameWithType.vb: ILoggerBlock.GenerateLogging(LogLevel, String, Boolean, String)
+  fullName.vb: CodeFactory.WinVs.Models.CSharp.Builder.ILoggerBlock.GenerateLogging(Microsoft.Extensions.Logging.LogLevel, String, Boolean, String)
+  name.vb: GenerateLogging(LogLevel, String, Boolean, String)
+- uid: CodeFactory.WinVs.Models.CSharp.Builder.ILoggerBlock.GenerateEnterLogging(Microsoft.Extensions.Logging.LogLevel,System.String)
+  commentId: M:CodeFactory.WinVs.Models.CSharp.Builder.ILoggerBlock.GenerateEnterLogging(Microsoft.Extensions.Logging.LogLevel,System.String)
+  id: GenerateEnterLogging(Microsoft.Extensions.Logging.LogLevel,System.String)
+  parent: CodeFactory.WinVs.Models.CSharp.Builder.ILoggerBlock
+  langs:
+  - csharp
+  - vb
+  name: GenerateEnterLogging(LogLevel, string)
+  nameWithType: ILoggerBlock.GenerateEnterLogging(LogLevel, string)
+  fullName: CodeFactory.WinVs.Models.CSharp.Builder.ILoggerBlock.GenerateEnterLogging(Microsoft.Extensions.Logging.LogLevel, string)
+  type: Method
+  source:
+    href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/19e816ffdf1ba504be6987736bbac42e2d241405/Src/CodeFactoryForWindows/CodeFactory.WinVs/Models/CSharp/Builder/ILoggerBlock.cs
+  assemblies:
+  - CodeFactory.WinVs
+  namespace: CodeFactory.WinVs.Models.CSharp.Builder
+  summary: Generates a logging message entering the target member name.
+  example: []
+  syntax:
+    content: string GenerateEnterLogging(LogLevel level, string memberName = null)
+    parameters:
+    - id: level
+      type: Microsoft.Extensions.Logging.LogLevel
+      description: The level to log the message at.
+    - id: memberName
+      type: System.String
+      description: Optional parameter that provides the member name.
+    return:
+      type: System.String
+      description: The formatted logging string.
+    content.vb: Function GenerateEnterLogging(level As LogLevel, memberName As String = Nothing) As String
+  overload: CodeFactory.WinVs.Models.CSharp.Builder.ILoggerBlock.GenerateEnterLogging*
+  nameWithType.vb: ILoggerBlock.GenerateEnterLogging(LogLevel, String)
+  fullName.vb: CodeFactory.WinVs.Models.CSharp.Builder.ILoggerBlock.GenerateEnterLogging(Microsoft.Extensions.Logging.LogLevel, String)
+  name.vb: GenerateEnterLogging(LogLevel, String)
+- uid: CodeFactory.WinVs.Models.CSharp.Builder.ILoggerBlock.GenerateExitLogging(Microsoft.Extensions.Logging.LogLevel,System.String)
+  commentId: M:CodeFactory.WinVs.Models.CSharp.Builder.ILoggerBlock.GenerateExitLogging(Microsoft.Extensions.Logging.LogLevel,System.String)
+  id: GenerateExitLogging(Microsoft.Extensions.Logging.LogLevel,System.String)
+  parent: CodeFactory.WinVs.Models.CSharp.Builder.ILoggerBlock
+  langs:
+  - csharp
+  - vb
+  name: GenerateExitLogging(LogLevel, string)
+  nameWithType: ILoggerBlock.GenerateExitLogging(LogLevel, string)
+  fullName: CodeFactory.WinVs.Models.CSharp.Builder.ILoggerBlock.GenerateExitLogging(Microsoft.Extensions.Logging.LogLevel, string)
+  type: Method
+  source:
+    href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/19e816ffdf1ba504be6987736bbac42e2d241405/Src/CodeFactoryForWindows/CodeFactory.WinVs/Models/CSharp/Builder/ILoggerBlock.cs
+  assemblies:
+  - CodeFactory.WinVs
+  namespace: CodeFactory.WinVs.Models.CSharp.Builder
+  summary: Generates a logging message exiting the target member name.
+  example: []
+  syntax:
+    content: string GenerateExitLogging(LogLevel level, string memberName = null)
+    parameters:
+    - id: level
+      type: Microsoft.Extensions.Logging.LogLevel
+      description: The level to log the message at.
+    - id: memberName
+      type: System.String
+      description: Optional parameter that provides the member name.
+    return:
+      type: System.String
+      description: The formatted logging string.
+    content.vb: Function GenerateExitLogging(level As LogLevel, memberName As String = Nothing) As String
+  overload: CodeFactory.WinVs.Models.CSharp.Builder.ILoggerBlock.GenerateExitLogging*
+  nameWithType.vb: ILoggerBlock.GenerateExitLogging(LogLevel, String)
+  fullName.vb: CodeFactory.WinVs.Models.CSharp.Builder.ILoggerBlock.GenerateExitLogging(Microsoft.Extensions.Logging.LogLevel, String)
+  name.vb: GenerateExitLogging(LogLevel, String)
+- uid: CodeFactory.WinVs.Models.CSharp.Builder.ILoggerBlock.LoggerFieldName
+  commentId: P:CodeFactory.WinVs.Models.CSharp.Builder.ILoggerBlock.LoggerFieldName
+  id: LoggerFieldName
+  parent: CodeFactory.WinVs.Models.CSharp.Builder.ILoggerBlock
+  langs:
+  - csharp
+  - vb
+  name: LoggerFieldName
+  nameWithType: ILoggerBlock.LoggerFieldName
+  fullName: CodeFactory.WinVs.Models.CSharp.Builder.ILoggerBlock.LoggerFieldName
+  type: Property
+  source:
+    href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/19e816ffdf1ba504be6987736bbac42e2d241405/Src/CodeFactoryForWindows/CodeFactory.WinVs/Models/CSharp/Builder/ILoggerBlock.cs
+  assemblies:
+  - CodeFactory.WinVs
+  namespace: CodeFactory.WinVs.Models.CSharp.Builder
+  summary: The field name used for Generateing logger Name.
+  example: []
+  syntax:
+    content: string LoggerFieldName { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: ReadOnly Property LoggerFieldName As String
+  overload: CodeFactory.WinVs.Models.CSharp.Builder.ILoggerBlock.LoggerFieldName*
+- uid: CodeFactory.WinVs.Models.CSharp.Builder.ILoggerBlock.TraceMethodName
+  commentId: P:CodeFactory.WinVs.Models.CSharp.Builder.ILoggerBlock.TraceMethodName
+  id: TraceMethodName
+  parent: CodeFactory.WinVs.Models.CSharp.Builder.ILoggerBlock
+  langs:
+  - csharp
+  - vb
+  name: TraceMethodName
+  nameWithType: ILoggerBlock.TraceMethodName
+  fullName: CodeFactory.WinVs.Models.CSharp.Builder.ILoggerBlock.TraceMethodName
+  type: Property
+  source:
+    href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/19e816ffdf1ba504be6987736bbac42e2d241405/Src/CodeFactoryForWindows/CodeFactory.WinVs/Models/CSharp/Builder/ILoggerBlock.cs
+  assemblies:
+  - CodeFactory.WinVs
+  namespace: CodeFactory.WinVs.Models.CSharp.Builder
+  summary: Method name for the trace method.
+  example: []
+  syntax:
+    content: string TraceMethodName { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: ReadOnly Property TraceMethodName As String
+  overload: CodeFactory.WinVs.Models.CSharp.Builder.ILoggerBlock.TraceMethodName*
+- uid: CodeFactory.WinVs.Models.CSharp.Builder.ILoggerBlock.DebugMethodName
+  commentId: P:CodeFactory.WinVs.Models.CSharp.Builder.ILoggerBlock.DebugMethodName
+  id: DebugMethodName
+  parent: CodeFactory.WinVs.Models.CSharp.Builder.ILoggerBlock
+  langs:
+  - csharp
+  - vb
+  name: DebugMethodName
+  nameWithType: ILoggerBlock.DebugMethodName
+  fullName: CodeFactory.WinVs.Models.CSharp.Builder.ILoggerBlock.DebugMethodName
+  type: Property
+  source:
+    href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/19e816ffdf1ba504be6987736bbac42e2d241405/Src/CodeFactoryForWindows/CodeFactory.WinVs/Models/CSharp/Builder/ILoggerBlock.cs
+  assemblies:
+  - CodeFactory.WinVs
+  namespace: CodeFactory.WinVs.Models.CSharp.Builder
+  summary: Method name for the debug method.
+  example: []
+  syntax:
+    content: string DebugMethodName { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: ReadOnly Property DebugMethodName As String
+  overload: CodeFactory.WinVs.Models.CSharp.Builder.ILoggerBlock.DebugMethodName*
+- uid: CodeFactory.WinVs.Models.CSharp.Builder.ILoggerBlock.InformationMethodName
+  commentId: P:CodeFactory.WinVs.Models.CSharp.Builder.ILoggerBlock.InformationMethodName
+  id: InformationMethodName
+  parent: CodeFactory.WinVs.Models.CSharp.Builder.ILoggerBlock
+  langs:
+  - csharp
+  - vb
+  name: InformationMethodName
+  nameWithType: ILoggerBlock.InformationMethodName
+  fullName: CodeFactory.WinVs.Models.CSharp.Builder.ILoggerBlock.InformationMethodName
+  type: Property
+  source:
+    href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/19e816ffdf1ba504be6987736bbac42e2d241405/Src/CodeFactoryForWindows/CodeFactory.WinVs/Models/CSharp/Builder/ILoggerBlock.cs
+  assemblies:
+  - CodeFactory.WinVs
+  namespace: CodeFactory.WinVs.Models.CSharp.Builder
+  summary: Method name for the information method.
+  example: []
+  syntax:
+    content: string InformationMethodName { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: ReadOnly Property InformationMethodName As String
+  overload: CodeFactory.WinVs.Models.CSharp.Builder.ILoggerBlock.InformationMethodName*
+- uid: CodeFactory.WinVs.Models.CSharp.Builder.ILoggerBlock.WarningMethodName
+  commentId: P:CodeFactory.WinVs.Models.CSharp.Builder.ILoggerBlock.WarningMethodName
+  id: WarningMethodName
+  parent: CodeFactory.WinVs.Models.CSharp.Builder.ILoggerBlock
+  langs:
+  - csharp
+  - vb
+  name: WarningMethodName
+  nameWithType: ILoggerBlock.WarningMethodName
+  fullName: CodeFactory.WinVs.Models.CSharp.Builder.ILoggerBlock.WarningMethodName
+  type: Property
+  source:
+    href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/19e816ffdf1ba504be6987736bbac42e2d241405/Src/CodeFactoryForWindows/CodeFactory.WinVs/Models/CSharp/Builder/ILoggerBlock.cs
+  assemblies:
+  - CodeFactory.WinVs
+  namespace: CodeFactory.WinVs.Models.CSharp.Builder
+  summary: Method name for the warning method.
+  example: []
+  syntax:
+    content: string WarningMethodName { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: ReadOnly Property WarningMethodName As String
+  overload: CodeFactory.WinVs.Models.CSharp.Builder.ILoggerBlock.WarningMethodName*
+- uid: CodeFactory.WinVs.Models.CSharp.Builder.ILoggerBlock.ErrorMethodName
+  commentId: P:CodeFactory.WinVs.Models.CSharp.Builder.ILoggerBlock.ErrorMethodName
+  id: ErrorMethodName
+  parent: CodeFactory.WinVs.Models.CSharp.Builder.ILoggerBlock
+  langs:
+  - csharp
+  - vb
+  name: ErrorMethodName
+  nameWithType: ILoggerBlock.ErrorMethodName
+  fullName: CodeFactory.WinVs.Models.CSharp.Builder.ILoggerBlock.ErrorMethodName
+  type: Property
+  source:
+    href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/19e816ffdf1ba504be6987736bbac42e2d241405/Src/CodeFactoryForWindows/CodeFactory.WinVs/Models/CSharp/Builder/ILoggerBlock.cs
+  assemblies:
+  - CodeFactory.WinVs
+  namespace: CodeFactory.WinVs.Models.CSharp.Builder
+  summary: Method name for the error method.
+  example: []
+  syntax:
+    content: string ErrorMethodName { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: ReadOnly Property ErrorMethodName As String
+  overload: CodeFactory.WinVs.Models.CSharp.Builder.ILoggerBlock.ErrorMethodName*
+- uid: CodeFactory.WinVs.Models.CSharp.Builder.ILoggerBlock.CriticalMethodName
+  commentId: P:CodeFactory.WinVs.Models.CSharp.Builder.ILoggerBlock.CriticalMethodName
+  id: CriticalMethodName
+  parent: CodeFactory.WinVs.Models.CSharp.Builder.ILoggerBlock
+  langs:
+  - csharp
+  - vb
+  name: CriticalMethodName
+  nameWithType: ILoggerBlock.CriticalMethodName
+  fullName: CodeFactory.WinVs.Models.CSharp.Builder.ILoggerBlock.CriticalMethodName
+  type: Property
+  source:
+    href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/19e816ffdf1ba504be6987736bbac42e2d241405/Src/CodeFactoryForWindows/CodeFactory.WinVs/Models/CSharp/Builder/ILoggerBlock.cs
+  assemblies:
+  - CodeFactory.WinVs
+  namespace: CodeFactory.WinVs.Models.CSharp.Builder
+  summary: Method name for the critical method.
+  example: []
+  syntax:
+    content: string CriticalMethodName { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: ReadOnly Property CriticalMethodName As String
+  overload: CodeFactory.WinVs.Models.CSharp.Builder.ILoggerBlock.CriticalMethodName*
+references:
+- uid: CodeFactory.WinVs.Models.CSharp.Builder
+  commentId: N:CodeFactory.WinVs.Models.CSharp.Builder
+  isExternal: true
+  href: CodeFactory.html
+  name: CodeFactory.WinVs.Models.CSharp.Builder
+  nameWithType: CodeFactory.WinVs.Models.CSharp.Builder
+  fullName: CodeFactory.WinVs.Models.CSharp.Builder
+  spec.csharp:
+  - uid: CodeFactory
+    name: CodeFactory
+    isExternal: true
+    href: CodeFactory.html
+  - name: .
+  - uid: CodeFactory.WinVs
+    name: WinVs
+    isExternal: true
+    href: CodeFactory.WinVs.html
+  - name: .
+  - uid: CodeFactory.WinVs.Models
+    name: Models
+    isExternal: true
+    href: CodeFactory.WinVs.Models.html
+  - name: .
+  - uid: CodeFactory.WinVs.Models.CSharp
+    name: CSharp
+    isExternal: true
+    href: CodeFactory.WinVs.Models.CSharp.html
+  - name: .
+  - uid: CodeFactory.WinVs.Models.CSharp.Builder
+    name: Builder
+    isExternal: true
+    href: CodeFactory.WinVs.Models.CSharp.Builder.html
+  spec.vb:
+  - uid: CodeFactory
+    name: CodeFactory
+    isExternal: true
+    href: CodeFactory.html
+  - name: .
+  - uid: CodeFactory.WinVs
+    name: WinVs
+    isExternal: true
+    href: CodeFactory.WinVs.html
+  - name: .
+  - uid: CodeFactory.WinVs.Models
+    name: Models
+    isExternal: true
+    href: CodeFactory.WinVs.Models.html
+  - name: .
+  - uid: CodeFactory.WinVs.Models.CSharp
+    name: CSharp
+    isExternal: true
+    href: CodeFactory.WinVs.Models.CSharp.html
+  - name: .
+  - uid: CodeFactory.WinVs.Models.CSharp.Builder
+    name: Builder
+    isExternal: true
+    href: CodeFactory.WinVs.Models.CSharp.Builder.html
+- uid: CodeFactory.WinVs.Models.CSharp.Builder.IBlock.BlockType
+  commentId: P:CodeFactory.WinVs.Models.CSharp.Builder.IBlock.BlockType
+  parent: CodeFactory.WinVs.Models.CSharp.Builder.IBlock
+  isExternal: true
+  href: CodeFactory.WinVs.Models.CSharp.Builder.IBlock.html#CodeFactory_WinVs_Models_CSharp_Builder_IBlock_BlockType
+  name: BlockType
+  nameWithType: IBlock.BlockType
+  fullName: CodeFactory.WinVs.Models.CSharp.Builder.IBlock.BlockType
+- uid: CodeFactory.WinVs.Models.CSharp.Builder.IBlock
+  commentId: T:CodeFactory.WinVs.Models.CSharp.Builder.IBlock
+  parent: CodeFactory.WinVs.Models.CSharp.Builder
+  isExternal: true
+  href: CodeFactory.WinVs.Models.CSharp.Builder.IBlock.html
+  name: IBlock
+  nameWithType: IBlock
+  fullName: CodeFactory.WinVs.Models.CSharp.Builder.IBlock
+- uid: CodeFactory.WinVs.Models.CSharp.Builder.ILoggerBlock.LogMethodName*
+  commentId: Overload:CodeFactory.WinVs.Models.CSharp.Builder.ILoggerBlock.LogMethodName
+  isExternal: true
+  href: CodeFactory.WinVs.Models.CSharp.Builder.ILoggerBlock.html#CodeFactory_WinVs_Models_CSharp_Builder_ILoggerBlock_LogMethodName_Microsoft_Extensions_Logging_LogLevel_
+  name: LogMethodName
+  nameWithType: ILoggerBlock.LogMethodName
+  fullName: CodeFactory.WinVs.Models.CSharp.Builder.ILoggerBlock.LogMethodName
+- uid: Microsoft.Extensions.Logging.LogLevel
+  commentId: T:Microsoft.Extensions.Logging.LogLevel
+  parent: Microsoft.Extensions.Logging
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.loglevel
+  name: LogLevel
+  nameWithType: LogLevel
+  fullName: Microsoft.Extensions.Logging.LogLevel
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Microsoft.Extensions.Logging
+  commentId: N:Microsoft.Extensions.Logging
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft
+  name: Microsoft.Extensions.Logging
+  nameWithType: Microsoft.Extensions.Logging
+  fullName: Microsoft.Extensions.Logging
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.Extensions
+    name: Extensions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions
+  - name: .
+  - uid: Microsoft.Extensions.Logging
+    name: Logging
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.Extensions
+    name: Extensions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions
+  - name: .
+  - uid: Microsoft.Extensions.Logging
+    name: Logging
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: CodeFactory.WinVs.Models.CSharp.Builder.ILoggerBlock.GenerateLogging*
+  commentId: Overload:CodeFactory.WinVs.Models.CSharp.Builder.ILoggerBlock.GenerateLogging
+  isExternal: true
+  href: CodeFactory.WinVs.Models.CSharp.Builder.ILoggerBlock.html#CodeFactory_WinVs_Models_CSharp_Builder_ILoggerBlock_GenerateLogging_Microsoft_Extensions_Logging_LogLevel_System_String_System_Boolean_System_String_
+  name: GenerateLogging
+  nameWithType: ILoggerBlock.GenerateLogging
+  fullName: CodeFactory.WinVs.Models.CSharp.Builder.ILoggerBlock.GenerateLogging
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: CodeFactory.WinVs.Models.CSharp.Builder.ILoggerBlock.GenerateEnterLogging*
+  commentId: Overload:CodeFactory.WinVs.Models.CSharp.Builder.ILoggerBlock.GenerateEnterLogging
+  isExternal: true
+  href: CodeFactory.WinVs.Models.CSharp.Builder.ILoggerBlock.html#CodeFactory_WinVs_Models_CSharp_Builder_ILoggerBlock_GenerateEnterLogging_Microsoft_Extensions_Logging_LogLevel_System_String_
+  name: GenerateEnterLogging
+  nameWithType: ILoggerBlock.GenerateEnterLogging
+  fullName: CodeFactory.WinVs.Models.CSharp.Builder.ILoggerBlock.GenerateEnterLogging
+- uid: CodeFactory.WinVs.Models.CSharp.Builder.ILoggerBlock.GenerateExitLogging*
+  commentId: Overload:CodeFactory.WinVs.Models.CSharp.Builder.ILoggerBlock.GenerateExitLogging
+  isExternal: true
+  href: CodeFactory.WinVs.Models.CSharp.Builder.ILoggerBlock.html#CodeFactory_WinVs_Models_CSharp_Builder_ILoggerBlock_GenerateExitLogging_Microsoft_Extensions_Logging_LogLevel_System_String_
+  name: GenerateExitLogging
+  nameWithType: ILoggerBlock.GenerateExitLogging
+  fullName: CodeFactory.WinVs.Models.CSharp.Builder.ILoggerBlock.GenerateExitLogging
+- uid: CodeFactory.WinVs.Models.CSharp.Builder.ILoggerBlock.LoggerFieldName*
+  commentId: Overload:CodeFactory.WinVs.Models.CSharp.Builder.ILoggerBlock.LoggerFieldName
+  isExternal: true
+  href: CodeFactory.WinVs.Models.CSharp.Builder.ILoggerBlock.html#CodeFactory_WinVs_Models_CSharp_Builder_ILoggerBlock_LoggerFieldName
+  name: LoggerFieldName
+  nameWithType: ILoggerBlock.LoggerFieldName
+  fullName: CodeFactory.WinVs.Models.CSharp.Builder.ILoggerBlock.LoggerFieldName
+- uid: CodeFactory.WinVs.Models.CSharp.Builder.ILoggerBlock.TraceMethodName*
+  commentId: Overload:CodeFactory.WinVs.Models.CSharp.Builder.ILoggerBlock.TraceMethodName
+  isExternal: true
+  href: CodeFactory.WinVs.Models.CSharp.Builder.ILoggerBlock.html#CodeFactory_WinVs_Models_CSharp_Builder_ILoggerBlock_TraceMethodName
+  name: TraceMethodName
+  nameWithType: ILoggerBlock.TraceMethodName
+  fullName: CodeFactory.WinVs.Models.CSharp.Builder.ILoggerBlock.TraceMethodName
+- uid: CodeFactory.WinVs.Models.CSharp.Builder.ILoggerBlock.DebugMethodName*
+  commentId: Overload:CodeFactory.WinVs.Models.CSharp.Builder.ILoggerBlock.DebugMethodName
+  isExternal: true
+  href: CodeFactory.WinVs.Models.CSharp.Builder.ILoggerBlock.html#CodeFactory_WinVs_Models_CSharp_Builder_ILoggerBlock_DebugMethodName
+  name: DebugMethodName
+  nameWithType: ILoggerBlock.DebugMethodName
+  fullName: CodeFactory.WinVs.Models.CSharp.Builder.ILoggerBlock.DebugMethodName
+- uid: CodeFactory.WinVs.Models.CSharp.Builder.ILoggerBlock.InformationMethodName*
+  commentId: Overload:CodeFactory.WinVs.Models.CSharp.Builder.ILoggerBlock.InformationMethodName
+  isExternal: true
+  href: CodeFactory.WinVs.Models.CSharp.Builder.ILoggerBlock.html#CodeFactory_WinVs_Models_CSharp_Builder_ILoggerBlock_InformationMethodName
+  name: InformationMethodName
+  nameWithType: ILoggerBlock.InformationMethodName
+  fullName: CodeFactory.WinVs.Models.CSharp.Builder.ILoggerBlock.InformationMethodName
+- uid: CodeFactory.WinVs.Models.CSharp.Builder.ILoggerBlock.WarningMethodName*
+  commentId: Overload:CodeFactory.WinVs.Models.CSharp.Builder.ILoggerBlock.WarningMethodName
+  isExternal: true
+  href: CodeFactory.WinVs.Models.CSharp.Builder.ILoggerBlock.html#CodeFactory_WinVs_Models_CSharp_Builder_ILoggerBlock_WarningMethodName
+  name: WarningMethodName
+  nameWithType: ILoggerBlock.WarningMethodName
+  fullName: CodeFactory.WinVs.Models.CSharp.Builder.ILoggerBlock.WarningMethodName
+- uid: CodeFactory.WinVs.Models.CSharp.Builder.ILoggerBlock.ErrorMethodName*
+  commentId: Overload:CodeFactory.WinVs.Models.CSharp.Builder.ILoggerBlock.ErrorMethodName
+  isExternal: true
+  href: CodeFactory.WinVs.Models.CSharp.Builder.ILoggerBlock.html#CodeFactory_WinVs_Models_CSharp_Builder_ILoggerBlock_ErrorMethodName
+  name: ErrorMethodName
+  nameWithType: ILoggerBlock.ErrorMethodName
+  fullName: CodeFactory.WinVs.Models.CSharp.Builder.ILoggerBlock.ErrorMethodName
+- uid: CodeFactory.WinVs.Models.CSharp.Builder.ILoggerBlock.CriticalMethodName*
+  commentId: Overload:CodeFactory.WinVs.Models.CSharp.Builder.ILoggerBlock.CriticalMethodName
+  isExternal: true
+  href: CodeFactory.WinVs.Models.CSharp.Builder.ILoggerBlock.html#CodeFactory_WinVs_Models_CSharp_Builder_ILoggerBlock_CriticalMethodName
+  name: CriticalMethodName
+  nameWithType: ILoggerBlock.CriticalMethodName
+  fullName: CodeFactory.WinVs.Models.CSharp.Builder.ILoggerBlock.CriticalMethodName

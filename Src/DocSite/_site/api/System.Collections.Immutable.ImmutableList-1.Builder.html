@@ -1,0 +1,2230 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+    <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Class ImmutableList&lt;T&gt;.Builder | CodeFactory for Windows </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Class ImmutableList&lt;T&gt;.Builder | CodeFactory for Windows ">
+      <meta name="generator" content="docfx ">
+  
+      <link rel="shortcut icon" href="../images/cfLogo70White.png">
+      <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/night-owl.min.css">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" integrity="sha384-EvBWSlnoFgZlXJvpzS+MAUEjvN7+gcCwH+qh7GRFOGgZO0PuwOFro7qPOJnLfe7l" crossorigin="anonymous">
+      <link rel="stylesheet" href="../styles/config.css">
+      <link rel="stylesheet" href="../styles/singulink.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+  
+  <meta property="docfx:rel" content="../">
+  <meta property="docfx:newtab" content="true">
+    </head>
+    <body>
+        <!-- Header required for docfx anchor scroll to work -->
+        <header id="head"></header>
+        <div class="top-navbar">
+            <a class="burger-icon" onclick="toggleMenu()">
+                <svg name="Hamburger" style="vertical-align: middle;" width="34" height="34" viewbox="0 0 24 24"><path fill="currentColor" fill-rule="evenodd" clip-rule="evenodd" d="M20 6H4V9H20V6ZM4 10.999H20V13.999H4V10.999ZM4 15.999H20V18.999H4V15.999Z"></path></svg>
+            </a>
+
+
+            <a class="brand" href="../index.html">
+              <img src="../images/cfLogo70White.png" alt="CodeFactory for Windows" class="logomark">
+              <span class="brand-title">CodeFactory for Windows</span>
+            </a>        </div>
+
+        <div class="body-content">
+            <div id="blackout" class="blackout" onclick="toggleMenu()"></div>
+
+            <nav id="sidebar" role="navigation">
+                <div class="sidebar">
+
+                    <div>
+                      <div class="mobile-hide">
+
+                        <a class="brand" href="../index.html">
+                          <img src="../images/cfLogo70White.png" alt="CodeFactory for Windows" class="logomark">
+                          <span class="brand-title">CodeFactory for Windows</span>
+                        </a>                      </div>
+
+                      <div class="sidesearch">
+                        <form id="search" role="search" class="search">
+                            <i class="bi bi-search search-icon"></i>
+                            <input type="text" id="search-query" placeholder="Search" autocomplete="off">
+                        </form>
+                      </div>
+
+                      <div id="navbar">
+                      </div>
+                    </div>                    <div class="sidebar-item-separator"></div>
+
+                        <div id="sidetoggle">
+                          <div id="sidetoc"></div>
+                        </div>
+                </div>
+                <div class="footer">
+  CodeFactory for Windows SDK
+  
+                </div>            </nav>
+
+            <main class="main-panel">
+
+                <div id="search-results" style="display: none;">
+                  <h1 class="search-list">Search Results for <span></span></h1>
+                  <div class="sr-items">
+                    <p><i class="bi bi-hourglass-split index-loading"></i></p>
+                  </div>
+                  <ul id="pagination" data-first=First data-prev=Previous data-next=Next data-last=Last></ul>
+                </div>
+ 
+
+                <div role="main" class="hide-when-search">
+
+                        <div class="subnav navbar navbar-default">
+                          <div class="container hide-when-search" id="breadcrumb">
+                            <ul class="breadcrumb">
+                              <li></li>
+                            </ul>
+                          </div>
+                        </div>
+
+
+                    <article class="content wrap" id="_content" data-uid="System.Collections.Immutable.ImmutableList`1.Builder">
+
+
+
+  <h1 id="System_Collections_Immutable_ImmutableList_1_Builder" data-uid="System.Collections.Immutable.ImmutableList`1.Builder" class="text-break">Class ImmutableList&lt;T&gt;.Builder</h1>
+  <div class="markdown level0 summary"><p>Represents a list that mutates with little or no memory allocations and that can produce or build on immutable list instances very efficiently.</p>
+<p>NuGet package: System.Collections.Immutable (about immutable collections and how to install)</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+    <div class="level1"><span class="xref">ImmutableList&lt;T&gt;.Builder</span></div>
+  </div>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;T&gt;</div>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1">ICollection</a>&lt;T&gt;</div>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.ilist">IList</a></div>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.icollection">ICollection</a></div>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1">IReadOnlyList</a>&lt;T&gt;</div>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1">IReadOnlyCollection</a>&lt;T&gt;</div>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;T&gt;</div>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.ienumerable">IEnumerable</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="https://learn.microsoft.com/dotnet/api/system">System</a>.<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections">Collections</a>.<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.immutable">Immutable</a></h6>
+  <h6><strong>Assembly</strong>: System.Collections.Immutable.dll</h6>
+  <h5 id="System_Collections_Immutable_ImmutableList_1_Builder_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public sealed class ImmutableList&lt;T&gt;.Builder : IList&lt;T&gt;, ICollection&lt;T&gt;, IList, ICollection, IReadOnlyList&lt;T&gt;, IReadOnlyCollection&lt;T&gt;, IEnumerable&lt;T&gt;, IEnumerable</code></pre>
+  </div>
+  <h3 id="properties">Properties
+</h3>
+  <a id="System_Collections_Immutable_ImmutableList_1_Builder_Count_" data-uid="System.Collections.Immutable.ImmutableList`1.Builder.Count*"></a>
+  <h4 id="System_Collections_Immutable_ImmutableList_1_Builder_Count" data-uid="System.Collections.Immutable.ImmutableList`1.Builder.Count">Count</h4>
+  <div class="markdown level1 summary"><p>Gets the number of elements in this immutable list.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Count { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><p>The number of elements in this list.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="System_Collections_Immutable_ImmutableList_1_Builder_Item_" data-uid="System.Collections.Immutable.ImmutableList`1.Builder.Item*"></a>
+  <h4 id="System_Collections_Immutable_ImmutableList_1_Builder_Item_System_Int32_" data-uid="System.Collections.Immutable.ImmutableList`1.Builder.Item(System.Int32)">this[int]</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the value for a given index in the list.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public T this[int index] { get; set; }</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">index</span></td>
+        <td><p>The index of the item to get or set.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><p>The value at the specified index.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+</h3>
+  <a id="System_Collections_Immutable_ImmutableList_1_Builder_Add_" data-uid="System.Collections.Immutable.ImmutableList`1.Builder.Add*"></a>
+  <h4 id="System_Collections_Immutable_ImmutableList_1_Builder_Add__0_" data-uid="System.Collections.Immutable.ImmutableList`1.Builder.Add(`0)">Add(T)</h4>
+  <div class="markdown level1 summary"><p>Adds an item to the immutable list.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Add(T item)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">item</span></td>
+        <td><p>The item to add to the list.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="System_Collections_Immutable_ImmutableList_1_Builder_AddRange_" data-uid="System.Collections.Immutable.ImmutableList`1.Builder.AddRange*"></a>
+  <h4 id="System_Collections_Immutable_ImmutableList_1_Builder_AddRange_System_Collections_Generic_IEnumerable__0__" data-uid="System.Collections.Immutable.ImmutableList`1.Builder.AddRange(System.Collections.Generic.IEnumerable{`0})">AddRange(IEnumerable&lt;T&gt;)</h4>
+  <div class="markdown level1 summary"><p>Adds a series of elements to the end of this list.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddRange(IEnumerable&lt;T&gt; items)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;T&gt;</td>
+        <td><span class="parametername">items</span></td>
+        <td><p>The elements to add to the end of the list.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="System_Collections_Immutable_ImmutableList_1_Builder_BinarySearch_" data-uid="System.Collections.Immutable.ImmutableList`1.Builder.BinarySearch*"></a>
+  <h4 id="System_Collections_Immutable_ImmutableList_1_Builder_BinarySearch_System_Int32_System_Int32__0_System_Collections_Generic_IComparer__0__" data-uid="System.Collections.Immutable.ImmutableList`1.Builder.BinarySearch(System.Int32,System.Int32,`0,System.Collections.Generic.IComparer{`0})">BinarySearch(int, int, T, IComparer&lt;T&gt;?)</h4>
+  <div class="markdown level1 summary"><p>Searches the specified range of the <a class="xref" href="System.Collections.Immutable.ImmutableList-1.Builder.html">ImmutableList&lt;T&gt;.Builder</a> for an element using the specified comparer and returns the zero-based index of the element.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int BinarySearch(int index, int count, T item, IComparer&lt;T&gt;? comparer)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">index</span></td>
+        <td><p>The zero-based starting index of the range to search.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">count</span></td>
+        <td><p>The length of the range to search.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">item</span></td>
+        <td><p>The object to locate. This value can be null for reference types.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.icomparer-1">IComparer</a>&lt;T&gt;</td>
+        <td><span class="parametername">comparer</span></td>
+        <td><p>The implementation to use when comparing elements, or <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> for the default comparer.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><p>The zero-based index of item in the <a class="xref" href="System.Collections.Immutable.ImmutableList-1.Builder.html">ImmutableList&lt;T&gt;.Builder</a>, if item is found; otherwise, a negative number that is the bitwise complement of the index of the next element that is larger than <code class="paramref">item</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentoutofrangeexception">ArgumentOutOfRangeException</a></td>
+        <td><pre><code>&lt;code class=&quot;paramref&quot;&gt;index&lt;/code&gt; is less than 0.
+</code></pre>
+<p>-or-</p>
+<p><code class="paramref">count</code> is less than 0.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentexception">ArgumentException</a></td>
+        <td><p><code class="paramref">index</code> and <code class="paramref">count</code> do not denote a valid range in the <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List&lt;T&gt;</a>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a></td>
+        <td><p><code class="paramref">comparer</code> is <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>, and the default comparer <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.comparer-1.default">Default</a> cannot find an implementation of the <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.icomparable-1">IComparable&lt;T&gt;</a> generic interface or the <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.icomparable">IComparable</a> interface for type T.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="System_Collections_Immutable_ImmutableList_1_Builder_BinarySearch_" data-uid="System.Collections.Immutable.ImmutableList`1.Builder.BinarySearch*"></a>
+  <h4 id="System_Collections_Immutable_ImmutableList_1_Builder_BinarySearch__0_" data-uid="System.Collections.Immutable.ImmutableList`1.Builder.BinarySearch(`0)">BinarySearch(T)</h4>
+  <div class="markdown level1 summary"><p>Searches the entire <a class="xref" href="System.Collections.Immutable.ImmutableList-1.Builder.html">ImmutableList&lt;T&gt;.Builder</a> for an element using the default comparer and returns the zero-based index of the element.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int BinarySearch(T item)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">item</span></td>
+        <td><p>The object to locate. The value can be null for reference types.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><p>The zero-based index of item in the <a class="xref" href="System.Collections.Immutable.ImmutableList-1.Builder.html">ImmutableList&lt;T&gt;.Builder</a>, if item is found; otherwise, a negative number that is the bitwise complement of the index of the next element that is larger than <code class="paramref">item</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a></td>
+        <td><p>The default comparer <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.comparer-1.default">Default</a> cannot find an implementation of the <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.icomparable-1">IComparable&lt;T&gt;</a> generic interface or the <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.icomparable">IComparable</a> interface for type T.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="System_Collections_Immutable_ImmutableList_1_Builder_BinarySearch_" data-uid="System.Collections.Immutable.ImmutableList`1.Builder.BinarySearch*"></a>
+  <h4 id="System_Collections_Immutable_ImmutableList_1_Builder_BinarySearch__0_System_Collections_Generic_IComparer__0__" data-uid="System.Collections.Immutable.ImmutableList`1.Builder.BinarySearch(`0,System.Collections.Generic.IComparer{`0})">BinarySearch(T, IComparer&lt;T&gt;?)</h4>
+  <div class="markdown level1 summary"><p>Searches the entire <a class="xref" href="System.Collections.Immutable.ImmutableList-1.Builder.html">ImmutableList&lt;T&gt;.Builder</a> for an element using the specified comparer and returns the zero-based index of the element.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int BinarySearch(T item, IComparer&lt;T&gt;? comparer)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">item</span></td>
+        <td><p>The object to locate. This value can be null for reference types.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.icomparer-1">IComparer</a>&lt;T&gt;</td>
+        <td><span class="parametername">comparer</span></td>
+        <td><p>The implementation to use when comparing elements, or <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> for the default comparer.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><p>The zero-based index of item in the <a class="xref" href="System.Collections.Immutable.ImmutableList-1.Builder.html">ImmutableList&lt;T&gt;.Builder</a>, if item is found; otherwise, a negative number that is the bitwise complement of the index of the next element that is larger than <code class="paramref">item</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a></td>
+        <td><p><code class="paramref">comparer</code> is <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>, and the default comparer <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.comparer-1.default">Default</a> cannot find an implementation of the <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.icomparable-1">IComparable&lt;T&gt;</a> generic interface or the <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.icomparable">IComparable</a> interface for type T.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="System_Collections_Immutable_ImmutableList_1_Builder_Clear_" data-uid="System.Collections.Immutable.ImmutableList`1.Builder.Clear*"></a>
+  <h4 id="System_Collections_Immutable_ImmutableList_1_Builder_Clear" data-uid="System.Collections.Immutable.ImmutableList`1.Builder.Clear">Clear()</h4>
+  <div class="markdown level1 summary"><p>Removes all items from the immutable list.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Clear()</code></pre>
+  </div>
+  <a id="System_Collections_Immutable_ImmutableList_1_Builder_Contains_" data-uid="System.Collections.Immutable.ImmutableList`1.Builder.Contains*"></a>
+  <h4 id="System_Collections_Immutable_ImmutableList_1_Builder_Contains__0_" data-uid="System.Collections.Immutable.ImmutableList`1.Builder.Contains(`0)">Contains(T)</h4>
+  <div class="markdown level1 summary"><p>Determines whether the immutable list contains a specific value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Contains(T item)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">item</span></td>
+        <td><p>The object to locate in the list.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if item is found in the list; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="System_Collections_Immutable_ImmutableList_1_Builder_ConvertAll_" data-uid="System.Collections.Immutable.ImmutableList`1.Builder.ConvertAll*"></a>
+  <h4 id="System_Collections_Immutable_ImmutableList_1_Builder_ConvertAll__1_System_Func__0___0__" data-uid="System.Collections.Immutable.ImmutableList`1.Builder.ConvertAll``1(System.Func{`0,``0})">ConvertAll&lt;TOutput&gt;(Func&lt;T, TOutput&gt;)</h4>
+  <div class="markdown level1 summary"><p>Creates a new immutable list from the list represented by this builder by using the converter function.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ImmutableList&lt;TOutput&gt; ConvertAll&lt;TOutput&gt;(Func&lt;T, TOutput&gt; converter)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;T, TOutput&gt;</td>
+        <td><span class="parametername">converter</span></td>
+        <td><p>The converter function.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="System.Collections.Immutable.ImmutableList-1.html">ImmutableList</a>&lt;TOutput&gt;</td>
+        <td><p>A new immutable list from the list represented by this builder.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TOutput</span></td>
+        <td><p>The type of the output of the delegate converter function.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="System_Collections_Immutable_ImmutableList_1_Builder_CopyTo_" data-uid="System.Collections.Immutable.ImmutableList`1.Builder.CopyTo*"></a>
+  <h4 id="System_Collections_Immutable_ImmutableList_1_Builder_CopyTo_System_Int32__0___System_Int32_System_Int32_" data-uid="System.Collections.Immutable.ImmutableList`1.Builder.CopyTo(System.Int32,`0[],System.Int32,System.Int32)">CopyTo(int, T[], int, int)</h4>
+  <div class="markdown level1 summary"><p>Copies the entire immutable list to a compatible one-dimensional array, starting at the specified index of the target array.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CopyTo(int index, T[] array, int arrayIndex, int count)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">index</span></td>
+        <td><p>The zero-based index in the source immutable list at which copying begins.</p>
+</td>
+      </tr>
+      <tr>
+        <td>T[]</td>
+        <td><span class="parametername">array</span></td>
+        <td><p>The one-dimensional array that is the destination of the elements copied from the immutable list. The array must have zero-based indexing.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">arrayIndex</span></td>
+        <td><p>The zero-based index in <code class="paramref">array</code> at which copying begins.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">count</span></td>
+        <td><p>The number of elements to copy.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="System_Collections_Immutable_ImmutableList_1_Builder_CopyTo_" data-uid="System.Collections.Immutable.ImmutableList`1.Builder.CopyTo*"></a>
+  <h4 id="System_Collections_Immutable_ImmutableList_1_Builder_CopyTo__0___" data-uid="System.Collections.Immutable.ImmutableList`1.Builder.CopyTo(`0[])">CopyTo(T[])</h4>
+  <div class="markdown level1 summary"><p>Copies the entire immutable list to a compatible one-dimensional array, starting at the beginning of the target array.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CopyTo(T[] array)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>T[]</td>
+        <td><span class="parametername">array</span></td>
+        <td><p>The one-dimensional array that is the destination of the elements copied from the immutable list. The array must have zero-based indexing.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="System_Collections_Immutable_ImmutableList_1_Builder_CopyTo_" data-uid="System.Collections.Immutable.ImmutableList`1.Builder.CopyTo*"></a>
+  <h4 id="System_Collections_Immutable_ImmutableList_1_Builder_CopyTo__0___System_Int32_" data-uid="System.Collections.Immutable.ImmutableList`1.Builder.CopyTo(`0[],System.Int32)">CopyTo(T[], int)</h4>
+  <div class="markdown level1 summary"><p>Copies the entire immutable list to a compatible one-dimensional array, starting at the specified index of the target array.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CopyTo(T[] array, int arrayIndex)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>T[]</td>
+        <td><span class="parametername">array</span></td>
+        <td><p>The one-dimensional array that is the destination of the elements copied from the immutable list. The array must have zero-based indexing.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">arrayIndex</span></td>
+        <td><p>The zero-based index in array at which copying begins.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="System_Collections_Immutable_ImmutableList_1_Builder_Exists_" data-uid="System.Collections.Immutable.ImmutableList`1.Builder.Exists*"></a>
+  <h4 id="System_Collections_Immutable_ImmutableList_1_Builder_Exists_System_Predicate__0__" data-uid="System.Collections.Immutable.ImmutableList`1.Builder.Exists(System.Predicate{`0})">Exists(Predicate&lt;T&gt;)</h4>
+  <div class="markdown level1 summary"><p>Determines whether the immutable list contains elements that match the conditions defined by the specified predicate.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Exists(Predicate&lt;T&gt; match)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.predicate-1">Predicate</a>&lt;T&gt;</td>
+        <td><span class="parametername">match</span></td>
+        <td><p>The delegate that defines the conditions of the elements to search for.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the immutable list contains one or more elements that match the conditions defined by the specified predicate; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="System_Collections_Immutable_ImmutableList_1_Builder_Find_" data-uid="System.Collections.Immutable.ImmutableList`1.Builder.Find*"></a>
+  <h4 id="System_Collections_Immutable_ImmutableList_1_Builder_Find_System_Predicate__0__" data-uid="System.Collections.Immutable.ImmutableList`1.Builder.Find(System.Predicate{`0})">Find(Predicate&lt;T&gt;)</h4>
+  <div class="markdown level1 summary"><p>Searches for an element that matches the conditions defined by the specified predicate, and returns the first occurrence within the entire immutable list.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public T? Find(Predicate&lt;T&gt; match)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.predicate-1">Predicate</a>&lt;T&gt;</td>
+        <td><span class="parametername">match</span></td>
+        <td><p>The delegate that defines the conditions of the element to search for.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><p>The first element that matches the conditions defined by the specified predicate, if found; otherwise, the default value for type <code class="paramref">T</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="System_Collections_Immutable_ImmutableList_1_Builder_FindAll_" data-uid="System.Collections.Immutable.ImmutableList`1.Builder.FindAll*"></a>
+  <h4 id="System_Collections_Immutable_ImmutableList_1_Builder_FindAll_System_Predicate__0__" data-uid="System.Collections.Immutable.ImmutableList`1.Builder.FindAll(System.Predicate{`0})">FindAll(Predicate&lt;T&gt;)</h4>
+  <div class="markdown level1 summary"><p>Retrieves all the elements that match the conditions defined by the specified predicate.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ImmutableList&lt;T&gt; FindAll(Predicate&lt;T&gt; match)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.predicate-1">Predicate</a>&lt;T&gt;</td>
+        <td><span class="parametername">match</span></td>
+        <td><p>The delegate that defines the conditions of the elements to search for.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.immutable.immutablelist-1">ImmutableList</a>&lt;T&gt;</td>
+        <td><p>An immutable list containing all the elements that match the conditions defined by the specified predicate, if found; otherwise, an empty immutable list.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="System_Collections_Immutable_ImmutableList_1_Builder_FindIndex_" data-uid="System.Collections.Immutable.ImmutableList`1.Builder.FindIndex*"></a>
+  <h4 id="System_Collections_Immutable_ImmutableList_1_Builder_FindIndex_System_Int32_System_Int32_System_Predicate__0__" data-uid="System.Collections.Immutable.ImmutableList`1.Builder.FindIndex(System.Int32,System.Int32,System.Predicate{`0})">FindIndex(int, int, Predicate&lt;T&gt;)</h4>
+  <div class="markdown level1 summary"><p>Searches for an element that matches the conditions defined by the specified predicate, and returns the zero-based index of the first occurrence within the range of elements in the immutable list that starts at the specified index and contains the specified number of elements.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int FindIndex(int startIndex, int count, Predicate&lt;T&gt; match)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">startIndex</span></td>
+        <td><p>The zero-based starting index of the search.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">count</span></td>
+        <td><p>The number of elements in the section to search.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.predicate-1">Predicate</a>&lt;T&gt;</td>
+        <td><span class="parametername">match</span></td>
+        <td><p>The delegate that defines the conditions of the element to search for.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><p>The zero-based index of the first occurrence of an element that matches the conditions defined by <code class="paramref">match</code>, if found; otherwise, -1.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="System_Collections_Immutable_ImmutableList_1_Builder_FindIndex_" data-uid="System.Collections.Immutable.ImmutableList`1.Builder.FindIndex*"></a>
+  <h4 id="System_Collections_Immutable_ImmutableList_1_Builder_FindIndex_System_Int32_System_Predicate__0__" data-uid="System.Collections.Immutable.ImmutableList`1.Builder.FindIndex(System.Int32,System.Predicate{`0})">FindIndex(int, Predicate&lt;T&gt;)</h4>
+  <div class="markdown level1 summary"><p>Searches for an element that matches the conditions defined by the specified predicate, and returns the zero-based index of the first occurrence within the range of elements in the immutable list that extends from the specified index to the last element.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int FindIndex(int startIndex, Predicate&lt;T&gt; match)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">startIndex</span></td>
+        <td><p>The zero-based starting index of the search.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.predicate-1">Predicate</a>&lt;T&gt;</td>
+        <td><span class="parametername">match</span></td>
+        <td><p>The delegate that defines the conditions of the element to search for.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><p>The zero-based index of the first occurrence of an element that matches the conditions defined by <code class="paramref">match</code>, if found; otherwise, -1.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="System_Collections_Immutable_ImmutableList_1_Builder_FindIndex_" data-uid="System.Collections.Immutable.ImmutableList`1.Builder.FindIndex*"></a>
+  <h4 id="System_Collections_Immutable_ImmutableList_1_Builder_FindIndex_System_Predicate__0__" data-uid="System.Collections.Immutable.ImmutableList`1.Builder.FindIndex(System.Predicate{`0})">FindIndex(Predicate&lt;T&gt;)</h4>
+  <div class="markdown level1 summary"><p>Searches for an element that matches the conditions defined by the specified predicate, and returns the zero-based index of the first occurrence within the entire immutable list.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int FindIndex(Predicate&lt;T&gt; match)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.predicate-1">Predicate</a>&lt;T&gt;</td>
+        <td><span class="parametername">match</span></td>
+        <td><p>The delegate that defines the conditions of the element to search for.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><p>The zero-based index of the first occurrence of an element that matches the conditions defined by <code class="paramref">match</code>, if found; otherwise, -1.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="System_Collections_Immutable_ImmutableList_1_Builder_FindLast_" data-uid="System.Collections.Immutable.ImmutableList`1.Builder.FindLast*"></a>
+  <h4 id="System_Collections_Immutable_ImmutableList_1_Builder_FindLast_System_Predicate__0__" data-uid="System.Collections.Immutable.ImmutableList`1.Builder.FindLast(System.Predicate{`0})">FindLast(Predicate&lt;T&gt;)</h4>
+  <div class="markdown level1 summary"><p>Searches for an element that matches the conditions defined by the specified predicate, and returns the last occurrence within the entire immutable list.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public T? FindLast(Predicate&lt;T&gt; match)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.predicate-1">Predicate</a>&lt;T&gt;</td>
+        <td><span class="parametername">match</span></td>
+        <td><p>The delegate that defines the conditions of the element to search for.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><p>The last element that matches the conditions defined by the specified predicate, found; otherwise, the default value for type <code class="paramref">T</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="System_Collections_Immutable_ImmutableList_1_Builder_FindLastIndex_" data-uid="System.Collections.Immutable.ImmutableList`1.Builder.FindLastIndex*"></a>
+  <h4 id="System_Collections_Immutable_ImmutableList_1_Builder_FindLastIndex_System_Int32_System_Int32_System_Predicate__0__" data-uid="System.Collections.Immutable.ImmutableList`1.Builder.FindLastIndex(System.Int32,System.Int32,System.Predicate{`0})">FindLastIndex(int, int, Predicate&lt;T&gt;)</h4>
+  <div class="markdown level1 summary"><p>Searches for an element that matches the conditions defined by the specified predicate, and returns the zero-based index of the last occurrence within the range of elements in the immutable list that contains the specified number of elements and ends at the specified index.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int FindLastIndex(int startIndex, int count, Predicate&lt;T&gt; match)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">startIndex</span></td>
+        <td><p>The zero-based starting index of the backward search.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">count</span></td>
+        <td><p>The number of elements in the section to search.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.predicate-1">Predicate</a>&lt;T&gt;</td>
+        <td><span class="parametername">match</span></td>
+        <td><p>The delegate that defines the conditions of the element to search for.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><p>The zero-based index of the last occurrence of an element that matches the conditions defined by <code class="paramref">match</code>, if found; otherwise, -1.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="System_Collections_Immutable_ImmutableList_1_Builder_FindLastIndex_" data-uid="System.Collections.Immutable.ImmutableList`1.Builder.FindLastIndex*"></a>
+  <h4 id="System_Collections_Immutable_ImmutableList_1_Builder_FindLastIndex_System_Int32_System_Predicate__0__" data-uid="System.Collections.Immutable.ImmutableList`1.Builder.FindLastIndex(System.Int32,System.Predicate{`0})">FindLastIndex(int, Predicate&lt;T&gt;)</h4>
+  <div class="markdown level1 summary"><p>Searches for an element that matches the conditions defined by the specified predicate, and returns the zero-based index of the last occurrence within the range of elements in the immutable list that extends from the first element to the specified index.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int FindLastIndex(int startIndex, Predicate&lt;T&gt; match)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">startIndex</span></td>
+        <td><p>The zero-based starting index of the backward search.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.predicate-1">Predicate</a>&lt;T&gt;</td>
+        <td><span class="parametername">match</span></td>
+        <td><p>The delegate that defines the conditions of the element to search for.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><p>The zero-based index of the last occurrence of an element that matches the conditions defined by <code class="paramref">match</code>, if found; otherwise, -1.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="System_Collections_Immutable_ImmutableList_1_Builder_FindLastIndex_" data-uid="System.Collections.Immutable.ImmutableList`1.Builder.FindLastIndex*"></a>
+  <h4 id="System_Collections_Immutable_ImmutableList_1_Builder_FindLastIndex_System_Predicate__0__" data-uid="System.Collections.Immutable.ImmutableList`1.Builder.FindLastIndex(System.Predicate{`0})">FindLastIndex(Predicate&lt;T&gt;)</h4>
+  <div class="markdown level1 summary"><p>Searches for an element that matches the conditions defined by the specified predicate, and returns the zero-based index of the last occurrence within the entire immutable list.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int FindLastIndex(Predicate&lt;T&gt; match)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.predicate-1">Predicate</a>&lt;T&gt;</td>
+        <td><span class="parametername">match</span></td>
+        <td><p>The delegate that defines the conditions of the element to search for.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><p>The zero-based index of the last occurrence of an element that matches the conditions defined by <code class="paramref">match</code>, if found; otherwise, -1.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="System_Collections_Immutable_ImmutableList_1_Builder_ForEach_" data-uid="System.Collections.Immutable.ImmutableList`1.Builder.ForEach*"></a>
+  <h4 id="System_Collections_Immutable_ImmutableList_1_Builder_ForEach_System_Action__0__" data-uid="System.Collections.Immutable.ImmutableList`1.Builder.ForEach(System.Action{`0})">ForEach(Action&lt;T&gt;)</h4>
+  <div class="markdown level1 summary"><p>Performs the specified action on each element of the list.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ForEach(Action&lt;T&gt; action)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;T&gt;</td>
+        <td><span class="parametername">action</span></td>
+        <td><p>The delegate to perform on each element of the list.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="System_Collections_Immutable_ImmutableList_1_Builder_GetEnumerator_" data-uid="System.Collections.Immutable.ImmutableList`1.Builder.GetEnumerator*"></a>
+  <h4 id="System_Collections_Immutable_ImmutableList_1_Builder_GetEnumerator" data-uid="System.Collections.Immutable.ImmutableList`1.Builder.GetEnumerator">GetEnumerator()</h4>
+  <div class="markdown level1 summary"><p>Returns an enumerator that iterates through the collection.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ImmutableList&lt;T&gt;.Enumerator GetEnumerator()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.immutable.immutablelist-1">ImmutableList</a>&lt;T&gt;.<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.immutable.immutablelist-1.enumerator">Enumerator</a></td>
+        <td><p>An enumerator that can be used to iterate through the list.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="System_Collections_Immutable_ImmutableList_1_Builder_GetRange_" data-uid="System.Collections.Immutable.ImmutableList`1.Builder.GetRange*"></a>
+  <h4 id="System_Collections_Immutable_ImmutableList_1_Builder_GetRange_System_Int32_System_Int32_" data-uid="System.Collections.Immutable.ImmutableList`1.Builder.GetRange(System.Int32,System.Int32)">GetRange(int, int)</h4>
+  <div class="markdown level1 summary"><p>Creates a shallow copy of a range of elements in the source immutable list.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ImmutableList&lt;T&gt; GetRange(int index, int count)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">index</span></td>
+        <td><p>The zero-based index at which the range starts.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">count</span></td>
+        <td><p>The number of elements in the range.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.immutable.immutablelist-1">ImmutableList</a>&lt;T&gt;</td>
+        <td><p>A shallow copy of a range of elements in the source immutable list.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="System_Collections_Immutable_ImmutableList_1_Builder_IndexOf_" data-uid="System.Collections.Immutable.ImmutableList`1.Builder.IndexOf*"></a>
+  <h4 id="System_Collections_Immutable_ImmutableList_1_Builder_IndexOf__0_" data-uid="System.Collections.Immutable.ImmutableList`1.Builder.IndexOf(`0)">IndexOf(T)</h4>
+  <div class="markdown level1 summary"><p>Searches for the specified object and returns the zero-based index of the first occurrence within the range of elements in the immutable list.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int IndexOf(T item)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">item</span></td>
+        <td><p>The object to locate in the immutable list. The value can be <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> for reference types.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><p>The zero-based index of the first occurrence of <code class="paramref">item</code> within the range of elements in the immutable list, if found; otherwise, -1.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="System_Collections_Immutable_ImmutableList_1_Builder_IndexOf_" data-uid="System.Collections.Immutable.ImmutableList`1.Builder.IndexOf*"></a>
+  <h4 id="System_Collections_Immutable_ImmutableList_1_Builder_IndexOf__0_System_Int32_" data-uid="System.Collections.Immutable.ImmutableList`1.Builder.IndexOf(`0,System.Int32)">IndexOf(T, int)</h4>
+  <div class="markdown level1 summary"><p>Searches for the specified object and returns the zero-based index of the first occurrence within the range of elements in the immutable list that extends from the specified index to the last element.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int IndexOf(T item, int index)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">item</span></td>
+        <td><p>The object to locate in the immutable list. The value can be <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> for reference types.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">index</span></td>
+        <td><p>The zero-based starting index of the search. 0 (zero) is valid in an empty list.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><p>The zero-based index of the first occurrence of item within the range of elements in the immutable list that extends from <code class="paramref">index</code> to the last element, if found; otherwise, -1.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="System_Collections_Immutable_ImmutableList_1_Builder_IndexOf_" data-uid="System.Collections.Immutable.ImmutableList`1.Builder.IndexOf*"></a>
+  <h4 id="System_Collections_Immutable_ImmutableList_1_Builder_IndexOf__0_System_Int32_System_Int32_" data-uid="System.Collections.Immutable.ImmutableList`1.Builder.IndexOf(`0,System.Int32,System.Int32)">IndexOf(T, int, int)</h4>
+  <div class="markdown level1 summary"><p>Searches for the specified object and returns the zero-based index of the first occurrence within the range of elements in the immutable list that starts at the specified index and contains the specified number of elements.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int IndexOf(T item, int index, int count)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">item</span></td>
+        <td><p>The object to locate in the immutable list. The value can be <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> for reference types.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">index</span></td>
+        <td><p>The zero-based starting index of the search. 0 (zero) is valid in an empty list.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">count</span></td>
+        <td><p>The number of elements in the section to search.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><p>The zero-based index of the first occurrence of item within the range of elements in the immutable list that starts at <code class="paramref">index</code> and contains <code class="paramref">count</code> number of elements, if found; otherwise, -1.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="System_Collections_Immutable_ImmutableList_1_Builder_IndexOf_" data-uid="System.Collections.Immutable.ImmutableList`1.Builder.IndexOf*"></a>
+  <h4 id="System_Collections_Immutable_ImmutableList_1_Builder_IndexOf__0_System_Int32_System_Int32_System_Collections_Generic_IEqualityComparer__0__" data-uid="System.Collections.Immutable.ImmutableList`1.Builder.IndexOf(`0,System.Int32,System.Int32,System.Collections.Generic.IEqualityComparer{`0})">IndexOf(T, int, int, IEqualityComparer&lt;T&gt;?)</h4>
+  <div class="markdown level1 summary"><p>Searches for the specified object and returns the zero-based index of the first occurrence within the range of elements in the <a class="xref" href="System.Collections.Immutable.ImmutableList-1.Builder.html">ImmutableList&lt;T&gt;.Builder</a> that starts at the specified index and contains the specified number of elements.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int IndexOf(T item, int index, int count, IEqualityComparer&lt;T&gt;? equalityComparer)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">item</span></td>
+        <td><p>The object to locate in the immutable list. The value can be <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> for reference types.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">index</span></td>
+        <td><p>The zero-based starting index of the search. 0 (zero) is valid in an empty list.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">count</span></td>
+        <td><p>The number of elements to search.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.iequalitycomparer-1">IEqualityComparer</a>&lt;T&gt;</td>
+        <td><span class="parametername">equalityComparer</span></td>
+        <td><p>The value comparer to use for comparing elements for equality.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><p>The zero-based index of the first occurrence of item within the range of elements in the immutable list that starts at <code class="paramref">index</code> and contains <code class="paramref">count</code> number of elements, if found; otherwise, -1</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="System_Collections_Immutable_ImmutableList_1_Builder_Insert_" data-uid="System.Collections.Immutable.ImmutableList`1.Builder.Insert*"></a>
+  <h4 id="System_Collections_Immutable_ImmutableList_1_Builder_Insert_System_Int32__0_" data-uid="System.Collections.Immutable.ImmutableList`1.Builder.Insert(System.Int32,`0)">Insert(int, T)</h4>
+  <div class="markdown level1 summary"><p>Inserts an item to the immutable list at the specified index.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Insert(int index, T item)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">index</span></td>
+        <td><p>The zero-based index at which <code class="paramref">item</code> should be inserted.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">item</span></td>
+        <td><p>The object to insert into the immutable list.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="System_Collections_Immutable_ImmutableList_1_Builder_InsertRange_" data-uid="System.Collections.Immutable.ImmutableList`1.Builder.InsertRange*"></a>
+  <h4 id="System_Collections_Immutable_ImmutableList_1_Builder_InsertRange_System_Int32_System_Collections_Generic_IEnumerable__0__" data-uid="System.Collections.Immutable.ImmutableList`1.Builder.InsertRange(System.Int32,System.Collections.Generic.IEnumerable{`0})">InsertRange(int, IEnumerable&lt;T&gt;)</h4>
+  <div class="markdown level1 summary"><p>Inserts the elements of a collection into the immutable list at the specified index.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void InsertRange(int index, IEnumerable&lt;T&gt; items)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">index</span></td>
+        <td><p>The zero-based index at which the new elements should be inserted.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;T&gt;</td>
+        <td><span class="parametername">items</span></td>
+        <td><p>The collection whose elements should be inserted into the immutable list. The collection itself cannot be <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>, but it can contain elements that are null, if type <code>T</code> is a reference type.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="System_Collections_Immutable_ImmutableList_1_Builder_ItemRef_" data-uid="System.Collections.Immutable.ImmutableList`1.Builder.ItemRef*"></a>
+  <h4 id="System_Collections_Immutable_ImmutableList_1_Builder_ItemRef_System_Int32_" data-uid="System.Collections.Immutable.ImmutableList`1.Builder.ItemRef(System.Int32)">ItemRef(int)</h4>
+  <div class="markdown level1 summary"><p>Gets a read-only reference to the value for a given <code class="paramref">index</code> into the list.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ref readonly T ItemRef(int index)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">index</span></td>
+        <td><p>The index of the desired element.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><p>A read-only reference to the value at the specified <code class="paramref">index</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="System_Collections_Immutable_ImmutableList_1_Builder_LastIndexOf_" data-uid="System.Collections.Immutable.ImmutableList`1.Builder.LastIndexOf*"></a>
+  <h4 id="System_Collections_Immutable_ImmutableList_1_Builder_LastIndexOf__0_" data-uid="System.Collections.Immutable.ImmutableList`1.Builder.LastIndexOf(`0)">LastIndexOf(T)</h4>
+  <div class="markdown level1 summary"><p>Searches for the specified object and returns the zero-based index of the last occurrence within the entire immutable list.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int LastIndexOf(T item)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">item</span></td>
+        <td><p>The object to locate in the immutable list. The value can be <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> for reference types.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><p>The zero-based index of the last occurrence of <code class="paramref">item</code> within the entire immutable list, if found; otherwise, -1.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="System_Collections_Immutable_ImmutableList_1_Builder_LastIndexOf_" data-uid="System.Collections.Immutable.ImmutableList`1.Builder.LastIndexOf*"></a>
+  <h4 id="System_Collections_Immutable_ImmutableList_1_Builder_LastIndexOf__0_System_Int32_" data-uid="System.Collections.Immutable.ImmutableList`1.Builder.LastIndexOf(`0,System.Int32)">LastIndexOf(T, int)</h4>
+  <div class="markdown level1 summary"><p>Searches for the specified object and returns the zero-based index of the last occurrence within the range of elements in the immutable list that extends from the first element to the specified index.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int LastIndexOf(T item, int startIndex)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">item</span></td>
+        <td><p>The object to locate in the immutable list. The value can be <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> for reference types.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">startIndex</span></td>
+        <td><p>The zero-based starting index of the backward search.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><p>The zero-based index of the last occurrence of <code class="paramref">item</code> within the range of elements in the immutable list that extends from the first element to <code class="paramref">index</code>, if found; otherwise, -1.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="System_Collections_Immutable_ImmutableList_1_Builder_LastIndexOf_" data-uid="System.Collections.Immutable.ImmutableList`1.Builder.LastIndexOf*"></a>
+  <h4 id="System_Collections_Immutable_ImmutableList_1_Builder_LastIndexOf__0_System_Int32_System_Int32_" data-uid="System.Collections.Immutable.ImmutableList`1.Builder.LastIndexOf(`0,System.Int32,System.Int32)">LastIndexOf(T, int, int)</h4>
+  <div class="markdown level1 summary"><p>Searches for the specified object and returns the zero-based index of the last occurrence within the range of elements in the immutable list that contains the specified number of elements and ends at the specified index.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int LastIndexOf(T item, int startIndex, int count)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">item</span></td>
+        <td><p>The object to locate in the immutable list. The value can be <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> for reference types.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">startIndex</span></td>
+        <td><p>The zero-based starting index of the backward search.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">count</span></td>
+        <td><p>The number of elements in the section to search.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><p>The zero-based index of the last occurrence of <code class="paramref">item</code> within the range of elements in the immutable list that contains <code class="paramref">count</code> number of elements and ends at <code class="paramref">index</code>, if found; otherwise, -1.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="System_Collections_Immutable_ImmutableList_1_Builder_LastIndexOf_" data-uid="System.Collections.Immutable.ImmutableList`1.Builder.LastIndexOf*"></a>
+  <h4 id="System_Collections_Immutable_ImmutableList_1_Builder_LastIndexOf__0_System_Int32_System_Int32_System_Collections_Generic_IEqualityComparer__0__" data-uid="System.Collections.Immutable.ImmutableList`1.Builder.LastIndexOf(`0,System.Int32,System.Int32,System.Collections.Generic.IEqualityComparer{`0})">LastIndexOf(T, int, int, IEqualityComparer&lt;T&gt;?)</h4>
+  <div class="markdown level1 summary"><p>Searches for the specified object and returns the zero-based index of the last occurrence within the range of elements in the immutable list that contains the specified number of elements and ends at the specified index.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int LastIndexOf(T item, int startIndex, int count, IEqualityComparer&lt;T&gt;? equalityComparer)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">item</span></td>
+        <td><p>The object to locate in the immutable list. The value can be <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> for reference types.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">startIndex</span></td>
+        <td><p>The zero-based starting index of the search. 0 (zero) is valid in an empty list.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">count</span></td>
+        <td><p>The number of elements to search.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.iequalitycomparer-1">IEqualityComparer</a>&lt;T&gt;</td>
+        <td><span class="parametername">equalityComparer</span></td>
+        <td><p>The value comparer to use for comparing elements for equality.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><p>The zero-based index of the first occurrence of item within the range of elements in the immutable list that starts at <code class="paramref">index</code> and contains <code class="paramref">count</code> number of elements, if found; otherwise, -1</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="System_Collections_Immutable_ImmutableList_1_Builder_Remove_" data-uid="System.Collections.Immutable.ImmutableList`1.Builder.Remove*"></a>
+  <h4 id="System_Collections_Immutable_ImmutableList_1_Builder_Remove__0_" data-uid="System.Collections.Immutable.ImmutableList`1.Builder.Remove(`0)">Remove(T)</h4>
+  <div class="markdown level1 summary"><p>Removes the first occurrence of a specific object from the immutable list.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Remove(T item)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">item</span></td>
+        <td><p>The object to remove from the list.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if item was successfully removed from the list; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>. This method also returns <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a> if item is not found in the list.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="System_Collections_Immutable_ImmutableList_1_Builder_RemoveAll_" data-uid="System.Collections.Immutable.ImmutableList`1.Builder.RemoveAll*"></a>
+  <h4 id="System_Collections_Immutable_ImmutableList_1_Builder_RemoveAll_System_Predicate__0__" data-uid="System.Collections.Immutable.ImmutableList`1.Builder.RemoveAll(System.Predicate{`0})">RemoveAll(Predicate&lt;T&gt;)</h4>
+  <div class="markdown level1 summary"><p>Removes all the elements that match the conditions defined by the specified predicate.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int RemoveAll(Predicate&lt;T&gt; match)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.predicate-1">Predicate</a>&lt;T&gt;</td>
+        <td><span class="parametername">match</span></td>
+        <td><p>The delegate that defines the conditions of the elements to remove.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><p>The number of elements removed from the immutable list.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="System_Collections_Immutable_ImmutableList_1_Builder_RemoveAt_" data-uid="System.Collections.Immutable.ImmutableList`1.Builder.RemoveAt*"></a>
+  <h4 id="System_Collections_Immutable_ImmutableList_1_Builder_RemoveAt_System_Int32_" data-uid="System.Collections.Immutable.ImmutableList`1.Builder.RemoveAt(System.Int32)">RemoveAt(int)</h4>
+  <div class="markdown level1 summary"><p>Removes the item at the specified index of the immutable list.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemoveAt(int index)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">index</span></td>
+        <td><p>The zero-based index of the item to remove from the list.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="System_Collections_Immutable_ImmutableList_1_Builder_Reverse_" data-uid="System.Collections.Immutable.ImmutableList`1.Builder.Reverse*"></a>
+  <h4 id="System_Collections_Immutable_ImmutableList_1_Builder_Reverse" data-uid="System.Collections.Immutable.ImmutableList`1.Builder.Reverse">Reverse()</h4>
+  <div class="markdown level1 summary"><p>Reverses the order of the elements in the entire immutable list.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Reverse()</code></pre>
+  </div>
+  <a id="System_Collections_Immutable_ImmutableList_1_Builder_Reverse_" data-uid="System.Collections.Immutable.ImmutableList`1.Builder.Reverse*"></a>
+  <h4 id="System_Collections_Immutable_ImmutableList_1_Builder_Reverse_System_Int32_System_Int32_" data-uid="System.Collections.Immutable.ImmutableList`1.Builder.Reverse(System.Int32,System.Int32)">Reverse(int, int)</h4>
+  <div class="markdown level1 summary"><p>Reverses the order of the elements in the specified range of the immutable list.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Reverse(int index, int count)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">index</span></td>
+        <td><p>The zero-based starting index of the range to reverse.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">count</span></td>
+        <td><p>The number of elements in the range to reverse.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="System_Collections_Immutable_ImmutableList_1_Builder_Sort_" data-uid="System.Collections.Immutable.ImmutableList`1.Builder.Sort*"></a>
+  <h4 id="System_Collections_Immutable_ImmutableList_1_Builder_Sort" data-uid="System.Collections.Immutable.ImmutableList`1.Builder.Sort">Sort()</h4>
+  <div class="markdown level1 summary"><p>Sorts the elements in the entire immutable list by using the default comparer.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Sort()</code></pre>
+  </div>
+  <a id="System_Collections_Immutable_ImmutableList_1_Builder_Sort_" data-uid="System.Collections.Immutable.ImmutableList`1.Builder.Sort*"></a>
+  <h4 id="System_Collections_Immutable_ImmutableList_1_Builder_Sort_System_Collections_Generic_IComparer__0__" data-uid="System.Collections.Immutable.ImmutableList`1.Builder.Sort(System.Collections.Generic.IComparer{`0})">Sort(IComparer&lt;T&gt;?)</h4>
+  <div class="markdown level1 summary"><p>Sorts the elements in the entire immutable list by using the specified comparer.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Sort(IComparer&lt;T&gt;? comparer)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.icomparer-1">IComparer</a>&lt;T&gt;</td>
+        <td><span class="parametername">comparer</span></td>
+        <td><p>The implementation to use when comparing elements, or <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> to use the default comparer (<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.comparer-1.default">Default</a>).</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="System_Collections_Immutable_ImmutableList_1_Builder_Sort_" data-uid="System.Collections.Immutable.ImmutableList`1.Builder.Sort*"></a>
+  <h4 id="System_Collections_Immutable_ImmutableList_1_Builder_Sort_System_Comparison__0__" data-uid="System.Collections.Immutable.ImmutableList`1.Builder.Sort(System.Comparison{`0})">Sort(Comparison&lt;T&gt;)</h4>
+  <div class="markdown level1 summary"><p>Sorts the elements in the entire immutable list by using the specified comparison object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Sort(Comparison&lt;T&gt; comparison)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.comparison-1">Comparison</a>&lt;T&gt;</td>
+        <td><span class="parametername">comparison</span></td>
+        <td><p>The object to use when comparing elements.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></td>
+        <td><p><code class="paramref">comparison</code> is <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="System_Collections_Immutable_ImmutableList_1_Builder_Sort_" data-uid="System.Collections.Immutable.ImmutableList`1.Builder.Sort*"></a>
+  <h4 id="System_Collections_Immutable_ImmutableList_1_Builder_Sort_System_Int32_System_Int32_System_Collections_Generic_IComparer__0__" data-uid="System.Collections.Immutable.ImmutableList`1.Builder.Sort(System.Int32,System.Int32,System.Collections.Generic.IComparer{`0})">Sort(int, int, IComparer&lt;T&gt;?)</h4>
+  <div class="markdown level1 summary"><p>Sorts the elements in a range of elements in the immutable list  by using the specified comparer.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Sort(int index, int count, IComparer&lt;T&gt;? comparer)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">index</span></td>
+        <td><p>The zero-based starting index of the range to sort.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">count</span></td>
+        <td><p>The length of the range to sort.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.icomparer-1">IComparer</a>&lt;T&gt;</td>
+        <td><span class="parametername">comparer</span></td>
+        <td><p>The implementation to use when comparing elements, or <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> to use the default comparer (<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.comparer-1.default">Default</a>).</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="System_Collections_Immutable_ImmutableList_1_Builder_ToImmutable_" data-uid="System.Collections.Immutable.ImmutableList`1.Builder.ToImmutable*"></a>
+  <h4 id="System_Collections_Immutable_ImmutableList_1_Builder_ToImmutable" data-uid="System.Collections.Immutable.ImmutableList`1.Builder.ToImmutable">ToImmutable()</h4>
+  <div class="markdown level1 summary"><p>Creates an immutable list based on the contents of this instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ImmutableList&lt;T&gt; ToImmutable()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.immutable.immutablelist-1">ImmutableList</a>&lt;T&gt;</td>
+        <td><p>An immutable list.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="System_Collections_Immutable_ImmutableList_1_Builder_TrueForAll_" data-uid="System.Collections.Immutable.ImmutableList`1.Builder.TrueForAll*"></a>
+  <h4 id="System_Collections_Immutable_ImmutableList_1_Builder_TrueForAll_System_Predicate__0__" data-uid="System.Collections.Immutable.ImmutableList`1.Builder.TrueForAll(System.Predicate{`0})">TrueForAll(Predicate&lt;T&gt;)</h4>
+  <div class="markdown level1 summary"><p>Determines whether every element in the immutable list matches the conditions defined by the specified predicate.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool TrueForAll(Predicate&lt;T&gt; match)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.predicate-1">Predicate</a>&lt;T&gt;</td>
+        <td><span class="parametername">match</span></td>
+        <td><p>The delegate that defines the conditions to check against the elements.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if every element in the immutable list matches the conditions defined by the specified predicate; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>. If the list has no elements, the return value is <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList&lt;T&gt;</a>
+  </div>
+  <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1">ICollection&lt;T&gt;</a>
+  </div>
+  <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.ilist">IList</a>
+  </div>
+  <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.icollection">ICollection</a>
+  </div>
+  <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1">IReadOnlyList&lt;T&gt;</a>
+  </div>
+  <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1">IReadOnlyCollection&lt;T&gt;</a>
+  </div>
+  <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable&lt;T&gt;</a>
+  </div>
+  <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.ienumerable">IEnumerable</a>
+  </div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="System.Collections.Immutable.ImmutableArray.html#System_Collections_Immutable_ImmutableArray_ToImmutableArray__1_System_Collections_Generic_IEnumerable___0__">ImmutableArray.ToImmutableArray&lt;TSource&gt;(IEnumerable&lt;TSource&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="System.Collections.Immutable.ImmutableDictionary.html#System_Collections_Immutable_ImmutableDictionary_ToImmutableDictionary__2_System_Collections_Generic_IEnumerable___0__System_Func___0___1__">ImmutableDictionary.ToImmutableDictionary&lt;TSource, TKey&gt;(IEnumerable&lt;TSource&gt;, Func&lt;TSource, TKey&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="System.Collections.Immutable.ImmutableDictionary.html#System_Collections_Immutable_ImmutableDictionary_ToImmutableDictionary__2_System_Collections_Generic_IEnumerable___0__System_Func___0___1__System_Collections_Generic_IEqualityComparer___1__">ImmutableDictionary.ToImmutableDictionary&lt;TSource, TKey&gt;(IEnumerable&lt;TSource&gt;, Func&lt;TSource, TKey&gt;, IEqualityComparer&lt;TKey&gt;?)</a>
+  </div>
+  <div>
+      <a class="xref" href="System.Collections.Immutable.ImmutableDictionary.html#System_Collections_Immutable_ImmutableDictionary_ToImmutableDictionary__3_System_Collections_Generic_IEnumerable___0__System_Func___0___1__System_Func___0___2__">ImmutableDictionary.ToImmutableDictionary&lt;TSource, TKey, TValue&gt;(IEnumerable&lt;TSource&gt;, Func&lt;TSource, TKey&gt;, Func&lt;TSource, TValue&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="System.Collections.Immutable.ImmutableDictionary.html#System_Collections_Immutable_ImmutableDictionary_ToImmutableDictionary__3_System_Collections_Generic_IEnumerable___0__System_Func___0___1__System_Func___0___2__System_Collections_Generic_IEqualityComparer___1__">ImmutableDictionary.ToImmutableDictionary&lt;TSource, TKey, TValue&gt;(IEnumerable&lt;TSource&gt;, Func&lt;TSource, TKey&gt;, Func&lt;TSource, TValue&gt;, IEqualityComparer&lt;TKey&gt;?)</a>
+  </div>
+  <div>
+      <a class="xref" href="System.Collections.Immutable.ImmutableDictionary.html#System_Collections_Immutable_ImmutableDictionary_ToImmutableDictionary__3_System_Collections_Generic_IEnumerable___0__System_Func___0___1__System_Func___0___2__System_Collections_Generic_IEqualityComparer___1__System_Collections_Generic_IEqualityComparer___2__">ImmutableDictionary.ToImmutableDictionary&lt;TSource, TKey, TValue&gt;(IEnumerable&lt;TSource&gt;, Func&lt;TSource, TKey&gt;, Func&lt;TSource, TValue&gt;, IEqualityComparer&lt;TKey&gt;?, IEqualityComparer&lt;TValue&gt;?)</a>
+  </div>
+  <div>
+      <a class="xref" href="System.Collections.Immutable.ImmutableHashSet.html#System_Collections_Immutable_ImmutableHashSet_ToImmutableHashSet__1_System_Collections_Generic_IEnumerable___0__">ImmutableHashSet.ToImmutableHashSet&lt;TSource&gt;(IEnumerable&lt;TSource&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="System.Collections.Immutable.ImmutableHashSet.html#System_Collections_Immutable_ImmutableHashSet_ToImmutableHashSet__1_System_Collections_Generic_IEnumerable___0__System_Collections_Generic_IEqualityComparer___0__">ImmutableHashSet.ToImmutableHashSet&lt;TSource&gt;(IEnumerable&lt;TSource&gt;, IEqualityComparer&lt;TSource&gt;?)</a>
+  </div>
+  <div>
+      <a class="xref" href="System.Collections.Immutable.ImmutableList.html#System_Collections_Immutable_ImmutableList_ToImmutableList__1_System_Collections_Generic_IEnumerable___0__">ImmutableList.ToImmutableList&lt;TSource&gt;(IEnumerable&lt;TSource&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="System.Collections.Immutable.ImmutableSortedDictionary.html#System_Collections_Immutable_ImmutableSortedDictionary_ToImmutableSortedDictionary__3_System_Collections_Generic_IEnumerable___0__System_Func___0___1__System_Func___0___2__">ImmutableSortedDictionary.ToImmutableSortedDictionary&lt;TSource, TKey, TValue&gt;(IEnumerable&lt;TSource&gt;, Func&lt;TSource, TKey&gt;, Func&lt;TSource, TValue&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="System.Collections.Immutable.ImmutableSortedDictionary.html#System_Collections_Immutable_ImmutableSortedDictionary_ToImmutableSortedDictionary__3_System_Collections_Generic_IEnumerable___0__System_Func___0___1__System_Func___0___2__System_Collections_Generic_IComparer___1__">ImmutableSortedDictionary.ToImmutableSortedDictionary&lt;TSource, TKey, TValue&gt;(IEnumerable&lt;TSource&gt;, Func&lt;TSource, TKey&gt;, Func&lt;TSource, TValue&gt;, IComparer&lt;TKey&gt;?)</a>
+  </div>
+  <div>
+      <a class="xref" href="System.Collections.Immutable.ImmutableSortedDictionary.html#System_Collections_Immutable_ImmutableSortedDictionary_ToImmutableSortedDictionary__3_System_Collections_Generic_IEnumerable___0__System_Func___0___1__System_Func___0___2__System_Collections_Generic_IComparer___1__System_Collections_Generic_IEqualityComparer___2__">ImmutableSortedDictionary.ToImmutableSortedDictionary&lt;TSource, TKey, TValue&gt;(IEnumerable&lt;TSource&gt;, Func&lt;TSource, TKey&gt;, Func&lt;TSource, TValue&gt;, IComparer&lt;TKey&gt;?, IEqualityComparer&lt;TValue&gt;?)</a>
+  </div>
+  <div>
+      <a class="xref" href="System.Collections.Immutable.ImmutableSortedSet.html#System_Collections_Immutable_ImmutableSortedSet_ToImmutableSortedSet__1_System_Collections_Generic_IEnumerable___0__">ImmutableSortedSet.ToImmutableSortedSet&lt;TSource&gt;(IEnumerable&lt;TSource&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="System.Collections.Immutable.ImmutableSortedSet.html#System_Collections_Immutable_ImmutableSortedSet_ToImmutableSortedSet__1_System_Collections_Generic_IEnumerable___0__System_Collections_Generic_IComparer___0__">ImmutableSortedSet.ToImmutableSortedSet&lt;TSource&gt;(IEnumerable&lt;TSource&gt;, IComparer&lt;TSource&gt;?)</a>
+  </div>
+  <div>
+      <a class="xref" href="System.Collections.Immutable.ImmutableList.html#System_Collections_Immutable_ImmutableList_ToImmutableList__1_System_Collections_Immutable_ImmutableList___0__Builder_">ImmutableList.ToImmutableList&lt;TSource&gt;(ImmutableList&lt;TSource&gt;.Builder)</a>
+  </div>
+
+</article>
+                </div>
+
+                <div class="copyright-footer">
+                    <span>&#169; CodeFactory, LLC. All rights reserved.</span>
+                </div>
+            </main>
+        </div>
+
+
+        <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+        <script type="text/javascript" src="../styles/jquery.twbsPagination.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/mark.js@8.11.1/dist/jquery.mark.min.js"></script>
+        <script type="text/javascript" src="../styles/url.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/anchor-js@5.0.0/anchor.min.js"></script>
+        <script type="text/javascript" src="../styles/docfx.js"></script>
+        <script type="text/javascript" src="../styles/main.js"></script>
+        <script type="text/javascript" src="../styles/singulink.js"></script>    </body>
+</html>

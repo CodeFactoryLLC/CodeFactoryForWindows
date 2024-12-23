@@ -1,0 +1,51 @@
+{
+  "$schema": "https://raw.githubusercontent.com/dotnet/docfx/main/schemas/docfx.schema.json",
+  "metadata": [
+    {
+      "src": [
+        {
+          "src": "../",
+          "files": ["**/bin/debug/CodeFactory*.dll"]
+        }
+      ],
+      "dest": "api"
+    }
+  ],
+  "build": {
+    "content": [
+      {
+        "files": [
+          "**/*.{md,yml}"
+        ],
+        "exclude": [
+          "_site/**"
+        ]
+      }
+    ],
+    "resource": [
+      {
+        "files": [
+          "images/**"
+        ]
+      }
+    ],
+    "output": "_site",
+    "template": [
+      "default",
+      "templates/singulinkfx"
+    ],
+    "globalMetadata": {
+      "_appName": "CodeFactory for Windows",
+      "_appTitle": "CodeFactory for Windows",
+      "_appFaviconPath": "images/cfLogo70White.png",
+      "_appLogoPath": "images/cfLogo70White.png",
+      "_appFooter": "CodeFactory for Windows SDK",
+      "_copyrightFooter": "© CodeFactory, LLC. All rights reserved.",
+      "_enableSearch": true,
+      "_enableNewTab": true,
+      "_disableSideFilter": false,
+      "_disableContribution": true,
+      "pdf": false
+    }
+  }
+}

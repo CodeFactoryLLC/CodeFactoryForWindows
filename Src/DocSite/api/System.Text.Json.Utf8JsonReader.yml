@@ -1,0 +1,3211 @@
+### YamlMime:ManagedReference
+items:
+- uid: System.Text.Json.Utf8JsonReader
+  commentId: T:System.Text.Json.Utf8JsonReader
+  id: Utf8JsonReader
+  parent: System.Text.Json
+  children:
+  - System.Text.Json.Utf8JsonReader.#ctor(System.Buffers.ReadOnlySequence{System.Byte},System.Boolean,System.Text.Json.JsonReaderState)
+  - System.Text.Json.Utf8JsonReader.#ctor(System.Buffers.ReadOnlySequence{System.Byte},System.Text.Json.JsonReaderOptions)
+  - System.Text.Json.Utf8JsonReader.#ctor(System.ReadOnlySpan{System.Byte},System.Boolean,System.Text.Json.JsonReaderState)
+  - System.Text.Json.Utf8JsonReader.#ctor(System.ReadOnlySpan{System.Byte},System.Text.Json.JsonReaderOptions)
+  - System.Text.Json.Utf8JsonReader.BytesConsumed
+  - System.Text.Json.Utf8JsonReader.CurrentDepth
+  - System.Text.Json.Utf8JsonReader.CurrentState
+  - System.Text.Json.Utf8JsonReader.GetBoolean
+  - System.Text.Json.Utf8JsonReader.GetByte
+  - System.Text.Json.Utf8JsonReader.GetBytesFromBase64
+  - System.Text.Json.Utf8JsonReader.GetComment
+  - System.Text.Json.Utf8JsonReader.GetDateTime
+  - System.Text.Json.Utf8JsonReader.GetDateTimeOffset
+  - System.Text.Json.Utf8JsonReader.GetDecimal
+  - System.Text.Json.Utf8JsonReader.GetDouble
+  - System.Text.Json.Utf8JsonReader.GetGuid
+  - System.Text.Json.Utf8JsonReader.GetInt16
+  - System.Text.Json.Utf8JsonReader.GetInt32
+  - System.Text.Json.Utf8JsonReader.GetInt64
+  - System.Text.Json.Utf8JsonReader.GetSByte
+  - System.Text.Json.Utf8JsonReader.GetSingle
+  - System.Text.Json.Utf8JsonReader.GetString
+  - System.Text.Json.Utf8JsonReader.GetUInt16
+  - System.Text.Json.Utf8JsonReader.GetUInt32
+  - System.Text.Json.Utf8JsonReader.GetUInt64
+  - System.Text.Json.Utf8JsonReader.HasValueSequence
+  - System.Text.Json.Utf8JsonReader.IsFinalBlock
+  - System.Text.Json.Utf8JsonReader.Position
+  - System.Text.Json.Utf8JsonReader.Read
+  - System.Text.Json.Utf8JsonReader.Skip
+  - System.Text.Json.Utf8JsonReader.TokenStartIndex
+  - System.Text.Json.Utf8JsonReader.TokenType
+  - System.Text.Json.Utf8JsonReader.TryGetByte(System.Byte@)
+  - System.Text.Json.Utf8JsonReader.TryGetBytesFromBase64(System.Byte[]@)
+  - System.Text.Json.Utf8JsonReader.TryGetDateTime(System.DateTime@)
+  - System.Text.Json.Utf8JsonReader.TryGetDateTimeOffset(System.DateTimeOffset@)
+  - System.Text.Json.Utf8JsonReader.TryGetDecimal(System.Decimal@)
+  - System.Text.Json.Utf8JsonReader.TryGetDouble(System.Double@)
+  - System.Text.Json.Utf8JsonReader.TryGetGuid(System.Guid@)
+  - System.Text.Json.Utf8JsonReader.TryGetInt16(System.Int16@)
+  - System.Text.Json.Utf8JsonReader.TryGetInt32(System.Int32@)
+  - System.Text.Json.Utf8JsonReader.TryGetInt64(System.Int64@)
+  - System.Text.Json.Utf8JsonReader.TryGetSByte(System.SByte@)
+  - System.Text.Json.Utf8JsonReader.TryGetSingle(System.Single@)
+  - System.Text.Json.Utf8JsonReader.TryGetUInt16(System.UInt16@)
+  - System.Text.Json.Utf8JsonReader.TryGetUInt32(System.UInt32@)
+  - System.Text.Json.Utf8JsonReader.TryGetUInt64(System.UInt64@)
+  - System.Text.Json.Utf8JsonReader.TrySkip
+  - System.Text.Json.Utf8JsonReader.ValueSequence
+  - System.Text.Json.Utf8JsonReader.ValueSpan
+  - System.Text.Json.Utf8JsonReader.ValueTextEquals(System.ReadOnlySpan{System.Byte})
+  - System.Text.Json.Utf8JsonReader.ValueTextEquals(System.ReadOnlySpan{System.Char})
+  - System.Text.Json.Utf8JsonReader.ValueTextEquals(System.String)
+  langs:
+  - csharp
+  - vb
+  name: Utf8JsonReader
+  nameWithType: Utf8JsonReader
+  fullName: System.Text.Json.Utf8JsonReader
+  type: Struct
+  assemblies:
+  - System.Text.Json
+  namespace: System.Text.Json
+  summary: Provides a high-performance API for forward-only, read-only access to UTF-8 encoded JSON text.
+  example: []
+  syntax:
+    content: public ref struct Utf8JsonReader
+    content.vb: Public Structure Utf8JsonReader
+  inheritedMembers:
+  - System.ValueType.Equals(System.Object)
+  - System.ValueType.GetHashCode
+  - System.ValueType.ToString
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetType
+- uid: System.Text.Json.Utf8JsonReader.#ctor(System.ReadOnlySpan{System.Byte},System.Boolean,System.Text.Json.JsonReaderState)
+  commentId: M:System.Text.Json.Utf8JsonReader.#ctor(System.ReadOnlySpan{System.Byte},System.Boolean,System.Text.Json.JsonReaderState)
+  id: '#ctor(System.ReadOnlySpan{System.Byte},System.Boolean,System.Text.Json.JsonReaderState)'
+  parent: System.Text.Json.Utf8JsonReader
+  langs:
+  - csharp
+  - vb
+  name: Utf8JsonReader(ReadOnlySpan<byte>, bool, JsonReaderState)
+  nameWithType: Utf8JsonReader.Utf8JsonReader(ReadOnlySpan<byte>, bool, JsonReaderState)
+  fullName: System.Text.Json.Utf8JsonReader.Utf8JsonReader(System.ReadOnlySpan<byte>, bool, System.Text.Json.JsonReaderState)
+  type: Constructor
+  assemblies:
+  - System.Text.Json
+  namespace: System.Text.Json
+  summary: Initializes a new instance of the <xref href="System.Text.Json.Utf8JsonReader" data-throw-if-not-resolved="false"></xref> structure that processes a read-only span of UTF-8 encoded text and indicates whether the input contains all the text to process.
+  example: []
+  syntax:
+    content: public Utf8JsonReader(ReadOnlySpan<byte> jsonData, bool isFinalBlock, JsonReaderState state)
+    parameters:
+    - id: jsonData
+      type: System.ReadOnlySpan{System.Byte}
+      description: The UTF-8 encoded JSON text to process.
+    - id: isFinalBlock
+      type: System.Boolean
+      description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> to indicate that the input sequence contains the entire data to process; <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a> to indicate that the input span contains partial data with more data to follow.
+    - id: state
+      type: System.Text.Json.JsonReaderState
+      description: An object that contains the reader state. If this is the first call to the constructor, pass the default state; otherwise, pass the value of the <xref href="System.Text.Json.Utf8JsonReader.CurrentState" data-throw-if-not-resolved="false"></xref> property from the previous instance of the <xref href="System.Text.Json.Utf8JsonReader" data-throw-if-not-resolved="false"></xref>.
+    content.vb: Public Sub New(jsonData As ReadOnlySpan(Of Byte), isFinalBlock As Boolean, state As JsonReaderState)
+  overload: System.Text.Json.Utf8JsonReader.#ctor*
+  nameWithType.vb: Utf8JsonReader.New(ReadOnlySpan(Of Byte), Boolean, JsonReaderState)
+  fullName.vb: System.Text.Json.Utf8JsonReader.New(System.ReadOnlySpan(Of Byte), Boolean, System.Text.Json.JsonReaderState)
+  name.vb: New(ReadOnlySpan(Of Byte), Boolean, JsonReaderState)
+- uid: System.Text.Json.Utf8JsonReader.#ctor(System.ReadOnlySpan{System.Byte},System.Text.Json.JsonReaderOptions)
+  commentId: M:System.Text.Json.Utf8JsonReader.#ctor(System.ReadOnlySpan{System.Byte},System.Text.Json.JsonReaderOptions)
+  id: '#ctor(System.ReadOnlySpan{System.Byte},System.Text.Json.JsonReaderOptions)'
+  parent: System.Text.Json.Utf8JsonReader
+  langs:
+  - csharp
+  - vb
+  name: Utf8JsonReader(ReadOnlySpan<byte>, JsonReaderOptions)
+  nameWithType: Utf8JsonReader.Utf8JsonReader(ReadOnlySpan<byte>, JsonReaderOptions)
+  fullName: System.Text.Json.Utf8JsonReader.Utf8JsonReader(System.ReadOnlySpan<byte>, System.Text.Json.JsonReaderOptions)
+  type: Constructor
+  assemblies:
+  - System.Text.Json
+  namespace: System.Text.Json
+  summary: Initializes a new instance of the <xref href="System.Text.Json.Utf8JsonReader" data-throw-if-not-resolved="false"></xref> structure that processes a read-only span of UTF-8 encoded text using the specified options.
+  example: []
+  syntax:
+    content: public Utf8JsonReader(ReadOnlySpan<byte> jsonData, JsonReaderOptions options = default)
+    parameters:
+    - id: jsonData
+      type: System.ReadOnlySpan{System.Byte}
+      description: The UTF-8 encoded JSON text to process.
+    - id: options
+      type: System.Text.Json.JsonReaderOptions
+      description: Defines customized behavior of the <xref href="System.Text.Json.Utf8JsonReader" data-throw-if-not-resolved="false"></xref> that differs from the JSON RFC (for example how to handle comments or maximum depth allowed when reading). By default, the <xref href="System.Text.Json.Utf8JsonReader" data-throw-if-not-resolved="false"></xref> follows the JSON RFC strictly; comments within the JSON are invalid, and the maximum depth is 64.
+    content.vb: Public Sub New(jsonData As ReadOnlySpan(Of Byte), options As JsonReaderOptions = Nothing)
+  overload: System.Text.Json.Utf8JsonReader.#ctor*
+  nameWithType.vb: Utf8JsonReader.New(ReadOnlySpan(Of Byte), JsonReaderOptions)
+  fullName.vb: System.Text.Json.Utf8JsonReader.New(System.ReadOnlySpan(Of Byte), System.Text.Json.JsonReaderOptions)
+  name.vb: New(ReadOnlySpan(Of Byte), JsonReaderOptions)
+- uid: System.Text.Json.Utf8JsonReader.Read
+  commentId: M:System.Text.Json.Utf8JsonReader.Read
+  id: Read
+  parent: System.Text.Json.Utf8JsonReader
+  langs:
+  - csharp
+  - vb
+  name: Read()
+  nameWithType: Utf8JsonReader.Read()
+  fullName: System.Text.Json.Utf8JsonReader.Read()
+  type: Method
+  assemblies:
+  - System.Text.Json
+  namespace: System.Text.Json
+  summary: Reads the next JSON token from the input source.
+  example: []
+  syntax:
+    content: public bool Read()
+    return:
+      type: System.Boolean
+      description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the token was read successfully; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
+    content.vb: Public Function Read() As Boolean
+  overload: System.Text.Json.Utf8JsonReader.Read*
+  exceptions:
+  - type: System.Text.Json.JsonException
+    commentId: T:System.Text.Json.JsonException
+    description: >-
+      An invalid JSON token according to the JSON RFC is encountered.
+
+
+      -or-
+
+
+      The current depth exceeds the recursive limit set by the maximum depth.
+- uid: System.Text.Json.Utf8JsonReader.Skip
+  commentId: M:System.Text.Json.Utf8JsonReader.Skip
+  id: Skip
+  parent: System.Text.Json.Utf8JsonReader
+  langs:
+  - csharp
+  - vb
+  name: Skip()
+  nameWithType: Utf8JsonReader.Skip()
+  fullName: System.Text.Json.Utf8JsonReader.Skip()
+  type: Method
+  assemblies:
+  - System.Text.Json
+  namespace: System.Text.Json
+  summary: Skips the children of the current JSON token.
+  example: []
+  syntax:
+    content: public void Skip()
+    content.vb: Public Sub Skip()
+  overload: System.Text.Json.Utf8JsonReader.Skip*
+  exceptions:
+  - type: System.InvalidOperationException
+    commentId: T:System.InvalidOperationException
+    description: The reader was given partial data with more data to follow (that is, <xref href="System.Text.Json.Utf8JsonReader.IsFinalBlock" data-throw-if-not-resolved="false"></xref> is <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>).
+  - type: System.Text.Json.JsonException
+    commentId: T:System.Text.Json.JsonException
+    description: >-
+      An invalid JSON token was encountered while skipping, according to the JSON RFC.
+
+
+      -or-
+
+
+      The current depth exceeds the recursive limit set by the maximum depth.
+- uid: System.Text.Json.Utf8JsonReader.TrySkip
+  commentId: M:System.Text.Json.Utf8JsonReader.TrySkip
+  id: TrySkip
+  parent: System.Text.Json.Utf8JsonReader
+  langs:
+  - csharp
+  - vb
+  name: TrySkip()
+  nameWithType: Utf8JsonReader.TrySkip()
+  fullName: System.Text.Json.Utf8JsonReader.TrySkip()
+  type: Method
+  assemblies:
+  - System.Text.Json
+  namespace: System.Text.Json
+  summary: Tries to skip the children of the current JSON token.
+  example: []
+  syntax:
+    content: public bool TrySkip()
+    return:
+      type: System.Boolean
+      description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if there was enough data for the children to be skipped successfully; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
+    content.vb: Public Function TrySkip() As Boolean
+  overload: System.Text.Json.Utf8JsonReader.TrySkip*
+  exceptions:
+  - type: System.Text.Json.JsonException
+    commentId: T:System.Text.Json.JsonException
+    description: >-
+      An invalid JSON token was encountered while skipping, according to the JSON RFC.
+
+
+      -or -
+
+
+      The current depth exceeds the recursive limit set by the maximum depth.
+- uid: System.Text.Json.Utf8JsonReader.ValueTextEquals(System.ReadOnlySpan{System.Byte})
+  commentId: M:System.Text.Json.Utf8JsonReader.ValueTextEquals(System.ReadOnlySpan{System.Byte})
+  id: ValueTextEquals(System.ReadOnlySpan{System.Byte})
+  parent: System.Text.Json.Utf8JsonReader
+  langs:
+  - csharp
+  - vb
+  name: ValueTextEquals(ReadOnlySpan<byte>)
+  nameWithType: Utf8JsonReader.ValueTextEquals(ReadOnlySpan<byte>)
+  fullName: System.Text.Json.Utf8JsonReader.ValueTextEquals(System.ReadOnlySpan<byte>)
+  type: Method
+  assemblies:
+  - System.Text.Json
+  namespace: System.Text.Json
+  summary: Compares the UTF-8 encoded text in a read-only byte span to the unescaped JSON token value in the source and returns a value that indicates whether they match.
+  example: []
+  syntax:
+    content: public bool ValueTextEquals(ReadOnlySpan<byte> utf8Text)
+    parameters:
+    - id: utf8Text
+      type: System.ReadOnlySpan{System.Byte}
+      description: The UTF-8 encoded text to compare against.
+    return:
+      type: System.Boolean
+      description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the JSON token value in the source matches the UTF-8 encoded lookup text; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
+    content.vb: Public Function ValueTextEquals(utf8Text As ReadOnlySpan(Of Byte)) As Boolean
+  overload: System.Text.Json.Utf8JsonReader.ValueTextEquals*
+  exceptions:
+  - type: System.InvalidOperationException
+    commentId: T:System.InvalidOperationException
+    description: The JSON token is not a JSON string (that is, it is not <xref href="System.Text.Json.JsonTokenType.String" data-throw-if-not-resolved="false"></xref> or <xref href="System.Text.Json.JsonTokenType.PropertyName" data-throw-if-not-resolved="false"></xref>).
+  nameWithType.vb: Utf8JsonReader.ValueTextEquals(ReadOnlySpan(Of Byte))
+  fullName.vb: System.Text.Json.Utf8JsonReader.ValueTextEquals(System.ReadOnlySpan(Of Byte))
+  name.vb: ValueTextEquals(ReadOnlySpan(Of Byte))
+- uid: System.Text.Json.Utf8JsonReader.ValueTextEquals(System.String)
+  commentId: M:System.Text.Json.Utf8JsonReader.ValueTextEquals(System.String)
+  id: ValueTextEquals(System.String)
+  parent: System.Text.Json.Utf8JsonReader
+  langs:
+  - csharp
+  - vb
+  name: ValueTextEquals(string?)
+  nameWithType: Utf8JsonReader.ValueTextEquals(string?)
+  fullName: System.Text.Json.Utf8JsonReader.ValueTextEquals(string?)
+  type: Method
+  assemblies:
+  - System.Text.Json
+  namespace: System.Text.Json
+  summary: Compares the string text to the unescaped JSON token value in the source and returns a value that indicates whether they match.
+  example: []
+  syntax:
+    content: public bool ValueTextEquals(string? text)
+    parameters:
+    - id: text
+      type: System.String
+      description: The text to compare against.
+    return:
+      type: System.Boolean
+      description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the JSON token value in the source matches the lookup text; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
+    content.vb: Public Function ValueTextEquals(text As String) As Boolean
+  overload: System.Text.Json.Utf8JsonReader.ValueTextEquals*
+  exceptions:
+  - type: System.InvalidOperationException
+    commentId: T:System.InvalidOperationException
+    description: The JSON token is not a JSON string (that is, it is not <xref href="System.Text.Json.JsonTokenType.String" data-throw-if-not-resolved="false"></xref> or <xref href="System.Text.Json.JsonTokenType.PropertyName" data-throw-if-not-resolved="false"></xref>).
+  nameWithType.vb: Utf8JsonReader.ValueTextEquals(String)
+  fullName.vb: System.Text.Json.Utf8JsonReader.ValueTextEquals(String)
+  name.vb: ValueTextEquals(String)
+- uid: System.Text.Json.Utf8JsonReader.ValueTextEquals(System.ReadOnlySpan{System.Char})
+  commentId: M:System.Text.Json.Utf8JsonReader.ValueTextEquals(System.ReadOnlySpan{System.Char})
+  id: ValueTextEquals(System.ReadOnlySpan{System.Char})
+  parent: System.Text.Json.Utf8JsonReader
+  langs:
+  - csharp
+  - vb
+  name: ValueTextEquals(ReadOnlySpan<char>)
+  nameWithType: Utf8JsonReader.ValueTextEquals(ReadOnlySpan<char>)
+  fullName: System.Text.Json.Utf8JsonReader.ValueTextEquals(System.ReadOnlySpan<char>)
+  type: Method
+  assemblies:
+  - System.Text.Json
+  namespace: System.Text.Json
+  summary: Compares the text in a read-only character span to the unescaped JSON token value in the source and returns a value that indicates whether they match.
+  example: []
+  syntax:
+    content: public bool ValueTextEquals(ReadOnlySpan<char> text)
+    parameters:
+    - id: text
+      type: System.ReadOnlySpan{System.Char}
+      description: The text to compare against.
+    return:
+      type: System.Boolean
+      description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the JSON token value in the source matches the lookup text; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
+    content.vb: Public Function ValueTextEquals(text As ReadOnlySpan(Of Char)) As Boolean
+  overload: System.Text.Json.Utf8JsonReader.ValueTextEquals*
+  exceptions:
+  - type: System.InvalidOperationException
+    commentId: T:System.InvalidOperationException
+    description: The JSON token is not a JSON string (that is, it is not <xref href="System.Text.Json.JsonTokenType.String" data-throw-if-not-resolved="false"></xref> or <xref href="System.Text.Json.JsonTokenType.PropertyName" data-throw-if-not-resolved="false"></xref>).
+  nameWithType.vb: Utf8JsonReader.ValueTextEquals(ReadOnlySpan(Of Char))
+  fullName.vb: System.Text.Json.Utf8JsonReader.ValueTextEquals(System.ReadOnlySpan(Of Char))
+  name.vb: ValueTextEquals(ReadOnlySpan(Of Char))
+- uid: System.Text.Json.Utf8JsonReader.#ctor(System.Buffers.ReadOnlySequence{System.Byte},System.Boolean,System.Text.Json.JsonReaderState)
+  commentId: M:System.Text.Json.Utf8JsonReader.#ctor(System.Buffers.ReadOnlySequence{System.Byte},System.Boolean,System.Text.Json.JsonReaderState)
+  id: '#ctor(System.Buffers.ReadOnlySequence{System.Byte},System.Boolean,System.Text.Json.JsonReaderState)'
+  parent: System.Text.Json.Utf8JsonReader
+  langs:
+  - csharp
+  - vb
+  name: Utf8JsonReader(ReadOnlySequence<byte>, bool, JsonReaderState)
+  nameWithType: Utf8JsonReader.Utf8JsonReader(ReadOnlySequence<byte>, bool, JsonReaderState)
+  fullName: System.Text.Json.Utf8JsonReader.Utf8JsonReader(System.Buffers.ReadOnlySequence<byte>, bool, System.Text.Json.JsonReaderState)
+  type: Constructor
+  assemblies:
+  - System.Text.Json
+  namespace: System.Text.Json
+  summary: Initializes a new instance of the <xref href="System.Text.Json.Utf8JsonReader" data-throw-if-not-resolved="false"></xref> structure that processes a read-only sequence of UTF-8 encoded text and indicates whether the input contains all the text to process.
+  example: []
+  syntax:
+    content: public Utf8JsonReader(ReadOnlySequence<byte> jsonData, bool isFinalBlock, JsonReaderState state)
+    parameters:
+    - id: jsonData
+      type: System.Buffers.ReadOnlySequence{System.Byte}
+      description: The UTF-8 encoded JSON text to process.
+    - id: isFinalBlock
+      type: System.Boolean
+      description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> to indicate that the input sequence contains the entire data to process; <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a> to indicate that the input span contains partial data with more data to follow.
+    - id: state
+      type: System.Text.Json.JsonReaderState
+      description: An object that contains the reader state. If this is the first call to the constructor, pass the default state; otherwise, pass the value of the <xref href="System.Text.Json.Utf8JsonReader.CurrentState" data-throw-if-not-resolved="false"></xref> property from the previous instance of the <xref href="System.Text.Json.Utf8JsonReader" data-throw-if-not-resolved="false"></xref>.
+    content.vb: Public Sub New(jsonData As ReadOnlySequence(Of Byte), isFinalBlock As Boolean, state As JsonReaderState)
+  overload: System.Text.Json.Utf8JsonReader.#ctor*
+  nameWithType.vb: Utf8JsonReader.New(ReadOnlySequence(Of Byte), Boolean, JsonReaderState)
+  fullName.vb: System.Text.Json.Utf8JsonReader.New(System.Buffers.ReadOnlySequence(Of Byte), Boolean, System.Text.Json.JsonReaderState)
+  name.vb: New(ReadOnlySequence(Of Byte), Boolean, JsonReaderState)
+- uid: System.Text.Json.Utf8JsonReader.#ctor(System.Buffers.ReadOnlySequence{System.Byte},System.Text.Json.JsonReaderOptions)
+  commentId: M:System.Text.Json.Utf8JsonReader.#ctor(System.Buffers.ReadOnlySequence{System.Byte},System.Text.Json.JsonReaderOptions)
+  id: '#ctor(System.Buffers.ReadOnlySequence{System.Byte},System.Text.Json.JsonReaderOptions)'
+  parent: System.Text.Json.Utf8JsonReader
+  langs:
+  - csharp
+  - vb
+  name: Utf8JsonReader(ReadOnlySequence<byte>, JsonReaderOptions)
+  nameWithType: Utf8JsonReader.Utf8JsonReader(ReadOnlySequence<byte>, JsonReaderOptions)
+  fullName: System.Text.Json.Utf8JsonReader.Utf8JsonReader(System.Buffers.ReadOnlySequence<byte>, System.Text.Json.JsonReaderOptions)
+  type: Constructor
+  assemblies:
+  - System.Text.Json
+  namespace: System.Text.Json
+  summary: Initializes a new instance of the <xref href="System.Text.Json.Utf8JsonReader" data-throw-if-not-resolved="false"></xref> structure that processes a read-only sequence of UTF-8 encoded text using the specified options.
+  example: []
+  syntax:
+    content: public Utf8JsonReader(ReadOnlySequence<byte> jsonData, JsonReaderOptions options = default)
+    parameters:
+    - id: jsonData
+      type: System.Buffers.ReadOnlySequence{System.Byte}
+      description: The UTF-8 encoded JSON text to process.
+    - id: options
+      type: System.Text.Json.JsonReaderOptions
+      description: Defines customized behavior of the <xref href="System.Text.Json.Utf8JsonReader" data-throw-if-not-resolved="false"></xref> that differs from the JSON RFC (for example how to handle comments or maximum depth allowed when reading). By default, the <xref href="System.Text.Json.Utf8JsonReader" data-throw-if-not-resolved="false"></xref> follows the JSON RFC strictly; comments within the JSON are invalid, and the maximum depth is 64.
+    content.vb: Public Sub New(jsonData As ReadOnlySequence(Of Byte), options As JsonReaderOptions = Nothing)
+  overload: System.Text.Json.Utf8JsonReader.#ctor*
+  nameWithType.vb: Utf8JsonReader.New(ReadOnlySequence(Of Byte), JsonReaderOptions)
+  fullName.vb: System.Text.Json.Utf8JsonReader.New(System.Buffers.ReadOnlySequence(Of Byte), System.Text.Json.JsonReaderOptions)
+  name.vb: New(ReadOnlySequence(Of Byte), JsonReaderOptions)
+- uid: System.Text.Json.Utf8JsonReader.GetString
+  commentId: M:System.Text.Json.Utf8JsonReader.GetString
+  id: GetString
+  parent: System.Text.Json.Utf8JsonReader
+  langs:
+  - csharp
+  - vb
+  name: GetString()
+  nameWithType: Utf8JsonReader.GetString()
+  fullName: System.Text.Json.Utf8JsonReader.GetString()
+  type: Method
+  assemblies:
+  - System.Text.Json
+  namespace: System.Text.Json
+  summary: Reads the next JSON token value from the source, unescaped, and transcoded as a string.
+  example: []
+  syntax:
+    content: public string? GetString()
+    return:
+      type: System.String
+      description: The token value parsed to a string, or <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> if <xref href="System.Text.Json.Utf8JsonReader.TokenType" data-throw-if-not-resolved="false"></xref> is <xref href="System.Text.Json.JsonTokenType.Null" data-throw-if-not-resolved="false"></xref>.
+    content.vb: Public Function GetString() As String
+  overload: System.Text.Json.Utf8JsonReader.GetString*
+  exceptions:
+  - type: System.InvalidOperationException
+    commentId: T:System.InvalidOperationException
+    description: >-
+      The JSON token value isn't a string (that is, not a <xref href="System.Text.Json.JsonTokenType.String" data-throw-if-not-resolved="false"></xref>, <xref href="System.Text.Json.JsonTokenType.PropertyName" data-throw-if-not-resolved="false"></xref>, or <xref href="System.Text.Json.JsonTokenType.Null" data-throw-if-not-resolved="false"></xref>).
+
+
+      -or-
+
+
+      The JSON string contains invalid UTF-8 bytes or invalid UTF-16 surrogates.
+- uid: System.Text.Json.Utf8JsonReader.GetComment
+  commentId: M:System.Text.Json.Utf8JsonReader.GetComment
+  id: GetComment
+  parent: System.Text.Json.Utf8JsonReader
+  langs:
+  - csharp
+  - vb
+  name: GetComment()
+  nameWithType: Utf8JsonReader.GetComment()
+  fullName: System.Text.Json.Utf8JsonReader.GetComment()
+  type: Method
+  assemblies:
+  - System.Text.Json
+  namespace: System.Text.Json
+  summary: Parses the current JSON token value from the source as a comment, transcoded it as a <xref href="System.String" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public string GetComment()
+    return:
+      type: System.String
+      description: The comment that represents the current JSON token value.
+    content.vb: Public Function GetComment() As String
+  overload: System.Text.Json.Utf8JsonReader.GetComment*
+  exceptions:
+  - type: System.InvalidOperationException
+    commentId: T:System.InvalidOperationException
+    description: The JSON token is not a comment.
+- uid: System.Text.Json.Utf8JsonReader.GetBoolean
+  commentId: M:System.Text.Json.Utf8JsonReader.GetBoolean
+  id: GetBoolean
+  parent: System.Text.Json.Utf8JsonReader
+  langs:
+  - csharp
+  - vb
+  name: GetBoolean()
+  nameWithType: Utf8JsonReader.GetBoolean()
+  fullName: System.Text.Json.Utf8JsonReader.GetBoolean()
+  type: Method
+  assemblies:
+  - System.Text.Json
+  namespace: System.Text.Json
+  summary: Reads the next JSON token value from the source as a <xref href="System.Boolean" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public bool GetBoolean()
+    return:
+      type: System.Boolean
+      description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the <xref href="System.Text.Json.Utf8JsonReader.TokenType" data-throw-if-not-resolved="false"></xref> is <xref href="System.Text.Json.JsonTokenType.True" data-throw-if-not-resolved="false"></xref>; <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a> if the <xref href="System.Text.Json.Utf8JsonReader.TokenType" data-throw-if-not-resolved="false"></xref> is <xref href="System.Text.Json.JsonTokenType.False" data-throw-if-not-resolved="false"></xref>.
+    content.vb: Public Function GetBoolean() As Boolean
+  overload: System.Text.Json.Utf8JsonReader.GetBoolean*
+  exceptions:
+  - type: System.InvalidOperationException
+    commentId: T:System.InvalidOperationException
+    description: The value of the JSON token isn't a boolean value (that is, <xref href="System.Text.Json.JsonTokenType.True" data-throw-if-not-resolved="false"></xref> or <xref href="System.Text.Json.JsonTokenType.False" data-throw-if-not-resolved="false"></xref>).
+- uid: System.Text.Json.Utf8JsonReader.GetBytesFromBase64
+  commentId: M:System.Text.Json.Utf8JsonReader.GetBytesFromBase64
+  id: GetBytesFromBase64
+  parent: System.Text.Json.Utf8JsonReader
+  langs:
+  - csharp
+  - vb
+  name: GetBytesFromBase64()
+  nameWithType: Utf8JsonReader.GetBytesFromBase64()
+  fullName: System.Text.Json.Utf8JsonReader.GetBytesFromBase64()
+  type: Method
+  assemblies:
+  - System.Text.Json
+  namespace: System.Text.Json
+  summary: Parses the current JSON token value from the source and decodes the Base64 encoded JSON string as a byte array.
+  example: []
+  syntax:
+    content: public byte[] GetBytesFromBase64()
+    return:
+      type: System.Byte[]
+      description: The byte array that represents the current JSON token value.
+    content.vb: Public Function GetBytesFromBase64() As Byte()
+  overload: System.Text.Json.Utf8JsonReader.GetBytesFromBase64*
+  exceptions:
+  - type: System.InvalidOperationException
+    commentId: T:System.InvalidOperationException
+    description: The type of the JSON token is not a <xref href="System.Text.Json.JsonTokenType.String" data-throw-if-not-resolved="false"></xref>.
+  - type: System.FormatException
+    commentId: T:System.FormatException
+    description: >-
+      The value is not encoded as Base64 text, so it can't be decoded to bytes.
+
+
+      -or-
+
+
+      The value contains invalid or more than two padding characters.
+
+
+      -or-
+
+
+      The value is incomplete. That is, the JSON string length is not a multiple of 4.
+- uid: System.Text.Json.Utf8JsonReader.GetByte
+  commentId: M:System.Text.Json.Utf8JsonReader.GetByte
+  id: GetByte
+  parent: System.Text.Json.Utf8JsonReader
+  langs:
+  - csharp
+  - vb
+  name: GetByte()
+  nameWithType: Utf8JsonReader.GetByte()
+  fullName: System.Text.Json.Utf8JsonReader.GetByte()
+  type: Method
+  assemblies:
+  - System.Text.Json
+  namespace: System.Text.Json
+  summary: Parses the current JSON token value from the source as a <xref href="System.Byte" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public byte GetByte()
+    return:
+      type: System.Byte
+      description: The value of the UTF-8 encoded token.
+    content.vb: Public Function GetByte() As Byte
+  overload: System.Text.Json.Utf8JsonReader.GetByte*
+  exceptions:
+  - type: System.InvalidOperationException
+    commentId: T:System.InvalidOperationException
+    description: The value of the JSON token is not a <xref href="System.Text.Json.JsonTokenType.Number" data-throw-if-not-resolved="false"></xref>.
+  - type: System.FormatException
+    commentId: T:System.FormatException
+    description: >-
+      The numeric format of the JSON token value is incorrect (for example, it contains a fractional value or is written in scientific notation).
+
+
+      -or-
+
+
+      The JSON token value represents a number less than <xref href="System.Byte.MinValue" data-throw-if-not-resolved="false"></xref> or greater than <xref href="System.Byte.MaxValue" data-throw-if-not-resolved="false"></xref>.
+- uid: System.Text.Json.Utf8JsonReader.GetSByte
+  commentId: M:System.Text.Json.Utf8JsonReader.GetSByte
+  id: GetSByte
+  parent: System.Text.Json.Utf8JsonReader
+  langs:
+  - csharp
+  - vb
+  name: GetSByte()
+  nameWithType: Utf8JsonReader.GetSByte()
+  fullName: System.Text.Json.Utf8JsonReader.GetSByte()
+  type: Method
+  assemblies:
+  - System.Text.Json
+  namespace: System.Text.Json
+  summary: Parses the current JSON token value from the source as an <xref href="System.SByte" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: >-
+      [CLSCompliant(false)]
+
+      public sbyte GetSByte()
+    return:
+      type: System.SByte
+      description: The UTF-8 encoded token value parsed to an <xref href="System.SByte" data-throw-if-not-resolved="false"></xref>.
+    content.vb: >-
+      <CLSCompliant(False)>
+
+      Public Function GetSByte() As SByte
+  overload: System.Text.Json.Utf8JsonReader.GetSByte*
+  exceptions:
+  - type: System.InvalidOperationException
+    commentId: T:System.InvalidOperationException
+    description: The value of the JSON token is not a <xref href="System.Text.Json.JsonTokenType.Number" data-throw-if-not-resolved="false"></xref>.
+  - type: System.FormatException
+    commentId: T:System.FormatException
+    description: >-
+      The numeric format of the JSON token value is incorrect (for example, it contains a fractional value or is written in scientific notation).
+
+
+      -or-
+
+
+      The JSON token value represents a number less than <xref href="System.SByte.MinValue" data-throw-if-not-resolved="false"></xref> or greater than <xref href="System.SByte.MaxValue" data-throw-if-not-resolved="false"></xref>.
+  attributes:
+  - type: System.CLSCompliantAttribute
+    ctor: System.CLSCompliantAttribute.#ctor(System.Boolean)
+    arguments:
+    - type: System.Boolean
+      value: false
+- uid: System.Text.Json.Utf8JsonReader.GetInt16
+  commentId: M:System.Text.Json.Utf8JsonReader.GetInt16
+  id: GetInt16
+  parent: System.Text.Json.Utf8JsonReader
+  langs:
+  - csharp
+  - vb
+  name: GetInt16()
+  nameWithType: Utf8JsonReader.GetInt16()
+  fullName: System.Text.Json.Utf8JsonReader.GetInt16()
+  type: Method
+  assemblies:
+  - System.Text.Json
+  namespace: System.Text.Json
+  summary: Parses the current JSON token value from the source as a <xref href="System.Int16" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public short GetInt16()
+    return:
+      type: System.Int16
+      description: The UTF-8 encoded token value parsed to an <xref href="System.Int16" data-throw-if-not-resolved="false"></xref>.
+    content.vb: Public Function GetInt16() As Short
+  overload: System.Text.Json.Utf8JsonReader.GetInt16*
+  exceptions:
+  - type: System.InvalidOperationException
+    commentId: T:System.InvalidOperationException
+    description: The value of the JSON token is not a <xref href="System.Text.Json.JsonTokenType.Number" data-throw-if-not-resolved="false"></xref>.
+  - type: System.FormatException
+    commentId: T:System.FormatException
+    description: >-
+      The numeric format of the JSON token value is incorrect (for example, it contains a fractional value or is written in scientific notation).
+
+
+      -or-
+
+
+      The JSON token value represents a number less than <xref href="System.Int16.MinValue" data-throw-if-not-resolved="false"></xref> or greater than <xref href="System.Int16.MaxValue" data-throw-if-not-resolved="false"></xref>.
+- uid: System.Text.Json.Utf8JsonReader.GetInt32
+  commentId: M:System.Text.Json.Utf8JsonReader.GetInt32
+  id: GetInt32
+  parent: System.Text.Json.Utf8JsonReader
+  langs:
+  - csharp
+  - vb
+  name: GetInt32()
+  nameWithType: Utf8JsonReader.GetInt32()
+  fullName: System.Text.Json.Utf8JsonReader.GetInt32()
+  type: Method
+  assemblies:
+  - System.Text.Json
+  namespace: System.Text.Json
+  summary: Reads the next JSON token value from the source and parses it to an <xref href="System.Int32" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public int GetInt32()
+    return:
+      type: System.Int32
+      description: The UTF-8 encoded token value parsed to an <xref href="System.Int32" data-throw-if-not-resolved="false"></xref>.
+    content.vb: Public Function GetInt32() As Integer
+  overload: System.Text.Json.Utf8JsonReader.GetInt32*
+  exceptions:
+  - type: System.InvalidOperationException
+    commentId: T:System.InvalidOperationException
+    description: The JSON token value isn't a <xref href="System.Text.Json.JsonTokenType.Number" data-throw-if-not-resolved="false"></xref>.
+  - type: System.FormatException
+    commentId: T:System.FormatException
+    description: >-
+      The JSON token value is of the incorrect numeric format. For example, it contains a decimal or is written in scientific notation.
+
+
+      -or-
+
+
+      The JSON token value represents a number less than <xref href="System.Int32.MinValue" data-throw-if-not-resolved="false"></xref> or greater than <xref href="System.Int32.MaxValue" data-throw-if-not-resolved="false"></xref>.
+- uid: System.Text.Json.Utf8JsonReader.GetInt64
+  commentId: M:System.Text.Json.Utf8JsonReader.GetInt64
+  id: GetInt64
+  parent: System.Text.Json.Utf8JsonReader
+  langs:
+  - csharp
+  - vb
+  name: GetInt64()
+  nameWithType: Utf8JsonReader.GetInt64()
+  fullName: System.Text.Json.Utf8JsonReader.GetInt64()
+  type: Method
+  assemblies:
+  - System.Text.Json
+  namespace: System.Text.Json
+  summary: Reads the next JSON token value from the source and parses it to an <xref href="System.Int64" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public long GetInt64()
+    return:
+      type: System.Int64
+      description: The UTF-8 encoded token value parsed to an <xref href="System.Int64" data-throw-if-not-resolved="false"></xref>.
+    content.vb: Public Function GetInt64() As Long
+  overload: System.Text.Json.Utf8JsonReader.GetInt64*
+  exceptions:
+  - type: System.InvalidOperationException
+    commentId: T:System.InvalidOperationException
+    description: The JSON token value isn't a <xref href="System.Text.Json.JsonTokenType.Number" data-throw-if-not-resolved="false"></xref>.
+  - type: System.FormatException
+    commentId: T:System.FormatException
+    description: >-
+      The JSON token value is of the incorrect numeric format. For example, it contains a decimal or is written in scientific notation.
+
+
+      -or-
+
+
+      The JSON token value represents a number less than <xref href="System.Int64.MinValue" data-throw-if-not-resolved="false"></xref> or greater than <xref href="System.Int64.MaxValue" data-throw-if-not-resolved="false"></xref>.
+- uid: System.Text.Json.Utf8JsonReader.GetUInt16
+  commentId: M:System.Text.Json.Utf8JsonReader.GetUInt16
+  id: GetUInt16
+  parent: System.Text.Json.Utf8JsonReader
+  langs:
+  - csharp
+  - vb
+  name: GetUInt16()
+  nameWithType: Utf8JsonReader.GetUInt16()
+  fullName: System.Text.Json.Utf8JsonReader.GetUInt16()
+  type: Method
+  assemblies:
+  - System.Text.Json
+  namespace: System.Text.Json
+  summary: Parses the current JSON token value from the source as a <xref href="System.UInt16" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: >-
+      [CLSCompliant(false)]
+
+      public ushort GetUInt16()
+    return:
+      type: System.UInt16
+      description: The UTF-8 encoded token value parsed to a <xref href="System.UInt16" data-throw-if-not-resolved="false"></xref>.
+    content.vb: >-
+      <CLSCompliant(False)>
+
+      Public Function GetUInt16() As UShort
+  overload: System.Text.Json.Utf8JsonReader.GetUInt16*
+  exceptions:
+  - type: System.InvalidOperationException
+    commentId: T:System.InvalidOperationException
+    description: The value of the JSON token is not a <xref href="System.Text.Json.JsonTokenType.Number" data-throw-if-not-resolved="false"></xref>.
+  - type: System.FormatException
+    commentId: T:System.FormatException
+    description: >-
+      The numeric format of the JSON token value is incorrect (for example, it contains a fractional value or is written in scientific notation).
+
+
+      -or-
+
+
+      The JSON token value represents a number less than <xref href="System.UInt16.MinValue" data-throw-if-not-resolved="false"></xref> or greater than <xref href="System.UInt16.MaxValue" data-throw-if-not-resolved="false"></xref>.
+  attributes:
+  - type: System.CLSCompliantAttribute
+    ctor: System.CLSCompliantAttribute.#ctor(System.Boolean)
+    arguments:
+    - type: System.Boolean
+      value: false
+- uid: System.Text.Json.Utf8JsonReader.GetUInt32
+  commentId: M:System.Text.Json.Utf8JsonReader.GetUInt32
+  id: GetUInt32
+  parent: System.Text.Json.Utf8JsonReader
+  langs:
+  - csharp
+  - vb
+  name: GetUInt32()
+  nameWithType: Utf8JsonReader.GetUInt32()
+  fullName: System.Text.Json.Utf8JsonReader.GetUInt32()
+  type: Method
+  assemblies:
+  - System.Text.Json
+  namespace: System.Text.Json
+  summary: Reads the next JSON token value from the source and parses it to a <xref href="System.UInt32" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: >-
+      [CLSCompliant(false)]
+
+      public uint GetUInt32()
+    return:
+      type: System.UInt32
+      description: The UTF-8 encoded token value parsed to a <xref href="System.UInt32" data-throw-if-not-resolved="false"></xref>.
+    content.vb: >-
+      <CLSCompliant(False)>
+
+      Public Function GetUInt32() As UInteger
+  overload: System.Text.Json.Utf8JsonReader.GetUInt32*
+  exceptions:
+  - type: System.InvalidOperationException
+    commentId: T:System.InvalidOperationException
+    description: The JSON token value isn't a <xref href="System.Text.Json.JsonTokenType.Number" data-throw-if-not-resolved="false"></xref>.
+  - type: System.FormatException
+    commentId: T:System.FormatException
+    description: >-
+      The JSON token value is of the incorrect numeric format. For example, it contains a decimal or is written in scientific notation.
+
+
+      -or-
+
+
+      The JSON token value represents a number less than <xref href="System.UInt32.MinValue" data-throw-if-not-resolved="false"></xref> or greater than <xref href="System.UInt32.MaxValue" data-throw-if-not-resolved="false"></xref>.
+  attributes:
+  - type: System.CLSCompliantAttribute
+    ctor: System.CLSCompliantAttribute.#ctor(System.Boolean)
+    arguments:
+    - type: System.Boolean
+      value: false
+- uid: System.Text.Json.Utf8JsonReader.GetUInt64
+  commentId: M:System.Text.Json.Utf8JsonReader.GetUInt64
+  id: GetUInt64
+  parent: System.Text.Json.Utf8JsonReader
+  langs:
+  - csharp
+  - vb
+  name: GetUInt64()
+  nameWithType: Utf8JsonReader.GetUInt64()
+  fullName: System.Text.Json.Utf8JsonReader.GetUInt64()
+  type: Method
+  assemblies:
+  - System.Text.Json
+  namespace: System.Text.Json
+  summary: Reads the next JSON token value from the source and parses it to a <xref href="System.UInt64" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: >-
+      [CLSCompliant(false)]
+
+      public ulong GetUInt64()
+    return:
+      type: System.UInt64
+      description: The UTF-8 encoded token value parsed to a <xref href="System.UInt64" data-throw-if-not-resolved="false"></xref>.
+    content.vb: >-
+      <CLSCompliant(False)>
+
+      Public Function GetUInt64() As ULong
+  overload: System.Text.Json.Utf8JsonReader.GetUInt64*
+  exceptions:
+  - type: System.InvalidOperationException
+    commentId: T:System.InvalidOperationException
+    description: The JSON token value isn't a <xref href="System.Text.Json.JsonTokenType.Number" data-throw-if-not-resolved="false"></xref>.
+  - type: System.FormatException
+    commentId: T:System.FormatException
+    description: >-
+      The JSON token value is of the incorrect numeric format. For example, it contains a decimal or is written in scientific notation.
+
+
+      -or-
+
+
+      The JSON token value represents a number less than <xref href="System.UInt64.MinValue" data-throw-if-not-resolved="false"></xref> or greater than <xref href="System.UInt64.MaxValue" data-throw-if-not-resolved="false"></xref>.
+  attributes:
+  - type: System.CLSCompliantAttribute
+    ctor: System.CLSCompliantAttribute.#ctor(System.Boolean)
+    arguments:
+    - type: System.Boolean
+      value: false
+- uid: System.Text.Json.Utf8JsonReader.GetSingle
+  commentId: M:System.Text.Json.Utf8JsonReader.GetSingle
+  id: GetSingle
+  parent: System.Text.Json.Utf8JsonReader
+  langs:
+  - csharp
+  - vb
+  name: GetSingle()
+  nameWithType: Utf8JsonReader.GetSingle()
+  fullName: System.Text.Json.Utf8JsonReader.GetSingle()
+  type: Method
+  assemblies:
+  - System.Text.Json
+  namespace: System.Text.Json
+  summary: Reads the next JSON token value from the source and parses it to a <xref href="System.Single" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public float GetSingle()
+    return:
+      type: System.Single
+      description: The UTF-8 encoded token value parsed to a <xref href="System.Single" data-throw-if-not-resolved="false"></xref>.
+    content.vb: Public Function GetSingle() As Single
+  overload: System.Text.Json.Utf8JsonReader.GetSingle*
+  exceptions:
+  - type: System.InvalidOperationException
+    commentId: T:System.InvalidOperationException
+    description: The JSON token value isn't a <xref href="System.Text.Json.JsonTokenType.Number" data-throw-if-not-resolved="false"></xref>.
+  - type: System.FormatException
+    commentId: T:System.FormatException
+    description: The JSON token value represents a number less than <xref href="System.Single.MinValue" data-throw-if-not-resolved="false"></xref> or greater than <xref href="System.Single.MaxValue" data-throw-if-not-resolved="false"></xref>.
+- uid: System.Text.Json.Utf8JsonReader.GetDouble
+  commentId: M:System.Text.Json.Utf8JsonReader.GetDouble
+  id: GetDouble
+  parent: System.Text.Json.Utf8JsonReader
+  langs:
+  - csharp
+  - vb
+  name: GetDouble()
+  nameWithType: Utf8JsonReader.GetDouble()
+  fullName: System.Text.Json.Utf8JsonReader.GetDouble()
+  type: Method
+  assemblies:
+  - System.Text.Json
+  namespace: System.Text.Json
+  summary: Reads the next JSON token value from the source and parses it to a <xref href="System.Double" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public double GetDouble()
+    return:
+      type: System.Double
+      description: The UTF-8 encoded token value parsed to a <xref href="System.Double" data-throw-if-not-resolved="false"></xref>.
+    content.vb: Public Function GetDouble() As Double
+  overload: System.Text.Json.Utf8JsonReader.GetDouble*
+  exceptions:
+  - type: System.InvalidOperationException
+    commentId: T:System.InvalidOperationException
+    description: The JSON token value isn't a <xref href="System.Text.Json.JsonTokenType.Number" data-throw-if-not-resolved="false"></xref>.
+  - type: System.FormatException
+    commentId: T:System.FormatException
+    description: The JSON token value represents a number less than <xref href="System.Double.MinValue" data-throw-if-not-resolved="false"></xref> or greater than <xref href="System.Double.MaxValue" data-throw-if-not-resolved="false"></xref>.
+- uid: System.Text.Json.Utf8JsonReader.GetDecimal
+  commentId: M:System.Text.Json.Utf8JsonReader.GetDecimal
+  id: GetDecimal
+  parent: System.Text.Json.Utf8JsonReader
+  langs:
+  - csharp
+  - vb
+  name: GetDecimal()
+  nameWithType: Utf8JsonReader.GetDecimal()
+  fullName: System.Text.Json.Utf8JsonReader.GetDecimal()
+  type: Method
+  assemblies:
+  - System.Text.Json
+  namespace: System.Text.Json
+  summary: Reads the next JSON token value from the source and parses it to a <xref href="System.Decimal" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public decimal GetDecimal()
+    return:
+      type: System.Decimal
+      description: The UTF-8 encoded token value parsed to a <xref href="System.Decimal" data-throw-if-not-resolved="false"></xref>.
+    content.vb: Public Function GetDecimal() As Decimal
+  overload: System.Text.Json.Utf8JsonReader.GetDecimal*
+  exceptions:
+  - type: System.InvalidOperationException
+    commentId: T:System.InvalidOperationException
+    description: The JSON token value isn't a <xref href="System.Text.Json.JsonTokenType.Number" data-throw-if-not-resolved="false"></xref>.
+  - type: System.FormatException
+    commentId: T:System.FormatException
+    description: The JSON token value represents a number less than <xref href="System.Decimal.MinValue" data-throw-if-not-resolved="false"></xref> or greater than <xref href="System.Decimal.MaxValue" data-throw-if-not-resolved="false"></xref>.
+- uid: System.Text.Json.Utf8JsonReader.GetDateTime
+  commentId: M:System.Text.Json.Utf8JsonReader.GetDateTime
+  id: GetDateTime
+  parent: System.Text.Json.Utf8JsonReader
+  langs:
+  - csharp
+  - vb
+  name: GetDateTime()
+  nameWithType: Utf8JsonReader.GetDateTime()
+  fullName: System.Text.Json.Utf8JsonReader.GetDateTime()
+  type: Method
+  assemblies:
+  - System.Text.Json
+  namespace: System.Text.Json
+  summary: Reads the next JSON token value from the source and parses it to a <xref href="System.DateTime" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public DateTime GetDateTime()
+    return:
+      type: System.DateTime
+      description: The date and time value, if the entire UTF-8 encoded token value can be successfully parsed.
+    content.vb: Public Function GetDateTime() As Date
+  overload: System.Text.Json.Utf8JsonReader.GetDateTime*
+  exceptions:
+  - type: System.InvalidOperationException
+    commentId: T:System.InvalidOperationException
+    description: The value of the JSON token isn't a <xref href="System.Text.Json.JsonTokenType.String" data-throw-if-not-resolved="false"></xref>.
+  - type: System.FormatException
+    commentId: T:System.FormatException
+    description: >-
+      The JSON token value cannot be read as a <xref href="System.DateTime" data-throw-if-not-resolved="false"></xref>.
+
+
+      -or-
+
+
+      The entire UTF-8 encoded token value cannot be parsed to a <xref href="System.DateTime" data-throw-if-not-resolved="false"></xref> value.
+
+
+      -or-
+
+
+      The JSON token value is of an unsupported format.
+- uid: System.Text.Json.Utf8JsonReader.GetDateTimeOffset
+  commentId: M:System.Text.Json.Utf8JsonReader.GetDateTimeOffset
+  id: GetDateTimeOffset
+  parent: System.Text.Json.Utf8JsonReader
+  langs:
+  - csharp
+  - vb
+  name: GetDateTimeOffset()
+  nameWithType: Utf8JsonReader.GetDateTimeOffset()
+  fullName: System.Text.Json.Utf8JsonReader.GetDateTimeOffset()
+  type: Method
+  assemblies:
+  - System.Text.Json
+  namespace: System.Text.Json
+  summary: Reads the next JSON token value from the source and parses it to a <xref href="System.DateTimeOffset" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public DateTimeOffset GetDateTimeOffset()
+    return:
+      type: System.DateTimeOffset
+      description: The date and time offset, if the entire UTF-8 encoded token value can be successfully parsed.
+    content.vb: Public Function GetDateTimeOffset() As DateTimeOffset
+  overload: System.Text.Json.Utf8JsonReader.GetDateTimeOffset*
+  exceptions:
+  - type: System.InvalidOperationException
+    commentId: T:System.InvalidOperationException
+    description: The value of the JSON token isn't a <xref href="System.Text.Json.JsonTokenType.String" data-throw-if-not-resolved="false"></xref>.
+  - type: System.FormatException
+    commentId: T:System.FormatException
+    description: >-
+      The JSON token value cannot be read as a <xref href="System.DateTimeOffset" data-throw-if-not-resolved="false"></xref>.
+
+
+      -or-
+
+
+      The entire UTF-8 encoded token value cannot be parsed to a <xref href="System.DateTimeOffset" data-throw-if-not-resolved="false"></xref> value.
+
+
+      -or-
+
+
+      The JSON token value is of an unsupported format.
+- uid: System.Text.Json.Utf8JsonReader.GetGuid
+  commentId: M:System.Text.Json.Utf8JsonReader.GetGuid
+  id: GetGuid
+  parent: System.Text.Json.Utf8JsonReader
+  langs:
+  - csharp
+  - vb
+  name: GetGuid()
+  nameWithType: Utf8JsonReader.GetGuid()
+  fullName: System.Text.Json.Utf8JsonReader.GetGuid()
+  type: Method
+  assemblies:
+  - System.Text.Json
+  namespace: System.Text.Json
+  summary: Reads the next JSON token value from the source and parses it to a <xref href="System.Guid" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public Guid GetGuid()
+    return:
+      type: System.Guid
+      description: The GUID value, if the entire UTF-8 encoded token value can be successfully parsed.
+    content.vb: Public Function GetGuid() As Guid
+  overload: System.Text.Json.Utf8JsonReader.GetGuid*
+  exceptions:
+  - type: System.InvalidOperationException
+    commentId: T:System.InvalidOperationException
+    description: The value of the JSON token isn't a <xref href="System.Text.Json.JsonTokenType.String" data-throw-if-not-resolved="false"></xref>.
+  - type: System.FormatException
+    commentId: T:System.FormatException
+    description: >-
+      The JSON token value is in an unsupported format for a Guid.
+
+
+      -or-
+
+
+      The entire UTF-8 encoded token value cannot be parsed to a <xref href="System.Guid" data-throw-if-not-resolved="false"></xref> value.
+- uid: System.Text.Json.Utf8JsonReader.TryGetBytesFromBase64(System.Byte[]@)
+  commentId: M:System.Text.Json.Utf8JsonReader.TryGetBytesFromBase64(System.Byte[]@)
+  id: TryGetBytesFromBase64(System.Byte[]@)
+  parent: System.Text.Json.Utf8JsonReader
+  langs:
+  - csharp
+  - vb
+  name: TryGetBytesFromBase64(out byte[]?)
+  nameWithType: Utf8JsonReader.TryGetBytesFromBase64(out byte[]?)
+  fullName: System.Text.Json.Utf8JsonReader.TryGetBytesFromBase64(out byte[]?)
+  type: Method
+  assemblies:
+  - System.Text.Json
+  namespace: System.Text.Json
+  summary: Tries to parse the current JSON token value from the source and decodes the Base64 encoded JSON string as a byte array and returns a value that indicates whether the operation succeeded.
+  example: []
+  syntax:
+    content: public bool TryGetBytesFromBase64(out byte[]? value)
+    parameters:
+    - id: value
+      type: System.Byte[]
+      description: When this method returns, contains the decoded binary representation of the Base64 text.
+    return:
+      type: System.Boolean
+      description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the entire token value is encoded as valid Base64 text and can be successfully decoded to bytes; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
+    content.vb: Public Function TryGetBytesFromBase64(value As Byte()) As Boolean
+  overload: System.Text.Json.Utf8JsonReader.TryGetBytesFromBase64*
+  exceptions:
+  - type: System.InvalidOperationException
+    commentId: T:System.InvalidOperationException
+    description: The JSON token is not a <xref href="System.Text.Json.JsonTokenType.String" data-throw-if-not-resolved="false"></xref>.
+  nameWithType.vb: Utf8JsonReader.TryGetBytesFromBase64(Byte())
+  fullName.vb: System.Text.Json.Utf8JsonReader.TryGetBytesFromBase64(Byte())
+  name.vb: TryGetBytesFromBase64(Byte())
+- uid: System.Text.Json.Utf8JsonReader.TryGetByte(System.Byte@)
+  commentId: M:System.Text.Json.Utf8JsonReader.TryGetByte(System.Byte@)
+  id: TryGetByte(System.Byte@)
+  parent: System.Text.Json.Utf8JsonReader
+  langs:
+  - csharp
+  - vb
+  name: TryGetByte(out byte)
+  nameWithType: Utf8JsonReader.TryGetByte(out byte)
+  fullName: System.Text.Json.Utf8JsonReader.TryGetByte(out byte)
+  type: Method
+  assemblies:
+  - System.Text.Json
+  namespace: System.Text.Json
+  summary: Tries to parse the current JSON token value from the source as a <xref href="System.Byte" data-throw-if-not-resolved="false"></xref> and returns a value that indicates whether the operation succeeded.
+  example: []
+  syntax:
+    content: public bool TryGetByte(out byte value)
+    parameters:
+    - id: value
+      type: System.Byte
+      description: When this method returns, contains the parsed value.
+    return:
+      type: System.Boolean
+      description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the entire UTF-8 encoded token value can be successfully parsed to a <xref href="System.Byte" data-throw-if-not-resolved="false"></xref> value; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
+    content.vb: Public Function TryGetByte(value As Byte) As Boolean
+  overload: System.Text.Json.Utf8JsonReader.TryGetByte*
+  exceptions:
+  - type: System.InvalidOperationException
+    commentId: T:System.InvalidOperationException
+    description: The JSON token value isn't a <xref href="System.Text.Json.JsonTokenType.Number" data-throw-if-not-resolved="false"></xref>.
+  nameWithType.vb: Utf8JsonReader.TryGetByte(Byte)
+  fullName.vb: System.Text.Json.Utf8JsonReader.TryGetByte(Byte)
+  name.vb: TryGetByte(Byte)
+- uid: System.Text.Json.Utf8JsonReader.TryGetSByte(System.SByte@)
+  commentId: M:System.Text.Json.Utf8JsonReader.TryGetSByte(System.SByte@)
+  id: TryGetSByte(System.SByte@)
+  parent: System.Text.Json.Utf8JsonReader
+  langs:
+  - csharp
+  - vb
+  name: TryGetSByte(out sbyte)
+  nameWithType: Utf8JsonReader.TryGetSByte(out sbyte)
+  fullName: System.Text.Json.Utf8JsonReader.TryGetSByte(out sbyte)
+  type: Method
+  assemblies:
+  - System.Text.Json
+  namespace: System.Text.Json
+  summary: Tries to parse the current JSON token value from the source as an <xref href="System.SByte" data-throw-if-not-resolved="false"></xref> and returns a value that indicates whether the operation succeeded.
+  example: []
+  syntax:
+    content: >-
+      [CLSCompliant(false)]
+
+      public bool TryGetSByte(out sbyte value)
+    parameters:
+    - id: value
+      type: System.SByte
+      description: When this method returns, contains the parsed value.
+    return:
+      type: System.Boolean
+      description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the entire UTF-8 encoded token value can be successfully parsed to an <xref href="System.SByte" data-throw-if-not-resolved="false"></xref> value; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
+    content.vb: >-
+      <CLSCompliant(False)>
+
+      Public Function TryGetSByte(value As SByte) As Boolean
+  overload: System.Text.Json.Utf8JsonReader.TryGetSByte*
+  exceptions:
+  - type: System.InvalidOperationException
+    commentId: T:System.InvalidOperationException
+    description: The JSON token value isn't a <xref href="System.Text.Json.JsonTokenType.Number" data-throw-if-not-resolved="false"></xref>.
+  attributes:
+  - type: System.CLSCompliantAttribute
+    ctor: System.CLSCompliantAttribute.#ctor(System.Boolean)
+    arguments:
+    - type: System.Boolean
+      value: false
+  nameWithType.vb: Utf8JsonReader.TryGetSByte(SByte)
+  fullName.vb: System.Text.Json.Utf8JsonReader.TryGetSByte(SByte)
+  name.vb: TryGetSByte(SByte)
+- uid: System.Text.Json.Utf8JsonReader.TryGetInt16(System.Int16@)
+  commentId: M:System.Text.Json.Utf8JsonReader.TryGetInt16(System.Int16@)
+  id: TryGetInt16(System.Int16@)
+  parent: System.Text.Json.Utf8JsonReader
+  langs:
+  - csharp
+  - vb
+  name: TryGetInt16(out short)
+  nameWithType: Utf8JsonReader.TryGetInt16(out short)
+  fullName: System.Text.Json.Utf8JsonReader.TryGetInt16(out short)
+  type: Method
+  assemblies:
+  - System.Text.Json
+  namespace: System.Text.Json
+  summary: Tries to parse the current JSON token value from the source as an <xref href="System.Int16" data-throw-if-not-resolved="false"></xref> and returns a value that indicates whether the operation succeeded.
+  example: []
+  syntax:
+    content: public bool TryGetInt16(out short value)
+    parameters:
+    - id: value
+      type: System.Int16
+      description: When this method returns, contains the parsed value.
+    return:
+      type: System.Boolean
+      description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the entire UTF-8 encoded token value can be successfully parsed to a <xref href="System.Int16" data-throw-if-not-resolved="false"></xref> value; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
+    content.vb: Public Function TryGetInt16(value As Short) As Boolean
+  overload: System.Text.Json.Utf8JsonReader.TryGetInt16*
+  exceptions:
+  - type: System.InvalidOperationException
+    commentId: T:System.InvalidOperationException
+    description: The JSON token value isn't a <xref href="System.Text.Json.JsonTokenType.Number" data-throw-if-not-resolved="false"></xref>.
+  nameWithType.vb: Utf8JsonReader.TryGetInt16(Short)
+  fullName.vb: System.Text.Json.Utf8JsonReader.TryGetInt16(Short)
+  name.vb: TryGetInt16(Short)
+- uid: System.Text.Json.Utf8JsonReader.TryGetInt32(System.Int32@)
+  commentId: M:System.Text.Json.Utf8JsonReader.TryGetInt32(System.Int32@)
+  id: TryGetInt32(System.Int32@)
+  parent: System.Text.Json.Utf8JsonReader
+  langs:
+  - csharp
+  - vb
+  name: TryGetInt32(out int)
+  nameWithType: Utf8JsonReader.TryGetInt32(out int)
+  fullName: System.Text.Json.Utf8JsonReader.TryGetInt32(out int)
+  type: Method
+  assemblies:
+  - System.Text.Json
+  namespace: System.Text.Json
+  summary: Tries to parse the current JSON token value from the source as an <xref href="System.Int32" data-throw-if-not-resolved="false"></xref> and returns a value that indicates whether the operation succeeded.
+  example: []
+  syntax:
+    content: public bool TryGetInt32(out int value)
+    parameters:
+    - id: value
+      type: System.Int32
+      description: When this method returns, contains the parsed value.
+    return:
+      type: System.Boolean
+      description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the entire UTF-8 encoded token value can be successfully parsed to an <xref href="System.Int32" data-throw-if-not-resolved="false"></xref> value; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
+    content.vb: Public Function TryGetInt32(value As Integer) As Boolean
+  overload: System.Text.Json.Utf8JsonReader.TryGetInt32*
+  exceptions:
+  - type: System.InvalidOperationException
+    commentId: T:System.InvalidOperationException
+    description: The JSON token value isn't a <xref href="System.Text.Json.JsonTokenType.Number" data-throw-if-not-resolved="false"></xref>.
+  nameWithType.vb: Utf8JsonReader.TryGetInt32(Integer)
+  fullName.vb: System.Text.Json.Utf8JsonReader.TryGetInt32(Integer)
+  name.vb: TryGetInt32(Integer)
+- uid: System.Text.Json.Utf8JsonReader.TryGetInt64(System.Int64@)
+  commentId: M:System.Text.Json.Utf8JsonReader.TryGetInt64(System.Int64@)
+  id: TryGetInt64(System.Int64@)
+  parent: System.Text.Json.Utf8JsonReader
+  langs:
+  - csharp
+  - vb
+  name: TryGetInt64(out long)
+  nameWithType: Utf8JsonReader.TryGetInt64(out long)
+  fullName: System.Text.Json.Utf8JsonReader.TryGetInt64(out long)
+  type: Method
+  assemblies:
+  - System.Text.Json
+  namespace: System.Text.Json
+  summary: Tries to parse the current JSON token value from the source as an <xref href="System.Int64" data-throw-if-not-resolved="false"></xref> and returns a value that indicates whether the operation succeeded.
+  example: []
+  syntax:
+    content: public bool TryGetInt64(out long value)
+    parameters:
+    - id: value
+      type: System.Int64
+      description: When this method returns, contains the parsed value.
+    return:
+      type: System.Boolean
+      description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the entire UTF-8 encoded token value can be successfully parsed to an <xref href="System.Int64" data-throw-if-not-resolved="false"></xref> value; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
+    content.vb: Public Function TryGetInt64(value As Long) As Boolean
+  overload: System.Text.Json.Utf8JsonReader.TryGetInt64*
+  exceptions:
+  - type: System.InvalidOperationException
+    commentId: T:System.InvalidOperationException
+    description: The JSON token value isn't a <xref href="System.Text.Json.JsonTokenType.Number" data-throw-if-not-resolved="false"></xref>.
+  nameWithType.vb: Utf8JsonReader.TryGetInt64(Long)
+  fullName.vb: System.Text.Json.Utf8JsonReader.TryGetInt64(Long)
+  name.vb: TryGetInt64(Long)
+- uid: System.Text.Json.Utf8JsonReader.TryGetUInt16(System.UInt16@)
+  commentId: M:System.Text.Json.Utf8JsonReader.TryGetUInt16(System.UInt16@)
+  id: TryGetUInt16(System.UInt16@)
+  parent: System.Text.Json.Utf8JsonReader
+  langs:
+  - csharp
+  - vb
+  name: TryGetUInt16(out ushort)
+  nameWithType: Utf8JsonReader.TryGetUInt16(out ushort)
+  fullName: System.Text.Json.Utf8JsonReader.TryGetUInt16(out ushort)
+  type: Method
+  assemblies:
+  - System.Text.Json
+  namespace: System.Text.Json
+  summary: Tries to parse the current JSON token value from the source as a <xref href="System.UInt16" data-throw-if-not-resolved="false"></xref> and returns a value that indicates whether the operation succeeded.
+  example: []
+  syntax:
+    content: >-
+      [CLSCompliant(false)]
+
+      public bool TryGetUInt16(out ushort value)
+    parameters:
+    - id: value
+      type: System.UInt16
+      description: When this method returns, contains the parsed value.
+    return:
+      type: System.Boolean
+      description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the entire UTF-8 encoded token value can be successfully parsed to a <xref href="System.UInt16" data-throw-if-not-resolved="false"></xref> value; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
+    content.vb: >-
+      <CLSCompliant(False)>
+
+      Public Function TryGetUInt16(value As UShort) As Boolean
+  overload: System.Text.Json.Utf8JsonReader.TryGetUInt16*
+  exceptions:
+  - type: System.InvalidOperationException
+    commentId: T:System.InvalidOperationException
+    description: The JSON token value isn't a <xref href="System.Text.Json.JsonTokenType.Number" data-throw-if-not-resolved="false"></xref>.
+  attributes:
+  - type: System.CLSCompliantAttribute
+    ctor: System.CLSCompliantAttribute.#ctor(System.Boolean)
+    arguments:
+    - type: System.Boolean
+      value: false
+  nameWithType.vb: Utf8JsonReader.TryGetUInt16(UShort)
+  fullName.vb: System.Text.Json.Utf8JsonReader.TryGetUInt16(UShort)
+  name.vb: TryGetUInt16(UShort)
+- uid: System.Text.Json.Utf8JsonReader.TryGetUInt32(System.UInt32@)
+  commentId: M:System.Text.Json.Utf8JsonReader.TryGetUInt32(System.UInt32@)
+  id: TryGetUInt32(System.UInt32@)
+  parent: System.Text.Json.Utf8JsonReader
+  langs:
+  - csharp
+  - vb
+  name: TryGetUInt32(out uint)
+  nameWithType: Utf8JsonReader.TryGetUInt32(out uint)
+  fullName: System.Text.Json.Utf8JsonReader.TryGetUInt32(out uint)
+  type: Method
+  assemblies:
+  - System.Text.Json
+  namespace: System.Text.Json
+  summary: Tries to parse the current JSON token value from the source as a <xref href="System.UInt32" data-throw-if-not-resolved="false"></xref> and returns a value that indicates whether the operation succeeded.
+  example: []
+  syntax:
+    content: >-
+      [CLSCompliant(false)]
+
+      public bool TryGetUInt32(out uint value)
+    parameters:
+    - id: value
+      type: System.UInt32
+      description: When this method returns, contains the parsed value.
+    return:
+      type: System.Boolean
+      description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the entire UTF-8 encoded token value can be successfully parsed to a <xref href="System.UInt32" data-throw-if-not-resolved="false"></xref> value; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
+    content.vb: >-
+      <CLSCompliant(False)>
+
+      Public Function TryGetUInt32(value As UInteger) As Boolean
+  overload: System.Text.Json.Utf8JsonReader.TryGetUInt32*
+  exceptions:
+  - type: System.InvalidOperationException
+    commentId: T:System.InvalidOperationException
+    description: The JSON token value isn't a <xref href="System.Text.Json.JsonTokenType.Number" data-throw-if-not-resolved="false"></xref>.
+  attributes:
+  - type: System.CLSCompliantAttribute
+    ctor: System.CLSCompliantAttribute.#ctor(System.Boolean)
+    arguments:
+    - type: System.Boolean
+      value: false
+  nameWithType.vb: Utf8JsonReader.TryGetUInt32(UInteger)
+  fullName.vb: System.Text.Json.Utf8JsonReader.TryGetUInt32(UInteger)
+  name.vb: TryGetUInt32(UInteger)
+- uid: System.Text.Json.Utf8JsonReader.TryGetUInt64(System.UInt64@)
+  commentId: M:System.Text.Json.Utf8JsonReader.TryGetUInt64(System.UInt64@)
+  id: TryGetUInt64(System.UInt64@)
+  parent: System.Text.Json.Utf8JsonReader
+  langs:
+  - csharp
+  - vb
+  name: TryGetUInt64(out ulong)
+  nameWithType: Utf8JsonReader.TryGetUInt64(out ulong)
+  fullName: System.Text.Json.Utf8JsonReader.TryGetUInt64(out ulong)
+  type: Method
+  assemblies:
+  - System.Text.Json
+  namespace: System.Text.Json
+  summary: Tries to parse the current JSON token value from the source as a <xref href="System.UInt64" data-throw-if-not-resolved="false"></xref> and returns a value that indicates whether the operation succeeded.
+  example: []
+  syntax:
+    content: >-
+      [CLSCompliant(false)]
+
+      public bool TryGetUInt64(out ulong value)
+    parameters:
+    - id: value
+      type: System.UInt64
+      description: When this method returns, contains the parsed value.
+    return:
+      type: System.Boolean
+      description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the entire UTF-8 encoded token value can be successfully parsed to a <xref href="System.UInt64" data-throw-if-not-resolved="false"></xref> value; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
+    content.vb: >-
+      <CLSCompliant(False)>
+
+      Public Function TryGetUInt64(value As ULong) As Boolean
+  overload: System.Text.Json.Utf8JsonReader.TryGetUInt64*
+  exceptions:
+  - type: System.InvalidOperationException
+    commentId: T:System.InvalidOperationException
+    description: The JSON token value isn't a <xref href="System.Text.Json.JsonTokenType.Number" data-throw-if-not-resolved="false"></xref>.
+  attributes:
+  - type: System.CLSCompliantAttribute
+    ctor: System.CLSCompliantAttribute.#ctor(System.Boolean)
+    arguments:
+    - type: System.Boolean
+      value: false
+  nameWithType.vb: Utf8JsonReader.TryGetUInt64(ULong)
+  fullName.vb: System.Text.Json.Utf8JsonReader.TryGetUInt64(ULong)
+  name.vb: TryGetUInt64(ULong)
+- uid: System.Text.Json.Utf8JsonReader.TryGetSingle(System.Single@)
+  commentId: M:System.Text.Json.Utf8JsonReader.TryGetSingle(System.Single@)
+  id: TryGetSingle(System.Single@)
+  parent: System.Text.Json.Utf8JsonReader
+  langs:
+  - csharp
+  - vb
+  name: TryGetSingle(out float)
+  nameWithType: Utf8JsonReader.TryGetSingle(out float)
+  fullName: System.Text.Json.Utf8JsonReader.TryGetSingle(out float)
+  type: Method
+  assemblies:
+  - System.Text.Json
+  namespace: System.Text.Json
+  summary: Tries to parse the current JSON token value from the source as a <xref href="System.Single" data-throw-if-not-resolved="false"></xref> and returns a value that indicates whether the operation succeeded.
+  example: []
+  syntax:
+    content: public bool TryGetSingle(out float value)
+    parameters:
+    - id: value
+      type: System.Single
+      description: When this method returns, contains the parsed value.
+    return:
+      type: System.Boolean
+      description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the entire UTF-8 encoded token value can be successfully parsed to an <xref href="System.Single" data-throw-if-not-resolved="false"></xref> value; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
+    content.vb: Public Function TryGetSingle(value As Single) As Boolean
+  overload: System.Text.Json.Utf8JsonReader.TryGetSingle*
+  exceptions:
+  - type: System.InvalidOperationException
+    commentId: T:System.InvalidOperationException
+    description: The JSON token value isn't a <xref href="System.Text.Json.JsonTokenType.Number" data-throw-if-not-resolved="false"></xref>.
+  nameWithType.vb: Utf8JsonReader.TryGetSingle(Single)
+  fullName.vb: System.Text.Json.Utf8JsonReader.TryGetSingle(Single)
+  name.vb: TryGetSingle(Single)
+- uid: System.Text.Json.Utf8JsonReader.TryGetDouble(System.Double@)
+  commentId: M:System.Text.Json.Utf8JsonReader.TryGetDouble(System.Double@)
+  id: TryGetDouble(System.Double@)
+  parent: System.Text.Json.Utf8JsonReader
+  langs:
+  - csharp
+  - vb
+  name: TryGetDouble(out double)
+  nameWithType: Utf8JsonReader.TryGetDouble(out double)
+  fullName: System.Text.Json.Utf8JsonReader.TryGetDouble(out double)
+  type: Method
+  assemblies:
+  - System.Text.Json
+  namespace: System.Text.Json
+  summary: Tries to parse the current JSON token value from the source as a <xref href="System.Double" data-throw-if-not-resolved="false"></xref> and returns a value that indicates whether the operation succeeded.
+  example: []
+  syntax:
+    content: public bool TryGetDouble(out double value)
+    parameters:
+    - id: value
+      type: System.Double
+      description: When this method returns, contains the parsed value.
+    return:
+      type: System.Boolean
+      description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the entire UTF-8 encoded token value can be successfully parsed to a <xref href="System.Double" data-throw-if-not-resolved="false"></xref> value; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
+    content.vb: Public Function TryGetDouble(value As Double) As Boolean
+  overload: System.Text.Json.Utf8JsonReader.TryGetDouble*
+  exceptions:
+  - type: System.InvalidOperationException
+    commentId: T:System.InvalidOperationException
+    description: The JSON token value isn't a <xref href="System.Text.Json.JsonTokenType.Number" data-throw-if-not-resolved="false"></xref>.
+  nameWithType.vb: Utf8JsonReader.TryGetDouble(Double)
+  fullName.vb: System.Text.Json.Utf8JsonReader.TryGetDouble(Double)
+  name.vb: TryGetDouble(Double)
+- uid: System.Text.Json.Utf8JsonReader.TryGetDecimal(System.Decimal@)
+  commentId: M:System.Text.Json.Utf8JsonReader.TryGetDecimal(System.Decimal@)
+  id: TryGetDecimal(System.Decimal@)
+  parent: System.Text.Json.Utf8JsonReader
+  langs:
+  - csharp
+  - vb
+  name: TryGetDecimal(out decimal)
+  nameWithType: Utf8JsonReader.TryGetDecimal(out decimal)
+  fullName: System.Text.Json.Utf8JsonReader.TryGetDecimal(out decimal)
+  type: Method
+  assemblies:
+  - System.Text.Json
+  namespace: System.Text.Json
+  summary: Tries to parse the current JSON token value from the source as a <xref href="System.Decimal" data-throw-if-not-resolved="false"></xref> and returns a value that indicates whether the operation succeeded.
+  example: []
+  syntax:
+    content: public bool TryGetDecimal(out decimal value)
+    parameters:
+    - id: value
+      type: System.Decimal
+      description: When this method returns, contains the parsed value.
+    return:
+      type: System.Boolean
+      description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the entire UTF-8 encoded token value can be successfully parsed to a <xref href="System.Decimal" data-throw-if-not-resolved="false"></xref> value; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
+    content.vb: Public Function TryGetDecimal(value As Decimal) As Boolean
+  overload: System.Text.Json.Utf8JsonReader.TryGetDecimal*
+  exceptions:
+  - type: System.InvalidOperationException
+    commentId: T:System.InvalidOperationException
+    description: The JSON token value isn't a <xref href="System.Text.Json.JsonTokenType.Number" data-throw-if-not-resolved="false"></xref>.
+  nameWithType.vb: Utf8JsonReader.TryGetDecimal(Decimal)
+  fullName.vb: System.Text.Json.Utf8JsonReader.TryGetDecimal(Decimal)
+  name.vb: TryGetDecimal(Decimal)
+- uid: System.Text.Json.Utf8JsonReader.TryGetDateTime(System.DateTime@)
+  commentId: M:System.Text.Json.Utf8JsonReader.TryGetDateTime(System.DateTime@)
+  id: TryGetDateTime(System.DateTime@)
+  parent: System.Text.Json.Utf8JsonReader
+  langs:
+  - csharp
+  - vb
+  name: TryGetDateTime(out DateTime)
+  nameWithType: Utf8JsonReader.TryGetDateTime(out DateTime)
+  fullName: System.Text.Json.Utf8JsonReader.TryGetDateTime(out System.DateTime)
+  type: Method
+  assemblies:
+  - System.Text.Json
+  namespace: System.Text.Json
+  summary: Tries to parse the current JSON token value from the source as a <xref href="System.DateTime" data-throw-if-not-resolved="false"></xref> and returns a value that indicates whether the operation succeeded.
+  example: []
+  syntax:
+    content: public bool TryGetDateTime(out DateTime value)
+    parameters:
+    - id: value
+      type: System.DateTime
+      description: When this method returns, contains the parsed value.
+    return:
+      type: System.Boolean
+      description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the entire UTF-8 encoded token value can be successfully parsed to a <xref href="System.DateTime" data-throw-if-not-resolved="false"></xref> value; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
+    content.vb: Public Function TryGetDateTime(value As Date) As Boolean
+  overload: System.Text.Json.Utf8JsonReader.TryGetDateTime*
+  exceptions:
+  - type: System.InvalidOperationException
+    commentId: T:System.InvalidOperationException
+    description: The value of the JSON token isn't a <xref href="System.Text.Json.JsonTokenType.String" data-throw-if-not-resolved="false"></xref>.
+  nameWithType.vb: Utf8JsonReader.TryGetDateTime(Date)
+  fullName.vb: System.Text.Json.Utf8JsonReader.TryGetDateTime(Date)
+  name.vb: TryGetDateTime(Date)
+- uid: System.Text.Json.Utf8JsonReader.TryGetDateTimeOffset(System.DateTimeOffset@)
+  commentId: M:System.Text.Json.Utf8JsonReader.TryGetDateTimeOffset(System.DateTimeOffset@)
+  id: TryGetDateTimeOffset(System.DateTimeOffset@)
+  parent: System.Text.Json.Utf8JsonReader
+  langs:
+  - csharp
+  - vb
+  name: TryGetDateTimeOffset(out DateTimeOffset)
+  nameWithType: Utf8JsonReader.TryGetDateTimeOffset(out DateTimeOffset)
+  fullName: System.Text.Json.Utf8JsonReader.TryGetDateTimeOffset(out System.DateTimeOffset)
+  type: Method
+  assemblies:
+  - System.Text.Json
+  namespace: System.Text.Json
+  summary: Tries to parse the current JSON token value from the source as a <xref href="System.DateTimeOffset" data-throw-if-not-resolved="false"></xref> and returns a value that indicates whether the operation succeeded.
+  example: []
+  syntax:
+    content: public bool TryGetDateTimeOffset(out DateTimeOffset value)
+    parameters:
+    - id: value
+      type: System.DateTimeOffset
+      description: When this method returns, contains the parsed value.
+    return:
+      type: System.Boolean
+      description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the entire UTF-8 encoded token value can be successfully parsed to a <xref href="System.DateTimeOffset" data-throw-if-not-resolved="false"></xref> value; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
+    content.vb: Public Function TryGetDateTimeOffset(value As DateTimeOffset) As Boolean
+  overload: System.Text.Json.Utf8JsonReader.TryGetDateTimeOffset*
+  exceptions:
+  - type: System.InvalidOperationException
+    commentId: T:System.InvalidOperationException
+    description: The value of the JSON token isn't a <xref href="System.Text.Json.JsonTokenType.String" data-throw-if-not-resolved="false"></xref>.
+  nameWithType.vb: Utf8JsonReader.TryGetDateTimeOffset(DateTimeOffset)
+  fullName.vb: System.Text.Json.Utf8JsonReader.TryGetDateTimeOffset(System.DateTimeOffset)
+  name.vb: TryGetDateTimeOffset(DateTimeOffset)
+- uid: System.Text.Json.Utf8JsonReader.TryGetGuid(System.Guid@)
+  commentId: M:System.Text.Json.Utf8JsonReader.TryGetGuid(System.Guid@)
+  id: TryGetGuid(System.Guid@)
+  parent: System.Text.Json.Utf8JsonReader
+  langs:
+  - csharp
+  - vb
+  name: TryGetGuid(out Guid)
+  nameWithType: Utf8JsonReader.TryGetGuid(out Guid)
+  fullName: System.Text.Json.Utf8JsonReader.TryGetGuid(out System.Guid)
+  type: Method
+  assemblies:
+  - System.Text.Json
+  namespace: System.Text.Json
+  summary: Tries to parse the current JSON token value from the source as a <xref href="System.Guid" data-throw-if-not-resolved="false"></xref> and returns a value that indicates whether the operation succeeded.
+  example: []
+  syntax:
+    content: public bool TryGetGuid(out Guid value)
+    parameters:
+    - id: value
+      type: System.Guid
+      description: When this method returns, contains the parsed value.
+    return:
+      type: System.Boolean
+      description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the entire UTF-8 encoded token value can be successfully parsed to a <xref href="System.Guid" data-throw-if-not-resolved="false"></xref> value; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
+    content.vb: Public Function TryGetGuid(value As Guid) As Boolean
+  overload: System.Text.Json.Utf8JsonReader.TryGetGuid*
+  exceptions:
+  - type: System.InvalidOperationException
+    commentId: T:System.InvalidOperationException
+    description: The value of the JSON token isn't a <xref href="System.Text.Json.JsonTokenType.String" data-throw-if-not-resolved="false"></xref>.
+  nameWithType.vb: Utf8JsonReader.TryGetGuid(Guid)
+  fullName.vb: System.Text.Json.Utf8JsonReader.TryGetGuid(System.Guid)
+  name.vb: TryGetGuid(Guid)
+- uid: System.Text.Json.Utf8JsonReader.ValueSpan
+  commentId: P:System.Text.Json.Utf8JsonReader.ValueSpan
+  id: ValueSpan
+  parent: System.Text.Json.Utf8JsonReader
+  langs:
+  - csharp
+  - vb
+  name: ValueSpan
+  nameWithType: Utf8JsonReader.ValueSpan
+  fullName: System.Text.Json.Utf8JsonReader.ValueSpan
+  type: Property
+  assemblies:
+  - System.Text.Json
+  namespace: System.Text.Json
+  summary: Gets the raw value of the last processed token as a ReadOnlySpan&lt;byte&gt; slice of the input payload, if the token fits in a single segment or if the reader was constructed with a JSON payload contained in a ReadOnlySpan&lt;byte&gt;.
+  example: []
+  syntax:
+    content: public readonly ReadOnlySpan<byte> ValueSpan { get; }
+    parameters: []
+    return:
+      type: System.ReadOnlySpan{System.Byte}
+      description: A read-only span of bytes.
+    content.vb: Public ReadOnly Property ValueSpan As ReadOnlySpan(Of Byte)
+  overload: System.Text.Json.Utf8JsonReader.ValueSpan*
+- uid: System.Text.Json.Utf8JsonReader.BytesConsumed
+  commentId: P:System.Text.Json.Utf8JsonReader.BytesConsumed
+  id: BytesConsumed
+  parent: System.Text.Json.Utf8JsonReader
+  langs:
+  - csharp
+  - vb
+  name: BytesConsumed
+  nameWithType: Utf8JsonReader.BytesConsumed
+  fullName: System.Text.Json.Utf8JsonReader.BytesConsumed
+  type: Property
+  assemblies:
+  - System.Text.Json
+  namespace: System.Text.Json
+  summary: Gets the total number of bytes consumed so far by this instance of the <xref href="System.Text.Json.Utf8JsonReader" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public long BytesConsumed { get; }
+    parameters: []
+    return:
+      type: System.Int64
+      description: The total number of bytes consumed so far.
+    content.vb: Public ReadOnly Property BytesConsumed As Long
+  overload: System.Text.Json.Utf8JsonReader.BytesConsumed*
+- uid: System.Text.Json.Utf8JsonReader.TokenStartIndex
+  commentId: P:System.Text.Json.Utf8JsonReader.TokenStartIndex
+  id: TokenStartIndex
+  parent: System.Text.Json.Utf8JsonReader
+  langs:
+  - csharp
+  - vb
+  name: TokenStartIndex
+  nameWithType: Utf8JsonReader.TokenStartIndex
+  fullName: System.Text.Json.Utf8JsonReader.TokenStartIndex
+  type: Property
+  assemblies:
+  - System.Text.Json
+  namespace: System.Text.Json
+  summary: Gets the index that the last processed JSON token starts at (within the given UTF-8 encoded input text), skipping any white space.
+  example: []
+  syntax:
+    content: public readonly long TokenStartIndex { get; }
+    parameters: []
+    return:
+      type: System.Int64
+      description: The starting index of the last processed JSON token within the given UTF-8 encoded input text.
+    content.vb: Public ReadOnly Property TokenStartIndex As Long
+  overload: System.Text.Json.Utf8JsonReader.TokenStartIndex*
+- uid: System.Text.Json.Utf8JsonReader.CurrentDepth
+  commentId: P:System.Text.Json.Utf8JsonReader.CurrentDepth
+  id: CurrentDepth
+  parent: System.Text.Json.Utf8JsonReader
+  langs:
+  - csharp
+  - vb
+  name: CurrentDepth
+  nameWithType: Utf8JsonReader.CurrentDepth
+  fullName: System.Text.Json.Utf8JsonReader.CurrentDepth
+  type: Property
+  assemblies:
+  - System.Text.Json
+  namespace: System.Text.Json
+  summary: Gets the depth of the current token.
+  example: []
+  syntax:
+    content: public int CurrentDepth { get; }
+    parameters: []
+    return:
+      type: System.Int32
+      description: The depth of the current token.
+    content.vb: Public ReadOnly Property CurrentDepth As Integer
+  overload: System.Text.Json.Utf8JsonReader.CurrentDepth*
+- uid: System.Text.Json.Utf8JsonReader.TokenType
+  commentId: P:System.Text.Json.Utf8JsonReader.TokenType
+  id: TokenType
+  parent: System.Text.Json.Utf8JsonReader
+  langs:
+  - csharp
+  - vb
+  name: TokenType
+  nameWithType: Utf8JsonReader.TokenType
+  fullName: System.Text.Json.Utf8JsonReader.TokenType
+  type: Property
+  assemblies:
+  - System.Text.Json
+  namespace: System.Text.Json
+  summary: Gets the type of the last processed JSON token in the UTF-8 encoded JSON text.
+  example: []
+  syntax:
+    content: public JsonTokenType TokenType { get; }
+    parameters: []
+    return:
+      type: System.Text.Json.JsonTokenType
+      description: The type of the last processed JSON token.
+    content.vb: Public ReadOnly Property TokenType As JsonTokenType
+  overload: System.Text.Json.Utf8JsonReader.TokenType*
+- uid: System.Text.Json.Utf8JsonReader.HasValueSequence
+  commentId: P:System.Text.Json.Utf8JsonReader.HasValueSequence
+  id: HasValueSequence
+  parent: System.Text.Json.Utf8JsonReader
+  langs:
+  - csharp
+  - vb
+  name: HasValueSequence
+  nameWithType: Utf8JsonReader.HasValueSequence
+  fullName: System.Text.Json.Utf8JsonReader.HasValueSequence
+  type: Property
+  assemblies:
+  - System.Text.Json
+  namespace: System.Text.Json
+  summary: Gets a value that indicates which <code>Value</code> property to use to get the token value.
+  example: []
+  syntax:
+    content: public readonly bool HasValueSequence { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+      description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if <xref href="System.Text.Json.Utf8JsonReader.ValueSequence" data-throw-if-not-resolved="false"></xref> should be used to get the token value; <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a> if <xref href="System.Text.Json.Utf8JsonReader.ValueSpan" data-throw-if-not-resolved="false"></xref> should be used instead.
+    content.vb: Public ReadOnly Property HasValueSequence As Boolean
+  overload: System.Text.Json.Utf8JsonReader.HasValueSequence*
+- uid: System.Text.Json.Utf8JsonReader.IsFinalBlock
+  commentId: P:System.Text.Json.Utf8JsonReader.IsFinalBlock
+  id: IsFinalBlock
+  parent: System.Text.Json.Utf8JsonReader
+  langs:
+  - csharp
+  - vb
+  name: IsFinalBlock
+  nameWithType: Utf8JsonReader.IsFinalBlock
+  fullName: System.Text.Json.Utf8JsonReader.IsFinalBlock
+  type: Property
+  assemblies:
+  - System.Text.Json
+  namespace: System.Text.Json
+  summary: Gets the mode of this instance of the <xref href="System.Text.Json.Utf8JsonReader" data-throw-if-not-resolved="false"></xref> which indicates whether all the JSON data was provided or there is more data to come.
+  example: []
+  syntax:
+    content: public bool IsFinalBlock { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+      description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the reader was constructed with the input span or sequence containing the entire JSON data to process; <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a> if the reader was constructed with an input span or sequence that may contain partial JSON data with more data to follow.
+    content.vb: Public ReadOnly Property IsFinalBlock As Boolean
+  overload: System.Text.Json.Utf8JsonReader.IsFinalBlock*
+- uid: System.Text.Json.Utf8JsonReader.ValueSequence
+  commentId: P:System.Text.Json.Utf8JsonReader.ValueSequence
+  id: ValueSequence
+  parent: System.Text.Json.Utf8JsonReader
+  langs:
+  - csharp
+  - vb
+  name: ValueSequence
+  nameWithType: Utf8JsonReader.ValueSequence
+  fullName: System.Text.Json.Utf8JsonReader.ValueSequence
+  type: Property
+  assemblies:
+  - System.Text.Json
+  namespace: System.Text.Json
+  summary: Gets the raw value of the last processed token as a ReadOnlySequence&lt;byte&gt; slice of the input payload, only if the token is contained within multiple segments.
+  example: []
+  syntax:
+    content: public readonly ReadOnlySequence<byte> ValueSequence { get; }
+    parameters: []
+    return:
+      type: System.Buffers.ReadOnlySequence{System.Byte}
+      description: A byte read-only sequence.
+    content.vb: Public ReadOnly Property ValueSequence As ReadOnlySequence(Of Byte)
+  overload: System.Text.Json.Utf8JsonReader.ValueSequence*
+- uid: System.Text.Json.Utf8JsonReader.Position
+  commentId: P:System.Text.Json.Utf8JsonReader.Position
+  id: Position
+  parent: System.Text.Json.Utf8JsonReader
+  langs:
+  - csharp
+  - vb
+  name: Position
+  nameWithType: Utf8JsonReader.Position
+  fullName: System.Text.Json.Utf8JsonReader.Position
+  type: Property
+  assemblies:
+  - System.Text.Json
+  namespace: System.Text.Json
+  summary: Gets the current <xref href="System.SequencePosition" data-throw-if-not-resolved="false"></xref> within the provided UTF-8 encoded input ReadOnlySequence&lt;byte&gt; or a default <xref href="System.SequencePosition" data-throw-if-not-resolved="false"></xref> if the <xref href="System.Text.Json.Utf8JsonReader" data-throw-if-not-resolved="false"></xref> struct was constructed with a ReadOnlySpan&lt;byte&gt;.
+  example: []
+  syntax:
+    content: public SequencePosition Position { get; }
+    parameters: []
+    return:
+      type: System.SequencePosition
+      description: The current <xref href="System.SequencePosition" data-throw-if-not-resolved="false"></xref> within the provided UTF-8 encoded input ReadOnlySequence&lt;byte&gt; or a default <xref href="System.SequencePosition" data-throw-if-not-resolved="false"></xref> if the <xref href="System.Text.Json.Utf8JsonReader" data-throw-if-not-resolved="false"></xref> struct was constructed with a ReadOnlySpan&lt;byte&gt;.
+    content.vb: Public ReadOnly Property Position As SequencePosition
+  overload: System.Text.Json.Utf8JsonReader.Position*
+- uid: System.Text.Json.Utf8JsonReader.CurrentState
+  commentId: P:System.Text.Json.Utf8JsonReader.CurrentState
+  id: CurrentState
+  parent: System.Text.Json.Utf8JsonReader
+  langs:
+  - csharp
+  - vb
+  name: CurrentState
+  nameWithType: Utf8JsonReader.CurrentState
+  fullName: System.Text.Json.Utf8JsonReader.CurrentState
+  type: Property
+  assemblies:
+  - System.Text.Json
+  namespace: System.Text.Json
+  summary: Gets the current <xref href="System.Text.Json.Utf8JsonReader" data-throw-if-not-resolved="false"></xref> state to pass to a <xref href="System.Text.Json.Utf8JsonReader" data-throw-if-not-resolved="false"></xref> constructor with more data.
+  example: []
+  syntax:
+    content: public JsonReaderState CurrentState { get; }
+    parameters: []
+    return:
+      type: System.Text.Json.JsonReaderState
+      description: The current reader state.
+    content.vb: Public ReadOnly Property CurrentState As JsonReaderState
+  overload: System.Text.Json.Utf8JsonReader.CurrentState*
+references:
+- uid: System.Text.Json
+  commentId: N:System.Text.Json
+  isExternal: true
+  href: System.html
+  name: System.Text.Json
+  nameWithType: System.Text.Json
+  fullName: System.Text.Json
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: System.html
+  - name: .
+  - uid: System.Text
+    name: Text
+    isExternal: true
+    href: System.Text.html
+  - name: .
+  - uid: System.Text.Json
+    name: Json
+    isExternal: true
+    href: System.Text.Json.html
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: System.html
+  - name: .
+  - uid: System.Text
+    name: Text
+    isExternal: true
+    href: System.Text.html
+  - name: .
+  - uid: System.Text.Json
+    name: Json
+    isExternal: true
+    href: System.Text.Json.html
+- uid: System.ValueType.Equals(System.Object)
+  commentId: M:System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  name: Equals(object)
+  nameWithType: ValueType.Equals(object)
+  fullName: System.ValueType.Equals(object)
+  nameWithType.vb: ValueType.Equals(Object)
+  fullName.vb: System.ValueType.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType.GetHashCode
+  commentId: M:System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  name: GetHashCode()
+  nameWithType: ValueType.GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+- uid: System.ValueType.ToString
+  commentId: M:System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  name: ToString()
+  nameWithType: ValueType.ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.ValueType
+  commentId: T:System.ValueType
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype
+  name: ValueType
+  nameWithType: ValueType
+  fullName: System.ValueType
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Text.Json.Utf8JsonReader
+  commentId: T:System.Text.Json.Utf8JsonReader
+  parent: System.Text.Json
+  isExternal: true
+  href: System.Text.Json.Utf8JsonReader.html
+  name: Utf8JsonReader
+  nameWithType: Utf8JsonReader
+  fullName: System.Text.Json.Utf8JsonReader
+- uid: System.Text.Json.Utf8JsonReader.CurrentState
+  commentId: P:System.Text.Json.Utf8JsonReader.CurrentState
+  isExternal: true
+  href: System.Text.Json.Utf8JsonReader.html#System_Text_Json_Utf8JsonReader_CurrentState
+  name: CurrentState
+  nameWithType: Utf8JsonReader.CurrentState
+  fullName: System.Text.Json.Utf8JsonReader.CurrentState
+- uid: System.Text.Json.Utf8JsonReader.#ctor*
+  commentId: Overload:System.Text.Json.Utf8JsonReader.#ctor
+  isExternal: true
+  href: System.Text.Json.Utf8JsonReader.html#System_Text_Json_Utf8JsonReader__ctor_System_ReadOnlySpan_System_Byte__System_Boolean_System_Text_Json_JsonReaderState_
+  name: Utf8JsonReader
+  nameWithType: Utf8JsonReader.Utf8JsonReader
+  fullName: System.Text.Json.Utf8JsonReader.Utf8JsonReader
+  nameWithType.vb: Utf8JsonReader.New
+  fullName.vb: System.Text.Json.Utf8JsonReader.New
+  name.vb: New
+- uid: System.ReadOnlySpan{System.Byte}
+  commentId: T:System.ReadOnlySpan{System.Byte}
+  parent: System
+  definition: System.ReadOnlySpan`1
+  href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  name: ReadOnlySpan<byte>
+  nameWithType: ReadOnlySpan<byte>
+  fullName: System.ReadOnlySpan<byte>
+  nameWithType.vb: ReadOnlySpan(Of Byte)
+  fullName.vb: System.ReadOnlySpan(Of Byte)
+  name.vb: ReadOnlySpan(Of Byte)
+  spec.csharp:
+  - uid: System.ReadOnlySpan`1
+    name: ReadOnlySpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  - name: <
+  - uid: System.Byte
+    name: byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: '>'
+  spec.vb:
+  - uid: System.ReadOnlySpan`1
+    name: ReadOnlySpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Byte
+    name: Byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: )
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System.Text.Json.JsonReaderState
+  commentId: T:System.Text.Json.JsonReaderState
+  parent: System.Text.Json
+  isExternal: true
+  href: System.Text.Json.JsonReaderState.html
+  name: JsonReaderState
+  nameWithType: JsonReaderState
+  fullName: System.Text.Json.JsonReaderState
+- uid: System.ReadOnlySpan`1
+  commentId: T:System.ReadOnlySpan`1
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  name: ReadOnlySpan<T>
+  nameWithType: ReadOnlySpan<T>
+  fullName: System.ReadOnlySpan<T>
+  nameWithType.vb: ReadOnlySpan(Of T)
+  fullName.vb: System.ReadOnlySpan(Of T)
+  name.vb: ReadOnlySpan(Of T)
+  spec.csharp:
+  - uid: System.ReadOnlySpan`1
+    name: ReadOnlySpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.ReadOnlySpan`1
+    name: ReadOnlySpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Text.Json.JsonReaderOptions
+  commentId: T:System.Text.Json.JsonReaderOptions
+  parent: System.Text.Json
+  isExternal: true
+  href: System.Text.Json.JsonReaderOptions.html
+  name: JsonReaderOptions
+  nameWithType: JsonReaderOptions
+  fullName: System.Text.Json.JsonReaderOptions
+- uid: System.Text.Json.JsonException
+  commentId: T:System.Text.Json.JsonException
+  isExternal: true
+  href: System.Text.Json.JsonException.html
+  name: JsonException
+  nameWithType: JsonException
+  fullName: System.Text.Json.JsonException
+- uid: System.Text.Json.Utf8JsonReader.Read*
+  commentId: Overload:System.Text.Json.Utf8JsonReader.Read
+  isExternal: true
+  href: System.Text.Json.Utf8JsonReader.html#System_Text_Json_Utf8JsonReader_Read
+  name: Read
+  nameWithType: Utf8JsonReader.Read
+  fullName: System.Text.Json.Utf8JsonReader.Read
+- uid: System.Text.Json.Utf8JsonReader.IsFinalBlock
+  commentId: P:System.Text.Json.Utf8JsonReader.IsFinalBlock
+  isExternal: true
+  href: System.Text.Json.Utf8JsonReader.html#System_Text_Json_Utf8JsonReader_IsFinalBlock
+  name: IsFinalBlock
+  nameWithType: Utf8JsonReader.IsFinalBlock
+  fullName: System.Text.Json.Utf8JsonReader.IsFinalBlock
+- uid: System.InvalidOperationException
+  commentId: T:System.InvalidOperationException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.invalidoperationexception
+  name: InvalidOperationException
+  nameWithType: InvalidOperationException
+  fullName: System.InvalidOperationException
+- uid: System.Text.Json.Utf8JsonReader.Skip*
+  commentId: Overload:System.Text.Json.Utf8JsonReader.Skip
+  isExternal: true
+  href: System.Text.Json.Utf8JsonReader.html#System_Text_Json_Utf8JsonReader_Skip
+  name: Skip
+  nameWithType: Utf8JsonReader.Skip
+  fullName: System.Text.Json.Utf8JsonReader.Skip
+- uid: System.Text.Json.Utf8JsonReader.TrySkip*
+  commentId: Overload:System.Text.Json.Utf8JsonReader.TrySkip
+  isExternal: true
+  href: System.Text.Json.Utf8JsonReader.html#System_Text_Json_Utf8JsonReader_TrySkip
+  name: TrySkip
+  nameWithType: Utf8JsonReader.TrySkip
+  fullName: System.Text.Json.Utf8JsonReader.TrySkip
+- uid: System.Text.Json.JsonTokenType.String
+  commentId: F:System.Text.Json.JsonTokenType.String
+  isExternal: true
+  href: System.Text.Json.JsonTokenType.html#System_Text_Json_JsonTokenType_String
+  name: String
+  nameWithType: JsonTokenType.String
+  fullName: System.Text.Json.JsonTokenType.String
+- uid: System.Text.Json.JsonTokenType.PropertyName
+  commentId: F:System.Text.Json.JsonTokenType.PropertyName
+  isExternal: true
+  href: System.Text.Json.JsonTokenType.html#System_Text_Json_JsonTokenType_PropertyName
+  name: PropertyName
+  nameWithType: JsonTokenType.PropertyName
+  fullName: System.Text.Json.JsonTokenType.PropertyName
+- uid: System.Text.Json.Utf8JsonReader.ValueTextEquals*
+  commentId: Overload:System.Text.Json.Utf8JsonReader.ValueTextEquals
+  isExternal: true
+  href: System.Text.Json.Utf8JsonReader.html#System_Text_Json_Utf8JsonReader_ValueTextEquals_System_ReadOnlySpan_System_Byte__
+  name: ValueTextEquals
+  nameWithType: Utf8JsonReader.ValueTextEquals
+  fullName: System.Text.Json.Utf8JsonReader.ValueTextEquals
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.ReadOnlySpan{System.Char}
+  commentId: T:System.ReadOnlySpan{System.Char}
+  parent: System
+  definition: System.ReadOnlySpan`1
+  href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  name: ReadOnlySpan<char>
+  nameWithType: ReadOnlySpan<char>
+  fullName: System.ReadOnlySpan<char>
+  nameWithType.vb: ReadOnlySpan(Of Char)
+  fullName.vb: System.ReadOnlySpan(Of Char)
+  name.vb: ReadOnlySpan(Of Char)
+  spec.csharp:
+  - uid: System.ReadOnlySpan`1
+    name: ReadOnlySpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  - name: <
+  - uid: System.Char
+    name: char
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.char
+  - name: '>'
+  spec.vb:
+  - uid: System.ReadOnlySpan`1
+    name: ReadOnlySpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Char
+    name: Char
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.char
+  - name: )
+- uid: System.Buffers.ReadOnlySequence{System.Byte}
+  commentId: T:System.Buffers.ReadOnlySequence{System.Byte}
+  parent: System.Buffers
+  definition: System.Buffers.ReadOnlySequence`1
+  href: https://learn.microsoft.com/dotnet/api/system.buffers.readonlysequence-1
+  name: ReadOnlySequence<byte>
+  nameWithType: ReadOnlySequence<byte>
+  fullName: System.Buffers.ReadOnlySequence<byte>
+  nameWithType.vb: ReadOnlySequence(Of Byte)
+  fullName.vb: System.Buffers.ReadOnlySequence(Of Byte)
+  name.vb: ReadOnlySequence(Of Byte)
+  spec.csharp:
+  - uid: System.Buffers.ReadOnlySequence`1
+    name: ReadOnlySequence
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.buffers.readonlysequence-1
+  - name: <
+  - uid: System.Byte
+    name: byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: '>'
+  spec.vb:
+  - uid: System.Buffers.ReadOnlySequence`1
+    name: ReadOnlySequence
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.buffers.readonlysequence-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Byte
+    name: Byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: )
+- uid: System.Buffers.ReadOnlySequence`1
+  commentId: T:System.Buffers.ReadOnlySequence`1
+  parent: System.Buffers
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.buffers.readonlysequence-1
+  name: ReadOnlySequence<T>
+  nameWithType: ReadOnlySequence<T>
+  fullName: System.Buffers.ReadOnlySequence<T>
+  nameWithType.vb: ReadOnlySequence(Of T)
+  fullName.vb: System.Buffers.ReadOnlySequence(Of T)
+  name.vb: ReadOnlySequence(Of T)
+  spec.csharp:
+  - uid: System.Buffers.ReadOnlySequence`1
+    name: ReadOnlySequence
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.buffers.readonlysequence-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Buffers.ReadOnlySequence`1
+    name: ReadOnlySequence
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.buffers.readonlysequence-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Buffers
+  commentId: N:System.Buffers
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Buffers
+  nameWithType: System.Buffers
+  fullName: System.Buffers
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Buffers
+    name: Buffers
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.buffers
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Buffers
+    name: Buffers
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.buffers
+- uid: System.Text.Json.JsonTokenType.Null
+  commentId: F:System.Text.Json.JsonTokenType.Null
+  isExternal: true
+  href: System.Text.Json.JsonTokenType.html#System_Text_Json_JsonTokenType_Null
+  name: "Null"
+  nameWithType: JsonTokenType.Null
+  fullName: System.Text.Json.JsonTokenType.Null
+- uid: System.Text.Json.Utf8JsonReader.TokenType
+  commentId: P:System.Text.Json.Utf8JsonReader.TokenType
+  isExternal: true
+  href: System.Text.Json.Utf8JsonReader.html#System_Text_Json_Utf8JsonReader_TokenType
+  name: TokenType
+  nameWithType: Utf8JsonReader.TokenType
+  fullName: System.Text.Json.Utf8JsonReader.TokenType
+- uid: System.Text.Json.Utf8JsonReader.GetString*
+  commentId: Overload:System.Text.Json.Utf8JsonReader.GetString
+  isExternal: true
+  href: System.Text.Json.Utf8JsonReader.html#System_Text_Json_Utf8JsonReader_GetString
+  name: GetString
+  nameWithType: Utf8JsonReader.GetString
+  fullName: System.Text.Json.Utf8JsonReader.GetString
+- uid: System.Text.Json.Utf8JsonReader.GetComment*
+  commentId: Overload:System.Text.Json.Utf8JsonReader.GetComment
+  isExternal: true
+  href: System.Text.Json.Utf8JsonReader.html#System_Text_Json_Utf8JsonReader_GetComment
+  name: GetComment
+  nameWithType: Utf8JsonReader.GetComment
+  fullName: System.Text.Json.Utf8JsonReader.GetComment
+- uid: System.Text.Json.JsonTokenType.True
+  commentId: F:System.Text.Json.JsonTokenType.True
+  isExternal: true
+  href: System.Text.Json.JsonTokenType.html#System_Text_Json_JsonTokenType_True
+  name: "True"
+  nameWithType: JsonTokenType.True
+  fullName: System.Text.Json.JsonTokenType.True
+- uid: System.Text.Json.JsonTokenType.False
+  commentId: F:System.Text.Json.JsonTokenType.False
+  isExternal: true
+  href: System.Text.Json.JsonTokenType.html#System_Text_Json_JsonTokenType_False
+  name: "False"
+  nameWithType: JsonTokenType.False
+  fullName: System.Text.Json.JsonTokenType.False
+- uid: System.Text.Json.Utf8JsonReader.GetBoolean*
+  commentId: Overload:System.Text.Json.Utf8JsonReader.GetBoolean
+  isExternal: true
+  href: System.Text.Json.Utf8JsonReader.html#System_Text_Json_Utf8JsonReader_GetBoolean
+  name: GetBoolean
+  nameWithType: Utf8JsonReader.GetBoolean
+  fullName: System.Text.Json.Utf8JsonReader.GetBoolean
+- uid: System.FormatException
+  commentId: T:System.FormatException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.formatexception
+  name: FormatException
+  nameWithType: FormatException
+  fullName: System.FormatException
+- uid: System.Text.Json.Utf8JsonReader.GetBytesFromBase64*
+  commentId: Overload:System.Text.Json.Utf8JsonReader.GetBytesFromBase64
+  isExternal: true
+  href: System.Text.Json.Utf8JsonReader.html#System_Text_Json_Utf8JsonReader_GetBytesFromBase64
+  name: GetBytesFromBase64
+  nameWithType: Utf8JsonReader.GetBytesFromBase64
+  fullName: System.Text.Json.Utf8JsonReader.GetBytesFromBase64
+- uid: System.Byte[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.byte
+  name: byte[]
+  nameWithType: byte[]
+  fullName: byte[]
+  nameWithType.vb: Byte()
+  fullName.vb: Byte()
+  name.vb: Byte()
+  spec.csharp:
+  - uid: System.Byte
+    name: byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.Byte
+    name: Byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: (
+  - name: )
+- uid: System.Byte
+  commentId: T:System.Byte
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.byte
+  name: byte
+  nameWithType: byte
+  fullName: byte
+  nameWithType.vb: Byte
+  fullName.vb: Byte
+  name.vb: Byte
+- uid: System.Text.Json.JsonTokenType.Number
+  commentId: F:System.Text.Json.JsonTokenType.Number
+  isExternal: true
+  href: System.Text.Json.JsonTokenType.html#System_Text_Json_JsonTokenType_Number
+  name: Number
+  nameWithType: JsonTokenType.Number
+  fullName: System.Text.Json.JsonTokenType.Number
+- uid: System.Byte.MinValue
+  commentId: F:System.Byte.MinValue
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.byte.minvalue
+  name: MinValue
+  nameWithType: byte.MinValue
+  fullName: byte.MinValue
+  nameWithType.vb: Byte.MinValue
+  fullName.vb: Byte.MinValue
+- uid: System.Byte.MaxValue
+  commentId: F:System.Byte.MaxValue
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.byte.maxvalue
+  name: MaxValue
+  nameWithType: byte.MaxValue
+  fullName: byte.MaxValue
+  nameWithType.vb: Byte.MaxValue
+  fullName.vb: Byte.MaxValue
+- uid: System.Text.Json.Utf8JsonReader.GetByte*
+  commentId: Overload:System.Text.Json.Utf8JsonReader.GetByte
+  isExternal: true
+  href: System.Text.Json.Utf8JsonReader.html#System_Text_Json_Utf8JsonReader_GetByte
+  name: GetByte
+  nameWithType: Utf8JsonReader.GetByte
+  fullName: System.Text.Json.Utf8JsonReader.GetByte
+- uid: System.SByte
+  commentId: T:System.SByte
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.sbyte
+  name: sbyte
+  nameWithType: sbyte
+  fullName: sbyte
+  nameWithType.vb: SByte
+  fullName.vb: SByte
+  name.vb: SByte
+- uid: System.SByte.MinValue
+  commentId: F:System.SByte.MinValue
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.sbyte.minvalue
+  name: MinValue
+  nameWithType: sbyte.MinValue
+  fullName: sbyte.MinValue
+  nameWithType.vb: SByte.MinValue
+  fullName.vb: SByte.MinValue
+- uid: System.SByte.MaxValue
+  commentId: F:System.SByte.MaxValue
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.sbyte.maxvalue
+  name: MaxValue
+  nameWithType: sbyte.MaxValue
+  fullName: sbyte.MaxValue
+  nameWithType.vb: SByte.MaxValue
+  fullName.vb: SByte.MaxValue
+- uid: System.Text.Json.Utf8JsonReader.GetSByte*
+  commentId: Overload:System.Text.Json.Utf8JsonReader.GetSByte
+  isExternal: true
+  href: System.Text.Json.Utf8JsonReader.html#System_Text_Json_Utf8JsonReader_GetSByte
+  name: GetSByte
+  nameWithType: Utf8JsonReader.GetSByte
+  fullName: System.Text.Json.Utf8JsonReader.GetSByte
+- uid: System.Int16
+  commentId: T:System.Int16
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int16
+  name: short
+  nameWithType: short
+  fullName: short
+  nameWithType.vb: Short
+  fullName.vb: Short
+  name.vb: Short
+- uid: System.Int16.MinValue
+  commentId: F:System.Int16.MinValue
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int16.minvalue
+  name: MinValue
+  nameWithType: short.MinValue
+  fullName: short.MinValue
+  nameWithType.vb: Short.MinValue
+  fullName.vb: Short.MinValue
+- uid: System.Int16.MaxValue
+  commentId: F:System.Int16.MaxValue
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int16.maxvalue
+  name: MaxValue
+  nameWithType: short.MaxValue
+  fullName: short.MaxValue
+  nameWithType.vb: Short.MaxValue
+  fullName.vb: Short.MaxValue
+- uid: System.Text.Json.Utf8JsonReader.GetInt16*
+  commentId: Overload:System.Text.Json.Utf8JsonReader.GetInt16
+  isExternal: true
+  href: System.Text.Json.Utf8JsonReader.html#System_Text_Json_Utf8JsonReader_GetInt16
+  name: GetInt16
+  nameWithType: Utf8JsonReader.GetInt16
+  fullName: System.Text.Json.Utf8JsonReader.GetInt16
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.Int32.MinValue
+  commentId: F:System.Int32.MinValue
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32.minvalue
+  name: MinValue
+  nameWithType: int.MinValue
+  fullName: int.MinValue
+  nameWithType.vb: Integer.MinValue
+  fullName.vb: Integer.MinValue
+- uid: System.Int32.MaxValue
+  commentId: F:System.Int32.MaxValue
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32.maxvalue
+  name: MaxValue
+  nameWithType: int.MaxValue
+  fullName: int.MaxValue
+  nameWithType.vb: Integer.MaxValue
+  fullName.vb: Integer.MaxValue
+- uid: System.Text.Json.Utf8JsonReader.GetInt32*
+  commentId: Overload:System.Text.Json.Utf8JsonReader.GetInt32
+  isExternal: true
+  href: System.Text.Json.Utf8JsonReader.html#System_Text_Json_Utf8JsonReader_GetInt32
+  name: GetInt32
+  nameWithType: Utf8JsonReader.GetInt32
+  fullName: System.Text.Json.Utf8JsonReader.GetInt32
+- uid: System.Int64
+  commentId: T:System.Int64
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int64
+  name: long
+  nameWithType: long
+  fullName: long
+  nameWithType.vb: Long
+  fullName.vb: Long
+  name.vb: Long
+- uid: System.Int64.MinValue
+  commentId: F:System.Int64.MinValue
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int64.minvalue
+  name: MinValue
+  nameWithType: long.MinValue
+  fullName: long.MinValue
+  nameWithType.vb: Long.MinValue
+  fullName.vb: Long.MinValue
+- uid: System.Int64.MaxValue
+  commentId: F:System.Int64.MaxValue
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int64.maxvalue
+  name: MaxValue
+  nameWithType: long.MaxValue
+  fullName: long.MaxValue
+  nameWithType.vb: Long.MaxValue
+  fullName.vb: Long.MaxValue
+- uid: System.Text.Json.Utf8JsonReader.GetInt64*
+  commentId: Overload:System.Text.Json.Utf8JsonReader.GetInt64
+  isExternal: true
+  href: System.Text.Json.Utf8JsonReader.html#System_Text_Json_Utf8JsonReader_GetInt64
+  name: GetInt64
+  nameWithType: Utf8JsonReader.GetInt64
+  fullName: System.Text.Json.Utf8JsonReader.GetInt64
+- uid: System.UInt16
+  commentId: T:System.UInt16
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.uint16
+  name: ushort
+  nameWithType: ushort
+  fullName: ushort
+  nameWithType.vb: UShort
+  fullName.vb: UShort
+  name.vb: UShort
+- uid: System.UInt16.MinValue
+  commentId: F:System.UInt16.MinValue
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.uint16.minvalue
+  name: MinValue
+  nameWithType: ushort.MinValue
+  fullName: ushort.MinValue
+  nameWithType.vb: UShort.MinValue
+  fullName.vb: UShort.MinValue
+- uid: System.UInt16.MaxValue
+  commentId: F:System.UInt16.MaxValue
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.uint16.maxvalue
+  name: MaxValue
+  nameWithType: ushort.MaxValue
+  fullName: ushort.MaxValue
+  nameWithType.vb: UShort.MaxValue
+  fullName.vb: UShort.MaxValue
+- uid: System.Text.Json.Utf8JsonReader.GetUInt16*
+  commentId: Overload:System.Text.Json.Utf8JsonReader.GetUInt16
+  isExternal: true
+  href: System.Text.Json.Utf8JsonReader.html#System_Text_Json_Utf8JsonReader_GetUInt16
+  name: GetUInt16
+  nameWithType: Utf8JsonReader.GetUInt16
+  fullName: System.Text.Json.Utf8JsonReader.GetUInt16
+- uid: System.UInt32
+  commentId: T:System.UInt32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.uint32
+  name: uint
+  nameWithType: uint
+  fullName: uint
+  nameWithType.vb: UInteger
+  fullName.vb: UInteger
+  name.vb: UInteger
+- uid: System.UInt32.MinValue
+  commentId: F:System.UInt32.MinValue
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.uint32.minvalue
+  name: MinValue
+  nameWithType: uint.MinValue
+  fullName: uint.MinValue
+  nameWithType.vb: UInteger.MinValue
+  fullName.vb: UInteger.MinValue
+- uid: System.UInt32.MaxValue
+  commentId: F:System.UInt32.MaxValue
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.uint32.maxvalue
+  name: MaxValue
+  nameWithType: uint.MaxValue
+  fullName: uint.MaxValue
+  nameWithType.vb: UInteger.MaxValue
+  fullName.vb: UInteger.MaxValue
+- uid: System.Text.Json.Utf8JsonReader.GetUInt32*
+  commentId: Overload:System.Text.Json.Utf8JsonReader.GetUInt32
+  isExternal: true
+  href: System.Text.Json.Utf8JsonReader.html#System_Text_Json_Utf8JsonReader_GetUInt32
+  name: GetUInt32
+  nameWithType: Utf8JsonReader.GetUInt32
+  fullName: System.Text.Json.Utf8JsonReader.GetUInt32
+- uid: System.UInt64
+  commentId: T:System.UInt64
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.uint64
+  name: ulong
+  nameWithType: ulong
+  fullName: ulong
+  nameWithType.vb: ULong
+  fullName.vb: ULong
+  name.vb: ULong
+- uid: System.UInt64.MinValue
+  commentId: F:System.UInt64.MinValue
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.uint64.minvalue
+  name: MinValue
+  nameWithType: ulong.MinValue
+  fullName: ulong.MinValue
+  nameWithType.vb: ULong.MinValue
+  fullName.vb: ULong.MinValue
+- uid: System.UInt64.MaxValue
+  commentId: F:System.UInt64.MaxValue
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.uint64.maxvalue
+  name: MaxValue
+  nameWithType: ulong.MaxValue
+  fullName: ulong.MaxValue
+  nameWithType.vb: ULong.MaxValue
+  fullName.vb: ULong.MaxValue
+- uid: System.Text.Json.Utf8JsonReader.GetUInt64*
+  commentId: Overload:System.Text.Json.Utf8JsonReader.GetUInt64
+  isExternal: true
+  href: System.Text.Json.Utf8JsonReader.html#System_Text_Json_Utf8JsonReader_GetUInt64
+  name: GetUInt64
+  nameWithType: Utf8JsonReader.GetUInt64
+  fullName: System.Text.Json.Utf8JsonReader.GetUInt64
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: System.Single.MinValue
+  commentId: F:System.Single.MinValue
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single.minvalue
+  name: MinValue
+  nameWithType: float.MinValue
+  fullName: float.MinValue
+  nameWithType.vb: Single.MinValue
+  fullName.vb: Single.MinValue
+- uid: System.Single.MaxValue
+  commentId: F:System.Single.MaxValue
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single.maxvalue
+  name: MaxValue
+  nameWithType: float.MaxValue
+  fullName: float.MaxValue
+  nameWithType.vb: Single.MaxValue
+  fullName.vb: Single.MaxValue
+- uid: System.Text.Json.Utf8JsonReader.GetSingle*
+  commentId: Overload:System.Text.Json.Utf8JsonReader.GetSingle
+  isExternal: true
+  href: System.Text.Json.Utf8JsonReader.html#System_Text_Json_Utf8JsonReader_GetSingle
+  name: GetSingle
+  nameWithType: Utf8JsonReader.GetSingle
+  fullName: System.Text.Json.Utf8JsonReader.GetSingle
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: System.Double.MinValue
+  commentId: F:System.Double.MinValue
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double.minvalue
+  name: MinValue
+  nameWithType: double.MinValue
+  fullName: double.MinValue
+  nameWithType.vb: Double.MinValue
+  fullName.vb: Double.MinValue
+- uid: System.Double.MaxValue
+  commentId: F:System.Double.MaxValue
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double.maxvalue
+  name: MaxValue
+  nameWithType: double.MaxValue
+  fullName: double.MaxValue
+  nameWithType.vb: Double.MaxValue
+  fullName.vb: Double.MaxValue
+- uid: System.Text.Json.Utf8JsonReader.GetDouble*
+  commentId: Overload:System.Text.Json.Utf8JsonReader.GetDouble
+  isExternal: true
+  href: System.Text.Json.Utf8JsonReader.html#System_Text_Json_Utf8JsonReader_GetDouble
+  name: GetDouble
+  nameWithType: Utf8JsonReader.GetDouble
+  fullName: System.Text.Json.Utf8JsonReader.GetDouble
+- uid: System.Decimal
+  commentId: T:System.Decimal
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.decimal
+  name: decimal
+  nameWithType: decimal
+  fullName: decimal
+  nameWithType.vb: Decimal
+  fullName.vb: Decimal
+  name.vb: Decimal
+- uid: System.Decimal.MinValue
+  commentId: F:System.Decimal.MinValue
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.decimal.minvalue
+  name: MinValue
+  nameWithType: decimal.MinValue
+  fullName: decimal.MinValue
+  nameWithType.vb: Decimal.MinValue
+  fullName.vb: Decimal.MinValue
+- uid: System.Decimal.MaxValue
+  commentId: F:System.Decimal.MaxValue
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.decimal.maxvalue
+  name: MaxValue
+  nameWithType: decimal.MaxValue
+  fullName: decimal.MaxValue
+  nameWithType.vb: Decimal.MaxValue
+  fullName.vb: Decimal.MaxValue
+- uid: System.Text.Json.Utf8JsonReader.GetDecimal*
+  commentId: Overload:System.Text.Json.Utf8JsonReader.GetDecimal
+  isExternal: true
+  href: System.Text.Json.Utf8JsonReader.html#System_Text_Json_Utf8JsonReader_GetDecimal
+  name: GetDecimal
+  nameWithType: Utf8JsonReader.GetDecimal
+  fullName: System.Text.Json.Utf8JsonReader.GetDecimal
+- uid: System.DateTime
+  commentId: T:System.DateTime
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.datetime
+  name: DateTime
+  nameWithType: DateTime
+  fullName: System.DateTime
+  nameWithType.vb: Date
+  fullName.vb: Date
+  name.vb: Date
+- uid: System.Text.Json.Utf8JsonReader.GetDateTime*
+  commentId: Overload:System.Text.Json.Utf8JsonReader.GetDateTime
+  isExternal: true
+  href: System.Text.Json.Utf8JsonReader.html#System_Text_Json_Utf8JsonReader_GetDateTime
+  name: GetDateTime
+  nameWithType: Utf8JsonReader.GetDateTime
+  fullName: System.Text.Json.Utf8JsonReader.GetDateTime
+- uid: System.DateTimeOffset
+  commentId: T:System.DateTimeOffset
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.datetimeoffset
+  name: DateTimeOffset
+  nameWithType: DateTimeOffset
+  fullName: System.DateTimeOffset
+- uid: System.Text.Json.Utf8JsonReader.GetDateTimeOffset*
+  commentId: Overload:System.Text.Json.Utf8JsonReader.GetDateTimeOffset
+  isExternal: true
+  href: System.Text.Json.Utf8JsonReader.html#System_Text_Json_Utf8JsonReader_GetDateTimeOffset
+  name: GetDateTimeOffset
+  nameWithType: Utf8JsonReader.GetDateTimeOffset
+  fullName: System.Text.Json.Utf8JsonReader.GetDateTimeOffset
+- uid: System.Guid
+  commentId: T:System.Guid
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.guid
+  name: Guid
+  nameWithType: Guid
+  fullName: System.Guid
+- uid: System.Text.Json.Utf8JsonReader.GetGuid*
+  commentId: Overload:System.Text.Json.Utf8JsonReader.GetGuid
+  isExternal: true
+  href: System.Text.Json.Utf8JsonReader.html#System_Text_Json_Utf8JsonReader_GetGuid
+  name: GetGuid
+  nameWithType: Utf8JsonReader.GetGuid
+  fullName: System.Text.Json.Utf8JsonReader.GetGuid
+- uid: System.Text.Json.Utf8JsonReader.TryGetBytesFromBase64*
+  commentId: Overload:System.Text.Json.Utf8JsonReader.TryGetBytesFromBase64
+  isExternal: true
+  href: System.Text.Json.Utf8JsonReader.html#System_Text_Json_Utf8JsonReader_TryGetBytesFromBase64_System_Byte____
+  name: TryGetBytesFromBase64
+  nameWithType: Utf8JsonReader.TryGetBytesFromBase64
+  fullName: System.Text.Json.Utf8JsonReader.TryGetBytesFromBase64
+- uid: System.Text.Json.Utf8JsonReader.TryGetByte*
+  commentId: Overload:System.Text.Json.Utf8JsonReader.TryGetByte
+  isExternal: true
+  href: System.Text.Json.Utf8JsonReader.html#System_Text_Json_Utf8JsonReader_TryGetByte_System_Byte__
+  name: TryGetByte
+  nameWithType: Utf8JsonReader.TryGetByte
+  fullName: System.Text.Json.Utf8JsonReader.TryGetByte
+- uid: System.Text.Json.Utf8JsonReader.TryGetSByte*
+  commentId: Overload:System.Text.Json.Utf8JsonReader.TryGetSByte
+  isExternal: true
+  href: System.Text.Json.Utf8JsonReader.html#System_Text_Json_Utf8JsonReader_TryGetSByte_System_SByte__
+  name: TryGetSByte
+  nameWithType: Utf8JsonReader.TryGetSByte
+  fullName: System.Text.Json.Utf8JsonReader.TryGetSByte
+- uid: System.Text.Json.Utf8JsonReader.TryGetInt16*
+  commentId: Overload:System.Text.Json.Utf8JsonReader.TryGetInt16
+  isExternal: true
+  href: System.Text.Json.Utf8JsonReader.html#System_Text_Json_Utf8JsonReader_TryGetInt16_System_Int16__
+  name: TryGetInt16
+  nameWithType: Utf8JsonReader.TryGetInt16
+  fullName: System.Text.Json.Utf8JsonReader.TryGetInt16
+- uid: System.Text.Json.Utf8JsonReader.TryGetInt32*
+  commentId: Overload:System.Text.Json.Utf8JsonReader.TryGetInt32
+  isExternal: true
+  href: System.Text.Json.Utf8JsonReader.html#System_Text_Json_Utf8JsonReader_TryGetInt32_System_Int32__
+  name: TryGetInt32
+  nameWithType: Utf8JsonReader.TryGetInt32
+  fullName: System.Text.Json.Utf8JsonReader.TryGetInt32
+- uid: System.Text.Json.Utf8JsonReader.TryGetInt64*
+  commentId: Overload:System.Text.Json.Utf8JsonReader.TryGetInt64
+  isExternal: true
+  href: System.Text.Json.Utf8JsonReader.html#System_Text_Json_Utf8JsonReader_TryGetInt64_System_Int64__
+  name: TryGetInt64
+  nameWithType: Utf8JsonReader.TryGetInt64
+  fullName: System.Text.Json.Utf8JsonReader.TryGetInt64
+- uid: System.Text.Json.Utf8JsonReader.TryGetUInt16*
+  commentId: Overload:System.Text.Json.Utf8JsonReader.TryGetUInt16
+  isExternal: true
+  href: System.Text.Json.Utf8JsonReader.html#System_Text_Json_Utf8JsonReader_TryGetUInt16_System_UInt16__
+  name: TryGetUInt16
+  nameWithType: Utf8JsonReader.TryGetUInt16
+  fullName: System.Text.Json.Utf8JsonReader.TryGetUInt16
+- uid: System.Text.Json.Utf8JsonReader.TryGetUInt32*
+  commentId: Overload:System.Text.Json.Utf8JsonReader.TryGetUInt32
+  isExternal: true
+  href: System.Text.Json.Utf8JsonReader.html#System_Text_Json_Utf8JsonReader_TryGetUInt32_System_UInt32__
+  name: TryGetUInt32
+  nameWithType: Utf8JsonReader.TryGetUInt32
+  fullName: System.Text.Json.Utf8JsonReader.TryGetUInt32
+- uid: System.Text.Json.Utf8JsonReader.TryGetUInt64*
+  commentId: Overload:System.Text.Json.Utf8JsonReader.TryGetUInt64
+  isExternal: true
+  href: System.Text.Json.Utf8JsonReader.html#System_Text_Json_Utf8JsonReader_TryGetUInt64_System_UInt64__
+  name: TryGetUInt64
+  nameWithType: Utf8JsonReader.TryGetUInt64
+  fullName: System.Text.Json.Utf8JsonReader.TryGetUInt64
+- uid: System.Text.Json.Utf8JsonReader.TryGetSingle*
+  commentId: Overload:System.Text.Json.Utf8JsonReader.TryGetSingle
+  isExternal: true
+  href: System.Text.Json.Utf8JsonReader.html#System_Text_Json_Utf8JsonReader_TryGetSingle_System_Single__
+  name: TryGetSingle
+  nameWithType: Utf8JsonReader.TryGetSingle
+  fullName: System.Text.Json.Utf8JsonReader.TryGetSingle
+- uid: System.Text.Json.Utf8JsonReader.TryGetDouble*
+  commentId: Overload:System.Text.Json.Utf8JsonReader.TryGetDouble
+  isExternal: true
+  href: System.Text.Json.Utf8JsonReader.html#System_Text_Json_Utf8JsonReader_TryGetDouble_System_Double__
+  name: TryGetDouble
+  nameWithType: Utf8JsonReader.TryGetDouble
+  fullName: System.Text.Json.Utf8JsonReader.TryGetDouble
+- uid: System.Text.Json.Utf8JsonReader.TryGetDecimal*
+  commentId: Overload:System.Text.Json.Utf8JsonReader.TryGetDecimal
+  isExternal: true
+  href: System.Text.Json.Utf8JsonReader.html#System_Text_Json_Utf8JsonReader_TryGetDecimal_System_Decimal__
+  name: TryGetDecimal
+  nameWithType: Utf8JsonReader.TryGetDecimal
+  fullName: System.Text.Json.Utf8JsonReader.TryGetDecimal
+- uid: System.Text.Json.Utf8JsonReader.TryGetDateTime*
+  commentId: Overload:System.Text.Json.Utf8JsonReader.TryGetDateTime
+  isExternal: true
+  href: System.Text.Json.Utf8JsonReader.html#System_Text_Json_Utf8JsonReader_TryGetDateTime_System_DateTime__
+  name: TryGetDateTime
+  nameWithType: Utf8JsonReader.TryGetDateTime
+  fullName: System.Text.Json.Utf8JsonReader.TryGetDateTime
+- uid: System.Text.Json.Utf8JsonReader.TryGetDateTimeOffset*
+  commentId: Overload:System.Text.Json.Utf8JsonReader.TryGetDateTimeOffset
+  isExternal: true
+  href: System.Text.Json.Utf8JsonReader.html#System_Text_Json_Utf8JsonReader_TryGetDateTimeOffset_System_DateTimeOffset__
+  name: TryGetDateTimeOffset
+  nameWithType: Utf8JsonReader.TryGetDateTimeOffset
+  fullName: System.Text.Json.Utf8JsonReader.TryGetDateTimeOffset
+- uid: System.Text.Json.Utf8JsonReader.TryGetGuid*
+  commentId: Overload:System.Text.Json.Utf8JsonReader.TryGetGuid
+  isExternal: true
+  href: System.Text.Json.Utf8JsonReader.html#System_Text_Json_Utf8JsonReader_TryGetGuid_System_Guid__
+  name: TryGetGuid
+  nameWithType: Utf8JsonReader.TryGetGuid
+  fullName: System.Text.Json.Utf8JsonReader.TryGetGuid
+- uid: System.Text.Json.Utf8JsonReader.ValueSpan*
+  commentId: Overload:System.Text.Json.Utf8JsonReader.ValueSpan
+  isExternal: true
+  href: System.Text.Json.Utf8JsonReader.html#System_Text_Json_Utf8JsonReader_ValueSpan
+  name: ValueSpan
+  nameWithType: Utf8JsonReader.ValueSpan
+  fullName: System.Text.Json.Utf8JsonReader.ValueSpan
+- uid: System.Text.Json.Utf8JsonReader.BytesConsumed*
+  commentId: Overload:System.Text.Json.Utf8JsonReader.BytesConsumed
+  isExternal: true
+  href: System.Text.Json.Utf8JsonReader.html#System_Text_Json_Utf8JsonReader_BytesConsumed
+  name: BytesConsumed
+  nameWithType: Utf8JsonReader.BytesConsumed
+  fullName: System.Text.Json.Utf8JsonReader.BytesConsumed
+- uid: System.Text.Json.Utf8JsonReader.TokenStartIndex*
+  commentId: Overload:System.Text.Json.Utf8JsonReader.TokenStartIndex
+  isExternal: true
+  href: System.Text.Json.Utf8JsonReader.html#System_Text_Json_Utf8JsonReader_TokenStartIndex
+  name: TokenStartIndex
+  nameWithType: Utf8JsonReader.TokenStartIndex
+  fullName: System.Text.Json.Utf8JsonReader.TokenStartIndex
+- uid: System.Text.Json.Utf8JsonReader.CurrentDepth*
+  commentId: Overload:System.Text.Json.Utf8JsonReader.CurrentDepth
+  isExternal: true
+  href: System.Text.Json.Utf8JsonReader.html#System_Text_Json_Utf8JsonReader_CurrentDepth
+  name: CurrentDepth
+  nameWithType: Utf8JsonReader.CurrentDepth
+  fullName: System.Text.Json.Utf8JsonReader.CurrentDepth
+- uid: System.Text.Json.Utf8JsonReader.TokenType*
+  commentId: Overload:System.Text.Json.Utf8JsonReader.TokenType
+  isExternal: true
+  href: System.Text.Json.Utf8JsonReader.html#System_Text_Json_Utf8JsonReader_TokenType
+  name: TokenType
+  nameWithType: Utf8JsonReader.TokenType
+  fullName: System.Text.Json.Utf8JsonReader.TokenType
+- uid: System.Text.Json.JsonTokenType
+  commentId: T:System.Text.Json.JsonTokenType
+  parent: System.Text.Json
+  isExternal: true
+  href: System.Text.Json.JsonTokenType.html
+  name: JsonTokenType
+  nameWithType: JsonTokenType
+  fullName: System.Text.Json.JsonTokenType
+- uid: System.Text.Json.Utf8JsonReader.ValueSequence
+  commentId: P:System.Text.Json.Utf8JsonReader.ValueSequence
+  isExternal: true
+  href: System.Text.Json.Utf8JsonReader.html#System_Text_Json_Utf8JsonReader_ValueSequence
+  name: ValueSequence
+  nameWithType: Utf8JsonReader.ValueSequence
+  fullName: System.Text.Json.Utf8JsonReader.ValueSequence
+- uid: System.Text.Json.Utf8JsonReader.ValueSpan
+  commentId: P:System.Text.Json.Utf8JsonReader.ValueSpan
+  isExternal: true
+  href: System.Text.Json.Utf8JsonReader.html#System_Text_Json_Utf8JsonReader_ValueSpan
+  name: ValueSpan
+  nameWithType: Utf8JsonReader.ValueSpan
+  fullName: System.Text.Json.Utf8JsonReader.ValueSpan
+- uid: System.Text.Json.Utf8JsonReader.HasValueSequence*
+  commentId: Overload:System.Text.Json.Utf8JsonReader.HasValueSequence
+  isExternal: true
+  href: System.Text.Json.Utf8JsonReader.html#System_Text_Json_Utf8JsonReader_HasValueSequence
+  name: HasValueSequence
+  nameWithType: Utf8JsonReader.HasValueSequence
+  fullName: System.Text.Json.Utf8JsonReader.HasValueSequence
+- uid: System.Text.Json.Utf8JsonReader.IsFinalBlock*
+  commentId: Overload:System.Text.Json.Utf8JsonReader.IsFinalBlock
+  isExternal: true
+  href: System.Text.Json.Utf8JsonReader.html#System_Text_Json_Utf8JsonReader_IsFinalBlock
+  name: IsFinalBlock
+  nameWithType: Utf8JsonReader.IsFinalBlock
+  fullName: System.Text.Json.Utf8JsonReader.IsFinalBlock
+- uid: System.Text.Json.Utf8JsonReader.ValueSequence*
+  commentId: Overload:System.Text.Json.Utf8JsonReader.ValueSequence
+  isExternal: true
+  href: System.Text.Json.Utf8JsonReader.html#System_Text_Json_Utf8JsonReader_ValueSequence
+  name: ValueSequence
+  nameWithType: Utf8JsonReader.ValueSequence
+  fullName: System.Text.Json.Utf8JsonReader.ValueSequence
+- uid: System.SequencePosition
+  commentId: T:System.SequencePosition
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.sequenceposition
+  name: SequencePosition
+  nameWithType: SequencePosition
+  fullName: System.SequencePosition
+- uid: System.Text.Json.Utf8JsonReader.Position*
+  commentId: Overload:System.Text.Json.Utf8JsonReader.Position
+  isExternal: true
+  href: System.Text.Json.Utf8JsonReader.html#System_Text_Json_Utf8JsonReader_Position
+  name: Position
+  nameWithType: Utf8JsonReader.Position
+  fullName: System.Text.Json.Utf8JsonReader.Position
+- uid: System.Text.Json.Utf8JsonReader.CurrentState*
+  commentId: Overload:System.Text.Json.Utf8JsonReader.CurrentState
+  isExternal: true
+  href: System.Text.Json.Utf8JsonReader.html#System_Text_Json_Utf8JsonReader_CurrentState
+  name: CurrentState
+  nameWithType: Utf8JsonReader.CurrentState
+  fullName: System.Text.Json.Utf8JsonReader.CurrentState

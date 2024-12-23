@@ -1,0 +1,175 @@
+### YamlMime:ManagedReference
+items:
+- uid: System.Text.Json.Serialization.JsonIgnoreCondition
+  commentId: T:System.Text.Json.Serialization.JsonIgnoreCondition
+  id: JsonIgnoreCondition
+  parent: System.Text.Json.Serialization
+  children:
+  - System.Text.Json.Serialization.JsonIgnoreCondition.Always
+  - System.Text.Json.Serialization.JsonIgnoreCondition.Never
+  - System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingDefault
+  - System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull
+  langs:
+  - csharp
+  - vb
+  name: JsonIgnoreCondition
+  nameWithType: JsonIgnoreCondition
+  fullName: System.Text.Json.Serialization.JsonIgnoreCondition
+  type: Enum
+  assemblies:
+  - System.Text.Json
+  namespace: System.Text.Json.Serialization
+  summary: Controls how the <xref href="System.Text.Json.Serialization.JsonIgnoreAttribute" data-throw-if-not-resolved="false"></xref> ignores properties on serialization and deserialization.
+  example: []
+  syntax:
+    content: public enum JsonIgnoreCondition
+    content.vb: Public Enum JsonIgnoreCondition
+- uid: System.Text.Json.Serialization.JsonIgnoreCondition.Never
+  commentId: F:System.Text.Json.Serialization.JsonIgnoreCondition.Never
+  id: Never
+  parent: System.Text.Json.Serialization.JsonIgnoreCondition
+  langs:
+  - csharp
+  - vb
+  name: Never
+  nameWithType: JsonIgnoreCondition.Never
+  fullName: System.Text.Json.Serialization.JsonIgnoreCondition.Never
+  type: Field
+  assemblies:
+  - System.Text.Json
+  namespace: System.Text.Json.Serialization
+  summary: Property will always be serialized and deserialized, regardless of <xref href="System.Text.Json.JsonSerializerOptions.IgnoreNullValues" data-throw-if-not-resolved="false"></xref> configuration.
+  example: []
+  syntax:
+    content: Never = 0
+    return:
+      type: System.Text.Json.Serialization.JsonIgnoreCondition
+- uid: System.Text.Json.Serialization.JsonIgnoreCondition.Always
+  commentId: F:System.Text.Json.Serialization.JsonIgnoreCondition.Always
+  id: Always
+  parent: System.Text.Json.Serialization.JsonIgnoreCondition
+  langs:
+  - csharp
+  - vb
+  name: Always
+  nameWithType: JsonIgnoreCondition.Always
+  fullName: System.Text.Json.Serialization.JsonIgnoreCondition.Always
+  type: Field
+  assemblies:
+  - System.Text.Json
+  namespace: System.Text.Json.Serialization
+  summary: Property will always be ignored.
+  example: []
+  syntax:
+    content: Always = 1
+    return:
+      type: System.Text.Json.Serialization.JsonIgnoreCondition
+- uid: System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingDefault
+  commentId: F:System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingDefault
+  id: WhenWritingDefault
+  parent: System.Text.Json.Serialization.JsonIgnoreCondition
+  langs:
+  - csharp
+  - vb
+  name: WhenWritingDefault
+  nameWithType: JsonIgnoreCondition.WhenWritingDefault
+  fullName: System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingDefault
+  type: Field
+  assemblies:
+  - System.Text.Json
+  namespace: System.Text.Json.Serialization
+  summary: Property will only be ignored if it is <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.
+  example: []
+  syntax:
+    content: WhenWritingDefault = 2
+    return:
+      type: System.Text.Json.Serialization.JsonIgnoreCondition
+- uid: System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull
+  commentId: F:System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull
+  id: WhenWritingNull
+  parent: System.Text.Json.Serialization.JsonIgnoreCondition
+  langs:
+  - csharp
+  - vb
+  name: WhenWritingNull
+  nameWithType: JsonIgnoreCondition.WhenWritingNull
+  fullName: System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull
+  type: Field
+  assemblies:
+  - System.Text.Json
+  namespace: System.Text.Json.Serialization
+  summary: If the value is <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>, the property is ignored during serialization. This is applied only to reference-type properties and fields.
+  example: []
+  syntax:
+    content: WhenWritingNull = 3
+    return:
+      type: System.Text.Json.Serialization.JsonIgnoreCondition
+references:
+- uid: System.Text.Json.Serialization.JsonIgnoreAttribute
+  commentId: T:System.Text.Json.Serialization.JsonIgnoreAttribute
+  isExternal: true
+  href: System.Text.Json.Serialization.JsonIgnoreAttribute.html
+  name: JsonIgnoreAttribute
+  nameWithType: JsonIgnoreAttribute
+  fullName: System.Text.Json.Serialization.JsonIgnoreAttribute
+- uid: System.Text.Json.Serialization
+  commentId: N:System.Text.Json.Serialization
+  isExternal: true
+  href: System.html
+  name: System.Text.Json.Serialization
+  nameWithType: System.Text.Json.Serialization
+  fullName: System.Text.Json.Serialization
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: System.html
+  - name: .
+  - uid: System.Text
+    name: Text
+    isExternal: true
+    href: System.Text.html
+  - name: .
+  - uid: System.Text.Json
+    name: Json
+    isExternal: true
+    href: System.Text.Json.html
+  - name: .
+  - uid: System.Text.Json.Serialization
+    name: Serialization
+    isExternal: true
+    href: System.Text.Json.Serialization.html
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: System.html
+  - name: .
+  - uid: System.Text
+    name: Text
+    isExternal: true
+    href: System.Text.html
+  - name: .
+  - uid: System.Text.Json
+    name: Json
+    isExternal: true
+    href: System.Text.Json.html
+  - name: .
+  - uid: System.Text.Json.Serialization
+    name: Serialization
+    isExternal: true
+    href: System.Text.Json.Serialization.html
+- uid: System.Text.Json.JsonSerializerOptions.IgnoreNullValues
+  commentId: P:System.Text.Json.JsonSerializerOptions.IgnoreNullValues
+  isExternal: true
+  name: IgnoreNullValues
+  nameWithType: JsonSerializerOptions.IgnoreNullValues
+  fullName: System.Text.Json.JsonSerializerOptions.IgnoreNullValues
+- uid: System.Text.Json.Serialization.JsonIgnoreCondition
+  commentId: T:System.Text.Json.Serialization.JsonIgnoreCondition
+  parent: System.Text.Json.Serialization
+  isExternal: true
+  href: System.Text.Json.Serialization.JsonIgnoreCondition.html
+  name: JsonIgnoreCondition
+  nameWithType: JsonIgnoreCondition
+  fullName: System.Text.Json.Serialization.JsonIgnoreCondition

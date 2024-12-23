@@ -1,0 +1,322 @@
+### YamlMime:ManagedReference
+items:
+- uid: CodeFactory.IModel`1
+  commentId: T:CodeFactory.IModel`1
+  id: IModel`1
+  parent: CodeFactory
+  children:
+  - CodeFactory.IModel`1.HasErrors
+  - CodeFactory.IModel`1.IsLoaded
+  - CodeFactory.IModel`1.ModelErrors
+  - CodeFactory.IModel`1.ModelType
+  langs:
+  - csharp
+  - vb
+  name: IModel<TModelTypes>
+  nameWithType: IModel<TModelTypes>
+  fullName: CodeFactory.IModel<TModelTypes>
+  type: Interface
+  source:
+    href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/19e816ffdf1ba504be6987736bbac42e2d241405/Src/CodeFactoryForWindows/CodeFactory/IModel.cs
+  assemblies:
+  - CodeFactory
+  namespace: CodeFactory
+  summary: Base implementation of a code factory model. All models will be derived from this base model definition.
+  example: []
+  syntax:
+    content: 'public interface IModel<TModelTypes> where TModelTypes : struct, IComparable, IFormattable, IConvertible'
+    typeParameters:
+    - id: TModelTypes
+      description: Enumeration of the model types that this model supports.
+    content.vb: Public Interface IModel(Of TModelTypes As {Structure, IComparable, IFormattable, IConvertible})
+  nameWithType.vb: IModel(Of TModelTypes)
+  fullName.vb: CodeFactory.IModel(Of TModelTypes)
+  name.vb: IModel(Of TModelTypes)
+- uid: CodeFactory.IModel`1.IsLoaded
+  commentId: P:CodeFactory.IModel`1.IsLoaded
+  id: IsLoaded
+  parent: CodeFactory.IModel`1
+  langs:
+  - csharp
+  - vb
+  name: IsLoaded
+  nameWithType: IModel<TModelTypes>.IsLoaded
+  fullName: CodeFactory.IModel<TModelTypes>.IsLoaded
+  type: Property
+  source:
+    href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/19e816ffdf1ba504be6987736bbac42e2d241405/Src/CodeFactoryForWindows/CodeFactory/IModel.cs
+  assemblies:
+  - CodeFactory
+  namespace: CodeFactory
+  summary: Flag that determines if this model was able to load.
+  example: []
+  syntax:
+    content: bool IsLoaded { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: ReadOnly Property IsLoaded As Boolean
+  overload: CodeFactory.IModel`1.IsLoaded*
+  nameWithType.vb: IModel(Of TModelTypes).IsLoaded
+  fullName.vb: CodeFactory.IModel(Of TModelTypes).IsLoaded
+- uid: CodeFactory.IModel`1.HasErrors
+  commentId: P:CodeFactory.IModel`1.HasErrors
+  id: HasErrors
+  parent: CodeFactory.IModel`1
+  langs:
+  - csharp
+  - vb
+  name: HasErrors
+  nameWithType: IModel<TModelTypes>.HasErrors
+  fullName: CodeFactory.IModel<TModelTypes>.HasErrors
+  type: Property
+  source:
+    href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/19e816ffdf1ba504be6987736bbac42e2d241405/Src/CodeFactoryForWindows/CodeFactory/IModel.cs
+  assemblies:
+  - CodeFactory
+  namespace: CodeFactory
+  summary: Flag that determines if this model has errors.
+  example: []
+  syntax:
+    content: bool HasErrors { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: ReadOnly Property HasErrors As Boolean
+  overload: CodeFactory.IModel`1.HasErrors*
+  nameWithType.vb: IModel(Of TModelTypes).HasErrors
+  fullName.vb: CodeFactory.IModel(Of TModelTypes).HasErrors
+- uid: CodeFactory.IModel`1.ModelErrors
+  commentId: P:CodeFactory.IModel`1.ModelErrors
+  id: ModelErrors
+  parent: CodeFactory.IModel`1
+  langs:
+  - csharp
+  - vb
+  name: ModelErrors
+  nameWithType: IModel<TModelTypes>.ModelErrors
+  fullName: CodeFactory.IModel<TModelTypes>.ModelErrors
+  type: Property
+  source:
+    href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/19e816ffdf1ba504be6987736bbac42e2d241405/Src/CodeFactoryForWindows/CodeFactory/IModel.cs
+  assemblies:
+  - CodeFactory
+  namespace: CodeFactory
+  summary: List of all errors that occurred in this model.
+  example: []
+  syntax:
+    content: IReadOnlyList<ModelException<TModelTypes>> ModelErrors { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.IReadOnlyList{CodeFactory.ModelException{{TModelTypes}}}
+    content.vb: ReadOnly Property ModelErrors As IReadOnlyList(Of ModelException(Of TModelTypes))
+  overload: CodeFactory.IModel`1.ModelErrors*
+  nameWithType.vb: IModel(Of TModelTypes).ModelErrors
+  fullName.vb: CodeFactory.IModel(Of TModelTypes).ModelErrors
+- uid: CodeFactory.IModel`1.ModelType
+  commentId: P:CodeFactory.IModel`1.ModelType
+  id: ModelType
+  parent: CodeFactory.IModel`1
+  langs:
+  - csharp
+  - vb
+  name: ModelType
+  nameWithType: IModel<TModelTypes>.ModelType
+  fullName: CodeFactory.IModel<TModelTypes>.ModelType
+  type: Property
+  source:
+    href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/19e816ffdf1ba504be6987736bbac42e2d241405/Src/CodeFactoryForWindows/CodeFactory/IModel.cs
+  assemblies:
+  - CodeFactory
+  namespace: CodeFactory
+  summary: Determines the type of model that has been loaded.
+  example: []
+  syntax:
+    content: TModelTypes ModelType { get; }
+    parameters: []
+    return:
+      type: '{TModelTypes}'
+    content.vb: ReadOnly Property ModelType As TModelTypes
+  overload: CodeFactory.IModel`1.ModelType*
+  nameWithType.vb: IModel(Of TModelTypes).ModelType
+  fullName.vb: CodeFactory.IModel(Of TModelTypes).ModelType
+references:
+- uid: CodeFactory
+  commentId: N:CodeFactory
+  isExternal: true
+  href: CodeFactory.html
+  name: CodeFactory
+  nameWithType: CodeFactory
+  fullName: CodeFactory
+- uid: CodeFactory.IModel`1.IsLoaded*
+  commentId: Overload:CodeFactory.IModel`1.IsLoaded
+  isExternal: true
+  href: CodeFactory.IModel-1.html#CodeFactory_IModel_1_IsLoaded
+  name: IsLoaded
+  nameWithType: IModel<TModelTypes>.IsLoaded
+  fullName: CodeFactory.IModel<TModelTypes>.IsLoaded
+  nameWithType.vb: IModel(Of TModelTypes).IsLoaded
+  fullName.vb: CodeFactory.IModel(Of TModelTypes).IsLoaded
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: CodeFactory.IModel`1.HasErrors*
+  commentId: Overload:CodeFactory.IModel`1.HasErrors
+  isExternal: true
+  href: CodeFactory.IModel-1.html#CodeFactory_IModel_1_HasErrors
+  name: HasErrors
+  nameWithType: IModel<TModelTypes>.HasErrors
+  fullName: CodeFactory.IModel<TModelTypes>.HasErrors
+  nameWithType.vb: IModel(Of TModelTypes).HasErrors
+  fullName.vb: CodeFactory.IModel(Of TModelTypes).HasErrors
+- uid: CodeFactory.IModel`1.ModelErrors*
+  commentId: Overload:CodeFactory.IModel`1.ModelErrors
+  isExternal: true
+  href: CodeFactory.IModel-1.html#CodeFactory_IModel_1_ModelErrors
+  name: ModelErrors
+  nameWithType: IModel<TModelTypes>.ModelErrors
+  fullName: CodeFactory.IModel<TModelTypes>.ModelErrors
+  nameWithType.vb: IModel(Of TModelTypes).ModelErrors
+  fullName.vb: CodeFactory.IModel(Of TModelTypes).ModelErrors
+- uid: System.Collections.Generic.IReadOnlyList{CodeFactory.ModelException{{TModelTypes}}}
+  commentId: T:System.Collections.Generic.IReadOnlyList{CodeFactory.ModelException{`0}}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IReadOnlyList`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  name: IReadOnlyList<ModelException<TModelTypes>>
+  nameWithType: IReadOnlyList<ModelException<TModelTypes>>
+  fullName: System.Collections.Generic.IReadOnlyList<CodeFactory.ModelException<TModelTypes>>
+  nameWithType.vb: IReadOnlyList(Of ModelException(Of TModelTypes))
+  fullName.vb: System.Collections.Generic.IReadOnlyList(Of CodeFactory.ModelException(Of TModelTypes))
+  name.vb: IReadOnlyList(Of ModelException(Of TModelTypes))
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - uid: CodeFactory.ModelException`1
+    name: ModelException
+    isExternal: true
+    href: CodeFactory.ModelException-1.html
+  - name: <
+  - name: TModelTypes
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: CodeFactory.ModelException`1
+    name: ModelException
+    isExternal: true
+    href: CodeFactory.ModelException-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TModelTypes
+  - name: )
+  - name: )
+- uid: System.Collections.Generic.IReadOnlyList`1
+  commentId: T:System.Collections.Generic.IReadOnlyList`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  name: IReadOnlyList<T>
+  nameWithType: IReadOnlyList<T>
+  fullName: System.Collections.Generic.IReadOnlyList<T>
+  nameWithType.vb: IReadOnlyList(Of T)
+  fullName.vb: System.Collections.Generic.IReadOnlyList(Of T)
+  name.vb: IReadOnlyList(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: CodeFactory.IModel`1.ModelType*
+  commentId: Overload:CodeFactory.IModel`1.ModelType
+  isExternal: true
+  href: CodeFactory.IModel-1.html#CodeFactory_IModel_1_ModelType
+  name: ModelType
+  nameWithType: IModel<TModelTypes>.ModelType
+  fullName: CodeFactory.IModel<TModelTypes>.ModelType
+  nameWithType.vb: IModel(Of TModelTypes).ModelType
+  fullName.vb: CodeFactory.IModel(Of TModelTypes).ModelType
+- uid: '{TModelTypes}'
+  commentId: '!:TModelTypes'
+  definition: TModelTypes
+  name: TModelTypes
+  nameWithType: TModelTypes
+  fullName: TModelTypes
+- uid: TModelTypes
+  name: TModelTypes
+  nameWithType: TModelTypes
+  fullName: TModelTypes

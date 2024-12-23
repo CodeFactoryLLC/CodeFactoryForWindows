@@ -1,0 +1,1213 @@
+### YamlMime:ManagedReference
+items:
+- uid: MessagePack.MessagePackStreamReader
+  commentId: T:MessagePack.MessagePackStreamReader
+  id: MessagePackStreamReader
+  parent: MessagePack
+  children:
+  - MessagePack.MessagePackStreamReader.#ctor(System.IO.Stream)
+  - MessagePack.MessagePackStreamReader.#ctor(System.IO.Stream,System.Boolean)
+  - MessagePack.MessagePackStreamReader.#ctor(System.IO.Stream,System.Boolean,MessagePack.SequencePool)
+  - MessagePack.MessagePackStreamReader.DiscardBufferedData
+  - MessagePack.MessagePackStreamReader.Dispose
+  - MessagePack.MessagePackStreamReader.Dispose(System.Boolean)
+  - MessagePack.MessagePackStreamReader.ReadArrayAsync(System.Threading.CancellationToken)
+  - MessagePack.MessagePackStreamReader.ReadArrayHeaderAsync(System.Threading.CancellationToken)
+  - MessagePack.MessagePackStreamReader.ReadAsync(System.Threading.CancellationToken)
+  - MessagePack.MessagePackStreamReader.ReadMapHeaderAsync(System.Threading.CancellationToken)
+  - MessagePack.MessagePackStreamReader.RemainingBytes
+  langs:
+  - csharp
+  - vb
+  name: MessagePackStreamReader
+  nameWithType: MessagePackStreamReader
+  fullName: MessagePack.MessagePackStreamReader
+  type: Class
+  assemblies:
+  - MessagePack
+  namespace: MessagePack
+  summary: Reads one or more messagepack data structures from a <xref href="System.IO.Stream" data-throw-if-not-resolved="false"></xref>.
+  remarks: >-
+    This class is *not* thread-safe. Do not call more than one member at once and be sure any call completes (including asynchronous tasks)
+
+    before calling the next one.
+  example: []
+  syntax:
+    content: 'public class MessagePackStreamReader : IDisposable'
+    content.vb: Public Class MessagePackStreamReader Implements IDisposable
+  inheritance:
+  - System.Object
+  implements:
+  - System.IDisposable
+  inheritedMembers:
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+- uid: MessagePack.MessagePackStreamReader.ReadArrayHeaderAsync(System.Threading.CancellationToken)
+  commentId: M:MessagePack.MessagePackStreamReader.ReadArrayHeaderAsync(System.Threading.CancellationToken)
+  id: ReadArrayHeaderAsync(System.Threading.CancellationToken)
+  parent: MessagePack.MessagePackStreamReader
+  langs:
+  - csharp
+  - vb
+  name: ReadArrayHeaderAsync(CancellationToken)
+  nameWithType: MessagePackStreamReader.ReadArrayHeaderAsync(CancellationToken)
+  fullName: MessagePack.MessagePackStreamReader.ReadArrayHeaderAsync(System.Threading.CancellationToken)
+  type: Method
+  assemblies:
+  - MessagePack
+  namespace: MessagePack
+  summary: Reads the next messagepack array header.
+  remarks: Any extra bytes read (between the last complete message and the end of the stream) will be available via the <xref href="MessagePack.MessagePackStreamReader.RemainingBytes" data-throw-if-not-resolved="false"></xref> property.
+  example: []
+  syntax:
+    content: public ValueTask<int> ReadArrayHeaderAsync(CancellationToken cancellationToken)
+    parameters:
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: A cancellation token.
+    return:
+      type: System.Threading.Tasks.ValueTask{System.Int32}
+      description: A task whose result is the length of the next array from the stream.
+    content.vb: Public Function ReadArrayHeaderAsync(cancellationToken As CancellationToken) As ValueTask(Of Integer)
+  overload: MessagePack.MessagePackStreamReader.ReadArrayHeaderAsync*
+- uid: MessagePack.MessagePackStreamReader.ReadArrayAsync(System.Threading.CancellationToken)
+  commentId: M:MessagePack.MessagePackStreamReader.ReadArrayAsync(System.Threading.CancellationToken)
+  id: ReadArrayAsync(System.Threading.CancellationToken)
+  parent: MessagePack.MessagePackStreamReader
+  langs:
+  - csharp
+  - vb
+  name: ReadArrayAsync(CancellationToken)
+  nameWithType: MessagePackStreamReader.ReadArrayAsync(CancellationToken)
+  fullName: MessagePack.MessagePackStreamReader.ReadArrayAsync(System.Threading.CancellationToken)
+  type: Method
+  assemblies:
+  - MessagePack
+  namespace: MessagePack
+  summary: Reads the next messagepack array and produces each element individually.
+  remarks: >-
+    When <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> is the result of the returned task,
+
+    any extra bytes read (between the last complete message and the end of the stream) will be available via the <xref href="MessagePack.MessagePackStreamReader.RemainingBytes" data-throw-if-not-resolved="false"></xref> property.
+  example: []
+  syntax:
+    content: public IAsyncEnumerable<ReadOnlySequence<byte>> ReadArrayAsync(CancellationToken cancellationToken)
+    parameters:
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: A cancellation token.
+    return:
+      type: System.Collections.Generic.IAsyncEnumerable{System.Buffers.ReadOnlySequence{System.Byte}}
+      description: >-
+        A task whose result is the next whole data structure from the stream, or <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> if the stream ends.
+
+        The returned sequence is valid until this <xref href="MessagePack.MessagePackStreamReader" data-throw-if-not-resolved="false"></xref> is disposed or
+
+        until this method is called again, whichever comes first.
+    content.vb: Public Function ReadArrayAsync(cancellationToken As CancellationToken) As IAsyncEnumerable(Of ReadOnlySequence(Of Byte))
+  overload: MessagePack.MessagePackStreamReader.ReadArrayAsync*
+- uid: MessagePack.MessagePackStreamReader.ReadMapHeaderAsync(System.Threading.CancellationToken)
+  commentId: M:MessagePack.MessagePackStreamReader.ReadMapHeaderAsync(System.Threading.CancellationToken)
+  id: ReadMapHeaderAsync(System.Threading.CancellationToken)
+  parent: MessagePack.MessagePackStreamReader
+  langs:
+  - csharp
+  - vb
+  name: ReadMapHeaderAsync(CancellationToken)
+  nameWithType: MessagePackStreamReader.ReadMapHeaderAsync(CancellationToken)
+  fullName: MessagePack.MessagePackStreamReader.ReadMapHeaderAsync(System.Threading.CancellationToken)
+  type: Method
+  assemblies:
+  - MessagePack
+  namespace: MessagePack
+  summary: Reads the next messagepack map header.
+  remarks: Any extra bytes read (between the last complete message and the end of the stream) will be available via the <xref href="MessagePack.MessagePackStreamReader.RemainingBytes" data-throw-if-not-resolved="false"></xref> property.
+  example: []
+  syntax:
+    content: public ValueTask<int> ReadMapHeaderAsync(CancellationToken cancellationToken)
+    parameters:
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: A cancellation token.
+    return:
+      type: System.Threading.Tasks.ValueTask{System.Int32}
+      description: A task whose result is the size of the next map from the stream.
+    content.vb: Public Function ReadMapHeaderAsync(cancellationToken As CancellationToken) As ValueTask(Of Integer)
+  overload: MessagePack.MessagePackStreamReader.ReadMapHeaderAsync*
+- uid: MessagePack.MessagePackStreamReader.#ctor(System.IO.Stream)
+  commentId: M:MessagePack.MessagePackStreamReader.#ctor(System.IO.Stream)
+  id: '#ctor(System.IO.Stream)'
+  parent: MessagePack.MessagePackStreamReader
+  langs:
+  - csharp
+  - vb
+  name: MessagePackStreamReader(Stream)
+  nameWithType: MessagePackStreamReader.MessagePackStreamReader(Stream)
+  fullName: MessagePack.MessagePackStreamReader.MessagePackStreamReader(System.IO.Stream)
+  type: Constructor
+  assemblies:
+  - MessagePack
+  namespace: MessagePack
+  summary: Initializes a new instance of the <xref href="MessagePack.MessagePackStreamReader" data-throw-if-not-resolved="false"></xref> class.
+  example: []
+  syntax:
+    content: public MessagePackStreamReader(Stream stream)
+    parameters:
+    - id: stream
+      type: System.IO.Stream
+      description: The stream to read from. This stream will be disposed of when this <xref href="MessagePack.MessagePackStreamReader" data-throw-if-not-resolved="false"></xref> is disposed.
+    content.vb: Public Sub New(stream As Stream)
+  overload: MessagePack.MessagePackStreamReader.#ctor*
+  nameWithType.vb: MessagePackStreamReader.New(Stream)
+  fullName.vb: MessagePack.MessagePackStreamReader.New(System.IO.Stream)
+  name.vb: New(Stream)
+- uid: MessagePack.MessagePackStreamReader.#ctor(System.IO.Stream,System.Boolean)
+  commentId: M:MessagePack.MessagePackStreamReader.#ctor(System.IO.Stream,System.Boolean)
+  id: '#ctor(System.IO.Stream,System.Boolean)'
+  parent: MessagePack.MessagePackStreamReader
+  langs:
+  - csharp
+  - vb
+  name: MessagePackStreamReader(Stream, bool)
+  nameWithType: MessagePackStreamReader.MessagePackStreamReader(Stream, bool)
+  fullName: MessagePack.MessagePackStreamReader.MessagePackStreamReader(System.IO.Stream, bool)
+  type: Constructor
+  assemblies:
+  - MessagePack
+  namespace: MessagePack
+  summary: Initializes a new instance of the <xref href="MessagePack.MessagePackStreamReader" data-throw-if-not-resolved="false"></xref> class.
+  example: []
+  syntax:
+    content: public MessagePackStreamReader(Stream stream, bool leaveOpen)
+    parameters:
+    - id: stream
+      type: System.IO.Stream
+      description: The stream to read from.
+    - id: leaveOpen
+      type: System.Boolean
+      description: If true, leaves the stream open after this <xref href="MessagePack.MessagePackStreamReader" data-throw-if-not-resolved="false"></xref> is disposed; otherwise, false.
+    content.vb: Public Sub New(stream As Stream, leaveOpen As Boolean)
+  overload: MessagePack.MessagePackStreamReader.#ctor*
+  nameWithType.vb: MessagePackStreamReader.New(Stream, Boolean)
+  fullName.vb: MessagePack.MessagePackStreamReader.New(System.IO.Stream, Boolean)
+  name.vb: New(Stream, Boolean)
+- uid: MessagePack.MessagePackStreamReader.#ctor(System.IO.Stream,System.Boolean,MessagePack.SequencePool)
+  commentId: M:MessagePack.MessagePackStreamReader.#ctor(System.IO.Stream,System.Boolean,MessagePack.SequencePool)
+  id: '#ctor(System.IO.Stream,System.Boolean,MessagePack.SequencePool)'
+  parent: MessagePack.MessagePackStreamReader
+  langs:
+  - csharp
+  - vb
+  name: MessagePackStreamReader(Stream, bool, SequencePool)
+  nameWithType: MessagePackStreamReader.MessagePackStreamReader(Stream, bool, SequencePool)
+  fullName: MessagePack.MessagePackStreamReader.MessagePackStreamReader(System.IO.Stream, bool, MessagePack.SequencePool)
+  type: Constructor
+  assemblies:
+  - MessagePack
+  namespace: MessagePack
+  summary: Initializes a new instance of the <xref href="MessagePack.MessagePackStreamReader" data-throw-if-not-resolved="false"></xref> class.
+  example: []
+  syntax:
+    content: public MessagePackStreamReader(Stream stream, bool leaveOpen, SequencePool sequencePool)
+    parameters:
+    - id: stream
+      type: System.IO.Stream
+      description: The stream to read from.
+    - id: leaveOpen
+      type: System.Boolean
+      description: If true, leaves the stream open after this <xref href="MessagePack.MessagePackStreamReader" data-throw-if-not-resolved="false"></xref> is disposed; otherwise, false.
+    - id: sequencePool
+      type: MessagePack.SequencePool
+      description: The pool to rent a <xref href="Nerdbank.Streams.Sequence%601" data-throw-if-not-resolved="false"></xref> object from.
+    content.vb: Public Sub New(stream As Stream, leaveOpen As Boolean, sequencePool As SequencePool)
+  overload: MessagePack.MessagePackStreamReader.#ctor*
+  nameWithType.vb: MessagePackStreamReader.New(Stream, Boolean, SequencePool)
+  fullName.vb: MessagePack.MessagePackStreamReader.New(System.IO.Stream, Boolean, MessagePack.SequencePool)
+  name.vb: New(Stream, Boolean, SequencePool)
+- uid: MessagePack.MessagePackStreamReader.ReadAsync(System.Threading.CancellationToken)
+  commentId: M:MessagePack.MessagePackStreamReader.ReadAsync(System.Threading.CancellationToken)
+  id: ReadAsync(System.Threading.CancellationToken)
+  parent: MessagePack.MessagePackStreamReader
+  langs:
+  - csharp
+  - vb
+  name: ReadAsync(CancellationToken)
+  nameWithType: MessagePackStreamReader.ReadAsync(CancellationToken)
+  fullName: MessagePack.MessagePackStreamReader.ReadAsync(System.Threading.CancellationToken)
+  type: Method
+  assemblies:
+  - MessagePack
+  namespace: MessagePack
+  summary: Reads the next whole (top-level) messagepack data structure.
+  remarks: >-
+    When <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> is the result of the returned task,
+
+    any extra bytes read (between the last complete message and the end of the stream) will be available via the <xref href="MessagePack.MessagePackStreamReader.RemainingBytes" data-throw-if-not-resolved="false"></xref> property.
+  example: []
+  syntax:
+    content: public ValueTask<ReadOnlySequence<byte>?> ReadAsync(CancellationToken cancellationToken)
+    parameters:
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: A cancellation token.
+    return:
+      type: System.Threading.Tasks.ValueTask{System.Nullable{System.Buffers.ReadOnlySequence{System.Byte}}}
+      description: >-
+        A task whose result is the next whole data structure from the stream, or <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> if the stream ends.
+
+        The returned sequence is valid until this <xref href="MessagePack.MessagePackStreamReader" data-throw-if-not-resolved="false"></xref> is disposed or
+
+        until this method is called again, whichever comes first.
+    content.vb: Public Function ReadAsync(cancellationToken As CancellationToken) As ValueTask(Of ReadOnlySequence(Of Byte)?)
+  overload: MessagePack.MessagePackStreamReader.ReadAsync*
+- uid: MessagePack.MessagePackStreamReader.DiscardBufferedData
+  commentId: M:MessagePack.MessagePackStreamReader.DiscardBufferedData
+  id: DiscardBufferedData
+  parent: MessagePack.MessagePackStreamReader
+  langs:
+  - csharp
+  - vb
+  name: DiscardBufferedData()
+  nameWithType: MessagePackStreamReader.DiscardBufferedData()
+  fullName: MessagePack.MessagePackStreamReader.DiscardBufferedData()
+  type: Method
+  assemblies:
+  - MessagePack
+  namespace: MessagePack
+  summary: >-
+    Arranges for the next read operation to start by reading from the underlying <xref href="System.IO.Stream" data-throw-if-not-resolved="false"></xref>
+
+    instead of any data buffered from a previous read.
+  remarks: >-
+    This is appropriate if the underlying <xref href="System.IO.Stream" data-throw-if-not-resolved="false"></xref> has been repositioned such that
+
+    any previously buffered data is no longer applicable to what the caller wants to read.
+  example: []
+  syntax:
+    content: public void DiscardBufferedData()
+    content.vb: Public Sub DiscardBufferedData()
+  overload: MessagePack.MessagePackStreamReader.DiscardBufferedData*
+- uid: MessagePack.MessagePackStreamReader.Dispose
+  commentId: M:MessagePack.MessagePackStreamReader.Dispose
+  id: Dispose
+  parent: MessagePack.MessagePackStreamReader
+  langs:
+  - csharp
+  - vb
+  name: Dispose()
+  nameWithType: MessagePackStreamReader.Dispose()
+  fullName: MessagePack.MessagePackStreamReader.Dispose()
+  type: Method
+  assemblies:
+  - MessagePack
+  namespace: MessagePack
+  example: []
+  syntax:
+    content: public void Dispose()
+    content.vb: Public Sub Dispose()
+  overload: MessagePack.MessagePackStreamReader.Dispose*
+  implements:
+  - System.IDisposable.Dispose
+- uid: MessagePack.MessagePackStreamReader.Dispose(System.Boolean)
+  commentId: M:MessagePack.MessagePackStreamReader.Dispose(System.Boolean)
+  id: Dispose(System.Boolean)
+  parent: MessagePack.MessagePackStreamReader
+  langs:
+  - csharp
+  - vb
+  name: Dispose(bool)
+  nameWithType: MessagePackStreamReader.Dispose(bool)
+  fullName: MessagePack.MessagePackStreamReader.Dispose(bool)
+  type: Method
+  assemblies:
+  - MessagePack
+  namespace: MessagePack
+  summary: Disposes of managed and unmanaged resources.
+  example: []
+  syntax:
+    content: protected virtual void Dispose(bool disposing)
+    parameters:
+    - id: disposing
+      type: System.Boolean
+      description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if this instance is being disposed; <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a> if it is being finalized.
+    content.vb: Protected Overridable Sub Dispose(disposing As Boolean)
+  overload: MessagePack.MessagePackStreamReader.Dispose*
+  nameWithType.vb: MessagePackStreamReader.Dispose(Boolean)
+  fullName.vb: MessagePack.MessagePackStreamReader.Dispose(Boolean)
+  name.vb: Dispose(Boolean)
+- uid: MessagePack.MessagePackStreamReader.RemainingBytes
+  commentId: P:MessagePack.MessagePackStreamReader.RemainingBytes
+  id: RemainingBytes
+  parent: MessagePack.MessagePackStreamReader
+  langs:
+  - csharp
+  - vb
+  name: RemainingBytes
+  nameWithType: MessagePackStreamReader.RemainingBytes
+  fullName: MessagePack.MessagePackStreamReader.RemainingBytes
+  type: Property
+  assemblies:
+  - MessagePack
+  namespace: MessagePack
+  summary: Gets any bytes that have been read since the last complete message returned from <xref href="MessagePack.MessagePackStreamReader.ReadAsync(System.Threading.CancellationToken)" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public ReadOnlySequence<byte> RemainingBytes { get; }
+    parameters: []
+    return:
+      type: System.Buffers.ReadOnlySequence{System.Byte}
+    content.vb: Public ReadOnly Property RemainingBytes As ReadOnlySequence(Of Byte)
+  overload: MessagePack.MessagePackStreamReader.RemainingBytes*
+references:
+- uid: System.IO.Stream
+  commentId: T:System.IO.Stream
+  parent: System.IO
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.io.stream
+  name: Stream
+  nameWithType: Stream
+  fullName: System.IO.Stream
+- uid: MessagePack
+  commentId: N:MessagePack
+  isExternal: true
+  href: MessagePack.html
+  name: MessagePack
+  nameWithType: MessagePack
+  fullName: MessagePack
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.IDisposable
+  commentId: T:System.IDisposable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.IO
+  commentId: N:System.IO
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.IO
+  nameWithType: System.IO
+  fullName: System.IO
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.IO
+    name: IO
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.IO
+    name: IO
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: MessagePack.MessagePackStreamReader.RemainingBytes
+  commentId: P:MessagePack.MessagePackStreamReader.RemainingBytes
+  isExternal: true
+  href: MessagePack.MessagePackStreamReader.html#MessagePack_MessagePackStreamReader_RemainingBytes
+  name: RemainingBytes
+  nameWithType: MessagePackStreamReader.RemainingBytes
+  fullName: MessagePack.MessagePackStreamReader.RemainingBytes
+- uid: MessagePack.MessagePackStreamReader.ReadArrayHeaderAsync*
+  commentId: Overload:MessagePack.MessagePackStreamReader.ReadArrayHeaderAsync
+  isExternal: true
+  href: MessagePack.MessagePackStreamReader.html#MessagePack_MessagePackStreamReader_ReadArrayHeaderAsync_System_Threading_CancellationToken_
+  name: ReadArrayHeaderAsync
+  nameWithType: MessagePackStreamReader.ReadArrayHeaderAsync
+  fullName: MessagePack.MessagePackStreamReader.ReadArrayHeaderAsync
+- uid: System.Threading.CancellationToken
+  commentId: T:System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  name: CancellationToken
+  nameWithType: CancellationToken
+  fullName: System.Threading.CancellationToken
+- uid: System.Threading.Tasks.ValueTask{System.Int32}
+  commentId: T:System.Threading.Tasks.ValueTask{System.Int32}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.ValueTask`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.valuetask-1
+  name: ValueTask<int>
+  nameWithType: ValueTask<int>
+  fullName: System.Threading.Tasks.ValueTask<int>
+  nameWithType.vb: ValueTask(Of Integer)
+  fullName.vb: System.Threading.Tasks.ValueTask(Of Integer)
+  name.vb: ValueTask(Of Integer)
+  spec.csharp:
+  - uid: System.Threading.Tasks.ValueTask`1
+    name: ValueTask
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.valuetask-1
+  - name: <
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.ValueTask`1
+    name: ValueTask
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.valuetask-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: System.Threading
+  commentId: N:System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading
+  nameWithType: System.Threading
+  fullName: System.Threading
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+- uid: System.Threading.Tasks.ValueTask`1
+  commentId: T:System.Threading.Tasks.ValueTask`1
+  parent: System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.valuetask-1
+  name: ValueTask<TResult>
+  nameWithType: ValueTask<TResult>
+  fullName: System.Threading.Tasks.ValueTask<TResult>
+  nameWithType.vb: ValueTask(Of TResult)
+  fullName.vb: System.Threading.Tasks.ValueTask(Of TResult)
+  name.vb: ValueTask(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.ValueTask`1
+    name: ValueTask
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.valuetask-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.ValueTask`1
+    name: ValueTask
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.valuetask-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: MessagePack.MessagePackStreamReader
+  commentId: T:MessagePack.MessagePackStreamReader
+  isExternal: true
+  href: MessagePack.MessagePackStreamReader.html
+  name: MessagePackStreamReader
+  nameWithType: MessagePackStreamReader
+  fullName: MessagePack.MessagePackStreamReader
+- uid: MessagePack.MessagePackStreamReader.ReadArrayAsync*
+  commentId: Overload:MessagePack.MessagePackStreamReader.ReadArrayAsync
+  isExternal: true
+  href: MessagePack.MessagePackStreamReader.html#MessagePack_MessagePackStreamReader_ReadArrayAsync_System_Threading_CancellationToken_
+  name: ReadArrayAsync
+  nameWithType: MessagePackStreamReader.ReadArrayAsync
+  fullName: MessagePack.MessagePackStreamReader.ReadArrayAsync
+- uid: System.Collections.Generic.IAsyncEnumerable{System.Buffers.ReadOnlySequence{System.Byte}}
+  commentId: T:System.Collections.Generic.IAsyncEnumerable{System.Buffers.ReadOnlySequence{System.Byte}}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IAsyncEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.iasyncenumerable-1
+  name: IAsyncEnumerable<ReadOnlySequence<byte>>
+  nameWithType: IAsyncEnumerable<ReadOnlySequence<byte>>
+  fullName: System.Collections.Generic.IAsyncEnumerable<System.Buffers.ReadOnlySequence<byte>>
+  nameWithType.vb: IAsyncEnumerable(Of ReadOnlySequence(Of Byte))
+  fullName.vb: System.Collections.Generic.IAsyncEnumerable(Of System.Buffers.ReadOnlySequence(Of Byte))
+  name.vb: IAsyncEnumerable(Of ReadOnlySequence(Of Byte))
+  spec.csharp:
+  - uid: System.Collections.Generic.IAsyncEnumerable`1
+    name: IAsyncEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.iasyncenumerable-1
+  - name: <
+  - uid: System.Buffers.ReadOnlySequence`1
+    name: ReadOnlySequence
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.buffers.readonlysequence-1
+  - name: <
+  - uid: System.Byte
+    name: byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IAsyncEnumerable`1
+    name: IAsyncEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.iasyncenumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Buffers.ReadOnlySequence`1
+    name: ReadOnlySequence
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.buffers.readonlysequence-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Byte
+    name: Byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: )
+  - name: )
+- uid: System.Collections.Generic.IAsyncEnumerable`1
+  commentId: T:System.Collections.Generic.IAsyncEnumerable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.iasyncenumerable-1
+  name: IAsyncEnumerable<T>
+  nameWithType: IAsyncEnumerable<T>
+  fullName: System.Collections.Generic.IAsyncEnumerable<T>
+  nameWithType.vb: IAsyncEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IAsyncEnumerable(Of T)
+  name.vb: IAsyncEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IAsyncEnumerable`1
+    name: IAsyncEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.iasyncenumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IAsyncEnumerable`1
+    name: IAsyncEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.iasyncenumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: MessagePack.MessagePackStreamReader.ReadMapHeaderAsync*
+  commentId: Overload:MessagePack.MessagePackStreamReader.ReadMapHeaderAsync
+  isExternal: true
+  href: MessagePack.MessagePackStreamReader.html#MessagePack_MessagePackStreamReader_ReadMapHeaderAsync_System_Threading_CancellationToken_
+  name: ReadMapHeaderAsync
+  nameWithType: MessagePackStreamReader.ReadMapHeaderAsync
+  fullName: MessagePack.MessagePackStreamReader.ReadMapHeaderAsync
+- uid: MessagePack.MessagePackStreamReader.#ctor*
+  commentId: Overload:MessagePack.MessagePackStreamReader.#ctor
+  isExternal: true
+  href: MessagePack.MessagePackStreamReader.html#MessagePack_MessagePackStreamReader__ctor_System_IO_Stream_
+  name: MessagePackStreamReader
+  nameWithType: MessagePackStreamReader.MessagePackStreamReader
+  fullName: MessagePack.MessagePackStreamReader.MessagePackStreamReader
+  nameWithType.vb: MessagePackStreamReader.New
+  fullName.vb: MessagePack.MessagePackStreamReader.New
+  name.vb: New
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Nerdbank.Streams.Sequence`1
+  commentId: T:Nerdbank.Streams.Sequence`1
+  isExternal: true
+  name: Sequence<T>
+  nameWithType: Sequence<T>
+  fullName: Nerdbank.Streams.Sequence<T>
+  nameWithType.vb: Sequence(Of T)
+  fullName.vb: Nerdbank.Streams.Sequence(Of T)
+  name.vb: Sequence(Of T)
+  spec.csharp:
+  - uid: Nerdbank.Streams.Sequence`1
+    name: Sequence
+    isExternal: true
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: Nerdbank.Streams.Sequence`1
+    name: Sequence
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: MessagePack.SequencePool
+  commentId: T:MessagePack.SequencePool
+  parent: MessagePack
+  isExternal: true
+  href: MessagePack.SequencePool.html
+  name: SequencePool
+  nameWithType: SequencePool
+  fullName: MessagePack.SequencePool
+- uid: MessagePack.MessagePackStreamReader.ReadAsync*
+  commentId: Overload:MessagePack.MessagePackStreamReader.ReadAsync
+  isExternal: true
+  href: MessagePack.MessagePackStreamReader.html#MessagePack_MessagePackStreamReader_ReadAsync_System_Threading_CancellationToken_
+  name: ReadAsync
+  nameWithType: MessagePackStreamReader.ReadAsync
+  fullName: MessagePack.MessagePackStreamReader.ReadAsync
+- uid: System.Threading.Tasks.ValueTask{System.Nullable{System.Buffers.ReadOnlySequence{System.Byte}}}
+  commentId: T:System.Threading.Tasks.ValueTask{System.Nullable{System.Buffers.ReadOnlySequence{System.Byte}}}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.ValueTask`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.valuetask-1
+  name: ValueTask<ReadOnlySequence<byte>?>
+  nameWithType: ValueTask<ReadOnlySequence<byte>?>
+  fullName: System.Threading.Tasks.ValueTask<System.Buffers.ReadOnlySequence<byte>?>
+  nameWithType.vb: ValueTask(Of ReadOnlySequence(Of Byte)?)
+  fullName.vb: System.Threading.Tasks.ValueTask(Of System.Buffers.ReadOnlySequence(Of Byte)?)
+  name.vb: ValueTask(Of ReadOnlySequence(Of Byte)?)
+  spec.csharp:
+  - uid: System.Threading.Tasks.ValueTask`1
+    name: ValueTask
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.valuetask-1
+  - name: <
+  - uid: System.Buffers.ReadOnlySequence`1
+    name: ReadOnlySequence
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.buffers.readonlysequence-1
+  - name: <
+  - uid: System.Byte
+    name: byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: '>'
+  - name: '?'
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.ValueTask`1
+    name: ValueTask
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.valuetask-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Buffers.ReadOnlySequence`1
+    name: ReadOnlySequence
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.buffers.readonlysequence-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Byte
+    name: Byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: )
+  - name: '?'
+  - name: )
+- uid: MessagePack.MessagePackStreamReader.DiscardBufferedData*
+  commentId: Overload:MessagePack.MessagePackStreamReader.DiscardBufferedData
+  isExternal: true
+  href: MessagePack.MessagePackStreamReader.html#MessagePack_MessagePackStreamReader_DiscardBufferedData
+  name: DiscardBufferedData
+  nameWithType: MessagePackStreamReader.DiscardBufferedData
+  fullName: MessagePack.MessagePackStreamReader.DiscardBufferedData
+- uid: MessagePack.MessagePackStreamReader.Dispose*
+  commentId: Overload:MessagePack.MessagePackStreamReader.Dispose
+  isExternal: true
+  href: MessagePack.MessagePackStreamReader.html#MessagePack_MessagePackStreamReader_Dispose
+  name: Dispose
+  nameWithType: MessagePackStreamReader.Dispose
+  fullName: MessagePack.MessagePackStreamReader.Dispose
+- uid: System.IDisposable.Dispose
+  commentId: M:System.IDisposable.Dispose
+  parent: System.IDisposable
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  name: Dispose()
+  nameWithType: IDisposable.Dispose()
+  fullName: System.IDisposable.Dispose()
+  spec.csharp:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  - name: (
+  - name: )
+- uid: MessagePack.MessagePackStreamReader.ReadAsync(System.Threading.CancellationToken)
+  commentId: M:MessagePack.MessagePackStreamReader.ReadAsync(System.Threading.CancellationToken)
+  isExternal: true
+  href: MessagePack.MessagePackStreamReader.html#MessagePack_MessagePackStreamReader_ReadAsync_System_Threading_CancellationToken_
+  name: ReadAsync(CancellationToken)
+  nameWithType: MessagePackStreamReader.ReadAsync(CancellationToken)
+  fullName: MessagePack.MessagePackStreamReader.ReadAsync(System.Threading.CancellationToken)
+  spec.csharp:
+  - uid: MessagePack.MessagePackStreamReader.ReadAsync(System.Threading.CancellationToken)
+    name: ReadAsync
+    isExternal: true
+    href: MessagePack.MessagePackStreamReader.html#MessagePack_MessagePackStreamReader_ReadAsync_System_Threading_CancellationToken_
+  - name: (
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: MessagePack.MessagePackStreamReader.ReadAsync(System.Threading.CancellationToken)
+    name: ReadAsync
+    isExternal: true
+    href: MessagePack.MessagePackStreamReader.html#MessagePack_MessagePackStreamReader_ReadAsync_System_Threading_CancellationToken_
+  - name: (
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: MessagePack.MessagePackStreamReader.RemainingBytes*
+  commentId: Overload:MessagePack.MessagePackStreamReader.RemainingBytes
+  isExternal: true
+  href: MessagePack.MessagePackStreamReader.html#MessagePack_MessagePackStreamReader_RemainingBytes
+  name: RemainingBytes
+  nameWithType: MessagePackStreamReader.RemainingBytes
+  fullName: MessagePack.MessagePackStreamReader.RemainingBytes
+- uid: System.Buffers.ReadOnlySequence{System.Byte}
+  commentId: T:System.Buffers.ReadOnlySequence{System.Byte}
+  parent: System.Buffers
+  definition: System.Buffers.ReadOnlySequence`1
+  href: https://learn.microsoft.com/dotnet/api/system.buffers.readonlysequence-1
+  name: ReadOnlySequence<byte>
+  nameWithType: ReadOnlySequence<byte>
+  fullName: System.Buffers.ReadOnlySequence<byte>
+  nameWithType.vb: ReadOnlySequence(Of Byte)
+  fullName.vb: System.Buffers.ReadOnlySequence(Of Byte)
+  name.vb: ReadOnlySequence(Of Byte)
+  spec.csharp:
+  - uid: System.Buffers.ReadOnlySequence`1
+    name: ReadOnlySequence
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.buffers.readonlysequence-1
+  - name: <
+  - uid: System.Byte
+    name: byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: '>'
+  spec.vb:
+  - uid: System.Buffers.ReadOnlySequence`1
+    name: ReadOnlySequence
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.buffers.readonlysequence-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Byte
+    name: Byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: )
+- uid: System.Buffers.ReadOnlySequence`1
+  commentId: T:System.Buffers.ReadOnlySequence`1
+  parent: System.Buffers
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.buffers.readonlysequence-1
+  name: ReadOnlySequence<T>
+  nameWithType: ReadOnlySequence<T>
+  fullName: System.Buffers.ReadOnlySequence<T>
+  nameWithType.vb: ReadOnlySequence(Of T)
+  fullName.vb: System.Buffers.ReadOnlySequence(Of T)
+  name.vb: ReadOnlySequence(Of T)
+  spec.csharp:
+  - uid: System.Buffers.ReadOnlySequence`1
+    name: ReadOnlySequence
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.buffers.readonlysequence-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Buffers.ReadOnlySequence`1
+    name: ReadOnlySequence
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.buffers.readonlysequence-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Buffers
+  commentId: N:System.Buffers
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Buffers
+  nameWithType: System.Buffers
+  fullName: System.Buffers
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Buffers
+    name: Buffers
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.buffers
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Buffers
+    name: Buffers
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.buffers

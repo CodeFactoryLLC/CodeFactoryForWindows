@@ -1,0 +1,715 @@
+### YamlMime:ManagedReference
+items:
+- uid: MessagePack.Formatters.Int16ArrayFormatter
+  commentId: T:MessagePack.Formatters.Int16ArrayFormatter
+  id: Int16ArrayFormatter
+  parent: MessagePack.Formatters
+  children:
+  - MessagePack.Formatters.Int16ArrayFormatter.Deserialize(MessagePack.MessagePackReader@,MessagePack.MessagePackSerializerOptions)
+  - MessagePack.Formatters.Int16ArrayFormatter.Instance
+  - MessagePack.Formatters.Int16ArrayFormatter.Serialize(MessagePack.MessagePackWriter@,System.Int16[],MessagePack.MessagePackSerializerOptions)
+  langs:
+  - csharp
+  - vb
+  name: Int16ArrayFormatter
+  nameWithType: Int16ArrayFormatter
+  fullName: MessagePack.Formatters.Int16ArrayFormatter
+  type: Class
+  assemblies:
+  - MessagePack
+  namespace: MessagePack.Formatters
+  syntax:
+    content: 'public sealed class Int16ArrayFormatter : IMessagePackFormatter<short[]?>'
+    content.vb: Public NotInheritable Class Int16ArrayFormatter Implements IMessagePackFormatter(Of Short())
+  inheritance:
+  - System.Object
+  implements:
+  - MessagePack.Formatters.IMessagePackFormatter{System.Int16[]}
+  inheritedMembers:
+  - System.Object.GetType
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+- uid: MessagePack.Formatters.Int16ArrayFormatter.Instance
+  commentId: F:MessagePack.Formatters.Int16ArrayFormatter.Instance
+  id: Instance
+  parent: MessagePack.Formatters.Int16ArrayFormatter
+  langs:
+  - csharp
+  - vb
+  name: Instance
+  nameWithType: Int16ArrayFormatter.Instance
+  fullName: MessagePack.Formatters.Int16ArrayFormatter.Instance
+  type: Field
+  assemblies:
+  - MessagePack
+  namespace: MessagePack.Formatters
+  syntax:
+    content: public static readonly Int16ArrayFormatter Instance
+    return:
+      type: MessagePack.Formatters.Int16ArrayFormatter
+    content.vb: Public Shared ReadOnly Instance As Int16ArrayFormatter
+- uid: MessagePack.Formatters.Int16ArrayFormatter.Serialize(MessagePack.MessagePackWriter@,System.Int16[],MessagePack.MessagePackSerializerOptions)
+  commentId: M:MessagePack.Formatters.Int16ArrayFormatter.Serialize(MessagePack.MessagePackWriter@,System.Int16[],MessagePack.MessagePackSerializerOptions)
+  id: Serialize(MessagePack.MessagePackWriter@,System.Int16[],MessagePack.MessagePackSerializerOptions)
+  parent: MessagePack.Formatters.Int16ArrayFormatter
+  langs:
+  - csharp
+  - vb
+  name: Serialize(ref MessagePackWriter, short[]?, MessagePackSerializerOptions)
+  nameWithType: Int16ArrayFormatter.Serialize(ref MessagePackWriter, short[]?, MessagePackSerializerOptions)
+  fullName: MessagePack.Formatters.Int16ArrayFormatter.Serialize(ref MessagePack.MessagePackWriter, short[]?, MessagePack.MessagePackSerializerOptions)
+  type: Method
+  assemblies:
+  - MessagePack
+  namespace: MessagePack.Formatters
+  summary: Serializes a value.
+  example: []
+  syntax:
+    content: public void Serialize(ref MessagePackWriter writer, short[]? value, MessagePackSerializerOptions options)
+    parameters:
+    - id: writer
+      type: MessagePack.MessagePackWriter
+      description: The writer to use when serializing the value.
+    - id: value
+      type: System.Int16[]
+      description: The value to be serialized.
+    - id: options
+      type: MessagePack.MessagePackSerializerOptions
+      description: The serialization settings to use, including the resolver to use to obtain formatters for types that make up the composite type <code class="typeparamref">T</code>.
+    content.vb: Public Sub Serialize(writer As MessagePackWriter, value As Short(), options As MessagePackSerializerOptions)
+  overload: MessagePack.Formatters.Int16ArrayFormatter.Serialize*
+  implements:
+  - MessagePack.Formatters.IMessagePackFormatter{System.Int16[]}.Serialize(MessagePack.MessagePackWriter@,System.Int16[],MessagePack.MessagePackSerializerOptions)
+  nameWithType.vb: Int16ArrayFormatter.Serialize(MessagePackWriter, Short(), MessagePackSerializerOptions)
+  fullName.vb: MessagePack.Formatters.Int16ArrayFormatter.Serialize(MessagePack.MessagePackWriter, Short(), MessagePack.MessagePackSerializerOptions)
+  name.vb: Serialize(MessagePackWriter, Short(), MessagePackSerializerOptions)
+- uid: MessagePack.Formatters.Int16ArrayFormatter.Deserialize(MessagePack.MessagePackReader@,MessagePack.MessagePackSerializerOptions)
+  commentId: M:MessagePack.Formatters.Int16ArrayFormatter.Deserialize(MessagePack.MessagePackReader@,MessagePack.MessagePackSerializerOptions)
+  id: Deserialize(MessagePack.MessagePackReader@,MessagePack.MessagePackSerializerOptions)
+  parent: MessagePack.Formatters.Int16ArrayFormatter
+  langs:
+  - csharp
+  - vb
+  name: Deserialize(ref MessagePackReader, MessagePackSerializerOptions)
+  nameWithType: Int16ArrayFormatter.Deserialize(ref MessagePackReader, MessagePackSerializerOptions)
+  fullName: MessagePack.Formatters.Int16ArrayFormatter.Deserialize(ref MessagePack.MessagePackReader, MessagePack.MessagePackSerializerOptions)
+  type: Method
+  assemblies:
+  - MessagePack
+  namespace: MessagePack.Formatters
+  summary: Deserializes a value.
+  example: []
+  syntax:
+    content: public short[]? Deserialize(ref MessagePackReader reader, MessagePackSerializerOptions options)
+    parameters:
+    - id: reader
+      type: MessagePack.MessagePackReader
+      description: The reader to deserialize from.
+    - id: options
+      type: MessagePack.MessagePackSerializerOptions
+      description: The serialization settings to use, including the resolver to use to obtain formatters for types that make up the composite type <code class="typeparamref">T</code>.
+    return:
+      type: System.Int16[]
+      description: The deserialized value.
+    content.vb: Public Function Deserialize(reader As MessagePackReader, options As MessagePackSerializerOptions) As Short()
+  overload: MessagePack.Formatters.Int16ArrayFormatter.Deserialize*
+  implements:
+  - MessagePack.Formatters.IMessagePackFormatter{System.Int16[]}.Deserialize(MessagePack.MessagePackReader@,MessagePack.MessagePackSerializerOptions)
+  nameWithType.vb: Int16ArrayFormatter.Deserialize(MessagePackReader, MessagePackSerializerOptions)
+  fullName.vb: MessagePack.Formatters.Int16ArrayFormatter.Deserialize(MessagePack.MessagePackReader, MessagePack.MessagePackSerializerOptions)
+  name.vb: Deserialize(MessagePackReader, MessagePackSerializerOptions)
+references:
+- uid: MessagePack.Formatters
+  commentId: N:MessagePack.Formatters
+  isExternal: true
+  href: MessagePack.html
+  name: MessagePack.Formatters
+  nameWithType: MessagePack.Formatters
+  fullName: MessagePack.Formatters
+  spec.csharp:
+  - uid: MessagePack
+    name: MessagePack
+    isExternal: true
+    href: MessagePack.html
+  - name: .
+  - uid: MessagePack.Formatters
+    name: Formatters
+    isExternal: true
+    href: MessagePack.Formatters.html
+  spec.vb:
+  - uid: MessagePack
+    name: MessagePack
+    isExternal: true
+    href: MessagePack.html
+  - name: .
+  - uid: MessagePack.Formatters
+    name: Formatters
+    isExternal: true
+    href: MessagePack.Formatters.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: MessagePack.Formatters.IMessagePackFormatter{System.Int16[]}
+  commentId: T:MessagePack.Formatters.IMessagePackFormatter{System.Int16[]}
+  parent: MessagePack.Formatters
+  definition: MessagePack.Formatters.IMessagePackFormatter`1
+  href: MessagePack.Formatters.IMessagePackFormatter-1.html
+  name: IMessagePackFormatter<short[]>
+  nameWithType: IMessagePackFormatter<short[]>
+  fullName: MessagePack.Formatters.IMessagePackFormatter<short[]>
+  nameWithType.vb: IMessagePackFormatter(Of Short())
+  fullName.vb: MessagePack.Formatters.IMessagePackFormatter(Of Short())
+  name.vb: IMessagePackFormatter(Of Short())
+  spec.csharp:
+  - uid: MessagePack.Formatters.IMessagePackFormatter`1
+    name: IMessagePackFormatter
+    isExternal: true
+    href: MessagePack.Formatters.IMessagePackFormatter-1.html
+  - name: <
+  - uid: System.Int16
+    name: short
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int16
+  - name: '['
+  - name: ']'
+  - name: '>'
+  spec.vb:
+  - uid: MessagePack.Formatters.IMessagePackFormatter`1
+    name: IMessagePackFormatter
+    isExternal: true
+    href: MessagePack.Formatters.IMessagePackFormatter-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Int16
+    name: Short
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int16
+  - name: (
+  - name: )
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: MessagePack.Formatters.IMessagePackFormatter`1
+  commentId: T:MessagePack.Formatters.IMessagePackFormatter`1
+  isExternal: true
+  href: MessagePack.Formatters.IMessagePackFormatter-1.html
+  name: IMessagePackFormatter<T>
+  nameWithType: IMessagePackFormatter<T>
+  fullName: MessagePack.Formatters.IMessagePackFormatter<T>
+  nameWithType.vb: IMessagePackFormatter(Of T)
+  fullName.vb: MessagePack.Formatters.IMessagePackFormatter(Of T)
+  name.vb: IMessagePackFormatter(Of T)
+  spec.csharp:
+  - uid: MessagePack.Formatters.IMessagePackFormatter`1
+    name: IMessagePackFormatter
+    isExternal: true
+    href: MessagePack.Formatters.IMessagePackFormatter-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: MessagePack.Formatters.IMessagePackFormatter`1
+    name: IMessagePackFormatter
+    isExternal: true
+    href: MessagePack.Formatters.IMessagePackFormatter-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: MessagePack.Formatters.Int16ArrayFormatter
+  commentId: T:MessagePack.Formatters.Int16ArrayFormatter
+  parent: MessagePack.Formatters
+  isExternal: true
+  href: MessagePack.Formatters.Int16ArrayFormatter.html
+  name: Int16ArrayFormatter
+  nameWithType: Int16ArrayFormatter
+  fullName: MessagePack.Formatters.Int16ArrayFormatter
+- uid: MessagePack.Formatters.Int16ArrayFormatter.Serialize*
+  commentId: Overload:MessagePack.Formatters.Int16ArrayFormatter.Serialize
+  isExternal: true
+  href: MessagePack.Formatters.Int16ArrayFormatter.html#MessagePack_Formatters_Int16ArrayFormatter_Serialize_MessagePack_MessagePackWriter__System_Int16___MessagePack_MessagePackSerializerOptions_
+  name: Serialize
+  nameWithType: Int16ArrayFormatter.Serialize
+  fullName: MessagePack.Formatters.Int16ArrayFormatter.Serialize
+- uid: MessagePack.Formatters.IMessagePackFormatter{System.Int16[]}.Serialize(MessagePack.MessagePackWriter@,System.Int16[],MessagePack.MessagePackSerializerOptions)
+  commentId: M:MessagePack.Formatters.IMessagePackFormatter{System.Int16[]}.Serialize(MessagePack.MessagePackWriter@,System.Int16[],MessagePack.MessagePackSerializerOptions)
+  parent: MessagePack.Formatters.IMessagePackFormatter{System.Int16[]}
+  definition: MessagePack.Formatters.IMessagePackFormatter`1.Serialize(MessagePack.MessagePackWriter@,`0,MessagePack.MessagePackSerializerOptions)
+  href: MessagePack.Formatters.IMessagePackFormatter-1.html#MessagePack_Formatters_IMessagePackFormatter_1_Serialize_MessagePack_MessagePackWriter___0_MessagePack_MessagePackSerializerOptions_
+  name: Serialize(ref MessagePackWriter, short[], MessagePackSerializerOptions)
+  nameWithType: IMessagePackFormatter<short[]>.Serialize(ref MessagePackWriter, short[], MessagePackSerializerOptions)
+  fullName: MessagePack.Formatters.IMessagePackFormatter<short[]>.Serialize(ref MessagePack.MessagePackWriter, short[], MessagePack.MessagePackSerializerOptions)
+  nameWithType.vb: IMessagePackFormatter(Of Short()).Serialize(MessagePackWriter, Short(), MessagePackSerializerOptions)
+  fullName.vb: MessagePack.Formatters.IMessagePackFormatter(Of Short()).Serialize(MessagePack.MessagePackWriter, Short(), MessagePack.MessagePackSerializerOptions)
+  name.vb: Serialize(MessagePackWriter, Short(), MessagePackSerializerOptions)
+  spec.csharp:
+  - uid: MessagePack.Formatters.IMessagePackFormatter{System.Int16[]}.Serialize(MessagePack.MessagePackWriter@,System.Int16[],MessagePack.MessagePackSerializerOptions)
+    name: Serialize
+    isExternal: true
+    href: MessagePack.Formatters.IMessagePackFormatter-1.html#MessagePack_Formatters_IMessagePackFormatter_1_Serialize_MessagePack_MessagePackWriter___0_MessagePack_MessagePackSerializerOptions_
+  - name: (
+  - name: ref
+  - name: " "
+  - uid: MessagePack.MessagePackWriter
+    name: MessagePackWriter
+    isExternal: true
+    href: MessagePack.MessagePackWriter.html
+  - name: ','
+  - name: " "
+  - uid: System.Int16
+    name: short
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int16
+  - name: '['
+  - name: ']'
+  - name: ','
+  - name: " "
+  - uid: MessagePack.MessagePackSerializerOptions
+    name: MessagePackSerializerOptions
+    isExternal: true
+    href: MessagePack.MessagePackSerializerOptions.html
+  - name: )
+  spec.vb:
+  - uid: MessagePack.Formatters.IMessagePackFormatter{System.Int16[]}.Serialize(MessagePack.MessagePackWriter@,System.Int16[],MessagePack.MessagePackSerializerOptions)
+    name: Serialize
+    isExternal: true
+    href: MessagePack.Formatters.IMessagePackFormatter-1.html#MessagePack_Formatters_IMessagePackFormatter_1_Serialize_MessagePack_MessagePackWriter___0_MessagePack_MessagePackSerializerOptions_
+  - name: (
+  - uid: MessagePack.MessagePackWriter
+    name: MessagePackWriter
+    isExternal: true
+    href: MessagePack.MessagePackWriter.html
+  - name: ','
+  - name: " "
+  - uid: System.Int16
+    name: Short
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int16
+  - name: (
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: MessagePack.MessagePackSerializerOptions
+    name: MessagePackSerializerOptions
+    isExternal: true
+    href: MessagePack.MessagePackSerializerOptions.html
+  - name: )
+- uid: MessagePack.MessagePackWriter
+  commentId: T:MessagePack.MessagePackWriter
+  parent: MessagePack
+  isExternal: true
+  href: MessagePack.MessagePackWriter.html
+  name: MessagePackWriter
+  nameWithType: MessagePackWriter
+  fullName: MessagePack.MessagePackWriter
+- uid: System.Int16[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int16
+  name: short[]
+  nameWithType: short[]
+  fullName: short[]
+  nameWithType.vb: Short()
+  fullName.vb: Short()
+  name.vb: Short()
+  spec.csharp:
+  - uid: System.Int16
+    name: short
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int16
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.Int16
+    name: Short
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int16
+  - name: (
+  - name: )
+- uid: MessagePack.MessagePackSerializerOptions
+  commentId: T:MessagePack.MessagePackSerializerOptions
+  parent: MessagePack
+  isExternal: true
+  href: MessagePack.MessagePackSerializerOptions.html
+  name: MessagePackSerializerOptions
+  nameWithType: MessagePackSerializerOptions
+  fullName: MessagePack.MessagePackSerializerOptions
+- uid: MessagePack.Formatters.IMessagePackFormatter`1.Serialize(MessagePack.MessagePackWriter@,`0,MessagePack.MessagePackSerializerOptions)
+  commentId: M:MessagePack.Formatters.IMessagePackFormatter`1.Serialize(MessagePack.MessagePackWriter@,`0,MessagePack.MessagePackSerializerOptions)
+  isExternal: true
+  href: MessagePack.Formatters.IMessagePackFormatter-1.html#MessagePack_Formatters_IMessagePackFormatter_1_Serialize_MessagePack_MessagePackWriter___0_MessagePack_MessagePackSerializerOptions_
+  name: Serialize(ref MessagePackWriter, T, MessagePackSerializerOptions)
+  nameWithType: IMessagePackFormatter<T>.Serialize(ref MessagePackWriter, T, MessagePackSerializerOptions)
+  fullName: MessagePack.Formatters.IMessagePackFormatter<T>.Serialize(ref MessagePack.MessagePackWriter, T, MessagePack.MessagePackSerializerOptions)
+  nameWithType.vb: IMessagePackFormatter(Of T).Serialize(MessagePackWriter, T, MessagePackSerializerOptions)
+  fullName.vb: MessagePack.Formatters.IMessagePackFormatter(Of T).Serialize(MessagePack.MessagePackWriter, T, MessagePack.MessagePackSerializerOptions)
+  name.vb: Serialize(MessagePackWriter, T, MessagePackSerializerOptions)
+  spec.csharp:
+  - uid: MessagePack.Formatters.IMessagePackFormatter`1.Serialize(MessagePack.MessagePackWriter@,`0,MessagePack.MessagePackSerializerOptions)
+    name: Serialize
+    isExternal: true
+    href: MessagePack.Formatters.IMessagePackFormatter-1.html#MessagePack_Formatters_IMessagePackFormatter_1_Serialize_MessagePack_MessagePackWriter___0_MessagePack_MessagePackSerializerOptions_
+  - name: (
+  - name: ref
+  - name: " "
+  - uid: MessagePack.MessagePackWriter
+    name: MessagePackWriter
+    isExternal: true
+    href: MessagePack.MessagePackWriter.html
+  - name: ','
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: MessagePack.MessagePackSerializerOptions
+    name: MessagePackSerializerOptions
+    isExternal: true
+    href: MessagePack.MessagePackSerializerOptions.html
+  - name: )
+  spec.vb:
+  - uid: MessagePack.Formatters.IMessagePackFormatter`1.Serialize(MessagePack.MessagePackWriter@,`0,MessagePack.MessagePackSerializerOptions)
+    name: Serialize
+    isExternal: true
+    href: MessagePack.Formatters.IMessagePackFormatter-1.html#MessagePack_Formatters_IMessagePackFormatter_1_Serialize_MessagePack_MessagePackWriter___0_MessagePack_MessagePackSerializerOptions_
+  - name: (
+  - uid: MessagePack.MessagePackWriter
+    name: MessagePackWriter
+    isExternal: true
+    href: MessagePack.MessagePackWriter.html
+  - name: ','
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: MessagePack.MessagePackSerializerOptions
+    name: MessagePackSerializerOptions
+    isExternal: true
+    href: MessagePack.MessagePackSerializerOptions.html
+  - name: )
+- uid: MessagePack
+  commentId: N:MessagePack
+  isExternal: true
+  href: MessagePack.html
+  name: MessagePack
+  nameWithType: MessagePack
+  fullName: MessagePack
+- uid: MessagePack.Formatters.Int16ArrayFormatter.Deserialize*
+  commentId: Overload:MessagePack.Formatters.Int16ArrayFormatter.Deserialize
+  isExternal: true
+  href: MessagePack.Formatters.Int16ArrayFormatter.html#MessagePack_Formatters_Int16ArrayFormatter_Deserialize_MessagePack_MessagePackReader__MessagePack_MessagePackSerializerOptions_
+  name: Deserialize
+  nameWithType: Int16ArrayFormatter.Deserialize
+  fullName: MessagePack.Formatters.Int16ArrayFormatter.Deserialize
+- uid: MessagePack.Formatters.IMessagePackFormatter{System.Int16[]}.Deserialize(MessagePack.MessagePackReader@,MessagePack.MessagePackSerializerOptions)
+  commentId: M:MessagePack.Formatters.IMessagePackFormatter{System.Int16[]}.Deserialize(MessagePack.MessagePackReader@,MessagePack.MessagePackSerializerOptions)
+  parent: MessagePack.Formatters.IMessagePackFormatter{System.Int16[]}
+  definition: MessagePack.Formatters.IMessagePackFormatter`1.Deserialize(MessagePack.MessagePackReader@,MessagePack.MessagePackSerializerOptions)
+  href: MessagePack.Formatters.IMessagePackFormatter-1.html#MessagePack_Formatters_IMessagePackFormatter_1_Deserialize_MessagePack_MessagePackReader__MessagePack_MessagePackSerializerOptions_
+  name: Deserialize(ref MessagePackReader, MessagePackSerializerOptions)
+  nameWithType: IMessagePackFormatter<short[]>.Deserialize(ref MessagePackReader, MessagePackSerializerOptions)
+  fullName: MessagePack.Formatters.IMessagePackFormatter<short[]>.Deserialize(ref MessagePack.MessagePackReader, MessagePack.MessagePackSerializerOptions)
+  nameWithType.vb: IMessagePackFormatter(Of Short()).Deserialize(MessagePackReader, MessagePackSerializerOptions)
+  fullName.vb: MessagePack.Formatters.IMessagePackFormatter(Of Short()).Deserialize(MessagePack.MessagePackReader, MessagePack.MessagePackSerializerOptions)
+  name.vb: Deserialize(MessagePackReader, MessagePackSerializerOptions)
+  spec.csharp:
+  - uid: MessagePack.Formatters.IMessagePackFormatter{System.Int16[]}.Deserialize(MessagePack.MessagePackReader@,MessagePack.MessagePackSerializerOptions)
+    name: Deserialize
+    isExternal: true
+    href: MessagePack.Formatters.IMessagePackFormatter-1.html#MessagePack_Formatters_IMessagePackFormatter_1_Deserialize_MessagePack_MessagePackReader__MessagePack_MessagePackSerializerOptions_
+  - name: (
+  - name: ref
+  - name: " "
+  - uid: MessagePack.MessagePackReader
+    name: MessagePackReader
+    isExternal: true
+    href: MessagePack.MessagePackReader.html
+  - name: ','
+  - name: " "
+  - uid: MessagePack.MessagePackSerializerOptions
+    name: MessagePackSerializerOptions
+    isExternal: true
+    href: MessagePack.MessagePackSerializerOptions.html
+  - name: )
+  spec.vb:
+  - uid: MessagePack.Formatters.IMessagePackFormatter{System.Int16[]}.Deserialize(MessagePack.MessagePackReader@,MessagePack.MessagePackSerializerOptions)
+    name: Deserialize
+    isExternal: true
+    href: MessagePack.Formatters.IMessagePackFormatter-1.html#MessagePack_Formatters_IMessagePackFormatter_1_Deserialize_MessagePack_MessagePackReader__MessagePack_MessagePackSerializerOptions_
+  - name: (
+  - uid: MessagePack.MessagePackReader
+    name: MessagePackReader
+    isExternal: true
+    href: MessagePack.MessagePackReader.html
+  - name: ','
+  - name: " "
+  - uid: MessagePack.MessagePackSerializerOptions
+    name: MessagePackSerializerOptions
+    isExternal: true
+    href: MessagePack.MessagePackSerializerOptions.html
+  - name: )
+- uid: MessagePack.MessagePackReader
+  commentId: T:MessagePack.MessagePackReader
+  parent: MessagePack
+  isExternal: true
+  href: MessagePack.MessagePackReader.html
+  name: MessagePackReader
+  nameWithType: MessagePackReader
+  fullName: MessagePack.MessagePackReader
+- uid: MessagePack.Formatters.IMessagePackFormatter`1.Deserialize(MessagePack.MessagePackReader@,MessagePack.MessagePackSerializerOptions)
+  commentId: M:MessagePack.Formatters.IMessagePackFormatter`1.Deserialize(MessagePack.MessagePackReader@,MessagePack.MessagePackSerializerOptions)
+  isExternal: true
+  href: MessagePack.Formatters.IMessagePackFormatter-1.html#MessagePack_Formatters_IMessagePackFormatter_1_Deserialize_MessagePack_MessagePackReader__MessagePack_MessagePackSerializerOptions_
+  name: Deserialize(ref MessagePackReader, MessagePackSerializerOptions)
+  nameWithType: IMessagePackFormatter<T>.Deserialize(ref MessagePackReader, MessagePackSerializerOptions)
+  fullName: MessagePack.Formatters.IMessagePackFormatter<T>.Deserialize(ref MessagePack.MessagePackReader, MessagePack.MessagePackSerializerOptions)
+  nameWithType.vb: IMessagePackFormatter(Of T).Deserialize(MessagePackReader, MessagePackSerializerOptions)
+  fullName.vb: MessagePack.Formatters.IMessagePackFormatter(Of T).Deserialize(MessagePack.MessagePackReader, MessagePack.MessagePackSerializerOptions)
+  name.vb: Deserialize(MessagePackReader, MessagePackSerializerOptions)
+  spec.csharp:
+  - uid: MessagePack.Formatters.IMessagePackFormatter`1.Deserialize(MessagePack.MessagePackReader@,MessagePack.MessagePackSerializerOptions)
+    name: Deserialize
+    isExternal: true
+    href: MessagePack.Formatters.IMessagePackFormatter-1.html#MessagePack_Formatters_IMessagePackFormatter_1_Deserialize_MessagePack_MessagePackReader__MessagePack_MessagePackSerializerOptions_
+  - name: (
+  - name: ref
+  - name: " "
+  - uid: MessagePack.MessagePackReader
+    name: MessagePackReader
+    isExternal: true
+    href: MessagePack.MessagePackReader.html
+  - name: ','
+  - name: " "
+  - uid: MessagePack.MessagePackSerializerOptions
+    name: MessagePackSerializerOptions
+    isExternal: true
+    href: MessagePack.MessagePackSerializerOptions.html
+  - name: )
+  spec.vb:
+  - uid: MessagePack.Formatters.IMessagePackFormatter`1.Deserialize(MessagePack.MessagePackReader@,MessagePack.MessagePackSerializerOptions)
+    name: Deserialize
+    isExternal: true
+    href: MessagePack.Formatters.IMessagePackFormatter-1.html#MessagePack_Formatters_IMessagePackFormatter_1_Deserialize_MessagePack_MessagePackReader__MessagePack_MessagePackSerializerOptions_
+  - name: (
+  - uid: MessagePack.MessagePackReader
+    name: MessagePackReader
+    isExternal: true
+    href: MessagePack.MessagePackReader.html
+  - name: ','
+  - name: " "
+  - uid: MessagePack.MessagePackSerializerOptions
+    name: MessagePackSerializerOptions
+    isExternal: true
+    href: MessagePack.MessagePackSerializerOptions.html
+  - name: )

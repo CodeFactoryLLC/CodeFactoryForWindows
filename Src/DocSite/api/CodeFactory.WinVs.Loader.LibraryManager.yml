@@ -1,0 +1,618 @@
+### YamlMime:ManagedReference
+items:
+- uid: CodeFactory.WinVs.Loader.LibraryManager
+  commentId: T:CodeFactory.WinVs.Loader.LibraryManager
+  id: LibraryManager
+  parent: CodeFactory.WinVs.Loader
+  children:
+  - CodeFactory.WinVs.Loader.LibraryManager.GetExternalDependentLibraries(System.Reflection.Assembly,System.String)
+  - CodeFactory.WinVs.Loader.LibraryManager.GetLibraryActions(System.Reflection.Assembly)
+  - CodeFactory.WinVs.Loader.LibraryManager.GetLibraryInformation(System.String)
+  langs:
+  - csharp
+  - vb
+  name: LibraryManager
+  nameWithType: LibraryManager
+  fullName: CodeFactory.WinVs.Loader.LibraryManager
+  type: Class
+  source:
+    href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/19e816ffdf1ba504be6987736bbac42e2d241405/Src/CodeFactoryForWindows/CodeFactory.WinVs/Loader/LibraryManager.cs
+  assemblies:
+  - CodeFactory.WinVs
+  namespace: CodeFactory.WinVs.Loader
+  syntax:
+    content: public static class LibraryManager
+    content.vb: Public Module LibraryManager
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+- uid: CodeFactory.WinVs.Loader.LibraryManager.GetLibraryInformation(System.String)
+  commentId: M:CodeFactory.WinVs.Loader.LibraryManager.GetLibraryInformation(System.String)
+  id: GetLibraryInformation(System.String)
+  parent: CodeFactory.WinVs.Loader.LibraryManager
+  langs:
+  - csharp
+  - vb
+  name: GetLibraryInformation(string)
+  nameWithType: LibraryManager.GetLibraryInformation(string)
+  fullName: CodeFactory.WinVs.Loader.LibraryManager.GetLibraryInformation(string)
+  type: Method
+  source:
+    href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/19e816ffdf1ba504be6987736bbac42e2d241405/Src/CodeFactoryForWindows/CodeFactory.WinVs/Loader/LibraryManager.cs
+  assemblies:
+  - CodeFactory.WinVs
+  namespace: CodeFactory.WinVs.Loader
+  summary: Loads the information about an automation library.
+  example: []
+  syntax:
+    content: public static VsAutomationLibrary GetLibraryInformation(string filePath)
+    parameters:
+    - id: filePath
+      type: System.String
+      description: The fully qualified path to the automation library file to load information from.
+    return:
+      type: CodeFactory.WinVs.Loader.VsAutomationLibrary
+      description: Fully populated automation library information, or null if the library could not be loaded.
+    content.vb: Public Shared Function GetLibraryInformation(filePath As String) As VsAutomationLibrary
+  overload: CodeFactory.WinVs.Loader.LibraryManager.GetLibraryInformation*
+  nameWithType.vb: LibraryManager.GetLibraryInformation(String)
+  fullName.vb: CodeFactory.WinVs.Loader.LibraryManager.GetLibraryInformation(String)
+  name.vb: GetLibraryInformation(String)
+- uid: CodeFactory.WinVs.Loader.LibraryManager.GetLibraryActions(System.Reflection.Assembly)
+  commentId: M:CodeFactory.WinVs.Loader.LibraryManager.GetLibraryActions(System.Reflection.Assembly)
+  id: GetLibraryActions(System.Reflection.Assembly)
+  isExtensionMethod: true
+  parent: CodeFactory.WinVs.Loader.LibraryManager
+  langs:
+  - csharp
+  - vb
+  name: GetLibraryActions(Assembly)
+  nameWithType: LibraryManager.GetLibraryActions(Assembly)
+  fullName: CodeFactory.WinVs.Loader.LibraryManager.GetLibraryActions(System.Reflection.Assembly)
+  type: Method
+  source:
+    href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/19e816ffdf1ba504be6987736bbac42e2d241405/Src/CodeFactoryForWindows/CodeFactory.WinVs/Loader/LibraryManager.cs
+  assemblies:
+  - CodeFactory.WinVs
+  namespace: CodeFactory.WinVs.Loader
+  summary: Extension method that loads all library commands from the current assembly.
+  example: []
+  syntax:
+    content: public static List<VsActionConfiguration> GetLibraryActions(this Assembly source)
+    parameters:
+    - id: source
+      type: System.Reflection.Assembly
+      description: Source assembly that holds the commands to be loaded.
+    return:
+      type: System.Collections.Generic.List{CodeFactory.WinVs.Loader.VsActionConfiguration}
+      description: List of the library command information or null if the assembly information can't be loaded.
+    content.vb: Public Shared Function GetLibraryActions(source As Assembly) As List(Of VsActionConfiguration)
+  overload: CodeFactory.WinVs.Loader.LibraryManager.GetLibraryActions*
+- uid: CodeFactory.WinVs.Loader.LibraryManager.GetExternalDependentLibraries(System.Reflection.Assembly,System.String)
+  commentId: M:CodeFactory.WinVs.Loader.LibraryManager.GetExternalDependentLibraries(System.Reflection.Assembly,System.String)
+  id: GetExternalDependentLibraries(System.Reflection.Assembly,System.String)
+  isExtensionMethod: true
+  parent: CodeFactory.WinVs.Loader.LibraryManager
+  langs:
+  - csharp
+  - vb
+  name: GetExternalDependentLibraries(Assembly, string)
+  nameWithType: LibraryManager.GetExternalDependentLibraries(Assembly, string)
+  fullName: CodeFactory.WinVs.Loader.LibraryManager.GetExternalDependentLibraries(System.Reflection.Assembly, string)
+  type: Method
+  source:
+    href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/19e816ffdf1ba504be6987736bbac42e2d241405/Src/CodeFactoryForWindows/CodeFactory.WinVs/Loader/LibraryManager.cs
+  assemblies:
+  - CodeFactory.WinVs
+  namespace: CodeFactory.WinVs.Loader
+  summary: Static extension method information configuration information about external assemblies used by the source assembly.
+  example: []
+  syntax:
+    content: public static List<VsLibraryConfiguration> GetExternalDependentLibraries(this Assembly source, string assemblyDirectory)
+    parameters:
+    - id: source
+      type: System.Reflection.Assembly
+      description: Source assembly to get external dependencies from.
+    - id: assemblyDirectory
+      type: System.String
+      description: The directory in which the external dependent libraries are stored at.
+    return:
+      type: System.Collections.Generic.List{CodeFactory.WinVs.Loader.VsLibraryConfiguration}
+      description: List of dependent libraries or null if not dependent libraries were found.
+    content.vb: Public Shared Function GetExternalDependentLibraries(source As Assembly, assemblyDirectory As String) As List(Of VsLibraryConfiguration)
+  overload: CodeFactory.WinVs.Loader.LibraryManager.GetExternalDependentLibraries*
+  nameWithType.vb: LibraryManager.GetExternalDependentLibraries(Assembly, String)
+  fullName.vb: CodeFactory.WinVs.Loader.LibraryManager.GetExternalDependentLibraries(System.Reflection.Assembly, String)
+  name.vb: GetExternalDependentLibraries(Assembly, String)
+references:
+- uid: CodeFactory.WinVs.Loader
+  commentId: N:CodeFactory.WinVs.Loader
+  isExternal: true
+  href: CodeFactory.html
+  name: CodeFactory.WinVs.Loader
+  nameWithType: CodeFactory.WinVs.Loader
+  fullName: CodeFactory.WinVs.Loader
+  spec.csharp:
+  - uid: CodeFactory
+    name: CodeFactory
+    isExternal: true
+    href: CodeFactory.html
+  - name: .
+  - uid: CodeFactory.WinVs
+    name: WinVs
+    isExternal: true
+    href: CodeFactory.WinVs.html
+  - name: .
+  - uid: CodeFactory.WinVs.Loader
+    name: Loader
+    isExternal: true
+    href: CodeFactory.WinVs.Loader.html
+  spec.vb:
+  - uid: CodeFactory
+    name: CodeFactory
+    isExternal: true
+    href: CodeFactory.html
+  - name: .
+  - uid: CodeFactory.WinVs
+    name: WinVs
+    isExternal: true
+    href: CodeFactory.WinVs.html
+  - name: .
+  - uid: CodeFactory.WinVs.Loader
+    name: Loader
+    isExternal: true
+    href: CodeFactory.WinVs.Loader.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: CodeFactory.WinVs.Loader.LibraryManager.GetLibraryInformation*
+  commentId: Overload:CodeFactory.WinVs.Loader.LibraryManager.GetLibraryInformation
+  isExternal: true
+  href: CodeFactory.WinVs.Loader.LibraryManager.html#CodeFactory_WinVs_Loader_LibraryManager_GetLibraryInformation_System_String_
+  name: GetLibraryInformation
+  nameWithType: LibraryManager.GetLibraryInformation
+  fullName: CodeFactory.WinVs.Loader.LibraryManager.GetLibraryInformation
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: CodeFactory.WinVs.Loader.VsAutomationLibrary
+  commentId: T:CodeFactory.WinVs.Loader.VsAutomationLibrary
+  parent: CodeFactory.WinVs.Loader
+  isExternal: true
+  href: CodeFactory.WinVs.Loader.VsAutomationLibrary.html
+  name: VsAutomationLibrary
+  nameWithType: VsAutomationLibrary
+  fullName: CodeFactory.WinVs.Loader.VsAutomationLibrary
+- uid: CodeFactory.WinVs.Loader.LibraryManager.GetLibraryActions*
+  commentId: Overload:CodeFactory.WinVs.Loader.LibraryManager.GetLibraryActions
+  isExternal: true
+  href: CodeFactory.WinVs.Loader.LibraryManager.html#CodeFactory_WinVs_Loader_LibraryManager_GetLibraryActions_System_Reflection_Assembly_
+  name: GetLibraryActions
+  nameWithType: LibraryManager.GetLibraryActions
+  fullName: CodeFactory.WinVs.Loader.LibraryManager.GetLibraryActions
+- uid: System.Reflection.Assembly
+  commentId: T:System.Reflection.Assembly
+  parent: System.Reflection
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.reflection.assembly
+  name: Assembly
+  nameWithType: Assembly
+  fullName: System.Reflection.Assembly
+- uid: System.Collections.Generic.List{CodeFactory.WinVs.Loader.VsActionConfiguration}
+  commentId: T:System.Collections.Generic.List{CodeFactory.WinVs.Loader.VsActionConfiguration}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<VsActionConfiguration>
+  nameWithType: List<VsActionConfiguration>
+  fullName: System.Collections.Generic.List<CodeFactory.WinVs.Loader.VsActionConfiguration>
+  nameWithType.vb: List(Of VsActionConfiguration)
+  fullName.vb: System.Collections.Generic.List(Of CodeFactory.WinVs.Loader.VsActionConfiguration)
+  name.vb: List(Of VsActionConfiguration)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: CodeFactory.WinVs.Loader.VsActionConfiguration
+    name: VsActionConfiguration
+    isExternal: true
+    href: CodeFactory.WinVs.Loader.VsActionConfiguration.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: CodeFactory.WinVs.Loader.VsActionConfiguration
+    name: VsActionConfiguration
+    isExternal: true
+    href: CodeFactory.WinVs.Loader.VsActionConfiguration.html
+  - name: )
+- uid: System.Reflection
+  commentId: N:System.Reflection
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Reflection
+  nameWithType: System.Reflection
+  fullName: System.Reflection
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Reflection
+    name: Reflection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Reflection
+    name: Reflection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: CodeFactory.WinVs.Loader.LibraryManager.GetExternalDependentLibraries*
+  commentId: Overload:CodeFactory.WinVs.Loader.LibraryManager.GetExternalDependentLibraries
+  isExternal: true
+  href: CodeFactory.WinVs.Loader.LibraryManager.html#CodeFactory_WinVs_Loader_LibraryManager_GetExternalDependentLibraries_System_Reflection_Assembly_System_String_
+  name: GetExternalDependentLibraries
+  nameWithType: LibraryManager.GetExternalDependentLibraries
+  fullName: CodeFactory.WinVs.Loader.LibraryManager.GetExternalDependentLibraries
+- uid: System.Collections.Generic.List{CodeFactory.WinVs.Loader.VsLibraryConfiguration}
+  commentId: T:System.Collections.Generic.List{CodeFactory.WinVs.Loader.VsLibraryConfiguration}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<VsLibraryConfiguration>
+  nameWithType: List<VsLibraryConfiguration>
+  fullName: System.Collections.Generic.List<CodeFactory.WinVs.Loader.VsLibraryConfiguration>
+  nameWithType.vb: List(Of VsLibraryConfiguration)
+  fullName.vb: System.Collections.Generic.List(Of CodeFactory.WinVs.Loader.VsLibraryConfiguration)
+  name.vb: List(Of VsLibraryConfiguration)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: CodeFactory.WinVs.Loader.VsLibraryConfiguration
+    name: VsLibraryConfiguration
+    isExternal: true
+    href: CodeFactory.WinVs.Loader.VsLibraryConfiguration.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: CodeFactory.WinVs.Loader.VsLibraryConfiguration
+    name: VsLibraryConfiguration
+    isExternal: true
+    href: CodeFactory.WinVs.Loader.VsLibraryConfiguration.html
+  - name: )

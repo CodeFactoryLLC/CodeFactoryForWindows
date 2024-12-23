@@ -1,0 +1,1022 @@
+### YamlMime:ManagedReference
+items:
+- uid: Serilog.Configuration.LoggerEnrichmentConfiguration
+  commentId: T:Serilog.Configuration.LoggerEnrichmentConfiguration
+  id: LoggerEnrichmentConfiguration
+  parent: Serilog.Configuration
+  children:
+  - Serilog.Configuration.LoggerEnrichmentConfiguration.AtLevel(Serilog.Core.LoggingLevelSwitch,System.Action{Serilog.Configuration.LoggerEnrichmentConfiguration})
+  - Serilog.Configuration.LoggerEnrichmentConfiguration.AtLevel(Serilog.Events.LogEventLevel,System.Action{Serilog.Configuration.LoggerEnrichmentConfiguration})
+  - Serilog.Configuration.LoggerEnrichmentConfiguration.FromLogContext
+  - Serilog.Configuration.LoggerEnrichmentConfiguration.When(System.Func{Serilog.Events.LogEvent,System.Boolean},System.Action{Serilog.Configuration.LoggerEnrichmentConfiguration})
+  - Serilog.Configuration.LoggerEnrichmentConfiguration.With(Serilog.Core.ILogEventEnricher[])
+  - Serilog.Configuration.LoggerEnrichmentConfiguration.WithProperty(System.String,System.Object,System.Boolean)
+  - Serilog.Configuration.LoggerEnrichmentConfiguration.With``1
+  - Serilog.Configuration.LoggerEnrichmentConfiguration.Wrap(Serilog.Configuration.LoggerEnrichmentConfiguration,System.Func{Serilog.Core.ILogEventEnricher,Serilog.Core.ILogEventEnricher},System.Action{Serilog.Configuration.LoggerEnrichmentConfiguration})
+  langs:
+  - csharp
+  - vb
+  name: LoggerEnrichmentConfiguration
+  nameWithType: LoggerEnrichmentConfiguration
+  fullName: Serilog.Configuration.LoggerEnrichmentConfiguration
+  type: Class
+  assemblies:
+  - Serilog
+  namespace: Serilog.Configuration
+  summary: Controls enrichment configuration.
+  example: []
+  syntax:
+    content: public class LoggerEnrichmentConfiguration
+    content.vb: Public Class LoggerEnrichmentConfiguration
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: Serilog.Configuration.LoggerEnrichmentConfiguration.With(Serilog.Core.ILogEventEnricher[])
+  commentId: M:Serilog.Configuration.LoggerEnrichmentConfiguration.With(Serilog.Core.ILogEventEnricher[])
+  id: With(Serilog.Core.ILogEventEnricher[])
+  parent: Serilog.Configuration.LoggerEnrichmentConfiguration
+  langs:
+  - csharp
+  - vb
+  name: With(params ILogEventEnricher[])
+  nameWithType: LoggerEnrichmentConfiguration.With(params ILogEventEnricher[])
+  fullName: Serilog.Configuration.LoggerEnrichmentConfiguration.With(params Serilog.Core.ILogEventEnricher[])
+  type: Method
+  assemblies:
+  - Serilog
+  namespace: Serilog.Configuration
+  summary: >-
+    Specifies one or more enrichers that may add properties dynamically to
+
+    log events.
+  example: []
+  syntax:
+    content: public LoggerConfiguration With(params ILogEventEnricher[] enrichers)
+    parameters:
+    - id: enrichers
+      type: Serilog.Core.ILogEventEnricher[]
+      description: >-
+        Enrichers to apply to all events passing through
+                    the logger.
+    return:
+      type: Serilog.LoggerConfiguration
+      description: Configuration object allowing method chaining.
+    content.vb: Public Function [With](ParamArray enrichers As ILogEventEnricher()) As LoggerConfiguration
+  overload: Serilog.Configuration.LoggerEnrichmentConfiguration.With*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: When <code class="paramref">enrichers</code> is <pre><code class="lang-csharp">null</code></pre>
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: When any element of <code class="paramref">enrichers</code> is <pre><code class="lang-csharp">null</code></pre>
+  nameWithType.vb: LoggerEnrichmentConfiguration.With(ParamArray ILogEventEnricher())
+  fullName.vb: Serilog.Configuration.LoggerEnrichmentConfiguration.With(ParamArray Serilog.Core.ILogEventEnricher())
+  name.vb: With(ParamArray ILogEventEnricher())
+- uid: Serilog.Configuration.LoggerEnrichmentConfiguration.With``1
+  commentId: M:Serilog.Configuration.LoggerEnrichmentConfiguration.With``1
+  id: With``1
+  parent: Serilog.Configuration.LoggerEnrichmentConfiguration
+  langs:
+  - csharp
+  - vb
+  name: With<TEnricher>()
+  nameWithType: LoggerEnrichmentConfiguration.With<TEnricher>()
+  fullName: Serilog.Configuration.LoggerEnrichmentConfiguration.With<TEnricher>()
+  type: Method
+  assemblies:
+  - Serilog
+  namespace: Serilog.Configuration
+  summary: >-
+    Specifies an enricher that may add properties dynamically to
+
+    log events.
+  example: []
+  syntax:
+    content: 'public LoggerConfiguration With<TEnricher>() where TEnricher : ILogEventEnricher, new()'
+    typeParameters:
+    - id: TEnricher
+      description: >-
+        Enricher type to apply to all events passing through
+                    the logger.
+    return:
+      type: Serilog.LoggerConfiguration
+      description: Configuration object allowing method chaining.
+    content.vb: Public Function [With](Of TEnricher As {ILogEventEnricher, New})() As LoggerConfiguration
+  overload: Serilog.Configuration.LoggerEnrichmentConfiguration.With*
+  nameWithType.vb: LoggerEnrichmentConfiguration.With(Of TEnricher)()
+  fullName.vb: Serilog.Configuration.LoggerEnrichmentConfiguration.With(Of TEnricher)()
+  name.vb: With(Of TEnricher)()
+- uid: Serilog.Configuration.LoggerEnrichmentConfiguration.WithProperty(System.String,System.Object,System.Boolean)
+  commentId: M:Serilog.Configuration.LoggerEnrichmentConfiguration.WithProperty(System.String,System.Object,System.Boolean)
+  id: WithProperty(System.String,System.Object,System.Boolean)
+  parent: Serilog.Configuration.LoggerEnrichmentConfiguration
+  langs:
+  - csharp
+  - vb
+  name: WithProperty(string, object, bool)
+  nameWithType: LoggerEnrichmentConfiguration.WithProperty(string, object, bool)
+  fullName: Serilog.Configuration.LoggerEnrichmentConfiguration.WithProperty(string, object, bool)
+  type: Method
+  assemblies:
+  - Serilog
+  namespace: Serilog.Configuration
+  summary: Include the specified property value in all events logged to the logger.
+  example: []
+  syntax:
+    content: public LoggerConfiguration WithProperty(string name, object value, bool destructureObjects = false)
+    parameters:
+    - id: name
+      type: System.String
+      description: The name of the property to add.
+    - id: value
+      type: System.Object
+      description: The property value to add.
+    - id: destructureObjects
+      type: System.Boolean
+      description: If true, objects of unknown type will be logged as structures; otherwise they will be converted using <xref href="System.Object.ToString" data-throw-if-not-resolved="false"></xref>.
+    return:
+      type: Serilog.LoggerConfiguration
+      description: Configuration object allowing method chaining.
+    content.vb: Public Function WithProperty(name As String, value As Object, destructureObjects As Boolean = False) As LoggerConfiguration
+  overload: Serilog.Configuration.LoggerEnrichmentConfiguration.WithProperty*
+  nameWithType.vb: LoggerEnrichmentConfiguration.WithProperty(String, Object, Boolean)
+  fullName.vb: Serilog.Configuration.LoggerEnrichmentConfiguration.WithProperty(String, Object, Boolean)
+  name.vb: WithProperty(String, Object, Boolean)
+- uid: Serilog.Configuration.LoggerEnrichmentConfiguration.FromLogContext
+  commentId: M:Serilog.Configuration.LoggerEnrichmentConfiguration.FromLogContext
+  id: FromLogContext
+  parent: Serilog.Configuration.LoggerEnrichmentConfiguration
+  langs:
+  - csharp
+  - vb
+  name: FromLogContext()
+  nameWithType: LoggerEnrichmentConfiguration.FromLogContext()
+  fullName: Serilog.Configuration.LoggerEnrichmentConfiguration.FromLogContext()
+  type: Method
+  assemblies:
+  - Serilog
+  namespace: Serilog.Configuration
+  summary: Enrich log events with properties from <xref href="Serilog.Context.LogContext" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public LoggerConfiguration FromLogContext()
+    return:
+      type: Serilog.LoggerConfiguration
+      description: Configuration object allowing method chaining.
+    content.vb: Public Function FromLogContext() As LoggerConfiguration
+  overload: Serilog.Configuration.LoggerEnrichmentConfiguration.FromLogContext*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: ''
+- uid: Serilog.Configuration.LoggerEnrichmentConfiguration.When(System.Func{Serilog.Events.LogEvent,System.Boolean},System.Action{Serilog.Configuration.LoggerEnrichmentConfiguration})
+  commentId: M:Serilog.Configuration.LoggerEnrichmentConfiguration.When(System.Func{Serilog.Events.LogEvent,System.Boolean},System.Action{Serilog.Configuration.LoggerEnrichmentConfiguration})
+  id: When(System.Func{Serilog.Events.LogEvent,System.Boolean},System.Action{Serilog.Configuration.LoggerEnrichmentConfiguration})
+  parent: Serilog.Configuration.LoggerEnrichmentConfiguration
+  langs:
+  - csharp
+  - vb
+  name: When(Func<LogEvent, bool>, Action<LoggerEnrichmentConfiguration>)
+  nameWithType: LoggerEnrichmentConfiguration.When(Func<LogEvent, bool>, Action<LoggerEnrichmentConfiguration>)
+  fullName: Serilog.Configuration.LoggerEnrichmentConfiguration.When(System.Func<Serilog.Events.LogEvent, bool>, System.Action<Serilog.Configuration.LoggerEnrichmentConfiguration>)
+  type: Method
+  assemblies:
+  - Serilog
+  namespace: Serilog.Configuration
+  summary: Apply an enricher only when <code class="paramref">condition</code> evaluates to <code>true</code>.
+  example: []
+  syntax:
+    content: public LoggerConfiguration When(Func<LogEvent, bool> condition, Action<LoggerEnrichmentConfiguration> configureEnricher)
+    parameters:
+    - id: condition
+      type: System.Func{Serilog.Events.LogEvent,System.Boolean}
+      description: >-
+        A predicate that evaluates to <code>true</code> when the supplied <xref href="Serilog.Events.LogEvent" data-throw-if-not-resolved="false"></xref>
+                    should be enriched.
+    - id: configureEnricher
+      type: System.Action{Serilog.Configuration.LoggerEnrichmentConfiguration}
+      description: An action that configures the wrapped enricher.
+    return:
+      type: Serilog.LoggerConfiguration
+      description: Configuration object allowing method chaining.
+    content.vb: Public Function [When](condition As Func(Of LogEvent, Boolean), configureEnricher As Action(Of LoggerEnrichmentConfiguration)) As LoggerConfiguration
+  overload: Serilog.Configuration.LoggerEnrichmentConfiguration.When*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: When <code class="paramref">condition</code> is <pre><code class="lang-csharp">null</code></pre>
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: When <code class="paramref">configureEnricher</code> is <pre><code class="lang-csharp">null</code></pre>
+  nameWithType.vb: LoggerEnrichmentConfiguration.When(Func(Of LogEvent, Boolean), Action(Of LoggerEnrichmentConfiguration))
+  fullName.vb: Serilog.Configuration.LoggerEnrichmentConfiguration.When(System.Func(Of Serilog.Events.LogEvent, Boolean), System.Action(Of Serilog.Configuration.LoggerEnrichmentConfiguration))
+  name.vb: When(Func(Of LogEvent, Boolean), Action(Of LoggerEnrichmentConfiguration))
+- uid: Serilog.Configuration.LoggerEnrichmentConfiguration.AtLevel(Serilog.Events.LogEventLevel,System.Action{Serilog.Configuration.LoggerEnrichmentConfiguration})
+  commentId: M:Serilog.Configuration.LoggerEnrichmentConfiguration.AtLevel(Serilog.Events.LogEventLevel,System.Action{Serilog.Configuration.LoggerEnrichmentConfiguration})
+  id: AtLevel(Serilog.Events.LogEventLevel,System.Action{Serilog.Configuration.LoggerEnrichmentConfiguration})
+  parent: Serilog.Configuration.LoggerEnrichmentConfiguration
+  langs:
+  - csharp
+  - vb
+  name: AtLevel(LogEventLevel, Action<LoggerEnrichmentConfiguration>)
+  nameWithType: LoggerEnrichmentConfiguration.AtLevel(LogEventLevel, Action<LoggerEnrichmentConfiguration>)
+  fullName: Serilog.Configuration.LoggerEnrichmentConfiguration.AtLevel(Serilog.Events.LogEventLevel, System.Action<Serilog.Configuration.LoggerEnrichmentConfiguration>)
+  type: Method
+  assemblies:
+  - Serilog
+  namespace: Serilog.Configuration
+  summary: Apply an enricher only to events with a <xref href="Serilog.Events.LogEventLevel" data-throw-if-not-resolved="false"></xref> greater than or equal to <code class="paramref">enrichFromLevel</code>.
+  remarks: >-
+    This method permits additional information to be attached to e.g. warnings and errors, that might be too expensive
+                to collect or store at lower levels.
+  example: []
+  syntax:
+    content: public LoggerConfiguration AtLevel(LogEventLevel enrichFromLevel, Action<LoggerEnrichmentConfiguration> configureEnricher)
+    parameters:
+    - id: enrichFromLevel
+      type: Serilog.Events.LogEventLevel
+      description: The level from which the enricher will be applied.
+    - id: configureEnricher
+      type: System.Action{Serilog.Configuration.LoggerEnrichmentConfiguration}
+      description: An action that configures the wrapped enricher.
+    return:
+      type: Serilog.LoggerConfiguration
+      description: Configuration object allowing method chaining.
+    content.vb: Public Function AtLevel(enrichFromLevel As LogEventLevel, configureEnricher As Action(Of LoggerEnrichmentConfiguration)) As LoggerConfiguration
+  overload: Serilog.Configuration.LoggerEnrichmentConfiguration.AtLevel*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: When <code class="paramref">configureEnricher</code> is <pre><code class="lang-csharp">null</code></pre>
+  nameWithType.vb: LoggerEnrichmentConfiguration.AtLevel(LogEventLevel, Action(Of LoggerEnrichmentConfiguration))
+  fullName.vb: Serilog.Configuration.LoggerEnrichmentConfiguration.AtLevel(Serilog.Events.LogEventLevel, System.Action(Of Serilog.Configuration.LoggerEnrichmentConfiguration))
+  name.vb: AtLevel(LogEventLevel, Action(Of LoggerEnrichmentConfiguration))
+- uid: Serilog.Configuration.LoggerEnrichmentConfiguration.AtLevel(Serilog.Core.LoggingLevelSwitch,System.Action{Serilog.Configuration.LoggerEnrichmentConfiguration})
+  commentId: M:Serilog.Configuration.LoggerEnrichmentConfiguration.AtLevel(Serilog.Core.LoggingLevelSwitch,System.Action{Serilog.Configuration.LoggerEnrichmentConfiguration})
+  id: AtLevel(Serilog.Core.LoggingLevelSwitch,System.Action{Serilog.Configuration.LoggerEnrichmentConfiguration})
+  parent: Serilog.Configuration.LoggerEnrichmentConfiguration
+  langs:
+  - csharp
+  - vb
+  name: AtLevel(LoggingLevelSwitch, Action<LoggerEnrichmentConfiguration>)
+  nameWithType: LoggerEnrichmentConfiguration.AtLevel(LoggingLevelSwitch, Action<LoggerEnrichmentConfiguration>)
+  fullName: Serilog.Configuration.LoggerEnrichmentConfiguration.AtLevel(Serilog.Core.LoggingLevelSwitch, System.Action<Serilog.Configuration.LoggerEnrichmentConfiguration>)
+  type: Method
+  assemblies:
+  - Serilog
+  namespace: Serilog.Configuration
+  summary: Apply an enricher only to events with a <xref href="Serilog.Events.LogEventLevel" data-throw-if-not-resolved="false"></xref> greater than or equal to the level specified by <code class="paramref">levelSwitch</code>.
+  remarks: >-
+    This method permits additional information to be attached to e.g. warnings and errors, that might be too expensive
+                to collect or store at lower levels.
+  example: []
+  syntax:
+    content: public LoggerConfiguration AtLevel(LoggingLevelSwitch levelSwitch, Action<LoggerEnrichmentConfiguration> configureEnricher)
+    parameters:
+    - id: levelSwitch
+      type: Serilog.Core.LoggingLevelSwitch
+      description: A <xref href="Serilog.Core.LoggingLevelSwitch" data-throw-if-not-resolved="false"></xref> that specifies the level from which the enricher will be applied.
+    - id: configureEnricher
+      type: System.Action{Serilog.Configuration.LoggerEnrichmentConfiguration}
+      description: An action that configures the wrapped enricher.
+    return:
+      type: Serilog.LoggerConfiguration
+      description: Configuration object allowing method chaining.
+    content.vb: Public Function AtLevel(levelSwitch As LoggingLevelSwitch, configureEnricher As Action(Of LoggerEnrichmentConfiguration)) As LoggerConfiguration
+  overload: Serilog.Configuration.LoggerEnrichmentConfiguration.AtLevel*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: When <code class="paramref">configureEnricher</code> is <pre><code class="lang-csharp">null</code></pre>
+  nameWithType.vb: LoggerEnrichmentConfiguration.AtLevel(LoggingLevelSwitch, Action(Of LoggerEnrichmentConfiguration))
+  fullName.vb: Serilog.Configuration.LoggerEnrichmentConfiguration.AtLevel(Serilog.Core.LoggingLevelSwitch, System.Action(Of Serilog.Configuration.LoggerEnrichmentConfiguration))
+  name.vb: AtLevel(LoggingLevelSwitch, Action(Of LoggerEnrichmentConfiguration))
+- uid: Serilog.Configuration.LoggerEnrichmentConfiguration.Wrap(Serilog.Configuration.LoggerEnrichmentConfiguration,System.Func{Serilog.Core.ILogEventEnricher,Serilog.Core.ILogEventEnricher},System.Action{Serilog.Configuration.LoggerEnrichmentConfiguration})
+  commentId: M:Serilog.Configuration.LoggerEnrichmentConfiguration.Wrap(Serilog.Configuration.LoggerEnrichmentConfiguration,System.Func{Serilog.Core.ILogEventEnricher,Serilog.Core.ILogEventEnricher},System.Action{Serilog.Configuration.LoggerEnrichmentConfiguration})
+  id: Wrap(Serilog.Configuration.LoggerEnrichmentConfiguration,System.Func{Serilog.Core.ILogEventEnricher,Serilog.Core.ILogEventEnricher},System.Action{Serilog.Configuration.LoggerEnrichmentConfiguration})
+  parent: Serilog.Configuration.LoggerEnrichmentConfiguration
+  langs:
+  - csharp
+  - vb
+  name: Wrap(LoggerEnrichmentConfiguration, Func<ILogEventEnricher, ILogEventEnricher>, Action<LoggerEnrichmentConfiguration>)
+  nameWithType: LoggerEnrichmentConfiguration.Wrap(LoggerEnrichmentConfiguration, Func<ILogEventEnricher, ILogEventEnricher>, Action<LoggerEnrichmentConfiguration>)
+  fullName: Serilog.Configuration.LoggerEnrichmentConfiguration.Wrap(Serilog.Configuration.LoggerEnrichmentConfiguration, System.Func<Serilog.Core.ILogEventEnricher, Serilog.Core.ILogEventEnricher>, System.Action<Serilog.Configuration.LoggerEnrichmentConfiguration>)
+  type: Method
+  assemblies:
+  - Serilog
+  namespace: Serilog.Configuration
+  summary: Helper method for wrapping sinks.
+  example: []
+  syntax:
+    content: public static LoggerConfiguration Wrap(LoggerEnrichmentConfiguration loggerEnrichmentConfiguration, Func<ILogEventEnricher, ILogEventEnricher> wrapEnricher, Action<LoggerEnrichmentConfiguration> configureWrappedEnricher)
+    parameters:
+    - id: loggerEnrichmentConfiguration
+      type: Serilog.Configuration.LoggerEnrichmentConfiguration
+      description: The parent enrichment configuration.
+    - id: wrapEnricher
+      type: System.Func{Serilog.Core.ILogEventEnricher,Serilog.Core.ILogEventEnricher}
+      description: >-
+        A function that allows for wrapping <xref href="Serilog.Core.ILogEventEnricher" data-throw-if-not-resolved="false"></xref>s
+                    added in <code class="paramref">configureWrappedEnricher</code>.
+    - id: configureWrappedEnricher
+      type: System.Action{Serilog.Configuration.LoggerEnrichmentConfiguration}
+      description: An action that configures enrichers to be wrapped in <code class="paramref">wrapEnricher</code>.
+    return:
+      type: Serilog.LoggerConfiguration
+      description: Configuration object allowing method chaining.
+    content.vb: Public Shared Function Wrap(loggerEnrichmentConfiguration As LoggerEnrichmentConfiguration, wrapEnricher As Func(Of ILogEventEnricher, ILogEventEnricher), configureWrappedEnricher As Action(Of LoggerEnrichmentConfiguration)) As LoggerConfiguration
+  overload: Serilog.Configuration.LoggerEnrichmentConfiguration.Wrap*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: When <code class="paramref">loggerEnrichmentConfiguration</code> is <pre><code class="lang-csharp">null</code></pre>
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: When <code class="paramref">wrapEnricher</code> is <pre><code class="lang-csharp">null</code></pre>
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: When <code class="paramref">configureWrappedEnricher</code> is <pre><code class="lang-csharp">null</code></pre>
+  nameWithType.vb: LoggerEnrichmentConfiguration.Wrap(LoggerEnrichmentConfiguration, Func(Of ILogEventEnricher, ILogEventEnricher), Action(Of LoggerEnrichmentConfiguration))
+  fullName.vb: Serilog.Configuration.LoggerEnrichmentConfiguration.Wrap(Serilog.Configuration.LoggerEnrichmentConfiguration, System.Func(Of Serilog.Core.ILogEventEnricher, Serilog.Core.ILogEventEnricher), System.Action(Of Serilog.Configuration.LoggerEnrichmentConfiguration))
+  name.vb: Wrap(LoggerEnrichmentConfiguration, Func(Of ILogEventEnricher, ILogEventEnricher), Action(Of LoggerEnrichmentConfiguration))
+references:
+- uid: Serilog.Configuration
+  commentId: N:Serilog.Configuration
+  isExternal: true
+  href: Serilog.html
+  name: Serilog.Configuration
+  nameWithType: Serilog.Configuration
+  fullName: Serilog.Configuration
+  spec.csharp:
+  - uid: Serilog
+    name: Serilog
+    isExternal: true
+    href: Serilog.html
+  - name: .
+  - uid: Serilog.Configuration
+    name: Configuration
+    isExternal: true
+    href: Serilog.Configuration.html
+  spec.vb:
+  - uid: Serilog
+    name: Serilog
+    isExternal: true
+    href: Serilog.html
+  - name: .
+  - uid: Serilog.Configuration
+    name: Configuration
+    isExternal: true
+    href: Serilog.Configuration.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.ArgumentNullException
+  commentId: T:System.ArgumentNullException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.argumentnullexception
+  name: ArgumentNullException
+  nameWithType: ArgumentNullException
+  fullName: System.ArgumentNullException
+- uid: System.ArgumentException
+  commentId: T:System.ArgumentException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.argumentexception
+  name: ArgumentException
+  nameWithType: ArgumentException
+  fullName: System.ArgumentException
+- uid: Serilog.Configuration.LoggerEnrichmentConfiguration.With*
+  commentId: Overload:Serilog.Configuration.LoggerEnrichmentConfiguration.With
+  isExternal: true
+  href: Serilog.Configuration.LoggerEnrichmentConfiguration.html#Serilog_Configuration_LoggerEnrichmentConfiguration_With_Serilog_Core_ILogEventEnricher___
+  name: With
+  nameWithType: LoggerEnrichmentConfiguration.With
+  fullName: Serilog.Configuration.LoggerEnrichmentConfiguration.With
+- uid: Serilog.Core.ILogEventEnricher[]
+  isExternal: true
+  href: Serilog.Core.ILogEventEnricher.html
+  name: ILogEventEnricher[]
+  nameWithType: ILogEventEnricher[]
+  fullName: Serilog.Core.ILogEventEnricher[]
+  nameWithType.vb: ILogEventEnricher()
+  fullName.vb: Serilog.Core.ILogEventEnricher()
+  name.vb: ILogEventEnricher()
+  spec.csharp:
+  - uid: Serilog.Core.ILogEventEnricher
+    name: ILogEventEnricher
+    isExternal: true
+    href: Serilog.Core.ILogEventEnricher.html
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: Serilog.Core.ILogEventEnricher
+    name: ILogEventEnricher
+    isExternal: true
+    href: Serilog.Core.ILogEventEnricher.html
+  - name: (
+  - name: )
+- uid: Serilog.LoggerConfiguration
+  commentId: T:Serilog.LoggerConfiguration
+  parent: Serilog
+  isExternal: true
+  href: Serilog.LoggerConfiguration.html
+  name: LoggerConfiguration
+  nameWithType: LoggerConfiguration
+  fullName: Serilog.LoggerConfiguration
+- uid: Serilog
+  commentId: N:Serilog
+  isExternal: true
+  href: Serilog.html
+  name: Serilog
+  nameWithType: Serilog
+  fullName: Serilog
+- uid: Serilog.Configuration.LoggerEnrichmentConfiguration.WithProperty*
+  commentId: Overload:Serilog.Configuration.LoggerEnrichmentConfiguration.WithProperty
+  isExternal: true
+  href: Serilog.Configuration.LoggerEnrichmentConfiguration.html#Serilog_Configuration_LoggerEnrichmentConfiguration_WithProperty_System_String_System_Object_System_Boolean_
+  name: WithProperty
+  nameWithType: LoggerEnrichmentConfiguration.WithProperty
+  fullName: Serilog.Configuration.LoggerEnrichmentConfiguration.WithProperty
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Serilog.Context.LogContext
+  commentId: T:Serilog.Context.LogContext
+  isExternal: true
+  href: Serilog.Context.LogContext.html
+  name: LogContext
+  nameWithType: LogContext
+  fullName: Serilog.Context.LogContext
+- uid: Serilog.Configuration.LoggerEnrichmentConfiguration.FromLogContext*
+  commentId: Overload:Serilog.Configuration.LoggerEnrichmentConfiguration.FromLogContext
+  isExternal: true
+  href: Serilog.Configuration.LoggerEnrichmentConfiguration.html#Serilog_Configuration_LoggerEnrichmentConfiguration_FromLogContext
+  name: FromLogContext
+  nameWithType: LoggerEnrichmentConfiguration.FromLogContext
+  fullName: Serilog.Configuration.LoggerEnrichmentConfiguration.FromLogContext
+- uid: Serilog.Events.LogEvent
+  commentId: T:Serilog.Events.LogEvent
+  parent: Serilog.Events
+  isExternal: true
+  href: Serilog.Events.LogEvent.html
+  name: LogEvent
+  nameWithType: LogEvent
+  fullName: Serilog.Events.LogEvent
+- uid: Serilog.Configuration.LoggerEnrichmentConfiguration.When*
+  commentId: Overload:Serilog.Configuration.LoggerEnrichmentConfiguration.When
+  isExternal: true
+  href: Serilog.Configuration.LoggerEnrichmentConfiguration.html#Serilog_Configuration_LoggerEnrichmentConfiguration_When_System_Func_Serilog_Events_LogEvent_System_Boolean__System_Action_Serilog_Configuration_LoggerEnrichmentConfiguration__
+  name: When
+  nameWithType: LoggerEnrichmentConfiguration.When
+  fullName: Serilog.Configuration.LoggerEnrichmentConfiguration.When
+- uid: System.Func{Serilog.Events.LogEvent,System.Boolean}
+  commentId: T:System.Func{Serilog.Events.LogEvent,System.Boolean}
+  parent: System
+  definition: System.Func`2
+  href: https://learn.microsoft.com/dotnet/api/system.func-2
+  name: Func<LogEvent, bool>
+  nameWithType: Func<LogEvent, bool>
+  fullName: System.Func<Serilog.Events.LogEvent, bool>
+  nameWithType.vb: Func(Of LogEvent, Boolean)
+  fullName.vb: System.Func(Of Serilog.Events.LogEvent, Boolean)
+  name.vb: Func(Of LogEvent, Boolean)
+  spec.csharp:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - uid: Serilog.Events.LogEvent
+    name: LogEvent
+    isExternal: true
+    href: Serilog.Events.LogEvent.html
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Serilog.Events.LogEvent
+    name: LogEvent
+    isExternal: true
+    href: Serilog.Events.LogEvent.html
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: System.Action{Serilog.Configuration.LoggerEnrichmentConfiguration}
+  commentId: T:System.Action{Serilog.Configuration.LoggerEnrichmentConfiguration}
+  parent: System
+  definition: System.Action`1
+  href: https://learn.microsoft.com/dotnet/api/system.action-1
+  name: Action<LoggerEnrichmentConfiguration>
+  nameWithType: Action<LoggerEnrichmentConfiguration>
+  fullName: System.Action<Serilog.Configuration.LoggerEnrichmentConfiguration>
+  nameWithType.vb: Action(Of LoggerEnrichmentConfiguration)
+  fullName.vb: System.Action(Of Serilog.Configuration.LoggerEnrichmentConfiguration)
+  name.vb: Action(Of LoggerEnrichmentConfiguration)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: <
+  - uid: Serilog.Configuration.LoggerEnrichmentConfiguration
+    name: LoggerEnrichmentConfiguration
+    isExternal: true
+    href: Serilog.Configuration.LoggerEnrichmentConfiguration.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Serilog.Configuration.LoggerEnrichmentConfiguration
+    name: LoggerEnrichmentConfiguration
+    isExternal: true
+    href: Serilog.Configuration.LoggerEnrichmentConfiguration.html
+  - name: )
+- uid: Serilog.Events
+  commentId: N:Serilog.Events
+  isExternal: true
+  href: Serilog.html
+  name: Serilog.Events
+  nameWithType: Serilog.Events
+  fullName: Serilog.Events
+  spec.csharp:
+  - uid: Serilog
+    name: Serilog
+    isExternal: true
+    href: Serilog.html
+  - name: .
+  - uid: Serilog.Events
+    name: Events
+    isExternal: true
+    href: Serilog.Events.html
+  spec.vb:
+  - uid: Serilog
+    name: Serilog
+    isExternal: true
+    href: Serilog.html
+  - name: .
+  - uid: Serilog.Events
+    name: Events
+    isExternal: true
+    href: Serilog.Events.html
+- uid: System.Func`2
+  commentId: T:System.Func`2
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.func-2
+  name: Func<T, TResult>
+  nameWithType: Func<T, TResult>
+  fullName: System.Func<T, TResult>
+  nameWithType.vb: Func(Of T, TResult)
+  fullName.vb: System.Func(Of T, TResult)
+  name.vb: Func(Of T, TResult)
+  spec.csharp:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Action`1
+  commentId: T:System.Action`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.action-1
+  name: Action<T>
+  nameWithType: Action<T>
+  fullName: System.Action<T>
+  nameWithType.vb: Action(Of T)
+  fullName.vb: System.Action(Of T)
+  name.vb: Action(Of T)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Serilog.Events.LogEventLevel
+  commentId: T:Serilog.Events.LogEventLevel
+  parent: Serilog.Events
+  isExternal: true
+  href: Serilog.Events.LogEventLevel.html
+  name: LogEventLevel
+  nameWithType: LogEventLevel
+  fullName: Serilog.Events.LogEventLevel
+- uid: Serilog.Configuration.LoggerEnrichmentConfiguration.AtLevel*
+  commentId: Overload:Serilog.Configuration.LoggerEnrichmentConfiguration.AtLevel
+  isExternal: true
+  href: Serilog.Configuration.LoggerEnrichmentConfiguration.html#Serilog_Configuration_LoggerEnrichmentConfiguration_AtLevel_Serilog_Events_LogEventLevel_System_Action_Serilog_Configuration_LoggerEnrichmentConfiguration__
+  name: AtLevel
+  nameWithType: LoggerEnrichmentConfiguration.AtLevel
+  fullName: Serilog.Configuration.LoggerEnrichmentConfiguration.AtLevel
+- uid: Serilog.Core.LoggingLevelSwitch
+  commentId: T:Serilog.Core.LoggingLevelSwitch
+  parent: Serilog.Core
+  isExternal: true
+  href: Serilog.Core.LoggingLevelSwitch.html
+  name: LoggingLevelSwitch
+  nameWithType: LoggingLevelSwitch
+  fullName: Serilog.Core.LoggingLevelSwitch
+- uid: Serilog.Core
+  commentId: N:Serilog.Core
+  isExternal: true
+  href: Serilog.html
+  name: Serilog.Core
+  nameWithType: Serilog.Core
+  fullName: Serilog.Core
+  spec.csharp:
+  - uid: Serilog
+    name: Serilog
+    isExternal: true
+    href: Serilog.html
+  - name: .
+  - uid: Serilog.Core
+    name: Core
+    isExternal: true
+    href: Serilog.Core.html
+  spec.vb:
+  - uid: Serilog
+    name: Serilog
+    isExternal: true
+    href: Serilog.html
+  - name: .
+  - uid: Serilog.Core
+    name: Core
+    isExternal: true
+    href: Serilog.Core.html
+- uid: Serilog.Core.ILogEventEnricher
+  commentId: T:Serilog.Core.ILogEventEnricher
+  parent: Serilog.Core
+  isExternal: true
+  href: Serilog.Core.ILogEventEnricher.html
+  name: ILogEventEnricher
+  nameWithType: ILogEventEnricher
+  fullName: Serilog.Core.ILogEventEnricher
+- uid: Serilog.Configuration.LoggerEnrichmentConfiguration.Wrap*
+  commentId: Overload:Serilog.Configuration.LoggerEnrichmentConfiguration.Wrap
+  isExternal: true
+  href: Serilog.Configuration.LoggerEnrichmentConfiguration.html#Serilog_Configuration_LoggerEnrichmentConfiguration_Wrap_Serilog_Configuration_LoggerEnrichmentConfiguration_System_Func_Serilog_Core_ILogEventEnricher_Serilog_Core_ILogEventEnricher__System_Action_Serilog_Configuration_LoggerEnrichmentConfiguration__
+  name: Wrap
+  nameWithType: LoggerEnrichmentConfiguration.Wrap
+  fullName: Serilog.Configuration.LoggerEnrichmentConfiguration.Wrap
+- uid: Serilog.Configuration.LoggerEnrichmentConfiguration
+  commentId: T:Serilog.Configuration.LoggerEnrichmentConfiguration
+  parent: Serilog.Configuration
+  isExternal: true
+  href: Serilog.Configuration.LoggerEnrichmentConfiguration.html
+  name: LoggerEnrichmentConfiguration
+  nameWithType: LoggerEnrichmentConfiguration
+  fullName: Serilog.Configuration.LoggerEnrichmentConfiguration
+- uid: System.Func{Serilog.Core.ILogEventEnricher,Serilog.Core.ILogEventEnricher}
+  commentId: T:System.Func{Serilog.Core.ILogEventEnricher,Serilog.Core.ILogEventEnricher}
+  parent: System
+  definition: System.Func`2
+  href: https://learn.microsoft.com/dotnet/api/system.func-2
+  name: Func<ILogEventEnricher, ILogEventEnricher>
+  nameWithType: Func<ILogEventEnricher, ILogEventEnricher>
+  fullName: System.Func<Serilog.Core.ILogEventEnricher, Serilog.Core.ILogEventEnricher>
+  nameWithType.vb: Func(Of ILogEventEnricher, ILogEventEnricher)
+  fullName.vb: System.Func(Of Serilog.Core.ILogEventEnricher, Serilog.Core.ILogEventEnricher)
+  name.vb: Func(Of ILogEventEnricher, ILogEventEnricher)
+  spec.csharp:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - uid: Serilog.Core.ILogEventEnricher
+    name: ILogEventEnricher
+    isExternal: true
+    href: Serilog.Core.ILogEventEnricher.html
+  - name: ','
+  - name: " "
+  - uid: Serilog.Core.ILogEventEnricher
+    name: ILogEventEnricher
+    isExternal: true
+    href: Serilog.Core.ILogEventEnricher.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Serilog.Core.ILogEventEnricher
+    name: ILogEventEnricher
+    isExternal: true
+    href: Serilog.Core.ILogEventEnricher.html
+  - name: ','
+  - name: " "
+  - uid: Serilog.Core.ILogEventEnricher
+    name: ILogEventEnricher
+    isExternal: true
+    href: Serilog.Core.ILogEventEnricher.html
+  - name: )

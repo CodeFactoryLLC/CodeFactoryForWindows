@@ -1,0 +1,693 @@
+### YamlMime:ManagedReference
+items:
+- uid: CodeFactory.WinVs.Models.CSharp.CsSourceExtensions
+  commentId: T:CodeFactory.WinVs.Models.CSharp.CsSourceExtensions
+  id: CsSourceExtensions
+  parent: CodeFactory.WinVs.Models.CSharp
+  children:
+  - CodeFactory.WinVs.Models.CSharp.CsSourceExtensions.AddMissingNamespaces(CodeFactory.WinVs.Models.CSharp.CsSource,System.Collections.Generic.IEnumerable{CodeFactory.WinVs.Models.CSharp.CsMember},System.String)
+  - CodeFactory.WinVs.Models.CSharp.CsSourceExtensions.AddUsingStatementAsync(CodeFactory.WinVs.Models.CSharp.CsSource,System.String,System.String)
+  - CodeFactory.WinVs.Models.CSharp.CsSourceExtensions.HasUsingStatement(CodeFactory.WinVs.Models.CSharp.CsSource,System.String,System.String)
+  langs:
+  - csharp
+  - vb
+  name: CsSourceExtensions
+  nameWithType: CsSourceExtensions
+  fullName: CodeFactory.WinVs.Models.CSharp.CsSourceExtensions
+  type: Class
+  source:
+    href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/19e816ffdf1ba504be6987736bbac42e2d241405/Src/CodeFactoryForWindows/CodeFactory.WinVs/Models/CSharp/CsSourceExtensions.cs
+  assemblies:
+  - CodeFactory.WinVs
+  namespace: CodeFactory.WinVs.Models.CSharp
+  summary: Extensions class that provides common automation tasks rolled up under standard extension methods that support the <xref href="CodeFactory.WinVs.Models.CSharp.CsSource" data-throw-if-not-resolved="false"></xref> model.
+  example: []
+  syntax:
+    content: public static class CsSourceExtensions
+    content.vb: Public Module CsSourceExtensions
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+- uid: CodeFactory.WinVs.Models.CSharp.CsSourceExtensions.HasUsingStatement(CodeFactory.WinVs.Models.CSharp.CsSource,System.String,System.String)
+  commentId: M:CodeFactory.WinVs.Models.CSharp.CsSourceExtensions.HasUsingStatement(CodeFactory.WinVs.Models.CSharp.CsSource,System.String,System.String)
+  id: HasUsingStatement(CodeFactory.WinVs.Models.CSharp.CsSource,System.String,System.String)
+  isExtensionMethod: true
+  parent: CodeFactory.WinVs.Models.CSharp.CsSourceExtensions
+  langs:
+  - csharp
+  - vb
+  name: HasUsingStatement(CsSource, string, string)
+  nameWithType: CsSourceExtensions.HasUsingStatement(CsSource, string, string)
+  fullName: CodeFactory.WinVs.Models.CSharp.CsSourceExtensions.HasUsingStatement(CodeFactory.WinVs.Models.CSharp.CsSource, string, string)
+  type: Method
+  source:
+    href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/19e816ffdf1ba504be6987736bbac42e2d241405/Src/CodeFactoryForWindows/CodeFactory.WinVs/Models/CSharp/CsSourceExtensions.cs
+  assemblies:
+  - CodeFactory.WinVs
+  namespace: CodeFactory.WinVs.Models.CSharp
+  summary: Extension method that determines if the source code has a target namespace as a using statement.
+  example: []
+  syntax:
+    content: public static bool HasUsingStatement(this CsSource source, string nameSpace, string alias = null)
+    parameters:
+    - id: source
+      type: CodeFactory.WinVs.Models.CSharp.CsSource
+      description: The source code to search through.
+    - id: nameSpace
+      type: System.String
+      description: The namespace to search for in the using statements.
+    - id: alias
+      type: System.String
+      description: Optional parameter that captures the alias of the namespace used in the using statement.
+    return:
+      type: System.Boolean
+      description: Flag that determines if it has the using statement.
+    content.vb: Public Shared Function HasUsingStatement(source As CsSource, [nameSpace] As String, [alias] As String = Nothing) As Boolean
+  overload: CodeFactory.WinVs.Models.CSharp.CsSourceExtensions.HasUsingStatement*
+  nameWithType.vb: CsSourceExtensions.HasUsingStatement(CsSource, String, String)
+  fullName.vb: CodeFactory.WinVs.Models.CSharp.CsSourceExtensions.HasUsingStatement(CodeFactory.WinVs.Models.CSharp.CsSource, String, String)
+  name.vb: HasUsingStatement(CsSource, String, String)
+- uid: CodeFactory.WinVs.Models.CSharp.CsSourceExtensions.AddUsingStatementAsync(CodeFactory.WinVs.Models.CSharp.CsSource,System.String,System.String)
+  commentId: M:CodeFactory.WinVs.Models.CSharp.CsSourceExtensions.AddUsingStatementAsync(CodeFactory.WinVs.Models.CSharp.CsSource,System.String,System.String)
+  id: AddUsingStatementAsync(CodeFactory.WinVs.Models.CSharp.CsSource,System.String,System.String)
+  isExtensionMethod: true
+  parent: CodeFactory.WinVs.Models.CSharp.CsSourceExtensions
+  langs:
+  - csharp
+  - vb
+  name: AddUsingStatementAsync(CsSource, string, string)
+  nameWithType: CsSourceExtensions.AddUsingStatementAsync(CsSource, string, string)
+  fullName: CodeFactory.WinVs.Models.CSharp.CsSourceExtensions.AddUsingStatementAsync(CodeFactory.WinVs.Models.CSharp.CsSource, string, string)
+  type: Method
+  source:
+    href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/19e816ffdf1ba504be6987736bbac42e2d241405/Src/CodeFactoryForWindows/CodeFactory.WinVs/Models/CSharp/CsSourceExtensions.cs
+  assemblies:
+  - CodeFactory.WinVs
+  namespace: CodeFactory.WinVs.Models.CSharp
+  summary: Extension method that will add a using statement to target source code. If the using statement already exists it will simply return the existing source.
+  example: []
+  syntax:
+    content: public static Task<CsSource> AddUsingStatementAsync(this CsSource source, string nameSpace, string alias = null)
+    parameters:
+    - id: source
+      type: CodeFactory.WinVs.Models.CSharp.CsSource
+      description: The source code to update.
+    - id: nameSpace
+      type: System.String
+      description: The namespace to be added to the using statement.
+    - id: alias
+      type: System.String
+      description: Optional parameter to set if you want an alias assigned to the namespace.
+    return:
+      type: System.Threading.Tasks.Task{CodeFactory.WinVs.Models.CSharp.CsSource}
+      description: The updated source code or the original source code if no changes were necessary.
+    content.vb: Public Shared Function AddUsingStatementAsync(source As CsSource, [nameSpace] As String, [alias] As String = Nothing) As Task(Of CsSource)
+  overload: CodeFactory.WinVs.Models.CSharp.CsSourceExtensions.AddUsingStatementAsync*
+  nameWithType.vb: CsSourceExtensions.AddUsingStatementAsync(CsSource, String, String)
+  fullName.vb: CodeFactory.WinVs.Models.CSharp.CsSourceExtensions.AddUsingStatementAsync(CodeFactory.WinVs.Models.CSharp.CsSource, String, String)
+  name.vb: AddUsingStatementAsync(CsSource, String, String)
+- uid: CodeFactory.WinVs.Models.CSharp.CsSourceExtensions.AddMissingNamespaces(CodeFactory.WinVs.Models.CSharp.CsSource,System.Collections.Generic.IEnumerable{CodeFactory.WinVs.Models.CSharp.CsMember},System.String)
+  commentId: M:CodeFactory.WinVs.Models.CSharp.CsSourceExtensions.AddMissingNamespaces(CodeFactory.WinVs.Models.CSharp.CsSource,System.Collections.Generic.IEnumerable{CodeFactory.WinVs.Models.CSharp.CsMember},System.String)
+  id: AddMissingNamespaces(CodeFactory.WinVs.Models.CSharp.CsSource,System.Collections.Generic.IEnumerable{CodeFactory.WinVs.Models.CSharp.CsMember},System.String)
+  isExtensionMethod: true
+  parent: CodeFactory.WinVs.Models.CSharp.CsSourceExtensions
+  langs:
+  - csharp
+  - vb
+  name: AddMissingNamespaces(CsSource, IEnumerable<CsMember>, string)
+  nameWithType: CsSourceExtensions.AddMissingNamespaces(CsSource, IEnumerable<CsMember>, string)
+  fullName: CodeFactory.WinVs.Models.CSharp.CsSourceExtensions.AddMissingNamespaces(CodeFactory.WinVs.Models.CSharp.CsSource, System.Collections.Generic.IEnumerable<CodeFactory.WinVs.Models.CSharp.CsMember>, string)
+  type: Method
+  source:
+    href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/19e816ffdf1ba504be6987736bbac42e2d241405/Src/CodeFactoryForWindows/CodeFactory.WinVs/Models/CSharp/CsSourceExtensions.cs
+  assemblies:
+  - CodeFactory.WinVs
+  namespace: CodeFactory.WinVs.Models.CSharp
+  summary: >-
+    Scans members for types that are accessible at the member definition level.
+
+    If the namespace is missing will add it to the source code file.
+  example: []
+  syntax:
+    content: public static Task<CsSource> AddMissingNamespaces(this CsSource source, IEnumerable<CsMember> members, string excludeNamespace = null)
+    parameters:
+    - id: source
+      type: CodeFactory.WinVs.Models.CSharp.CsSource
+      description: The source model to be updated.
+    - id: members
+      type: System.Collections.Generic.IEnumerable{CodeFactory.WinVs.Models.CSharp.CsMember}
+      description: The members to be checked for type definitions.
+    - id: excludeNamespace
+      type: System.String
+      description: A target namespace that should be excluded from adding to the using statement list. This is generally the target namespace of the code file. This is optional
+    return:
+      type: System.Threading.Tasks.Task{CodeFactory.WinVs.Models.CSharp.CsSource}
+      description: Updated Source Model with all the missing namespaces added as using statements.
+    content.vb: Public Shared Function AddMissingNamespaces(source As CsSource, members As IEnumerable(Of CsMember), excludeNamespace As String = Nothing) As Task(Of CsSource)
+  overload: CodeFactory.WinVs.Models.CSharp.CsSourceExtensions.AddMissingNamespaces*
+  nameWithType.vb: CsSourceExtensions.AddMissingNamespaces(CsSource, IEnumerable(Of CsMember), String)
+  fullName.vb: CodeFactory.WinVs.Models.CSharp.CsSourceExtensions.AddMissingNamespaces(CodeFactory.WinVs.Models.CSharp.CsSource, System.Collections.Generic.IEnumerable(Of CodeFactory.WinVs.Models.CSharp.CsMember), String)
+  name.vb: AddMissingNamespaces(CsSource, IEnumerable(Of CsMember), String)
+references:
+- uid: CodeFactory.WinVs.Models.CSharp.CsSource
+  commentId: T:CodeFactory.WinVs.Models.CSharp.CsSource
+  parent: CodeFactory.WinVs.Models.CSharp
+  isExternal: true
+  href: CodeFactory.WinVs.Models.CSharp.CsSource.html
+  name: CsSource
+  nameWithType: CsSource
+  fullName: CodeFactory.WinVs.Models.CSharp.CsSource
+- uid: CodeFactory.WinVs.Models.CSharp
+  commentId: N:CodeFactory.WinVs.Models.CSharp
+  isExternal: true
+  href: CodeFactory.html
+  name: CodeFactory.WinVs.Models.CSharp
+  nameWithType: CodeFactory.WinVs.Models.CSharp
+  fullName: CodeFactory.WinVs.Models.CSharp
+  spec.csharp:
+  - uid: CodeFactory
+    name: CodeFactory
+    isExternal: true
+    href: CodeFactory.html
+  - name: .
+  - uid: CodeFactory.WinVs
+    name: WinVs
+    isExternal: true
+    href: CodeFactory.WinVs.html
+  - name: .
+  - uid: CodeFactory.WinVs.Models
+    name: Models
+    isExternal: true
+    href: CodeFactory.WinVs.Models.html
+  - name: .
+  - uid: CodeFactory.WinVs.Models.CSharp
+    name: CSharp
+    isExternal: true
+    href: CodeFactory.WinVs.Models.CSharp.html
+  spec.vb:
+  - uid: CodeFactory
+    name: CodeFactory
+    isExternal: true
+    href: CodeFactory.html
+  - name: .
+  - uid: CodeFactory.WinVs
+    name: WinVs
+    isExternal: true
+    href: CodeFactory.WinVs.html
+  - name: .
+  - uid: CodeFactory.WinVs.Models
+    name: Models
+    isExternal: true
+    href: CodeFactory.WinVs.Models.html
+  - name: .
+  - uid: CodeFactory.WinVs.Models.CSharp
+    name: CSharp
+    isExternal: true
+    href: CodeFactory.WinVs.Models.CSharp.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: CodeFactory.WinVs.Models.CSharp.CsSourceExtensions.HasUsingStatement*
+  commentId: Overload:CodeFactory.WinVs.Models.CSharp.CsSourceExtensions.HasUsingStatement
+  isExternal: true
+  href: CodeFactory.WinVs.Models.CSharp.CsSourceExtensions.html#CodeFactory_WinVs_Models_CSharp_CsSourceExtensions_HasUsingStatement_CodeFactory_WinVs_Models_CSharp_CsSource_System_String_System_String_
+  name: HasUsingStatement
+  nameWithType: CsSourceExtensions.HasUsingStatement
+  fullName: CodeFactory.WinVs.Models.CSharp.CsSourceExtensions.HasUsingStatement
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: CodeFactory.WinVs.Models.CSharp.CsSourceExtensions.AddUsingStatementAsync*
+  commentId: Overload:CodeFactory.WinVs.Models.CSharp.CsSourceExtensions.AddUsingStatementAsync
+  isExternal: true
+  href: CodeFactory.WinVs.Models.CSharp.CsSourceExtensions.html#CodeFactory_WinVs_Models_CSharp_CsSourceExtensions_AddUsingStatementAsync_CodeFactory_WinVs_Models_CSharp_CsSource_System_String_System_String_
+  name: AddUsingStatementAsync
+  nameWithType: CsSourceExtensions.AddUsingStatementAsync
+  fullName: CodeFactory.WinVs.Models.CSharp.CsSourceExtensions.AddUsingStatementAsync
+- uid: System.Threading.Tasks.Task{CodeFactory.WinVs.Models.CSharp.CsSource}
+  commentId: T:System.Threading.Tasks.Task{CodeFactory.WinVs.Models.CSharp.CsSource}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<CsSource>
+  nameWithType: Task<CsSource>
+  fullName: System.Threading.Tasks.Task<CodeFactory.WinVs.Models.CSharp.CsSource>
+  nameWithType.vb: Task(Of CsSource)
+  fullName.vb: System.Threading.Tasks.Task(Of CodeFactory.WinVs.Models.CSharp.CsSource)
+  name.vb: Task(Of CsSource)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: CodeFactory.WinVs.Models.CSharp.CsSource
+    name: CsSource
+    isExternal: true
+    href: CodeFactory.WinVs.Models.CSharp.CsSource.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: CodeFactory.WinVs.Models.CSharp.CsSource
+    name: CsSource
+    isExternal: true
+    href: CodeFactory.WinVs.Models.CSharp.CsSource.html
+  - name: )
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: CodeFactory.WinVs.Models.CSharp.CsSourceExtensions.AddMissingNamespaces*
+  commentId: Overload:CodeFactory.WinVs.Models.CSharp.CsSourceExtensions.AddMissingNamespaces
+  isExternal: true
+  href: CodeFactory.WinVs.Models.CSharp.CsSourceExtensions.html#CodeFactory_WinVs_Models_CSharp_CsSourceExtensions_AddMissingNamespaces_CodeFactory_WinVs_Models_CSharp_CsSource_System_Collections_Generic_IEnumerable_CodeFactory_WinVs_Models_CSharp_CsMember__System_String_
+  name: AddMissingNamespaces
+  nameWithType: CsSourceExtensions.AddMissingNamespaces
+  fullName: CodeFactory.WinVs.Models.CSharp.CsSourceExtensions.AddMissingNamespaces
+- uid: System.Collections.Generic.IEnumerable{CodeFactory.WinVs.Models.CSharp.CsMember}
+  commentId: T:System.Collections.Generic.IEnumerable{CodeFactory.WinVs.Models.CSharp.CsMember}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<CsMember>
+  nameWithType: IEnumerable<CsMember>
+  fullName: System.Collections.Generic.IEnumerable<CodeFactory.WinVs.Models.CSharp.CsMember>
+  nameWithType.vb: IEnumerable(Of CsMember)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of CodeFactory.WinVs.Models.CSharp.CsMember)
+  name.vb: IEnumerable(Of CsMember)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: CodeFactory.WinVs.Models.CSharp.CsMember
+    name: CsMember
+    isExternal: true
+    href: CodeFactory.WinVs.Models.CSharp.CsMember.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: CodeFactory.WinVs.Models.CSharp.CsMember
+    name: CsMember
+    isExternal: true
+    href: CodeFactory.WinVs.Models.CSharp.CsMember.html
+  - name: )
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic

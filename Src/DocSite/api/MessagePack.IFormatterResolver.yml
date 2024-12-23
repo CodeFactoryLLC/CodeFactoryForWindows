@@ -1,0 +1,341 @@
+### YamlMime:ManagedReference
+items:
+- uid: MessagePack.IFormatterResolver
+  commentId: T:MessagePack.IFormatterResolver
+  id: IFormatterResolver
+  parent: MessagePack
+  children:
+  - MessagePack.IFormatterResolver.GetFormatter``1
+  langs:
+  - csharp
+  - vb
+  name: IFormatterResolver
+  nameWithType: IFormatterResolver
+  fullName: MessagePack.IFormatterResolver
+  type: Interface
+  assemblies:
+  - MessagePack
+  namespace: MessagePack
+  summary: Allows querying for a formatter for serializing or deserializing a particular <xref href="System.Type" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public interface IFormatterResolver
+    content.vb: Public Interface IFormatterResolver
+  extensionMethods:
+  - MessagePack.IFormatterResolver.MessagePack.FormatterResolverExtensions.GetFormatterDynamic(System.Type)
+  - MessagePack.IFormatterResolver.MessagePack.FormatterResolverExtensions.GetFormatterWithVerify``1
+- uid: MessagePack.IFormatterResolver.GetFormatter``1
+  commentId: M:MessagePack.IFormatterResolver.GetFormatter``1
+  id: GetFormatter``1
+  parent: MessagePack.IFormatterResolver
+  langs:
+  - csharp
+  - vb
+  name: GetFormatter<T>()
+  nameWithType: IFormatterResolver.GetFormatter<T>()
+  fullName: MessagePack.IFormatterResolver.GetFormatter<T>()
+  type: Method
+  assemblies:
+  - MessagePack
+  namespace: MessagePack
+  summary: Gets an <xref href="MessagePack.Formatters.IMessagePackFormatter%601" data-throw-if-not-resolved="false"></xref> instance that can serialize or deserialize some type <code class="typeparamref">T</code>.
+  example: []
+  syntax:
+    content: IMessagePackFormatter<T>? GetFormatter<T>()
+    typeParameters:
+    - id: T
+      description: The type of value to be serialized or deserialized.
+    return:
+      type: MessagePack.Formatters.IMessagePackFormatter{{T}}
+      description: A formatter, if this resolver supplies one for type <code class="typeparamref">T</code>; otherwise <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.
+    content.vb: Function GetFormatter(Of T)() As IMessagePackFormatter(Of T)
+  overload: MessagePack.IFormatterResolver.GetFormatter*
+  nameWithType.vb: IFormatterResolver.GetFormatter(Of T)()
+  fullName.vb: MessagePack.IFormatterResolver.GetFormatter(Of T)()
+  name.vb: GetFormatter(Of T)()
+references:
+- uid: System.Type
+  commentId: T:System.Type
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.type
+  name: Type
+  nameWithType: Type
+  fullName: System.Type
+- uid: MessagePack
+  commentId: N:MessagePack
+  isExternal: true
+  href: MessagePack.html
+  name: MessagePack
+  nameWithType: MessagePack
+  fullName: MessagePack
+- uid: MessagePack.IFormatterResolver.MessagePack.FormatterResolverExtensions.GetFormatterDynamic(System.Type)
+  commentId: M:MessagePack.FormatterResolverExtensions.GetFormatterDynamic(MessagePack.IFormatterResolver,System.Type)
+  parent: MessagePack.FormatterResolverExtensions
+  definition: MessagePack.FormatterResolverExtensions.GetFormatterDynamic(MessagePack.IFormatterResolver,System.Type)
+  href: MessagePack.FormatterResolverExtensions.html#MessagePack_FormatterResolverExtensions_GetFormatterDynamic_MessagePack_IFormatterResolver_System_Type_
+  name: GetFormatterDynamic(IFormatterResolver, Type)
+  nameWithType: FormatterResolverExtensions.GetFormatterDynamic(IFormatterResolver, Type)
+  fullName: MessagePack.FormatterResolverExtensions.GetFormatterDynamic(MessagePack.IFormatterResolver, System.Type)
+  spec.csharp:
+  - uid: MessagePack.FormatterResolverExtensions.GetFormatterDynamic(MessagePack.IFormatterResolver,System.Type)
+    name: GetFormatterDynamic
+    isExternal: true
+    href: MessagePack.FormatterResolverExtensions.html#MessagePack_FormatterResolverExtensions_GetFormatterDynamic_MessagePack_IFormatterResolver_System_Type_
+  - name: (
+  - uid: MessagePack.IFormatterResolver
+    name: IFormatterResolver
+    isExternal: true
+    href: MessagePack.IFormatterResolver.html
+  - name: ','
+  - name: " "
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: )
+  spec.vb:
+  - uid: MessagePack.FormatterResolverExtensions.GetFormatterDynamic(MessagePack.IFormatterResolver,System.Type)
+    name: GetFormatterDynamic
+    isExternal: true
+    href: MessagePack.FormatterResolverExtensions.html#MessagePack_FormatterResolverExtensions_GetFormatterDynamic_MessagePack_IFormatterResolver_System_Type_
+  - name: (
+  - uid: MessagePack.IFormatterResolver
+    name: IFormatterResolver
+    isExternal: true
+    href: MessagePack.IFormatterResolver.html
+  - name: ','
+  - name: " "
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: )
+- uid: MessagePack.IFormatterResolver.MessagePack.FormatterResolverExtensions.GetFormatterWithVerify``1
+  commentId: M:MessagePack.FormatterResolverExtensions.GetFormatterWithVerify``1(MessagePack.IFormatterResolver)
+  parent: MessagePack.FormatterResolverExtensions
+  definition: MessagePack.FormatterResolverExtensions.GetFormatterWithVerify``1(MessagePack.IFormatterResolver)
+  href: MessagePack.FormatterResolverExtensions.html#MessagePack_FormatterResolverExtensions_GetFormatterWithVerify__1_MessagePack_IFormatterResolver_
+  name: GetFormatterWithVerify<T>(IFormatterResolver)
+  nameWithType: FormatterResolverExtensions.GetFormatterWithVerify<T>(IFormatterResolver)
+  fullName: MessagePack.FormatterResolverExtensions.GetFormatterWithVerify<T>(MessagePack.IFormatterResolver)
+  nameWithType.vb: FormatterResolverExtensions.GetFormatterWithVerify(Of T)(IFormatterResolver)
+  fullName.vb: MessagePack.FormatterResolverExtensions.GetFormatterWithVerify(Of T)(MessagePack.IFormatterResolver)
+  name.vb: GetFormatterWithVerify(Of T)(IFormatterResolver)
+  spec.csharp:
+  - uid: MessagePack.FormatterResolverExtensions.GetFormatterWithVerify``1(MessagePack.IFormatterResolver)
+    name: GetFormatterWithVerify
+    isExternal: true
+    href: MessagePack.FormatterResolverExtensions.html#MessagePack_FormatterResolverExtensions_GetFormatterWithVerify__1_MessagePack_IFormatterResolver_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: MessagePack.IFormatterResolver
+    name: IFormatterResolver
+    isExternal: true
+    href: MessagePack.IFormatterResolver.html
+  - name: )
+  spec.vb:
+  - uid: MessagePack.FormatterResolverExtensions.GetFormatterWithVerify``1(MessagePack.IFormatterResolver)
+    name: GetFormatterWithVerify
+    isExternal: true
+    href: MessagePack.FormatterResolverExtensions.html#MessagePack_FormatterResolverExtensions_GetFormatterWithVerify__1_MessagePack_IFormatterResolver_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: MessagePack.IFormatterResolver
+    name: IFormatterResolver
+    isExternal: true
+    href: MessagePack.IFormatterResolver.html
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: MessagePack.FormatterResolverExtensions.GetFormatterDynamic(MessagePack.IFormatterResolver,System.Type)
+  commentId: M:MessagePack.FormatterResolverExtensions.GetFormatterDynamic(MessagePack.IFormatterResolver,System.Type)
+  isExternal: true
+  href: MessagePack.FormatterResolverExtensions.html#MessagePack_FormatterResolverExtensions_GetFormatterDynamic_MessagePack_IFormatterResolver_System_Type_
+  name: GetFormatterDynamic(IFormatterResolver, Type)
+  nameWithType: FormatterResolverExtensions.GetFormatterDynamic(IFormatterResolver, Type)
+  fullName: MessagePack.FormatterResolverExtensions.GetFormatterDynamic(MessagePack.IFormatterResolver, System.Type)
+  spec.csharp:
+  - uid: MessagePack.FormatterResolverExtensions.GetFormatterDynamic(MessagePack.IFormatterResolver,System.Type)
+    name: GetFormatterDynamic
+    isExternal: true
+    href: MessagePack.FormatterResolverExtensions.html#MessagePack_FormatterResolverExtensions_GetFormatterDynamic_MessagePack_IFormatterResolver_System_Type_
+  - name: (
+  - uid: MessagePack.IFormatterResolver
+    name: IFormatterResolver
+    isExternal: true
+    href: MessagePack.IFormatterResolver.html
+  - name: ','
+  - name: " "
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: )
+  spec.vb:
+  - uid: MessagePack.FormatterResolverExtensions.GetFormatterDynamic(MessagePack.IFormatterResolver,System.Type)
+    name: GetFormatterDynamic
+    isExternal: true
+    href: MessagePack.FormatterResolverExtensions.html#MessagePack_FormatterResolverExtensions_GetFormatterDynamic_MessagePack_IFormatterResolver_System_Type_
+  - name: (
+  - uid: MessagePack.IFormatterResolver
+    name: IFormatterResolver
+    isExternal: true
+    href: MessagePack.IFormatterResolver.html
+  - name: ','
+  - name: " "
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: )
+- uid: MessagePack.FormatterResolverExtensions
+  commentId: T:MessagePack.FormatterResolverExtensions
+  parent: MessagePack
+  isExternal: true
+  href: MessagePack.FormatterResolverExtensions.html
+  name: FormatterResolverExtensions
+  nameWithType: FormatterResolverExtensions
+  fullName: MessagePack.FormatterResolverExtensions
+- uid: MessagePack.FormatterResolverExtensions.GetFormatterWithVerify``1(MessagePack.IFormatterResolver)
+  commentId: M:MessagePack.FormatterResolverExtensions.GetFormatterWithVerify``1(MessagePack.IFormatterResolver)
+  isExternal: true
+  href: MessagePack.FormatterResolverExtensions.html#MessagePack_FormatterResolverExtensions_GetFormatterWithVerify__1_MessagePack_IFormatterResolver_
+  name: GetFormatterWithVerify<T>(IFormatterResolver)
+  nameWithType: FormatterResolverExtensions.GetFormatterWithVerify<T>(IFormatterResolver)
+  fullName: MessagePack.FormatterResolverExtensions.GetFormatterWithVerify<T>(MessagePack.IFormatterResolver)
+  nameWithType.vb: FormatterResolverExtensions.GetFormatterWithVerify(Of T)(IFormatterResolver)
+  fullName.vb: MessagePack.FormatterResolverExtensions.GetFormatterWithVerify(Of T)(MessagePack.IFormatterResolver)
+  name.vb: GetFormatterWithVerify(Of T)(IFormatterResolver)
+  spec.csharp:
+  - uid: MessagePack.FormatterResolverExtensions.GetFormatterWithVerify``1(MessagePack.IFormatterResolver)
+    name: GetFormatterWithVerify
+    isExternal: true
+    href: MessagePack.FormatterResolverExtensions.html#MessagePack_FormatterResolverExtensions_GetFormatterWithVerify__1_MessagePack_IFormatterResolver_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: MessagePack.IFormatterResolver
+    name: IFormatterResolver
+    isExternal: true
+    href: MessagePack.IFormatterResolver.html
+  - name: )
+  spec.vb:
+  - uid: MessagePack.FormatterResolverExtensions.GetFormatterWithVerify``1(MessagePack.IFormatterResolver)
+    name: GetFormatterWithVerify
+    isExternal: true
+    href: MessagePack.FormatterResolverExtensions.html#MessagePack_FormatterResolverExtensions_GetFormatterWithVerify__1_MessagePack_IFormatterResolver_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: MessagePack.IFormatterResolver
+    name: IFormatterResolver
+    isExternal: true
+    href: MessagePack.IFormatterResolver.html
+  - name: )
+- uid: MessagePack.Formatters.IMessagePackFormatter`1
+  commentId: T:MessagePack.Formatters.IMessagePackFormatter`1
+  isExternal: true
+  href: MessagePack.Formatters.IMessagePackFormatter-1.html
+  name: IMessagePackFormatter<T>
+  nameWithType: IMessagePackFormatter<T>
+  fullName: MessagePack.Formatters.IMessagePackFormatter<T>
+  nameWithType.vb: IMessagePackFormatter(Of T)
+  fullName.vb: MessagePack.Formatters.IMessagePackFormatter(Of T)
+  name.vb: IMessagePackFormatter(Of T)
+  spec.csharp:
+  - uid: MessagePack.Formatters.IMessagePackFormatter`1
+    name: IMessagePackFormatter
+    isExternal: true
+    href: MessagePack.Formatters.IMessagePackFormatter-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: MessagePack.Formatters.IMessagePackFormatter`1
+    name: IMessagePackFormatter
+    isExternal: true
+    href: MessagePack.Formatters.IMessagePackFormatter-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: MessagePack.IFormatterResolver.GetFormatter*
+  commentId: Overload:MessagePack.IFormatterResolver.GetFormatter
+  isExternal: true
+  href: MessagePack.IFormatterResolver.html#MessagePack_IFormatterResolver_GetFormatter__1
+  name: GetFormatter
+  nameWithType: IFormatterResolver.GetFormatter
+  fullName: MessagePack.IFormatterResolver.GetFormatter
+- uid: MessagePack.Formatters.IMessagePackFormatter{{T}}
+  commentId: T:MessagePack.Formatters.IMessagePackFormatter{``0}
+  parent: MessagePack.Formatters
+  definition: MessagePack.Formatters.IMessagePackFormatter`1
+  href: MessagePack.Formatters.IMessagePackFormatter-1.html
+  name: IMessagePackFormatter<T>
+  nameWithType: IMessagePackFormatter<T>
+  fullName: MessagePack.Formatters.IMessagePackFormatter<T>
+  nameWithType.vb: IMessagePackFormatter(Of T)
+  fullName.vb: MessagePack.Formatters.IMessagePackFormatter(Of T)
+  name.vb: IMessagePackFormatter(Of T)
+  spec.csharp:
+  - uid: MessagePack.Formatters.IMessagePackFormatter`1
+    name: IMessagePackFormatter
+    isExternal: true
+    href: MessagePack.Formatters.IMessagePackFormatter-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: MessagePack.Formatters.IMessagePackFormatter`1
+    name: IMessagePackFormatter
+    isExternal: true
+    href: MessagePack.Formatters.IMessagePackFormatter-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: MessagePack.Formatters
+  commentId: N:MessagePack.Formatters
+  isExternal: true
+  href: MessagePack.html
+  name: MessagePack.Formatters
+  nameWithType: MessagePack.Formatters
+  fullName: MessagePack.Formatters
+  spec.csharp:
+  - uid: MessagePack
+    name: MessagePack
+    isExternal: true
+    href: MessagePack.html
+  - name: .
+  - uid: MessagePack.Formatters
+    name: Formatters
+    isExternal: true
+    href: MessagePack.Formatters.html
+  spec.vb:
+  - uid: MessagePack
+    name: MessagePack
+    isExternal: true
+    href: MessagePack.html
+  - name: .
+  - uid: MessagePack.Formatters
+    name: Formatters
+    isExternal: true
+    href: MessagePack.Formatters.html

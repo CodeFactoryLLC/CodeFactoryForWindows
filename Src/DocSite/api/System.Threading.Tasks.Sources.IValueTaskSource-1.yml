@@ -1,0 +1,303 @@
+### YamlMime:ManagedReference
+items:
+- uid: System.Threading.Tasks.Sources.IValueTaskSource`1
+  commentId: T:System.Threading.Tasks.Sources.IValueTaskSource`1
+  id: IValueTaskSource`1
+  parent: System.Threading.Tasks.Sources
+  children:
+  - System.Threading.Tasks.Sources.IValueTaskSource`1.GetResult(System.Int16)
+  - System.Threading.Tasks.Sources.IValueTaskSource`1.GetStatus(System.Int16)
+  - System.Threading.Tasks.Sources.IValueTaskSource`1.OnCompleted(System.Action{System.Object},System.Object,System.Int16,System.Threading.Tasks.Sources.ValueTaskSourceOnCompletedFlags)
+  langs:
+  - csharp
+  - vb
+  name: IValueTaskSource<TResult>
+  nameWithType: IValueTaskSource<TResult>
+  fullName: System.Threading.Tasks.Sources.IValueTaskSource<TResult>
+  type: Interface
+  assemblies:
+  - System.Threading.Tasks.Extensions
+  namespace: System.Threading.Tasks.Sources
+  syntax:
+    content: public interface IValueTaskSource<out TResult>
+    typeParameters:
+    - id: TResult
+    content.vb: Public Interface IValueTaskSource(Of Out TResult)
+  nameWithType.vb: IValueTaskSource(Of TResult)
+  fullName.vb: System.Threading.Tasks.Sources.IValueTaskSource(Of TResult)
+  name.vb: IValueTaskSource(Of TResult)
+- uid: System.Threading.Tasks.Sources.IValueTaskSource`1.GetStatus(System.Int16)
+  commentId: M:System.Threading.Tasks.Sources.IValueTaskSource`1.GetStatus(System.Int16)
+  id: GetStatus(System.Int16)
+  parent: System.Threading.Tasks.Sources.IValueTaskSource`1
+  langs:
+  - csharp
+  - vb
+  name: GetStatus(short)
+  nameWithType: IValueTaskSource<TResult>.GetStatus(short)
+  fullName: System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetStatus(short)
+  type: Method
+  assemblies:
+  - System.Threading.Tasks.Extensions
+  namespace: System.Threading.Tasks.Sources
+  syntax:
+    content: ValueTaskSourceStatus GetStatus(short token)
+    parameters:
+    - id: token
+      type: System.Int16
+    return:
+      type: System.Threading.Tasks.Sources.ValueTaskSourceStatus
+    content.vb: Function GetStatus(token As Short) As ValueTaskSourceStatus
+  overload: System.Threading.Tasks.Sources.IValueTaskSource`1.GetStatus*
+  nameWithType.vb: IValueTaskSource(Of TResult).GetStatus(Short)
+  fullName.vb: System.Threading.Tasks.Sources.IValueTaskSource(Of TResult).GetStatus(Short)
+  name.vb: GetStatus(Short)
+- uid: System.Threading.Tasks.Sources.IValueTaskSource`1.OnCompleted(System.Action{System.Object},System.Object,System.Int16,System.Threading.Tasks.Sources.ValueTaskSourceOnCompletedFlags)
+  commentId: M:System.Threading.Tasks.Sources.IValueTaskSource`1.OnCompleted(System.Action{System.Object},System.Object,System.Int16,System.Threading.Tasks.Sources.ValueTaskSourceOnCompletedFlags)
+  id: OnCompleted(System.Action{System.Object},System.Object,System.Int16,System.Threading.Tasks.Sources.ValueTaskSourceOnCompletedFlags)
+  parent: System.Threading.Tasks.Sources.IValueTaskSource`1
+  langs:
+  - csharp
+  - vb
+  name: OnCompleted(Action<object>, object, short, ValueTaskSourceOnCompletedFlags)
+  nameWithType: IValueTaskSource<TResult>.OnCompleted(Action<object>, object, short, ValueTaskSourceOnCompletedFlags)
+  fullName: System.Threading.Tasks.Sources.IValueTaskSource<TResult>.OnCompleted(System.Action<object>, object, short, System.Threading.Tasks.Sources.ValueTaskSourceOnCompletedFlags)
+  type: Method
+  assemblies:
+  - System.Threading.Tasks.Extensions
+  namespace: System.Threading.Tasks.Sources
+  syntax:
+    content: void OnCompleted(Action<object> continuation, object state, short token, ValueTaskSourceOnCompletedFlags flags)
+    parameters:
+    - id: continuation
+      type: System.Action{System.Object}
+    - id: state
+      type: System.Object
+    - id: token
+      type: System.Int16
+    - id: flags
+      type: System.Threading.Tasks.Sources.ValueTaskSourceOnCompletedFlags
+    content.vb: Sub OnCompleted(continuation As Action(Of Object), state As Object, token As Short, flags As ValueTaskSourceOnCompletedFlags)
+  overload: System.Threading.Tasks.Sources.IValueTaskSource`1.OnCompleted*
+  nameWithType.vb: IValueTaskSource(Of TResult).OnCompleted(Action(Of Object), Object, Short, ValueTaskSourceOnCompletedFlags)
+  fullName.vb: System.Threading.Tasks.Sources.IValueTaskSource(Of TResult).OnCompleted(System.Action(Of Object), Object, Short, System.Threading.Tasks.Sources.ValueTaskSourceOnCompletedFlags)
+  name.vb: OnCompleted(Action(Of Object), Object, Short, ValueTaskSourceOnCompletedFlags)
+- uid: System.Threading.Tasks.Sources.IValueTaskSource`1.GetResult(System.Int16)
+  commentId: M:System.Threading.Tasks.Sources.IValueTaskSource`1.GetResult(System.Int16)
+  id: GetResult(System.Int16)
+  parent: System.Threading.Tasks.Sources.IValueTaskSource`1
+  langs:
+  - csharp
+  - vb
+  name: GetResult(short)
+  nameWithType: IValueTaskSource<TResult>.GetResult(short)
+  fullName: System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(short)
+  type: Method
+  assemblies:
+  - System.Threading.Tasks.Extensions
+  namespace: System.Threading.Tasks.Sources
+  syntax:
+    content: TResult GetResult(short token)
+    parameters:
+    - id: token
+      type: System.Int16
+    return:
+      type: '{TResult}'
+    content.vb: Function GetResult(token As Short) As TResult
+  overload: System.Threading.Tasks.Sources.IValueTaskSource`1.GetResult*
+  nameWithType.vb: IValueTaskSource(Of TResult).GetResult(Short)
+  fullName.vb: System.Threading.Tasks.Sources.IValueTaskSource(Of TResult).GetResult(Short)
+  name.vb: GetResult(Short)
+references:
+- uid: System.Threading.Tasks.Sources
+  commentId: N:System.Threading.Tasks.Sources
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks.Sources
+  nameWithType: System.Threading.Tasks.Sources
+  fullName: System.Threading.Tasks.Sources
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  - name: .
+  - uid: System.Threading.Tasks.Sources
+    name: Sources
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.sources
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  - name: .
+  - uid: System.Threading.Tasks.Sources
+    name: Sources
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.sources
+- uid: System.Threading.Tasks.Sources.IValueTaskSource`1.GetStatus*
+  commentId: Overload:System.Threading.Tasks.Sources.IValueTaskSource`1.GetStatus
+  isExternal: true
+  href: System.Threading.Tasks.Sources.IValueTaskSource-1.html#System_Threading_Tasks_Sources_IValueTaskSource_1_GetStatus_System_Int16_
+  name: GetStatus
+  nameWithType: IValueTaskSource<TResult>.GetStatus
+  fullName: System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetStatus
+  nameWithType.vb: IValueTaskSource(Of TResult).GetStatus
+  fullName.vb: System.Threading.Tasks.Sources.IValueTaskSource(Of TResult).GetStatus
+- uid: System.Int16
+  commentId: T:System.Int16
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int16
+  name: short
+  nameWithType: short
+  fullName: short
+  nameWithType.vb: Short
+  fullName.vb: Short
+  name.vb: Short
+- uid: System.Threading.Tasks.Sources.ValueTaskSourceStatus
+  commentId: T:System.Threading.Tasks.Sources.ValueTaskSourceStatus
+  parent: System.Threading.Tasks.Sources
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.sources.valuetasksourcestatus
+  name: ValueTaskSourceStatus
+  nameWithType: ValueTaskSourceStatus
+  fullName: System.Threading.Tasks.Sources.ValueTaskSourceStatus
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Threading.Tasks.Sources.IValueTaskSource`1.OnCompleted*
+  commentId: Overload:System.Threading.Tasks.Sources.IValueTaskSource`1.OnCompleted
+  isExternal: true
+  href: System.Threading.Tasks.Sources.IValueTaskSource-1.html#System_Threading_Tasks_Sources_IValueTaskSource_1_OnCompleted_System_Action_System_Object__System_Object_System_Int16_System_Threading_Tasks_Sources_ValueTaskSourceOnCompletedFlags_
+  name: OnCompleted
+  nameWithType: IValueTaskSource<TResult>.OnCompleted
+  fullName: System.Threading.Tasks.Sources.IValueTaskSource<TResult>.OnCompleted
+  nameWithType.vb: IValueTaskSource(Of TResult).OnCompleted
+  fullName.vb: System.Threading.Tasks.Sources.IValueTaskSource(Of TResult).OnCompleted
+- uid: System.Action{System.Object}
+  commentId: T:System.Action{System.Object}
+  parent: System
+  definition: System.Action`1
+  href: https://learn.microsoft.com/dotnet/api/system.action-1
+  name: Action<object>
+  nameWithType: Action<object>
+  fullName: System.Action<object>
+  nameWithType.vb: Action(Of Object)
+  fullName.vb: System.Action(Of Object)
+  name.vb: Action(Of Object)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: <
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Threading.Tasks.Sources.ValueTaskSourceOnCompletedFlags
+  commentId: T:System.Threading.Tasks.Sources.ValueTaskSourceOnCompletedFlags
+  parent: System.Threading.Tasks.Sources
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.sources.valuetasksourceoncompletedflags
+  name: ValueTaskSourceOnCompletedFlags
+  nameWithType: ValueTaskSourceOnCompletedFlags
+  fullName: System.Threading.Tasks.Sources.ValueTaskSourceOnCompletedFlags
+- uid: System.Action`1
+  commentId: T:System.Action`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.action-1
+  name: Action<T>
+  nameWithType: Action<T>
+  fullName: System.Action<T>
+  nameWithType.vb: Action(Of T)
+  fullName.vb: System.Action(Of T)
+  name.vb: Action(Of T)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Threading.Tasks.Sources.IValueTaskSource`1.GetResult*
+  commentId: Overload:System.Threading.Tasks.Sources.IValueTaskSource`1.GetResult
+  isExternal: true
+  href: System.Threading.Tasks.Sources.IValueTaskSource-1.html#System_Threading_Tasks_Sources_IValueTaskSource_1_GetResult_System_Int16_
+  name: GetResult
+  nameWithType: IValueTaskSource<TResult>.GetResult
+  fullName: System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult
+  nameWithType.vb: IValueTaskSource(Of TResult).GetResult
+  fullName.vb: System.Threading.Tasks.Sources.IValueTaskSource(Of TResult).GetResult
+- uid: '{TResult}'
+  commentId: '!:TResult'
+  definition: TResult
+  name: TResult
+  nameWithType: TResult
+  fullName: TResult
+- uid: TResult
+  name: TResult
+  nameWithType: TResult
+  fullName: TResult

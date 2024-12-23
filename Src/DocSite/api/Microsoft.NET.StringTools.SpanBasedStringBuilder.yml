@@ -1,0 +1,962 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.NET.StringTools.SpanBasedStringBuilder
+  commentId: T:Microsoft.NET.StringTools.SpanBasedStringBuilder
+  id: SpanBasedStringBuilder
+  parent: Microsoft.NET.StringTools
+  children:
+  - Microsoft.NET.StringTools.SpanBasedStringBuilder.#ctor(System.Int32)
+  - Microsoft.NET.StringTools.SpanBasedStringBuilder.#ctor(System.String)
+  - Microsoft.NET.StringTools.SpanBasedStringBuilder.Append(System.ReadOnlyMemory{System.Char})
+  - Microsoft.NET.StringTools.SpanBasedStringBuilder.Append(System.String)
+  - Microsoft.NET.StringTools.SpanBasedStringBuilder.Append(System.String,System.Int32,System.Int32)
+  - Microsoft.NET.StringTools.SpanBasedStringBuilder.Capacity
+  - Microsoft.NET.StringTools.SpanBasedStringBuilder.Clear
+  - Microsoft.NET.StringTools.SpanBasedStringBuilder.Dispose
+  - Microsoft.NET.StringTools.SpanBasedStringBuilder.GetEnumerator
+  - Microsoft.NET.StringTools.SpanBasedStringBuilder.Length
+  - Microsoft.NET.StringTools.SpanBasedStringBuilder.ToString
+  - Microsoft.NET.StringTools.SpanBasedStringBuilder.Trim
+  - Microsoft.NET.StringTools.SpanBasedStringBuilder.TrimEnd
+  - Microsoft.NET.StringTools.SpanBasedStringBuilder.TrimStart
+  langs:
+  - csharp
+  - vb
+  name: SpanBasedStringBuilder
+  nameWithType: SpanBasedStringBuilder
+  fullName: Microsoft.NET.StringTools.SpanBasedStringBuilder
+  type: Class
+  source:
+    href: https://github.com/dotnet/msbuild/blob/18d5aef85920037c9d6ff49b1215a4daf515197f/src/StringTools/SpanBasedStringBuilder.cs
+  assemblies:
+  - Microsoft.NET.StringTools
+  namespace: Microsoft.NET.StringTools
+  summary: >-
+    A StringBuilder replacement that keeps a list of <xref href="System.ReadOnlyMemory%601" data-throw-if-not-resolved="false"></xref> spans making up the intermediate string rather
+
+    than a copy of its characters. This has positive impact on both memory (no need to allocate space for the intermediate string)
+
+    and time (no need to copy characters to the intermediate string).
+  remarks: >-
+    The <xref href="Microsoft.NET.StringTools.SpanBasedStringBuilder.ToString" data-throw-if-not-resolved="false"></xref> method tries to intern the resulting string without even allocating it if it's already interned.
+
+    Use <xref href="Microsoft.NET.StringTools.Strings.GetSpanBasedStringBuilder" data-throw-if-not-resolved="false"></xref> to take advantage of pooling to eliminate allocation overhead of this class.
+  example: []
+  syntax:
+    content: 'public class SpanBasedStringBuilder : IDisposable'
+    content.vb: Public Class SpanBasedStringBuilder Implements IDisposable
+  inheritance:
+  - System.Object
+  implements:
+  - System.IDisposable
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: Microsoft.NET.StringTools.SpanBasedStringBuilder.#ctor(System.String)
+  commentId: M:Microsoft.NET.StringTools.SpanBasedStringBuilder.#ctor(System.String)
+  id: '#ctor(System.String)'
+  parent: Microsoft.NET.StringTools.SpanBasedStringBuilder
+  langs:
+  - csharp
+  - vb
+  name: SpanBasedStringBuilder(string)
+  nameWithType: SpanBasedStringBuilder.SpanBasedStringBuilder(string)
+  fullName: Microsoft.NET.StringTools.SpanBasedStringBuilder.SpanBasedStringBuilder(string)
+  type: Constructor
+  source:
+    href: https://github.com/dotnet/msbuild/blob/18d5aef85920037c9d6ff49b1215a4daf515197f/src/StringTools/SpanBasedStringBuilder.cs
+  assemblies:
+  - Microsoft.NET.StringTools
+  namespace: Microsoft.NET.StringTools
+  summary: Constructs a new SpanBasedStringBuilder containing the given string.
+  example: []
+  syntax:
+    content: public SpanBasedStringBuilder(string str)
+    parameters:
+    - id: str
+      type: System.String
+      description: The string to wrap, must be non-null.
+    content.vb: Public Sub New(str As String)
+  overload: Microsoft.NET.StringTools.SpanBasedStringBuilder.#ctor*
+  nameWithType.vb: SpanBasedStringBuilder.New(String)
+  fullName.vb: Microsoft.NET.StringTools.SpanBasedStringBuilder.New(String)
+  name.vb: New(String)
+- uid: Microsoft.NET.StringTools.SpanBasedStringBuilder.#ctor(System.Int32)
+  commentId: M:Microsoft.NET.StringTools.SpanBasedStringBuilder.#ctor(System.Int32)
+  id: '#ctor(System.Int32)'
+  parent: Microsoft.NET.StringTools.SpanBasedStringBuilder
+  langs:
+  - csharp
+  - vb
+  name: SpanBasedStringBuilder(int)
+  nameWithType: SpanBasedStringBuilder.SpanBasedStringBuilder(int)
+  fullName: Microsoft.NET.StringTools.SpanBasedStringBuilder.SpanBasedStringBuilder(int)
+  type: Constructor
+  source:
+    href: https://github.com/dotnet/msbuild/blob/18d5aef85920037c9d6ff49b1215a4daf515197f/src/StringTools/SpanBasedStringBuilder.cs
+  assemblies:
+  - Microsoft.NET.StringTools
+  namespace: Microsoft.NET.StringTools
+  summary: Constructs a new empty SpanBasedStringBuilder with the given expected number of spans.
+  example: []
+  syntax:
+    content: public SpanBasedStringBuilder(int capacity = 4)
+    parameters:
+    - id: capacity
+      type: System.Int32
+    content.vb: Public Sub New(capacity As Integer = 4)
+  overload: Microsoft.NET.StringTools.SpanBasedStringBuilder.#ctor*
+  nameWithType.vb: SpanBasedStringBuilder.New(Integer)
+  fullName.vb: Microsoft.NET.StringTools.SpanBasedStringBuilder.New(Integer)
+  name.vb: New(Integer)
+- uid: Microsoft.NET.StringTools.SpanBasedStringBuilder.GetEnumerator
+  commentId: M:Microsoft.NET.StringTools.SpanBasedStringBuilder.GetEnumerator
+  id: GetEnumerator
+  parent: Microsoft.NET.StringTools.SpanBasedStringBuilder
+  langs:
+  - csharp
+  - vb
+  name: GetEnumerator()
+  nameWithType: SpanBasedStringBuilder.GetEnumerator()
+  fullName: Microsoft.NET.StringTools.SpanBasedStringBuilder.GetEnumerator()
+  type: Method
+  source:
+    href: https://github.com/dotnet/msbuild/blob/18d5aef85920037c9d6ff49b1215a4daf515197f/src/StringTools/SpanBasedStringBuilder.cs
+  assemblies:
+  - Microsoft.NET.StringTools
+  namespace: Microsoft.NET.StringTools
+  summary: Creates a new enumerator for enumerating characters in this string. Does not allocate.
+  example: []
+  syntax:
+    content: public SpanBasedStringBuilder.Enumerator GetEnumerator()
+    return:
+      type: Microsoft.NET.StringTools.SpanBasedStringBuilder.Enumerator
+      description: The enumerator.
+    content.vb: Public Function GetEnumerator() As SpanBasedStringBuilder.Enumerator
+  overload: Microsoft.NET.StringTools.SpanBasedStringBuilder.GetEnumerator*
+- uid: Microsoft.NET.StringTools.SpanBasedStringBuilder.ToString
+  commentId: M:Microsoft.NET.StringTools.SpanBasedStringBuilder.ToString
+  id: ToString
+  parent: Microsoft.NET.StringTools.SpanBasedStringBuilder
+  langs:
+  - csharp
+  - vb
+  name: ToString()
+  nameWithType: SpanBasedStringBuilder.ToString()
+  fullName: Microsoft.NET.StringTools.SpanBasedStringBuilder.ToString()
+  type: Method
+  source:
+    href: https://github.com/dotnet/msbuild/blob/18d5aef85920037c9d6ff49b1215a4daf515197f/src/StringTools/SpanBasedStringBuilder.cs
+  assemblies:
+  - Microsoft.NET.StringTools
+  namespace: Microsoft.NET.StringTools
+  summary: Converts this instance to a System.String while first searching for a match in the intern table.
+  remarks: May allocate depending on whether the string has already been interned.
+  example: []
+  syntax:
+    content: public override string ToString()
+    return:
+      type: System.String
+    content.vb: Public Overrides Function ToString() As String
+  overridden: System.Object.ToString
+  overload: Microsoft.NET.StringTools.SpanBasedStringBuilder.ToString*
+- uid: Microsoft.NET.StringTools.SpanBasedStringBuilder.Dispose
+  commentId: M:Microsoft.NET.StringTools.SpanBasedStringBuilder.Dispose
+  id: Dispose
+  parent: Microsoft.NET.StringTools.SpanBasedStringBuilder
+  langs:
+  - csharp
+  - vb
+  name: Dispose()
+  nameWithType: SpanBasedStringBuilder.Dispose()
+  fullName: Microsoft.NET.StringTools.SpanBasedStringBuilder.Dispose()
+  type: Method
+  source:
+    href: https://github.com/dotnet/msbuild/blob/18d5aef85920037c9d6ff49b1215a4daf515197f/src/StringTools/SpanBasedStringBuilder.cs
+  assemblies:
+  - Microsoft.NET.StringTools
+  namespace: Microsoft.NET.StringTools
+  summary: Releases this instance.
+  example: []
+  syntax:
+    content: public void Dispose()
+    content.vb: Public Sub Dispose()
+  overload: Microsoft.NET.StringTools.SpanBasedStringBuilder.Dispose*
+  implements:
+  - System.IDisposable.Dispose
+- uid: Microsoft.NET.StringTools.SpanBasedStringBuilder.Append(System.String)
+  commentId: M:Microsoft.NET.StringTools.SpanBasedStringBuilder.Append(System.String)
+  id: Append(System.String)
+  parent: Microsoft.NET.StringTools.SpanBasedStringBuilder
+  langs:
+  - csharp
+  - vb
+  name: Append(string)
+  nameWithType: SpanBasedStringBuilder.Append(string)
+  fullName: Microsoft.NET.StringTools.SpanBasedStringBuilder.Append(string)
+  type: Method
+  source:
+    href: https://github.com/dotnet/msbuild/blob/18d5aef85920037c9d6ff49b1215a4daf515197f/src/StringTools/SpanBasedStringBuilder.cs
+  assemblies:
+  - Microsoft.NET.StringTools
+  namespace: Microsoft.NET.StringTools
+  summary: Appends a string.
+  example: []
+  syntax:
+    content: public void Append(string value)
+    parameters:
+    - id: value
+      type: System.String
+      description: The string to append.
+    content.vb: Public Sub Append(value As String)
+  overload: Microsoft.NET.StringTools.SpanBasedStringBuilder.Append*
+  nameWithType.vb: SpanBasedStringBuilder.Append(String)
+  fullName.vb: Microsoft.NET.StringTools.SpanBasedStringBuilder.Append(String)
+  name.vb: Append(String)
+- uid: Microsoft.NET.StringTools.SpanBasedStringBuilder.Append(System.String,System.Int32,System.Int32)
+  commentId: M:Microsoft.NET.StringTools.SpanBasedStringBuilder.Append(System.String,System.Int32,System.Int32)
+  id: Append(System.String,System.Int32,System.Int32)
+  parent: Microsoft.NET.StringTools.SpanBasedStringBuilder
+  langs:
+  - csharp
+  - vb
+  name: Append(string, int, int)
+  nameWithType: SpanBasedStringBuilder.Append(string, int, int)
+  fullName: Microsoft.NET.StringTools.SpanBasedStringBuilder.Append(string, int, int)
+  type: Method
+  source:
+    href: https://github.com/dotnet/msbuild/blob/18d5aef85920037c9d6ff49b1215a4daf515197f/src/StringTools/SpanBasedStringBuilder.cs
+  assemblies:
+  - Microsoft.NET.StringTools
+  namespace: Microsoft.NET.StringTools
+  summary: Appends a substring.
+  example: []
+  syntax:
+    content: public void Append(string value, int startIndex, int count)
+    parameters:
+    - id: value
+      type: System.String
+      description: The string to append.
+    - id: startIndex
+      type: System.Int32
+      description: The start index of the substring within <code class="paramref">value</code> to append.
+    - id: count
+      type: System.Int32
+      description: The length of the substring to append.
+    content.vb: Public Sub Append(value As String, startIndex As Integer, count As Integer)
+  overload: Microsoft.NET.StringTools.SpanBasedStringBuilder.Append*
+  nameWithType.vb: SpanBasedStringBuilder.Append(String, Integer, Integer)
+  fullName.vb: Microsoft.NET.StringTools.SpanBasedStringBuilder.Append(String, Integer, Integer)
+  name.vb: Append(String, Integer, Integer)
+- uid: Microsoft.NET.StringTools.SpanBasedStringBuilder.Append(System.ReadOnlyMemory{System.Char})
+  commentId: M:Microsoft.NET.StringTools.SpanBasedStringBuilder.Append(System.ReadOnlyMemory{System.Char})
+  id: Append(System.ReadOnlyMemory{System.Char})
+  parent: Microsoft.NET.StringTools.SpanBasedStringBuilder
+  langs:
+  - csharp
+  - vb
+  name: Append(ReadOnlyMemory<char>)
+  nameWithType: SpanBasedStringBuilder.Append(ReadOnlyMemory<char>)
+  fullName: Microsoft.NET.StringTools.SpanBasedStringBuilder.Append(System.ReadOnlyMemory<char>)
+  type: Method
+  source:
+    href: https://github.com/dotnet/msbuild/blob/18d5aef85920037c9d6ff49b1215a4daf515197f/src/StringTools/SpanBasedStringBuilder.cs
+  assemblies:
+  - Microsoft.NET.StringTools
+  namespace: Microsoft.NET.StringTools
+  summary: Appends a character span represented by <xref href="System.ReadOnlyMemory%601" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public void Append(ReadOnlyMemory<char> span)
+    parameters:
+    - id: span
+      type: System.ReadOnlyMemory{System.Char}
+      description: The character span to append.
+    content.vb: Public Sub Append(span As ReadOnlyMemory(Of Char))
+  overload: Microsoft.NET.StringTools.SpanBasedStringBuilder.Append*
+  nameWithType.vb: SpanBasedStringBuilder.Append(ReadOnlyMemory(Of Char))
+  fullName.vb: Microsoft.NET.StringTools.SpanBasedStringBuilder.Append(System.ReadOnlyMemory(Of Char))
+  name.vb: Append(ReadOnlyMemory(Of Char))
+- uid: Microsoft.NET.StringTools.SpanBasedStringBuilder.TrimStart
+  commentId: M:Microsoft.NET.StringTools.SpanBasedStringBuilder.TrimStart
+  id: TrimStart
+  parent: Microsoft.NET.StringTools.SpanBasedStringBuilder
+  langs:
+  - csharp
+  - vb
+  name: TrimStart()
+  nameWithType: SpanBasedStringBuilder.TrimStart()
+  fullName: Microsoft.NET.StringTools.SpanBasedStringBuilder.TrimStart()
+  type: Method
+  source:
+    href: https://github.com/dotnet/msbuild/blob/18d5aef85920037c9d6ff49b1215a4daf515197f/src/StringTools/SpanBasedStringBuilder.cs
+  assemblies:
+  - Microsoft.NET.StringTools
+  namespace: Microsoft.NET.StringTools
+  summary: Removes leading white-space characters from the string.
+  example: []
+  syntax:
+    content: public void TrimStart()
+    content.vb: Public Sub TrimStart()
+  overload: Microsoft.NET.StringTools.SpanBasedStringBuilder.TrimStart*
+- uid: Microsoft.NET.StringTools.SpanBasedStringBuilder.TrimEnd
+  commentId: M:Microsoft.NET.StringTools.SpanBasedStringBuilder.TrimEnd
+  id: TrimEnd
+  parent: Microsoft.NET.StringTools.SpanBasedStringBuilder
+  langs:
+  - csharp
+  - vb
+  name: TrimEnd()
+  nameWithType: SpanBasedStringBuilder.TrimEnd()
+  fullName: Microsoft.NET.StringTools.SpanBasedStringBuilder.TrimEnd()
+  type: Method
+  source:
+    href: https://github.com/dotnet/msbuild/blob/18d5aef85920037c9d6ff49b1215a4daf515197f/src/StringTools/SpanBasedStringBuilder.cs
+  assemblies:
+  - Microsoft.NET.StringTools
+  namespace: Microsoft.NET.StringTools
+  summary: Removes trailing white-space characters from the string.
+  example: []
+  syntax:
+    content: public void TrimEnd()
+    content.vb: Public Sub TrimEnd()
+  overload: Microsoft.NET.StringTools.SpanBasedStringBuilder.TrimEnd*
+- uid: Microsoft.NET.StringTools.SpanBasedStringBuilder.Trim
+  commentId: M:Microsoft.NET.StringTools.SpanBasedStringBuilder.Trim
+  id: Trim
+  parent: Microsoft.NET.StringTools.SpanBasedStringBuilder
+  langs:
+  - csharp
+  - vb
+  name: Trim()
+  nameWithType: SpanBasedStringBuilder.Trim()
+  fullName: Microsoft.NET.StringTools.SpanBasedStringBuilder.Trim()
+  type: Method
+  source:
+    href: https://github.com/dotnet/msbuild/blob/18d5aef85920037c9d6ff49b1215a4daf515197f/src/StringTools/SpanBasedStringBuilder.cs
+  assemblies:
+  - Microsoft.NET.StringTools
+  namespace: Microsoft.NET.StringTools
+  summary: Removes leading and trailing white-space characters from the string.
+  example: []
+  syntax:
+    content: public void Trim()
+    content.vb: Public Sub Trim()
+  overload: Microsoft.NET.StringTools.SpanBasedStringBuilder.Trim*
+- uid: Microsoft.NET.StringTools.SpanBasedStringBuilder.Clear
+  commentId: M:Microsoft.NET.StringTools.SpanBasedStringBuilder.Clear
+  id: Clear
+  parent: Microsoft.NET.StringTools.SpanBasedStringBuilder
+  langs:
+  - csharp
+  - vb
+  name: Clear()
+  nameWithType: SpanBasedStringBuilder.Clear()
+  fullName: Microsoft.NET.StringTools.SpanBasedStringBuilder.Clear()
+  type: Method
+  source:
+    href: https://github.com/dotnet/msbuild/blob/18d5aef85920037c9d6ff49b1215a4daf515197f/src/StringTools/SpanBasedStringBuilder.cs
+  assemblies:
+  - Microsoft.NET.StringTools
+  namespace: Microsoft.NET.StringTools
+  summary: Clears this instance making it represent an empty string.
+  example: []
+  syntax:
+    content: public void Clear()
+    content.vb: Public Sub Clear()
+  overload: Microsoft.NET.StringTools.SpanBasedStringBuilder.Clear*
+- uid: Microsoft.NET.StringTools.SpanBasedStringBuilder.Length
+  commentId: P:Microsoft.NET.StringTools.SpanBasedStringBuilder.Length
+  id: Length
+  parent: Microsoft.NET.StringTools.SpanBasedStringBuilder
+  langs:
+  - csharp
+  - vb
+  name: Length
+  nameWithType: SpanBasedStringBuilder.Length
+  fullName: Microsoft.NET.StringTools.SpanBasedStringBuilder.Length
+  type: Property
+  source:
+    href: https://github.com/dotnet/msbuild/blob/18d5aef85920037c9d6ff49b1215a4daf515197f/src/StringTools/SpanBasedStringBuilder.cs
+  assemblies:
+  - Microsoft.NET.StringTools
+  namespace: Microsoft.NET.StringTools
+  summary: Gets the length of the string.
+  example: []
+  syntax:
+    content: public int Length { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Property Length As Integer
+  overload: Microsoft.NET.StringTools.SpanBasedStringBuilder.Length*
+- uid: Microsoft.NET.StringTools.SpanBasedStringBuilder.Capacity
+  commentId: P:Microsoft.NET.StringTools.SpanBasedStringBuilder.Capacity
+  id: Capacity
+  parent: Microsoft.NET.StringTools.SpanBasedStringBuilder
+  langs:
+  - csharp
+  - vb
+  name: Capacity
+  nameWithType: SpanBasedStringBuilder.Capacity
+  fullName: Microsoft.NET.StringTools.SpanBasedStringBuilder.Capacity
+  type: Property
+  source:
+    href: https://github.com/dotnet/msbuild/blob/18d5aef85920037c9d6ff49b1215a4daf515197f/src/StringTools/SpanBasedStringBuilder.cs
+  assemblies:
+  - Microsoft.NET.StringTools
+  namespace: Microsoft.NET.StringTools
+  summary: Gets the capacity of the SpanBasedStringBuilder in terms of number of spans it can hold without allocating.
+  example: []
+  syntax:
+    content: public int Capacity { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Property Capacity As Integer
+  overload: Microsoft.NET.StringTools.SpanBasedStringBuilder.Capacity*
+references:
+- uid: System.ReadOnlyMemory`1
+  commentId: T:System.ReadOnlyMemory`1
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.readonlymemory-1
+  name: ReadOnlyMemory<T>
+  nameWithType: ReadOnlyMemory<T>
+  fullName: System.ReadOnlyMemory<T>
+  nameWithType.vb: ReadOnlyMemory(Of T)
+  fullName.vb: System.ReadOnlyMemory(Of T)
+  name.vb: ReadOnlyMemory(Of T)
+  spec.csharp:
+  - uid: System.ReadOnlyMemory`1
+    name: ReadOnlyMemory
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlymemory-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.ReadOnlyMemory`1
+    name: ReadOnlyMemory
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlymemory-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Microsoft.NET.StringTools.SpanBasedStringBuilder.ToString
+  commentId: M:Microsoft.NET.StringTools.SpanBasedStringBuilder.ToString
+  isExternal: true
+  href: Microsoft.NET.StringTools.SpanBasedStringBuilder.html#Microsoft_NET_StringTools_SpanBasedStringBuilder_ToString
+  name: ToString()
+  nameWithType: SpanBasedStringBuilder.ToString()
+  fullName: Microsoft.NET.StringTools.SpanBasedStringBuilder.ToString()
+  spec.csharp:
+  - uid: Microsoft.NET.StringTools.SpanBasedStringBuilder.ToString
+    name: ToString
+    isExternal: true
+    href: Microsoft.NET.StringTools.SpanBasedStringBuilder.html#Microsoft_NET_StringTools_SpanBasedStringBuilder_ToString
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Microsoft.NET.StringTools.SpanBasedStringBuilder.ToString
+    name: ToString
+    isExternal: true
+    href: Microsoft.NET.StringTools.SpanBasedStringBuilder.html#Microsoft_NET_StringTools_SpanBasedStringBuilder_ToString
+  - name: (
+  - name: )
+- uid: Microsoft.NET.StringTools.Strings.GetSpanBasedStringBuilder
+  commentId: M:Microsoft.NET.StringTools.Strings.GetSpanBasedStringBuilder
+  isExternal: true
+  href: Microsoft.NET.StringTools.Strings.html#Microsoft_NET_StringTools_Strings_GetSpanBasedStringBuilder
+  name: GetSpanBasedStringBuilder()
+  nameWithType: Strings.GetSpanBasedStringBuilder()
+  fullName: Microsoft.NET.StringTools.Strings.GetSpanBasedStringBuilder()
+  spec.csharp:
+  - uid: Microsoft.NET.StringTools.Strings.GetSpanBasedStringBuilder
+    name: GetSpanBasedStringBuilder
+    isExternal: true
+    href: Microsoft.NET.StringTools.Strings.html#Microsoft_NET_StringTools_Strings_GetSpanBasedStringBuilder
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Microsoft.NET.StringTools.Strings.GetSpanBasedStringBuilder
+    name: GetSpanBasedStringBuilder
+    isExternal: true
+    href: Microsoft.NET.StringTools.Strings.html#Microsoft_NET_StringTools_Strings_GetSpanBasedStringBuilder
+  - name: (
+  - name: )
+- uid: Microsoft.NET.StringTools
+  commentId: N:Microsoft.NET.StringTools
+  isExternal: true
+  href: Microsoft.html
+  name: Microsoft.NET.StringTools
+  nameWithType: Microsoft.NET.StringTools
+  fullName: Microsoft.NET.StringTools
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.NET
+    name: NET
+    isExternal: true
+    href: Microsoft.NET.html
+  - name: .
+  - uid: Microsoft.NET.StringTools
+    name: StringTools
+    isExternal: true
+    href: Microsoft.NET.StringTools.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.NET
+    name: NET
+    isExternal: true
+    href: Microsoft.NET.html
+  - name: .
+  - uid: Microsoft.NET.StringTools
+    name: StringTools
+    isExternal: true
+    href: Microsoft.NET.StringTools.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.IDisposable
+  commentId: T:System.IDisposable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Microsoft.NET.StringTools.SpanBasedStringBuilder.#ctor*
+  commentId: Overload:Microsoft.NET.StringTools.SpanBasedStringBuilder.#ctor
+  isExternal: true
+  href: Microsoft.NET.StringTools.SpanBasedStringBuilder.html#Microsoft_NET_StringTools_SpanBasedStringBuilder__ctor_System_String_
+  name: SpanBasedStringBuilder
+  nameWithType: SpanBasedStringBuilder.SpanBasedStringBuilder
+  fullName: Microsoft.NET.StringTools.SpanBasedStringBuilder.SpanBasedStringBuilder
+  nameWithType.vb: SpanBasedStringBuilder.New
+  fullName.vb: Microsoft.NET.StringTools.SpanBasedStringBuilder.New
+  name.vb: New
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: Microsoft.NET.StringTools.SpanBasedStringBuilder.GetEnumerator*
+  commentId: Overload:Microsoft.NET.StringTools.SpanBasedStringBuilder.GetEnumerator
+  isExternal: true
+  href: Microsoft.NET.StringTools.SpanBasedStringBuilder.html#Microsoft_NET_StringTools_SpanBasedStringBuilder_GetEnumerator
+  name: GetEnumerator
+  nameWithType: SpanBasedStringBuilder.GetEnumerator
+  fullName: Microsoft.NET.StringTools.SpanBasedStringBuilder.GetEnumerator
+- uid: Microsoft.NET.StringTools.SpanBasedStringBuilder.Enumerator
+  commentId: T:Microsoft.NET.StringTools.SpanBasedStringBuilder.Enumerator
+  parent: Microsoft.NET.StringTools
+  isExternal: true
+  href: Microsoft.NET.StringTools.SpanBasedStringBuilder.html
+  name: SpanBasedStringBuilder.Enumerator
+  nameWithType: SpanBasedStringBuilder.Enumerator
+  fullName: Microsoft.NET.StringTools.SpanBasedStringBuilder.Enumerator
+  spec.csharp:
+  - uid: Microsoft.NET.StringTools.SpanBasedStringBuilder
+    name: SpanBasedStringBuilder
+    isExternal: true
+    href: Microsoft.NET.StringTools.SpanBasedStringBuilder.html
+  - name: .
+  - uid: Microsoft.NET.StringTools.SpanBasedStringBuilder.Enumerator
+    name: Enumerator
+    isExternal: true
+    href: Microsoft.NET.StringTools.SpanBasedStringBuilder.Enumerator.html
+  spec.vb:
+  - uid: Microsoft.NET.StringTools.SpanBasedStringBuilder
+    name: SpanBasedStringBuilder
+    isExternal: true
+    href: Microsoft.NET.StringTools.SpanBasedStringBuilder.html
+  - name: .
+  - uid: Microsoft.NET.StringTools.SpanBasedStringBuilder.Enumerator
+    name: Enumerator
+    isExternal: true
+    href: Microsoft.NET.StringTools.SpanBasedStringBuilder.Enumerator.html
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: Microsoft.NET.StringTools.SpanBasedStringBuilder.ToString*
+  commentId: Overload:Microsoft.NET.StringTools.SpanBasedStringBuilder.ToString
+  isExternal: true
+  href: Microsoft.NET.StringTools.SpanBasedStringBuilder.html#Microsoft_NET_StringTools_SpanBasedStringBuilder_ToString
+  name: ToString
+  nameWithType: SpanBasedStringBuilder.ToString
+  fullName: Microsoft.NET.StringTools.SpanBasedStringBuilder.ToString
+- uid: Microsoft.NET.StringTools.SpanBasedStringBuilder.Dispose*
+  commentId: Overload:Microsoft.NET.StringTools.SpanBasedStringBuilder.Dispose
+  isExternal: true
+  href: Microsoft.NET.StringTools.SpanBasedStringBuilder.html#Microsoft_NET_StringTools_SpanBasedStringBuilder_Dispose
+  name: Dispose
+  nameWithType: SpanBasedStringBuilder.Dispose
+  fullName: Microsoft.NET.StringTools.SpanBasedStringBuilder.Dispose
+- uid: System.IDisposable.Dispose
+  commentId: M:System.IDisposable.Dispose
+  parent: System.IDisposable
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  name: Dispose()
+  nameWithType: IDisposable.Dispose()
+  fullName: System.IDisposable.Dispose()
+  spec.csharp:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  - name: (
+  - name: )
+- uid: Microsoft.NET.StringTools.SpanBasedStringBuilder.Append*
+  commentId: Overload:Microsoft.NET.StringTools.SpanBasedStringBuilder.Append
+  isExternal: true
+  href: Microsoft.NET.StringTools.SpanBasedStringBuilder.html#Microsoft_NET_StringTools_SpanBasedStringBuilder_Append_System_String_
+  name: Append
+  nameWithType: SpanBasedStringBuilder.Append
+  fullName: Microsoft.NET.StringTools.SpanBasedStringBuilder.Append
+- uid: System.ReadOnlyMemory{System.Char}
+  commentId: T:System.ReadOnlyMemory{System.Char}
+  parent: System
+  definition: System.ReadOnlyMemory`1
+  href: https://learn.microsoft.com/dotnet/api/system.readonlymemory-1
+  name: ReadOnlyMemory<char>
+  nameWithType: ReadOnlyMemory<char>
+  fullName: System.ReadOnlyMemory<char>
+  nameWithType.vb: ReadOnlyMemory(Of Char)
+  fullName.vb: System.ReadOnlyMemory(Of Char)
+  name.vb: ReadOnlyMemory(Of Char)
+  spec.csharp:
+  - uid: System.ReadOnlyMemory`1
+    name: ReadOnlyMemory
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlymemory-1
+  - name: <
+  - uid: System.Char
+    name: char
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.char
+  - name: '>'
+  spec.vb:
+  - uid: System.ReadOnlyMemory`1
+    name: ReadOnlyMemory
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlymemory-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Char
+    name: Char
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.char
+  - name: )
+- uid: Microsoft.NET.StringTools.SpanBasedStringBuilder.TrimStart*
+  commentId: Overload:Microsoft.NET.StringTools.SpanBasedStringBuilder.TrimStart
+  isExternal: true
+  href: Microsoft.NET.StringTools.SpanBasedStringBuilder.html#Microsoft_NET_StringTools_SpanBasedStringBuilder_TrimStart
+  name: TrimStart
+  nameWithType: SpanBasedStringBuilder.TrimStart
+  fullName: Microsoft.NET.StringTools.SpanBasedStringBuilder.TrimStart
+- uid: Microsoft.NET.StringTools.SpanBasedStringBuilder.TrimEnd*
+  commentId: Overload:Microsoft.NET.StringTools.SpanBasedStringBuilder.TrimEnd
+  isExternal: true
+  href: Microsoft.NET.StringTools.SpanBasedStringBuilder.html#Microsoft_NET_StringTools_SpanBasedStringBuilder_TrimEnd
+  name: TrimEnd
+  nameWithType: SpanBasedStringBuilder.TrimEnd
+  fullName: Microsoft.NET.StringTools.SpanBasedStringBuilder.TrimEnd
+- uid: Microsoft.NET.StringTools.SpanBasedStringBuilder.Trim*
+  commentId: Overload:Microsoft.NET.StringTools.SpanBasedStringBuilder.Trim
+  isExternal: true
+  href: Microsoft.NET.StringTools.SpanBasedStringBuilder.html#Microsoft_NET_StringTools_SpanBasedStringBuilder_Trim
+  name: Trim
+  nameWithType: SpanBasedStringBuilder.Trim
+  fullName: Microsoft.NET.StringTools.SpanBasedStringBuilder.Trim
+- uid: Microsoft.NET.StringTools.SpanBasedStringBuilder.Clear*
+  commentId: Overload:Microsoft.NET.StringTools.SpanBasedStringBuilder.Clear
+  isExternal: true
+  href: Microsoft.NET.StringTools.SpanBasedStringBuilder.html#Microsoft_NET_StringTools_SpanBasedStringBuilder_Clear
+  name: Clear
+  nameWithType: SpanBasedStringBuilder.Clear
+  fullName: Microsoft.NET.StringTools.SpanBasedStringBuilder.Clear
+- uid: Microsoft.NET.StringTools.SpanBasedStringBuilder.Length*
+  commentId: Overload:Microsoft.NET.StringTools.SpanBasedStringBuilder.Length
+  isExternal: true
+  href: Microsoft.NET.StringTools.SpanBasedStringBuilder.html#Microsoft_NET_StringTools_SpanBasedStringBuilder_Length
+  name: Length
+  nameWithType: SpanBasedStringBuilder.Length
+  fullName: Microsoft.NET.StringTools.SpanBasedStringBuilder.Length
+- uid: Microsoft.NET.StringTools.SpanBasedStringBuilder.Capacity*
+  commentId: Overload:Microsoft.NET.StringTools.SpanBasedStringBuilder.Capacity
+  isExternal: true
+  href: Microsoft.NET.StringTools.SpanBasedStringBuilder.html#Microsoft_NET_StringTools_SpanBasedStringBuilder_Capacity
+  name: Capacity
+  nameWithType: SpanBasedStringBuilder.Capacity
+  fullName: Microsoft.NET.StringTools.SpanBasedStringBuilder.Capacity

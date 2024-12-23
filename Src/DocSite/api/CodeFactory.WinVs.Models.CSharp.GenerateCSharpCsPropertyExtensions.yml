@@ -1,0 +1,759 @@
+### YamlMime:ManagedReference
+items:
+- uid: CodeFactory.WinVs.Models.CSharp.GenerateCSharpCsPropertyExtensions
+  commentId: T:CodeFactory.WinVs.Models.CSharp.GenerateCSharpCsPropertyExtensions
+  id: GenerateCSharpCsPropertyExtensions
+  parent: CodeFactory.WinVs.Models.CSharp
+  children:
+  - CodeFactory.WinVs.Models.CSharp.GenerateCSharpCsPropertyExtensions.GenerateCSharpDefaultPropertySignature(CodeFactory.WinVs.Models.CSharp.CsProperty,CodeFactory.WinVs.Models.CSharp.NamespaceManager,System.Collections.Generic.List{CodeFactory.WinVs.Models.CSharp.MapNamespace},System.Boolean,System.Boolean,CodeFactory.WinVs.Models.CSharp.CsSecurity,CodeFactory.WinVs.Models.CSharp.CsSecurity,CodeFactory.WinVs.Models.CSharp.CsSecurity,System.String,System.String)
+  - CodeFactory.WinVs.Models.CSharp.GenerateCSharpCsPropertyExtensions.GenerateCSharpDefaultValue(CodeFactory.WinVs.Models.CSharp.CsProperty)
+  - CodeFactory.WinVs.Models.CSharp.GenerateCSharpCsPropertyExtensions.GenerateCSharpGetStatement(CodeFactory.WinVs.Models.CSharp.CsProperty,CodeFactory.WinVs.Models.CSharp.CsSecurity,CodeFactory.WinVs.Models.CSharp.CsSecurity)
+  - CodeFactory.WinVs.Models.CSharp.GenerateCSharpCsPropertyExtensions.GenerateCSharpPropertyDeclaration(CodeFactory.WinVs.Models.CSharp.CsProperty,CodeFactory.WinVs.Models.CSharp.NamespaceManager,System.Collections.Generic.List{CodeFactory.WinVs.Models.CSharp.MapNamespace},System.Boolean,System.Boolean,System.Boolean,CodeFactory.WinVs.Models.CSharp.CsSecurity,System.String,System.String)
+  - CodeFactory.WinVs.Models.CSharp.GenerateCSharpCsPropertyExtensions.GenerateCSharpSetStatement(CodeFactory.WinVs.Models.CSharp.CsProperty,CodeFactory.WinVs.Models.CSharp.CsSecurity,CodeFactory.WinVs.Models.CSharp.CsSecurity)
+  langs:
+  - csharp
+  - vb
+  name: GenerateCSharpCsPropertyExtensions
+  nameWithType: GenerateCSharpCsPropertyExtensions
+  fullName: CodeFactory.WinVs.Models.CSharp.GenerateCSharpCsPropertyExtensions
+  type: Class
+  source:
+    href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/19e816ffdf1ba504be6987736bbac42e2d241405/Src/CodeFactoryForWindows/CodeFactory.WinVs/Models/CSharp/GenerateCSharpCsPropertyExtensions.cs
+  assemblies:
+  - CodeFactory.WinVs
+  namespace: CodeFactory.WinVs.Models.CSharp
+  summary: Extension methods that support the generation of source in the C# language from the <xref href="CodeFactory.WinVs.Models.CSharp.CsProperty" data-throw-if-not-resolved="false"></xref> model.
+  example: []
+  syntax:
+    content: public static class GenerateCSharpCsPropertyExtensions
+    content.vb: Public Module GenerateCSharpCsPropertyExtensions
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+- uid: CodeFactory.WinVs.Models.CSharp.GenerateCSharpCsPropertyExtensions.GenerateCSharpDefaultValue(CodeFactory.WinVs.Models.CSharp.CsProperty)
+  commentId: M:CodeFactory.WinVs.Models.CSharp.GenerateCSharpCsPropertyExtensions.GenerateCSharpDefaultValue(CodeFactory.WinVs.Models.CSharp.CsProperty)
+  id: GenerateCSharpDefaultValue(CodeFactory.WinVs.Models.CSharp.CsProperty)
+  isExtensionMethod: true
+  parent: CodeFactory.WinVs.Models.CSharp.GenerateCSharpCsPropertyExtensions
+  langs:
+  - csharp
+  - vb
+  name: GenerateCSharpDefaultValue(CsProperty)
+  nameWithType: GenerateCSharpCsPropertyExtensions.GenerateCSharpDefaultValue(CsProperty)
+  fullName: CodeFactory.WinVs.Models.CSharp.GenerateCSharpCsPropertyExtensions.GenerateCSharpDefaultValue(CodeFactory.WinVs.Models.CSharp.CsProperty)
+  type: Method
+  source:
+    href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/19e816ffdf1ba504be6987736bbac42e2d241405/Src/CodeFactoryForWindows/CodeFactory.WinVs/Models/CSharp/GenerateCSharpCsPropertyExtensions.cs
+  assemblies:
+  - CodeFactory.WinVs
+  namespace: CodeFactory.WinVs.Models.CSharp
+  summary: Property extension that returns the formatted C# syntax of either the name of the property or the method to get the default value of the property if it is nullable.
+  example: []
+  syntax:
+    content: public static string GenerateCSharpDefaultValue(this CsProperty source)
+    parameters:
+    - id: source
+      type: CodeFactory.WinVs.Models.CSharp.CsProperty
+      description: Property to get the formatted C# syntax for.
+    return:
+      type: System.String
+      description: Formatted C# syntax to access a properties value.
+    content.vb: Public Shared Function GenerateCSharpDefaultValue(source As CsProperty) As String
+  overload: CodeFactory.WinVs.Models.CSharp.GenerateCSharpCsPropertyExtensions.GenerateCSharpDefaultValue*
+  exceptions:
+  - type: CodeFactory.CodeFactoryException
+    commentId: T:CodeFactory.CodeFactoryException
+    description: Raised if required information is missing to create the syntax.
+- uid: CodeFactory.WinVs.Models.CSharp.GenerateCSharpCsPropertyExtensions.GenerateCSharpDefaultPropertySignature(CodeFactory.WinVs.Models.CSharp.CsProperty,CodeFactory.WinVs.Models.CSharp.NamespaceManager,System.Collections.Generic.List{CodeFactory.WinVs.Models.CSharp.MapNamespace},System.Boolean,System.Boolean,CodeFactory.WinVs.Models.CSharp.CsSecurity,CodeFactory.WinVs.Models.CSharp.CsSecurity,CodeFactory.WinVs.Models.CSharp.CsSecurity,System.String,System.String)
+  commentId: M:CodeFactory.WinVs.Models.CSharp.GenerateCSharpCsPropertyExtensions.GenerateCSharpDefaultPropertySignature(CodeFactory.WinVs.Models.CSharp.CsProperty,CodeFactory.WinVs.Models.CSharp.NamespaceManager,System.Collections.Generic.List{CodeFactory.WinVs.Models.CSharp.MapNamespace},System.Boolean,System.Boolean,CodeFactory.WinVs.Models.CSharp.CsSecurity,CodeFactory.WinVs.Models.CSharp.CsSecurity,CodeFactory.WinVs.Models.CSharp.CsSecurity,System.String,System.String)
+  id: GenerateCSharpDefaultPropertySignature(CodeFactory.WinVs.Models.CSharp.CsProperty,CodeFactory.WinVs.Models.CSharp.NamespaceManager,System.Collections.Generic.List{CodeFactory.WinVs.Models.CSharp.MapNamespace},System.Boolean,System.Boolean,CodeFactory.WinVs.Models.CSharp.CsSecurity,CodeFactory.WinVs.Models.CSharp.CsSecurity,CodeFactory.WinVs.Models.CSharp.CsSecurity,System.String,System.String)
+  isExtensionMethod: true
+  parent: CodeFactory.WinVs.Models.CSharp.GenerateCSharpCsPropertyExtensions
+  langs:
+  - csharp
+  - vb
+  name: GenerateCSharpDefaultPropertySignature(CsProperty, NamespaceManager, List<MapNamespace>, bool, bool, CsSecurity, CsSecurity, CsSecurity, string, string)
+  nameWithType: GenerateCSharpCsPropertyExtensions.GenerateCSharpDefaultPropertySignature(CsProperty, NamespaceManager, List<MapNamespace>, bool, bool, CsSecurity, CsSecurity, CsSecurity, string, string)
+  fullName: CodeFactory.WinVs.Models.CSharp.GenerateCSharpCsPropertyExtensions.GenerateCSharpDefaultPropertySignature(CodeFactory.WinVs.Models.CSharp.CsProperty, CodeFactory.WinVs.Models.CSharp.NamespaceManager, System.Collections.Generic.List<CodeFactory.WinVs.Models.CSharp.MapNamespace>, bool, bool, CodeFactory.WinVs.Models.CSharp.CsSecurity, CodeFactory.WinVs.Models.CSharp.CsSecurity, CodeFactory.WinVs.Models.CSharp.CsSecurity, string, string)
+  type: Method
+  source:
+    href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/19e816ffdf1ba504be6987736bbac42e2d241405/Src/CodeFactoryForWindows/CodeFactory.WinVs/Models/CSharp/GenerateCSharpCsPropertyExtensions.cs
+  assemblies:
+  - CodeFactory.WinVs
+  namespace: CodeFactory.WinVs.Models.CSharp
+  summary: Generates a default property definition with no backing properties. Will determine security modifiers and append to get and set statements when needed.
+  example:
+  - >-
+    With Keywords [security] [keywords] [property type] [property name] { [get when used]; [set when used]; }
+
+    No Keywords [security] [property type] [property name] { [get when used]; [set when used]; }
+  syntax:
+    content: public static string GenerateCSharpDefaultPropertySignature(this CsProperty source, NamespaceManager manager = null, List<MapNamespace> mappedNamespaces = null, bool includeKeywords = false, bool includeAbstractKeyword = false, CsSecurity propertySecurity = CsSecurity.Unknown, CsSecurity setSecurity = CsSecurity.Unknown, CsSecurity getSecurity = CsSecurity.Unknown, string namePrefix = null, string nameSuffix = null)
+    parameters:
+    - id: source
+      type: CodeFactory.WinVs.Models.CSharp.CsProperty
+      description: Property model used for generation.
+    - id: manager
+      type: CodeFactory.WinVs.Models.CSharp.NamespaceManager
+      description: Namespace manager used to format type names.This is an optional parameter.
+    - id: mappedNamespaces
+      type: System.Collections.Generic.List{CodeFactory.WinVs.Models.CSharp.MapNamespace}
+      description: Optional parameter that provides namespaces to be mapped to.
+    - id: includeKeywords
+      type: System.Boolean
+      description: Optional parameter that determines if the keywords will be appended. Default is false.
+    - id: includeAbstractKeyword
+      type: System.Boolean
+      description: Will include the definition for the abstract keyword in the definition if it is defined. default is false.
+    - id: propertySecurity
+      type: CodeFactory.WinVs.Models.CSharp.CsSecurity
+      description: Optional parameter that overrides the models property security and sets a new security access level.
+    - id: setSecurity
+      type: CodeFactory.WinVs.Models.CSharp.CsSecurity
+      description: Optional parameter that overrides the models set security level with a new access level. Will also define a set statement even if it is not defined.
+    - id: getSecurity
+      type: CodeFactory.WinVs.Models.CSharp.CsSecurity
+      description: Optional parameter that overrides the models get security level with a new access level. Will also define a get statement even if it is not defined.
+    - id: namePrefix
+      type: System.String
+      description: Optional prameter that determines if the name will have a prefix assigned to it, default is null.
+    - id: nameSuffix
+      type: System.String
+      description: Optional parameter that determines if the name will have a prefix assigned to it, default is null.
+    return:
+      type: System.String
+      description: Formatted property or null if model data was missing.
+    content.vb: Public Shared Function GenerateCSharpDefaultPropertySignature(source As CsProperty, manager As NamespaceManager = Nothing, mappedNamespaces As List(Of MapNamespace) = Nothing, includeKeywords As Boolean = False, includeAbstractKeyword As Boolean = False, propertySecurity As CsSecurity = CsSecurity.Unknown, setSecurity As CsSecurity = CsSecurity.Unknown, getSecurity As CsSecurity = CsSecurity.Unknown, namePrefix As String = Nothing, nameSuffix As String = Nothing) As String
+  overload: CodeFactory.WinVs.Models.CSharp.GenerateCSharpCsPropertyExtensions.GenerateCSharpDefaultPropertySignature*
+  nameWithType.vb: GenerateCSharpCsPropertyExtensions.GenerateCSharpDefaultPropertySignature(CsProperty, NamespaceManager, List(Of MapNamespace), Boolean, Boolean, CsSecurity, CsSecurity, CsSecurity, String, String)
+  fullName.vb: CodeFactory.WinVs.Models.CSharp.GenerateCSharpCsPropertyExtensions.GenerateCSharpDefaultPropertySignature(CodeFactory.WinVs.Models.CSharp.CsProperty, CodeFactory.WinVs.Models.CSharp.NamespaceManager, System.Collections.Generic.List(Of CodeFactory.WinVs.Models.CSharp.MapNamespace), Boolean, Boolean, CodeFactory.WinVs.Models.CSharp.CsSecurity, CodeFactory.WinVs.Models.CSharp.CsSecurity, CodeFactory.WinVs.Models.CSharp.CsSecurity, String, String)
+  name.vb: GenerateCSharpDefaultPropertySignature(CsProperty, NamespaceManager, List(Of MapNamespace), Boolean, Boolean, CsSecurity, CsSecurity, CsSecurity, String, String)
+- uid: CodeFactory.WinVs.Models.CSharp.GenerateCSharpCsPropertyExtensions.GenerateCSharpPropertyDeclaration(CodeFactory.WinVs.Models.CSharp.CsProperty,CodeFactory.WinVs.Models.CSharp.NamespaceManager,System.Collections.Generic.List{CodeFactory.WinVs.Models.CSharp.MapNamespace},System.Boolean,System.Boolean,System.Boolean,CodeFactory.WinVs.Models.CSharp.CsSecurity,System.String,System.String)
+  commentId: M:CodeFactory.WinVs.Models.CSharp.GenerateCSharpCsPropertyExtensions.GenerateCSharpPropertyDeclaration(CodeFactory.WinVs.Models.CSharp.CsProperty,CodeFactory.WinVs.Models.CSharp.NamespaceManager,System.Collections.Generic.List{CodeFactory.WinVs.Models.CSharp.MapNamespace},System.Boolean,System.Boolean,System.Boolean,CodeFactory.WinVs.Models.CSharp.CsSecurity,System.String,System.String)
+  id: GenerateCSharpPropertyDeclaration(CodeFactory.WinVs.Models.CSharp.CsProperty,CodeFactory.WinVs.Models.CSharp.NamespaceManager,System.Collections.Generic.List{CodeFactory.WinVs.Models.CSharp.MapNamespace},System.Boolean,System.Boolean,System.Boolean,CodeFactory.WinVs.Models.CSharp.CsSecurity,System.String,System.String)
+  isExtensionMethod: true
+  parent: CodeFactory.WinVs.Models.CSharp.GenerateCSharpCsPropertyExtensions
+  langs:
+  - csharp
+  - vb
+  name: GenerateCSharpPropertyDeclaration(CsProperty, NamespaceManager, List<MapNamespace>, bool, bool, bool, CsSecurity, string, string)
+  nameWithType: GenerateCSharpCsPropertyExtensions.GenerateCSharpPropertyDeclaration(CsProperty, NamespaceManager, List<MapNamespace>, bool, bool, bool, CsSecurity, string, string)
+  fullName: CodeFactory.WinVs.Models.CSharp.GenerateCSharpCsPropertyExtensions.GenerateCSharpPropertyDeclaration(CodeFactory.WinVs.Models.CSharp.CsProperty, CodeFactory.WinVs.Models.CSharp.NamespaceManager, System.Collections.Generic.List<CodeFactory.WinVs.Models.CSharp.MapNamespace>, bool, bool, bool, CodeFactory.WinVs.Models.CSharp.CsSecurity, string, string)
+  type: Method
+  source:
+    href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/19e816ffdf1ba504be6987736bbac42e2d241405/Src/CodeFactoryForWindows/CodeFactory.WinVs/Models/CSharp/GenerateCSharpCsPropertyExtensions.cs
+  assemblies:
+  - CodeFactory.WinVs
+  namespace: CodeFactory.WinVs.Models.CSharp
+  summary: Generates the initial definition portion of a property.
+  example:
+  - >-
+    Format with Keywords [Security] [Keywords*] [ReturnType] [PropertyName] = public static string FirstName
+
+    Format without Keywords [Security] [ReturnType] [PropertyName] = public string FirstName
+  syntax:
+    content: public static string GenerateCSharpPropertyDeclaration(this CsProperty source, NamespaceManager manager = null, List<MapNamespace> mappedNamespaces = null, bool includeSecurity = true, bool includeKeyWords = false, bool includeAbstractKeyword = false, CsSecurity propertySecurity = CsSecurity.Unknown, string namePrefix = null, string nameSuffix = null)
+    parameters:
+    - id: source
+      type: CodeFactory.WinVs.Models.CSharp.CsProperty
+      description: The source property to use for formatting.
+    - id: manager
+      type: CodeFactory.WinVs.Models.CSharp.NamespaceManager
+      description: Namespace manager used to format type names.
+    - id: mappedNamespaces
+      type: System.Collections.Generic.List{CodeFactory.WinVs.Models.CSharp.MapNamespace}
+      description: Optional parameter that provides namespaces to be mapped to.
+    - id: includeSecurity
+      type: System.Boolean
+      description: Optional flag that determines if the security scope will be applied to the property definition. Default is true.
+    - id: includeKeyWords
+      type: System.Boolean
+      description: Optional flag that determines if keywords assigned to the property should be included in the signature. Default is false.
+    - id: includeAbstractKeyword
+      type: System.Boolean
+      description: Will include the definition for the abstract keyword in the definition if it is defined. default is false.
+    - id: propertySecurity
+      type: CodeFactory.WinVs.Models.CSharp.CsSecurity
+      description: Optional parameter to override the models security and set your own security.
+    - id: namePrefix
+      type: System.String
+      description: Optional prameter that determines if the name will have a prefix assigned to it, default is null.
+    - id: nameSuffix
+      type: System.String
+      description: Optional parameter that determines if the name will have a prefix assigned to it, default is null.
+    return:
+      type: System.String
+      description: The formatted signature or null if the model data was not loaded.
+    content.vb: Public Shared Function GenerateCSharpPropertyDeclaration(source As CsProperty, manager As NamespaceManager = Nothing, mappedNamespaces As List(Of MapNamespace) = Nothing, includeSecurity As Boolean = True, includeKeyWords As Boolean = False, includeAbstractKeyword As Boolean = False, propertySecurity As CsSecurity = CsSecurity.Unknown, namePrefix As String = Nothing, nameSuffix As String = Nothing) As String
+  overload: CodeFactory.WinVs.Models.CSharp.GenerateCSharpCsPropertyExtensions.GenerateCSharpPropertyDeclaration*
+  nameWithType.vb: GenerateCSharpCsPropertyExtensions.GenerateCSharpPropertyDeclaration(CsProperty, NamespaceManager, List(Of MapNamespace), Boolean, Boolean, Boolean, CsSecurity, String, String)
+  fullName.vb: CodeFactory.WinVs.Models.CSharp.GenerateCSharpCsPropertyExtensions.GenerateCSharpPropertyDeclaration(CodeFactory.WinVs.Models.CSharp.CsProperty, CodeFactory.WinVs.Models.CSharp.NamespaceManager, System.Collections.Generic.List(Of CodeFactory.WinVs.Models.CSharp.MapNamespace), Boolean, Boolean, Boolean, CodeFactory.WinVs.Models.CSharp.CsSecurity, String, String)
+  name.vb: GenerateCSharpPropertyDeclaration(CsProperty, NamespaceManager, List(Of MapNamespace), Boolean, Boolean, Boolean, CsSecurity, String, String)
+- uid: CodeFactory.WinVs.Models.CSharp.GenerateCSharpCsPropertyExtensions.GenerateCSharpGetStatement(CodeFactory.WinVs.Models.CSharp.CsProperty,CodeFactory.WinVs.Models.CSharp.CsSecurity,CodeFactory.WinVs.Models.CSharp.CsSecurity)
+  commentId: M:CodeFactory.WinVs.Models.CSharp.GenerateCSharpCsPropertyExtensions.GenerateCSharpGetStatement(CodeFactory.WinVs.Models.CSharp.CsProperty,CodeFactory.WinVs.Models.CSharp.CsSecurity,CodeFactory.WinVs.Models.CSharp.CsSecurity)
+  id: GenerateCSharpGetStatement(CodeFactory.WinVs.Models.CSharp.CsProperty,CodeFactory.WinVs.Models.CSharp.CsSecurity,CodeFactory.WinVs.Models.CSharp.CsSecurity)
+  isExtensionMethod: true
+  parent: CodeFactory.WinVs.Models.CSharp.GenerateCSharpCsPropertyExtensions
+  langs:
+  - csharp
+  - vb
+  name: GenerateCSharpGetStatement(CsProperty, CsSecurity, CsSecurity)
+  nameWithType: GenerateCSharpCsPropertyExtensions.GenerateCSharpGetStatement(CsProperty, CsSecurity, CsSecurity)
+  fullName: CodeFactory.WinVs.Models.CSharp.GenerateCSharpCsPropertyExtensions.GenerateCSharpGetStatement(CodeFactory.WinVs.Models.CSharp.CsProperty, CodeFactory.WinVs.Models.CSharp.CsSecurity, CodeFactory.WinVs.Models.CSharp.CsSecurity)
+  type: Method
+  source:
+    href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/19e816ffdf1ba504be6987736bbac42e2d241405/Src/CodeFactoryForWindows/CodeFactory.WinVs/Models/CSharp/GenerateCSharpCsPropertyExtensions.cs
+  assemblies:
+  - CodeFactory.WinVs
+  namespace: CodeFactory.WinVs.Models.CSharp
+  summary: Extension method that generates the get statement of a property definition.
+  example:
+  - >-
+    With the same security   [get] will return example: get
+
+    With different security [security] [get] will return example: public get
+  syntax:
+    content: public static string GenerateCSharpGetStatement(this CsProperty source, CsSecurity propertySecurity = CsSecurity.Unknown, CsSecurity getSecurity = CsSecurity.Unknown)
+    parameters:
+    - id: source
+      type: CodeFactory.WinVs.Models.CSharp.CsProperty
+      description: the source property definition
+    - id: propertySecurity
+      type: CodeFactory.WinVs.Models.CSharp.CsSecurity
+      description: Optional parameter that defined the security used by the implementing property.
+    - id: getSecurity
+      type: CodeFactory.WinVs.Models.CSharp.CsSecurity
+      description: Optional parameter that allows you to set the get security level.
+    return:
+      type: System.String
+      description: Will return the formatted get statement or null if the property model is empty or the property does not support get.
+    content.vb: Public Shared Function GenerateCSharpGetStatement(source As CsProperty, propertySecurity As CsSecurity = CsSecurity.Unknown, getSecurity As CsSecurity = CsSecurity.Unknown) As String
+  overload: CodeFactory.WinVs.Models.CSharp.GenerateCSharpCsPropertyExtensions.GenerateCSharpGetStatement*
+- uid: CodeFactory.WinVs.Models.CSharp.GenerateCSharpCsPropertyExtensions.GenerateCSharpSetStatement(CodeFactory.WinVs.Models.CSharp.CsProperty,CodeFactory.WinVs.Models.CSharp.CsSecurity,CodeFactory.WinVs.Models.CSharp.CsSecurity)
+  commentId: M:CodeFactory.WinVs.Models.CSharp.GenerateCSharpCsPropertyExtensions.GenerateCSharpSetStatement(CodeFactory.WinVs.Models.CSharp.CsProperty,CodeFactory.WinVs.Models.CSharp.CsSecurity,CodeFactory.WinVs.Models.CSharp.CsSecurity)
+  id: GenerateCSharpSetStatement(CodeFactory.WinVs.Models.CSharp.CsProperty,CodeFactory.WinVs.Models.CSharp.CsSecurity,CodeFactory.WinVs.Models.CSharp.CsSecurity)
+  isExtensionMethod: true
+  parent: CodeFactory.WinVs.Models.CSharp.GenerateCSharpCsPropertyExtensions
+  langs:
+  - csharp
+  - vb
+  name: GenerateCSharpSetStatement(CsProperty, CsSecurity, CsSecurity)
+  nameWithType: GenerateCSharpCsPropertyExtensions.GenerateCSharpSetStatement(CsProperty, CsSecurity, CsSecurity)
+  fullName: CodeFactory.WinVs.Models.CSharp.GenerateCSharpCsPropertyExtensions.GenerateCSharpSetStatement(CodeFactory.WinVs.Models.CSharp.CsProperty, CodeFactory.WinVs.Models.CSharp.CsSecurity, CodeFactory.WinVs.Models.CSharp.CsSecurity)
+  type: Method
+  source:
+    href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/19e816ffdf1ba504be6987736bbac42e2d241405/Src/CodeFactoryForWindows/CodeFactory.WinVs/Models/CSharp/GenerateCSharpCsPropertyExtensions.cs
+  assemblies:
+  - CodeFactory.WinVs
+  namespace: CodeFactory.WinVs.Models.CSharp
+  summary: Extension method that generates the set statement of a property definition.
+  example:
+  - >-
+    With the same security   [set] will return example: set
+
+    With different security [security] [set] will return example: public set
+  syntax:
+    content: public static string GenerateCSharpSetStatement(this CsProperty source, CsSecurity propertySecurity = CsSecurity.Unknown, CsSecurity setSecurity = CsSecurity.Unknown)
+    parameters:
+    - id: source
+      type: CodeFactory.WinVs.Models.CSharp.CsProperty
+      description: the source property definition
+    - id: propertySecurity
+      type: CodeFactory.WinVs.Models.CSharp.CsSecurity
+      description: Optional parameter that defined the security used by the implementing property.
+    - id: setSecurity
+      type: CodeFactory.WinVs.Models.CSharp.CsSecurity
+      description: Optional parameter that allows you to set the set security level.
+    return:
+      type: System.String
+      description: Will return the formatted set statement or null if the property model is empty or the property does not support set.
+    content.vb: Public Shared Function GenerateCSharpSetStatement(source As CsProperty, propertySecurity As CsSecurity = CsSecurity.Unknown, setSecurity As CsSecurity = CsSecurity.Unknown) As String
+  overload: CodeFactory.WinVs.Models.CSharp.GenerateCSharpCsPropertyExtensions.GenerateCSharpSetStatement*
+references:
+- uid: CodeFactory.WinVs.Models.CSharp.CsProperty
+  commentId: T:CodeFactory.WinVs.Models.CSharp.CsProperty
+  parent: CodeFactory.WinVs.Models.CSharp
+  isExternal: true
+  href: CodeFactory.WinVs.Models.CSharp.CsProperty.html
+  name: CsProperty
+  nameWithType: CsProperty
+  fullName: CodeFactory.WinVs.Models.CSharp.CsProperty
+- uid: CodeFactory.WinVs.Models.CSharp
+  commentId: N:CodeFactory.WinVs.Models.CSharp
+  isExternal: true
+  href: CodeFactory.html
+  name: CodeFactory.WinVs.Models.CSharp
+  nameWithType: CodeFactory.WinVs.Models.CSharp
+  fullName: CodeFactory.WinVs.Models.CSharp
+  spec.csharp:
+  - uid: CodeFactory
+    name: CodeFactory
+    isExternal: true
+    href: CodeFactory.html
+  - name: .
+  - uid: CodeFactory.WinVs
+    name: WinVs
+    isExternal: true
+    href: CodeFactory.WinVs.html
+  - name: .
+  - uid: CodeFactory.WinVs.Models
+    name: Models
+    isExternal: true
+    href: CodeFactory.WinVs.Models.html
+  - name: .
+  - uid: CodeFactory.WinVs.Models.CSharp
+    name: CSharp
+    isExternal: true
+    href: CodeFactory.WinVs.Models.CSharp.html
+  spec.vb:
+  - uid: CodeFactory
+    name: CodeFactory
+    isExternal: true
+    href: CodeFactory.html
+  - name: .
+  - uid: CodeFactory.WinVs
+    name: WinVs
+    isExternal: true
+    href: CodeFactory.WinVs.html
+  - name: .
+  - uid: CodeFactory.WinVs.Models
+    name: Models
+    isExternal: true
+    href: CodeFactory.WinVs.Models.html
+  - name: .
+  - uid: CodeFactory.WinVs.Models.CSharp
+    name: CSharp
+    isExternal: true
+    href: CodeFactory.WinVs.Models.CSharp.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: CodeFactory.CodeFactoryException
+  commentId: T:CodeFactory.CodeFactoryException
+  parent: CodeFactory
+  isExternal: true
+  href: CodeFactory.CodeFactoryException.html
+  name: CodeFactoryException
+  nameWithType: CodeFactoryException
+  fullName: CodeFactory.CodeFactoryException
+- uid: CodeFactory.WinVs.Models.CSharp.GenerateCSharpCsPropertyExtensions.GenerateCSharpDefaultValue*
+  commentId: Overload:CodeFactory.WinVs.Models.CSharp.GenerateCSharpCsPropertyExtensions.GenerateCSharpDefaultValue
+  isExternal: true
+  href: CodeFactory.WinVs.Models.CSharp.GenerateCSharpCsPropertyExtensions.html#CodeFactory_WinVs_Models_CSharp_GenerateCSharpCsPropertyExtensions_GenerateCSharpDefaultValue_CodeFactory_WinVs_Models_CSharp_CsProperty_
+  name: GenerateCSharpDefaultValue
+  nameWithType: GenerateCSharpCsPropertyExtensions.GenerateCSharpDefaultValue
+  fullName: CodeFactory.WinVs.Models.CSharp.GenerateCSharpCsPropertyExtensions.GenerateCSharpDefaultValue
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: CodeFactory
+  commentId: N:CodeFactory
+  isExternal: true
+  href: CodeFactory.html
+  name: CodeFactory
+  nameWithType: CodeFactory
+  fullName: CodeFactory
+- uid: CodeFactory.WinVs.Models.CSharp.GenerateCSharpCsPropertyExtensions.GenerateCSharpDefaultPropertySignature*
+  commentId: Overload:CodeFactory.WinVs.Models.CSharp.GenerateCSharpCsPropertyExtensions.GenerateCSharpDefaultPropertySignature
+  isExternal: true
+  href: CodeFactory.WinVs.Models.CSharp.GenerateCSharpCsPropertyExtensions.html#CodeFactory_WinVs_Models_CSharp_GenerateCSharpCsPropertyExtensions_GenerateCSharpDefaultPropertySignature_CodeFactory_WinVs_Models_CSharp_CsProperty_CodeFactory_WinVs_Models_CSharp_NamespaceManager_System_Collections_Generic_List_CodeFactory_WinVs_Models_CSharp_MapNamespace__System_Boolean_System_Boolean_CodeFactory_WinVs_Models_CSharp_CsSecurity_CodeFactory_WinVs_Models_CSharp_CsSecurity_CodeFactory_WinVs_Models_CSharp_CsSecurity_System_String_System_String_
+  name: GenerateCSharpDefaultPropertySignature
+  nameWithType: GenerateCSharpCsPropertyExtensions.GenerateCSharpDefaultPropertySignature
+  fullName: CodeFactory.WinVs.Models.CSharp.GenerateCSharpCsPropertyExtensions.GenerateCSharpDefaultPropertySignature
+- uid: CodeFactory.WinVs.Models.CSharp.NamespaceManager
+  commentId: T:CodeFactory.WinVs.Models.CSharp.NamespaceManager
+  parent: CodeFactory.WinVs.Models.CSharp
+  isExternal: true
+  href: CodeFactory.WinVs.Models.CSharp.NamespaceManager.html
+  name: NamespaceManager
+  nameWithType: NamespaceManager
+  fullName: CodeFactory.WinVs.Models.CSharp.NamespaceManager
+- uid: System.Collections.Generic.List{CodeFactory.WinVs.Models.CSharp.MapNamespace}
+  commentId: T:System.Collections.Generic.List{CodeFactory.WinVs.Models.CSharp.MapNamespace}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<MapNamespace>
+  nameWithType: List<MapNamespace>
+  fullName: System.Collections.Generic.List<CodeFactory.WinVs.Models.CSharp.MapNamespace>
+  nameWithType.vb: List(Of MapNamespace)
+  fullName.vb: System.Collections.Generic.List(Of CodeFactory.WinVs.Models.CSharp.MapNamespace)
+  name.vb: List(Of MapNamespace)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: CodeFactory.WinVs.Models.CSharp.MapNamespace
+    name: MapNamespace
+    isExternal: true
+    href: CodeFactory.WinVs.Models.CSharp.MapNamespace.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: CodeFactory.WinVs.Models.CSharp.MapNamespace
+    name: MapNamespace
+    isExternal: true
+    href: CodeFactory.WinVs.Models.CSharp.MapNamespace.html
+  - name: )
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: CodeFactory.WinVs.Models.CSharp.CsSecurity
+  commentId: T:CodeFactory.WinVs.Models.CSharp.CsSecurity
+  parent: CodeFactory.WinVs.Models.CSharp
+  isExternal: true
+  href: CodeFactory.WinVs.Models.CSharp.CsSecurity.html
+  name: CsSecurity
+  nameWithType: CsSecurity
+  fullName: CodeFactory.WinVs.Models.CSharp.CsSecurity
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: CodeFactory.WinVs.Models.CSharp.GenerateCSharpCsPropertyExtensions.GenerateCSharpPropertyDeclaration*
+  commentId: Overload:CodeFactory.WinVs.Models.CSharp.GenerateCSharpCsPropertyExtensions.GenerateCSharpPropertyDeclaration
+  isExternal: true
+  href: CodeFactory.WinVs.Models.CSharp.GenerateCSharpCsPropertyExtensions.html#CodeFactory_WinVs_Models_CSharp_GenerateCSharpCsPropertyExtensions_GenerateCSharpPropertyDeclaration_CodeFactory_WinVs_Models_CSharp_CsProperty_CodeFactory_WinVs_Models_CSharp_NamespaceManager_System_Collections_Generic_List_CodeFactory_WinVs_Models_CSharp_MapNamespace__System_Boolean_System_Boolean_System_Boolean_CodeFactory_WinVs_Models_CSharp_CsSecurity_System_String_System_String_
+  name: GenerateCSharpPropertyDeclaration
+  nameWithType: GenerateCSharpCsPropertyExtensions.GenerateCSharpPropertyDeclaration
+  fullName: CodeFactory.WinVs.Models.CSharp.GenerateCSharpCsPropertyExtensions.GenerateCSharpPropertyDeclaration
+- uid: CodeFactory.WinVs.Models.CSharp.GenerateCSharpCsPropertyExtensions.GenerateCSharpGetStatement*
+  commentId: Overload:CodeFactory.WinVs.Models.CSharp.GenerateCSharpCsPropertyExtensions.GenerateCSharpGetStatement
+  isExternal: true
+  href: CodeFactory.WinVs.Models.CSharp.GenerateCSharpCsPropertyExtensions.html#CodeFactory_WinVs_Models_CSharp_GenerateCSharpCsPropertyExtensions_GenerateCSharpGetStatement_CodeFactory_WinVs_Models_CSharp_CsProperty_CodeFactory_WinVs_Models_CSharp_CsSecurity_CodeFactory_WinVs_Models_CSharp_CsSecurity_
+  name: GenerateCSharpGetStatement
+  nameWithType: GenerateCSharpCsPropertyExtensions.GenerateCSharpGetStatement
+  fullName: CodeFactory.WinVs.Models.CSharp.GenerateCSharpCsPropertyExtensions.GenerateCSharpGetStatement
+- uid: CodeFactory.WinVs.Models.CSharp.GenerateCSharpCsPropertyExtensions.GenerateCSharpSetStatement*
+  commentId: Overload:CodeFactory.WinVs.Models.CSharp.GenerateCSharpCsPropertyExtensions.GenerateCSharpSetStatement
+  isExternal: true
+  href: CodeFactory.WinVs.Models.CSharp.GenerateCSharpCsPropertyExtensions.html#CodeFactory_WinVs_Models_CSharp_GenerateCSharpCsPropertyExtensions_GenerateCSharpSetStatement_CodeFactory_WinVs_Models_CSharp_CsProperty_CodeFactory_WinVs_Models_CSharp_CsSecurity_CodeFactory_WinVs_Models_CSharp_CsSecurity_
+  name: GenerateCSharpSetStatement
+  nameWithType: GenerateCSharpCsPropertyExtensions.GenerateCSharpSetStatement
+  fullName: CodeFactory.WinVs.Models.CSharp.GenerateCSharpCsPropertyExtensions.GenerateCSharpSetStatement

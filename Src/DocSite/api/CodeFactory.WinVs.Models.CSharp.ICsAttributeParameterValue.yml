@@ -1,0 +1,564 @@
+### YamlMime:ManagedReference
+items:
+- uid: CodeFactory.WinVs.Models.CSharp.ICsAttributeParameterValue
+  commentId: T:CodeFactory.WinVs.Models.CSharp.ICsAttributeParameterValue
+  id: ICsAttributeParameterValue
+  parent: CodeFactory.WinVs.Models.CSharp
+  children:
+  - CodeFactory.WinVs.Models.CSharp.ICsAttributeParameterValue.EnumValue
+  - CodeFactory.WinVs.Models.CSharp.ICsAttributeParameterValue.ParameterKind
+  - CodeFactory.WinVs.Models.CSharp.ICsAttributeParameterValue.TypeValue
+  - CodeFactory.WinVs.Models.CSharp.ICsAttributeParameterValue.Value
+  - CodeFactory.WinVs.Models.CSharp.ICsAttributeParameterValue.Values
+  langs:
+  - csharp
+  - vb
+  name: ICsAttributeParameterValue
+  nameWithType: ICsAttributeParameterValue
+  fullName: CodeFactory.WinVs.Models.CSharp.ICsAttributeParameterValue
+  type: Interface
+  source:
+    href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/19e816ffdf1ba504be6987736bbac42e2d241405/Src/CodeFactoryForWindows/CodeFactory.WinVs/Models/CSharp/ICsAttributeParameterValue.cs
+  assemblies:
+  - CodeFactory.WinVs
+  namespace: CodeFactory.WinVs.Models.CSharp
+  summary: The model information for an attributes parameter value for c# implementation.
+  example: []
+  syntax:
+    content: 'public interface ICsAttributeParameterValue : ICsModel, IModelStatus'
+    content.vb: Public Interface ICsAttributeParameterValue Inherits ICsModel, IModelStatus
+  inheritedMembers:
+  - CodeFactory.WinVs.Models.CSharp.ICsModel.GetModel``1(System.String)
+  - CodeFactory.WinVs.Models.CSharp.ICsModel.GetModel(System.String)
+  - CodeFactory.WinVs.Models.CSharp.ICsModel.LoadedFromSource
+  - CodeFactory.WinVs.Models.CSharp.ICsModel.Language
+  - CodeFactory.WinVs.Models.CSharp.ICsModel.ModelType
+  - CodeFactory.WinVs.Models.CSharp.ICsModel.SourceDocument
+  - CodeFactory.IModelStatus.GetErrors
+  - CodeFactory.IModelStatus.IsLoaded
+  - CodeFactory.IModelStatus.HasErrors
+- uid: CodeFactory.WinVs.Models.CSharp.ICsAttributeParameterValue.ParameterKind
+  commentId: P:CodeFactory.WinVs.Models.CSharp.ICsAttributeParameterValue.ParameterKind
+  id: ParameterKind
+  parent: CodeFactory.WinVs.Models.CSharp.ICsAttributeParameterValue
+  langs:
+  - csharp
+  - vb
+  name: ParameterKind
+  nameWithType: ICsAttributeParameterValue.ParameterKind
+  fullName: CodeFactory.WinVs.Models.CSharp.ICsAttributeParameterValue.ParameterKind
+  type: Property
+  source:
+    href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/19e816ffdf1ba504be6987736bbac42e2d241405/Src/CodeFactoryForWindows/CodeFactory.WinVs/Models/CSharp/ICsAttributeParameterValue.cs
+  assemblies:
+  - CodeFactory.WinVs
+  namespace: CodeFactory.WinVs.Models.CSharp
+  summary: Determines the kind of parameter that has been returned.
+  example: []
+  syntax:
+    content: AttributeParameterKind ParameterKind { get; }
+    parameters: []
+    return:
+      type: CodeFactory.WinVs.Models.CSharp.AttributeParameterKind
+    content.vb: ReadOnly Property ParameterKind As AttributeParameterKind
+  overload: CodeFactory.WinVs.Models.CSharp.ICsAttributeParameterValue.ParameterKind*
+- uid: CodeFactory.WinVs.Models.CSharp.ICsAttributeParameterValue.Value
+  commentId: P:CodeFactory.WinVs.Models.CSharp.ICsAttributeParameterValue.Value
+  id: Value
+  parent: CodeFactory.WinVs.Models.CSharp.ICsAttributeParameterValue
+  langs:
+  - csharp
+  - vb
+  name: Value
+  nameWithType: ICsAttributeParameterValue.Value
+  fullName: CodeFactory.WinVs.Models.CSharp.ICsAttributeParameterValue.Value
+  type: Property
+  source:
+    href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/19e816ffdf1ba504be6987736bbac42e2d241405/Src/CodeFactoryForWindows/CodeFactory.WinVs/Models/CSharp/ICsAttributeParameterValue.cs
+  assemblies:
+  - CodeFactory.WinVs
+  namespace: CodeFactory.WinVs.Models.CSharp
+  summary: Gets the raw value assigned to the parameter. This will be populated if the property <xref href="CodeFactory.WinVs.Models.CSharp.ICsAttributeParameterValue.ParameterKind" data-throw-if-not-resolved="false"></xref> is not set to 'Array'
+  example: []
+  syntax:
+    content: string Value { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: ReadOnly Property Value As String
+  overload: CodeFactory.WinVs.Models.CSharp.ICsAttributeParameterValue.Value*
+- uid: CodeFactory.WinVs.Models.CSharp.ICsAttributeParameterValue.TypeValue
+  commentId: P:CodeFactory.WinVs.Models.CSharp.ICsAttributeParameterValue.TypeValue
+  id: TypeValue
+  parent: CodeFactory.WinVs.Models.CSharp.ICsAttributeParameterValue
+  langs:
+  - csharp
+  - vb
+  name: TypeValue
+  nameWithType: ICsAttributeParameterValue.TypeValue
+  fullName: CodeFactory.WinVs.Models.CSharp.ICsAttributeParameterValue.TypeValue
+  type: Property
+  source:
+    href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/19e816ffdf1ba504be6987736bbac42e2d241405/Src/CodeFactoryForWindows/CodeFactory.WinVs/Models/CSharp/ICsAttributeParameterValue.cs
+  assemblies:
+  - CodeFactory.WinVs
+  namespace: CodeFactory.WinVs.Models.CSharp
+  summary: The type definition of the parameter that was passed. This will be populated if the property ParameterKind is set to 'Type'
+  example: []
+  syntax:
+    content: CsType TypeValue { get; }
+    parameters: []
+    return:
+      type: CodeFactory.WinVs.Models.CSharp.CsType
+    content.vb: ReadOnly Property TypeValue As CsType
+  overload: CodeFactory.WinVs.Models.CSharp.ICsAttributeParameterValue.TypeValue*
+- uid: CodeFactory.WinVs.Models.CSharp.ICsAttributeParameterValue.EnumValue
+  commentId: P:CodeFactory.WinVs.Models.CSharp.ICsAttributeParameterValue.EnumValue
+  id: EnumValue
+  parent: CodeFactory.WinVs.Models.CSharp.ICsAttributeParameterValue
+  langs:
+  - csharp
+  - vb
+  name: EnumValue
+  nameWithType: ICsAttributeParameterValue.EnumValue
+  fullName: CodeFactory.WinVs.Models.CSharp.ICsAttributeParameterValue.EnumValue
+  type: Property
+  source:
+    href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/19e816ffdf1ba504be6987736bbac42e2d241405/Src/CodeFactoryForWindows/CodeFactory.WinVs/Models/CSharp/ICsAttributeParameterValue.cs
+  assemblies:
+  - CodeFactory.WinVs
+  namespace: CodeFactory.WinVs.Models.CSharp
+  summary: The enum value provides the name of the enumeration value that was provided. This will be populated if the property <xref href="CodeFactory.WinVs.Models.CSharp.ICsAttributeParameterValue.ParameterKind" data-throw-if-not-resolved="false"></xref> is set to 'Enum'
+  example: []
+  syntax:
+    content: string EnumValue { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: ReadOnly Property EnumValue As String
+  overload: CodeFactory.WinVs.Models.CSharp.ICsAttributeParameterValue.EnumValue*
+- uid: CodeFactory.WinVs.Models.CSharp.ICsAttributeParameterValue.Values
+  commentId: P:CodeFactory.WinVs.Models.CSharp.ICsAttributeParameterValue.Values
+  id: Values
+  parent: CodeFactory.WinVs.Models.CSharp.ICsAttributeParameterValue
+  langs:
+  - csharp
+  - vb
+  name: Values
+  nameWithType: ICsAttributeParameterValue.Values
+  fullName: CodeFactory.WinVs.Models.CSharp.ICsAttributeParameterValue.Values
+  type: Property
+  source:
+    href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/19e816ffdf1ba504be6987736bbac42e2d241405/Src/CodeFactoryForWindows/CodeFactory.WinVs/Models/CSharp/ICsAttributeParameterValue.cs
+  assemblies:
+  - CodeFactory.WinVs
+  namespace: CodeFactory.WinVs.Models.CSharp
+  summary: Gets an enumeration of all the parameter values that were assigned to the attribute parameter. This will be populated if the property ParameterKind is set to 'Array'
+  example: []
+  syntax:
+    content: IReadOnlyList<CsAttributeParameterValue> Values { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.IReadOnlyList{CodeFactory.WinVs.Models.CSharp.CsAttributeParameterValue}
+    content.vb: ReadOnly Property Values As IReadOnlyList(Of CsAttributeParameterValue)
+  overload: CodeFactory.WinVs.Models.CSharp.ICsAttributeParameterValue.Values*
+references:
+- uid: CodeFactory.WinVs.Models.CSharp
+  commentId: N:CodeFactory.WinVs.Models.CSharp
+  isExternal: true
+  href: CodeFactory.html
+  name: CodeFactory.WinVs.Models.CSharp
+  nameWithType: CodeFactory.WinVs.Models.CSharp
+  fullName: CodeFactory.WinVs.Models.CSharp
+  spec.csharp:
+  - uid: CodeFactory
+    name: CodeFactory
+    isExternal: true
+    href: CodeFactory.html
+  - name: .
+  - uid: CodeFactory.WinVs
+    name: WinVs
+    isExternal: true
+    href: CodeFactory.WinVs.html
+  - name: .
+  - uid: CodeFactory.WinVs.Models
+    name: Models
+    isExternal: true
+    href: CodeFactory.WinVs.Models.html
+  - name: .
+  - uid: CodeFactory.WinVs.Models.CSharp
+    name: CSharp
+    isExternal: true
+    href: CodeFactory.WinVs.Models.CSharp.html
+  spec.vb:
+  - uid: CodeFactory
+    name: CodeFactory
+    isExternal: true
+    href: CodeFactory.html
+  - name: .
+  - uid: CodeFactory.WinVs
+    name: WinVs
+    isExternal: true
+    href: CodeFactory.WinVs.html
+  - name: .
+  - uid: CodeFactory.WinVs.Models
+    name: Models
+    isExternal: true
+    href: CodeFactory.WinVs.Models.html
+  - name: .
+  - uid: CodeFactory.WinVs.Models.CSharp
+    name: CSharp
+    isExternal: true
+    href: CodeFactory.WinVs.Models.CSharp.html
+- uid: CodeFactory.WinVs.Models.CSharp.ICsModel.GetModel``1(System.String)
+  commentId: M:CodeFactory.WinVs.Models.CSharp.ICsModel.GetModel``1(System.String)
+  parent: CodeFactory.WinVs.Models.CSharp.ICsModel
+  isExternal: true
+  href: CodeFactory.WinVs.Models.CSharp.ICsModel.html#CodeFactory_WinVs_Models_CSharp_ICsModel_GetModel__1_System_String_
+  name: GetModel<T>(string)
+  nameWithType: ICsModel.GetModel<T>(string)
+  fullName: CodeFactory.WinVs.Models.CSharp.ICsModel.GetModel<T>(string)
+  nameWithType.vb: ICsModel.GetModel(Of T)(String)
+  fullName.vb: CodeFactory.WinVs.Models.CSharp.ICsModel.GetModel(Of T)(String)
+  name.vb: GetModel(Of T)(String)
+  spec.csharp:
+  - uid: CodeFactory.WinVs.Models.CSharp.ICsModel.GetModel``1(System.String)
+    name: GetModel
+    isExternal: true
+    href: CodeFactory.WinVs.Models.CSharp.ICsModel.html#CodeFactory_WinVs_Models_CSharp_ICsModel_GetModel__1_System_String_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: CodeFactory.WinVs.Models.CSharp.ICsModel.GetModel``1(System.String)
+    name: GetModel
+    isExternal: true
+    href: CodeFactory.WinVs.Models.CSharp.ICsModel.html#CodeFactory_WinVs_Models_CSharp_ICsModel_GetModel__1_System_String_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: CodeFactory.WinVs.Models.CSharp.ICsModel.GetModel(System.String)
+  commentId: M:CodeFactory.WinVs.Models.CSharp.ICsModel.GetModel(System.String)
+  parent: CodeFactory.WinVs.Models.CSharp.ICsModel
+  isExternal: true
+  href: CodeFactory.WinVs.Models.CSharp.ICsModel.html#CodeFactory_WinVs_Models_CSharp_ICsModel_GetModel_System_String_
+  name: GetModel(string)
+  nameWithType: ICsModel.GetModel(string)
+  fullName: CodeFactory.WinVs.Models.CSharp.ICsModel.GetModel(string)
+  nameWithType.vb: ICsModel.GetModel(String)
+  fullName.vb: CodeFactory.WinVs.Models.CSharp.ICsModel.GetModel(String)
+  name.vb: GetModel(String)
+  spec.csharp:
+  - uid: CodeFactory.WinVs.Models.CSharp.ICsModel.GetModel(System.String)
+    name: GetModel
+    isExternal: true
+    href: CodeFactory.WinVs.Models.CSharp.ICsModel.html#CodeFactory_WinVs_Models_CSharp_ICsModel_GetModel_System_String_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: CodeFactory.WinVs.Models.CSharp.ICsModel.GetModel(System.String)
+    name: GetModel
+    isExternal: true
+    href: CodeFactory.WinVs.Models.CSharp.ICsModel.html#CodeFactory_WinVs_Models_CSharp_ICsModel_GetModel_System_String_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: CodeFactory.WinVs.Models.CSharp.ICsModel.LoadedFromSource
+  commentId: P:CodeFactory.WinVs.Models.CSharp.ICsModel.LoadedFromSource
+  parent: CodeFactory.WinVs.Models.CSharp.ICsModel
+  isExternal: true
+  href: CodeFactory.WinVs.Models.CSharp.ICsModel.html#CodeFactory_WinVs_Models_CSharp_ICsModel_LoadedFromSource
+  name: LoadedFromSource
+  nameWithType: ICsModel.LoadedFromSource
+  fullName: CodeFactory.WinVs.Models.CSharp.ICsModel.LoadedFromSource
+- uid: CodeFactory.WinVs.Models.CSharp.ICsModel.Language
+  commentId: P:CodeFactory.WinVs.Models.CSharp.ICsModel.Language
+  parent: CodeFactory.WinVs.Models.CSharp.ICsModel
+  isExternal: true
+  href: CodeFactory.WinVs.Models.CSharp.ICsModel.html#CodeFactory_WinVs_Models_CSharp_ICsModel_Language
+  name: Language
+  nameWithType: ICsModel.Language
+  fullName: CodeFactory.WinVs.Models.CSharp.ICsModel.Language
+- uid: CodeFactory.WinVs.Models.CSharp.ICsModel.ModelType
+  commentId: P:CodeFactory.WinVs.Models.CSharp.ICsModel.ModelType
+  parent: CodeFactory.WinVs.Models.CSharp.ICsModel
+  isExternal: true
+  href: CodeFactory.WinVs.Models.CSharp.ICsModel.html#CodeFactory_WinVs_Models_CSharp_ICsModel_ModelType
+  name: ModelType
+  nameWithType: ICsModel.ModelType
+  fullName: CodeFactory.WinVs.Models.CSharp.ICsModel.ModelType
+- uid: CodeFactory.WinVs.Models.CSharp.ICsModel.SourceDocument
+  commentId: P:CodeFactory.WinVs.Models.CSharp.ICsModel.SourceDocument
+  parent: CodeFactory.WinVs.Models.CSharp.ICsModel
+  isExternal: true
+  href: CodeFactory.WinVs.Models.CSharp.ICsModel.html#CodeFactory_WinVs_Models_CSharp_ICsModel_SourceDocument
+  name: SourceDocument
+  nameWithType: ICsModel.SourceDocument
+  fullName: CodeFactory.WinVs.Models.CSharp.ICsModel.SourceDocument
+- uid: CodeFactory.IModelStatus.GetErrors
+  commentId: M:CodeFactory.IModelStatus.GetErrors
+  parent: CodeFactory.IModelStatus
+  isExternal: true
+  href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/19e816ffdf1ba504be6987736bbac42e2d241405/Src/CodeFactoryForWindows/CodeFactory/IModelStatus.cs
+  name: GetErrors()
+  nameWithType: IModelStatus.GetErrors()
+  fullName: CodeFactory.IModelStatus.GetErrors()
+  spec.csharp:
+  - uid: CodeFactory.IModelStatus.GetErrors
+    name: GetErrors
+    isExternal: true
+    href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/19e816ffdf1ba504be6987736bbac42e2d241405/Src/CodeFactoryForWindows/CodeFactory/IModelStatus.cs
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: CodeFactory.IModelStatus.GetErrors
+    name: GetErrors
+    isExternal: true
+    href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/19e816ffdf1ba504be6987736bbac42e2d241405/Src/CodeFactoryForWindows/CodeFactory/IModelStatus.cs
+  - name: (
+  - name: )
+- uid: CodeFactory.IModelStatus.IsLoaded
+  commentId: P:CodeFactory.IModelStatus.IsLoaded
+  parent: CodeFactory.IModelStatus
+  isExternal: true
+  href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/19e816ffdf1ba504be6987736bbac42e2d241405/Src/CodeFactoryForWindows/CodeFactory/IModelStatus.cs
+  name: IsLoaded
+  nameWithType: IModelStatus.IsLoaded
+  fullName: CodeFactory.IModelStatus.IsLoaded
+- uid: CodeFactory.IModelStatus.HasErrors
+  commentId: P:CodeFactory.IModelStatus.HasErrors
+  parent: CodeFactory.IModelStatus
+  isExternal: true
+  href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/19e816ffdf1ba504be6987736bbac42e2d241405/Src/CodeFactoryForWindows/CodeFactory/IModelStatus.cs
+  name: HasErrors
+  nameWithType: IModelStatus.HasErrors
+  fullName: CodeFactory.IModelStatus.HasErrors
+- uid: CodeFactory.WinVs.Models.CSharp.ICsModel
+  commentId: T:CodeFactory.WinVs.Models.CSharp.ICsModel
+  parent: CodeFactory.WinVs.Models.CSharp
+  isExternal: true
+  href: CodeFactory.WinVs.Models.CSharp.ICsModel.html
+  name: ICsModel
+  nameWithType: ICsModel
+  fullName: CodeFactory.WinVs.Models.CSharp.ICsModel
+- uid: CodeFactory.IModelStatus
+  commentId: T:CodeFactory.IModelStatus
+  parent: CodeFactory
+  isExternal: true
+  href: CodeFactory.IModelStatus.html
+  name: IModelStatus
+  nameWithType: IModelStatus
+  fullName: CodeFactory.IModelStatus
+- uid: CodeFactory
+  commentId: N:CodeFactory
+  isExternal: true
+  href: CodeFactory.html
+  name: CodeFactory
+  nameWithType: CodeFactory
+  fullName: CodeFactory
+- uid: CodeFactory.WinVs.Models.CSharp.ICsAttributeParameterValue.ParameterKind*
+  commentId: Overload:CodeFactory.WinVs.Models.CSharp.ICsAttributeParameterValue.ParameterKind
+  isExternal: true
+  href: CodeFactory.WinVs.Models.CSharp.ICsAttributeParameterValue.html#CodeFactory_WinVs_Models_CSharp_ICsAttributeParameterValue_ParameterKind
+  name: ParameterKind
+  nameWithType: ICsAttributeParameterValue.ParameterKind
+  fullName: CodeFactory.WinVs.Models.CSharp.ICsAttributeParameterValue.ParameterKind
+- uid: CodeFactory.WinVs.Models.CSharp.AttributeParameterKind
+  commentId: T:CodeFactory.WinVs.Models.CSharp.AttributeParameterKind
+  parent: CodeFactory.WinVs.Models.CSharp
+  isExternal: true
+  href: CodeFactory.WinVs.Models.CSharp.AttributeParameterKind.html
+  name: AttributeParameterKind
+  nameWithType: AttributeParameterKind
+  fullName: CodeFactory.WinVs.Models.CSharp.AttributeParameterKind
+- uid: CodeFactory.WinVs.Models.CSharp.ICsAttributeParameterValue.ParameterKind
+  commentId: P:CodeFactory.WinVs.Models.CSharp.ICsAttributeParameterValue.ParameterKind
+  parent: CodeFactory.WinVs.Models.CSharp.ICsAttributeParameterValue
+  isExternal: true
+  href: CodeFactory.WinVs.Models.CSharp.ICsAttributeParameterValue.html#CodeFactory_WinVs_Models_CSharp_ICsAttributeParameterValue_ParameterKind
+  name: ParameterKind
+  nameWithType: ICsAttributeParameterValue.ParameterKind
+  fullName: CodeFactory.WinVs.Models.CSharp.ICsAttributeParameterValue.ParameterKind
+- uid: CodeFactory.WinVs.Models.CSharp.ICsAttributeParameterValue.Value*
+  commentId: Overload:CodeFactory.WinVs.Models.CSharp.ICsAttributeParameterValue.Value
+  isExternal: true
+  href: CodeFactory.WinVs.Models.CSharp.ICsAttributeParameterValue.html#CodeFactory_WinVs_Models_CSharp_ICsAttributeParameterValue_Value
+  name: Value
+  nameWithType: ICsAttributeParameterValue.Value
+  fullName: CodeFactory.WinVs.Models.CSharp.ICsAttributeParameterValue.Value
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: CodeFactory.WinVs.Models.CSharp.ICsAttributeParameterValue
+  commentId: T:CodeFactory.WinVs.Models.CSharp.ICsAttributeParameterValue
+  parent: CodeFactory.WinVs.Models.CSharp
+  isExternal: true
+  href: CodeFactory.WinVs.Models.CSharp.ICsAttributeParameterValue.html
+  name: ICsAttributeParameterValue
+  nameWithType: ICsAttributeParameterValue
+  fullName: CodeFactory.WinVs.Models.CSharp.ICsAttributeParameterValue
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: CodeFactory.WinVs.Models.CSharp.ICsAttributeParameterValue.TypeValue*
+  commentId: Overload:CodeFactory.WinVs.Models.CSharp.ICsAttributeParameterValue.TypeValue
+  isExternal: true
+  href: CodeFactory.WinVs.Models.CSharp.ICsAttributeParameterValue.html#CodeFactory_WinVs_Models_CSharp_ICsAttributeParameterValue_TypeValue
+  name: TypeValue
+  nameWithType: ICsAttributeParameterValue.TypeValue
+  fullName: CodeFactory.WinVs.Models.CSharp.ICsAttributeParameterValue.TypeValue
+- uid: CodeFactory.WinVs.Models.CSharp.CsType
+  commentId: T:CodeFactory.WinVs.Models.CSharp.CsType
+  parent: CodeFactory.WinVs.Models.CSharp
+  isExternal: true
+  href: CodeFactory.WinVs.Models.CSharp.CsType.html
+  name: CsType
+  nameWithType: CsType
+  fullName: CodeFactory.WinVs.Models.CSharp.CsType
+- uid: CodeFactory.WinVs.Models.CSharp.ICsAttributeParameterValue.EnumValue*
+  commentId: Overload:CodeFactory.WinVs.Models.CSharp.ICsAttributeParameterValue.EnumValue
+  isExternal: true
+  href: CodeFactory.WinVs.Models.CSharp.ICsAttributeParameterValue.html#CodeFactory_WinVs_Models_CSharp_ICsAttributeParameterValue_EnumValue
+  name: EnumValue
+  nameWithType: ICsAttributeParameterValue.EnumValue
+  fullName: CodeFactory.WinVs.Models.CSharp.ICsAttributeParameterValue.EnumValue
+- uid: CodeFactory.WinVs.Models.CSharp.ICsAttributeParameterValue.Values*
+  commentId: Overload:CodeFactory.WinVs.Models.CSharp.ICsAttributeParameterValue.Values
+  isExternal: true
+  href: CodeFactory.WinVs.Models.CSharp.ICsAttributeParameterValue.html#CodeFactory_WinVs_Models_CSharp_ICsAttributeParameterValue_Values
+  name: Values
+  nameWithType: ICsAttributeParameterValue.Values
+  fullName: CodeFactory.WinVs.Models.CSharp.ICsAttributeParameterValue.Values
+- uid: System.Collections.Generic.IReadOnlyList{CodeFactory.WinVs.Models.CSharp.CsAttributeParameterValue}
+  commentId: T:System.Collections.Generic.IReadOnlyList{CodeFactory.WinVs.Models.CSharp.CsAttributeParameterValue}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IReadOnlyList`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  name: IReadOnlyList<CsAttributeParameterValue>
+  nameWithType: IReadOnlyList<CsAttributeParameterValue>
+  fullName: System.Collections.Generic.IReadOnlyList<CodeFactory.WinVs.Models.CSharp.CsAttributeParameterValue>
+  nameWithType.vb: IReadOnlyList(Of CsAttributeParameterValue)
+  fullName.vb: System.Collections.Generic.IReadOnlyList(Of CodeFactory.WinVs.Models.CSharp.CsAttributeParameterValue)
+  name.vb: IReadOnlyList(Of CsAttributeParameterValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - uid: CodeFactory.WinVs.Models.CSharp.CsAttributeParameterValue
+    name: CsAttributeParameterValue
+    isExternal: true
+    href: CodeFactory.WinVs.Models.CSharp.CsAttributeParameterValue.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: CodeFactory.WinVs.Models.CSharp.CsAttributeParameterValue
+    name: CsAttributeParameterValue
+    isExternal: true
+    href: CodeFactory.WinVs.Models.CSharp.CsAttributeParameterValue.html
+  - name: )
+- uid: System.Collections.Generic.IReadOnlyList`1
+  commentId: T:System.Collections.Generic.IReadOnlyList`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  name: IReadOnlyList<T>
+  nameWithType: IReadOnlyList<T>
+  fullName: System.Collections.Generic.IReadOnlyList<T>
+  nameWithType.vb: IReadOnlyList(Of T)
+  fullName.vb: System.Collections.Generic.IReadOnlyList(Of T)
+  name.vb: IReadOnlyList(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic

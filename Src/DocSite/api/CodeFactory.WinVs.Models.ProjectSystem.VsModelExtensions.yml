@@ -1,0 +1,575 @@
+### YamlMime:ManagedReference
+items:
+- uid: CodeFactory.WinVs.Models.ProjectSystem.VsModelExtensions
+  commentId: T:CodeFactory.WinVs.Models.ProjectSystem.VsModelExtensions
+  id: VsModelExtensions
+  parent: CodeFactory.WinVs.Models.ProjectSystem
+  children:
+  - CodeFactory.WinVs.Models.ProjectSystem.VsModelExtensions.GetHostingProjectAsync(CodeFactory.WinVs.Models.ProjectSystem.VsModel)
+  - CodeFactory.WinVs.Models.ProjectSystem.VsModelExtensions.GetParentProjectFolderAsync(CodeFactory.WinVs.Models.ProjectSystem.VsModel)
+  langs:
+  - csharp
+  - vb
+  name: VsModelExtensions
+  nameWithType: VsModelExtensions
+  fullName: CodeFactory.WinVs.Models.ProjectSystem.VsModelExtensions
+  type: Class
+  source:
+    href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/19e816ffdf1ba504be6987736bbac42e2d241405/Src/CodeFactoryForWindows/CodeFactory.WinVs/Models/ProjectSystem/VsModelExtensions.cs
+  assemblies:
+  - CodeFactory.WinVs
+  namespace: CodeFactory.WinVs.Models.ProjectSystem
+  summary: Extensions method class to support <xref href="CodeFactory.WinVs.Models.ProjectSystem.VsModel" data-throw-if-not-resolved="false"></xref>
+  example: []
+  syntax:
+    content: public static class VsModelExtensions
+    content.vb: Public Module VsModelExtensions
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+- uid: CodeFactory.WinVs.Models.ProjectSystem.VsModelExtensions.GetParentProjectFolderAsync(CodeFactory.WinVs.Models.ProjectSystem.VsModel)
+  commentId: M:CodeFactory.WinVs.Models.ProjectSystem.VsModelExtensions.GetParentProjectFolderAsync(CodeFactory.WinVs.Models.ProjectSystem.VsModel)
+  id: GetParentProjectFolderAsync(CodeFactory.WinVs.Models.ProjectSystem.VsModel)
+  isExtensionMethod: true
+  parent: CodeFactory.WinVs.Models.ProjectSystem.VsModelExtensions
+  langs:
+  - csharp
+  - vb
+  name: GetParentProjectFolderAsync(VsModel)
+  nameWithType: VsModelExtensions.GetParentProjectFolderAsync(VsModel)
+  fullName: CodeFactory.WinVs.Models.ProjectSystem.VsModelExtensions.GetParentProjectFolderAsync(CodeFactory.WinVs.Models.ProjectSystem.VsModel)
+  type: Method
+  source:
+    href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/19e816ffdf1ba504be6987736bbac42e2d241405/Src/CodeFactoryForWindows/CodeFactory.WinVs/Models/ProjectSystem/VsModelExtensions.cs
+  assemblies:
+  - CodeFactory.WinVs
+  namespace: CodeFactory.WinVs.Models.ProjectSystem
+  summary: Gets the hosting project folder.
+  example: []
+  syntax:
+    content: public static Task<VsProjectFolder> GetParentProjectFolderAsync(this VsModel source)
+    parameters:
+    - id: source
+      type: CodeFactory.WinVs.Models.ProjectSystem.VsModel
+      description: Model to get the parent project folder.
+    return:
+      type: System.Threading.Tasks.Task{CodeFactory.WinVs.Models.ProjectSystem.VsProjectFolder}
+      description: Returns the parent project folder or null if their is no parent project folder.
+    content.vb: Public Shared Function GetParentProjectFolderAsync(source As VsModel) As Task(Of VsProjectFolder)
+  overload: CodeFactory.WinVs.Models.ProjectSystem.VsModelExtensions.GetParentProjectFolderAsync*
+- uid: CodeFactory.WinVs.Models.ProjectSystem.VsModelExtensions.GetHostingProjectAsync(CodeFactory.WinVs.Models.ProjectSystem.VsModel)
+  commentId: M:CodeFactory.WinVs.Models.ProjectSystem.VsModelExtensions.GetHostingProjectAsync(CodeFactory.WinVs.Models.ProjectSystem.VsModel)
+  id: GetHostingProjectAsync(CodeFactory.WinVs.Models.ProjectSystem.VsModel)
+  isExtensionMethod: true
+  parent: CodeFactory.WinVs.Models.ProjectSystem.VsModelExtensions
+  langs:
+  - csharp
+  - vb
+  name: GetHostingProjectAsync(VsModel)
+  nameWithType: VsModelExtensions.GetHostingProjectAsync(VsModel)
+  fullName: CodeFactory.WinVs.Models.ProjectSystem.VsModelExtensions.GetHostingProjectAsync(CodeFactory.WinVs.Models.ProjectSystem.VsModel)
+  type: Method
+  source:
+    href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/19e816ffdf1ba504be6987736bbac42e2d241405/Src/CodeFactoryForWindows/CodeFactory.WinVs/Models/ProjectSystem/VsModelExtensions.cs
+  assemblies:
+  - CodeFactory.WinVs
+  namespace: CodeFactory.WinVs.Models.ProjectSystem
+  summary: Gets the hosting project from the provided <xref href="CodeFactory.WinVs.Models.ProjectSystem.VsModel" data-throw-if-not-resolved="false"></xref>
+  example: []
+  syntax:
+    content: public static Task<VsProject> GetHostingProjectAsync(this VsModel source)
+    parameters:
+    - id: source
+      type: CodeFactory.WinVs.Models.ProjectSystem.VsModel
+      description: The visual studio model to search the project.
+    return:
+      type: System.Threading.Tasks.Task{CodeFactory.WinVs.Models.ProjectSystem.VsProject}
+      description: The <xref href="CodeFactory.WinVs.Models.ProjectSystem.VsProject" data-throw-if-not-resolved="false"></xref> model that hosts the current model or null if the project is not found.
+    content.vb: Public Shared Function GetHostingProjectAsync(source As VsModel) As Task(Of VsProject)
+  overload: CodeFactory.WinVs.Models.ProjectSystem.VsModelExtensions.GetHostingProjectAsync*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: Raised when the model is null.
+  - type: CodeFactory.CodeFactoryException
+    commentId: T:CodeFactory.CodeFactoryException
+    description: Raised if the source code functionality cannot load the project file.
+references:
+- uid: CodeFactory.WinVs.Models.ProjectSystem.VsModel
+  commentId: T:CodeFactory.WinVs.Models.ProjectSystem.VsModel
+  parent: CodeFactory.WinVs.Models.ProjectSystem
+  isExternal: true
+  href: CodeFactory.WinVs.Models.ProjectSystem.VsModel.html
+  name: VsModel
+  nameWithType: VsModel
+  fullName: CodeFactory.WinVs.Models.ProjectSystem.VsModel
+- uid: CodeFactory.WinVs.Models.ProjectSystem
+  commentId: N:CodeFactory.WinVs.Models.ProjectSystem
+  isExternal: true
+  href: CodeFactory.html
+  name: CodeFactory.WinVs.Models.ProjectSystem
+  nameWithType: CodeFactory.WinVs.Models.ProjectSystem
+  fullName: CodeFactory.WinVs.Models.ProjectSystem
+  spec.csharp:
+  - uid: CodeFactory
+    name: CodeFactory
+    isExternal: true
+    href: CodeFactory.html
+  - name: .
+  - uid: CodeFactory.WinVs
+    name: WinVs
+    isExternal: true
+    href: CodeFactory.WinVs.html
+  - name: .
+  - uid: CodeFactory.WinVs.Models
+    name: Models
+    isExternal: true
+    href: CodeFactory.WinVs.Models.html
+  - name: .
+  - uid: CodeFactory.WinVs.Models.ProjectSystem
+    name: ProjectSystem
+    isExternal: true
+    href: CodeFactory.WinVs.Models.ProjectSystem.html
+  spec.vb:
+  - uid: CodeFactory
+    name: CodeFactory
+    isExternal: true
+    href: CodeFactory.html
+  - name: .
+  - uid: CodeFactory.WinVs
+    name: WinVs
+    isExternal: true
+    href: CodeFactory.WinVs.html
+  - name: .
+  - uid: CodeFactory.WinVs.Models
+    name: Models
+    isExternal: true
+    href: CodeFactory.WinVs.Models.html
+  - name: .
+  - uid: CodeFactory.WinVs.Models.ProjectSystem
+    name: ProjectSystem
+    isExternal: true
+    href: CodeFactory.WinVs.Models.ProjectSystem.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: CodeFactory.WinVs.Models.ProjectSystem.VsModelExtensions.GetParentProjectFolderAsync*
+  commentId: Overload:CodeFactory.WinVs.Models.ProjectSystem.VsModelExtensions.GetParentProjectFolderAsync
+  isExternal: true
+  href: CodeFactory.WinVs.Models.ProjectSystem.VsModelExtensions.html#CodeFactory_WinVs_Models_ProjectSystem_VsModelExtensions_GetParentProjectFolderAsync_CodeFactory_WinVs_Models_ProjectSystem_VsModel_
+  name: GetParentProjectFolderAsync
+  nameWithType: VsModelExtensions.GetParentProjectFolderAsync
+  fullName: CodeFactory.WinVs.Models.ProjectSystem.VsModelExtensions.GetParentProjectFolderAsync
+- uid: System.Threading.Tasks.Task{CodeFactory.WinVs.Models.ProjectSystem.VsProjectFolder}
+  commentId: T:System.Threading.Tasks.Task{CodeFactory.WinVs.Models.ProjectSystem.VsProjectFolder}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<VsProjectFolder>
+  nameWithType: Task<VsProjectFolder>
+  fullName: System.Threading.Tasks.Task<CodeFactory.WinVs.Models.ProjectSystem.VsProjectFolder>
+  nameWithType.vb: Task(Of VsProjectFolder)
+  fullName.vb: System.Threading.Tasks.Task(Of CodeFactory.WinVs.Models.ProjectSystem.VsProjectFolder)
+  name.vb: Task(Of VsProjectFolder)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: CodeFactory.WinVs.Models.ProjectSystem.VsProjectFolder
+    name: VsProjectFolder
+    isExternal: true
+    href: CodeFactory.WinVs.Models.ProjectSystem.VsProjectFolder.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: CodeFactory.WinVs.Models.ProjectSystem.VsProjectFolder
+    name: VsProjectFolder
+    isExternal: true
+    href: CodeFactory.WinVs.Models.ProjectSystem.VsProjectFolder.html
+  - name: )
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: CodeFactory.WinVs.Models.ProjectSystem.VsProject
+  commentId: T:CodeFactory.WinVs.Models.ProjectSystem.VsProject
+  parent: CodeFactory.WinVs.Models.ProjectSystem
+  isExternal: true
+  href: CodeFactory.WinVs.Models.ProjectSystem.VsProject.html
+  name: VsProject
+  nameWithType: VsProject
+  fullName: CodeFactory.WinVs.Models.ProjectSystem.VsProject
+- uid: System.ArgumentNullException
+  commentId: T:System.ArgumentNullException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.argumentnullexception
+  name: ArgumentNullException
+  nameWithType: ArgumentNullException
+  fullName: System.ArgumentNullException
+- uid: CodeFactory.CodeFactoryException
+  commentId: T:CodeFactory.CodeFactoryException
+  parent: CodeFactory
+  isExternal: true
+  href: CodeFactory.CodeFactoryException.html
+  name: CodeFactoryException
+  nameWithType: CodeFactoryException
+  fullName: CodeFactory.CodeFactoryException
+- uid: CodeFactory.WinVs.Models.ProjectSystem.VsModelExtensions.GetHostingProjectAsync*
+  commentId: Overload:CodeFactory.WinVs.Models.ProjectSystem.VsModelExtensions.GetHostingProjectAsync
+  isExternal: true
+  href: CodeFactory.WinVs.Models.ProjectSystem.VsModelExtensions.html#CodeFactory_WinVs_Models_ProjectSystem_VsModelExtensions_GetHostingProjectAsync_CodeFactory_WinVs_Models_ProjectSystem_VsModel_
+  name: GetHostingProjectAsync
+  nameWithType: VsModelExtensions.GetHostingProjectAsync
+  fullName: CodeFactory.WinVs.Models.ProjectSystem.VsModelExtensions.GetHostingProjectAsync
+- uid: System.Threading.Tasks.Task{CodeFactory.WinVs.Models.ProjectSystem.VsProject}
+  commentId: T:System.Threading.Tasks.Task{CodeFactory.WinVs.Models.ProjectSystem.VsProject}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<VsProject>
+  nameWithType: Task<VsProject>
+  fullName: System.Threading.Tasks.Task<CodeFactory.WinVs.Models.ProjectSystem.VsProject>
+  nameWithType.vb: Task(Of VsProject)
+  fullName.vb: System.Threading.Tasks.Task(Of CodeFactory.WinVs.Models.ProjectSystem.VsProject)
+  name.vb: Task(Of VsProject)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: CodeFactory.WinVs.Models.ProjectSystem.VsProject
+    name: VsProject
+    isExternal: true
+    href: CodeFactory.WinVs.Models.ProjectSystem.VsProject.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: CodeFactory.WinVs.Models.ProjectSystem.VsProject
+    name: VsProject
+    isExternal: true
+    href: CodeFactory.WinVs.Models.ProjectSystem.VsProject.html
+  - name: )
+- uid: CodeFactory
+  commentId: N:CodeFactory
+  isExternal: true
+  href: CodeFactory.html
+  name: CodeFactory
+  nameWithType: CodeFactory
+  fullName: CodeFactory

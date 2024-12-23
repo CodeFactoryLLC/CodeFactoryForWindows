@@ -1,0 +1,934 @@
+### YamlMime:ManagedReference
+items:
+- uid: Serilog.Configuration.LoggerDestructuringConfiguration
+  commentId: T:Serilog.Configuration.LoggerDestructuringConfiguration
+  id: LoggerDestructuringConfiguration
+  parent: Serilog.Configuration
+  children:
+  - Serilog.Configuration.LoggerDestructuringConfiguration.AsScalar(System.Type)
+  - Serilog.Configuration.LoggerDestructuringConfiguration.AsScalar``1
+  - Serilog.Configuration.LoggerDestructuringConfiguration.ByTransformingWhere``1(System.Func{System.Type,System.Boolean},System.Func{``0,System.Object})
+  - Serilog.Configuration.LoggerDestructuringConfiguration.ByTransforming``1(System.Func{``0,System.Object})
+  - Serilog.Configuration.LoggerDestructuringConfiguration.ToMaximumCollectionCount(System.Int32)
+  - Serilog.Configuration.LoggerDestructuringConfiguration.ToMaximumDepth(System.Int32)
+  - Serilog.Configuration.LoggerDestructuringConfiguration.ToMaximumStringLength(System.Int32)
+  - Serilog.Configuration.LoggerDestructuringConfiguration.With(Serilog.Core.IDestructuringPolicy[])
+  - Serilog.Configuration.LoggerDestructuringConfiguration.With``1
+  langs:
+  - csharp
+  - vb
+  name: LoggerDestructuringConfiguration
+  nameWithType: LoggerDestructuringConfiguration
+  fullName: Serilog.Configuration.LoggerDestructuringConfiguration
+  type: Class
+  assemblies:
+  - Serilog
+  namespace: Serilog.Configuration
+  summary: Controls template parameter destructuring configuration.
+  example: []
+  syntax:
+    content: public class LoggerDestructuringConfiguration
+    content.vb: Public Class LoggerDestructuringConfiguration
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: Serilog.Configuration.LoggerDestructuringConfiguration.AsScalar(System.Type)
+  commentId: M:Serilog.Configuration.LoggerDestructuringConfiguration.AsScalar(System.Type)
+  id: AsScalar(System.Type)
+  parent: Serilog.Configuration.LoggerDestructuringConfiguration
+  langs:
+  - csharp
+  - vb
+  name: AsScalar(Type)
+  nameWithType: LoggerDestructuringConfiguration.AsScalar(Type)
+  fullName: Serilog.Configuration.LoggerDestructuringConfiguration.AsScalar(System.Type)
+  type: Method
+  assemblies:
+  - Serilog
+  namespace: Serilog.Configuration
+  summary: >-
+    Treat objects of the specified type as scalar values, i.e., don't break
+
+    them down into properties even when destructuring complex types.
+  example: []
+  syntax:
+    content: public LoggerConfiguration AsScalar(Type scalarType)
+    parameters:
+    - id: scalarType
+      type: System.Type
+      description: Type to treat as scalar.
+    return:
+      type: Serilog.LoggerConfiguration
+      description: Configuration object allowing method chaining.
+    content.vb: Public Function AsScalar(scalarType As Type) As LoggerConfiguration
+  overload: Serilog.Configuration.LoggerDestructuringConfiguration.AsScalar*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: When <code class="paramref">scalarType</code> is <pre><code class="lang-csharp">null</code></pre>
+- uid: Serilog.Configuration.LoggerDestructuringConfiguration.AsScalar``1
+  commentId: M:Serilog.Configuration.LoggerDestructuringConfiguration.AsScalar``1
+  id: AsScalar``1
+  parent: Serilog.Configuration.LoggerDestructuringConfiguration
+  langs:
+  - csharp
+  - vb
+  name: AsScalar<TScalar>()
+  nameWithType: LoggerDestructuringConfiguration.AsScalar<TScalar>()
+  fullName: Serilog.Configuration.LoggerDestructuringConfiguration.AsScalar<TScalar>()
+  type: Method
+  assemblies:
+  - Serilog
+  namespace: Serilog.Configuration
+  summary: >-
+    Treat objects of the specified type as scalar values, i.e., don't break
+
+    them down into properties even when destructuring complex types.
+  example: []
+  syntax:
+    content: public LoggerConfiguration AsScalar<TScalar>()
+    typeParameters:
+    - id: TScalar
+      description: Type to treat as scalar.
+    return:
+      type: Serilog.LoggerConfiguration
+      description: Configuration object allowing method chaining.
+    content.vb: Public Function AsScalar(Of TScalar)() As LoggerConfiguration
+  overload: Serilog.Configuration.LoggerDestructuringConfiguration.AsScalar*
+  nameWithType.vb: LoggerDestructuringConfiguration.AsScalar(Of TScalar)()
+  fullName.vb: Serilog.Configuration.LoggerDestructuringConfiguration.AsScalar(Of TScalar)()
+  name.vb: AsScalar(Of TScalar)()
+- uid: Serilog.Configuration.LoggerDestructuringConfiguration.With(Serilog.Core.IDestructuringPolicy[])
+  commentId: M:Serilog.Configuration.LoggerDestructuringConfiguration.With(Serilog.Core.IDestructuringPolicy[])
+  id: With(Serilog.Core.IDestructuringPolicy[])
+  parent: Serilog.Configuration.LoggerDestructuringConfiguration
+  langs:
+  - csharp
+  - vb
+  name: With(params IDestructuringPolicy[])
+  nameWithType: LoggerDestructuringConfiguration.With(params IDestructuringPolicy[])
+  fullName: Serilog.Configuration.LoggerDestructuringConfiguration.With(params Serilog.Core.IDestructuringPolicy[])
+  type: Method
+  assemblies:
+  - Serilog
+  namespace: Serilog.Configuration
+  summary: When destructuring objects, transform instances with the provided policies.
+  example: []
+  syntax:
+    content: public LoggerConfiguration With(params IDestructuringPolicy[] destructuringPolicies)
+    parameters:
+    - id: destructuringPolicies
+      type: Serilog.Core.IDestructuringPolicy[]
+      description: Policies to apply when destructuring.
+    return:
+      type: Serilog.LoggerConfiguration
+      description: Configuration object allowing method chaining.
+    content.vb: Public Function [With](ParamArray destructuringPolicies As IDestructuringPolicy()) As LoggerConfiguration
+  overload: Serilog.Configuration.LoggerDestructuringConfiguration.With*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: When <code class="paramref">destructuringPolicies</code> is <pre><code class="lang-csharp">null</code></pre>
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: When any element of <code class="paramref">destructuringPolicies</code> is <pre><code class="lang-csharp">null</code></pre>
+  nameWithType.vb: LoggerDestructuringConfiguration.With(ParamArray IDestructuringPolicy())
+  fullName.vb: Serilog.Configuration.LoggerDestructuringConfiguration.With(ParamArray Serilog.Core.IDestructuringPolicy())
+  name.vb: With(ParamArray IDestructuringPolicy())
+- uid: Serilog.Configuration.LoggerDestructuringConfiguration.With``1
+  commentId: M:Serilog.Configuration.LoggerDestructuringConfiguration.With``1
+  id: With``1
+  parent: Serilog.Configuration.LoggerDestructuringConfiguration
+  langs:
+  - csharp
+  - vb
+  name: With<TDestructuringPolicy>()
+  nameWithType: LoggerDestructuringConfiguration.With<TDestructuringPolicy>()
+  fullName: Serilog.Configuration.LoggerDestructuringConfiguration.With<TDestructuringPolicy>()
+  type: Method
+  assemblies:
+  - Serilog
+  namespace: Serilog.Configuration
+  summary: When destructuring objects, transform instances with the provided policy.
+  example: []
+  syntax:
+    content: 'public LoggerConfiguration With<TDestructuringPolicy>() where TDestructuringPolicy : IDestructuringPolicy, new()'
+    typeParameters:
+    - id: TDestructuringPolicy
+      description: Policy to apply when destructuring.
+    return:
+      type: Serilog.LoggerConfiguration
+      description: Configuration object allowing method chaining.
+    content.vb: Public Function [With](Of TDestructuringPolicy As {IDestructuringPolicy, New})() As LoggerConfiguration
+  overload: Serilog.Configuration.LoggerDestructuringConfiguration.With*
+  nameWithType.vb: LoggerDestructuringConfiguration.With(Of TDestructuringPolicy)()
+  fullName.vb: Serilog.Configuration.LoggerDestructuringConfiguration.With(Of TDestructuringPolicy)()
+  name.vb: With(Of TDestructuringPolicy)()
+- uid: Serilog.Configuration.LoggerDestructuringConfiguration.ByTransforming``1(System.Func{``0,System.Object})
+  commentId: M:Serilog.Configuration.LoggerDestructuringConfiguration.ByTransforming``1(System.Func{``0,System.Object})
+  id: ByTransforming``1(System.Func{``0,System.Object})
+  parent: Serilog.Configuration.LoggerDestructuringConfiguration
+  langs:
+  - csharp
+  - vb
+  name: ByTransforming<TValue>(Func<TValue, object>)
+  nameWithType: LoggerDestructuringConfiguration.ByTransforming<TValue>(Func<TValue, object>)
+  fullName: Serilog.Configuration.LoggerDestructuringConfiguration.ByTransforming<TValue>(System.Func<TValue, object>)
+  type: Method
+  assemblies:
+  - Serilog
+  namespace: Serilog.Configuration
+  summary: >-
+    When destructuring objects, transform instances of the specified type with
+
+    the provided function.
+  example: []
+  syntax:
+    content: public LoggerConfiguration ByTransforming<TValue>(Func<TValue, object> transformation)
+    parameters:
+    - id: transformation
+      type: System.Func{{TValue},System.Object}
+      description: >-
+        Function mapping instances of <code class="typeparamref">TValue</code>
+                    to an alternative representation.
+    typeParameters:
+    - id: TValue
+      description: Type of values to transform.
+    return:
+      type: Serilog.LoggerConfiguration
+      description: Configuration object allowing method chaining.
+    content.vb: Public Function ByTransforming(Of TValue)(transformation As Func(Of TValue, Object)) As LoggerConfiguration
+  overload: Serilog.Configuration.LoggerDestructuringConfiguration.ByTransforming*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: When <code class="paramref">transformation</code> is <pre><code class="lang-csharp">null</code></pre>
+  nameWithType.vb: LoggerDestructuringConfiguration.ByTransforming(Of TValue)(Func(Of TValue, Object))
+  fullName.vb: Serilog.Configuration.LoggerDestructuringConfiguration.ByTransforming(Of TValue)(System.Func(Of TValue, Object))
+  name.vb: ByTransforming(Of TValue)(Func(Of TValue, Object))
+- uid: Serilog.Configuration.LoggerDestructuringConfiguration.ByTransformingWhere``1(System.Func{System.Type,System.Boolean},System.Func{``0,System.Object})
+  commentId: M:Serilog.Configuration.LoggerDestructuringConfiguration.ByTransformingWhere``1(System.Func{System.Type,System.Boolean},System.Func{``0,System.Object})
+  id: ByTransformingWhere``1(System.Func{System.Type,System.Boolean},System.Func{``0,System.Object})
+  parent: Serilog.Configuration.LoggerDestructuringConfiguration
+  langs:
+  - csharp
+  - vb
+  name: ByTransformingWhere<TValue>(Func<Type, bool>, Func<TValue, object>)
+  nameWithType: LoggerDestructuringConfiguration.ByTransformingWhere<TValue>(Func<Type, bool>, Func<TValue, object>)
+  fullName: Serilog.Configuration.LoggerDestructuringConfiguration.ByTransformingWhere<TValue>(System.Func<System.Type, bool>, System.Func<TValue, object>)
+  type: Method
+  assemblies:
+  - Serilog
+  namespace: Serilog.Configuration
+  summary: >-
+    When destructuring objects, transform instances of the specified type with
+
+    the provided function, if the predicate returns true. Be careful to avoid any
+
+    intensive work in the predicate, as it can slow down the pipeline significantly.
+  example: []
+  syntax:
+    content: public LoggerConfiguration ByTransformingWhere<TValue>(Func<Type, bool> predicate, Func<TValue, object> transformation)
+    parameters:
+    - id: predicate
+      type: System.Func{System.Type,System.Boolean}
+      description: >-
+        A predicate used to determine if the transform applies to
+                    a specific type of value
+    - id: transformation
+      type: System.Func{{TValue},System.Object}
+      description: >-
+        Function mapping instances of <code class="typeparamref">TValue</code>
+                    to an alternative representation.
+    typeParameters:
+    - id: TValue
+      description: Type of values to transform.
+    return:
+      type: Serilog.LoggerConfiguration
+      description: Configuration object allowing method chaining.
+    content.vb: Public Function ByTransformingWhere(Of TValue)(predicate As Func(Of Type, Boolean), transformation As Func(Of TValue, Object)) As LoggerConfiguration
+  overload: Serilog.Configuration.LoggerDestructuringConfiguration.ByTransformingWhere*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: When <code class="paramref">predicate</code> is <pre><code class="lang-csharp">null</code></pre>
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: When <code class="paramref">transformation</code> is <pre><code class="lang-csharp">null</code></pre>
+  nameWithType.vb: LoggerDestructuringConfiguration.ByTransformingWhere(Of TValue)(Func(Of Type, Boolean), Func(Of TValue, Object))
+  fullName.vb: Serilog.Configuration.LoggerDestructuringConfiguration.ByTransformingWhere(Of TValue)(System.Func(Of System.Type, Boolean), System.Func(Of TValue, Object))
+  name.vb: ByTransformingWhere(Of TValue)(Func(Of Type, Boolean), Func(Of TValue, Object))
+- uid: Serilog.Configuration.LoggerDestructuringConfiguration.ToMaximumDepth(System.Int32)
+  commentId: M:Serilog.Configuration.LoggerDestructuringConfiguration.ToMaximumDepth(System.Int32)
+  id: ToMaximumDepth(System.Int32)
+  parent: Serilog.Configuration.LoggerDestructuringConfiguration
+  langs:
+  - csharp
+  - vb
+  name: ToMaximumDepth(int)
+  nameWithType: LoggerDestructuringConfiguration.ToMaximumDepth(int)
+  fullName: Serilog.Configuration.LoggerDestructuringConfiguration.ToMaximumDepth(int)
+  type: Method
+  assemblies:
+  - Serilog
+  namespace: Serilog.Configuration
+  summary: >-
+    When destructuring objects, depth will be limited to 10 property traversals deep to
+
+    guard against ballooning space when recursive/cyclic structures are accidentally passed. To
+
+    change this limit pass a new maximum depth.
+  example: []
+  syntax:
+    content: public LoggerConfiguration ToMaximumDepth(int maximumDestructuringDepth)
+    parameters:
+    - id: maximumDestructuringDepth
+      type: System.Int32
+      description: The maximum depth to use.
+    return:
+      type: Serilog.LoggerConfiguration
+      description: Configuration object allowing method chaining.
+    content.vb: Public Function ToMaximumDepth(maximumDestructuringDepth As Integer) As LoggerConfiguration
+  overload: Serilog.Configuration.LoggerDestructuringConfiguration.ToMaximumDepth*
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: When <code class="paramref">maximumDestructuringDepth</code> is negative
+  nameWithType.vb: LoggerDestructuringConfiguration.ToMaximumDepth(Integer)
+  fullName.vb: Serilog.Configuration.LoggerDestructuringConfiguration.ToMaximumDepth(Integer)
+  name.vb: ToMaximumDepth(Integer)
+- uid: Serilog.Configuration.LoggerDestructuringConfiguration.ToMaximumStringLength(System.Int32)
+  commentId: M:Serilog.Configuration.LoggerDestructuringConfiguration.ToMaximumStringLength(System.Int32)
+  id: ToMaximumStringLength(System.Int32)
+  parent: Serilog.Configuration.LoggerDestructuringConfiguration
+  langs:
+  - csharp
+  - vb
+  name: ToMaximumStringLength(int)
+  nameWithType: LoggerDestructuringConfiguration.ToMaximumStringLength(int)
+  fullName: Serilog.Configuration.LoggerDestructuringConfiguration.ToMaximumStringLength(int)
+  type: Method
+  assemblies:
+  - Serilog
+  namespace: Serilog.Configuration
+  summary: >-
+    When destructuring objects, string values can be restricted to specified length
+
+    thus avoiding bloating payload. Limit is applied to each value separately,
+
+    sum of length of strings can exceed limit.
+  example: []
+  syntax:
+    content: public LoggerConfiguration ToMaximumStringLength(int maximumStringLength)
+    parameters:
+    - id: maximumStringLength
+      type: System.Int32
+      description: The maximum string length.
+    return:
+      type: Serilog.LoggerConfiguration
+      description: Configuration object allowing method chaining.
+    content.vb: Public Function ToMaximumStringLength(maximumStringLength As Integer) As LoggerConfiguration
+  overload: Serilog.Configuration.LoggerDestructuringConfiguration.ToMaximumStringLength*
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: When <code class="paramref">maximumStringLength</code> is less than 2
+  nameWithType.vb: LoggerDestructuringConfiguration.ToMaximumStringLength(Integer)
+  fullName.vb: Serilog.Configuration.LoggerDestructuringConfiguration.ToMaximumStringLength(Integer)
+  name.vb: ToMaximumStringLength(Integer)
+- uid: Serilog.Configuration.LoggerDestructuringConfiguration.ToMaximumCollectionCount(System.Int32)
+  commentId: M:Serilog.Configuration.LoggerDestructuringConfiguration.ToMaximumCollectionCount(System.Int32)
+  id: ToMaximumCollectionCount(System.Int32)
+  parent: Serilog.Configuration.LoggerDestructuringConfiguration
+  langs:
+  - csharp
+  - vb
+  name: ToMaximumCollectionCount(int)
+  nameWithType: LoggerDestructuringConfiguration.ToMaximumCollectionCount(int)
+  fullName: Serilog.Configuration.LoggerDestructuringConfiguration.ToMaximumCollectionCount(int)
+  type: Method
+  assemblies:
+  - Serilog
+  namespace: Serilog.Configuration
+  summary: >-
+    When destructuring objects, collections be restricted to specified count
+
+    thus avoiding bloating payload. Limit is applied to each collection separately,
+
+    sum of length of collection can exceed limit.
+
+    Applies limit to all <xref href="System.Collections.IEnumerable" data-throw-if-not-resolved="false"></xref> including dictionaries.
+  example: []
+  syntax:
+    content: public LoggerConfiguration ToMaximumCollectionCount(int maximumCollectionCount)
+    parameters:
+    - id: maximumCollectionCount
+      type: System.Int32
+    return:
+      type: Serilog.LoggerConfiguration
+      description: Configuration object allowing method chaining.
+    content.vb: Public Function ToMaximumCollectionCount(maximumCollectionCount As Integer) As LoggerConfiguration
+  overload: Serilog.Configuration.LoggerDestructuringConfiguration.ToMaximumCollectionCount*
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: When <code class="paramref">maximumCollectionCount</code> is less than 1
+  nameWithType.vb: LoggerDestructuringConfiguration.ToMaximumCollectionCount(Integer)
+  fullName.vb: Serilog.Configuration.LoggerDestructuringConfiguration.ToMaximumCollectionCount(Integer)
+  name.vb: ToMaximumCollectionCount(Integer)
+references:
+- uid: Serilog.Configuration
+  commentId: N:Serilog.Configuration
+  isExternal: true
+  href: Serilog.html
+  name: Serilog.Configuration
+  nameWithType: Serilog.Configuration
+  fullName: Serilog.Configuration
+  spec.csharp:
+  - uid: Serilog
+    name: Serilog
+    isExternal: true
+    href: Serilog.html
+  - name: .
+  - uid: Serilog.Configuration
+    name: Configuration
+    isExternal: true
+    href: Serilog.Configuration.html
+  spec.vb:
+  - uid: Serilog
+    name: Serilog
+    isExternal: true
+    href: Serilog.html
+  - name: .
+  - uid: Serilog.Configuration
+    name: Configuration
+    isExternal: true
+    href: Serilog.Configuration.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.ArgumentNullException
+  commentId: T:System.ArgumentNullException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.argumentnullexception
+  name: ArgumentNullException
+  nameWithType: ArgumentNullException
+  fullName: System.ArgumentNullException
+- uid: Serilog.Configuration.LoggerDestructuringConfiguration.AsScalar*
+  commentId: Overload:Serilog.Configuration.LoggerDestructuringConfiguration.AsScalar
+  isExternal: true
+  href: Serilog.Configuration.LoggerDestructuringConfiguration.html#Serilog_Configuration_LoggerDestructuringConfiguration_AsScalar_System_Type_
+  name: AsScalar
+  nameWithType: LoggerDestructuringConfiguration.AsScalar
+  fullName: Serilog.Configuration.LoggerDestructuringConfiguration.AsScalar
+- uid: System.Type
+  commentId: T:System.Type
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.type
+  name: Type
+  nameWithType: Type
+  fullName: System.Type
+- uid: Serilog.LoggerConfiguration
+  commentId: T:Serilog.LoggerConfiguration
+  parent: Serilog
+  isExternal: true
+  href: Serilog.LoggerConfiguration.html
+  name: LoggerConfiguration
+  nameWithType: LoggerConfiguration
+  fullName: Serilog.LoggerConfiguration
+- uid: Serilog
+  commentId: N:Serilog
+  isExternal: true
+  href: Serilog.html
+  name: Serilog
+  nameWithType: Serilog
+  fullName: Serilog
+- uid: System.ArgumentException
+  commentId: T:System.ArgumentException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.argumentexception
+  name: ArgumentException
+  nameWithType: ArgumentException
+  fullName: System.ArgumentException
+- uid: Serilog.Configuration.LoggerDestructuringConfiguration.With*
+  commentId: Overload:Serilog.Configuration.LoggerDestructuringConfiguration.With
+  isExternal: true
+  href: Serilog.Configuration.LoggerDestructuringConfiguration.html#Serilog_Configuration_LoggerDestructuringConfiguration_With_Serilog_Core_IDestructuringPolicy___
+  name: With
+  nameWithType: LoggerDestructuringConfiguration.With
+  fullName: Serilog.Configuration.LoggerDestructuringConfiguration.With
+- uid: Serilog.Core.IDestructuringPolicy[]
+  isExternal: true
+  href: Serilog.Core.IDestructuringPolicy.html
+  name: IDestructuringPolicy[]
+  nameWithType: IDestructuringPolicy[]
+  fullName: Serilog.Core.IDestructuringPolicy[]
+  nameWithType.vb: IDestructuringPolicy()
+  fullName.vb: Serilog.Core.IDestructuringPolicy()
+  name.vb: IDestructuringPolicy()
+  spec.csharp:
+  - uid: Serilog.Core.IDestructuringPolicy
+    name: IDestructuringPolicy
+    isExternal: true
+    href: Serilog.Core.IDestructuringPolicy.html
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: Serilog.Core.IDestructuringPolicy
+    name: IDestructuringPolicy
+    isExternal: true
+    href: Serilog.Core.IDestructuringPolicy.html
+  - name: (
+  - name: )
+- uid: Serilog.Configuration.LoggerDestructuringConfiguration.ByTransforming*
+  commentId: Overload:Serilog.Configuration.LoggerDestructuringConfiguration.ByTransforming
+  isExternal: true
+  href: Serilog.Configuration.LoggerDestructuringConfiguration.html#Serilog_Configuration_LoggerDestructuringConfiguration_ByTransforming__1_System_Func___0_System_Object__
+  name: ByTransforming
+  nameWithType: LoggerDestructuringConfiguration.ByTransforming
+  fullName: Serilog.Configuration.LoggerDestructuringConfiguration.ByTransforming
+- uid: System.Func{{TValue},System.Object}
+  commentId: T:System.Func{``0,System.Object}
+  parent: System
+  definition: System.Func`2
+  href: https://learn.microsoft.com/dotnet/api/system.func-2
+  name: Func<TValue, object>
+  nameWithType: Func<TValue, object>
+  fullName: System.Func<TValue, object>
+  nameWithType.vb: Func(Of TValue, Object)
+  fullName.vb: System.Func(Of TValue, Object)
+  name.vb: Func(Of TValue, Object)
+  spec.csharp:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - name: TValue
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TValue
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Func`2
+  commentId: T:System.Func`2
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.func-2
+  name: Func<T, TResult>
+  nameWithType: Func<T, TResult>
+  fullName: System.Func<T, TResult>
+  nameWithType.vb: Func(Of T, TResult)
+  fullName.vb: System.Func(Of T, TResult)
+  name.vb: Func(Of T, TResult)
+  spec.csharp:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: Serilog.Configuration.LoggerDestructuringConfiguration.ByTransformingWhere*
+  commentId: Overload:Serilog.Configuration.LoggerDestructuringConfiguration.ByTransformingWhere
+  isExternal: true
+  href: Serilog.Configuration.LoggerDestructuringConfiguration.html#Serilog_Configuration_LoggerDestructuringConfiguration_ByTransformingWhere__1_System_Func_System_Type_System_Boolean__System_Func___0_System_Object__
+  name: ByTransformingWhere
+  nameWithType: LoggerDestructuringConfiguration.ByTransformingWhere
+  fullName: Serilog.Configuration.LoggerDestructuringConfiguration.ByTransformingWhere
+- uid: System.Func{System.Type,System.Boolean}
+  commentId: T:System.Func{System.Type,System.Boolean}
+  parent: System
+  definition: System.Func`2
+  href: https://learn.microsoft.com/dotnet/api/system.func-2
+  name: Func<Type, bool>
+  nameWithType: Func<Type, bool>
+  fullName: System.Func<System.Type, bool>
+  nameWithType.vb: Func(Of Type, Boolean)
+  fullName.vb: System.Func(Of System.Type, Boolean)
+  name.vb: Func(Of Type, Boolean)
+  spec.csharp:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: System.ArgumentOutOfRangeException
+  commentId: T:System.ArgumentOutOfRangeException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.argumentoutofrangeexception
+  name: ArgumentOutOfRangeException
+  nameWithType: ArgumentOutOfRangeException
+  fullName: System.ArgumentOutOfRangeException
+- uid: Serilog.Configuration.LoggerDestructuringConfiguration.ToMaximumDepth*
+  commentId: Overload:Serilog.Configuration.LoggerDestructuringConfiguration.ToMaximumDepth
+  isExternal: true
+  href: Serilog.Configuration.LoggerDestructuringConfiguration.html#Serilog_Configuration_LoggerDestructuringConfiguration_ToMaximumDepth_System_Int32_
+  name: ToMaximumDepth
+  nameWithType: LoggerDestructuringConfiguration.ToMaximumDepth
+  fullName: Serilog.Configuration.LoggerDestructuringConfiguration.ToMaximumDepth
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: Serilog.Configuration.LoggerDestructuringConfiguration.ToMaximumStringLength*
+  commentId: Overload:Serilog.Configuration.LoggerDestructuringConfiguration.ToMaximumStringLength
+  isExternal: true
+  href: Serilog.Configuration.LoggerDestructuringConfiguration.html#Serilog_Configuration_LoggerDestructuringConfiguration_ToMaximumStringLength_System_Int32_
+  name: ToMaximumStringLength
+  nameWithType: LoggerDestructuringConfiguration.ToMaximumStringLength
+  fullName: Serilog.Configuration.LoggerDestructuringConfiguration.ToMaximumStringLength
+- uid: System.Collections.IEnumerable
+  commentId: T:System.Collections.IEnumerable
+  parent: System.Collections
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.ienumerable
+  name: IEnumerable
+  nameWithType: IEnumerable
+  fullName: System.Collections.IEnumerable
+- uid: Serilog.Configuration.LoggerDestructuringConfiguration.ToMaximumCollectionCount*
+  commentId: Overload:Serilog.Configuration.LoggerDestructuringConfiguration.ToMaximumCollectionCount
+  isExternal: true
+  href: Serilog.Configuration.LoggerDestructuringConfiguration.html#Serilog_Configuration_LoggerDestructuringConfiguration_ToMaximumCollectionCount_System_Int32_
+  name: ToMaximumCollectionCount
+  nameWithType: LoggerDestructuringConfiguration.ToMaximumCollectionCount
+  fullName: Serilog.Configuration.LoggerDestructuringConfiguration.ToMaximumCollectionCount
+- uid: System.Collections
+  commentId: N:System.Collections
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections
+  nameWithType: System.Collections
+  fullName: System.Collections
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections

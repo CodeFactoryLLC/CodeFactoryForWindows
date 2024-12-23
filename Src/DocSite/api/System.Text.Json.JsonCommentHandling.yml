@@ -1,0 +1,146 @@
+### YamlMime:ManagedReference
+items:
+- uid: System.Text.Json.JsonCommentHandling
+  commentId: T:System.Text.Json.JsonCommentHandling
+  id: JsonCommentHandling
+  parent: System.Text.Json
+  children:
+  - System.Text.Json.JsonCommentHandling.Allow
+  - System.Text.Json.JsonCommentHandling.Disallow
+  - System.Text.Json.JsonCommentHandling.Skip
+  langs:
+  - csharp
+  - vb
+  name: JsonCommentHandling
+  nameWithType: JsonCommentHandling
+  fullName: System.Text.Json.JsonCommentHandling
+  type: Enum
+  assemblies:
+  - System.Text.Json
+  namespace: System.Text.Json
+  summary: Defines how the <xref href="System.Text.Json.Utf8JsonReader" data-throw-if-not-resolved="false"></xref> struct handles comments.
+  example: []
+  syntax:
+    content: 'public enum JsonCommentHandling : byte'
+    content.vb: Public Enum JsonCommentHandling As Byte
+- uid: System.Text.Json.JsonCommentHandling.Disallow
+  commentId: F:System.Text.Json.JsonCommentHandling.Disallow
+  id: Disallow
+  parent: System.Text.Json.JsonCommentHandling
+  langs:
+  - csharp
+  - vb
+  name: Disallow
+  nameWithType: JsonCommentHandling.Disallow
+  fullName: System.Text.Json.JsonCommentHandling.Disallow
+  type: Field
+  assemblies:
+  - System.Text.Json
+  namespace: System.Text.Json
+  summary: Doesn't allow comments within the JSON input. Comments are treated as invalid JSON if found, and a <xref href="System.Text.Json.JsonException" data-throw-if-not-resolved="false"></xref> is thrown. This is the default value.
+  example: []
+  syntax:
+    content: Disallow = 0
+    return:
+      type: System.Text.Json.JsonCommentHandling
+- uid: System.Text.Json.JsonCommentHandling.Skip
+  commentId: F:System.Text.Json.JsonCommentHandling.Skip
+  id: Skip
+  parent: System.Text.Json.JsonCommentHandling
+  langs:
+  - csharp
+  - vb
+  name: Skip
+  nameWithType: JsonCommentHandling.Skip
+  fullName: System.Text.Json.JsonCommentHandling.Skip
+  type: Field
+  assemblies:
+  - System.Text.Json
+  namespace: System.Text.Json
+  summary: Allows comments within the JSON input and ignores them. The <xref href="System.Text.Json.Utf8JsonReader" data-throw-if-not-resolved="false"></xref> behaves as if no comments are present.
+  example: []
+  syntax:
+    content: Skip = 1
+    return:
+      type: System.Text.Json.JsonCommentHandling
+- uid: System.Text.Json.JsonCommentHandling.Allow
+  commentId: F:System.Text.Json.JsonCommentHandling.Allow
+  id: Allow
+  parent: System.Text.Json.JsonCommentHandling
+  langs:
+  - csharp
+  - vb
+  name: Allow
+  nameWithType: JsonCommentHandling.Allow
+  fullName: System.Text.Json.JsonCommentHandling.Allow
+  type: Field
+  assemblies:
+  - System.Text.Json
+  namespace: System.Text.Json
+  summary: Allows comments within the JSON input and treats them as valid tokens. While reading, the caller can access the comment values.
+  example: []
+  syntax:
+    content: Allow = 2
+    return:
+      type: System.Text.Json.JsonCommentHandling
+references:
+- uid: System.Text.Json.Utf8JsonReader
+  commentId: T:System.Text.Json.Utf8JsonReader
+  parent: System.Text.Json
+  isExternal: true
+  href: System.Text.Json.Utf8JsonReader.html
+  name: Utf8JsonReader
+  nameWithType: Utf8JsonReader
+  fullName: System.Text.Json.Utf8JsonReader
+- uid: System.Text.Json
+  commentId: N:System.Text.Json
+  isExternal: true
+  href: System.html
+  name: System.Text.Json
+  nameWithType: System.Text.Json
+  fullName: System.Text.Json
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: System.html
+  - name: .
+  - uid: System.Text
+    name: Text
+    isExternal: true
+    href: System.Text.html
+  - name: .
+  - uid: System.Text.Json
+    name: Json
+    isExternal: true
+    href: System.Text.Json.html
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: System.html
+  - name: .
+  - uid: System.Text
+    name: Text
+    isExternal: true
+    href: System.Text.html
+  - name: .
+  - uid: System.Text.Json
+    name: Json
+    isExternal: true
+    href: System.Text.Json.html
+- uid: System.Text.Json.JsonException
+  commentId: T:System.Text.Json.JsonException
+  isExternal: true
+  href: System.Text.Json.JsonException.html
+  name: JsonException
+  nameWithType: JsonException
+  fullName: System.Text.Json.JsonException
+- uid: System.Text.Json.JsonCommentHandling
+  commentId: T:System.Text.Json.JsonCommentHandling
+  parent: System.Text.Json
+  isExternal: true
+  href: System.Text.Json.JsonCommentHandling.html
+  name: JsonCommentHandling
+  nameWithType: JsonCommentHandling
+  fullName: System.Text.Json.JsonCommentHandling

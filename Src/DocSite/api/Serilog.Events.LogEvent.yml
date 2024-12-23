@@ -1,0 +1,990 @@
+### YamlMime:ManagedReference
+items:
+- uid: Serilog.Events.LogEvent
+  commentId: T:Serilog.Events.LogEvent
+  id: LogEvent
+  parent: Serilog.Events
+  children:
+  - Serilog.Events.LogEvent.#ctor(System.DateTimeOffset,Serilog.Events.LogEventLevel,System.Exception,Serilog.Events.MessageTemplate,System.Collections.Generic.IEnumerable{Serilog.Events.LogEventProperty})
+  - Serilog.Events.LogEvent.AddOrUpdateProperty(Serilog.Events.LogEventProperty)
+  - Serilog.Events.LogEvent.AddPropertyIfAbsent(Serilog.Events.LogEventProperty)
+  - Serilog.Events.LogEvent.Exception
+  - Serilog.Events.LogEvent.Level
+  - Serilog.Events.LogEvent.MessageTemplate
+  - Serilog.Events.LogEvent.Properties
+  - Serilog.Events.LogEvent.RemovePropertyIfPresent(System.String)
+  - Serilog.Events.LogEvent.RenderMessage(System.IFormatProvider)
+  - Serilog.Events.LogEvent.RenderMessage(System.IO.TextWriter,System.IFormatProvider)
+  - Serilog.Events.LogEvent.Timestamp
+  langs:
+  - csharp
+  - vb
+  name: LogEvent
+  nameWithType: LogEvent
+  fullName: Serilog.Events.LogEvent
+  type: Class
+  assemblies:
+  - Serilog
+  namespace: Serilog.Events
+  summary: A log event.
+  example: []
+  syntax:
+    content: public class LogEvent
+    content.vb: Public Class LogEvent
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: Serilog.Events.LogEvent.#ctor(System.DateTimeOffset,Serilog.Events.LogEventLevel,System.Exception,Serilog.Events.MessageTemplate,System.Collections.Generic.IEnumerable{Serilog.Events.LogEventProperty})
+  commentId: M:Serilog.Events.LogEvent.#ctor(System.DateTimeOffset,Serilog.Events.LogEventLevel,System.Exception,Serilog.Events.MessageTemplate,System.Collections.Generic.IEnumerable{Serilog.Events.LogEventProperty})
+  id: '#ctor(System.DateTimeOffset,Serilog.Events.LogEventLevel,System.Exception,Serilog.Events.MessageTemplate,System.Collections.Generic.IEnumerable{Serilog.Events.LogEventProperty})'
+  parent: Serilog.Events.LogEvent
+  langs:
+  - csharp
+  - vb
+  name: LogEvent(DateTimeOffset, LogEventLevel, Exception?, MessageTemplate, IEnumerable<LogEventProperty>)
+  nameWithType: LogEvent.LogEvent(DateTimeOffset, LogEventLevel, Exception?, MessageTemplate, IEnumerable<LogEventProperty>)
+  fullName: Serilog.Events.LogEvent.LogEvent(System.DateTimeOffset, Serilog.Events.LogEventLevel, System.Exception?, Serilog.Events.MessageTemplate, System.Collections.Generic.IEnumerable<Serilog.Events.LogEventProperty>)
+  type: Constructor
+  assemblies:
+  - Serilog
+  namespace: Serilog.Events
+  summary: Construct a new <xref href="Serilog.Events.LogEvent" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public LogEvent(DateTimeOffset timestamp, LogEventLevel level, Exception? exception, MessageTemplate messageTemplate, IEnumerable<LogEventProperty> properties)
+    parameters:
+    - id: timestamp
+      type: System.DateTimeOffset
+      description: The time at which the event occurred.
+    - id: level
+      type: Serilog.Events.LogEventLevel
+      description: The level of the event.
+    - id: exception
+      type: System.Exception
+      description: An exception associated with the event, or null.
+    - id: messageTemplate
+      type: Serilog.Events.MessageTemplate
+      description: The message template describing the event.
+    - id: properties
+      type: System.Collections.Generic.IEnumerable{Serilog.Events.LogEventProperty}
+      description: Properties associated with the event, including those presented in <code class="paramref">messageTemplate</code>.
+    content.vb: Public Sub New(timestamp As DateTimeOffset, level As LogEventLevel, exception As Exception, messageTemplate As MessageTemplate, properties As IEnumerable(Of LogEventProperty))
+  overload: Serilog.Events.LogEvent.#ctor*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: When <code class="paramref">messageTemplate</code> is <pre><code class="lang-csharp">null</code></pre>
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: When <code class="paramref">properties</code> is <pre><code class="lang-csharp">null</code></pre>
+  nameWithType.vb: LogEvent.New(DateTimeOffset, LogEventLevel, Exception, MessageTemplate, IEnumerable(Of LogEventProperty))
+  fullName.vb: Serilog.Events.LogEvent.New(System.DateTimeOffset, Serilog.Events.LogEventLevel, System.Exception, Serilog.Events.MessageTemplate, System.Collections.Generic.IEnumerable(Of Serilog.Events.LogEventProperty))
+  name.vb: New(DateTimeOffset, LogEventLevel, Exception, MessageTemplate, IEnumerable(Of LogEventProperty))
+- uid: Serilog.Events.LogEvent.RenderMessage(System.IO.TextWriter,System.IFormatProvider)
+  commentId: M:Serilog.Events.LogEvent.RenderMessage(System.IO.TextWriter,System.IFormatProvider)
+  id: RenderMessage(System.IO.TextWriter,System.IFormatProvider)
+  parent: Serilog.Events.LogEvent
+  langs:
+  - csharp
+  - vb
+  name: RenderMessage(TextWriter, IFormatProvider?)
+  nameWithType: LogEvent.RenderMessage(TextWriter, IFormatProvider?)
+  fullName: Serilog.Events.LogEvent.RenderMessage(System.IO.TextWriter, System.IFormatProvider?)
+  type: Method
+  assemblies:
+  - Serilog
+  namespace: Serilog.Events
+  summary: >-
+    Render the message template to the specified output, given the properties associated
+
+    with the event.
+  example: []
+  syntax:
+    content: public void RenderMessage(TextWriter output, IFormatProvider? formatProvider = null)
+    parameters:
+    - id: output
+      type: System.IO.TextWriter
+      description: The output.
+    - id: formatProvider
+      type: System.IFormatProvider
+      description: Supplies culture-specific formatting information, or null.
+    content.vb: Public Sub RenderMessage(output As TextWriter, formatProvider As IFormatProvider = Nothing)
+  overload: Serilog.Events.LogEvent.RenderMessage*
+  nameWithType.vb: LogEvent.RenderMessage(TextWriter, IFormatProvider)
+  fullName.vb: Serilog.Events.LogEvent.RenderMessage(System.IO.TextWriter, System.IFormatProvider)
+  name.vb: RenderMessage(TextWriter, IFormatProvider)
+- uid: Serilog.Events.LogEvent.RenderMessage(System.IFormatProvider)
+  commentId: M:Serilog.Events.LogEvent.RenderMessage(System.IFormatProvider)
+  id: RenderMessage(System.IFormatProvider)
+  parent: Serilog.Events.LogEvent
+  langs:
+  - csharp
+  - vb
+  name: RenderMessage(IFormatProvider?)
+  nameWithType: LogEvent.RenderMessage(IFormatProvider?)
+  fullName: Serilog.Events.LogEvent.RenderMessage(System.IFormatProvider?)
+  type: Method
+  assemblies:
+  - Serilog
+  namespace: Serilog.Events
+  summary: >-
+    Render the message template given the properties associated
+
+    with the event, and return the result.
+  example: []
+  syntax:
+    content: public string RenderMessage(IFormatProvider? formatProvider = null)
+    parameters:
+    - id: formatProvider
+      type: System.IFormatProvider
+      description: Supplies culture-specific formatting information, or null.
+    return:
+      type: System.String
+    content.vb: Public Function RenderMessage(formatProvider As IFormatProvider = Nothing) As String
+  overload: Serilog.Events.LogEvent.RenderMessage*
+  nameWithType.vb: LogEvent.RenderMessage(IFormatProvider)
+  fullName.vb: Serilog.Events.LogEvent.RenderMessage(System.IFormatProvider)
+  name.vb: RenderMessage(IFormatProvider)
+- uid: Serilog.Events.LogEvent.AddOrUpdateProperty(Serilog.Events.LogEventProperty)
+  commentId: M:Serilog.Events.LogEvent.AddOrUpdateProperty(Serilog.Events.LogEventProperty)
+  id: AddOrUpdateProperty(Serilog.Events.LogEventProperty)
+  parent: Serilog.Events.LogEvent
+  langs:
+  - csharp
+  - vb
+  name: AddOrUpdateProperty(LogEventProperty)
+  nameWithType: LogEvent.AddOrUpdateProperty(LogEventProperty)
+  fullName: Serilog.Events.LogEvent.AddOrUpdateProperty(Serilog.Events.LogEventProperty)
+  type: Method
+  assemblies:
+  - Serilog
+  namespace: Serilog.Events
+  summary: Add a property to the event if not already present, otherwise, update its value.
+  example: []
+  syntax:
+    content: public void AddOrUpdateProperty(LogEventProperty property)
+    parameters:
+    - id: property
+      type: Serilog.Events.LogEventProperty
+      description: The property to add or update.
+    content.vb: Public Sub AddOrUpdateProperty([property] As LogEventProperty)
+  overload: Serilog.Events.LogEvent.AddOrUpdateProperty*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: When <code class="paramref">property</code> is <pre><code class="lang-csharp">null</code></pre>
+- uid: Serilog.Events.LogEvent.AddPropertyIfAbsent(Serilog.Events.LogEventProperty)
+  commentId: M:Serilog.Events.LogEvent.AddPropertyIfAbsent(Serilog.Events.LogEventProperty)
+  id: AddPropertyIfAbsent(Serilog.Events.LogEventProperty)
+  parent: Serilog.Events.LogEvent
+  langs:
+  - csharp
+  - vb
+  name: AddPropertyIfAbsent(LogEventProperty)
+  nameWithType: LogEvent.AddPropertyIfAbsent(LogEventProperty)
+  fullName: Serilog.Events.LogEvent.AddPropertyIfAbsent(Serilog.Events.LogEventProperty)
+  type: Method
+  assemblies:
+  - Serilog
+  namespace: Serilog.Events
+  summary: Add a property to the event if not already present.
+  example: []
+  syntax:
+    content: public void AddPropertyIfAbsent(LogEventProperty property)
+    parameters:
+    - id: property
+      type: Serilog.Events.LogEventProperty
+      description: The property to add.
+    content.vb: Public Sub AddPropertyIfAbsent([property] As LogEventProperty)
+  overload: Serilog.Events.LogEvent.AddPropertyIfAbsent*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: When <code class="paramref">property</code> is <pre><code class="lang-csharp">null</code></pre>
+- uid: Serilog.Events.LogEvent.RemovePropertyIfPresent(System.String)
+  commentId: M:Serilog.Events.LogEvent.RemovePropertyIfPresent(System.String)
+  id: RemovePropertyIfPresent(System.String)
+  parent: Serilog.Events.LogEvent
+  langs:
+  - csharp
+  - vb
+  name: RemovePropertyIfPresent(string)
+  nameWithType: LogEvent.RemovePropertyIfPresent(string)
+  fullName: Serilog.Events.LogEvent.RemovePropertyIfPresent(string)
+  type: Method
+  assemblies:
+  - Serilog
+  namespace: Serilog.Events
+  summary: >-
+    Remove a property from the event, if present. Otherwise no action
+
+    is performed.
+  example: []
+  syntax:
+    content: public void RemovePropertyIfPresent(string propertyName)
+    parameters:
+    - id: propertyName
+      type: System.String
+      description: The name of the property to remove.
+    content.vb: Public Sub RemovePropertyIfPresent(propertyName As String)
+  overload: Serilog.Events.LogEvent.RemovePropertyIfPresent*
+  nameWithType.vb: LogEvent.RemovePropertyIfPresent(String)
+  fullName.vb: Serilog.Events.LogEvent.RemovePropertyIfPresent(String)
+  name.vb: RemovePropertyIfPresent(String)
+- uid: Serilog.Events.LogEvent.Timestamp
+  commentId: P:Serilog.Events.LogEvent.Timestamp
+  id: Timestamp
+  parent: Serilog.Events.LogEvent
+  langs:
+  - csharp
+  - vb
+  name: Timestamp
+  nameWithType: LogEvent.Timestamp
+  fullName: Serilog.Events.LogEvent.Timestamp
+  type: Property
+  assemblies:
+  - Serilog
+  namespace: Serilog.Events
+  summary: The time at which the event occurred.
+  example: []
+  syntax:
+    content: public DateTimeOffset Timestamp { get; }
+    parameters: []
+    return:
+      type: System.DateTimeOffset
+    content.vb: Public ReadOnly Property Timestamp As DateTimeOffset
+  overload: Serilog.Events.LogEvent.Timestamp*
+- uid: Serilog.Events.LogEvent.Level
+  commentId: P:Serilog.Events.LogEvent.Level
+  id: Level
+  parent: Serilog.Events.LogEvent
+  langs:
+  - csharp
+  - vb
+  name: Level
+  nameWithType: LogEvent.Level
+  fullName: Serilog.Events.LogEvent.Level
+  type: Property
+  assemblies:
+  - Serilog
+  namespace: Serilog.Events
+  summary: The level of the event.
+  example: []
+  syntax:
+    content: public LogEventLevel Level { get; }
+    parameters: []
+    return:
+      type: Serilog.Events.LogEventLevel
+    content.vb: Public ReadOnly Property Level As LogEventLevel
+  overload: Serilog.Events.LogEvent.Level*
+- uid: Serilog.Events.LogEvent.MessageTemplate
+  commentId: P:Serilog.Events.LogEvent.MessageTemplate
+  id: MessageTemplate
+  parent: Serilog.Events.LogEvent
+  langs:
+  - csharp
+  - vb
+  name: MessageTemplate
+  nameWithType: LogEvent.MessageTemplate
+  fullName: Serilog.Events.LogEvent.MessageTemplate
+  type: Property
+  assemblies:
+  - Serilog
+  namespace: Serilog.Events
+  summary: The message template describing the event.
+  example: []
+  syntax:
+    content: public MessageTemplate MessageTemplate { get; }
+    parameters: []
+    return:
+      type: Serilog.Events.MessageTemplate
+    content.vb: Public ReadOnly Property MessageTemplate As MessageTemplate
+  overload: Serilog.Events.LogEvent.MessageTemplate*
+- uid: Serilog.Events.LogEvent.Properties
+  commentId: P:Serilog.Events.LogEvent.Properties
+  id: Properties
+  parent: Serilog.Events.LogEvent
+  langs:
+  - csharp
+  - vb
+  name: Properties
+  nameWithType: LogEvent.Properties
+  fullName: Serilog.Events.LogEvent.Properties
+  type: Property
+  assemblies:
+  - Serilog
+  namespace: Serilog.Events
+  summary: Properties associated with the event, including those presented in <xref href="Serilog.Events.LogEvent.MessageTemplate" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public IReadOnlyDictionary<string, LogEventPropertyValue> Properties { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.IReadOnlyDictionary{System.String,Serilog.Events.LogEventPropertyValue}
+    content.vb: Public ReadOnly Property Properties As IReadOnlyDictionary(Of String, LogEventPropertyValue)
+  overload: Serilog.Events.LogEvent.Properties*
+- uid: Serilog.Events.LogEvent.Exception
+  commentId: P:Serilog.Events.LogEvent.Exception
+  id: Exception
+  parent: Serilog.Events.LogEvent
+  langs:
+  - csharp
+  - vb
+  name: Exception
+  nameWithType: LogEvent.Exception
+  fullName: Serilog.Events.LogEvent.Exception
+  type: Property
+  assemblies:
+  - Serilog
+  namespace: Serilog.Events
+  summary: An exception associated with the event, or null.
+  example: []
+  syntax:
+    content: public Exception? Exception { get; }
+    parameters: []
+    return:
+      type: System.Exception
+    content.vb: Public ReadOnly Property Exception As Exception
+  overload: Serilog.Events.LogEvent.Exception*
+references:
+- uid: Serilog.Events
+  commentId: N:Serilog.Events
+  isExternal: true
+  href: Serilog.html
+  name: Serilog.Events
+  nameWithType: Serilog.Events
+  fullName: Serilog.Events
+  spec.csharp:
+  - uid: Serilog
+    name: Serilog
+    isExternal: true
+    href: Serilog.html
+  - name: .
+  - uid: Serilog.Events
+    name: Events
+    isExternal: true
+    href: Serilog.Events.html
+  spec.vb:
+  - uid: Serilog
+    name: Serilog
+    isExternal: true
+    href: Serilog.html
+  - name: .
+  - uid: Serilog.Events
+    name: Events
+    isExternal: true
+    href: Serilog.Events.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Serilog.Events.LogEvent
+  commentId: T:Serilog.Events.LogEvent
+  parent: Serilog.Events
+  isExternal: true
+  href: Serilog.Events.LogEvent.html
+  name: LogEvent
+  nameWithType: LogEvent
+  fullName: Serilog.Events.LogEvent
+- uid: System.ArgumentNullException
+  commentId: T:System.ArgumentNullException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.argumentnullexception
+  name: ArgumentNullException
+  nameWithType: ArgumentNullException
+  fullName: System.ArgumentNullException
+- uid: Serilog.Events.LogEvent.#ctor*
+  commentId: Overload:Serilog.Events.LogEvent.#ctor
+  isExternal: true
+  href: Serilog.Events.LogEvent.html#Serilog_Events_LogEvent__ctor_System_DateTimeOffset_Serilog_Events_LogEventLevel_System_Exception_Serilog_Events_MessageTemplate_System_Collections_Generic_IEnumerable_Serilog_Events_LogEventProperty__
+  name: LogEvent
+  nameWithType: LogEvent.LogEvent
+  fullName: Serilog.Events.LogEvent.LogEvent
+  nameWithType.vb: LogEvent.New
+  fullName.vb: Serilog.Events.LogEvent.New
+  name.vb: New
+- uid: System.DateTimeOffset
+  commentId: T:System.DateTimeOffset
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.datetimeoffset
+  name: DateTimeOffset
+  nameWithType: DateTimeOffset
+  fullName: System.DateTimeOffset
+- uid: Serilog.Events.LogEventLevel
+  commentId: T:Serilog.Events.LogEventLevel
+  parent: Serilog.Events
+  isExternal: true
+  href: Serilog.Events.LogEventLevel.html
+  name: LogEventLevel
+  nameWithType: LogEventLevel
+  fullName: Serilog.Events.LogEventLevel
+- uid: System.Exception
+  commentId: T:System.Exception
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.exception
+  name: Exception
+  nameWithType: Exception
+  fullName: System.Exception
+- uid: Serilog.Events.MessageTemplate
+  commentId: T:Serilog.Events.MessageTemplate
+  parent: Serilog.Events
+  isExternal: true
+  href: Serilog.Events.MessageTemplate.html
+  name: MessageTemplate
+  nameWithType: MessageTemplate
+  fullName: Serilog.Events.MessageTemplate
+- uid: System.Collections.Generic.IEnumerable{Serilog.Events.LogEventProperty}
+  commentId: T:System.Collections.Generic.IEnumerable{Serilog.Events.LogEventProperty}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<LogEventProperty>
+  nameWithType: IEnumerable<LogEventProperty>
+  fullName: System.Collections.Generic.IEnumerable<Serilog.Events.LogEventProperty>
+  nameWithType.vb: IEnumerable(Of LogEventProperty)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of Serilog.Events.LogEventProperty)
+  name.vb: IEnumerable(Of LogEventProperty)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: Serilog.Events.LogEventProperty
+    name: LogEventProperty
+    isExternal: true
+    href: Serilog.Events.LogEventProperty.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Serilog.Events.LogEventProperty
+    name: LogEventProperty
+    isExternal: true
+    href: Serilog.Events.LogEventProperty.html
+  - name: )
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: Serilog.Events.LogEvent.RenderMessage*
+  commentId: Overload:Serilog.Events.LogEvent.RenderMessage
+  isExternal: true
+  href: Serilog.Events.LogEvent.html#Serilog_Events_LogEvent_RenderMessage_System_IO_TextWriter_System_IFormatProvider_
+  name: RenderMessage
+  nameWithType: LogEvent.RenderMessage
+  fullName: Serilog.Events.LogEvent.RenderMessage
+- uid: System.IO.TextWriter
+  commentId: T:System.IO.TextWriter
+  parent: System.IO
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.io.textwriter
+  name: TextWriter
+  nameWithType: TextWriter
+  fullName: System.IO.TextWriter
+- uid: System.IFormatProvider
+  commentId: T:System.IFormatProvider
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iformatprovider
+  name: IFormatProvider
+  nameWithType: IFormatProvider
+  fullName: System.IFormatProvider
+- uid: System.IO
+  commentId: N:System.IO
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.IO
+  nameWithType: System.IO
+  fullName: System.IO
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.IO
+    name: IO
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.IO
+    name: IO
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Serilog.Events.LogEvent.AddOrUpdateProperty*
+  commentId: Overload:Serilog.Events.LogEvent.AddOrUpdateProperty
+  isExternal: true
+  href: Serilog.Events.LogEvent.html#Serilog_Events_LogEvent_AddOrUpdateProperty_Serilog_Events_LogEventProperty_
+  name: AddOrUpdateProperty
+  nameWithType: LogEvent.AddOrUpdateProperty
+  fullName: Serilog.Events.LogEvent.AddOrUpdateProperty
+- uid: Serilog.Events.LogEventProperty
+  commentId: T:Serilog.Events.LogEventProperty
+  parent: Serilog.Events
+  isExternal: true
+  href: Serilog.Events.LogEventProperty.html
+  name: LogEventProperty
+  nameWithType: LogEventProperty
+  fullName: Serilog.Events.LogEventProperty
+- uid: Serilog.Events.LogEvent.AddPropertyIfAbsent*
+  commentId: Overload:Serilog.Events.LogEvent.AddPropertyIfAbsent
+  isExternal: true
+  href: Serilog.Events.LogEvent.html#Serilog_Events_LogEvent_AddPropertyIfAbsent_Serilog_Events_LogEventProperty_
+  name: AddPropertyIfAbsent
+  nameWithType: LogEvent.AddPropertyIfAbsent
+  fullName: Serilog.Events.LogEvent.AddPropertyIfAbsent
+- uid: Serilog.Events.LogEvent.RemovePropertyIfPresent*
+  commentId: Overload:Serilog.Events.LogEvent.RemovePropertyIfPresent
+  isExternal: true
+  href: Serilog.Events.LogEvent.html#Serilog_Events_LogEvent_RemovePropertyIfPresent_System_String_
+  name: RemovePropertyIfPresent
+  nameWithType: LogEvent.RemovePropertyIfPresent
+  fullName: Serilog.Events.LogEvent.RemovePropertyIfPresent
+- uid: Serilog.Events.LogEvent.Timestamp*
+  commentId: Overload:Serilog.Events.LogEvent.Timestamp
+  isExternal: true
+  href: Serilog.Events.LogEvent.html#Serilog_Events_LogEvent_Timestamp
+  name: Timestamp
+  nameWithType: LogEvent.Timestamp
+  fullName: Serilog.Events.LogEvent.Timestamp
+- uid: Serilog.Events.LogEvent.Level*
+  commentId: Overload:Serilog.Events.LogEvent.Level
+  isExternal: true
+  href: Serilog.Events.LogEvent.html#Serilog_Events_LogEvent_Level
+  name: Level
+  nameWithType: LogEvent.Level
+  fullName: Serilog.Events.LogEvent.Level
+- uid: Serilog.Events.LogEvent.MessageTemplate*
+  commentId: Overload:Serilog.Events.LogEvent.MessageTemplate
+  isExternal: true
+  href: Serilog.Events.LogEvent.html#Serilog_Events_LogEvent_MessageTemplate
+  name: MessageTemplate
+  nameWithType: LogEvent.MessageTemplate
+  fullName: Serilog.Events.LogEvent.MessageTemplate
+- uid: Serilog.Events.LogEvent.MessageTemplate
+  commentId: P:Serilog.Events.LogEvent.MessageTemplate
+  isExternal: true
+  href: Serilog.Events.LogEvent.html#Serilog_Events_LogEvent_MessageTemplate
+  name: MessageTemplate
+  nameWithType: LogEvent.MessageTemplate
+  fullName: Serilog.Events.LogEvent.MessageTemplate
+- uid: Serilog.Events.LogEvent.Properties*
+  commentId: Overload:Serilog.Events.LogEvent.Properties
+  isExternal: true
+  href: Serilog.Events.LogEvent.html#Serilog_Events_LogEvent_Properties
+  name: Properties
+  nameWithType: LogEvent.Properties
+  fullName: Serilog.Events.LogEvent.Properties
+- uid: System.Collections.Generic.IReadOnlyDictionary{System.String,Serilog.Events.LogEventPropertyValue}
+  commentId: T:System.Collections.Generic.IReadOnlyDictionary{System.String,Serilog.Events.LogEventPropertyValue}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IReadOnlyDictionary`2
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlydictionary-2
+  name: IReadOnlyDictionary<string, LogEventPropertyValue>
+  nameWithType: IReadOnlyDictionary<string, LogEventPropertyValue>
+  fullName: System.Collections.Generic.IReadOnlyDictionary<string, Serilog.Events.LogEventPropertyValue>
+  nameWithType.vb: IReadOnlyDictionary(Of String, LogEventPropertyValue)
+  fullName.vb: System.Collections.Generic.IReadOnlyDictionary(Of String, Serilog.Events.LogEventPropertyValue)
+  name.vb: IReadOnlyDictionary(Of String, LogEventPropertyValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyDictionary`2
+    name: IReadOnlyDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlydictionary-2
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: Serilog.Events.LogEventPropertyValue
+    name: LogEventPropertyValue
+    isExternal: true
+    href: Serilog.Events.LogEventPropertyValue.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyDictionary`2
+    name: IReadOnlyDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlydictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: Serilog.Events.LogEventPropertyValue
+    name: LogEventPropertyValue
+    isExternal: true
+    href: Serilog.Events.LogEventPropertyValue.html
+  - name: )
+- uid: System.Collections.Generic.IReadOnlyDictionary`2
+  commentId: T:System.Collections.Generic.IReadOnlyDictionary`2
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlydictionary-2
+  name: IReadOnlyDictionary<TKey, TValue>
+  nameWithType: IReadOnlyDictionary<TKey, TValue>
+  fullName: System.Collections.Generic.IReadOnlyDictionary<TKey, TValue>
+  nameWithType.vb: IReadOnlyDictionary(Of TKey, TValue)
+  fullName.vb: System.Collections.Generic.IReadOnlyDictionary(Of TKey, TValue)
+  name.vb: IReadOnlyDictionary(Of TKey, TValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyDictionary`2
+    name: IReadOnlyDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlydictionary-2
+  - name: <
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyDictionary`2
+    name: IReadOnlyDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlydictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: Serilog.Events.LogEvent.Exception*
+  commentId: Overload:Serilog.Events.LogEvent.Exception
+  isExternal: true
+  href: Serilog.Events.LogEvent.html#Serilog_Events_LogEvent_Exception
+  name: Exception
+  nameWithType: LogEvent.Exception
+  fullName: Serilog.Events.LogEvent.Exception

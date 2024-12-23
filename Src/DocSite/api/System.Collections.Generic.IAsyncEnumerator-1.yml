@@ -1,0 +1,390 @@
+### YamlMime:ManagedReference
+items:
+- uid: System.Collections.Generic.IAsyncEnumerator`1
+  commentId: T:System.Collections.Generic.IAsyncEnumerator`1
+  id: IAsyncEnumerator`1
+  parent: System.Collections.Generic
+  children:
+  - System.Collections.Generic.IAsyncEnumerator`1.Current
+  - System.Collections.Generic.IAsyncEnumerator`1.MoveNextAsync
+  langs:
+  - csharp
+  - vb
+  name: IAsyncEnumerator<T>
+  nameWithType: IAsyncEnumerator<T>
+  fullName: System.Collections.Generic.IAsyncEnumerator<T>
+  type: Interface
+  assemblies:
+  - Microsoft.Bcl.AsyncInterfaces
+  namespace: System.Collections.Generic
+  summary: Supports a simple asynchronous iteration over a generic collection.
+  example: []
+  syntax:
+    content: 'public interface IAsyncEnumerator<out T> : IAsyncDisposable'
+    typeParameters:
+    - id: T
+      description: The type of objects to enumerate.
+    content.vb: Public Interface IAsyncEnumerator(Of Out T) Inherits IAsyncDisposable
+  inheritedMembers:
+  - System.IAsyncDisposable.DisposeAsync
+  extensionMethods:
+  - System.IAsyncDisposable.System.Threading.Tasks.TaskAsyncEnumerableExtensions.ConfigureAwait(System.Boolean)
+  nameWithType.vb: IAsyncEnumerator(Of T)
+  fullName.vb: System.Collections.Generic.IAsyncEnumerator(Of T)
+  name.vb: IAsyncEnumerator(Of T)
+- uid: System.Collections.Generic.IAsyncEnumerator`1.MoveNextAsync
+  commentId: M:System.Collections.Generic.IAsyncEnumerator`1.MoveNextAsync
+  id: MoveNextAsync
+  parent: System.Collections.Generic.IAsyncEnumerator`1
+  langs:
+  - csharp
+  - vb
+  name: MoveNextAsync()
+  nameWithType: IAsyncEnumerator<T>.MoveNextAsync()
+  fullName: System.Collections.Generic.IAsyncEnumerator<T>.MoveNextAsync()
+  type: Method
+  assemblies:
+  - Microsoft.Bcl.AsyncInterfaces
+  namespace: System.Collections.Generic
+  summary: Advances the enumerator asynchronously to the next element of the collection.
+  example: []
+  syntax:
+    content: ValueTask<bool> MoveNextAsync()
+    return:
+      type: System.Threading.Tasks.ValueTask{System.Boolean}
+      description: >-
+        A <xref href="System.Threading.Tasks.ValueTask%601" data-throw-if-not-resolved="false"></xref> that will complete with a result of <code>true</code> if the enumerator
+
+        was successfully advanced to the next element, or <code>false</code> if the enumerator has passed the end
+
+        of the collection.
+    content.vb: Function MoveNextAsync() As ValueTask(Of Boolean)
+  overload: System.Collections.Generic.IAsyncEnumerator`1.MoveNextAsync*
+  nameWithType.vb: IAsyncEnumerator(Of T).MoveNextAsync()
+  fullName.vb: System.Collections.Generic.IAsyncEnumerator(Of T).MoveNextAsync()
+- uid: System.Collections.Generic.IAsyncEnumerator`1.Current
+  commentId: P:System.Collections.Generic.IAsyncEnumerator`1.Current
+  id: Current
+  parent: System.Collections.Generic.IAsyncEnumerator`1
+  langs:
+  - csharp
+  - vb
+  name: Current
+  nameWithType: IAsyncEnumerator<T>.Current
+  fullName: System.Collections.Generic.IAsyncEnumerator<T>.Current
+  type: Property
+  assemblies:
+  - Microsoft.Bcl.AsyncInterfaces
+  namespace: System.Collections.Generic
+  summary: Gets the element in the collection at the current position of the enumerator.
+  example: []
+  syntax:
+    content: T Current { get; }
+    parameters: []
+    return:
+      type: '{T}'
+    content.vb: ReadOnly Property Current As T
+  overload: System.Collections.Generic.IAsyncEnumerator`1.Current*
+  nameWithType.vb: IAsyncEnumerator(Of T).Current
+  fullName.vb: System.Collections.Generic.IAsyncEnumerator(Of T).Current
+references:
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: System.IAsyncDisposable.DisposeAsync
+  commentId: M:System.IAsyncDisposable.DisposeAsync
+  parent: System.IAsyncDisposable
+  isExternal: true
+  href: System.IAsyncDisposable.html#System_IAsyncDisposable_DisposeAsync
+  name: DisposeAsync()
+  nameWithType: IAsyncDisposable.DisposeAsync()
+  fullName: System.IAsyncDisposable.DisposeAsync()
+  spec.csharp:
+  - uid: System.IAsyncDisposable.DisposeAsync
+    name: DisposeAsync
+    isExternal: true
+    href: System.IAsyncDisposable.html#System_IAsyncDisposable_DisposeAsync
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.IAsyncDisposable.DisposeAsync
+    name: DisposeAsync
+    isExternal: true
+    href: System.IAsyncDisposable.html#System_IAsyncDisposable_DisposeAsync
+  - name: (
+  - name: )
+- uid: System.IAsyncDisposable.System.Threading.Tasks.TaskAsyncEnumerableExtensions.ConfigureAwait(System.Boolean)
+  commentId: M:System.Threading.Tasks.TaskAsyncEnumerableExtensions.ConfigureAwait(System.IAsyncDisposable,System.Boolean)
+  parent: System.Threading.Tasks.TaskAsyncEnumerableExtensions
+  definition: System.Threading.Tasks.TaskAsyncEnumerableExtensions.ConfigureAwait(System.IAsyncDisposable,System.Boolean)
+  href: System.Threading.Tasks.TaskAsyncEnumerableExtensions.html#System_Threading_Tasks_TaskAsyncEnumerableExtensions_ConfigureAwait_System_IAsyncDisposable_System_Boolean_
+  name: ConfigureAwait(IAsyncDisposable, bool)
+  nameWithType: TaskAsyncEnumerableExtensions.ConfigureAwait(IAsyncDisposable, bool)
+  fullName: System.Threading.Tasks.TaskAsyncEnumerableExtensions.ConfigureAwait(System.IAsyncDisposable, bool)
+  nameWithType.vb: TaskAsyncEnumerableExtensions.ConfigureAwait(IAsyncDisposable, Boolean)
+  fullName.vb: System.Threading.Tasks.TaskAsyncEnumerableExtensions.ConfigureAwait(System.IAsyncDisposable, Boolean)
+  name.vb: ConfigureAwait(IAsyncDisposable, Boolean)
+  spec.csharp:
+  - uid: System.Threading.Tasks.TaskAsyncEnumerableExtensions.ConfigureAwait(System.IAsyncDisposable,System.Boolean)
+    name: ConfigureAwait
+    isExternal: true
+    href: System.Threading.Tasks.TaskAsyncEnumerableExtensions.html#System_Threading_Tasks_TaskAsyncEnumerableExtensions_ConfigureAwait_System_IAsyncDisposable_System_Boolean_
+  - name: (
+  - uid: System.IAsyncDisposable
+    name: IAsyncDisposable
+    isExternal: true
+    href: System.IAsyncDisposable.html
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  spec.vb:
+  - uid: System.Threading.Tasks.TaskAsyncEnumerableExtensions.ConfigureAwait(System.IAsyncDisposable,System.Boolean)
+    name: ConfigureAwait
+    isExternal: true
+    href: System.Threading.Tasks.TaskAsyncEnumerableExtensions.html#System_Threading_Tasks_TaskAsyncEnumerableExtensions_ConfigureAwait_System_IAsyncDisposable_System_Boolean_
+  - name: (
+  - uid: System.IAsyncDisposable
+    name: IAsyncDisposable
+    isExternal: true
+    href: System.IAsyncDisposable.html
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: System.IAsyncDisposable
+  commentId: T:System.IAsyncDisposable
+  parent: System
+  isExternal: true
+  href: System.IAsyncDisposable.html
+  name: IAsyncDisposable
+  nameWithType: IAsyncDisposable
+  fullName: System.IAsyncDisposable
+- uid: System.Threading.Tasks.TaskAsyncEnumerableExtensions.ConfigureAwait(System.IAsyncDisposable,System.Boolean)
+  commentId: M:System.Threading.Tasks.TaskAsyncEnumerableExtensions.ConfigureAwait(System.IAsyncDisposable,System.Boolean)
+  isExternal: true
+  href: System.Threading.Tasks.TaskAsyncEnumerableExtensions.html#System_Threading_Tasks_TaskAsyncEnumerableExtensions_ConfigureAwait_System_IAsyncDisposable_System_Boolean_
+  name: ConfigureAwait(IAsyncDisposable, bool)
+  nameWithType: TaskAsyncEnumerableExtensions.ConfigureAwait(IAsyncDisposable, bool)
+  fullName: System.Threading.Tasks.TaskAsyncEnumerableExtensions.ConfigureAwait(System.IAsyncDisposable, bool)
+  nameWithType.vb: TaskAsyncEnumerableExtensions.ConfigureAwait(IAsyncDisposable, Boolean)
+  fullName.vb: System.Threading.Tasks.TaskAsyncEnumerableExtensions.ConfigureAwait(System.IAsyncDisposable, Boolean)
+  name.vb: ConfigureAwait(IAsyncDisposable, Boolean)
+  spec.csharp:
+  - uid: System.Threading.Tasks.TaskAsyncEnumerableExtensions.ConfigureAwait(System.IAsyncDisposable,System.Boolean)
+    name: ConfigureAwait
+    isExternal: true
+    href: System.Threading.Tasks.TaskAsyncEnumerableExtensions.html#System_Threading_Tasks_TaskAsyncEnumerableExtensions_ConfigureAwait_System_IAsyncDisposable_System_Boolean_
+  - name: (
+  - uid: System.IAsyncDisposable
+    name: IAsyncDisposable
+    isExternal: true
+    href: System.IAsyncDisposable.html
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  spec.vb:
+  - uid: System.Threading.Tasks.TaskAsyncEnumerableExtensions.ConfigureAwait(System.IAsyncDisposable,System.Boolean)
+    name: ConfigureAwait
+    isExternal: true
+    href: System.Threading.Tasks.TaskAsyncEnumerableExtensions.html#System_Threading_Tasks_TaskAsyncEnumerableExtensions_ConfigureAwait_System_IAsyncDisposable_System_Boolean_
+  - name: (
+  - uid: System.IAsyncDisposable
+    name: IAsyncDisposable
+    isExternal: true
+    href: System.IAsyncDisposable.html
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: System.Threading.Tasks.TaskAsyncEnumerableExtensions
+  commentId: T:System.Threading.Tasks.TaskAsyncEnumerableExtensions
+  parent: System.Threading.Tasks
+  isExternal: true
+  href: System.Threading.Tasks.TaskAsyncEnumerableExtensions.html
+  name: TaskAsyncEnumerableExtensions
+  nameWithType: TaskAsyncEnumerableExtensions
+  fullName: System.Threading.Tasks.TaskAsyncEnumerableExtensions
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: System.Threading.Tasks.ValueTask`1
+  commentId: T:System.Threading.Tasks.ValueTask`1
+  parent: System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.valuetask-1
+  name: ValueTask<TResult>
+  nameWithType: ValueTask<TResult>
+  fullName: System.Threading.Tasks.ValueTask<TResult>
+  nameWithType.vb: ValueTask(Of TResult)
+  fullName.vb: System.Threading.Tasks.ValueTask(Of TResult)
+  name.vb: ValueTask(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.ValueTask`1
+    name: ValueTask
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.valuetask-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.ValueTask`1
+    name: ValueTask
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.valuetask-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Collections.Generic.IAsyncEnumerator`1.MoveNextAsync*
+  commentId: Overload:System.Collections.Generic.IAsyncEnumerator`1.MoveNextAsync
+  isExternal: true
+  href: System.Collections.Generic.IAsyncEnumerator-1.html#System_Collections_Generic_IAsyncEnumerator_1_MoveNextAsync
+  name: MoveNextAsync
+  nameWithType: IAsyncEnumerator<T>.MoveNextAsync
+  fullName: System.Collections.Generic.IAsyncEnumerator<T>.MoveNextAsync
+  nameWithType.vb: IAsyncEnumerator(Of T).MoveNextAsync
+  fullName.vb: System.Collections.Generic.IAsyncEnumerator(Of T).MoveNextAsync
+- uid: System.Threading.Tasks.ValueTask{System.Boolean}
+  commentId: T:System.Threading.Tasks.ValueTask{System.Boolean}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.ValueTask`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.valuetask-1
+  name: ValueTask<bool>
+  nameWithType: ValueTask<bool>
+  fullName: System.Threading.Tasks.ValueTask<bool>
+  nameWithType.vb: ValueTask(Of Boolean)
+  fullName.vb: System.Threading.Tasks.ValueTask(Of Boolean)
+  name.vb: ValueTask(Of Boolean)
+  spec.csharp:
+  - uid: System.Threading.Tasks.ValueTask`1
+    name: ValueTask
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.valuetask-1
+  - name: <
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.ValueTask`1
+    name: ValueTask
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.valuetask-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: System.Collections.Generic.IAsyncEnumerator`1.Current*
+  commentId: Overload:System.Collections.Generic.IAsyncEnumerator`1.Current
+  isExternal: true
+  href: System.Collections.Generic.IAsyncEnumerator-1.html#System_Collections_Generic_IAsyncEnumerator_1_Current
+  name: Current
+  nameWithType: IAsyncEnumerator<T>.Current
+  fullName: System.Collections.Generic.IAsyncEnumerator<T>.Current
+  nameWithType.vb: IAsyncEnumerator(Of T).Current
+  fullName.vb: System.Collections.Generic.IAsyncEnumerator(Of T).Current
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: T
+  name: T
+  nameWithType: T
+  fullName: T

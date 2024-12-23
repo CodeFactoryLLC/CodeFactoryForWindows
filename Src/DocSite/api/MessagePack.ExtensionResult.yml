@@ -1,0 +1,577 @@
+### YamlMime:ManagedReference
+items:
+- uid: MessagePack.ExtensionResult
+  commentId: T:MessagePack.ExtensionResult
+  id: ExtensionResult
+  parent: MessagePack
+  children:
+  - MessagePack.ExtensionResult.#ctor(System.SByte,System.Buffers.ReadOnlySequence{System.Byte})
+  - MessagePack.ExtensionResult.#ctor(System.SByte,System.Memory{System.Byte})
+  - MessagePack.ExtensionResult.Data
+  - MessagePack.ExtensionResult.Header
+  - MessagePack.ExtensionResult.TypeCode
+  langs:
+  - csharp
+  - vb
+  name: ExtensionResult
+  nameWithType: ExtensionResult
+  fullName: MessagePack.ExtensionResult
+  type: Struct
+  assemblies:
+  - MessagePack
+  namespace: MessagePack
+  syntax:
+    content: public struct ExtensionResult
+    content.vb: Public Structure ExtensionResult
+  inheritedMembers:
+  - System.ValueType.Equals(System.Object)
+  - System.ValueType.GetHashCode
+  - System.ValueType.ToString
+  - System.Object.GetType
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+- uid: MessagePack.ExtensionResult.#ctor(System.SByte,System.Memory{System.Byte})
+  commentId: M:MessagePack.ExtensionResult.#ctor(System.SByte,System.Memory{System.Byte})
+  id: '#ctor(System.SByte,System.Memory{System.Byte})'
+  parent: MessagePack.ExtensionResult
+  langs:
+  - csharp
+  - vb
+  name: ExtensionResult(sbyte, Memory<byte>)
+  nameWithType: ExtensionResult.ExtensionResult(sbyte, Memory<byte>)
+  fullName: MessagePack.ExtensionResult.ExtensionResult(sbyte, System.Memory<byte>)
+  type: Constructor
+  assemblies:
+  - MessagePack
+  namespace: MessagePack
+  syntax:
+    content: public ExtensionResult(sbyte typeCode, Memory<byte> data)
+    parameters:
+    - id: typeCode
+      type: System.SByte
+    - id: data
+      type: System.Memory{System.Byte}
+    content.vb: Public Sub New(typeCode As SByte, data As Memory(Of Byte))
+  overload: MessagePack.ExtensionResult.#ctor*
+  nameWithType.vb: ExtensionResult.New(SByte, Memory(Of Byte))
+  fullName.vb: MessagePack.ExtensionResult.New(SByte, System.Memory(Of Byte))
+  name.vb: New(SByte, Memory(Of Byte))
+- uid: MessagePack.ExtensionResult.#ctor(System.SByte,System.Buffers.ReadOnlySequence{System.Byte})
+  commentId: M:MessagePack.ExtensionResult.#ctor(System.SByte,System.Buffers.ReadOnlySequence{System.Byte})
+  id: '#ctor(System.SByte,System.Buffers.ReadOnlySequence{System.Byte})'
+  parent: MessagePack.ExtensionResult
+  langs:
+  - csharp
+  - vb
+  name: ExtensionResult(sbyte, ReadOnlySequence<byte>)
+  nameWithType: ExtensionResult.ExtensionResult(sbyte, ReadOnlySequence<byte>)
+  fullName: MessagePack.ExtensionResult.ExtensionResult(sbyte, System.Buffers.ReadOnlySequence<byte>)
+  type: Constructor
+  assemblies:
+  - MessagePack
+  namespace: MessagePack
+  syntax:
+    content: public ExtensionResult(sbyte typeCode, ReadOnlySequence<byte> data)
+    parameters:
+    - id: typeCode
+      type: System.SByte
+    - id: data
+      type: System.Buffers.ReadOnlySequence{System.Byte}
+    content.vb: Public Sub New(typeCode As SByte, data As ReadOnlySequence(Of Byte))
+  overload: MessagePack.ExtensionResult.#ctor*
+  nameWithType.vb: ExtensionResult.New(SByte, ReadOnlySequence(Of Byte))
+  fullName.vb: MessagePack.ExtensionResult.New(SByte, System.Buffers.ReadOnlySequence(Of Byte))
+  name.vb: New(SByte, ReadOnlySequence(Of Byte))
+- uid: MessagePack.ExtensionResult.TypeCode
+  commentId: P:MessagePack.ExtensionResult.TypeCode
+  id: TypeCode
+  parent: MessagePack.ExtensionResult
+  langs:
+  - csharp
+  - vb
+  name: TypeCode
+  nameWithType: ExtensionResult.TypeCode
+  fullName: MessagePack.ExtensionResult.TypeCode
+  type: Property
+  assemblies:
+  - MessagePack
+  namespace: MessagePack
+  syntax:
+    content: public readonly sbyte TypeCode { get; }
+    parameters: []
+    return:
+      type: System.SByte
+    content.vb: Public ReadOnly Property TypeCode As SByte
+  overload: MessagePack.ExtensionResult.TypeCode*
+- uid: MessagePack.ExtensionResult.Data
+  commentId: P:MessagePack.ExtensionResult.Data
+  id: Data
+  parent: MessagePack.ExtensionResult
+  langs:
+  - csharp
+  - vb
+  name: Data
+  nameWithType: ExtensionResult.Data
+  fullName: MessagePack.ExtensionResult.Data
+  type: Property
+  assemblies:
+  - MessagePack
+  namespace: MessagePack
+  syntax:
+    content: public readonly ReadOnlySequence<byte> Data { get; }
+    parameters: []
+    return:
+      type: System.Buffers.ReadOnlySequence{System.Byte}
+    content.vb: Public ReadOnly Property Data As ReadOnlySequence(Of Byte)
+  overload: MessagePack.ExtensionResult.Data*
+- uid: MessagePack.ExtensionResult.Header
+  commentId: P:MessagePack.ExtensionResult.Header
+  id: Header
+  parent: MessagePack.ExtensionResult
+  langs:
+  - csharp
+  - vb
+  name: Header
+  nameWithType: ExtensionResult.Header
+  fullName: MessagePack.ExtensionResult.Header
+  type: Property
+  assemblies:
+  - MessagePack
+  namespace: MessagePack
+  syntax:
+    content: public ExtensionHeader Header { get; }
+    parameters: []
+    return:
+      type: MessagePack.ExtensionHeader
+    content.vb: Public ReadOnly Property Header As ExtensionHeader
+  overload: MessagePack.ExtensionResult.Header*
+references:
+- uid: MessagePack
+  commentId: N:MessagePack
+  isExternal: true
+  href: MessagePack.html
+  name: MessagePack
+  nameWithType: MessagePack
+  fullName: MessagePack
+- uid: System.ValueType.Equals(System.Object)
+  commentId: M:System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  name: Equals(object)
+  nameWithType: ValueType.Equals(object)
+  fullName: System.ValueType.Equals(object)
+  nameWithType.vb: ValueType.Equals(Object)
+  fullName.vb: System.ValueType.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType.GetHashCode
+  commentId: M:System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  name: GetHashCode()
+  nameWithType: ValueType.GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+- uid: System.ValueType.ToString
+  commentId: M:System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  name: ToString()
+  nameWithType: ValueType.ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType
+  commentId: T:System.ValueType
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype
+  name: ValueType
+  nameWithType: ValueType
+  fullName: System.ValueType
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: MessagePack.ExtensionResult.#ctor*
+  commentId: Overload:MessagePack.ExtensionResult.#ctor
+  isExternal: true
+  href: MessagePack.ExtensionResult.html#MessagePack_ExtensionResult__ctor_System_SByte_System_Memory_System_Byte__
+  name: ExtensionResult
+  nameWithType: ExtensionResult.ExtensionResult
+  fullName: MessagePack.ExtensionResult.ExtensionResult
+  nameWithType.vb: ExtensionResult.New
+  fullName.vb: MessagePack.ExtensionResult.New
+  name.vb: New
+- uid: System.SByte
+  commentId: T:System.SByte
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.sbyte
+  name: sbyte
+  nameWithType: sbyte
+  fullName: sbyte
+  nameWithType.vb: SByte
+  fullName.vb: SByte
+  name.vb: SByte
+- uid: System.Memory{System.Byte}
+  commentId: T:System.Memory{System.Byte}
+  parent: System
+  definition: System.Memory`1
+  href: https://learn.microsoft.com/dotnet/api/system.memory-1
+  name: Memory<byte>
+  nameWithType: Memory<byte>
+  fullName: System.Memory<byte>
+  nameWithType.vb: Memory(Of Byte)
+  fullName.vb: System.Memory(Of Byte)
+  name.vb: Memory(Of Byte)
+  spec.csharp:
+  - uid: System.Memory`1
+    name: Memory
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.memory-1
+  - name: <
+  - uid: System.Byte
+    name: byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: '>'
+  spec.vb:
+  - uid: System.Memory`1
+    name: Memory
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.memory-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Byte
+    name: Byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: )
+- uid: System.Memory`1
+  commentId: T:System.Memory`1
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.memory-1
+  name: Memory<T>
+  nameWithType: Memory<T>
+  fullName: System.Memory<T>
+  nameWithType.vb: Memory(Of T)
+  fullName.vb: System.Memory(Of T)
+  name.vb: Memory(Of T)
+  spec.csharp:
+  - uid: System.Memory`1
+    name: Memory
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.memory-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Memory`1
+    name: Memory
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.memory-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Buffers.ReadOnlySequence{System.Byte}
+  commentId: T:System.Buffers.ReadOnlySequence{System.Byte}
+  parent: System.Buffers
+  definition: System.Buffers.ReadOnlySequence`1
+  href: https://learn.microsoft.com/dotnet/api/system.buffers.readonlysequence-1
+  name: ReadOnlySequence<byte>
+  nameWithType: ReadOnlySequence<byte>
+  fullName: System.Buffers.ReadOnlySequence<byte>
+  nameWithType.vb: ReadOnlySequence(Of Byte)
+  fullName.vb: System.Buffers.ReadOnlySequence(Of Byte)
+  name.vb: ReadOnlySequence(Of Byte)
+  spec.csharp:
+  - uid: System.Buffers.ReadOnlySequence`1
+    name: ReadOnlySequence
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.buffers.readonlysequence-1
+  - name: <
+  - uid: System.Byte
+    name: byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: '>'
+  spec.vb:
+  - uid: System.Buffers.ReadOnlySequence`1
+    name: ReadOnlySequence
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.buffers.readonlysequence-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Byte
+    name: Byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: )
+- uid: System.Buffers.ReadOnlySequence`1
+  commentId: T:System.Buffers.ReadOnlySequence`1
+  parent: System.Buffers
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.buffers.readonlysequence-1
+  name: ReadOnlySequence<T>
+  nameWithType: ReadOnlySequence<T>
+  fullName: System.Buffers.ReadOnlySequence<T>
+  nameWithType.vb: ReadOnlySequence(Of T)
+  fullName.vb: System.Buffers.ReadOnlySequence(Of T)
+  name.vb: ReadOnlySequence(Of T)
+  spec.csharp:
+  - uid: System.Buffers.ReadOnlySequence`1
+    name: ReadOnlySequence
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.buffers.readonlysequence-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Buffers.ReadOnlySequence`1
+    name: ReadOnlySequence
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.buffers.readonlysequence-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Buffers
+  commentId: N:System.Buffers
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Buffers
+  nameWithType: System.Buffers
+  fullName: System.Buffers
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Buffers
+    name: Buffers
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.buffers
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Buffers
+    name: Buffers
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.buffers
+- uid: MessagePack.ExtensionResult.TypeCode*
+  commentId: Overload:MessagePack.ExtensionResult.TypeCode
+  isExternal: true
+  href: MessagePack.ExtensionResult.html#MessagePack_ExtensionResult_TypeCode
+  name: TypeCode
+  nameWithType: ExtensionResult.TypeCode
+  fullName: MessagePack.ExtensionResult.TypeCode
+- uid: MessagePack.ExtensionResult.Data*
+  commentId: Overload:MessagePack.ExtensionResult.Data
+  isExternal: true
+  href: MessagePack.ExtensionResult.html#MessagePack_ExtensionResult_Data
+  name: Data
+  nameWithType: ExtensionResult.Data
+  fullName: MessagePack.ExtensionResult.Data
+- uid: MessagePack.ExtensionResult.Header*
+  commentId: Overload:MessagePack.ExtensionResult.Header
+  isExternal: true
+  href: MessagePack.ExtensionResult.html#MessagePack_ExtensionResult_Header
+  name: Header
+  nameWithType: ExtensionResult.Header
+  fullName: MessagePack.ExtensionResult.Header
+- uid: MessagePack.ExtensionHeader
+  commentId: T:MessagePack.ExtensionHeader
+  parent: MessagePack
+  isExternal: true
+  href: MessagePack.ExtensionHeader.html
+  name: ExtensionHeader
+  nameWithType: ExtensionHeader
+  fullName: MessagePack.ExtensionHeader

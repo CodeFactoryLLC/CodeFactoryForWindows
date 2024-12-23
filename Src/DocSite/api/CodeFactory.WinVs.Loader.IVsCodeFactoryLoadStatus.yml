@@ -1,0 +1,391 @@
+### YamlMime:ManagedReference
+items:
+- uid: CodeFactory.WinVs.Loader.IVsCodeFactoryLoadStatus
+  commentId: T:CodeFactory.WinVs.Loader.IVsCodeFactoryLoadStatus
+  id: IVsCodeFactoryLoadStatus
+  parent: CodeFactory.WinVs.Loader
+  children:
+  - CodeFactory.WinVs.Loader.IVsCodeFactoryLoadStatus.ErrorMessages
+  - CodeFactory.WinVs.Loader.IVsCodeFactoryLoadStatus.HasErrors
+  - CodeFactory.WinVs.Loader.IVsCodeFactoryLoadStatus.IsLoaded
+  - CodeFactory.WinVs.Loader.IVsCodeFactoryLoadStatus.VisualStudioFactoryActions
+  langs:
+  - csharp
+  - vb
+  name: IVsCodeFactoryLoadStatus
+  nameWithType: IVsCodeFactoryLoadStatus
+  fullName: CodeFactory.WinVs.Loader.IVsCodeFactoryLoadStatus
+  type: Interface
+  source:
+    href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/19e816ffdf1ba504be6987736bbac42e2d241405/Src/CodeFactoryForWindows/CodeFactory.WinVs/Loader/IVsCodeFactoryLoadStatus.cs
+  assemblies:
+  - CodeFactory.WinVs
+  namespace: CodeFactory.WinVs.Loader
+  summary: Status of loading all code factory visual studio commands from a CFA configuration.
+  example: []
+  syntax:
+    content: public interface IVsCodeFactoryLoadStatus
+    content.vb: Public Interface IVsCodeFactoryLoadStatus
+- uid: CodeFactory.WinVs.Loader.IVsCodeFactoryLoadStatus.IsLoaded
+  commentId: P:CodeFactory.WinVs.Loader.IVsCodeFactoryLoadStatus.IsLoaded
+  id: IsLoaded
+  parent: CodeFactory.WinVs.Loader.IVsCodeFactoryLoadStatus
+  langs:
+  - csharp
+  - vb
+  name: IsLoaded
+  nameWithType: IVsCodeFactoryLoadStatus.IsLoaded
+  fullName: CodeFactory.WinVs.Loader.IVsCodeFactoryLoadStatus.IsLoaded
+  type: Property
+  source:
+    href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/19e816ffdf1ba504be6987736bbac42e2d241405/Src/CodeFactoryForWindows/CodeFactory.WinVs/Loader/IVsCodeFactoryLoadStatus.cs
+  assemblies:
+  - CodeFactory.WinVs
+  namespace: CodeFactory.WinVs.Loader
+  summary: Flag that determines if visual studio commands were able to be loaded for the code factory package.
+  example: []
+  syntax:
+    content: bool IsLoaded { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: ReadOnly Property IsLoaded As Boolean
+  overload: CodeFactory.WinVs.Loader.IVsCodeFactoryLoadStatus.IsLoaded*
+- uid: CodeFactory.WinVs.Loader.IVsCodeFactoryLoadStatus.HasErrors
+  commentId: P:CodeFactory.WinVs.Loader.IVsCodeFactoryLoadStatus.HasErrors
+  id: HasErrors
+  parent: CodeFactory.WinVs.Loader.IVsCodeFactoryLoadStatus
+  langs:
+  - csharp
+  - vb
+  name: HasErrors
+  nameWithType: IVsCodeFactoryLoadStatus.HasErrors
+  fullName: CodeFactory.WinVs.Loader.IVsCodeFactoryLoadStatus.HasErrors
+  type: Property
+  source:
+    href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/19e816ffdf1ba504be6987736bbac42e2d241405/Src/CodeFactoryForWindows/CodeFactory.WinVs/Loader/IVsCodeFactoryLoadStatus.cs
+  assemblies:
+  - CodeFactory.WinVs
+  namespace: CodeFactory.WinVs.Loader
+  summary: Flag that determines if errors occurred while loading the code factory commands.
+  example: []
+  syntax:
+    content: bool HasErrors { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: ReadOnly Property HasErrors As Boolean
+  overload: CodeFactory.WinVs.Loader.IVsCodeFactoryLoadStatus.HasErrors*
+- uid: CodeFactory.WinVs.Loader.IVsCodeFactoryLoadStatus.ErrorMessages
+  commentId: P:CodeFactory.WinVs.Loader.IVsCodeFactoryLoadStatus.ErrorMessages
+  id: ErrorMessages
+  parent: CodeFactory.WinVs.Loader.IVsCodeFactoryLoadStatus
+  langs:
+  - csharp
+  - vb
+  name: ErrorMessages
+  nameWithType: IVsCodeFactoryLoadStatus.ErrorMessages
+  fullName: CodeFactory.WinVs.Loader.IVsCodeFactoryLoadStatus.ErrorMessages
+  type: Property
+  source:
+    href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/19e816ffdf1ba504be6987736bbac42e2d241405/Src/CodeFactoryForWindows/CodeFactory.WinVs/Loader/IVsCodeFactoryLoadStatus.cs
+  assemblies:
+  - CodeFactory.WinVs
+  namespace: CodeFactory.WinVs.Loader
+  summary: The error messages that was captured while trying to load the code factory commands. This will be null if HasError is false.
+  example: []
+  syntax:
+    content: List<string> ErrorMessages { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.List{System.String}
+    content.vb: ReadOnly Property ErrorMessages As List(Of String)
+  overload: CodeFactory.WinVs.Loader.IVsCodeFactoryLoadStatus.ErrorMessages*
+- uid: CodeFactory.WinVs.Loader.IVsCodeFactoryLoadStatus.VisualStudioFactoryActions
+  commentId: P:CodeFactory.WinVs.Loader.IVsCodeFactoryLoadStatus.VisualStudioFactoryActions
+  id: VisualStudioFactoryActions
+  parent: CodeFactory.WinVs.Loader.IVsCodeFactoryLoadStatus
+  langs:
+  - csharp
+  - vb
+  name: VisualStudioFactoryActions
+  nameWithType: IVsCodeFactoryLoadStatus.VisualStudioFactoryActions
+  fullName: CodeFactory.WinVs.Loader.IVsCodeFactoryLoadStatus.VisualStudioFactoryActions
+  type: Property
+  source:
+    href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/19e816ffdf1ba504be6987736bbac42e2d241405/Src/CodeFactoryForWindows/CodeFactory.WinVs/Loader/IVsCodeFactoryLoadStatus.cs
+  assemblies:
+  - CodeFactory.WinVs
+  namespace: CodeFactory.WinVs.Loader
+  summary: Enumeration of the factory commands that were loaded. This will be an empty enumeration if <xref href="CodeFactory.WinVs.Loader.IVsCodeFactoryLoadStatus.IsLoaded" data-throw-if-not-resolved="false"></xref> is false.
+  example: []
+  syntax:
+    content: IEnumerable<IVsCommandInformation> VisualStudioFactoryActions { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.IEnumerable{CodeFactory.WinVs.Commands.IVsCommandInformation}
+    content.vb: ReadOnly Property VisualStudioFactoryActions As IEnumerable(Of IVsCommandInformation)
+  overload: CodeFactory.WinVs.Loader.IVsCodeFactoryLoadStatus.VisualStudioFactoryActions*
+references:
+- uid: CodeFactory.WinVs.Loader
+  commentId: N:CodeFactory.WinVs.Loader
+  isExternal: true
+  href: CodeFactory.html
+  name: CodeFactory.WinVs.Loader
+  nameWithType: CodeFactory.WinVs.Loader
+  fullName: CodeFactory.WinVs.Loader
+  spec.csharp:
+  - uid: CodeFactory
+    name: CodeFactory
+    isExternal: true
+    href: CodeFactory.html
+  - name: .
+  - uid: CodeFactory.WinVs
+    name: WinVs
+    isExternal: true
+    href: CodeFactory.WinVs.html
+  - name: .
+  - uid: CodeFactory.WinVs.Loader
+    name: Loader
+    isExternal: true
+    href: CodeFactory.WinVs.Loader.html
+  spec.vb:
+  - uid: CodeFactory
+    name: CodeFactory
+    isExternal: true
+    href: CodeFactory.html
+  - name: .
+  - uid: CodeFactory.WinVs
+    name: WinVs
+    isExternal: true
+    href: CodeFactory.WinVs.html
+  - name: .
+  - uid: CodeFactory.WinVs.Loader
+    name: Loader
+    isExternal: true
+    href: CodeFactory.WinVs.Loader.html
+- uid: CodeFactory.WinVs.Loader.IVsCodeFactoryLoadStatus.IsLoaded*
+  commentId: Overload:CodeFactory.WinVs.Loader.IVsCodeFactoryLoadStatus.IsLoaded
+  isExternal: true
+  href: CodeFactory.WinVs.Loader.IVsCodeFactoryLoadStatus.html#CodeFactory_WinVs_Loader_IVsCodeFactoryLoadStatus_IsLoaded
+  name: IsLoaded
+  nameWithType: IVsCodeFactoryLoadStatus.IsLoaded
+  fullName: CodeFactory.WinVs.Loader.IVsCodeFactoryLoadStatus.IsLoaded
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: CodeFactory.WinVs.Loader.IVsCodeFactoryLoadStatus.HasErrors*
+  commentId: Overload:CodeFactory.WinVs.Loader.IVsCodeFactoryLoadStatus.HasErrors
+  isExternal: true
+  href: CodeFactory.WinVs.Loader.IVsCodeFactoryLoadStatus.html#CodeFactory_WinVs_Loader_IVsCodeFactoryLoadStatus_HasErrors
+  name: HasErrors
+  nameWithType: IVsCodeFactoryLoadStatus.HasErrors
+  fullName: CodeFactory.WinVs.Loader.IVsCodeFactoryLoadStatus.HasErrors
+- uid: CodeFactory.WinVs.Loader.IVsCodeFactoryLoadStatus.ErrorMessages*
+  commentId: Overload:CodeFactory.WinVs.Loader.IVsCodeFactoryLoadStatus.ErrorMessages
+  isExternal: true
+  href: CodeFactory.WinVs.Loader.IVsCodeFactoryLoadStatus.html#CodeFactory_WinVs_Loader_IVsCodeFactoryLoadStatus_ErrorMessages
+  name: ErrorMessages
+  nameWithType: IVsCodeFactoryLoadStatus.ErrorMessages
+  fullName: CodeFactory.WinVs.Loader.IVsCodeFactoryLoadStatus.ErrorMessages
+- uid: System.Collections.Generic.List{System.String}
+  commentId: T:System.Collections.Generic.List{System.String}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<string>
+  nameWithType: List<string>
+  fullName: System.Collections.Generic.List<string>
+  nameWithType.vb: List(Of String)
+  fullName.vb: System.Collections.Generic.List(Of String)
+  name.vb: List(Of String)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: CodeFactory.WinVs.Loader.IVsCodeFactoryLoadStatus.IsLoaded
+  commentId: P:CodeFactory.WinVs.Loader.IVsCodeFactoryLoadStatus.IsLoaded
+  parent: CodeFactory.WinVs.Loader.IVsCodeFactoryLoadStatus
+  isExternal: true
+  href: CodeFactory.WinVs.Loader.IVsCodeFactoryLoadStatus.html#CodeFactory_WinVs_Loader_IVsCodeFactoryLoadStatus_IsLoaded
+  name: IsLoaded
+  nameWithType: IVsCodeFactoryLoadStatus.IsLoaded
+  fullName: CodeFactory.WinVs.Loader.IVsCodeFactoryLoadStatus.IsLoaded
+- uid: CodeFactory.WinVs.Loader.IVsCodeFactoryLoadStatus.VisualStudioFactoryActions*
+  commentId: Overload:CodeFactory.WinVs.Loader.IVsCodeFactoryLoadStatus.VisualStudioFactoryActions
+  isExternal: true
+  href: CodeFactory.WinVs.Loader.IVsCodeFactoryLoadStatus.html#CodeFactory_WinVs_Loader_IVsCodeFactoryLoadStatus_VisualStudioFactoryActions
+  name: VisualStudioFactoryActions
+  nameWithType: IVsCodeFactoryLoadStatus.VisualStudioFactoryActions
+  fullName: CodeFactory.WinVs.Loader.IVsCodeFactoryLoadStatus.VisualStudioFactoryActions
+- uid: System.Collections.Generic.IEnumerable{CodeFactory.WinVs.Commands.IVsCommandInformation}
+  commentId: T:System.Collections.Generic.IEnumerable{CodeFactory.WinVs.Commands.IVsCommandInformation}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<IVsCommandInformation>
+  nameWithType: IEnumerable<IVsCommandInformation>
+  fullName: System.Collections.Generic.IEnumerable<CodeFactory.WinVs.Commands.IVsCommandInformation>
+  nameWithType.vb: IEnumerable(Of IVsCommandInformation)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of CodeFactory.WinVs.Commands.IVsCommandInformation)
+  name.vb: IEnumerable(Of IVsCommandInformation)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: CodeFactory.WinVs.Commands.IVsCommandInformation
+    name: IVsCommandInformation
+    isExternal: true
+    href: CodeFactory.WinVs.Commands.IVsCommandInformation.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: CodeFactory.WinVs.Commands.IVsCommandInformation
+    name: IVsCommandInformation
+    isExternal: true
+    href: CodeFactory.WinVs.Commands.IVsCommandInformation.html
+  - name: )
+- uid: CodeFactory.WinVs.Loader.IVsCodeFactoryLoadStatus
+  commentId: T:CodeFactory.WinVs.Loader.IVsCodeFactoryLoadStatus
+  parent: CodeFactory.WinVs.Loader
+  isExternal: true
+  href: CodeFactory.WinVs.Loader.IVsCodeFactoryLoadStatus.html
+  name: IVsCodeFactoryLoadStatus
+  nameWithType: IVsCodeFactoryLoadStatus
+  fullName: CodeFactory.WinVs.Loader.IVsCodeFactoryLoadStatus
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )

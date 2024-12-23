@@ -1,0 +1,140 @@
+### YamlMime:ManagedReference
+items:
+- uid: Serilog.Core.ILogEventFilter
+  commentId: T:Serilog.Core.ILogEventFilter
+  id: ILogEventFilter
+  parent: Serilog.Core
+  children:
+  - Serilog.Core.ILogEventFilter.IsEnabled(Serilog.Events.LogEvent)
+  langs:
+  - csharp
+  - vb
+  name: ILogEventFilter
+  nameWithType: ILogEventFilter
+  fullName: Serilog.Core.ILogEventFilter
+  type: Interface
+  assemblies:
+  - Serilog
+  namespace: Serilog.Core
+  summary: Provides filtering of the log event stream.
+  example: []
+  syntax:
+    content: public interface ILogEventFilter
+    content.vb: Public Interface ILogEventFilter
+- uid: Serilog.Core.ILogEventFilter.IsEnabled(Serilog.Events.LogEvent)
+  commentId: M:Serilog.Core.ILogEventFilter.IsEnabled(Serilog.Events.LogEvent)
+  id: IsEnabled(Serilog.Events.LogEvent)
+  parent: Serilog.Core.ILogEventFilter
+  langs:
+  - csharp
+  - vb
+  name: IsEnabled(LogEvent)
+  nameWithType: ILogEventFilter.IsEnabled(LogEvent)
+  fullName: Serilog.Core.ILogEventFilter.IsEnabled(Serilog.Events.LogEvent)
+  type: Method
+  assemblies:
+  - Serilog
+  namespace: Serilog.Core
+  summary: Returns true if the provided event is enabled. Otherwise, false.
+  example: []
+  syntax:
+    content: bool IsEnabled(LogEvent logEvent)
+    parameters:
+    - id: logEvent
+      type: Serilog.Events.LogEvent
+      description: The event to test.
+    return:
+      type: System.Boolean
+      description: >-
+        True if the event is enabled by this filter. If false
+                    is returned, the event will not be emitted.
+    content.vb: Function IsEnabled(logEvent As LogEvent) As Boolean
+  overload: Serilog.Core.ILogEventFilter.IsEnabled*
+references:
+- uid: Serilog.Core
+  commentId: N:Serilog.Core
+  isExternal: true
+  href: Serilog.html
+  name: Serilog.Core
+  nameWithType: Serilog.Core
+  fullName: Serilog.Core
+  spec.csharp:
+  - uid: Serilog
+    name: Serilog
+    isExternal: true
+    href: Serilog.html
+  - name: .
+  - uid: Serilog.Core
+    name: Core
+    isExternal: true
+    href: Serilog.Core.html
+  spec.vb:
+  - uid: Serilog
+    name: Serilog
+    isExternal: true
+    href: Serilog.html
+  - name: .
+  - uid: Serilog.Core
+    name: Core
+    isExternal: true
+    href: Serilog.Core.html
+- uid: Serilog.Core.ILogEventFilter.IsEnabled*
+  commentId: Overload:Serilog.Core.ILogEventFilter.IsEnabled
+  isExternal: true
+  href: Serilog.Core.ILogEventFilter.html#Serilog_Core_ILogEventFilter_IsEnabled_Serilog_Events_LogEvent_
+  name: IsEnabled
+  nameWithType: ILogEventFilter.IsEnabled
+  fullName: Serilog.Core.ILogEventFilter.IsEnabled
+- uid: Serilog.Events.LogEvent
+  commentId: T:Serilog.Events.LogEvent
+  parent: Serilog.Events
+  isExternal: true
+  href: Serilog.Events.LogEvent.html
+  name: LogEvent
+  nameWithType: LogEvent
+  fullName: Serilog.Events.LogEvent
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Serilog.Events
+  commentId: N:Serilog.Events
+  isExternal: true
+  href: Serilog.html
+  name: Serilog.Events
+  nameWithType: Serilog.Events
+  fullName: Serilog.Events
+  spec.csharp:
+  - uid: Serilog
+    name: Serilog
+    isExternal: true
+    href: Serilog.html
+  - name: .
+  - uid: Serilog.Events
+    name: Events
+    isExternal: true
+    href: Serilog.Events.html
+  spec.vb:
+  - uid: Serilog
+    name: Serilog
+    isExternal: true
+    href: Serilog.html
+  - name: .
+  - uid: Serilog.Events
+    name: Events
+    isExternal: true
+    href: Serilog.Events.html
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System

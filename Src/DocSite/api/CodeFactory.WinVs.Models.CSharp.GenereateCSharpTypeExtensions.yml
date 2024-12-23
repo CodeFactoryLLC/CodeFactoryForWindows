@@ -1,0 +1,850 @@
+### YamlMime:ManagedReference
+items:
+- uid: CodeFactory.WinVs.Models.CSharp.GenereateCSharpTypeExtensions
+  commentId: T:CodeFactory.WinVs.Models.CSharp.GenereateCSharpTypeExtensions
+  id: GenereateCSharpTypeExtensions
+  parent: CodeFactory.WinVs.Models.CSharp
+  children:
+  - CodeFactory.WinVs.Models.CSharp.GenereateCSharpTypeExtensions.GenerateCSharpArraySignature(CodeFactory.WinVs.Models.CSharp.CsType)
+  - CodeFactory.WinVs.Models.CSharp.GenereateCSharpTypeExtensions.GenerateCSharpDefaultValue(CodeFactory.WinVs.Models.CSharp.CsType)
+  - CodeFactory.WinVs.Models.CSharp.GenereateCSharpTypeExtensions.GenerateCSharpGenericParametersSignature(System.Collections.Generic.IReadOnlyList{CodeFactory.WinVs.Models.CSharp.CsGenericParameter},CodeFactory.WinVs.Models.CSharp.NamespaceManager,System.Collections.Generic.List{CodeFactory.WinVs.Models.CSharp.MapNamespace})
+  - CodeFactory.WinVs.Models.CSharp.GenereateCSharpTypeExtensions.GenerateCSharpTupleSignature(CodeFactory.WinVs.Models.CSharp.CsType,CodeFactory.WinVs.Models.CSharp.NamespaceManager,System.Collections.Generic.List{CodeFactory.WinVs.Models.CSharp.MapNamespace})
+  - CodeFactory.WinVs.Models.CSharp.GenereateCSharpTypeExtensions.GenerateCSharpTypeName(CodeFactory.WinVs.Models.CSharp.CsType,CodeFactory.WinVs.Models.CSharp.NamespaceManager,System.Collections.Generic.List{CodeFactory.WinVs.Models.CSharp.MapNamespace})
+  - CodeFactory.WinVs.Models.CSharp.GenereateCSharpTypeExtensions.GenerateCSharpTypeNameRemoveNullableDefinition(CodeFactory.WinVs.Models.CSharp.CsType,CodeFactory.WinVs.Models.CSharp.NamespaceManager,System.Collections.Generic.List{CodeFactory.WinVs.Models.CSharp.MapNamespace})
+  - CodeFactory.WinVs.Models.CSharp.GenereateCSharpTypeExtensions.GenerateCSharpValueSyntax(CodeFactory.WinVs.Models.CSharp.CsType,System.String)
+  langs:
+  - csharp
+  - vb
+  name: GenereateCSharpTypeExtensions
+  nameWithType: GenereateCSharpTypeExtensions
+  fullName: CodeFactory.WinVs.Models.CSharp.GenereateCSharpTypeExtensions
+  type: Class
+  source:
+    href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/19e816ffdf1ba504be6987736bbac42e2d241405/Src/CodeFactoryForWindows/CodeFactory.WinVs/Models/CSharp/GenereateCSharpTypeExtensions.cs
+  assemblies:
+  - CodeFactory.WinVs
+  namespace: CodeFactory.WinVs.Models.CSharp
+  summary: Extension methods that support the generation of source in the C# language from the <xref href="CodeFactory.WinVs.Models.CSharp.CsType" data-throw-if-not-resolved="false"></xref> model.
+  example: []
+  syntax:
+    content: public static class GenereateCSharpTypeExtensions
+    content.vb: Public Module GenereateCSharpTypeExtensions
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+- uid: CodeFactory.WinVs.Models.CSharp.GenereateCSharpTypeExtensions.GenerateCSharpDefaultValue(CodeFactory.WinVs.Models.CSharp.CsType)
+  commentId: M:CodeFactory.WinVs.Models.CSharp.GenereateCSharpTypeExtensions.GenerateCSharpDefaultValue(CodeFactory.WinVs.Models.CSharp.CsType)
+  id: GenerateCSharpDefaultValue(CodeFactory.WinVs.Models.CSharp.CsType)
+  isExtensionMethod: true
+  parent: CodeFactory.WinVs.Models.CSharp.GenereateCSharpTypeExtensions
+  langs:
+  - csharp
+  - vb
+  name: GenerateCSharpDefaultValue(CsType)
+  nameWithType: GenereateCSharpTypeExtensions.GenerateCSharpDefaultValue(CsType)
+  fullName: CodeFactory.WinVs.Models.CSharp.GenereateCSharpTypeExtensions.GenerateCSharpDefaultValue(CodeFactory.WinVs.Models.CSharp.CsType)
+  type: Method
+  source:
+    href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/19e816ffdf1ba504be6987736bbac42e2d241405/Src/CodeFactoryForWindows/CodeFactory.WinVs/Models/CSharp/GenereateCSharpTypeExtensions.cs
+  assemblies:
+  - CodeFactory.WinVs
+  namespace: CodeFactory.WinVs.Models.CSharp
+  summary: Gets an initial default value syntax for the target type. This will generally be used on the right side of a = sign.
+  example: []
+  syntax:
+    content: public static string GenerateCSharpDefaultValue(this CsType source)
+    parameters:
+    - id: source
+      type: CodeFactory.WinVs.Models.CSharp.CsType
+      description: Type to generate syntax for.
+    return:
+      type: System.String
+      description: Formatted C# syntax for the default value, or null if the default value syntax cannot be identified.
+    content.vb: Public Shared Function GenerateCSharpDefaultValue(source As CsType) As String
+  overload: CodeFactory.WinVs.Models.CSharp.GenereateCSharpTypeExtensions.GenerateCSharpDefaultValue*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: Instance of the type was not provided.
+- uid: CodeFactory.WinVs.Models.CSharp.GenereateCSharpTypeExtensions.GenerateCSharpTypeNameRemoveNullableDefinition(CodeFactory.WinVs.Models.CSharp.CsType,CodeFactory.WinVs.Models.CSharp.NamespaceManager,System.Collections.Generic.List{CodeFactory.WinVs.Models.CSharp.MapNamespace})
+  commentId: M:CodeFactory.WinVs.Models.CSharp.GenereateCSharpTypeExtensions.GenerateCSharpTypeNameRemoveNullableDefinition(CodeFactory.WinVs.Models.CSharp.CsType,CodeFactory.WinVs.Models.CSharp.NamespaceManager,System.Collections.Generic.List{CodeFactory.WinVs.Models.CSharp.MapNamespace})
+  id: GenerateCSharpTypeNameRemoveNullableDefinition(CodeFactory.WinVs.Models.CSharp.CsType,CodeFactory.WinVs.Models.CSharp.NamespaceManager,System.Collections.Generic.List{CodeFactory.WinVs.Models.CSharp.MapNamespace})
+  isExtensionMethod: true
+  parent: CodeFactory.WinVs.Models.CSharp.GenereateCSharpTypeExtensions
+  langs:
+  - csharp
+  - vb
+  name: GenerateCSharpTypeNameRemoveNullableDefinition(CsType, NamespaceManager, List<MapNamespace>)
+  nameWithType: GenereateCSharpTypeExtensions.GenerateCSharpTypeNameRemoveNullableDefinition(CsType, NamespaceManager, List<MapNamespace>)
+  fullName: CodeFactory.WinVs.Models.CSharp.GenereateCSharpTypeExtensions.GenerateCSharpTypeNameRemoveNullableDefinition(CodeFactory.WinVs.Models.CSharp.CsType, CodeFactory.WinVs.Models.CSharp.NamespaceManager, System.Collections.Generic.List<CodeFactory.WinVs.Models.CSharp.MapNamespace>)
+  type: Method
+  source:
+    href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/19e816ffdf1ba504be6987736bbac42e2d241405/Src/CodeFactoryForWindows/CodeFactory.WinVs/Models/CSharp/GenereateCSharpTypeExtensions.cs
+  assemblies:
+  - CodeFactory.WinVs
+  namespace: CodeFactory.WinVs.Models.CSharp
+  summary: Formats a <xref href="CodeFactory.WinVs.Models.CSharp.CsType" data-throw-if-not-resolved="false"></xref> into a C# compliant type name. If the type is nullable it return the non nullable version of the type.
+  example: []
+  syntax:
+    content: public static string GenerateCSharpTypeNameRemoveNullableDefinition(this CsType source, NamespaceManager manager = null, List<MapNamespace> mappedNamespaces = null)
+    parameters:
+    - id: source
+      type: CodeFactory.WinVs.Models.CSharp.CsType
+      description: The type to generate the c# type name from.
+    - id: manager
+      type: CodeFactory.WinVs.Models.CSharp.NamespaceManager
+      description: Namespace manager that will determine what namespaces can be truncated from the name of the type. This is an optional parameter.
+    - id: mappedNamespaces
+      type: System.Collections.Generic.List{CodeFactory.WinVs.Models.CSharp.MapNamespace}
+      description: Optional parameter that provides namespaces to be mapped to.
+    return:
+      type: System.String
+      description: The fully formatted c# type name.
+    content.vb: Public Shared Function GenerateCSharpTypeNameRemoveNullableDefinition(source As CsType, manager As NamespaceManager = Nothing, mappedNamespaces As List(Of MapNamespace) = Nothing) As String
+  overload: CodeFactory.WinVs.Models.CSharp.GenereateCSharpTypeExtensions.GenerateCSharpTypeNameRemoveNullableDefinition*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: If the source type is null will throw an exception.
+  - type: CodeFactory.CodeFactoryException
+    commentId: T:CodeFactory.CodeFactoryException
+    description: If the nullable base type cannot be determined.
+  nameWithType.vb: GenereateCSharpTypeExtensions.GenerateCSharpTypeNameRemoveNullableDefinition(CsType, NamespaceManager, List(Of MapNamespace))
+  fullName.vb: CodeFactory.WinVs.Models.CSharp.GenereateCSharpTypeExtensions.GenerateCSharpTypeNameRemoveNullableDefinition(CodeFactory.WinVs.Models.CSharp.CsType, CodeFactory.WinVs.Models.CSharp.NamespaceManager, System.Collections.Generic.List(Of CodeFactory.WinVs.Models.CSharp.MapNamespace))
+  name.vb: GenerateCSharpTypeNameRemoveNullableDefinition(CsType, NamespaceManager, List(Of MapNamespace))
+- uid: CodeFactory.WinVs.Models.CSharp.GenereateCSharpTypeExtensions.GenerateCSharpTypeName(CodeFactory.WinVs.Models.CSharp.CsType,CodeFactory.WinVs.Models.CSharp.NamespaceManager,System.Collections.Generic.List{CodeFactory.WinVs.Models.CSharp.MapNamespace})
+  commentId: M:CodeFactory.WinVs.Models.CSharp.GenereateCSharpTypeExtensions.GenerateCSharpTypeName(CodeFactory.WinVs.Models.CSharp.CsType,CodeFactory.WinVs.Models.CSharp.NamespaceManager,System.Collections.Generic.List{CodeFactory.WinVs.Models.CSharp.MapNamespace})
+  id: GenerateCSharpTypeName(CodeFactory.WinVs.Models.CSharp.CsType,CodeFactory.WinVs.Models.CSharp.NamespaceManager,System.Collections.Generic.List{CodeFactory.WinVs.Models.CSharp.MapNamespace})
+  isExtensionMethod: true
+  parent: CodeFactory.WinVs.Models.CSharp.GenereateCSharpTypeExtensions
+  langs:
+  - csharp
+  - vb
+  name: GenerateCSharpTypeName(CsType, NamespaceManager, List<MapNamespace>)
+  nameWithType: GenereateCSharpTypeExtensions.GenerateCSharpTypeName(CsType, NamespaceManager, List<MapNamespace>)
+  fullName: CodeFactory.WinVs.Models.CSharp.GenereateCSharpTypeExtensions.GenerateCSharpTypeName(CodeFactory.WinVs.Models.CSharp.CsType, CodeFactory.WinVs.Models.CSharp.NamespaceManager, System.Collections.Generic.List<CodeFactory.WinVs.Models.CSharp.MapNamespace>)
+  type: Method
+  source:
+    href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/19e816ffdf1ba504be6987736bbac42e2d241405/Src/CodeFactoryForWindows/CodeFactory.WinVs/Models/CSharp/GenereateCSharpTypeExtensions.cs
+  assemblies:
+  - CodeFactory.WinVs
+  namespace: CodeFactory.WinVs.Models.CSharp
+  summary: Formats a type name to match the C# syntax for a type deceleration in C#.
+  example: []
+  syntax:
+    content: public static string GenerateCSharpTypeName(this CsType source, NamespaceManager manager = null, List<MapNamespace> mappedNamespaces = null)
+    parameters:
+    - id: source
+      type: CodeFactory.WinVs.Models.CSharp.CsType
+      description: The type model to use to generate the type signature for c#
+    - id: manager
+      type: CodeFactory.WinVs.Models.CSharp.NamespaceManager
+      description: Optional parameter that contains all the using statements from the source code, when used will replace namespaces on type definition in code.
+    - id: mappedNamespaces
+      type: System.Collections.Generic.List{CodeFactory.WinVs.Models.CSharp.MapNamespace}
+      description: Optional parameter that provides namespaces to be mapped to.
+    return:
+      type: System.String
+      description: The formatted type definition for C#
+    content.vb: Public Shared Function GenerateCSharpTypeName(source As CsType, manager As NamespaceManager = Nothing, mappedNamespaces As List(Of MapNamespace) = Nothing) As String
+  overload: CodeFactory.WinVs.Models.CSharp.GenereateCSharpTypeExtensions.GenerateCSharpTypeName*
+  nameWithType.vb: GenereateCSharpTypeExtensions.GenerateCSharpTypeName(CsType, NamespaceManager, List(Of MapNamespace))
+  fullName.vb: CodeFactory.WinVs.Models.CSharp.GenereateCSharpTypeExtensions.GenerateCSharpTypeName(CodeFactory.WinVs.Models.CSharp.CsType, CodeFactory.WinVs.Models.CSharp.NamespaceManager, System.Collections.Generic.List(Of CodeFactory.WinVs.Models.CSharp.MapNamespace))
+  name.vb: GenerateCSharpTypeName(CsType, NamespaceManager, List(Of MapNamespace))
+- uid: CodeFactory.WinVs.Models.CSharp.GenereateCSharpTypeExtensions.GenerateCSharpArraySignature(CodeFactory.WinVs.Models.CSharp.CsType)
+  commentId: M:CodeFactory.WinVs.Models.CSharp.GenereateCSharpTypeExtensions.GenerateCSharpArraySignature(CodeFactory.WinVs.Models.CSharp.CsType)
+  id: GenerateCSharpArraySignature(CodeFactory.WinVs.Models.CSharp.CsType)
+  isExtensionMethod: true
+  parent: CodeFactory.WinVs.Models.CSharp.GenereateCSharpTypeExtensions
+  langs:
+  - csharp
+  - vb
+  name: GenerateCSharpArraySignature(CsType)
+  nameWithType: GenereateCSharpTypeExtensions.GenerateCSharpArraySignature(CsType)
+  fullName: CodeFactory.WinVs.Models.CSharp.GenereateCSharpTypeExtensions.GenerateCSharpArraySignature(CodeFactory.WinVs.Models.CSharp.CsType)
+  type: Method
+  source:
+    href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/19e816ffdf1ba504be6987736bbac42e2d241405/Src/CodeFactoryForWindows/CodeFactory.WinVs/Models/CSharp/GenereateCSharpTypeExtensions.cs
+  assemblies:
+  - CodeFactory.WinVs
+  namespace: CodeFactory.WinVs.Models.CSharp
+  summary: Extension method that creates the array portion definition of a type definition in C# syntax.
+  example: []
+  syntax:
+    content: public static string GenerateCSharpArraySignature(this CsType source)
+    parameters:
+    - id: source
+      type: CodeFactory.WinVs.Models.CSharp.CsType
+      description: The source type to get the array information to format.
+    return:
+      type: System.String
+      description: The formatted array syntax for the target type, or null if no array data was provided in the type definition.
+    content.vb: Public Shared Function GenerateCSharpArraySignature(source As CsType) As String
+  overload: CodeFactory.WinVs.Models.CSharp.GenereateCSharpTypeExtensions.GenerateCSharpArraySignature*
+- uid: CodeFactory.WinVs.Models.CSharp.GenereateCSharpTypeExtensions.GenerateCSharpGenericParametersSignature(System.Collections.Generic.IReadOnlyList{CodeFactory.WinVs.Models.CSharp.CsGenericParameter},CodeFactory.WinVs.Models.CSharp.NamespaceManager,System.Collections.Generic.List{CodeFactory.WinVs.Models.CSharp.MapNamespace})
+  commentId: M:CodeFactory.WinVs.Models.CSharp.GenereateCSharpTypeExtensions.GenerateCSharpGenericParametersSignature(System.Collections.Generic.IReadOnlyList{CodeFactory.WinVs.Models.CSharp.CsGenericParameter},CodeFactory.WinVs.Models.CSharp.NamespaceManager,System.Collections.Generic.List{CodeFactory.WinVs.Models.CSharp.MapNamespace})
+  id: GenerateCSharpGenericParametersSignature(System.Collections.Generic.IReadOnlyList{CodeFactory.WinVs.Models.CSharp.CsGenericParameter},CodeFactory.WinVs.Models.CSharp.NamespaceManager,System.Collections.Generic.List{CodeFactory.WinVs.Models.CSharp.MapNamespace})
+  isExtensionMethod: true
+  parent: CodeFactory.WinVs.Models.CSharp.GenereateCSharpTypeExtensions
+  langs:
+  - csharp
+  - vb
+  name: GenerateCSharpGenericParametersSignature(IReadOnlyList<CsGenericParameter>, NamespaceManager, List<MapNamespace>)
+  nameWithType: GenereateCSharpTypeExtensions.GenerateCSharpGenericParametersSignature(IReadOnlyList<CsGenericParameter>, NamespaceManager, List<MapNamespace>)
+  fullName: CodeFactory.WinVs.Models.CSharp.GenereateCSharpTypeExtensions.GenerateCSharpGenericParametersSignature(System.Collections.Generic.IReadOnlyList<CodeFactory.WinVs.Models.CSharp.CsGenericParameter>, CodeFactory.WinVs.Models.CSharp.NamespaceManager, System.Collections.Generic.List<CodeFactory.WinVs.Models.CSharp.MapNamespace>)
+  type: Method
+  source:
+    href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/19e816ffdf1ba504be6987736bbac42e2d241405/Src/CodeFactoryForWindows/CodeFactory.WinVs/Models/CSharp/GenereateCSharpTypeExtensions.cs
+  assemblies:
+  - CodeFactory.WinVs
+  namespace: CodeFactory.WinVs.Models.CSharp
+  summary: Extension method that generates the generics definition part of a signature in the C# format.
+  example: []
+  syntax:
+    content: public static string GenerateCSharpGenericParametersSignature(this IReadOnlyList<CsGenericParameter> source, NamespaceManager manager = null, List<MapNamespace> mappedNamespaces = null)
+    parameters:
+    - id: source
+      type: System.Collections.Generic.IReadOnlyList{CodeFactory.WinVs.Models.CSharp.CsGenericParameter}
+      description: The target types that make up the generics signature.
+    - id: manager
+      type: CodeFactory.WinVs.Models.CSharp.NamespaceManager
+      description: Optional parameter that contains all the using statements from the source code, when used will replace namespaces on type definition in code.
+    - id: mappedNamespaces
+      type: System.Collections.Generic.List{CodeFactory.WinVs.Models.CSharp.MapNamespace}
+      description: Optional parameter that provides namespaces to be mapped to.
+    return:
+      type: System.String
+      description: The fully formatted definition of the generics signature, or null if the source is not provided.
+    content.vb: Public Shared Function GenerateCSharpGenericParametersSignature(source As IReadOnlyList(Of CsGenericParameter), manager As NamespaceManager = Nothing, mappedNamespaces As List(Of MapNamespace) = Nothing) As String
+  overload: CodeFactory.WinVs.Models.CSharp.GenereateCSharpTypeExtensions.GenerateCSharpGenericParametersSignature*
+  nameWithType.vb: GenereateCSharpTypeExtensions.GenerateCSharpGenericParametersSignature(IReadOnlyList(Of CsGenericParameter), NamespaceManager, List(Of MapNamespace))
+  fullName.vb: CodeFactory.WinVs.Models.CSharp.GenereateCSharpTypeExtensions.GenerateCSharpGenericParametersSignature(System.Collections.Generic.IReadOnlyList(Of CodeFactory.WinVs.Models.CSharp.CsGenericParameter), CodeFactory.WinVs.Models.CSharp.NamespaceManager, System.Collections.Generic.List(Of CodeFactory.WinVs.Models.CSharp.MapNamespace))
+  name.vb: GenerateCSharpGenericParametersSignature(IReadOnlyList(Of CsGenericParameter), NamespaceManager, List(Of MapNamespace))
+- uid: CodeFactory.WinVs.Models.CSharp.GenereateCSharpTypeExtensions.GenerateCSharpTupleSignature(CodeFactory.WinVs.Models.CSharp.CsType,CodeFactory.WinVs.Models.CSharp.NamespaceManager,System.Collections.Generic.List{CodeFactory.WinVs.Models.CSharp.MapNamespace})
+  commentId: M:CodeFactory.WinVs.Models.CSharp.GenereateCSharpTypeExtensions.GenerateCSharpTupleSignature(CodeFactory.WinVs.Models.CSharp.CsType,CodeFactory.WinVs.Models.CSharp.NamespaceManager,System.Collections.Generic.List{CodeFactory.WinVs.Models.CSharp.MapNamespace})
+  id: GenerateCSharpTupleSignature(CodeFactory.WinVs.Models.CSharp.CsType,CodeFactory.WinVs.Models.CSharp.NamespaceManager,System.Collections.Generic.List{CodeFactory.WinVs.Models.CSharp.MapNamespace})
+  isExtensionMethod: true
+  parent: CodeFactory.WinVs.Models.CSharp.GenereateCSharpTypeExtensions
+  langs:
+  - csharp
+  - vb
+  name: GenerateCSharpTupleSignature(CsType, NamespaceManager, List<MapNamespace>)
+  nameWithType: GenereateCSharpTypeExtensions.GenerateCSharpTupleSignature(CsType, NamespaceManager, List<MapNamespace>)
+  fullName: CodeFactory.WinVs.Models.CSharp.GenereateCSharpTypeExtensions.GenerateCSharpTupleSignature(CodeFactory.WinVs.Models.CSharp.CsType, CodeFactory.WinVs.Models.CSharp.NamespaceManager, System.Collections.Generic.List<CodeFactory.WinVs.Models.CSharp.MapNamespace>)
+  type: Method
+  source:
+    href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/19e816ffdf1ba504be6987736bbac42e2d241405/Src/CodeFactoryForWindows/CodeFactory.WinVs/Models/CSharp/GenereateCSharpTypeExtensions.cs
+  assemblies:
+  - CodeFactory.WinVs
+  namespace: CodeFactory.WinVs.Models.CSharp
+  summary: Extension method that creates a C# signature for the tuple type.
+  example: []
+  syntax:
+    content: public static string GenerateCSharpTupleSignature(this CsType source, NamespaceManager manager = null, List<MapNamespace> mappedNamespaces = null)
+    parameters:
+    - id: source
+      type: CodeFactory.WinVs.Models.CSharp.CsType
+      description: The target declaration syntax for a tuple.
+    - id: manager
+      type: CodeFactory.WinVs.Models.CSharp.NamespaceManager
+      description: Optional parameter that contains all the using statements from the source code, when used will replace namespaces on type definition in code.
+    - id: mappedNamespaces
+      type: System.Collections.Generic.List{CodeFactory.WinVs.Models.CSharp.MapNamespace}
+      description: Optional parameter that provides namespaces to be mapped to.
+    return:
+      type: System.String
+      description: The formatted tuple or null if data is missing.
+    content.vb: Public Shared Function GenerateCSharpTupleSignature(source As CsType, manager As NamespaceManager = Nothing, mappedNamespaces As List(Of MapNamespace) = Nothing) As String
+  overload: CodeFactory.WinVs.Models.CSharp.GenereateCSharpTypeExtensions.GenerateCSharpTupleSignature*
+  nameWithType.vb: GenereateCSharpTypeExtensions.GenerateCSharpTupleSignature(CsType, NamespaceManager, List(Of MapNamespace))
+  fullName.vb: CodeFactory.WinVs.Models.CSharp.GenereateCSharpTypeExtensions.GenerateCSharpTupleSignature(CodeFactory.WinVs.Models.CSharp.CsType, CodeFactory.WinVs.Models.CSharp.NamespaceManager, System.Collections.Generic.List(Of CodeFactory.WinVs.Models.CSharp.MapNamespace))
+  name.vb: GenerateCSharpTupleSignature(CsType, NamespaceManager, List(Of MapNamespace))
+- uid: CodeFactory.WinVs.Models.CSharp.GenereateCSharpTypeExtensions.GenerateCSharpValueSyntax(CodeFactory.WinVs.Models.CSharp.CsType,System.String)
+  commentId: M:CodeFactory.WinVs.Models.CSharp.GenereateCSharpTypeExtensions.GenerateCSharpValueSyntax(CodeFactory.WinVs.Models.CSharp.CsType,System.String)
+  id: GenerateCSharpValueSyntax(CodeFactory.WinVs.Models.CSharp.CsType,System.String)
+  isExtensionMethod: true
+  parent: CodeFactory.WinVs.Models.CSharp.GenereateCSharpTypeExtensions
+  langs:
+  - csharp
+  - vb
+  name: GenerateCSharpValueSyntax(CsType, string)
+  nameWithType: GenereateCSharpTypeExtensions.GenerateCSharpValueSyntax(CsType, string)
+  fullName: CodeFactory.WinVs.Models.CSharp.GenereateCSharpTypeExtensions.GenerateCSharpValueSyntax(CodeFactory.WinVs.Models.CSharp.CsType, string)
+  type: Method
+  source:
+    href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/19e816ffdf1ba504be6987736bbac42e2d241405/Src/CodeFactoryForWindows/CodeFactory.WinVs/Models/CSharp/GenereateCSharpTypeExtensions.cs
+  assemblies:
+  - CodeFactory.WinVs
+  namespace: CodeFactory.WinVs.Models.CSharp
+  summary: Extension method that returns a value declaration in the C# language format.
+  example: []
+  syntax:
+    content: public static string GenerateCSharpValueSyntax(this CsType source, string value)
+    parameters:
+    - id: source
+      type: CodeFactory.WinVs.Models.CSharp.CsType
+      description: The target type to create the value definition for.
+    - id: value
+      type: System.String
+      description: The value to be formatted.
+    return:
+      type: System.String
+      description: The definition of the value formatted for C#
+    content.vb: Public Shared Function GenerateCSharpValueSyntax(source As CsType, value As String) As String
+  overload: CodeFactory.WinVs.Models.CSharp.GenereateCSharpTypeExtensions.GenerateCSharpValueSyntax*
+  nameWithType.vb: GenereateCSharpTypeExtensions.GenerateCSharpValueSyntax(CsType, String)
+  fullName.vb: CodeFactory.WinVs.Models.CSharp.GenereateCSharpTypeExtensions.GenerateCSharpValueSyntax(CodeFactory.WinVs.Models.CSharp.CsType, String)
+  name.vb: GenerateCSharpValueSyntax(CsType, String)
+references:
+- uid: CodeFactory.WinVs.Models.CSharp.CsType
+  commentId: T:CodeFactory.WinVs.Models.CSharp.CsType
+  parent: CodeFactory.WinVs.Models.CSharp
+  isExternal: true
+  href: CodeFactory.WinVs.Models.CSharp.CsType.html
+  name: CsType
+  nameWithType: CsType
+  fullName: CodeFactory.WinVs.Models.CSharp.CsType
+- uid: CodeFactory.WinVs.Models.CSharp
+  commentId: N:CodeFactory.WinVs.Models.CSharp
+  isExternal: true
+  href: CodeFactory.html
+  name: CodeFactory.WinVs.Models.CSharp
+  nameWithType: CodeFactory.WinVs.Models.CSharp
+  fullName: CodeFactory.WinVs.Models.CSharp
+  spec.csharp:
+  - uid: CodeFactory
+    name: CodeFactory
+    isExternal: true
+    href: CodeFactory.html
+  - name: .
+  - uid: CodeFactory.WinVs
+    name: WinVs
+    isExternal: true
+    href: CodeFactory.WinVs.html
+  - name: .
+  - uid: CodeFactory.WinVs.Models
+    name: Models
+    isExternal: true
+    href: CodeFactory.WinVs.Models.html
+  - name: .
+  - uid: CodeFactory.WinVs.Models.CSharp
+    name: CSharp
+    isExternal: true
+    href: CodeFactory.WinVs.Models.CSharp.html
+  spec.vb:
+  - uid: CodeFactory
+    name: CodeFactory
+    isExternal: true
+    href: CodeFactory.html
+  - name: .
+  - uid: CodeFactory.WinVs
+    name: WinVs
+    isExternal: true
+    href: CodeFactory.WinVs.html
+  - name: .
+  - uid: CodeFactory.WinVs.Models
+    name: Models
+    isExternal: true
+    href: CodeFactory.WinVs.Models.html
+  - name: .
+  - uid: CodeFactory.WinVs.Models.CSharp
+    name: CSharp
+    isExternal: true
+    href: CodeFactory.WinVs.Models.CSharp.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.ArgumentNullException
+  commentId: T:System.ArgumentNullException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.argumentnullexception
+  name: ArgumentNullException
+  nameWithType: ArgumentNullException
+  fullName: System.ArgumentNullException
+- uid: CodeFactory.WinVs.Models.CSharp.GenereateCSharpTypeExtensions.GenerateCSharpDefaultValue*
+  commentId: Overload:CodeFactory.WinVs.Models.CSharp.GenereateCSharpTypeExtensions.GenerateCSharpDefaultValue
+  isExternal: true
+  href: CodeFactory.WinVs.Models.CSharp.GenereateCSharpTypeExtensions.html#CodeFactory_WinVs_Models_CSharp_GenereateCSharpTypeExtensions_GenerateCSharpDefaultValue_CodeFactory_WinVs_Models_CSharp_CsType_
+  name: GenerateCSharpDefaultValue
+  nameWithType: GenereateCSharpTypeExtensions.GenerateCSharpDefaultValue
+  fullName: CodeFactory.WinVs.Models.CSharp.GenereateCSharpTypeExtensions.GenerateCSharpDefaultValue
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: CodeFactory.CodeFactoryException
+  commentId: T:CodeFactory.CodeFactoryException
+  parent: CodeFactory
+  isExternal: true
+  href: CodeFactory.CodeFactoryException.html
+  name: CodeFactoryException
+  nameWithType: CodeFactoryException
+  fullName: CodeFactory.CodeFactoryException
+- uid: CodeFactory.WinVs.Models.CSharp.GenereateCSharpTypeExtensions.GenerateCSharpTypeNameRemoveNullableDefinition*
+  commentId: Overload:CodeFactory.WinVs.Models.CSharp.GenereateCSharpTypeExtensions.GenerateCSharpTypeNameRemoveNullableDefinition
+  isExternal: true
+  href: CodeFactory.WinVs.Models.CSharp.GenereateCSharpTypeExtensions.html#CodeFactory_WinVs_Models_CSharp_GenereateCSharpTypeExtensions_GenerateCSharpTypeNameRemoveNullableDefinition_CodeFactory_WinVs_Models_CSharp_CsType_CodeFactory_WinVs_Models_CSharp_NamespaceManager_System_Collections_Generic_List_CodeFactory_WinVs_Models_CSharp_MapNamespace__
+  name: GenerateCSharpTypeNameRemoveNullableDefinition
+  nameWithType: GenereateCSharpTypeExtensions.GenerateCSharpTypeNameRemoveNullableDefinition
+  fullName: CodeFactory.WinVs.Models.CSharp.GenereateCSharpTypeExtensions.GenerateCSharpTypeNameRemoveNullableDefinition
+- uid: CodeFactory.WinVs.Models.CSharp.NamespaceManager
+  commentId: T:CodeFactory.WinVs.Models.CSharp.NamespaceManager
+  parent: CodeFactory.WinVs.Models.CSharp
+  isExternal: true
+  href: CodeFactory.WinVs.Models.CSharp.NamespaceManager.html
+  name: NamespaceManager
+  nameWithType: NamespaceManager
+  fullName: CodeFactory.WinVs.Models.CSharp.NamespaceManager
+- uid: System.Collections.Generic.List{CodeFactory.WinVs.Models.CSharp.MapNamespace}
+  commentId: T:System.Collections.Generic.List{CodeFactory.WinVs.Models.CSharp.MapNamespace}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<MapNamespace>
+  nameWithType: List<MapNamespace>
+  fullName: System.Collections.Generic.List<CodeFactory.WinVs.Models.CSharp.MapNamespace>
+  nameWithType.vb: List(Of MapNamespace)
+  fullName.vb: System.Collections.Generic.List(Of CodeFactory.WinVs.Models.CSharp.MapNamespace)
+  name.vb: List(Of MapNamespace)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: CodeFactory.WinVs.Models.CSharp.MapNamespace
+    name: MapNamespace
+    isExternal: true
+    href: CodeFactory.WinVs.Models.CSharp.MapNamespace.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: CodeFactory.WinVs.Models.CSharp.MapNamespace
+    name: MapNamespace
+    isExternal: true
+    href: CodeFactory.WinVs.Models.CSharp.MapNamespace.html
+  - name: )
+- uid: CodeFactory
+  commentId: N:CodeFactory
+  isExternal: true
+  href: CodeFactory.html
+  name: CodeFactory
+  nameWithType: CodeFactory
+  fullName: CodeFactory
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: CodeFactory.WinVs.Models.CSharp.GenereateCSharpTypeExtensions.GenerateCSharpTypeName*
+  commentId: Overload:CodeFactory.WinVs.Models.CSharp.GenereateCSharpTypeExtensions.GenerateCSharpTypeName
+  isExternal: true
+  href: CodeFactory.WinVs.Models.CSharp.GenereateCSharpTypeExtensions.html#CodeFactory_WinVs_Models_CSharp_GenereateCSharpTypeExtensions_GenerateCSharpTypeName_CodeFactory_WinVs_Models_CSharp_CsType_CodeFactory_WinVs_Models_CSharp_NamespaceManager_System_Collections_Generic_List_CodeFactory_WinVs_Models_CSharp_MapNamespace__
+  name: GenerateCSharpTypeName
+  nameWithType: GenereateCSharpTypeExtensions.GenerateCSharpTypeName
+  fullName: CodeFactory.WinVs.Models.CSharp.GenereateCSharpTypeExtensions.GenerateCSharpTypeName
+- uid: CodeFactory.WinVs.Models.CSharp.GenereateCSharpTypeExtensions.GenerateCSharpArraySignature*
+  commentId: Overload:CodeFactory.WinVs.Models.CSharp.GenereateCSharpTypeExtensions.GenerateCSharpArraySignature
+  isExternal: true
+  href: CodeFactory.WinVs.Models.CSharp.GenereateCSharpTypeExtensions.html#CodeFactory_WinVs_Models_CSharp_GenereateCSharpTypeExtensions_GenerateCSharpArraySignature_CodeFactory_WinVs_Models_CSharp_CsType_
+  name: GenerateCSharpArraySignature
+  nameWithType: GenereateCSharpTypeExtensions.GenerateCSharpArraySignature
+  fullName: CodeFactory.WinVs.Models.CSharp.GenereateCSharpTypeExtensions.GenerateCSharpArraySignature
+- uid: CodeFactory.WinVs.Models.CSharp.GenereateCSharpTypeExtensions.GenerateCSharpGenericParametersSignature*
+  commentId: Overload:CodeFactory.WinVs.Models.CSharp.GenereateCSharpTypeExtensions.GenerateCSharpGenericParametersSignature
+  isExternal: true
+  href: CodeFactory.WinVs.Models.CSharp.GenereateCSharpTypeExtensions.html#CodeFactory_WinVs_Models_CSharp_GenereateCSharpTypeExtensions_GenerateCSharpGenericParametersSignature_System_Collections_Generic_IReadOnlyList_CodeFactory_WinVs_Models_CSharp_CsGenericParameter__CodeFactory_WinVs_Models_CSharp_NamespaceManager_System_Collections_Generic_List_CodeFactory_WinVs_Models_CSharp_MapNamespace__
+  name: GenerateCSharpGenericParametersSignature
+  nameWithType: GenereateCSharpTypeExtensions.GenerateCSharpGenericParametersSignature
+  fullName: CodeFactory.WinVs.Models.CSharp.GenereateCSharpTypeExtensions.GenerateCSharpGenericParametersSignature
+- uid: System.Collections.Generic.IReadOnlyList{CodeFactory.WinVs.Models.CSharp.CsGenericParameter}
+  commentId: T:System.Collections.Generic.IReadOnlyList{CodeFactory.WinVs.Models.CSharp.CsGenericParameter}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IReadOnlyList`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  name: IReadOnlyList<CsGenericParameter>
+  nameWithType: IReadOnlyList<CsGenericParameter>
+  fullName: System.Collections.Generic.IReadOnlyList<CodeFactory.WinVs.Models.CSharp.CsGenericParameter>
+  nameWithType.vb: IReadOnlyList(Of CsGenericParameter)
+  fullName.vb: System.Collections.Generic.IReadOnlyList(Of CodeFactory.WinVs.Models.CSharp.CsGenericParameter)
+  name.vb: IReadOnlyList(Of CsGenericParameter)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - uid: CodeFactory.WinVs.Models.CSharp.CsGenericParameter
+    name: CsGenericParameter
+    isExternal: true
+    href: CodeFactory.WinVs.Models.CSharp.CsGenericParameter.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: CodeFactory.WinVs.Models.CSharp.CsGenericParameter
+    name: CsGenericParameter
+    isExternal: true
+    href: CodeFactory.WinVs.Models.CSharp.CsGenericParameter.html
+  - name: )
+- uid: System.Collections.Generic.IReadOnlyList`1
+  commentId: T:System.Collections.Generic.IReadOnlyList`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  name: IReadOnlyList<T>
+  nameWithType: IReadOnlyList<T>
+  fullName: System.Collections.Generic.IReadOnlyList<T>
+  nameWithType.vb: IReadOnlyList(Of T)
+  fullName.vb: System.Collections.Generic.IReadOnlyList(Of T)
+  name.vb: IReadOnlyList(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: CodeFactory.WinVs.Models.CSharp.GenereateCSharpTypeExtensions.GenerateCSharpTupleSignature*
+  commentId: Overload:CodeFactory.WinVs.Models.CSharp.GenereateCSharpTypeExtensions.GenerateCSharpTupleSignature
+  isExternal: true
+  href: CodeFactory.WinVs.Models.CSharp.GenereateCSharpTypeExtensions.html#CodeFactory_WinVs_Models_CSharp_GenereateCSharpTypeExtensions_GenerateCSharpTupleSignature_CodeFactory_WinVs_Models_CSharp_CsType_CodeFactory_WinVs_Models_CSharp_NamespaceManager_System_Collections_Generic_List_CodeFactory_WinVs_Models_CSharp_MapNamespace__
+  name: GenerateCSharpTupleSignature
+  nameWithType: GenereateCSharpTypeExtensions.GenerateCSharpTupleSignature
+  fullName: CodeFactory.WinVs.Models.CSharp.GenereateCSharpTypeExtensions.GenerateCSharpTupleSignature
+- uid: CodeFactory.WinVs.Models.CSharp.GenereateCSharpTypeExtensions.GenerateCSharpValueSyntax*
+  commentId: Overload:CodeFactory.WinVs.Models.CSharp.GenereateCSharpTypeExtensions.GenerateCSharpValueSyntax
+  isExternal: true
+  href: CodeFactory.WinVs.Models.CSharp.GenereateCSharpTypeExtensions.html#CodeFactory_WinVs_Models_CSharp_GenereateCSharpTypeExtensions_GenerateCSharpValueSyntax_CodeFactory_WinVs_Models_CSharp_CsType_System_String_
+  name: GenerateCSharpValueSyntax
+  nameWithType: GenereateCSharpTypeExtensions.GenerateCSharpValueSyntax
+  fullName: CodeFactory.WinVs.Models.CSharp.GenereateCSharpTypeExtensions.GenerateCSharpValueSyntax

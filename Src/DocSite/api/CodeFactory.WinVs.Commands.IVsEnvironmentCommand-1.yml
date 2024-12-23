@@ -1,0 +1,271 @@
+### YamlMime:ManagedReference
+items:
+- uid: CodeFactory.WinVs.Commands.IVsEnvironmentCommand`1
+  commentId: T:CodeFactory.WinVs.Commands.IVsEnvironmentCommand`1
+  id: IVsEnvironmentCommand`1
+  parent: CodeFactory.WinVs.Commands
+  children:
+  - CodeFactory.WinVs.Commands.IVsEnvironmentCommand`1.ExecuteCommandAsync(`0)
+  - CodeFactory.WinVs.Commands.IVsEnvironmentCommand`1.VisualStudioActions
+  langs:
+  - csharp
+  - vb
+  name: IVsEnvironmentCommand<TModel>
+  nameWithType: IVsEnvironmentCommand<TModel>
+  fullName: CodeFactory.WinVs.Commands.IVsEnvironmentCommand<TModel>
+  type: Interface
+  source:
+    href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/19e816ffdf1ba504be6987736bbac42e2d241405/Src/CodeFactoryForWindows/CodeFactory.WinVs/Commands/IVsEnvironmentCommand.cs
+  assemblies:
+  - CodeFactory.WinVs
+  namespace: CodeFactory.WinVs.Commands
+  summary: Base implementation for all code factory commands that are directly executed by the Visual Studio Enviornment.
+  example: []
+  syntax:
+    content: 'public interface IVsEnvironmentCommand<TModel> : IVsCommandInformation where TModel : class'
+    typeParameters:
+    - id: TModel
+      description: Target code factory model to be provided for the command.
+    content.vb: Public Interface IVsEnvironmentCommand(Of TModel As Class) Inherits IVsCommandInformation
+  inheritedMembers:
+  - CodeFactory.WinVs.Commands.IVsCommandInformation.CommandTitle
+  - CodeFactory.WinVs.Commands.IVsCommandInformation.CommandDescription
+  - CodeFactory.WinVs.Commands.IVsCommandInformation.CommandType
+  nameWithType.vb: IVsEnvironmentCommand(Of TModel)
+  fullName.vb: CodeFactory.WinVs.Commands.IVsEnvironmentCommand(Of TModel)
+  name.vb: IVsEnvironmentCommand(Of TModel)
+- uid: CodeFactory.WinVs.Commands.IVsEnvironmentCommand`1.ExecuteCommandAsync(`0)
+  commentId: M:CodeFactory.WinVs.Commands.IVsEnvironmentCommand`1.ExecuteCommandAsync(`0)
+  id: ExecuteCommandAsync(`0)
+  parent: CodeFactory.WinVs.Commands.IVsEnvironmentCommand`1
+  langs:
+  - csharp
+  - vb
+  name: ExecuteCommandAsync(TModel)
+  nameWithType: IVsEnvironmentCommand<TModel>.ExecuteCommandAsync(TModel)
+  fullName: CodeFactory.WinVs.Commands.IVsEnvironmentCommand<TModel>.ExecuteCommandAsync(TModel)
+  type: Method
+  source:
+    href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/19e816ffdf1ba504be6987736bbac42e2d241405/Src/CodeFactoryForWindows/CodeFactory.WinVs/Commands/IVsEnvironmentCommand.cs
+  assemblies:
+  - CodeFactory.WinVs
+  namespace: CodeFactory.WinVs.Commands
+  summary: Code factory framework calls this method when the command has been executed.
+  example: []
+  syntax:
+    content: Task ExecuteCommandAsync(TModel result)
+    parameters:
+    - id: result
+      type: '{TModel}'
+      description: The code factory model that has generated and provided to the command to process.
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Function ExecuteCommandAsync(result As TModel) As Task
+  overload: CodeFactory.WinVs.Commands.IVsEnvironmentCommand`1.ExecuteCommandAsync*
+  nameWithType.vb: IVsEnvironmentCommand(Of TModel).ExecuteCommandAsync(TModel)
+  fullName.vb: CodeFactory.WinVs.Commands.IVsEnvironmentCommand(Of TModel).ExecuteCommandAsync(TModel)
+- uid: CodeFactory.WinVs.Commands.IVsEnvironmentCommand`1.VisualStudioActions
+  commentId: P:CodeFactory.WinVs.Commands.IVsEnvironmentCommand`1.VisualStudioActions
+  id: VisualStudioActions
+  parent: CodeFactory.WinVs.Commands.IVsEnvironmentCommand`1
+  langs:
+  - csharp
+  - vb
+  name: VisualStudioActions
+  nameWithType: IVsEnvironmentCommand<TModel>.VisualStudioActions
+  fullName: CodeFactory.WinVs.Commands.IVsEnvironmentCommand<TModel>.VisualStudioActions
+  type: Property
+  source:
+    href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/19e816ffdf1ba504be6987736bbac42e2d241405/Src/CodeFactoryForWindows/CodeFactory.WinVs/Commands/IVsEnvironmentCommand.cs
+  assemblies:
+  - CodeFactory.WinVs
+  namespace: CodeFactory.WinVs.Commands
+  summary: Global visual studio commands that can be accessed from this visual studio command.
+  example: []
+  syntax:
+    content: IVsActions VisualStudioActions { get; }
+    parameters: []
+    return:
+      type: CodeFactory.WinVs.IVsActions
+    content.vb: ReadOnly Property VisualStudioActions As IVsActions
+  overload: CodeFactory.WinVs.Commands.IVsEnvironmentCommand`1.VisualStudioActions*
+  nameWithType.vb: IVsEnvironmentCommand(Of TModel).VisualStudioActions
+  fullName.vb: CodeFactory.WinVs.Commands.IVsEnvironmentCommand(Of TModel).VisualStudioActions
+references:
+- uid: CodeFactory.WinVs.Commands
+  commentId: N:CodeFactory.WinVs.Commands
+  isExternal: true
+  href: CodeFactory.html
+  name: CodeFactory.WinVs.Commands
+  nameWithType: CodeFactory.WinVs.Commands
+  fullName: CodeFactory.WinVs.Commands
+  spec.csharp:
+  - uid: CodeFactory
+    name: CodeFactory
+    isExternal: true
+    href: CodeFactory.html
+  - name: .
+  - uid: CodeFactory.WinVs
+    name: WinVs
+    isExternal: true
+    href: CodeFactory.WinVs.html
+  - name: .
+  - uid: CodeFactory.WinVs.Commands
+    name: Commands
+    isExternal: true
+    href: CodeFactory.WinVs.Commands.html
+  spec.vb:
+  - uid: CodeFactory
+    name: CodeFactory
+    isExternal: true
+    href: CodeFactory.html
+  - name: .
+  - uid: CodeFactory.WinVs
+    name: WinVs
+    isExternal: true
+    href: CodeFactory.WinVs.html
+  - name: .
+  - uid: CodeFactory.WinVs.Commands
+    name: Commands
+    isExternal: true
+    href: CodeFactory.WinVs.Commands.html
+- uid: CodeFactory.WinVs.Commands.IVsCommandInformation.CommandTitle
+  commentId: P:CodeFactory.WinVs.Commands.IVsCommandInformation.CommandTitle
+  parent: CodeFactory.WinVs.Commands.IVsCommandInformation
+  isExternal: true
+  href: CodeFactory.WinVs.Commands.IVsCommandInformation.html#CodeFactory_WinVs_Commands_IVsCommandInformation_CommandTitle
+  name: CommandTitle
+  nameWithType: IVsCommandInformation.CommandTitle
+  fullName: CodeFactory.WinVs.Commands.IVsCommandInformation.CommandTitle
+- uid: CodeFactory.WinVs.Commands.IVsCommandInformation.CommandDescription
+  commentId: P:CodeFactory.WinVs.Commands.IVsCommandInformation.CommandDescription
+  parent: CodeFactory.WinVs.Commands.IVsCommandInformation
+  isExternal: true
+  href: CodeFactory.WinVs.Commands.IVsCommandInformation.html#CodeFactory_WinVs_Commands_IVsCommandInformation_CommandDescription
+  name: CommandDescription
+  nameWithType: IVsCommandInformation.CommandDescription
+  fullName: CodeFactory.WinVs.Commands.IVsCommandInformation.CommandDescription
+- uid: CodeFactory.WinVs.Commands.IVsCommandInformation.CommandType
+  commentId: P:CodeFactory.WinVs.Commands.IVsCommandInformation.CommandType
+  parent: CodeFactory.WinVs.Commands.IVsCommandInformation
+  isExternal: true
+  href: CodeFactory.WinVs.Commands.IVsCommandInformation.html#CodeFactory_WinVs_Commands_IVsCommandInformation_CommandType
+  name: CommandType
+  nameWithType: IVsCommandInformation.CommandType
+  fullName: CodeFactory.WinVs.Commands.IVsCommandInformation.CommandType
+- uid: CodeFactory.WinVs.Commands.IVsCommandInformation
+  commentId: T:CodeFactory.WinVs.Commands.IVsCommandInformation
+  parent: CodeFactory.WinVs.Commands
+  isExternal: true
+  href: CodeFactory.WinVs.Commands.IVsCommandInformation.html
+  name: IVsCommandInformation
+  nameWithType: IVsCommandInformation
+  fullName: CodeFactory.WinVs.Commands.IVsCommandInformation
+- uid: CodeFactory.WinVs.Commands.IVsEnvironmentCommand`1.ExecuteCommandAsync*
+  commentId: Overload:CodeFactory.WinVs.Commands.IVsEnvironmentCommand`1.ExecuteCommandAsync
+  isExternal: true
+  href: CodeFactory.WinVs.Commands.IVsEnvironmentCommand-1.html#CodeFactory_WinVs_Commands_IVsEnvironmentCommand_1_ExecuteCommandAsync__0_
+  name: ExecuteCommandAsync
+  nameWithType: IVsEnvironmentCommand<TModel>.ExecuteCommandAsync
+  fullName: CodeFactory.WinVs.Commands.IVsEnvironmentCommand<TModel>.ExecuteCommandAsync
+  nameWithType.vb: IVsEnvironmentCommand(Of TModel).ExecuteCommandAsync
+  fullName.vb: CodeFactory.WinVs.Commands.IVsEnvironmentCommand(Of TModel).ExecuteCommandAsync
+- uid: '{TModel}'
+  commentId: '!:TModel'
+  definition: TModel
+  name: TModel
+  nameWithType: TModel
+  fullName: TModel
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: TModel
+  name: TModel
+  nameWithType: TModel
+  fullName: TModel
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: CodeFactory.WinVs.Commands.IVsEnvironmentCommand`1.VisualStudioActions*
+  commentId: Overload:CodeFactory.WinVs.Commands.IVsEnvironmentCommand`1.VisualStudioActions
+  isExternal: true
+  href: CodeFactory.WinVs.Commands.IVsEnvironmentCommand-1.html#CodeFactory_WinVs_Commands_IVsEnvironmentCommand_1_VisualStudioActions
+  name: VisualStudioActions
+  nameWithType: IVsEnvironmentCommand<TModel>.VisualStudioActions
+  fullName: CodeFactory.WinVs.Commands.IVsEnvironmentCommand<TModel>.VisualStudioActions
+  nameWithType.vb: IVsEnvironmentCommand(Of TModel).VisualStudioActions
+  fullName.vb: CodeFactory.WinVs.Commands.IVsEnvironmentCommand(Of TModel).VisualStudioActions
+- uid: CodeFactory.WinVs.IVsActions
+  commentId: T:CodeFactory.WinVs.IVsActions
+  parent: CodeFactory.WinVs
+  isExternal: true
+  href: CodeFactory.WinVs.IVsActions.html
+  name: IVsActions
+  nameWithType: IVsActions
+  fullName: CodeFactory.WinVs.IVsActions
+- uid: CodeFactory.WinVs
+  commentId: N:CodeFactory.WinVs
+  isExternal: true
+  href: CodeFactory.html
+  name: CodeFactory.WinVs
+  nameWithType: CodeFactory.WinVs
+  fullName: CodeFactory.WinVs
+  spec.csharp:
+  - uid: CodeFactory
+    name: CodeFactory
+    isExternal: true
+    href: CodeFactory.html
+  - name: .
+  - uid: CodeFactory.WinVs
+    name: WinVs
+    isExternal: true
+    href: CodeFactory.WinVs.html
+  spec.vb:
+  - uid: CodeFactory
+    name: CodeFactory
+    isExternal: true
+    href: CodeFactory.html
+  - name: .
+  - uid: CodeFactory.WinVs
+    name: WinVs
+    isExternal: true
+    href: CodeFactory.WinVs.html

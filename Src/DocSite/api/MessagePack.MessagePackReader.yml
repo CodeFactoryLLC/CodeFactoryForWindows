@@ -1,0 +1,2901 @@
+### YamlMime:ManagedReference
+items:
+- uid: MessagePack.MessagePackReader
+  commentId: T:MessagePack.MessagePackReader
+  id: MessagePackReader
+  parent: MessagePack
+  children:
+  - MessagePack.MessagePackReader.#ctor(System.Buffers.ReadOnlySequence{System.Byte}@)
+  - MessagePack.MessagePackReader.#ctor(System.ReadOnlyMemory{System.Byte})
+  - MessagePack.MessagePackReader.CancellationToken
+  - MessagePack.MessagePackReader.Clone(System.Buffers.ReadOnlySequence{System.Byte}@)
+  - MessagePack.MessagePackReader.Consumed
+  - MessagePack.MessagePackReader.CreatePeekReader
+  - MessagePack.MessagePackReader.Depth
+  - MessagePack.MessagePackReader.End
+  - MessagePack.MessagePackReader.IsNil
+  - MessagePack.MessagePackReader.NextCode
+  - MessagePack.MessagePackReader.NextMessagePackType
+  - MessagePack.MessagePackReader.Position
+  - MessagePack.MessagePackReader.ReadArrayHeader
+  - MessagePack.MessagePackReader.ReadBoolean
+  - MessagePack.MessagePackReader.ReadByte
+  - MessagePack.MessagePackReader.ReadBytes
+  - MessagePack.MessagePackReader.ReadChar
+  - MessagePack.MessagePackReader.ReadDateTime
+  - MessagePack.MessagePackReader.ReadDateTime(MessagePack.ExtensionHeader)
+  - MessagePack.MessagePackReader.ReadDouble
+  - MessagePack.MessagePackReader.ReadExtensionFormat
+  - MessagePack.MessagePackReader.ReadExtensionFormatHeader
+  - MessagePack.MessagePackReader.ReadInt16
+  - MessagePack.MessagePackReader.ReadInt32
+  - MessagePack.MessagePackReader.ReadInt64
+  - MessagePack.MessagePackReader.ReadMapHeader
+  - MessagePack.MessagePackReader.ReadNil
+  - MessagePack.MessagePackReader.ReadRaw
+  - MessagePack.MessagePackReader.ReadRaw(System.Int64)
+  - MessagePack.MessagePackReader.ReadSByte
+  - MessagePack.MessagePackReader.ReadSingle
+  - MessagePack.MessagePackReader.ReadString
+  - MessagePack.MessagePackReader.ReadStringSequence
+  - MessagePack.MessagePackReader.ReadUInt16
+  - MessagePack.MessagePackReader.ReadUInt32
+  - MessagePack.MessagePackReader.ReadUInt64
+  - MessagePack.MessagePackReader.Sequence
+  - MessagePack.MessagePackReader.Skip
+  - MessagePack.MessagePackReader.TryReadArrayHeader(System.Int32@)
+  - MessagePack.MessagePackReader.TryReadExtensionFormatHeader(MessagePack.ExtensionHeader@)
+  - MessagePack.MessagePackReader.TryReadMapHeader(System.Int32@)
+  - MessagePack.MessagePackReader.TryReadNil
+  - MessagePack.MessagePackReader.TryReadStringSpan(System.ReadOnlySpan{System.Byte}@)
+  langs:
+  - csharp
+  - vb
+  name: MessagePackReader
+  nameWithType: MessagePackReader
+  fullName: MessagePack.MessagePackReader
+  type: Struct
+  assemblies:
+  - MessagePack
+  namespace: MessagePack
+  summary: A primitive types reader for the MessagePack format.
+  remarks: <a href="https://github.com/msgpack/msgpack/blob/master/spec.md">The MessagePack spec.</a>.
+  example: []
+  syntax:
+    content: public ref struct MessagePackReader
+    content.vb: Public Structure MessagePackReader
+  exceptions:
+  - type: MessagePack.MessagePackSerializationException
+    commentId: T:MessagePack.MessagePackSerializationException
+    description: Thrown when reading methods fail due to invalid data.
+  - type: System.IO.EndOfStreamException
+    commentId: T:System.IO.EndOfStreamException
+    description: Thrown by reading methods when there are not enough bytes to read the required value.
+  inheritedMembers:
+  - System.ValueType.Equals(System.Object)
+  - System.ValueType.GetHashCode
+  - System.ValueType.ToString
+  - System.Object.GetType
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+- uid: MessagePack.MessagePackReader.ReadByte
+  commentId: M:MessagePack.MessagePackReader.ReadByte
+  id: ReadByte
+  parent: MessagePack.MessagePackReader
+  langs:
+  - csharp
+  - vb
+  name: ReadByte()
+  nameWithType: MessagePackReader.ReadByte()
+  fullName: MessagePack.MessagePackReader.ReadByte()
+  type: Method
+  assemblies:
+  - MessagePack
+  namespace: MessagePack
+  summary: >-
+    Reads an <xref href="System.Byte" data-throw-if-not-resolved="false"></xref> value from:
+
+    Some value between <xref href="MessagePack.MessagePackCode.MinNegativeFixInt" data-throw-if-not-resolved="false"></xref> and <xref href="MessagePack.MessagePackCode.MaxNegativeFixInt" data-throw-if-not-resolved="false"></xref>,
+
+    Some value between <xref href="MessagePack.MessagePackCode.MinFixInt" data-throw-if-not-resolved="false"></xref> and <xref href="MessagePack.MessagePackCode.MaxFixInt" data-throw-if-not-resolved="false"></xref>,
+
+    or any of the other MsgPack integer types.
+  example: []
+  syntax:
+    content: public byte ReadByte()
+    return:
+      type: System.Byte
+      description: The value.
+    content.vb: Public Function ReadByte() As Byte
+  overload: MessagePack.MessagePackReader.ReadByte*
+  exceptions:
+  - type: System.OverflowException
+    commentId: T:System.OverflowException
+    description: Thrown when the value exceeds what can be stored in the returned type.
+- uid: MessagePack.MessagePackReader.ReadUInt16
+  commentId: M:MessagePack.MessagePackReader.ReadUInt16
+  id: ReadUInt16
+  parent: MessagePack.MessagePackReader
+  langs:
+  - csharp
+  - vb
+  name: ReadUInt16()
+  nameWithType: MessagePackReader.ReadUInt16()
+  fullName: MessagePack.MessagePackReader.ReadUInt16()
+  type: Method
+  assemblies:
+  - MessagePack
+  namespace: MessagePack
+  summary: >-
+    Reads an <xref href="System.UInt16" data-throw-if-not-resolved="false"></xref> value from:
+
+    Some value between <xref href="MessagePack.MessagePackCode.MinNegativeFixInt" data-throw-if-not-resolved="false"></xref> and <xref href="MessagePack.MessagePackCode.MaxNegativeFixInt" data-throw-if-not-resolved="false"></xref>,
+
+    Some value between <xref href="MessagePack.MessagePackCode.MinFixInt" data-throw-if-not-resolved="false"></xref> and <xref href="MessagePack.MessagePackCode.MaxFixInt" data-throw-if-not-resolved="false"></xref>,
+
+    or any of the other MsgPack integer types.
+  example: []
+  syntax:
+    content: public ushort ReadUInt16()
+    return:
+      type: System.UInt16
+      description: The value.
+    content.vb: Public Function ReadUInt16() As UShort
+  overload: MessagePack.MessagePackReader.ReadUInt16*
+  exceptions:
+  - type: System.OverflowException
+    commentId: T:System.OverflowException
+    description: Thrown when the value exceeds what can be stored in the returned type.
+- uid: MessagePack.MessagePackReader.ReadUInt32
+  commentId: M:MessagePack.MessagePackReader.ReadUInt32
+  id: ReadUInt32
+  parent: MessagePack.MessagePackReader
+  langs:
+  - csharp
+  - vb
+  name: ReadUInt32()
+  nameWithType: MessagePackReader.ReadUInt32()
+  fullName: MessagePack.MessagePackReader.ReadUInt32()
+  type: Method
+  assemblies:
+  - MessagePack
+  namespace: MessagePack
+  summary: >-
+    Reads an <xref href="System.UInt32" data-throw-if-not-resolved="false"></xref> value from:
+
+    Some value between <xref href="MessagePack.MessagePackCode.MinNegativeFixInt" data-throw-if-not-resolved="false"></xref> and <xref href="MessagePack.MessagePackCode.MaxNegativeFixInt" data-throw-if-not-resolved="false"></xref>,
+
+    Some value between <xref href="MessagePack.MessagePackCode.MinFixInt" data-throw-if-not-resolved="false"></xref> and <xref href="MessagePack.MessagePackCode.MaxFixInt" data-throw-if-not-resolved="false"></xref>,
+
+    or any of the other MsgPack integer types.
+  example: []
+  syntax:
+    content: public uint ReadUInt32()
+    return:
+      type: System.UInt32
+      description: The value.
+    content.vb: Public Function ReadUInt32() As UInteger
+  overload: MessagePack.MessagePackReader.ReadUInt32*
+  exceptions:
+  - type: System.OverflowException
+    commentId: T:System.OverflowException
+    description: Thrown when the value exceeds what can be stored in the returned type.
+- uid: MessagePack.MessagePackReader.ReadUInt64
+  commentId: M:MessagePack.MessagePackReader.ReadUInt64
+  id: ReadUInt64
+  parent: MessagePack.MessagePackReader
+  langs:
+  - csharp
+  - vb
+  name: ReadUInt64()
+  nameWithType: MessagePackReader.ReadUInt64()
+  fullName: MessagePack.MessagePackReader.ReadUInt64()
+  type: Method
+  assemblies:
+  - MessagePack
+  namespace: MessagePack
+  summary: >-
+    Reads an <xref href="System.UInt64" data-throw-if-not-resolved="false"></xref> value from:
+
+    Some value between <xref href="MessagePack.MessagePackCode.MinNegativeFixInt" data-throw-if-not-resolved="false"></xref> and <xref href="MessagePack.MessagePackCode.MaxNegativeFixInt" data-throw-if-not-resolved="false"></xref>,
+
+    Some value between <xref href="MessagePack.MessagePackCode.MinFixInt" data-throw-if-not-resolved="false"></xref> and <xref href="MessagePack.MessagePackCode.MaxFixInt" data-throw-if-not-resolved="false"></xref>,
+
+    or any of the other MsgPack integer types.
+  example: []
+  syntax:
+    content: public ulong ReadUInt64()
+    return:
+      type: System.UInt64
+      description: The value.
+    content.vb: Public Function ReadUInt64() As ULong
+  overload: MessagePack.MessagePackReader.ReadUInt64*
+  exceptions:
+  - type: System.OverflowException
+    commentId: T:System.OverflowException
+    description: Thrown when the value exceeds what can be stored in the returned type.
+- uid: MessagePack.MessagePackReader.ReadSByte
+  commentId: M:MessagePack.MessagePackReader.ReadSByte
+  id: ReadSByte
+  parent: MessagePack.MessagePackReader
+  langs:
+  - csharp
+  - vb
+  name: ReadSByte()
+  nameWithType: MessagePackReader.ReadSByte()
+  fullName: MessagePack.MessagePackReader.ReadSByte()
+  type: Method
+  assemblies:
+  - MessagePack
+  namespace: MessagePack
+  summary: >-
+    Reads an <xref href="System.SByte" data-throw-if-not-resolved="false"></xref> value from:
+
+    Some value between <xref href="MessagePack.MessagePackCode.MinNegativeFixInt" data-throw-if-not-resolved="false"></xref> and <xref href="MessagePack.MessagePackCode.MaxNegativeFixInt" data-throw-if-not-resolved="false"></xref>,
+
+    Some value between <xref href="MessagePack.MessagePackCode.MinFixInt" data-throw-if-not-resolved="false"></xref> and <xref href="MessagePack.MessagePackCode.MaxFixInt" data-throw-if-not-resolved="false"></xref>,
+
+    or any of the other MsgPack integer types.
+  example: []
+  syntax:
+    content: public sbyte ReadSByte()
+    return:
+      type: System.SByte
+      description: The value.
+    content.vb: Public Function ReadSByte() As SByte
+  overload: MessagePack.MessagePackReader.ReadSByte*
+  exceptions:
+  - type: System.OverflowException
+    commentId: T:System.OverflowException
+    description: Thrown when the value exceeds what can be stored in the returned type.
+- uid: MessagePack.MessagePackReader.ReadInt16
+  commentId: M:MessagePack.MessagePackReader.ReadInt16
+  id: ReadInt16
+  parent: MessagePack.MessagePackReader
+  langs:
+  - csharp
+  - vb
+  name: ReadInt16()
+  nameWithType: MessagePackReader.ReadInt16()
+  fullName: MessagePack.MessagePackReader.ReadInt16()
+  type: Method
+  assemblies:
+  - MessagePack
+  namespace: MessagePack
+  summary: >-
+    Reads an <xref href="System.Int16" data-throw-if-not-resolved="false"></xref> value from:
+
+    Some value between <xref href="MessagePack.MessagePackCode.MinNegativeFixInt" data-throw-if-not-resolved="false"></xref> and <xref href="MessagePack.MessagePackCode.MaxNegativeFixInt" data-throw-if-not-resolved="false"></xref>,
+
+    Some value between <xref href="MessagePack.MessagePackCode.MinFixInt" data-throw-if-not-resolved="false"></xref> and <xref href="MessagePack.MessagePackCode.MaxFixInt" data-throw-if-not-resolved="false"></xref>,
+
+    or any of the other MsgPack integer types.
+  example: []
+  syntax:
+    content: public short ReadInt16()
+    return:
+      type: System.Int16
+      description: The value.
+    content.vb: Public Function ReadInt16() As Short
+  overload: MessagePack.MessagePackReader.ReadInt16*
+  exceptions:
+  - type: System.OverflowException
+    commentId: T:System.OverflowException
+    description: Thrown when the value exceeds what can be stored in the returned type.
+- uid: MessagePack.MessagePackReader.ReadInt32
+  commentId: M:MessagePack.MessagePackReader.ReadInt32
+  id: ReadInt32
+  parent: MessagePack.MessagePackReader
+  langs:
+  - csharp
+  - vb
+  name: ReadInt32()
+  nameWithType: MessagePackReader.ReadInt32()
+  fullName: MessagePack.MessagePackReader.ReadInt32()
+  type: Method
+  assemblies:
+  - MessagePack
+  namespace: MessagePack
+  summary: >-
+    Reads an <xref href="System.Int32" data-throw-if-not-resolved="false"></xref> value from:
+
+    Some value between <xref href="MessagePack.MessagePackCode.MinNegativeFixInt" data-throw-if-not-resolved="false"></xref> and <xref href="MessagePack.MessagePackCode.MaxNegativeFixInt" data-throw-if-not-resolved="false"></xref>,
+
+    Some value between <xref href="MessagePack.MessagePackCode.MinFixInt" data-throw-if-not-resolved="false"></xref> and <xref href="MessagePack.MessagePackCode.MaxFixInt" data-throw-if-not-resolved="false"></xref>,
+
+    or any of the other MsgPack integer types.
+  example: []
+  syntax:
+    content: public int ReadInt32()
+    return:
+      type: System.Int32
+      description: The value.
+    content.vb: Public Function ReadInt32() As Integer
+  overload: MessagePack.MessagePackReader.ReadInt32*
+  exceptions:
+  - type: System.OverflowException
+    commentId: T:System.OverflowException
+    description: Thrown when the value exceeds what can be stored in the returned type.
+- uid: MessagePack.MessagePackReader.ReadInt64
+  commentId: M:MessagePack.MessagePackReader.ReadInt64
+  id: ReadInt64
+  parent: MessagePack.MessagePackReader
+  langs:
+  - csharp
+  - vb
+  name: ReadInt64()
+  nameWithType: MessagePackReader.ReadInt64()
+  fullName: MessagePack.MessagePackReader.ReadInt64()
+  type: Method
+  assemblies:
+  - MessagePack
+  namespace: MessagePack
+  summary: >-
+    Reads an <xref href="System.Int64" data-throw-if-not-resolved="false"></xref> value from:
+
+    Some value between <xref href="MessagePack.MessagePackCode.MinNegativeFixInt" data-throw-if-not-resolved="false"></xref> and <xref href="MessagePack.MessagePackCode.MaxNegativeFixInt" data-throw-if-not-resolved="false"></xref>,
+
+    Some value between <xref href="MessagePack.MessagePackCode.MinFixInt" data-throw-if-not-resolved="false"></xref> and <xref href="MessagePack.MessagePackCode.MaxFixInt" data-throw-if-not-resolved="false"></xref>,
+
+    or any of the other MsgPack integer types.
+  example: []
+  syntax:
+    content: public long ReadInt64()
+    return:
+      type: System.Int64
+      description: The value.
+    content.vb: Public Function ReadInt64() As Long
+  overload: MessagePack.MessagePackReader.ReadInt64*
+  exceptions:
+  - type: System.OverflowException
+    commentId: T:System.OverflowException
+    description: Thrown when the value exceeds what can be stored in the returned type.
+- uid: MessagePack.MessagePackReader.#ctor(System.ReadOnlyMemory{System.Byte})
+  commentId: M:MessagePack.MessagePackReader.#ctor(System.ReadOnlyMemory{System.Byte})
+  id: '#ctor(System.ReadOnlyMemory{System.Byte})'
+  parent: MessagePack.MessagePackReader
+  langs:
+  - csharp
+  - vb
+  name: MessagePackReader(ReadOnlyMemory<byte>)
+  nameWithType: MessagePackReader.MessagePackReader(ReadOnlyMemory<byte>)
+  fullName: MessagePack.MessagePackReader.MessagePackReader(System.ReadOnlyMemory<byte>)
+  type: Constructor
+  assemblies:
+  - MessagePack
+  namespace: MessagePack
+  summary: Initializes a new instance of the <xref href="MessagePack.MessagePackReader" data-throw-if-not-resolved="false"></xref> struct.
+  example: []
+  syntax:
+    content: public MessagePackReader(ReadOnlyMemory<byte> memory)
+    parameters:
+    - id: memory
+      type: System.ReadOnlyMemory{System.Byte}
+      description: The buffer to read from.
+    content.vb: Public Sub New(memory As ReadOnlyMemory(Of Byte))
+  overload: MessagePack.MessagePackReader.#ctor*
+  nameWithType.vb: MessagePackReader.New(ReadOnlyMemory(Of Byte))
+  fullName.vb: MessagePack.MessagePackReader.New(System.ReadOnlyMemory(Of Byte))
+  name.vb: New(ReadOnlyMemory(Of Byte))
+- uid: MessagePack.MessagePackReader.#ctor(System.Buffers.ReadOnlySequence{System.Byte}@)
+  commentId: M:MessagePack.MessagePackReader.#ctor(System.Buffers.ReadOnlySequence{System.Byte}@)
+  id: '#ctor(System.Buffers.ReadOnlySequence{System.Byte}@)'
+  parent: MessagePack.MessagePackReader
+  langs:
+  - csharp
+  - vb
+  name: MessagePackReader(in ReadOnlySequence<byte>)
+  nameWithType: MessagePackReader.MessagePackReader(in ReadOnlySequence<byte>)
+  fullName: MessagePack.MessagePackReader.MessagePackReader(in System.Buffers.ReadOnlySequence<byte>)
+  type: Constructor
+  assemblies:
+  - MessagePack
+  namespace: MessagePack
+  summary: Initializes a new instance of the <xref href="MessagePack.MessagePackReader" data-throw-if-not-resolved="false"></xref> struct.
+  example: []
+  syntax:
+    content: public MessagePackReader(in ReadOnlySequence<byte> readOnlySequence)
+    parameters:
+    - id: readOnlySequence
+      type: System.Buffers.ReadOnlySequence{System.Byte}
+      description: The sequence to read from.
+    content.vb: Public Sub New(readOnlySequence As ReadOnlySequence(Of Byte))
+  overload: MessagePack.MessagePackReader.#ctor*
+  nameWithType.vb: MessagePackReader.New(ReadOnlySequence(Of Byte))
+  fullName.vb: MessagePack.MessagePackReader.New(System.Buffers.ReadOnlySequence(Of Byte))
+  name.vb: New(ReadOnlySequence(Of Byte))
+- uid: MessagePack.MessagePackReader.Clone(System.Buffers.ReadOnlySequence{System.Byte}@)
+  commentId: M:MessagePack.MessagePackReader.Clone(System.Buffers.ReadOnlySequence{System.Byte}@)
+  id: Clone(System.Buffers.ReadOnlySequence{System.Byte}@)
+  parent: MessagePack.MessagePackReader
+  langs:
+  - csharp
+  - vb
+  name: Clone(in ReadOnlySequence<byte>)
+  nameWithType: MessagePackReader.Clone(in ReadOnlySequence<byte>)
+  fullName: MessagePack.MessagePackReader.Clone(in System.Buffers.ReadOnlySequence<byte>)
+  type: Method
+  assemblies:
+  - MessagePack
+  namespace: MessagePack
+  summary: >-
+    Initializes a new instance of the <xref href="MessagePack.MessagePackReader" data-throw-if-not-resolved="false"></xref> struct,
+
+    with the same settings as this one, but with its own buffer to read from.
+  example: []
+  syntax:
+    content: public MessagePackReader Clone(in ReadOnlySequence<byte> readOnlySequence)
+    parameters:
+    - id: readOnlySequence
+      type: System.Buffers.ReadOnlySequence{System.Byte}
+      description: The sequence to read from.
+    return:
+      type: MessagePack.MessagePackReader
+      description: The new reader.
+    content.vb: Public Function Clone(readOnlySequence As ReadOnlySequence(Of Byte)) As MessagePackReader
+  overload: MessagePack.MessagePackReader.Clone*
+  nameWithType.vb: MessagePackReader.Clone(ReadOnlySequence(Of Byte))
+  fullName.vb: MessagePack.MessagePackReader.Clone(System.Buffers.ReadOnlySequence(Of Byte))
+  name.vb: Clone(ReadOnlySequence(Of Byte))
+- uid: MessagePack.MessagePackReader.CreatePeekReader
+  commentId: M:MessagePack.MessagePackReader.CreatePeekReader
+  id: CreatePeekReader
+  parent: MessagePack.MessagePackReader
+  langs:
+  - csharp
+  - vb
+  name: CreatePeekReader()
+  nameWithType: MessagePackReader.CreatePeekReader()
+  fullName: MessagePack.MessagePackReader.CreatePeekReader()
+  type: Method
+  assemblies:
+  - MessagePack
+  namespace: MessagePack
+  summary: >-
+    Creates a new <xref href="MessagePack.MessagePackReader" data-throw-if-not-resolved="false"></xref> at this reader's current position.
+
+    The two readers may then be used independently without impacting each other.
+  example: []
+  syntax:
+    content: public MessagePackReader CreatePeekReader()
+    return:
+      type: MessagePack.MessagePackReader
+      description: A new <xref href="MessagePack.MessagePackReader" data-throw-if-not-resolved="false"></xref>.
+    content.vb: Public Function CreatePeekReader() As MessagePackReader
+  overload: MessagePack.MessagePackReader.CreatePeekReader*
+- uid: MessagePack.MessagePackReader.Skip
+  commentId: M:MessagePack.MessagePackReader.Skip
+  id: Skip
+  parent: MessagePack.MessagePackReader
+  langs:
+  - csharp
+  - vb
+  name: Skip()
+  nameWithType: MessagePackReader.Skip()
+  fullName: MessagePack.MessagePackReader.Skip()
+  type: Method
+  assemblies:
+  - MessagePack
+  namespace: MessagePack
+  summary: Advances the reader to the next MessagePack primitive to be read.
+  remarks: >-
+    The entire primitive is skipped, including content of maps or arrays, or any other type with payloads.
+
+    To get the raw MessagePack sequence that was skipped, use <xref href="MessagePack.MessagePackReader.ReadRaw" data-throw-if-not-resolved="false"></xref> instead.
+  example: []
+  syntax:
+    content: public void Skip()
+    content.vb: Public Sub Skip()
+  overload: MessagePack.MessagePackReader.Skip*
+- uid: MessagePack.MessagePackReader.ReadNil
+  commentId: M:MessagePack.MessagePackReader.ReadNil
+  id: ReadNil
+  parent: MessagePack.MessagePackReader
+  langs:
+  - csharp
+  - vb
+  name: ReadNil()
+  nameWithType: MessagePackReader.ReadNil()
+  fullName: MessagePack.MessagePackReader.ReadNil()
+  type: Method
+  assemblies:
+  - MessagePack
+  namespace: MessagePack
+  summary: Reads a <xref href="MessagePack.MessagePackCode.Nil" data-throw-if-not-resolved="false"></xref> value.
+  example: []
+  syntax:
+    content: public Nil ReadNil()
+    return:
+      type: MessagePack.Nil
+      description: A nil value.
+    content.vb: Public Function ReadNil() As Nil
+  overload: MessagePack.MessagePackReader.ReadNil*
+- uid: MessagePack.MessagePackReader.TryReadNil
+  commentId: M:MessagePack.MessagePackReader.TryReadNil
+  id: TryReadNil
+  parent: MessagePack.MessagePackReader
+  langs:
+  - csharp
+  - vb
+  name: TryReadNil()
+  nameWithType: MessagePackReader.TryReadNil()
+  fullName: MessagePack.MessagePackReader.TryReadNil()
+  type: Method
+  assemblies:
+  - MessagePack
+  namespace: MessagePack
+  summary: Reads nil if it is the next token.
+  example: []
+  syntax:
+    content: public bool TryReadNil()
+    return:
+      type: System.Boolean
+      description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the next token was nil; <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a> otherwise.
+    content.vb: Public Function TryReadNil() As Boolean
+  overload: MessagePack.MessagePackReader.TryReadNil*
+  exceptions:
+  - type: System.IO.EndOfStreamException
+    commentId: T:System.IO.EndOfStreamException
+    description: Thrown if the end of the sequence provided to the constructor is reached before the expected end of the data.
+- uid: MessagePack.MessagePackReader.ReadRaw(System.Int64)
+  commentId: M:MessagePack.MessagePackReader.ReadRaw(System.Int64)
+  id: ReadRaw(System.Int64)
+  parent: MessagePack.MessagePackReader
+  langs:
+  - csharp
+  - vb
+  name: ReadRaw(long)
+  nameWithType: MessagePackReader.ReadRaw(long)
+  fullName: MessagePack.MessagePackReader.ReadRaw(long)
+  type: Method
+  assemblies:
+  - MessagePack
+  namespace: MessagePack
+  summary: Reads a sequence of bytes without any decoding.
+  example: []
+  syntax:
+    content: public ReadOnlySequence<byte> ReadRaw(long length)
+    parameters:
+    - id: length
+      type: System.Int64
+      description: The number of bytes to read.
+    return:
+      type: System.Buffers.ReadOnlySequence{System.Byte}
+      description: The sequence of bytes read.
+    content.vb: Public Function ReadRaw(length As Long) As ReadOnlySequence(Of Byte)
+  overload: MessagePack.MessagePackReader.ReadRaw*
+  nameWithType.vb: MessagePackReader.ReadRaw(Long)
+  fullName.vb: MessagePack.MessagePackReader.ReadRaw(Long)
+  name.vb: ReadRaw(Long)
+- uid: MessagePack.MessagePackReader.ReadRaw
+  commentId: M:MessagePack.MessagePackReader.ReadRaw
+  id: ReadRaw
+  parent: MessagePack.MessagePackReader
+  langs:
+  - csharp
+  - vb
+  name: ReadRaw()
+  nameWithType: MessagePackReader.ReadRaw()
+  fullName: MessagePack.MessagePackReader.ReadRaw()
+  type: Method
+  assemblies:
+  - MessagePack
+  namespace: MessagePack
+  summary: Reads the next MessagePack primitive.
+  remarks: The entire primitive is read, including content of maps or arrays, or any other type with payloads.
+  example: []
+  syntax:
+    content: public ReadOnlySequence<byte> ReadRaw()
+    return:
+      type: System.Buffers.ReadOnlySequence{System.Byte}
+      description: The raw MessagePack sequence.
+    content.vb: Public Function ReadRaw() As ReadOnlySequence(Of Byte)
+  overload: MessagePack.MessagePackReader.ReadRaw*
+- uid: MessagePack.MessagePackReader.ReadArrayHeader
+  commentId: M:MessagePack.MessagePackReader.ReadArrayHeader
+  id: ReadArrayHeader
+  parent: MessagePack.MessagePackReader
+  langs:
+  - csharp
+  - vb
+  name: ReadArrayHeader()
+  nameWithType: MessagePackReader.ReadArrayHeader()
+  fullName: MessagePack.MessagePackReader.ReadArrayHeader()
+  type: Method
+  assemblies:
+  - MessagePack
+  namespace: MessagePack
+  summary: >-
+    Read an array header from
+
+    <xref href="MessagePack.MessagePackCode.Array16" data-throw-if-not-resolved="false"></xref>,
+
+    <xref href="MessagePack.MessagePackCode.Array32" data-throw-if-not-resolved="false"></xref>, or
+
+    some built-in code between <xref href="MessagePack.MessagePackCode.MinFixArray" data-throw-if-not-resolved="false"></xref> and <xref href="MessagePack.MessagePackCode.MaxFixArray" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public int ReadArrayHeader()
+    return:
+      type: System.Int32
+    content.vb: Public Function ReadArrayHeader() As Integer
+  overload: MessagePack.MessagePackReader.ReadArrayHeader*
+  exceptions:
+  - type: System.IO.EndOfStreamException
+    commentId: T:System.IO.EndOfStreamException
+    description: >-
+      Thrown if the header cannot be read in the bytes left in the <xref href="MessagePack.MessagePackReader.Sequence" data-throw-if-not-resolved="false"></xref>
+
+      or if it is clear that there are insufficient bytes remaining after the header to include all the elements the header claims to be there.
+  - type: MessagePack.MessagePackSerializationException
+    commentId: T:MessagePack.MessagePackSerializationException
+    description: Thrown if a code other than an array header is encountered.
+- uid: MessagePack.MessagePackReader.TryReadArrayHeader(System.Int32@)
+  commentId: M:MessagePack.MessagePackReader.TryReadArrayHeader(System.Int32@)
+  id: TryReadArrayHeader(System.Int32@)
+  parent: MessagePack.MessagePackReader
+  langs:
+  - csharp
+  - vb
+  name: TryReadArrayHeader(out int)
+  nameWithType: MessagePackReader.TryReadArrayHeader(out int)
+  fullName: MessagePack.MessagePackReader.TryReadArrayHeader(out int)
+  type: Method
+  assemblies:
+  - MessagePack
+  namespace: MessagePack
+  summary: >-
+    Reads an array header from
+
+    <xref href="MessagePack.MessagePackCode.Array16" data-throw-if-not-resolved="false"></xref>,
+
+    <xref href="MessagePack.MessagePackCode.Array32" data-throw-if-not-resolved="false"></xref>, or
+
+    some built-in code between <xref href="MessagePack.MessagePackCode.MinFixArray" data-throw-if-not-resolved="false"></xref> and <xref href="MessagePack.MessagePackCode.MaxFixArray" data-throw-if-not-resolved="false"></xref>
+
+    if there is sufficient buffer to read it.
+  remarks: >-
+    When this method returns <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a> the position of the reader is left in an undefined position.
+
+    The caller is expected to recreate the reader (presumably with a longer sequence to read from) before continuing.
+  example: []
+  syntax:
+    content: public bool TryReadArrayHeader(out int count)
+    parameters:
+    - id: count
+      type: System.Int32
+      description: Receives the number of elements in the array if the entire array header could be read.
+    return:
+      type: System.Boolean
+      description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if there was sufficient buffer and an array header was found; <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a> if the buffer incompletely describes an array header.
+    content.vb: Public Function TryReadArrayHeader(count As Integer) As Boolean
+  overload: MessagePack.MessagePackReader.TryReadArrayHeader*
+  exceptions:
+  - type: MessagePack.MessagePackSerializationException
+    commentId: T:MessagePack.MessagePackSerializationException
+    description: Thrown if a code other than an array header is encountered.
+  nameWithType.vb: MessagePackReader.TryReadArrayHeader(Integer)
+  fullName.vb: MessagePack.MessagePackReader.TryReadArrayHeader(Integer)
+  name.vb: TryReadArrayHeader(Integer)
+- uid: MessagePack.MessagePackReader.ReadMapHeader
+  commentId: M:MessagePack.MessagePackReader.ReadMapHeader
+  id: ReadMapHeader
+  parent: MessagePack.MessagePackReader
+  langs:
+  - csharp
+  - vb
+  name: ReadMapHeader()
+  nameWithType: MessagePackReader.ReadMapHeader()
+  fullName: MessagePack.MessagePackReader.ReadMapHeader()
+  type: Method
+  assemblies:
+  - MessagePack
+  namespace: MessagePack
+  summary: >-
+    Read a map header from
+
+    <xref href="MessagePack.MessagePackCode.Map16" data-throw-if-not-resolved="false"></xref>,
+
+    <xref href="MessagePack.MessagePackCode.Map32" data-throw-if-not-resolved="false"></xref>, or
+
+    some built-in code between <xref href="MessagePack.MessagePackCode.MinFixMap" data-throw-if-not-resolved="false"></xref> and <xref href="MessagePack.MessagePackCode.MaxFixMap" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public int ReadMapHeader()
+    return:
+      type: System.Int32
+      description: The number of key=value pairs in the map.
+    content.vb: Public Function ReadMapHeader() As Integer
+  overload: MessagePack.MessagePackReader.ReadMapHeader*
+  exceptions:
+  - type: System.IO.EndOfStreamException
+    commentId: T:System.IO.EndOfStreamException
+    description: >-
+      Thrown if the header cannot be read in the bytes left in the <xref href="MessagePack.MessagePackReader.Sequence" data-throw-if-not-resolved="false"></xref>
+
+      or if it is clear that there are insufficient bytes remaining after the header to include all the elements the header claims to be there.
+  - type: MessagePack.MessagePackSerializationException
+    commentId: T:MessagePack.MessagePackSerializationException
+    description: Thrown if a code other than an map header is encountered.
+- uid: MessagePack.MessagePackReader.TryReadMapHeader(System.Int32@)
+  commentId: M:MessagePack.MessagePackReader.TryReadMapHeader(System.Int32@)
+  id: TryReadMapHeader(System.Int32@)
+  parent: MessagePack.MessagePackReader
+  langs:
+  - csharp
+  - vb
+  name: TryReadMapHeader(out int)
+  nameWithType: MessagePackReader.TryReadMapHeader(out int)
+  fullName: MessagePack.MessagePackReader.TryReadMapHeader(out int)
+  type: Method
+  assemblies:
+  - MessagePack
+  namespace: MessagePack
+  summary: >-
+    Reads a map header from
+
+    <xref href="MessagePack.MessagePackCode.Map16" data-throw-if-not-resolved="false"></xref>,
+
+    <xref href="MessagePack.MessagePackCode.Map32" data-throw-if-not-resolved="false"></xref>, or
+
+    some built-in code between <xref href="MessagePack.MessagePackCode.MinFixMap" data-throw-if-not-resolved="false"></xref> and <xref href="MessagePack.MessagePackCode.MaxFixMap" data-throw-if-not-resolved="false"></xref>
+
+    if there is sufficient buffer to read it.
+  remarks: >-
+    When this method returns <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a> the position of the reader is left in an undefined position.
+
+    The caller is expected to recreate the reader (presumably with a longer sequence to read from) before continuing.
+  example: []
+  syntax:
+    content: public bool TryReadMapHeader(out int count)
+    parameters:
+    - id: count
+      type: System.Int32
+      description: Receives the number of key=value pairs in the map if the entire map header can be read.
+    return:
+      type: System.Boolean
+      description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if there was sufficient buffer and a map header was found; <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a> if the buffer incompletely describes an map header.
+    content.vb: Public Function TryReadMapHeader(count As Integer) As Boolean
+  overload: MessagePack.MessagePackReader.TryReadMapHeader*
+  exceptions:
+  - type: MessagePack.MessagePackSerializationException
+    commentId: T:MessagePack.MessagePackSerializationException
+    description: Thrown if a code other than an map header is encountered.
+  nameWithType.vb: MessagePackReader.TryReadMapHeader(Integer)
+  fullName.vb: MessagePack.MessagePackReader.TryReadMapHeader(Integer)
+  name.vb: TryReadMapHeader(Integer)
+- uid: MessagePack.MessagePackReader.ReadBoolean
+  commentId: M:MessagePack.MessagePackReader.ReadBoolean
+  id: ReadBoolean
+  parent: MessagePack.MessagePackReader
+  langs:
+  - csharp
+  - vb
+  name: ReadBoolean()
+  nameWithType: MessagePackReader.ReadBoolean()
+  fullName: MessagePack.MessagePackReader.ReadBoolean()
+  type: Method
+  assemblies:
+  - MessagePack
+  namespace: MessagePack
+  summary: Reads a boolean value from either a <xref href="MessagePack.MessagePackCode.False" data-throw-if-not-resolved="false"></xref> or <xref href="MessagePack.MessagePackCode.True" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public bool ReadBoolean()
+    return:
+      type: System.Boolean
+      description: The value.
+    content.vb: Public Function ReadBoolean() As Boolean
+  overload: MessagePack.MessagePackReader.ReadBoolean*
+- uid: MessagePack.MessagePackReader.ReadChar
+  commentId: M:MessagePack.MessagePackReader.ReadChar
+  id: ReadChar
+  parent: MessagePack.MessagePackReader
+  langs:
+  - csharp
+  - vb
+  name: ReadChar()
+  nameWithType: MessagePackReader.ReadChar()
+  fullName: MessagePack.MessagePackReader.ReadChar()
+  type: Method
+  assemblies:
+  - MessagePack
+  namespace: MessagePack
+  summary: >-
+    Reads a <xref href="System.Char" data-throw-if-not-resolved="false"></xref> from any of:
+
+    <xref href="MessagePack.MessagePackCode.UInt8" data-throw-if-not-resolved="false"></xref>,
+
+    <xref href="MessagePack.MessagePackCode.UInt16" data-throw-if-not-resolved="false"></xref>,
+
+    or anything between <xref href="MessagePack.MessagePackCode.MinFixInt" data-throw-if-not-resolved="false"></xref> and <xref href="MessagePack.MessagePackCode.MaxFixInt" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public char ReadChar()
+    return:
+      type: System.Char
+      description: A character.
+    content.vb: Public Function ReadChar() As Char
+  overload: MessagePack.MessagePackReader.ReadChar*
+- uid: MessagePack.MessagePackReader.ReadSingle
+  commentId: M:MessagePack.MessagePackReader.ReadSingle
+  id: ReadSingle
+  parent: MessagePack.MessagePackReader
+  langs:
+  - csharp
+  - vb
+  name: ReadSingle()
+  nameWithType: MessagePackReader.ReadSingle()
+  fullName: MessagePack.MessagePackReader.ReadSingle()
+  type: Method
+  assemblies:
+  - MessagePack
+  namespace: MessagePack
+  summary: >-
+    Reads an <xref href="System.Single" data-throw-if-not-resolved="false"></xref> value from any value encoded with:
+
+    <xref href="MessagePack.MessagePackCode.Float32" data-throw-if-not-resolved="false"></xref>,
+
+    <xref href="MessagePack.MessagePackCode.Int8" data-throw-if-not-resolved="false"></xref>,
+
+    <xref href="MessagePack.MessagePackCode.Int16" data-throw-if-not-resolved="false"></xref>,
+
+    <xref href="MessagePack.MessagePackCode.Int32" data-throw-if-not-resolved="false"></xref>,
+
+    <xref href="MessagePack.MessagePackCode.Int64" data-throw-if-not-resolved="false"></xref>,
+
+    <xref href="MessagePack.MessagePackCode.UInt8" data-throw-if-not-resolved="false"></xref>,
+
+    <xref href="MessagePack.MessagePackCode.UInt16" data-throw-if-not-resolved="false"></xref>,
+
+    <xref href="MessagePack.MessagePackCode.UInt32" data-throw-if-not-resolved="false"></xref>,
+
+    <xref href="MessagePack.MessagePackCode.UInt64" data-throw-if-not-resolved="false"></xref>,
+
+    or some value between <xref href="MessagePack.MessagePackCode.MinNegativeFixInt" data-throw-if-not-resolved="false"></xref> and <xref href="MessagePack.MessagePackCode.MaxNegativeFixInt" data-throw-if-not-resolved="false"></xref>,
+
+    or some value between <xref href="MessagePack.MessagePackCode.MinFixInt" data-throw-if-not-resolved="false"></xref> and <xref href="MessagePack.MessagePackCode.MaxFixInt" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public float ReadSingle()
+    return:
+      type: System.Single
+      description: The value.
+    content.vb: Public Function ReadSingle() As Single
+  overload: MessagePack.MessagePackReader.ReadSingle*
+- uid: MessagePack.MessagePackReader.ReadDouble
+  commentId: M:MessagePack.MessagePackReader.ReadDouble
+  id: ReadDouble
+  parent: MessagePack.MessagePackReader
+  langs:
+  - csharp
+  - vb
+  name: ReadDouble()
+  nameWithType: MessagePackReader.ReadDouble()
+  fullName: MessagePack.MessagePackReader.ReadDouble()
+  type: Method
+  assemblies:
+  - MessagePack
+  namespace: MessagePack
+  summary: >-
+    Reads an <xref href="System.Double" data-throw-if-not-resolved="false"></xref> value from any value encoded with:
+
+    <xref href="MessagePack.MessagePackCode.Float64" data-throw-if-not-resolved="false"></xref>,
+
+    <xref href="MessagePack.MessagePackCode.Float32" data-throw-if-not-resolved="false"></xref>,
+
+    <xref href="MessagePack.MessagePackCode.Int8" data-throw-if-not-resolved="false"></xref>,
+
+    <xref href="MessagePack.MessagePackCode.Int16" data-throw-if-not-resolved="false"></xref>,
+
+    <xref href="MessagePack.MessagePackCode.Int32" data-throw-if-not-resolved="false"></xref>,
+
+    <xref href="MessagePack.MessagePackCode.Int64" data-throw-if-not-resolved="false"></xref>,
+
+    <xref href="MessagePack.MessagePackCode.UInt8" data-throw-if-not-resolved="false"></xref>,
+
+    <xref href="MessagePack.MessagePackCode.UInt16" data-throw-if-not-resolved="false"></xref>,
+
+    <xref href="MessagePack.MessagePackCode.UInt32" data-throw-if-not-resolved="false"></xref>,
+
+    <xref href="MessagePack.MessagePackCode.UInt64" data-throw-if-not-resolved="false"></xref>,
+
+    or some value between <xref href="MessagePack.MessagePackCode.MinNegativeFixInt" data-throw-if-not-resolved="false"></xref> and <xref href="MessagePack.MessagePackCode.MaxNegativeFixInt" data-throw-if-not-resolved="false"></xref>,
+
+    or some value between <xref href="MessagePack.MessagePackCode.MinFixInt" data-throw-if-not-resolved="false"></xref> and <xref href="MessagePack.MessagePackCode.MaxFixInt" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public double ReadDouble()
+    return:
+      type: System.Double
+      description: The value.
+    content.vb: Public Function ReadDouble() As Double
+  overload: MessagePack.MessagePackReader.ReadDouble*
+- uid: MessagePack.MessagePackReader.ReadDateTime
+  commentId: M:MessagePack.MessagePackReader.ReadDateTime
+  id: ReadDateTime
+  parent: MessagePack.MessagePackReader
+  langs:
+  - csharp
+  - vb
+  name: ReadDateTime()
+  nameWithType: MessagePackReader.ReadDateTime()
+  fullName: MessagePack.MessagePackReader.ReadDateTime()
+  type: Method
+  assemblies:
+  - MessagePack
+  namespace: MessagePack
+  summary: >-
+    Reads a <xref href="System.DateTime" data-throw-if-not-resolved="false"></xref> from a value encoded with
+
+    <xref href="MessagePack.MessagePackCode.FixExt4" data-throw-if-not-resolved="false"></xref>,
+
+    <xref href="MessagePack.MessagePackCode.FixExt8" data-throw-if-not-resolved="false"></xref>, or
+
+    <xref href="MessagePack.MessagePackCode.Ext8" data-throw-if-not-resolved="false"></xref>.
+
+    Expects extension type code <xref href="MessagePack.ReservedMessagePackExtensionTypeCode.DateTime" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public DateTime ReadDateTime()
+    return:
+      type: System.DateTime
+      description: The value.
+    content.vb: Public Function ReadDateTime() As Date
+  overload: MessagePack.MessagePackReader.ReadDateTime*
+- uid: MessagePack.MessagePackReader.ReadDateTime(MessagePack.ExtensionHeader)
+  commentId: M:MessagePack.MessagePackReader.ReadDateTime(MessagePack.ExtensionHeader)
+  id: ReadDateTime(MessagePack.ExtensionHeader)
+  parent: MessagePack.MessagePackReader
+  langs:
+  - csharp
+  - vb
+  name: ReadDateTime(ExtensionHeader)
+  nameWithType: MessagePackReader.ReadDateTime(ExtensionHeader)
+  fullName: MessagePack.MessagePackReader.ReadDateTime(MessagePack.ExtensionHeader)
+  type: Method
+  assemblies:
+  - MessagePack
+  namespace: MessagePack
+  summary: >-
+    Reads a <xref href="System.DateTime" data-throw-if-not-resolved="false"></xref> from a value encoded with
+
+    <xref href="MessagePack.MessagePackCode.FixExt4" data-throw-if-not-resolved="false"></xref>,
+
+    <xref href="MessagePack.MessagePackCode.FixExt8" data-throw-if-not-resolved="false"></xref>,
+
+    <xref href="MessagePack.MessagePackCode.Ext8" data-throw-if-not-resolved="false"></xref>.
+
+    Expects extension type code <xref href="MessagePack.ReservedMessagePackExtensionTypeCode.DateTime" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public DateTime ReadDateTime(ExtensionHeader header)
+    parameters:
+    - id: header
+      type: MessagePack.ExtensionHeader
+      description: The extension header that was already read.
+    return:
+      type: System.DateTime
+      description: The value.
+    content.vb: Public Function ReadDateTime(header As ExtensionHeader) As Date
+  overload: MessagePack.MessagePackReader.ReadDateTime*
+- uid: MessagePack.MessagePackReader.ReadBytes
+  commentId: M:MessagePack.MessagePackReader.ReadBytes
+  id: ReadBytes
+  parent: MessagePack.MessagePackReader
+  langs:
+  - csharp
+  - vb
+  name: ReadBytes()
+  nameWithType: MessagePackReader.ReadBytes()
+  fullName: MessagePack.MessagePackReader.ReadBytes()
+  type: Method
+  assemblies:
+  - MessagePack
+  namespace: MessagePack
+  summary: >-
+    Reads a span of bytes, whose length is determined by a header of one of these types:
+
+    <xref href="MessagePack.MessagePackCode.Bin8" data-throw-if-not-resolved="false"></xref>,
+
+    <xref href="MessagePack.MessagePackCode.Bin16" data-throw-if-not-resolved="false"></xref>,
+
+    <xref href="MessagePack.MessagePackCode.Bin32" data-throw-if-not-resolved="false"></xref>,
+
+    or to support OldSpec compatibility:
+
+    <xref href="MessagePack.MessagePackCode.Str16" data-throw-if-not-resolved="false"></xref>,
+
+    <xref href="MessagePack.MessagePackCode.Str32" data-throw-if-not-resolved="false"></xref>,
+
+    or something between <xref href="MessagePack.MessagePackCode.MinFixStr" data-throw-if-not-resolved="false"></xref> and <xref href="MessagePack.MessagePackCode.MaxFixStr" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public ReadOnlySequence<byte>? ReadBytes()
+    return:
+      type: System.Nullable{System.Buffers.ReadOnlySequence{System.Byte}}
+      description: >-
+        A sequence of bytes, or <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> if the read token is <xref href="MessagePack.MessagePackCode.Nil" data-throw-if-not-resolved="false"></xref>.
+
+        The data is a slice from the original sequence passed to this reader's constructor.
+    content.vb: Public Function ReadBytes() As ReadOnlySequence(Of Byte)?
+  overload: MessagePack.MessagePackReader.ReadBytes*
+- uid: MessagePack.MessagePackReader.ReadStringSequence
+  commentId: M:MessagePack.MessagePackReader.ReadStringSequence
+  id: ReadStringSequence
+  parent: MessagePack.MessagePackReader
+  langs:
+  - csharp
+  - vb
+  name: ReadStringSequence()
+  nameWithType: MessagePackReader.ReadStringSequence()
+  fullName: MessagePack.MessagePackReader.ReadStringSequence()
+  type: Method
+  assemblies:
+  - MessagePack
+  namespace: MessagePack
+  summary: >-
+    Reads a string of bytes, whose length is determined by a header of one of these types:
+
+    <xref href="MessagePack.MessagePackCode.Str8" data-throw-if-not-resolved="false"></xref>,
+
+    <xref href="MessagePack.MessagePackCode.Str16" data-throw-if-not-resolved="false"></xref>,
+
+    <xref href="MessagePack.MessagePackCode.Str32" data-throw-if-not-resolved="false"></xref>,
+
+    or a code between <xref href="MessagePack.MessagePackCode.MinFixStr" data-throw-if-not-resolved="false"></xref> and <xref href="MessagePack.MessagePackCode.MaxFixStr" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public ReadOnlySequence<byte>? ReadStringSequence()
+    return:
+      type: System.Nullable{System.Buffers.ReadOnlySequence{System.Byte}}
+      description: >-
+        The sequence of bytes, or <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> if the read token is <xref href="MessagePack.MessagePackCode.Nil" data-throw-if-not-resolved="false"></xref>.
+
+        The data is a slice from the original sequence passed to this reader's constructor.
+    content.vb: Public Function ReadStringSequence() As ReadOnlySequence(Of Byte)?
+  overload: MessagePack.MessagePackReader.ReadStringSequence*
+- uid: MessagePack.MessagePackReader.TryReadStringSpan(System.ReadOnlySpan{System.Byte}@)
+  commentId: M:MessagePack.MessagePackReader.TryReadStringSpan(System.ReadOnlySpan{System.Byte}@)
+  id: TryReadStringSpan(System.ReadOnlySpan{System.Byte}@)
+  parent: MessagePack.MessagePackReader
+  langs:
+  - csharp
+  - vb
+  name: TryReadStringSpan(out ReadOnlySpan<byte>)
+  nameWithType: MessagePackReader.TryReadStringSpan(out ReadOnlySpan<byte>)
+  fullName: MessagePack.MessagePackReader.TryReadStringSpan(out System.ReadOnlySpan<byte>)
+  type: Method
+  assemblies:
+  - MessagePack
+  namespace: MessagePack
+  summary: >-
+    Reads a string of bytes, whose length is determined by a header of one of these types:
+
+    <xref href="MessagePack.MessagePackCode.Str8" data-throw-if-not-resolved="false"></xref>,
+
+    <xref href="MessagePack.MessagePackCode.Str16" data-throw-if-not-resolved="false"></xref>,
+
+    <xref href="MessagePack.MessagePackCode.Str32" data-throw-if-not-resolved="false"></xref>,
+
+    or a code between <xref href="MessagePack.MessagePackCode.MinFixStr" data-throw-if-not-resolved="false"></xref> and <xref href="MessagePack.MessagePackCode.MaxFixStr" data-throw-if-not-resolved="false"></xref>.
+  remarks: >-
+    Callers should generally be prepared for a <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a> result and failover to calling <xref href="MessagePack.MessagePackReader.ReadStringSequence" data-throw-if-not-resolved="false"></xref>
+
+    which can represent a <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> result and handle strings that are not contiguous in memory.
+  example: []
+  syntax:
+    content: public bool TryReadStringSpan(out ReadOnlySpan<byte> span)
+    parameters:
+    - id: span
+      type: System.ReadOnlySpan{System.Byte}
+      description: Receives the span to the string.
+    return:
+      type: System.Boolean
+      description: >-
+        <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the string is contiguous in memory such that it could be set as a single span.
+                <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a> if the read token is <xref href="MessagePack.MessagePackCode.Nil" data-throw-if-not-resolved="false"></xref> or the string is not in a contiguous span.
+    content.vb: Public Function TryReadStringSpan(span As ReadOnlySpan(Of Byte)) As Boolean
+  overload: MessagePack.MessagePackReader.TryReadStringSpan*
+  nameWithType.vb: MessagePackReader.TryReadStringSpan(ReadOnlySpan(Of Byte))
+  fullName.vb: MessagePack.MessagePackReader.TryReadStringSpan(System.ReadOnlySpan(Of Byte))
+  name.vb: TryReadStringSpan(ReadOnlySpan(Of Byte))
+- uid: MessagePack.MessagePackReader.ReadString
+  commentId: M:MessagePack.MessagePackReader.ReadString
+  id: ReadString
+  parent: MessagePack.MessagePackReader
+  langs:
+  - csharp
+  - vb
+  name: ReadString()
+  nameWithType: MessagePackReader.ReadString()
+  fullName: MessagePack.MessagePackReader.ReadString()
+  type: Method
+  assemblies:
+  - MessagePack
+  namespace: MessagePack
+  summary: >-
+    Reads a string, whose length is determined by a header of one of these types:
+
+    <xref href="MessagePack.MessagePackCode.Str8" data-throw-if-not-resolved="false"></xref>,
+
+    <xref href="MessagePack.MessagePackCode.Str16" data-throw-if-not-resolved="false"></xref>,
+
+    <xref href="MessagePack.MessagePackCode.Str32" data-throw-if-not-resolved="false"></xref>,
+
+    or a code between <xref href="MessagePack.MessagePackCode.MinFixStr" data-throw-if-not-resolved="false"></xref> and <xref href="MessagePack.MessagePackCode.MaxFixStr" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public string? ReadString()
+    return:
+      type: System.String
+      description: A string, or <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> if the current msgpack token is <xref href="MessagePack.MessagePackCode.Nil" data-throw-if-not-resolved="false"></xref>.
+    content.vb: Public Function ReadString() As String
+  overload: MessagePack.MessagePackReader.ReadString*
+- uid: MessagePack.MessagePackReader.ReadExtensionFormatHeader
+  commentId: M:MessagePack.MessagePackReader.ReadExtensionFormatHeader
+  id: ReadExtensionFormatHeader
+  parent: MessagePack.MessagePackReader
+  langs:
+  - csharp
+  - vb
+  name: ReadExtensionFormatHeader()
+  nameWithType: MessagePackReader.ReadExtensionFormatHeader()
+  fullName: MessagePack.MessagePackReader.ReadExtensionFormatHeader()
+  type: Method
+  assemblies:
+  - MessagePack
+  namespace: MessagePack
+  summary: >-
+    Reads an extension format header, based on one of these codes:
+
+    <xref href="MessagePack.MessagePackCode.FixExt1" data-throw-if-not-resolved="false"></xref>,
+
+    <xref href="MessagePack.MessagePackCode.FixExt2" data-throw-if-not-resolved="false"></xref>,
+
+    <xref href="MessagePack.MessagePackCode.FixExt4" data-throw-if-not-resolved="false"></xref>,
+
+    <xref href="MessagePack.MessagePackCode.FixExt8" data-throw-if-not-resolved="false"></xref>,
+
+    <xref href="MessagePack.MessagePackCode.FixExt16" data-throw-if-not-resolved="false"></xref>,
+
+    <xref href="MessagePack.MessagePackCode.Ext8" data-throw-if-not-resolved="false"></xref>,
+
+    <xref href="MessagePack.MessagePackCode.Ext16" data-throw-if-not-resolved="false"></xref>, or
+
+    <xref href="MessagePack.MessagePackCode.Ext32" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public ExtensionHeader ReadExtensionFormatHeader()
+    return:
+      type: MessagePack.ExtensionHeader
+      description: The extension header.
+    content.vb: Public Function ReadExtensionFormatHeader() As ExtensionHeader
+  overload: MessagePack.MessagePackReader.ReadExtensionFormatHeader*
+  exceptions:
+  - type: System.IO.EndOfStreamException
+    commentId: T:System.IO.EndOfStreamException
+    description: >-
+      Thrown if the header cannot be read in the bytes left in the <xref href="MessagePack.MessagePackReader.Sequence" data-throw-if-not-resolved="false"></xref>
+
+      or if it is clear that there are insufficient bytes remaining after the header to include all the bytes the header claims to be there.
+  - type: MessagePack.MessagePackSerializationException
+    commentId: T:MessagePack.MessagePackSerializationException
+    description: Thrown if a code other than an extension format header is encountered.
+- uid: MessagePack.MessagePackReader.TryReadExtensionFormatHeader(MessagePack.ExtensionHeader@)
+  commentId: M:MessagePack.MessagePackReader.TryReadExtensionFormatHeader(MessagePack.ExtensionHeader@)
+  id: TryReadExtensionFormatHeader(MessagePack.ExtensionHeader@)
+  parent: MessagePack.MessagePackReader
+  langs:
+  - csharp
+  - vb
+  name: TryReadExtensionFormatHeader(out ExtensionHeader)
+  nameWithType: MessagePackReader.TryReadExtensionFormatHeader(out ExtensionHeader)
+  fullName: MessagePack.MessagePackReader.TryReadExtensionFormatHeader(out MessagePack.ExtensionHeader)
+  type: Method
+  assemblies:
+  - MessagePack
+  namespace: MessagePack
+  summary: >-
+    Reads an extension format header, based on one of these codes:
+
+    <xref href="MessagePack.MessagePackCode.FixExt1" data-throw-if-not-resolved="false"></xref>,
+
+    <xref href="MessagePack.MessagePackCode.FixExt2" data-throw-if-not-resolved="false"></xref>,
+
+    <xref href="MessagePack.MessagePackCode.FixExt4" data-throw-if-not-resolved="false"></xref>,
+
+    <xref href="MessagePack.MessagePackCode.FixExt8" data-throw-if-not-resolved="false"></xref>,
+
+    <xref href="MessagePack.MessagePackCode.FixExt16" data-throw-if-not-resolved="false"></xref>,
+
+    <xref href="MessagePack.MessagePackCode.Ext8" data-throw-if-not-resolved="false"></xref>,
+
+    <xref href="MessagePack.MessagePackCode.Ext16" data-throw-if-not-resolved="false"></xref>, or
+
+    <xref href="MessagePack.MessagePackCode.Ext32" data-throw-if-not-resolved="false"></xref>
+
+    if there is sufficient buffer to read it.
+  remarks: >-
+    When this method returns <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a> the position of the reader is left in an undefined position.
+
+    The caller is expected to recreate the reader (presumably with a longer sequence to read from) before continuing.
+  example: []
+  syntax:
+    content: public bool TryReadExtensionFormatHeader(out ExtensionHeader extensionHeader)
+    parameters:
+    - id: extensionHeader
+      type: MessagePack.ExtensionHeader
+      description: Receives the extension header if the remaining bytes in the <xref href="MessagePack.MessagePackReader.Sequence" data-throw-if-not-resolved="false"></xref> fully describe the header.
+    return:
+      type: System.Boolean
+      description: The number of key=value pairs in the map.
+    content.vb: Public Function TryReadExtensionFormatHeader(extensionHeader As ExtensionHeader) As Boolean
+  overload: MessagePack.MessagePackReader.TryReadExtensionFormatHeader*
+  exceptions:
+  - type: MessagePack.MessagePackSerializationException
+    commentId: T:MessagePack.MessagePackSerializationException
+    description: Thrown if a code other than an extension format header is encountered.
+  nameWithType.vb: MessagePackReader.TryReadExtensionFormatHeader(ExtensionHeader)
+  fullName.vb: MessagePack.MessagePackReader.TryReadExtensionFormatHeader(MessagePack.ExtensionHeader)
+  name.vb: TryReadExtensionFormatHeader(ExtensionHeader)
+- uid: MessagePack.MessagePackReader.ReadExtensionFormat
+  commentId: M:MessagePack.MessagePackReader.ReadExtensionFormat
+  id: ReadExtensionFormat
+  parent: MessagePack.MessagePackReader
+  langs:
+  - csharp
+  - vb
+  name: ReadExtensionFormat()
+  nameWithType: MessagePackReader.ReadExtensionFormat()
+  fullName: MessagePack.MessagePackReader.ReadExtensionFormat()
+  type: Method
+  assemblies:
+  - MessagePack
+  namespace: MessagePack
+  summary: >-
+    Reads an extension format header and data, based on one of these codes:
+
+    <xref href="MessagePack.MessagePackCode.FixExt1" data-throw-if-not-resolved="false"></xref>,
+
+    <xref href="MessagePack.MessagePackCode.FixExt2" data-throw-if-not-resolved="false"></xref>,
+
+    <xref href="MessagePack.MessagePackCode.FixExt4" data-throw-if-not-resolved="false"></xref>,
+
+    <xref href="MessagePack.MessagePackCode.FixExt8" data-throw-if-not-resolved="false"></xref>,
+
+    <xref href="MessagePack.MessagePackCode.FixExt16" data-throw-if-not-resolved="false"></xref>,
+
+    <xref href="MessagePack.MessagePackCode.Ext8" data-throw-if-not-resolved="false"></xref>,
+
+    <xref href="MessagePack.MessagePackCode.Ext16" data-throw-if-not-resolved="false"></xref>, or
+
+    <xref href="MessagePack.MessagePackCode.Ext32" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public ExtensionResult ReadExtensionFormat()
+    return:
+      type: MessagePack.ExtensionResult
+      description: >-
+        The extension format.
+
+        The data is a slice from the original sequence passed to this reader's constructor.
+    content.vb: Public Function ReadExtensionFormat() As ExtensionResult
+  overload: MessagePack.MessagePackReader.ReadExtensionFormat*
+- uid: MessagePack.MessagePackReader.CancellationToken
+  commentId: P:MessagePack.MessagePackReader.CancellationToken
+  id: CancellationToken
+  parent: MessagePack.MessagePackReader
+  langs:
+  - csharp
+  - vb
+  name: CancellationToken
+  nameWithType: MessagePackReader.CancellationToken
+  fullName: MessagePack.MessagePackReader.CancellationToken
+  type: Property
+  assemblies:
+  - MessagePack
+  namespace: MessagePack
+  summary: Gets or sets the cancellation token for this deserialization operation.
+  example: []
+  syntax:
+    content: public CancellationToken CancellationToken { readonly get; set; }
+    parameters: []
+    return:
+      type: System.Threading.CancellationToken
+    content.vb: Public Property CancellationToken As CancellationToken
+  overload: MessagePack.MessagePackReader.CancellationToken*
+- uid: MessagePack.MessagePackReader.Depth
+  commentId: P:MessagePack.MessagePackReader.Depth
+  id: Depth
+  parent: MessagePack.MessagePackReader
+  langs:
+  - csharp
+  - vb
+  name: Depth
+  nameWithType: MessagePackReader.Depth
+  fullName: MessagePack.MessagePackReader.Depth
+  type: Property
+  assemblies:
+  - MessagePack
+  namespace: MessagePack
+  summary: Gets or sets the present depth of the object graph being deserialized.
+  example: []
+  syntax:
+    content: public int Depth { readonly get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property Depth As Integer
+  overload: MessagePack.MessagePackReader.Depth*
+- uid: MessagePack.MessagePackReader.Sequence
+  commentId: P:MessagePack.MessagePackReader.Sequence
+  id: Sequence
+  parent: MessagePack.MessagePackReader
+  langs:
+  - csharp
+  - vb
+  name: Sequence
+  nameWithType: MessagePackReader.Sequence
+  fullName: MessagePack.MessagePackReader.Sequence
+  type: Property
+  assemblies:
+  - MessagePack
+  namespace: MessagePack
+  summary: Gets the <xref href="System.Buffers.ReadOnlySequence%601" data-throw-if-not-resolved="false"></xref> originally supplied to the constructor.
+  example: []
+  syntax:
+    content: public ReadOnlySequence<byte> Sequence { get; }
+    parameters: []
+    return:
+      type: System.Buffers.ReadOnlySequence{System.Byte}
+    content.vb: Public ReadOnly Property Sequence As ReadOnlySequence(Of Byte)
+  overload: MessagePack.MessagePackReader.Sequence*
+- uid: MessagePack.MessagePackReader.Position
+  commentId: P:MessagePack.MessagePackReader.Position
+  id: Position
+  parent: MessagePack.MessagePackReader
+  langs:
+  - csharp
+  - vb
+  name: Position
+  nameWithType: MessagePackReader.Position
+  fullName: MessagePack.MessagePackReader.Position
+  type: Property
+  assemblies:
+  - MessagePack
+  namespace: MessagePack
+  summary: Gets the current position of the reader within <xref href="MessagePack.MessagePackReader.Sequence" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public SequencePosition Position { get; }
+    parameters: []
+    return:
+      type: System.SequencePosition
+    content.vb: Public ReadOnly Property Position As SequencePosition
+  overload: MessagePack.MessagePackReader.Position*
+- uid: MessagePack.MessagePackReader.Consumed
+  commentId: P:MessagePack.MessagePackReader.Consumed
+  id: Consumed
+  parent: MessagePack.MessagePackReader
+  langs:
+  - csharp
+  - vb
+  name: Consumed
+  nameWithType: MessagePackReader.Consumed
+  fullName: MessagePack.MessagePackReader.Consumed
+  type: Property
+  assemblies:
+  - MessagePack
+  namespace: MessagePack
+  summary: Gets the number of bytes consumed by the reader.
+  example: []
+  syntax:
+    content: public long Consumed { get; }
+    parameters: []
+    return:
+      type: System.Int64
+    content.vb: Public ReadOnly Property Consumed As Long
+  overload: MessagePack.MessagePackReader.Consumed*
+- uid: MessagePack.MessagePackReader.End
+  commentId: P:MessagePack.MessagePackReader.End
+  id: End
+  parent: MessagePack.MessagePackReader
+  langs:
+  - csharp
+  - vb
+  name: End
+  nameWithType: MessagePackReader.End
+  fullName: MessagePack.MessagePackReader.End
+  type: Property
+  assemblies:
+  - MessagePack
+  namespace: MessagePack
+  summary: Gets a value indicating whether the reader is at the end of the sequence.
+  example: []
+  syntax:
+    content: public bool End { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property [End] As Boolean
+  overload: MessagePack.MessagePackReader.End*
+- uid: MessagePack.MessagePackReader.IsNil
+  commentId: P:MessagePack.MessagePackReader.IsNil
+  id: IsNil
+  parent: MessagePack.MessagePackReader
+  langs:
+  - csharp
+  - vb
+  name: IsNil
+  nameWithType: MessagePackReader.IsNil
+  fullName: MessagePack.MessagePackReader.IsNil
+  type: Property
+  assemblies:
+  - MessagePack
+  namespace: MessagePack
+  summary: Gets a value indicating whether the reader position is pointing at a nil value.
+  example: []
+  syntax:
+    content: public bool IsNil { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property IsNil As Boolean
+  overload: MessagePack.MessagePackReader.IsNil*
+  exceptions:
+  - type: System.IO.EndOfStreamException
+    commentId: T:System.IO.EndOfStreamException
+    description: Thrown if the end of the sequence provided to the constructor is reached before the expected end of the data.
+- uid: MessagePack.MessagePackReader.NextMessagePackType
+  commentId: P:MessagePack.MessagePackReader.NextMessagePackType
+  id: NextMessagePackType
+  parent: MessagePack.MessagePackReader
+  langs:
+  - csharp
+  - vb
+  name: NextMessagePackType
+  nameWithType: MessagePackReader.NextMessagePackType
+  fullName: MessagePack.MessagePackReader.NextMessagePackType
+  type: Property
+  assemblies:
+  - MessagePack
+  namespace: MessagePack
+  summary: Gets the next message pack type to be read.
+  example: []
+  syntax:
+    content: public MessagePackType NextMessagePackType { get; }
+    parameters: []
+    return:
+      type: MessagePack.MessagePackType
+    content.vb: Public ReadOnly Property NextMessagePackType As MessagePackType
+  overload: MessagePack.MessagePackReader.NextMessagePackType*
+- uid: MessagePack.MessagePackReader.NextCode
+  commentId: P:MessagePack.MessagePackReader.NextCode
+  id: NextCode
+  parent: MessagePack.MessagePackReader
+  langs:
+  - csharp
+  - vb
+  name: NextCode
+  nameWithType: MessagePackReader.NextCode
+  fullName: MessagePack.MessagePackReader.NextCode
+  type: Property
+  assemblies:
+  - MessagePack
+  namespace: MessagePack
+  summary: Gets the type of the next MessagePack block.
+  remarks: See <xref href="MessagePack.MessagePackCode" data-throw-if-not-resolved="false"></xref> for valid message pack codes and ranges.
+  example: []
+  syntax:
+    content: public byte NextCode { get; }
+    parameters: []
+    return:
+      type: System.Byte
+    content.vb: Public ReadOnly Property NextCode As Byte
+  overload: MessagePack.MessagePackReader.NextCode*
+  exceptions:
+  - type: System.IO.EndOfStreamException
+    commentId: T:System.IO.EndOfStreamException
+    description: Thrown if the end of the sequence provided to the constructor is reached before the expected end of the data.
+references:
+- uid: MessagePack.MessagePackSerializationException
+  commentId: T:MessagePack.MessagePackSerializationException
+  parent: MessagePack
+  isExternal: true
+  href: MessagePack.MessagePackSerializationException.html
+  name: MessagePackSerializationException
+  nameWithType: MessagePackSerializationException
+  fullName: MessagePack.MessagePackSerializationException
+- uid: System.IO.EndOfStreamException
+  commentId: T:System.IO.EndOfStreamException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.io.endofstreamexception
+  name: EndOfStreamException
+  nameWithType: EndOfStreamException
+  fullName: System.IO.EndOfStreamException
+- uid: MessagePack
+  commentId: N:MessagePack
+  isExternal: true
+  href: MessagePack.html
+  name: MessagePack
+  nameWithType: MessagePack
+  fullName: MessagePack
+- uid: System.ValueType.Equals(System.Object)
+  commentId: M:System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  name: Equals(object)
+  nameWithType: ValueType.Equals(object)
+  fullName: System.ValueType.Equals(object)
+  nameWithType.vb: ValueType.Equals(Object)
+  fullName.vb: System.ValueType.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType.GetHashCode
+  commentId: M:System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  name: GetHashCode()
+  nameWithType: ValueType.GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+- uid: System.ValueType.ToString
+  commentId: M:System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  name: ToString()
+  nameWithType: ValueType.ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType
+  commentId: T:System.ValueType
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype
+  name: ValueType
+  nameWithType: ValueType
+  fullName: System.ValueType
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Byte
+  commentId: T:System.Byte
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.byte
+  name: byte
+  nameWithType: byte
+  fullName: byte
+  nameWithType.vb: Byte
+  fullName.vb: Byte
+  name.vb: Byte
+- uid: MessagePack.MessagePackCode.MinNegativeFixInt
+  commentId: F:MessagePack.MessagePackCode.MinNegativeFixInt
+  isExternal: true
+  href: MessagePack.MessagePackCode.html#MessagePack_MessagePackCode_MinNegativeFixInt
+  name: MinNegativeFixInt
+  nameWithType: MessagePackCode.MinNegativeFixInt
+  fullName: MessagePack.MessagePackCode.MinNegativeFixInt
+- uid: MessagePack.MessagePackCode.MaxNegativeFixInt
+  commentId: F:MessagePack.MessagePackCode.MaxNegativeFixInt
+  isExternal: true
+  href: MessagePack.MessagePackCode.html#MessagePack_MessagePackCode_MaxNegativeFixInt
+  name: MaxNegativeFixInt
+  nameWithType: MessagePackCode.MaxNegativeFixInt
+  fullName: MessagePack.MessagePackCode.MaxNegativeFixInt
+- uid: MessagePack.MessagePackCode.MinFixInt
+  commentId: F:MessagePack.MessagePackCode.MinFixInt
+  isExternal: true
+  href: MessagePack.MessagePackCode.html#MessagePack_MessagePackCode_MinFixInt
+  name: MinFixInt
+  nameWithType: MessagePackCode.MinFixInt
+  fullName: MessagePack.MessagePackCode.MinFixInt
+- uid: MessagePack.MessagePackCode.MaxFixInt
+  commentId: F:MessagePack.MessagePackCode.MaxFixInt
+  isExternal: true
+  href: MessagePack.MessagePackCode.html#MessagePack_MessagePackCode_MaxFixInt
+  name: MaxFixInt
+  nameWithType: MessagePackCode.MaxFixInt
+  fullName: MessagePack.MessagePackCode.MaxFixInt
+- uid: System.OverflowException
+  commentId: T:System.OverflowException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.overflowexception
+  name: OverflowException
+  nameWithType: OverflowException
+  fullName: System.OverflowException
+- uid: MessagePack.MessagePackReader.ReadByte*
+  commentId: Overload:MessagePack.MessagePackReader.ReadByte
+  isExternal: true
+  href: MessagePack.MessagePackReader.html#MessagePack_MessagePackReader_ReadByte
+  name: ReadByte
+  nameWithType: MessagePackReader.ReadByte
+  fullName: MessagePack.MessagePackReader.ReadByte
+- uid: System.UInt16
+  commentId: T:System.UInt16
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.uint16
+  name: ushort
+  nameWithType: ushort
+  fullName: ushort
+  nameWithType.vb: UShort
+  fullName.vb: UShort
+  name.vb: UShort
+- uid: MessagePack.MessagePackReader.ReadUInt16*
+  commentId: Overload:MessagePack.MessagePackReader.ReadUInt16
+  isExternal: true
+  href: MessagePack.MessagePackReader.html#MessagePack_MessagePackReader_ReadUInt16
+  name: ReadUInt16
+  nameWithType: MessagePackReader.ReadUInt16
+  fullName: MessagePack.MessagePackReader.ReadUInt16
+- uid: System.UInt32
+  commentId: T:System.UInt32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.uint32
+  name: uint
+  nameWithType: uint
+  fullName: uint
+  nameWithType.vb: UInteger
+  fullName.vb: UInteger
+  name.vb: UInteger
+- uid: MessagePack.MessagePackReader.ReadUInt32*
+  commentId: Overload:MessagePack.MessagePackReader.ReadUInt32
+  isExternal: true
+  href: MessagePack.MessagePackReader.html#MessagePack_MessagePackReader_ReadUInt32
+  name: ReadUInt32
+  nameWithType: MessagePackReader.ReadUInt32
+  fullName: MessagePack.MessagePackReader.ReadUInt32
+- uid: System.UInt64
+  commentId: T:System.UInt64
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.uint64
+  name: ulong
+  nameWithType: ulong
+  fullName: ulong
+  nameWithType.vb: ULong
+  fullName.vb: ULong
+  name.vb: ULong
+- uid: MessagePack.MessagePackReader.ReadUInt64*
+  commentId: Overload:MessagePack.MessagePackReader.ReadUInt64
+  isExternal: true
+  href: MessagePack.MessagePackReader.html#MessagePack_MessagePackReader_ReadUInt64
+  name: ReadUInt64
+  nameWithType: MessagePackReader.ReadUInt64
+  fullName: MessagePack.MessagePackReader.ReadUInt64
+- uid: System.SByte
+  commentId: T:System.SByte
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.sbyte
+  name: sbyte
+  nameWithType: sbyte
+  fullName: sbyte
+  nameWithType.vb: SByte
+  fullName.vb: SByte
+  name.vb: SByte
+- uid: MessagePack.MessagePackReader.ReadSByte*
+  commentId: Overload:MessagePack.MessagePackReader.ReadSByte
+  isExternal: true
+  href: MessagePack.MessagePackReader.html#MessagePack_MessagePackReader_ReadSByte
+  name: ReadSByte
+  nameWithType: MessagePackReader.ReadSByte
+  fullName: MessagePack.MessagePackReader.ReadSByte
+- uid: System.Int16
+  commentId: T:System.Int16
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int16
+  name: short
+  nameWithType: short
+  fullName: short
+  nameWithType.vb: Short
+  fullName.vb: Short
+  name.vb: Short
+- uid: MessagePack.MessagePackReader.ReadInt16*
+  commentId: Overload:MessagePack.MessagePackReader.ReadInt16
+  isExternal: true
+  href: MessagePack.MessagePackReader.html#MessagePack_MessagePackReader_ReadInt16
+  name: ReadInt16
+  nameWithType: MessagePackReader.ReadInt16
+  fullName: MessagePack.MessagePackReader.ReadInt16
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: MessagePack.MessagePackReader.ReadInt32*
+  commentId: Overload:MessagePack.MessagePackReader.ReadInt32
+  isExternal: true
+  href: MessagePack.MessagePackReader.html#MessagePack_MessagePackReader_ReadInt32
+  name: ReadInt32
+  nameWithType: MessagePackReader.ReadInt32
+  fullName: MessagePack.MessagePackReader.ReadInt32
+- uid: System.Int64
+  commentId: T:System.Int64
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int64
+  name: long
+  nameWithType: long
+  fullName: long
+  nameWithType.vb: Long
+  fullName.vb: Long
+  name.vb: Long
+- uid: MessagePack.MessagePackReader.ReadInt64*
+  commentId: Overload:MessagePack.MessagePackReader.ReadInt64
+  isExternal: true
+  href: MessagePack.MessagePackReader.html#MessagePack_MessagePackReader_ReadInt64
+  name: ReadInt64
+  nameWithType: MessagePackReader.ReadInt64
+  fullName: MessagePack.MessagePackReader.ReadInt64
+- uid: MessagePack.MessagePackReader
+  commentId: T:MessagePack.MessagePackReader
+  parent: MessagePack
+  isExternal: true
+  href: MessagePack.MessagePackReader.html
+  name: MessagePackReader
+  nameWithType: MessagePackReader
+  fullName: MessagePack.MessagePackReader
+- uid: MessagePack.MessagePackReader.#ctor*
+  commentId: Overload:MessagePack.MessagePackReader.#ctor
+  isExternal: true
+  href: MessagePack.MessagePackReader.html#MessagePack_MessagePackReader__ctor_System_ReadOnlyMemory_System_Byte__
+  name: MessagePackReader
+  nameWithType: MessagePackReader.MessagePackReader
+  fullName: MessagePack.MessagePackReader.MessagePackReader
+  nameWithType.vb: MessagePackReader.New
+  fullName.vb: MessagePack.MessagePackReader.New
+  name.vb: New
+- uid: System.ReadOnlyMemory{System.Byte}
+  commentId: T:System.ReadOnlyMemory{System.Byte}
+  parent: System
+  definition: System.ReadOnlyMemory`1
+  href: https://learn.microsoft.com/dotnet/api/system.readonlymemory-1
+  name: ReadOnlyMemory<byte>
+  nameWithType: ReadOnlyMemory<byte>
+  fullName: System.ReadOnlyMemory<byte>
+  nameWithType.vb: ReadOnlyMemory(Of Byte)
+  fullName.vb: System.ReadOnlyMemory(Of Byte)
+  name.vb: ReadOnlyMemory(Of Byte)
+  spec.csharp:
+  - uid: System.ReadOnlyMemory`1
+    name: ReadOnlyMemory
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlymemory-1
+  - name: <
+  - uid: System.Byte
+    name: byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: '>'
+  spec.vb:
+  - uid: System.ReadOnlyMemory`1
+    name: ReadOnlyMemory
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlymemory-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Byte
+    name: Byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: )
+- uid: System.ReadOnlyMemory`1
+  commentId: T:System.ReadOnlyMemory`1
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.readonlymemory-1
+  name: ReadOnlyMemory<T>
+  nameWithType: ReadOnlyMemory<T>
+  fullName: System.ReadOnlyMemory<T>
+  nameWithType.vb: ReadOnlyMemory(Of T)
+  fullName.vb: System.ReadOnlyMemory(Of T)
+  name.vb: ReadOnlyMemory(Of T)
+  spec.csharp:
+  - uid: System.ReadOnlyMemory`1
+    name: ReadOnlyMemory
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlymemory-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.ReadOnlyMemory`1
+    name: ReadOnlyMemory
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlymemory-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Buffers.ReadOnlySequence{System.Byte}
+  commentId: T:System.Buffers.ReadOnlySequence{System.Byte}
+  parent: System.Buffers
+  definition: System.Buffers.ReadOnlySequence`1
+  href: https://learn.microsoft.com/dotnet/api/system.buffers.readonlysequence-1
+  name: ReadOnlySequence<byte>
+  nameWithType: ReadOnlySequence<byte>
+  fullName: System.Buffers.ReadOnlySequence<byte>
+  nameWithType.vb: ReadOnlySequence(Of Byte)
+  fullName.vb: System.Buffers.ReadOnlySequence(Of Byte)
+  name.vb: ReadOnlySequence(Of Byte)
+  spec.csharp:
+  - uid: System.Buffers.ReadOnlySequence`1
+    name: ReadOnlySequence
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.buffers.readonlysequence-1
+  - name: <
+  - uid: System.Byte
+    name: byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: '>'
+  spec.vb:
+  - uid: System.Buffers.ReadOnlySequence`1
+    name: ReadOnlySequence
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.buffers.readonlysequence-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Byte
+    name: Byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: )
+- uid: System.Buffers.ReadOnlySequence`1
+  commentId: T:System.Buffers.ReadOnlySequence`1
+  parent: System.Buffers
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.buffers.readonlysequence-1
+  name: ReadOnlySequence<T>
+  nameWithType: ReadOnlySequence<T>
+  fullName: System.Buffers.ReadOnlySequence<T>
+  nameWithType.vb: ReadOnlySequence(Of T)
+  fullName.vb: System.Buffers.ReadOnlySequence(Of T)
+  name.vb: ReadOnlySequence(Of T)
+  spec.csharp:
+  - uid: System.Buffers.ReadOnlySequence`1
+    name: ReadOnlySequence
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.buffers.readonlysequence-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Buffers.ReadOnlySequence`1
+    name: ReadOnlySequence
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.buffers.readonlysequence-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Buffers
+  commentId: N:System.Buffers
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Buffers
+  nameWithType: System.Buffers
+  fullName: System.Buffers
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Buffers
+    name: Buffers
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.buffers
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Buffers
+    name: Buffers
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.buffers
+- uid: MessagePack.MessagePackReader.Clone*
+  commentId: Overload:MessagePack.MessagePackReader.Clone
+  isExternal: true
+  href: MessagePack.MessagePackReader.html#MessagePack_MessagePackReader_Clone_System_Buffers_ReadOnlySequence_System_Byte___
+  name: Clone
+  nameWithType: MessagePackReader.Clone
+  fullName: MessagePack.MessagePackReader.Clone
+- uid: MessagePack.MessagePackReader.CreatePeekReader*
+  commentId: Overload:MessagePack.MessagePackReader.CreatePeekReader
+  isExternal: true
+  href: MessagePack.MessagePackReader.html#MessagePack_MessagePackReader_CreatePeekReader
+  name: CreatePeekReader
+  nameWithType: MessagePackReader.CreatePeekReader
+  fullName: MessagePack.MessagePackReader.CreatePeekReader
+- uid: MessagePack.MessagePackReader.ReadRaw
+  commentId: M:MessagePack.MessagePackReader.ReadRaw
+  isExternal: true
+  href: MessagePack.MessagePackReader.html#MessagePack_MessagePackReader_ReadRaw
+  name: ReadRaw()
+  nameWithType: MessagePackReader.ReadRaw()
+  fullName: MessagePack.MessagePackReader.ReadRaw()
+  spec.csharp:
+  - uid: MessagePack.MessagePackReader.ReadRaw
+    name: ReadRaw
+    isExternal: true
+    href: MessagePack.MessagePackReader.html#MessagePack_MessagePackReader_ReadRaw
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: MessagePack.MessagePackReader.ReadRaw
+    name: ReadRaw
+    isExternal: true
+    href: MessagePack.MessagePackReader.html#MessagePack_MessagePackReader_ReadRaw
+  - name: (
+  - name: )
+- uid: MessagePack.MessagePackReader.Skip*
+  commentId: Overload:MessagePack.MessagePackReader.Skip
+  isExternal: true
+  href: MessagePack.MessagePackReader.html#MessagePack_MessagePackReader_Skip
+  name: Skip
+  nameWithType: MessagePackReader.Skip
+  fullName: MessagePack.MessagePackReader.Skip
+- uid: MessagePack.MessagePackCode.Nil
+  commentId: F:MessagePack.MessagePackCode.Nil
+  isExternal: true
+  href: MessagePack.MessagePackCode.html#MessagePack_MessagePackCode_Nil
+  name: Nil
+  nameWithType: MessagePackCode.Nil
+  fullName: MessagePack.MessagePackCode.Nil
+- uid: MessagePack.MessagePackReader.ReadNil*
+  commentId: Overload:MessagePack.MessagePackReader.ReadNil
+  isExternal: true
+  href: MessagePack.MessagePackReader.html#MessagePack_MessagePackReader_ReadNil
+  name: ReadNil
+  nameWithType: MessagePackReader.ReadNil
+  fullName: MessagePack.MessagePackReader.ReadNil
+- uid: MessagePack.Nil
+  commentId: T:MessagePack.Nil
+  parent: MessagePack
+  isExternal: true
+  href: MessagePack.Nil.html
+  name: Nil
+  nameWithType: Nil
+  fullName: MessagePack.Nil
+- uid: MessagePack.MessagePackReader.TryReadNil*
+  commentId: Overload:MessagePack.MessagePackReader.TryReadNil
+  isExternal: true
+  href: MessagePack.MessagePackReader.html#MessagePack_MessagePackReader_TryReadNil
+  name: TryReadNil
+  nameWithType: MessagePackReader.TryReadNil
+  fullName: MessagePack.MessagePackReader.TryReadNil
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: MessagePack.MessagePackReader.ReadRaw*
+  commentId: Overload:MessagePack.MessagePackReader.ReadRaw
+  isExternal: true
+  href: MessagePack.MessagePackReader.html#MessagePack_MessagePackReader_ReadRaw_System_Int64_
+  name: ReadRaw
+  nameWithType: MessagePackReader.ReadRaw
+  fullName: MessagePack.MessagePackReader.ReadRaw
+- uid: MessagePack.MessagePackCode.Array16
+  commentId: F:MessagePack.MessagePackCode.Array16
+  isExternal: true
+  href: MessagePack.MessagePackCode.html#MessagePack_MessagePackCode_Array16
+  name: Array16
+  nameWithType: MessagePackCode.Array16
+  fullName: MessagePack.MessagePackCode.Array16
+- uid: MessagePack.MessagePackCode.Array32
+  commentId: F:MessagePack.MessagePackCode.Array32
+  isExternal: true
+  href: MessagePack.MessagePackCode.html#MessagePack_MessagePackCode_Array32
+  name: Array32
+  nameWithType: MessagePackCode.Array32
+  fullName: MessagePack.MessagePackCode.Array32
+- uid: MessagePack.MessagePackCode.MinFixArray
+  commentId: F:MessagePack.MessagePackCode.MinFixArray
+  isExternal: true
+  href: MessagePack.MessagePackCode.html#MessagePack_MessagePackCode_MinFixArray
+  name: MinFixArray
+  nameWithType: MessagePackCode.MinFixArray
+  fullName: MessagePack.MessagePackCode.MinFixArray
+- uid: MessagePack.MessagePackCode.MaxFixArray
+  commentId: F:MessagePack.MessagePackCode.MaxFixArray
+  isExternal: true
+  href: MessagePack.MessagePackCode.html#MessagePack_MessagePackCode_MaxFixArray
+  name: MaxFixArray
+  nameWithType: MessagePackCode.MaxFixArray
+  fullName: MessagePack.MessagePackCode.MaxFixArray
+- uid: MessagePack.MessagePackReader.Sequence
+  commentId: P:MessagePack.MessagePackReader.Sequence
+  isExternal: true
+  href: MessagePack.MessagePackReader.html#MessagePack_MessagePackReader_Sequence
+  name: Sequence
+  nameWithType: MessagePackReader.Sequence
+  fullName: MessagePack.MessagePackReader.Sequence
+- uid: MessagePack.MessagePackReader.ReadArrayHeader*
+  commentId: Overload:MessagePack.MessagePackReader.ReadArrayHeader
+  isExternal: true
+  href: MessagePack.MessagePackReader.html#MessagePack_MessagePackReader_ReadArrayHeader
+  name: ReadArrayHeader
+  nameWithType: MessagePackReader.ReadArrayHeader
+  fullName: MessagePack.MessagePackReader.ReadArrayHeader
+- uid: MessagePack.MessagePackReader.TryReadArrayHeader*
+  commentId: Overload:MessagePack.MessagePackReader.TryReadArrayHeader
+  isExternal: true
+  href: MessagePack.MessagePackReader.html#MessagePack_MessagePackReader_TryReadArrayHeader_System_Int32__
+  name: TryReadArrayHeader
+  nameWithType: MessagePackReader.TryReadArrayHeader
+  fullName: MessagePack.MessagePackReader.TryReadArrayHeader
+- uid: MessagePack.MessagePackCode.Map16
+  commentId: F:MessagePack.MessagePackCode.Map16
+  isExternal: true
+  href: MessagePack.MessagePackCode.html#MessagePack_MessagePackCode_Map16
+  name: Map16
+  nameWithType: MessagePackCode.Map16
+  fullName: MessagePack.MessagePackCode.Map16
+- uid: MessagePack.MessagePackCode.Map32
+  commentId: F:MessagePack.MessagePackCode.Map32
+  isExternal: true
+  href: MessagePack.MessagePackCode.html#MessagePack_MessagePackCode_Map32
+  name: Map32
+  nameWithType: MessagePackCode.Map32
+  fullName: MessagePack.MessagePackCode.Map32
+- uid: MessagePack.MessagePackCode.MinFixMap
+  commentId: F:MessagePack.MessagePackCode.MinFixMap
+  isExternal: true
+  href: MessagePack.MessagePackCode.html#MessagePack_MessagePackCode_MinFixMap
+  name: MinFixMap
+  nameWithType: MessagePackCode.MinFixMap
+  fullName: MessagePack.MessagePackCode.MinFixMap
+- uid: MessagePack.MessagePackCode.MaxFixMap
+  commentId: F:MessagePack.MessagePackCode.MaxFixMap
+  isExternal: true
+  href: MessagePack.MessagePackCode.html#MessagePack_MessagePackCode_MaxFixMap
+  name: MaxFixMap
+  nameWithType: MessagePackCode.MaxFixMap
+  fullName: MessagePack.MessagePackCode.MaxFixMap
+- uid: MessagePack.MessagePackReader.ReadMapHeader*
+  commentId: Overload:MessagePack.MessagePackReader.ReadMapHeader
+  isExternal: true
+  href: MessagePack.MessagePackReader.html#MessagePack_MessagePackReader_ReadMapHeader
+  name: ReadMapHeader
+  nameWithType: MessagePackReader.ReadMapHeader
+  fullName: MessagePack.MessagePackReader.ReadMapHeader
+- uid: MessagePack.MessagePackReader.TryReadMapHeader*
+  commentId: Overload:MessagePack.MessagePackReader.TryReadMapHeader
+  isExternal: true
+  href: MessagePack.MessagePackReader.html#MessagePack_MessagePackReader_TryReadMapHeader_System_Int32__
+  name: TryReadMapHeader
+  nameWithType: MessagePackReader.TryReadMapHeader
+  fullName: MessagePack.MessagePackReader.TryReadMapHeader
+- uid: MessagePack.MessagePackCode.False
+  commentId: F:MessagePack.MessagePackCode.False
+  isExternal: true
+  href: MessagePack.MessagePackCode.html#MessagePack_MessagePackCode_False
+  name: "False"
+  nameWithType: MessagePackCode.False
+  fullName: MessagePack.MessagePackCode.False
+- uid: MessagePack.MessagePackCode.True
+  commentId: F:MessagePack.MessagePackCode.True
+  isExternal: true
+  href: MessagePack.MessagePackCode.html#MessagePack_MessagePackCode_True
+  name: "True"
+  nameWithType: MessagePackCode.True
+  fullName: MessagePack.MessagePackCode.True
+- uid: MessagePack.MessagePackReader.ReadBoolean*
+  commentId: Overload:MessagePack.MessagePackReader.ReadBoolean
+  isExternal: true
+  href: MessagePack.MessagePackReader.html#MessagePack_MessagePackReader_ReadBoolean
+  name: ReadBoolean
+  nameWithType: MessagePackReader.ReadBoolean
+  fullName: MessagePack.MessagePackReader.ReadBoolean
+- uid: System.Char
+  commentId: T:System.Char
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.char
+  name: char
+  nameWithType: char
+  fullName: char
+  nameWithType.vb: Char
+  fullName.vb: Char
+  name.vb: Char
+- uid: MessagePack.MessagePackCode.UInt8
+  commentId: F:MessagePack.MessagePackCode.UInt8
+  isExternal: true
+  href: MessagePack.MessagePackCode.html#MessagePack_MessagePackCode_UInt8
+  name: UInt8
+  nameWithType: MessagePackCode.UInt8
+  fullName: MessagePack.MessagePackCode.UInt8
+- uid: MessagePack.MessagePackCode.UInt16
+  commentId: F:MessagePack.MessagePackCode.UInt16
+  isExternal: true
+  href: MessagePack.MessagePackCode.html#MessagePack_MessagePackCode_UInt16
+  name: UInt16
+  nameWithType: MessagePackCode.UInt16
+  fullName: MessagePack.MessagePackCode.UInt16
+- uid: MessagePack.MessagePackReader.ReadChar*
+  commentId: Overload:MessagePack.MessagePackReader.ReadChar
+  isExternal: true
+  href: MessagePack.MessagePackReader.html#MessagePack_MessagePackReader_ReadChar
+  name: ReadChar
+  nameWithType: MessagePackReader.ReadChar
+  fullName: MessagePack.MessagePackReader.ReadChar
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: MessagePack.MessagePackCode.Float32
+  commentId: F:MessagePack.MessagePackCode.Float32
+  isExternal: true
+  href: MessagePack.MessagePackCode.html#MessagePack_MessagePackCode_Float32
+  name: Float32
+  nameWithType: MessagePackCode.Float32
+  fullName: MessagePack.MessagePackCode.Float32
+- uid: MessagePack.MessagePackCode.Int8
+  commentId: F:MessagePack.MessagePackCode.Int8
+  isExternal: true
+  href: MessagePack.MessagePackCode.html#MessagePack_MessagePackCode_Int8
+  name: Int8
+  nameWithType: MessagePackCode.Int8
+  fullName: MessagePack.MessagePackCode.Int8
+- uid: MessagePack.MessagePackCode.Int16
+  commentId: F:MessagePack.MessagePackCode.Int16
+  isExternal: true
+  href: MessagePack.MessagePackCode.html#MessagePack_MessagePackCode_Int16
+  name: Int16
+  nameWithType: MessagePackCode.Int16
+  fullName: MessagePack.MessagePackCode.Int16
+- uid: MessagePack.MessagePackCode.Int32
+  commentId: F:MessagePack.MessagePackCode.Int32
+  isExternal: true
+  href: MessagePack.MessagePackCode.html#MessagePack_MessagePackCode_Int32
+  name: Int32
+  nameWithType: MessagePackCode.Int32
+  fullName: MessagePack.MessagePackCode.Int32
+- uid: MessagePack.MessagePackCode.Int64
+  commentId: F:MessagePack.MessagePackCode.Int64
+  isExternal: true
+  href: MessagePack.MessagePackCode.html#MessagePack_MessagePackCode_Int64
+  name: Int64
+  nameWithType: MessagePackCode.Int64
+  fullName: MessagePack.MessagePackCode.Int64
+- uid: MessagePack.MessagePackCode.UInt32
+  commentId: F:MessagePack.MessagePackCode.UInt32
+  isExternal: true
+  href: MessagePack.MessagePackCode.html#MessagePack_MessagePackCode_UInt32
+  name: UInt32
+  nameWithType: MessagePackCode.UInt32
+  fullName: MessagePack.MessagePackCode.UInt32
+- uid: MessagePack.MessagePackCode.UInt64
+  commentId: F:MessagePack.MessagePackCode.UInt64
+  isExternal: true
+  href: MessagePack.MessagePackCode.html#MessagePack_MessagePackCode_UInt64
+  name: UInt64
+  nameWithType: MessagePackCode.UInt64
+  fullName: MessagePack.MessagePackCode.UInt64
+- uid: MessagePack.MessagePackReader.ReadSingle*
+  commentId: Overload:MessagePack.MessagePackReader.ReadSingle
+  isExternal: true
+  href: MessagePack.MessagePackReader.html#MessagePack_MessagePackReader_ReadSingle
+  name: ReadSingle
+  nameWithType: MessagePackReader.ReadSingle
+  fullName: MessagePack.MessagePackReader.ReadSingle
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: MessagePack.MessagePackCode.Float64
+  commentId: F:MessagePack.MessagePackCode.Float64
+  isExternal: true
+  href: MessagePack.MessagePackCode.html#MessagePack_MessagePackCode_Float64
+  name: Float64
+  nameWithType: MessagePackCode.Float64
+  fullName: MessagePack.MessagePackCode.Float64
+- uid: MessagePack.MessagePackReader.ReadDouble*
+  commentId: Overload:MessagePack.MessagePackReader.ReadDouble
+  isExternal: true
+  href: MessagePack.MessagePackReader.html#MessagePack_MessagePackReader_ReadDouble
+  name: ReadDouble
+  nameWithType: MessagePackReader.ReadDouble
+  fullName: MessagePack.MessagePackReader.ReadDouble
+- uid: System.DateTime
+  commentId: T:System.DateTime
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.datetime
+  name: DateTime
+  nameWithType: DateTime
+  fullName: System.DateTime
+  nameWithType.vb: Date
+  fullName.vb: Date
+  name.vb: Date
+- uid: MessagePack.MessagePackCode.FixExt4
+  commentId: F:MessagePack.MessagePackCode.FixExt4
+  isExternal: true
+  href: MessagePack.MessagePackCode.html#MessagePack_MessagePackCode_FixExt4
+  name: FixExt4
+  nameWithType: MessagePackCode.FixExt4
+  fullName: MessagePack.MessagePackCode.FixExt4
+- uid: MessagePack.MessagePackCode.FixExt8
+  commentId: F:MessagePack.MessagePackCode.FixExt8
+  isExternal: true
+  href: MessagePack.MessagePackCode.html#MessagePack_MessagePackCode_FixExt8
+  name: FixExt8
+  nameWithType: MessagePackCode.FixExt8
+  fullName: MessagePack.MessagePackCode.FixExt8
+- uid: MessagePack.MessagePackCode.Ext8
+  commentId: F:MessagePack.MessagePackCode.Ext8
+  isExternal: true
+  href: MessagePack.MessagePackCode.html#MessagePack_MessagePackCode_Ext8
+  name: Ext8
+  nameWithType: MessagePackCode.Ext8
+  fullName: MessagePack.MessagePackCode.Ext8
+- uid: MessagePack.ReservedMessagePackExtensionTypeCode.DateTime
+  commentId: F:MessagePack.ReservedMessagePackExtensionTypeCode.DateTime
+  isExternal: true
+  href: MessagePack.ReservedMessagePackExtensionTypeCode.html#MessagePack_ReservedMessagePackExtensionTypeCode_DateTime
+  name: DateTime
+  nameWithType: ReservedMessagePackExtensionTypeCode.DateTime
+  fullName: MessagePack.ReservedMessagePackExtensionTypeCode.DateTime
+- uid: MessagePack.MessagePackReader.ReadDateTime*
+  commentId: Overload:MessagePack.MessagePackReader.ReadDateTime
+  isExternal: true
+  href: MessagePack.MessagePackReader.html#MessagePack_MessagePackReader_ReadDateTime
+  name: ReadDateTime
+  nameWithType: MessagePackReader.ReadDateTime
+  fullName: MessagePack.MessagePackReader.ReadDateTime
+- uid: MessagePack.ExtensionHeader
+  commentId: T:MessagePack.ExtensionHeader
+  parent: MessagePack
+  isExternal: true
+  href: MessagePack.ExtensionHeader.html
+  name: ExtensionHeader
+  nameWithType: ExtensionHeader
+  fullName: MessagePack.ExtensionHeader
+- uid: MessagePack.MessagePackCode.Bin8
+  commentId: F:MessagePack.MessagePackCode.Bin8
+  isExternal: true
+  href: MessagePack.MessagePackCode.html#MessagePack_MessagePackCode_Bin8
+  name: Bin8
+  nameWithType: MessagePackCode.Bin8
+  fullName: MessagePack.MessagePackCode.Bin8
+- uid: MessagePack.MessagePackCode.Bin16
+  commentId: F:MessagePack.MessagePackCode.Bin16
+  isExternal: true
+  href: MessagePack.MessagePackCode.html#MessagePack_MessagePackCode_Bin16
+  name: Bin16
+  nameWithType: MessagePackCode.Bin16
+  fullName: MessagePack.MessagePackCode.Bin16
+- uid: MessagePack.MessagePackCode.Bin32
+  commentId: F:MessagePack.MessagePackCode.Bin32
+  isExternal: true
+  href: MessagePack.MessagePackCode.html#MessagePack_MessagePackCode_Bin32
+  name: Bin32
+  nameWithType: MessagePackCode.Bin32
+  fullName: MessagePack.MessagePackCode.Bin32
+- uid: MessagePack.MessagePackCode.Str16
+  commentId: F:MessagePack.MessagePackCode.Str16
+  isExternal: true
+  href: MessagePack.MessagePackCode.html#MessagePack_MessagePackCode_Str16
+  name: Str16
+  nameWithType: MessagePackCode.Str16
+  fullName: MessagePack.MessagePackCode.Str16
+- uid: MessagePack.MessagePackCode.Str32
+  commentId: F:MessagePack.MessagePackCode.Str32
+  isExternal: true
+  href: MessagePack.MessagePackCode.html#MessagePack_MessagePackCode_Str32
+  name: Str32
+  nameWithType: MessagePackCode.Str32
+  fullName: MessagePack.MessagePackCode.Str32
+- uid: MessagePack.MessagePackCode.MinFixStr
+  commentId: F:MessagePack.MessagePackCode.MinFixStr
+  isExternal: true
+  href: MessagePack.MessagePackCode.html#MessagePack_MessagePackCode_MinFixStr
+  name: MinFixStr
+  nameWithType: MessagePackCode.MinFixStr
+  fullName: MessagePack.MessagePackCode.MinFixStr
+- uid: MessagePack.MessagePackCode.MaxFixStr
+  commentId: F:MessagePack.MessagePackCode.MaxFixStr
+  isExternal: true
+  href: MessagePack.MessagePackCode.html#MessagePack_MessagePackCode_MaxFixStr
+  name: MaxFixStr
+  nameWithType: MessagePackCode.MaxFixStr
+  fullName: MessagePack.MessagePackCode.MaxFixStr
+- uid: MessagePack.MessagePackReader.ReadBytes*
+  commentId: Overload:MessagePack.MessagePackReader.ReadBytes
+  isExternal: true
+  href: MessagePack.MessagePackReader.html#MessagePack_MessagePackReader_ReadBytes
+  name: ReadBytes
+  nameWithType: MessagePackReader.ReadBytes
+  fullName: MessagePack.MessagePackReader.ReadBytes
+- uid: System.Nullable{System.Buffers.ReadOnlySequence{System.Byte}}
+  commentId: T:System.Nullable{System.Buffers.ReadOnlySequence{System.Byte}}
+  parent: System
+  definition: System.Nullable`1
+  href: https://learn.microsoft.com/dotnet/api/system.buffers.readonlysequence-1
+  name: ReadOnlySequence<byte>?
+  nameWithType: ReadOnlySequence<byte>?
+  fullName: System.Buffers.ReadOnlySequence<byte>?
+  nameWithType.vb: ReadOnlySequence(Of Byte)?
+  fullName.vb: System.Buffers.ReadOnlySequence(Of Byte)?
+  name.vb: ReadOnlySequence(Of Byte)?
+  spec.csharp:
+  - uid: System.Buffers.ReadOnlySequence`1
+    name: ReadOnlySequence
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.buffers.readonlysequence-1
+  - name: <
+  - uid: System.Byte
+    name: byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: '>'
+  - name: '?'
+  spec.vb:
+  - uid: System.Buffers.ReadOnlySequence`1
+    name: ReadOnlySequence
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.buffers.readonlysequence-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Byte
+    name: Byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: )
+  - name: '?'
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: MessagePack.MessagePackCode.Str8
+  commentId: F:MessagePack.MessagePackCode.Str8
+  isExternal: true
+  href: MessagePack.MessagePackCode.html#MessagePack_MessagePackCode_Str8
+  name: Str8
+  nameWithType: MessagePackCode.Str8
+  fullName: MessagePack.MessagePackCode.Str8
+- uid: MessagePack.MessagePackReader.ReadStringSequence*
+  commentId: Overload:MessagePack.MessagePackReader.ReadStringSequence
+  isExternal: true
+  href: MessagePack.MessagePackReader.html#MessagePack_MessagePackReader_ReadStringSequence
+  name: ReadStringSequence
+  nameWithType: MessagePackReader.ReadStringSequence
+  fullName: MessagePack.MessagePackReader.ReadStringSequence
+- uid: MessagePack.MessagePackReader.ReadStringSequence
+  commentId: M:MessagePack.MessagePackReader.ReadStringSequence
+  isExternal: true
+  href: MessagePack.MessagePackReader.html#MessagePack_MessagePackReader_ReadStringSequence
+  name: ReadStringSequence()
+  nameWithType: MessagePackReader.ReadStringSequence()
+  fullName: MessagePack.MessagePackReader.ReadStringSequence()
+  spec.csharp:
+  - uid: MessagePack.MessagePackReader.ReadStringSequence
+    name: ReadStringSequence
+    isExternal: true
+    href: MessagePack.MessagePackReader.html#MessagePack_MessagePackReader_ReadStringSequence
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: MessagePack.MessagePackReader.ReadStringSequence
+    name: ReadStringSequence
+    isExternal: true
+    href: MessagePack.MessagePackReader.html#MessagePack_MessagePackReader_ReadStringSequence
+  - name: (
+  - name: )
+- uid: MessagePack.MessagePackReader.TryReadStringSpan*
+  commentId: Overload:MessagePack.MessagePackReader.TryReadStringSpan
+  isExternal: true
+  href: MessagePack.MessagePackReader.html#MessagePack_MessagePackReader_TryReadStringSpan_System_ReadOnlySpan_System_Byte___
+  name: TryReadStringSpan
+  nameWithType: MessagePackReader.TryReadStringSpan
+  fullName: MessagePack.MessagePackReader.TryReadStringSpan
+- uid: System.ReadOnlySpan{System.Byte}
+  commentId: T:System.ReadOnlySpan{System.Byte}
+  parent: System
+  definition: System.ReadOnlySpan`1
+  href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  name: ReadOnlySpan<byte>
+  nameWithType: ReadOnlySpan<byte>
+  fullName: System.ReadOnlySpan<byte>
+  nameWithType.vb: ReadOnlySpan(Of Byte)
+  fullName.vb: System.ReadOnlySpan(Of Byte)
+  name.vb: ReadOnlySpan(Of Byte)
+  spec.csharp:
+  - uid: System.ReadOnlySpan`1
+    name: ReadOnlySpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  - name: <
+  - uid: System.Byte
+    name: byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: '>'
+  spec.vb:
+  - uid: System.ReadOnlySpan`1
+    name: ReadOnlySpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Byte
+    name: Byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: )
+- uid: System.ReadOnlySpan`1
+  commentId: T:System.ReadOnlySpan`1
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  name: ReadOnlySpan<T>
+  nameWithType: ReadOnlySpan<T>
+  fullName: System.ReadOnlySpan<T>
+  nameWithType.vb: ReadOnlySpan(Of T)
+  fullName.vb: System.ReadOnlySpan(Of T)
+  name.vb: ReadOnlySpan(Of T)
+  spec.csharp:
+  - uid: System.ReadOnlySpan`1
+    name: ReadOnlySpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.ReadOnlySpan`1
+    name: ReadOnlySpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: MessagePack.MessagePackReader.ReadString*
+  commentId: Overload:MessagePack.MessagePackReader.ReadString
+  isExternal: true
+  href: MessagePack.MessagePackReader.html#MessagePack_MessagePackReader_ReadString
+  name: ReadString
+  nameWithType: MessagePackReader.ReadString
+  fullName: MessagePack.MessagePackReader.ReadString
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: MessagePack.MessagePackCode.FixExt1
+  commentId: F:MessagePack.MessagePackCode.FixExt1
+  isExternal: true
+  href: MessagePack.MessagePackCode.html#MessagePack_MessagePackCode_FixExt1
+  name: FixExt1
+  nameWithType: MessagePackCode.FixExt1
+  fullName: MessagePack.MessagePackCode.FixExt1
+- uid: MessagePack.MessagePackCode.FixExt2
+  commentId: F:MessagePack.MessagePackCode.FixExt2
+  isExternal: true
+  href: MessagePack.MessagePackCode.html#MessagePack_MessagePackCode_FixExt2
+  name: FixExt2
+  nameWithType: MessagePackCode.FixExt2
+  fullName: MessagePack.MessagePackCode.FixExt2
+- uid: MessagePack.MessagePackCode.FixExt16
+  commentId: F:MessagePack.MessagePackCode.FixExt16
+  isExternal: true
+  href: MessagePack.MessagePackCode.html#MessagePack_MessagePackCode_FixExt16
+  name: FixExt16
+  nameWithType: MessagePackCode.FixExt16
+  fullName: MessagePack.MessagePackCode.FixExt16
+- uid: MessagePack.MessagePackCode.Ext16
+  commentId: F:MessagePack.MessagePackCode.Ext16
+  isExternal: true
+  href: MessagePack.MessagePackCode.html#MessagePack_MessagePackCode_Ext16
+  name: Ext16
+  nameWithType: MessagePackCode.Ext16
+  fullName: MessagePack.MessagePackCode.Ext16
+- uid: MessagePack.MessagePackCode.Ext32
+  commentId: F:MessagePack.MessagePackCode.Ext32
+  isExternal: true
+  href: MessagePack.MessagePackCode.html#MessagePack_MessagePackCode_Ext32
+  name: Ext32
+  nameWithType: MessagePackCode.Ext32
+  fullName: MessagePack.MessagePackCode.Ext32
+- uid: MessagePack.MessagePackReader.ReadExtensionFormatHeader*
+  commentId: Overload:MessagePack.MessagePackReader.ReadExtensionFormatHeader
+  isExternal: true
+  href: MessagePack.MessagePackReader.html#MessagePack_MessagePackReader_ReadExtensionFormatHeader
+  name: ReadExtensionFormatHeader
+  nameWithType: MessagePackReader.ReadExtensionFormatHeader
+  fullName: MessagePack.MessagePackReader.ReadExtensionFormatHeader
+- uid: MessagePack.MessagePackReader.TryReadExtensionFormatHeader*
+  commentId: Overload:MessagePack.MessagePackReader.TryReadExtensionFormatHeader
+  isExternal: true
+  href: MessagePack.MessagePackReader.html#MessagePack_MessagePackReader_TryReadExtensionFormatHeader_MessagePack_ExtensionHeader__
+  name: TryReadExtensionFormatHeader
+  nameWithType: MessagePackReader.TryReadExtensionFormatHeader
+  fullName: MessagePack.MessagePackReader.TryReadExtensionFormatHeader
+- uid: MessagePack.MessagePackReader.ReadExtensionFormat*
+  commentId: Overload:MessagePack.MessagePackReader.ReadExtensionFormat
+  isExternal: true
+  href: MessagePack.MessagePackReader.html#MessagePack_MessagePackReader_ReadExtensionFormat
+  name: ReadExtensionFormat
+  nameWithType: MessagePackReader.ReadExtensionFormat
+  fullName: MessagePack.MessagePackReader.ReadExtensionFormat
+- uid: MessagePack.ExtensionResult
+  commentId: T:MessagePack.ExtensionResult
+  parent: MessagePack
+  isExternal: true
+  href: MessagePack.ExtensionResult.html
+  name: ExtensionResult
+  nameWithType: ExtensionResult
+  fullName: MessagePack.ExtensionResult
+- uid: MessagePack.MessagePackReader.CancellationToken*
+  commentId: Overload:MessagePack.MessagePackReader.CancellationToken
+  isExternal: true
+  href: MessagePack.MessagePackReader.html#MessagePack_MessagePackReader_CancellationToken
+  name: CancellationToken
+  nameWithType: MessagePackReader.CancellationToken
+  fullName: MessagePack.MessagePackReader.CancellationToken
+- uid: System.Threading.CancellationToken
+  commentId: T:System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  name: CancellationToken
+  nameWithType: CancellationToken
+  fullName: System.Threading.CancellationToken
+- uid: System.Threading
+  commentId: N:System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading
+  nameWithType: System.Threading
+  fullName: System.Threading
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+- uid: MessagePack.MessagePackReader.Depth*
+  commentId: Overload:MessagePack.MessagePackReader.Depth
+  isExternal: true
+  href: MessagePack.MessagePackReader.html#MessagePack_MessagePackReader_Depth
+  name: Depth
+  nameWithType: MessagePackReader.Depth
+  fullName: MessagePack.MessagePackReader.Depth
+- uid: MessagePack.MessagePackReader.Sequence*
+  commentId: Overload:MessagePack.MessagePackReader.Sequence
+  isExternal: true
+  href: MessagePack.MessagePackReader.html#MessagePack_MessagePackReader_Sequence
+  name: Sequence
+  nameWithType: MessagePackReader.Sequence
+  fullName: MessagePack.MessagePackReader.Sequence
+- uid: MessagePack.MessagePackReader.Position*
+  commentId: Overload:MessagePack.MessagePackReader.Position
+  isExternal: true
+  href: MessagePack.MessagePackReader.html#MessagePack_MessagePackReader_Position
+  name: Position
+  nameWithType: MessagePackReader.Position
+  fullName: MessagePack.MessagePackReader.Position
+- uid: System.SequencePosition
+  commentId: T:System.SequencePosition
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.sequenceposition
+  name: SequencePosition
+  nameWithType: SequencePosition
+  fullName: System.SequencePosition
+- uid: MessagePack.MessagePackReader.Consumed*
+  commentId: Overload:MessagePack.MessagePackReader.Consumed
+  isExternal: true
+  href: MessagePack.MessagePackReader.html#MessagePack_MessagePackReader_Consumed
+  name: Consumed
+  nameWithType: MessagePackReader.Consumed
+  fullName: MessagePack.MessagePackReader.Consumed
+- uid: MessagePack.MessagePackReader.End*
+  commentId: Overload:MessagePack.MessagePackReader.End
+  isExternal: true
+  href: MessagePack.MessagePackReader.html#MessagePack_MessagePackReader_End
+  name: End
+  nameWithType: MessagePackReader.End
+  fullName: MessagePack.MessagePackReader.End
+- uid: MessagePack.MessagePackReader.IsNil*
+  commentId: Overload:MessagePack.MessagePackReader.IsNil
+  isExternal: true
+  href: MessagePack.MessagePackReader.html#MessagePack_MessagePackReader_IsNil
+  name: IsNil
+  nameWithType: MessagePackReader.IsNil
+  fullName: MessagePack.MessagePackReader.IsNil
+- uid: MessagePack.MessagePackReader.NextMessagePackType*
+  commentId: Overload:MessagePack.MessagePackReader.NextMessagePackType
+  isExternal: true
+  href: MessagePack.MessagePackReader.html#MessagePack_MessagePackReader_NextMessagePackType
+  name: NextMessagePackType
+  nameWithType: MessagePackReader.NextMessagePackType
+  fullName: MessagePack.MessagePackReader.NextMessagePackType
+- uid: MessagePack.MessagePackType
+  commentId: T:MessagePack.MessagePackType
+  parent: MessagePack
+  isExternal: true
+  href: MessagePack.MessagePackType.html
+  name: MessagePackType
+  nameWithType: MessagePackType
+  fullName: MessagePack.MessagePackType
+- uid: MessagePack.MessagePackCode
+  commentId: T:MessagePack.MessagePackCode
+  isExternal: true
+  href: MessagePack.MessagePackCode.html
+  name: MessagePackCode
+  nameWithType: MessagePackCode
+  fullName: MessagePack.MessagePackCode
+- uid: MessagePack.MessagePackReader.NextCode*
+  commentId: Overload:MessagePack.MessagePackReader.NextCode
+  isExternal: true
+  href: MessagePack.MessagePackReader.html#MessagePack_MessagePackReader_NextCode
+  name: NextCode
+  nameWithType: MessagePackReader.NextCode
+  fullName: MessagePack.MessagePackReader.NextCode

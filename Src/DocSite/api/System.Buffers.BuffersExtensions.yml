@@ -1,0 +1,750 @@
+### YamlMime:ManagedReference
+items:
+- uid: System.Buffers.BuffersExtensions
+  commentId: T:System.Buffers.BuffersExtensions
+  id: BuffersExtensions
+  parent: System.Buffers
+  children:
+  - System.Buffers.BuffersExtensions.CopyTo``1(System.Buffers.ReadOnlySequence{``0}@,System.Span{``0})
+  - System.Buffers.BuffersExtensions.PositionOf``1(System.Buffers.ReadOnlySequence{``0}@,``0)
+  - System.Buffers.BuffersExtensions.ToArray``1(System.Buffers.ReadOnlySequence{``0}@)
+  - System.Buffers.BuffersExtensions.Write``1(System.Buffers.IBufferWriter{``0},System.ReadOnlySpan{``0})
+  langs:
+  - csharp
+  - vb
+  name: BuffersExtensions
+  nameWithType: BuffersExtensions
+  fullName: System.Buffers.BuffersExtensions
+  type: Class
+  assemblies:
+  - System.Memory
+  namespace: System.Buffers
+  syntax:
+    content: public static class BuffersExtensions
+    content.vb: Public Module BuffersExtensions
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: System.Buffers.BuffersExtensions.PositionOf``1(System.Buffers.ReadOnlySequence{``0}@,``0)
+  commentId: M:System.Buffers.BuffersExtensions.PositionOf``1(System.Buffers.ReadOnlySequence{``0}@,``0)
+  id: PositionOf``1(System.Buffers.ReadOnlySequence{``0}@,``0)
+  isExtensionMethod: true
+  parent: System.Buffers.BuffersExtensions
+  langs:
+  - csharp
+  - vb
+  name: PositionOf<T>(in ReadOnlySequence<T>, T)
+  nameWithType: BuffersExtensions.PositionOf<T>(in ReadOnlySequence<T>, T)
+  fullName: System.Buffers.BuffersExtensions.PositionOf<T>(in System.Buffers.ReadOnlySequence<T>, T)
+  type: Method
+  assemblies:
+  - System.Memory
+  namespace: System.Buffers
+  syntax:
+    content: 'public static SequencePosition? PositionOf<T>(this in ReadOnlySequence<T> source, T value) where T : IEquatable<T>'
+    parameters:
+    - id: source
+      type: System.Buffers.ReadOnlySequence{{T}}
+    - id: value
+      type: '{T}'
+    typeParameters:
+    - id: T
+    return:
+      type: System.Nullable{System.SequencePosition}
+    content.vb: Public Shared Function PositionOf(Of T As IEquatable(Of T))(source As ReadOnlySequence(Of T), value As T) As SequencePosition?
+  overload: System.Buffers.BuffersExtensions.PositionOf*
+  nameWithType.vb: BuffersExtensions.PositionOf(Of T)(ReadOnlySequence(Of T), T)
+  fullName.vb: System.Buffers.BuffersExtensions.PositionOf(Of T)(System.Buffers.ReadOnlySequence(Of T), T)
+  name.vb: PositionOf(Of T)(ReadOnlySequence(Of T), T)
+- uid: System.Buffers.BuffersExtensions.CopyTo``1(System.Buffers.ReadOnlySequence{``0}@,System.Span{``0})
+  commentId: M:System.Buffers.BuffersExtensions.CopyTo``1(System.Buffers.ReadOnlySequence{``0}@,System.Span{``0})
+  id: CopyTo``1(System.Buffers.ReadOnlySequence{``0}@,System.Span{``0})
+  isExtensionMethod: true
+  parent: System.Buffers.BuffersExtensions
+  langs:
+  - csharp
+  - vb
+  name: CopyTo<T>(in ReadOnlySequence<T>, Span<T>)
+  nameWithType: BuffersExtensions.CopyTo<T>(in ReadOnlySequence<T>, Span<T>)
+  fullName: System.Buffers.BuffersExtensions.CopyTo<T>(in System.Buffers.ReadOnlySequence<T>, System.Span<T>)
+  type: Method
+  assemblies:
+  - System.Memory
+  namespace: System.Buffers
+  syntax:
+    content: public static void CopyTo<T>(this in ReadOnlySequence<T> source, Span<T> destination)
+    parameters:
+    - id: source
+      type: System.Buffers.ReadOnlySequence{{T}}
+    - id: destination
+      type: System.Span{{T}}
+    typeParameters:
+    - id: T
+    content.vb: Public Shared Sub CopyTo(Of T)(source As ReadOnlySequence(Of T), destination As Span(Of T))
+  overload: System.Buffers.BuffersExtensions.CopyTo*
+  nameWithType.vb: BuffersExtensions.CopyTo(Of T)(ReadOnlySequence(Of T), Span(Of T))
+  fullName.vb: System.Buffers.BuffersExtensions.CopyTo(Of T)(System.Buffers.ReadOnlySequence(Of T), System.Span(Of T))
+  name.vb: CopyTo(Of T)(ReadOnlySequence(Of T), Span(Of T))
+- uid: System.Buffers.BuffersExtensions.ToArray``1(System.Buffers.ReadOnlySequence{``0}@)
+  commentId: M:System.Buffers.BuffersExtensions.ToArray``1(System.Buffers.ReadOnlySequence{``0}@)
+  id: ToArray``1(System.Buffers.ReadOnlySequence{``0}@)
+  isExtensionMethod: true
+  parent: System.Buffers.BuffersExtensions
+  langs:
+  - csharp
+  - vb
+  name: ToArray<T>(in ReadOnlySequence<T>)
+  nameWithType: BuffersExtensions.ToArray<T>(in ReadOnlySequence<T>)
+  fullName: System.Buffers.BuffersExtensions.ToArray<T>(in System.Buffers.ReadOnlySequence<T>)
+  type: Method
+  assemblies:
+  - System.Memory
+  namespace: System.Buffers
+  syntax:
+    content: public static T[] ToArray<T>(this in ReadOnlySequence<T> sequence)
+    parameters:
+    - id: sequence
+      type: System.Buffers.ReadOnlySequence{{T}}
+    typeParameters:
+    - id: T
+    return:
+      type: '{T}[]'
+    content.vb: Public Shared Function ToArray(Of T)(sequence As ReadOnlySequence(Of T)) As T()
+  overload: System.Buffers.BuffersExtensions.ToArray*
+  nameWithType.vb: BuffersExtensions.ToArray(Of T)(ReadOnlySequence(Of T))
+  fullName.vb: System.Buffers.BuffersExtensions.ToArray(Of T)(System.Buffers.ReadOnlySequence(Of T))
+  name.vb: ToArray(Of T)(ReadOnlySequence(Of T))
+- uid: System.Buffers.BuffersExtensions.Write``1(System.Buffers.IBufferWriter{``0},System.ReadOnlySpan{``0})
+  commentId: M:System.Buffers.BuffersExtensions.Write``1(System.Buffers.IBufferWriter{``0},System.ReadOnlySpan{``0})
+  id: Write``1(System.Buffers.IBufferWriter{``0},System.ReadOnlySpan{``0})
+  isExtensionMethod: true
+  parent: System.Buffers.BuffersExtensions
+  langs:
+  - csharp
+  - vb
+  name: Write<T>(IBufferWriter<T>, ReadOnlySpan<T>)
+  nameWithType: BuffersExtensions.Write<T>(IBufferWriter<T>, ReadOnlySpan<T>)
+  fullName: System.Buffers.BuffersExtensions.Write<T>(System.Buffers.IBufferWriter<T>, System.ReadOnlySpan<T>)
+  type: Method
+  assemblies:
+  - System.Memory
+  namespace: System.Buffers
+  syntax:
+    content: public static void Write<T>(this IBufferWriter<T> writer, ReadOnlySpan<T> value)
+    parameters:
+    - id: writer
+      type: System.Buffers.IBufferWriter{{T}}
+    - id: value
+      type: System.ReadOnlySpan{{T}}
+    typeParameters:
+    - id: T
+    content.vb: Public Shared Sub Write(Of T)(writer As IBufferWriter(Of T), value As ReadOnlySpan(Of T))
+  overload: System.Buffers.BuffersExtensions.Write*
+  nameWithType.vb: BuffersExtensions.Write(Of T)(IBufferWriter(Of T), ReadOnlySpan(Of T))
+  fullName.vb: System.Buffers.BuffersExtensions.Write(Of T)(System.Buffers.IBufferWriter(Of T), System.ReadOnlySpan(Of T))
+  name.vb: Write(Of T)(IBufferWriter(Of T), ReadOnlySpan(Of T))
+references:
+- uid: System.Buffers
+  commentId: N:System.Buffers
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Buffers
+  nameWithType: System.Buffers
+  fullName: System.Buffers
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Buffers
+    name: Buffers
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.buffers
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Buffers
+    name: Buffers
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.buffers
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Buffers.BuffersExtensions.PositionOf*
+  commentId: Overload:System.Buffers.BuffersExtensions.PositionOf
+  isExternal: true
+  href: System.Buffers.BuffersExtensions.html#System_Buffers_BuffersExtensions_PositionOf__1_System_Buffers_ReadOnlySequence___0_____0_
+  name: PositionOf
+  nameWithType: BuffersExtensions.PositionOf
+  fullName: System.Buffers.BuffersExtensions.PositionOf
+- uid: System.Buffers.ReadOnlySequence{{T}}
+  commentId: T:System.Buffers.ReadOnlySequence{`0}
+  parent: System.Buffers
+  definition: System.Buffers.ReadOnlySequence`1
+  href: https://learn.microsoft.com/dotnet/api/system.buffers.readonlysequence-1
+  name: ReadOnlySequence<T>
+  nameWithType: ReadOnlySequence<T>
+  fullName: System.Buffers.ReadOnlySequence<T>
+  nameWithType.vb: ReadOnlySequence(Of T)
+  fullName.vb: System.Buffers.ReadOnlySequence(Of T)
+  name.vb: ReadOnlySequence(Of T)
+  spec.csharp:
+  - uid: System.Buffers.ReadOnlySequence`1
+    name: ReadOnlySequence
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.buffers.readonlysequence-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Buffers.ReadOnlySequence`1
+    name: ReadOnlySequence
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.buffers.readonlysequence-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: System.Nullable{System.SequencePosition}
+  commentId: T:System.Nullable{System.SequencePosition}
+  parent: System
+  definition: System.Nullable`1
+  href: System.SequencePosition.html
+  name: SequencePosition?
+  nameWithType: SequencePosition?
+  fullName: System.SequencePosition?
+  spec.csharp:
+  - uid: System.SequencePosition
+    name: SequencePosition
+    isExternal: true
+    href: System.SequencePosition.html
+  - name: '?'
+  spec.vb:
+  - uid: System.SequencePosition
+    name: SequencePosition
+    isExternal: true
+    href: System.SequencePosition.html
+  - name: '?'
+- uid: System.Buffers.ReadOnlySequence`1
+  commentId: T:System.Buffers.ReadOnlySequence`1
+  parent: System.Buffers
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.buffers.readonlysequence-1
+  name: ReadOnlySequence<T>
+  nameWithType: ReadOnlySequence<T>
+  fullName: System.Buffers.ReadOnlySequence<T>
+  nameWithType.vb: ReadOnlySequence(Of T)
+  fullName.vb: System.Buffers.ReadOnlySequence(Of T)
+  name.vb: ReadOnlySequence(Of T)
+  spec.csharp:
+  - uid: System.Buffers.ReadOnlySequence`1
+    name: ReadOnlySequence
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.buffers.readonlysequence-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Buffers.ReadOnlySequence`1
+    name: ReadOnlySequence
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.buffers.readonlysequence-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Buffers.BuffersExtensions.CopyTo*
+  commentId: Overload:System.Buffers.BuffersExtensions.CopyTo
+  isExternal: true
+  href: System.Buffers.BuffersExtensions.html#System_Buffers_BuffersExtensions_CopyTo__1_System_Buffers_ReadOnlySequence___0___System_Span___0__
+  name: CopyTo
+  nameWithType: BuffersExtensions.CopyTo
+  fullName: System.Buffers.BuffersExtensions.CopyTo
+- uid: System.Span{{T}}
+  commentId: T:System.Span{`0}
+  parent: System
+  definition: System.Span`1
+  href: System.Span-1.html
+  name: Span<T>
+  nameWithType: Span<T>
+  fullName: System.Span<T>
+  nameWithType.vb: Span(Of T)
+  fullName.vb: System.Span(Of T)
+  name.vb: Span(Of T)
+  spec.csharp:
+  - uid: System.Span`1
+    name: Span
+    isExternal: true
+    href: System.Span-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Span`1
+    name: Span
+    isExternal: true
+    href: System.Span-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Span`1
+  commentId: T:System.Span`1
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.span-1
+  name: Span<T>
+  nameWithType: Span<T>
+  fullName: System.Span<T>
+  nameWithType.vb: Span(Of T)
+  fullName.vb: System.Span(Of T)
+  name.vb: Span(Of T)
+  spec.csharp:
+  - uid: System.Span`1
+    name: Span
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.span-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Span`1
+    name: Span
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.span-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Buffers.BuffersExtensions.ToArray*
+  commentId: Overload:System.Buffers.BuffersExtensions.ToArray
+  isExternal: true
+  href: System.Buffers.BuffersExtensions.html#System_Buffers_BuffersExtensions_ToArray__1_System_Buffers_ReadOnlySequence___0___
+  name: ToArray
+  nameWithType: BuffersExtensions.ToArray
+  fullName: System.Buffers.BuffersExtensions.ToArray
+- uid: '{T}[]'
+  isExternal: true
+  name: T[]
+  nameWithType: T[]
+  fullName: T[]
+  nameWithType.vb: T()
+  fullName.vb: T()
+  name.vb: T()
+  spec.csharp:
+  - name: T
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - name: T
+  - name: (
+  - name: )
+- uid: System.Buffers.BuffersExtensions.Write*
+  commentId: Overload:System.Buffers.BuffersExtensions.Write
+  isExternal: true
+  href: System.Buffers.BuffersExtensions.html#System_Buffers_BuffersExtensions_Write__1_System_Buffers_IBufferWriter___0__System_ReadOnlySpan___0__
+  name: Write
+  nameWithType: BuffersExtensions.Write
+  fullName: System.Buffers.BuffersExtensions.Write
+- uid: System.Buffers.IBufferWriter{{T}}
+  commentId: T:System.Buffers.IBufferWriter{``0}
+  parent: System.Buffers
+  definition: System.Buffers.IBufferWriter`1
+  href: System.Buffers.IBufferWriter-1.html
+  name: IBufferWriter<T>
+  nameWithType: IBufferWriter<T>
+  fullName: System.Buffers.IBufferWriter<T>
+  nameWithType.vb: IBufferWriter(Of T)
+  fullName.vb: System.Buffers.IBufferWriter(Of T)
+  name.vb: IBufferWriter(Of T)
+  spec.csharp:
+  - uid: System.Buffers.IBufferWriter`1
+    name: IBufferWriter
+    isExternal: true
+    href: System.Buffers.IBufferWriter-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Buffers.IBufferWriter`1
+    name: IBufferWriter
+    isExternal: true
+    href: System.Buffers.IBufferWriter-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.ReadOnlySpan{{T}}
+  commentId: T:System.ReadOnlySpan{`0}
+  parent: System
+  definition: System.ReadOnlySpan`1
+  href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  name: ReadOnlySpan<T>
+  nameWithType: ReadOnlySpan<T>
+  fullName: System.ReadOnlySpan<T>
+  nameWithType.vb: ReadOnlySpan(Of T)
+  fullName.vb: System.ReadOnlySpan(Of T)
+  name.vb: ReadOnlySpan(Of T)
+  spec.csharp:
+  - uid: System.ReadOnlySpan`1
+    name: ReadOnlySpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.ReadOnlySpan`1
+    name: ReadOnlySpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Buffers.IBufferWriter`1
+  commentId: T:System.Buffers.IBufferWriter`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.buffers.ibufferwriter-1
+  name: IBufferWriter<T>
+  nameWithType: IBufferWriter<T>
+  fullName: System.Buffers.IBufferWriter<T>
+  nameWithType.vb: IBufferWriter(Of T)
+  fullName.vb: System.Buffers.IBufferWriter(Of T)
+  name.vb: IBufferWriter(Of T)
+  spec.csharp:
+  - uid: System.Buffers.IBufferWriter`1
+    name: IBufferWriter
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.buffers.ibufferwriter-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Buffers.IBufferWriter`1
+    name: IBufferWriter
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.buffers.ibufferwriter-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.ReadOnlySpan`1
+  commentId: T:System.ReadOnlySpan`1
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  name: ReadOnlySpan<T>
+  nameWithType: ReadOnlySpan<T>
+  fullName: System.ReadOnlySpan<T>
+  nameWithType.vb: ReadOnlySpan(Of T)
+  fullName.vb: System.ReadOnlySpan(Of T)
+  name.vb: ReadOnlySpan(Of T)
+  spec.csharp:
+  - uid: System.ReadOnlySpan`1
+    name: ReadOnlySpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.ReadOnlySpan`1
+    name: ReadOnlySpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )

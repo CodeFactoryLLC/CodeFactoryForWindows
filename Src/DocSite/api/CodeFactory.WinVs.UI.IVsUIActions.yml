@@ -1,0 +1,368 @@
+### YamlMime:ManagedReference
+items:
+- uid: CodeFactory.WinVs.UI.IVsUIActions
+  commentId: T:CodeFactory.WinVs.UI.IVsUIActions
+  id: IVsUIActions
+  parent: CodeFactory.WinVs.UI
+  children:
+  - CodeFactory.WinVs.UI.IVsUIActions.CreateViewAsync``1
+  - CodeFactory.WinVs.UI.IVsUIActions.ShowDialogWindowAsync(CodeFactory.WinVs.UI.IView)
+  - CodeFactory.WinVs.UI.IVsUIActions.ShowDocumentPanelAsync(CodeFactory.WinVs.UI.IView)
+  langs:
+  - csharp
+  - vb
+  name: IVsUIActions
+  nameWithType: IVsUIActions
+  fullName: CodeFactory.WinVs.UI.IVsUIActions
+  type: Interface
+  source:
+    href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/19e816ffdf1ba504be6987736bbac42e2d241405/Src/CodeFactoryForWindows/CodeFactory.WinVs/UI/IVsUIActions.cs
+  assemblies:
+  - CodeFactory.WinVs
+  namespace: CodeFactory.WinVs.UI
+  summary: Definition of the user interface actions that are supported in visual studio.
+  example: []
+  syntax:
+    content: public interface IVsUIActions
+    content.vb: Public Interface IVsUIActions
+- uid: CodeFactory.WinVs.UI.IVsUIActions.CreateViewAsync``1
+  commentId: M:CodeFactory.WinVs.UI.IVsUIActions.CreateViewAsync``1
+  id: CreateViewAsync``1
+  parent: CodeFactory.WinVs.UI.IVsUIActions
+  langs:
+  - csharp
+  - vb
+  name: CreateViewAsync<T>()
+  nameWithType: IVsUIActions.CreateViewAsync<T>()
+  fullName: CodeFactory.WinVs.UI.IVsUIActions.CreateViewAsync<T>()
+  type: Method
+  source:
+    href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/19e816ffdf1ba504be6987736bbac42e2d241405/Src/CodeFactoryForWindows/CodeFactory.WinVs/UI/IVsUIActions.cs
+  assemblies:
+  - CodeFactory.WinVs
+  namespace: CodeFactory.WinVs.UI
+  summary: Creates a new instance of a view that is supported in visual studio by code factory. This will load the <xref href="CodeFactory.WinVs.IVsActions" data-throw-if-not-resolved="false"></xref> into the view as well as the logger that supports the view.
+  example: []
+  syntax:
+    content: 'Task<T> CreateViewAsync<T>() where T : class, IView'
+    typeParameters:
+    - id: T
+      description: The type of visual studio user control to create.
+    return:
+      type: System.Threading.Tasks.Task{{T}}
+      description: New instance of the target user control.
+    content.vb: Function CreateViewAsync(Of T As {Class, IView})() As Task(Of T)
+  overload: CodeFactory.WinVs.UI.IVsUIActions.CreateViewAsync*
+  exceptions:
+  - type: CodeFactory.WinVs.VisualStudioException
+    commentId: T:CodeFactory.WinVs.VisualStudioException
+    description: Raises a visual studio error if there was a problem creating the user control. Review the internal exception for the source of the error.
+  nameWithType.vb: IVsUIActions.CreateViewAsync(Of T)()
+  fullName.vb: CodeFactory.WinVs.UI.IVsUIActions.CreateViewAsync(Of T)()
+  name.vb: CreateViewAsync(Of T)()
+- uid: CodeFactory.WinVs.UI.IVsUIActions.ShowDialogWindowAsync(CodeFactory.WinVs.UI.IView)
+  commentId: M:CodeFactory.WinVs.UI.IVsUIActions.ShowDialogWindowAsync(CodeFactory.WinVs.UI.IView)
+  id: ShowDialogWindowAsync(CodeFactory.WinVs.UI.IView)
+  parent: CodeFactory.WinVs.UI.IVsUIActions
+  langs:
+  - csharp
+  - vb
+  name: ShowDialogWindowAsync(IView)
+  nameWithType: IVsUIActions.ShowDialogWindowAsync(IView)
+  fullName: CodeFactory.WinVs.UI.IVsUIActions.ShowDialogWindowAsync(CodeFactory.WinVs.UI.IView)
+  type: Method
+  source:
+    href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/19e816ffdf1ba504be6987736bbac42e2d241405/Src/CodeFactoryForWindows/CodeFactory.WinVs/UI/IVsUIActions.cs
+  assemblies:
+  - CodeFactory.WinVs
+  namespace: CodeFactory.WinVs.UI
+  summary: Displays a dialog window in visual studio that hosts a view. This makes sure the dialog window is thread safe to be used with visual studio.
+  example: []
+  syntax:
+    content: Task<bool?> ShowDialogWindowAsync(IView view)
+    parameters:
+    - id: view
+      type: CodeFactory.WinVs.UI.IView
+      description: The view to be loaded into the dialog window.
+    return:
+      type: System.Threading.Tasks.Task{System.Nullable{System.Boolean}}
+      description: Returns the result for the window which returns a true if a close event occurred, a false when a cancel event occurred, or null if neither were triggered.
+    content.vb: Function ShowDialogWindowAsync(view As IView) As Task(Of Boolean?)
+  overload: CodeFactory.WinVs.UI.IVsUIActions.ShowDialogWindowAsync*
+- uid: CodeFactory.WinVs.UI.IVsUIActions.ShowDocumentPanelAsync(CodeFactory.WinVs.UI.IView)
+  commentId: M:CodeFactory.WinVs.UI.IVsUIActions.ShowDocumentPanelAsync(CodeFactory.WinVs.UI.IView)
+  id: ShowDocumentPanelAsync(CodeFactory.WinVs.UI.IView)
+  parent: CodeFactory.WinVs.UI.IVsUIActions
+  langs:
+  - csharp
+  - vb
+  name: ShowDocumentPanelAsync(IView)
+  nameWithType: IVsUIActions.ShowDocumentPanelAsync(IView)
+  fullName: CodeFactory.WinVs.UI.IVsUIActions.ShowDocumentPanelAsync(CodeFactory.WinVs.UI.IView)
+  type: Method
+  source:
+    href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/19e816ffdf1ba504be6987736bbac42e2d241405/Src/CodeFactoryForWindows/CodeFactory.WinVs/UI/IVsUIActions.cs
+  assemblies:
+  - CodeFactory.WinVs
+  namespace: CodeFactory.WinVs.UI
+  summary: Displays a document panel with the target view imbedded in the document panel.
+  example: []
+  syntax:
+    content: Task ShowDocumentPanelAsync(IView view)
+    parameters:
+    - id: view
+      type: CodeFactory.WinVs.UI.IView
+      description: The view to be loaded into the document panel.
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Function ShowDocumentPanelAsync(view As IView) As Task
+  overload: CodeFactory.WinVs.UI.IVsUIActions.ShowDocumentPanelAsync*
+references:
+- uid: CodeFactory.WinVs.UI
+  commentId: N:CodeFactory.WinVs.UI
+  isExternal: true
+  href: CodeFactory.html
+  name: CodeFactory.WinVs.UI
+  nameWithType: CodeFactory.WinVs.UI
+  fullName: CodeFactory.WinVs.UI
+  spec.csharp:
+  - uid: CodeFactory
+    name: CodeFactory
+    isExternal: true
+    href: CodeFactory.html
+  - name: .
+  - uid: CodeFactory.WinVs
+    name: WinVs
+    isExternal: true
+    href: CodeFactory.WinVs.html
+  - name: .
+  - uid: CodeFactory.WinVs.UI
+    name: UI
+    isExternal: true
+    href: CodeFactory.WinVs.UI.html
+  spec.vb:
+  - uid: CodeFactory
+    name: CodeFactory
+    isExternal: true
+    href: CodeFactory.html
+  - name: .
+  - uid: CodeFactory.WinVs
+    name: WinVs
+    isExternal: true
+    href: CodeFactory.WinVs.html
+  - name: .
+  - uid: CodeFactory.WinVs.UI
+    name: UI
+    isExternal: true
+    href: CodeFactory.WinVs.UI.html
+- uid: CodeFactory.WinVs.IVsActions
+  commentId: T:CodeFactory.WinVs.IVsActions
+  parent: CodeFactory.WinVs
+  isExternal: true
+  href: CodeFactory.WinVs.IVsActions.html
+  name: IVsActions
+  nameWithType: IVsActions
+  fullName: CodeFactory.WinVs.IVsActions
+- uid: CodeFactory.WinVs.VisualStudioException
+  commentId: T:CodeFactory.WinVs.VisualStudioException
+  parent: CodeFactory.WinVs
+  isExternal: true
+  href: CodeFactory.WinVs.VisualStudioException.html
+  name: VisualStudioException
+  nameWithType: VisualStudioException
+  fullName: CodeFactory.WinVs.VisualStudioException
+- uid: CodeFactory.WinVs.UI.IVsUIActions.CreateViewAsync*
+  commentId: Overload:CodeFactory.WinVs.UI.IVsUIActions.CreateViewAsync
+  isExternal: true
+  href: CodeFactory.WinVs.UI.IVsUIActions.html#CodeFactory_WinVs_UI_IVsUIActions_CreateViewAsync__1
+  name: CreateViewAsync
+  nameWithType: IVsUIActions.CreateViewAsync
+  fullName: CodeFactory.WinVs.UI.IVsUIActions.CreateViewAsync
+- uid: System.Threading.Tasks.Task{{T}}
+  commentId: T:System.Threading.Tasks.Task{``0}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<T>
+  nameWithType: Task<T>
+  fullName: System.Threading.Tasks.Task<T>
+  nameWithType.vb: Task(Of T)
+  fullName.vb: System.Threading.Tasks.Task(Of T)
+  name.vb: Task(Of T)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: CodeFactory.WinVs
+  commentId: N:CodeFactory.WinVs
+  isExternal: true
+  href: CodeFactory.html
+  name: CodeFactory.WinVs
+  nameWithType: CodeFactory.WinVs
+  fullName: CodeFactory.WinVs
+  spec.csharp:
+  - uid: CodeFactory
+    name: CodeFactory
+    isExternal: true
+    href: CodeFactory.html
+  - name: .
+  - uid: CodeFactory.WinVs
+    name: WinVs
+    isExternal: true
+    href: CodeFactory.WinVs.html
+  spec.vb:
+  - uid: CodeFactory
+    name: CodeFactory
+    isExternal: true
+    href: CodeFactory.html
+  - name: .
+  - uid: CodeFactory.WinVs
+    name: WinVs
+    isExternal: true
+    href: CodeFactory.WinVs.html
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: CodeFactory.WinVs.UI.IVsUIActions.ShowDialogWindowAsync*
+  commentId: Overload:CodeFactory.WinVs.UI.IVsUIActions.ShowDialogWindowAsync
+  isExternal: true
+  href: CodeFactory.WinVs.UI.IVsUIActions.html#CodeFactory_WinVs_UI_IVsUIActions_ShowDialogWindowAsync_CodeFactory_WinVs_UI_IView_
+  name: ShowDialogWindowAsync
+  nameWithType: IVsUIActions.ShowDialogWindowAsync
+  fullName: CodeFactory.WinVs.UI.IVsUIActions.ShowDialogWindowAsync
+- uid: CodeFactory.WinVs.UI.IView
+  commentId: T:CodeFactory.WinVs.UI.IView
+  parent: CodeFactory.WinVs.UI
+  isExternal: true
+  href: CodeFactory.WinVs.UI.IView.html
+  name: IView
+  nameWithType: IView
+  fullName: CodeFactory.WinVs.UI.IView
+- uid: System.Threading.Tasks.Task{System.Nullable{System.Boolean}}
+  commentId: T:System.Threading.Tasks.Task{System.Nullable{System.Boolean}}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<bool?>
+  nameWithType: Task<bool?>
+  fullName: System.Threading.Tasks.Task<bool?>
+  nameWithType.vb: Task(Of Boolean?)
+  fullName.vb: System.Threading.Tasks.Task(Of Boolean?)
+  name.vb: Task(Of Boolean?)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '?'
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '?'
+  - name: )
+- uid: CodeFactory.WinVs.UI.IVsUIActions.ShowDocumentPanelAsync*
+  commentId: Overload:CodeFactory.WinVs.UI.IVsUIActions.ShowDocumentPanelAsync
+  isExternal: true
+  href: CodeFactory.WinVs.UI.IVsUIActions.html#CodeFactory_WinVs_UI_IVsUIActions_ShowDocumentPanelAsync_CodeFactory_WinVs_UI_IView_
+  name: ShowDocumentPanelAsync
+  nameWithType: IVsUIActions.ShowDocumentPanelAsync
+  fullName: CodeFactory.WinVs.UI.IVsUIActions.ShowDocumentPanelAsync
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task

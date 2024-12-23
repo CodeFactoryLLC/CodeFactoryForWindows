@@ -1,0 +1,1036 @@
+### YamlMime:ManagedReference
+items:
+- uid: CodeFactory.WinVs.Models.ProjectSystem.IVsDocumentActions
+  commentId: T:CodeFactory.WinVs.Models.ProjectSystem.IVsDocumentActions
+  id: IVsDocumentActions
+  parent: CodeFactory.WinVs.Models.ProjectSystem
+  children:
+  - CodeFactory.WinVs.Models.ProjectSystem.IVsDocumentActions.AddContentAsync(CodeFactory.WinVs.Models.ProjectSystem.VsDocument,CodeFactory.Document.IDocumentLocation,System.String)
+  - CodeFactory.WinVs.Models.ProjectSystem.IVsDocumentActions.AddContentToBeginningAsync(CodeFactory.WinVs.Models.ProjectSystem.VsDocument,System.String)
+  - CodeFactory.WinVs.Models.ProjectSystem.IVsDocumentActions.AddContentToEndAsync(CodeFactory.WinVs.Models.ProjectSystem.VsDocument,System.String)
+  - CodeFactory.WinVs.Models.ProjectSystem.IVsDocumentActions.DeleteAsync(CodeFactory.WinVs.Models.ProjectSystem.VsDocument)
+  - CodeFactory.WinVs.Models.ProjectSystem.IVsDocumentActions.GetCSharpSourceModelAsync(CodeFactory.WinVs.Models.ProjectSystem.VsDocument)
+  - CodeFactory.WinVs.Models.ProjectSystem.IVsDocumentActions.GetChildrenAsync(CodeFactory.WinVs.Models.ProjectSystem.VsDocument,System.Boolean)
+  - CodeFactory.WinVs.Models.ProjectSystem.IVsDocumentActions.GetDocumentContentAsContentAsync(CodeFactory.WinVs.Models.ProjectSystem.VsDocument)
+  - CodeFactory.WinVs.Models.ProjectSystem.IVsDocumentActions.GetDocumentContentAsStringAsync(CodeFactory.WinVs.Models.ProjectSystem.VsDocument)
+  - CodeFactory.WinVs.Models.ProjectSystem.IVsDocumentActions.GetDocumentContentAsStringAsync(CodeFactory.WinVs.Models.ProjectSystem.VsDocument,CodeFactory.Document.IDocumentLocation,CodeFactory.Document.IDocumentLocation)
+  - CodeFactory.WinVs.Models.ProjectSystem.IVsDocumentActions.GetParentAsync(CodeFactory.WinVs.Models.ProjectSystem.VsDocument)
+  - CodeFactory.WinVs.Models.ProjectSystem.IVsDocumentActions.RemoveAsync(CodeFactory.WinVs.Models.ProjectSystem.VsDocument)
+  - CodeFactory.WinVs.Models.ProjectSystem.IVsDocumentActions.RemoveContentAsync(CodeFactory.WinVs.Models.ProjectSystem.VsDocument)
+  - CodeFactory.WinVs.Models.ProjectSystem.IVsDocumentActions.RemoveContentAsync(CodeFactory.WinVs.Models.ProjectSystem.VsDocument,CodeFactory.Document.IDocumentLocation,CodeFactory.Document.IDocumentLocation)
+  - CodeFactory.WinVs.Models.ProjectSystem.IVsDocumentActions.ReplaceContentAsync(CodeFactory.WinVs.Models.ProjectSystem.VsDocument,System.String)
+  - CodeFactory.WinVs.Models.ProjectSystem.IVsDocumentActions.ReplaceContentAsync(CodeFactory.WinVs.Models.ProjectSystem.VsDocument,System.String,CodeFactory.Document.IDocumentLocation,CodeFactory.Document.IDocumentLocation)
+  langs:
+  - csharp
+  - vb
+  name: IVsDocumentActions
+  nameWithType: IVsDocumentActions
+  fullName: CodeFactory.WinVs.Models.ProjectSystem.IVsDocumentActions
+  type: Interface
+  source:
+    href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/19e816ffdf1ba504be6987736bbac42e2d241405/Src/CodeFactoryForWindows/CodeFactory.WinVs/Models/ProjectSystem/IVsDocumentActions.cs
+  assemblies:
+  - CodeFactory.WinVs
+  namespace: CodeFactory.WinVs.Models.ProjectSystem
+  summary: Visual studio actions that support the <xref href="CodeFactory.WinVs.Models.ProjectSystem.IVsDocument" data-throw-if-not-resolved="false"></xref> model.
+  example: []
+  syntax:
+    content: public interface IVsDocumentActions
+    content.vb: Public Interface IVsDocumentActions
+- uid: CodeFactory.WinVs.Models.ProjectSystem.IVsDocumentActions.GetParentAsync(CodeFactory.WinVs.Models.ProjectSystem.VsDocument)
+  commentId: M:CodeFactory.WinVs.Models.ProjectSystem.IVsDocumentActions.GetParentAsync(CodeFactory.WinVs.Models.ProjectSystem.VsDocument)
+  id: GetParentAsync(CodeFactory.WinVs.Models.ProjectSystem.VsDocument)
+  parent: CodeFactory.WinVs.Models.ProjectSystem.IVsDocumentActions
+  langs:
+  - csharp
+  - vb
+  name: GetParentAsync(VsDocument)
+  nameWithType: IVsDocumentActions.GetParentAsync(VsDocument)
+  fullName: CodeFactory.WinVs.Models.ProjectSystem.IVsDocumentActions.GetParentAsync(CodeFactory.WinVs.Models.ProjectSystem.VsDocument)
+  type: Method
+  source:
+    href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/19e816ffdf1ba504be6987736bbac42e2d241405/Src/CodeFactoryForWindows/CodeFactory.WinVs/Models/ProjectSystem/IVsDocumentActions.cs
+  assemblies:
+  - CodeFactory.WinVs
+  namespace: CodeFactory.WinVs.Models.ProjectSystem
+  summary: Get the parent visual studio model of the document.
+  example: []
+  syntax:
+    content: Task<VsModel> GetParentAsync(VsDocument source)
+    parameters:
+    - id: source
+      type: CodeFactory.WinVs.Models.ProjectSystem.VsDocument
+      description: document to get the parent of.
+    return:
+      type: System.Threading.Tasks.Task{CodeFactory.WinVs.Models.ProjectSystem.VsModel}
+      description: Model of the parent of this document. The model will be returned unless there is no parent, otherwise null will be returned.
+    content.vb: Function GetParentAsync(source As VsDocument) As Task(Of VsModel)
+  overload: CodeFactory.WinVs.Models.ProjectSystem.IVsDocumentActions.GetParentAsync*
+- uid: CodeFactory.WinVs.Models.ProjectSystem.IVsDocumentActions.GetChildrenAsync(CodeFactory.WinVs.Models.ProjectSystem.VsDocument,System.Boolean)
+  commentId: M:CodeFactory.WinVs.Models.ProjectSystem.IVsDocumentActions.GetChildrenAsync(CodeFactory.WinVs.Models.ProjectSystem.VsDocument,System.Boolean)
+  id: GetChildrenAsync(CodeFactory.WinVs.Models.ProjectSystem.VsDocument,System.Boolean)
+  parent: CodeFactory.WinVs.Models.ProjectSystem.IVsDocumentActions
+  langs:
+  - csharp
+  - vb
+  name: GetChildrenAsync(VsDocument, bool)
+  nameWithType: IVsDocumentActions.GetChildrenAsync(VsDocument, bool)
+  fullName: CodeFactory.WinVs.Models.ProjectSystem.IVsDocumentActions.GetChildrenAsync(CodeFactory.WinVs.Models.ProjectSystem.VsDocument, bool)
+  type: Method
+  source:
+    href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/19e816ffdf1ba504be6987736bbac42e2d241405/Src/CodeFactoryForWindows/CodeFactory.WinVs/Models/ProjectSystem/IVsDocumentActions.cs
+  assemblies:
+  - CodeFactory.WinVs
+  namespace: CodeFactory.WinVs.Models.ProjectSystem
+  summary: Gets the direct children of the document.
+  example: []
+  syntax:
+    content: Task<IReadOnlyList<VsDocument>> GetChildrenAsync(VsDocument source, bool allChildren)
+    parameters:
+    - id: source
+      type: CodeFactory.WinVs.Models.ProjectSystem.VsDocument
+      description: The document to get children from.
+    - id: allChildren
+      type: System.Boolean
+      description: Flag that determines if all children from the document should be returned.
+    return:
+      type: System.Threading.Tasks.Task{System.Collections.Generic.IReadOnlyList{CodeFactory.WinVs.Models.ProjectSystem.VsDocument}}
+      description: Readonly list of all the project documents, if no children are found then an empty readonly list will be returned.
+    content.vb: Function GetChildrenAsync(source As VsDocument, allChildren As Boolean) As Task(Of IReadOnlyList(Of VsDocument))
+  overload: CodeFactory.WinVs.Models.ProjectSystem.IVsDocumentActions.GetChildrenAsync*
+  nameWithType.vb: IVsDocumentActions.GetChildrenAsync(VsDocument, Boolean)
+  fullName.vb: CodeFactory.WinVs.Models.ProjectSystem.IVsDocumentActions.GetChildrenAsync(CodeFactory.WinVs.Models.ProjectSystem.VsDocument, Boolean)
+  name.vb: GetChildrenAsync(VsDocument, Boolean)
+- uid: CodeFactory.WinVs.Models.ProjectSystem.IVsDocumentActions.DeleteAsync(CodeFactory.WinVs.Models.ProjectSystem.VsDocument)
+  commentId: M:CodeFactory.WinVs.Models.ProjectSystem.IVsDocumentActions.DeleteAsync(CodeFactory.WinVs.Models.ProjectSystem.VsDocument)
+  id: DeleteAsync(CodeFactory.WinVs.Models.ProjectSystem.VsDocument)
+  parent: CodeFactory.WinVs.Models.ProjectSystem.IVsDocumentActions
+  langs:
+  - csharp
+  - vb
+  name: DeleteAsync(VsDocument)
+  nameWithType: IVsDocumentActions.DeleteAsync(VsDocument)
+  fullName: CodeFactory.WinVs.Models.ProjectSystem.IVsDocumentActions.DeleteAsync(CodeFactory.WinVs.Models.ProjectSystem.VsDocument)
+  type: Method
+  source:
+    href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/19e816ffdf1ba504be6987736bbac42e2d241405/Src/CodeFactoryForWindows/CodeFactory.WinVs/Models/ProjectSystem/IVsDocumentActions.cs
+  assemblies:
+  - CodeFactory.WinVs
+  namespace: CodeFactory.WinVs.Models.ProjectSystem
+  summary: Deletes the document.
+  remarks: Currently does not support deleting solution documents.
+  example: []
+  syntax:
+    content: Task<bool> DeleteAsync(VsDocument source)
+    parameters:
+    - id: source
+      type: CodeFactory.WinVs.Models.ProjectSystem.VsDocument
+      description: document to be deleted.
+    return:
+      type: System.Threading.Tasks.Task{System.Boolean}
+      description: Flag that notifies if the delete operation completed successfully.
+    content.vb: Function DeleteAsync(source As VsDocument) As Task(Of Boolean)
+  overload: CodeFactory.WinVs.Models.ProjectSystem.IVsDocumentActions.DeleteAsync*
+- uid: CodeFactory.WinVs.Models.ProjectSystem.IVsDocumentActions.RemoveAsync(CodeFactory.WinVs.Models.ProjectSystem.VsDocument)
+  commentId: M:CodeFactory.WinVs.Models.ProjectSystem.IVsDocumentActions.RemoveAsync(CodeFactory.WinVs.Models.ProjectSystem.VsDocument)
+  id: RemoveAsync(CodeFactory.WinVs.Models.ProjectSystem.VsDocument)
+  parent: CodeFactory.WinVs.Models.ProjectSystem.IVsDocumentActions
+  langs:
+  - csharp
+  - vb
+  name: RemoveAsync(VsDocument)
+  nameWithType: IVsDocumentActions.RemoveAsync(VsDocument)
+  fullName: CodeFactory.WinVs.Models.ProjectSystem.IVsDocumentActions.RemoveAsync(CodeFactory.WinVs.Models.ProjectSystem.VsDocument)
+  type: Method
+  source:
+    href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/19e816ffdf1ba504be6987736bbac42e2d241405/Src/CodeFactoryForWindows/CodeFactory.WinVs/Models/ProjectSystem/IVsDocumentActions.cs
+  assemblies:
+  - CodeFactory.WinVs
+  namespace: CodeFactory.WinVs.Models.ProjectSystem
+  summary: Removes a document from visual studio but does not remove it from the file system.
+  remarks: Currently does not support removing solution documents.
+  example: []
+  syntax:
+    content: Task<bool> RemoveAsync(VsDocument source)
+    parameters:
+    - id: source
+      type: CodeFactory.WinVs.Models.ProjectSystem.VsDocument
+      description: document to be removed.
+    return:
+      type: System.Threading.Tasks.Task{System.Boolean}
+      description: Flag that notifies if the remove operation completed successfully.
+    content.vb: Function RemoveAsync(source As VsDocument) As Task(Of Boolean)
+  overload: CodeFactory.WinVs.Models.ProjectSystem.IVsDocumentActions.RemoveAsync*
+- uid: CodeFactory.WinVs.Models.ProjectSystem.IVsDocumentActions.GetDocumentContentAsStringAsync(CodeFactory.WinVs.Models.ProjectSystem.VsDocument)
+  commentId: M:CodeFactory.WinVs.Models.ProjectSystem.IVsDocumentActions.GetDocumentContentAsStringAsync(CodeFactory.WinVs.Models.ProjectSystem.VsDocument)
+  id: GetDocumentContentAsStringAsync(CodeFactory.WinVs.Models.ProjectSystem.VsDocument)
+  parent: CodeFactory.WinVs.Models.ProjectSystem.IVsDocumentActions
+  langs:
+  - csharp
+  - vb
+  name: GetDocumentContentAsStringAsync(VsDocument)
+  nameWithType: IVsDocumentActions.GetDocumentContentAsStringAsync(VsDocument)
+  fullName: CodeFactory.WinVs.Models.ProjectSystem.IVsDocumentActions.GetDocumentContentAsStringAsync(CodeFactory.WinVs.Models.ProjectSystem.VsDocument)
+  type: Method
+  source:
+    href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/19e816ffdf1ba504be6987736bbac42e2d241405/Src/CodeFactoryForWindows/CodeFactory.WinVs/Models/ProjectSystem/IVsDocumentActions.cs
+  assemblies:
+  - CodeFactory.WinVs
+  namespace: CodeFactory.WinVs.Models.ProjectSystem
+  summary: Gets the content of the document.
+  example: []
+  syntax:
+    content: Task<string> GetDocumentContentAsStringAsync(VsDocument source)
+    parameters:
+    - id: source
+      type: CodeFactory.WinVs.Models.ProjectSystem.VsDocument
+      description: The document to get content from.
+    return:
+      type: System.Threading.Tasks.Task{System.String}
+      description: The content of the document or null if there is no content in the document.
+    content.vb: Function GetDocumentContentAsStringAsync(source As VsDocument) As Task(Of String)
+  overload: CodeFactory.WinVs.Models.ProjectSystem.IVsDocumentActions.GetDocumentContentAsStringAsync*
+- uid: CodeFactory.WinVs.Models.ProjectSystem.IVsDocumentActions.GetDocumentContentAsStringAsync(CodeFactory.WinVs.Models.ProjectSystem.VsDocument,CodeFactory.Document.IDocumentLocation,CodeFactory.Document.IDocumentLocation)
+  commentId: M:CodeFactory.WinVs.Models.ProjectSystem.IVsDocumentActions.GetDocumentContentAsStringAsync(CodeFactory.WinVs.Models.ProjectSystem.VsDocument,CodeFactory.Document.IDocumentLocation,CodeFactory.Document.IDocumentLocation)
+  id: GetDocumentContentAsStringAsync(CodeFactory.WinVs.Models.ProjectSystem.VsDocument,CodeFactory.Document.IDocumentLocation,CodeFactory.Document.IDocumentLocation)
+  parent: CodeFactory.WinVs.Models.ProjectSystem.IVsDocumentActions
+  langs:
+  - csharp
+  - vb
+  name: GetDocumentContentAsStringAsync(VsDocument, IDocumentLocation, IDocumentLocation)
+  nameWithType: IVsDocumentActions.GetDocumentContentAsStringAsync(VsDocument, IDocumentLocation, IDocumentLocation)
+  fullName: CodeFactory.WinVs.Models.ProjectSystem.IVsDocumentActions.GetDocumentContentAsStringAsync(CodeFactory.WinVs.Models.ProjectSystem.VsDocument, CodeFactory.Document.IDocumentLocation, CodeFactory.Document.IDocumentLocation)
+  type: Method
+  source:
+    href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/19e816ffdf1ba504be6987736bbac42e2d241405/Src/CodeFactoryForWindows/CodeFactory.WinVs/Models/ProjectSystem/IVsDocumentActions.cs
+  assemblies:
+  - CodeFactory.WinVs
+  namespace: CodeFactory.WinVs.Models.ProjectSystem
+  summary: Gets the content of the document.
+  example: []
+  syntax:
+    content: Task<string> GetDocumentContentAsStringAsync(VsDocument source, IDocumentLocation startLocation, IDocumentLocation endLocation)
+    parameters:
+    - id: source
+      type: CodeFactory.WinVs.Models.ProjectSystem.VsDocument
+      description: The document to get content from.
+    - id: startLocation
+      type: CodeFactory.Document.IDocumentLocation
+      description: The starting position within the document to get content from.
+    - id: endLocation
+      type: CodeFactory.Document.IDocumentLocation
+      description: The ending position within the document to get content form.
+    return:
+      type: System.Threading.Tasks.Task{System.String}
+      description: The content of the document or null if there is no content in the document.
+    content.vb: Function GetDocumentContentAsStringAsync(source As VsDocument, startLocation As IDocumentLocation, endLocation As IDocumentLocation) As Task(Of String)
+  overload: CodeFactory.WinVs.Models.ProjectSystem.IVsDocumentActions.GetDocumentContentAsStringAsync*
+- uid: CodeFactory.WinVs.Models.ProjectSystem.IVsDocumentActions.GetDocumentContentAsContentAsync(CodeFactory.WinVs.Models.ProjectSystem.VsDocument)
+  commentId: M:CodeFactory.WinVs.Models.ProjectSystem.IVsDocumentActions.GetDocumentContentAsContentAsync(CodeFactory.WinVs.Models.ProjectSystem.VsDocument)
+  id: GetDocumentContentAsContentAsync(CodeFactory.WinVs.Models.ProjectSystem.VsDocument)
+  parent: CodeFactory.WinVs.Models.ProjectSystem.IVsDocumentActions
+  langs:
+  - csharp
+  - vb
+  name: GetDocumentContentAsContentAsync(VsDocument)
+  nameWithType: IVsDocumentActions.GetDocumentContentAsContentAsync(VsDocument)
+  fullName: CodeFactory.WinVs.Models.ProjectSystem.IVsDocumentActions.GetDocumentContentAsContentAsync(CodeFactory.WinVs.Models.ProjectSystem.VsDocument)
+  type: Method
+  source:
+    href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/19e816ffdf1ba504be6987736bbac42e2d241405/Src/CodeFactoryForWindows/CodeFactory.WinVs/Models/ProjectSystem/IVsDocumentActions.cs
+  assemblies:
+  - CodeFactory.WinVs
+  namespace: CodeFactory.WinVs.Models.ProjectSystem
+  summary: Gets the content of the document.
+  example: []
+  syntax:
+    content: Task<IDocumentContent> GetDocumentContentAsContentAsync(VsDocument source)
+    parameters:
+    - id: source
+      type: CodeFactory.WinVs.Models.ProjectSystem.VsDocument
+      description: The document to get content from.
+    return:
+      type: System.Threading.Tasks.Task{CodeFactory.Document.IDocumentContent}
+      description: Document content as
+    content.vb: Function GetDocumentContentAsContentAsync(source As VsDocument) As Task(Of IDocumentContent)
+  overload: CodeFactory.WinVs.Models.ProjectSystem.IVsDocumentActions.GetDocumentContentAsContentAsync*
+- uid: CodeFactory.WinVs.Models.ProjectSystem.IVsDocumentActions.AddContentToBeginningAsync(CodeFactory.WinVs.Models.ProjectSystem.VsDocument,System.String)
+  commentId: M:CodeFactory.WinVs.Models.ProjectSystem.IVsDocumentActions.AddContentToBeginningAsync(CodeFactory.WinVs.Models.ProjectSystem.VsDocument,System.String)
+  id: AddContentToBeginningAsync(CodeFactory.WinVs.Models.ProjectSystem.VsDocument,System.String)
+  parent: CodeFactory.WinVs.Models.ProjectSystem.IVsDocumentActions
+  langs:
+  - csharp
+  - vb
+  name: AddContentToBeginningAsync(VsDocument, string)
+  nameWithType: IVsDocumentActions.AddContentToBeginningAsync(VsDocument, string)
+  fullName: CodeFactory.WinVs.Models.ProjectSystem.IVsDocumentActions.AddContentToBeginningAsync(CodeFactory.WinVs.Models.ProjectSystem.VsDocument, string)
+  type: Method
+  source:
+    href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/19e816ffdf1ba504be6987736bbac42e2d241405/Src/CodeFactoryForWindows/CodeFactory.WinVs/Models/ProjectSystem/IVsDocumentActions.cs
+  assemblies:
+  - CodeFactory.WinVs
+  namespace: CodeFactory.WinVs.Models.ProjectSystem
+  summary: Adds content to the beginning of a document.
+  example: []
+  syntax:
+    content: Task AddContentToBeginningAsync(VsDocument source, string content)
+    parameters:
+    - id: source
+      type: CodeFactory.WinVs.Models.ProjectSystem.VsDocument
+      description: Document to add content to.
+    - id: content
+      type: System.String
+      description: The content to be added.
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Function AddContentToBeginningAsync(source As VsDocument, content As String) As Task
+  overload: CodeFactory.WinVs.Models.ProjectSystem.IVsDocumentActions.AddContentToBeginningAsync*
+  nameWithType.vb: IVsDocumentActions.AddContentToBeginningAsync(VsDocument, String)
+  fullName.vb: CodeFactory.WinVs.Models.ProjectSystem.IVsDocumentActions.AddContentToBeginningAsync(CodeFactory.WinVs.Models.ProjectSystem.VsDocument, String)
+  name.vb: AddContentToBeginningAsync(VsDocument, String)
+- uid: CodeFactory.WinVs.Models.ProjectSystem.IVsDocumentActions.AddContentToEndAsync(CodeFactory.WinVs.Models.ProjectSystem.VsDocument,System.String)
+  commentId: M:CodeFactory.WinVs.Models.ProjectSystem.IVsDocumentActions.AddContentToEndAsync(CodeFactory.WinVs.Models.ProjectSystem.VsDocument,System.String)
+  id: AddContentToEndAsync(CodeFactory.WinVs.Models.ProjectSystem.VsDocument,System.String)
+  parent: CodeFactory.WinVs.Models.ProjectSystem.IVsDocumentActions
+  langs:
+  - csharp
+  - vb
+  name: AddContentToEndAsync(VsDocument, string)
+  nameWithType: IVsDocumentActions.AddContentToEndAsync(VsDocument, string)
+  fullName: CodeFactory.WinVs.Models.ProjectSystem.IVsDocumentActions.AddContentToEndAsync(CodeFactory.WinVs.Models.ProjectSystem.VsDocument, string)
+  type: Method
+  source:
+    href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/19e816ffdf1ba504be6987736bbac42e2d241405/Src/CodeFactoryForWindows/CodeFactory.WinVs/Models/ProjectSystem/IVsDocumentActions.cs
+  assemblies:
+  - CodeFactory.WinVs
+  namespace: CodeFactory.WinVs.Models.ProjectSystem
+  summary: Adds content to the end of a document.
+  example: []
+  syntax:
+    content: Task AddContentToEndAsync(VsDocument source, string content)
+    parameters:
+    - id: source
+      type: CodeFactory.WinVs.Models.ProjectSystem.VsDocument
+      description: Document to add content to.
+    - id: content
+      type: System.String
+      description: The content to be added.
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Function AddContentToEndAsync(source As VsDocument, content As String) As Task
+  overload: CodeFactory.WinVs.Models.ProjectSystem.IVsDocumentActions.AddContentToEndAsync*
+  nameWithType.vb: IVsDocumentActions.AddContentToEndAsync(VsDocument, String)
+  fullName.vb: CodeFactory.WinVs.Models.ProjectSystem.IVsDocumentActions.AddContentToEndAsync(CodeFactory.WinVs.Models.ProjectSystem.VsDocument, String)
+  name.vb: AddContentToEndAsync(VsDocument, String)
+- uid: CodeFactory.WinVs.Models.ProjectSystem.IVsDocumentActions.AddContentAsync(CodeFactory.WinVs.Models.ProjectSystem.VsDocument,CodeFactory.Document.IDocumentLocation,System.String)
+  commentId: M:CodeFactory.WinVs.Models.ProjectSystem.IVsDocumentActions.AddContentAsync(CodeFactory.WinVs.Models.ProjectSystem.VsDocument,CodeFactory.Document.IDocumentLocation,System.String)
+  id: AddContentAsync(CodeFactory.WinVs.Models.ProjectSystem.VsDocument,CodeFactory.Document.IDocumentLocation,System.String)
+  parent: CodeFactory.WinVs.Models.ProjectSystem.IVsDocumentActions
+  langs:
+  - csharp
+  - vb
+  name: AddContentAsync(VsDocument, IDocumentLocation, string)
+  nameWithType: IVsDocumentActions.AddContentAsync(VsDocument, IDocumentLocation, string)
+  fullName: CodeFactory.WinVs.Models.ProjectSystem.IVsDocumentActions.AddContentAsync(CodeFactory.WinVs.Models.ProjectSystem.VsDocument, CodeFactory.Document.IDocumentLocation, string)
+  type: Method
+  source:
+    href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/19e816ffdf1ba504be6987736bbac42e2d241405/Src/CodeFactoryForWindows/CodeFactory.WinVs/Models/ProjectSystem/IVsDocumentActions.cs
+  assemblies:
+  - CodeFactory.WinVs
+  namespace: CodeFactory.WinVs.Models.ProjectSystem
+  summary: Adds content to a target starting at an assigned
+  example: []
+  syntax:
+    content: Task AddContentAsync(VsDocument source, IDocumentLocation location, string content)
+    parameters:
+    - id: source
+      type: CodeFactory.WinVs.Models.ProjectSystem.VsDocument
+      description: Document to have content added to.
+    - id: location
+      type: CodeFactory.Document.IDocumentLocation
+      description: Location within the document to add content to.
+    - id: content
+      type: System.String
+      description: The content to be added to the document.
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Function AddContentAsync(source As VsDocument, location As IDocumentLocation, content As String) As Task
+  overload: CodeFactory.WinVs.Models.ProjectSystem.IVsDocumentActions.AddContentAsync*
+  nameWithType.vb: IVsDocumentActions.AddContentAsync(VsDocument, IDocumentLocation, String)
+  fullName.vb: CodeFactory.WinVs.Models.ProjectSystem.IVsDocumentActions.AddContentAsync(CodeFactory.WinVs.Models.ProjectSystem.VsDocument, CodeFactory.Document.IDocumentLocation, String)
+  name.vb: AddContentAsync(VsDocument, IDocumentLocation, String)
+- uid: CodeFactory.WinVs.Models.ProjectSystem.IVsDocumentActions.RemoveContentAsync(CodeFactory.WinVs.Models.ProjectSystem.VsDocument)
+  commentId: M:CodeFactory.WinVs.Models.ProjectSystem.IVsDocumentActions.RemoveContentAsync(CodeFactory.WinVs.Models.ProjectSystem.VsDocument)
+  id: RemoveContentAsync(CodeFactory.WinVs.Models.ProjectSystem.VsDocument)
+  parent: CodeFactory.WinVs.Models.ProjectSystem.IVsDocumentActions
+  langs:
+  - csharp
+  - vb
+  name: RemoveContentAsync(VsDocument)
+  nameWithType: IVsDocumentActions.RemoveContentAsync(VsDocument)
+  fullName: CodeFactory.WinVs.Models.ProjectSystem.IVsDocumentActions.RemoveContentAsync(CodeFactory.WinVs.Models.ProjectSystem.VsDocument)
+  type: Method
+  source:
+    href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/19e816ffdf1ba504be6987736bbac42e2d241405/Src/CodeFactoryForWindows/CodeFactory.WinVs/Models/ProjectSystem/IVsDocumentActions.cs
+  assemblies:
+  - CodeFactory.WinVs
+  namespace: CodeFactory.WinVs.Models.ProjectSystem
+  summary: Removes all the content from a document.
+  example: []
+  syntax:
+    content: Task RemoveContentAsync(VsDocument source)
+    parameters:
+    - id: source
+      type: CodeFactory.WinVs.Models.ProjectSystem.VsDocument
+      description: Document to remove content from.
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Function RemoveContentAsync(source As VsDocument) As Task
+  overload: CodeFactory.WinVs.Models.ProjectSystem.IVsDocumentActions.RemoveContentAsync*
+- uid: CodeFactory.WinVs.Models.ProjectSystem.IVsDocumentActions.RemoveContentAsync(CodeFactory.WinVs.Models.ProjectSystem.VsDocument,CodeFactory.Document.IDocumentLocation,CodeFactory.Document.IDocumentLocation)
+  commentId: M:CodeFactory.WinVs.Models.ProjectSystem.IVsDocumentActions.RemoveContentAsync(CodeFactory.WinVs.Models.ProjectSystem.VsDocument,CodeFactory.Document.IDocumentLocation,CodeFactory.Document.IDocumentLocation)
+  id: RemoveContentAsync(CodeFactory.WinVs.Models.ProjectSystem.VsDocument,CodeFactory.Document.IDocumentLocation,CodeFactory.Document.IDocumentLocation)
+  parent: CodeFactory.WinVs.Models.ProjectSystem.IVsDocumentActions
+  langs:
+  - csharp
+  - vb
+  name: RemoveContentAsync(VsDocument, IDocumentLocation, IDocumentLocation)
+  nameWithType: IVsDocumentActions.RemoveContentAsync(VsDocument, IDocumentLocation, IDocumentLocation)
+  fullName: CodeFactory.WinVs.Models.ProjectSystem.IVsDocumentActions.RemoveContentAsync(CodeFactory.WinVs.Models.ProjectSystem.VsDocument, CodeFactory.Document.IDocumentLocation, CodeFactory.Document.IDocumentLocation)
+  type: Method
+  source:
+    href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/19e816ffdf1ba504be6987736bbac42e2d241405/Src/CodeFactoryForWindows/CodeFactory.WinVs/Models/ProjectSystem/IVsDocumentActions.cs
+  assemblies:
+  - CodeFactory.WinVs
+  namespace: CodeFactory.WinVs.Models.ProjectSystem
+  summary: Removes a target set of content from the document.
+  example: []
+  syntax:
+    content: Task RemoveContentAsync(VsDocument source, IDocumentLocation startLocation, IDocumentLocation endLocation)
+    parameters:
+    - id: source
+      type: CodeFactory.WinVs.Models.ProjectSystem.VsDocument
+      description: Document to remove content from.
+    - id: startLocation
+      type: CodeFactory.Document.IDocumentLocation
+      description: The starting position within the document to remove content from.
+    - id: endLocation
+      type: CodeFactory.Document.IDocumentLocation
+      description: The ending position within the document to remove content form.
+    return:
+      type: System.Threading.Tasks.Task
+      description: ''
+    content.vb: Function RemoveContentAsync(source As VsDocument, startLocation As IDocumentLocation, endLocation As IDocumentLocation) As Task
+  overload: CodeFactory.WinVs.Models.ProjectSystem.IVsDocumentActions.RemoveContentAsync*
+- uid: CodeFactory.WinVs.Models.ProjectSystem.IVsDocumentActions.ReplaceContentAsync(CodeFactory.WinVs.Models.ProjectSystem.VsDocument,System.String)
+  commentId: M:CodeFactory.WinVs.Models.ProjectSystem.IVsDocumentActions.ReplaceContentAsync(CodeFactory.WinVs.Models.ProjectSystem.VsDocument,System.String)
+  id: ReplaceContentAsync(CodeFactory.WinVs.Models.ProjectSystem.VsDocument,System.String)
+  parent: CodeFactory.WinVs.Models.ProjectSystem.IVsDocumentActions
+  langs:
+  - csharp
+  - vb
+  name: ReplaceContentAsync(VsDocument, string)
+  nameWithType: IVsDocumentActions.ReplaceContentAsync(VsDocument, string)
+  fullName: CodeFactory.WinVs.Models.ProjectSystem.IVsDocumentActions.ReplaceContentAsync(CodeFactory.WinVs.Models.ProjectSystem.VsDocument, string)
+  type: Method
+  source:
+    href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/19e816ffdf1ba504be6987736bbac42e2d241405/Src/CodeFactoryForWindows/CodeFactory.WinVs/Models/ProjectSystem/IVsDocumentActions.cs
+  assemblies:
+  - CodeFactory.WinVs
+  namespace: CodeFactory.WinVs.Models.ProjectSystem
+  summary: Replaces all the content within the document.
+  example: []
+  syntax:
+    content: Task ReplaceContentAsync(VsDocument source, string content)
+    parameters:
+    - id: source
+      type: CodeFactory.WinVs.Models.ProjectSystem.VsDocument
+      description: The target document to have content replaced.
+    - id: content
+      type: System.String
+      description: Content to replace the existing content in the document.
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Function ReplaceContentAsync(source As VsDocument, content As String) As Task
+  overload: CodeFactory.WinVs.Models.ProjectSystem.IVsDocumentActions.ReplaceContentAsync*
+  nameWithType.vb: IVsDocumentActions.ReplaceContentAsync(VsDocument, String)
+  fullName.vb: CodeFactory.WinVs.Models.ProjectSystem.IVsDocumentActions.ReplaceContentAsync(CodeFactory.WinVs.Models.ProjectSystem.VsDocument, String)
+  name.vb: ReplaceContentAsync(VsDocument, String)
+- uid: CodeFactory.WinVs.Models.ProjectSystem.IVsDocumentActions.ReplaceContentAsync(CodeFactory.WinVs.Models.ProjectSystem.VsDocument,System.String,CodeFactory.Document.IDocumentLocation,CodeFactory.Document.IDocumentLocation)
+  commentId: M:CodeFactory.WinVs.Models.ProjectSystem.IVsDocumentActions.ReplaceContentAsync(CodeFactory.WinVs.Models.ProjectSystem.VsDocument,System.String,CodeFactory.Document.IDocumentLocation,CodeFactory.Document.IDocumentLocation)
+  id: ReplaceContentAsync(CodeFactory.WinVs.Models.ProjectSystem.VsDocument,System.String,CodeFactory.Document.IDocumentLocation,CodeFactory.Document.IDocumentLocation)
+  parent: CodeFactory.WinVs.Models.ProjectSystem.IVsDocumentActions
+  langs:
+  - csharp
+  - vb
+  name: ReplaceContentAsync(VsDocument, string, IDocumentLocation, IDocumentLocation)
+  nameWithType: IVsDocumentActions.ReplaceContentAsync(VsDocument, string, IDocumentLocation, IDocumentLocation)
+  fullName: CodeFactory.WinVs.Models.ProjectSystem.IVsDocumentActions.ReplaceContentAsync(CodeFactory.WinVs.Models.ProjectSystem.VsDocument, string, CodeFactory.Document.IDocumentLocation, CodeFactory.Document.IDocumentLocation)
+  type: Method
+  source:
+    href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/19e816ffdf1ba504be6987736bbac42e2d241405/Src/CodeFactoryForWindows/CodeFactory.WinVs/Models/ProjectSystem/IVsDocumentActions.cs
+  assemblies:
+  - CodeFactory.WinVs
+  namespace: CodeFactory.WinVs.Models.ProjectSystem
+  summary: Replaces all the content within the document.
+  example: []
+  syntax:
+    content: Task ReplaceContentAsync(VsDocument source, string content, IDocumentLocation startLocation, IDocumentLocation endLocation)
+    parameters:
+    - id: source
+      type: CodeFactory.WinVs.Models.ProjectSystem.VsDocument
+      description: The target document to have content replaced.
+    - id: content
+      type: System.String
+      description: Content to replace the existing content in the document.
+    - id: startLocation
+      type: CodeFactory.Document.IDocumentLocation
+      description: The starting position within the document to replace content.
+    - id: endLocation
+      type: CodeFactory.Document.IDocumentLocation
+      description: The ending location within the document to replace content.
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Function ReplaceContentAsync(source As VsDocument, content As String, startLocation As IDocumentLocation, endLocation As IDocumentLocation) As Task
+  overload: CodeFactory.WinVs.Models.ProjectSystem.IVsDocumentActions.ReplaceContentAsync*
+  nameWithType.vb: IVsDocumentActions.ReplaceContentAsync(VsDocument, String, IDocumentLocation, IDocumentLocation)
+  fullName.vb: CodeFactory.WinVs.Models.ProjectSystem.IVsDocumentActions.ReplaceContentAsync(CodeFactory.WinVs.Models.ProjectSystem.VsDocument, String, CodeFactory.Document.IDocumentLocation, CodeFactory.Document.IDocumentLocation)
+  name.vb: ReplaceContentAsync(VsDocument, String, IDocumentLocation, IDocumentLocation)
+- uid: CodeFactory.WinVs.Models.ProjectSystem.IVsDocumentActions.GetCSharpSourceModelAsync(CodeFactory.WinVs.Models.ProjectSystem.VsDocument)
+  commentId: M:CodeFactory.WinVs.Models.ProjectSystem.IVsDocumentActions.GetCSharpSourceModelAsync(CodeFactory.WinVs.Models.ProjectSystem.VsDocument)
+  id: GetCSharpSourceModelAsync(CodeFactory.WinVs.Models.ProjectSystem.VsDocument)
+  parent: CodeFactory.WinVs.Models.ProjectSystem.IVsDocumentActions
+  langs:
+  - csharp
+  - vb
+  name: GetCSharpSourceModelAsync(VsDocument)
+  nameWithType: IVsDocumentActions.GetCSharpSourceModelAsync(VsDocument)
+  fullName: CodeFactory.WinVs.Models.ProjectSystem.IVsDocumentActions.GetCSharpSourceModelAsync(CodeFactory.WinVs.Models.ProjectSystem.VsDocument)
+  type: Method
+  source:
+    href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/19e816ffdf1ba504be6987736bbac42e2d241405/Src/CodeFactoryForWindows/CodeFactory.WinVs/Models/ProjectSystem/IVsDocumentActions.cs
+  assemblies:
+  - CodeFactory.WinVs
+  namespace: CodeFactory.WinVs.Models.ProjectSystem
+  summary: If the document is implemented as a C# code model. Will return the C# source code model from the visual studio document.
+  example: []
+  syntax:
+    content: Task<CsSource> GetCSharpSourceModelAsync(VsDocument source)
+    parameters:
+    - id: source
+      type: CodeFactory.WinVs.Models.ProjectSystem.VsDocument
+      description: The source document to load the C# code model from.
+    return:
+      type: System.Threading.Tasks.Task{CodeFactory.WinVs.Models.CSharp.CsSource}
+      description: The loaded model or null if the model could not be loaded.
+    content.vb: Function GetCSharpSourceModelAsync(source As VsDocument) As Task(Of CsSource)
+  overload: CodeFactory.WinVs.Models.ProjectSystem.IVsDocumentActions.GetCSharpSourceModelAsync*
+references:
+- uid: CodeFactory.WinVs.Models.ProjectSystem.IVsDocument
+  commentId: T:CodeFactory.WinVs.Models.ProjectSystem.IVsDocument
+  parent: CodeFactory.WinVs.Models.ProjectSystem
+  isExternal: true
+  href: CodeFactory.WinVs.Models.ProjectSystem.IVsDocument.html
+  name: IVsDocument
+  nameWithType: IVsDocument
+  fullName: CodeFactory.WinVs.Models.ProjectSystem.IVsDocument
+- uid: CodeFactory.WinVs.Models.ProjectSystem
+  commentId: N:CodeFactory.WinVs.Models.ProjectSystem
+  isExternal: true
+  href: CodeFactory.html
+  name: CodeFactory.WinVs.Models.ProjectSystem
+  nameWithType: CodeFactory.WinVs.Models.ProjectSystem
+  fullName: CodeFactory.WinVs.Models.ProjectSystem
+  spec.csharp:
+  - uid: CodeFactory
+    name: CodeFactory
+    isExternal: true
+    href: CodeFactory.html
+  - name: .
+  - uid: CodeFactory.WinVs
+    name: WinVs
+    isExternal: true
+    href: CodeFactory.WinVs.html
+  - name: .
+  - uid: CodeFactory.WinVs.Models
+    name: Models
+    isExternal: true
+    href: CodeFactory.WinVs.Models.html
+  - name: .
+  - uid: CodeFactory.WinVs.Models.ProjectSystem
+    name: ProjectSystem
+    isExternal: true
+    href: CodeFactory.WinVs.Models.ProjectSystem.html
+  spec.vb:
+  - uid: CodeFactory
+    name: CodeFactory
+    isExternal: true
+    href: CodeFactory.html
+  - name: .
+  - uid: CodeFactory.WinVs
+    name: WinVs
+    isExternal: true
+    href: CodeFactory.WinVs.html
+  - name: .
+  - uid: CodeFactory.WinVs.Models
+    name: Models
+    isExternal: true
+    href: CodeFactory.WinVs.Models.html
+  - name: .
+  - uid: CodeFactory.WinVs.Models.ProjectSystem
+    name: ProjectSystem
+    isExternal: true
+    href: CodeFactory.WinVs.Models.ProjectSystem.html
+- uid: CodeFactory.WinVs.Models.ProjectSystem.IVsDocumentActions.GetParentAsync*
+  commentId: Overload:CodeFactory.WinVs.Models.ProjectSystem.IVsDocumentActions.GetParentAsync
+  isExternal: true
+  href: CodeFactory.WinVs.Models.ProjectSystem.IVsDocumentActions.html#CodeFactory_WinVs_Models_ProjectSystem_IVsDocumentActions_GetParentAsync_CodeFactory_WinVs_Models_ProjectSystem_VsDocument_
+  name: GetParentAsync
+  nameWithType: IVsDocumentActions.GetParentAsync
+  fullName: CodeFactory.WinVs.Models.ProjectSystem.IVsDocumentActions.GetParentAsync
+- uid: CodeFactory.WinVs.Models.ProjectSystem.VsDocument
+  commentId: T:CodeFactory.WinVs.Models.ProjectSystem.VsDocument
+  parent: CodeFactory.WinVs.Models.ProjectSystem
+  isExternal: true
+  href: CodeFactory.WinVs.Models.ProjectSystem.VsDocument.html
+  name: VsDocument
+  nameWithType: VsDocument
+  fullName: CodeFactory.WinVs.Models.ProjectSystem.VsDocument
+- uid: System.Threading.Tasks.Task{CodeFactory.WinVs.Models.ProjectSystem.VsModel}
+  commentId: T:System.Threading.Tasks.Task{CodeFactory.WinVs.Models.ProjectSystem.VsModel}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<VsModel>
+  nameWithType: Task<VsModel>
+  fullName: System.Threading.Tasks.Task<CodeFactory.WinVs.Models.ProjectSystem.VsModel>
+  nameWithType.vb: Task(Of VsModel)
+  fullName.vb: System.Threading.Tasks.Task(Of CodeFactory.WinVs.Models.ProjectSystem.VsModel)
+  name.vb: Task(Of VsModel)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: CodeFactory.WinVs.Models.ProjectSystem.VsModel
+    name: VsModel
+    isExternal: true
+    href: CodeFactory.WinVs.Models.ProjectSystem.VsModel.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: CodeFactory.WinVs.Models.ProjectSystem.VsModel
+    name: VsModel
+    isExternal: true
+    href: CodeFactory.WinVs.Models.ProjectSystem.VsModel.html
+  - name: )
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: CodeFactory.WinVs.Models.ProjectSystem.IVsDocumentActions.GetChildrenAsync*
+  commentId: Overload:CodeFactory.WinVs.Models.ProjectSystem.IVsDocumentActions.GetChildrenAsync
+  isExternal: true
+  href: CodeFactory.WinVs.Models.ProjectSystem.IVsDocumentActions.html#CodeFactory_WinVs_Models_ProjectSystem_IVsDocumentActions_GetChildrenAsync_CodeFactory_WinVs_Models_ProjectSystem_VsDocument_System_Boolean_
+  name: GetChildrenAsync
+  nameWithType: IVsDocumentActions.GetChildrenAsync
+  fullName: CodeFactory.WinVs.Models.ProjectSystem.IVsDocumentActions.GetChildrenAsync
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System.Threading.Tasks.Task{System.Collections.Generic.IReadOnlyList{CodeFactory.WinVs.Models.ProjectSystem.VsDocument}}
+  commentId: T:System.Threading.Tasks.Task{System.Collections.Generic.IReadOnlyList{CodeFactory.WinVs.Models.ProjectSystem.VsDocument}}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<IReadOnlyList<VsDocument>>
+  nameWithType: Task<IReadOnlyList<VsDocument>>
+  fullName: System.Threading.Tasks.Task<System.Collections.Generic.IReadOnlyList<CodeFactory.WinVs.Models.ProjectSystem.VsDocument>>
+  nameWithType.vb: Task(Of IReadOnlyList(Of VsDocument))
+  fullName.vb: System.Threading.Tasks.Task(Of System.Collections.Generic.IReadOnlyList(Of CodeFactory.WinVs.Models.ProjectSystem.VsDocument))
+  name.vb: Task(Of IReadOnlyList(Of VsDocument))
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - uid: CodeFactory.WinVs.Models.ProjectSystem.VsDocument
+    name: VsDocument
+    isExternal: true
+    href: CodeFactory.WinVs.Models.ProjectSystem.VsDocument.html
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: CodeFactory.WinVs.Models.ProjectSystem.VsDocument
+    name: VsDocument
+    isExternal: true
+    href: CodeFactory.WinVs.Models.ProjectSystem.VsDocument.html
+  - name: )
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: CodeFactory.WinVs.Models.ProjectSystem.IVsDocumentActions.DeleteAsync*
+  commentId: Overload:CodeFactory.WinVs.Models.ProjectSystem.IVsDocumentActions.DeleteAsync
+  isExternal: true
+  href: CodeFactory.WinVs.Models.ProjectSystem.IVsDocumentActions.html#CodeFactory_WinVs_Models_ProjectSystem_IVsDocumentActions_DeleteAsync_CodeFactory_WinVs_Models_ProjectSystem_VsDocument_
+  name: DeleteAsync
+  nameWithType: IVsDocumentActions.DeleteAsync
+  fullName: CodeFactory.WinVs.Models.ProjectSystem.IVsDocumentActions.DeleteAsync
+- uid: System.Threading.Tasks.Task{System.Boolean}
+  commentId: T:System.Threading.Tasks.Task{System.Boolean}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<bool>
+  nameWithType: Task<bool>
+  fullName: System.Threading.Tasks.Task<bool>
+  nameWithType.vb: Task(Of Boolean)
+  fullName.vb: System.Threading.Tasks.Task(Of Boolean)
+  name.vb: Task(Of Boolean)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: CodeFactory.WinVs.Models.ProjectSystem.IVsDocumentActions.RemoveAsync*
+  commentId: Overload:CodeFactory.WinVs.Models.ProjectSystem.IVsDocumentActions.RemoveAsync
+  isExternal: true
+  href: CodeFactory.WinVs.Models.ProjectSystem.IVsDocumentActions.html#CodeFactory_WinVs_Models_ProjectSystem_IVsDocumentActions_RemoveAsync_CodeFactory_WinVs_Models_ProjectSystem_VsDocument_
+  name: RemoveAsync
+  nameWithType: IVsDocumentActions.RemoveAsync
+  fullName: CodeFactory.WinVs.Models.ProjectSystem.IVsDocumentActions.RemoveAsync
+- uid: CodeFactory.WinVs.Models.ProjectSystem.IVsDocumentActions.GetDocumentContentAsStringAsync*
+  commentId: Overload:CodeFactory.WinVs.Models.ProjectSystem.IVsDocumentActions.GetDocumentContentAsStringAsync
+  isExternal: true
+  href: CodeFactory.WinVs.Models.ProjectSystem.IVsDocumentActions.html#CodeFactory_WinVs_Models_ProjectSystem_IVsDocumentActions_GetDocumentContentAsStringAsync_CodeFactory_WinVs_Models_ProjectSystem_VsDocument_
+  name: GetDocumentContentAsStringAsync
+  nameWithType: IVsDocumentActions.GetDocumentContentAsStringAsync
+  fullName: CodeFactory.WinVs.Models.ProjectSystem.IVsDocumentActions.GetDocumentContentAsStringAsync
+- uid: System.Threading.Tasks.Task{System.String}
+  commentId: T:System.Threading.Tasks.Task{System.String}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<string>
+  nameWithType: Task<string>
+  fullName: System.Threading.Tasks.Task<string>
+  nameWithType.vb: Task(Of String)
+  fullName.vb: System.Threading.Tasks.Task(Of String)
+  name.vb: Task(Of String)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: CodeFactory.Document.IDocumentLocation
+  commentId: T:CodeFactory.Document.IDocumentLocation
+  parent: CodeFactory.Document
+  isExternal: true
+  href: CodeFactory.Document.IDocumentLocation.html
+  name: IDocumentLocation
+  nameWithType: IDocumentLocation
+  fullName: CodeFactory.Document.IDocumentLocation
+- uid: CodeFactory.Document
+  commentId: N:CodeFactory.Document
+  isExternal: true
+  href: CodeFactory.html
+  name: CodeFactory.Document
+  nameWithType: CodeFactory.Document
+  fullName: CodeFactory.Document
+  spec.csharp:
+  - uid: CodeFactory
+    name: CodeFactory
+    isExternal: true
+    href: CodeFactory.html
+  - name: .
+  - uid: CodeFactory.Document
+    name: Document
+    isExternal: true
+    href: CodeFactory.Document.html
+  spec.vb:
+  - uid: CodeFactory
+    name: CodeFactory
+    isExternal: true
+    href: CodeFactory.html
+  - name: .
+  - uid: CodeFactory.Document
+    name: Document
+    isExternal: true
+    href: CodeFactory.Document.html
+- uid: CodeFactory.WinVs.Models.ProjectSystem.IVsDocumentActions.GetDocumentContentAsContentAsync*
+  commentId: Overload:CodeFactory.WinVs.Models.ProjectSystem.IVsDocumentActions.GetDocumentContentAsContentAsync
+  isExternal: true
+  href: CodeFactory.WinVs.Models.ProjectSystem.IVsDocumentActions.html#CodeFactory_WinVs_Models_ProjectSystem_IVsDocumentActions_GetDocumentContentAsContentAsync_CodeFactory_WinVs_Models_ProjectSystem_VsDocument_
+  name: GetDocumentContentAsContentAsync
+  nameWithType: IVsDocumentActions.GetDocumentContentAsContentAsync
+  fullName: CodeFactory.WinVs.Models.ProjectSystem.IVsDocumentActions.GetDocumentContentAsContentAsync
+- uid: System.Threading.Tasks.Task{CodeFactory.Document.IDocumentContent}
+  commentId: T:System.Threading.Tasks.Task{CodeFactory.Document.IDocumentContent}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<IDocumentContent>
+  nameWithType: Task<IDocumentContent>
+  fullName: System.Threading.Tasks.Task<CodeFactory.Document.IDocumentContent>
+  nameWithType.vb: Task(Of IDocumentContent)
+  fullName.vb: System.Threading.Tasks.Task(Of CodeFactory.Document.IDocumentContent)
+  name.vb: Task(Of IDocumentContent)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: CodeFactory.Document.IDocumentContent
+    name: IDocumentContent
+    isExternal: true
+    href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/19e816ffdf1ba504be6987736bbac42e2d241405/Src/CodeFactoryForWindows/CodeFactory/Document/IDocumentContent.cs
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: CodeFactory.Document.IDocumentContent
+    name: IDocumentContent
+    isExternal: true
+    href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/19e816ffdf1ba504be6987736bbac42e2d241405/Src/CodeFactoryForWindows/CodeFactory/Document/IDocumentContent.cs
+  - name: )
+- uid: CodeFactory.WinVs.Models.ProjectSystem.IVsDocumentActions.AddContentToBeginningAsync*
+  commentId: Overload:CodeFactory.WinVs.Models.ProjectSystem.IVsDocumentActions.AddContentToBeginningAsync
+  isExternal: true
+  href: CodeFactory.WinVs.Models.ProjectSystem.IVsDocumentActions.html#CodeFactory_WinVs_Models_ProjectSystem_IVsDocumentActions_AddContentToBeginningAsync_CodeFactory_WinVs_Models_ProjectSystem_VsDocument_System_String_
+  name: AddContentToBeginningAsync
+  nameWithType: IVsDocumentActions.AddContentToBeginningAsync
+  fullName: CodeFactory.WinVs.Models.ProjectSystem.IVsDocumentActions.AddContentToBeginningAsync
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: CodeFactory.WinVs.Models.ProjectSystem.IVsDocumentActions.AddContentToEndAsync*
+  commentId: Overload:CodeFactory.WinVs.Models.ProjectSystem.IVsDocumentActions.AddContentToEndAsync
+  isExternal: true
+  href: CodeFactory.WinVs.Models.ProjectSystem.IVsDocumentActions.html#CodeFactory_WinVs_Models_ProjectSystem_IVsDocumentActions_AddContentToEndAsync_CodeFactory_WinVs_Models_ProjectSystem_VsDocument_System_String_
+  name: AddContentToEndAsync
+  nameWithType: IVsDocumentActions.AddContentToEndAsync
+  fullName: CodeFactory.WinVs.Models.ProjectSystem.IVsDocumentActions.AddContentToEndAsync
+- uid: CodeFactory.WinVs.Models.ProjectSystem.IVsDocumentActions.AddContentAsync*
+  commentId: Overload:CodeFactory.WinVs.Models.ProjectSystem.IVsDocumentActions.AddContentAsync
+  isExternal: true
+  href: CodeFactory.WinVs.Models.ProjectSystem.IVsDocumentActions.html#CodeFactory_WinVs_Models_ProjectSystem_IVsDocumentActions_AddContentAsync_CodeFactory_WinVs_Models_ProjectSystem_VsDocument_CodeFactory_Document_IDocumentLocation_System_String_
+  name: AddContentAsync
+  nameWithType: IVsDocumentActions.AddContentAsync
+  fullName: CodeFactory.WinVs.Models.ProjectSystem.IVsDocumentActions.AddContentAsync
+- uid: CodeFactory.WinVs.Models.ProjectSystem.IVsDocumentActions.RemoveContentAsync*
+  commentId: Overload:CodeFactory.WinVs.Models.ProjectSystem.IVsDocumentActions.RemoveContentAsync
+  isExternal: true
+  href: CodeFactory.WinVs.Models.ProjectSystem.IVsDocumentActions.html#CodeFactory_WinVs_Models_ProjectSystem_IVsDocumentActions_RemoveContentAsync_CodeFactory_WinVs_Models_ProjectSystem_VsDocument_
+  name: RemoveContentAsync
+  nameWithType: IVsDocumentActions.RemoveContentAsync
+  fullName: CodeFactory.WinVs.Models.ProjectSystem.IVsDocumentActions.RemoveContentAsync
+- uid: CodeFactory.WinVs.Models.ProjectSystem.IVsDocumentActions.ReplaceContentAsync*
+  commentId: Overload:CodeFactory.WinVs.Models.ProjectSystem.IVsDocumentActions.ReplaceContentAsync
+  isExternal: true
+  href: CodeFactory.WinVs.Models.ProjectSystem.IVsDocumentActions.html#CodeFactory_WinVs_Models_ProjectSystem_IVsDocumentActions_ReplaceContentAsync_CodeFactory_WinVs_Models_ProjectSystem_VsDocument_System_String_
+  name: ReplaceContentAsync
+  nameWithType: IVsDocumentActions.ReplaceContentAsync
+  fullName: CodeFactory.WinVs.Models.ProjectSystem.IVsDocumentActions.ReplaceContentAsync
+- uid: CodeFactory.WinVs.Models.ProjectSystem.IVsDocumentActions.GetCSharpSourceModelAsync*
+  commentId: Overload:CodeFactory.WinVs.Models.ProjectSystem.IVsDocumentActions.GetCSharpSourceModelAsync
+  isExternal: true
+  href: CodeFactory.WinVs.Models.ProjectSystem.IVsDocumentActions.html#CodeFactory_WinVs_Models_ProjectSystem_IVsDocumentActions_GetCSharpSourceModelAsync_CodeFactory_WinVs_Models_ProjectSystem_VsDocument_
+  name: GetCSharpSourceModelAsync
+  nameWithType: IVsDocumentActions.GetCSharpSourceModelAsync
+  fullName: CodeFactory.WinVs.Models.ProjectSystem.IVsDocumentActions.GetCSharpSourceModelAsync
+- uid: System.Threading.Tasks.Task{CodeFactory.WinVs.Models.CSharp.CsSource}
+  commentId: T:System.Threading.Tasks.Task{CodeFactory.WinVs.Models.CSharp.CsSource}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<CsSource>
+  nameWithType: Task<CsSource>
+  fullName: System.Threading.Tasks.Task<CodeFactory.WinVs.Models.CSharp.CsSource>
+  nameWithType.vb: Task(Of CsSource)
+  fullName.vb: System.Threading.Tasks.Task(Of CodeFactory.WinVs.Models.CSharp.CsSource)
+  name.vb: Task(Of CsSource)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: CodeFactory.WinVs.Models.CSharp.CsSource
+    name: CsSource
+    isExternal: true
+    href: CodeFactory.WinVs.Models.CSharp.CsSource.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: CodeFactory.WinVs.Models.CSharp.CsSource
+    name: CsSource
+    isExternal: true
+    href: CodeFactory.WinVs.Models.CSharp.CsSource.html
+  - name: )

@@ -1,0 +1,698 @@
+### YamlMime:ManagedReference
+items:
+- uid: Serilog.Events.ScalarValue
+  commentId: T:Serilog.Events.ScalarValue
+  id: ScalarValue
+  parent: Serilog.Events
+  children:
+  - Serilog.Events.ScalarValue.#ctor(System.Object)
+  - Serilog.Events.ScalarValue.Equals(System.Object)
+  - Serilog.Events.ScalarValue.GetHashCode
+  - Serilog.Events.ScalarValue.Render(System.IO.TextWriter,System.String,System.IFormatProvider)
+  - Serilog.Events.ScalarValue.Value
+  langs:
+  - csharp
+  - vb
+  name: ScalarValue
+  nameWithType: ScalarValue
+  fullName: Serilog.Events.ScalarValue
+  type: Class
+  assemblies:
+  - Serilog
+  namespace: Serilog.Events
+  summary: A property value corresponding to a simple, scalar type.
+  example: []
+  syntax:
+    content: 'public class ScalarValue : LogEventPropertyValue, IFormattable'
+    content.vb: Public Class ScalarValue Inherits LogEventPropertyValue Implements IFormattable
+  inheritance:
+  - System.Object
+  - Serilog.Events.LogEventPropertyValue
+  implements:
+  - System.IFormattable
+  inheritedMembers:
+  - Serilog.Events.LogEventPropertyValue.ToString
+  - Serilog.Events.LogEventPropertyValue.ToString(System.String,System.IFormatProvider)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: Serilog.Events.ScalarValue.#ctor(System.Object)
+  commentId: M:Serilog.Events.ScalarValue.#ctor(System.Object)
+  id: '#ctor(System.Object)'
+  parent: Serilog.Events.ScalarValue
+  langs:
+  - csharp
+  - vb
+  name: ScalarValue(object?)
+  nameWithType: ScalarValue.ScalarValue(object?)
+  fullName: Serilog.Events.ScalarValue.ScalarValue(object?)
+  type: Constructor
+  assemblies:
+  - Serilog
+  namespace: Serilog.Events
+  summary: >-
+    Construct a <xref href="Serilog.Events.ScalarValue" data-throw-if-not-resolved="false"></xref> with the specified
+
+    value.
+  example: []
+  syntax:
+    content: public ScalarValue(object? value)
+    parameters:
+    - id: value
+      type: System.Object
+      description: The value, which may be <pre><code class="lang-csharp">null</code></pre>.
+    content.vb: Public Sub New(value As Object)
+  overload: Serilog.Events.ScalarValue.#ctor*
+  nameWithType.vb: ScalarValue.New(Object)
+  fullName.vb: Serilog.Events.ScalarValue.New(Object)
+  name.vb: New(Object)
+- uid: Serilog.Events.ScalarValue.Render(System.IO.TextWriter,System.String,System.IFormatProvider)
+  commentId: M:Serilog.Events.ScalarValue.Render(System.IO.TextWriter,System.String,System.IFormatProvider)
+  id: Render(System.IO.TextWriter,System.String,System.IFormatProvider)
+  parent: Serilog.Events.ScalarValue
+  langs:
+  - csharp
+  - vb
+  name: Render(TextWriter, string?, IFormatProvider?)
+  nameWithType: ScalarValue.Render(TextWriter, string?, IFormatProvider?)
+  fullName: Serilog.Events.ScalarValue.Render(System.IO.TextWriter, string?, System.IFormatProvider?)
+  type: Method
+  assemblies:
+  - Serilog
+  namespace: Serilog.Events
+  summary: Render the value to the output.
+  example: []
+  syntax:
+    content: public override void Render(TextWriter output, string? format = null, IFormatProvider? formatProvider = null)
+    parameters:
+    - id: output
+      type: System.IO.TextWriter
+      description: The output.
+    - id: format
+      type: System.String
+      description: A format string applied to the value, or null.
+    - id: formatProvider
+      type: System.IFormatProvider
+      description: A format provider to apply to the value, or null to use the default.
+    content.vb: Public Overrides Sub Render(output As TextWriter, format As String = Nothing, formatProvider As IFormatProvider = Nothing)
+  overridden: Serilog.Events.LogEventPropertyValue.Render(System.IO.TextWriter,System.String,System.IFormatProvider)
+  overload: Serilog.Events.ScalarValue.Render*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: When <code class="paramref">output</code> is <pre><code class="lang-csharp">null</code></pre>
+  seealso:
+  - linkId: Serilog.Events.LogEventPropertyValue.ToString(System.String,System.IFormatProvider)
+    commentId: M:Serilog.Events.LogEventPropertyValue.ToString(System.String,System.IFormatProvider)
+  nameWithType.vb: ScalarValue.Render(TextWriter, String, IFormatProvider)
+  fullName.vb: Serilog.Events.ScalarValue.Render(System.IO.TextWriter, String, System.IFormatProvider)
+  name.vb: Render(TextWriter, String, IFormatProvider)
+- uid: Serilog.Events.ScalarValue.Equals(System.Object)
+  commentId: M:Serilog.Events.ScalarValue.Equals(System.Object)
+  id: Equals(System.Object)
+  parent: Serilog.Events.ScalarValue
+  langs:
+  - csharp
+  - vb
+  name: Equals(object?)
+  nameWithType: ScalarValue.Equals(object?)
+  fullName: Serilog.Events.ScalarValue.Equals(object?)
+  type: Method
+  assemblies:
+  - Serilog
+  namespace: Serilog.Events
+  summary: Determine if this instance is equal to <code class="paramref">obj</code>.
+  example: []
+  syntax:
+    content: public override bool Equals(object? obj)
+    parameters:
+    - id: obj
+      type: System.Object
+      description: The instance to compare with.
+    return:
+      type: System.Boolean
+      description: True if the instances are equal; otherwise, false.
+    content.vb: Public Overrides Function Equals(obj As Object) As Boolean
+  overridden: System.Object.Equals(System.Object)
+  overload: Serilog.Events.ScalarValue.Equals*
+  nameWithType.vb: ScalarValue.Equals(Object)
+  fullName.vb: Serilog.Events.ScalarValue.Equals(Object)
+  name.vb: Equals(Object)
+- uid: Serilog.Events.ScalarValue.GetHashCode
+  commentId: M:Serilog.Events.ScalarValue.GetHashCode
+  id: GetHashCode
+  parent: Serilog.Events.ScalarValue
+  langs:
+  - csharp
+  - vb
+  name: GetHashCode()
+  nameWithType: ScalarValue.GetHashCode()
+  fullName: Serilog.Events.ScalarValue.GetHashCode()
+  type: Method
+  assemblies:
+  - Serilog
+  namespace: Serilog.Events
+  summary: Get a hash code representing the value.
+  example: []
+  syntax:
+    content: public override int GetHashCode()
+    return:
+      type: System.Int32
+      description: The instance's hash code.
+    content.vb: Public Overrides Function GetHashCode() As Integer
+  overridden: System.Object.GetHashCode
+  overload: Serilog.Events.ScalarValue.GetHashCode*
+- uid: Serilog.Events.ScalarValue.Value
+  commentId: P:Serilog.Events.ScalarValue.Value
+  id: Value
+  parent: Serilog.Events.ScalarValue
+  langs:
+  - csharp
+  - vb
+  name: Value
+  nameWithType: ScalarValue.Value
+  fullName: Serilog.Events.ScalarValue.Value
+  type: Property
+  assemblies:
+  - Serilog
+  namespace: Serilog.Events
+  summary: The value, which may be <pre><code class="lang-csharp">null</code></pre>.
+  example: []
+  syntax:
+    content: public object? Value { get; }
+    parameters: []
+    return:
+      type: System.Object
+    content.vb: Public ReadOnly Property Value As Object
+  overload: Serilog.Events.ScalarValue.Value*
+references:
+- uid: Serilog.Events
+  commentId: N:Serilog.Events
+  isExternal: true
+  href: Serilog.html
+  name: Serilog.Events
+  nameWithType: Serilog.Events
+  fullName: Serilog.Events
+  spec.csharp:
+  - uid: Serilog
+    name: Serilog
+    isExternal: true
+    href: Serilog.html
+  - name: .
+  - uid: Serilog.Events
+    name: Events
+    isExternal: true
+    href: Serilog.Events.html
+  spec.vb:
+  - uid: Serilog
+    name: Serilog
+    isExternal: true
+    href: Serilog.html
+  - name: .
+  - uid: Serilog.Events
+    name: Events
+    isExternal: true
+    href: Serilog.Events.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Serilog.Events.LogEventPropertyValue
+  commentId: T:Serilog.Events.LogEventPropertyValue
+  parent: Serilog.Events
+  isExternal: true
+  href: Serilog.Events.LogEventPropertyValue.html
+  name: LogEventPropertyValue
+  nameWithType: LogEventPropertyValue
+  fullName: Serilog.Events.LogEventPropertyValue
+- uid: System.IFormattable
+  commentId: T:System.IFormattable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iformattable
+  name: IFormattable
+  nameWithType: IFormattable
+  fullName: System.IFormattable
+- uid: Serilog.Events.LogEventPropertyValue.ToString
+  commentId: M:Serilog.Events.LogEventPropertyValue.ToString
+  parent: Serilog.Events.LogEventPropertyValue
+  isExternal: true
+  href: Serilog.Events.LogEventPropertyValue.html#Serilog_Events_LogEventPropertyValue_ToString
+  name: ToString()
+  nameWithType: LogEventPropertyValue.ToString()
+  fullName: Serilog.Events.LogEventPropertyValue.ToString()
+  spec.csharp:
+  - uid: Serilog.Events.LogEventPropertyValue.ToString
+    name: ToString
+    isExternal: true
+    href: Serilog.Events.LogEventPropertyValue.html#Serilog_Events_LogEventPropertyValue_ToString
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Serilog.Events.LogEventPropertyValue.ToString
+    name: ToString
+    isExternal: true
+    href: Serilog.Events.LogEventPropertyValue.html#Serilog_Events_LogEventPropertyValue_ToString
+  - name: (
+  - name: )
+- uid: Serilog.Events.LogEventPropertyValue.ToString(System.String,System.IFormatProvider)
+  commentId: M:Serilog.Events.LogEventPropertyValue.ToString(System.String,System.IFormatProvider)
+  parent: Serilog.Events.LogEventPropertyValue
+  isExternal: true
+  href: Serilog.Events.LogEventPropertyValue.html#Serilog_Events_LogEventPropertyValue_ToString_System_String_System_IFormatProvider_
+  name: ToString(string, IFormatProvider)
+  nameWithType: LogEventPropertyValue.ToString(string, IFormatProvider)
+  fullName: Serilog.Events.LogEventPropertyValue.ToString(string, System.IFormatProvider)
+  nameWithType.vb: LogEventPropertyValue.ToString(String, IFormatProvider)
+  fullName.vb: Serilog.Events.LogEventPropertyValue.ToString(String, System.IFormatProvider)
+  name.vb: ToString(String, IFormatProvider)
+  spec.csharp:
+  - uid: Serilog.Events.LogEventPropertyValue.ToString(System.String,System.IFormatProvider)
+    name: ToString
+    isExternal: true
+    href: Serilog.Events.LogEventPropertyValue.html#Serilog_Events_LogEventPropertyValue_ToString_System_String_System_IFormatProvider_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.IFormatProvider
+    name: IFormatProvider
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iformatprovider
+  - name: )
+  spec.vb:
+  - uid: Serilog.Events.LogEventPropertyValue.ToString(System.String,System.IFormatProvider)
+    name: ToString
+    isExternal: true
+    href: Serilog.Events.LogEventPropertyValue.html#Serilog_Events_LogEventPropertyValue_ToString_System_String_System_IFormatProvider_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.IFormatProvider
+    name: IFormatProvider
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iformatprovider
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Serilog.Events.ScalarValue
+  commentId: T:Serilog.Events.ScalarValue
+  parent: Serilog.Events
+  isExternal: true
+  href: Serilog.Events.ScalarValue.html
+  name: ScalarValue
+  nameWithType: ScalarValue
+  fullName: Serilog.Events.ScalarValue
+- uid: Serilog.Events.ScalarValue.#ctor*
+  commentId: Overload:Serilog.Events.ScalarValue.#ctor
+  isExternal: true
+  href: Serilog.Events.ScalarValue.html#Serilog_Events_ScalarValue__ctor_System_Object_
+  name: ScalarValue
+  nameWithType: ScalarValue.ScalarValue
+  fullName: Serilog.Events.ScalarValue.ScalarValue
+  nameWithType.vb: ScalarValue.New
+  fullName.vb: Serilog.Events.ScalarValue.New
+  name.vb: New
+- uid: System.ArgumentNullException
+  commentId: T:System.ArgumentNullException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.argumentnullexception
+  name: ArgumentNullException
+  nameWithType: ArgumentNullException
+  fullName: System.ArgumentNullException
+- uid: Serilog.Events.LogEventPropertyValue.Render(System.IO.TextWriter,System.String,System.IFormatProvider)
+  commentId: M:Serilog.Events.LogEventPropertyValue.Render(System.IO.TextWriter,System.String,System.IFormatProvider)
+  parent: Serilog.Events.LogEventPropertyValue
+  isExternal: true
+  href: Serilog.Events.LogEventPropertyValue.html#Serilog_Events_LogEventPropertyValue_Render_System_IO_TextWriter_System_String_System_IFormatProvider_
+  name: Render(TextWriter, string, IFormatProvider)
+  nameWithType: LogEventPropertyValue.Render(TextWriter, string, IFormatProvider)
+  fullName: Serilog.Events.LogEventPropertyValue.Render(System.IO.TextWriter, string, System.IFormatProvider)
+  nameWithType.vb: LogEventPropertyValue.Render(TextWriter, String, IFormatProvider)
+  fullName.vb: Serilog.Events.LogEventPropertyValue.Render(System.IO.TextWriter, String, System.IFormatProvider)
+  name.vb: Render(TextWriter, String, IFormatProvider)
+  spec.csharp:
+  - uid: Serilog.Events.LogEventPropertyValue.Render(System.IO.TextWriter,System.String,System.IFormatProvider)
+    name: Render
+    isExternal: true
+    href: Serilog.Events.LogEventPropertyValue.html#Serilog_Events_LogEventPropertyValue_Render_System_IO_TextWriter_System_String_System_IFormatProvider_
+  - name: (
+  - uid: System.IO.TextWriter
+    name: TextWriter
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io.textwriter
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.IFormatProvider
+    name: IFormatProvider
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iformatprovider
+  - name: )
+  spec.vb:
+  - uid: Serilog.Events.LogEventPropertyValue.Render(System.IO.TextWriter,System.String,System.IFormatProvider)
+    name: Render
+    isExternal: true
+    href: Serilog.Events.LogEventPropertyValue.html#Serilog_Events_LogEventPropertyValue_Render_System_IO_TextWriter_System_String_System_IFormatProvider_
+  - name: (
+  - uid: System.IO.TextWriter
+    name: TextWriter
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io.textwriter
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.IFormatProvider
+    name: IFormatProvider
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iformatprovider
+  - name: )
+- uid: Serilog.Events.ScalarValue.Render*
+  commentId: Overload:Serilog.Events.ScalarValue.Render
+  isExternal: true
+  href: Serilog.Events.ScalarValue.html#Serilog_Events_ScalarValue_Render_System_IO_TextWriter_System_String_System_IFormatProvider_
+  name: Render
+  nameWithType: ScalarValue.Render
+  fullName: Serilog.Events.ScalarValue.Render
+- uid: System.IO.TextWriter
+  commentId: T:System.IO.TextWriter
+  parent: System.IO
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.io.textwriter
+  name: TextWriter
+  nameWithType: TextWriter
+  fullName: System.IO.TextWriter
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.IFormatProvider
+  commentId: T:System.IFormatProvider
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iformatprovider
+  name: IFormatProvider
+  nameWithType: IFormatProvider
+  fullName: System.IFormatProvider
+- uid: System.IO
+  commentId: N:System.IO
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.IO
+  nameWithType: System.IO
+  fullName: System.IO
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.IO
+    name: IO
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.IO
+    name: IO
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: Serilog.Events.ScalarValue.Equals*
+  commentId: Overload:Serilog.Events.ScalarValue.Equals
+  isExternal: true
+  href: Serilog.Events.ScalarValue.html#Serilog_Events_ScalarValue_Equals_System_Object_
+  name: Equals
+  nameWithType: ScalarValue.Equals
+  fullName: Serilog.Events.ScalarValue.Equals
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: Serilog.Events.ScalarValue.GetHashCode*
+  commentId: Overload:Serilog.Events.ScalarValue.GetHashCode
+  isExternal: true
+  href: Serilog.Events.ScalarValue.html#Serilog_Events_ScalarValue_GetHashCode
+  name: GetHashCode
+  nameWithType: ScalarValue.GetHashCode
+  fullName: Serilog.Events.ScalarValue.GetHashCode
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: Serilog.Events.ScalarValue.Value*
+  commentId: Overload:Serilog.Events.ScalarValue.Value
+  isExternal: true
+  href: Serilog.Events.ScalarValue.html#Serilog_Events_ScalarValue_Value
+  name: Value
+  nameWithType: ScalarValue.Value
+  fullName: Serilog.Events.ScalarValue.Value

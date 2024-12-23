@@ -1,0 +1,849 @@
+### YamlMime:ManagedReference
+items:
+- uid: CodeFactory.WinVs.Loader.VsFactoryConfiguration
+  commentId: T:CodeFactory.WinVs.Loader.VsFactoryConfiguration
+  id: VsFactoryConfiguration
+  parent: CodeFactory.WinVs.Loader
+  children:
+  - CodeFactory.WinVs.Loader.VsFactoryConfiguration.#ctor
+  - CodeFactory.WinVs.Loader.VsFactoryConfiguration.CodeFactoryActions
+  - CodeFactory.WinVs.Loader.VsFactoryConfiguration.CodeFactoryLibraries
+  - CodeFactory.WinVs.Loader.VsFactoryConfiguration.Id
+  - CodeFactory.WinVs.Loader.VsFactoryConfiguration.Name
+  - CodeFactory.WinVs.Loader.VsFactoryConfiguration.SdkVersion
+  - CodeFactory.WinVs.Loader.VsFactoryConfiguration.SupportLibraries
+  langs:
+  - csharp
+  - vb
+  name: VsFactoryConfiguration
+  nameWithType: VsFactoryConfiguration
+  fullName: CodeFactory.WinVs.Loader.VsFactoryConfiguration
+  type: Class
+  source:
+    href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/19e816ffdf1ba504be6987736bbac42e2d241405/Src/CodeFactoryForWindows/CodeFactory.WinVs/Loader/VsFactoryConfiguration.cs
+  assemblies:
+  - CodeFactory.WinVs
+  namespace: CodeFactory.WinVs.Loader
+  summary: Data model that implements the <xref href="CodeFactory.WinVs.Loader.IVsFactoryConfiguration" data-throw-if-not-resolved="false"></xref> interface.
+  example: []
+  syntax:
+    content: >-
+      [MessagePackObject(false)]
+
+      public class VsFactoryConfiguration : IVsFactoryConfiguration
+    content.vb: >-
+      <MessagePackObject(False)>
+
+      Public Class VsFactoryConfiguration Implements IVsFactoryConfiguration
+  inheritance:
+  - System.Object
+  implements:
+  - CodeFactory.WinVs.Loader.IVsFactoryConfiguration
+  inheritedMembers:
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  attributes:
+  - type: MessagePack.MessagePackObjectAttribute
+    ctor: MessagePack.MessagePackObjectAttribute.#ctor(System.Boolean)
+    arguments:
+    - type: System.Boolean
+      value: false
+- uid: CodeFactory.WinVs.Loader.VsFactoryConfiguration.#ctor
+  commentId: M:CodeFactory.WinVs.Loader.VsFactoryConfiguration.#ctor
+  id: '#ctor'
+  parent: CodeFactory.WinVs.Loader.VsFactoryConfiguration
+  langs:
+  - csharp
+  - vb
+  name: VsFactoryConfiguration()
+  nameWithType: VsFactoryConfiguration.VsFactoryConfiguration()
+  fullName: CodeFactory.WinVs.Loader.VsFactoryConfiguration.VsFactoryConfiguration()
+  type: Constructor
+  source:
+    href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/19e816ffdf1ba504be6987736bbac42e2d241405/Src/CodeFactoryForWindows/CodeFactory.WinVs/Loader/VsFactoryConfiguration.cs
+  assemblies:
+  - CodeFactory.WinVs
+  namespace: CodeFactory.WinVs.Loader
+  syntax:
+    content: public VsFactoryConfiguration()
+    content.vb: Public Sub New()
+  overload: CodeFactory.WinVs.Loader.VsFactoryConfiguration.#ctor*
+  nameWithType.vb: VsFactoryConfiguration.New()
+  fullName.vb: CodeFactory.WinVs.Loader.VsFactoryConfiguration.New()
+  name.vb: New()
+- uid: CodeFactory.WinVs.Loader.VsFactoryConfiguration.Name
+  commentId: P:CodeFactory.WinVs.Loader.VsFactoryConfiguration.Name
+  id: Name
+  parent: CodeFactory.WinVs.Loader.VsFactoryConfiguration
+  langs:
+  - csharp
+  - vb
+  name: Name
+  nameWithType: VsFactoryConfiguration.Name
+  fullName: CodeFactory.WinVs.Loader.VsFactoryConfiguration.Name
+  type: Property
+  source:
+    href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/19e816ffdf1ba504be6987736bbac42e2d241405/Src/CodeFactoryForWindows/CodeFactory.WinVs/Loader/VsFactoryConfiguration.cs
+  assemblies:
+  - CodeFactory.WinVs
+  namespace: CodeFactory.WinVs.Loader
+  summary: The name assigned to this automation configuration.
+  example: []
+  syntax:
+    content: >-
+      [Key(0)]
+
+      public string Name { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <Key(0)>
+
+      Public Property Name As String
+  overload: CodeFactory.WinVs.Loader.VsFactoryConfiguration.Name*
+  implements:
+  - CodeFactory.WinVs.Loader.IVsFactoryConfiguration.Name
+  attributes:
+  - type: MessagePack.KeyAttribute
+    ctor: MessagePack.KeyAttribute.#ctor(System.Int32)
+    arguments:
+    - type: System.Int32
+      value: 0
+- uid: CodeFactory.WinVs.Loader.VsFactoryConfiguration.Id
+  commentId: P:CodeFactory.WinVs.Loader.VsFactoryConfiguration.Id
+  id: Id
+  parent: CodeFactory.WinVs.Loader.VsFactoryConfiguration
+  langs:
+  - csharp
+  - vb
+  name: Id
+  nameWithType: VsFactoryConfiguration.Id
+  fullName: CodeFactory.WinVs.Loader.VsFactoryConfiguration.Id
+  type: Property
+  source:
+    href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/19e816ffdf1ba504be6987736bbac42e2d241405/Src/CodeFactoryForWindows/CodeFactory.WinVs/Loader/VsFactoryConfiguration.cs
+  assemblies:
+  - CodeFactory.WinVs
+  namespace: CodeFactory.WinVs.Loader
+  summary: The unique identifier that is assigned to the factory configuration.
+  example: []
+  syntax:
+    content: >-
+      [Key(1)]
+
+      public Guid Id { get; set; }
+    parameters: []
+    return:
+      type: System.Guid
+    content.vb: >-
+      <Key(1)>
+
+      Public Property Id As Guid
+  overload: CodeFactory.WinVs.Loader.VsFactoryConfiguration.Id*
+  implements:
+  - CodeFactory.WinVs.Loader.IVsFactoryConfiguration.Id
+  attributes:
+  - type: MessagePack.KeyAttribute
+    ctor: MessagePack.KeyAttribute.#ctor(System.Int32)
+    arguments:
+    - type: System.Int32
+      value: 1
+- uid: CodeFactory.WinVs.Loader.VsFactoryConfiguration.SdkVersion
+  commentId: P:CodeFactory.WinVs.Loader.VsFactoryConfiguration.SdkVersion
+  id: SdkVersion
+  parent: CodeFactory.WinVs.Loader.VsFactoryConfiguration
+  langs:
+  - csharp
+  - vb
+  name: SdkVersion
+  nameWithType: VsFactoryConfiguration.SdkVersion
+  fullName: CodeFactory.WinVs.Loader.VsFactoryConfiguration.SdkVersion
+  type: Property
+  source:
+    href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/19e816ffdf1ba504be6987736bbac42e2d241405/Src/CodeFactoryForWindows/CodeFactory.WinVs/Loader/VsFactoryConfiguration.cs
+  assemblies:
+  - CodeFactory.WinVs
+  namespace: CodeFactory.WinVs.Loader
+  summary: The version of the CodeFactory SDK that was used to build the automation.
+  example: []
+  syntax:
+    content: >-
+      [Key(2)]
+
+      public string SdkVersion { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <Key(2)>
+
+      Public Property SdkVersion As String
+  overload: CodeFactory.WinVs.Loader.VsFactoryConfiguration.SdkVersion*
+  implements:
+  - CodeFactory.WinVs.Loader.IVsFactoryConfiguration.SdkVersion
+  attributes:
+  - type: MessagePack.KeyAttribute
+    ctor: MessagePack.KeyAttribute.#ctor(System.Int32)
+    arguments:
+    - type: System.Int32
+      value: 2
+- uid: CodeFactory.WinVs.Loader.VsFactoryConfiguration.SupportLibraries
+  commentId: P:CodeFactory.WinVs.Loader.VsFactoryConfiguration.SupportLibraries
+  id: SupportLibraries
+  parent: CodeFactory.WinVs.Loader.VsFactoryConfiguration
+  langs:
+  - csharp
+  - vb
+  name: SupportLibraries
+  nameWithType: VsFactoryConfiguration.SupportLibraries
+  fullName: CodeFactory.WinVs.Loader.VsFactoryConfiguration.SupportLibraries
+  type: Property
+  source:
+    href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/19e816ffdf1ba504be6987736bbac42e2d241405/Src/CodeFactoryForWindows/CodeFactory.WinVs/Loader/VsFactoryConfiguration.cs
+  assemblies:
+  - CodeFactory.WinVs
+  namespace: CodeFactory.WinVs.Loader
+  summary: Enumeration of the support libraries that need to be loaded to run the code factory libraries.
+  example: []
+  syntax:
+    content: >-
+      [Key(3)]
+
+      public List<VsLibraryConfiguration> SupportLibraries { get; set; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.List{CodeFactory.WinVs.Loader.VsLibraryConfiguration}
+    content.vb: >-
+      <Key(3)>
+
+      Public Property SupportLibraries As List(Of VsLibraryConfiguration)
+  overload: CodeFactory.WinVs.Loader.VsFactoryConfiguration.SupportLibraries*
+  implements:
+  - CodeFactory.WinVs.Loader.IVsFactoryConfiguration.SupportLibraries
+  attributes:
+  - type: MessagePack.KeyAttribute
+    ctor: MessagePack.KeyAttribute.#ctor(System.Int32)
+    arguments:
+    - type: System.Int32
+      value: 3
+- uid: CodeFactory.WinVs.Loader.VsFactoryConfiguration.CodeFactoryLibraries
+  commentId: P:CodeFactory.WinVs.Loader.VsFactoryConfiguration.CodeFactoryLibraries
+  id: CodeFactoryLibraries
+  parent: CodeFactory.WinVs.Loader.VsFactoryConfiguration
+  langs:
+  - csharp
+  - vb
+  name: CodeFactoryLibraries
+  nameWithType: VsFactoryConfiguration.CodeFactoryLibraries
+  fullName: CodeFactory.WinVs.Loader.VsFactoryConfiguration.CodeFactoryLibraries
+  type: Property
+  source:
+    href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/19e816ffdf1ba504be6987736bbac42e2d241405/Src/CodeFactoryForWindows/CodeFactory.WinVs/Loader/VsFactoryConfiguration.cs
+  assemblies:
+  - CodeFactory.WinVs
+  namespace: CodeFactory.WinVs.Loader
+  summary: Enumeration of the code factory libraries that need to be loaded.
+  example: []
+  syntax:
+    content: >-
+      [Key(4)]
+
+      public List<VsLibraryConfiguration> CodeFactoryLibraries { get; set; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.List{CodeFactory.WinVs.Loader.VsLibraryConfiguration}
+    content.vb: >-
+      <Key(4)>
+
+      Public Property CodeFactoryLibraries As List(Of VsLibraryConfiguration)
+  overload: CodeFactory.WinVs.Loader.VsFactoryConfiguration.CodeFactoryLibraries*
+  implements:
+  - CodeFactory.WinVs.Loader.IVsFactoryConfiguration.CodeFactoryLibraries
+  attributes:
+  - type: MessagePack.KeyAttribute
+    ctor: MessagePack.KeyAttribute.#ctor(System.Int32)
+    arguments:
+    - type: System.Int32
+      value: 4
+- uid: CodeFactory.WinVs.Loader.VsFactoryConfiguration.CodeFactoryActions
+  commentId: P:CodeFactory.WinVs.Loader.VsFactoryConfiguration.CodeFactoryActions
+  id: CodeFactoryActions
+  parent: CodeFactory.WinVs.Loader.VsFactoryConfiguration
+  langs:
+  - csharp
+  - vb
+  name: CodeFactoryActions
+  nameWithType: VsFactoryConfiguration.CodeFactoryActions
+  fullName: CodeFactory.WinVs.Loader.VsFactoryConfiguration.CodeFactoryActions
+  type: Property
+  source:
+    href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/19e816ffdf1ba504be6987736bbac42e2d241405/Src/CodeFactoryForWindows/CodeFactory.WinVs/Loader/VsFactoryConfiguration.cs
+  assemblies:
+  - CodeFactory.WinVs
+  namespace: CodeFactory.WinVs.Loader
+  summary: Enumeration of the commands to be loaded into the code factory.
+  example: []
+  syntax:
+    content: >-
+      [Key(5)]
+
+      public List<VsActionConfiguration> CodeFactoryActions { get; set; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.List{CodeFactory.WinVs.Loader.VsActionConfiguration}
+    content.vb: >-
+      <Key(5)>
+
+      Public Property CodeFactoryActions As List(Of VsActionConfiguration)
+  overload: CodeFactory.WinVs.Loader.VsFactoryConfiguration.CodeFactoryActions*
+  implements:
+  - CodeFactory.WinVs.Loader.IVsFactoryConfiguration.CodeFactoryActions
+  attributes:
+  - type: MessagePack.KeyAttribute
+    ctor: MessagePack.KeyAttribute.#ctor(System.Int32)
+    arguments:
+    - type: System.Int32
+      value: 5
+references:
+- uid: CodeFactory.WinVs.Loader.IVsFactoryConfiguration
+  commentId: T:CodeFactory.WinVs.Loader.IVsFactoryConfiguration
+  parent: CodeFactory.WinVs.Loader
+  isExternal: true
+  href: CodeFactory.WinVs.Loader.IVsFactoryConfiguration.html
+  name: IVsFactoryConfiguration
+  nameWithType: IVsFactoryConfiguration
+  fullName: CodeFactory.WinVs.Loader.IVsFactoryConfiguration
+- uid: CodeFactory.WinVs.Loader
+  commentId: N:CodeFactory.WinVs.Loader
+  isExternal: true
+  href: CodeFactory.html
+  name: CodeFactory.WinVs.Loader
+  nameWithType: CodeFactory.WinVs.Loader
+  fullName: CodeFactory.WinVs.Loader
+  spec.csharp:
+  - uid: CodeFactory
+    name: CodeFactory
+    isExternal: true
+    href: CodeFactory.html
+  - name: .
+  - uid: CodeFactory.WinVs
+    name: WinVs
+    isExternal: true
+    href: CodeFactory.WinVs.html
+  - name: .
+  - uid: CodeFactory.WinVs.Loader
+    name: Loader
+    isExternal: true
+    href: CodeFactory.WinVs.Loader.html
+  spec.vb:
+  - uid: CodeFactory
+    name: CodeFactory
+    isExternal: true
+    href: CodeFactory.html
+  - name: .
+  - uid: CodeFactory.WinVs
+    name: WinVs
+    isExternal: true
+    href: CodeFactory.WinVs.html
+  - name: .
+  - uid: CodeFactory.WinVs.Loader
+    name: Loader
+    isExternal: true
+    href: CodeFactory.WinVs.Loader.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: CodeFactory.WinVs.Loader.VsFactoryConfiguration.#ctor*
+  commentId: Overload:CodeFactory.WinVs.Loader.VsFactoryConfiguration.#ctor
+  isExternal: true
+  href: CodeFactory.WinVs.Loader.VsFactoryConfiguration.html#CodeFactory_WinVs_Loader_VsFactoryConfiguration__ctor
+  name: VsFactoryConfiguration
+  nameWithType: VsFactoryConfiguration.VsFactoryConfiguration
+  fullName: CodeFactory.WinVs.Loader.VsFactoryConfiguration.VsFactoryConfiguration
+  nameWithType.vb: VsFactoryConfiguration.New
+  fullName.vb: CodeFactory.WinVs.Loader.VsFactoryConfiguration.New
+  name.vb: New
+- uid: CodeFactory.WinVs.Loader.VsFactoryConfiguration.Name*
+  commentId: Overload:CodeFactory.WinVs.Loader.VsFactoryConfiguration.Name
+  isExternal: true
+  href: CodeFactory.WinVs.Loader.VsFactoryConfiguration.html#CodeFactory_WinVs_Loader_VsFactoryConfiguration_Name
+  name: Name
+  nameWithType: VsFactoryConfiguration.Name
+  fullName: CodeFactory.WinVs.Loader.VsFactoryConfiguration.Name
+- uid: CodeFactory.WinVs.Loader.IVsFactoryConfiguration.Name
+  commentId: P:CodeFactory.WinVs.Loader.IVsFactoryConfiguration.Name
+  parent: CodeFactory.WinVs.Loader.IVsFactoryConfiguration
+  isExternal: true
+  href: CodeFactory.WinVs.Loader.IVsFactoryConfiguration.html#CodeFactory_WinVs_Loader_IVsFactoryConfiguration_Name
+  name: Name
+  nameWithType: IVsFactoryConfiguration.Name
+  fullName: CodeFactory.WinVs.Loader.IVsFactoryConfiguration.Name
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: CodeFactory.WinVs.Loader.VsFactoryConfiguration.Id*
+  commentId: Overload:CodeFactory.WinVs.Loader.VsFactoryConfiguration.Id
+  isExternal: true
+  href: CodeFactory.WinVs.Loader.VsFactoryConfiguration.html#CodeFactory_WinVs_Loader_VsFactoryConfiguration_Id
+  name: Id
+  nameWithType: VsFactoryConfiguration.Id
+  fullName: CodeFactory.WinVs.Loader.VsFactoryConfiguration.Id
+- uid: CodeFactory.WinVs.Loader.IVsFactoryConfiguration.Id
+  commentId: P:CodeFactory.WinVs.Loader.IVsFactoryConfiguration.Id
+  parent: CodeFactory.WinVs.Loader.IVsFactoryConfiguration
+  isExternal: true
+  href: CodeFactory.WinVs.Loader.IVsFactoryConfiguration.html#CodeFactory_WinVs_Loader_IVsFactoryConfiguration_Id
+  name: Id
+  nameWithType: IVsFactoryConfiguration.Id
+  fullName: CodeFactory.WinVs.Loader.IVsFactoryConfiguration.Id
+- uid: System.Guid
+  commentId: T:System.Guid
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.guid
+  name: Guid
+  nameWithType: Guid
+  fullName: System.Guid
+- uid: CodeFactory.WinVs.Loader.VsFactoryConfiguration.SdkVersion*
+  commentId: Overload:CodeFactory.WinVs.Loader.VsFactoryConfiguration.SdkVersion
+  isExternal: true
+  href: CodeFactory.WinVs.Loader.VsFactoryConfiguration.html#CodeFactory_WinVs_Loader_VsFactoryConfiguration_SdkVersion
+  name: SdkVersion
+  nameWithType: VsFactoryConfiguration.SdkVersion
+  fullName: CodeFactory.WinVs.Loader.VsFactoryConfiguration.SdkVersion
+- uid: CodeFactory.WinVs.Loader.IVsFactoryConfiguration.SdkVersion
+  commentId: P:CodeFactory.WinVs.Loader.IVsFactoryConfiguration.SdkVersion
+  parent: CodeFactory.WinVs.Loader.IVsFactoryConfiguration
+  isExternal: true
+  href: CodeFactory.WinVs.Loader.IVsFactoryConfiguration.html#CodeFactory_WinVs_Loader_IVsFactoryConfiguration_SdkVersion
+  name: SdkVersion
+  nameWithType: IVsFactoryConfiguration.SdkVersion
+  fullName: CodeFactory.WinVs.Loader.IVsFactoryConfiguration.SdkVersion
+- uid: CodeFactory.WinVs.Loader.VsFactoryConfiguration.SupportLibraries*
+  commentId: Overload:CodeFactory.WinVs.Loader.VsFactoryConfiguration.SupportLibraries
+  isExternal: true
+  href: CodeFactory.WinVs.Loader.VsFactoryConfiguration.html#CodeFactory_WinVs_Loader_VsFactoryConfiguration_SupportLibraries
+  name: SupportLibraries
+  nameWithType: VsFactoryConfiguration.SupportLibraries
+  fullName: CodeFactory.WinVs.Loader.VsFactoryConfiguration.SupportLibraries
+- uid: CodeFactory.WinVs.Loader.IVsFactoryConfiguration.SupportLibraries
+  commentId: P:CodeFactory.WinVs.Loader.IVsFactoryConfiguration.SupportLibraries
+  parent: CodeFactory.WinVs.Loader.IVsFactoryConfiguration
+  isExternal: true
+  href: CodeFactory.WinVs.Loader.IVsFactoryConfiguration.html#CodeFactory_WinVs_Loader_IVsFactoryConfiguration_SupportLibraries
+  name: SupportLibraries
+  nameWithType: IVsFactoryConfiguration.SupportLibraries
+  fullName: CodeFactory.WinVs.Loader.IVsFactoryConfiguration.SupportLibraries
+- uid: System.Collections.Generic.List{CodeFactory.WinVs.Loader.VsLibraryConfiguration}
+  commentId: T:System.Collections.Generic.List{CodeFactory.WinVs.Loader.VsLibraryConfiguration}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<VsLibraryConfiguration>
+  nameWithType: List<VsLibraryConfiguration>
+  fullName: System.Collections.Generic.List<CodeFactory.WinVs.Loader.VsLibraryConfiguration>
+  nameWithType.vb: List(Of VsLibraryConfiguration)
+  fullName.vb: System.Collections.Generic.List(Of CodeFactory.WinVs.Loader.VsLibraryConfiguration)
+  name.vb: List(Of VsLibraryConfiguration)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: CodeFactory.WinVs.Loader.VsLibraryConfiguration
+    name: VsLibraryConfiguration
+    isExternal: true
+    href: CodeFactory.WinVs.Loader.VsLibraryConfiguration.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: CodeFactory.WinVs.Loader.VsLibraryConfiguration
+    name: VsLibraryConfiguration
+    isExternal: true
+    href: CodeFactory.WinVs.Loader.VsLibraryConfiguration.html
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: CodeFactory.WinVs.Loader.VsFactoryConfiguration.CodeFactoryLibraries*
+  commentId: Overload:CodeFactory.WinVs.Loader.VsFactoryConfiguration.CodeFactoryLibraries
+  isExternal: true
+  href: CodeFactory.WinVs.Loader.VsFactoryConfiguration.html#CodeFactory_WinVs_Loader_VsFactoryConfiguration_CodeFactoryLibraries
+  name: CodeFactoryLibraries
+  nameWithType: VsFactoryConfiguration.CodeFactoryLibraries
+  fullName: CodeFactory.WinVs.Loader.VsFactoryConfiguration.CodeFactoryLibraries
+- uid: CodeFactory.WinVs.Loader.IVsFactoryConfiguration.CodeFactoryLibraries
+  commentId: P:CodeFactory.WinVs.Loader.IVsFactoryConfiguration.CodeFactoryLibraries
+  parent: CodeFactory.WinVs.Loader.IVsFactoryConfiguration
+  isExternal: true
+  href: CodeFactory.WinVs.Loader.IVsFactoryConfiguration.html#CodeFactory_WinVs_Loader_IVsFactoryConfiguration_CodeFactoryLibraries
+  name: CodeFactoryLibraries
+  nameWithType: IVsFactoryConfiguration.CodeFactoryLibraries
+  fullName: CodeFactory.WinVs.Loader.IVsFactoryConfiguration.CodeFactoryLibraries
+- uid: CodeFactory.WinVs.Loader.VsFactoryConfiguration.CodeFactoryActions*
+  commentId: Overload:CodeFactory.WinVs.Loader.VsFactoryConfiguration.CodeFactoryActions
+  isExternal: true
+  href: CodeFactory.WinVs.Loader.VsFactoryConfiguration.html#CodeFactory_WinVs_Loader_VsFactoryConfiguration_CodeFactoryActions
+  name: CodeFactoryActions
+  nameWithType: VsFactoryConfiguration.CodeFactoryActions
+  fullName: CodeFactory.WinVs.Loader.VsFactoryConfiguration.CodeFactoryActions
+- uid: CodeFactory.WinVs.Loader.IVsFactoryConfiguration.CodeFactoryActions
+  commentId: P:CodeFactory.WinVs.Loader.IVsFactoryConfiguration.CodeFactoryActions
+  parent: CodeFactory.WinVs.Loader.IVsFactoryConfiguration
+  isExternal: true
+  href: CodeFactory.WinVs.Loader.IVsFactoryConfiguration.html#CodeFactory_WinVs_Loader_IVsFactoryConfiguration_CodeFactoryActions
+  name: CodeFactoryActions
+  nameWithType: IVsFactoryConfiguration.CodeFactoryActions
+  fullName: CodeFactory.WinVs.Loader.IVsFactoryConfiguration.CodeFactoryActions
+- uid: System.Collections.Generic.List{CodeFactory.WinVs.Loader.VsActionConfiguration}
+  commentId: T:System.Collections.Generic.List{CodeFactory.WinVs.Loader.VsActionConfiguration}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<VsActionConfiguration>
+  nameWithType: List<VsActionConfiguration>
+  fullName: System.Collections.Generic.List<CodeFactory.WinVs.Loader.VsActionConfiguration>
+  nameWithType.vb: List(Of VsActionConfiguration)
+  fullName.vb: System.Collections.Generic.List(Of CodeFactory.WinVs.Loader.VsActionConfiguration)
+  name.vb: List(Of VsActionConfiguration)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: CodeFactory.WinVs.Loader.VsActionConfiguration
+    name: VsActionConfiguration
+    isExternal: true
+    href: CodeFactory.WinVs.Loader.VsActionConfiguration.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: CodeFactory.WinVs.Loader.VsActionConfiguration
+    name: VsActionConfiguration
+    isExternal: true
+    href: CodeFactory.WinVs.Loader.VsActionConfiguration.html
+  - name: )

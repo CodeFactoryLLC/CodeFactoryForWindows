@@ -1,0 +1,748 @@
+### YamlMime:ManagedReference
+items:
+- uid: System.Collections.Immutable.ImmutableQueue
+  commentId: T:System.Collections.Immutable.ImmutableQueue
+  id: ImmutableQueue
+  parent: System.Collections.Immutable
+  children:
+  - System.Collections.Immutable.ImmutableQueue.CreateRange``1(System.Collections.Generic.IEnumerable{``0})
+  - System.Collections.Immutable.ImmutableQueue.Create``1
+  - System.Collections.Immutable.ImmutableQueue.Create``1(``0)
+  - System.Collections.Immutable.ImmutableQueue.Create``1(``0[])
+  - System.Collections.Immutable.ImmutableQueue.Dequeue``1(System.Collections.Immutable.IImmutableQueue{``0},``0@)
+  langs:
+  - csharp
+  - vb
+  name: ImmutableQueue
+  nameWithType: ImmutableQueue
+  fullName: System.Collections.Immutable.ImmutableQueue
+  type: Class
+  assemblies:
+  - System.Collections.Immutable
+  namespace: System.Collections.Immutable
+  summary: >-
+    Provides a set of initialization methods for instances of the <xref href="System.Collections.Immutable.ImmutableQueue%601" data-throw-if-not-resolved="false"></xref> class.  
+
+     NuGet package: System.Collections.Immutable (about immutable collections and how to install)
+  example: []
+  syntax:
+    content: public static class ImmutableQueue
+    content.vb: Public Module ImmutableQueue
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: System.Collections.Immutable.ImmutableQueue.Create``1
+  commentId: M:System.Collections.Immutable.ImmutableQueue.Create``1
+  id: Create``1
+  parent: System.Collections.Immutable.ImmutableQueue
+  langs:
+  - csharp
+  - vb
+  name: Create<T>()
+  nameWithType: ImmutableQueue.Create<T>()
+  fullName: System.Collections.Immutable.ImmutableQueue.Create<T>()
+  type: Method
+  assemblies:
+  - System.Collections.Immutable
+  namespace: System.Collections.Immutable
+  summary: Creates an empty immutable queue.
+  example: []
+  syntax:
+    content: public static ImmutableQueue<T> Create<T>()
+    typeParameters:
+    - id: T
+      description: The type of items to be stored in the immutable queue.
+    return:
+      type: System.Collections.Immutable.ImmutableQueue{{T}}
+      description: An empty immutable queue.
+    content.vb: Public Shared Function Create(Of T)() As ImmutableQueue(Of T)
+  overload: System.Collections.Immutable.ImmutableQueue.Create*
+  nameWithType.vb: ImmutableQueue.Create(Of T)()
+  fullName.vb: System.Collections.Immutable.ImmutableQueue.Create(Of T)()
+  name.vb: Create(Of T)()
+- uid: System.Collections.Immutable.ImmutableQueue.Create``1(``0)
+  commentId: M:System.Collections.Immutable.ImmutableQueue.Create``1(``0)
+  id: Create``1(``0)
+  parent: System.Collections.Immutable.ImmutableQueue
+  langs:
+  - csharp
+  - vb
+  name: Create<T>(T)
+  nameWithType: ImmutableQueue.Create<T>(T)
+  fullName: System.Collections.Immutable.ImmutableQueue.Create<T>(T)
+  type: Method
+  assemblies:
+  - System.Collections.Immutable
+  namespace: System.Collections.Immutable
+  summary: Creates a new immutable queue that contains the specified item.
+  example: []
+  syntax:
+    content: public static ImmutableQueue<T> Create<T>(T item)
+    parameters:
+    - id: item
+      type: '{T}'
+      description: The item to prepopulate the queue with.
+    typeParameters:
+    - id: T
+      description: The type of items in the immutable queue.
+    return:
+      type: System.Collections.Immutable.ImmutableQueue{{T}}
+      description: A new immutable queue that contains the specified item.
+    content.vb: Public Shared Function Create(Of T)(item As T) As ImmutableQueue(Of T)
+  overload: System.Collections.Immutable.ImmutableQueue.Create*
+  nameWithType.vb: ImmutableQueue.Create(Of T)(T)
+  fullName.vb: System.Collections.Immutable.ImmutableQueue.Create(Of T)(T)
+  name.vb: Create(Of T)(T)
+- uid: System.Collections.Immutable.ImmutableQueue.CreateRange``1(System.Collections.Generic.IEnumerable{``0})
+  commentId: M:System.Collections.Immutable.ImmutableQueue.CreateRange``1(System.Collections.Generic.IEnumerable{``0})
+  id: CreateRange``1(System.Collections.Generic.IEnumerable{``0})
+  parent: System.Collections.Immutable.ImmutableQueue
+  langs:
+  - csharp
+  - vb
+  name: CreateRange<T>(IEnumerable<T>)
+  nameWithType: ImmutableQueue.CreateRange<T>(IEnumerable<T>)
+  fullName: System.Collections.Immutable.ImmutableQueue.CreateRange<T>(System.Collections.Generic.IEnumerable<T>)
+  type: Method
+  assemblies:
+  - System.Collections.Immutable
+  namespace: System.Collections.Immutable
+  summary: Creates a new immutable queue that contains the specified items.
+  example: []
+  syntax:
+    content: public static ImmutableQueue<T> CreateRange<T>(IEnumerable<T> items)
+    parameters:
+    - id: items
+      type: System.Collections.Generic.IEnumerable{{T}}
+      description: The items to add to the queue before immutability is applied.
+    typeParameters:
+    - id: T
+      description: The type of elements in the queue.
+    return:
+      type: System.Collections.Immutable.ImmutableQueue{{T}}
+      description: An immutable queue that contains the specified items.
+    content.vb: Public Shared Function CreateRange(Of T)(items As IEnumerable(Of T)) As ImmutableQueue(Of T)
+  overload: System.Collections.Immutable.ImmutableQueue.CreateRange*
+  nameWithType.vb: ImmutableQueue.CreateRange(Of T)(IEnumerable(Of T))
+  fullName.vb: System.Collections.Immutable.ImmutableQueue.CreateRange(Of T)(System.Collections.Generic.IEnumerable(Of T))
+  name.vb: CreateRange(Of T)(IEnumerable(Of T))
+- uid: System.Collections.Immutable.ImmutableQueue.Create``1(``0[])
+  commentId: M:System.Collections.Immutable.ImmutableQueue.Create``1(``0[])
+  id: Create``1(``0[])
+  parent: System.Collections.Immutable.ImmutableQueue
+  langs:
+  - csharp
+  - vb
+  name: Create<T>(params T[])
+  nameWithType: ImmutableQueue.Create<T>(params T[])
+  fullName: System.Collections.Immutable.ImmutableQueue.Create<T>(params T[])
+  type: Method
+  assemblies:
+  - System.Collections.Immutable
+  namespace: System.Collections.Immutable
+  summary: Creates a new immutable queue that contains the specified array of items.
+  example: []
+  syntax:
+    content: public static ImmutableQueue<T> Create<T>(params T[] items)
+    parameters:
+    - id: items
+      type: '{T}[]'
+      description: An array that contains the items to prepopulate the queue with.
+    typeParameters:
+    - id: T
+      description: The type of items in the immutable queue.
+    return:
+      type: System.Collections.Immutable.ImmutableQueue{{T}}
+      description: A new immutable queue that contains the specified items.
+    content.vb: Public Shared Function Create(Of T)(ParamArray items As T()) As ImmutableQueue(Of T)
+  overload: System.Collections.Immutable.ImmutableQueue.Create*
+  nameWithType.vb: ImmutableQueue.Create(Of T)(ParamArray T())
+  fullName.vb: System.Collections.Immutable.ImmutableQueue.Create(Of T)(ParamArray T())
+  name.vb: Create(Of T)(ParamArray T())
+- uid: System.Collections.Immutable.ImmutableQueue.Dequeue``1(System.Collections.Immutable.IImmutableQueue{``0},``0@)
+  commentId: M:System.Collections.Immutable.ImmutableQueue.Dequeue``1(System.Collections.Immutable.IImmutableQueue{``0},``0@)
+  id: Dequeue``1(System.Collections.Immutable.IImmutableQueue{``0},``0@)
+  isExtensionMethod: true
+  parent: System.Collections.Immutable.ImmutableQueue
+  langs:
+  - csharp
+  - vb
+  name: Dequeue<T>(IImmutableQueue<T>, out T)
+  nameWithType: ImmutableQueue.Dequeue<T>(IImmutableQueue<T>, out T)
+  fullName: System.Collections.Immutable.ImmutableQueue.Dequeue<T>(System.Collections.Immutable.IImmutableQueue<T>, out T)
+  type: Method
+  assemblies:
+  - System.Collections.Immutable
+  namespace: System.Collections.Immutable
+  summary: Removes the item at the beginning of the immutable queue, and returns the new queue.
+  example: []
+  syntax:
+    content: public static IImmutableQueue<T> Dequeue<T>(this IImmutableQueue<T> queue, out T value)
+    parameters:
+    - id: queue
+      type: System.Collections.Immutable.IImmutableQueue{{T}}
+      description: The queue to remove the item from.
+    - id: value
+      type: '{T}'
+      description: When this method returns, contains the item from the beginning of the queue.
+    typeParameters:
+    - id: T
+      description: The type of elements in the immutable queue.
+    return:
+      type: System.Collections.Immutable.IImmutableQueue{{T}}
+      description: The new queue with the item removed.
+    content.vb: Public Shared Function Dequeue(Of T)(queue As IImmutableQueue(Of T), value As T) As IImmutableQueue(Of T)
+  overload: System.Collections.Immutable.ImmutableQueue.Dequeue*
+  exceptions:
+  - type: System.InvalidOperationException
+    commentId: T:System.InvalidOperationException
+    description: The stack is empty.
+  nameWithType.vb: ImmutableQueue.Dequeue(Of T)(IImmutableQueue(Of T), T)
+  fullName.vb: System.Collections.Immutable.ImmutableQueue.Dequeue(Of T)(System.Collections.Immutable.IImmutableQueue(Of T), T)
+  name.vb: Dequeue(Of T)(IImmutableQueue(Of T), T)
+references:
+- uid: System.Collections.Immutable.ImmutableQueue`1
+  commentId: T:System.Collections.Immutable.ImmutableQueue`1
+  parent: System.Collections.Immutable
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.immutable.immutablequeue-1
+  name: ImmutableQueue<T>
+  nameWithType: ImmutableQueue<T>
+  fullName: System.Collections.Immutable.ImmutableQueue<T>
+  nameWithType.vb: ImmutableQueue(Of T)
+  fullName.vb: System.Collections.Immutable.ImmutableQueue(Of T)
+  name.vb: ImmutableQueue(Of T)
+  spec.csharp:
+  - uid: System.Collections.Immutable.ImmutableQueue`1
+    name: ImmutableQueue
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.immutable.immutablequeue-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Immutable.ImmutableQueue`1
+    name: ImmutableQueue
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.immutable.immutablequeue-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Immutable
+  commentId: N:System.Collections.Immutable
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Immutable
+  nameWithType: System.Collections.Immutable
+  fullName: System.Collections.Immutable
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Immutable
+    name: Immutable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.immutable
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Immutable
+    name: Immutable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.immutable
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Collections.Immutable.ImmutableQueue.Create*
+  commentId: Overload:System.Collections.Immutable.ImmutableQueue.Create
+  isExternal: true
+  href: System.Collections.Immutable.ImmutableQueue.html#System_Collections_Immutable_ImmutableQueue_Create__1
+  name: Create
+  nameWithType: ImmutableQueue.Create
+  fullName: System.Collections.Immutable.ImmutableQueue.Create
+- uid: System.Collections.Immutable.ImmutableQueue{{T}}
+  commentId: T:System.Collections.Immutable.ImmutableQueue{`0}
+  parent: System.Collections.Immutable
+  definition: System.Collections.Immutable.ImmutableQueue`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.immutable.immutablequeue-1
+  name: ImmutableQueue<T>
+  nameWithType: ImmutableQueue<T>
+  fullName: System.Collections.Immutable.ImmutableQueue<T>
+  nameWithType.vb: ImmutableQueue(Of T)
+  fullName.vb: System.Collections.Immutable.ImmutableQueue(Of T)
+  name.vb: ImmutableQueue(Of T)
+  spec.csharp:
+  - uid: System.Collections.Immutable.ImmutableQueue`1
+    name: ImmutableQueue
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.immutable.immutablequeue-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Immutable.ImmutableQueue`1
+    name: ImmutableQueue
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.immutable.immutablequeue-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: System.Collections.Immutable.ImmutableQueue.CreateRange*
+  commentId: Overload:System.Collections.Immutable.ImmutableQueue.CreateRange
+  isExternal: true
+  href: System.Collections.Immutable.ImmutableQueue.html#System_Collections_Immutable_ImmutableQueue_CreateRange__1_System_Collections_Generic_IEnumerable___0__
+  name: CreateRange
+  nameWithType: ImmutableQueue.CreateRange
+  fullName: System.Collections.Immutable.ImmutableQueue.CreateRange
+- uid: System.Collections.Generic.IEnumerable{{T}}
+  commentId: T:System.Collections.Generic.IEnumerable{`0}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: '{T}[]'
+  isExternal: true
+  name: T[]
+  nameWithType: T[]
+  fullName: T[]
+  nameWithType.vb: T()
+  fullName.vb: T()
+  name.vb: T()
+  spec.csharp:
+  - name: T
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - name: T
+  - name: (
+  - name: )
+- uid: System.InvalidOperationException
+  commentId: T:System.InvalidOperationException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.invalidoperationexception
+  name: InvalidOperationException
+  nameWithType: InvalidOperationException
+  fullName: System.InvalidOperationException
+- uid: System.Collections.Immutable.ImmutableQueue.Dequeue*
+  commentId: Overload:System.Collections.Immutable.ImmutableQueue.Dequeue
+  isExternal: true
+  href: System.Collections.Immutable.ImmutableQueue.html#System_Collections_Immutable_ImmutableQueue_Dequeue__1_System_Collections_Immutable_IImmutableQueue___0____0__
+  name: Dequeue
+  nameWithType: ImmutableQueue.Dequeue
+  fullName: System.Collections.Immutable.ImmutableQueue.Dequeue
+- uid: System.Collections.Immutable.IImmutableQueue{{T}}
+  commentId: T:System.Collections.Immutable.IImmutableQueue{`0}
+  parent: System.Collections.Immutable
+  definition: System.Collections.Immutable.IImmutableQueue`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.immutable.iimmutablequeue-1
+  name: IImmutableQueue<T>
+  nameWithType: IImmutableQueue<T>
+  fullName: System.Collections.Immutable.IImmutableQueue<T>
+  nameWithType.vb: IImmutableQueue(Of T)
+  fullName.vb: System.Collections.Immutable.IImmutableQueue(Of T)
+  name.vb: IImmutableQueue(Of T)
+  spec.csharp:
+  - uid: System.Collections.Immutable.IImmutableQueue`1
+    name: IImmutableQueue
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.immutable.iimmutablequeue-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Immutable.IImmutableQueue`1
+    name: IImmutableQueue
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.immutable.iimmutablequeue-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Immutable.IImmutableQueue`1
+  commentId: T:System.Collections.Immutable.IImmutableQueue`1
+  parent: System.Collections.Immutable
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.immutable.iimmutablequeue-1
+  name: IImmutableQueue<T>
+  nameWithType: IImmutableQueue<T>
+  fullName: System.Collections.Immutable.IImmutableQueue<T>
+  nameWithType.vb: IImmutableQueue(Of T)
+  fullName.vb: System.Collections.Immutable.IImmutableQueue(Of T)
+  name.vb: IImmutableQueue(Of T)
+  spec.csharp:
+  - uid: System.Collections.Immutable.IImmutableQueue`1
+    name: IImmutableQueue
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.immutable.iimmutablequeue-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Immutable.IImmutableQueue`1
+    name: IImmutableQueue
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.immutable.iimmutablequeue-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )

@@ -1,0 +1,419 @@
+### YamlMime:ManagedReference
+items:
+- uid: CodeFactory.WinVs.Models.CSharp.Builder.IBoundsCheckBlock
+  commentId: T:CodeFactory.WinVs.Models.CSharp.Builder.IBoundsCheckBlock
+  id: IBoundsCheckBlock
+  parent: CodeFactory.WinVs.Models.CSharp.Builder
+  children:
+  - CodeFactory.WinVs.Models.CSharp.Builder.IBoundsCheckBlock.GenerateBoundsCheck(CodeFactory.WinVs.Models.CSharp.CsMethod,CodeFactory.WinVs.Models.CSharp.CsParameter)
+  - CodeFactory.WinVs.Models.CSharp.Builder.IBoundsCheckBlock.IgnoreWhenDefaultValueIsSet
+  - CodeFactory.WinVs.Models.CSharp.Builder.IBoundsCheckBlock.LoggerBlock
+  - CodeFactory.WinVs.Models.CSharp.Builder.IBoundsCheckBlock.Name
+  langs:
+  - csharp
+  - vb
+  name: IBoundsCheckBlock
+  nameWithType: IBoundsCheckBlock
+  fullName: CodeFactory.WinVs.Models.CSharp.Builder.IBoundsCheckBlock
+  type: Interface
+  source:
+    href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/19e816ffdf1ba504be6987736bbac42e2d241405/Src/CodeFactoryForWindows/CodeFactory.WinVs/Models/CSharp/Builder/IBoundsCheckBlock.cs
+  assemblies:
+  - CodeFactory.WinVs
+  namespace: CodeFactory.WinVs.Models.CSharp.Builder
+  summary: Contract all bounds checking code blocks must implement.
+  example: []
+  syntax:
+    content: 'public interface IBoundsCheckBlock : IBlock'
+    content.vb: Public Interface IBoundsCheckBlock Inherits IBlock
+  inheritedMembers:
+  - CodeFactory.WinVs.Models.CSharp.Builder.IBlock.BlockType
+- uid: CodeFactory.WinVs.Models.CSharp.Builder.IBoundsCheckBlock.GenerateBoundsCheck(CodeFactory.WinVs.Models.CSharp.CsMethod,CodeFactory.WinVs.Models.CSharp.CsParameter)
+  commentId: M:CodeFactory.WinVs.Models.CSharp.Builder.IBoundsCheckBlock.GenerateBoundsCheck(CodeFactory.WinVs.Models.CSharp.CsMethod,CodeFactory.WinVs.Models.CSharp.CsParameter)
+  id: GenerateBoundsCheck(CodeFactory.WinVs.Models.CSharp.CsMethod,CodeFactory.WinVs.Models.CSharp.CsParameter)
+  parent: CodeFactory.WinVs.Models.CSharp.Builder.IBoundsCheckBlock
+  langs:
+  - csharp
+  - vb
+  name: GenerateBoundsCheck(CsMethod, CsParameter)
+  nameWithType: IBoundsCheckBlock.GenerateBoundsCheck(CsMethod, CsParameter)
+  fullName: CodeFactory.WinVs.Models.CSharp.Builder.IBoundsCheckBlock.GenerateBoundsCheck(CodeFactory.WinVs.Models.CSharp.CsMethod, CodeFactory.WinVs.Models.CSharp.CsParameter)
+  type: Method
+  source:
+    href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/19e816ffdf1ba504be6987736bbac42e2d241405/Src/CodeFactoryForWindows/CodeFactory.WinVs/Models/CSharp/Builder/IBoundsCheckBlock.cs
+  assemblies:
+  - CodeFactory.WinVs
+  namespace: CodeFactory.WinVs.Models.CSharp.Builder
+  summary: Generates the bounds check syntax if the parameter meets the criteria for a bounds check.
+  example: []
+  syntax:
+    content: (bool hasBoundsCheck, string boundsCheckSyntax) GenerateBoundsCheck(CsMethod sourceMethod, CsParameter checkParameter)
+    parameters:
+    - id: sourceMethod
+      type: CodeFactory.WinVs.Models.CSharp.CsMethod
+      description: The target method the parameter belongs to.
+    - id: checkParameter
+      type: CodeFactory.WinVs.Models.CSharp.CsParameter
+      description: The parameter to build the bounds check for.
+    return:
+      type: System.ValueTuple{System.Boolean,System.String}
+      description: Returns a tuple that contains a boolean that determines if the bounds check syntax was created for the parameter.
+    content.vb: Function GenerateBoundsCheck(sourceMethod As CsMethod, checkParameter As CsParameter) As (hasBoundsCheck As Boolean, boundsCheckSyntax As String)
+  overload: CodeFactory.WinVs.Models.CSharp.Builder.IBoundsCheckBlock.GenerateBoundsCheck*
+- uid: CodeFactory.WinVs.Models.CSharp.Builder.IBoundsCheckBlock.Name
+  commentId: P:CodeFactory.WinVs.Models.CSharp.Builder.IBoundsCheckBlock.Name
+  id: Name
+  parent: CodeFactory.WinVs.Models.CSharp.Builder.IBoundsCheckBlock
+  langs:
+  - csharp
+  - vb
+  name: Name
+  nameWithType: IBoundsCheckBlock.Name
+  fullName: CodeFactory.WinVs.Models.CSharp.Builder.IBoundsCheckBlock.Name
+  type: Property
+  source:
+    href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/19e816ffdf1ba504be6987736bbac42e2d241405/Src/CodeFactoryForWindows/CodeFactory.WinVs/Models/CSharp/Builder/IBoundsCheckBlock.cs
+  assemblies:
+  - CodeFactory.WinVs
+  namespace: CodeFactory.WinVs.Models.CSharp.Builder
+  summary: Unique name assigned to identify the type of bounds check being performed.
+  example: []
+  syntax:
+    content: string Name { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: ReadOnly Property Name As String
+  overload: CodeFactory.WinVs.Models.CSharp.Builder.IBoundsCheckBlock.Name*
+- uid: CodeFactory.WinVs.Models.CSharp.Builder.IBoundsCheckBlock.IgnoreWhenDefaultValueIsSet
+  commentId: P:CodeFactory.WinVs.Models.CSharp.Builder.IBoundsCheckBlock.IgnoreWhenDefaultValueIsSet
+  id: IgnoreWhenDefaultValueIsSet
+  parent: CodeFactory.WinVs.Models.CSharp.Builder.IBoundsCheckBlock
+  langs:
+  - csharp
+  - vb
+  name: IgnoreWhenDefaultValueIsSet
+  nameWithType: IBoundsCheckBlock.IgnoreWhenDefaultValueIsSet
+  fullName: CodeFactory.WinVs.Models.CSharp.Builder.IBoundsCheckBlock.IgnoreWhenDefaultValueIsSet
+  type: Property
+  source:
+    href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/19e816ffdf1ba504be6987736bbac42e2d241405/Src/CodeFactoryForWindows/CodeFactory.WinVs/Models/CSharp/Builder/IBoundsCheckBlock.cs
+  assemblies:
+  - CodeFactory.WinVs
+  namespace: CodeFactory.WinVs.Models.CSharp.Builder
+  summary: Flag that determines if a bounds check should be ignored if the parameter has a default value set.
+  example: []
+  syntax:
+    content: bool IgnoreWhenDefaultValueIsSet { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: ReadOnly Property IgnoreWhenDefaultValueIsSet As Boolean
+  overload: CodeFactory.WinVs.Models.CSharp.Builder.IBoundsCheckBlock.IgnoreWhenDefaultValueIsSet*
+- uid: CodeFactory.WinVs.Models.CSharp.Builder.IBoundsCheckBlock.LoggerBlock
+  commentId: P:CodeFactory.WinVs.Models.CSharp.Builder.IBoundsCheckBlock.LoggerBlock
+  id: LoggerBlock
+  parent: CodeFactory.WinVs.Models.CSharp.Builder.IBoundsCheckBlock
+  langs:
+  - csharp
+  - vb
+  name: LoggerBlock
+  nameWithType: IBoundsCheckBlock.LoggerBlock
+  fullName: CodeFactory.WinVs.Models.CSharp.Builder.IBoundsCheckBlock.LoggerBlock
+  type: Property
+  source:
+    href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/19e816ffdf1ba504be6987736bbac42e2d241405/Src/CodeFactoryForWindows/CodeFactory.WinVs/Models/CSharp/Builder/IBoundsCheckBlock.cs
+  assemblies:
+  - CodeFactory.WinVs
+  namespace: CodeFactory.WinVs.Models.CSharp.Builder
+  summary: The logger block assigned to this bounds check.
+  example: []
+  syntax:
+    content: ILoggerBlock LoggerBlock { get; }
+    parameters: []
+    return:
+      type: CodeFactory.WinVs.Models.CSharp.Builder.ILoggerBlock
+    content.vb: ReadOnly Property LoggerBlock As ILoggerBlock
+  overload: CodeFactory.WinVs.Models.CSharp.Builder.IBoundsCheckBlock.LoggerBlock*
+references:
+- uid: CodeFactory.WinVs.Models.CSharp.Builder
+  commentId: N:CodeFactory.WinVs.Models.CSharp.Builder
+  isExternal: true
+  href: CodeFactory.html
+  name: CodeFactory.WinVs.Models.CSharp.Builder
+  nameWithType: CodeFactory.WinVs.Models.CSharp.Builder
+  fullName: CodeFactory.WinVs.Models.CSharp.Builder
+  spec.csharp:
+  - uid: CodeFactory
+    name: CodeFactory
+    isExternal: true
+    href: CodeFactory.html
+  - name: .
+  - uid: CodeFactory.WinVs
+    name: WinVs
+    isExternal: true
+    href: CodeFactory.WinVs.html
+  - name: .
+  - uid: CodeFactory.WinVs.Models
+    name: Models
+    isExternal: true
+    href: CodeFactory.WinVs.Models.html
+  - name: .
+  - uid: CodeFactory.WinVs.Models.CSharp
+    name: CSharp
+    isExternal: true
+    href: CodeFactory.WinVs.Models.CSharp.html
+  - name: .
+  - uid: CodeFactory.WinVs.Models.CSharp.Builder
+    name: Builder
+    isExternal: true
+    href: CodeFactory.WinVs.Models.CSharp.Builder.html
+  spec.vb:
+  - uid: CodeFactory
+    name: CodeFactory
+    isExternal: true
+    href: CodeFactory.html
+  - name: .
+  - uid: CodeFactory.WinVs
+    name: WinVs
+    isExternal: true
+    href: CodeFactory.WinVs.html
+  - name: .
+  - uid: CodeFactory.WinVs.Models
+    name: Models
+    isExternal: true
+    href: CodeFactory.WinVs.Models.html
+  - name: .
+  - uid: CodeFactory.WinVs.Models.CSharp
+    name: CSharp
+    isExternal: true
+    href: CodeFactory.WinVs.Models.CSharp.html
+  - name: .
+  - uid: CodeFactory.WinVs.Models.CSharp.Builder
+    name: Builder
+    isExternal: true
+    href: CodeFactory.WinVs.Models.CSharp.Builder.html
+- uid: CodeFactory.WinVs.Models.CSharp.Builder.IBlock.BlockType
+  commentId: P:CodeFactory.WinVs.Models.CSharp.Builder.IBlock.BlockType
+  parent: CodeFactory.WinVs.Models.CSharp.Builder.IBlock
+  isExternal: true
+  href: CodeFactory.WinVs.Models.CSharp.Builder.IBlock.html#CodeFactory_WinVs_Models_CSharp_Builder_IBlock_BlockType
+  name: BlockType
+  nameWithType: IBlock.BlockType
+  fullName: CodeFactory.WinVs.Models.CSharp.Builder.IBlock.BlockType
+- uid: CodeFactory.WinVs.Models.CSharp.Builder.IBlock
+  commentId: T:CodeFactory.WinVs.Models.CSharp.Builder.IBlock
+  parent: CodeFactory.WinVs.Models.CSharp.Builder
+  isExternal: true
+  href: CodeFactory.WinVs.Models.CSharp.Builder.IBlock.html
+  name: IBlock
+  nameWithType: IBlock
+  fullName: CodeFactory.WinVs.Models.CSharp.Builder.IBlock
+- uid: CodeFactory.WinVs.Models.CSharp.Builder.IBoundsCheckBlock.GenerateBoundsCheck*
+  commentId: Overload:CodeFactory.WinVs.Models.CSharp.Builder.IBoundsCheckBlock.GenerateBoundsCheck
+  isExternal: true
+  href: CodeFactory.WinVs.Models.CSharp.Builder.IBoundsCheckBlock.html#CodeFactory_WinVs_Models_CSharp_Builder_IBoundsCheckBlock_GenerateBoundsCheck_CodeFactory_WinVs_Models_CSharp_CsMethod_CodeFactory_WinVs_Models_CSharp_CsParameter_
+  name: GenerateBoundsCheck
+  nameWithType: IBoundsCheckBlock.GenerateBoundsCheck
+  fullName: CodeFactory.WinVs.Models.CSharp.Builder.IBoundsCheckBlock.GenerateBoundsCheck
+- uid: CodeFactory.WinVs.Models.CSharp.CsMethod
+  commentId: T:CodeFactory.WinVs.Models.CSharp.CsMethod
+  parent: CodeFactory.WinVs.Models.CSharp
+  isExternal: true
+  href: CodeFactory.WinVs.Models.CSharp.CsMethod.html
+  name: CsMethod
+  nameWithType: CsMethod
+  fullName: CodeFactory.WinVs.Models.CSharp.CsMethod
+- uid: CodeFactory.WinVs.Models.CSharp.CsParameter
+  commentId: T:CodeFactory.WinVs.Models.CSharp.CsParameter
+  parent: CodeFactory.WinVs.Models.CSharp
+  isExternal: true
+  href: CodeFactory.WinVs.Models.CSharp.CsParameter.html
+  name: CsParameter
+  nameWithType: CsParameter
+  fullName: CodeFactory.WinVs.Models.CSharp.CsParameter
+- uid: System.ValueTuple{System.Boolean,System.String}
+  commentId: T:System.ValueTuple{System.Boolean,System.String}
+  parent: System
+  definition: System.ValueTuple`2
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: (bool hasBoundsCheck, string boundsCheckSyntax)
+  nameWithType: (bool hasBoundsCheck, string boundsCheckSyntax)
+  fullName: (bool hasBoundsCheck, string boundsCheckSyntax)
+  nameWithType.vb: (hasBoundsCheck As Boolean, boundsCheckSyntax As String)
+  fullName.vb: (hasBoundsCheck As Boolean, boundsCheckSyntax As String)
+  name.vb: (hasBoundsCheck As Boolean, boundsCheckSyntax As String)
+  spec.csharp:
+  - name: (
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: " "
+  - uid: System.ValueTuple{System.Boolean,System.String}.hasBoundsCheck
+    name: hasBoundsCheck
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.boolean,system.string-.hasboundscheck
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: " "
+  - uid: System.ValueTuple{System.Boolean,System.String}.boundsCheckSyntax
+    name: boundsCheckSyntax
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.boolean,system.string-.boundschecksyntax
+  - name: )
+  spec.vb:
+  - name: (
+  - uid: System.ValueTuple{System.Boolean,System.String}.hasBoundsCheck
+    name: hasBoundsCheck
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.boolean,system.string-.hasboundscheck
+  - name: " "
+  - name: As
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: ','
+  - name: " "
+  - uid: System.ValueTuple{System.Boolean,System.String}.boundsCheckSyntax
+    name: boundsCheckSyntax
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.boolean,system.string-.boundschecksyntax
+  - name: " "
+  - name: As
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: CodeFactory.WinVs.Models.CSharp
+  commentId: N:CodeFactory.WinVs.Models.CSharp
+  isExternal: true
+  href: CodeFactory.html
+  name: CodeFactory.WinVs.Models.CSharp
+  nameWithType: CodeFactory.WinVs.Models.CSharp
+  fullName: CodeFactory.WinVs.Models.CSharp
+  spec.csharp:
+  - uid: CodeFactory
+    name: CodeFactory
+    isExternal: true
+    href: CodeFactory.html
+  - name: .
+  - uid: CodeFactory.WinVs
+    name: WinVs
+    isExternal: true
+    href: CodeFactory.WinVs.html
+  - name: .
+  - uid: CodeFactory.WinVs.Models
+    name: Models
+    isExternal: true
+    href: CodeFactory.WinVs.Models.html
+  - name: .
+  - uid: CodeFactory.WinVs.Models.CSharp
+    name: CSharp
+    isExternal: true
+    href: CodeFactory.WinVs.Models.CSharp.html
+  spec.vb:
+  - uid: CodeFactory
+    name: CodeFactory
+    isExternal: true
+    href: CodeFactory.html
+  - name: .
+  - uid: CodeFactory.WinVs
+    name: WinVs
+    isExternal: true
+    href: CodeFactory.WinVs.html
+  - name: .
+  - uid: CodeFactory.WinVs.Models
+    name: Models
+    isExternal: true
+    href: CodeFactory.WinVs.Models.html
+  - name: .
+  - uid: CodeFactory.WinVs.Models.CSharp
+    name: CSharp
+    isExternal: true
+    href: CodeFactory.WinVs.Models.CSharp.html
+- uid: System.ValueTuple`2
+  commentId: T:System.ValueTuple`2
+  name: (T1, T2)
+  nameWithType: (T1, T2)
+  fullName: (T1, T2)
+  spec.csharp:
+  - name: (
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: )
+  spec.vb:
+  - name: (
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: CodeFactory.WinVs.Models.CSharp.Builder.IBoundsCheckBlock.Name*
+  commentId: Overload:CodeFactory.WinVs.Models.CSharp.Builder.IBoundsCheckBlock.Name
+  isExternal: true
+  href: CodeFactory.WinVs.Models.CSharp.Builder.IBoundsCheckBlock.html#CodeFactory_WinVs_Models_CSharp_Builder_IBoundsCheckBlock_Name
+  name: Name
+  nameWithType: IBoundsCheckBlock.Name
+  fullName: CodeFactory.WinVs.Models.CSharp.Builder.IBoundsCheckBlock.Name
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: CodeFactory.WinVs.Models.CSharp.Builder.IBoundsCheckBlock.IgnoreWhenDefaultValueIsSet*
+  commentId: Overload:CodeFactory.WinVs.Models.CSharp.Builder.IBoundsCheckBlock.IgnoreWhenDefaultValueIsSet
+  isExternal: true
+  href: CodeFactory.WinVs.Models.CSharp.Builder.IBoundsCheckBlock.html#CodeFactory_WinVs_Models_CSharp_Builder_IBoundsCheckBlock_IgnoreWhenDefaultValueIsSet
+  name: IgnoreWhenDefaultValueIsSet
+  nameWithType: IBoundsCheckBlock.IgnoreWhenDefaultValueIsSet
+  fullName: CodeFactory.WinVs.Models.CSharp.Builder.IBoundsCheckBlock.IgnoreWhenDefaultValueIsSet
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: CodeFactory.WinVs.Models.CSharp.Builder.IBoundsCheckBlock.LoggerBlock*
+  commentId: Overload:CodeFactory.WinVs.Models.CSharp.Builder.IBoundsCheckBlock.LoggerBlock
+  isExternal: true
+  href: CodeFactory.WinVs.Models.CSharp.Builder.IBoundsCheckBlock.html#CodeFactory_WinVs_Models_CSharp_Builder_IBoundsCheckBlock_LoggerBlock
+  name: LoggerBlock
+  nameWithType: IBoundsCheckBlock.LoggerBlock
+  fullName: CodeFactory.WinVs.Models.CSharp.Builder.IBoundsCheckBlock.LoggerBlock
+- uid: CodeFactory.WinVs.Models.CSharp.Builder.ILoggerBlock
+  commentId: T:CodeFactory.WinVs.Models.CSharp.Builder.ILoggerBlock
+  parent: CodeFactory.WinVs.Models.CSharp.Builder
+  isExternal: true
+  href: CodeFactory.WinVs.Models.CSharp.Builder.ILoggerBlock.html
+  name: ILoggerBlock
+  nameWithType: ILoggerBlock
+  fullName: CodeFactory.WinVs.Models.CSharp.Builder.ILoggerBlock

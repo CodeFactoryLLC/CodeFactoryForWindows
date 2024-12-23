@@ -1,0 +1,1459 @@
+### YamlMime:ManagedReference
+items:
+- uid: MessagePack.MessagePackSerializerOptions
+  commentId: T:MessagePack.MessagePackSerializerOptions
+  id: MessagePackSerializerOptions
+  parent: MessagePack
+  children:
+  - MessagePack.MessagePackSerializerOptions.#ctor(MessagePack.IFormatterResolver)
+  - MessagePack.MessagePackSerializerOptions.#ctor(MessagePack.MessagePackSerializerOptions)
+  - MessagePack.MessagePackSerializerOptions.AllowAssemblyVersionMismatch
+  - MessagePack.MessagePackSerializerOptions.Clone
+  - MessagePack.MessagePackSerializerOptions.Compression
+  - MessagePack.MessagePackSerializerOptions.CompressionMinLength
+  - MessagePack.MessagePackSerializerOptions.LoadType(System.String)
+  - MessagePack.MessagePackSerializerOptions.OldSpec
+  - MessagePack.MessagePackSerializerOptions.OmitAssemblyVersion
+  - MessagePack.MessagePackSerializerOptions.Resolver
+  - MessagePack.MessagePackSerializerOptions.Security
+  - MessagePack.MessagePackSerializerOptions.SequencePool
+  - MessagePack.MessagePackSerializerOptions.Standard
+  - MessagePack.MessagePackSerializerOptions.SuggestedContiguousMemorySize
+  - MessagePack.MessagePackSerializerOptions.ThrowIfDeserializingTypeIsDisallowed(System.Type)
+  - MessagePack.MessagePackSerializerOptions.WithAllowAssemblyVersionMismatch(System.Boolean)
+  - MessagePack.MessagePackSerializerOptions.WithCompression(MessagePack.MessagePackCompression)
+  - MessagePack.MessagePackSerializerOptions.WithCompressionMinLength(System.Int32)
+  - MessagePack.MessagePackSerializerOptions.WithOldSpec(System.Nullable{System.Boolean})
+  - MessagePack.MessagePackSerializerOptions.WithOmitAssemblyVersion(System.Boolean)
+  - MessagePack.MessagePackSerializerOptions.WithPool(MessagePack.SequencePool)
+  - MessagePack.MessagePackSerializerOptions.WithResolver(MessagePack.IFormatterResolver)
+  - MessagePack.MessagePackSerializerOptions.WithSecurity(MessagePack.MessagePackSecurity)
+  - MessagePack.MessagePackSerializerOptions.WithSuggestedContiguousMemorySize(System.Int32)
+  langs:
+  - csharp
+  - vb
+  name: MessagePackSerializerOptions
+  nameWithType: MessagePackSerializerOptions
+  fullName: MessagePack.MessagePackSerializerOptions
+  type: Class
+  assemblies:
+  - MessagePack
+  namespace: MessagePack
+  summary: An immutable description of options for running the <xref href="MessagePack.MessagePackSerializer" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public class MessagePackSerializerOptions
+    content.vb: Public Class MessagePackSerializerOptions
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+- uid: MessagePack.MessagePackSerializerOptions.#ctor(MessagePack.IFormatterResolver)
+  commentId: M:MessagePack.MessagePackSerializerOptions.#ctor(MessagePack.IFormatterResolver)
+  id: '#ctor(MessagePack.IFormatterResolver)'
+  parent: MessagePack.MessagePackSerializerOptions
+  langs:
+  - csharp
+  - vb
+  name: MessagePackSerializerOptions(IFormatterResolver)
+  nameWithType: MessagePackSerializerOptions.MessagePackSerializerOptions(IFormatterResolver)
+  fullName: MessagePack.MessagePackSerializerOptions.MessagePackSerializerOptions(MessagePack.IFormatterResolver)
+  type: Constructor
+  assemblies:
+  - MessagePack
+  namespace: MessagePack
+  summary: Initializes a new instance of the <xref href="MessagePack.MessagePackSerializerOptions" data-throw-if-not-resolved="false"></xref> class.
+  example: []
+  syntax:
+    content: public MessagePackSerializerOptions(IFormatterResolver resolver)
+    parameters:
+    - id: resolver
+      type: MessagePack.IFormatterResolver
+    content.vb: Public Sub New(resolver As IFormatterResolver)
+  overload: MessagePack.MessagePackSerializerOptions.#ctor*
+  nameWithType.vb: MessagePackSerializerOptions.New(IFormatterResolver)
+  fullName.vb: MessagePack.MessagePackSerializerOptions.New(MessagePack.IFormatterResolver)
+  name.vb: New(IFormatterResolver)
+- uid: MessagePack.MessagePackSerializerOptions.#ctor(MessagePack.MessagePackSerializerOptions)
+  commentId: M:MessagePack.MessagePackSerializerOptions.#ctor(MessagePack.MessagePackSerializerOptions)
+  id: '#ctor(MessagePack.MessagePackSerializerOptions)'
+  parent: MessagePack.MessagePackSerializerOptions
+  langs:
+  - csharp
+  - vb
+  name: MessagePackSerializerOptions(MessagePackSerializerOptions)
+  nameWithType: MessagePackSerializerOptions.MessagePackSerializerOptions(MessagePackSerializerOptions)
+  fullName: MessagePack.MessagePackSerializerOptions.MessagePackSerializerOptions(MessagePack.MessagePackSerializerOptions)
+  type: Constructor
+  assemblies:
+  - MessagePack
+  namespace: MessagePack
+  summary: >-
+    Initializes a new instance of the <xref href="MessagePack.MessagePackSerializerOptions" data-throw-if-not-resolved="false"></xref> class
+
+    with members initialized from an existing instance.
+  example: []
+  syntax:
+    content: protected MessagePackSerializerOptions(MessagePackSerializerOptions copyFrom)
+    parameters:
+    - id: copyFrom
+      type: MessagePack.MessagePackSerializerOptions
+      description: The options to copy from.
+    content.vb: Protected Sub New(copyFrom As MessagePackSerializerOptions)
+  overload: MessagePack.MessagePackSerializerOptions.#ctor*
+  nameWithType.vb: MessagePackSerializerOptions.New(MessagePackSerializerOptions)
+  fullName.vb: MessagePack.MessagePackSerializerOptions.New(MessagePack.MessagePackSerializerOptions)
+  name.vb: New(MessagePackSerializerOptions)
+- uid: MessagePack.MessagePackSerializerOptions.LoadType(System.String)
+  commentId: M:MessagePack.MessagePackSerializerOptions.LoadType(System.String)
+  id: LoadType(System.String)
+  parent: MessagePack.MessagePackSerializerOptions
+  langs:
+  - csharp
+  - vb
+  name: LoadType(string)
+  nameWithType: MessagePackSerializerOptions.LoadType(string)
+  fullName: MessagePack.MessagePackSerializerOptions.LoadType(string)
+  type: Method
+  assemblies:
+  - MessagePack
+  namespace: MessagePack
+  summary: Gets a type given a string representation of the type.
+  example: []
+  syntax:
+    content: public virtual Type? LoadType(string typeName)
+    parameters:
+    - id: typeName
+      type: System.String
+      description: The name of the type to load. This is typically the <xref href="System.Type.AssemblyQualifiedName" data-throw-if-not-resolved="false"></xref> but may use the assembly's simple name.
+    return:
+      type: System.Type
+      description: The loaded type or <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> if no matching type could be found.
+    content.vb: Public Overridable Function LoadType(typeName As String) As Type
+  overload: MessagePack.MessagePackSerializerOptions.LoadType*
+  nameWithType.vb: MessagePackSerializerOptions.LoadType(String)
+  fullName.vb: MessagePack.MessagePackSerializerOptions.LoadType(String)
+  name.vb: LoadType(String)
+- uid: MessagePack.MessagePackSerializerOptions.ThrowIfDeserializingTypeIsDisallowed(System.Type)
+  commentId: M:MessagePack.MessagePackSerializerOptions.ThrowIfDeserializingTypeIsDisallowed(System.Type)
+  id: ThrowIfDeserializingTypeIsDisallowed(System.Type)
+  parent: MessagePack.MessagePackSerializerOptions
+  langs:
+  - csharp
+  - vb
+  name: ThrowIfDeserializingTypeIsDisallowed(Type)
+  nameWithType: MessagePackSerializerOptions.ThrowIfDeserializingTypeIsDisallowed(Type)
+  fullName: MessagePack.MessagePackSerializerOptions.ThrowIfDeserializingTypeIsDisallowed(System.Type)
+  type: Method
+  assemblies:
+  - MessagePack
+  namespace: MessagePack
+  summary: Checks whether a given type may be deserialized.
+  remarks: >-
+    This method provides a means for an important security mitigation when using the Typeless formatter to prevent untrusted messagepack from
+
+    deserializing objects that may be harmful if instantiated, disposed or finalized.
+
+    The default implementation throws for only a few known dangerous types.
+
+    Applications that deserialize from untrusted sources should override this method and throw if the type is not among the expected set.
+  example: []
+  syntax:
+    content: public virtual void ThrowIfDeserializingTypeIsDisallowed(Type type)
+    parameters:
+    - id: type
+      type: System.Type
+      description: The type to be instantiated.
+    content.vb: Public Overridable Sub ThrowIfDeserializingTypeIsDisallowed(type As Type)
+  overload: MessagePack.MessagePackSerializerOptions.ThrowIfDeserializingTypeIsDisallowed*
+  exceptions:
+  - type: System.TypeAccessException
+    commentId: T:System.TypeAccessException
+    description: Thrown if the <code class="paramref">type</code> is not allowed to be deserialized.
+- uid: MessagePack.MessagePackSerializerOptions.WithResolver(MessagePack.IFormatterResolver)
+  commentId: M:MessagePack.MessagePackSerializerOptions.WithResolver(MessagePack.IFormatterResolver)
+  id: WithResolver(MessagePack.IFormatterResolver)
+  parent: MessagePack.MessagePackSerializerOptions
+  langs:
+  - csharp
+  - vb
+  name: WithResolver(IFormatterResolver)
+  nameWithType: MessagePackSerializerOptions.WithResolver(IFormatterResolver)
+  fullName: MessagePack.MessagePackSerializerOptions.WithResolver(MessagePack.IFormatterResolver)
+  type: Method
+  assemblies:
+  - MessagePack
+  namespace: MessagePack
+  summary: Gets a copy of these options with the <xref href="MessagePack.MessagePackSerializerOptions.Resolver" data-throw-if-not-resolved="false"></xref> property set to a new value.
+  example: []
+  syntax:
+    content: public MessagePackSerializerOptions WithResolver(IFormatterResolver resolver)
+    parameters:
+    - id: resolver
+      type: MessagePack.IFormatterResolver
+      description: The new value for the <xref href="MessagePack.MessagePackSerializerOptions.Resolver" data-throw-if-not-resolved="false"></xref>.
+    return:
+      type: MessagePack.MessagePackSerializerOptions
+      description: The new instance; or the original if the value is unchanged.
+    content.vb: Public Function WithResolver(resolver As IFormatterResolver) As MessagePackSerializerOptions
+  overload: MessagePack.MessagePackSerializerOptions.WithResolver*
+- uid: MessagePack.MessagePackSerializerOptions.WithCompression(MessagePack.MessagePackCompression)
+  commentId: M:MessagePack.MessagePackSerializerOptions.WithCompression(MessagePack.MessagePackCompression)
+  id: WithCompression(MessagePack.MessagePackCompression)
+  parent: MessagePack.MessagePackSerializerOptions
+  langs:
+  - csharp
+  - vb
+  name: WithCompression(MessagePackCompression)
+  nameWithType: MessagePackSerializerOptions.WithCompression(MessagePackCompression)
+  fullName: MessagePack.MessagePackSerializerOptions.WithCompression(MessagePack.MessagePackCompression)
+  type: Method
+  assemblies:
+  - MessagePack
+  namespace: MessagePack
+  summary: Gets a copy of these options with the <xref href="MessagePack.MessagePackSerializerOptions.Compression" data-throw-if-not-resolved="false"></xref> property set to a new value.
+  example: []
+  syntax:
+    content: public MessagePackSerializerOptions WithCompression(MessagePackCompression compression)
+    parameters:
+    - id: compression
+      type: MessagePack.MessagePackCompression
+      description: The new value for the <xref href="MessagePack.MessagePackSerializerOptions.Compression" data-throw-if-not-resolved="false"></xref> property.
+    return:
+      type: MessagePack.MessagePackSerializerOptions
+      description: The new instance; or the original if the value is unchanged.
+    content.vb: Public Function WithCompression(compression As MessagePackCompression) As MessagePackSerializerOptions
+  overload: MessagePack.MessagePackSerializerOptions.WithCompression*
+- uid: MessagePack.MessagePackSerializerOptions.WithCompressionMinLength(System.Int32)
+  commentId: M:MessagePack.MessagePackSerializerOptions.WithCompressionMinLength(System.Int32)
+  id: WithCompressionMinLength(System.Int32)
+  parent: MessagePack.MessagePackSerializerOptions
+  langs:
+  - csharp
+  - vb
+  name: WithCompressionMinLength(int)
+  nameWithType: MessagePackSerializerOptions.WithCompressionMinLength(int)
+  fullName: MessagePack.MessagePackSerializerOptions.WithCompressionMinLength(int)
+  type: Method
+  assemblies:
+  - MessagePack
+  namespace: MessagePack
+  summary: Gets a copy of these options with the <xref href="MessagePack.MessagePackSerializerOptions.CompressionMinLength" data-throw-if-not-resolved="false"></xref> property set to a new value.
+  example: []
+  syntax:
+    content: public MessagePackSerializerOptions WithCompressionMinLength(int compressionMinLength)
+    parameters:
+    - id: compressionMinLength
+      type: System.Int32
+      description: The new value for the <xref href="MessagePack.MessagePackSerializerOptions.CompressionMinLength" data-throw-if-not-resolved="false"></xref> property. Must be a positive integer.
+    return:
+      type: MessagePack.MessagePackSerializerOptions
+      description: The new instance; or the original if the value is unchanged.
+    content.vb: Public Function WithCompressionMinLength(compressionMinLength As Integer) As MessagePackSerializerOptions
+  overload: MessagePack.MessagePackSerializerOptions.WithCompressionMinLength*
+  nameWithType.vb: MessagePackSerializerOptions.WithCompressionMinLength(Integer)
+  fullName.vb: MessagePack.MessagePackSerializerOptions.WithCompressionMinLength(Integer)
+  name.vb: WithCompressionMinLength(Integer)
+- uid: MessagePack.MessagePackSerializerOptions.WithSuggestedContiguousMemorySize(System.Int32)
+  commentId: M:MessagePack.MessagePackSerializerOptions.WithSuggestedContiguousMemorySize(System.Int32)
+  id: WithSuggestedContiguousMemorySize(System.Int32)
+  parent: MessagePack.MessagePackSerializerOptions
+  langs:
+  - csharp
+  - vb
+  name: WithSuggestedContiguousMemorySize(int)
+  nameWithType: MessagePackSerializerOptions.WithSuggestedContiguousMemorySize(int)
+  fullName: MessagePack.MessagePackSerializerOptions.WithSuggestedContiguousMemorySize(int)
+  type: Method
+  assemblies:
+  - MessagePack
+  namespace: MessagePack
+  summary: Gets a copy of these options with the <xref href="MessagePack.MessagePackSerializerOptions.SuggestedContiguousMemorySize" data-throw-if-not-resolved="false"></xref> property set to a new value.
+  example: []
+  syntax:
+    content: public MessagePackSerializerOptions WithSuggestedContiguousMemorySize(int suggestedContiguousMemorySize)
+    parameters:
+    - id: suggestedContiguousMemorySize
+      type: System.Int32
+      description: The new value for the <xref href="MessagePack.MessagePackSerializerOptions.SuggestedContiguousMemorySize" data-throw-if-not-resolved="false"></xref> property. Must be at least 256.
+    return:
+      type: MessagePack.MessagePackSerializerOptions
+      description: The new instance; or the original if the value is unchanged.
+    content.vb: Public Function WithSuggestedContiguousMemorySize(suggestedContiguousMemorySize As Integer) As MessagePackSerializerOptions
+  overload: MessagePack.MessagePackSerializerOptions.WithSuggestedContiguousMemorySize*
+  nameWithType.vb: MessagePackSerializerOptions.WithSuggestedContiguousMemorySize(Integer)
+  fullName.vb: MessagePack.MessagePackSerializerOptions.WithSuggestedContiguousMemorySize(Integer)
+  name.vb: WithSuggestedContiguousMemorySize(Integer)
+- uid: MessagePack.MessagePackSerializerOptions.WithOldSpec(System.Nullable{System.Boolean})
+  commentId: M:MessagePack.MessagePackSerializerOptions.WithOldSpec(System.Nullable{System.Boolean})
+  id: WithOldSpec(System.Nullable{System.Boolean})
+  parent: MessagePack.MessagePackSerializerOptions
+  langs:
+  - csharp
+  - vb
+  name: WithOldSpec(bool?)
+  nameWithType: MessagePackSerializerOptions.WithOldSpec(bool?)
+  fullName: MessagePack.MessagePackSerializerOptions.WithOldSpec(bool?)
+  type: Method
+  assemblies:
+  - MessagePack
+  namespace: MessagePack
+  summary: Gets a copy of these options with the <xref href="MessagePack.MessagePackSerializerOptions.OldSpec" data-throw-if-not-resolved="false"></xref> property set to a new value.
+  example: []
+  syntax:
+    content: public MessagePackSerializerOptions WithOldSpec(bool? oldSpec = true)
+    parameters:
+    - id: oldSpec
+      type: System.Nullable{System.Boolean}
+      description: The new value for the <xref href="MessagePack.MessagePackSerializerOptions.OldSpec" data-throw-if-not-resolved="false"></xref>.
+    return:
+      type: MessagePack.MessagePackSerializerOptions
+      description: The new instance; or the original if the value is unchanged.
+    content.vb: Public Function WithOldSpec(oldSpec As Boolean? = True) As MessagePackSerializerOptions
+  overload: MessagePack.MessagePackSerializerOptions.WithOldSpec*
+  nameWithType.vb: MessagePackSerializerOptions.WithOldSpec(Boolean?)
+  fullName.vb: MessagePack.MessagePackSerializerOptions.WithOldSpec(Boolean?)
+  name.vb: WithOldSpec(Boolean?)
+- uid: MessagePack.MessagePackSerializerOptions.WithOmitAssemblyVersion(System.Boolean)
+  commentId: M:MessagePack.MessagePackSerializerOptions.WithOmitAssemblyVersion(System.Boolean)
+  id: WithOmitAssemblyVersion(System.Boolean)
+  parent: MessagePack.MessagePackSerializerOptions
+  langs:
+  - csharp
+  - vb
+  name: WithOmitAssemblyVersion(bool)
+  nameWithType: MessagePackSerializerOptions.WithOmitAssemblyVersion(bool)
+  fullName: MessagePack.MessagePackSerializerOptions.WithOmitAssemblyVersion(bool)
+  type: Method
+  assemblies:
+  - MessagePack
+  namespace: MessagePack
+  summary: Gets a copy of these options with the <xref href="MessagePack.MessagePackSerializerOptions.OmitAssemblyVersion" data-throw-if-not-resolved="false"></xref> property set to a new value.
+  example: []
+  syntax:
+    content: public MessagePackSerializerOptions WithOmitAssemblyVersion(bool omitAssemblyVersion)
+    parameters:
+    - id: omitAssemblyVersion
+      type: System.Boolean
+      description: The new value for the <xref href="MessagePack.MessagePackSerializerOptions.OmitAssemblyVersion" data-throw-if-not-resolved="false"></xref> property.
+    return:
+      type: MessagePack.MessagePackSerializerOptions
+      description: The new instance; or the original if the value is unchanged.
+    content.vb: Public Function WithOmitAssemblyVersion(omitAssemblyVersion As Boolean) As MessagePackSerializerOptions
+  overload: MessagePack.MessagePackSerializerOptions.WithOmitAssemblyVersion*
+  nameWithType.vb: MessagePackSerializerOptions.WithOmitAssemblyVersion(Boolean)
+  fullName.vb: MessagePack.MessagePackSerializerOptions.WithOmitAssemblyVersion(Boolean)
+  name.vb: WithOmitAssemblyVersion(Boolean)
+- uid: MessagePack.MessagePackSerializerOptions.WithAllowAssemblyVersionMismatch(System.Boolean)
+  commentId: M:MessagePack.MessagePackSerializerOptions.WithAllowAssemblyVersionMismatch(System.Boolean)
+  id: WithAllowAssemblyVersionMismatch(System.Boolean)
+  parent: MessagePack.MessagePackSerializerOptions
+  langs:
+  - csharp
+  - vb
+  name: WithAllowAssemblyVersionMismatch(bool)
+  nameWithType: MessagePackSerializerOptions.WithAllowAssemblyVersionMismatch(bool)
+  fullName: MessagePack.MessagePackSerializerOptions.WithAllowAssemblyVersionMismatch(bool)
+  type: Method
+  assemblies:
+  - MessagePack
+  namespace: MessagePack
+  summary: Gets a copy of these options with the <xref href="MessagePack.MessagePackSerializerOptions.AllowAssemblyVersionMismatch" data-throw-if-not-resolved="false"></xref> property set to a new value.
+  example: []
+  syntax:
+    content: public MessagePackSerializerOptions WithAllowAssemblyVersionMismatch(bool allowAssemblyVersionMismatch)
+    parameters:
+    - id: allowAssemblyVersionMismatch
+      type: System.Boolean
+      description: The new value for the <xref href="MessagePack.MessagePackSerializerOptions.AllowAssemblyVersionMismatch" data-throw-if-not-resolved="false"></xref> property.
+    return:
+      type: MessagePack.MessagePackSerializerOptions
+      description: The new instance; or the original if the value is unchanged.
+    content.vb: Public Function WithAllowAssemblyVersionMismatch(allowAssemblyVersionMismatch As Boolean) As MessagePackSerializerOptions
+  overload: MessagePack.MessagePackSerializerOptions.WithAllowAssemblyVersionMismatch*
+  nameWithType.vb: MessagePackSerializerOptions.WithAllowAssemblyVersionMismatch(Boolean)
+  fullName.vb: MessagePack.MessagePackSerializerOptions.WithAllowAssemblyVersionMismatch(Boolean)
+  name.vb: WithAllowAssemblyVersionMismatch(Boolean)
+- uid: MessagePack.MessagePackSerializerOptions.WithSecurity(MessagePack.MessagePackSecurity)
+  commentId: M:MessagePack.MessagePackSerializerOptions.WithSecurity(MessagePack.MessagePackSecurity)
+  id: WithSecurity(MessagePack.MessagePackSecurity)
+  parent: MessagePack.MessagePackSerializerOptions
+  langs:
+  - csharp
+  - vb
+  name: WithSecurity(MessagePackSecurity)
+  nameWithType: MessagePackSerializerOptions.WithSecurity(MessagePackSecurity)
+  fullName: MessagePack.MessagePackSerializerOptions.WithSecurity(MessagePack.MessagePackSecurity)
+  type: Method
+  assemblies:
+  - MessagePack
+  namespace: MessagePack
+  summary: Gets a copy of these options with the <xref href="MessagePack.MessagePackSerializerOptions.Security" data-throw-if-not-resolved="false"></xref> property set to a new value.
+  example: []
+  syntax:
+    content: public MessagePackSerializerOptions WithSecurity(MessagePackSecurity security)
+    parameters:
+    - id: security
+      type: MessagePack.MessagePackSecurity
+      description: The new value for the <xref href="MessagePack.MessagePackSerializerOptions.Security" data-throw-if-not-resolved="false"></xref> property.
+    return:
+      type: MessagePack.MessagePackSerializerOptions
+      description: The new instance; or the original if the value is unchanged.
+    content.vb: Public Function WithSecurity(security As MessagePackSecurity) As MessagePackSerializerOptions
+  overload: MessagePack.MessagePackSerializerOptions.WithSecurity*
+- uid: MessagePack.MessagePackSerializerOptions.WithPool(MessagePack.SequencePool)
+  commentId: M:MessagePack.MessagePackSerializerOptions.WithPool(MessagePack.SequencePool)
+  id: WithPool(MessagePack.SequencePool)
+  parent: MessagePack.MessagePackSerializerOptions
+  langs:
+  - csharp
+  - vb
+  name: WithPool(SequencePool)
+  nameWithType: MessagePackSerializerOptions.WithPool(SequencePool)
+  fullName: MessagePack.MessagePackSerializerOptions.WithPool(MessagePack.SequencePool)
+  type: Method
+  assemblies:
+  - MessagePack
+  namespace: MessagePack
+  summary: Gets a copy of these options with the <xref href="MessagePack.MessagePackSerializerOptions.SequencePool" data-throw-if-not-resolved="false"></xref> property set to a new value.
+  example: []
+  syntax:
+    content: public MessagePackSerializerOptions WithPool(SequencePool pool)
+    parameters:
+    - id: pool
+      type: MessagePack.SequencePool
+      description: The new value for the <xref href="MessagePack.MessagePackSerializerOptions.SequencePool" data-throw-if-not-resolved="false"></xref> property.
+    return:
+      type: MessagePack.MessagePackSerializerOptions
+      description: The new instance.
+    content.vb: Public Function WithPool(pool As SequencePool) As MessagePackSerializerOptions
+  overload: MessagePack.MessagePackSerializerOptions.WithPool*
+- uid: MessagePack.MessagePackSerializerOptions.Clone
+  commentId: M:MessagePack.MessagePackSerializerOptions.Clone
+  id: Clone
+  parent: MessagePack.MessagePackSerializerOptions
+  langs:
+  - csharp
+  - vb
+  name: Clone()
+  nameWithType: MessagePackSerializerOptions.Clone()
+  fullName: MessagePack.MessagePackSerializerOptions.Clone()
+  type: Method
+  assemblies:
+  - MessagePack
+  namespace: MessagePack
+  summary: Creates a clone of this instance with the same properties set.
+  example: []
+  syntax:
+    content: protected virtual MessagePackSerializerOptions Clone()
+    return:
+      type: MessagePack.MessagePackSerializerOptions
+      description: The cloned instance. Guaranteed to be a new instance.
+    content.vb: Protected Overridable Function Clone() As MessagePackSerializerOptions
+  overload: MessagePack.MessagePackSerializerOptions.Clone*
+  exceptions:
+  - type: System.NotSupportedException
+    commentId: T:System.NotSupportedException
+    description: Thrown if this instance is a derived type that doesn't override this method.
+- uid: MessagePack.MessagePackSerializerOptions.Standard
+  commentId: P:MessagePack.MessagePackSerializerOptions.Standard
+  id: Standard
+  parent: MessagePack.MessagePackSerializerOptions
+  langs:
+  - csharp
+  - vb
+  name: Standard
+  nameWithType: MessagePackSerializerOptions.Standard
+  fullName: MessagePack.MessagePackSerializerOptions.Standard
+  type: Property
+  assemblies:
+  - MessagePack
+  namespace: MessagePack
+  summary: Gets a good default set of options that uses the <xref href="MessagePack.Resolvers.StandardResolver" data-throw-if-not-resolved="false"></xref> and no compression.
+  example: []
+  syntax:
+    content: public static MessagePackSerializerOptions Standard { get; }
+    parameters: []
+    return:
+      type: MessagePack.MessagePackSerializerOptions
+    content.vb: Public Shared ReadOnly Property Standard As MessagePackSerializerOptions
+  overload: MessagePack.MessagePackSerializerOptions.Standard*
+- uid: MessagePack.MessagePackSerializerOptions.Resolver
+  commentId: P:MessagePack.MessagePackSerializerOptions.Resolver
+  id: Resolver
+  parent: MessagePack.MessagePackSerializerOptions
+  langs:
+  - csharp
+  - vb
+  name: Resolver
+  nameWithType: MessagePackSerializerOptions.Resolver
+  fullName: MessagePack.MessagePackSerializerOptions.Resolver
+  type: Property
+  assemblies:
+  - MessagePack
+  namespace: MessagePack
+  summary: Gets the resolver to use for complex types.
+  example: []
+  syntax:
+    content: public IFormatterResolver Resolver { get; }
+    parameters: []
+    return:
+      type: MessagePack.IFormatterResolver
+      description: An instance of <xref href="MessagePack.IFormatterResolver" data-throw-if-not-resolved="false"></xref>. Never <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.
+    content.vb: Public ReadOnly Property Resolver As IFormatterResolver
+  overload: MessagePack.MessagePackSerializerOptions.Resolver*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: Thrown if an attempt is made to set this property to <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.
+- uid: MessagePack.MessagePackSerializerOptions.Compression
+  commentId: P:MessagePack.MessagePackSerializerOptions.Compression
+  id: Compression
+  parent: MessagePack.MessagePackSerializerOptions
+  langs:
+  - csharp
+  - vb
+  name: Compression
+  nameWithType: MessagePackSerializerOptions.Compression
+  fullName: MessagePack.MessagePackSerializerOptions.Compression
+  type: Property
+  assemblies:
+  - MessagePack
+  namespace: MessagePack
+  summary: Gets the compression scheme to apply to serialized sequences.
+  remarks: >-
+    When set to something other than <xref href="MessagePack.MessagePackCompression.None" data-throw-if-not-resolved="false"></xref>,
+
+    deserialization can still work on uncompressed sequences,
+
+    and serialization may not compress if msgpack sequences are short enough that compression would not likely be advantageous.
+  example: []
+  syntax:
+    content: public MessagePackCompression Compression { get; }
+    parameters: []
+    return:
+      type: MessagePack.MessagePackCompression
+    content.vb: Public ReadOnly Property Compression As MessagePackCompression
+  overload: MessagePack.MessagePackSerializerOptions.Compression*
+- uid: MessagePack.MessagePackSerializerOptions.CompressionMinLength
+  commentId: P:MessagePack.MessagePackSerializerOptions.CompressionMinLength
+  id: CompressionMinLength
+  parent: MessagePack.MessagePackSerializerOptions
+  langs:
+  - csharp
+  - vb
+  name: CompressionMinLength
+  nameWithType: MessagePackSerializerOptions.CompressionMinLength
+  fullName: MessagePack.MessagePackSerializerOptions.CompressionMinLength
+  type: Property
+  assemblies:
+  - MessagePack
+  namespace: MessagePack
+  summary: Gets the length a serialized msgpack result must equal or exceed before <xref href="MessagePack.MessagePackSerializerOptions.Compression" data-throw-if-not-resolved="false"></xref> is applied.
+  remarks: >-
+    When compression is <em>not</em> applied due to a short serialized result, deserialization will still succeed
+
+    even if <xref href="MessagePack.MessagePackSerializerOptions.Compression" data-throw-if-not-resolved="false"></xref> is set to something other than <xref href="MessagePack.MessagePackCompression.None" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public int CompressionMinLength { get; }
+    parameters: []
+    return:
+      type: System.Int32
+      description: The default value is 64.
+    content.vb: Public ReadOnly Property CompressionMinLength As Integer
+  overload: MessagePack.MessagePackSerializerOptions.CompressionMinLength*
+- uid: MessagePack.MessagePackSerializerOptions.SuggestedContiguousMemorySize
+  commentId: P:MessagePack.MessagePackSerializerOptions.SuggestedContiguousMemorySize
+  id: SuggestedContiguousMemorySize
+  parent: MessagePack.MessagePackSerializerOptions
+  langs:
+  - csharp
+  - vb
+  name: SuggestedContiguousMemorySize
+  nameWithType: MessagePackSerializerOptions.SuggestedContiguousMemorySize
+  fullName: MessagePack.MessagePackSerializerOptions.SuggestedContiguousMemorySize
+  type: Property
+  assemblies:
+  - MessagePack
+  namespace: MessagePack
+  summary: Gets the size of contiguous memory blocks in bytes that may be allocated for buffering purposes.
+  remarks: >-
+    Larger values may perform a bit faster, but may result in adding a runtime perf tax due to using the
+
+    <a href="https://docs.microsoft.com/en-us/dotnet/standard/garbage-collection/large-object-heap">Large Object Heap</a>.
+  example: []
+  syntax:
+    content: public int SuggestedContiguousMemorySize { get; }
+    parameters: []
+    return:
+      type: System.Int32
+      description: The default value is 1MB.
+    content.vb: Public ReadOnly Property SuggestedContiguousMemorySize As Integer
+  overload: MessagePack.MessagePackSerializerOptions.SuggestedContiguousMemorySize*
+- uid: MessagePack.MessagePackSerializerOptions.OldSpec
+  commentId: P:MessagePack.MessagePackSerializerOptions.OldSpec
+  id: OldSpec
+  parent: MessagePack.MessagePackSerializerOptions
+  langs:
+  - csharp
+  - vb
+  name: OldSpec
+  nameWithType: MessagePackSerializerOptions.OldSpec
+  fullName: MessagePack.MessagePackSerializerOptions.OldSpec
+  type: Property
+  assemblies:
+  - MessagePack
+  namespace: MessagePack
+  summary: >-
+    Gets a value indicating whether to serialize with <xref href="MessagePack.MessagePackWriter.OldSpec" data-throw-if-not-resolved="false"></xref> set to some value
+
+    causing messagepack spec compliance to be explicitly set to the old or new format.
+  remarks: Reading always supports both new and old spec.
+  example: []
+  syntax:
+    content: public bool? OldSpec { get; }
+    parameters: []
+    return:
+      type: System.Nullable{System.Boolean}
+      description: >-
+        A null value means the <xref href="MessagePack.MessagePackWriter" data-throw-if-not-resolved="false"></xref>'s default or previous setting will be used.
+
+        A non-null value will be applied to the <xref href="MessagePack.MessagePackWriter.OldSpec" data-throw-if-not-resolved="false"></xref> property for the duration of a
+
+        serialization and then reverted to its prior setting.
+    content.vb: Public ReadOnly Property OldSpec As Boolean?
+  overload: MessagePack.MessagePackSerializerOptions.OldSpec*
+- uid: MessagePack.MessagePackSerializerOptions.OmitAssemblyVersion
+  commentId: P:MessagePack.MessagePackSerializerOptions.OmitAssemblyVersion
+  id: OmitAssemblyVersion
+  parent: MessagePack.MessagePackSerializerOptions
+  langs:
+  - csharp
+  - vb
+  name: OmitAssemblyVersion
+  nameWithType: MessagePackSerializerOptions.OmitAssemblyVersion
+  fullName: MessagePack.MessagePackSerializerOptions.OmitAssemblyVersion
+  type: Property
+  assemblies:
+  - MessagePack
+  namespace: MessagePack
+  summary: Gets a value indicating whether serialization should omit assembly version, culture and public key token metadata when using the typeless formatter.
+  example: []
+  syntax:
+    content: public bool OmitAssemblyVersion { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+      description: The default value is <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
+    content.vb: Public ReadOnly Property OmitAssemblyVersion As Boolean
+  overload: MessagePack.MessagePackSerializerOptions.OmitAssemblyVersion*
+- uid: MessagePack.MessagePackSerializerOptions.AllowAssemblyVersionMismatch
+  commentId: P:MessagePack.MessagePackSerializerOptions.AllowAssemblyVersionMismatch
+  id: AllowAssemblyVersionMismatch
+  parent: MessagePack.MessagePackSerializerOptions
+  langs:
+  - csharp
+  - vb
+  name: AllowAssemblyVersionMismatch
+  nameWithType: MessagePackSerializerOptions.AllowAssemblyVersionMismatch
+  fullName: MessagePack.MessagePackSerializerOptions.AllowAssemblyVersionMismatch
+  type: Property
+  assemblies:
+  - MessagePack
+  namespace: MessagePack
+  summary: Gets a value indicating whether deserialization may instantiate types from an assembly with a different version if a matching version cannot be found.
+  example: []
+  syntax:
+    content: public bool AllowAssemblyVersionMismatch { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+      description: The default value is <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
+    content.vb: Public ReadOnly Property AllowAssemblyVersionMismatch As Boolean
+  overload: MessagePack.MessagePackSerializerOptions.AllowAssemblyVersionMismatch*
+- uid: MessagePack.MessagePackSerializerOptions.Security
+  commentId: P:MessagePack.MessagePackSerializerOptions.Security
+  id: Security
+  parent: MessagePack.MessagePackSerializerOptions
+  langs:
+  - csharp
+  - vb
+  name: Security
+  nameWithType: MessagePackSerializerOptions.Security
+  fullName: MessagePack.MessagePackSerializerOptions.Security
+  type: Property
+  assemblies:
+  - MessagePack
+  namespace: MessagePack
+  summary: Gets the security-related options for deserializing messagepack sequences.
+  example: []
+  syntax:
+    content: public MessagePackSecurity Security { get; }
+    parameters: []
+    return:
+      type: MessagePack.MessagePackSecurity
+      description: The default value is to use <xref href="MessagePack.MessagePackSecurity.TrustedData" data-throw-if-not-resolved="false"></xref>.
+    content.vb: Public ReadOnly Property Security As MessagePackSecurity
+  overload: MessagePack.MessagePackSerializerOptions.Security*
+- uid: MessagePack.MessagePackSerializerOptions.SequencePool
+  commentId: P:MessagePack.MessagePackSerializerOptions.SequencePool
+  id: SequencePool
+  parent: MessagePack.MessagePackSerializerOptions
+  langs:
+  - csharp
+  - vb
+  name: SequencePool
+  nameWithType: MessagePackSerializerOptions.SequencePool
+  fullName: MessagePack.MessagePackSerializerOptions.SequencePool
+  type: Property
+  assemblies:
+  - MessagePack
+  namespace: MessagePack
+  summary: Gets a thread-safe pool of reusable <xref href="Nerdbank.Streams.Sequence%601" data-throw-if-not-resolved="false"></xref> objects.
+  example: []
+  syntax:
+    content: public SequencePool SequencePool { get; }
+    parameters: []
+    return:
+      type: MessagePack.SequencePool
+      description: The default value is the <xref href="MessagePack.SequencePool.Shared" data-throw-if-not-resolved="false"></xref> instance.
+    content.vb: Public ReadOnly Property SequencePool As SequencePool
+  overload: MessagePack.MessagePackSerializerOptions.SequencePool*
+references:
+- uid: MessagePack.MessagePackSerializer
+  commentId: T:MessagePack.MessagePackSerializer
+  isExternal: true
+  href: MessagePack.MessagePackSerializer.html
+  name: MessagePackSerializer
+  nameWithType: MessagePackSerializer
+  fullName: MessagePack.MessagePackSerializer
+- uid: MessagePack
+  commentId: N:MessagePack
+  isExternal: true
+  href: MessagePack.html
+  name: MessagePack
+  nameWithType: MessagePack
+  fullName: MessagePack
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: MessagePack.MessagePackSerializerOptions
+  commentId: T:MessagePack.MessagePackSerializerOptions
+  parent: MessagePack
+  isExternal: true
+  href: MessagePack.MessagePackSerializerOptions.html
+  name: MessagePackSerializerOptions
+  nameWithType: MessagePackSerializerOptions
+  fullName: MessagePack.MessagePackSerializerOptions
+- uid: MessagePack.MessagePackSerializerOptions.#ctor*
+  commentId: Overload:MessagePack.MessagePackSerializerOptions.#ctor
+  isExternal: true
+  href: MessagePack.MessagePackSerializerOptions.html#MessagePack_MessagePackSerializerOptions__ctor_MessagePack_IFormatterResolver_
+  name: MessagePackSerializerOptions
+  nameWithType: MessagePackSerializerOptions.MessagePackSerializerOptions
+  fullName: MessagePack.MessagePackSerializerOptions.MessagePackSerializerOptions
+  nameWithType.vb: MessagePackSerializerOptions.New
+  fullName.vb: MessagePack.MessagePackSerializerOptions.New
+  name.vb: New
+- uid: MessagePack.IFormatterResolver
+  commentId: T:MessagePack.IFormatterResolver
+  parent: MessagePack
+  isExternal: true
+  href: MessagePack.IFormatterResolver.html
+  name: IFormatterResolver
+  nameWithType: IFormatterResolver
+  fullName: MessagePack.IFormatterResolver
+- uid: System.Type.AssemblyQualifiedName
+  commentId: P:System.Type.AssemblyQualifiedName
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.type.assemblyqualifiedname
+  name: AssemblyQualifiedName
+  nameWithType: Type.AssemblyQualifiedName
+  fullName: System.Type.AssemblyQualifiedName
+- uid: MessagePack.MessagePackSerializerOptions.LoadType*
+  commentId: Overload:MessagePack.MessagePackSerializerOptions.LoadType
+  isExternal: true
+  href: MessagePack.MessagePackSerializerOptions.html#MessagePack_MessagePackSerializerOptions_LoadType_System_String_
+  name: LoadType
+  nameWithType: MessagePackSerializerOptions.LoadType
+  fullName: MessagePack.MessagePackSerializerOptions.LoadType
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Type
+  commentId: T:System.Type
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.type
+  name: Type
+  nameWithType: Type
+  fullName: System.Type
+- uid: System.TypeAccessException
+  commentId: T:System.TypeAccessException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.typeaccessexception
+  name: TypeAccessException
+  nameWithType: TypeAccessException
+  fullName: System.TypeAccessException
+- uid: MessagePack.MessagePackSerializerOptions.ThrowIfDeserializingTypeIsDisallowed*
+  commentId: Overload:MessagePack.MessagePackSerializerOptions.ThrowIfDeserializingTypeIsDisallowed
+  isExternal: true
+  href: MessagePack.MessagePackSerializerOptions.html#MessagePack_MessagePackSerializerOptions_ThrowIfDeserializingTypeIsDisallowed_System_Type_
+  name: ThrowIfDeserializingTypeIsDisallowed
+  nameWithType: MessagePackSerializerOptions.ThrowIfDeserializingTypeIsDisallowed
+  fullName: MessagePack.MessagePackSerializerOptions.ThrowIfDeserializingTypeIsDisallowed
+- uid: MessagePack.MessagePackSerializerOptions.Resolver
+  commentId: P:MessagePack.MessagePackSerializerOptions.Resolver
+  isExternal: true
+  href: MessagePack.MessagePackSerializerOptions.html#MessagePack_MessagePackSerializerOptions_Resolver
+  name: Resolver
+  nameWithType: MessagePackSerializerOptions.Resolver
+  fullName: MessagePack.MessagePackSerializerOptions.Resolver
+- uid: MessagePack.MessagePackSerializerOptions.WithResolver*
+  commentId: Overload:MessagePack.MessagePackSerializerOptions.WithResolver
+  isExternal: true
+  href: MessagePack.MessagePackSerializerOptions.html#MessagePack_MessagePackSerializerOptions_WithResolver_MessagePack_IFormatterResolver_
+  name: WithResolver
+  nameWithType: MessagePackSerializerOptions.WithResolver
+  fullName: MessagePack.MessagePackSerializerOptions.WithResolver
+- uid: MessagePack.MessagePackSerializerOptions.Compression
+  commentId: P:MessagePack.MessagePackSerializerOptions.Compression
+  isExternal: true
+  href: MessagePack.MessagePackSerializerOptions.html#MessagePack_MessagePackSerializerOptions_Compression
+  name: Compression
+  nameWithType: MessagePackSerializerOptions.Compression
+  fullName: MessagePack.MessagePackSerializerOptions.Compression
+- uid: MessagePack.MessagePackSerializerOptions.WithCompression*
+  commentId: Overload:MessagePack.MessagePackSerializerOptions.WithCompression
+  isExternal: true
+  href: MessagePack.MessagePackSerializerOptions.html#MessagePack_MessagePackSerializerOptions_WithCompression_MessagePack_MessagePackCompression_
+  name: WithCompression
+  nameWithType: MessagePackSerializerOptions.WithCompression
+  fullName: MessagePack.MessagePackSerializerOptions.WithCompression
+- uid: MessagePack.MessagePackCompression
+  commentId: T:MessagePack.MessagePackCompression
+  parent: MessagePack
+  isExternal: true
+  href: MessagePack.MessagePackCompression.html
+  name: MessagePackCompression
+  nameWithType: MessagePackCompression
+  fullName: MessagePack.MessagePackCompression
+- uid: MessagePack.MessagePackSerializerOptions.CompressionMinLength
+  commentId: P:MessagePack.MessagePackSerializerOptions.CompressionMinLength
+  isExternal: true
+  href: MessagePack.MessagePackSerializerOptions.html#MessagePack_MessagePackSerializerOptions_CompressionMinLength
+  name: CompressionMinLength
+  nameWithType: MessagePackSerializerOptions.CompressionMinLength
+  fullName: MessagePack.MessagePackSerializerOptions.CompressionMinLength
+- uid: MessagePack.MessagePackSerializerOptions.WithCompressionMinLength*
+  commentId: Overload:MessagePack.MessagePackSerializerOptions.WithCompressionMinLength
+  isExternal: true
+  href: MessagePack.MessagePackSerializerOptions.html#MessagePack_MessagePackSerializerOptions_WithCompressionMinLength_System_Int32_
+  name: WithCompressionMinLength
+  nameWithType: MessagePackSerializerOptions.WithCompressionMinLength
+  fullName: MessagePack.MessagePackSerializerOptions.WithCompressionMinLength
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: MessagePack.MessagePackSerializerOptions.SuggestedContiguousMemorySize
+  commentId: P:MessagePack.MessagePackSerializerOptions.SuggestedContiguousMemorySize
+  isExternal: true
+  href: MessagePack.MessagePackSerializerOptions.html#MessagePack_MessagePackSerializerOptions_SuggestedContiguousMemorySize
+  name: SuggestedContiguousMemorySize
+  nameWithType: MessagePackSerializerOptions.SuggestedContiguousMemorySize
+  fullName: MessagePack.MessagePackSerializerOptions.SuggestedContiguousMemorySize
+- uid: MessagePack.MessagePackSerializerOptions.WithSuggestedContiguousMemorySize*
+  commentId: Overload:MessagePack.MessagePackSerializerOptions.WithSuggestedContiguousMemorySize
+  isExternal: true
+  href: MessagePack.MessagePackSerializerOptions.html#MessagePack_MessagePackSerializerOptions_WithSuggestedContiguousMemorySize_System_Int32_
+  name: WithSuggestedContiguousMemorySize
+  nameWithType: MessagePackSerializerOptions.WithSuggestedContiguousMemorySize
+  fullName: MessagePack.MessagePackSerializerOptions.WithSuggestedContiguousMemorySize
+- uid: MessagePack.MessagePackSerializerOptions.OldSpec
+  commentId: P:MessagePack.MessagePackSerializerOptions.OldSpec
+  isExternal: true
+  href: MessagePack.MessagePackSerializerOptions.html#MessagePack_MessagePackSerializerOptions_OldSpec
+  name: OldSpec
+  nameWithType: MessagePackSerializerOptions.OldSpec
+  fullName: MessagePack.MessagePackSerializerOptions.OldSpec
+- uid: MessagePack.MessagePackSerializerOptions.WithOldSpec*
+  commentId: Overload:MessagePack.MessagePackSerializerOptions.WithOldSpec
+  isExternal: true
+  href: MessagePack.MessagePackSerializerOptions.html#MessagePack_MessagePackSerializerOptions_WithOldSpec_System_Nullable_System_Boolean__
+  name: WithOldSpec
+  nameWithType: MessagePackSerializerOptions.WithOldSpec
+  fullName: MessagePack.MessagePackSerializerOptions.WithOldSpec
+- uid: System.Nullable{System.Boolean}
+  commentId: T:System.Nullable{System.Boolean}
+  parent: System
+  definition: System.Nullable`1
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool?
+  nameWithType: bool?
+  fullName: bool?
+  nameWithType.vb: Boolean?
+  fullName.vb: Boolean?
+  name.vb: Boolean?
+  spec.csharp:
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '?'
+  spec.vb:
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '?'
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: MessagePack.MessagePackSerializerOptions.OmitAssemblyVersion
+  commentId: P:MessagePack.MessagePackSerializerOptions.OmitAssemblyVersion
+  isExternal: true
+  href: MessagePack.MessagePackSerializerOptions.html#MessagePack_MessagePackSerializerOptions_OmitAssemblyVersion
+  name: OmitAssemblyVersion
+  nameWithType: MessagePackSerializerOptions.OmitAssemblyVersion
+  fullName: MessagePack.MessagePackSerializerOptions.OmitAssemblyVersion
+- uid: MessagePack.MessagePackSerializerOptions.WithOmitAssemblyVersion*
+  commentId: Overload:MessagePack.MessagePackSerializerOptions.WithOmitAssemblyVersion
+  isExternal: true
+  href: MessagePack.MessagePackSerializerOptions.html#MessagePack_MessagePackSerializerOptions_WithOmitAssemblyVersion_System_Boolean_
+  name: WithOmitAssemblyVersion
+  nameWithType: MessagePackSerializerOptions.WithOmitAssemblyVersion
+  fullName: MessagePack.MessagePackSerializerOptions.WithOmitAssemblyVersion
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: MessagePack.MessagePackSerializerOptions.AllowAssemblyVersionMismatch
+  commentId: P:MessagePack.MessagePackSerializerOptions.AllowAssemblyVersionMismatch
+  isExternal: true
+  href: MessagePack.MessagePackSerializerOptions.html#MessagePack_MessagePackSerializerOptions_AllowAssemblyVersionMismatch
+  name: AllowAssemblyVersionMismatch
+  nameWithType: MessagePackSerializerOptions.AllowAssemblyVersionMismatch
+  fullName: MessagePack.MessagePackSerializerOptions.AllowAssemblyVersionMismatch
+- uid: MessagePack.MessagePackSerializerOptions.WithAllowAssemblyVersionMismatch*
+  commentId: Overload:MessagePack.MessagePackSerializerOptions.WithAllowAssemblyVersionMismatch
+  isExternal: true
+  href: MessagePack.MessagePackSerializerOptions.html#MessagePack_MessagePackSerializerOptions_WithAllowAssemblyVersionMismatch_System_Boolean_
+  name: WithAllowAssemblyVersionMismatch
+  nameWithType: MessagePackSerializerOptions.WithAllowAssemblyVersionMismatch
+  fullName: MessagePack.MessagePackSerializerOptions.WithAllowAssemblyVersionMismatch
+- uid: MessagePack.MessagePackSerializerOptions.Security
+  commentId: P:MessagePack.MessagePackSerializerOptions.Security
+  isExternal: true
+  href: MessagePack.MessagePackSerializerOptions.html#MessagePack_MessagePackSerializerOptions_Security
+  name: Security
+  nameWithType: MessagePackSerializerOptions.Security
+  fullName: MessagePack.MessagePackSerializerOptions.Security
+- uid: MessagePack.MessagePackSerializerOptions.WithSecurity*
+  commentId: Overload:MessagePack.MessagePackSerializerOptions.WithSecurity
+  isExternal: true
+  href: MessagePack.MessagePackSerializerOptions.html#MessagePack_MessagePackSerializerOptions_WithSecurity_MessagePack_MessagePackSecurity_
+  name: WithSecurity
+  nameWithType: MessagePackSerializerOptions.WithSecurity
+  fullName: MessagePack.MessagePackSerializerOptions.WithSecurity
+- uid: MessagePack.MessagePackSecurity
+  commentId: T:MessagePack.MessagePackSecurity
+  parent: MessagePack
+  isExternal: true
+  href: MessagePack.MessagePackSecurity.html
+  name: MessagePackSecurity
+  nameWithType: MessagePackSecurity
+  fullName: MessagePack.MessagePackSecurity
+- uid: MessagePack.MessagePackSerializerOptions.SequencePool
+  commentId: P:MessagePack.MessagePackSerializerOptions.SequencePool
+  isExternal: true
+  href: MessagePack.MessagePackSerializerOptions.html#MessagePack_MessagePackSerializerOptions_SequencePool
+  name: SequencePool
+  nameWithType: MessagePackSerializerOptions.SequencePool
+  fullName: MessagePack.MessagePackSerializerOptions.SequencePool
+- uid: MessagePack.MessagePackSerializerOptions.WithPool*
+  commentId: Overload:MessagePack.MessagePackSerializerOptions.WithPool
+  isExternal: true
+  href: MessagePack.MessagePackSerializerOptions.html#MessagePack_MessagePackSerializerOptions_WithPool_MessagePack_SequencePool_
+  name: WithPool
+  nameWithType: MessagePackSerializerOptions.WithPool
+  fullName: MessagePack.MessagePackSerializerOptions.WithPool
+- uid: MessagePack.SequencePool
+  commentId: T:MessagePack.SequencePool
+  parent: MessagePack
+  isExternal: true
+  href: MessagePack.SequencePool.html
+  name: SequencePool
+  nameWithType: SequencePool
+  fullName: MessagePack.SequencePool
+- uid: System.NotSupportedException
+  commentId: T:System.NotSupportedException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.notsupportedexception
+  name: NotSupportedException
+  nameWithType: NotSupportedException
+  fullName: System.NotSupportedException
+- uid: MessagePack.MessagePackSerializerOptions.Clone*
+  commentId: Overload:MessagePack.MessagePackSerializerOptions.Clone
+  isExternal: true
+  href: MessagePack.MessagePackSerializerOptions.html#MessagePack_MessagePackSerializerOptions_Clone
+  name: Clone
+  nameWithType: MessagePackSerializerOptions.Clone
+  fullName: MessagePack.MessagePackSerializerOptions.Clone
+- uid: MessagePack.Resolvers.StandardResolver
+  commentId: T:MessagePack.Resolvers.StandardResolver
+  parent: MessagePack.Resolvers
+  isExternal: true
+  href: MessagePack.Resolvers.StandardResolver.html
+  name: StandardResolver
+  nameWithType: StandardResolver
+  fullName: MessagePack.Resolvers.StandardResolver
+- uid: MessagePack.MessagePackSerializerOptions.Standard*
+  commentId: Overload:MessagePack.MessagePackSerializerOptions.Standard
+  isExternal: true
+  href: MessagePack.MessagePackSerializerOptions.html#MessagePack_MessagePackSerializerOptions_Standard
+  name: Standard
+  nameWithType: MessagePackSerializerOptions.Standard
+  fullName: MessagePack.MessagePackSerializerOptions.Standard
+- uid: MessagePack.Resolvers
+  commentId: N:MessagePack.Resolvers
+  isExternal: true
+  href: MessagePack.html
+  name: MessagePack.Resolvers
+  nameWithType: MessagePack.Resolvers
+  fullName: MessagePack.Resolvers
+  spec.csharp:
+  - uid: MessagePack
+    name: MessagePack
+    isExternal: true
+    href: MessagePack.html
+  - name: .
+  - uid: MessagePack.Resolvers
+    name: Resolvers
+    isExternal: true
+    href: MessagePack.Resolvers.html
+  spec.vb:
+  - uid: MessagePack
+    name: MessagePack
+    isExternal: true
+    href: MessagePack.html
+  - name: .
+  - uid: MessagePack.Resolvers
+    name: Resolvers
+    isExternal: true
+    href: MessagePack.Resolvers.html
+- uid: System.ArgumentNullException
+  commentId: T:System.ArgumentNullException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.argumentnullexception
+  name: ArgumentNullException
+  nameWithType: ArgumentNullException
+  fullName: System.ArgumentNullException
+- uid: MessagePack.MessagePackSerializerOptions.Resolver*
+  commentId: Overload:MessagePack.MessagePackSerializerOptions.Resolver
+  isExternal: true
+  href: MessagePack.MessagePackSerializerOptions.html#MessagePack_MessagePackSerializerOptions_Resolver
+  name: Resolver
+  nameWithType: MessagePackSerializerOptions.Resolver
+  fullName: MessagePack.MessagePackSerializerOptions.Resolver
+- uid: MessagePack.MessagePackCompression.None
+  commentId: F:MessagePack.MessagePackCompression.None
+  isExternal: true
+  href: MessagePack.MessagePackCompression.html#MessagePack_MessagePackCompression_None
+  name: None
+  nameWithType: MessagePackCompression.None
+  fullName: MessagePack.MessagePackCompression.None
+- uid: MessagePack.MessagePackSerializerOptions.Compression*
+  commentId: Overload:MessagePack.MessagePackSerializerOptions.Compression
+  isExternal: true
+  href: MessagePack.MessagePackSerializerOptions.html#MessagePack_MessagePackSerializerOptions_Compression
+  name: Compression
+  nameWithType: MessagePackSerializerOptions.Compression
+  fullName: MessagePack.MessagePackSerializerOptions.Compression
+- uid: MessagePack.MessagePackSerializerOptions.CompressionMinLength*
+  commentId: Overload:MessagePack.MessagePackSerializerOptions.CompressionMinLength
+  isExternal: true
+  href: MessagePack.MessagePackSerializerOptions.html#MessagePack_MessagePackSerializerOptions_CompressionMinLength
+  name: CompressionMinLength
+  nameWithType: MessagePackSerializerOptions.CompressionMinLength
+  fullName: MessagePack.MessagePackSerializerOptions.CompressionMinLength
+- uid: MessagePack.MessagePackSerializerOptions.SuggestedContiguousMemorySize*
+  commentId: Overload:MessagePack.MessagePackSerializerOptions.SuggestedContiguousMemorySize
+  isExternal: true
+  href: MessagePack.MessagePackSerializerOptions.html#MessagePack_MessagePackSerializerOptions_SuggestedContiguousMemorySize
+  name: SuggestedContiguousMemorySize
+  nameWithType: MessagePackSerializerOptions.SuggestedContiguousMemorySize
+  fullName: MessagePack.MessagePackSerializerOptions.SuggestedContiguousMemorySize
+- uid: MessagePack.MessagePackWriter.OldSpec
+  commentId: P:MessagePack.MessagePackWriter.OldSpec
+  isExternal: true
+  href: MessagePack.MessagePackWriter.html#MessagePack_MessagePackWriter_OldSpec
+  name: OldSpec
+  nameWithType: MessagePackWriter.OldSpec
+  fullName: MessagePack.MessagePackWriter.OldSpec
+- uid: MessagePack.MessagePackWriter
+  commentId: T:MessagePack.MessagePackWriter
+  parent: MessagePack
+  isExternal: true
+  href: MessagePack.MessagePackWriter.html
+  name: MessagePackWriter
+  nameWithType: MessagePackWriter
+  fullName: MessagePack.MessagePackWriter
+- uid: MessagePack.MessagePackSerializerOptions.OldSpec*
+  commentId: Overload:MessagePack.MessagePackSerializerOptions.OldSpec
+  isExternal: true
+  href: MessagePack.MessagePackSerializerOptions.html#MessagePack_MessagePackSerializerOptions_OldSpec
+  name: OldSpec
+  nameWithType: MessagePackSerializerOptions.OldSpec
+  fullName: MessagePack.MessagePackSerializerOptions.OldSpec
+- uid: MessagePack.MessagePackSerializerOptions.OmitAssemblyVersion*
+  commentId: Overload:MessagePack.MessagePackSerializerOptions.OmitAssemblyVersion
+  isExternal: true
+  href: MessagePack.MessagePackSerializerOptions.html#MessagePack_MessagePackSerializerOptions_OmitAssemblyVersion
+  name: OmitAssemblyVersion
+  nameWithType: MessagePackSerializerOptions.OmitAssemblyVersion
+  fullName: MessagePack.MessagePackSerializerOptions.OmitAssemblyVersion
+- uid: MessagePack.MessagePackSerializerOptions.AllowAssemblyVersionMismatch*
+  commentId: Overload:MessagePack.MessagePackSerializerOptions.AllowAssemblyVersionMismatch
+  isExternal: true
+  href: MessagePack.MessagePackSerializerOptions.html#MessagePack_MessagePackSerializerOptions_AllowAssemblyVersionMismatch
+  name: AllowAssemblyVersionMismatch
+  nameWithType: MessagePackSerializerOptions.AllowAssemblyVersionMismatch
+  fullName: MessagePack.MessagePackSerializerOptions.AllowAssemblyVersionMismatch
+- uid: MessagePack.MessagePackSecurity.TrustedData
+  commentId: F:MessagePack.MessagePackSecurity.TrustedData
+  isExternal: true
+  href: MessagePack.MessagePackSecurity.html#MessagePack_MessagePackSecurity_TrustedData
+  name: TrustedData
+  nameWithType: MessagePackSecurity.TrustedData
+  fullName: MessagePack.MessagePackSecurity.TrustedData
+- uid: MessagePack.MessagePackSerializerOptions.Security*
+  commentId: Overload:MessagePack.MessagePackSerializerOptions.Security
+  isExternal: true
+  href: MessagePack.MessagePackSerializerOptions.html#MessagePack_MessagePackSerializerOptions_Security
+  name: Security
+  nameWithType: MessagePackSerializerOptions.Security
+  fullName: MessagePack.MessagePackSerializerOptions.Security
+- uid: Nerdbank.Streams.Sequence`1
+  commentId: T:Nerdbank.Streams.Sequence`1
+  isExternal: true
+  name: Sequence<T>
+  nameWithType: Sequence<T>
+  fullName: Nerdbank.Streams.Sequence<T>
+  nameWithType.vb: Sequence(Of T)
+  fullName.vb: Nerdbank.Streams.Sequence(Of T)
+  name.vb: Sequence(Of T)
+  spec.csharp:
+  - uid: Nerdbank.Streams.Sequence`1
+    name: Sequence
+    isExternal: true
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: Nerdbank.Streams.Sequence`1
+    name: Sequence
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: MessagePack.SequencePool.Shared
+  commentId: F:MessagePack.SequencePool.Shared
+  isExternal: true
+- uid: MessagePack.MessagePackSerializerOptions.SequencePool*
+  commentId: Overload:MessagePack.MessagePackSerializerOptions.SequencePool
+  isExternal: true
+  href: MessagePack.MessagePackSerializerOptions.html#MessagePack_MessagePackSerializerOptions_SequencePool
+  name: SequencePool
+  nameWithType: MessagePackSerializerOptions.SequencePool
+  fullName: MessagePack.MessagePackSerializerOptions.SequencePool

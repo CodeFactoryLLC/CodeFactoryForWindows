@@ -1,0 +1,2791 @@
+### YamlMime:ManagedReference
+items:
+- uid: System.Text.Json.Nodes.JsonObject
+  commentId: T:System.Text.Json.Nodes.JsonObject
+  id: JsonObject
+  parent: System.Text.Json.Nodes
+  children:
+  - System.Text.Json.Nodes.JsonObject.#ctor(System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.String,System.Text.Json.Nodes.JsonNode}},System.Nullable{System.Text.Json.Nodes.JsonNodeOptions})
+  - System.Text.Json.Nodes.JsonObject.#ctor(System.Nullable{System.Text.Json.Nodes.JsonNodeOptions})
+  - System.Text.Json.Nodes.JsonObject.Add(System.Collections.Generic.KeyValuePair{System.String,System.Text.Json.Nodes.JsonNode})
+  - System.Text.Json.Nodes.JsonObject.Add(System.String,System.Text.Json.Nodes.JsonNode)
+  - System.Text.Json.Nodes.JsonObject.Clear
+  - System.Text.Json.Nodes.JsonObject.ContainsKey(System.String)
+  - System.Text.Json.Nodes.JsonObject.Count
+  - System.Text.Json.Nodes.JsonObject.Create(System.Text.Json.JsonElement,System.Nullable{System.Text.Json.Nodes.JsonNodeOptions})
+  - System.Text.Json.Nodes.JsonObject.GetEnumerator
+  - System.Text.Json.Nodes.JsonObject.Remove(System.String)
+  - System.Text.Json.Nodes.JsonObject.TryGetPropertyValue(System.String,System.Text.Json.Nodes.JsonNode@)
+  - System.Text.Json.Nodes.JsonObject.WriteTo(System.Text.Json.Utf8JsonWriter,System.Text.Json.JsonSerializerOptions)
+  langs:
+  - csharp
+  - vb
+  name: JsonObject
+  nameWithType: JsonObject
+  fullName: System.Text.Json.Nodes.JsonObject
+  type: Class
+  assemblies:
+  - System.Text.Json
+  namespace: System.Text.Json.Nodes
+  summary: Represents a mutable JSON object.
+  example: []
+  syntax:
+    content: 'public sealed class JsonObject : JsonNode, IDictionary<string, JsonNode?>, ICollection<KeyValuePair<string, JsonNode?>>, IEnumerable<KeyValuePair<string, JsonNode?>>, IEnumerable'
+    content.vb: Public NotInheritable Class JsonObject Inherits JsonNode Implements IDictionary(Of String, JsonNode), ICollection(Of KeyValuePair(Of String, JsonNode)), IEnumerable(Of KeyValuePair(Of String, JsonNode)), IEnumerable
+  inheritance:
+  - System.Object
+  - System.Text.Json.Nodes.JsonNode
+  implements:
+  - System.Collections.Generic.IDictionary{System.String,System.Text.Json.Nodes.JsonNode}
+  - System.Collections.Generic.ICollection{System.Collections.Generic.KeyValuePair{System.String,System.Text.Json.Nodes.JsonNode}}
+  - System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.String,System.Text.Json.Nodes.JsonNode}}
+  - System.Collections.IEnumerable
+  inheritedMembers:
+  - System.Text.Json.Nodes.JsonNode.AsArray
+  - System.Text.Json.Nodes.JsonNode.AsObject
+  - System.Text.Json.Nodes.JsonNode.AsValue
+  - System.Text.Json.Nodes.JsonNode.GetPath
+  - System.Text.Json.Nodes.JsonNode.GetValue``1
+  - System.Text.Json.Nodes.JsonNode.Parse(System.Text.Json.Utf8JsonReader@,System.Nullable{System.Text.Json.Nodes.JsonNodeOptions})
+  - System.Text.Json.Nodes.JsonNode.Parse(System.String,System.Nullable{System.Text.Json.Nodes.JsonNodeOptions},System.Text.Json.JsonDocumentOptions)
+  - System.Text.Json.Nodes.JsonNode.Parse(System.ReadOnlySpan{System.Byte},System.Nullable{System.Text.Json.Nodes.JsonNodeOptions},System.Text.Json.JsonDocumentOptions)
+  - System.Text.Json.Nodes.JsonNode.Parse(System.IO.Stream,System.Nullable{System.Text.Json.Nodes.JsonNodeOptions},System.Text.Json.JsonDocumentOptions)
+  - System.Text.Json.Nodes.JsonNode.ToJsonString(System.Text.Json.JsonSerializerOptions)
+  - System.Text.Json.Nodes.JsonNode.ToString
+  - System.Text.Json.Nodes.JsonNode.Options
+  - System.Text.Json.Nodes.JsonNode.Parent
+  - System.Text.Json.Nodes.JsonNode.Root
+  - System.Text.Json.Nodes.JsonNode.Item(System.Int32)
+  - System.Text.Json.Nodes.JsonNode.Item(System.String)
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  extensionMethods:
+  - System.Text.Json.Nodes.JsonNode.System.Text.Json.JsonSerializer.Deserialize(System.Type,System.Text.Json.JsonSerializerOptions)
+  - System.Text.Json.Nodes.JsonNode.System.Text.Json.JsonSerializer.Deserialize(System.Type,System.Text.Json.Serialization.JsonSerializerContext)
+  - System.Text.Json.Nodes.JsonNode.System.Text.Json.JsonSerializer.Deserialize``1(System.Text.Json.JsonSerializerOptions)
+  - System.Text.Json.Nodes.JsonNode.System.Text.Json.JsonSerializer.Deserialize``1(System.Text.Json.Serialization.Metadata.JsonTypeInfo{{TValue}})
+- uid: System.Text.Json.Nodes.JsonObject.#ctor(System.Nullable{System.Text.Json.Nodes.JsonNodeOptions})
+  commentId: M:System.Text.Json.Nodes.JsonObject.#ctor(System.Nullable{System.Text.Json.Nodes.JsonNodeOptions})
+  id: '#ctor(System.Nullable{System.Text.Json.Nodes.JsonNodeOptions})'
+  parent: System.Text.Json.Nodes.JsonObject
+  langs:
+  - csharp
+  - vb
+  name: JsonObject(JsonNodeOptions?)
+  nameWithType: JsonObject.JsonObject(JsonNodeOptions?)
+  fullName: System.Text.Json.Nodes.JsonObject.JsonObject(System.Text.Json.Nodes.JsonNodeOptions?)
+  type: Constructor
+  assemblies:
+  - System.Text.Json
+  namespace: System.Text.Json.Nodes
+  summary: Initializes a new instance of the <xref href="System.Text.Json.Nodes.JsonObject" data-throw-if-not-resolved="false"></xref> class that is empty.
+  example: []
+  syntax:
+    content: public JsonObject(JsonNodeOptions? options = null)
+    parameters:
+    - id: options
+      type: System.Nullable{System.Text.Json.Nodes.JsonNodeOptions}
+      description: Options to control the behavior.
+    content.vb: Public Sub New(options As JsonNodeOptions? = Nothing)
+  overload: System.Text.Json.Nodes.JsonObject.#ctor*
+  nameWithType.vb: JsonObject.New(JsonNodeOptions?)
+  fullName.vb: System.Text.Json.Nodes.JsonObject.New(System.Text.Json.Nodes.JsonNodeOptions?)
+  name.vb: New(JsonNodeOptions?)
+- uid: System.Text.Json.Nodes.JsonObject.#ctor(System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.String,System.Text.Json.Nodes.JsonNode}},System.Nullable{System.Text.Json.Nodes.JsonNodeOptions})
+  commentId: M:System.Text.Json.Nodes.JsonObject.#ctor(System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.String,System.Text.Json.Nodes.JsonNode}},System.Nullable{System.Text.Json.Nodes.JsonNodeOptions})
+  id: '#ctor(System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.String,System.Text.Json.Nodes.JsonNode}},System.Nullable{System.Text.Json.Nodes.JsonNodeOptions})'
+  parent: System.Text.Json.Nodes.JsonObject
+  langs:
+  - csharp
+  - vb
+  name: JsonObject(IEnumerable<KeyValuePair<string, JsonNode?>>, JsonNodeOptions?)
+  nameWithType: JsonObject.JsonObject(IEnumerable<KeyValuePair<string, JsonNode?>>, JsonNodeOptions?)
+  fullName: System.Text.Json.Nodes.JsonObject.JsonObject(System.Collections.Generic.IEnumerable<System.Collections.Generic.KeyValuePair<string, System.Text.Json.Nodes.JsonNode?>>, System.Text.Json.Nodes.JsonNodeOptions?)
+  type: Constructor
+  assemblies:
+  - System.Text.Json
+  namespace: System.Text.Json.Nodes
+  summary: Initializes a new instance of the <xref href="System.Text.Json.Nodes.JsonObject" data-throw-if-not-resolved="false"></xref> class that contains the specified <code class="paramref">properties</code>.
+  example: []
+  syntax:
+    content: public JsonObject(IEnumerable<KeyValuePair<string, JsonNode?>> properties, JsonNodeOptions? options = null)
+    parameters:
+    - id: properties
+      type: System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.String,System.Text.Json.Nodes.JsonNode}}
+      description: The properties to be added.
+    - id: options
+      type: System.Nullable{System.Text.Json.Nodes.JsonNodeOptions}
+      description: Options to control the behavior.
+    content.vb: Public Sub New(properties As IEnumerable(Of KeyValuePair(Of String, JsonNode)), options As JsonNodeOptions? = Nothing)
+  overload: System.Text.Json.Nodes.JsonObject.#ctor*
+  nameWithType.vb: JsonObject.New(IEnumerable(Of KeyValuePair(Of String, JsonNode)), JsonNodeOptions?)
+  fullName.vb: System.Text.Json.Nodes.JsonObject.New(System.Collections.Generic.IEnumerable(Of System.Collections.Generic.KeyValuePair(Of String, System.Text.Json.Nodes.JsonNode)), System.Text.Json.Nodes.JsonNodeOptions?)
+  name.vb: New(IEnumerable(Of KeyValuePair(Of String, JsonNode)), JsonNodeOptions?)
+- uid: System.Text.Json.Nodes.JsonObject.Create(System.Text.Json.JsonElement,System.Nullable{System.Text.Json.Nodes.JsonNodeOptions})
+  commentId: M:System.Text.Json.Nodes.JsonObject.Create(System.Text.Json.JsonElement,System.Nullable{System.Text.Json.Nodes.JsonNodeOptions})
+  id: Create(System.Text.Json.JsonElement,System.Nullable{System.Text.Json.Nodes.JsonNodeOptions})
+  parent: System.Text.Json.Nodes.JsonObject
+  langs:
+  - csharp
+  - vb
+  name: Create(JsonElement, JsonNodeOptions?)
+  nameWithType: JsonObject.Create(JsonElement, JsonNodeOptions?)
+  fullName: System.Text.Json.Nodes.JsonObject.Create(System.Text.Json.JsonElement, System.Text.Json.Nodes.JsonNodeOptions?)
+  type: Method
+  assemblies:
+  - System.Text.Json
+  namespace: System.Text.Json.Nodes
+  summary: Initializes a new instance of the <xref href="System.Text.Json.Nodes.JsonObject" data-throw-if-not-resolved="false"></xref> class that contains properties from the specified <xref href="System.Text.Json.JsonElement" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public static JsonObject? Create(JsonElement element, JsonNodeOptions? options = null)
+    parameters:
+    - id: element
+      type: System.Text.Json.JsonElement
+      description: The <xref href="System.Text.Json.JsonElement" data-throw-if-not-resolved="false"></xref>.
+    - id: options
+      type: System.Nullable{System.Text.Json.Nodes.JsonNodeOptions}
+      description: Options to control the behavior.
+    return:
+      type: System.Text.Json.Nodes.JsonObject
+      description: The new instance of the <xref href="System.Text.Json.Nodes.JsonObject" data-throw-if-not-resolved="false"></xref> class that contains properties from the specified <xref href="System.Text.Json.JsonElement" data-throw-if-not-resolved="false"></xref>.
+    content.vb: Public Shared Function Create(element As JsonElement, options As JsonNodeOptions? = Nothing) As JsonObject
+  overload: System.Text.Json.Nodes.JsonObject.Create*
+- uid: System.Text.Json.Nodes.JsonObject.TryGetPropertyValue(System.String,System.Text.Json.Nodes.JsonNode@)
+  commentId: M:System.Text.Json.Nodes.JsonObject.TryGetPropertyValue(System.String,System.Text.Json.Nodes.JsonNode@)
+  id: TryGetPropertyValue(System.String,System.Text.Json.Nodes.JsonNode@)
+  parent: System.Text.Json.Nodes.JsonObject
+  langs:
+  - csharp
+  - vb
+  name: TryGetPropertyValue(string, out JsonNode?)
+  nameWithType: JsonObject.TryGetPropertyValue(string, out JsonNode?)
+  fullName: System.Text.Json.Nodes.JsonObject.TryGetPropertyValue(string, out System.Text.Json.Nodes.JsonNode?)
+  type: Method
+  assemblies:
+  - System.Text.Json
+  namespace: System.Text.Json.Nodes
+  summary: Returns the value of a property with the specified name.
+  example: []
+  syntax:
+    content: public bool TryGetPropertyValue(string propertyName, out JsonNode? jsonNode)
+    parameters:
+    - id: propertyName
+      type: System.String
+      description: The name of the property to return.
+    - id: jsonNode
+      type: System.Text.Json.Nodes.JsonNode
+      description: The JSON value of the property with the specified name.
+    return:
+      type: System.Boolean
+      description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if a property with the specified name was found; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
+    content.vb: Public Function TryGetPropertyValue(propertyName As String, jsonNode As JsonNode) As Boolean
+  overload: System.Text.Json.Nodes.JsonObject.TryGetPropertyValue*
+  nameWithType.vb: JsonObject.TryGetPropertyValue(String, JsonNode)
+  fullName.vb: System.Text.Json.Nodes.JsonObject.TryGetPropertyValue(String, System.Text.Json.Nodes.JsonNode)
+  name.vb: TryGetPropertyValue(String, JsonNode)
+- uid: System.Text.Json.Nodes.JsonObject.WriteTo(System.Text.Json.Utf8JsonWriter,System.Text.Json.JsonSerializerOptions)
+  commentId: M:System.Text.Json.Nodes.JsonObject.WriteTo(System.Text.Json.Utf8JsonWriter,System.Text.Json.JsonSerializerOptions)
+  id: WriteTo(System.Text.Json.Utf8JsonWriter,System.Text.Json.JsonSerializerOptions)
+  parent: System.Text.Json.Nodes.JsonObject
+  langs:
+  - csharp
+  - vb
+  name: WriteTo(Utf8JsonWriter, JsonSerializerOptions?)
+  nameWithType: JsonObject.WriteTo(Utf8JsonWriter, JsonSerializerOptions?)
+  fullName: System.Text.Json.Nodes.JsonObject.WriteTo(System.Text.Json.Utf8JsonWriter, System.Text.Json.JsonSerializerOptions?)
+  type: Method
+  assemblies:
+  - System.Text.Json
+  namespace: System.Text.Json.Nodes
+  summary: Write the <xref href="System.Text.Json.Nodes.JsonNode" data-throw-if-not-resolved="false"></xref> into the provided <xref href="System.Text.Json.Utf8JsonWriter" data-throw-if-not-resolved="false"></xref> as JSON.
+  example: []
+  syntax:
+    content: public override void WriteTo(Utf8JsonWriter writer, JsonSerializerOptions? options = null)
+    parameters:
+    - id: writer
+      type: System.Text.Json.Utf8JsonWriter
+      description: The <xref href="System.Text.Json.Utf8JsonWriter" data-throw-if-not-resolved="false"></xref>.
+    - id: options
+      type: System.Text.Json.JsonSerializerOptions
+      description: Options to control the serialization behavior.
+    content.vb: Public Overrides Sub WriteTo(writer As Utf8JsonWriter, options As JsonSerializerOptions = Nothing)
+  overridden: System.Text.Json.Nodes.JsonNode.WriteTo(System.Text.Json.Utf8JsonWriter,System.Text.Json.JsonSerializerOptions)
+  overload: System.Text.Json.Nodes.JsonObject.WriteTo*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: The <code class="paramref">writer</code> parameter is <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.
+  nameWithType.vb: JsonObject.WriteTo(Utf8JsonWriter, JsonSerializerOptions)
+  fullName.vb: System.Text.Json.Nodes.JsonObject.WriteTo(System.Text.Json.Utf8JsonWriter, System.Text.Json.JsonSerializerOptions)
+  name.vb: WriteTo(Utf8JsonWriter, JsonSerializerOptions)
+- uid: System.Text.Json.Nodes.JsonObject.Add(System.String,System.Text.Json.Nodes.JsonNode)
+  commentId: M:System.Text.Json.Nodes.JsonObject.Add(System.String,System.Text.Json.Nodes.JsonNode)
+  id: Add(System.String,System.Text.Json.Nodes.JsonNode)
+  parent: System.Text.Json.Nodes.JsonObject
+  langs:
+  - csharp
+  - vb
+  name: Add(string, JsonNode?)
+  nameWithType: JsonObject.Add(string, JsonNode?)
+  fullName: System.Text.Json.Nodes.JsonObject.Add(string, System.Text.Json.Nodes.JsonNode?)
+  type: Method
+  assemblies:
+  - System.Text.Json
+  namespace: System.Text.Json.Nodes
+  summary: Adds an element with the provided property name and value to the <xref href="System.Text.Json.Nodes.JsonObject" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public void Add(string propertyName, JsonNode? value)
+    parameters:
+    - id: propertyName
+      type: System.String
+      description: The property name of the element to add.
+    - id: value
+      type: System.Text.Json.Nodes.JsonNode
+      description: The value of the element to add.
+    content.vb: Public Sub Add(propertyName As String, value As JsonNode)
+  overload: System.Text.Json.Nodes.JsonObject.Add*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: <code class="paramref">propertyName</code>is <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: An element with the same property name already exists in the <xref href="System.Text.Json.Nodes.JsonObject" data-throw-if-not-resolved="false"></xref>.
+  implements:
+  - System.Collections.Generic.IDictionary{System.String,System.Text.Json.Nodes.JsonNode}.Add(System.String,System.Text.Json.Nodes.JsonNode)
+  nameWithType.vb: JsonObject.Add(String, JsonNode)
+  fullName.vb: System.Text.Json.Nodes.JsonObject.Add(String, System.Text.Json.Nodes.JsonNode)
+  name.vb: Add(String, JsonNode)
+- uid: System.Text.Json.Nodes.JsonObject.Add(System.Collections.Generic.KeyValuePair{System.String,System.Text.Json.Nodes.JsonNode})
+  commentId: M:System.Text.Json.Nodes.JsonObject.Add(System.Collections.Generic.KeyValuePair{System.String,System.Text.Json.Nodes.JsonNode})
+  id: Add(System.Collections.Generic.KeyValuePair{System.String,System.Text.Json.Nodes.JsonNode})
+  parent: System.Text.Json.Nodes.JsonObject
+  langs:
+  - csharp
+  - vb
+  name: Add(KeyValuePair<string, JsonNode?>)
+  nameWithType: JsonObject.Add(KeyValuePair<string, JsonNode?>)
+  fullName: System.Text.Json.Nodes.JsonObject.Add(System.Collections.Generic.KeyValuePair<string, System.Text.Json.Nodes.JsonNode?>)
+  type: Method
+  assemblies:
+  - System.Text.Json
+  namespace: System.Text.Json.Nodes
+  summary: Adds the specified property to the <xref href="System.Text.Json.Nodes.JsonObject" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public void Add(KeyValuePair<string, JsonNode?> property)
+    parameters:
+    - id: property
+      type: System.Collections.Generic.KeyValuePair{System.String,System.Text.Json.Nodes.JsonNode}
+      description: The KeyValuePair structure representing the property name and value to add to the <xref href="System.Text.Json.Nodes.JsonObject" data-throw-if-not-resolved="false"></xref>.
+    content.vb: Public Sub Add([property] As KeyValuePair(Of String, JsonNode))
+  overload: System.Text.Json.Nodes.JsonObject.Add*
+  exceptions:
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: An element with the same property name already exists in the <xref href="System.Text.Json.Nodes.JsonObject" data-throw-if-not-resolved="false"></xref>.
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: The property name of <code class="paramref">property</code> is <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.
+  implements:
+  - System.Collections.Generic.ICollection{System.Collections.Generic.KeyValuePair{System.String,System.Text.Json.Nodes.JsonNode}}.Add(System.Collections.Generic.KeyValuePair{System.String,System.Text.Json.Nodes.JsonNode})
+  nameWithType.vb: JsonObject.Add(KeyValuePair(Of String, JsonNode))
+  fullName.vb: System.Text.Json.Nodes.JsonObject.Add(System.Collections.Generic.KeyValuePair(Of String, System.Text.Json.Nodes.JsonNode))
+  name.vb: Add(KeyValuePair(Of String, JsonNode))
+- uid: System.Text.Json.Nodes.JsonObject.Clear
+  commentId: M:System.Text.Json.Nodes.JsonObject.Clear
+  id: Clear
+  parent: System.Text.Json.Nodes.JsonObject
+  langs:
+  - csharp
+  - vb
+  name: Clear()
+  nameWithType: JsonObject.Clear()
+  fullName: System.Text.Json.Nodes.JsonObject.Clear()
+  type: Method
+  assemblies:
+  - System.Text.Json
+  namespace: System.Text.Json.Nodes
+  summary: Removes all elements from the <xref href="System.Text.Json.Nodes.JsonObject" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public void Clear()
+    content.vb: Public Sub Clear()
+  overload: System.Text.Json.Nodes.JsonObject.Clear*
+  implements:
+  - System.Collections.Generic.ICollection{System.Collections.Generic.KeyValuePair{System.String,System.Text.Json.Nodes.JsonNode}}.Clear
+- uid: System.Text.Json.Nodes.JsonObject.ContainsKey(System.String)
+  commentId: M:System.Text.Json.Nodes.JsonObject.ContainsKey(System.String)
+  id: ContainsKey(System.String)
+  parent: System.Text.Json.Nodes.JsonObject
+  langs:
+  - csharp
+  - vb
+  name: ContainsKey(string)
+  nameWithType: JsonObject.ContainsKey(string)
+  fullName: System.Text.Json.Nodes.JsonObject.ContainsKey(string)
+  type: Method
+  assemblies:
+  - System.Text.Json
+  namespace: System.Text.Json.Nodes
+  summary: Determines whether the <xref href="System.Text.Json.Nodes.JsonObject" data-throw-if-not-resolved="false"></xref> contains an element with the specified property name.
+  example: []
+  syntax:
+    content: public bool ContainsKey(string propertyName)
+    parameters:
+    - id: propertyName
+      type: System.String
+      description: The property name to locate in the <xref href="System.Text.Json.Nodes.JsonObject" data-throw-if-not-resolved="false"></xref>.
+    return:
+      type: System.Boolean
+      description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the <xref href="System.Text.Json.Nodes.JsonObject" data-throw-if-not-resolved="false"></xref> contains an element with the specified property name; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
+    content.vb: Public Function ContainsKey(propertyName As String) As Boolean
+  overload: System.Text.Json.Nodes.JsonObject.ContainsKey*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: <code class="paramref">propertyName</code> is <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.
+  implements:
+  - System.Collections.Generic.IDictionary{System.String,System.Text.Json.Nodes.JsonNode}.ContainsKey(System.String)
+  nameWithType.vb: JsonObject.ContainsKey(String)
+  fullName.vb: System.Text.Json.Nodes.JsonObject.ContainsKey(String)
+  name.vb: ContainsKey(String)
+- uid: System.Text.Json.Nodes.JsonObject.Remove(System.String)
+  commentId: M:System.Text.Json.Nodes.JsonObject.Remove(System.String)
+  id: Remove(System.String)
+  parent: System.Text.Json.Nodes.JsonObject
+  langs:
+  - csharp
+  - vb
+  name: Remove(string)
+  nameWithType: JsonObject.Remove(string)
+  fullName: System.Text.Json.Nodes.JsonObject.Remove(string)
+  type: Method
+  assemblies:
+  - System.Text.Json
+  namespace: System.Text.Json.Nodes
+  summary: Removes the element with the specified property name from the <xref href="System.Text.Json.Nodes.JsonObject" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public bool Remove(string propertyName)
+    parameters:
+    - id: propertyName
+      type: System.String
+      description: The property name of the element to remove.
+    return:
+      type: System.Boolean
+      description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the element is successfully removed; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
+    content.vb: Public Function Remove(propertyName As String) As Boolean
+  overload: System.Text.Json.Nodes.JsonObject.Remove*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: <code class="paramref">propertyName</code> is <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.
+  implements:
+  - System.Collections.Generic.IDictionary{System.String,System.Text.Json.Nodes.JsonNode}.Remove(System.String)
+  nameWithType.vb: JsonObject.Remove(String)
+  fullName.vb: System.Text.Json.Nodes.JsonObject.Remove(String)
+  name.vb: Remove(String)
+- uid: System.Text.Json.Nodes.JsonObject.GetEnumerator
+  commentId: M:System.Text.Json.Nodes.JsonObject.GetEnumerator
+  id: GetEnumerator
+  parent: System.Text.Json.Nodes.JsonObject
+  langs:
+  - csharp
+  - vb
+  name: GetEnumerator()
+  nameWithType: JsonObject.GetEnumerator()
+  fullName: System.Text.Json.Nodes.JsonObject.GetEnumerator()
+  type: Method
+  assemblies:
+  - System.Text.Json
+  namespace: System.Text.Json.Nodes
+  summary: Returns an enumerator that iterates through the <xref href="System.Text.Json.Nodes.JsonObject" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public IEnumerator<KeyValuePair<string, JsonNode?>> GetEnumerator()
+    return:
+      type: System.Collections.Generic.IEnumerator{System.Collections.Generic.KeyValuePair{System.String,System.Text.Json.Nodes.JsonNode}}
+      description: An enumerator that iterates through the <xref href="System.Text.Json.Nodes.JsonObject" data-throw-if-not-resolved="false"></xref>.
+    content.vb: Public Function GetEnumerator() As IEnumerator(Of KeyValuePair(Of String, JsonNode))
+  overload: System.Text.Json.Nodes.JsonObject.GetEnumerator*
+  implements:
+  - System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.String,System.Text.Json.Nodes.JsonNode}}.GetEnumerator
+- uid: System.Text.Json.Nodes.JsonObject.Count
+  commentId: P:System.Text.Json.Nodes.JsonObject.Count
+  id: Count
+  parent: System.Text.Json.Nodes.JsonObject
+  langs:
+  - csharp
+  - vb
+  name: Count
+  nameWithType: JsonObject.Count
+  fullName: System.Text.Json.Nodes.JsonObject.Count
+  type: Property
+  assemblies:
+  - System.Text.Json
+  namespace: System.Text.Json.Nodes
+  summary: Gets the number of elements contained in <xref href="System.Text.Json.Nodes.JsonObject" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public int Count { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Property Count As Integer
+  overload: System.Text.Json.Nodes.JsonObject.Count*
+  implements:
+  - System.Collections.Generic.ICollection{System.Collections.Generic.KeyValuePair{System.String,System.Text.Json.Nodes.JsonNode}}.Count
+references:
+- uid: System.Text.Json.Nodes
+  commentId: N:System.Text.Json.Nodes
+  isExternal: true
+  href: System.html
+  name: System.Text.Json.Nodes
+  nameWithType: System.Text.Json.Nodes
+  fullName: System.Text.Json.Nodes
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: System.html
+  - name: .
+  - uid: System.Text
+    name: Text
+    isExternal: true
+    href: System.Text.html
+  - name: .
+  - uid: System.Text.Json
+    name: Json
+    isExternal: true
+    href: System.Text.Json.html
+  - name: .
+  - uid: System.Text.Json.Nodes
+    name: Nodes
+    isExternal: true
+    href: System.Text.Json.Nodes.html
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: System.html
+  - name: .
+  - uid: System.Text
+    name: Text
+    isExternal: true
+    href: System.Text.html
+  - name: .
+  - uid: System.Text.Json
+    name: Json
+    isExternal: true
+    href: System.Text.Json.html
+  - name: .
+  - uid: System.Text.Json.Nodes
+    name: Nodes
+    isExternal: true
+    href: System.Text.Json.Nodes.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Text.Json.Nodes.JsonNode
+  commentId: T:System.Text.Json.Nodes.JsonNode
+  parent: System.Text.Json.Nodes
+  isExternal: true
+  href: System.Text.Json.Nodes.JsonNode.html
+  name: JsonNode
+  nameWithType: JsonNode
+  fullName: System.Text.Json.Nodes.JsonNode
+- uid: System.Collections.Generic.IDictionary{System.String,System.Text.Json.Nodes.JsonNode}
+  commentId: T:System.Collections.Generic.IDictionary{System.String,System.Text.Json.Nodes.JsonNode}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IDictionary`2
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2
+  name: IDictionary<string, JsonNode>
+  nameWithType: IDictionary<string, JsonNode>
+  fullName: System.Collections.Generic.IDictionary<string, System.Text.Json.Nodes.JsonNode>
+  nameWithType.vb: IDictionary(Of String, JsonNode)
+  fullName.vb: System.Collections.Generic.IDictionary(Of String, System.Text.Json.Nodes.JsonNode)
+  name.vb: IDictionary(Of String, JsonNode)
+  spec.csharp:
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Text.Json.Nodes.JsonNode
+    name: JsonNode
+    isExternal: true
+    href: System.Text.Json.Nodes.JsonNode.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Text.Json.Nodes.JsonNode
+    name: JsonNode
+    isExternal: true
+    href: System.Text.Json.Nodes.JsonNode.html
+  - name: )
+- uid: System.Collections.Generic.ICollection{System.Collections.Generic.KeyValuePair{System.String,System.Text.Json.Nodes.JsonNode}}
+  commentId: T:System.Collections.Generic.ICollection{System.Collections.Generic.KeyValuePair{System.String,System.Text.Json.Nodes.JsonNode}}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.ICollection`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1
+  name: ICollection<KeyValuePair<string, JsonNode>>
+  nameWithType: ICollection<KeyValuePair<string, JsonNode>>
+  fullName: System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<string, System.Text.Json.Nodes.JsonNode>>
+  nameWithType.vb: ICollection(Of KeyValuePair(Of String, JsonNode))
+  fullName.vb: System.Collections.Generic.ICollection(Of System.Collections.Generic.KeyValuePair(Of String, System.Text.Json.Nodes.JsonNode))
+  name.vb: ICollection(Of KeyValuePair(Of String, JsonNode))
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection`1
+    name: ICollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1
+  - name: <
+  - uid: System.Collections.Generic.KeyValuePair`2
+    name: KeyValuePair
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.keyvaluepair-2
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Text.Json.Nodes.JsonNode
+    name: JsonNode
+    isExternal: true
+    href: System.Text.Json.Nodes.JsonNode.html
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection`1
+    name: ICollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Collections.Generic.KeyValuePair`2
+    name: KeyValuePair
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.keyvaluepair-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Text.Json.Nodes.JsonNode
+    name: JsonNode
+    isExternal: true
+    href: System.Text.Json.Nodes.JsonNode.html
+  - name: )
+  - name: )
+- uid: System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.String,System.Text.Json.Nodes.JsonNode}}
+  commentId: T:System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.String,System.Text.Json.Nodes.JsonNode}}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<KeyValuePair<string, JsonNode>>
+  nameWithType: IEnumerable<KeyValuePair<string, JsonNode>>
+  fullName: System.Collections.Generic.IEnumerable<System.Collections.Generic.KeyValuePair<string, System.Text.Json.Nodes.JsonNode>>
+  nameWithType.vb: IEnumerable(Of KeyValuePair(Of String, JsonNode))
+  fullName.vb: System.Collections.Generic.IEnumerable(Of System.Collections.Generic.KeyValuePair(Of String, System.Text.Json.Nodes.JsonNode))
+  name.vb: IEnumerable(Of KeyValuePair(Of String, JsonNode))
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: System.Collections.Generic.KeyValuePair`2
+    name: KeyValuePair
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.keyvaluepair-2
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Text.Json.Nodes.JsonNode
+    name: JsonNode
+    isExternal: true
+    href: System.Text.Json.Nodes.JsonNode.html
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Collections.Generic.KeyValuePair`2
+    name: KeyValuePair
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.keyvaluepair-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Text.Json.Nodes.JsonNode
+    name: JsonNode
+    isExternal: true
+    href: System.Text.Json.Nodes.JsonNode.html
+  - name: )
+  - name: )
+- uid: System.Collections.IEnumerable
+  commentId: T:System.Collections.IEnumerable
+  parent: System.Collections
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.ienumerable
+  name: IEnumerable
+  nameWithType: IEnumerable
+  fullName: System.Collections.IEnumerable
+- uid: System.Text.Json.Nodes.JsonNode.AsArray
+  commentId: M:System.Text.Json.Nodes.JsonNode.AsArray
+  parent: System.Text.Json.Nodes.JsonNode
+  isExternal: true
+  href: System.Text.Json.Nodes.JsonNode.html#System_Text_Json_Nodes_JsonNode_AsArray
+  name: AsArray()
+  nameWithType: JsonNode.AsArray()
+  fullName: System.Text.Json.Nodes.JsonNode.AsArray()
+  spec.csharp:
+  - uid: System.Text.Json.Nodes.JsonNode.AsArray
+    name: AsArray
+    isExternal: true
+    href: System.Text.Json.Nodes.JsonNode.html#System_Text_Json_Nodes_JsonNode_AsArray
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Text.Json.Nodes.JsonNode.AsArray
+    name: AsArray
+    isExternal: true
+    href: System.Text.Json.Nodes.JsonNode.html#System_Text_Json_Nodes_JsonNode_AsArray
+  - name: (
+  - name: )
+- uid: System.Text.Json.Nodes.JsonNode.AsObject
+  commentId: M:System.Text.Json.Nodes.JsonNode.AsObject
+  parent: System.Text.Json.Nodes.JsonNode
+  isExternal: true
+  href: System.Text.Json.Nodes.JsonNode.html#System_Text_Json_Nodes_JsonNode_AsObject
+  name: AsObject()
+  nameWithType: JsonNode.AsObject()
+  fullName: System.Text.Json.Nodes.JsonNode.AsObject()
+  spec.csharp:
+  - uid: System.Text.Json.Nodes.JsonNode.AsObject
+    name: AsObject
+    isExternal: true
+    href: System.Text.Json.Nodes.JsonNode.html#System_Text_Json_Nodes_JsonNode_AsObject
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Text.Json.Nodes.JsonNode.AsObject
+    name: AsObject
+    isExternal: true
+    href: System.Text.Json.Nodes.JsonNode.html#System_Text_Json_Nodes_JsonNode_AsObject
+  - name: (
+  - name: )
+- uid: System.Text.Json.Nodes.JsonNode.AsValue
+  commentId: M:System.Text.Json.Nodes.JsonNode.AsValue
+  parent: System.Text.Json.Nodes.JsonNode
+  isExternal: true
+  href: System.Text.Json.Nodes.JsonNode.html#System_Text_Json_Nodes_JsonNode_AsValue
+  name: AsValue()
+  nameWithType: JsonNode.AsValue()
+  fullName: System.Text.Json.Nodes.JsonNode.AsValue()
+  spec.csharp:
+  - uid: System.Text.Json.Nodes.JsonNode.AsValue
+    name: AsValue
+    isExternal: true
+    href: System.Text.Json.Nodes.JsonNode.html#System_Text_Json_Nodes_JsonNode_AsValue
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Text.Json.Nodes.JsonNode.AsValue
+    name: AsValue
+    isExternal: true
+    href: System.Text.Json.Nodes.JsonNode.html#System_Text_Json_Nodes_JsonNode_AsValue
+  - name: (
+  - name: )
+- uid: System.Text.Json.Nodes.JsonNode.GetPath
+  commentId: M:System.Text.Json.Nodes.JsonNode.GetPath
+  parent: System.Text.Json.Nodes.JsonNode
+  isExternal: true
+  href: System.Text.Json.Nodes.JsonNode.html#System_Text_Json_Nodes_JsonNode_GetPath
+  name: GetPath()
+  nameWithType: JsonNode.GetPath()
+  fullName: System.Text.Json.Nodes.JsonNode.GetPath()
+  spec.csharp:
+  - uid: System.Text.Json.Nodes.JsonNode.GetPath
+    name: GetPath
+    isExternal: true
+    href: System.Text.Json.Nodes.JsonNode.html#System_Text_Json_Nodes_JsonNode_GetPath
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Text.Json.Nodes.JsonNode.GetPath
+    name: GetPath
+    isExternal: true
+    href: System.Text.Json.Nodes.JsonNode.html#System_Text_Json_Nodes_JsonNode_GetPath
+  - name: (
+  - name: )
+- uid: System.Text.Json.Nodes.JsonNode.GetValue``1
+  commentId: M:System.Text.Json.Nodes.JsonNode.GetValue``1
+  parent: System.Text.Json.Nodes.JsonNode
+  isExternal: true
+  href: System.Text.Json.Nodes.JsonNode.html#System_Text_Json_Nodes_JsonNode_GetValue__1
+  name: GetValue<T>()
+  nameWithType: JsonNode.GetValue<T>()
+  fullName: System.Text.Json.Nodes.JsonNode.GetValue<T>()
+  nameWithType.vb: JsonNode.GetValue(Of T)()
+  fullName.vb: System.Text.Json.Nodes.JsonNode.GetValue(Of T)()
+  name.vb: GetValue(Of T)()
+  spec.csharp:
+  - uid: System.Text.Json.Nodes.JsonNode.GetValue``1
+    name: GetValue
+    isExternal: true
+    href: System.Text.Json.Nodes.JsonNode.html#System_Text_Json_Nodes_JsonNode_GetValue__1
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Text.Json.Nodes.JsonNode.GetValue``1
+    name: GetValue
+    isExternal: true
+    href: System.Text.Json.Nodes.JsonNode.html#System_Text_Json_Nodes_JsonNode_GetValue__1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: )
+- uid: System.Text.Json.Nodes.JsonNode.Parse(System.Text.Json.Utf8JsonReader@,System.Nullable{System.Text.Json.Nodes.JsonNodeOptions})
+  commentId: M:System.Text.Json.Nodes.JsonNode.Parse(System.Text.Json.Utf8JsonReader@,System.Nullable{System.Text.Json.Nodes.JsonNodeOptions})
+  parent: System.Text.Json.Nodes.JsonNode
+  isExternal: true
+  href: System.Text.Json.Nodes.JsonNode.html#System_Text_Json_Nodes_JsonNode_Parse_System_Text_Json_Utf8JsonReader__System_Nullable_System_Text_Json_Nodes_JsonNodeOptions__
+  name: Parse(ref Utf8JsonReader, JsonNodeOptions?)
+  nameWithType: JsonNode.Parse(ref Utf8JsonReader, JsonNodeOptions?)
+  fullName: System.Text.Json.Nodes.JsonNode.Parse(ref System.Text.Json.Utf8JsonReader, System.Text.Json.Nodes.JsonNodeOptions?)
+  nameWithType.vb: JsonNode.Parse(Utf8JsonReader, JsonNodeOptions?)
+  fullName.vb: System.Text.Json.Nodes.JsonNode.Parse(System.Text.Json.Utf8JsonReader, System.Text.Json.Nodes.JsonNodeOptions?)
+  name.vb: Parse(Utf8JsonReader, JsonNodeOptions?)
+  spec.csharp:
+  - uid: System.Text.Json.Nodes.JsonNode.Parse(System.Text.Json.Utf8JsonReader@,System.Nullable{System.Text.Json.Nodes.JsonNodeOptions})
+    name: Parse
+    isExternal: true
+    href: System.Text.Json.Nodes.JsonNode.html#System_Text_Json_Nodes_JsonNode_Parse_System_Text_Json_Utf8JsonReader__System_Nullable_System_Text_Json_Nodes_JsonNodeOptions__
+  - name: (
+  - name: ref
+  - name: " "
+  - uid: System.Text.Json.Utf8JsonReader
+    name: Utf8JsonReader
+    isExternal: true
+    href: System.Text.Json.Utf8JsonReader.html
+  - name: ','
+  - name: " "
+  - uid: System.Text.Json.Nodes.JsonNodeOptions
+    name: JsonNodeOptions
+    isExternal: true
+    href: System.Text.Json.Nodes.JsonNodeOptions.html
+  - name: '?'
+  - name: )
+  spec.vb:
+  - uid: System.Text.Json.Nodes.JsonNode.Parse(System.Text.Json.Utf8JsonReader@,System.Nullable{System.Text.Json.Nodes.JsonNodeOptions})
+    name: Parse
+    isExternal: true
+    href: System.Text.Json.Nodes.JsonNode.html#System_Text_Json_Nodes_JsonNode_Parse_System_Text_Json_Utf8JsonReader__System_Nullable_System_Text_Json_Nodes_JsonNodeOptions__
+  - name: (
+  - uid: System.Text.Json.Utf8JsonReader
+    name: Utf8JsonReader
+    isExternal: true
+    href: System.Text.Json.Utf8JsonReader.html
+  - name: ','
+  - name: " "
+  - uid: System.Text.Json.Nodes.JsonNodeOptions
+    name: JsonNodeOptions
+    isExternal: true
+    href: System.Text.Json.Nodes.JsonNodeOptions.html
+  - name: '?'
+  - name: )
+- uid: System.Text.Json.Nodes.JsonNode.Parse(System.String,System.Nullable{System.Text.Json.Nodes.JsonNodeOptions},System.Text.Json.JsonDocumentOptions)
+  commentId: M:System.Text.Json.Nodes.JsonNode.Parse(System.String,System.Nullable{System.Text.Json.Nodes.JsonNodeOptions},System.Text.Json.JsonDocumentOptions)
+  parent: System.Text.Json.Nodes.JsonNode
+  isExternal: true
+  href: System.Text.Json.Nodes.JsonNode.html#System_Text_Json_Nodes_JsonNode_Parse_System_String_System_Nullable_System_Text_Json_Nodes_JsonNodeOptions__System_Text_Json_JsonDocumentOptions_
+  name: Parse(string, JsonNodeOptions?, JsonDocumentOptions)
+  nameWithType: JsonNode.Parse(string, JsonNodeOptions?, JsonDocumentOptions)
+  fullName: System.Text.Json.Nodes.JsonNode.Parse(string, System.Text.Json.Nodes.JsonNodeOptions?, System.Text.Json.JsonDocumentOptions)
+  nameWithType.vb: JsonNode.Parse(String, JsonNodeOptions?, JsonDocumentOptions)
+  fullName.vb: System.Text.Json.Nodes.JsonNode.Parse(String, System.Text.Json.Nodes.JsonNodeOptions?, System.Text.Json.JsonDocumentOptions)
+  name.vb: Parse(String, JsonNodeOptions?, JsonDocumentOptions)
+  spec.csharp:
+  - uid: System.Text.Json.Nodes.JsonNode.Parse(System.String,System.Nullable{System.Text.Json.Nodes.JsonNodeOptions},System.Text.Json.JsonDocumentOptions)
+    name: Parse
+    isExternal: true
+    href: System.Text.Json.Nodes.JsonNode.html#System_Text_Json_Nodes_JsonNode_Parse_System_String_System_Nullable_System_Text_Json_Nodes_JsonNodeOptions__System_Text_Json_JsonDocumentOptions_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Text.Json.Nodes.JsonNodeOptions
+    name: JsonNodeOptions
+    isExternal: true
+    href: System.Text.Json.Nodes.JsonNodeOptions.html
+  - name: '?'
+  - name: ','
+  - name: " "
+  - uid: System.Text.Json.JsonDocumentOptions
+    name: JsonDocumentOptions
+    isExternal: true
+    href: System.Text.Json.JsonDocumentOptions.html
+  - name: )
+  spec.vb:
+  - uid: System.Text.Json.Nodes.JsonNode.Parse(System.String,System.Nullable{System.Text.Json.Nodes.JsonNodeOptions},System.Text.Json.JsonDocumentOptions)
+    name: Parse
+    isExternal: true
+    href: System.Text.Json.Nodes.JsonNode.html#System_Text_Json_Nodes_JsonNode_Parse_System_String_System_Nullable_System_Text_Json_Nodes_JsonNodeOptions__System_Text_Json_JsonDocumentOptions_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Text.Json.Nodes.JsonNodeOptions
+    name: JsonNodeOptions
+    isExternal: true
+    href: System.Text.Json.Nodes.JsonNodeOptions.html
+  - name: '?'
+  - name: ','
+  - name: " "
+  - uid: System.Text.Json.JsonDocumentOptions
+    name: JsonDocumentOptions
+    isExternal: true
+    href: System.Text.Json.JsonDocumentOptions.html
+  - name: )
+- uid: System.Text.Json.Nodes.JsonNode.Parse(System.ReadOnlySpan{System.Byte},System.Nullable{System.Text.Json.Nodes.JsonNodeOptions},System.Text.Json.JsonDocumentOptions)
+  commentId: M:System.Text.Json.Nodes.JsonNode.Parse(System.ReadOnlySpan{System.Byte},System.Nullable{System.Text.Json.Nodes.JsonNodeOptions},System.Text.Json.JsonDocumentOptions)
+  parent: System.Text.Json.Nodes.JsonNode
+  isExternal: true
+  href: System.Text.Json.Nodes.JsonNode.html#System_Text_Json_Nodes_JsonNode_Parse_System_ReadOnlySpan_System_Byte__System_Nullable_System_Text_Json_Nodes_JsonNodeOptions__System_Text_Json_JsonDocumentOptions_
+  name: Parse(ReadOnlySpan<byte>, JsonNodeOptions?, JsonDocumentOptions)
+  nameWithType: JsonNode.Parse(ReadOnlySpan<byte>, JsonNodeOptions?, JsonDocumentOptions)
+  fullName: System.Text.Json.Nodes.JsonNode.Parse(System.ReadOnlySpan<byte>, System.Text.Json.Nodes.JsonNodeOptions?, System.Text.Json.JsonDocumentOptions)
+  nameWithType.vb: JsonNode.Parse(ReadOnlySpan(Of Byte), JsonNodeOptions?, JsonDocumentOptions)
+  fullName.vb: System.Text.Json.Nodes.JsonNode.Parse(System.ReadOnlySpan(Of Byte), System.Text.Json.Nodes.JsonNodeOptions?, System.Text.Json.JsonDocumentOptions)
+  name.vb: Parse(ReadOnlySpan(Of Byte), JsonNodeOptions?, JsonDocumentOptions)
+  spec.csharp:
+  - uid: System.Text.Json.Nodes.JsonNode.Parse(System.ReadOnlySpan{System.Byte},System.Nullable{System.Text.Json.Nodes.JsonNodeOptions},System.Text.Json.JsonDocumentOptions)
+    name: Parse
+    isExternal: true
+    href: System.Text.Json.Nodes.JsonNode.html#System_Text_Json_Nodes_JsonNode_Parse_System_ReadOnlySpan_System_Byte__System_Nullable_System_Text_Json_Nodes_JsonNodeOptions__System_Text_Json_JsonDocumentOptions_
+  - name: (
+  - uid: System.ReadOnlySpan`1
+    name: ReadOnlySpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  - name: <
+  - uid: System.Byte
+    name: byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.Text.Json.Nodes.JsonNodeOptions
+    name: JsonNodeOptions
+    isExternal: true
+    href: System.Text.Json.Nodes.JsonNodeOptions.html
+  - name: '?'
+  - name: ','
+  - name: " "
+  - uid: System.Text.Json.JsonDocumentOptions
+    name: JsonDocumentOptions
+    isExternal: true
+    href: System.Text.Json.JsonDocumentOptions.html
+  - name: )
+  spec.vb:
+  - uid: System.Text.Json.Nodes.JsonNode.Parse(System.ReadOnlySpan{System.Byte},System.Nullable{System.Text.Json.Nodes.JsonNodeOptions},System.Text.Json.JsonDocumentOptions)
+    name: Parse
+    isExternal: true
+    href: System.Text.Json.Nodes.JsonNode.html#System_Text_Json_Nodes_JsonNode_Parse_System_ReadOnlySpan_System_Byte__System_Nullable_System_Text_Json_Nodes_JsonNodeOptions__System_Text_Json_JsonDocumentOptions_
+  - name: (
+  - uid: System.ReadOnlySpan`1
+    name: ReadOnlySpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Byte
+    name: Byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.Text.Json.Nodes.JsonNodeOptions
+    name: JsonNodeOptions
+    isExternal: true
+    href: System.Text.Json.Nodes.JsonNodeOptions.html
+  - name: '?'
+  - name: ','
+  - name: " "
+  - uid: System.Text.Json.JsonDocumentOptions
+    name: JsonDocumentOptions
+    isExternal: true
+    href: System.Text.Json.JsonDocumentOptions.html
+  - name: )
+- uid: System.Text.Json.Nodes.JsonNode.Parse(System.IO.Stream,System.Nullable{System.Text.Json.Nodes.JsonNodeOptions},System.Text.Json.JsonDocumentOptions)
+  commentId: M:System.Text.Json.Nodes.JsonNode.Parse(System.IO.Stream,System.Nullable{System.Text.Json.Nodes.JsonNodeOptions},System.Text.Json.JsonDocumentOptions)
+  parent: System.Text.Json.Nodes.JsonNode
+  isExternal: true
+  href: System.Text.Json.Nodes.JsonNode.html#System_Text_Json_Nodes_JsonNode_Parse_System_IO_Stream_System_Nullable_System_Text_Json_Nodes_JsonNodeOptions__System_Text_Json_JsonDocumentOptions_
+  name: Parse(Stream, JsonNodeOptions?, JsonDocumentOptions)
+  nameWithType: JsonNode.Parse(Stream, JsonNodeOptions?, JsonDocumentOptions)
+  fullName: System.Text.Json.Nodes.JsonNode.Parse(System.IO.Stream, System.Text.Json.Nodes.JsonNodeOptions?, System.Text.Json.JsonDocumentOptions)
+  spec.csharp:
+  - uid: System.Text.Json.Nodes.JsonNode.Parse(System.IO.Stream,System.Nullable{System.Text.Json.Nodes.JsonNodeOptions},System.Text.Json.JsonDocumentOptions)
+    name: Parse
+    isExternal: true
+    href: System.Text.Json.Nodes.JsonNode.html#System_Text_Json_Nodes_JsonNode_Parse_System_IO_Stream_System_Nullable_System_Text_Json_Nodes_JsonNodeOptions__System_Text_Json_JsonDocumentOptions_
+  - name: (
+  - uid: System.IO.Stream
+    name: Stream
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io.stream
+  - name: ','
+  - name: " "
+  - uid: System.Text.Json.Nodes.JsonNodeOptions
+    name: JsonNodeOptions
+    isExternal: true
+    href: System.Text.Json.Nodes.JsonNodeOptions.html
+  - name: '?'
+  - name: ','
+  - name: " "
+  - uid: System.Text.Json.JsonDocumentOptions
+    name: JsonDocumentOptions
+    isExternal: true
+    href: System.Text.Json.JsonDocumentOptions.html
+  - name: )
+  spec.vb:
+  - uid: System.Text.Json.Nodes.JsonNode.Parse(System.IO.Stream,System.Nullable{System.Text.Json.Nodes.JsonNodeOptions},System.Text.Json.JsonDocumentOptions)
+    name: Parse
+    isExternal: true
+    href: System.Text.Json.Nodes.JsonNode.html#System_Text_Json_Nodes_JsonNode_Parse_System_IO_Stream_System_Nullable_System_Text_Json_Nodes_JsonNodeOptions__System_Text_Json_JsonDocumentOptions_
+  - name: (
+  - uid: System.IO.Stream
+    name: Stream
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io.stream
+  - name: ','
+  - name: " "
+  - uid: System.Text.Json.Nodes.JsonNodeOptions
+    name: JsonNodeOptions
+    isExternal: true
+    href: System.Text.Json.Nodes.JsonNodeOptions.html
+  - name: '?'
+  - name: ','
+  - name: " "
+  - uid: System.Text.Json.JsonDocumentOptions
+    name: JsonDocumentOptions
+    isExternal: true
+    href: System.Text.Json.JsonDocumentOptions.html
+  - name: )
+- uid: System.Text.Json.Nodes.JsonNode.ToJsonString(System.Text.Json.JsonSerializerOptions)
+  commentId: M:System.Text.Json.Nodes.JsonNode.ToJsonString(System.Text.Json.JsonSerializerOptions)
+  parent: System.Text.Json.Nodes.JsonNode
+  isExternal: true
+  href: System.Text.Json.Nodes.JsonNode.html#System_Text_Json_Nodes_JsonNode_ToJsonString_System_Text_Json_JsonSerializerOptions_
+  name: ToJsonString(JsonSerializerOptions)
+  nameWithType: JsonNode.ToJsonString(JsonSerializerOptions)
+  fullName: System.Text.Json.Nodes.JsonNode.ToJsonString(System.Text.Json.JsonSerializerOptions)
+  spec.csharp:
+  - uid: System.Text.Json.Nodes.JsonNode.ToJsonString(System.Text.Json.JsonSerializerOptions)
+    name: ToJsonString
+    isExternal: true
+    href: System.Text.Json.Nodes.JsonNode.html#System_Text_Json_Nodes_JsonNode_ToJsonString_System_Text_Json_JsonSerializerOptions_
+  - name: (
+  - uid: System.Text.Json.JsonSerializerOptions
+    name: JsonSerializerOptions
+    isExternal: true
+    href: System.Text.Json.JsonSerializerOptions.html
+  - name: )
+  spec.vb:
+  - uid: System.Text.Json.Nodes.JsonNode.ToJsonString(System.Text.Json.JsonSerializerOptions)
+    name: ToJsonString
+    isExternal: true
+    href: System.Text.Json.Nodes.JsonNode.html#System_Text_Json_Nodes_JsonNode_ToJsonString_System_Text_Json_JsonSerializerOptions_
+  - name: (
+  - uid: System.Text.Json.JsonSerializerOptions
+    name: JsonSerializerOptions
+    isExternal: true
+    href: System.Text.Json.JsonSerializerOptions.html
+  - name: )
+- uid: System.Text.Json.Nodes.JsonNode.ToString
+  commentId: M:System.Text.Json.Nodes.JsonNode.ToString
+  parent: System.Text.Json.Nodes.JsonNode
+  isExternal: true
+  href: System.Text.Json.Nodes.JsonNode.html#System_Text_Json_Nodes_JsonNode_ToString
+  name: ToString()
+  nameWithType: JsonNode.ToString()
+  fullName: System.Text.Json.Nodes.JsonNode.ToString()
+  spec.csharp:
+  - uid: System.Text.Json.Nodes.JsonNode.ToString
+    name: ToString
+    isExternal: true
+    href: System.Text.Json.Nodes.JsonNode.html#System_Text_Json_Nodes_JsonNode_ToString
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Text.Json.Nodes.JsonNode.ToString
+    name: ToString
+    isExternal: true
+    href: System.Text.Json.Nodes.JsonNode.html#System_Text_Json_Nodes_JsonNode_ToString
+  - name: (
+  - name: )
+- uid: System.Text.Json.Nodes.JsonNode.Options
+  commentId: P:System.Text.Json.Nodes.JsonNode.Options
+  parent: System.Text.Json.Nodes.JsonNode
+  isExternal: true
+  href: System.Text.Json.Nodes.JsonNode.html#System_Text_Json_Nodes_JsonNode_Options
+  name: Options
+  nameWithType: JsonNode.Options
+  fullName: System.Text.Json.Nodes.JsonNode.Options
+- uid: System.Text.Json.Nodes.JsonNode.Parent
+  commentId: P:System.Text.Json.Nodes.JsonNode.Parent
+  parent: System.Text.Json.Nodes.JsonNode
+  isExternal: true
+  href: System.Text.Json.Nodes.JsonNode.html#System_Text_Json_Nodes_JsonNode_Parent
+  name: Parent
+  nameWithType: JsonNode.Parent
+  fullName: System.Text.Json.Nodes.JsonNode.Parent
+- uid: System.Text.Json.Nodes.JsonNode.Root
+  commentId: P:System.Text.Json.Nodes.JsonNode.Root
+  parent: System.Text.Json.Nodes.JsonNode
+  isExternal: true
+  href: System.Text.Json.Nodes.JsonNode.html#System_Text_Json_Nodes_JsonNode_Root
+  name: Root
+  nameWithType: JsonNode.Root
+  fullName: System.Text.Json.Nodes.JsonNode.Root
+- uid: System.Text.Json.Nodes.JsonNode.Item(System.Int32)
+  commentId: P:System.Text.Json.Nodes.JsonNode.Item(System.Int32)
+  parent: System.Text.Json.Nodes.JsonNode
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: this[int]
+  nameWithType: JsonNode.this[int]
+  fullName: System.Text.Json.Nodes.JsonNode.this[int]
+  nameWithType.vb: JsonNode.this[](Integer)
+  fullName.vb: System.Text.Json.Nodes.JsonNode.this[](Integer)
+  name.vb: this[](Integer)
+  spec.csharp:
+  - name: this
+  - name: '['
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ']'
+  spec.vb:
+  - uid: System.Text.Json.Nodes.JsonNode.Item(System.Int32)
+    name: this[]
+    isExternal: true
+    href: System.Text.Json.Nodes.JsonNode.html#System_Text_Json_Nodes_JsonNode_Item_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: System.Text.Json.Nodes.JsonNode.Item(System.String)
+  commentId: P:System.Text.Json.Nodes.JsonNode.Item(System.String)
+  parent: System.Text.Json.Nodes.JsonNode
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: this[string]
+  nameWithType: JsonNode.this[string]
+  fullName: System.Text.Json.Nodes.JsonNode.this[string]
+  nameWithType.vb: JsonNode.this[](String)
+  fullName.vb: System.Text.Json.Nodes.JsonNode.this[](String)
+  name.vb: this[](String)
+  spec.csharp:
+  - name: this
+  - name: '['
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ']'
+  spec.vb:
+  - uid: System.Text.Json.Nodes.JsonNode.Item(System.String)
+    name: this[]
+    isExternal: true
+    href: System.Text.Json.Nodes.JsonNode.html#System_Text_Json_Nodes_JsonNode_Item_System_String_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Text.Json.Nodes.JsonNode.System.Text.Json.JsonSerializer.Deserialize(System.Type,System.Text.Json.JsonSerializerOptions)
+  commentId: M:System.Text.Json.JsonSerializer.Deserialize(System.Text.Json.Nodes.JsonNode,System.Type,System.Text.Json.JsonSerializerOptions)
+  parent: System.Text.Json.JsonSerializer
+  definition: System.Text.Json.JsonSerializer.Deserialize(System.Text.Json.Nodes.JsonNode,System.Type,System.Text.Json.JsonSerializerOptions)
+  href: System.Text.Json.JsonSerializer.html#System_Text_Json_JsonSerializer_Deserialize_System_Text_Json_Nodes_JsonNode_System_Type_System_Text_Json_JsonSerializerOptions_
+  name: Deserialize(JsonNode, Type, JsonSerializerOptions)
+  nameWithType: JsonSerializer.Deserialize(JsonNode, Type, JsonSerializerOptions)
+  fullName: System.Text.Json.JsonSerializer.Deserialize(System.Text.Json.Nodes.JsonNode, System.Type, System.Text.Json.JsonSerializerOptions)
+  spec.csharp:
+  - uid: System.Text.Json.JsonSerializer.Deserialize(System.Text.Json.Nodes.JsonNode,System.Type,System.Text.Json.JsonSerializerOptions)
+    name: Deserialize
+    isExternal: true
+    href: System.Text.Json.JsonSerializer.html#System_Text_Json_JsonSerializer_Deserialize_System_Text_Json_Nodes_JsonNode_System_Type_System_Text_Json_JsonSerializerOptions_
+  - name: (
+  - uid: System.Text.Json.Nodes.JsonNode
+    name: JsonNode
+    isExternal: true
+    href: System.Text.Json.Nodes.JsonNode.html
+  - name: ','
+  - name: " "
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: ','
+  - name: " "
+  - uid: System.Text.Json.JsonSerializerOptions
+    name: JsonSerializerOptions
+    isExternal: true
+    href: System.Text.Json.JsonSerializerOptions.html
+  - name: )
+  spec.vb:
+  - uid: System.Text.Json.JsonSerializer.Deserialize(System.Text.Json.Nodes.JsonNode,System.Type,System.Text.Json.JsonSerializerOptions)
+    name: Deserialize
+    isExternal: true
+    href: System.Text.Json.JsonSerializer.html#System_Text_Json_JsonSerializer_Deserialize_System_Text_Json_Nodes_JsonNode_System_Type_System_Text_Json_JsonSerializerOptions_
+  - name: (
+  - uid: System.Text.Json.Nodes.JsonNode
+    name: JsonNode
+    isExternal: true
+    href: System.Text.Json.Nodes.JsonNode.html
+  - name: ','
+  - name: " "
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: ','
+  - name: " "
+  - uid: System.Text.Json.JsonSerializerOptions
+    name: JsonSerializerOptions
+    isExternal: true
+    href: System.Text.Json.JsonSerializerOptions.html
+  - name: )
+- uid: System.Text.Json.Nodes.JsonNode.System.Text.Json.JsonSerializer.Deserialize(System.Type,System.Text.Json.Serialization.JsonSerializerContext)
+  commentId: M:System.Text.Json.JsonSerializer.Deserialize(System.Text.Json.Nodes.JsonNode,System.Type,System.Text.Json.Serialization.JsonSerializerContext)
+  parent: System.Text.Json.JsonSerializer
+  definition: System.Text.Json.JsonSerializer.Deserialize(System.Text.Json.Nodes.JsonNode,System.Type,System.Text.Json.Serialization.JsonSerializerContext)
+  href: System.Text.Json.JsonSerializer.html#System_Text_Json_JsonSerializer_Deserialize_System_Text_Json_Nodes_JsonNode_System_Type_System_Text_Json_Serialization_JsonSerializerContext_
+  name: Deserialize(JsonNode, Type, JsonSerializerContext)
+  nameWithType: JsonSerializer.Deserialize(JsonNode, Type, JsonSerializerContext)
+  fullName: System.Text.Json.JsonSerializer.Deserialize(System.Text.Json.Nodes.JsonNode, System.Type, System.Text.Json.Serialization.JsonSerializerContext)
+  spec.csharp:
+  - uid: System.Text.Json.JsonSerializer.Deserialize(System.Text.Json.Nodes.JsonNode,System.Type,System.Text.Json.Serialization.JsonSerializerContext)
+    name: Deserialize
+    isExternal: true
+    href: System.Text.Json.JsonSerializer.html#System_Text_Json_JsonSerializer_Deserialize_System_Text_Json_Nodes_JsonNode_System_Type_System_Text_Json_Serialization_JsonSerializerContext_
+  - name: (
+  - uid: System.Text.Json.Nodes.JsonNode
+    name: JsonNode
+    isExternal: true
+    href: System.Text.Json.Nodes.JsonNode.html
+  - name: ','
+  - name: " "
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: ','
+  - name: " "
+  - uid: System.Text.Json.Serialization.JsonSerializerContext
+    name: JsonSerializerContext
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: System.Text.Json.JsonSerializer.Deserialize(System.Text.Json.Nodes.JsonNode,System.Type,System.Text.Json.Serialization.JsonSerializerContext)
+    name: Deserialize
+    isExternal: true
+    href: System.Text.Json.JsonSerializer.html#System_Text_Json_JsonSerializer_Deserialize_System_Text_Json_Nodes_JsonNode_System_Type_System_Text_Json_Serialization_JsonSerializerContext_
+  - name: (
+  - uid: System.Text.Json.Nodes.JsonNode
+    name: JsonNode
+    isExternal: true
+    href: System.Text.Json.Nodes.JsonNode.html
+  - name: ','
+  - name: " "
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: ','
+  - name: " "
+  - uid: System.Text.Json.Serialization.JsonSerializerContext
+    name: JsonSerializerContext
+    isExternal: true
+  - name: )
+- uid: System.Text.Json.Nodes.JsonNode.System.Text.Json.JsonSerializer.Deserialize``1(System.Text.Json.JsonSerializerOptions)
+  commentId: M:System.Text.Json.JsonSerializer.Deserialize``1(System.Text.Json.Nodes.JsonNode,System.Text.Json.JsonSerializerOptions)
+  parent: System.Text.Json.JsonSerializer
+  definition: System.Text.Json.JsonSerializer.Deserialize``1(System.Text.Json.Nodes.JsonNode,System.Text.Json.JsonSerializerOptions)
+  href: System.Text.Json.JsonSerializer.html#System_Text_Json_JsonSerializer_Deserialize__1_System_Text_Json_Nodes_JsonNode_System_Text_Json_JsonSerializerOptions_
+  name: Deserialize<TValue>(JsonNode, JsonSerializerOptions)
+  nameWithType: JsonSerializer.Deserialize<TValue>(JsonNode, JsonSerializerOptions)
+  fullName: System.Text.Json.JsonSerializer.Deserialize<TValue>(System.Text.Json.Nodes.JsonNode, System.Text.Json.JsonSerializerOptions)
+  nameWithType.vb: JsonSerializer.Deserialize(Of TValue)(JsonNode, JsonSerializerOptions)
+  fullName.vb: System.Text.Json.JsonSerializer.Deserialize(Of TValue)(System.Text.Json.Nodes.JsonNode, System.Text.Json.JsonSerializerOptions)
+  name.vb: Deserialize(Of TValue)(JsonNode, JsonSerializerOptions)
+  spec.csharp:
+  - uid: System.Text.Json.JsonSerializer.Deserialize``1(System.Text.Json.Nodes.JsonNode,System.Text.Json.JsonSerializerOptions)
+    name: Deserialize
+    isExternal: true
+    href: System.Text.Json.JsonSerializer.html#System_Text_Json_JsonSerializer_Deserialize__1_System_Text_Json_Nodes_JsonNode_System_Text_Json_JsonSerializerOptions_
+  - name: <
+  - name: TValue
+  - name: '>'
+  - name: (
+  - uid: System.Text.Json.Nodes.JsonNode
+    name: JsonNode
+    isExternal: true
+    href: System.Text.Json.Nodes.JsonNode.html
+  - name: ','
+  - name: " "
+  - uid: System.Text.Json.JsonSerializerOptions
+    name: JsonSerializerOptions
+    isExternal: true
+    href: System.Text.Json.JsonSerializerOptions.html
+  - name: )
+  spec.vb:
+  - uid: System.Text.Json.JsonSerializer.Deserialize``1(System.Text.Json.Nodes.JsonNode,System.Text.Json.JsonSerializerOptions)
+    name: Deserialize
+    isExternal: true
+    href: System.Text.Json.JsonSerializer.html#System_Text_Json_JsonSerializer_Deserialize__1_System_Text_Json_Nodes_JsonNode_System_Text_Json_JsonSerializerOptions_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TValue
+  - name: )
+  - name: (
+  - uid: System.Text.Json.Nodes.JsonNode
+    name: JsonNode
+    isExternal: true
+    href: System.Text.Json.Nodes.JsonNode.html
+  - name: ','
+  - name: " "
+  - uid: System.Text.Json.JsonSerializerOptions
+    name: JsonSerializerOptions
+    isExternal: true
+    href: System.Text.Json.JsonSerializerOptions.html
+  - name: )
+- uid: System.Text.Json.Nodes.JsonNode.System.Text.Json.JsonSerializer.Deserialize``1(System.Text.Json.Serialization.Metadata.JsonTypeInfo{{TValue}})
+  commentId: M:System.Text.Json.JsonSerializer.Deserialize``1(System.Text.Json.Nodes.JsonNode,System.Text.Json.Serialization.Metadata.JsonTypeInfo{``0})
+  parent: System.Text.Json.JsonSerializer
+  definition: System.Text.Json.JsonSerializer.Deserialize``1(System.Text.Json.Nodes.JsonNode,System.Text.Json.Serialization.Metadata.JsonTypeInfo{``0})
+  href: System.Text.Json.JsonSerializer.html#System_Text_Json_JsonSerializer_Deserialize__1_System_Text_Json_Nodes_JsonNode_System_Text_Json_Serialization_Metadata_JsonTypeInfo___0__
+  name: Deserialize<TValue>(JsonNode, JsonTypeInfo<TValue>)
+  nameWithType: JsonSerializer.Deserialize<TValue>(JsonNode, JsonTypeInfo<TValue>)
+  fullName: System.Text.Json.JsonSerializer.Deserialize<TValue>(System.Text.Json.Nodes.JsonNode, System.Text.Json.Serialization.Metadata.JsonTypeInfo<TValue>)
+  nameWithType.vb: JsonSerializer.Deserialize(Of TValue)(JsonNode, JsonTypeInfo(Of TValue))
+  fullName.vb: System.Text.Json.JsonSerializer.Deserialize(Of TValue)(System.Text.Json.Nodes.JsonNode, System.Text.Json.Serialization.Metadata.JsonTypeInfo(Of TValue))
+  name.vb: Deserialize(Of TValue)(JsonNode, JsonTypeInfo(Of TValue))
+  spec.csharp:
+  - uid: System.Text.Json.JsonSerializer.Deserialize``1(System.Text.Json.Nodes.JsonNode,System.Text.Json.Serialization.Metadata.JsonTypeInfo{``0})
+    name: Deserialize
+    isExternal: true
+    href: System.Text.Json.JsonSerializer.html#System_Text_Json_JsonSerializer_Deserialize__1_System_Text_Json_Nodes_JsonNode_System_Text_Json_Serialization_Metadata_JsonTypeInfo___0__
+  - name: <
+  - name: TValue
+  - name: '>'
+  - name: (
+  - uid: System.Text.Json.Nodes.JsonNode
+    name: JsonNode
+    isExternal: true
+    href: System.Text.Json.Nodes.JsonNode.html
+  - name: ','
+  - name: " "
+  - uid: System.Text.Json.Serialization.Metadata.JsonTypeInfo`1
+    name: JsonTypeInfo
+    isExternal: true
+  - name: <
+  - name: TValue
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: System.Text.Json.JsonSerializer.Deserialize``1(System.Text.Json.Nodes.JsonNode,System.Text.Json.Serialization.Metadata.JsonTypeInfo{``0})
+    name: Deserialize
+    isExternal: true
+    href: System.Text.Json.JsonSerializer.html#System_Text_Json_JsonSerializer_Deserialize__1_System_Text_Json_Nodes_JsonNode_System_Text_Json_Serialization_Metadata_JsonTypeInfo___0__
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TValue
+  - name: )
+  - name: (
+  - uid: System.Text.Json.Nodes.JsonNode
+    name: JsonNode
+    isExternal: true
+    href: System.Text.Json.Nodes.JsonNode.html
+  - name: ','
+  - name: " "
+  - uid: System.Text.Json.Serialization.Metadata.JsonTypeInfo`1
+    name: JsonTypeInfo
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TValue
+  - name: )
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Collections.Generic.IDictionary`2
+  commentId: T:System.Collections.Generic.IDictionary`2
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2
+  name: IDictionary<TKey, TValue>
+  nameWithType: IDictionary<TKey, TValue>
+  fullName: System.Collections.Generic.IDictionary<TKey, TValue>
+  nameWithType.vb: IDictionary(Of TKey, TValue)
+  fullName.vb: System.Collections.Generic.IDictionary(Of TKey, TValue)
+  name.vb: IDictionary(Of TKey, TValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2
+  - name: <
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: System.Collections.Generic.ICollection`1
+  commentId: T:System.Collections.Generic.ICollection`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1
+  name: ICollection<T>
+  nameWithType: ICollection<T>
+  fullName: System.Collections.Generic.ICollection<T>
+  nameWithType.vb: ICollection(Of T)
+  fullName.vb: System.Collections.Generic.ICollection(Of T)
+  name.vb: ICollection(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection`1
+    name: ICollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection`1
+    name: ICollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections
+  commentId: N:System.Collections
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections
+  nameWithType: System.Collections
+  fullName: System.Collections
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+- uid: System.Text.Json.JsonSerializer.Deserialize(System.Text.Json.Nodes.JsonNode,System.Type,System.Text.Json.JsonSerializerOptions)
+  commentId: M:System.Text.Json.JsonSerializer.Deserialize(System.Text.Json.Nodes.JsonNode,System.Type,System.Text.Json.JsonSerializerOptions)
+  isExternal: true
+  href: System.Text.Json.JsonSerializer.html#System_Text_Json_JsonSerializer_Deserialize_System_Text_Json_Nodes_JsonNode_System_Type_System_Text_Json_JsonSerializerOptions_
+  name: Deserialize(JsonNode, Type, JsonSerializerOptions)
+  nameWithType: JsonSerializer.Deserialize(JsonNode, Type, JsonSerializerOptions)
+  fullName: System.Text.Json.JsonSerializer.Deserialize(System.Text.Json.Nodes.JsonNode, System.Type, System.Text.Json.JsonSerializerOptions)
+  spec.csharp:
+  - uid: System.Text.Json.JsonSerializer.Deserialize(System.Text.Json.Nodes.JsonNode,System.Type,System.Text.Json.JsonSerializerOptions)
+    name: Deserialize
+    isExternal: true
+    href: System.Text.Json.JsonSerializer.html#System_Text_Json_JsonSerializer_Deserialize_System_Text_Json_Nodes_JsonNode_System_Type_System_Text_Json_JsonSerializerOptions_
+  - name: (
+  - uid: System.Text.Json.Nodes.JsonNode
+    name: JsonNode
+    isExternal: true
+    href: System.Text.Json.Nodes.JsonNode.html
+  - name: ','
+  - name: " "
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: ','
+  - name: " "
+  - uid: System.Text.Json.JsonSerializerOptions
+    name: JsonSerializerOptions
+    isExternal: true
+    href: System.Text.Json.JsonSerializerOptions.html
+  - name: )
+  spec.vb:
+  - uid: System.Text.Json.JsonSerializer.Deserialize(System.Text.Json.Nodes.JsonNode,System.Type,System.Text.Json.JsonSerializerOptions)
+    name: Deserialize
+    isExternal: true
+    href: System.Text.Json.JsonSerializer.html#System_Text_Json_JsonSerializer_Deserialize_System_Text_Json_Nodes_JsonNode_System_Type_System_Text_Json_JsonSerializerOptions_
+  - name: (
+  - uid: System.Text.Json.Nodes.JsonNode
+    name: JsonNode
+    isExternal: true
+    href: System.Text.Json.Nodes.JsonNode.html
+  - name: ','
+  - name: " "
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: ','
+  - name: " "
+  - uid: System.Text.Json.JsonSerializerOptions
+    name: JsonSerializerOptions
+    isExternal: true
+    href: System.Text.Json.JsonSerializerOptions.html
+  - name: )
+- uid: System.Text.Json.JsonSerializer
+  commentId: T:System.Text.Json.JsonSerializer
+  parent: System.Text.Json
+  isExternal: true
+  href: System.Text.Json.JsonSerializer.html
+  name: JsonSerializer
+  nameWithType: JsonSerializer
+  fullName: System.Text.Json.JsonSerializer
+- uid: System.Text.Json.JsonSerializer.Deserialize(System.Text.Json.Nodes.JsonNode,System.Type,System.Text.Json.Serialization.JsonSerializerContext)
+  commentId: M:System.Text.Json.JsonSerializer.Deserialize(System.Text.Json.Nodes.JsonNode,System.Type,System.Text.Json.Serialization.JsonSerializerContext)
+  isExternal: true
+  href: System.Text.Json.JsonSerializer.html#System_Text_Json_JsonSerializer_Deserialize_System_Text_Json_Nodes_JsonNode_System_Type_System_Text_Json_Serialization_JsonSerializerContext_
+  name: Deserialize(JsonNode, Type, JsonSerializerContext)
+  nameWithType: JsonSerializer.Deserialize(JsonNode, Type, JsonSerializerContext)
+  fullName: System.Text.Json.JsonSerializer.Deserialize(System.Text.Json.Nodes.JsonNode, System.Type, System.Text.Json.Serialization.JsonSerializerContext)
+  spec.csharp:
+  - uid: System.Text.Json.JsonSerializer.Deserialize(System.Text.Json.Nodes.JsonNode,System.Type,System.Text.Json.Serialization.JsonSerializerContext)
+    name: Deserialize
+    isExternal: true
+    href: System.Text.Json.JsonSerializer.html#System_Text_Json_JsonSerializer_Deserialize_System_Text_Json_Nodes_JsonNode_System_Type_System_Text_Json_Serialization_JsonSerializerContext_
+  - name: (
+  - uid: System.Text.Json.Nodes.JsonNode
+    name: JsonNode
+    isExternal: true
+    href: System.Text.Json.Nodes.JsonNode.html
+  - name: ','
+  - name: " "
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: ','
+  - name: " "
+  - uid: System.Text.Json.Serialization.JsonSerializerContext
+    name: JsonSerializerContext
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: System.Text.Json.JsonSerializer.Deserialize(System.Text.Json.Nodes.JsonNode,System.Type,System.Text.Json.Serialization.JsonSerializerContext)
+    name: Deserialize
+    isExternal: true
+    href: System.Text.Json.JsonSerializer.html#System_Text_Json_JsonSerializer_Deserialize_System_Text_Json_Nodes_JsonNode_System_Type_System_Text_Json_Serialization_JsonSerializerContext_
+  - name: (
+  - uid: System.Text.Json.Nodes.JsonNode
+    name: JsonNode
+    isExternal: true
+    href: System.Text.Json.Nodes.JsonNode.html
+  - name: ','
+  - name: " "
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: ','
+  - name: " "
+  - uid: System.Text.Json.Serialization.JsonSerializerContext
+    name: JsonSerializerContext
+    isExternal: true
+  - name: )
+- uid: System.Text.Json.JsonSerializer.Deserialize``1(System.Text.Json.Nodes.JsonNode,System.Text.Json.JsonSerializerOptions)
+  commentId: M:System.Text.Json.JsonSerializer.Deserialize``1(System.Text.Json.Nodes.JsonNode,System.Text.Json.JsonSerializerOptions)
+  isExternal: true
+  href: System.Text.Json.JsonSerializer.html#System_Text_Json_JsonSerializer_Deserialize__1_System_Text_Json_Nodes_JsonNode_System_Text_Json_JsonSerializerOptions_
+  name: Deserialize<TValue>(JsonNode, JsonSerializerOptions)
+  nameWithType: JsonSerializer.Deserialize<TValue>(JsonNode, JsonSerializerOptions)
+  fullName: System.Text.Json.JsonSerializer.Deserialize<TValue>(System.Text.Json.Nodes.JsonNode, System.Text.Json.JsonSerializerOptions)
+  nameWithType.vb: JsonSerializer.Deserialize(Of TValue)(JsonNode, JsonSerializerOptions)
+  fullName.vb: System.Text.Json.JsonSerializer.Deserialize(Of TValue)(System.Text.Json.Nodes.JsonNode, System.Text.Json.JsonSerializerOptions)
+  name.vb: Deserialize(Of TValue)(JsonNode, JsonSerializerOptions)
+  spec.csharp:
+  - uid: System.Text.Json.JsonSerializer.Deserialize``1(System.Text.Json.Nodes.JsonNode,System.Text.Json.JsonSerializerOptions)
+    name: Deserialize
+    isExternal: true
+    href: System.Text.Json.JsonSerializer.html#System_Text_Json_JsonSerializer_Deserialize__1_System_Text_Json_Nodes_JsonNode_System_Text_Json_JsonSerializerOptions_
+  - name: <
+  - name: TValue
+  - name: '>'
+  - name: (
+  - uid: System.Text.Json.Nodes.JsonNode
+    name: JsonNode
+    isExternal: true
+    href: System.Text.Json.Nodes.JsonNode.html
+  - name: ','
+  - name: " "
+  - uid: System.Text.Json.JsonSerializerOptions
+    name: JsonSerializerOptions
+    isExternal: true
+    href: System.Text.Json.JsonSerializerOptions.html
+  - name: )
+  spec.vb:
+  - uid: System.Text.Json.JsonSerializer.Deserialize``1(System.Text.Json.Nodes.JsonNode,System.Text.Json.JsonSerializerOptions)
+    name: Deserialize
+    isExternal: true
+    href: System.Text.Json.JsonSerializer.html#System_Text_Json_JsonSerializer_Deserialize__1_System_Text_Json_Nodes_JsonNode_System_Text_Json_JsonSerializerOptions_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TValue
+  - name: )
+  - name: (
+  - uid: System.Text.Json.Nodes.JsonNode
+    name: JsonNode
+    isExternal: true
+    href: System.Text.Json.Nodes.JsonNode.html
+  - name: ','
+  - name: " "
+  - uid: System.Text.Json.JsonSerializerOptions
+    name: JsonSerializerOptions
+    isExternal: true
+    href: System.Text.Json.JsonSerializerOptions.html
+  - name: )
+- uid: System.Text.Json.JsonSerializer.Deserialize``1(System.Text.Json.Nodes.JsonNode,System.Text.Json.Serialization.Metadata.JsonTypeInfo{``0})
+  commentId: M:System.Text.Json.JsonSerializer.Deserialize``1(System.Text.Json.Nodes.JsonNode,System.Text.Json.Serialization.Metadata.JsonTypeInfo{``0})
+  isExternal: true
+  href: System.Text.Json.JsonSerializer.html#System_Text_Json_JsonSerializer_Deserialize__1_System_Text_Json_Nodes_JsonNode_System_Text_Json_Serialization_Metadata_JsonTypeInfo___0__
+  name: Deserialize<TValue>(JsonNode, JsonTypeInfo<TValue>)
+  nameWithType: JsonSerializer.Deserialize<TValue>(JsonNode, JsonTypeInfo<TValue>)
+  fullName: System.Text.Json.JsonSerializer.Deserialize<TValue>(System.Text.Json.Nodes.JsonNode, System.Text.Json.Serialization.Metadata.JsonTypeInfo<TValue>)
+  nameWithType.vb: JsonSerializer.Deserialize(Of TValue)(JsonNode, JsonTypeInfo(Of TValue))
+  fullName.vb: System.Text.Json.JsonSerializer.Deserialize(Of TValue)(System.Text.Json.Nodes.JsonNode, System.Text.Json.Serialization.Metadata.JsonTypeInfo(Of TValue))
+  name.vb: Deserialize(Of TValue)(JsonNode, JsonTypeInfo(Of TValue))
+  spec.csharp:
+  - uid: System.Text.Json.JsonSerializer.Deserialize``1(System.Text.Json.Nodes.JsonNode,System.Text.Json.Serialization.Metadata.JsonTypeInfo{``0})
+    name: Deserialize
+    isExternal: true
+    href: System.Text.Json.JsonSerializer.html#System_Text_Json_JsonSerializer_Deserialize__1_System_Text_Json_Nodes_JsonNode_System_Text_Json_Serialization_Metadata_JsonTypeInfo___0__
+  - name: <
+  - name: TValue
+  - name: '>'
+  - name: (
+  - uid: System.Text.Json.Nodes.JsonNode
+    name: JsonNode
+    isExternal: true
+    href: System.Text.Json.Nodes.JsonNode.html
+  - name: ','
+  - name: " "
+  - uid: System.Text.Json.Serialization.Metadata.JsonTypeInfo`1
+    name: JsonTypeInfo
+    isExternal: true
+  - name: <
+  - name: TValue
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: System.Text.Json.JsonSerializer.Deserialize``1(System.Text.Json.Nodes.JsonNode,System.Text.Json.Serialization.Metadata.JsonTypeInfo{``0})
+    name: Deserialize
+    isExternal: true
+    href: System.Text.Json.JsonSerializer.html#System_Text_Json_JsonSerializer_Deserialize__1_System_Text_Json_Nodes_JsonNode_System_Text_Json_Serialization_Metadata_JsonTypeInfo___0__
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TValue
+  - name: )
+  - name: (
+  - uid: System.Text.Json.Nodes.JsonNode
+    name: JsonNode
+    isExternal: true
+    href: System.Text.Json.Nodes.JsonNode.html
+  - name: ','
+  - name: " "
+  - uid: System.Text.Json.Serialization.Metadata.JsonTypeInfo`1
+    name: JsonTypeInfo
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TValue
+  - name: )
+  - name: )
+- uid: System.Text.Json
+  commentId: N:System.Text.Json
+  isExternal: true
+  href: System.html
+  name: System.Text.Json
+  nameWithType: System.Text.Json
+  fullName: System.Text.Json
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: System.html
+  - name: .
+  - uid: System.Text
+    name: Text
+    isExternal: true
+    href: System.Text.html
+  - name: .
+  - uid: System.Text.Json
+    name: Json
+    isExternal: true
+    href: System.Text.Json.html
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: System.html
+  - name: .
+  - uid: System.Text
+    name: Text
+    isExternal: true
+    href: System.Text.html
+  - name: .
+  - uid: System.Text.Json
+    name: Json
+    isExternal: true
+    href: System.Text.Json.html
+- uid: System.Text.Json.Nodes.JsonObject
+  commentId: T:System.Text.Json.Nodes.JsonObject
+  parent: System.Text.Json.Nodes
+  isExternal: true
+  href: System.Text.Json.Nodes.JsonObject.html
+  name: JsonObject
+  nameWithType: JsonObject
+  fullName: System.Text.Json.Nodes.JsonObject
+- uid: System.Text.Json.Nodes.JsonObject.#ctor*
+  commentId: Overload:System.Text.Json.Nodes.JsonObject.#ctor
+  isExternal: true
+  href: System.Text.Json.Nodes.JsonObject.html#System_Text_Json_Nodes_JsonObject__ctor_System_Nullable_System_Text_Json_Nodes_JsonNodeOptions__
+  name: JsonObject
+  nameWithType: JsonObject.JsonObject
+  fullName: System.Text.Json.Nodes.JsonObject.JsonObject
+  nameWithType.vb: JsonObject.New
+  fullName.vb: System.Text.Json.Nodes.JsonObject.New
+  name.vb: New
+- uid: System.Nullable{System.Text.Json.Nodes.JsonNodeOptions}
+  commentId: T:System.Nullable{System.Text.Json.Nodes.JsonNodeOptions}
+  parent: System
+  definition: System.Nullable`1
+  href: System.Text.Json.Nodes.JsonNodeOptions.html
+  name: JsonNodeOptions?
+  nameWithType: JsonNodeOptions?
+  fullName: System.Text.Json.Nodes.JsonNodeOptions?
+  spec.csharp:
+  - uid: System.Text.Json.Nodes.JsonNodeOptions
+    name: JsonNodeOptions
+    isExternal: true
+    href: System.Text.Json.Nodes.JsonNodeOptions.html
+  - name: '?'
+  spec.vb:
+  - uid: System.Text.Json.Nodes.JsonNodeOptions
+    name: JsonNodeOptions
+    isExternal: true
+    href: System.Text.Json.Nodes.JsonNodeOptions.html
+  - name: '?'
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Text.Json.JsonElement
+  commentId: T:System.Text.Json.JsonElement
+  parent: System.Text.Json
+  isExternal: true
+  href: System.Text.Json.JsonElement.html
+  name: JsonElement
+  nameWithType: JsonElement
+  fullName: System.Text.Json.JsonElement
+- uid: System.Text.Json.Nodes.JsonObject.Create*
+  commentId: Overload:System.Text.Json.Nodes.JsonObject.Create
+  isExternal: true
+  href: System.Text.Json.Nodes.JsonObject.html#System_Text_Json_Nodes_JsonObject_Create_System_Text_Json_JsonElement_System_Nullable_System_Text_Json_Nodes_JsonNodeOptions__
+  name: Create
+  nameWithType: JsonObject.Create
+  fullName: System.Text.Json.Nodes.JsonObject.Create
+- uid: System.Text.Json.Nodes.JsonObject.TryGetPropertyValue*
+  commentId: Overload:System.Text.Json.Nodes.JsonObject.TryGetPropertyValue
+  isExternal: true
+  href: System.Text.Json.Nodes.JsonObject.html#System_Text_Json_Nodes_JsonObject_TryGetPropertyValue_System_String_System_Text_Json_Nodes_JsonNode__
+  name: TryGetPropertyValue
+  nameWithType: JsonObject.TryGetPropertyValue
+  fullName: System.Text.Json.Nodes.JsonObject.TryGetPropertyValue
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System.Text.Json.Utf8JsonWriter
+  commentId: T:System.Text.Json.Utf8JsonWriter
+  parent: System.Text.Json
+  isExternal: true
+  href: System.Text.Json.Utf8JsonWriter.html
+  name: Utf8JsonWriter
+  nameWithType: Utf8JsonWriter
+  fullName: System.Text.Json.Utf8JsonWriter
+- uid: System.ArgumentNullException
+  commentId: T:System.ArgumentNullException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.argumentnullexception
+  name: ArgumentNullException
+  nameWithType: ArgumentNullException
+  fullName: System.ArgumentNullException
+- uid: System.Text.Json.Nodes.JsonNode.WriteTo(System.Text.Json.Utf8JsonWriter,System.Text.Json.JsonSerializerOptions)
+  commentId: M:System.Text.Json.Nodes.JsonNode.WriteTo(System.Text.Json.Utf8JsonWriter,System.Text.Json.JsonSerializerOptions)
+  parent: System.Text.Json.Nodes.JsonNode
+  isExternal: true
+  href: System.Text.Json.Nodes.JsonNode.html#System_Text_Json_Nodes_JsonNode_WriteTo_System_Text_Json_Utf8JsonWriter_System_Text_Json_JsonSerializerOptions_
+  name: WriteTo(Utf8JsonWriter, JsonSerializerOptions)
+  nameWithType: JsonNode.WriteTo(Utf8JsonWriter, JsonSerializerOptions)
+  fullName: System.Text.Json.Nodes.JsonNode.WriteTo(System.Text.Json.Utf8JsonWriter, System.Text.Json.JsonSerializerOptions)
+  spec.csharp:
+  - uid: System.Text.Json.Nodes.JsonNode.WriteTo(System.Text.Json.Utf8JsonWriter,System.Text.Json.JsonSerializerOptions)
+    name: WriteTo
+    isExternal: true
+    href: System.Text.Json.Nodes.JsonNode.html#System_Text_Json_Nodes_JsonNode_WriteTo_System_Text_Json_Utf8JsonWriter_System_Text_Json_JsonSerializerOptions_
+  - name: (
+  - uid: System.Text.Json.Utf8JsonWriter
+    name: Utf8JsonWriter
+    isExternal: true
+    href: System.Text.Json.Utf8JsonWriter.html
+  - name: ','
+  - name: " "
+  - uid: System.Text.Json.JsonSerializerOptions
+    name: JsonSerializerOptions
+    isExternal: true
+    href: System.Text.Json.JsonSerializerOptions.html
+  - name: )
+  spec.vb:
+  - uid: System.Text.Json.Nodes.JsonNode.WriteTo(System.Text.Json.Utf8JsonWriter,System.Text.Json.JsonSerializerOptions)
+    name: WriteTo
+    isExternal: true
+    href: System.Text.Json.Nodes.JsonNode.html#System_Text_Json_Nodes_JsonNode_WriteTo_System_Text_Json_Utf8JsonWriter_System_Text_Json_JsonSerializerOptions_
+  - name: (
+  - uid: System.Text.Json.Utf8JsonWriter
+    name: Utf8JsonWriter
+    isExternal: true
+    href: System.Text.Json.Utf8JsonWriter.html
+  - name: ','
+  - name: " "
+  - uid: System.Text.Json.JsonSerializerOptions
+    name: JsonSerializerOptions
+    isExternal: true
+    href: System.Text.Json.JsonSerializerOptions.html
+  - name: )
+- uid: System.Text.Json.Nodes.JsonObject.WriteTo*
+  commentId: Overload:System.Text.Json.Nodes.JsonObject.WriteTo
+  isExternal: true
+  href: System.Text.Json.Nodes.JsonObject.html#System_Text_Json_Nodes_JsonObject_WriteTo_System_Text_Json_Utf8JsonWriter_System_Text_Json_JsonSerializerOptions_
+  name: WriteTo
+  nameWithType: JsonObject.WriteTo
+  fullName: System.Text.Json.Nodes.JsonObject.WriteTo
+- uid: System.Text.Json.JsonSerializerOptions
+  commentId: T:System.Text.Json.JsonSerializerOptions
+  parent: System.Text.Json
+  isExternal: true
+  href: System.Text.Json.JsonSerializerOptions.html
+  name: JsonSerializerOptions
+  nameWithType: JsonSerializerOptions
+  fullName: System.Text.Json.JsonSerializerOptions
+- uid: System.ArgumentException
+  commentId: T:System.ArgumentException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.argumentexception
+  name: ArgumentException
+  nameWithType: ArgumentException
+  fullName: System.ArgumentException
+- uid: System.Text.Json.Nodes.JsonObject.Add*
+  commentId: Overload:System.Text.Json.Nodes.JsonObject.Add
+  isExternal: true
+  href: System.Text.Json.Nodes.JsonObject.html#System_Text_Json_Nodes_JsonObject_Add_System_String_System_Text_Json_Nodes_JsonNode_
+  name: Add
+  nameWithType: JsonObject.Add
+  fullName: System.Text.Json.Nodes.JsonObject.Add
+- uid: System.Collections.Generic.IDictionary{System.String,System.Text.Json.Nodes.JsonNode}.Add(System.String,System.Text.Json.Nodes.JsonNode)
+  commentId: M:System.Collections.Generic.IDictionary{System.String,System.Text.Json.Nodes.JsonNode}.Add(System.String,System.Text.Json.Nodes.JsonNode)
+  parent: System.Collections.Generic.IDictionary{System.String,System.Text.Json.Nodes.JsonNode}
+  definition: System.Collections.Generic.IDictionary`2.Add(`0,`1)
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2.add
+  name: Add(string, JsonNode)
+  nameWithType: IDictionary<string, JsonNode>.Add(string, JsonNode)
+  fullName: System.Collections.Generic.IDictionary<string, System.Text.Json.Nodes.JsonNode>.Add(string, System.Text.Json.Nodes.JsonNode)
+  nameWithType.vb: IDictionary(Of String, JsonNode).Add(String, JsonNode)
+  fullName.vb: System.Collections.Generic.IDictionary(Of String, System.Text.Json.Nodes.JsonNode).Add(String, System.Text.Json.Nodes.JsonNode)
+  name.vb: Add(String, JsonNode)
+  spec.csharp:
+  - uid: System.Collections.Generic.IDictionary{System.String,System.Text.Json.Nodes.JsonNode}.Add(System.String,System.Text.Json.Nodes.JsonNode)
+    name: Add
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2.add
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Text.Json.Nodes.JsonNode
+    name: JsonNode
+    isExternal: true
+    href: System.Text.Json.Nodes.JsonNode.html
+  - name: )
+  spec.vb:
+  - uid: System.Collections.Generic.IDictionary{System.String,System.Text.Json.Nodes.JsonNode}.Add(System.String,System.Text.Json.Nodes.JsonNode)
+    name: Add
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2.add
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Text.Json.Nodes.JsonNode
+    name: JsonNode
+    isExternal: true
+    href: System.Text.Json.Nodes.JsonNode.html
+  - name: )
+- uid: System.Collections.Generic.IDictionary`2.Add(`0,`1)
+  commentId: M:System.Collections.Generic.IDictionary`2.Add(`0,`1)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2.add
+  name: Add(TKey, TValue)
+  nameWithType: IDictionary<TKey, TValue>.Add(TKey, TValue)
+  fullName: System.Collections.Generic.IDictionary<TKey, TValue>.Add(TKey, TValue)
+  nameWithType.vb: IDictionary(Of TKey, TValue).Add(TKey, TValue)
+  fullName.vb: System.Collections.Generic.IDictionary(Of TKey, TValue).Add(TKey, TValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.IDictionary`2.Add(`0,`1)
+    name: Add
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2.add
+  - name: (
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: )
+  spec.vb:
+  - uid: System.Collections.Generic.IDictionary`2.Add(`0,`1)
+    name: Add
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2.add
+  - name: (
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: System.Collections.Generic.ICollection{System.Collections.Generic.KeyValuePair{System.String,System.Text.Json.Nodes.JsonNode}}.Add(System.Collections.Generic.KeyValuePair{System.String,System.Text.Json.Nodes.JsonNode})
+  commentId: M:System.Collections.Generic.ICollection{System.Collections.Generic.KeyValuePair{System.String,System.Text.Json.Nodes.JsonNode}}.Add(System.Collections.Generic.KeyValuePair{System.String,System.Text.Json.Nodes.JsonNode})
+  parent: System.Collections.Generic.ICollection{System.Collections.Generic.KeyValuePair{System.String,System.Text.Json.Nodes.JsonNode}}
+  definition: System.Collections.Generic.ICollection`1.Add(`0)
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1.add
+  name: Add(KeyValuePair<string, JsonNode>)
+  nameWithType: ICollection<KeyValuePair<string, JsonNode>>.Add(KeyValuePair<string, JsonNode>)
+  fullName: System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<string, System.Text.Json.Nodes.JsonNode>>.Add(System.Collections.Generic.KeyValuePair<string, System.Text.Json.Nodes.JsonNode>)
+  nameWithType.vb: ICollection(Of KeyValuePair(Of String, JsonNode)).Add(KeyValuePair(Of String, JsonNode))
+  fullName.vb: System.Collections.Generic.ICollection(Of System.Collections.Generic.KeyValuePair(Of String, System.Text.Json.Nodes.JsonNode)).Add(System.Collections.Generic.KeyValuePair(Of String, System.Text.Json.Nodes.JsonNode))
+  name.vb: Add(KeyValuePair(Of String, JsonNode))
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection{System.Collections.Generic.KeyValuePair{System.String,System.Text.Json.Nodes.JsonNode}}.Add(System.Collections.Generic.KeyValuePair{System.String,System.Text.Json.Nodes.JsonNode})
+    name: Add
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1.add
+  - name: (
+  - uid: System.Collections.Generic.KeyValuePair`2
+    name: KeyValuePair
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.keyvaluepair-2
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Text.Json.Nodes.JsonNode
+    name: JsonNode
+    isExternal: true
+    href: System.Text.Json.Nodes.JsonNode.html
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection{System.Collections.Generic.KeyValuePair{System.String,System.Text.Json.Nodes.JsonNode}}.Add(System.Collections.Generic.KeyValuePair{System.String,System.Text.Json.Nodes.JsonNode})
+    name: Add
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1.add
+  - name: (
+  - uid: System.Collections.Generic.KeyValuePair`2
+    name: KeyValuePair
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.keyvaluepair-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Text.Json.Nodes.JsonNode
+    name: JsonNode
+    isExternal: true
+    href: System.Text.Json.Nodes.JsonNode.html
+  - name: )
+  - name: )
+- uid: System.Collections.Generic.KeyValuePair{System.String,System.Text.Json.Nodes.JsonNode}
+  commentId: T:System.Collections.Generic.KeyValuePair{System.String,System.Text.Json.Nodes.JsonNode}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.KeyValuePair`2
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.keyvaluepair-2
+  name: KeyValuePair<string, JsonNode>
+  nameWithType: KeyValuePair<string, JsonNode>
+  fullName: System.Collections.Generic.KeyValuePair<string, System.Text.Json.Nodes.JsonNode>
+  nameWithType.vb: KeyValuePair(Of String, JsonNode)
+  fullName.vb: System.Collections.Generic.KeyValuePair(Of String, System.Text.Json.Nodes.JsonNode)
+  name.vb: KeyValuePair(Of String, JsonNode)
+  spec.csharp:
+  - uid: System.Collections.Generic.KeyValuePair`2
+    name: KeyValuePair
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.keyvaluepair-2
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Text.Json.Nodes.JsonNode
+    name: JsonNode
+    isExternal: true
+    href: System.Text.Json.Nodes.JsonNode.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.KeyValuePair`2
+    name: KeyValuePair
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.keyvaluepair-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Text.Json.Nodes.JsonNode
+    name: JsonNode
+    isExternal: true
+    href: System.Text.Json.Nodes.JsonNode.html
+  - name: )
+- uid: System.Collections.Generic.ICollection`1.Add(`0)
+  commentId: M:System.Collections.Generic.ICollection`1.Add(`0)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1.add
+  name: Add(T)
+  nameWithType: ICollection<T>.Add(T)
+  fullName: System.Collections.Generic.ICollection<T>.Add(T)
+  nameWithType.vb: ICollection(Of T).Add(T)
+  fullName.vb: System.Collections.Generic.ICollection(Of T).Add(T)
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection`1.Add(`0)
+    name: Add
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1.add
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection`1.Add(`0)
+    name: Add
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1.add
+  - name: (
+  - name: T
+  - name: )
+- uid: System.Collections.Generic.KeyValuePair`2
+  commentId: T:System.Collections.Generic.KeyValuePair`2
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.keyvaluepair-2
+  name: KeyValuePair<TKey, TValue>
+  nameWithType: KeyValuePair<TKey, TValue>
+  fullName: System.Collections.Generic.KeyValuePair<TKey, TValue>
+  nameWithType.vb: KeyValuePair(Of TKey, TValue)
+  fullName.vb: System.Collections.Generic.KeyValuePair(Of TKey, TValue)
+  name.vb: KeyValuePair(Of TKey, TValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.KeyValuePair`2
+    name: KeyValuePair
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.keyvaluepair-2
+  - name: <
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.KeyValuePair`2
+    name: KeyValuePair
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.keyvaluepair-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: System.Text.Json.Nodes.JsonObject.Clear*
+  commentId: Overload:System.Text.Json.Nodes.JsonObject.Clear
+  isExternal: true
+  href: System.Text.Json.Nodes.JsonObject.html#System_Text_Json_Nodes_JsonObject_Clear
+  name: Clear
+  nameWithType: JsonObject.Clear
+  fullName: System.Text.Json.Nodes.JsonObject.Clear
+- uid: System.Collections.Generic.ICollection{System.Collections.Generic.KeyValuePair{System.String,System.Text.Json.Nodes.JsonNode}}.Clear
+  commentId: M:System.Collections.Generic.ICollection{System.Collections.Generic.KeyValuePair{System.String,System.Text.Json.Nodes.JsonNode}}.Clear
+  parent: System.Collections.Generic.ICollection{System.Collections.Generic.KeyValuePair{System.String,System.Text.Json.Nodes.JsonNode}}
+  definition: System.Collections.Generic.ICollection`1.Clear
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1.clear
+  name: Clear()
+  nameWithType: ICollection<KeyValuePair<string, JsonNode>>.Clear()
+  fullName: System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<string, System.Text.Json.Nodes.JsonNode>>.Clear()
+  nameWithType.vb: ICollection(Of KeyValuePair(Of String, JsonNode)).Clear()
+  fullName.vb: System.Collections.Generic.ICollection(Of System.Collections.Generic.KeyValuePair(Of String, System.Text.Json.Nodes.JsonNode)).Clear()
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection{System.Collections.Generic.KeyValuePair{System.String,System.Text.Json.Nodes.JsonNode}}.Clear
+    name: Clear
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1.clear
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection{System.Collections.Generic.KeyValuePair{System.String,System.Text.Json.Nodes.JsonNode}}.Clear
+    name: Clear
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1.clear
+  - name: (
+  - name: )
+- uid: System.Collections.Generic.ICollection`1.Clear
+  commentId: M:System.Collections.Generic.ICollection`1.Clear
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1.clear
+  name: Clear()
+  nameWithType: ICollection<T>.Clear()
+  fullName: System.Collections.Generic.ICollection<T>.Clear()
+  nameWithType.vb: ICollection(Of T).Clear()
+  fullName.vb: System.Collections.Generic.ICollection(Of T).Clear()
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection`1.Clear
+    name: Clear
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1.clear
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection`1.Clear
+    name: Clear
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1.clear
+  - name: (
+  - name: )
+- uid: System.Text.Json.Nodes.JsonObject.ContainsKey*
+  commentId: Overload:System.Text.Json.Nodes.JsonObject.ContainsKey
+  isExternal: true
+  href: System.Text.Json.Nodes.JsonObject.html#System_Text_Json_Nodes_JsonObject_ContainsKey_System_String_
+  name: ContainsKey
+  nameWithType: JsonObject.ContainsKey
+  fullName: System.Text.Json.Nodes.JsonObject.ContainsKey
+- uid: System.Collections.Generic.IDictionary{System.String,System.Text.Json.Nodes.JsonNode}.ContainsKey(System.String)
+  commentId: M:System.Collections.Generic.IDictionary{System.String,System.Text.Json.Nodes.JsonNode}.ContainsKey(System.String)
+  parent: System.Collections.Generic.IDictionary{System.String,System.Text.Json.Nodes.JsonNode}
+  definition: System.Collections.Generic.IDictionary`2.ContainsKey(`0)
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2.containskey
+  name: ContainsKey(string)
+  nameWithType: IDictionary<string, JsonNode>.ContainsKey(string)
+  fullName: System.Collections.Generic.IDictionary<string, System.Text.Json.Nodes.JsonNode>.ContainsKey(string)
+  nameWithType.vb: IDictionary(Of String, JsonNode).ContainsKey(String)
+  fullName.vb: System.Collections.Generic.IDictionary(Of String, System.Text.Json.Nodes.JsonNode).ContainsKey(String)
+  name.vb: ContainsKey(String)
+  spec.csharp:
+  - uid: System.Collections.Generic.IDictionary{System.String,System.Text.Json.Nodes.JsonNode}.ContainsKey(System.String)
+    name: ContainsKey
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2.containskey
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: System.Collections.Generic.IDictionary{System.String,System.Text.Json.Nodes.JsonNode}.ContainsKey(System.String)
+    name: ContainsKey
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2.containskey
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.Collections.Generic.IDictionary`2.ContainsKey(`0)
+  commentId: M:System.Collections.Generic.IDictionary`2.ContainsKey(`0)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2.containskey
+  name: ContainsKey(TKey)
+  nameWithType: IDictionary<TKey, TValue>.ContainsKey(TKey)
+  fullName: System.Collections.Generic.IDictionary<TKey, TValue>.ContainsKey(TKey)
+  nameWithType.vb: IDictionary(Of TKey, TValue).ContainsKey(TKey)
+  fullName.vb: System.Collections.Generic.IDictionary(Of TKey, TValue).ContainsKey(TKey)
+  spec.csharp:
+  - uid: System.Collections.Generic.IDictionary`2.ContainsKey(`0)
+    name: ContainsKey
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2.containskey
+  - name: (
+  - name: TKey
+  - name: )
+  spec.vb:
+  - uid: System.Collections.Generic.IDictionary`2.ContainsKey(`0)
+    name: ContainsKey
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2.containskey
+  - name: (
+  - name: TKey
+  - name: )
+- uid: System.Text.Json.Nodes.JsonObject.Remove*
+  commentId: Overload:System.Text.Json.Nodes.JsonObject.Remove
+  isExternal: true
+  href: System.Text.Json.Nodes.JsonObject.html#System_Text_Json_Nodes_JsonObject_Remove_System_String_
+  name: Remove
+  nameWithType: JsonObject.Remove
+  fullName: System.Text.Json.Nodes.JsonObject.Remove
+- uid: System.Collections.Generic.IDictionary{System.String,System.Text.Json.Nodes.JsonNode}.Remove(System.String)
+  commentId: M:System.Collections.Generic.IDictionary{System.String,System.Text.Json.Nodes.JsonNode}.Remove(System.String)
+  parent: System.Collections.Generic.IDictionary{System.String,System.Text.Json.Nodes.JsonNode}
+  definition: System.Collections.Generic.IDictionary`2.Remove(`0)
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2.remove
+  name: Remove(string)
+  nameWithType: IDictionary<string, JsonNode>.Remove(string)
+  fullName: System.Collections.Generic.IDictionary<string, System.Text.Json.Nodes.JsonNode>.Remove(string)
+  nameWithType.vb: IDictionary(Of String, JsonNode).Remove(String)
+  fullName.vb: System.Collections.Generic.IDictionary(Of String, System.Text.Json.Nodes.JsonNode).Remove(String)
+  name.vb: Remove(String)
+  spec.csharp:
+  - uid: System.Collections.Generic.IDictionary{System.String,System.Text.Json.Nodes.JsonNode}.Remove(System.String)
+    name: Remove
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2.remove
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: System.Collections.Generic.IDictionary{System.String,System.Text.Json.Nodes.JsonNode}.Remove(System.String)
+    name: Remove
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2.remove
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.Collections.Generic.IDictionary`2.Remove(`0)
+  commentId: M:System.Collections.Generic.IDictionary`2.Remove(`0)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2.remove
+  name: Remove(TKey)
+  nameWithType: IDictionary<TKey, TValue>.Remove(TKey)
+  fullName: System.Collections.Generic.IDictionary<TKey, TValue>.Remove(TKey)
+  nameWithType.vb: IDictionary(Of TKey, TValue).Remove(TKey)
+  fullName.vb: System.Collections.Generic.IDictionary(Of TKey, TValue).Remove(TKey)
+  spec.csharp:
+  - uid: System.Collections.Generic.IDictionary`2.Remove(`0)
+    name: Remove
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2.remove
+  - name: (
+  - name: TKey
+  - name: )
+  spec.vb:
+  - uid: System.Collections.Generic.IDictionary`2.Remove(`0)
+    name: Remove
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2.remove
+  - name: (
+  - name: TKey
+  - name: )
+- uid: System.Text.Json.Nodes.JsonObject.GetEnumerator*
+  commentId: Overload:System.Text.Json.Nodes.JsonObject.GetEnumerator
+  isExternal: true
+  href: System.Text.Json.Nodes.JsonObject.html#System_Text_Json_Nodes_JsonObject_GetEnumerator
+  name: GetEnumerator
+  nameWithType: JsonObject.GetEnumerator
+  fullName: System.Text.Json.Nodes.JsonObject.GetEnumerator
+- uid: System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.String,System.Text.Json.Nodes.JsonNode}}.GetEnumerator
+  commentId: M:System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.String,System.Text.Json.Nodes.JsonNode}}.GetEnumerator
+  parent: System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.String,System.Text.Json.Nodes.JsonNode}}
+  definition: System.Collections.Generic.IEnumerable`1.GetEnumerator
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1.getenumerator
+  name: GetEnumerator()
+  nameWithType: IEnumerable<KeyValuePair<string, JsonNode>>.GetEnumerator()
+  fullName: System.Collections.Generic.IEnumerable<System.Collections.Generic.KeyValuePair<string, System.Text.Json.Nodes.JsonNode>>.GetEnumerator()
+  nameWithType.vb: IEnumerable(Of KeyValuePair(Of String, JsonNode)).GetEnumerator()
+  fullName.vb: System.Collections.Generic.IEnumerable(Of System.Collections.Generic.KeyValuePair(Of String, System.Text.Json.Nodes.JsonNode)).GetEnumerator()
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.String,System.Text.Json.Nodes.JsonNode}}.GetEnumerator
+    name: GetEnumerator
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1.getenumerator
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.String,System.Text.Json.Nodes.JsonNode}}.GetEnumerator
+    name: GetEnumerator
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1.getenumerator
+  - name: (
+  - name: )
+- uid: System.Collections.Generic.IEnumerator{System.Collections.Generic.KeyValuePair{System.String,System.Text.Json.Nodes.JsonNode}}
+  commentId: T:System.Collections.Generic.IEnumerator{System.Collections.Generic.KeyValuePair{System.String,System.Text.Json.Nodes.JsonNode}}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerator`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerator-1
+  name: IEnumerator<KeyValuePair<string, JsonNode>>
+  nameWithType: IEnumerator<KeyValuePair<string, JsonNode>>
+  fullName: System.Collections.Generic.IEnumerator<System.Collections.Generic.KeyValuePair<string, System.Text.Json.Nodes.JsonNode>>
+  nameWithType.vb: IEnumerator(Of KeyValuePair(Of String, JsonNode))
+  fullName.vb: System.Collections.Generic.IEnumerator(Of System.Collections.Generic.KeyValuePair(Of String, System.Text.Json.Nodes.JsonNode))
+  name.vb: IEnumerator(Of KeyValuePair(Of String, JsonNode))
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerator`1
+    name: IEnumerator
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerator-1
+  - name: <
+  - uid: System.Collections.Generic.KeyValuePair`2
+    name: KeyValuePair
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.keyvaluepair-2
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Text.Json.Nodes.JsonNode
+    name: JsonNode
+    isExternal: true
+    href: System.Text.Json.Nodes.JsonNode.html
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerator`1
+    name: IEnumerator
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerator-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Collections.Generic.KeyValuePair`2
+    name: KeyValuePair
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.keyvaluepair-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Text.Json.Nodes.JsonNode
+    name: JsonNode
+    isExternal: true
+    href: System.Text.Json.Nodes.JsonNode.html
+  - name: )
+  - name: )
+- uid: System.Collections.Generic.IEnumerable`1.GetEnumerator
+  commentId: M:System.Collections.Generic.IEnumerable`1.GetEnumerator
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1.getenumerator
+  name: GetEnumerator()
+  nameWithType: IEnumerable<T>.GetEnumerator()
+  fullName: System.Collections.Generic.IEnumerable<T>.GetEnumerator()
+  nameWithType.vb: IEnumerable(Of T).GetEnumerator()
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T).GetEnumerator()
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1.GetEnumerator
+    name: GetEnumerator
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1.getenumerator
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1.GetEnumerator
+    name: GetEnumerator
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1.getenumerator
+  - name: (
+  - name: )
+- uid: System.Collections.Generic.IEnumerator`1
+  commentId: T:System.Collections.Generic.IEnumerator`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerator-1
+  name: IEnumerator<T>
+  nameWithType: IEnumerator<T>
+  fullName: System.Collections.Generic.IEnumerator<T>
+  nameWithType.vb: IEnumerator(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerator(Of T)
+  name.vb: IEnumerator(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerator`1
+    name: IEnumerator
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerator-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerator`1
+    name: IEnumerator
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerator-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Text.Json.Nodes.JsonObject.Count*
+  commentId: Overload:System.Text.Json.Nodes.JsonObject.Count
+  isExternal: true
+  href: System.Text.Json.Nodes.JsonObject.html#System_Text_Json_Nodes_JsonObject_Count
+  name: Count
+  nameWithType: JsonObject.Count
+  fullName: System.Text.Json.Nodes.JsonObject.Count
+- uid: System.Collections.Generic.ICollection{System.Collections.Generic.KeyValuePair{System.String,System.Text.Json.Nodes.JsonNode}}.Count
+  commentId: P:System.Collections.Generic.ICollection{System.Collections.Generic.KeyValuePair{System.String,System.Text.Json.Nodes.JsonNode}}.Count
+  parent: System.Collections.Generic.ICollection{System.Collections.Generic.KeyValuePair{System.String,System.Text.Json.Nodes.JsonNode}}
+  definition: System.Collections.Generic.ICollection`1.Count
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1.count
+  name: Count
+  nameWithType: ICollection<KeyValuePair<string, JsonNode>>.Count
+  fullName: System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<string, System.Text.Json.Nodes.JsonNode>>.Count
+  nameWithType.vb: ICollection(Of KeyValuePair(Of String, JsonNode)).Count
+  fullName.vb: System.Collections.Generic.ICollection(Of System.Collections.Generic.KeyValuePair(Of String, System.Text.Json.Nodes.JsonNode)).Count
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.Collections.Generic.ICollection`1.Count
+  commentId: P:System.Collections.Generic.ICollection`1.Count
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1.count
+  name: Count
+  nameWithType: ICollection<T>.Count
+  fullName: System.Collections.Generic.ICollection<T>.Count
+  nameWithType.vb: ICollection(Of T).Count
+  fullName.vb: System.Collections.Generic.ICollection(Of T).Count

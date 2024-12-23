@@ -1,0 +1,964 @@
+### YamlMime:ManagedReference
+items:
+- uid: CodeFactory.WinVs.Models.CSharp.ICsUsingStatement
+  commentId: T:CodeFactory.WinVs.Models.CSharp.ICsUsingStatement
+  id: ICsUsingStatement
+  parent: CodeFactory.WinVs.Models.CSharp
+  children:
+  - CodeFactory.WinVs.Models.CSharp.ICsUsingStatement.AddAfterAsync(System.String)
+  - CodeFactory.WinVs.Models.CSharp.ICsUsingStatement.AddAfterAsync(System.String,System.String)
+  - CodeFactory.WinVs.Models.CSharp.ICsUsingStatement.AddBeforeAsync(System.String)
+  - CodeFactory.WinVs.Models.CSharp.ICsUsingStatement.AddBeforeAsync(System.String,System.String)
+  - CodeFactory.WinVs.Models.CSharp.ICsUsingStatement.DeleteAsync
+  - CodeFactory.WinVs.Models.CSharp.ICsUsingStatement.DeleteAsync(System.String)
+  - CodeFactory.WinVs.Models.CSharp.ICsUsingStatement.GetSourceLocationAsync
+  - CodeFactory.WinVs.Models.CSharp.ICsUsingStatement.GetSourceLocationAsync(System.String)
+  - CodeFactory.WinVs.Models.CSharp.ICsUsingStatement.ReplaceAsync(System.String)
+  - CodeFactory.WinVs.Models.CSharp.ICsUsingStatement.ReplaceAsync(System.String,System.String)
+  langs:
+  - csharp
+  - vb
+  name: ICsUsingStatement
+  nameWithType: ICsUsingStatement
+  fullName: CodeFactory.WinVs.Models.CSharp.ICsUsingStatement
+  type: Interface
+  source:
+    href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/19e816ffdf1ba504be6987736bbac42e2d241405/Src/CodeFactoryForWindows/CodeFactory.WinVs/Models/CSharp/ICsUsingStatement.cs
+  assemblies:
+  - CodeFactory.WinVs
+  namespace: CodeFactory.WinVs.Models.CSharp
+  summary: Model that represents a using statement in a C# source model.
+  example: []
+  syntax:
+    content: 'public interface ICsUsingStatement : ICsModel, IModelStatus, IParent, ILookup, IUsingStatementNamespace'
+    content.vb: Public Interface ICsUsingStatement Inherits ICsModel, IModelStatus, IParent, ILookup, IUsingStatementNamespace
+  inheritedMembers:
+  - CodeFactory.WinVs.Models.CSharp.ICsModel.GetModel``1(System.String)
+  - CodeFactory.WinVs.Models.CSharp.ICsModel.GetModel(System.String)
+  - CodeFactory.WinVs.Models.CSharp.ICsModel.LoadedFromSource
+  - CodeFactory.WinVs.Models.CSharp.ICsModel.Language
+  - CodeFactory.WinVs.Models.CSharp.ICsModel.ModelType
+  - CodeFactory.WinVs.Models.CSharp.ICsModel.SourceDocument
+  - CodeFactory.IModelStatus.GetErrors
+  - CodeFactory.IModelStatus.IsLoaded
+  - CodeFactory.IModelStatus.HasErrors
+  - CodeFactory.WinVs.Models.CSharp.IParent.Parent
+  - CodeFactory.WinVs.Models.CSharp.ILookup.LookupPath
+  - CodeFactory.WinVs.Models.CSharp.IUsingStatementNamespace.ReferenceNamespace
+  - CodeFactory.WinVs.Models.CSharp.IUsingStatementNamespace.HasAlias
+  - CodeFactory.WinVs.Models.CSharp.IUsingStatementNamespace.Alias
+- uid: CodeFactory.WinVs.Models.CSharp.ICsUsingStatement.AddBeforeAsync(System.String,System.String)
+  commentId: M:CodeFactory.WinVs.Models.CSharp.ICsUsingStatement.AddBeforeAsync(System.String,System.String)
+  id: AddBeforeAsync(System.String,System.String)
+  parent: CodeFactory.WinVs.Models.CSharp.ICsUsingStatement
+  langs:
+  - csharp
+  - vb
+  name: AddBeforeAsync(string, string)
+  nameWithType: ICsUsingStatement.AddBeforeAsync(string, string)
+  fullName: CodeFactory.WinVs.Models.CSharp.ICsUsingStatement.AddBeforeAsync(string, string)
+  type: Method
+  source:
+    href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/19e816ffdf1ba504be6987736bbac42e2d241405/Src/CodeFactoryForWindows/CodeFactory.WinVs/Models/CSharp/ICsUsingStatement.cs
+  assemblies:
+  - CodeFactory.WinVs
+  namespace: CodeFactory.WinVs.Models.CSharp
+  summary: Adds the source code directly before the definition of the <xref href="CodeFactory.WinVs.Models.CSharp.ICsUsingStatement" data-throw-if-not-resolved="false"></xref> in the target document.
+  example: []
+  syntax:
+    content: >-
+      [Obsolete("No longer support will be removed in later edition, you no longer need to pass the source document.", false)]
+
+      Task<CsSource> AddBeforeAsync(string sourceDocument, string sourceCode)
+    parameters:
+    - id: sourceDocument
+      type: System.String
+      description: The fully qualified path to the source code document to be updated.
+    - id: sourceCode
+      type: System.String
+      description: The source code that is to be added to the document.
+    return:
+      type: System.Threading.Tasks.Task{CodeFactory.WinVs.Models.CSharp.CsSource}
+      description: A newly loaded copy of the <xref href="CodeFactory.WinVs.Models.CSharp.ICsSource" data-throw-if-not-resolved="false"></xref> model after the changes have been applied.
+    content.vb: >-
+      <Obsolete("No longer support will be removed in later edition, you no longer need to pass the source document.", False)>
+
+      Function AddBeforeAsync(sourceDocument As String, sourceCode As String) As Task(Of CsSource)
+  overload: CodeFactory.WinVs.Models.CSharp.ICsUsingStatement.AddBeforeAsync*
+  exceptions:
+  - type: CodeFactory.Document.DocumentException
+    commentId: T:CodeFactory.Document.DocumentException
+    description: Error is raised when errors occur updating the source document.
+  attributes:
+  - type: System.ObsoleteAttribute
+    ctor: System.ObsoleteAttribute.#ctor(System.String,System.Boolean)
+    arguments:
+    - type: System.String
+      value: No longer support will be removed in later edition, you no longer need to pass the source document.
+    - type: System.Boolean
+      value: false
+  nameWithType.vb: ICsUsingStatement.AddBeforeAsync(String, String)
+  fullName.vb: CodeFactory.WinVs.Models.CSharp.ICsUsingStatement.AddBeforeAsync(String, String)
+  name.vb: AddBeforeAsync(String, String)
+- uid: CodeFactory.WinVs.Models.CSharp.ICsUsingStatement.AddBeforeAsync(System.String)
+  commentId: M:CodeFactory.WinVs.Models.CSharp.ICsUsingStatement.AddBeforeAsync(System.String)
+  id: AddBeforeAsync(System.String)
+  parent: CodeFactory.WinVs.Models.CSharp.ICsUsingStatement
+  langs:
+  - csharp
+  - vb
+  name: AddBeforeAsync(string)
+  nameWithType: ICsUsingStatement.AddBeforeAsync(string)
+  fullName: CodeFactory.WinVs.Models.CSharp.ICsUsingStatement.AddBeforeAsync(string)
+  type: Method
+  source:
+    href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/19e816ffdf1ba504be6987736bbac42e2d241405/Src/CodeFactoryForWindows/CodeFactory.WinVs/Models/CSharp/ICsUsingStatement.cs
+  assemblies:
+  - CodeFactory.WinVs
+  namespace: CodeFactory.WinVs.Models.CSharp
+  summary: Adds the source code directly before the definition of the <xref href="CodeFactory.WinVs.Models.CSharp.ICsUsingStatement" data-throw-if-not-resolved="false"></xref> in the target document.
+  example: []
+  syntax:
+    content: Task<CsSource> AddBeforeAsync(string sourceCode)
+    parameters:
+    - id: sourceCode
+      type: System.String
+      description: The source code that is to be added to the document.
+    return:
+      type: System.Threading.Tasks.Task{CodeFactory.WinVs.Models.CSharp.CsSource}
+      description: A newly loaded copy of the <xref href="CodeFactory.WinVs.Models.CSharp.ICsSource" data-throw-if-not-resolved="false"></xref> model after the changes have been applied.
+    content.vb: Function AddBeforeAsync(sourceCode As String) As Task(Of CsSource)
+  overload: CodeFactory.WinVs.Models.CSharp.ICsUsingStatement.AddBeforeAsync*
+  exceptions:
+  - type: CodeFactory.Document.DocumentException
+    commentId: T:CodeFactory.Document.DocumentException
+    description: Error is raised when errors occur updating the source document.
+  nameWithType.vb: ICsUsingStatement.AddBeforeAsync(String)
+  fullName.vb: CodeFactory.WinVs.Models.CSharp.ICsUsingStatement.AddBeforeAsync(String)
+  name.vb: AddBeforeAsync(String)
+- uid: CodeFactory.WinVs.Models.CSharp.ICsUsingStatement.AddAfterAsync(System.String,System.String)
+  commentId: M:CodeFactory.WinVs.Models.CSharp.ICsUsingStatement.AddAfterAsync(System.String,System.String)
+  id: AddAfterAsync(System.String,System.String)
+  parent: CodeFactory.WinVs.Models.CSharp.ICsUsingStatement
+  langs:
+  - csharp
+  - vb
+  name: AddAfterAsync(string, string)
+  nameWithType: ICsUsingStatement.AddAfterAsync(string, string)
+  fullName: CodeFactory.WinVs.Models.CSharp.ICsUsingStatement.AddAfterAsync(string, string)
+  type: Method
+  source:
+    href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/19e816ffdf1ba504be6987736bbac42e2d241405/Src/CodeFactoryForWindows/CodeFactory.WinVs/Models/CSharp/ICsUsingStatement.cs
+  assemblies:
+  - CodeFactory.WinVs
+  namespace: CodeFactory.WinVs.Models.CSharp
+  summary: Adds the source code directly after the definition of the <xref href="CodeFactory.WinVs.Models.CSharp.ICsUsingStatement" data-throw-if-not-resolved="false"></xref> in the target document.
+  example: []
+  syntax:
+    content: >-
+      [Obsolete("No longer support will be removed in later edition, you no longer need to pass the source document.", false)]
+
+      Task<CsSource> AddAfterAsync(string sourceDocument, string sourceCode)
+    parameters:
+    - id: sourceDocument
+      type: System.String
+      description: The fully qualified path to the source code document to be updated.
+    - id: sourceCode
+      type: System.String
+      description: The source code that is to be added to the document.
+    return:
+      type: System.Threading.Tasks.Task{CodeFactory.WinVs.Models.CSharp.CsSource}
+      description: A newly loaded copy of the <xref href="CodeFactory.WinVs.Models.CSharp.ICsSource" data-throw-if-not-resolved="false"></xref> model after the changes have been applied.
+    content.vb: >-
+      <Obsolete("No longer support will be removed in later edition, you no longer need to pass the source document.", False)>
+
+      Function AddAfterAsync(sourceDocument As String, sourceCode As String) As Task(Of CsSource)
+  overload: CodeFactory.WinVs.Models.CSharp.ICsUsingStatement.AddAfterAsync*
+  exceptions:
+  - type: CodeFactory.Document.DocumentException
+    commentId: T:CodeFactory.Document.DocumentException
+    description: Error is raised when errors occur updating the source document.
+  attributes:
+  - type: System.ObsoleteAttribute
+    ctor: System.ObsoleteAttribute.#ctor(System.String,System.Boolean)
+    arguments:
+    - type: System.String
+      value: No longer support will be removed in later edition, you no longer need to pass the source document.
+    - type: System.Boolean
+      value: false
+  nameWithType.vb: ICsUsingStatement.AddAfterAsync(String, String)
+  fullName.vb: CodeFactory.WinVs.Models.CSharp.ICsUsingStatement.AddAfterAsync(String, String)
+  name.vb: AddAfterAsync(String, String)
+- uid: CodeFactory.WinVs.Models.CSharp.ICsUsingStatement.AddAfterAsync(System.String)
+  commentId: M:CodeFactory.WinVs.Models.CSharp.ICsUsingStatement.AddAfterAsync(System.String)
+  id: AddAfterAsync(System.String)
+  parent: CodeFactory.WinVs.Models.CSharp.ICsUsingStatement
+  langs:
+  - csharp
+  - vb
+  name: AddAfterAsync(string)
+  nameWithType: ICsUsingStatement.AddAfterAsync(string)
+  fullName: CodeFactory.WinVs.Models.CSharp.ICsUsingStatement.AddAfterAsync(string)
+  type: Method
+  source:
+    href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/19e816ffdf1ba504be6987736bbac42e2d241405/Src/CodeFactoryForWindows/CodeFactory.WinVs/Models/CSharp/ICsUsingStatement.cs
+  assemblies:
+  - CodeFactory.WinVs
+  namespace: CodeFactory.WinVs.Models.CSharp
+  summary: Adds the source code directly after the definition of the <xref href="CodeFactory.WinVs.Models.CSharp.ICsUsingStatement" data-throw-if-not-resolved="false"></xref> in the target document.
+  example: []
+  syntax:
+    content: Task<CsSource> AddAfterAsync(string sourceCode)
+    parameters:
+    - id: sourceCode
+      type: System.String
+      description: The source code that is to be added to the document.
+    return:
+      type: System.Threading.Tasks.Task{CodeFactory.WinVs.Models.CSharp.CsSource}
+      description: A newly loaded copy of the <xref href="CodeFactory.WinVs.Models.CSharp.ICsSource" data-throw-if-not-resolved="false"></xref> model after the changes have been applied.
+    content.vb: Function AddAfterAsync(sourceCode As String) As Task(Of CsSource)
+  overload: CodeFactory.WinVs.Models.CSharp.ICsUsingStatement.AddAfterAsync*
+  exceptions:
+  - type: CodeFactory.Document.DocumentException
+    commentId: T:CodeFactory.Document.DocumentException
+    description: Error is raised when errors occur updating the source document.
+  nameWithType.vb: ICsUsingStatement.AddAfterAsync(String)
+  fullName.vb: CodeFactory.WinVs.Models.CSharp.ICsUsingStatement.AddAfterAsync(String)
+  name.vb: AddAfterAsync(String)
+- uid: CodeFactory.WinVs.Models.CSharp.ICsUsingStatement.DeleteAsync(System.String)
+  commentId: M:CodeFactory.WinVs.Models.CSharp.ICsUsingStatement.DeleteAsync(System.String)
+  id: DeleteAsync(System.String)
+  parent: CodeFactory.WinVs.Models.CSharp.ICsUsingStatement
+  langs:
+  - csharp
+  - vb
+  name: DeleteAsync(string)
+  nameWithType: ICsUsingStatement.DeleteAsync(string)
+  fullName: CodeFactory.WinVs.Models.CSharp.ICsUsingStatement.DeleteAsync(string)
+  type: Method
+  source:
+    href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/19e816ffdf1ba504be6987736bbac42e2d241405/Src/CodeFactoryForWindows/CodeFactory.WinVs/Models/CSharp/ICsUsingStatement.cs
+  assemblies:
+  - CodeFactory.WinVs
+  namespace: CodeFactory.WinVs.Models.CSharp
+  summary: Deletes the definition of the using statement from the source document.
+  example: []
+  syntax:
+    content: >-
+      [Obsolete("No longer support will be removed in later edition, you no longer need to pass the source document.", false)]
+
+      Task<CsSource> DeleteAsync(string sourceDocument)
+    parameters:
+    - id: sourceDocument
+      type: System.String
+      description: The source document that the using statement is to be removed from.
+    return:
+      type: System.Threading.Tasks.Task{CodeFactory.WinVs.Models.CSharp.CsSource}
+      description: A newly loaded copy of the <xref href="CodeFactory.WinVs.Models.CSharp.ICsSource" data-throw-if-not-resolved="false"></xref> model after the using statement has been removed from the document.
+    content.vb: >-
+      <Obsolete("No longer support will be removed in later edition, you no longer need to pass the source document.", False)>
+
+      Function DeleteAsync(sourceDocument As String) As Task(Of CsSource)
+  overload: CodeFactory.WinVs.Models.CSharp.ICsUsingStatement.DeleteAsync*
+  exceptions:
+  - type: CodeFactory.Document.DocumentException
+    commentId: T:CodeFactory.Document.DocumentException
+    description: Error is raised when errors occur updating the source document.
+  attributes:
+  - type: System.ObsoleteAttribute
+    ctor: System.ObsoleteAttribute.#ctor(System.String,System.Boolean)
+    arguments:
+    - type: System.String
+      value: No longer support will be removed in later edition, you no longer need to pass the source document.
+    - type: System.Boolean
+      value: false
+  nameWithType.vb: ICsUsingStatement.DeleteAsync(String)
+  fullName.vb: CodeFactory.WinVs.Models.CSharp.ICsUsingStatement.DeleteAsync(String)
+  name.vb: DeleteAsync(String)
+- uid: CodeFactory.WinVs.Models.CSharp.ICsUsingStatement.DeleteAsync
+  commentId: M:CodeFactory.WinVs.Models.CSharp.ICsUsingStatement.DeleteAsync
+  id: DeleteAsync
+  parent: CodeFactory.WinVs.Models.CSharp.ICsUsingStatement
+  langs:
+  - csharp
+  - vb
+  name: DeleteAsync()
+  nameWithType: ICsUsingStatement.DeleteAsync()
+  fullName: CodeFactory.WinVs.Models.CSharp.ICsUsingStatement.DeleteAsync()
+  type: Method
+  source:
+    href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/19e816ffdf1ba504be6987736bbac42e2d241405/Src/CodeFactoryForWindows/CodeFactory.WinVs/Models/CSharp/ICsUsingStatement.cs
+  assemblies:
+  - CodeFactory.WinVs
+  namespace: CodeFactory.WinVs.Models.CSharp
+  summary: Deletes the definition of the using statement from the source document.
+  example: []
+  syntax:
+    content: Task<CsSource> DeleteAsync()
+    return:
+      type: System.Threading.Tasks.Task{CodeFactory.WinVs.Models.CSharp.CsSource}
+      description: A newly loaded copy of the <xref href="CodeFactory.WinVs.Models.CSharp.ICsSource" data-throw-if-not-resolved="false"></xref> model after the using statement has been removed from the document.
+    content.vb: Function DeleteAsync() As Task(Of CsSource)
+  overload: CodeFactory.WinVs.Models.CSharp.ICsUsingStatement.DeleteAsync*
+  exceptions:
+  - type: CodeFactory.Document.DocumentException
+    commentId: T:CodeFactory.Document.DocumentException
+    description: Error is raised when errors occur updating the source document.
+- uid: CodeFactory.WinVs.Models.CSharp.ICsUsingStatement.GetSourceLocationAsync(System.String)
+  commentId: M:CodeFactory.WinVs.Models.CSharp.ICsUsingStatement.GetSourceLocationAsync(System.String)
+  id: GetSourceLocationAsync(System.String)
+  parent: CodeFactory.WinVs.Models.CSharp.ICsUsingStatement
+  langs:
+  - csharp
+  - vb
+  name: GetSourceLocationAsync(string)
+  nameWithType: ICsUsingStatement.GetSourceLocationAsync(string)
+  fullName: CodeFactory.WinVs.Models.CSharp.ICsUsingStatement.GetSourceLocationAsync(string)
+  type: Method
+  source:
+    href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/19e816ffdf1ba504be6987736bbac42e2d241405/Src/CodeFactoryForWindows/CodeFactory.WinVs/Models/CSharp/ICsUsingStatement.cs
+  assemblies:
+  - CodeFactory.WinVs
+  namespace: CodeFactory.WinVs.Models.CSharp
+  summary: Gets the starting and ending locations within the document where the using statement is located.
+  example: []
+  syntax:
+    content: >-
+      [Obsolete("No longer support will be removed in later edition, you no longer need to pass the source document.", false)]
+
+      Task<ISourceLocation> GetSourceLocationAsync(string sourceDocument)
+    parameters:
+    - id: sourceDocument
+      type: System.String
+      description: The fully qualified path to the document that has the using statement defined in.
+    return:
+      type: System.Threading.Tasks.Task{CodeFactory.SourceCode.ISourceLocation}
+      description: The source location for the using statement.
+    content.vb: >-
+      <Obsolete("No longer support will be removed in later edition, you no longer need to pass the source document.", False)>
+
+      Function GetSourceLocationAsync(sourceDocument As String) As Task(Of ISourceLocation)
+  overload: CodeFactory.WinVs.Models.CSharp.ICsUsingStatement.GetSourceLocationAsync*
+  exceptions:
+  - type: CodeFactory.Document.DocumentException
+    commentId: T:CodeFactory.Document.DocumentException
+    description: Raised when an error occurs getting the location from the document.
+  attributes:
+  - type: System.ObsoleteAttribute
+    ctor: System.ObsoleteAttribute.#ctor(System.String,System.Boolean)
+    arguments:
+    - type: System.String
+      value: No longer support will be removed in later edition, you no longer need to pass the source document.
+    - type: System.Boolean
+      value: false
+  nameWithType.vb: ICsUsingStatement.GetSourceLocationAsync(String)
+  fullName.vb: CodeFactory.WinVs.Models.CSharp.ICsUsingStatement.GetSourceLocationAsync(String)
+  name.vb: GetSourceLocationAsync(String)
+- uid: CodeFactory.WinVs.Models.CSharp.ICsUsingStatement.GetSourceLocationAsync
+  commentId: M:CodeFactory.WinVs.Models.CSharp.ICsUsingStatement.GetSourceLocationAsync
+  id: GetSourceLocationAsync
+  parent: CodeFactory.WinVs.Models.CSharp.ICsUsingStatement
+  langs:
+  - csharp
+  - vb
+  name: GetSourceLocationAsync()
+  nameWithType: ICsUsingStatement.GetSourceLocationAsync()
+  fullName: CodeFactory.WinVs.Models.CSharp.ICsUsingStatement.GetSourceLocationAsync()
+  type: Method
+  source:
+    href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/19e816ffdf1ba504be6987736bbac42e2d241405/Src/CodeFactoryForWindows/CodeFactory.WinVs/Models/CSharp/ICsUsingStatement.cs
+  assemblies:
+  - CodeFactory.WinVs
+  namespace: CodeFactory.WinVs.Models.CSharp
+  summary: Gets the starting and ending locations within the document where the using statement is located.
+  example: []
+  syntax:
+    content: Task<ISourceLocation> GetSourceLocationAsync()
+    return:
+      type: System.Threading.Tasks.Task{CodeFactory.SourceCode.ISourceLocation}
+      description: The source location for the using statement.
+    content.vb: Function GetSourceLocationAsync() As Task(Of ISourceLocation)
+  overload: CodeFactory.WinVs.Models.CSharp.ICsUsingStatement.GetSourceLocationAsync*
+  exceptions:
+  - type: CodeFactory.Document.DocumentException
+    commentId: T:CodeFactory.Document.DocumentException
+    description: Raised when an error occurs getting the location from the document.
+- uid: CodeFactory.WinVs.Models.CSharp.ICsUsingStatement.ReplaceAsync(System.String,System.String)
+  commentId: M:CodeFactory.WinVs.Models.CSharp.ICsUsingStatement.ReplaceAsync(System.String,System.String)
+  id: ReplaceAsync(System.String,System.String)
+  parent: CodeFactory.WinVs.Models.CSharp.ICsUsingStatement
+  langs:
+  - csharp
+  - vb
+  name: ReplaceAsync(string, string)
+  nameWithType: ICsUsingStatement.ReplaceAsync(string, string)
+  fullName: CodeFactory.WinVs.Models.CSharp.ICsUsingStatement.ReplaceAsync(string, string)
+  type: Method
+  source:
+    href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/19e816ffdf1ba504be6987736bbac42e2d241405/Src/CodeFactoryForWindows/CodeFactory.WinVs/Models/CSharp/ICsUsingStatement.cs
+  assemblies:
+  - CodeFactory.WinVs
+  namespace: CodeFactory.WinVs.Models.CSharp
+  summary: Replaces the current using statement with the provided source code.
+  example: []
+  syntax:
+    content: >-
+      [Obsolete("No longer support will be removed in later edition, you no longer need to pass the source document.", false)]
+
+      Task<CsSource> ReplaceAsync(string sourceDocument, string sourceCode)
+    parameters:
+    - id: sourceDocument
+      type: System.String
+      description: The fully qualified path to the source code document to be updated.
+    - id: sourceCode
+      type: System.String
+      description: The source code that is to be used to replace the original definition in the document.
+    return:
+      type: System.Threading.Tasks.Task{CodeFactory.WinVs.Models.CSharp.CsSource}
+      description: A newly loaded copy of the <xref href="CodeFactory.WinVs.Models.CSharp.ICsSource" data-throw-if-not-resolved="false"></xref> model after the changes have been applied.
+    content.vb: >-
+      <Obsolete("No longer support will be removed in later edition, you no longer need to pass the source document.", False)>
+
+      Function ReplaceAsync(sourceDocument As String, sourceCode As String) As Task(Of CsSource)
+  overload: CodeFactory.WinVs.Models.CSharp.ICsUsingStatement.ReplaceAsync*
+  exceptions:
+  - type: CodeFactory.Document.DocumentException
+    commentId: T:CodeFactory.Document.DocumentException
+    description: Error is raised when errors occur updating the source document.
+  attributes:
+  - type: System.ObsoleteAttribute
+    ctor: System.ObsoleteAttribute.#ctor(System.String,System.Boolean)
+    arguments:
+    - type: System.String
+      value: No longer support will be removed in later edition, you no longer need to pass the source document.
+    - type: System.Boolean
+      value: false
+  nameWithType.vb: ICsUsingStatement.ReplaceAsync(String, String)
+  fullName.vb: CodeFactory.WinVs.Models.CSharp.ICsUsingStatement.ReplaceAsync(String, String)
+  name.vb: ReplaceAsync(String, String)
+- uid: CodeFactory.WinVs.Models.CSharp.ICsUsingStatement.ReplaceAsync(System.String)
+  commentId: M:CodeFactory.WinVs.Models.CSharp.ICsUsingStatement.ReplaceAsync(System.String)
+  id: ReplaceAsync(System.String)
+  parent: CodeFactory.WinVs.Models.CSharp.ICsUsingStatement
+  langs:
+  - csharp
+  - vb
+  name: ReplaceAsync(string)
+  nameWithType: ICsUsingStatement.ReplaceAsync(string)
+  fullName: CodeFactory.WinVs.Models.CSharp.ICsUsingStatement.ReplaceAsync(string)
+  type: Method
+  source:
+    href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/19e816ffdf1ba504be6987736bbac42e2d241405/Src/CodeFactoryForWindows/CodeFactory.WinVs/Models/CSharp/ICsUsingStatement.cs
+  assemblies:
+  - CodeFactory.WinVs
+  namespace: CodeFactory.WinVs.Models.CSharp
+  summary: Replaces the current using statement with the provided source code.
+  example: []
+  syntax:
+    content: Task<CsSource> ReplaceAsync(string sourceCode)
+    parameters:
+    - id: sourceCode
+      type: System.String
+      description: The source code that is to be used to replace the original definition in the document.
+    return:
+      type: System.Threading.Tasks.Task{CodeFactory.WinVs.Models.CSharp.CsSource}
+      description: A newly loaded copy of the <xref href="CodeFactory.WinVs.Models.CSharp.ICsSource" data-throw-if-not-resolved="false"></xref> model after the changes have been applied.
+    content.vb: Function ReplaceAsync(sourceCode As String) As Task(Of CsSource)
+  overload: CodeFactory.WinVs.Models.CSharp.ICsUsingStatement.ReplaceAsync*
+  exceptions:
+  - type: CodeFactory.Document.DocumentException
+    commentId: T:CodeFactory.Document.DocumentException
+    description: Error is raised when errors occur updating the source document.
+  nameWithType.vb: ICsUsingStatement.ReplaceAsync(String)
+  fullName.vb: CodeFactory.WinVs.Models.CSharp.ICsUsingStatement.ReplaceAsync(String)
+  name.vb: ReplaceAsync(String)
+references:
+- uid: CodeFactory.WinVs.Models.CSharp
+  commentId: N:CodeFactory.WinVs.Models.CSharp
+  isExternal: true
+  href: CodeFactory.html
+  name: CodeFactory.WinVs.Models.CSharp
+  nameWithType: CodeFactory.WinVs.Models.CSharp
+  fullName: CodeFactory.WinVs.Models.CSharp
+  spec.csharp:
+  - uid: CodeFactory
+    name: CodeFactory
+    isExternal: true
+    href: CodeFactory.html
+  - name: .
+  - uid: CodeFactory.WinVs
+    name: WinVs
+    isExternal: true
+    href: CodeFactory.WinVs.html
+  - name: .
+  - uid: CodeFactory.WinVs.Models
+    name: Models
+    isExternal: true
+    href: CodeFactory.WinVs.Models.html
+  - name: .
+  - uid: CodeFactory.WinVs.Models.CSharp
+    name: CSharp
+    isExternal: true
+    href: CodeFactory.WinVs.Models.CSharp.html
+  spec.vb:
+  - uid: CodeFactory
+    name: CodeFactory
+    isExternal: true
+    href: CodeFactory.html
+  - name: .
+  - uid: CodeFactory.WinVs
+    name: WinVs
+    isExternal: true
+    href: CodeFactory.WinVs.html
+  - name: .
+  - uid: CodeFactory.WinVs.Models
+    name: Models
+    isExternal: true
+    href: CodeFactory.WinVs.Models.html
+  - name: .
+  - uid: CodeFactory.WinVs.Models.CSharp
+    name: CSharp
+    isExternal: true
+    href: CodeFactory.WinVs.Models.CSharp.html
+- uid: CodeFactory.WinVs.Models.CSharp.ICsModel.GetModel``1(System.String)
+  commentId: M:CodeFactory.WinVs.Models.CSharp.ICsModel.GetModel``1(System.String)
+  parent: CodeFactory.WinVs.Models.CSharp.ICsModel
+  isExternal: true
+  href: CodeFactory.WinVs.Models.CSharp.ICsModel.html#CodeFactory_WinVs_Models_CSharp_ICsModel_GetModel__1_System_String_
+  name: GetModel<T>(string)
+  nameWithType: ICsModel.GetModel<T>(string)
+  fullName: CodeFactory.WinVs.Models.CSharp.ICsModel.GetModel<T>(string)
+  nameWithType.vb: ICsModel.GetModel(Of T)(String)
+  fullName.vb: CodeFactory.WinVs.Models.CSharp.ICsModel.GetModel(Of T)(String)
+  name.vb: GetModel(Of T)(String)
+  spec.csharp:
+  - uid: CodeFactory.WinVs.Models.CSharp.ICsModel.GetModel``1(System.String)
+    name: GetModel
+    isExternal: true
+    href: CodeFactory.WinVs.Models.CSharp.ICsModel.html#CodeFactory_WinVs_Models_CSharp_ICsModel_GetModel__1_System_String_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: CodeFactory.WinVs.Models.CSharp.ICsModel.GetModel``1(System.String)
+    name: GetModel
+    isExternal: true
+    href: CodeFactory.WinVs.Models.CSharp.ICsModel.html#CodeFactory_WinVs_Models_CSharp_ICsModel_GetModel__1_System_String_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: CodeFactory.WinVs.Models.CSharp.ICsModel.GetModel(System.String)
+  commentId: M:CodeFactory.WinVs.Models.CSharp.ICsModel.GetModel(System.String)
+  parent: CodeFactory.WinVs.Models.CSharp.ICsModel
+  isExternal: true
+  href: CodeFactory.WinVs.Models.CSharp.ICsModel.html#CodeFactory_WinVs_Models_CSharp_ICsModel_GetModel_System_String_
+  name: GetModel(string)
+  nameWithType: ICsModel.GetModel(string)
+  fullName: CodeFactory.WinVs.Models.CSharp.ICsModel.GetModel(string)
+  nameWithType.vb: ICsModel.GetModel(String)
+  fullName.vb: CodeFactory.WinVs.Models.CSharp.ICsModel.GetModel(String)
+  name.vb: GetModel(String)
+  spec.csharp:
+  - uid: CodeFactory.WinVs.Models.CSharp.ICsModel.GetModel(System.String)
+    name: GetModel
+    isExternal: true
+    href: CodeFactory.WinVs.Models.CSharp.ICsModel.html#CodeFactory_WinVs_Models_CSharp_ICsModel_GetModel_System_String_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: CodeFactory.WinVs.Models.CSharp.ICsModel.GetModel(System.String)
+    name: GetModel
+    isExternal: true
+    href: CodeFactory.WinVs.Models.CSharp.ICsModel.html#CodeFactory_WinVs_Models_CSharp_ICsModel_GetModel_System_String_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: CodeFactory.WinVs.Models.CSharp.ICsModel.LoadedFromSource
+  commentId: P:CodeFactory.WinVs.Models.CSharp.ICsModel.LoadedFromSource
+  parent: CodeFactory.WinVs.Models.CSharp.ICsModel
+  isExternal: true
+  href: CodeFactory.WinVs.Models.CSharp.ICsModel.html#CodeFactory_WinVs_Models_CSharp_ICsModel_LoadedFromSource
+  name: LoadedFromSource
+  nameWithType: ICsModel.LoadedFromSource
+  fullName: CodeFactory.WinVs.Models.CSharp.ICsModel.LoadedFromSource
+- uid: CodeFactory.WinVs.Models.CSharp.ICsModel.Language
+  commentId: P:CodeFactory.WinVs.Models.CSharp.ICsModel.Language
+  parent: CodeFactory.WinVs.Models.CSharp.ICsModel
+  isExternal: true
+  href: CodeFactory.WinVs.Models.CSharp.ICsModel.html#CodeFactory_WinVs_Models_CSharp_ICsModel_Language
+  name: Language
+  nameWithType: ICsModel.Language
+  fullName: CodeFactory.WinVs.Models.CSharp.ICsModel.Language
+- uid: CodeFactory.WinVs.Models.CSharp.ICsModel.ModelType
+  commentId: P:CodeFactory.WinVs.Models.CSharp.ICsModel.ModelType
+  parent: CodeFactory.WinVs.Models.CSharp.ICsModel
+  isExternal: true
+  href: CodeFactory.WinVs.Models.CSharp.ICsModel.html#CodeFactory_WinVs_Models_CSharp_ICsModel_ModelType
+  name: ModelType
+  nameWithType: ICsModel.ModelType
+  fullName: CodeFactory.WinVs.Models.CSharp.ICsModel.ModelType
+- uid: CodeFactory.WinVs.Models.CSharp.ICsModel.SourceDocument
+  commentId: P:CodeFactory.WinVs.Models.CSharp.ICsModel.SourceDocument
+  parent: CodeFactory.WinVs.Models.CSharp.ICsModel
+  isExternal: true
+  href: CodeFactory.WinVs.Models.CSharp.ICsModel.html#CodeFactory_WinVs_Models_CSharp_ICsModel_SourceDocument
+  name: SourceDocument
+  nameWithType: ICsModel.SourceDocument
+  fullName: CodeFactory.WinVs.Models.CSharp.ICsModel.SourceDocument
+- uid: CodeFactory.IModelStatus.GetErrors
+  commentId: M:CodeFactory.IModelStatus.GetErrors
+  parent: CodeFactory.IModelStatus
+  isExternal: true
+  href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/19e816ffdf1ba504be6987736bbac42e2d241405/Src/CodeFactoryForWindows/CodeFactory/IModelStatus.cs
+  name: GetErrors()
+  nameWithType: IModelStatus.GetErrors()
+  fullName: CodeFactory.IModelStatus.GetErrors()
+  spec.csharp:
+  - uid: CodeFactory.IModelStatus.GetErrors
+    name: GetErrors
+    isExternal: true
+    href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/19e816ffdf1ba504be6987736bbac42e2d241405/Src/CodeFactoryForWindows/CodeFactory/IModelStatus.cs
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: CodeFactory.IModelStatus.GetErrors
+    name: GetErrors
+    isExternal: true
+    href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/19e816ffdf1ba504be6987736bbac42e2d241405/Src/CodeFactoryForWindows/CodeFactory/IModelStatus.cs
+  - name: (
+  - name: )
+- uid: CodeFactory.IModelStatus.IsLoaded
+  commentId: P:CodeFactory.IModelStatus.IsLoaded
+  parent: CodeFactory.IModelStatus
+  isExternal: true
+  href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/19e816ffdf1ba504be6987736bbac42e2d241405/Src/CodeFactoryForWindows/CodeFactory/IModelStatus.cs
+  name: IsLoaded
+  nameWithType: IModelStatus.IsLoaded
+  fullName: CodeFactory.IModelStatus.IsLoaded
+- uid: CodeFactory.IModelStatus.HasErrors
+  commentId: P:CodeFactory.IModelStatus.HasErrors
+  parent: CodeFactory.IModelStatus
+  isExternal: true
+  href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/19e816ffdf1ba504be6987736bbac42e2d241405/Src/CodeFactoryForWindows/CodeFactory/IModelStatus.cs
+  name: HasErrors
+  nameWithType: IModelStatus.HasErrors
+  fullName: CodeFactory.IModelStatus.HasErrors
+- uid: CodeFactory.WinVs.Models.CSharp.IParent.Parent
+  commentId: P:CodeFactory.WinVs.Models.CSharp.IParent.Parent
+  parent: CodeFactory.WinVs.Models.CSharp.IParent
+  isExternal: true
+  href: CodeFactory.WinVs.Models.CSharp.IParent.html#CodeFactory_WinVs_Models_CSharp_IParent_Parent
+  name: Parent
+  nameWithType: IParent.Parent
+  fullName: CodeFactory.WinVs.Models.CSharp.IParent.Parent
+- uid: CodeFactory.WinVs.Models.CSharp.ILookup.LookupPath
+  commentId: P:CodeFactory.WinVs.Models.CSharp.ILookup.LookupPath
+  parent: CodeFactory.WinVs.Models.CSharp.ILookup
+  isExternal: true
+  href: CodeFactory.WinVs.Models.CSharp.ILookup.html#CodeFactory_WinVs_Models_CSharp_ILookup_LookupPath
+  name: LookupPath
+  nameWithType: ILookup.LookupPath
+  fullName: CodeFactory.WinVs.Models.CSharp.ILookup.LookupPath
+- uid: CodeFactory.WinVs.Models.CSharp.IUsingStatementNamespace.ReferenceNamespace
+  commentId: P:CodeFactory.WinVs.Models.CSharp.IUsingStatementNamespace.ReferenceNamespace
+  parent: CodeFactory.WinVs.Models.CSharp.IUsingStatementNamespace
+  isExternal: true
+  href: CodeFactory.WinVs.Models.CSharp.IUsingStatementNamespace.html#CodeFactory_WinVs_Models_CSharp_IUsingStatementNamespace_ReferenceNamespace
+  name: ReferenceNamespace
+  nameWithType: IUsingStatementNamespace.ReferenceNamespace
+  fullName: CodeFactory.WinVs.Models.CSharp.IUsingStatementNamespace.ReferenceNamespace
+- uid: CodeFactory.WinVs.Models.CSharp.IUsingStatementNamespace.HasAlias
+  commentId: P:CodeFactory.WinVs.Models.CSharp.IUsingStatementNamespace.HasAlias
+  parent: CodeFactory.WinVs.Models.CSharp.IUsingStatementNamespace
+  isExternal: true
+  href: CodeFactory.WinVs.Models.CSharp.IUsingStatementNamespace.html#CodeFactory_WinVs_Models_CSharp_IUsingStatementNamespace_HasAlias
+  name: HasAlias
+  nameWithType: IUsingStatementNamespace.HasAlias
+  fullName: CodeFactory.WinVs.Models.CSharp.IUsingStatementNamespace.HasAlias
+- uid: CodeFactory.WinVs.Models.CSharp.IUsingStatementNamespace.Alias
+  commentId: P:CodeFactory.WinVs.Models.CSharp.IUsingStatementNamespace.Alias
+  parent: CodeFactory.WinVs.Models.CSharp.IUsingStatementNamespace
+  isExternal: true
+  href: CodeFactory.WinVs.Models.CSharp.IUsingStatementNamespace.html#CodeFactory_WinVs_Models_CSharp_IUsingStatementNamespace_Alias
+  name: Alias
+  nameWithType: IUsingStatementNamespace.Alias
+  fullName: CodeFactory.WinVs.Models.CSharp.IUsingStatementNamespace.Alias
+- uid: CodeFactory.WinVs.Models.CSharp.ICsModel
+  commentId: T:CodeFactory.WinVs.Models.CSharp.ICsModel
+  parent: CodeFactory.WinVs.Models.CSharp
+  isExternal: true
+  href: CodeFactory.WinVs.Models.CSharp.ICsModel.html
+  name: ICsModel
+  nameWithType: ICsModel
+  fullName: CodeFactory.WinVs.Models.CSharp.ICsModel
+- uid: CodeFactory.IModelStatus
+  commentId: T:CodeFactory.IModelStatus
+  parent: CodeFactory
+  isExternal: true
+  href: CodeFactory.IModelStatus.html
+  name: IModelStatus
+  nameWithType: IModelStatus
+  fullName: CodeFactory.IModelStatus
+- uid: CodeFactory.WinVs.Models.CSharp.IParent
+  commentId: T:CodeFactory.WinVs.Models.CSharp.IParent
+  parent: CodeFactory.WinVs.Models.CSharp
+  isExternal: true
+  href: CodeFactory.WinVs.Models.CSharp.IParent.html
+  name: IParent
+  nameWithType: IParent
+  fullName: CodeFactory.WinVs.Models.CSharp.IParent
+- uid: CodeFactory.WinVs.Models.CSharp.ILookup
+  commentId: T:CodeFactory.WinVs.Models.CSharp.ILookup
+  parent: CodeFactory.WinVs.Models.CSharp
+  isExternal: true
+  href: CodeFactory.WinVs.Models.CSharp.ILookup.html
+  name: ILookup
+  nameWithType: ILookup
+  fullName: CodeFactory.WinVs.Models.CSharp.ILookup
+- uid: CodeFactory.WinVs.Models.CSharp.IUsingStatementNamespace
+  commentId: T:CodeFactory.WinVs.Models.CSharp.IUsingStatementNamespace
+  parent: CodeFactory.WinVs.Models.CSharp
+  isExternal: true
+  href: CodeFactory.WinVs.Models.CSharp.IUsingStatementNamespace.html
+  name: IUsingStatementNamespace
+  nameWithType: IUsingStatementNamespace
+  fullName: CodeFactory.WinVs.Models.CSharp.IUsingStatementNamespace
+- uid: CodeFactory
+  commentId: N:CodeFactory
+  isExternal: true
+  href: CodeFactory.html
+  name: CodeFactory
+  nameWithType: CodeFactory
+  fullName: CodeFactory
+- uid: CodeFactory.WinVs.Models.CSharp.ICsUsingStatement
+  commentId: T:CodeFactory.WinVs.Models.CSharp.ICsUsingStatement
+  parent: CodeFactory.WinVs.Models.CSharp
+  isExternal: true
+  href: CodeFactory.WinVs.Models.CSharp.ICsUsingStatement.html
+  name: ICsUsingStatement
+  nameWithType: ICsUsingStatement
+  fullName: CodeFactory.WinVs.Models.CSharp.ICsUsingStatement
+- uid: CodeFactory.WinVs.Models.CSharp.ICsSource
+  commentId: T:CodeFactory.WinVs.Models.CSharp.ICsSource
+  parent: CodeFactory.WinVs.Models.CSharp
+  isExternal: true
+  href: CodeFactory.WinVs.Models.CSharp.ICsSource.html
+  name: ICsSource
+  nameWithType: ICsSource
+  fullName: CodeFactory.WinVs.Models.CSharp.ICsSource
+- uid: CodeFactory.Document.DocumentException
+  commentId: T:CodeFactory.Document.DocumentException
+  isExternal: true
+  href: CodeFactory.Document.DocumentException.html
+  name: DocumentException
+  nameWithType: DocumentException
+  fullName: CodeFactory.Document.DocumentException
+- uid: CodeFactory.WinVs.Models.CSharp.ICsUsingStatement.AddBeforeAsync*
+  commentId: Overload:CodeFactory.WinVs.Models.CSharp.ICsUsingStatement.AddBeforeAsync
+  isExternal: true
+  href: CodeFactory.WinVs.Models.CSharp.ICsUsingStatement.html#CodeFactory_WinVs_Models_CSharp_ICsUsingStatement_AddBeforeAsync_System_String_System_String_
+  name: AddBeforeAsync
+  nameWithType: ICsUsingStatement.AddBeforeAsync
+  fullName: CodeFactory.WinVs.Models.CSharp.ICsUsingStatement.AddBeforeAsync
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Threading.Tasks.Task{CodeFactory.WinVs.Models.CSharp.CsSource}
+  commentId: T:System.Threading.Tasks.Task{CodeFactory.WinVs.Models.CSharp.CsSource}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<CsSource>
+  nameWithType: Task<CsSource>
+  fullName: System.Threading.Tasks.Task<CodeFactory.WinVs.Models.CSharp.CsSource>
+  nameWithType.vb: Task(Of CsSource)
+  fullName.vb: System.Threading.Tasks.Task(Of CodeFactory.WinVs.Models.CSharp.CsSource)
+  name.vb: Task(Of CsSource)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: CodeFactory.WinVs.Models.CSharp.CsSource
+    name: CsSource
+    isExternal: true
+    href: CodeFactory.WinVs.Models.CSharp.CsSource.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: CodeFactory.WinVs.Models.CSharp.CsSource
+    name: CsSource
+    isExternal: true
+    href: CodeFactory.WinVs.Models.CSharp.CsSource.html
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: CodeFactory.WinVs.Models.CSharp.ICsUsingStatement.AddAfterAsync*
+  commentId: Overload:CodeFactory.WinVs.Models.CSharp.ICsUsingStatement.AddAfterAsync
+  isExternal: true
+  href: CodeFactory.WinVs.Models.CSharp.ICsUsingStatement.html#CodeFactory_WinVs_Models_CSharp_ICsUsingStatement_AddAfterAsync_System_String_System_String_
+  name: AddAfterAsync
+  nameWithType: ICsUsingStatement.AddAfterAsync
+  fullName: CodeFactory.WinVs.Models.CSharp.ICsUsingStatement.AddAfterAsync
+- uid: CodeFactory.WinVs.Models.CSharp.ICsUsingStatement.DeleteAsync*
+  commentId: Overload:CodeFactory.WinVs.Models.CSharp.ICsUsingStatement.DeleteAsync
+  isExternal: true
+  href: CodeFactory.WinVs.Models.CSharp.ICsUsingStatement.html#CodeFactory_WinVs_Models_CSharp_ICsUsingStatement_DeleteAsync_System_String_
+  name: DeleteAsync
+  nameWithType: ICsUsingStatement.DeleteAsync
+  fullName: CodeFactory.WinVs.Models.CSharp.ICsUsingStatement.DeleteAsync
+- uid: CodeFactory.WinVs.Models.CSharp.ICsUsingStatement.GetSourceLocationAsync*
+  commentId: Overload:CodeFactory.WinVs.Models.CSharp.ICsUsingStatement.GetSourceLocationAsync
+  isExternal: true
+  href: CodeFactory.WinVs.Models.CSharp.ICsUsingStatement.html#CodeFactory_WinVs_Models_CSharp_ICsUsingStatement_GetSourceLocationAsync_System_String_
+  name: GetSourceLocationAsync
+  nameWithType: ICsUsingStatement.GetSourceLocationAsync
+  fullName: CodeFactory.WinVs.Models.CSharp.ICsUsingStatement.GetSourceLocationAsync
+- uid: System.Threading.Tasks.Task{CodeFactory.SourceCode.ISourceLocation}
+  commentId: T:System.Threading.Tasks.Task{CodeFactory.SourceCode.ISourceLocation}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<ISourceLocation>
+  nameWithType: Task<ISourceLocation>
+  fullName: System.Threading.Tasks.Task<CodeFactory.SourceCode.ISourceLocation>
+  nameWithType.vb: Task(Of ISourceLocation)
+  fullName.vb: System.Threading.Tasks.Task(Of CodeFactory.SourceCode.ISourceLocation)
+  name.vb: Task(Of ISourceLocation)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: CodeFactory.SourceCode.ISourceLocation
+    name: ISourceLocation
+    isExternal: true
+    href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/19e816ffdf1ba504be6987736bbac42e2d241405/Src/CodeFactoryForWindows/CodeFactory/SourceCode/ISourceLocation.cs
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: CodeFactory.SourceCode.ISourceLocation
+    name: ISourceLocation
+    isExternal: true
+    href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/19e816ffdf1ba504be6987736bbac42e2d241405/Src/CodeFactoryForWindows/CodeFactory/SourceCode/ISourceLocation.cs
+  - name: )
+- uid: CodeFactory.WinVs.Models.CSharp.ICsUsingStatement.ReplaceAsync*
+  commentId: Overload:CodeFactory.WinVs.Models.CSharp.ICsUsingStatement.ReplaceAsync
+  isExternal: true
+  href: CodeFactory.WinVs.Models.CSharp.ICsUsingStatement.html#CodeFactory_WinVs_Models_CSharp_ICsUsingStatement_ReplaceAsync_System_String_System_String_
+  name: ReplaceAsync
+  nameWithType: ICsUsingStatement.ReplaceAsync
+  fullName: CodeFactory.WinVs.Models.CSharp.ICsUsingStatement.ReplaceAsync

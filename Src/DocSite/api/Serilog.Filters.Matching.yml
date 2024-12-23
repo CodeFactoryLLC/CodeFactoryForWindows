@@ -1,0 +1,641 @@
+### YamlMime:ManagedReference
+items:
+- uid: Serilog.Filters.Matching
+  commentId: T:Serilog.Filters.Matching
+  id: Matching
+  parent: Serilog.Filters
+  children:
+  - Serilog.Filters.Matching.FromSource(System.String)
+  - Serilog.Filters.Matching.FromSource``1
+  - Serilog.Filters.Matching.WithProperty(System.String)
+  - Serilog.Filters.Matching.WithProperty(System.String,System.Object)
+  - Serilog.Filters.Matching.WithProperty``1(System.String,System.Func{``0,System.Boolean})
+  langs:
+  - csharp
+  - vb
+  name: Matching
+  nameWithType: Matching
+  fullName: Serilog.Filters.Matching
+  type: Class
+  assemblies:
+  - Serilog
+  namespace: Serilog.Filters
+  summary: Predicates applied to log events that can be used
+  example: []
+  syntax:
+    content: public static class Matching
+    content.vb: Public Module Matching
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: Serilog.Filters.Matching.FromSource``1
+  commentId: M:Serilog.Filters.Matching.FromSource``1
+  id: FromSource``1
+  parent: Serilog.Filters.Matching
+  langs:
+  - csharp
+  - vb
+  name: FromSource<TSource>()
+  nameWithType: Matching.FromSource<TSource>()
+  fullName: Serilog.Filters.Matching.FromSource<TSource>()
+  type: Method
+  assemblies:
+  - Serilog
+  namespace: Serilog.Filters
+  summary: Matches events from the specified source type.
+  example: []
+  syntax:
+    content: public static Func<LogEvent, bool> FromSource<TSource>()
+    typeParameters:
+    - id: TSource
+      description: The source type.
+    return:
+      type: System.Func{Serilog.Events.LogEvent,System.Boolean}
+      description: A predicate for matching events.
+    content.vb: Public Shared Function FromSource(Of TSource)() As Func(Of LogEvent, Boolean)
+  overload: Serilog.Filters.Matching.FromSource*
+  nameWithType.vb: Matching.FromSource(Of TSource)()
+  fullName.vb: Serilog.Filters.Matching.FromSource(Of TSource)()
+  name.vb: FromSource(Of TSource)()
+- uid: Serilog.Filters.Matching.FromSource(System.String)
+  commentId: M:Serilog.Filters.Matching.FromSource(System.String)
+  id: FromSource(System.String)
+  parent: Serilog.Filters.Matching
+  langs:
+  - csharp
+  - vb
+  name: FromSource(string)
+  nameWithType: Matching.FromSource(string)
+  fullName: Serilog.Filters.Matching.FromSource(string)
+  type: Method
+  assemblies:
+  - Serilog
+  namespace: Serilog.Filters
+  summary: >-
+    Matches events from the specified source type or namespace and
+
+    nested types or namespaces.
+  example: []
+  syntax:
+    content: public static Func<LogEvent, bool> FromSource(string source)
+    parameters:
+    - id: source
+      type: System.String
+      description: A dotted source type or namespace identifier.
+    return:
+      type: System.Func{Serilog.Events.LogEvent,System.Boolean}
+      description: A function that matches log events emitted by the source.
+    content.vb: Public Shared Function FromSource(source As String) As Func(Of LogEvent, Boolean)
+  overload: Serilog.Filters.Matching.FromSource*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: When <code class="paramref">source</code> is <pre><code class="lang-csharp">null</code></pre>
+  nameWithType.vb: Matching.FromSource(String)
+  fullName.vb: Serilog.Filters.Matching.FromSource(String)
+  name.vb: FromSource(String)
+- uid: Serilog.Filters.Matching.WithProperty(System.String)
+  commentId: M:Serilog.Filters.Matching.WithProperty(System.String)
+  id: WithProperty(System.String)
+  parent: Serilog.Filters.Matching
+  langs:
+  - csharp
+  - vb
+  name: WithProperty(string)
+  nameWithType: Matching.WithProperty(string)
+  fullName: Serilog.Filters.Matching.WithProperty(string)
+  type: Method
+  assemblies:
+  - Serilog
+  namespace: Serilog.Filters
+  summary: >-
+    Matches events with the specified property attached,
+
+    regardless of its value.
+  example: []
+  syntax:
+    content: public static Func<LogEvent, bool> WithProperty(string propertyName)
+    parameters:
+    - id: propertyName
+      type: System.String
+      description: The name of the property to match.
+    return:
+      type: System.Func{Serilog.Events.LogEvent,System.Boolean}
+      description: A predicate for matching events.
+    content.vb: Public Shared Function WithProperty(propertyName As String) As Func(Of LogEvent, Boolean)
+  overload: Serilog.Filters.Matching.WithProperty*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: When <code class="paramref">propertyName</code> is <pre><code class="lang-csharp">null</code></pre>
+  nameWithType.vb: Matching.WithProperty(String)
+  fullName.vb: Serilog.Filters.Matching.WithProperty(String)
+  name.vb: WithProperty(String)
+- uid: Serilog.Filters.Matching.WithProperty(System.String,System.Object)
+  commentId: M:Serilog.Filters.Matching.WithProperty(System.String,System.Object)
+  id: WithProperty(System.String,System.Object)
+  parent: Serilog.Filters.Matching
+  langs:
+  - csharp
+  - vb
+  name: WithProperty(string, object)
+  nameWithType: Matching.WithProperty(string, object)
+  fullName: Serilog.Filters.Matching.WithProperty(string, object)
+  type: Method
+  assemblies:
+  - Serilog
+  namespace: Serilog.Filters
+  summary: Matches events with the specified property value.
+  example: []
+  syntax:
+    content: public static Func<LogEvent, bool> WithProperty(string propertyName, object scalarValue)
+    parameters:
+    - id: propertyName
+      type: System.String
+      description: The name of the property to match.
+    - id: scalarValue
+      type: System.Object
+      description: >-
+        The property value to match; must be a scalar type.
+                    Null is allowed.
+    return:
+      type: System.Func{Serilog.Events.LogEvent,System.Boolean}
+      description: A predicate for matching events.
+    content.vb: Public Shared Function WithProperty(propertyName As String, scalarValue As Object) As Func(Of LogEvent, Boolean)
+  overload: Serilog.Filters.Matching.WithProperty*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: When <code class="paramref">propertyName</code> is <pre><code class="lang-csharp">null</code></pre>
+  nameWithType.vb: Matching.WithProperty(String, Object)
+  fullName.vb: Serilog.Filters.Matching.WithProperty(String, Object)
+  name.vb: WithProperty(String, Object)
+- uid: Serilog.Filters.Matching.WithProperty``1(System.String,System.Func{``0,System.Boolean})
+  commentId: M:Serilog.Filters.Matching.WithProperty``1(System.String,System.Func{``0,System.Boolean})
+  id: WithProperty``1(System.String,System.Func{``0,System.Boolean})
+  parent: Serilog.Filters.Matching
+  langs:
+  - csharp
+  - vb
+  name: WithProperty<TScalar>(string, Func<TScalar, bool>)
+  nameWithType: Matching.WithProperty<TScalar>(string, Func<TScalar, bool>)
+  fullName: Serilog.Filters.Matching.WithProperty<TScalar>(string, System.Func<TScalar, bool>)
+  type: Method
+  assemblies:
+  - Serilog
+  namespace: Serilog.Filters
+  summary: Matches events with the specified property value.
+  example: []
+  syntax:
+    content: public static Func<LogEvent, bool> WithProperty<TScalar>(string propertyName, Func<TScalar, bool> predicate)
+    parameters:
+    - id: propertyName
+      type: System.String
+      description: The name of the property to match.
+    - id: predicate
+      type: System.Func{{TScalar},System.Boolean}
+      description: A predicate for testing
+    typeParameters:
+    - id: TScalar
+      description: The type of scalar values to match.
+    return:
+      type: System.Func{Serilog.Events.LogEvent,System.Boolean}
+      description: A predicate for matching events.
+    content.vb: Public Shared Function WithProperty(Of TScalar)(propertyName As String, predicate As Func(Of TScalar, Boolean)) As Func(Of LogEvent, Boolean)
+  overload: Serilog.Filters.Matching.WithProperty*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: When <code class="paramref">propertyName</code> is <pre><code class="lang-csharp">null</code></pre>
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: When <code class="paramref">predicate</code> is <pre><code class="lang-csharp">null</code></pre>
+  nameWithType.vb: Matching.WithProperty(Of TScalar)(String, Func(Of TScalar, Boolean))
+  fullName.vb: Serilog.Filters.Matching.WithProperty(Of TScalar)(String, System.Func(Of TScalar, Boolean))
+  name.vb: WithProperty(Of TScalar)(String, Func(Of TScalar, Boolean))
+references:
+- uid: Serilog.Filters
+  commentId: N:Serilog.Filters
+  isExternal: true
+  href: Serilog.html
+  name: Serilog.Filters
+  nameWithType: Serilog.Filters
+  fullName: Serilog.Filters
+  spec.csharp:
+  - uid: Serilog
+    name: Serilog
+    isExternal: true
+    href: Serilog.html
+  - name: .
+  - uid: Serilog.Filters
+    name: Filters
+    isExternal: true
+    href: Serilog.Filters.html
+  spec.vb:
+  - uid: Serilog
+    name: Serilog
+    isExternal: true
+    href: Serilog.html
+  - name: .
+  - uid: Serilog.Filters
+    name: Filters
+    isExternal: true
+    href: Serilog.Filters.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Serilog.Filters.Matching.FromSource*
+  commentId: Overload:Serilog.Filters.Matching.FromSource
+  isExternal: true
+  href: Serilog.Filters.Matching.html#Serilog_Filters_Matching_FromSource__1
+  name: FromSource
+  nameWithType: Matching.FromSource
+  fullName: Serilog.Filters.Matching.FromSource
+- uid: System.Func{Serilog.Events.LogEvent,System.Boolean}
+  commentId: T:System.Func{Serilog.Events.LogEvent,System.Boolean}
+  parent: System
+  definition: System.Func`2
+  href: https://learn.microsoft.com/dotnet/api/system.func-2
+  name: Func<LogEvent, bool>
+  nameWithType: Func<LogEvent, bool>
+  fullName: System.Func<Serilog.Events.LogEvent, bool>
+  nameWithType.vb: Func(Of LogEvent, Boolean)
+  fullName.vb: System.Func(Of Serilog.Events.LogEvent, Boolean)
+  name.vb: Func(Of LogEvent, Boolean)
+  spec.csharp:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - uid: Serilog.Events.LogEvent
+    name: LogEvent
+    isExternal: true
+    href: Serilog.Events.LogEvent.html
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Serilog.Events.LogEvent
+    name: LogEvent
+    isExternal: true
+    href: Serilog.Events.LogEvent.html
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: System.Func`2
+  commentId: T:System.Func`2
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.func-2
+  name: Func<T, TResult>
+  nameWithType: Func<T, TResult>
+  fullName: System.Func<T, TResult>
+  nameWithType.vb: Func(Of T, TResult)
+  fullName.vb: System.Func(Of T, TResult)
+  name.vb: Func(Of T, TResult)
+  spec.csharp:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.ArgumentNullException
+  commentId: T:System.ArgumentNullException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.argumentnullexception
+  name: ArgumentNullException
+  nameWithType: ArgumentNullException
+  fullName: System.ArgumentNullException
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Serilog.Filters.Matching.WithProperty*
+  commentId: Overload:Serilog.Filters.Matching.WithProperty
+  isExternal: true
+  href: Serilog.Filters.Matching.html#Serilog_Filters_Matching_WithProperty_System_String_
+  name: WithProperty
+  nameWithType: Matching.WithProperty
+  fullName: Serilog.Filters.Matching.WithProperty
+- uid: System.Func{{TScalar},System.Boolean}
+  commentId: T:System.Func{``0,System.Boolean}
+  parent: System
+  definition: System.Func`2
+  href: https://learn.microsoft.com/dotnet/api/system.func-2
+  name: Func<TScalar, bool>
+  nameWithType: Func<TScalar, bool>
+  fullName: System.Func<TScalar, bool>
+  nameWithType.vb: Func(Of TScalar, Boolean)
+  fullName.vb: System.Func(Of TScalar, Boolean)
+  name.vb: Func(Of TScalar, Boolean)
+  spec.csharp:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - name: TScalar
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TScalar
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )

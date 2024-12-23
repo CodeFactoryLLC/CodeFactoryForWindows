@@ -1,0 +1,612 @@
+### YamlMime:ManagedReference
+items:
+- uid: CodeFactory.WinVs.Models.CSharp.Builder.IBuildManagement
+  commentId: T:CodeFactory.WinVs.Models.CSharp.Builder.IBuildManagement
+  id: IBuildManagement
+  parent: CodeFactory.WinVs.Models.CSharp.Builder
+  children:
+  - CodeFactory.WinVs.Models.CSharp.Builder.IBuildManagement.LoadNamespaceManager
+  - CodeFactory.WinVs.Models.CSharp.Builder.IBuildManagement.MappedNamespaces
+  - CodeFactory.WinVs.Models.CSharp.Builder.IBuildManagement.NamespaceManager
+  - CodeFactory.WinVs.Models.CSharp.Builder.IBuildManagement.UpdateMappedNamespaces(System.Collections.Generic.List{CodeFactory.WinVs.Models.CSharp.MapNamespace})
+  - CodeFactory.WinVs.Models.CSharp.Builder.IBuildManagement.UpdateNamespaceManager(CodeFactory.WinVs.Models.CSharp.NamespaceManager)
+  - CodeFactory.WinVs.Models.CSharp.Builder.IBuildManagement.UsingStatementAddAsync(System.String,System.String)
+  - CodeFactory.WinVs.Models.CSharp.Builder.IBuildManagement.VsActions
+  langs:
+  - csharp
+  - vb
+  name: IBuildManagement
+  nameWithType: IBuildManagement
+  fullName: CodeFactory.WinVs.Models.CSharp.Builder.IBuildManagement
+  type: Interface
+  source:
+    href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/19e816ffdf1ba504be6987736bbac42e2d241405/Src/CodeFactoryForWindows/CodeFactory.WinVs/Models/CSharp/Builder/IBuildManagement.cs
+  assemblies:
+  - CodeFactory.WinVs
+  namespace: CodeFactory.WinVs.Models.CSharp.Builder
+  summary: Definition of core management functionality that is used during build of functionality.
+  example: []
+  syntax:
+    content: public interface IBuildManagement
+    content.vb: Public Interface IBuildManagement
+- uid: CodeFactory.WinVs.Models.CSharp.Builder.IBuildManagement.UpdateMappedNamespaces(System.Collections.Generic.List{CodeFactory.WinVs.Models.CSharp.MapNamespace})
+  commentId: M:CodeFactory.WinVs.Models.CSharp.Builder.IBuildManagement.UpdateMappedNamespaces(System.Collections.Generic.List{CodeFactory.WinVs.Models.CSharp.MapNamespace})
+  id: UpdateMappedNamespaces(System.Collections.Generic.List{CodeFactory.WinVs.Models.CSharp.MapNamespace})
+  parent: CodeFactory.WinVs.Models.CSharp.Builder.IBuildManagement
+  langs:
+  - csharp
+  - vb
+  name: UpdateMappedNamespaces(List<MapNamespace>)
+  nameWithType: IBuildManagement.UpdateMappedNamespaces(List<MapNamespace>)
+  fullName: CodeFactory.WinVs.Models.CSharp.Builder.IBuildManagement.UpdateMappedNamespaces(System.Collections.Generic.List<CodeFactory.WinVs.Models.CSharp.MapNamespace>)
+  type: Method
+  source:
+    href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/19e816ffdf1ba504be6987736bbac42e2d241405/Src/CodeFactoryForWindows/CodeFactory.WinVs/Models/CSharp/Builder/IBuildManagement.cs
+  assemblies:
+  - CodeFactory.WinVs
+  namespace: CodeFactory.WinVs.Models.CSharp.Builder
+  summary: Refreshes the mapped namespaces.
+  example: []
+  syntax:
+    content: void UpdateMappedNamespaces(List<MapNamespace> mappedNamespaces)
+    parameters:
+    - id: mappedNamespaces
+      type: System.Collections.Generic.List{CodeFactory.WinVs.Models.CSharp.MapNamespace}
+      description: the mapped namespaces to add to management.
+    content.vb: Sub UpdateMappedNamespaces(mappedNamespaces As List(Of MapNamespace))
+  overload: CodeFactory.WinVs.Models.CSharp.Builder.IBuildManagement.UpdateMappedNamespaces*
+  nameWithType.vb: IBuildManagement.UpdateMappedNamespaces(List(Of MapNamespace))
+  fullName.vb: CodeFactory.WinVs.Models.CSharp.Builder.IBuildManagement.UpdateMappedNamespaces(System.Collections.Generic.List(Of CodeFactory.WinVs.Models.CSharp.MapNamespace))
+  name.vb: UpdateMappedNamespaces(List(Of MapNamespace))
+- uid: CodeFactory.WinVs.Models.CSharp.Builder.IBuildManagement.UpdateNamespaceManager(CodeFactory.WinVs.Models.CSharp.NamespaceManager)
+  commentId: M:CodeFactory.WinVs.Models.CSharp.Builder.IBuildManagement.UpdateNamespaceManager(CodeFactory.WinVs.Models.CSharp.NamespaceManager)
+  id: UpdateNamespaceManager(CodeFactory.WinVs.Models.CSharp.NamespaceManager)
+  parent: CodeFactory.WinVs.Models.CSharp.Builder.IBuildManagement
+  langs:
+  - csharp
+  - vb
+  name: UpdateNamespaceManager(NamespaceManager)
+  nameWithType: IBuildManagement.UpdateNamespaceManager(NamespaceManager)
+  fullName: CodeFactory.WinVs.Models.CSharp.Builder.IBuildManagement.UpdateNamespaceManager(CodeFactory.WinVs.Models.CSharp.NamespaceManager)
+  type: Method
+  source:
+    href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/19e816ffdf1ba504be6987736bbac42e2d241405/Src/CodeFactoryForWindows/CodeFactory.WinVs/Models/CSharp/Builder/IBuildManagement.cs
+  assemblies:
+  - CodeFactory.WinVs
+  namespace: CodeFactory.WinVs.Models.CSharp.Builder
+  summary: Refreshes the current version of the namespace manager for the sources.
+  example: []
+  syntax:
+    content: void UpdateNamespaceManager(NamespaceManager namespaceManager)
+    parameters:
+    - id: namespaceManager
+      type: CodeFactory.WinVs.Models.CSharp.NamespaceManager
+      description: Updated namespace to register
+    content.vb: Sub UpdateNamespaceManager(namespaceManager As NamespaceManager)
+  overload: CodeFactory.WinVs.Models.CSharp.Builder.IBuildManagement.UpdateNamespaceManager*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: Thrown if the namespace manager is null.
+- uid: CodeFactory.WinVs.Models.CSharp.Builder.IBuildManagement.LoadNamespaceManager
+  commentId: M:CodeFactory.WinVs.Models.CSharp.Builder.IBuildManagement.LoadNamespaceManager
+  id: LoadNamespaceManager
+  parent: CodeFactory.WinVs.Models.CSharp.Builder.IBuildManagement
+  langs:
+  - csharp
+  - vb
+  name: LoadNamespaceManager()
+  nameWithType: IBuildManagement.LoadNamespaceManager()
+  fullName: CodeFactory.WinVs.Models.CSharp.Builder.IBuildManagement.LoadNamespaceManager()
+  type: Method
+  source:
+    href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/19e816ffdf1ba504be6987736bbac42e2d241405/Src/CodeFactoryForWindows/CodeFactory.WinVs/Models/CSharp/Builder/IBuildManagement.cs
+  assemblies:
+  - CodeFactory.WinVs
+  namespace: CodeFactory.WinVs.Models.CSharp.Builder
+  summary: Loads a new instance of a <xref href="CodeFactory.WinVs.Models.CSharp.Builder.IBuildManagement.NamespaceManager" data-throw-if-not-resolved="false"></xref> from the current source and assigns it to the <xref href="CodeFactory.WinVs.Models.CSharp.Builder.IBuildManagement.NamespaceManager" data-throw-if-not-resolved="false"></xref> property.
+  example: []
+  syntax:
+    content: void LoadNamespaceManager()
+    content.vb: Sub LoadNamespaceManager()
+  overload: CodeFactory.WinVs.Models.CSharp.Builder.IBuildManagement.LoadNamespaceManager*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: Thrown if either the source is null.
+- uid: CodeFactory.WinVs.Models.CSharp.Builder.IBuildManagement.UsingStatementAddAsync(System.String,System.String)
+  commentId: M:CodeFactory.WinVs.Models.CSharp.Builder.IBuildManagement.UsingStatementAddAsync(System.String,System.String)
+  id: UsingStatementAddAsync(System.String,System.String)
+  parent: CodeFactory.WinVs.Models.CSharp.Builder.IBuildManagement
+  langs:
+  - csharp
+  - vb
+  name: UsingStatementAddAsync(string, string)
+  nameWithType: IBuildManagement.UsingStatementAddAsync(string, string)
+  fullName: CodeFactory.WinVs.Models.CSharp.Builder.IBuildManagement.UsingStatementAddAsync(string, string)
+  type: Method
+  source:
+    href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/19e816ffdf1ba504be6987736bbac42e2d241405/Src/CodeFactoryForWindows/CodeFactory.WinVs/Models/CSharp/Builder/IBuildManagement.cs
+  assemblies:
+  - CodeFactory.WinVs
+  namespace: CodeFactory.WinVs.Models.CSharp.Builder
+  summary: Creates a new using statement in the source if the using statement does not exist. It will also reload the namespace manager and update it.
+  example: []
+  syntax:
+    content: Task UsingStatementAddAsync(string nameSpace, string alias = null)
+    parameters:
+    - id: nameSpace
+      type: System.String
+      description: Namespace to add to the source file.
+    - id: alias
+      type: System.String
+      description: Optional parameter to assign a alias to the using statement.
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Function UsingStatementAddAsync([nameSpace] As String, [alias] As String = Nothing) As Task
+  overload: CodeFactory.WinVs.Models.CSharp.Builder.IBuildManagement.UsingStatementAddAsync*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: Thrown if either the source is null.
+  nameWithType.vb: IBuildManagement.UsingStatementAddAsync(String, String)
+  fullName.vb: CodeFactory.WinVs.Models.CSharp.Builder.IBuildManagement.UsingStatementAddAsync(String, String)
+  name.vb: UsingStatementAddAsync(String, String)
+- uid: CodeFactory.WinVs.Models.CSharp.Builder.IBuildManagement.VsActions
+  commentId: P:CodeFactory.WinVs.Models.CSharp.Builder.IBuildManagement.VsActions
+  id: VsActions
+  parent: CodeFactory.WinVs.Models.CSharp.Builder.IBuildManagement
+  langs:
+  - csharp
+  - vb
+  name: VsActions
+  nameWithType: IBuildManagement.VsActions
+  fullName: CodeFactory.WinVs.Models.CSharp.Builder.IBuildManagement.VsActions
+  type: Property
+  source:
+    href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/19e816ffdf1ba504be6987736bbac42e2d241405/Src/CodeFactoryForWindows/CodeFactory.WinVs/Models/CSharp/Builder/IBuildManagement.cs
+  assemblies:
+  - CodeFactory.WinVs
+  namespace: CodeFactory.WinVs.Models.CSharp.Builder
+  summary: The code factory actions for visual studio to be used with updates to the source.
+  example: []
+  syntax:
+    content: IVsActions VsActions { get; }
+    parameters: []
+    return:
+      type: CodeFactory.WinVs.IVsActions
+    content.vb: ReadOnly Property VsActions As IVsActions
+  overload: CodeFactory.WinVs.Models.CSharp.Builder.IBuildManagement.VsActions*
+- uid: CodeFactory.WinVs.Models.CSharp.Builder.IBuildManagement.NamespaceManager
+  commentId: P:CodeFactory.WinVs.Models.CSharp.Builder.IBuildManagement.NamespaceManager
+  id: NamespaceManager
+  parent: CodeFactory.WinVs.Models.CSharp.Builder.IBuildManagement
+  langs:
+  - csharp
+  - vb
+  name: NamespaceManager
+  nameWithType: IBuildManagement.NamespaceManager
+  fullName: CodeFactory.WinVs.Models.CSharp.Builder.IBuildManagement.NamespaceManager
+  type: Property
+  source:
+    href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/19e816ffdf1ba504be6987736bbac42e2d241405/Src/CodeFactoryForWindows/CodeFactory.WinVs/Models/CSharp/Builder/IBuildManagement.cs
+  assemblies:
+  - CodeFactory.WinVs
+  namespace: CodeFactory.WinVs.Models.CSharp.Builder
+  summary: The namespace manager that is used for updating source.
+  example: []
+  syntax:
+    content: NamespaceManager NamespaceManager { get; }
+    parameters: []
+    return:
+      type: CodeFactory.WinVs.Models.CSharp.NamespaceManager
+    content.vb: ReadOnly Property NamespaceManager As NamespaceManager
+  overload: CodeFactory.WinVs.Models.CSharp.Builder.IBuildManagement.NamespaceManager*
+- uid: CodeFactory.WinVs.Models.CSharp.Builder.IBuildManagement.MappedNamespaces
+  commentId: P:CodeFactory.WinVs.Models.CSharp.Builder.IBuildManagement.MappedNamespaces
+  id: MappedNamespaces
+  parent: CodeFactory.WinVs.Models.CSharp.Builder.IBuildManagement
+  langs:
+  - csharp
+  - vb
+  name: MappedNamespaces
+  nameWithType: IBuildManagement.MappedNamespaces
+  fullName: CodeFactory.WinVs.Models.CSharp.Builder.IBuildManagement.MappedNamespaces
+  type: Property
+  source:
+    href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/19e816ffdf1ba504be6987736bbac42e2d241405/Src/CodeFactoryForWindows/CodeFactory.WinVs/Models/CSharp/Builder/IBuildManagement.cs
+  assemblies:
+  - CodeFactory.WinVs
+  namespace: CodeFactory.WinVs.Models.CSharp.Builder
+  summary: Mapped namespaces used for model moving from a source to a new target.
+  example: []
+  syntax:
+    content: List<MapNamespace> MappedNamespaces { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.List{CodeFactory.WinVs.Models.CSharp.MapNamespace}
+    content.vb: ReadOnly Property MappedNamespaces As List(Of MapNamespace)
+  overload: CodeFactory.WinVs.Models.CSharp.Builder.IBuildManagement.MappedNamespaces*
+references:
+- uid: CodeFactory.WinVs.Models.CSharp.Builder
+  commentId: N:CodeFactory.WinVs.Models.CSharp.Builder
+  isExternal: true
+  href: CodeFactory.html
+  name: CodeFactory.WinVs.Models.CSharp.Builder
+  nameWithType: CodeFactory.WinVs.Models.CSharp.Builder
+  fullName: CodeFactory.WinVs.Models.CSharp.Builder
+  spec.csharp:
+  - uid: CodeFactory
+    name: CodeFactory
+    isExternal: true
+    href: CodeFactory.html
+  - name: .
+  - uid: CodeFactory.WinVs
+    name: WinVs
+    isExternal: true
+    href: CodeFactory.WinVs.html
+  - name: .
+  - uid: CodeFactory.WinVs.Models
+    name: Models
+    isExternal: true
+    href: CodeFactory.WinVs.Models.html
+  - name: .
+  - uid: CodeFactory.WinVs.Models.CSharp
+    name: CSharp
+    isExternal: true
+    href: CodeFactory.WinVs.Models.CSharp.html
+  - name: .
+  - uid: CodeFactory.WinVs.Models.CSharp.Builder
+    name: Builder
+    isExternal: true
+    href: CodeFactory.WinVs.Models.CSharp.Builder.html
+  spec.vb:
+  - uid: CodeFactory
+    name: CodeFactory
+    isExternal: true
+    href: CodeFactory.html
+  - name: .
+  - uid: CodeFactory.WinVs
+    name: WinVs
+    isExternal: true
+    href: CodeFactory.WinVs.html
+  - name: .
+  - uid: CodeFactory.WinVs.Models
+    name: Models
+    isExternal: true
+    href: CodeFactory.WinVs.Models.html
+  - name: .
+  - uid: CodeFactory.WinVs.Models.CSharp
+    name: CSharp
+    isExternal: true
+    href: CodeFactory.WinVs.Models.CSharp.html
+  - name: .
+  - uid: CodeFactory.WinVs.Models.CSharp.Builder
+    name: Builder
+    isExternal: true
+    href: CodeFactory.WinVs.Models.CSharp.Builder.html
+- uid: CodeFactory.WinVs.Models.CSharp.Builder.IBuildManagement.UpdateMappedNamespaces*
+  commentId: Overload:CodeFactory.WinVs.Models.CSharp.Builder.IBuildManagement.UpdateMappedNamespaces
+  isExternal: true
+  href: CodeFactory.WinVs.Models.CSharp.Builder.IBuildManagement.html#CodeFactory_WinVs_Models_CSharp_Builder_IBuildManagement_UpdateMappedNamespaces_System_Collections_Generic_List_CodeFactory_WinVs_Models_CSharp_MapNamespace__
+  name: UpdateMappedNamespaces
+  nameWithType: IBuildManagement.UpdateMappedNamespaces
+  fullName: CodeFactory.WinVs.Models.CSharp.Builder.IBuildManagement.UpdateMappedNamespaces
+- uid: System.Collections.Generic.List{CodeFactory.WinVs.Models.CSharp.MapNamespace}
+  commentId: T:System.Collections.Generic.List{CodeFactory.WinVs.Models.CSharp.MapNamespace}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<MapNamespace>
+  nameWithType: List<MapNamespace>
+  fullName: System.Collections.Generic.List<CodeFactory.WinVs.Models.CSharp.MapNamespace>
+  nameWithType.vb: List(Of MapNamespace)
+  fullName.vb: System.Collections.Generic.List(Of CodeFactory.WinVs.Models.CSharp.MapNamespace)
+  name.vb: List(Of MapNamespace)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: CodeFactory.WinVs.Models.CSharp.MapNamespace
+    name: MapNamespace
+    isExternal: true
+    href: CodeFactory.WinVs.Models.CSharp.MapNamespace.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: CodeFactory.WinVs.Models.CSharp.MapNamespace
+    name: MapNamespace
+    isExternal: true
+    href: CodeFactory.WinVs.Models.CSharp.MapNamespace.html
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: System.ArgumentNullException
+  commentId: T:System.ArgumentNullException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.argumentnullexception
+  name: ArgumentNullException
+  nameWithType: ArgumentNullException
+  fullName: System.ArgumentNullException
+- uid: CodeFactory.WinVs.Models.CSharp.Builder.IBuildManagement.UpdateNamespaceManager*
+  commentId: Overload:CodeFactory.WinVs.Models.CSharp.Builder.IBuildManagement.UpdateNamespaceManager
+  isExternal: true
+  href: CodeFactory.WinVs.Models.CSharp.Builder.IBuildManagement.html#CodeFactory_WinVs_Models_CSharp_Builder_IBuildManagement_UpdateNamespaceManager_CodeFactory_WinVs_Models_CSharp_NamespaceManager_
+  name: UpdateNamespaceManager
+  nameWithType: IBuildManagement.UpdateNamespaceManager
+  fullName: CodeFactory.WinVs.Models.CSharp.Builder.IBuildManagement.UpdateNamespaceManager
+- uid: CodeFactory.WinVs.Models.CSharp.NamespaceManager
+  commentId: T:CodeFactory.WinVs.Models.CSharp.NamespaceManager
+  parent: CodeFactory.WinVs.Models.CSharp
+  isExternal: true
+  href: CodeFactory.WinVs.Models.CSharp.NamespaceManager.html
+  name: NamespaceManager
+  nameWithType: NamespaceManager
+  fullName: CodeFactory.WinVs.Models.CSharp.NamespaceManager
+- uid: CodeFactory.WinVs.Models.CSharp
+  commentId: N:CodeFactory.WinVs.Models.CSharp
+  isExternal: true
+  href: CodeFactory.html
+  name: CodeFactory.WinVs.Models.CSharp
+  nameWithType: CodeFactory.WinVs.Models.CSharp
+  fullName: CodeFactory.WinVs.Models.CSharp
+  spec.csharp:
+  - uid: CodeFactory
+    name: CodeFactory
+    isExternal: true
+    href: CodeFactory.html
+  - name: .
+  - uid: CodeFactory.WinVs
+    name: WinVs
+    isExternal: true
+    href: CodeFactory.WinVs.html
+  - name: .
+  - uid: CodeFactory.WinVs.Models
+    name: Models
+    isExternal: true
+    href: CodeFactory.WinVs.Models.html
+  - name: .
+  - uid: CodeFactory.WinVs.Models.CSharp
+    name: CSharp
+    isExternal: true
+    href: CodeFactory.WinVs.Models.CSharp.html
+  spec.vb:
+  - uid: CodeFactory
+    name: CodeFactory
+    isExternal: true
+    href: CodeFactory.html
+  - name: .
+  - uid: CodeFactory.WinVs
+    name: WinVs
+    isExternal: true
+    href: CodeFactory.WinVs.html
+  - name: .
+  - uid: CodeFactory.WinVs.Models
+    name: Models
+    isExternal: true
+    href: CodeFactory.WinVs.Models.html
+  - name: .
+  - uid: CodeFactory.WinVs.Models.CSharp
+    name: CSharp
+    isExternal: true
+    href: CodeFactory.WinVs.Models.CSharp.html
+- uid: CodeFactory.WinVs.Models.CSharp.Builder.IBuildManagement.NamespaceManager
+  commentId: P:CodeFactory.WinVs.Models.CSharp.Builder.IBuildManagement.NamespaceManager
+  parent: CodeFactory.WinVs.Models.CSharp.Builder.IBuildManagement
+  isExternal: true
+  href: CodeFactory.WinVs.Models.CSharp.Builder.IBuildManagement.html#CodeFactory_WinVs_Models_CSharp_Builder_IBuildManagement_NamespaceManager
+  name: NamespaceManager
+  nameWithType: IBuildManagement.NamespaceManager
+  fullName: CodeFactory.WinVs.Models.CSharp.Builder.IBuildManagement.NamespaceManager
+- uid: CodeFactory.WinVs.Models.CSharp.Builder.IBuildManagement.LoadNamespaceManager*
+  commentId: Overload:CodeFactory.WinVs.Models.CSharp.Builder.IBuildManagement.LoadNamespaceManager
+  isExternal: true
+  href: CodeFactory.WinVs.Models.CSharp.Builder.IBuildManagement.html#CodeFactory_WinVs_Models_CSharp_Builder_IBuildManagement_LoadNamespaceManager
+  name: LoadNamespaceManager
+  nameWithType: IBuildManagement.LoadNamespaceManager
+  fullName: CodeFactory.WinVs.Models.CSharp.Builder.IBuildManagement.LoadNamespaceManager
+- uid: CodeFactory.WinVs.Models.CSharp.Builder.IBuildManagement
+  commentId: T:CodeFactory.WinVs.Models.CSharp.Builder.IBuildManagement
+  parent: CodeFactory.WinVs.Models.CSharp.Builder
+  isExternal: true
+  href: CodeFactory.WinVs.Models.CSharp.Builder.IBuildManagement.html
+  name: IBuildManagement
+  nameWithType: IBuildManagement
+  fullName: CodeFactory.WinVs.Models.CSharp.Builder.IBuildManagement
+- uid: CodeFactory.WinVs.Models.CSharp.Builder.IBuildManagement.UsingStatementAddAsync*
+  commentId: Overload:CodeFactory.WinVs.Models.CSharp.Builder.IBuildManagement.UsingStatementAddAsync
+  isExternal: true
+  href: CodeFactory.WinVs.Models.CSharp.Builder.IBuildManagement.html#CodeFactory_WinVs_Models_CSharp_Builder_IBuildManagement_UsingStatementAddAsync_System_String_System_String_
+  name: UsingStatementAddAsync
+  nameWithType: IBuildManagement.UsingStatementAddAsync
+  fullName: CodeFactory.WinVs.Models.CSharp.Builder.IBuildManagement.UsingStatementAddAsync
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: CodeFactory.WinVs.Models.CSharp.Builder.IBuildManagement.VsActions*
+  commentId: Overload:CodeFactory.WinVs.Models.CSharp.Builder.IBuildManagement.VsActions
+  isExternal: true
+  href: CodeFactory.WinVs.Models.CSharp.Builder.IBuildManagement.html#CodeFactory_WinVs_Models_CSharp_Builder_IBuildManagement_VsActions
+  name: VsActions
+  nameWithType: IBuildManagement.VsActions
+  fullName: CodeFactory.WinVs.Models.CSharp.Builder.IBuildManagement.VsActions
+- uid: CodeFactory.WinVs.IVsActions
+  commentId: T:CodeFactory.WinVs.IVsActions
+  parent: CodeFactory.WinVs
+  isExternal: true
+  href: CodeFactory.WinVs.IVsActions.html
+  name: IVsActions
+  nameWithType: IVsActions
+  fullName: CodeFactory.WinVs.IVsActions
+- uid: CodeFactory.WinVs
+  commentId: N:CodeFactory.WinVs
+  isExternal: true
+  href: CodeFactory.html
+  name: CodeFactory.WinVs
+  nameWithType: CodeFactory.WinVs
+  fullName: CodeFactory.WinVs
+  spec.csharp:
+  - uid: CodeFactory
+    name: CodeFactory
+    isExternal: true
+    href: CodeFactory.html
+  - name: .
+  - uid: CodeFactory.WinVs
+    name: WinVs
+    isExternal: true
+    href: CodeFactory.WinVs.html
+  spec.vb:
+  - uid: CodeFactory
+    name: CodeFactory
+    isExternal: true
+    href: CodeFactory.html
+  - name: .
+  - uid: CodeFactory.WinVs
+    name: WinVs
+    isExternal: true
+    href: CodeFactory.WinVs.html
+- uid: CodeFactory.WinVs.Models.CSharp.Builder.IBuildManagement.NamespaceManager*
+  commentId: Overload:CodeFactory.WinVs.Models.CSharp.Builder.IBuildManagement.NamespaceManager
+  isExternal: true
+  href: CodeFactory.WinVs.Models.CSharp.Builder.IBuildManagement.html#CodeFactory_WinVs_Models_CSharp_Builder_IBuildManagement_NamespaceManager
+  name: NamespaceManager
+  nameWithType: IBuildManagement.NamespaceManager
+  fullName: CodeFactory.WinVs.Models.CSharp.Builder.IBuildManagement.NamespaceManager
+- uid: CodeFactory.WinVs.Models.CSharp.Builder.IBuildManagement.MappedNamespaces*
+  commentId: Overload:CodeFactory.WinVs.Models.CSharp.Builder.IBuildManagement.MappedNamespaces
+  isExternal: true
+  href: CodeFactory.WinVs.Models.CSharp.Builder.IBuildManagement.html#CodeFactory_WinVs_Models_CSharp_Builder_IBuildManagement_MappedNamespaces
+  name: MappedNamespaces
+  nameWithType: IBuildManagement.MappedNamespaces
+  fullName: CodeFactory.WinVs.Models.CSharp.Builder.IBuildManagement.MappedNamespaces

@@ -1,0 +1,113 @@
+### YamlMime:ManagedReference
+items:
+- uid: MessagePack.MessagePackCompression
+  commentId: T:MessagePack.MessagePackCompression
+  id: MessagePackCompression
+  parent: MessagePack
+  children:
+  - MessagePack.MessagePackCompression.Lz4Block
+  - MessagePack.MessagePackCompression.Lz4BlockArray
+  - MessagePack.MessagePackCompression.None
+  langs:
+  - csharp
+  - vb
+  name: MessagePackCompression
+  nameWithType: MessagePackCompression
+  fullName: MessagePack.MessagePackCompression
+  type: Enum
+  assemblies:
+  - MessagePack
+  namespace: MessagePack
+  summary: Identifies the various compression schemes which might be applied at the msgpack level.
+  example: []
+  syntax:
+    content: public enum MessagePackCompression
+    content.vb: Public Enum MessagePackCompression
+- uid: MessagePack.MessagePackCompression.None
+  commentId: F:MessagePack.MessagePackCompression.None
+  id: None
+  parent: MessagePack.MessagePackCompression
+  langs:
+  - csharp
+  - vb
+  name: None
+  nameWithType: MessagePackCompression.None
+  fullName: MessagePack.MessagePackCompression.None
+  type: Field
+  assemblies:
+  - MessagePack
+  namespace: MessagePack
+  summary: No compression is applied at the msgpack level.
+  example: []
+  syntax:
+    content: None = 0
+    return:
+      type: MessagePack.MessagePackCompression
+- uid: MessagePack.MessagePackCompression.Lz4Block
+  commentId: F:MessagePack.MessagePackCompression.Lz4Block
+  id: Lz4Block
+  parent: MessagePack.MessagePackCompression
+  langs:
+  - csharp
+  - vb
+  name: Lz4Block
+  nameWithType: MessagePackCompression.Lz4Block
+  fullName: MessagePack.MessagePackCompression.Lz4Block
+  type: Field
+  assemblies:
+  - MessagePack
+  namespace: MessagePack
+  summary: >-
+    Compresses an entire msgpack sequence as a single lz4 block format.
+
+    This is the simple compression that achieves best compression ratio,
+
+    at the cost of copying the entire sequence when necessary to get contiguous memory.
+  remarks: Uses msgpack type code ext99 and is compatible with v1 of this library.
+  example: []
+  syntax:
+    content: Lz4Block = 1
+    return:
+      type: MessagePack.MessagePackCompression
+- uid: MessagePack.MessagePackCompression.Lz4BlockArray
+  commentId: F:MessagePack.MessagePackCompression.Lz4BlockArray
+  id: Lz4BlockArray
+  parent: MessagePack.MessagePackCompression
+  langs:
+  - csharp
+  - vb
+  name: Lz4BlockArray
+  nameWithType: MessagePackCompression.Lz4BlockArray
+  fullName: MessagePack.MessagePackCompression.Lz4BlockArray
+  type: Field
+  assemblies:
+  - MessagePack
+  namespace: MessagePack
+  summary: >-
+    Compresses an entire msgpack sequence as a array of lz4 block format.
+
+    This is compressed/decompressed in chunks that do not consume LOH,
+
+    but the compression ratio is slightly sacrificed.
+  remarks: Uses msgpack type code ext98 in array.
+  example: []
+  syntax:
+    content: Lz4BlockArray = 2
+    return:
+      type: MessagePack.MessagePackCompression
+references:
+- uid: MessagePack
+  commentId: N:MessagePack
+  isExternal: true
+  href: MessagePack.html
+  name: MessagePack
+  nameWithType: MessagePack
+  fullName: MessagePack
+- uid: MessagePack.MessagePackCompression
+  commentId: T:MessagePack.MessagePackCompression
+  parent: MessagePack
+  isExternal: true
+  href: MessagePack.MessagePackCompression.html
+  name: MessagePackCompression
+  nameWithType: MessagePackCompression
+  fullName: MessagePack.MessagePackCompression

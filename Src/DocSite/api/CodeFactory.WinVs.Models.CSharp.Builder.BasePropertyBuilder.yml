@@ -1,0 +1,1887 @@
+### YamlMime:ManagedReference
+items:
+- uid: CodeFactory.WinVs.Models.CSharp.Builder.BasePropertyBuilder
+  commentId: T:CodeFactory.WinVs.Models.CSharp.Builder.BasePropertyBuilder
+  id: BasePropertyBuilder
+  parent: CodeFactory.WinVs.Models.CSharp.Builder
+  children:
+  - CodeFactory.WinVs.Models.CSharp.Builder.BasePropertyBuilder.#ctor(CodeFactory.WinVs.Models.CSharp.Builder.ILoggerBlock,CodeFactory.WinVs.Models.CSharp.Builder.ITryBlock)
+  - CodeFactory.WinVs.Models.CSharp.Builder.BasePropertyBuilder.BuildPropertyAsync(CodeFactory.WinVs.Models.CSharp.CsProperty,CodeFactory.WinVs.Models.CSharp.Builder.ISourceManager,System.Int32,System.String,CodeFactory.WinVs.Models.CSharp.CsSecurity,System.Boolean,System.Collections.Generic.IEnumerable{System.String},System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,Microsoft.Extensions.Logging.LogLevel,System.Boolean,CodeFactory.WinVs.Models.CSharp.CsSecurity,System.Boolean,CodeFactory.WinVs.Models.CSharp.CsSecurity,System.String,System.Collections.Generic.IEnumerable{CodeFactory.WinVs.Models.CSharp.Builder.NamedSyntax},CodeFactory.WinVs.Models.CSharp.Builder.NameFormatting)
+  - CodeFactory.WinVs.Models.CSharp.Builder.BasePropertyBuilder.BuilderType
+  - CodeFactory.WinVs.Models.CSharp.Builder.BasePropertyBuilder.GenerateBuildPropertyAsync(CodeFactory.WinVs.Models.CSharp.CsProperty,CodeFactory.WinVs.Models.CSharp.Builder.ISourceManager,System.Int32,System.String,CodeFactory.WinVs.Models.CSharp.CsSecurity,System.Boolean,System.Collections.Generic.IEnumerable{System.String},System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,Microsoft.Extensions.Logging.LogLevel,System.Boolean,CodeFactory.WinVs.Models.CSharp.CsSecurity,System.Boolean,CodeFactory.WinVs.Models.CSharp.CsSecurity,System.String,System.Collections.Generic.IEnumerable{CodeFactory.WinVs.Models.CSharp.Builder.NamedSyntax},CodeFactory.WinVs.Models.CSharp.Builder.NameFormatting)
+  - CodeFactory.WinVs.Models.CSharp.Builder.BasePropertyBuilder.InjectPropertyAsync(CodeFactory.WinVs.Models.CSharp.CsProperty,CodeFactory.WinVs.Models.CSharp.Builder.ISourceManager,System.Int32,CodeFactory.WinVs.Models.CSharp.Builder.InjectionLocation,System.String,CodeFactory.WinVs.Models.CSharp.CsSecurity,System.Boolean,System.Collections.Generic.IEnumerable{System.String},System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,Microsoft.Extensions.Logging.LogLevel,System.Boolean,CodeFactory.WinVs.Models.CSharp.CsSecurity,System.Boolean,CodeFactory.WinVs.Models.CSharp.CsSecurity,System.String,System.Collections.Generic.IEnumerable{CodeFactory.WinVs.Models.CSharp.Builder.NamedSyntax},CodeFactory.WinVs.Models.CSharp.Builder.NameFormatting)
+  - CodeFactory.WinVs.Models.CSharp.Builder.BasePropertyBuilder.LoggerBlock
+  - CodeFactory.WinVs.Models.CSharp.Builder.BasePropertyBuilder.TryBlock
+  langs:
+  - csharp
+  - vb
+  name: BasePropertyBuilder
+  nameWithType: BasePropertyBuilder
+  fullName: CodeFactory.WinVs.Models.CSharp.Builder.BasePropertyBuilder
+  type: Class
+  source:
+    href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/19e816ffdf1ba504be6987736bbac42e2d241405/Src/CodeFactoryForWindows/CodeFactory.WinVs/Models/CSharp/Builder/BasePropertyBuilder.cs
+  assemblies:
+  - CodeFactory.WinVs
+  namespace: CodeFactory.WinVs.Models.CSharp.Builder
+  summary: Base class implementation for all property builders.
+  example: []
+  syntax:
+    content: 'public abstract class BasePropertyBuilder : IPropertyBuilder, IBuilder'
+    content.vb: Public MustInherit Class BasePropertyBuilder Implements IPropertyBuilder, IBuilder
+  inheritance:
+  - System.Object
+  derivedClasses:
+  - CodeFactory.WinVs.Models.CSharp.Builder.PropertyBuilderStandard
+  implements:
+  - CodeFactory.WinVs.Models.CSharp.Builder.IPropertyBuilder
+  - CodeFactory.WinVs.Models.CSharp.Builder.IBuilder
+  inheritedMembers:
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+- uid: CodeFactory.WinVs.Models.CSharp.Builder.BasePropertyBuilder.#ctor(CodeFactory.WinVs.Models.CSharp.Builder.ILoggerBlock,CodeFactory.WinVs.Models.CSharp.Builder.ITryBlock)
+  commentId: M:CodeFactory.WinVs.Models.CSharp.Builder.BasePropertyBuilder.#ctor(CodeFactory.WinVs.Models.CSharp.Builder.ILoggerBlock,CodeFactory.WinVs.Models.CSharp.Builder.ITryBlock)
+  id: '#ctor(CodeFactory.WinVs.Models.CSharp.Builder.ILoggerBlock,CodeFactory.WinVs.Models.CSharp.Builder.ITryBlock)'
+  parent: CodeFactory.WinVs.Models.CSharp.Builder.BasePropertyBuilder
+  langs:
+  - csharp
+  - vb
+  name: BasePropertyBuilder(ILoggerBlock, ITryBlock)
+  nameWithType: BasePropertyBuilder.BasePropertyBuilder(ILoggerBlock, ITryBlock)
+  fullName: CodeFactory.WinVs.Models.CSharp.Builder.BasePropertyBuilder.BasePropertyBuilder(CodeFactory.WinVs.Models.CSharp.Builder.ILoggerBlock, CodeFactory.WinVs.Models.CSharp.Builder.ITryBlock)
+  type: Constructor
+  source:
+    href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/19e816ffdf1ba504be6987736bbac42e2d241405/Src/CodeFactoryForWindows/CodeFactory.WinVs/Models/CSharp/Builder/BasePropertyBuilder.cs
+  assemblies:
+  - CodeFactory.WinVs
+  namespace: CodeFactory.WinVs.Models.CSharp.Builder
+  summary: Base constructor that initializes base class logic.
+  example: []
+  syntax:
+    content: protected BasePropertyBuilder(ILoggerBlock loggerBlock = null, ITryBlock tryBlock = null)
+    parameters:
+    - id: loggerBlock
+      type: CodeFactory.WinVs.Models.CSharp.Builder.ILoggerBlock
+      description: Optional logger block that can be used with building, default is null.
+    - id: tryBlock
+      type: CodeFactory.WinVs.Models.CSharp.Builder.ITryBlock
+      description: Optional try block that can be used with building, default is null.
+    content.vb: Protected Sub New(loggerBlock As ILoggerBlock = Nothing, tryBlock As ITryBlock = Nothing)
+  overload: CodeFactory.WinVs.Models.CSharp.Builder.BasePropertyBuilder.#ctor*
+  nameWithType.vb: BasePropertyBuilder.New(ILoggerBlock, ITryBlock)
+  fullName.vb: CodeFactory.WinVs.Models.CSharp.Builder.BasePropertyBuilder.New(CodeFactory.WinVs.Models.CSharp.Builder.ILoggerBlock, CodeFactory.WinVs.Models.CSharp.Builder.ITryBlock)
+  name.vb: New(ILoggerBlock, ITryBlock)
+- uid: CodeFactory.WinVs.Models.CSharp.Builder.BasePropertyBuilder.BuildPropertyAsync(CodeFactory.WinVs.Models.CSharp.CsProperty,CodeFactory.WinVs.Models.CSharp.Builder.ISourceManager,System.Int32,System.String,CodeFactory.WinVs.Models.CSharp.CsSecurity,System.Boolean,System.Collections.Generic.IEnumerable{System.String},System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,Microsoft.Extensions.Logging.LogLevel,System.Boolean,CodeFactory.WinVs.Models.CSharp.CsSecurity,System.Boolean,CodeFactory.WinVs.Models.CSharp.CsSecurity,System.String,System.Collections.Generic.IEnumerable{CodeFactory.WinVs.Models.CSharp.Builder.NamedSyntax},CodeFactory.WinVs.Models.CSharp.Builder.NameFormatting)
+  commentId: M:CodeFactory.WinVs.Models.CSharp.Builder.BasePropertyBuilder.BuildPropertyAsync(CodeFactory.WinVs.Models.CSharp.CsProperty,CodeFactory.WinVs.Models.CSharp.Builder.ISourceManager,System.Int32,System.String,CodeFactory.WinVs.Models.CSharp.CsSecurity,System.Boolean,System.Collections.Generic.IEnumerable{System.String},System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,Microsoft.Extensions.Logging.LogLevel,System.Boolean,CodeFactory.WinVs.Models.CSharp.CsSecurity,System.Boolean,CodeFactory.WinVs.Models.CSharp.CsSecurity,System.String,System.Collections.Generic.IEnumerable{CodeFactory.WinVs.Models.CSharp.Builder.NamedSyntax},CodeFactory.WinVs.Models.CSharp.Builder.NameFormatting)
+  id: BuildPropertyAsync(CodeFactory.WinVs.Models.CSharp.CsProperty,CodeFactory.WinVs.Models.CSharp.Builder.ISourceManager,System.Int32,System.String,CodeFactory.WinVs.Models.CSharp.CsSecurity,System.Boolean,System.Collections.Generic.IEnumerable{System.String},System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,Microsoft.Extensions.Logging.LogLevel,System.Boolean,CodeFactory.WinVs.Models.CSharp.CsSecurity,System.Boolean,CodeFactory.WinVs.Models.CSharp.CsSecurity,System.String,System.Collections.Generic.IEnumerable{CodeFactory.WinVs.Models.CSharp.Builder.NamedSyntax},CodeFactory.WinVs.Models.CSharp.Builder.NameFormatting)
+  parent: CodeFactory.WinVs.Models.CSharp.Builder.BasePropertyBuilder
+  langs:
+  - csharp
+  - vb
+  name: BuildPropertyAsync(CsProperty, ISourceManager, int, string, CsSecurity, bool, IEnumerable<string>, bool, bool, bool, bool, bool, bool, bool, LogLevel, bool, CsSecurity, bool, CsSecurity, string, IEnumerable<NamedSyntax>, NameFormatting)
+  nameWithType: BasePropertyBuilder.BuildPropertyAsync(CsProperty, ISourceManager, int, string, CsSecurity, bool, IEnumerable<string>, bool, bool, bool, bool, bool, bool, bool, LogLevel, bool, CsSecurity, bool, CsSecurity, string, IEnumerable<NamedSyntax>, NameFormatting)
+  fullName: CodeFactory.WinVs.Models.CSharp.Builder.BasePropertyBuilder.BuildPropertyAsync(CodeFactory.WinVs.Models.CSharp.CsProperty, CodeFactory.WinVs.Models.CSharp.Builder.ISourceManager, int, string, CodeFactory.WinVs.Models.CSharp.CsSecurity, bool, System.Collections.Generic.IEnumerable<string>, bool, bool, bool, bool, bool, bool, bool, Microsoft.Extensions.Logging.LogLevel, bool, CodeFactory.WinVs.Models.CSharp.CsSecurity, bool, CodeFactory.WinVs.Models.CSharp.CsSecurity, string, System.Collections.Generic.IEnumerable<CodeFactory.WinVs.Models.CSharp.Builder.NamedSyntax>, CodeFactory.WinVs.Models.CSharp.Builder.NameFormatting)
+  type: Method
+  source:
+    href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/19e816ffdf1ba504be6987736bbac42e2d241405/Src/CodeFactoryForWindows/CodeFactory.WinVs/Models/CSharp/Builder/BasePropertyBuilder.cs
+  assemblies:
+  - CodeFactory.WinVs
+  namespace: CodeFactory.WinVs.Models.CSharp.Builder
+  summary: Generates the syntax for the property and returns the defined syntax to the caller.
+  example: []
+  syntax:
+    content: public Task<string> BuildPropertyAsync(CsProperty sourceModel, ISourceManager manager, int indentLevel, string propertyName = null, CsSecurity security = CsSecurity.Unknown, bool includeAttributes = false, IEnumerable<string> ignoreAttributeTypes = null, bool includeKeywords = false, bool includeAbstractKeyword = false, bool abstractKeyword = false, bool sealedKeyword = false, bool staticKeyword = false, bool virtualKeyword = false, bool overrideKeyword = false, LogLevel defaultLogLevel = LogLevel.Critical, bool requireGet = false, CsSecurity getSecurity = CsSecurity.Unknown, bool requireSet = false, CsSecurity setSecurity = CsSecurity.Unknown, string syntax = null, IEnumerable<NamedSyntax> multipleSyntax = null, NameFormatting nameFormat = null)
+    parameters:
+    - id: sourceModel
+      type: CodeFactory.WinVs.Models.CSharp.CsProperty
+      description: Target property model to build from.
+    - id: manager
+      type: CodeFactory.WinVs.Models.CSharp.Builder.ISourceManager
+      description: The source manager to use for injection
+    - id: indentLevel
+      type: System.Int32
+      description: The number of indents to prepend to all source code during the build.
+    - id: propertyName
+      type: System.String
+      description: Optional, the name to create the property as, default is null.
+    - id: security
+      type: CodeFactory.WinVs.Models.CSharp.CsSecurity
+      description: Optional, the security level to set the property to, default is unknown.
+    - id: includeAttributes
+      type: System.Boolean
+      description: Optional, determines if the property attributes are added, default is false.
+    - id: ignoreAttributeTypes
+      type: System.Collections.Generic.IEnumerable{System.String}
+      description: Optional, list of attributes to not include with the property - will need to use the full name of the attribute, default is null.
+    - id: includeKeywords
+      type: System.Boolean
+      description: Optional, flag that determines if keywords should be included in the property definition, default is false.
+    - id: includeAbstractKeyword
+      type: System.Boolean
+      description: Optional, flag that determines if keywords are included to also include the abstract keyword if it is set, default is false.
+    - id: abstractKeyword
+      type: System.Boolean
+      description: Optional, defines if the property should be implemented as abstract, default is false.
+    - id: sealedKeyword
+      type: System.Boolean
+      description: Optional, add the sealed keyword to the property definition, default is false.
+    - id: staticKeyword
+      type: System.Boolean
+      description: Optional, set the property to be static, default is false.
+    - id: virtualKeyword
+      type: System.Boolean
+      description: Optional, adds the virtual keyword to the property definition, default is false.
+    - id: overrideKeyword
+      type: System.Boolean
+      description: Optional, flag that determines if the override keyword is to be added the property definition, default is false.
+    - id: defaultLogLevel
+      type: Microsoft.Extensions.Logging.LogLevel
+      description: Determines the default level of logging if included with the property, default is critical.
+    - id: requireGet
+      type: System.Boolean
+      description: Optional, flag that determines if a get accessor will be required on the property, default is false.
+    - id: getSecurity
+      type: CodeFactory.WinVs.Models.CSharp.CsSecurity
+      description: Optional, sets the security level for the get accessor if used, default is unknown.
+    - id: requireSet
+      type: System.Boolean
+      description: Optional, flag that determines if a set accessor will be required on the property, default is false.
+    - id: setSecurity
+      type: CodeFactory.WinVs.Models.CSharp.CsSecurity
+      description: Optional, set the security level for the set accessor if used, default is unknown.
+    - id: syntax
+      type: System.String
+      description: Provided syntax that will be used in generating the property definition.
+    - id: multipleSyntax
+      type: System.Collections.Generic.IEnumerable{CodeFactory.WinVs.Models.CSharp.Builder.NamedSyntax}
+      description: Provides multiple named syntax that can be used in generating the property definition.
+    - id: nameFormat
+      type: CodeFactory.WinVs.Models.CSharp.Builder.NameFormatting
+      description: Optional parameter that determines the name formatting to use with the property.
+    return:
+      type: System.Threading.Tasks.Task{System.String}
+      description: Formatted property definition.
+    content.vb: Public Function BuildPropertyAsync(sourceModel As CsProperty, manager As ISourceManager, indentLevel As Integer, propertyName As String = Nothing, security As CsSecurity = CsSecurity.Unknown, includeAttributes As Boolean = False, ignoreAttributeTypes As IEnumerable(Of String) = Nothing, includeKeywords As Boolean = False, includeAbstractKeyword As Boolean = False, abstractKeyword As Boolean = False, sealedKeyword As Boolean = False, staticKeyword As Boolean = False, virtualKeyword As Boolean = False, overrideKeyword As Boolean = False, defaultLogLevel As LogLevel = LogLevel.Critical, requireGet As Boolean = False, getSecurity As CsSecurity = CsSecurity.Unknown, requireSet As Boolean = False, setSecurity As CsSecurity = CsSecurity.Unknown, syntax As String = Nothing, multipleSyntax As IEnumerable(Of NamedSyntax) = Nothing, nameFormat As NameFormatting = Nothing) As Task(Of String)
+  overload: CodeFactory.WinVs.Models.CSharp.Builder.BasePropertyBuilder.BuildPropertyAsync*
+  implements:
+  - CodeFactory.WinVs.Models.CSharp.Builder.IPropertyBuilder.BuildPropertyAsync(CodeFactory.WinVs.Models.CSharp.CsProperty,CodeFactory.WinVs.Models.CSharp.Builder.ISourceManager,System.Int32,System.String,CodeFactory.WinVs.Models.CSharp.CsSecurity,System.Boolean,System.Collections.Generic.IEnumerable{System.String},System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,Microsoft.Extensions.Logging.LogLevel,System.Boolean,CodeFactory.WinVs.Models.CSharp.CsSecurity,System.Boolean,CodeFactory.WinVs.Models.CSharp.CsSecurity,System.String,System.Collections.Generic.IEnumerable{CodeFactory.WinVs.Models.CSharp.Builder.NamedSyntax},CodeFactory.WinVs.Models.CSharp.Builder.NameFormatting)
+  nameWithType.vb: BasePropertyBuilder.BuildPropertyAsync(CsProperty, ISourceManager, Integer, String, CsSecurity, Boolean, IEnumerable(Of String), Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, LogLevel, Boolean, CsSecurity, Boolean, CsSecurity, String, IEnumerable(Of NamedSyntax), NameFormatting)
+  fullName.vb: CodeFactory.WinVs.Models.CSharp.Builder.BasePropertyBuilder.BuildPropertyAsync(CodeFactory.WinVs.Models.CSharp.CsProperty, CodeFactory.WinVs.Models.CSharp.Builder.ISourceManager, Integer, String, CodeFactory.WinVs.Models.CSharp.CsSecurity, Boolean, System.Collections.Generic.IEnumerable(Of String), Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, Microsoft.Extensions.Logging.LogLevel, Boolean, CodeFactory.WinVs.Models.CSharp.CsSecurity, Boolean, CodeFactory.WinVs.Models.CSharp.CsSecurity, String, System.Collections.Generic.IEnumerable(Of CodeFactory.WinVs.Models.CSharp.Builder.NamedSyntax), CodeFactory.WinVs.Models.CSharp.Builder.NameFormatting)
+  name.vb: BuildPropertyAsync(CsProperty, ISourceManager, Integer, String, CsSecurity, Boolean, IEnumerable(Of String), Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, LogLevel, Boolean, CsSecurity, Boolean, CsSecurity, String, IEnumerable(Of NamedSyntax), NameFormatting)
+- uid: CodeFactory.WinVs.Models.CSharp.Builder.BasePropertyBuilder.InjectPropertyAsync(CodeFactory.WinVs.Models.CSharp.CsProperty,CodeFactory.WinVs.Models.CSharp.Builder.ISourceManager,System.Int32,CodeFactory.WinVs.Models.CSharp.Builder.InjectionLocation,System.String,CodeFactory.WinVs.Models.CSharp.CsSecurity,System.Boolean,System.Collections.Generic.IEnumerable{System.String},System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,Microsoft.Extensions.Logging.LogLevel,System.Boolean,CodeFactory.WinVs.Models.CSharp.CsSecurity,System.Boolean,CodeFactory.WinVs.Models.CSharp.CsSecurity,System.String,System.Collections.Generic.IEnumerable{CodeFactory.WinVs.Models.CSharp.Builder.NamedSyntax},CodeFactory.WinVs.Models.CSharp.Builder.NameFormatting)
+  commentId: M:CodeFactory.WinVs.Models.CSharp.Builder.BasePropertyBuilder.InjectPropertyAsync(CodeFactory.WinVs.Models.CSharp.CsProperty,CodeFactory.WinVs.Models.CSharp.Builder.ISourceManager,System.Int32,CodeFactory.WinVs.Models.CSharp.Builder.InjectionLocation,System.String,CodeFactory.WinVs.Models.CSharp.CsSecurity,System.Boolean,System.Collections.Generic.IEnumerable{System.String},System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,Microsoft.Extensions.Logging.LogLevel,System.Boolean,CodeFactory.WinVs.Models.CSharp.CsSecurity,System.Boolean,CodeFactory.WinVs.Models.CSharp.CsSecurity,System.String,System.Collections.Generic.IEnumerable{CodeFactory.WinVs.Models.CSharp.Builder.NamedSyntax},CodeFactory.WinVs.Models.CSharp.Builder.NameFormatting)
+  id: InjectPropertyAsync(CodeFactory.WinVs.Models.CSharp.CsProperty,CodeFactory.WinVs.Models.CSharp.Builder.ISourceManager,System.Int32,CodeFactory.WinVs.Models.CSharp.Builder.InjectionLocation,System.String,CodeFactory.WinVs.Models.CSharp.CsSecurity,System.Boolean,System.Collections.Generic.IEnumerable{System.String},System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,Microsoft.Extensions.Logging.LogLevel,System.Boolean,CodeFactory.WinVs.Models.CSharp.CsSecurity,System.Boolean,CodeFactory.WinVs.Models.CSharp.CsSecurity,System.String,System.Collections.Generic.IEnumerable{CodeFactory.WinVs.Models.CSharp.Builder.NamedSyntax},CodeFactory.WinVs.Models.CSharp.Builder.NameFormatting)
+  parent: CodeFactory.WinVs.Models.CSharp.Builder.BasePropertyBuilder
+  langs:
+  - csharp
+  - vb
+  name: InjectPropertyAsync(CsProperty, ISourceManager, int, InjectionLocation, string, CsSecurity, bool, IEnumerable<string>, bool, bool, bool, bool, bool, bool, bool, LogLevel, bool, CsSecurity, bool, CsSecurity, string, IEnumerable<NamedSyntax>, NameFormatting)
+  nameWithType: BasePropertyBuilder.InjectPropertyAsync(CsProperty, ISourceManager, int, InjectionLocation, string, CsSecurity, bool, IEnumerable<string>, bool, bool, bool, bool, bool, bool, bool, LogLevel, bool, CsSecurity, bool, CsSecurity, string, IEnumerable<NamedSyntax>, NameFormatting)
+  fullName: CodeFactory.WinVs.Models.CSharp.Builder.BasePropertyBuilder.InjectPropertyAsync(CodeFactory.WinVs.Models.CSharp.CsProperty, CodeFactory.WinVs.Models.CSharp.Builder.ISourceManager, int, CodeFactory.WinVs.Models.CSharp.Builder.InjectionLocation, string, CodeFactory.WinVs.Models.CSharp.CsSecurity, bool, System.Collections.Generic.IEnumerable<string>, bool, bool, bool, bool, bool, bool, bool, Microsoft.Extensions.Logging.LogLevel, bool, CodeFactory.WinVs.Models.CSharp.CsSecurity, bool, CodeFactory.WinVs.Models.CSharp.CsSecurity, string, System.Collections.Generic.IEnumerable<CodeFactory.WinVs.Models.CSharp.Builder.NamedSyntax>, CodeFactory.WinVs.Models.CSharp.Builder.NameFormatting)
+  type: Method
+  source:
+    href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/19e816ffdf1ba504be6987736bbac42e2d241405/Src/CodeFactoryForWindows/CodeFactory.WinVs/Models/CSharp/Builder/BasePropertyBuilder.cs
+  assemblies:
+  - CodeFactory.WinVs
+  namespace: CodeFactory.WinVs.Models.CSharp.Builder
+  summary: Generates the syntax for the property and injects into the managed source container.
+  example: []
+  syntax:
+    content: public Task InjectPropertyAsync(CsProperty sourceModel, ISourceManager manager, int indentLevel, InjectionLocation location = InjectionLocation.PropertyAfter, string propertyName = null, CsSecurity security = CsSecurity.Unknown, bool includeAttributes = false, IEnumerable<string> ignoreAttributeTypes = null, bool includeKeywords = false, bool includeAbstractKeyword = false, bool abstractKeyword = false, bool sealedKeyword = false, bool staticKeyword = false, bool virtualKeyword = false, bool overrideKeyword = false, LogLevel defaultLogLevel = LogLevel.Critical, bool requireGet = false, CsSecurity getSecurity = CsSecurity.Unknown, bool requireSet = false, CsSecurity setSecurity = CsSecurity.Unknown, string syntax = null, IEnumerable<NamedSyntax> multipleSyntax = null, NameFormatting nameFormat = null)
+    parameters:
+    - id: sourceModel
+      type: CodeFactory.WinVs.Models.CSharp.CsProperty
+      description: Target property model to build from.
+    - id: manager
+      type: CodeFactory.WinVs.Models.CSharp.Builder.ISourceManager
+      description: The source manager to use for injection
+    - id: indentLevel
+      type: System.Int32
+      description: The number of indents to prepend to all source code during the build.
+    - id: location
+      type: CodeFactory.WinVs.Models.CSharp.Builder.InjectionLocation
+      description: The location the property will be injected, default is after the property definitions
+    - id: propertyName
+      type: System.String
+      description: Optional, the name to create the property as, default is null.
+    - id: security
+      type: CodeFactory.WinVs.Models.CSharp.CsSecurity
+      description: Optional, the security level to set the property to, default is unknown.
+    - id: includeAttributes
+      type: System.Boolean
+      description: Optional, determines if the property attributes are added, default is false.
+    - id: ignoreAttributeTypes
+      type: System.Collections.Generic.IEnumerable{System.String}
+      description: Optional, list of attributes to not include with the property - will need to use the full name of the attribute, default is null.
+    - id: includeKeywords
+      type: System.Boolean
+      description: Optional, flag that determines if keywords should be included in the property definition, default is false.
+    - id: includeAbstractKeyword
+      type: System.Boolean
+      description: Optional, flag that determines if keywords are included to also include the abstract keyword if it is set, default is false.
+    - id: abstractKeyword
+      type: System.Boolean
+      description: Optional, defines if the property should be implemented as abstract, default is false.
+    - id: sealedKeyword
+      type: System.Boolean
+      description: Optional, add the sealed keyword to the property definition, default is false.
+    - id: staticKeyword
+      type: System.Boolean
+      description: Optional, set the property to be static, default is false.
+    - id: virtualKeyword
+      type: System.Boolean
+      description: Optional, adds the virtual keyword to the property definition, default is false.
+    - id: overrideKeyword
+      type: System.Boolean
+      description: Optional, flag that determines if the override keyword is to be added the property definition, default is false.
+    - id: defaultLogLevel
+      type: Microsoft.Extensions.Logging.LogLevel
+      description: Determines the default level of logging if included with the property, default is critical.
+    - id: requireGet
+      type: System.Boolean
+      description: Optional, flag that determines if a get accessor will be required on the property, default is false.
+    - id: getSecurity
+      type: CodeFactory.WinVs.Models.CSharp.CsSecurity
+      description: Optional, sets the security level for the get accessor if used, default is unknown.
+    - id: requireSet
+      type: System.Boolean
+      description: Optional, flag that determines if a set accessor will be required on the property, default is false.
+    - id: setSecurity
+      type: CodeFactory.WinVs.Models.CSharp.CsSecurity
+      description: Optional, set the security level for the set accessor if used, default is unknown.
+    - id: syntax
+      type: System.String
+      description: Provided syntax that will be used in generating the property definition.
+    - id: multipleSyntax
+      type: System.Collections.Generic.IEnumerable{CodeFactory.WinVs.Models.CSharp.Builder.NamedSyntax}
+      description: Provides multiple named syntax that can be used in generating the property definition.
+    - id: nameFormat
+      type: CodeFactory.WinVs.Models.CSharp.Builder.NameFormatting
+      description: Optional parameter that determines the name formatting to use with the property.
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Public Function InjectPropertyAsync(sourceModel As CsProperty, manager As ISourceManager, indentLevel As Integer, location As InjectionLocation = InjectionLocation.PropertyAfter, propertyName As String = Nothing, security As CsSecurity = CsSecurity.Unknown, includeAttributes As Boolean = False, ignoreAttributeTypes As IEnumerable(Of String) = Nothing, includeKeywords As Boolean = False, includeAbstractKeyword As Boolean = False, abstractKeyword As Boolean = False, sealedKeyword As Boolean = False, staticKeyword As Boolean = False, virtualKeyword As Boolean = False, overrideKeyword As Boolean = False, defaultLogLevel As LogLevel = LogLevel.Critical, requireGet As Boolean = False, getSecurity As CsSecurity = CsSecurity.Unknown, requireSet As Boolean = False, setSecurity As CsSecurity = CsSecurity.Unknown, syntax As String = Nothing, multipleSyntax As IEnumerable(Of NamedSyntax) = Nothing, nameFormat As NameFormatting = Nothing) As Task
+  overload: CodeFactory.WinVs.Models.CSharp.Builder.BasePropertyBuilder.InjectPropertyAsync*
+  implements:
+  - CodeFactory.WinVs.Models.CSharp.Builder.IPropertyBuilder.InjectPropertyAsync(CodeFactory.WinVs.Models.CSharp.CsProperty,CodeFactory.WinVs.Models.CSharp.Builder.ISourceManager,System.Int32,CodeFactory.WinVs.Models.CSharp.Builder.InjectionLocation,System.String,CodeFactory.WinVs.Models.CSharp.CsSecurity,System.Boolean,System.Collections.Generic.IEnumerable{System.String},System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,Microsoft.Extensions.Logging.LogLevel,System.Boolean,CodeFactory.WinVs.Models.CSharp.CsSecurity,System.Boolean,CodeFactory.WinVs.Models.CSharp.CsSecurity,System.String,System.Collections.Generic.IEnumerable{CodeFactory.WinVs.Models.CSharp.Builder.NamedSyntax},CodeFactory.WinVs.Models.CSharp.Builder.NameFormatting)
+  nameWithType.vb: BasePropertyBuilder.InjectPropertyAsync(CsProperty, ISourceManager, Integer, InjectionLocation, String, CsSecurity, Boolean, IEnumerable(Of String), Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, LogLevel, Boolean, CsSecurity, Boolean, CsSecurity, String, IEnumerable(Of NamedSyntax), NameFormatting)
+  fullName.vb: CodeFactory.WinVs.Models.CSharp.Builder.BasePropertyBuilder.InjectPropertyAsync(CodeFactory.WinVs.Models.CSharp.CsProperty, CodeFactory.WinVs.Models.CSharp.Builder.ISourceManager, Integer, CodeFactory.WinVs.Models.CSharp.Builder.InjectionLocation, String, CodeFactory.WinVs.Models.CSharp.CsSecurity, Boolean, System.Collections.Generic.IEnumerable(Of String), Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, Microsoft.Extensions.Logging.LogLevel, Boolean, CodeFactory.WinVs.Models.CSharp.CsSecurity, Boolean, CodeFactory.WinVs.Models.CSharp.CsSecurity, String, System.Collections.Generic.IEnumerable(Of CodeFactory.WinVs.Models.CSharp.Builder.NamedSyntax), CodeFactory.WinVs.Models.CSharp.Builder.NameFormatting)
+  name.vb: InjectPropertyAsync(CsProperty, ISourceManager, Integer, InjectionLocation, String, CsSecurity, Boolean, IEnumerable(Of String), Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, LogLevel, Boolean, CsSecurity, Boolean, CsSecurity, String, IEnumerable(Of NamedSyntax), NameFormatting)
+- uid: CodeFactory.WinVs.Models.CSharp.Builder.BasePropertyBuilder.GenerateBuildPropertyAsync(CodeFactory.WinVs.Models.CSharp.CsProperty,CodeFactory.WinVs.Models.CSharp.Builder.ISourceManager,System.Int32,System.String,CodeFactory.WinVs.Models.CSharp.CsSecurity,System.Boolean,System.Collections.Generic.IEnumerable{System.String},System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,Microsoft.Extensions.Logging.LogLevel,System.Boolean,CodeFactory.WinVs.Models.CSharp.CsSecurity,System.Boolean,CodeFactory.WinVs.Models.CSharp.CsSecurity,System.String,System.Collections.Generic.IEnumerable{CodeFactory.WinVs.Models.CSharp.Builder.NamedSyntax},CodeFactory.WinVs.Models.CSharp.Builder.NameFormatting)
+  commentId: M:CodeFactory.WinVs.Models.CSharp.Builder.BasePropertyBuilder.GenerateBuildPropertyAsync(CodeFactory.WinVs.Models.CSharp.CsProperty,CodeFactory.WinVs.Models.CSharp.Builder.ISourceManager,System.Int32,System.String,CodeFactory.WinVs.Models.CSharp.CsSecurity,System.Boolean,System.Collections.Generic.IEnumerable{System.String},System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,Microsoft.Extensions.Logging.LogLevel,System.Boolean,CodeFactory.WinVs.Models.CSharp.CsSecurity,System.Boolean,CodeFactory.WinVs.Models.CSharp.CsSecurity,System.String,System.Collections.Generic.IEnumerable{CodeFactory.WinVs.Models.CSharp.Builder.NamedSyntax},CodeFactory.WinVs.Models.CSharp.Builder.NameFormatting)
+  id: GenerateBuildPropertyAsync(CodeFactory.WinVs.Models.CSharp.CsProperty,CodeFactory.WinVs.Models.CSharp.Builder.ISourceManager,System.Int32,System.String,CodeFactory.WinVs.Models.CSharp.CsSecurity,System.Boolean,System.Collections.Generic.IEnumerable{System.String},System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,Microsoft.Extensions.Logging.LogLevel,System.Boolean,CodeFactory.WinVs.Models.CSharp.CsSecurity,System.Boolean,CodeFactory.WinVs.Models.CSharp.CsSecurity,System.String,System.Collections.Generic.IEnumerable{CodeFactory.WinVs.Models.CSharp.Builder.NamedSyntax},CodeFactory.WinVs.Models.CSharp.Builder.NameFormatting)
+  parent: CodeFactory.WinVs.Models.CSharp.Builder.BasePropertyBuilder
+  langs:
+  - csharp
+  - vb
+  name: GenerateBuildPropertyAsync(CsProperty, ISourceManager, int, string, CsSecurity, bool, IEnumerable<string>, bool, bool, bool, bool, bool, bool, bool, LogLevel, bool, CsSecurity, bool, CsSecurity, string, IEnumerable<NamedSyntax>, NameFormatting)
+  nameWithType: BasePropertyBuilder.GenerateBuildPropertyAsync(CsProperty, ISourceManager, int, string, CsSecurity, bool, IEnumerable<string>, bool, bool, bool, bool, bool, bool, bool, LogLevel, bool, CsSecurity, bool, CsSecurity, string, IEnumerable<NamedSyntax>, NameFormatting)
+  fullName: CodeFactory.WinVs.Models.CSharp.Builder.BasePropertyBuilder.GenerateBuildPropertyAsync(CodeFactory.WinVs.Models.CSharp.CsProperty, CodeFactory.WinVs.Models.CSharp.Builder.ISourceManager, int, string, CodeFactory.WinVs.Models.CSharp.CsSecurity, bool, System.Collections.Generic.IEnumerable<string>, bool, bool, bool, bool, bool, bool, bool, Microsoft.Extensions.Logging.LogLevel, bool, CodeFactory.WinVs.Models.CSharp.CsSecurity, bool, CodeFactory.WinVs.Models.CSharp.CsSecurity, string, System.Collections.Generic.IEnumerable<CodeFactory.WinVs.Models.CSharp.Builder.NamedSyntax>, CodeFactory.WinVs.Models.CSharp.Builder.NameFormatting)
+  type: Method
+  source:
+    href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/19e816ffdf1ba504be6987736bbac42e2d241405/Src/CodeFactoryForWindows/CodeFactory.WinVs/Models/CSharp/Builder/BasePropertyBuilder.cs
+  assemblies:
+  - CodeFactory.WinVs
+  namespace: CodeFactory.WinVs.Models.CSharp.Builder
+  summary: Generates the syntax for the property and returns the defined syntax to the caller.
+  example: []
+  syntax:
+    content: public abstract Task<string> GenerateBuildPropertyAsync(CsProperty sourceModel, ISourceManager manager, int indentLevel, string propertyName = null, CsSecurity security = CsSecurity.Unknown, bool includeAttributes = false, IEnumerable<string> ignoreAttributeTypes = null, bool includeKeywords = false, bool includeAbstractKeyword = false, bool abstractKeyword = false, bool sealedKeyword = false, bool staticKeyword = false, bool virtualKeyword = false, bool overrideKeyword = false, LogLevel defaultLogLevel = LogLevel.Critical, bool requireGet = false, CsSecurity getSecurity = CsSecurity.Unknown, bool requireSet = false, CsSecurity setSecurity = CsSecurity.Unknown, string syntax = null, IEnumerable<NamedSyntax> multipleSyntax = null, NameFormatting nameFormat = null)
+    parameters:
+    - id: sourceModel
+      type: CodeFactory.WinVs.Models.CSharp.CsProperty
+      description: Target property model to build from.
+    - id: manager
+      type: CodeFactory.WinVs.Models.CSharp.Builder.ISourceManager
+      description: The source manager to use for injection
+    - id: indentLevel
+      type: System.Int32
+      description: The number of indents to prepend to all source code during the build.
+    - id: propertyName
+      type: System.String
+      description: Optional, the name to create the property as, default is null.
+    - id: security
+      type: CodeFactory.WinVs.Models.CSharp.CsSecurity
+      description: Optional, the security level to set the property to, default is unknown.
+    - id: includeAttributes
+      type: System.Boolean
+      description: Optional, determines if the property attributes are added, default is false.
+    - id: ignoreAttributeTypes
+      type: System.Collections.Generic.IEnumerable{System.String}
+      description: Optional, list of attributes to not include with the property - will need to use the full name of the attribute, default is null.
+    - id: includeKeywords
+      type: System.Boolean
+      description: Optional, flag that determines if keywords should be included in the property definition, default is false.
+    - id: includeAbstractKeyword
+      type: System.Boolean
+      description: Optional, flag that determines if keywords are included to also include the abstract keyword if it is set, default is false.
+    - id: abstractKeyword
+      type: System.Boolean
+      description: Optional, defines if the property should be implemented as abstract, default is false.
+    - id: sealedKeyword
+      type: System.Boolean
+      description: Optional, add the sealed keyword to the property definition, default is false.
+    - id: staticKeyword
+      type: System.Boolean
+      description: Optional, set the property to be static, default is false.
+    - id: virtualKeyword
+      type: System.Boolean
+      description: Optional, adds the virtual keyword to the property definition, default is false.
+    - id: overrideKeyword
+      type: System.Boolean
+      description: Optional, flag that determines if the override keyword is to be added the property definition, default is false.
+    - id: defaultLogLevel
+      type: Microsoft.Extensions.Logging.LogLevel
+      description: Determines the default level of logging if included with the property, default is critical.
+    - id: requireGet
+      type: System.Boolean
+      description: Optional, flag that determines if a get accessor will be required on the property, default is false.
+    - id: getSecurity
+      type: CodeFactory.WinVs.Models.CSharp.CsSecurity
+      description: Optional, sets the security level for the get accessor if used, default is unknown.
+    - id: requireSet
+      type: System.Boolean
+      description: Optional, flag that determines if a set accessor will be required on the property, default is false.
+    - id: setSecurity
+      type: CodeFactory.WinVs.Models.CSharp.CsSecurity
+      description: Optional, set the security level for the set accessor if used, default is unknown.
+    - id: syntax
+      type: System.String
+      description: Provided syntax that will be used in generating the property definition.
+    - id: multipleSyntax
+      type: System.Collections.Generic.IEnumerable{CodeFactory.WinVs.Models.CSharp.Builder.NamedSyntax}
+      description: Provides multiple named syntax that can be used in generating the property definition.
+    - id: nameFormat
+      type: CodeFactory.WinVs.Models.CSharp.Builder.NameFormatting
+      description: Optional parameter that determines the name formatting to use with the property.
+    return:
+      type: System.Threading.Tasks.Task{System.String}
+      description: Formatted property definition.
+    content.vb: Public MustOverride Function GenerateBuildPropertyAsync(sourceModel As CsProperty, manager As ISourceManager, indentLevel As Integer, propertyName As String = Nothing, security As CsSecurity = CsSecurity.Unknown, includeAttributes As Boolean = False, ignoreAttributeTypes As IEnumerable(Of String) = Nothing, includeKeywords As Boolean = False, includeAbstractKeyword As Boolean = False, abstractKeyword As Boolean = False, sealedKeyword As Boolean = False, staticKeyword As Boolean = False, virtualKeyword As Boolean = False, overrideKeyword As Boolean = False, defaultLogLevel As LogLevel = LogLevel.Critical, requireGet As Boolean = False, getSecurity As CsSecurity = CsSecurity.Unknown, requireSet As Boolean = False, setSecurity As CsSecurity = CsSecurity.Unknown, syntax As String = Nothing, multipleSyntax As IEnumerable(Of NamedSyntax) = Nothing, nameFormat As NameFormatting = Nothing) As Task(Of String)
+  overload: CodeFactory.WinVs.Models.CSharp.Builder.BasePropertyBuilder.GenerateBuildPropertyAsync*
+  nameWithType.vb: BasePropertyBuilder.GenerateBuildPropertyAsync(CsProperty, ISourceManager, Integer, String, CsSecurity, Boolean, IEnumerable(Of String), Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, LogLevel, Boolean, CsSecurity, Boolean, CsSecurity, String, IEnumerable(Of NamedSyntax), NameFormatting)
+  fullName.vb: CodeFactory.WinVs.Models.CSharp.Builder.BasePropertyBuilder.GenerateBuildPropertyAsync(CodeFactory.WinVs.Models.CSharp.CsProperty, CodeFactory.WinVs.Models.CSharp.Builder.ISourceManager, Integer, String, CodeFactory.WinVs.Models.CSharp.CsSecurity, Boolean, System.Collections.Generic.IEnumerable(Of String), Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, Microsoft.Extensions.Logging.LogLevel, Boolean, CodeFactory.WinVs.Models.CSharp.CsSecurity, Boolean, CodeFactory.WinVs.Models.CSharp.CsSecurity, String, System.Collections.Generic.IEnumerable(Of CodeFactory.WinVs.Models.CSharp.Builder.NamedSyntax), CodeFactory.WinVs.Models.CSharp.Builder.NameFormatting)
+  name.vb: GenerateBuildPropertyAsync(CsProperty, ISourceManager, Integer, String, CsSecurity, Boolean, IEnumerable(Of String), Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, LogLevel, Boolean, CsSecurity, Boolean, CsSecurity, String, IEnumerable(Of NamedSyntax), NameFormatting)
+- uid: CodeFactory.WinVs.Models.CSharp.Builder.BasePropertyBuilder.BuilderType
+  commentId: P:CodeFactory.WinVs.Models.CSharp.Builder.BasePropertyBuilder.BuilderType
+  id: BuilderType
+  parent: CodeFactory.WinVs.Models.CSharp.Builder.BasePropertyBuilder
+  langs:
+  - csharp
+  - vb
+  name: BuilderType
+  nameWithType: BasePropertyBuilder.BuilderType
+  fullName: CodeFactory.WinVs.Models.CSharp.Builder.BasePropertyBuilder.BuilderType
+  type: Property
+  source:
+    href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/19e816ffdf1ba504be6987736bbac42e2d241405/Src/CodeFactoryForWindows/CodeFactory.WinVs/Models/CSharp/Builder/BasePropertyBuilder.cs
+  assemblies:
+  - CodeFactory.WinVs
+  namespace: CodeFactory.WinVs.Models.CSharp.Builder
+  summary: The type of builder that has been implemented.
+  example: []
+  syntax:
+    content: public BuilderType BuilderType { get; }
+    parameters: []
+    return:
+      type: CodeFactory.WinVs.Models.CSharp.Builder.BuilderType
+    content.vb: Public ReadOnly Property BuilderType As BuilderType
+  overload: CodeFactory.WinVs.Models.CSharp.Builder.BasePropertyBuilder.BuilderType*
+  implements:
+  - CodeFactory.WinVs.Models.CSharp.Builder.IBuilder.BuilderType
+- uid: CodeFactory.WinVs.Models.CSharp.Builder.BasePropertyBuilder.LoggerBlock
+  commentId: P:CodeFactory.WinVs.Models.CSharp.Builder.BasePropertyBuilder.LoggerBlock
+  id: LoggerBlock
+  parent: CodeFactory.WinVs.Models.CSharp.Builder.BasePropertyBuilder
+  langs:
+  - csharp
+  - vb
+  name: LoggerBlock
+  nameWithType: BasePropertyBuilder.LoggerBlock
+  fullName: CodeFactory.WinVs.Models.CSharp.Builder.BasePropertyBuilder.LoggerBlock
+  type: Property
+  source:
+    href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/19e816ffdf1ba504be6987736bbac42e2d241405/Src/CodeFactoryForWindows/CodeFactory.WinVs/Models/CSharp/Builder/BasePropertyBuilder.cs
+  assemblies:
+  - CodeFactory.WinVs
+  namespace: CodeFactory.WinVs.Models.CSharp.Builder
+  summary: Logger block that can be used to add logging.
+  example: []
+  syntax:
+    content: public ILoggerBlock LoggerBlock { get; }
+    parameters: []
+    return:
+      type: CodeFactory.WinVs.Models.CSharp.Builder.ILoggerBlock
+    content.vb: Public ReadOnly Property LoggerBlock As ILoggerBlock
+  overload: CodeFactory.WinVs.Models.CSharp.Builder.BasePropertyBuilder.LoggerBlock*
+- uid: CodeFactory.WinVs.Models.CSharp.Builder.BasePropertyBuilder.TryBlock
+  commentId: P:CodeFactory.WinVs.Models.CSharp.Builder.BasePropertyBuilder.TryBlock
+  id: TryBlock
+  parent: CodeFactory.WinVs.Models.CSharp.Builder.BasePropertyBuilder
+  langs:
+  - csharp
+  - vb
+  name: TryBlock
+  nameWithType: BasePropertyBuilder.TryBlock
+  fullName: CodeFactory.WinVs.Models.CSharp.Builder.BasePropertyBuilder.TryBlock
+  type: Property
+  source:
+    href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/19e816ffdf1ba504be6987736bbac42e2d241405/Src/CodeFactoryForWindows/CodeFactory.WinVs/Models/CSharp/Builder/BasePropertyBuilder.cs
+  assemblies:
+  - CodeFactory.WinVs
+  namespace: CodeFactory.WinVs.Models.CSharp.Builder
+  summary: Try block that can be used for syntax implementation.
+  example: []
+  syntax:
+    content: public ITryBlock TryBlock { get; }
+    parameters: []
+    return:
+      type: CodeFactory.WinVs.Models.CSharp.Builder.ITryBlock
+    content.vb: Public ReadOnly Property TryBlock As ITryBlock
+  overload: CodeFactory.WinVs.Models.CSharp.Builder.BasePropertyBuilder.TryBlock*
+references:
+- uid: CodeFactory.WinVs.Models.CSharp.Builder
+  commentId: N:CodeFactory.WinVs.Models.CSharp.Builder
+  isExternal: true
+  href: CodeFactory.html
+  name: CodeFactory.WinVs.Models.CSharp.Builder
+  nameWithType: CodeFactory.WinVs.Models.CSharp.Builder
+  fullName: CodeFactory.WinVs.Models.CSharp.Builder
+  spec.csharp:
+  - uid: CodeFactory
+    name: CodeFactory
+    isExternal: true
+    href: CodeFactory.html
+  - name: .
+  - uid: CodeFactory.WinVs
+    name: WinVs
+    isExternal: true
+    href: CodeFactory.WinVs.html
+  - name: .
+  - uid: CodeFactory.WinVs.Models
+    name: Models
+    isExternal: true
+    href: CodeFactory.WinVs.Models.html
+  - name: .
+  - uid: CodeFactory.WinVs.Models.CSharp
+    name: CSharp
+    isExternal: true
+    href: CodeFactory.WinVs.Models.CSharp.html
+  - name: .
+  - uid: CodeFactory.WinVs.Models.CSharp.Builder
+    name: Builder
+    isExternal: true
+    href: CodeFactory.WinVs.Models.CSharp.Builder.html
+  spec.vb:
+  - uid: CodeFactory
+    name: CodeFactory
+    isExternal: true
+    href: CodeFactory.html
+  - name: .
+  - uid: CodeFactory.WinVs
+    name: WinVs
+    isExternal: true
+    href: CodeFactory.WinVs.html
+  - name: .
+  - uid: CodeFactory.WinVs.Models
+    name: Models
+    isExternal: true
+    href: CodeFactory.WinVs.Models.html
+  - name: .
+  - uid: CodeFactory.WinVs.Models.CSharp
+    name: CSharp
+    isExternal: true
+    href: CodeFactory.WinVs.Models.CSharp.html
+  - name: .
+  - uid: CodeFactory.WinVs.Models.CSharp.Builder
+    name: Builder
+    isExternal: true
+    href: CodeFactory.WinVs.Models.CSharp.Builder.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: CodeFactory.WinVs.Models.CSharp.Builder.IPropertyBuilder
+  commentId: T:CodeFactory.WinVs.Models.CSharp.Builder.IPropertyBuilder
+  parent: CodeFactory.WinVs.Models.CSharp.Builder
+  isExternal: true
+  href: CodeFactory.WinVs.Models.CSharp.Builder.IPropertyBuilder.html
+  name: IPropertyBuilder
+  nameWithType: IPropertyBuilder
+  fullName: CodeFactory.WinVs.Models.CSharp.Builder.IPropertyBuilder
+- uid: CodeFactory.WinVs.Models.CSharp.Builder.IBuilder
+  commentId: T:CodeFactory.WinVs.Models.CSharp.Builder.IBuilder
+  parent: CodeFactory.WinVs.Models.CSharp.Builder
+  isExternal: true
+  href: CodeFactory.WinVs.Models.CSharp.Builder.IBuilder.html
+  name: IBuilder
+  nameWithType: IBuilder
+  fullName: CodeFactory.WinVs.Models.CSharp.Builder.IBuilder
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: CodeFactory.WinVs.Models.CSharp.Builder.BasePropertyBuilder.#ctor*
+  commentId: Overload:CodeFactory.WinVs.Models.CSharp.Builder.BasePropertyBuilder.#ctor
+  isExternal: true
+  href: CodeFactory.WinVs.Models.CSharp.Builder.BasePropertyBuilder.html#CodeFactory_WinVs_Models_CSharp_Builder_BasePropertyBuilder__ctor_CodeFactory_WinVs_Models_CSharp_Builder_ILoggerBlock_CodeFactory_WinVs_Models_CSharp_Builder_ITryBlock_
+  name: BasePropertyBuilder
+  nameWithType: BasePropertyBuilder.BasePropertyBuilder
+  fullName: CodeFactory.WinVs.Models.CSharp.Builder.BasePropertyBuilder.BasePropertyBuilder
+  nameWithType.vb: BasePropertyBuilder.New
+  fullName.vb: CodeFactory.WinVs.Models.CSharp.Builder.BasePropertyBuilder.New
+  name.vb: New
+- uid: CodeFactory.WinVs.Models.CSharp.Builder.ILoggerBlock
+  commentId: T:CodeFactory.WinVs.Models.CSharp.Builder.ILoggerBlock
+  parent: CodeFactory.WinVs.Models.CSharp.Builder
+  isExternal: true
+  href: CodeFactory.WinVs.Models.CSharp.Builder.ILoggerBlock.html
+  name: ILoggerBlock
+  nameWithType: ILoggerBlock
+  fullName: CodeFactory.WinVs.Models.CSharp.Builder.ILoggerBlock
+- uid: CodeFactory.WinVs.Models.CSharp.Builder.ITryBlock
+  commentId: T:CodeFactory.WinVs.Models.CSharp.Builder.ITryBlock
+  parent: CodeFactory.WinVs.Models.CSharp.Builder
+  isExternal: true
+  href: CodeFactory.WinVs.Models.CSharp.Builder.ITryBlock.html
+  name: ITryBlock
+  nameWithType: ITryBlock
+  fullName: CodeFactory.WinVs.Models.CSharp.Builder.ITryBlock
+- uid: CodeFactory.WinVs.Models.CSharp.Builder.BasePropertyBuilder.BuildPropertyAsync*
+  commentId: Overload:CodeFactory.WinVs.Models.CSharp.Builder.BasePropertyBuilder.BuildPropertyAsync
+  isExternal: true
+  href: CodeFactory.WinVs.Models.CSharp.Builder.BasePropertyBuilder.html#CodeFactory_WinVs_Models_CSharp_Builder_BasePropertyBuilder_BuildPropertyAsync_CodeFactory_WinVs_Models_CSharp_CsProperty_CodeFactory_WinVs_Models_CSharp_Builder_ISourceManager_System_Int32_System_String_CodeFactory_WinVs_Models_CSharp_CsSecurity_System_Boolean_System_Collections_Generic_IEnumerable_System_String__System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_Microsoft_Extensions_Logging_LogLevel_System_Boolean_CodeFactory_WinVs_Models_CSharp_CsSecurity_System_Boolean_CodeFactory_WinVs_Models_CSharp_CsSecurity_System_String_System_Collections_Generic_IEnumerable_CodeFactory_WinVs_Models_CSharp_Builder_NamedSyntax__CodeFactory_WinVs_Models_CSharp_Builder_NameFormatting_
+  name: BuildPropertyAsync
+  nameWithType: BasePropertyBuilder.BuildPropertyAsync
+  fullName: CodeFactory.WinVs.Models.CSharp.Builder.BasePropertyBuilder.BuildPropertyAsync
+- uid: CodeFactory.WinVs.Models.CSharp.Builder.IPropertyBuilder.BuildPropertyAsync(CodeFactory.WinVs.Models.CSharp.CsProperty,CodeFactory.WinVs.Models.CSharp.Builder.ISourceManager,System.Int32,System.String,CodeFactory.WinVs.Models.CSharp.CsSecurity,System.Boolean,System.Collections.Generic.IEnumerable{System.String},System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,Microsoft.Extensions.Logging.LogLevel,System.Boolean,CodeFactory.WinVs.Models.CSharp.CsSecurity,System.Boolean,CodeFactory.WinVs.Models.CSharp.CsSecurity,System.String,System.Collections.Generic.IEnumerable{CodeFactory.WinVs.Models.CSharp.Builder.NamedSyntax},CodeFactory.WinVs.Models.CSharp.Builder.NameFormatting)
+  commentId: M:CodeFactory.WinVs.Models.CSharp.Builder.IPropertyBuilder.BuildPropertyAsync(CodeFactory.WinVs.Models.CSharp.CsProperty,CodeFactory.WinVs.Models.CSharp.Builder.ISourceManager,System.Int32,System.String,CodeFactory.WinVs.Models.CSharp.CsSecurity,System.Boolean,System.Collections.Generic.IEnumerable{System.String},System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,Microsoft.Extensions.Logging.LogLevel,System.Boolean,CodeFactory.WinVs.Models.CSharp.CsSecurity,System.Boolean,CodeFactory.WinVs.Models.CSharp.CsSecurity,System.String,System.Collections.Generic.IEnumerable{CodeFactory.WinVs.Models.CSharp.Builder.NamedSyntax},CodeFactory.WinVs.Models.CSharp.Builder.NameFormatting)
+  parent: CodeFactory.WinVs.Models.CSharp.Builder.IPropertyBuilder
+  isExternal: true
+  href: CodeFactory.WinVs.Models.CSharp.Builder.IPropertyBuilder.html#CodeFactory_WinVs_Models_CSharp_Builder_IPropertyBuilder_BuildPropertyAsync_CodeFactory_WinVs_Models_CSharp_CsProperty_CodeFactory_WinVs_Models_CSharp_Builder_ISourceManager_System_Int32_System_String_CodeFactory_WinVs_Models_CSharp_CsSecurity_System_Boolean_System_Collections_Generic_IEnumerable_System_String__System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_Microsoft_Extensions_Logging_LogLevel_System_Boolean_CodeFactory_WinVs_Models_CSharp_CsSecurity_System_Boolean_CodeFactory_WinVs_Models_CSharp_CsSecurity_System_String_System_Collections_Generic_IEnumerable_CodeFactory_WinVs_Models_CSharp_Builder_NamedSyntax__CodeFactory_WinVs_Models_CSharp_Builder_NameFormatting_
+  name: BuildPropertyAsync(CsProperty, ISourceManager, int, string, CsSecurity, bool, IEnumerable<string>, bool, bool, bool, bool, bool, bool, bool, LogLevel, bool, CsSecurity, bool, CsSecurity, string, IEnumerable<NamedSyntax>, NameFormatting)
+  nameWithType: IPropertyBuilder.BuildPropertyAsync(CsProperty, ISourceManager, int, string, CsSecurity, bool, IEnumerable<string>, bool, bool, bool, bool, bool, bool, bool, LogLevel, bool, CsSecurity, bool, CsSecurity, string, IEnumerable<NamedSyntax>, NameFormatting)
+  fullName: CodeFactory.WinVs.Models.CSharp.Builder.IPropertyBuilder.BuildPropertyAsync(CodeFactory.WinVs.Models.CSharp.CsProperty, CodeFactory.WinVs.Models.CSharp.Builder.ISourceManager, int, string, CodeFactory.WinVs.Models.CSharp.CsSecurity, bool, System.Collections.Generic.IEnumerable<string>, bool, bool, bool, bool, bool, bool, bool, Microsoft.Extensions.Logging.LogLevel, bool, CodeFactory.WinVs.Models.CSharp.CsSecurity, bool, CodeFactory.WinVs.Models.CSharp.CsSecurity, string, System.Collections.Generic.IEnumerable<CodeFactory.WinVs.Models.CSharp.Builder.NamedSyntax>, CodeFactory.WinVs.Models.CSharp.Builder.NameFormatting)
+  nameWithType.vb: IPropertyBuilder.BuildPropertyAsync(CsProperty, ISourceManager, Integer, String, CsSecurity, Boolean, IEnumerable(Of String), Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, LogLevel, Boolean, CsSecurity, Boolean, CsSecurity, String, IEnumerable(Of NamedSyntax), NameFormatting)
+  fullName.vb: CodeFactory.WinVs.Models.CSharp.Builder.IPropertyBuilder.BuildPropertyAsync(CodeFactory.WinVs.Models.CSharp.CsProperty, CodeFactory.WinVs.Models.CSharp.Builder.ISourceManager, Integer, String, CodeFactory.WinVs.Models.CSharp.CsSecurity, Boolean, System.Collections.Generic.IEnumerable(Of String), Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, Microsoft.Extensions.Logging.LogLevel, Boolean, CodeFactory.WinVs.Models.CSharp.CsSecurity, Boolean, CodeFactory.WinVs.Models.CSharp.CsSecurity, String, System.Collections.Generic.IEnumerable(Of CodeFactory.WinVs.Models.CSharp.Builder.NamedSyntax), CodeFactory.WinVs.Models.CSharp.Builder.NameFormatting)
+  name.vb: BuildPropertyAsync(CsProperty, ISourceManager, Integer, String, CsSecurity, Boolean, IEnumerable(Of String), Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, LogLevel, Boolean, CsSecurity, Boolean, CsSecurity, String, IEnumerable(Of NamedSyntax), NameFormatting)
+  spec.csharp:
+  - uid: CodeFactory.WinVs.Models.CSharp.Builder.IPropertyBuilder.BuildPropertyAsync(CodeFactory.WinVs.Models.CSharp.CsProperty,CodeFactory.WinVs.Models.CSharp.Builder.ISourceManager,System.Int32,System.String,CodeFactory.WinVs.Models.CSharp.CsSecurity,System.Boolean,System.Collections.Generic.IEnumerable{System.String},System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,Microsoft.Extensions.Logging.LogLevel,System.Boolean,CodeFactory.WinVs.Models.CSharp.CsSecurity,System.Boolean,CodeFactory.WinVs.Models.CSharp.CsSecurity,System.String,System.Collections.Generic.IEnumerable{CodeFactory.WinVs.Models.CSharp.Builder.NamedSyntax},CodeFactory.WinVs.Models.CSharp.Builder.NameFormatting)
+    name: BuildPropertyAsync
+    isExternal: true
+    href: CodeFactory.WinVs.Models.CSharp.Builder.IPropertyBuilder.html#CodeFactory_WinVs_Models_CSharp_Builder_IPropertyBuilder_BuildPropertyAsync_CodeFactory_WinVs_Models_CSharp_CsProperty_CodeFactory_WinVs_Models_CSharp_Builder_ISourceManager_System_Int32_System_String_CodeFactory_WinVs_Models_CSharp_CsSecurity_System_Boolean_System_Collections_Generic_IEnumerable_System_String__System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_Microsoft_Extensions_Logging_LogLevel_System_Boolean_CodeFactory_WinVs_Models_CSharp_CsSecurity_System_Boolean_CodeFactory_WinVs_Models_CSharp_CsSecurity_System_String_System_Collections_Generic_IEnumerable_CodeFactory_WinVs_Models_CSharp_Builder_NamedSyntax__CodeFactory_WinVs_Models_CSharp_Builder_NameFormatting_
+  - name: (
+  - uid: CodeFactory.WinVs.Models.CSharp.CsProperty
+    name: CsProperty
+    isExternal: true
+    href: CodeFactory.WinVs.Models.CSharp.CsProperty.html
+  - name: ','
+  - name: " "
+  - uid: CodeFactory.WinVs.Models.CSharp.Builder.ISourceManager
+    name: ISourceManager
+    isExternal: true
+    href: CodeFactory.WinVs.Models.CSharp.Builder.ISourceManager.html
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: CodeFactory.WinVs.Models.CSharp.CsSecurity
+    name: CsSecurity
+    isExternal: true
+    href: CodeFactory.WinVs.Models.CSharp.CsSecurity.html
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: ','
+  - name: " "
+  - uid: Microsoft.Extensions.Logging.LogLevel
+    name: LogLevel
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.loglevel
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: ','
+  - name: " "
+  - uid: CodeFactory.WinVs.Models.CSharp.CsSecurity
+    name: CsSecurity
+    isExternal: true
+    href: CodeFactory.WinVs.Models.CSharp.CsSecurity.html
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: ','
+  - name: " "
+  - uid: CodeFactory.WinVs.Models.CSharp.CsSecurity
+    name: CsSecurity
+    isExternal: true
+    href: CodeFactory.WinVs.Models.CSharp.CsSecurity.html
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: CodeFactory.WinVs.Models.CSharp.Builder.NamedSyntax
+    name: NamedSyntax
+    isExternal: true
+    href: CodeFactory.WinVs.Models.CSharp.Builder.NamedSyntax.html
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: CodeFactory.WinVs.Models.CSharp.Builder.NameFormatting
+    name: NameFormatting
+    isExternal: true
+    href: CodeFactory.WinVs.Models.CSharp.Builder.NameFormatting.html
+  - name: )
+  spec.vb:
+  - uid: CodeFactory.WinVs.Models.CSharp.Builder.IPropertyBuilder.BuildPropertyAsync(CodeFactory.WinVs.Models.CSharp.CsProperty,CodeFactory.WinVs.Models.CSharp.Builder.ISourceManager,System.Int32,System.String,CodeFactory.WinVs.Models.CSharp.CsSecurity,System.Boolean,System.Collections.Generic.IEnumerable{System.String},System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,Microsoft.Extensions.Logging.LogLevel,System.Boolean,CodeFactory.WinVs.Models.CSharp.CsSecurity,System.Boolean,CodeFactory.WinVs.Models.CSharp.CsSecurity,System.String,System.Collections.Generic.IEnumerable{CodeFactory.WinVs.Models.CSharp.Builder.NamedSyntax},CodeFactory.WinVs.Models.CSharp.Builder.NameFormatting)
+    name: BuildPropertyAsync
+    isExternal: true
+    href: CodeFactory.WinVs.Models.CSharp.Builder.IPropertyBuilder.html#CodeFactory_WinVs_Models_CSharp_Builder_IPropertyBuilder_BuildPropertyAsync_CodeFactory_WinVs_Models_CSharp_CsProperty_CodeFactory_WinVs_Models_CSharp_Builder_ISourceManager_System_Int32_System_String_CodeFactory_WinVs_Models_CSharp_CsSecurity_System_Boolean_System_Collections_Generic_IEnumerable_System_String__System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_Microsoft_Extensions_Logging_LogLevel_System_Boolean_CodeFactory_WinVs_Models_CSharp_CsSecurity_System_Boolean_CodeFactory_WinVs_Models_CSharp_CsSecurity_System_String_System_Collections_Generic_IEnumerable_CodeFactory_WinVs_Models_CSharp_Builder_NamedSyntax__CodeFactory_WinVs_Models_CSharp_Builder_NameFormatting_
+  - name: (
+  - uid: CodeFactory.WinVs.Models.CSharp.CsProperty
+    name: CsProperty
+    isExternal: true
+    href: CodeFactory.WinVs.Models.CSharp.CsProperty.html
+  - name: ','
+  - name: " "
+  - uid: CodeFactory.WinVs.Models.CSharp.Builder.ISourceManager
+    name: ISourceManager
+    isExternal: true
+    href: CodeFactory.WinVs.Models.CSharp.Builder.ISourceManager.html
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: CodeFactory.WinVs.Models.CSharp.CsSecurity
+    name: CsSecurity
+    isExternal: true
+    href: CodeFactory.WinVs.Models.CSharp.CsSecurity.html
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: ','
+  - name: " "
+  - uid: Microsoft.Extensions.Logging.LogLevel
+    name: LogLevel
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.loglevel
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: ','
+  - name: " "
+  - uid: CodeFactory.WinVs.Models.CSharp.CsSecurity
+    name: CsSecurity
+    isExternal: true
+    href: CodeFactory.WinVs.Models.CSharp.CsSecurity.html
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: ','
+  - name: " "
+  - uid: CodeFactory.WinVs.Models.CSharp.CsSecurity
+    name: CsSecurity
+    isExternal: true
+    href: CodeFactory.WinVs.Models.CSharp.CsSecurity.html
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: CodeFactory.WinVs.Models.CSharp.Builder.NamedSyntax
+    name: NamedSyntax
+    isExternal: true
+    href: CodeFactory.WinVs.Models.CSharp.Builder.NamedSyntax.html
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: CodeFactory.WinVs.Models.CSharp.Builder.NameFormatting
+    name: NameFormatting
+    isExternal: true
+    href: CodeFactory.WinVs.Models.CSharp.Builder.NameFormatting.html
+  - name: )
+- uid: CodeFactory.WinVs.Models.CSharp.CsProperty
+  commentId: T:CodeFactory.WinVs.Models.CSharp.CsProperty
+  parent: CodeFactory.WinVs.Models.CSharp
+  isExternal: true
+  href: CodeFactory.WinVs.Models.CSharp.CsProperty.html
+  name: CsProperty
+  nameWithType: CsProperty
+  fullName: CodeFactory.WinVs.Models.CSharp.CsProperty
+- uid: CodeFactory.WinVs.Models.CSharp.Builder.ISourceManager
+  commentId: T:CodeFactory.WinVs.Models.CSharp.Builder.ISourceManager
+  parent: CodeFactory.WinVs.Models.CSharp.Builder
+  isExternal: true
+  href: CodeFactory.WinVs.Models.CSharp.Builder.ISourceManager.html
+  name: ISourceManager
+  nameWithType: ISourceManager
+  fullName: CodeFactory.WinVs.Models.CSharp.Builder.ISourceManager
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: CodeFactory.WinVs.Models.CSharp.CsSecurity
+  commentId: T:CodeFactory.WinVs.Models.CSharp.CsSecurity
+  parent: CodeFactory.WinVs.Models.CSharp
+  isExternal: true
+  href: CodeFactory.WinVs.Models.CSharp.CsSecurity.html
+  name: CsSecurity
+  nameWithType: CsSecurity
+  fullName: CodeFactory.WinVs.Models.CSharp.CsSecurity
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System.Collections.Generic.IEnumerable{System.String}
+  commentId: T:System.Collections.Generic.IEnumerable{System.String}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<string>
+  nameWithType: IEnumerable<string>
+  fullName: System.Collections.Generic.IEnumerable<string>
+  nameWithType.vb: IEnumerable(Of String)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of String)
+  name.vb: IEnumerable(Of String)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Microsoft.Extensions.Logging.LogLevel
+  commentId: T:Microsoft.Extensions.Logging.LogLevel
+  parent: Microsoft.Extensions.Logging
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.loglevel
+  name: LogLevel
+  nameWithType: LogLevel
+  fullName: Microsoft.Extensions.Logging.LogLevel
+- uid: System.Collections.Generic.IEnumerable{CodeFactory.WinVs.Models.CSharp.Builder.NamedSyntax}
+  commentId: T:System.Collections.Generic.IEnumerable{CodeFactory.WinVs.Models.CSharp.Builder.NamedSyntax}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<NamedSyntax>
+  nameWithType: IEnumerable<NamedSyntax>
+  fullName: System.Collections.Generic.IEnumerable<CodeFactory.WinVs.Models.CSharp.Builder.NamedSyntax>
+  nameWithType.vb: IEnumerable(Of NamedSyntax)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of CodeFactory.WinVs.Models.CSharp.Builder.NamedSyntax)
+  name.vb: IEnumerable(Of NamedSyntax)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: CodeFactory.WinVs.Models.CSharp.Builder.NamedSyntax
+    name: NamedSyntax
+    isExternal: true
+    href: CodeFactory.WinVs.Models.CSharp.Builder.NamedSyntax.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: CodeFactory.WinVs.Models.CSharp.Builder.NamedSyntax
+    name: NamedSyntax
+    isExternal: true
+    href: CodeFactory.WinVs.Models.CSharp.Builder.NamedSyntax.html
+  - name: )
+- uid: CodeFactory.WinVs.Models.CSharp.Builder.NameFormatting
+  commentId: T:CodeFactory.WinVs.Models.CSharp.Builder.NameFormatting
+  parent: CodeFactory.WinVs.Models.CSharp.Builder
+  isExternal: true
+  href: CodeFactory.WinVs.Models.CSharp.Builder.NameFormatting.html
+  name: NameFormatting
+  nameWithType: NameFormatting
+  fullName: CodeFactory.WinVs.Models.CSharp.Builder.NameFormatting
+- uid: System.Threading.Tasks.Task{System.String}
+  commentId: T:System.Threading.Tasks.Task{System.String}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<string>
+  nameWithType: Task<string>
+  fullName: System.Threading.Tasks.Task<string>
+  nameWithType.vb: Task(Of String)
+  fullName.vb: System.Threading.Tasks.Task(Of String)
+  name.vb: Task(Of String)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: CodeFactory.WinVs.Models.CSharp
+  commentId: N:CodeFactory.WinVs.Models.CSharp
+  isExternal: true
+  href: CodeFactory.html
+  name: CodeFactory.WinVs.Models.CSharp
+  nameWithType: CodeFactory.WinVs.Models.CSharp
+  fullName: CodeFactory.WinVs.Models.CSharp
+  spec.csharp:
+  - uid: CodeFactory
+    name: CodeFactory
+    isExternal: true
+    href: CodeFactory.html
+  - name: .
+  - uid: CodeFactory.WinVs
+    name: WinVs
+    isExternal: true
+    href: CodeFactory.WinVs.html
+  - name: .
+  - uid: CodeFactory.WinVs.Models
+    name: Models
+    isExternal: true
+    href: CodeFactory.WinVs.Models.html
+  - name: .
+  - uid: CodeFactory.WinVs.Models.CSharp
+    name: CSharp
+    isExternal: true
+    href: CodeFactory.WinVs.Models.CSharp.html
+  spec.vb:
+  - uid: CodeFactory
+    name: CodeFactory
+    isExternal: true
+    href: CodeFactory.html
+  - name: .
+  - uid: CodeFactory.WinVs
+    name: WinVs
+    isExternal: true
+    href: CodeFactory.WinVs.html
+  - name: .
+  - uid: CodeFactory.WinVs.Models
+    name: Models
+    isExternal: true
+    href: CodeFactory.WinVs.Models.html
+  - name: .
+  - uid: CodeFactory.WinVs.Models.CSharp
+    name: CSharp
+    isExternal: true
+    href: CodeFactory.WinVs.Models.CSharp.html
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: Microsoft.Extensions.Logging
+  commentId: N:Microsoft.Extensions.Logging
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft
+  name: Microsoft.Extensions.Logging
+  nameWithType: Microsoft.Extensions.Logging
+  fullName: Microsoft.Extensions.Logging
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.Extensions
+    name: Extensions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions
+  - name: .
+  - uid: Microsoft.Extensions.Logging
+    name: Logging
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.Extensions
+    name: Extensions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions
+  - name: .
+  - uid: Microsoft.Extensions.Logging
+    name: Logging
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: CodeFactory.WinVs.Models.CSharp.Builder.BasePropertyBuilder.InjectPropertyAsync*
+  commentId: Overload:CodeFactory.WinVs.Models.CSharp.Builder.BasePropertyBuilder.InjectPropertyAsync
+  isExternal: true
+  href: CodeFactory.WinVs.Models.CSharp.Builder.BasePropertyBuilder.html#CodeFactory_WinVs_Models_CSharp_Builder_BasePropertyBuilder_InjectPropertyAsync_CodeFactory_WinVs_Models_CSharp_CsProperty_CodeFactory_WinVs_Models_CSharp_Builder_ISourceManager_System_Int32_CodeFactory_WinVs_Models_CSharp_Builder_InjectionLocation_System_String_CodeFactory_WinVs_Models_CSharp_CsSecurity_System_Boolean_System_Collections_Generic_IEnumerable_System_String__System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_Microsoft_Extensions_Logging_LogLevel_System_Boolean_CodeFactory_WinVs_Models_CSharp_CsSecurity_System_Boolean_CodeFactory_WinVs_Models_CSharp_CsSecurity_System_String_System_Collections_Generic_IEnumerable_CodeFactory_WinVs_Models_CSharp_Builder_NamedSyntax__CodeFactory_WinVs_Models_CSharp_Builder_NameFormatting_
+  name: InjectPropertyAsync
+  nameWithType: BasePropertyBuilder.InjectPropertyAsync
+  fullName: CodeFactory.WinVs.Models.CSharp.Builder.BasePropertyBuilder.InjectPropertyAsync
+- uid: CodeFactory.WinVs.Models.CSharp.Builder.IPropertyBuilder.InjectPropertyAsync(CodeFactory.WinVs.Models.CSharp.CsProperty,CodeFactory.WinVs.Models.CSharp.Builder.ISourceManager,System.Int32,CodeFactory.WinVs.Models.CSharp.Builder.InjectionLocation,System.String,CodeFactory.WinVs.Models.CSharp.CsSecurity,System.Boolean,System.Collections.Generic.IEnumerable{System.String},System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,Microsoft.Extensions.Logging.LogLevel,System.Boolean,CodeFactory.WinVs.Models.CSharp.CsSecurity,System.Boolean,CodeFactory.WinVs.Models.CSharp.CsSecurity,System.String,System.Collections.Generic.IEnumerable{CodeFactory.WinVs.Models.CSharp.Builder.NamedSyntax},CodeFactory.WinVs.Models.CSharp.Builder.NameFormatting)
+  commentId: M:CodeFactory.WinVs.Models.CSharp.Builder.IPropertyBuilder.InjectPropertyAsync(CodeFactory.WinVs.Models.CSharp.CsProperty,CodeFactory.WinVs.Models.CSharp.Builder.ISourceManager,System.Int32,CodeFactory.WinVs.Models.CSharp.Builder.InjectionLocation,System.String,CodeFactory.WinVs.Models.CSharp.CsSecurity,System.Boolean,System.Collections.Generic.IEnumerable{System.String},System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,Microsoft.Extensions.Logging.LogLevel,System.Boolean,CodeFactory.WinVs.Models.CSharp.CsSecurity,System.Boolean,CodeFactory.WinVs.Models.CSharp.CsSecurity,System.String,System.Collections.Generic.IEnumerable{CodeFactory.WinVs.Models.CSharp.Builder.NamedSyntax},CodeFactory.WinVs.Models.CSharp.Builder.NameFormatting)
+  parent: CodeFactory.WinVs.Models.CSharp.Builder.IPropertyBuilder
+  isExternal: true
+  href: CodeFactory.WinVs.Models.CSharp.Builder.IPropertyBuilder.html#CodeFactory_WinVs_Models_CSharp_Builder_IPropertyBuilder_InjectPropertyAsync_CodeFactory_WinVs_Models_CSharp_CsProperty_CodeFactory_WinVs_Models_CSharp_Builder_ISourceManager_System_Int32_CodeFactory_WinVs_Models_CSharp_Builder_InjectionLocation_System_String_CodeFactory_WinVs_Models_CSharp_CsSecurity_System_Boolean_System_Collections_Generic_IEnumerable_System_String__System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_Microsoft_Extensions_Logging_LogLevel_System_Boolean_CodeFactory_WinVs_Models_CSharp_CsSecurity_System_Boolean_CodeFactory_WinVs_Models_CSharp_CsSecurity_System_String_System_Collections_Generic_IEnumerable_CodeFactory_WinVs_Models_CSharp_Builder_NamedSyntax__CodeFactory_WinVs_Models_CSharp_Builder_NameFormatting_
+  name: InjectPropertyAsync(CsProperty, ISourceManager, int, InjectionLocation, string, CsSecurity, bool, IEnumerable<string>, bool, bool, bool, bool, bool, bool, bool, LogLevel, bool, CsSecurity, bool, CsSecurity, string, IEnumerable<NamedSyntax>, NameFormatting)
+  nameWithType: IPropertyBuilder.InjectPropertyAsync(CsProperty, ISourceManager, int, InjectionLocation, string, CsSecurity, bool, IEnumerable<string>, bool, bool, bool, bool, bool, bool, bool, LogLevel, bool, CsSecurity, bool, CsSecurity, string, IEnumerable<NamedSyntax>, NameFormatting)
+  fullName: CodeFactory.WinVs.Models.CSharp.Builder.IPropertyBuilder.InjectPropertyAsync(CodeFactory.WinVs.Models.CSharp.CsProperty, CodeFactory.WinVs.Models.CSharp.Builder.ISourceManager, int, CodeFactory.WinVs.Models.CSharp.Builder.InjectionLocation, string, CodeFactory.WinVs.Models.CSharp.CsSecurity, bool, System.Collections.Generic.IEnumerable<string>, bool, bool, bool, bool, bool, bool, bool, Microsoft.Extensions.Logging.LogLevel, bool, CodeFactory.WinVs.Models.CSharp.CsSecurity, bool, CodeFactory.WinVs.Models.CSharp.CsSecurity, string, System.Collections.Generic.IEnumerable<CodeFactory.WinVs.Models.CSharp.Builder.NamedSyntax>, CodeFactory.WinVs.Models.CSharp.Builder.NameFormatting)
+  nameWithType.vb: IPropertyBuilder.InjectPropertyAsync(CsProperty, ISourceManager, Integer, InjectionLocation, String, CsSecurity, Boolean, IEnumerable(Of String), Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, LogLevel, Boolean, CsSecurity, Boolean, CsSecurity, String, IEnumerable(Of NamedSyntax), NameFormatting)
+  fullName.vb: CodeFactory.WinVs.Models.CSharp.Builder.IPropertyBuilder.InjectPropertyAsync(CodeFactory.WinVs.Models.CSharp.CsProperty, CodeFactory.WinVs.Models.CSharp.Builder.ISourceManager, Integer, CodeFactory.WinVs.Models.CSharp.Builder.InjectionLocation, String, CodeFactory.WinVs.Models.CSharp.CsSecurity, Boolean, System.Collections.Generic.IEnumerable(Of String), Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, Microsoft.Extensions.Logging.LogLevel, Boolean, CodeFactory.WinVs.Models.CSharp.CsSecurity, Boolean, CodeFactory.WinVs.Models.CSharp.CsSecurity, String, System.Collections.Generic.IEnumerable(Of CodeFactory.WinVs.Models.CSharp.Builder.NamedSyntax), CodeFactory.WinVs.Models.CSharp.Builder.NameFormatting)
+  name.vb: InjectPropertyAsync(CsProperty, ISourceManager, Integer, InjectionLocation, String, CsSecurity, Boolean, IEnumerable(Of String), Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, LogLevel, Boolean, CsSecurity, Boolean, CsSecurity, String, IEnumerable(Of NamedSyntax), NameFormatting)
+  spec.csharp:
+  - uid: CodeFactory.WinVs.Models.CSharp.Builder.IPropertyBuilder.InjectPropertyAsync(CodeFactory.WinVs.Models.CSharp.CsProperty,CodeFactory.WinVs.Models.CSharp.Builder.ISourceManager,System.Int32,CodeFactory.WinVs.Models.CSharp.Builder.InjectionLocation,System.String,CodeFactory.WinVs.Models.CSharp.CsSecurity,System.Boolean,System.Collections.Generic.IEnumerable{System.String},System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,Microsoft.Extensions.Logging.LogLevel,System.Boolean,CodeFactory.WinVs.Models.CSharp.CsSecurity,System.Boolean,CodeFactory.WinVs.Models.CSharp.CsSecurity,System.String,System.Collections.Generic.IEnumerable{CodeFactory.WinVs.Models.CSharp.Builder.NamedSyntax},CodeFactory.WinVs.Models.CSharp.Builder.NameFormatting)
+    name: InjectPropertyAsync
+    isExternal: true
+    href: CodeFactory.WinVs.Models.CSharp.Builder.IPropertyBuilder.html#CodeFactory_WinVs_Models_CSharp_Builder_IPropertyBuilder_InjectPropertyAsync_CodeFactory_WinVs_Models_CSharp_CsProperty_CodeFactory_WinVs_Models_CSharp_Builder_ISourceManager_System_Int32_CodeFactory_WinVs_Models_CSharp_Builder_InjectionLocation_System_String_CodeFactory_WinVs_Models_CSharp_CsSecurity_System_Boolean_System_Collections_Generic_IEnumerable_System_String__System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_Microsoft_Extensions_Logging_LogLevel_System_Boolean_CodeFactory_WinVs_Models_CSharp_CsSecurity_System_Boolean_CodeFactory_WinVs_Models_CSharp_CsSecurity_System_String_System_Collections_Generic_IEnumerable_CodeFactory_WinVs_Models_CSharp_Builder_NamedSyntax__CodeFactory_WinVs_Models_CSharp_Builder_NameFormatting_
+  - name: (
+  - uid: CodeFactory.WinVs.Models.CSharp.CsProperty
+    name: CsProperty
+    isExternal: true
+    href: CodeFactory.WinVs.Models.CSharp.CsProperty.html
+  - name: ','
+  - name: " "
+  - uid: CodeFactory.WinVs.Models.CSharp.Builder.ISourceManager
+    name: ISourceManager
+    isExternal: true
+    href: CodeFactory.WinVs.Models.CSharp.Builder.ISourceManager.html
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: CodeFactory.WinVs.Models.CSharp.Builder.InjectionLocation
+    name: InjectionLocation
+    isExternal: true
+    href: CodeFactory.WinVs.Models.CSharp.Builder.InjectionLocation.html
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: CodeFactory.WinVs.Models.CSharp.CsSecurity
+    name: CsSecurity
+    isExternal: true
+    href: CodeFactory.WinVs.Models.CSharp.CsSecurity.html
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: ','
+  - name: " "
+  - uid: Microsoft.Extensions.Logging.LogLevel
+    name: LogLevel
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.loglevel
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: ','
+  - name: " "
+  - uid: CodeFactory.WinVs.Models.CSharp.CsSecurity
+    name: CsSecurity
+    isExternal: true
+    href: CodeFactory.WinVs.Models.CSharp.CsSecurity.html
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: ','
+  - name: " "
+  - uid: CodeFactory.WinVs.Models.CSharp.CsSecurity
+    name: CsSecurity
+    isExternal: true
+    href: CodeFactory.WinVs.Models.CSharp.CsSecurity.html
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: CodeFactory.WinVs.Models.CSharp.Builder.NamedSyntax
+    name: NamedSyntax
+    isExternal: true
+    href: CodeFactory.WinVs.Models.CSharp.Builder.NamedSyntax.html
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: CodeFactory.WinVs.Models.CSharp.Builder.NameFormatting
+    name: NameFormatting
+    isExternal: true
+    href: CodeFactory.WinVs.Models.CSharp.Builder.NameFormatting.html
+  - name: )
+  spec.vb:
+  - uid: CodeFactory.WinVs.Models.CSharp.Builder.IPropertyBuilder.InjectPropertyAsync(CodeFactory.WinVs.Models.CSharp.CsProperty,CodeFactory.WinVs.Models.CSharp.Builder.ISourceManager,System.Int32,CodeFactory.WinVs.Models.CSharp.Builder.InjectionLocation,System.String,CodeFactory.WinVs.Models.CSharp.CsSecurity,System.Boolean,System.Collections.Generic.IEnumerable{System.String},System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,Microsoft.Extensions.Logging.LogLevel,System.Boolean,CodeFactory.WinVs.Models.CSharp.CsSecurity,System.Boolean,CodeFactory.WinVs.Models.CSharp.CsSecurity,System.String,System.Collections.Generic.IEnumerable{CodeFactory.WinVs.Models.CSharp.Builder.NamedSyntax},CodeFactory.WinVs.Models.CSharp.Builder.NameFormatting)
+    name: InjectPropertyAsync
+    isExternal: true
+    href: CodeFactory.WinVs.Models.CSharp.Builder.IPropertyBuilder.html#CodeFactory_WinVs_Models_CSharp_Builder_IPropertyBuilder_InjectPropertyAsync_CodeFactory_WinVs_Models_CSharp_CsProperty_CodeFactory_WinVs_Models_CSharp_Builder_ISourceManager_System_Int32_CodeFactory_WinVs_Models_CSharp_Builder_InjectionLocation_System_String_CodeFactory_WinVs_Models_CSharp_CsSecurity_System_Boolean_System_Collections_Generic_IEnumerable_System_String__System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_Microsoft_Extensions_Logging_LogLevel_System_Boolean_CodeFactory_WinVs_Models_CSharp_CsSecurity_System_Boolean_CodeFactory_WinVs_Models_CSharp_CsSecurity_System_String_System_Collections_Generic_IEnumerable_CodeFactory_WinVs_Models_CSharp_Builder_NamedSyntax__CodeFactory_WinVs_Models_CSharp_Builder_NameFormatting_
+  - name: (
+  - uid: CodeFactory.WinVs.Models.CSharp.CsProperty
+    name: CsProperty
+    isExternal: true
+    href: CodeFactory.WinVs.Models.CSharp.CsProperty.html
+  - name: ','
+  - name: " "
+  - uid: CodeFactory.WinVs.Models.CSharp.Builder.ISourceManager
+    name: ISourceManager
+    isExternal: true
+    href: CodeFactory.WinVs.Models.CSharp.Builder.ISourceManager.html
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: CodeFactory.WinVs.Models.CSharp.Builder.InjectionLocation
+    name: InjectionLocation
+    isExternal: true
+    href: CodeFactory.WinVs.Models.CSharp.Builder.InjectionLocation.html
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: CodeFactory.WinVs.Models.CSharp.CsSecurity
+    name: CsSecurity
+    isExternal: true
+    href: CodeFactory.WinVs.Models.CSharp.CsSecurity.html
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: ','
+  - name: " "
+  - uid: Microsoft.Extensions.Logging.LogLevel
+    name: LogLevel
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.loglevel
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: ','
+  - name: " "
+  - uid: CodeFactory.WinVs.Models.CSharp.CsSecurity
+    name: CsSecurity
+    isExternal: true
+    href: CodeFactory.WinVs.Models.CSharp.CsSecurity.html
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: ','
+  - name: " "
+  - uid: CodeFactory.WinVs.Models.CSharp.CsSecurity
+    name: CsSecurity
+    isExternal: true
+    href: CodeFactory.WinVs.Models.CSharp.CsSecurity.html
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: CodeFactory.WinVs.Models.CSharp.Builder.NamedSyntax
+    name: NamedSyntax
+    isExternal: true
+    href: CodeFactory.WinVs.Models.CSharp.Builder.NamedSyntax.html
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: CodeFactory.WinVs.Models.CSharp.Builder.NameFormatting
+    name: NameFormatting
+    isExternal: true
+    href: CodeFactory.WinVs.Models.CSharp.Builder.NameFormatting.html
+  - name: )
+- uid: CodeFactory.WinVs.Models.CSharp.Builder.InjectionLocation
+  commentId: T:CodeFactory.WinVs.Models.CSharp.Builder.InjectionLocation
+  parent: CodeFactory.WinVs.Models.CSharp.Builder
+  isExternal: true
+  href: CodeFactory.WinVs.Models.CSharp.Builder.InjectionLocation.html
+  name: InjectionLocation
+  nameWithType: InjectionLocation
+  fullName: CodeFactory.WinVs.Models.CSharp.Builder.InjectionLocation
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: CodeFactory.WinVs.Models.CSharp.Builder.BasePropertyBuilder.GenerateBuildPropertyAsync*
+  commentId: Overload:CodeFactory.WinVs.Models.CSharp.Builder.BasePropertyBuilder.GenerateBuildPropertyAsync
+  isExternal: true
+  href: CodeFactory.WinVs.Models.CSharp.Builder.BasePropertyBuilder.html#CodeFactory_WinVs_Models_CSharp_Builder_BasePropertyBuilder_GenerateBuildPropertyAsync_CodeFactory_WinVs_Models_CSharp_CsProperty_CodeFactory_WinVs_Models_CSharp_Builder_ISourceManager_System_Int32_System_String_CodeFactory_WinVs_Models_CSharp_CsSecurity_System_Boolean_System_Collections_Generic_IEnumerable_System_String__System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_Microsoft_Extensions_Logging_LogLevel_System_Boolean_CodeFactory_WinVs_Models_CSharp_CsSecurity_System_Boolean_CodeFactory_WinVs_Models_CSharp_CsSecurity_System_String_System_Collections_Generic_IEnumerable_CodeFactory_WinVs_Models_CSharp_Builder_NamedSyntax__CodeFactory_WinVs_Models_CSharp_Builder_NameFormatting_
+  name: GenerateBuildPropertyAsync
+  nameWithType: BasePropertyBuilder.GenerateBuildPropertyAsync
+  fullName: CodeFactory.WinVs.Models.CSharp.Builder.BasePropertyBuilder.GenerateBuildPropertyAsync
+- uid: CodeFactory.WinVs.Models.CSharp.Builder.BasePropertyBuilder.BuilderType*
+  commentId: Overload:CodeFactory.WinVs.Models.CSharp.Builder.BasePropertyBuilder.BuilderType
+  isExternal: true
+  href: CodeFactory.WinVs.Models.CSharp.Builder.BasePropertyBuilder.html#CodeFactory_WinVs_Models_CSharp_Builder_BasePropertyBuilder_BuilderType
+  name: BuilderType
+  nameWithType: BasePropertyBuilder.BuilderType
+  fullName: CodeFactory.WinVs.Models.CSharp.Builder.BasePropertyBuilder.BuilderType
+- uid: CodeFactory.WinVs.Models.CSharp.Builder.IBuilder.BuilderType
+  commentId: P:CodeFactory.WinVs.Models.CSharp.Builder.IBuilder.BuilderType
+  parent: CodeFactory.WinVs.Models.CSharp.Builder.IBuilder
+  isExternal: true
+  href: CodeFactory.WinVs.Models.CSharp.Builder.IBuilder.html#CodeFactory_WinVs_Models_CSharp_Builder_IBuilder_BuilderType
+  name: BuilderType
+  nameWithType: IBuilder.BuilderType
+  fullName: CodeFactory.WinVs.Models.CSharp.Builder.IBuilder.BuilderType
+- uid: CodeFactory.WinVs.Models.CSharp.Builder.BuilderType
+  commentId: T:CodeFactory.WinVs.Models.CSharp.Builder.BuilderType
+  parent: CodeFactory.WinVs.Models.CSharp.Builder
+  isExternal: true
+  href: CodeFactory.WinVs.Models.CSharp.Builder.BuilderType.html
+  name: BuilderType
+  nameWithType: BuilderType
+  fullName: CodeFactory.WinVs.Models.CSharp.Builder.BuilderType
+- uid: CodeFactory.WinVs.Models.CSharp.Builder.BasePropertyBuilder.LoggerBlock*
+  commentId: Overload:CodeFactory.WinVs.Models.CSharp.Builder.BasePropertyBuilder.LoggerBlock
+  isExternal: true
+  href: CodeFactory.WinVs.Models.CSharp.Builder.BasePropertyBuilder.html#CodeFactory_WinVs_Models_CSharp_Builder_BasePropertyBuilder_LoggerBlock
+  name: LoggerBlock
+  nameWithType: BasePropertyBuilder.LoggerBlock
+  fullName: CodeFactory.WinVs.Models.CSharp.Builder.BasePropertyBuilder.LoggerBlock
+- uid: CodeFactory.WinVs.Models.CSharp.Builder.BasePropertyBuilder.TryBlock*
+  commentId: Overload:CodeFactory.WinVs.Models.CSharp.Builder.BasePropertyBuilder.TryBlock
+  isExternal: true
+  href: CodeFactory.WinVs.Models.CSharp.Builder.BasePropertyBuilder.html#CodeFactory_WinVs_Models_CSharp_Builder_BasePropertyBuilder_TryBlock
+  name: TryBlock
+  nameWithType: BasePropertyBuilder.TryBlock
+  fullName: CodeFactory.WinVs.Models.CSharp.Builder.BasePropertyBuilder.TryBlock

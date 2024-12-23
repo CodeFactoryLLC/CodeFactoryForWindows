@@ -1,0 +1,997 @@
+### YamlMime:ManagedReference
+items:
+- uid: System.Text.Json.JsonException
+  commentId: T:System.Text.Json.JsonException
+  id: JsonException
+  parent: System.Text.Json
+  children:
+  - System.Text.Json.JsonException.#ctor
+  - System.Text.Json.JsonException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  - System.Text.Json.JsonException.#ctor(System.String)
+  - System.Text.Json.JsonException.#ctor(System.String,System.Exception)
+  - System.Text.Json.JsonException.#ctor(System.String,System.String,System.Nullable{System.Int64},System.Nullable{System.Int64})
+  - System.Text.Json.JsonException.#ctor(System.String,System.String,System.Nullable{System.Int64},System.Nullable{System.Int64},System.Exception)
+  - System.Text.Json.JsonException.BytePositionInLine
+  - System.Text.Json.JsonException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  - System.Text.Json.JsonException.LineNumber
+  - System.Text.Json.JsonException.Message
+  - System.Text.Json.JsonException.Path
+  langs:
+  - csharp
+  - vb
+  name: JsonException
+  nameWithType: JsonException
+  fullName: System.Text.Json.JsonException
+  type: Class
+  assemblies:
+  - System.Text.Json
+  namespace: System.Text.Json
+  summary: Defines a custom exception object that is thrown when invalid JSON text is encountered, when the defined maximum depth is passed, or the JSON text is not compatible with the type of a property on an object.
+  example: []
+  syntax:
+    content: 'public class JsonException : Exception, ISerializable, _Exception'
+    content.vb: Public Class JsonException Inherits Exception Implements ISerializable, _Exception
+  inheritance:
+  - System.Object
+  - System.Exception
+  implements:
+  - System.Runtime.Serialization.ISerializable
+  - System.Runtime.InteropServices._Exception
+  inheritedMembers:
+  - System.Exception.GetBaseException
+  - System.Exception.ToString
+  - System.Exception.GetType
+  - System.Exception.Data
+  - System.Exception.InnerException
+  - System.Exception.TargetSite
+  - System.Exception.StackTrace
+  - System.Exception.HelpLink
+  - System.Exception.Source
+  - System.Exception.HResult
+  - System.Exception.SerializeObjectState
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.MemberwiseClone
+- uid: System.Text.Json.JsonException.#ctor(System.String,System.String,System.Nullable{System.Int64},System.Nullable{System.Int64},System.Exception)
+  commentId: M:System.Text.Json.JsonException.#ctor(System.String,System.String,System.Nullable{System.Int64},System.Nullable{System.Int64},System.Exception)
+  id: '#ctor(System.String,System.String,System.Nullable{System.Int64},System.Nullable{System.Int64},System.Exception)'
+  parent: System.Text.Json.JsonException
+  langs:
+  - csharp
+  - vb
+  name: JsonException(string?, string?, long?, long?, Exception?)
+  nameWithType: JsonException.JsonException(string?, string?, long?, long?, Exception?)
+  fullName: System.Text.Json.JsonException.JsonException(string?, string?, long?, long?, System.Exception?)
+  type: Constructor
+  assemblies:
+  - System.Text.Json
+  namespace: System.Text.Json
+  summary: Creates a new exception object to relay error information to the user that includes a specified inner exception.
+  example: []
+  syntax:
+    content: public JsonException(string? message, string? path, long? lineNumber, long? bytePositionInLine, Exception? innerException)
+    parameters:
+    - id: message
+      type: System.String
+      description: The context-specific error message.
+    - id: path
+      type: System.String
+      description: The path where the invalid JSON was encountered.
+    - id: lineNumber
+      type: System.Nullable{System.Int64}
+      description: The line number (starting at 0) at which the invalid JSON was encountered when deserializing.
+    - id: bytePositionInLine
+      type: System.Nullable{System.Int64}
+      description: The byte count (starting at 0) within the current line where the invalid JSON was encountered.
+    - id: innerException
+      type: System.Exception
+      description: The exception that caused the current exception.
+    content.vb: Public Sub New(message As String, path As String, lineNumber As Long?, bytePositionInLine As Long?, innerException As Exception)
+  overload: System.Text.Json.JsonException.#ctor*
+  nameWithType.vb: JsonException.New(String, String, Long?, Long?, Exception)
+  fullName.vb: System.Text.Json.JsonException.New(String, String, Long?, Long?, System.Exception)
+  name.vb: New(String, String, Long?, Long?, Exception)
+- uid: System.Text.Json.JsonException.#ctor(System.String,System.String,System.Nullable{System.Int64},System.Nullable{System.Int64})
+  commentId: M:System.Text.Json.JsonException.#ctor(System.String,System.String,System.Nullable{System.Int64},System.Nullable{System.Int64})
+  id: '#ctor(System.String,System.String,System.Nullable{System.Int64},System.Nullable{System.Int64})'
+  parent: System.Text.Json.JsonException
+  langs:
+  - csharp
+  - vb
+  name: JsonException(string?, string?, long?, long?)
+  nameWithType: JsonException.JsonException(string?, string?, long?, long?)
+  fullName: System.Text.Json.JsonException.JsonException(string?, string?, long?, long?)
+  type: Constructor
+  assemblies:
+  - System.Text.Json
+  namespace: System.Text.Json
+  summary: Creates a new exception object to relay error information to the user.
+  example: []
+  syntax:
+    content: public JsonException(string? message, string? path, long? lineNumber, long? bytePositionInLine)
+    parameters:
+    - id: message
+      type: System.String
+      description: The context-specific error message.
+    - id: path
+      type: System.String
+      description: The path where the invalid JSON was encountered.
+    - id: lineNumber
+      type: System.Nullable{System.Int64}
+      description: The line number (starting at 0) at which the invalid JSON was encountered when deserializing.
+    - id: bytePositionInLine
+      type: System.Nullable{System.Int64}
+      description: The byte count within the current line (starting at 0) where the invalid JSON was encountered.
+    content.vb: Public Sub New(message As String, path As String, lineNumber As Long?, bytePositionInLine As Long?)
+  overload: System.Text.Json.JsonException.#ctor*
+  nameWithType.vb: JsonException.New(String, String, Long?, Long?)
+  fullName.vb: System.Text.Json.JsonException.New(String, String, Long?, Long?)
+  name.vb: New(String, String, Long?, Long?)
+- uid: System.Text.Json.JsonException.#ctor(System.String,System.Exception)
+  commentId: M:System.Text.Json.JsonException.#ctor(System.String,System.Exception)
+  id: '#ctor(System.String,System.Exception)'
+  parent: System.Text.Json.JsonException
+  langs:
+  - csharp
+  - vb
+  name: JsonException(string?, Exception?)
+  nameWithType: JsonException.JsonException(string?, Exception?)
+  fullName: System.Text.Json.JsonException.JsonException(string?, System.Exception?)
+  type: Constructor
+  assemblies:
+  - System.Text.Json
+  namespace: System.Text.Json
+  summary: Initializes a new instance of the <xref href="System.Text.Json.JsonException" data-throw-if-not-resolved="false"></xref> class, with a specified error message and a reference to the inner exception that is the cause of this exception.
+  example: []
+  syntax:
+    content: public JsonException(string? message, Exception? innerException)
+    parameters:
+    - id: message
+      type: System.String
+      description: The context-specific error message.
+    - id: innerException
+      type: System.Exception
+      description: The exception that caused the current exception.
+    content.vb: Public Sub New(message As String, innerException As Exception)
+  overload: System.Text.Json.JsonException.#ctor*
+  nameWithType.vb: JsonException.New(String, Exception)
+  fullName.vb: System.Text.Json.JsonException.New(String, System.Exception)
+  name.vb: New(String, Exception)
+- uid: System.Text.Json.JsonException.#ctor(System.String)
+  commentId: M:System.Text.Json.JsonException.#ctor(System.String)
+  id: '#ctor(System.String)'
+  parent: System.Text.Json.JsonException
+  langs:
+  - csharp
+  - vb
+  name: JsonException(string?)
+  nameWithType: JsonException.JsonException(string?)
+  fullName: System.Text.Json.JsonException.JsonException(string?)
+  type: Constructor
+  assemblies:
+  - System.Text.Json
+  namespace: System.Text.Json
+  summary: Initializes a new instance of the <xref href="System.Text.Json.JsonException" data-throw-if-not-resolved="false"></xref> class with a specified error message.
+  example: []
+  syntax:
+    content: public JsonException(string? message)
+    parameters:
+    - id: message
+      type: System.String
+      description: The context-specific error message.
+    content.vb: Public Sub New(message As String)
+  overload: System.Text.Json.JsonException.#ctor*
+  nameWithType.vb: JsonException.New(String)
+  fullName.vb: System.Text.Json.JsonException.New(String)
+  name.vb: New(String)
+- uid: System.Text.Json.JsonException.#ctor
+  commentId: M:System.Text.Json.JsonException.#ctor
+  id: '#ctor'
+  parent: System.Text.Json.JsonException
+  langs:
+  - csharp
+  - vb
+  name: JsonException()
+  nameWithType: JsonException.JsonException()
+  fullName: System.Text.Json.JsonException.JsonException()
+  type: Constructor
+  assemblies:
+  - System.Text.Json
+  namespace: System.Text.Json
+  summary: Initializes a new instance of the <xref href="System.Text.Json.JsonException" data-throw-if-not-resolved="false"></xref> class.
+  example: []
+  syntax:
+    content: public JsonException()
+    content.vb: Public Sub New()
+  overload: System.Text.Json.JsonException.#ctor*
+  nameWithType.vb: JsonException.New()
+  fullName.vb: System.Text.Json.JsonException.New()
+  name.vb: New()
+- uid: System.Text.Json.JsonException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  commentId: M:System.Text.Json.JsonException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  id: '#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)'
+  parent: System.Text.Json.JsonException
+  langs:
+  - csharp
+  - vb
+  name: JsonException(SerializationInfo, StreamingContext)
+  nameWithType: JsonException.JsonException(SerializationInfo, StreamingContext)
+  fullName: System.Text.Json.JsonException.JsonException(System.Runtime.Serialization.SerializationInfo, System.Runtime.Serialization.StreamingContext)
+  type: Constructor
+  assemblies:
+  - System.Text.Json
+  namespace: System.Text.Json
+  summary: Creates a new exception object with serialized data.
+  example: []
+  syntax:
+    content: protected JsonException(SerializationInfo info, StreamingContext context)
+    parameters:
+    - id: info
+      type: System.Runtime.Serialization.SerializationInfo
+      description: The serialized object data about the exception being thrown.
+    - id: context
+      type: System.Runtime.Serialization.StreamingContext
+      description: An object that contains contextual information about the source or destination.
+    content.vb: Protected Sub New(info As SerializationInfo, context As StreamingContext)
+  overload: System.Text.Json.JsonException.#ctor*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: <code class="paramref">info</code> is <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.
+  nameWithType.vb: JsonException.New(SerializationInfo, StreamingContext)
+  fullName.vb: System.Text.Json.JsonException.New(System.Runtime.Serialization.SerializationInfo, System.Runtime.Serialization.StreamingContext)
+  name.vb: New(SerializationInfo, StreamingContext)
+- uid: System.Text.Json.JsonException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  commentId: M:System.Text.Json.JsonException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  id: GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  parent: System.Text.Json.JsonException
+  langs:
+  - csharp
+  - vb
+  name: GetObjectData(SerializationInfo, StreamingContext)
+  nameWithType: JsonException.GetObjectData(SerializationInfo, StreamingContext)
+  fullName: System.Text.Json.JsonException.GetObjectData(System.Runtime.Serialization.SerializationInfo, System.Runtime.Serialization.StreamingContext)
+  type: Method
+  assemblies:
+  - System.Text.Json
+  namespace: System.Text.Json
+  summary: Sets the <xref href="System.Runtime.Serialization.SerializationInfo" data-throw-if-not-resolved="false"></xref> with information about the exception.
+  example: []
+  syntax:
+    content: public override void GetObjectData(SerializationInfo info, StreamingContext context)
+    parameters:
+    - id: info
+      type: System.Runtime.Serialization.SerializationInfo
+      description: The serialized object data about the exception being thrown.
+    - id: context
+      type: System.Runtime.Serialization.StreamingContext
+      description: An object that contains contextual information about the source or destination.
+    content.vb: Public Overrides Sub GetObjectData(info As SerializationInfo, context As StreamingContext)
+  overridden: System.Exception.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  overload: System.Text.Json.JsonException.GetObjectData*
+- uid: System.Text.Json.JsonException.LineNumber
+  commentId: P:System.Text.Json.JsonException.LineNumber
+  id: LineNumber
+  parent: System.Text.Json.JsonException
+  langs:
+  - csharp
+  - vb
+  name: LineNumber
+  nameWithType: JsonException.LineNumber
+  fullName: System.Text.Json.JsonException.LineNumber
+  type: Property
+  assemblies:
+  - System.Text.Json
+  namespace: System.Text.Json
+  summary: Gets the zero-based number of lines read before the exception.
+  example: []
+  syntax:
+    content: public long? LineNumber { get; }
+    parameters: []
+    return:
+      type: System.Nullable{System.Int64}
+      description: The zero-based number of lines read before the exception.
+    content.vb: Public ReadOnly Property LineNumber As Long?
+  overload: System.Text.Json.JsonException.LineNumber*
+- uid: System.Text.Json.JsonException.BytePositionInLine
+  commentId: P:System.Text.Json.JsonException.BytePositionInLine
+  id: BytePositionInLine
+  parent: System.Text.Json.JsonException
+  langs:
+  - csharp
+  - vb
+  name: BytePositionInLine
+  nameWithType: JsonException.BytePositionInLine
+  fullName: System.Text.Json.JsonException.BytePositionInLine
+  type: Property
+  assemblies:
+  - System.Text.Json
+  namespace: System.Text.Json
+  summary: Gets the zero-based number of bytes read within the current line before the exception.
+  example: []
+  syntax:
+    content: public long? BytePositionInLine { get; }
+    parameters: []
+    return:
+      type: System.Nullable{System.Int64}
+      description: The zero-based number of bytes read within the current line before the exception.
+    content.vb: Public ReadOnly Property BytePositionInLine As Long?
+  overload: System.Text.Json.JsonException.BytePositionInLine*
+- uid: System.Text.Json.JsonException.Path
+  commentId: P:System.Text.Json.JsonException.Path
+  id: Path
+  parent: System.Text.Json.JsonException
+  langs:
+  - csharp
+  - vb
+  name: Path
+  nameWithType: JsonException.Path
+  fullName: System.Text.Json.JsonException.Path
+  type: Property
+  assemblies:
+  - System.Text.Json
+  namespace: System.Text.Json
+  summary: Gets The path within the JSON where the exception was encountered.
+  example: []
+  syntax:
+    content: public string? Path { get; }
+    parameters: []
+    return:
+      type: System.String
+      description: The path within the JSON where the exception was encountered.
+    content.vb: Public ReadOnly Property Path As String
+  overload: System.Text.Json.JsonException.Path*
+- uid: System.Text.Json.JsonException.Message
+  commentId: P:System.Text.Json.JsonException.Message
+  id: Message
+  parent: System.Text.Json.JsonException
+  langs:
+  - csharp
+  - vb
+  name: Message
+  nameWithType: JsonException.Message
+  fullName: System.Text.Json.JsonException.Message
+  type: Property
+  assemblies:
+  - System.Text.Json
+  namespace: System.Text.Json
+  summary: Gets a message that describes the current exception.
+  example: []
+  syntax:
+    content: public override string Message { get; }
+    parameters: []
+    return:
+      type: System.String
+      description: The error message that describes the current exception.
+    content.vb: Public Overrides ReadOnly Property Message As String
+  overridden: System.Exception.Message
+  overload: System.Text.Json.JsonException.Message*
+references:
+- uid: System.Text.Json
+  commentId: N:System.Text.Json
+  isExternal: true
+  href: System.html
+  name: System.Text.Json
+  nameWithType: System.Text.Json
+  fullName: System.Text.Json
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: System.html
+  - name: .
+  - uid: System.Text
+    name: Text
+    isExternal: true
+    href: System.Text.html
+  - name: .
+  - uid: System.Text.Json
+    name: Json
+    isExternal: true
+    href: System.Text.Json.html
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: System.html
+  - name: .
+  - uid: System.Text
+    name: Text
+    isExternal: true
+    href: System.Text.html
+  - name: .
+  - uid: System.Text.Json
+    name: Json
+    isExternal: true
+    href: System.Text.Json.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Exception
+  commentId: T:System.Exception
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.exception
+  name: Exception
+  nameWithType: Exception
+  fullName: System.Exception
+- uid: System.Runtime.Serialization.ISerializable
+  commentId: T:System.Runtime.Serialization.ISerializable
+  parent: System.Runtime.Serialization
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.runtime.serialization.iserializable
+  name: ISerializable
+  nameWithType: ISerializable
+  fullName: System.Runtime.Serialization.ISerializable
+- uid: System.Runtime.InteropServices._Exception
+  commentId: T:System.Runtime.InteropServices._Exception
+  parent: System.Runtime.InteropServices
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices._exception
+  name: _Exception
+  nameWithType: _Exception
+  fullName: System.Runtime.InteropServices._Exception
+- uid: System.Exception.GetBaseException
+  commentId: M:System.Exception.GetBaseException
+  parent: System.Exception
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.exception.getbaseexception
+  name: GetBaseException()
+  nameWithType: Exception.GetBaseException()
+  fullName: System.Exception.GetBaseException()
+  spec.csharp:
+  - uid: System.Exception.GetBaseException
+    name: GetBaseException
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.exception.getbaseexception
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Exception.GetBaseException
+    name: GetBaseException
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.exception.getbaseexception
+  - name: (
+  - name: )
+- uid: System.Exception.ToString
+  commentId: M:System.Exception.ToString
+  parent: System.Exception
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.exception.tostring
+  name: ToString()
+  nameWithType: Exception.ToString()
+  fullName: System.Exception.ToString()
+  spec.csharp:
+  - uid: System.Exception.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.exception.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Exception.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.exception.tostring
+  - name: (
+  - name: )
+- uid: System.Exception.GetType
+  commentId: M:System.Exception.GetType
+  parent: System.Exception
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.exception.gettype
+  name: GetType()
+  nameWithType: Exception.GetType()
+  fullName: System.Exception.GetType()
+  spec.csharp:
+  - uid: System.Exception.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.exception.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Exception.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.exception.gettype
+  - name: (
+  - name: )
+- uid: System.Exception.Data
+  commentId: P:System.Exception.Data
+  parent: System.Exception
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.exception.data
+  name: Data
+  nameWithType: Exception.Data
+  fullName: System.Exception.Data
+- uid: System.Exception.InnerException
+  commentId: P:System.Exception.InnerException
+  parent: System.Exception
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.exception.innerexception
+  name: InnerException
+  nameWithType: Exception.InnerException
+  fullName: System.Exception.InnerException
+- uid: System.Exception.TargetSite
+  commentId: P:System.Exception.TargetSite
+  parent: System.Exception
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.exception.targetsite
+  name: TargetSite
+  nameWithType: Exception.TargetSite
+  fullName: System.Exception.TargetSite
+- uid: System.Exception.StackTrace
+  commentId: P:System.Exception.StackTrace
+  parent: System.Exception
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.exception.stacktrace
+  name: StackTrace
+  nameWithType: Exception.StackTrace
+  fullName: System.Exception.StackTrace
+- uid: System.Exception.HelpLink
+  commentId: P:System.Exception.HelpLink
+  parent: System.Exception
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.exception.helplink
+  name: HelpLink
+  nameWithType: Exception.HelpLink
+  fullName: System.Exception.HelpLink
+- uid: System.Exception.Source
+  commentId: P:System.Exception.Source
+  parent: System.Exception
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.exception.source
+  name: Source
+  nameWithType: Exception.Source
+  fullName: System.Exception.Source
+- uid: System.Exception.HResult
+  commentId: P:System.Exception.HResult
+  parent: System.Exception
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.exception.hresult
+  name: HResult
+  nameWithType: Exception.HResult
+  fullName: System.Exception.HResult
+- uid: System.Exception.SerializeObjectState
+  commentId: E:System.Exception.SerializeObjectState
+  parent: System.Exception
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.exception.serializeobjectstate
+  name: SerializeObjectState
+  nameWithType: Exception.SerializeObjectState
+  fullName: System.Exception.SerializeObjectState
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Runtime.Serialization
+  commentId: N:System.Runtime.Serialization
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Runtime.Serialization
+  nameWithType: System.Runtime.Serialization
+  fullName: System.Runtime.Serialization
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Runtime
+    name: Runtime
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime
+  - name: .
+  - uid: System.Runtime.Serialization
+    name: Serialization
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.serialization
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Runtime
+    name: Runtime
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime
+  - name: .
+  - uid: System.Runtime.Serialization
+    name: Serialization
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.serialization
+- uid: System.Runtime.InteropServices
+  commentId: N:System.Runtime.InteropServices
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Runtime.InteropServices
+  nameWithType: System.Runtime.InteropServices
+  fullName: System.Runtime.InteropServices
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Runtime
+    name: Runtime
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime
+  - name: .
+  - uid: System.Runtime.InteropServices
+    name: InteropServices
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Runtime
+    name: Runtime
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime
+  - name: .
+  - uid: System.Runtime.InteropServices
+    name: InteropServices
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.interopservices
+- uid: System.Text.Json.JsonException.#ctor*
+  commentId: Overload:System.Text.Json.JsonException.#ctor
+  isExternal: true
+  href: System.Text.Json.JsonException.html#System_Text_Json_JsonException__ctor_System_String_System_String_System_Nullable_System_Int64__System_Nullable_System_Int64__System_Exception_
+  name: JsonException
+  nameWithType: JsonException.JsonException
+  fullName: System.Text.Json.JsonException.JsonException
+  nameWithType.vb: JsonException.New
+  fullName.vb: System.Text.Json.JsonException.New
+  name.vb: New
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Nullable{System.Int64}
+  commentId: T:System.Nullable{System.Int64}
+  parent: System
+  definition: System.Nullable`1
+  href: https://learn.microsoft.com/dotnet/api/system.nullable
+  name: Nullable
+  nameWithType: Nullable
+  fullName: System.Nullable
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Text.Json.JsonException
+  commentId: T:System.Text.Json.JsonException
+  isExternal: true
+  href: System.Text.Json.JsonException.html
+  name: JsonException
+  nameWithType: JsonException
+  fullName: System.Text.Json.JsonException
+- uid: System.ArgumentNullException
+  commentId: T:System.ArgumentNullException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.argumentnullexception
+  name: ArgumentNullException
+  nameWithType: ArgumentNullException
+  fullName: System.ArgumentNullException
+- uid: System.Runtime.Serialization.SerializationInfo
+  commentId: T:System.Runtime.Serialization.SerializationInfo
+  parent: System.Runtime.Serialization
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.runtime.serialization.serializationinfo
+  name: SerializationInfo
+  nameWithType: SerializationInfo
+  fullName: System.Runtime.Serialization.SerializationInfo
+- uid: System.Runtime.Serialization.StreamingContext
+  commentId: T:System.Runtime.Serialization.StreamingContext
+  parent: System.Runtime.Serialization
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.runtime.serialization.streamingcontext
+  name: StreamingContext
+  nameWithType: StreamingContext
+  fullName: System.Runtime.Serialization.StreamingContext
+- uid: System.Exception.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  commentId: M:System.Exception.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  parent: System.Exception
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.exception.getobjectdata
+  name: GetObjectData(SerializationInfo, StreamingContext)
+  nameWithType: Exception.GetObjectData(SerializationInfo, StreamingContext)
+  fullName: System.Exception.GetObjectData(System.Runtime.Serialization.SerializationInfo, System.Runtime.Serialization.StreamingContext)
+  spec.csharp:
+  - uid: System.Exception.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+    name: GetObjectData
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.exception.getobjectdata
+  - name: (
+  - uid: System.Runtime.Serialization.SerializationInfo
+    name: SerializationInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.serialization.serializationinfo
+  - name: ','
+  - name: " "
+  - uid: System.Runtime.Serialization.StreamingContext
+    name: StreamingContext
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.serialization.streamingcontext
+  - name: )
+  spec.vb:
+  - uid: System.Exception.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+    name: GetObjectData
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.exception.getobjectdata
+  - name: (
+  - uid: System.Runtime.Serialization.SerializationInfo
+    name: SerializationInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.serialization.serializationinfo
+  - name: ','
+  - name: " "
+  - uid: System.Runtime.Serialization.StreamingContext
+    name: StreamingContext
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.serialization.streamingcontext
+  - name: )
+- uid: System.Text.Json.JsonException.GetObjectData*
+  commentId: Overload:System.Text.Json.JsonException.GetObjectData
+  isExternal: true
+  href: System.Text.Json.JsonException.html#System_Text_Json_JsonException_GetObjectData_System_Runtime_Serialization_SerializationInfo_System_Runtime_Serialization_StreamingContext_
+  name: GetObjectData
+  nameWithType: JsonException.GetObjectData
+  fullName: System.Text.Json.JsonException.GetObjectData
+- uid: System.Text.Json.JsonException.LineNumber*
+  commentId: Overload:System.Text.Json.JsonException.LineNumber
+  isExternal: true
+  href: System.Text.Json.JsonException.html#System_Text_Json_JsonException_LineNumber
+  name: LineNumber
+  nameWithType: JsonException.LineNumber
+  fullName: System.Text.Json.JsonException.LineNumber
+- uid: System.Text.Json.JsonException.BytePositionInLine*
+  commentId: Overload:System.Text.Json.JsonException.BytePositionInLine
+  isExternal: true
+  href: System.Text.Json.JsonException.html#System_Text_Json_JsonException_BytePositionInLine
+  name: BytePositionInLine
+  nameWithType: JsonException.BytePositionInLine
+  fullName: System.Text.Json.JsonException.BytePositionInLine
+- uid: System.Text.Json.JsonException.Path*
+  commentId: Overload:System.Text.Json.JsonException.Path
+  isExternal: true
+  href: System.Text.Json.JsonException.html#System_Text_Json_JsonException_Path
+  name: Path
+  nameWithType: JsonException.Path
+  fullName: System.Text.Json.JsonException.Path
+- uid: System.Exception.Message
+  commentId: P:System.Exception.Message
+  parent: System.Exception
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.exception.message
+  name: Message
+  nameWithType: Exception.Message
+  fullName: System.Exception.Message
+- uid: System.Text.Json.JsonException.Message*
+  commentId: Overload:System.Text.Json.JsonException.Message
+  isExternal: true
+  href: System.Text.Json.JsonException.html#System_Text_Json_JsonException_Message
+  name: Message
+  nameWithType: JsonException.Message
+  fullName: System.Text.Json.JsonException.Message

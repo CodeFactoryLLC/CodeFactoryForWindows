@@ -1,0 +1,260 @@
+### YamlMime:ManagedReference
+items:
+- uid: System.Text.Json.Serialization.JsonNumberHandling
+  commentId: T:System.Text.Json.Serialization.JsonNumberHandling
+  id: JsonNumberHandling
+  parent: System.Text.Json.Serialization
+  children:
+  - System.Text.Json.Serialization.JsonNumberHandling.AllowNamedFloatingPointLiterals
+  - System.Text.Json.Serialization.JsonNumberHandling.AllowReadingFromString
+  - System.Text.Json.Serialization.JsonNumberHandling.Strict
+  - System.Text.Json.Serialization.JsonNumberHandling.WriteAsString
+  langs:
+  - csharp
+  - vb
+  name: JsonNumberHandling
+  nameWithType: JsonNumberHandling
+  fullName: System.Text.Json.Serialization.JsonNumberHandling
+  type: Enum
+  assemblies:
+  - System.Text.Json
+  namespace: System.Text.Json.Serialization
+  summary: Determines how <xref href="System.Text.Json.JsonSerializer" data-throw-if-not-resolved="false"></xref> handles numbers when serializing and deserializing.
+  example: []
+  syntax:
+    content: >-
+      [Flags]
+
+      public enum JsonNumberHandling
+    content.vb: >-
+      <Flags>
+
+      Public Enum JsonNumberHandling
+  attributes:
+  - type: System.FlagsAttribute
+    ctor: System.FlagsAttribute.#ctor
+    arguments: []
+- uid: System.Text.Json.Serialization.JsonNumberHandling.Strict
+  commentId: F:System.Text.Json.Serialization.JsonNumberHandling.Strict
+  id: Strict
+  parent: System.Text.Json.Serialization.JsonNumberHandling
+  langs:
+  - csharp
+  - vb
+  name: Strict
+  nameWithType: JsonNumberHandling.Strict
+  fullName: System.Text.Json.Serialization.JsonNumberHandling.Strict
+  type: Field
+  assemblies:
+  - System.Text.Json
+  namespace: System.Text.Json.Serialization
+  summary: Numbers will only be read from <xref href="System.Text.Json.JsonTokenType.Number" data-throw-if-not-resolved="false"></xref> tokens and will only be written as JSON numbers (without quotes).
+  example: []
+  syntax:
+    content: Strict = 0
+    return:
+      type: System.Text.Json.Serialization.JsonNumberHandling
+- uid: System.Text.Json.Serialization.JsonNumberHandling.AllowReadingFromString
+  commentId: F:System.Text.Json.Serialization.JsonNumberHandling.AllowReadingFromString
+  id: AllowReadingFromString
+  parent: System.Text.Json.Serialization.JsonNumberHandling
+  langs:
+  - csharp
+  - vb
+  name: AllowReadingFromString
+  nameWithType: JsonNumberHandling.AllowReadingFromString
+  fullName: System.Text.Json.Serialization.JsonNumberHandling.AllowReadingFromString
+  type: Field
+  assemblies:
+  - System.Text.Json
+  namespace: System.Text.Json.Serialization
+  summary: Numbers can be read from <xref href="System.Text.Json.JsonTokenType.String" data-throw-if-not-resolved="false"></xref> tokens. Does not prevent numbers from being read from <xref href="System.Text.Json.JsonTokenType.Number" data-throw-if-not-resolved="false"></xref> token.
+  example: []
+  syntax:
+    content: AllowReadingFromString = 1
+    return:
+      type: System.Text.Json.Serialization.JsonNumberHandling
+- uid: System.Text.Json.Serialization.JsonNumberHandling.WriteAsString
+  commentId: F:System.Text.Json.Serialization.JsonNumberHandling.WriteAsString
+  id: WriteAsString
+  parent: System.Text.Json.Serialization.JsonNumberHandling
+  langs:
+  - csharp
+  - vb
+  name: WriteAsString
+  nameWithType: JsonNumberHandling.WriteAsString
+  fullName: System.Text.Json.Serialization.JsonNumberHandling.WriteAsString
+  type: Field
+  assemblies:
+  - System.Text.Json
+  namespace: System.Text.Json.Serialization
+  summary: Numbers will be written as JSON strings (with quotes), not as JSON numbers.
+  example: []
+  syntax:
+    content: WriteAsString = 2
+    return:
+      type: System.Text.Json.Serialization.JsonNumberHandling
+- uid: System.Text.Json.Serialization.JsonNumberHandling.AllowNamedFloatingPointLiterals
+  commentId: F:System.Text.Json.Serialization.JsonNumberHandling.AllowNamedFloatingPointLiterals
+  id: AllowNamedFloatingPointLiterals
+  parent: System.Text.Json.Serialization.JsonNumberHandling
+  langs:
+  - csharp
+  - vb
+  name: AllowNamedFloatingPointLiterals
+  nameWithType: JsonNumberHandling.AllowNamedFloatingPointLiterals
+  fullName: System.Text.Json.Serialization.JsonNumberHandling.AllowNamedFloatingPointLiterals
+  type: Field
+  assemblies:
+  - System.Text.Json
+  namespace: System.Text.Json.Serialization
+  summary: The "NaN", "Infinity", and "-Infinity" <xref href="System.Text.Json.JsonTokenType.String" data-throw-if-not-resolved="false"></xref> tokens can be read as floating-point constants, and the <xref href="System.Single" data-throw-if-not-resolved="false"></xref> and <xref href="System.Double" data-throw-if-not-resolved="false"></xref> values for these constants will be written as their corresponding JSON string representations.
+  example: []
+  syntax:
+    content: AllowNamedFloatingPointLiterals = 4
+    return:
+      type: System.Text.Json.Serialization.JsonNumberHandling
+references:
+- uid: System.Text.Json.JsonSerializer
+  commentId: T:System.Text.Json.JsonSerializer
+  parent: System.Text.Json
+  isExternal: true
+  href: System.Text.Json.JsonSerializer.html
+  name: JsonSerializer
+  nameWithType: JsonSerializer
+  fullName: System.Text.Json.JsonSerializer
+- uid: System.Text.Json.Serialization
+  commentId: N:System.Text.Json.Serialization
+  isExternal: true
+  href: System.html
+  name: System.Text.Json.Serialization
+  nameWithType: System.Text.Json.Serialization
+  fullName: System.Text.Json.Serialization
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: System.html
+  - name: .
+  - uid: System.Text
+    name: Text
+    isExternal: true
+    href: System.Text.html
+  - name: .
+  - uid: System.Text.Json
+    name: Json
+    isExternal: true
+    href: System.Text.Json.html
+  - name: .
+  - uid: System.Text.Json.Serialization
+    name: Serialization
+    isExternal: true
+    href: System.Text.Json.Serialization.html
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: System.html
+  - name: .
+  - uid: System.Text
+    name: Text
+    isExternal: true
+    href: System.Text.html
+  - name: .
+  - uid: System.Text.Json
+    name: Json
+    isExternal: true
+    href: System.Text.Json.html
+  - name: .
+  - uid: System.Text.Json.Serialization
+    name: Serialization
+    isExternal: true
+    href: System.Text.Json.Serialization.html
+- uid: System.Text.Json
+  commentId: N:System.Text.Json
+  isExternal: true
+  href: System.html
+  name: System.Text.Json
+  nameWithType: System.Text.Json
+  fullName: System.Text.Json
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: System.html
+  - name: .
+  - uid: System.Text
+    name: Text
+    isExternal: true
+    href: System.Text.html
+  - name: .
+  - uid: System.Text.Json
+    name: Json
+    isExternal: true
+    href: System.Text.Json.html
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: System.html
+  - name: .
+  - uid: System.Text
+    name: Text
+    isExternal: true
+    href: System.Text.html
+  - name: .
+  - uid: System.Text.Json
+    name: Json
+    isExternal: true
+    href: System.Text.Json.html
+- uid: System.Text.Json.JsonTokenType.Number
+  commentId: F:System.Text.Json.JsonTokenType.Number
+  isExternal: true
+  href: System.Text.Json.JsonTokenType.html#System_Text_Json_JsonTokenType_Number
+  name: Number
+  nameWithType: JsonTokenType.Number
+  fullName: System.Text.Json.JsonTokenType.Number
+- uid: System.Text.Json.Serialization.JsonNumberHandling
+  commentId: T:System.Text.Json.Serialization.JsonNumberHandling
+  parent: System.Text.Json.Serialization
+  isExternal: true
+  href: System.Text.Json.Serialization.JsonNumberHandling.html
+  name: JsonNumberHandling
+  nameWithType: JsonNumberHandling
+  fullName: System.Text.Json.Serialization.JsonNumberHandling
+- uid: System.Text.Json.JsonTokenType.String
+  commentId: F:System.Text.Json.JsonTokenType.String
+  isExternal: true
+  href: System.Text.Json.JsonTokenType.html#System_Text_Json_JsonTokenType_String
+  name: String
+  nameWithType: JsonTokenType.String
+  fullName: System.Text.Json.JsonTokenType.String
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System

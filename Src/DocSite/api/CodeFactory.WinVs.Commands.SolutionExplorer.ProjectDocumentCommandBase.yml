@@ -1,0 +1,1141 @@
+### YamlMime:ManagedReference
+items:
+- uid: CodeFactory.WinVs.Commands.SolutionExplorer.ProjectDocumentCommandBase
+  commentId: T:CodeFactory.WinVs.Commands.SolutionExplorer.ProjectDocumentCommandBase
+  id: ProjectDocumentCommandBase
+  parent: CodeFactory.WinVs.Commands.SolutionExplorer
+  children:
+  - CodeFactory.WinVs.Commands.SolutionExplorer.ProjectDocumentCommandBase.#ctor(CodeFactory.WinVs.Logging.ILogger,CodeFactory.WinVs.IVsActions,System.String,System.String)
+  langs:
+  - csharp
+  - vb
+  name: ProjectDocumentCommandBase
+  nameWithType: ProjectDocumentCommandBase
+  fullName: CodeFactory.WinVs.Commands.SolutionExplorer.ProjectDocumentCommandBase
+  type: Class
+  source:
+    href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/19e816ffdf1ba504be6987736bbac42e2d241405/Src/CodeFactoryForWindows/CodeFactory.WinVs/Commands/SolutionExplorer/ProjectDocumentCommandBase.cs
+  assemblies:
+  - CodeFactory.WinVs
+  namespace: CodeFactory.WinVs.Commands.SolutionExplorer
+  summary: Base implementation of the solution explorer command <xref href="CodeFactory.WinVs.Commands.SolutionExplorer.IProjectDocumentCommand" data-throw-if-not-resolved="false"></xref>
+  example: []
+  syntax:
+    content: 'public abstract class ProjectDocumentCommandBase : VsCommandBase<VsDocument>, IVsConfigurableCommand<VsDocument>, IProjectDocumentCommand, IVsFactoryCommand<VsDocument>, IVsCommandInformation, ICommand<VsDocument>, ICommandBase<VsDocument>'
+    content.vb: Public MustInherit Class ProjectDocumentCommandBase Inherits VsCommandBase(Of VsDocument) Implements IVsConfigurableCommand(Of VsDocument), IProjectDocumentCommand, IVsFactoryCommand(Of VsDocument), IVsCommandInformation, ICommand(Of VsDocument), ICommandBase(Of VsDocument)
+  inheritance:
+  - System.Object
+  - CodeFactory.WinVs.Commands.VsCommandBase{CodeFactory.WinVs.Models.ProjectSystem.VsDocument}
+  implements:
+  - CodeFactory.WinVs.Commands.IVsConfigurableCommand{CodeFactory.WinVs.Models.ProjectSystem.VsDocument}
+  - CodeFactory.WinVs.Commands.SolutionExplorer.IProjectDocumentCommand
+  - CodeFactory.WinVs.Commands.IVsFactoryCommand{CodeFactory.WinVs.Models.ProjectSystem.VsDocument}
+  - CodeFactory.WinVs.Commands.IVsCommandInformation
+  - CodeFactory.ICommand{CodeFactory.WinVs.Models.ProjectSystem.VsDocument}
+  - CodeFactory.ICommandBase{CodeFactory.WinVs.Models.ProjectSystem.VsDocument}
+  inheritedMembers:
+  - CodeFactory.WinVs.Commands.VsCommandBase{CodeFactory.WinVs.Models.ProjectSystem.VsDocument}._commandTitle
+  - CodeFactory.WinVs.Commands.VsCommandBase{CodeFactory.WinVs.Models.ProjectSystem.VsDocument}._commandDescription
+  - CodeFactory.WinVs.Commands.VsCommandBase{CodeFactory.WinVs.Models.ProjectSystem.VsDocument}._logger
+  - CodeFactory.WinVs.Commands.VsCommandBase{CodeFactory.WinVs.Models.ProjectSystem.VsDocument}.LoadExternalConfigDefinition
+  - CodeFactory.WinVs.Commands.VsCommandBase{CodeFactory.WinVs.Models.ProjectSystem.VsDocument}.EnableCommandAsync(CodeFactory.WinVs.Models.ProjectSystem.VsDocument)
+  - CodeFactory.WinVs.Commands.VsCommandBase{CodeFactory.WinVs.Models.ProjectSystem.VsDocument}.ExecuteCommandAsync(CodeFactory.WinVs.Models.ProjectSystem.VsDocument)
+  - CodeFactory.WinVs.Commands.VsCommandBase{CodeFactory.WinVs.Models.ProjectSystem.VsDocument}.CommandTitle
+  - CodeFactory.WinVs.Commands.VsCommandBase{CodeFactory.WinVs.Models.ProjectSystem.VsDocument}.CommandDescription
+  - CodeFactory.WinVs.Commands.VsCommandBase{CodeFactory.WinVs.Models.ProjectSystem.VsDocument}.CommandType
+  - CodeFactory.WinVs.Commands.VsCommandBase{CodeFactory.WinVs.Models.ProjectSystem.VsDocument}.VisualStudioActions
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+- uid: CodeFactory.WinVs.Commands.SolutionExplorer.ProjectDocumentCommandBase.#ctor(CodeFactory.WinVs.Logging.ILogger,CodeFactory.WinVs.IVsActions,System.String,System.String)
+  commentId: M:CodeFactory.WinVs.Commands.SolutionExplorer.ProjectDocumentCommandBase.#ctor(CodeFactory.WinVs.Logging.ILogger,CodeFactory.WinVs.IVsActions,System.String,System.String)
+  id: '#ctor(CodeFactory.WinVs.Logging.ILogger,CodeFactory.WinVs.IVsActions,System.String,System.String)'
+  parent: CodeFactory.WinVs.Commands.SolutionExplorer.ProjectDocumentCommandBase
+  langs:
+  - csharp
+  - vb
+  name: ProjectDocumentCommandBase(ILogger, IVsActions, string, string)
+  nameWithType: ProjectDocumentCommandBase.ProjectDocumentCommandBase(ILogger, IVsActions, string, string)
+  fullName: CodeFactory.WinVs.Commands.SolutionExplorer.ProjectDocumentCommandBase.ProjectDocumentCommandBase(CodeFactory.WinVs.Logging.ILogger, CodeFactory.WinVs.IVsActions, string, string)
+  type: Constructor
+  source:
+    href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/19e816ffdf1ba504be6987736bbac42e2d241405/Src/CodeFactoryForWindows/CodeFactory.WinVs/Commands/SolutionExplorer/ProjectDocumentCommandBase.cs
+  assemblies:
+  - CodeFactory.WinVs
+  namespace: CodeFactory.WinVs.Commands.SolutionExplorer
+  example: []
+  syntax:
+    content: protected ProjectDocumentCommandBase(ILogger logger, IVsActions vsActions, string commandTitle, string commandDescription)
+    parameters:
+    - id: logger
+      type: CodeFactory.WinVs.Logging.ILogger
+    - id: vsActions
+      type: CodeFactory.WinVs.IVsActions
+    - id: commandTitle
+      type: System.String
+    - id: commandDescription
+      type: System.String
+    content.vb: Protected Sub New(logger As ILogger, vsActions As IVsActions, commandTitle As String, commandDescription As String)
+  overload: CodeFactory.WinVs.Commands.SolutionExplorer.ProjectDocumentCommandBase.#ctor*
+  nameWithType.vb: ProjectDocumentCommandBase.New(ILogger, IVsActions, String, String)
+  fullName.vb: CodeFactory.WinVs.Commands.SolutionExplorer.ProjectDocumentCommandBase.New(CodeFactory.WinVs.Logging.ILogger, CodeFactory.WinVs.IVsActions, String, String)
+  name.vb: New(ILogger, IVsActions, String, String)
+references:
+- uid: CodeFactory.WinVs.Commands.SolutionExplorer.IProjectDocumentCommand
+  commentId: T:CodeFactory.WinVs.Commands.SolutionExplorer.IProjectDocumentCommand
+  parent: CodeFactory.WinVs.Commands.SolutionExplorer
+  isExternal: true
+  href: CodeFactory.WinVs.Commands.SolutionExplorer.IProjectDocumentCommand.html
+  name: IProjectDocumentCommand
+  nameWithType: IProjectDocumentCommand
+  fullName: CodeFactory.WinVs.Commands.SolutionExplorer.IProjectDocumentCommand
+- uid: CodeFactory.WinVs.Commands.SolutionExplorer
+  commentId: N:CodeFactory.WinVs.Commands.SolutionExplorer
+  isExternal: true
+  href: CodeFactory.html
+  name: CodeFactory.WinVs.Commands.SolutionExplorer
+  nameWithType: CodeFactory.WinVs.Commands.SolutionExplorer
+  fullName: CodeFactory.WinVs.Commands.SolutionExplorer
+  spec.csharp:
+  - uid: CodeFactory
+    name: CodeFactory
+    isExternal: true
+    href: CodeFactory.html
+  - name: .
+  - uid: CodeFactory.WinVs
+    name: WinVs
+    isExternal: true
+    href: CodeFactory.WinVs.html
+  - name: .
+  - uid: CodeFactory.WinVs.Commands
+    name: Commands
+    isExternal: true
+    href: CodeFactory.WinVs.Commands.html
+  - name: .
+  - uid: CodeFactory.WinVs.Commands.SolutionExplorer
+    name: SolutionExplorer
+    isExternal: true
+    href: CodeFactory.WinVs.Commands.SolutionExplorer.html
+  spec.vb:
+  - uid: CodeFactory
+    name: CodeFactory
+    isExternal: true
+    href: CodeFactory.html
+  - name: .
+  - uid: CodeFactory.WinVs
+    name: WinVs
+    isExternal: true
+    href: CodeFactory.WinVs.html
+  - name: .
+  - uid: CodeFactory.WinVs.Commands
+    name: Commands
+    isExternal: true
+    href: CodeFactory.WinVs.Commands.html
+  - name: .
+  - uid: CodeFactory.WinVs.Commands.SolutionExplorer
+    name: SolutionExplorer
+    isExternal: true
+    href: CodeFactory.WinVs.Commands.SolutionExplorer.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: CodeFactory.WinVs.Commands.VsCommandBase{CodeFactory.WinVs.Models.ProjectSystem.VsDocument}
+  commentId: T:CodeFactory.WinVs.Commands.VsCommandBase{CodeFactory.WinVs.Models.ProjectSystem.VsDocument}
+  parent: CodeFactory.WinVs.Commands
+  definition: CodeFactory.WinVs.Commands.VsCommandBase`1
+  href: CodeFactory.WinVs.Commands.VsCommandBase-1.html
+  name: VsCommandBase<VsDocument>
+  nameWithType: VsCommandBase<VsDocument>
+  fullName: CodeFactory.WinVs.Commands.VsCommandBase<CodeFactory.WinVs.Models.ProjectSystem.VsDocument>
+  nameWithType.vb: VsCommandBase(Of VsDocument)
+  fullName.vb: CodeFactory.WinVs.Commands.VsCommandBase(Of CodeFactory.WinVs.Models.ProjectSystem.VsDocument)
+  name.vb: VsCommandBase(Of VsDocument)
+  spec.csharp:
+  - uid: CodeFactory.WinVs.Commands.VsCommandBase`1
+    name: VsCommandBase
+    isExternal: true
+    href: CodeFactory.WinVs.Commands.VsCommandBase-1.html
+  - name: <
+  - uid: CodeFactory.WinVs.Models.ProjectSystem.VsDocument
+    name: VsDocument
+    isExternal: true
+    href: CodeFactory.WinVs.Models.ProjectSystem.VsDocument.html
+  - name: '>'
+  spec.vb:
+  - uid: CodeFactory.WinVs.Commands.VsCommandBase`1
+    name: VsCommandBase
+    isExternal: true
+    href: CodeFactory.WinVs.Commands.VsCommandBase-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: CodeFactory.WinVs.Models.ProjectSystem.VsDocument
+    name: VsDocument
+    isExternal: true
+    href: CodeFactory.WinVs.Models.ProjectSystem.VsDocument.html
+  - name: )
+- uid: CodeFactory.WinVs.Commands.IVsConfigurableCommand{CodeFactory.WinVs.Models.ProjectSystem.VsDocument}
+  commentId: T:CodeFactory.WinVs.Commands.IVsConfigurableCommand{CodeFactory.WinVs.Models.ProjectSystem.VsDocument}
+  parent: CodeFactory.WinVs.Commands
+  definition: CodeFactory.WinVs.Commands.IVsConfigurableCommand`1
+  href: CodeFactory.WinVs.Commands.IVsConfigurableCommand-1.html
+  name: IVsConfigurableCommand<VsDocument>
+  nameWithType: IVsConfigurableCommand<VsDocument>
+  fullName: CodeFactory.WinVs.Commands.IVsConfigurableCommand<CodeFactory.WinVs.Models.ProjectSystem.VsDocument>
+  nameWithType.vb: IVsConfigurableCommand(Of VsDocument)
+  fullName.vb: CodeFactory.WinVs.Commands.IVsConfigurableCommand(Of CodeFactory.WinVs.Models.ProjectSystem.VsDocument)
+  name.vb: IVsConfigurableCommand(Of VsDocument)
+  spec.csharp:
+  - uid: CodeFactory.WinVs.Commands.IVsConfigurableCommand`1
+    name: IVsConfigurableCommand
+    isExternal: true
+    href: CodeFactory.WinVs.Commands.IVsConfigurableCommand-1.html
+  - name: <
+  - uid: CodeFactory.WinVs.Models.ProjectSystem.VsDocument
+    name: VsDocument
+    isExternal: true
+    href: CodeFactory.WinVs.Models.ProjectSystem.VsDocument.html
+  - name: '>'
+  spec.vb:
+  - uid: CodeFactory.WinVs.Commands.IVsConfigurableCommand`1
+    name: IVsConfigurableCommand
+    isExternal: true
+    href: CodeFactory.WinVs.Commands.IVsConfigurableCommand-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: CodeFactory.WinVs.Models.ProjectSystem.VsDocument
+    name: VsDocument
+    isExternal: true
+    href: CodeFactory.WinVs.Models.ProjectSystem.VsDocument.html
+  - name: )
+- uid: CodeFactory.WinVs.Commands.IVsFactoryCommand{CodeFactory.WinVs.Models.ProjectSystem.VsDocument}
+  commentId: T:CodeFactory.WinVs.Commands.IVsFactoryCommand{CodeFactory.WinVs.Models.ProjectSystem.VsDocument}
+  parent: CodeFactory.WinVs.Commands
+  definition: CodeFactory.WinVs.Commands.IVsFactoryCommand`1
+  href: CodeFactory.WinVs.Commands.IVsFactoryCommand-1.html
+  name: IVsFactoryCommand<VsDocument>
+  nameWithType: IVsFactoryCommand<VsDocument>
+  fullName: CodeFactory.WinVs.Commands.IVsFactoryCommand<CodeFactory.WinVs.Models.ProjectSystem.VsDocument>
+  nameWithType.vb: IVsFactoryCommand(Of VsDocument)
+  fullName.vb: CodeFactory.WinVs.Commands.IVsFactoryCommand(Of CodeFactory.WinVs.Models.ProjectSystem.VsDocument)
+  name.vb: IVsFactoryCommand(Of VsDocument)
+  spec.csharp:
+  - uid: CodeFactory.WinVs.Commands.IVsFactoryCommand`1
+    name: IVsFactoryCommand
+    isExternal: true
+    href: CodeFactory.WinVs.Commands.IVsFactoryCommand-1.html
+  - name: <
+  - uid: CodeFactory.WinVs.Models.ProjectSystem.VsDocument
+    name: VsDocument
+    isExternal: true
+    href: CodeFactory.WinVs.Models.ProjectSystem.VsDocument.html
+  - name: '>'
+  spec.vb:
+  - uid: CodeFactory.WinVs.Commands.IVsFactoryCommand`1
+    name: IVsFactoryCommand
+    isExternal: true
+    href: CodeFactory.WinVs.Commands.IVsFactoryCommand-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: CodeFactory.WinVs.Models.ProjectSystem.VsDocument
+    name: VsDocument
+    isExternal: true
+    href: CodeFactory.WinVs.Models.ProjectSystem.VsDocument.html
+  - name: )
+- uid: CodeFactory.WinVs.Commands.IVsCommandInformation
+  commentId: T:CodeFactory.WinVs.Commands.IVsCommandInformation
+  parent: CodeFactory.WinVs.Commands
+  isExternal: true
+  href: CodeFactory.WinVs.Commands.IVsCommandInformation.html
+  name: IVsCommandInformation
+  nameWithType: IVsCommandInformation
+  fullName: CodeFactory.WinVs.Commands.IVsCommandInformation
+- uid: CodeFactory.ICommand{CodeFactory.WinVs.Models.ProjectSystem.VsDocument}
+  commentId: T:CodeFactory.ICommand{CodeFactory.WinVs.Models.ProjectSystem.VsDocument}
+  parent: CodeFactory
+  definition: CodeFactory.ICommand`1
+  href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/19e816ffdf1ba504be6987736bbac42e2d241405/Src/CodeFactoryForWindows/CodeFactory/ICommand.cs
+  name: ICommand<VsDocument>
+  nameWithType: ICommand<VsDocument>
+  fullName: CodeFactory.ICommand<CodeFactory.WinVs.Models.ProjectSystem.VsDocument>
+  nameWithType.vb: ICommand(Of VsDocument)
+  fullName.vb: CodeFactory.ICommand(Of CodeFactory.WinVs.Models.ProjectSystem.VsDocument)
+  name.vb: ICommand(Of VsDocument)
+  spec.csharp:
+  - uid: CodeFactory.ICommand`1
+    name: ICommand
+    isExternal: true
+    href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/19e816ffdf1ba504be6987736bbac42e2d241405/Src/CodeFactoryForWindows/CodeFactory/ICommand.cs
+  - name: <
+  - uid: CodeFactory.WinVs.Models.ProjectSystem.VsDocument
+    name: VsDocument
+    isExternal: true
+    href: CodeFactory.WinVs.Models.ProjectSystem.VsDocument.html
+  - name: '>'
+  spec.vb:
+  - uid: CodeFactory.ICommand`1
+    name: ICommand
+    isExternal: true
+    href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/19e816ffdf1ba504be6987736bbac42e2d241405/Src/CodeFactoryForWindows/CodeFactory/ICommand.cs
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: CodeFactory.WinVs.Models.ProjectSystem.VsDocument
+    name: VsDocument
+    isExternal: true
+    href: CodeFactory.WinVs.Models.ProjectSystem.VsDocument.html
+  - name: )
+- uid: CodeFactory.ICommandBase{CodeFactory.WinVs.Models.ProjectSystem.VsDocument}
+  commentId: T:CodeFactory.ICommandBase{CodeFactory.WinVs.Models.ProjectSystem.VsDocument}
+  parent: CodeFactory
+  definition: CodeFactory.ICommandBase`1
+  href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/19e816ffdf1ba504be6987736bbac42e2d241405/Src/CodeFactoryForWindows/CodeFactory/ICommandBase.cs
+  name: ICommandBase<VsDocument>
+  nameWithType: ICommandBase<VsDocument>
+  fullName: CodeFactory.ICommandBase<CodeFactory.WinVs.Models.ProjectSystem.VsDocument>
+  nameWithType.vb: ICommandBase(Of VsDocument)
+  fullName.vb: CodeFactory.ICommandBase(Of CodeFactory.WinVs.Models.ProjectSystem.VsDocument)
+  name.vb: ICommandBase(Of VsDocument)
+  spec.csharp:
+  - uid: CodeFactory.ICommandBase`1
+    name: ICommandBase
+    isExternal: true
+    href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/19e816ffdf1ba504be6987736bbac42e2d241405/Src/CodeFactoryForWindows/CodeFactory/ICommandBase.cs
+  - name: <
+  - uid: CodeFactory.WinVs.Models.ProjectSystem.VsDocument
+    name: VsDocument
+    isExternal: true
+    href: CodeFactory.WinVs.Models.ProjectSystem.VsDocument.html
+  - name: '>'
+  spec.vb:
+  - uid: CodeFactory.ICommandBase`1
+    name: ICommandBase
+    isExternal: true
+    href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/19e816ffdf1ba504be6987736bbac42e2d241405/Src/CodeFactoryForWindows/CodeFactory/ICommandBase.cs
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: CodeFactory.WinVs.Models.ProjectSystem.VsDocument
+    name: VsDocument
+    isExternal: true
+    href: CodeFactory.WinVs.Models.ProjectSystem.VsDocument.html
+  - name: )
+- uid: CodeFactory.WinVs.Commands.VsCommandBase{CodeFactory.WinVs.Models.ProjectSystem.VsDocument}._commandTitle
+  commentId: F:CodeFactory.WinVs.Commands.VsCommandBase{CodeFactory.WinVs.Models.ProjectSystem.VsDocument}._commandTitle
+  parent: CodeFactory.WinVs.Commands.VsCommandBase{CodeFactory.WinVs.Models.ProjectSystem.VsDocument}
+  definition: CodeFactory.WinVs.Commands.VsCommandBase`1._commandTitle
+  href: CodeFactory.WinVs.Commands.VsCommandBase-1.html#CodeFactory_WinVs_Commands_VsCommandBase_1__commandTitle
+  name: _commandTitle
+  nameWithType: VsCommandBase<VsDocument>._commandTitle
+  fullName: CodeFactory.WinVs.Commands.VsCommandBase<CodeFactory.WinVs.Models.ProjectSystem.VsDocument>._commandTitle
+  nameWithType.vb: VsCommandBase(Of VsDocument)._commandTitle
+  fullName.vb: CodeFactory.WinVs.Commands.VsCommandBase(Of CodeFactory.WinVs.Models.ProjectSystem.VsDocument)._commandTitle
+- uid: CodeFactory.WinVs.Commands.VsCommandBase{CodeFactory.WinVs.Models.ProjectSystem.VsDocument}._commandDescription
+  commentId: F:CodeFactory.WinVs.Commands.VsCommandBase{CodeFactory.WinVs.Models.ProjectSystem.VsDocument}._commandDescription
+  parent: CodeFactory.WinVs.Commands.VsCommandBase{CodeFactory.WinVs.Models.ProjectSystem.VsDocument}
+  definition: CodeFactory.WinVs.Commands.VsCommandBase`1._commandDescription
+  href: CodeFactory.WinVs.Commands.VsCommandBase-1.html#CodeFactory_WinVs_Commands_VsCommandBase_1__commandDescription
+  name: _commandDescription
+  nameWithType: VsCommandBase<VsDocument>._commandDescription
+  fullName: CodeFactory.WinVs.Commands.VsCommandBase<CodeFactory.WinVs.Models.ProjectSystem.VsDocument>._commandDescription
+  nameWithType.vb: VsCommandBase(Of VsDocument)._commandDescription
+  fullName.vb: CodeFactory.WinVs.Commands.VsCommandBase(Of CodeFactory.WinVs.Models.ProjectSystem.VsDocument)._commandDescription
+- uid: CodeFactory.WinVs.Commands.VsCommandBase{CodeFactory.WinVs.Models.ProjectSystem.VsDocument}._logger
+  commentId: F:CodeFactory.WinVs.Commands.VsCommandBase{CodeFactory.WinVs.Models.ProjectSystem.VsDocument}._logger
+  parent: CodeFactory.WinVs.Commands.VsCommandBase{CodeFactory.WinVs.Models.ProjectSystem.VsDocument}
+  definition: CodeFactory.WinVs.Commands.VsCommandBase`1._logger
+  href: CodeFactory.WinVs.Commands.VsCommandBase-1.html#CodeFactory_WinVs_Commands_VsCommandBase_1__logger
+  name: _logger
+  nameWithType: VsCommandBase<VsDocument>._logger
+  fullName: CodeFactory.WinVs.Commands.VsCommandBase<CodeFactory.WinVs.Models.ProjectSystem.VsDocument>._logger
+  nameWithType.vb: VsCommandBase(Of VsDocument)._logger
+  fullName.vb: CodeFactory.WinVs.Commands.VsCommandBase(Of CodeFactory.WinVs.Models.ProjectSystem.VsDocument)._logger
+- uid: CodeFactory.WinVs.Commands.VsCommandBase{CodeFactory.WinVs.Models.ProjectSystem.VsDocument}.LoadExternalConfigDefinition
+  commentId: M:CodeFactory.WinVs.Commands.VsCommandBase{CodeFactory.WinVs.Models.ProjectSystem.VsDocument}.LoadExternalConfigDefinition
+  parent: CodeFactory.WinVs.Commands.VsCommandBase{CodeFactory.WinVs.Models.ProjectSystem.VsDocument}
+  definition: CodeFactory.WinVs.Commands.VsCommandBase`1.LoadExternalConfigDefinition
+  href: CodeFactory.WinVs.Commands.VsCommandBase-1.html#CodeFactory_WinVs_Commands_VsCommandBase_1_LoadExternalConfigDefinition
+  name: LoadExternalConfigDefinition()
+  nameWithType: VsCommandBase<VsDocument>.LoadExternalConfigDefinition()
+  fullName: CodeFactory.WinVs.Commands.VsCommandBase<CodeFactory.WinVs.Models.ProjectSystem.VsDocument>.LoadExternalConfigDefinition()
+  nameWithType.vb: VsCommandBase(Of VsDocument).LoadExternalConfigDefinition()
+  fullName.vb: CodeFactory.WinVs.Commands.VsCommandBase(Of CodeFactory.WinVs.Models.ProjectSystem.VsDocument).LoadExternalConfigDefinition()
+  spec.csharp:
+  - uid: CodeFactory.WinVs.Commands.VsCommandBase{CodeFactory.WinVs.Models.ProjectSystem.VsDocument}.LoadExternalConfigDefinition
+    name: LoadExternalConfigDefinition
+    isExternal: true
+    href: CodeFactory.WinVs.Commands.VsCommandBase-1.html#CodeFactory_WinVs_Commands_VsCommandBase_1_LoadExternalConfigDefinition
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: CodeFactory.WinVs.Commands.VsCommandBase{CodeFactory.WinVs.Models.ProjectSystem.VsDocument}.LoadExternalConfigDefinition
+    name: LoadExternalConfigDefinition
+    isExternal: true
+    href: CodeFactory.WinVs.Commands.VsCommandBase-1.html#CodeFactory_WinVs_Commands_VsCommandBase_1_LoadExternalConfigDefinition
+  - name: (
+  - name: )
+- uid: CodeFactory.WinVs.Commands.VsCommandBase{CodeFactory.WinVs.Models.ProjectSystem.VsDocument}.EnableCommandAsync(CodeFactory.WinVs.Models.ProjectSystem.VsDocument)
+  commentId: M:CodeFactory.WinVs.Commands.VsCommandBase{CodeFactory.WinVs.Models.ProjectSystem.VsDocument}.EnableCommandAsync(CodeFactory.WinVs.Models.ProjectSystem.VsDocument)
+  parent: CodeFactory.WinVs.Commands.VsCommandBase{CodeFactory.WinVs.Models.ProjectSystem.VsDocument}
+  definition: CodeFactory.WinVs.Commands.VsCommandBase`1.EnableCommandAsync(`0)
+  href: CodeFactory.WinVs.Commands.VsCommandBase-1.html#CodeFactory_WinVs_Commands_VsCommandBase_1_EnableCommandAsync__0_
+  name: EnableCommandAsync(VsDocument)
+  nameWithType: VsCommandBase<VsDocument>.EnableCommandAsync(VsDocument)
+  fullName: CodeFactory.WinVs.Commands.VsCommandBase<CodeFactory.WinVs.Models.ProjectSystem.VsDocument>.EnableCommandAsync(CodeFactory.WinVs.Models.ProjectSystem.VsDocument)
+  nameWithType.vb: VsCommandBase(Of VsDocument).EnableCommandAsync(VsDocument)
+  fullName.vb: CodeFactory.WinVs.Commands.VsCommandBase(Of CodeFactory.WinVs.Models.ProjectSystem.VsDocument).EnableCommandAsync(CodeFactory.WinVs.Models.ProjectSystem.VsDocument)
+  spec.csharp:
+  - uid: CodeFactory.WinVs.Commands.VsCommandBase{CodeFactory.WinVs.Models.ProjectSystem.VsDocument}.EnableCommandAsync(CodeFactory.WinVs.Models.ProjectSystem.VsDocument)
+    name: EnableCommandAsync
+    isExternal: true
+    href: CodeFactory.WinVs.Commands.VsCommandBase-1.html#CodeFactory_WinVs_Commands_VsCommandBase_1_EnableCommandAsync__0_
+  - name: (
+  - uid: CodeFactory.WinVs.Models.ProjectSystem.VsDocument
+    name: VsDocument
+    isExternal: true
+    href: CodeFactory.WinVs.Models.ProjectSystem.VsDocument.html
+  - name: )
+  spec.vb:
+  - uid: CodeFactory.WinVs.Commands.VsCommandBase{CodeFactory.WinVs.Models.ProjectSystem.VsDocument}.EnableCommandAsync(CodeFactory.WinVs.Models.ProjectSystem.VsDocument)
+    name: EnableCommandAsync
+    isExternal: true
+    href: CodeFactory.WinVs.Commands.VsCommandBase-1.html#CodeFactory_WinVs_Commands_VsCommandBase_1_EnableCommandAsync__0_
+  - name: (
+  - uid: CodeFactory.WinVs.Models.ProjectSystem.VsDocument
+    name: VsDocument
+    isExternal: true
+    href: CodeFactory.WinVs.Models.ProjectSystem.VsDocument.html
+  - name: )
+- uid: CodeFactory.WinVs.Commands.VsCommandBase{CodeFactory.WinVs.Models.ProjectSystem.VsDocument}.ExecuteCommandAsync(CodeFactory.WinVs.Models.ProjectSystem.VsDocument)
+  commentId: M:CodeFactory.WinVs.Commands.VsCommandBase{CodeFactory.WinVs.Models.ProjectSystem.VsDocument}.ExecuteCommandAsync(CodeFactory.WinVs.Models.ProjectSystem.VsDocument)
+  parent: CodeFactory.WinVs.Commands.VsCommandBase{CodeFactory.WinVs.Models.ProjectSystem.VsDocument}
+  definition: CodeFactory.WinVs.Commands.VsCommandBase`1.ExecuteCommandAsync(`0)
+  href: CodeFactory.WinVs.Commands.VsCommandBase-1.html#CodeFactory_WinVs_Commands_VsCommandBase_1_ExecuteCommandAsync__0_
+  name: ExecuteCommandAsync(VsDocument)
+  nameWithType: VsCommandBase<VsDocument>.ExecuteCommandAsync(VsDocument)
+  fullName: CodeFactory.WinVs.Commands.VsCommandBase<CodeFactory.WinVs.Models.ProjectSystem.VsDocument>.ExecuteCommandAsync(CodeFactory.WinVs.Models.ProjectSystem.VsDocument)
+  nameWithType.vb: VsCommandBase(Of VsDocument).ExecuteCommandAsync(VsDocument)
+  fullName.vb: CodeFactory.WinVs.Commands.VsCommandBase(Of CodeFactory.WinVs.Models.ProjectSystem.VsDocument).ExecuteCommandAsync(CodeFactory.WinVs.Models.ProjectSystem.VsDocument)
+  spec.csharp:
+  - uid: CodeFactory.WinVs.Commands.VsCommandBase{CodeFactory.WinVs.Models.ProjectSystem.VsDocument}.ExecuteCommandAsync(CodeFactory.WinVs.Models.ProjectSystem.VsDocument)
+    name: ExecuteCommandAsync
+    isExternal: true
+    href: CodeFactory.WinVs.Commands.VsCommandBase-1.html#CodeFactory_WinVs_Commands_VsCommandBase_1_ExecuteCommandAsync__0_
+  - name: (
+  - uid: CodeFactory.WinVs.Models.ProjectSystem.VsDocument
+    name: VsDocument
+    isExternal: true
+    href: CodeFactory.WinVs.Models.ProjectSystem.VsDocument.html
+  - name: )
+  spec.vb:
+  - uid: CodeFactory.WinVs.Commands.VsCommandBase{CodeFactory.WinVs.Models.ProjectSystem.VsDocument}.ExecuteCommandAsync(CodeFactory.WinVs.Models.ProjectSystem.VsDocument)
+    name: ExecuteCommandAsync
+    isExternal: true
+    href: CodeFactory.WinVs.Commands.VsCommandBase-1.html#CodeFactory_WinVs_Commands_VsCommandBase_1_ExecuteCommandAsync__0_
+  - name: (
+  - uid: CodeFactory.WinVs.Models.ProjectSystem.VsDocument
+    name: VsDocument
+    isExternal: true
+    href: CodeFactory.WinVs.Models.ProjectSystem.VsDocument.html
+  - name: )
+- uid: CodeFactory.WinVs.Commands.VsCommandBase{CodeFactory.WinVs.Models.ProjectSystem.VsDocument}.CommandTitle
+  commentId: P:CodeFactory.WinVs.Commands.VsCommandBase{CodeFactory.WinVs.Models.ProjectSystem.VsDocument}.CommandTitle
+  parent: CodeFactory.WinVs.Commands.VsCommandBase{CodeFactory.WinVs.Models.ProjectSystem.VsDocument}
+  definition: CodeFactory.WinVs.Commands.VsCommandBase`1.CommandTitle
+  href: CodeFactory.WinVs.Commands.VsCommandBase-1.html#CodeFactory_WinVs_Commands_VsCommandBase_1_CommandTitle
+  name: CommandTitle
+  nameWithType: VsCommandBase<VsDocument>.CommandTitle
+  fullName: CodeFactory.WinVs.Commands.VsCommandBase<CodeFactory.WinVs.Models.ProjectSystem.VsDocument>.CommandTitle
+  nameWithType.vb: VsCommandBase(Of VsDocument).CommandTitle
+  fullName.vb: CodeFactory.WinVs.Commands.VsCommandBase(Of CodeFactory.WinVs.Models.ProjectSystem.VsDocument).CommandTitle
+- uid: CodeFactory.WinVs.Commands.VsCommandBase{CodeFactory.WinVs.Models.ProjectSystem.VsDocument}.CommandDescription
+  commentId: P:CodeFactory.WinVs.Commands.VsCommandBase{CodeFactory.WinVs.Models.ProjectSystem.VsDocument}.CommandDescription
+  parent: CodeFactory.WinVs.Commands.VsCommandBase{CodeFactory.WinVs.Models.ProjectSystem.VsDocument}
+  definition: CodeFactory.WinVs.Commands.VsCommandBase`1.CommandDescription
+  href: CodeFactory.WinVs.Commands.VsCommandBase-1.html#CodeFactory_WinVs_Commands_VsCommandBase_1_CommandDescription
+  name: CommandDescription
+  nameWithType: VsCommandBase<VsDocument>.CommandDescription
+  fullName: CodeFactory.WinVs.Commands.VsCommandBase<CodeFactory.WinVs.Models.ProjectSystem.VsDocument>.CommandDescription
+  nameWithType.vb: VsCommandBase(Of VsDocument).CommandDescription
+  fullName.vb: CodeFactory.WinVs.Commands.VsCommandBase(Of CodeFactory.WinVs.Models.ProjectSystem.VsDocument).CommandDescription
+- uid: CodeFactory.WinVs.Commands.VsCommandBase{CodeFactory.WinVs.Models.ProjectSystem.VsDocument}.CommandType
+  commentId: P:CodeFactory.WinVs.Commands.VsCommandBase{CodeFactory.WinVs.Models.ProjectSystem.VsDocument}.CommandType
+  parent: CodeFactory.WinVs.Commands.VsCommandBase{CodeFactory.WinVs.Models.ProjectSystem.VsDocument}
+  definition: CodeFactory.WinVs.Commands.VsCommandBase`1.CommandType
+  href: CodeFactory.WinVs.Commands.VsCommandBase-1.html#CodeFactory_WinVs_Commands_VsCommandBase_1_CommandType
+  name: CommandType
+  nameWithType: VsCommandBase<VsDocument>.CommandType
+  fullName: CodeFactory.WinVs.Commands.VsCommandBase<CodeFactory.WinVs.Models.ProjectSystem.VsDocument>.CommandType
+  nameWithType.vb: VsCommandBase(Of VsDocument).CommandType
+  fullName.vb: CodeFactory.WinVs.Commands.VsCommandBase(Of CodeFactory.WinVs.Models.ProjectSystem.VsDocument).CommandType
+- uid: CodeFactory.WinVs.Commands.VsCommandBase{CodeFactory.WinVs.Models.ProjectSystem.VsDocument}.VisualStudioActions
+  commentId: P:CodeFactory.WinVs.Commands.VsCommandBase{CodeFactory.WinVs.Models.ProjectSystem.VsDocument}.VisualStudioActions
+  parent: CodeFactory.WinVs.Commands.VsCommandBase{CodeFactory.WinVs.Models.ProjectSystem.VsDocument}
+  definition: CodeFactory.WinVs.Commands.VsCommandBase`1.VisualStudioActions
+  href: CodeFactory.WinVs.Commands.VsCommandBase-1.html#CodeFactory_WinVs_Commands_VsCommandBase_1_VisualStudioActions
+  name: VisualStudioActions
+  nameWithType: VsCommandBase<VsDocument>.VisualStudioActions
+  fullName: CodeFactory.WinVs.Commands.VsCommandBase<CodeFactory.WinVs.Models.ProjectSystem.VsDocument>.VisualStudioActions
+  nameWithType.vb: VsCommandBase(Of VsDocument).VisualStudioActions
+  fullName.vb: CodeFactory.WinVs.Commands.VsCommandBase(Of CodeFactory.WinVs.Models.ProjectSystem.VsDocument).VisualStudioActions
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: CodeFactory.WinVs.Commands.VsCommandBase`1
+  commentId: T:CodeFactory.WinVs.Commands.VsCommandBase`1
+  isExternal: true
+  href: CodeFactory.WinVs.Commands.VsCommandBase-1.html
+  name: VsCommandBase<TModel>
+  nameWithType: VsCommandBase<TModel>
+  fullName: CodeFactory.WinVs.Commands.VsCommandBase<TModel>
+  nameWithType.vb: VsCommandBase(Of TModel)
+  fullName.vb: CodeFactory.WinVs.Commands.VsCommandBase(Of TModel)
+  name.vb: VsCommandBase(Of TModel)
+  spec.csharp:
+  - uid: CodeFactory.WinVs.Commands.VsCommandBase`1
+    name: VsCommandBase
+    isExternal: true
+    href: CodeFactory.WinVs.Commands.VsCommandBase-1.html
+  - name: <
+  - name: TModel
+  - name: '>'
+  spec.vb:
+  - uid: CodeFactory.WinVs.Commands.VsCommandBase`1
+    name: VsCommandBase
+    isExternal: true
+    href: CodeFactory.WinVs.Commands.VsCommandBase-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TModel
+  - name: )
+- uid: CodeFactory.WinVs.Commands
+  commentId: N:CodeFactory.WinVs.Commands
+  isExternal: true
+  href: CodeFactory.html
+  name: CodeFactory.WinVs.Commands
+  nameWithType: CodeFactory.WinVs.Commands
+  fullName: CodeFactory.WinVs.Commands
+  spec.csharp:
+  - uid: CodeFactory
+    name: CodeFactory
+    isExternal: true
+    href: CodeFactory.html
+  - name: .
+  - uid: CodeFactory.WinVs
+    name: WinVs
+    isExternal: true
+    href: CodeFactory.WinVs.html
+  - name: .
+  - uid: CodeFactory.WinVs.Commands
+    name: Commands
+    isExternal: true
+    href: CodeFactory.WinVs.Commands.html
+  spec.vb:
+  - uid: CodeFactory
+    name: CodeFactory
+    isExternal: true
+    href: CodeFactory.html
+  - name: .
+  - uid: CodeFactory.WinVs
+    name: WinVs
+    isExternal: true
+    href: CodeFactory.WinVs.html
+  - name: .
+  - uid: CodeFactory.WinVs.Commands
+    name: Commands
+    isExternal: true
+    href: CodeFactory.WinVs.Commands.html
+- uid: CodeFactory.WinVs.Commands.IVsConfigurableCommand`1
+  commentId: T:CodeFactory.WinVs.Commands.IVsConfigurableCommand`1
+  isExternal: true
+  href: CodeFactory.WinVs.Commands.IVsConfigurableCommand-1.html
+  name: IVsConfigurableCommand<TModel>
+  nameWithType: IVsConfigurableCommand<TModel>
+  fullName: CodeFactory.WinVs.Commands.IVsConfigurableCommand<TModel>
+  nameWithType.vb: IVsConfigurableCommand(Of TModel)
+  fullName.vb: CodeFactory.WinVs.Commands.IVsConfigurableCommand(Of TModel)
+  name.vb: IVsConfigurableCommand(Of TModel)
+  spec.csharp:
+  - uid: CodeFactory.WinVs.Commands.IVsConfigurableCommand`1
+    name: IVsConfigurableCommand
+    isExternal: true
+    href: CodeFactory.WinVs.Commands.IVsConfigurableCommand-1.html
+  - name: <
+  - name: TModel
+  - name: '>'
+  spec.vb:
+  - uid: CodeFactory.WinVs.Commands.IVsConfigurableCommand`1
+    name: IVsConfigurableCommand
+    isExternal: true
+    href: CodeFactory.WinVs.Commands.IVsConfigurableCommand-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TModel
+  - name: )
+- uid: CodeFactory.WinVs.Commands.IVsFactoryCommand`1
+  commentId: T:CodeFactory.WinVs.Commands.IVsFactoryCommand`1
+  isExternal: true
+  href: CodeFactory.WinVs.Commands.IVsFactoryCommand-1.html
+  name: IVsFactoryCommand<TModel>
+  nameWithType: IVsFactoryCommand<TModel>
+  fullName: CodeFactory.WinVs.Commands.IVsFactoryCommand<TModel>
+  nameWithType.vb: IVsFactoryCommand(Of TModel)
+  fullName.vb: CodeFactory.WinVs.Commands.IVsFactoryCommand(Of TModel)
+  name.vb: IVsFactoryCommand(Of TModel)
+  spec.csharp:
+  - uid: CodeFactory.WinVs.Commands.IVsFactoryCommand`1
+    name: IVsFactoryCommand
+    isExternal: true
+    href: CodeFactory.WinVs.Commands.IVsFactoryCommand-1.html
+  - name: <
+  - name: TModel
+  - name: '>'
+  spec.vb:
+  - uid: CodeFactory.WinVs.Commands.IVsFactoryCommand`1
+    name: IVsFactoryCommand
+    isExternal: true
+    href: CodeFactory.WinVs.Commands.IVsFactoryCommand-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TModel
+  - name: )
+- uid: CodeFactory.ICommand`1
+  commentId: T:CodeFactory.ICommand`1
+  isExternal: true
+  href: CodeFactory.ICommand-1.html
+  name: ICommand<TModel>
+  nameWithType: ICommand<TModel>
+  fullName: CodeFactory.ICommand<TModel>
+  nameWithType.vb: ICommand(Of TModel)
+  fullName.vb: CodeFactory.ICommand(Of TModel)
+  name.vb: ICommand(Of TModel)
+  spec.csharp:
+  - uid: CodeFactory.ICommand`1
+    name: ICommand
+    isExternal: true
+    href: CodeFactory.ICommand-1.html
+  - name: <
+  - name: TModel
+  - name: '>'
+  spec.vb:
+  - uid: CodeFactory.ICommand`1
+    name: ICommand
+    isExternal: true
+    href: CodeFactory.ICommand-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TModel
+  - name: )
+- uid: CodeFactory
+  commentId: N:CodeFactory
+  isExternal: true
+  href: CodeFactory.html
+  name: CodeFactory
+  nameWithType: CodeFactory
+  fullName: CodeFactory
+- uid: CodeFactory.ICommandBase`1
+  commentId: T:CodeFactory.ICommandBase`1
+  isExternal: true
+  href: CodeFactory.ICommandBase-1.html
+  name: ICommandBase<TModel>
+  nameWithType: ICommandBase<TModel>
+  fullName: CodeFactory.ICommandBase<TModel>
+  nameWithType.vb: ICommandBase(Of TModel)
+  fullName.vb: CodeFactory.ICommandBase(Of TModel)
+  name.vb: ICommandBase(Of TModel)
+  spec.csharp:
+  - uid: CodeFactory.ICommandBase`1
+    name: ICommandBase
+    isExternal: true
+    href: CodeFactory.ICommandBase-1.html
+  - name: <
+  - name: TModel
+  - name: '>'
+  spec.vb:
+  - uid: CodeFactory.ICommandBase`1
+    name: ICommandBase
+    isExternal: true
+    href: CodeFactory.ICommandBase-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TModel
+  - name: )
+- uid: CodeFactory.WinVs.Commands.VsCommandBase`1._commandTitle
+  commentId: F:CodeFactory.WinVs.Commands.VsCommandBase`1._commandTitle
+  isExternal: true
+  href: CodeFactory.WinVs.Commands.VsCommandBase-1.html#CodeFactory_WinVs_Commands_VsCommandBase_1__commandTitle
+  name: _commandTitle
+  nameWithType: VsCommandBase<TModel>._commandTitle
+  fullName: CodeFactory.WinVs.Commands.VsCommandBase<TModel>._commandTitle
+  nameWithType.vb: VsCommandBase(Of TModel)._commandTitle
+  fullName.vb: CodeFactory.WinVs.Commands.VsCommandBase(Of TModel)._commandTitle
+- uid: CodeFactory.WinVs.Commands.VsCommandBase`1._commandDescription
+  commentId: F:CodeFactory.WinVs.Commands.VsCommandBase`1._commandDescription
+  isExternal: true
+  href: CodeFactory.WinVs.Commands.VsCommandBase-1.html#CodeFactory_WinVs_Commands_VsCommandBase_1__commandDescription
+  name: _commandDescription
+  nameWithType: VsCommandBase<TModel>._commandDescription
+  fullName: CodeFactory.WinVs.Commands.VsCommandBase<TModel>._commandDescription
+  nameWithType.vb: VsCommandBase(Of TModel)._commandDescription
+  fullName.vb: CodeFactory.WinVs.Commands.VsCommandBase(Of TModel)._commandDescription
+- uid: CodeFactory.WinVs.Commands.VsCommandBase`1._logger
+  commentId: F:CodeFactory.WinVs.Commands.VsCommandBase`1._logger
+  isExternal: true
+  href: CodeFactory.WinVs.Commands.VsCommandBase-1.html#CodeFactory_WinVs_Commands_VsCommandBase_1__logger
+  name: _logger
+  nameWithType: VsCommandBase<TModel>._logger
+  fullName: CodeFactory.WinVs.Commands.VsCommandBase<TModel>._logger
+  nameWithType.vb: VsCommandBase(Of TModel)._logger
+  fullName.vb: CodeFactory.WinVs.Commands.VsCommandBase(Of TModel)._logger
+- uid: CodeFactory.WinVs.Commands.VsCommandBase`1.LoadExternalConfigDefinition
+  commentId: M:CodeFactory.WinVs.Commands.VsCommandBase`1.LoadExternalConfigDefinition
+  isExternal: true
+  href: CodeFactory.WinVs.Commands.VsCommandBase-1.html#CodeFactory_WinVs_Commands_VsCommandBase_1_LoadExternalConfigDefinition
+  name: LoadExternalConfigDefinition()
+  nameWithType: VsCommandBase<TModel>.LoadExternalConfigDefinition()
+  fullName: CodeFactory.WinVs.Commands.VsCommandBase<TModel>.LoadExternalConfigDefinition()
+  nameWithType.vb: VsCommandBase(Of TModel).LoadExternalConfigDefinition()
+  fullName.vb: CodeFactory.WinVs.Commands.VsCommandBase(Of TModel).LoadExternalConfigDefinition()
+  spec.csharp:
+  - uid: CodeFactory.WinVs.Commands.VsCommandBase`1.LoadExternalConfigDefinition
+    name: LoadExternalConfigDefinition
+    isExternal: true
+    href: CodeFactory.WinVs.Commands.VsCommandBase-1.html#CodeFactory_WinVs_Commands_VsCommandBase_1_LoadExternalConfigDefinition
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: CodeFactory.WinVs.Commands.VsCommandBase`1.LoadExternalConfigDefinition
+    name: LoadExternalConfigDefinition
+    isExternal: true
+    href: CodeFactory.WinVs.Commands.VsCommandBase-1.html#CodeFactory_WinVs_Commands_VsCommandBase_1_LoadExternalConfigDefinition
+  - name: (
+  - name: )
+- uid: CodeFactory.WinVs.Commands.VsCommandBase`1.EnableCommandAsync(`0)
+  commentId: M:CodeFactory.WinVs.Commands.VsCommandBase`1.EnableCommandAsync(`0)
+  isExternal: true
+  href: CodeFactory.WinVs.Commands.VsCommandBase-1.html#CodeFactory_WinVs_Commands_VsCommandBase_1_EnableCommandAsync__0_
+  name: EnableCommandAsync(TModel)
+  nameWithType: VsCommandBase<TModel>.EnableCommandAsync(TModel)
+  fullName: CodeFactory.WinVs.Commands.VsCommandBase<TModel>.EnableCommandAsync(TModel)
+  nameWithType.vb: VsCommandBase(Of TModel).EnableCommandAsync(TModel)
+  fullName.vb: CodeFactory.WinVs.Commands.VsCommandBase(Of TModel).EnableCommandAsync(TModel)
+  spec.csharp:
+  - uid: CodeFactory.WinVs.Commands.VsCommandBase`1.EnableCommandAsync(`0)
+    name: EnableCommandAsync
+    isExternal: true
+    href: CodeFactory.WinVs.Commands.VsCommandBase-1.html#CodeFactory_WinVs_Commands_VsCommandBase_1_EnableCommandAsync__0_
+  - name: (
+  - name: TModel
+  - name: )
+  spec.vb:
+  - uid: CodeFactory.WinVs.Commands.VsCommandBase`1.EnableCommandAsync(`0)
+    name: EnableCommandAsync
+    isExternal: true
+    href: CodeFactory.WinVs.Commands.VsCommandBase-1.html#CodeFactory_WinVs_Commands_VsCommandBase_1_EnableCommandAsync__0_
+  - name: (
+  - name: TModel
+  - name: )
+- uid: CodeFactory.WinVs.Commands.VsCommandBase`1.ExecuteCommandAsync(`0)
+  commentId: M:CodeFactory.WinVs.Commands.VsCommandBase`1.ExecuteCommandAsync(`0)
+  isExternal: true
+  href: CodeFactory.WinVs.Commands.VsCommandBase-1.html#CodeFactory_WinVs_Commands_VsCommandBase_1_ExecuteCommandAsync__0_
+  name: ExecuteCommandAsync(TModel)
+  nameWithType: VsCommandBase<TModel>.ExecuteCommandAsync(TModel)
+  fullName: CodeFactory.WinVs.Commands.VsCommandBase<TModel>.ExecuteCommandAsync(TModel)
+  nameWithType.vb: VsCommandBase(Of TModel).ExecuteCommandAsync(TModel)
+  fullName.vb: CodeFactory.WinVs.Commands.VsCommandBase(Of TModel).ExecuteCommandAsync(TModel)
+  spec.csharp:
+  - uid: CodeFactory.WinVs.Commands.VsCommandBase`1.ExecuteCommandAsync(`0)
+    name: ExecuteCommandAsync
+    isExternal: true
+    href: CodeFactory.WinVs.Commands.VsCommandBase-1.html#CodeFactory_WinVs_Commands_VsCommandBase_1_ExecuteCommandAsync__0_
+  - name: (
+  - name: TModel
+  - name: )
+  spec.vb:
+  - uid: CodeFactory.WinVs.Commands.VsCommandBase`1.ExecuteCommandAsync(`0)
+    name: ExecuteCommandAsync
+    isExternal: true
+    href: CodeFactory.WinVs.Commands.VsCommandBase-1.html#CodeFactory_WinVs_Commands_VsCommandBase_1_ExecuteCommandAsync__0_
+  - name: (
+  - name: TModel
+  - name: )
+- uid: CodeFactory.WinVs.Commands.VsCommandBase`1.CommandTitle
+  commentId: P:CodeFactory.WinVs.Commands.VsCommandBase`1.CommandTitle
+  isExternal: true
+  href: CodeFactory.WinVs.Commands.VsCommandBase-1.html#CodeFactory_WinVs_Commands_VsCommandBase_1_CommandTitle
+  name: CommandTitle
+  nameWithType: VsCommandBase<TModel>.CommandTitle
+  fullName: CodeFactory.WinVs.Commands.VsCommandBase<TModel>.CommandTitle
+  nameWithType.vb: VsCommandBase(Of TModel).CommandTitle
+  fullName.vb: CodeFactory.WinVs.Commands.VsCommandBase(Of TModel).CommandTitle
+- uid: CodeFactory.WinVs.Commands.VsCommandBase`1.CommandDescription
+  commentId: P:CodeFactory.WinVs.Commands.VsCommandBase`1.CommandDescription
+  isExternal: true
+  href: CodeFactory.WinVs.Commands.VsCommandBase-1.html#CodeFactory_WinVs_Commands_VsCommandBase_1_CommandDescription
+  name: CommandDescription
+  nameWithType: VsCommandBase<TModel>.CommandDescription
+  fullName: CodeFactory.WinVs.Commands.VsCommandBase<TModel>.CommandDescription
+  nameWithType.vb: VsCommandBase(Of TModel).CommandDescription
+  fullName.vb: CodeFactory.WinVs.Commands.VsCommandBase(Of TModel).CommandDescription
+- uid: CodeFactory.WinVs.Commands.VsCommandBase`1.CommandType
+  commentId: P:CodeFactory.WinVs.Commands.VsCommandBase`1.CommandType
+  isExternal: true
+  href: CodeFactory.WinVs.Commands.VsCommandBase-1.html#CodeFactory_WinVs_Commands_VsCommandBase_1_CommandType
+  name: CommandType
+  nameWithType: VsCommandBase<TModel>.CommandType
+  fullName: CodeFactory.WinVs.Commands.VsCommandBase<TModel>.CommandType
+  nameWithType.vb: VsCommandBase(Of TModel).CommandType
+  fullName.vb: CodeFactory.WinVs.Commands.VsCommandBase(Of TModel).CommandType
+- uid: CodeFactory.WinVs.Commands.VsCommandBase`1.VisualStudioActions
+  commentId: P:CodeFactory.WinVs.Commands.VsCommandBase`1.VisualStudioActions
+  isExternal: true
+  href: CodeFactory.WinVs.Commands.VsCommandBase-1.html#CodeFactory_WinVs_Commands_VsCommandBase_1_VisualStudioActions
+  name: VisualStudioActions
+  nameWithType: VsCommandBase<TModel>.VisualStudioActions
+  fullName: CodeFactory.WinVs.Commands.VsCommandBase<TModel>.VisualStudioActions
+  nameWithType.vb: VsCommandBase(Of TModel).VisualStudioActions
+  fullName.vb: CodeFactory.WinVs.Commands.VsCommandBase(Of TModel).VisualStudioActions
+- uid: CodeFactory.WinVs.Commands.SolutionExplorer.ProjectDocumentCommandBase.#ctor*
+  commentId: Overload:CodeFactory.WinVs.Commands.SolutionExplorer.ProjectDocumentCommandBase.#ctor
+  isExternal: true
+  href: CodeFactory.WinVs.Commands.SolutionExplorer.ProjectDocumentCommandBase.html#CodeFactory_WinVs_Commands_SolutionExplorer_ProjectDocumentCommandBase__ctor_CodeFactory_WinVs_Logging_ILogger_CodeFactory_WinVs_IVsActions_System_String_System_String_
+  name: ProjectDocumentCommandBase
+  nameWithType: ProjectDocumentCommandBase.ProjectDocumentCommandBase
+  fullName: CodeFactory.WinVs.Commands.SolutionExplorer.ProjectDocumentCommandBase.ProjectDocumentCommandBase
+  nameWithType.vb: ProjectDocumentCommandBase.New
+  fullName.vb: CodeFactory.WinVs.Commands.SolutionExplorer.ProjectDocumentCommandBase.New
+  name.vb: New
+- uid: CodeFactory.WinVs.Logging.ILogger
+  commentId: T:CodeFactory.WinVs.Logging.ILogger
+  parent: CodeFactory.WinVs.Logging
+  isExternal: true
+  href: CodeFactory.WinVs.Logging.ILogger.html
+  name: ILogger
+  nameWithType: ILogger
+  fullName: CodeFactory.WinVs.Logging.ILogger
+- uid: CodeFactory.WinVs.IVsActions
+  commentId: T:CodeFactory.WinVs.IVsActions
+  parent: CodeFactory.WinVs
+  isExternal: true
+  href: CodeFactory.WinVs.IVsActions.html
+  name: IVsActions
+  nameWithType: IVsActions
+  fullName: CodeFactory.WinVs.IVsActions
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: CodeFactory.WinVs.Logging
+  commentId: N:CodeFactory.WinVs.Logging
+  isExternal: true
+  href: CodeFactory.html
+  name: CodeFactory.WinVs.Logging
+  nameWithType: CodeFactory.WinVs.Logging
+  fullName: CodeFactory.WinVs.Logging
+  spec.csharp:
+  - uid: CodeFactory
+    name: CodeFactory
+    isExternal: true
+    href: CodeFactory.html
+  - name: .
+  - uid: CodeFactory.WinVs
+    name: WinVs
+    isExternal: true
+    href: CodeFactory.WinVs.html
+  - name: .
+  - uid: CodeFactory.WinVs.Logging
+    name: Logging
+    isExternal: true
+    href: CodeFactory.WinVs.Logging.html
+  spec.vb:
+  - uid: CodeFactory
+    name: CodeFactory
+    isExternal: true
+    href: CodeFactory.html
+  - name: .
+  - uid: CodeFactory.WinVs
+    name: WinVs
+    isExternal: true
+    href: CodeFactory.WinVs.html
+  - name: .
+  - uid: CodeFactory.WinVs.Logging
+    name: Logging
+    isExternal: true
+    href: CodeFactory.WinVs.Logging.html
+- uid: CodeFactory.WinVs
+  commentId: N:CodeFactory.WinVs
+  isExternal: true
+  href: CodeFactory.html
+  name: CodeFactory.WinVs
+  nameWithType: CodeFactory.WinVs
+  fullName: CodeFactory.WinVs
+  spec.csharp:
+  - uid: CodeFactory
+    name: CodeFactory
+    isExternal: true
+    href: CodeFactory.html
+  - name: .
+  - uid: CodeFactory.WinVs
+    name: WinVs
+    isExternal: true
+    href: CodeFactory.WinVs.html
+  spec.vb:
+  - uid: CodeFactory
+    name: CodeFactory
+    isExternal: true
+    href: CodeFactory.html
+  - name: .
+  - uid: CodeFactory.WinVs
+    name: WinVs
+    isExternal: true
+    href: CodeFactory.WinVs.html

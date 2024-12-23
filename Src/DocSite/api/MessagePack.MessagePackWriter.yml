@@ -1,0 +1,3106 @@
+### YamlMime:ManagedReference
+items:
+- uid: MessagePack.MessagePackWriter
+  commentId: T:MessagePack.MessagePackWriter
+  id: MessagePackWriter
+  parent: MessagePack
+  children:
+  - MessagePack.MessagePackWriter.#ctor(System.Buffers.IBufferWriter{System.Byte})
+  - MessagePack.MessagePackWriter.Advance(System.Int32)
+  - MessagePack.MessagePackWriter.CancellationToken
+  - MessagePack.MessagePackWriter.Clone(System.Buffers.IBufferWriter{System.Byte})
+  - MessagePack.MessagePackWriter.Flush
+  - MessagePack.MessagePackWriter.GetEncodedLength(System.Int64)
+  - MessagePack.MessagePackWriter.GetEncodedLength(System.UInt64)
+  - MessagePack.MessagePackWriter.GetSpan(System.Int32)
+  - MessagePack.MessagePackWriter.OldSpec
+  - MessagePack.MessagePackWriter.Write(System.Boolean)
+  - MessagePack.MessagePackWriter.Write(System.Buffers.ReadOnlySequence{System.Byte}@)
+  - MessagePack.MessagePackWriter.Write(System.Byte)
+  - MessagePack.MessagePackWriter.Write(System.Byte[])
+  - MessagePack.MessagePackWriter.Write(System.Char)
+  - MessagePack.MessagePackWriter.Write(System.DateTime)
+  - MessagePack.MessagePackWriter.Write(System.Double)
+  - MessagePack.MessagePackWriter.Write(System.Int16)
+  - MessagePack.MessagePackWriter.Write(System.Int32)
+  - MessagePack.MessagePackWriter.Write(System.Int64)
+  - MessagePack.MessagePackWriter.Write(System.ReadOnlySpan{System.Byte})
+  - MessagePack.MessagePackWriter.Write(System.ReadOnlySpan{System.Char})
+  - MessagePack.MessagePackWriter.Write(System.SByte)
+  - MessagePack.MessagePackWriter.Write(System.Single)
+  - MessagePack.MessagePackWriter.Write(System.String)
+  - MessagePack.MessagePackWriter.Write(System.UInt16)
+  - MessagePack.MessagePackWriter.Write(System.UInt32)
+  - MessagePack.MessagePackWriter.Write(System.UInt64)
+  - MessagePack.MessagePackWriter.WriteArrayHeader(System.Int32)
+  - MessagePack.MessagePackWriter.WriteArrayHeader(System.UInt32)
+  - MessagePack.MessagePackWriter.WriteBinHeader(System.Int32)
+  - MessagePack.MessagePackWriter.WriteExtensionFormat(MessagePack.ExtensionResult)
+  - MessagePack.MessagePackWriter.WriteExtensionFormatHeader(MessagePack.ExtensionHeader)
+  - MessagePack.MessagePackWriter.WriteInt16(System.Int16)
+  - MessagePack.MessagePackWriter.WriteInt32(System.Int32)
+  - MessagePack.MessagePackWriter.WriteInt64(System.Int64)
+  - MessagePack.MessagePackWriter.WriteInt8(System.SByte)
+  - MessagePack.MessagePackWriter.WriteMapHeader(System.Int32)
+  - MessagePack.MessagePackWriter.WriteMapHeader(System.UInt32)
+  - MessagePack.MessagePackWriter.WriteNil
+  - MessagePack.MessagePackWriter.WriteRaw(System.Buffers.ReadOnlySequence{System.Byte}@)
+  - MessagePack.MessagePackWriter.WriteRaw(System.ReadOnlySpan{System.Byte})
+  - MessagePack.MessagePackWriter.WriteString(System.Buffers.ReadOnlySequence{System.Byte}@)
+  - MessagePack.MessagePackWriter.WriteString(System.ReadOnlySpan{System.Byte})
+  - MessagePack.MessagePackWriter.WriteStringHeader(System.Int32)
+  - MessagePack.MessagePackWriter.WriteUInt16(System.UInt16)
+  - MessagePack.MessagePackWriter.WriteUInt32(System.UInt32)
+  - MessagePack.MessagePackWriter.WriteUInt64(System.UInt64)
+  - MessagePack.MessagePackWriter.WriteUInt8(System.Byte)
+  langs:
+  - csharp
+  - vb
+  name: MessagePackWriter
+  nameWithType: MessagePackWriter
+  fullName: MessagePack.MessagePackWriter
+  type: Struct
+  assemblies:
+  - MessagePack
+  namespace: MessagePack
+  summary: A primitive types writer for the MessagePack format.
+  remarks: <a href="https://github.com/msgpack/msgpack/blob/master/spec.md">The MessagePack spec.</a>.
+  example: []
+  syntax:
+    content: public ref struct MessagePackWriter
+    content.vb: Public Structure MessagePackWriter
+  inheritedMembers:
+  - System.ValueType.Equals(System.Object)
+  - System.ValueType.GetHashCode
+  - System.ValueType.ToString
+  - System.Object.GetType
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+- uid: MessagePack.MessagePackWriter.#ctor(System.Buffers.IBufferWriter{System.Byte})
+  commentId: M:MessagePack.MessagePackWriter.#ctor(System.Buffers.IBufferWriter{System.Byte})
+  id: '#ctor(System.Buffers.IBufferWriter{System.Byte})'
+  parent: MessagePack.MessagePackWriter
+  langs:
+  - csharp
+  - vb
+  name: MessagePackWriter(IBufferWriter<byte>)
+  nameWithType: MessagePackWriter.MessagePackWriter(IBufferWriter<byte>)
+  fullName: MessagePack.MessagePackWriter.MessagePackWriter(System.Buffers.IBufferWriter<byte>)
+  type: Constructor
+  assemblies:
+  - MessagePack
+  namespace: MessagePack
+  summary: Initializes a new instance of the <xref href="MessagePack.MessagePackWriter" data-throw-if-not-resolved="false"></xref> struct.
+  example: []
+  syntax:
+    content: public MessagePackWriter(IBufferWriter<byte> writer)
+    parameters:
+    - id: writer
+      type: System.Buffers.IBufferWriter{System.Byte}
+      description: The writer to use.
+    content.vb: Public Sub New(writer As IBufferWriter(Of Byte))
+  overload: MessagePack.MessagePackWriter.#ctor*
+  nameWithType.vb: MessagePackWriter.New(IBufferWriter(Of Byte))
+  fullName.vb: MessagePack.MessagePackWriter.New(System.Buffers.IBufferWriter(Of Byte))
+  name.vb: New(IBufferWriter(Of Byte))
+- uid: MessagePack.MessagePackWriter.Clone(System.Buffers.IBufferWriter{System.Byte})
+  commentId: M:MessagePack.MessagePackWriter.Clone(System.Buffers.IBufferWriter{System.Byte})
+  id: Clone(System.Buffers.IBufferWriter{System.Byte})
+  parent: MessagePack.MessagePackWriter
+  langs:
+  - csharp
+  - vb
+  name: Clone(IBufferWriter<byte>)
+  nameWithType: MessagePackWriter.Clone(IBufferWriter<byte>)
+  fullName: MessagePack.MessagePackWriter.Clone(System.Buffers.IBufferWriter<byte>)
+  type: Method
+  assemblies:
+  - MessagePack
+  namespace: MessagePack
+  summary: >-
+    Initializes a new instance of the <xref href="MessagePack.MessagePackWriter" data-throw-if-not-resolved="false"></xref> struct,
+
+    with the same settings as this one, but with its own buffer writer.
+  example: []
+  syntax:
+    content: public MessagePackWriter Clone(IBufferWriter<byte> writer)
+    parameters:
+    - id: writer
+      type: System.Buffers.IBufferWriter{System.Byte}
+      description: The writer to use for the new instance.
+    return:
+      type: MessagePack.MessagePackWriter
+      description: The new writer.
+    content.vb: Public Function Clone(writer As IBufferWriter(Of Byte)) As MessagePackWriter
+  overload: MessagePack.MessagePackWriter.Clone*
+  nameWithType.vb: MessagePackWriter.Clone(IBufferWriter(Of Byte))
+  fullName.vb: MessagePack.MessagePackWriter.Clone(System.Buffers.IBufferWriter(Of Byte))
+  name.vb: Clone(IBufferWriter(Of Byte))
+- uid: MessagePack.MessagePackWriter.Flush
+  commentId: M:MessagePack.MessagePackWriter.Flush
+  id: Flush
+  parent: MessagePack.MessagePackWriter
+  langs:
+  - csharp
+  - vb
+  name: Flush()
+  nameWithType: MessagePackWriter.Flush()
+  fullName: MessagePack.MessagePackWriter.Flush()
+  type: Method
+  assemblies:
+  - MessagePack
+  namespace: MessagePack
+  summary: Ensures everything previously written has been flushed to the underlying <xref href="System.Buffers.IBufferWriter%601" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public void Flush()
+    content.vb: Public Sub Flush()
+  overload: MessagePack.MessagePackWriter.Flush*
+- uid: MessagePack.MessagePackWriter.WriteNil
+  commentId: M:MessagePack.MessagePackWriter.WriteNil
+  id: WriteNil
+  parent: MessagePack.MessagePackWriter
+  langs:
+  - csharp
+  - vb
+  name: WriteNil()
+  nameWithType: MessagePackWriter.WriteNil()
+  fullName: MessagePack.MessagePackWriter.WriteNil()
+  type: Method
+  assemblies:
+  - MessagePack
+  namespace: MessagePack
+  summary: Writes a <xref href="MessagePack.MessagePackCode.Nil" data-throw-if-not-resolved="false"></xref> value.
+  example: []
+  syntax:
+    content: public void WriteNil()
+    content.vb: Public Sub WriteNil()
+  overload: MessagePack.MessagePackWriter.WriteNil*
+- uid: MessagePack.MessagePackWriter.WriteRaw(System.ReadOnlySpan{System.Byte})
+  commentId: M:MessagePack.MessagePackWriter.WriteRaw(System.ReadOnlySpan{System.Byte})
+  id: WriteRaw(System.ReadOnlySpan{System.Byte})
+  parent: MessagePack.MessagePackWriter
+  langs:
+  - csharp
+  - vb
+  name: WriteRaw(ReadOnlySpan<byte>)
+  nameWithType: MessagePackWriter.WriteRaw(ReadOnlySpan<byte>)
+  fullName: MessagePack.MessagePackWriter.WriteRaw(System.ReadOnlySpan<byte>)
+  type: Method
+  assemblies:
+  - MessagePack
+  namespace: MessagePack
+  summary: Copies bytes directly into the message pack writer.
+  example: []
+  syntax:
+    content: public void WriteRaw(ReadOnlySpan<byte> rawMessagePackBlock)
+    parameters:
+    - id: rawMessagePackBlock
+      type: System.ReadOnlySpan{System.Byte}
+      description: The span of bytes to copy from.
+    content.vb: Public Sub WriteRaw(rawMessagePackBlock As ReadOnlySpan(Of Byte))
+  overload: MessagePack.MessagePackWriter.WriteRaw*
+  nameWithType.vb: MessagePackWriter.WriteRaw(ReadOnlySpan(Of Byte))
+  fullName.vb: MessagePack.MessagePackWriter.WriteRaw(System.ReadOnlySpan(Of Byte))
+  name.vb: WriteRaw(ReadOnlySpan(Of Byte))
+- uid: MessagePack.MessagePackWriter.WriteRaw(System.Buffers.ReadOnlySequence{System.Byte}@)
+  commentId: M:MessagePack.MessagePackWriter.WriteRaw(System.Buffers.ReadOnlySequence{System.Byte}@)
+  id: WriteRaw(System.Buffers.ReadOnlySequence{System.Byte}@)
+  parent: MessagePack.MessagePackWriter
+  langs:
+  - csharp
+  - vb
+  name: WriteRaw(in ReadOnlySequence<byte>)
+  nameWithType: MessagePackWriter.WriteRaw(in ReadOnlySequence<byte>)
+  fullName: MessagePack.MessagePackWriter.WriteRaw(in System.Buffers.ReadOnlySequence<byte>)
+  type: Method
+  assemblies:
+  - MessagePack
+  namespace: MessagePack
+  summary: Copies bytes directly into the message pack writer.
+  example: []
+  syntax:
+    content: public void WriteRaw(in ReadOnlySequence<byte> rawMessagePackBlock)
+    parameters:
+    - id: rawMessagePackBlock
+      type: System.Buffers.ReadOnlySequence{System.Byte}
+      description: The span of bytes to copy from.
+    content.vb: Public Sub WriteRaw(rawMessagePackBlock As ReadOnlySequence(Of Byte))
+  overload: MessagePack.MessagePackWriter.WriteRaw*
+  nameWithType.vb: MessagePackWriter.WriteRaw(ReadOnlySequence(Of Byte))
+  fullName.vb: MessagePack.MessagePackWriter.WriteRaw(System.Buffers.ReadOnlySequence(Of Byte))
+  name.vb: WriteRaw(ReadOnlySequence(Of Byte))
+- uid: MessagePack.MessagePackWriter.WriteArrayHeader(System.Int32)
+  commentId: M:MessagePack.MessagePackWriter.WriteArrayHeader(System.Int32)
+  id: WriteArrayHeader(System.Int32)
+  parent: MessagePack.MessagePackWriter
+  langs:
+  - csharp
+  - vb
+  name: WriteArrayHeader(int)
+  nameWithType: MessagePackWriter.WriteArrayHeader(int)
+  fullName: MessagePack.MessagePackWriter.WriteArrayHeader(int)
+  type: Method
+  assemblies:
+  - MessagePack
+  namespace: MessagePack
+  summary: >-
+    Write the length of the next array to be written in the most compact form of
+
+    <xref href="MessagePack.MessagePackCode.MinFixArray" data-throw-if-not-resolved="false"></xref>,
+
+    <xref href="MessagePack.MessagePackCode.Array16" data-throw-if-not-resolved="false"></xref>, or
+
+    <xref href="MessagePack.MessagePackCode.Array32" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public void WriteArrayHeader(int count)
+    parameters:
+    - id: count
+      type: System.Int32
+      description: The number of elements that will be written in the array.
+    content.vb: Public Sub WriteArrayHeader(count As Integer)
+  overload: MessagePack.MessagePackWriter.WriteArrayHeader*
+  nameWithType.vb: MessagePackWriter.WriteArrayHeader(Integer)
+  fullName.vb: MessagePack.MessagePackWriter.WriteArrayHeader(Integer)
+  name.vb: WriteArrayHeader(Integer)
+- uid: MessagePack.MessagePackWriter.WriteArrayHeader(System.UInt32)
+  commentId: M:MessagePack.MessagePackWriter.WriteArrayHeader(System.UInt32)
+  id: WriteArrayHeader(System.UInt32)
+  parent: MessagePack.MessagePackWriter
+  langs:
+  - csharp
+  - vb
+  name: WriteArrayHeader(uint)
+  nameWithType: MessagePackWriter.WriteArrayHeader(uint)
+  fullName: MessagePack.MessagePackWriter.WriteArrayHeader(uint)
+  type: Method
+  assemblies:
+  - MessagePack
+  namespace: MessagePack
+  summary: >-
+    Write the length of the next array to be written in the most compact form of
+
+    <xref href="MessagePack.MessagePackCode.MinFixArray" data-throw-if-not-resolved="false"></xref>,
+
+    <xref href="MessagePack.MessagePackCode.Array16" data-throw-if-not-resolved="false"></xref>, or
+
+    <xref href="MessagePack.MessagePackCode.Array32" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public void WriteArrayHeader(uint count)
+    parameters:
+    - id: count
+      type: System.UInt32
+      description: The number of elements that will be written in the array.
+    content.vb: Public Sub WriteArrayHeader(count As UInteger)
+  overload: MessagePack.MessagePackWriter.WriteArrayHeader*
+  nameWithType.vb: MessagePackWriter.WriteArrayHeader(UInteger)
+  fullName.vb: MessagePack.MessagePackWriter.WriteArrayHeader(UInteger)
+  name.vb: WriteArrayHeader(UInteger)
+- uid: MessagePack.MessagePackWriter.WriteMapHeader(System.Int32)
+  commentId: M:MessagePack.MessagePackWriter.WriteMapHeader(System.Int32)
+  id: WriteMapHeader(System.Int32)
+  parent: MessagePack.MessagePackWriter
+  langs:
+  - csharp
+  - vb
+  name: WriteMapHeader(int)
+  nameWithType: MessagePackWriter.WriteMapHeader(int)
+  fullName: MessagePack.MessagePackWriter.WriteMapHeader(int)
+  type: Method
+  assemblies:
+  - MessagePack
+  namespace: MessagePack
+  summary: >-
+    Write the length of the next map to be written in the most compact form of
+
+    <xref href="MessagePack.MessagePackCode.MinFixMap" data-throw-if-not-resolved="false"></xref>,
+
+    <xref href="MessagePack.MessagePackCode.Map16" data-throw-if-not-resolved="false"></xref>, or
+
+    <xref href="MessagePack.MessagePackCode.Map32" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public void WriteMapHeader(int count)
+    parameters:
+    - id: count
+      type: System.Int32
+      description: The number of key=value pairs that will be written in the map.
+    content.vb: Public Sub WriteMapHeader(count As Integer)
+  overload: MessagePack.MessagePackWriter.WriteMapHeader*
+  nameWithType.vb: MessagePackWriter.WriteMapHeader(Integer)
+  fullName.vb: MessagePack.MessagePackWriter.WriteMapHeader(Integer)
+  name.vb: WriteMapHeader(Integer)
+- uid: MessagePack.MessagePackWriter.WriteMapHeader(System.UInt32)
+  commentId: M:MessagePack.MessagePackWriter.WriteMapHeader(System.UInt32)
+  id: WriteMapHeader(System.UInt32)
+  parent: MessagePack.MessagePackWriter
+  langs:
+  - csharp
+  - vb
+  name: WriteMapHeader(uint)
+  nameWithType: MessagePackWriter.WriteMapHeader(uint)
+  fullName: MessagePack.MessagePackWriter.WriteMapHeader(uint)
+  type: Method
+  assemblies:
+  - MessagePack
+  namespace: MessagePack
+  summary: >-
+    Write the length of the next map to be written in the most compact form of
+
+    <xref href="MessagePack.MessagePackCode.MinFixMap" data-throw-if-not-resolved="false"></xref>,
+
+    <xref href="MessagePack.MessagePackCode.Map16" data-throw-if-not-resolved="false"></xref>, or
+
+    <xref href="MessagePack.MessagePackCode.Map32" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public void WriteMapHeader(uint count)
+    parameters:
+    - id: count
+      type: System.UInt32
+      description: The number of key=value pairs that will be written in the map.
+    content.vb: Public Sub WriteMapHeader(count As UInteger)
+  overload: MessagePack.MessagePackWriter.WriteMapHeader*
+  nameWithType.vb: MessagePackWriter.WriteMapHeader(UInteger)
+  fullName.vb: MessagePack.MessagePackWriter.WriteMapHeader(UInteger)
+  name.vb: WriteMapHeader(UInteger)
+- uid: MessagePack.MessagePackWriter.Write(System.Byte)
+  commentId: M:MessagePack.MessagePackWriter.Write(System.Byte)
+  id: Write(System.Byte)
+  parent: MessagePack.MessagePackWriter
+  langs:
+  - csharp
+  - vb
+  name: Write(byte)
+  nameWithType: MessagePackWriter.Write(byte)
+  fullName: MessagePack.MessagePackWriter.Write(byte)
+  type: Method
+  assemblies:
+  - MessagePack
+  namespace: MessagePack
+  summary: Writes a <xref href="System.Byte" data-throw-if-not-resolved="false"></xref> value using a 1-byte code when possible, otherwise as <xref href="MessagePack.MessagePackCode.UInt8" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public void Write(byte value)
+    parameters:
+    - id: value
+      type: System.Byte
+      description: The value.
+    content.vb: Public Sub Write(value As Byte)
+  overload: MessagePack.MessagePackWriter.Write*
+  nameWithType.vb: MessagePackWriter.Write(Byte)
+  fullName.vb: MessagePack.MessagePackWriter.Write(Byte)
+  name.vb: Write(Byte)
+- uid: MessagePack.MessagePackWriter.WriteUInt8(System.Byte)
+  commentId: M:MessagePack.MessagePackWriter.WriteUInt8(System.Byte)
+  id: WriteUInt8(System.Byte)
+  parent: MessagePack.MessagePackWriter
+  langs:
+  - csharp
+  - vb
+  name: WriteUInt8(byte)
+  nameWithType: MessagePackWriter.WriteUInt8(byte)
+  fullName: MessagePack.MessagePackWriter.WriteUInt8(byte)
+  type: Method
+  assemblies:
+  - MessagePack
+  namespace: MessagePack
+  summary: Writes a <xref href="System.Byte" data-throw-if-not-resolved="false"></xref> value using <xref href="MessagePack.MessagePackCode.UInt8" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public void WriteUInt8(byte value)
+    parameters:
+    - id: value
+      type: System.Byte
+      description: The value.
+    content.vb: Public Sub WriteUInt8(value As Byte)
+  overload: MessagePack.MessagePackWriter.WriteUInt8*
+  nameWithType.vb: MessagePackWriter.WriteUInt8(Byte)
+  fullName.vb: MessagePack.MessagePackWriter.WriteUInt8(Byte)
+  name.vb: WriteUInt8(Byte)
+- uid: MessagePack.MessagePackWriter.Write(System.SByte)
+  commentId: M:MessagePack.MessagePackWriter.Write(System.SByte)
+  id: Write(System.SByte)
+  parent: MessagePack.MessagePackWriter
+  langs:
+  - csharp
+  - vb
+  name: Write(sbyte)
+  nameWithType: MessagePackWriter.Write(sbyte)
+  fullName: MessagePack.MessagePackWriter.Write(sbyte)
+  type: Method
+  assemblies:
+  - MessagePack
+  namespace: MessagePack
+  summary: Writes an 8-bit value using a 1-byte code when possible, otherwise as <xref href="MessagePack.MessagePackCode.Int8" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public void Write(sbyte value)
+    parameters:
+    - id: value
+      type: System.SByte
+      description: The value.
+    content.vb: Public Sub Write(value As SByte)
+  overload: MessagePack.MessagePackWriter.Write*
+  nameWithType.vb: MessagePackWriter.Write(SByte)
+  fullName.vb: MessagePack.MessagePackWriter.Write(SByte)
+  name.vb: Write(SByte)
+- uid: MessagePack.MessagePackWriter.WriteInt8(System.SByte)
+  commentId: M:MessagePack.MessagePackWriter.WriteInt8(System.SByte)
+  id: WriteInt8(System.SByte)
+  parent: MessagePack.MessagePackWriter
+  langs:
+  - csharp
+  - vb
+  name: WriteInt8(sbyte)
+  nameWithType: MessagePackWriter.WriteInt8(sbyte)
+  fullName: MessagePack.MessagePackWriter.WriteInt8(sbyte)
+  type: Method
+  assemblies:
+  - MessagePack
+  namespace: MessagePack
+  summary: Writes an 8-bit value using <xref href="MessagePack.MessagePackCode.Int8" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public void WriteInt8(sbyte value)
+    parameters:
+    - id: value
+      type: System.SByte
+      description: The value.
+    content.vb: Public Sub WriteInt8(value As SByte)
+  overload: MessagePack.MessagePackWriter.WriteInt8*
+  nameWithType.vb: MessagePackWriter.WriteInt8(SByte)
+  fullName.vb: MessagePack.MessagePackWriter.WriteInt8(SByte)
+  name.vb: WriteInt8(SByte)
+- uid: MessagePack.MessagePackWriter.Write(System.UInt16)
+  commentId: M:MessagePack.MessagePackWriter.Write(System.UInt16)
+  id: Write(System.UInt16)
+  parent: MessagePack.MessagePackWriter
+  langs:
+  - csharp
+  - vb
+  name: Write(ushort)
+  nameWithType: MessagePackWriter.Write(ushort)
+  fullName: MessagePack.MessagePackWriter.Write(ushort)
+  type: Method
+  assemblies:
+  - MessagePack
+  namespace: MessagePack
+  summary: Writes a <xref href="System.UInt16" data-throw-if-not-resolved="false"></xref> value using a 1-byte code when possible, otherwise as <xref href="MessagePack.MessagePackCode.UInt8" data-throw-if-not-resolved="false"></xref> or <xref href="MessagePack.MessagePackCode.UInt16" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public void Write(ushort value)
+    parameters:
+    - id: value
+      type: System.UInt16
+      description: The value.
+    content.vb: Public Sub Write(value As UShort)
+  overload: MessagePack.MessagePackWriter.Write*
+  nameWithType.vb: MessagePackWriter.Write(UShort)
+  fullName.vb: MessagePack.MessagePackWriter.Write(UShort)
+  name.vb: Write(UShort)
+- uid: MessagePack.MessagePackWriter.WriteUInt16(System.UInt16)
+  commentId: M:MessagePack.MessagePackWriter.WriteUInt16(System.UInt16)
+  id: WriteUInt16(System.UInt16)
+  parent: MessagePack.MessagePackWriter
+  langs:
+  - csharp
+  - vb
+  name: WriteUInt16(ushort)
+  nameWithType: MessagePackWriter.WriteUInt16(ushort)
+  fullName: MessagePack.MessagePackWriter.WriteUInt16(ushort)
+  type: Method
+  assemblies:
+  - MessagePack
+  namespace: MessagePack
+  summary: Writes a <xref href="System.UInt16" data-throw-if-not-resolved="false"></xref> value using <xref href="MessagePack.MessagePackCode.UInt16" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public void WriteUInt16(ushort value)
+    parameters:
+    - id: value
+      type: System.UInt16
+      description: The value.
+    content.vb: Public Sub WriteUInt16(value As UShort)
+  overload: MessagePack.MessagePackWriter.WriteUInt16*
+  nameWithType.vb: MessagePackWriter.WriteUInt16(UShort)
+  fullName.vb: MessagePack.MessagePackWriter.WriteUInt16(UShort)
+  name.vb: WriteUInt16(UShort)
+- uid: MessagePack.MessagePackWriter.Write(System.Int16)
+  commentId: M:MessagePack.MessagePackWriter.Write(System.Int16)
+  id: Write(System.Int16)
+  parent: MessagePack.MessagePackWriter
+  langs:
+  - csharp
+  - vb
+  name: Write(short)
+  nameWithType: MessagePackWriter.Write(short)
+  fullName: MessagePack.MessagePackWriter.Write(short)
+  type: Method
+  assemblies:
+  - MessagePack
+  namespace: MessagePack
+  summary: >-
+    Writes a <xref href="System.Int16" data-throw-if-not-resolved="false"></xref> using a built-in 1-byte code when within specific MessagePack-supported ranges,
+
+    or the most compact of
+
+    <xref href="MessagePack.MessagePackCode.UInt8" data-throw-if-not-resolved="false"></xref>,
+
+    <xref href="MessagePack.MessagePackCode.UInt16" data-throw-if-not-resolved="false"></xref>,
+
+    <xref href="MessagePack.MessagePackCode.Int8" data-throw-if-not-resolved="false"></xref>, or
+
+    <xref href="MessagePack.MessagePackCode.Int16" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public void Write(short value)
+    parameters:
+    - id: value
+      type: System.Int16
+      description: The value to write.
+    content.vb: Public Sub Write(value As Short)
+  overload: MessagePack.MessagePackWriter.Write*
+  nameWithType.vb: MessagePackWriter.Write(Short)
+  fullName.vb: MessagePack.MessagePackWriter.Write(Short)
+  name.vb: Write(Short)
+- uid: MessagePack.MessagePackWriter.WriteInt16(System.Int16)
+  commentId: M:MessagePack.MessagePackWriter.WriteInt16(System.Int16)
+  id: WriteInt16(System.Int16)
+  parent: MessagePack.MessagePackWriter
+  langs:
+  - csharp
+  - vb
+  name: WriteInt16(short)
+  nameWithType: MessagePackWriter.WriteInt16(short)
+  fullName: MessagePack.MessagePackWriter.WriteInt16(short)
+  type: Method
+  assemblies:
+  - MessagePack
+  namespace: MessagePack
+  summary: Writes a <xref href="System.Int16" data-throw-if-not-resolved="false"></xref> using <xref href="MessagePack.MessagePackCode.Int16" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public void WriteInt16(short value)
+    parameters:
+    - id: value
+      type: System.Int16
+      description: The value to write.
+    content.vb: Public Sub WriteInt16(value As Short)
+  overload: MessagePack.MessagePackWriter.WriteInt16*
+  nameWithType.vb: MessagePackWriter.WriteInt16(Short)
+  fullName.vb: MessagePack.MessagePackWriter.WriteInt16(Short)
+  name.vb: WriteInt16(Short)
+- uid: MessagePack.MessagePackWriter.Write(System.UInt32)
+  commentId: M:MessagePack.MessagePackWriter.Write(System.UInt32)
+  id: Write(System.UInt32)
+  parent: MessagePack.MessagePackWriter
+  langs:
+  - csharp
+  - vb
+  name: Write(uint)
+  nameWithType: MessagePackWriter.Write(uint)
+  fullName: MessagePack.MessagePackWriter.Write(uint)
+  type: Method
+  assemblies:
+  - MessagePack
+  namespace: MessagePack
+  summary: >-
+    Writes an <xref href="System.UInt32" data-throw-if-not-resolved="false"></xref> using a built-in 1-byte code when within specific MessagePack-supported ranges,
+
+    or the most compact of
+
+    <xref href="MessagePack.MessagePackCode.UInt8" data-throw-if-not-resolved="false"></xref>,
+
+    <xref href="MessagePack.MessagePackCode.UInt16" data-throw-if-not-resolved="false"></xref>, or
+
+    <xref href="MessagePack.MessagePackCode.UInt32" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public void Write(uint value)
+    parameters:
+    - id: value
+      type: System.UInt32
+      description: The value to write.
+    content.vb: Public Sub Write(value As UInteger)
+  overload: MessagePack.MessagePackWriter.Write*
+  nameWithType.vb: MessagePackWriter.Write(UInteger)
+  fullName.vb: MessagePack.MessagePackWriter.Write(UInteger)
+  name.vb: Write(UInteger)
+- uid: MessagePack.MessagePackWriter.WriteUInt32(System.UInt32)
+  commentId: M:MessagePack.MessagePackWriter.WriteUInt32(System.UInt32)
+  id: WriteUInt32(System.UInt32)
+  parent: MessagePack.MessagePackWriter
+  langs:
+  - csharp
+  - vb
+  name: WriteUInt32(uint)
+  nameWithType: MessagePackWriter.WriteUInt32(uint)
+  fullName: MessagePack.MessagePackWriter.WriteUInt32(uint)
+  type: Method
+  assemblies:
+  - MessagePack
+  namespace: MessagePack
+  summary: Writes an <xref href="System.UInt32" data-throw-if-not-resolved="false"></xref> using <xref href="MessagePack.MessagePackCode.UInt32" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public void WriteUInt32(uint value)
+    parameters:
+    - id: value
+      type: System.UInt32
+      description: The value to write.
+    content.vb: Public Sub WriteUInt32(value As UInteger)
+  overload: MessagePack.MessagePackWriter.WriteUInt32*
+  nameWithType.vb: MessagePackWriter.WriteUInt32(UInteger)
+  fullName.vb: MessagePack.MessagePackWriter.WriteUInt32(UInteger)
+  name.vb: WriteUInt32(UInteger)
+- uid: MessagePack.MessagePackWriter.Write(System.Int32)
+  commentId: M:MessagePack.MessagePackWriter.Write(System.Int32)
+  id: Write(System.Int32)
+  parent: MessagePack.MessagePackWriter
+  langs:
+  - csharp
+  - vb
+  name: Write(int)
+  nameWithType: MessagePackWriter.Write(int)
+  fullName: MessagePack.MessagePackWriter.Write(int)
+  type: Method
+  assemblies:
+  - MessagePack
+  namespace: MessagePack
+  summary: >-
+    Writes an <xref href="System.Int32" data-throw-if-not-resolved="false"></xref> using a built-in 1-byte code when within specific MessagePack-supported ranges,
+
+    or the most compact of
+
+    <xref href="MessagePack.MessagePackCode.UInt8" data-throw-if-not-resolved="false"></xref>,
+
+    <xref href="MessagePack.MessagePackCode.UInt16" data-throw-if-not-resolved="false"></xref>,
+
+    <xref href="MessagePack.MessagePackCode.UInt32" data-throw-if-not-resolved="false"></xref>,
+
+    <xref href="MessagePack.MessagePackCode.Int8" data-throw-if-not-resolved="false"></xref>,
+
+    <xref href="MessagePack.MessagePackCode.Int16" data-throw-if-not-resolved="false"></xref>,
+
+    <xref href="MessagePack.MessagePackCode.Int32" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public void Write(int value)
+    parameters:
+    - id: value
+      type: System.Int32
+      description: The value to write.
+    content.vb: Public Sub Write(value As Integer)
+  overload: MessagePack.MessagePackWriter.Write*
+  nameWithType.vb: MessagePackWriter.Write(Integer)
+  fullName.vb: MessagePack.MessagePackWriter.Write(Integer)
+  name.vb: Write(Integer)
+- uid: MessagePack.MessagePackWriter.WriteInt32(System.Int32)
+  commentId: M:MessagePack.MessagePackWriter.WriteInt32(System.Int32)
+  id: WriteInt32(System.Int32)
+  parent: MessagePack.MessagePackWriter
+  langs:
+  - csharp
+  - vb
+  name: WriteInt32(int)
+  nameWithType: MessagePackWriter.WriteInt32(int)
+  fullName: MessagePack.MessagePackWriter.WriteInt32(int)
+  type: Method
+  assemblies:
+  - MessagePack
+  namespace: MessagePack
+  summary: Writes an <xref href="System.Int32" data-throw-if-not-resolved="false"></xref> using <xref href="MessagePack.MessagePackCode.Int32" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public void WriteInt32(int value)
+    parameters:
+    - id: value
+      type: System.Int32
+      description: The value to write.
+    content.vb: Public Sub WriteInt32(value As Integer)
+  overload: MessagePack.MessagePackWriter.WriteInt32*
+  nameWithType.vb: MessagePackWriter.WriteInt32(Integer)
+  fullName.vb: MessagePack.MessagePackWriter.WriteInt32(Integer)
+  name.vb: WriteInt32(Integer)
+- uid: MessagePack.MessagePackWriter.Write(System.UInt64)
+  commentId: M:MessagePack.MessagePackWriter.Write(System.UInt64)
+  id: Write(System.UInt64)
+  parent: MessagePack.MessagePackWriter
+  langs:
+  - csharp
+  - vb
+  name: Write(ulong)
+  nameWithType: MessagePackWriter.Write(ulong)
+  fullName: MessagePack.MessagePackWriter.Write(ulong)
+  type: Method
+  assemblies:
+  - MessagePack
+  namespace: MessagePack
+  summary: >-
+    Writes an <xref href="System.UInt64" data-throw-if-not-resolved="false"></xref> using a built-in 1-byte code when within specific MessagePack-supported ranges,
+
+    or the most compact of
+
+    <xref href="MessagePack.MessagePackCode.UInt8" data-throw-if-not-resolved="false"></xref>,
+
+    <xref href="MessagePack.MessagePackCode.UInt16" data-throw-if-not-resolved="false"></xref>,
+
+    <xref href="MessagePack.MessagePackCode.UInt32" data-throw-if-not-resolved="false"></xref>,
+
+    <xref href="MessagePack.MessagePackCode.Int8" data-throw-if-not-resolved="false"></xref>,
+
+    <xref href="MessagePack.MessagePackCode.Int16" data-throw-if-not-resolved="false"></xref>,
+
+    <xref href="MessagePack.MessagePackCode.Int32" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public void Write(ulong value)
+    parameters:
+    - id: value
+      type: System.UInt64
+      description: The value to write.
+    content.vb: Public Sub Write(value As ULong)
+  overload: MessagePack.MessagePackWriter.Write*
+  nameWithType.vb: MessagePackWriter.Write(ULong)
+  fullName.vb: MessagePack.MessagePackWriter.Write(ULong)
+  name.vb: Write(ULong)
+- uid: MessagePack.MessagePackWriter.WriteUInt64(System.UInt64)
+  commentId: M:MessagePack.MessagePackWriter.WriteUInt64(System.UInt64)
+  id: WriteUInt64(System.UInt64)
+  parent: MessagePack.MessagePackWriter
+  langs:
+  - csharp
+  - vb
+  name: WriteUInt64(ulong)
+  nameWithType: MessagePackWriter.WriteUInt64(ulong)
+  fullName: MessagePack.MessagePackWriter.WriteUInt64(ulong)
+  type: Method
+  assemblies:
+  - MessagePack
+  namespace: MessagePack
+  summary: Writes an <xref href="System.UInt64" data-throw-if-not-resolved="false"></xref> using <xref href="MessagePack.MessagePackCode.Int32" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public void WriteUInt64(ulong value)
+    parameters:
+    - id: value
+      type: System.UInt64
+      description: The value to write.
+    content.vb: Public Sub WriteUInt64(value As ULong)
+  overload: MessagePack.MessagePackWriter.WriteUInt64*
+  nameWithType.vb: MessagePackWriter.WriteUInt64(ULong)
+  fullName.vb: MessagePack.MessagePackWriter.WriteUInt64(ULong)
+  name.vb: WriteUInt64(ULong)
+- uid: MessagePack.MessagePackWriter.Write(System.Int64)
+  commentId: M:MessagePack.MessagePackWriter.Write(System.Int64)
+  id: Write(System.Int64)
+  parent: MessagePack.MessagePackWriter
+  langs:
+  - csharp
+  - vb
+  name: Write(long)
+  nameWithType: MessagePackWriter.Write(long)
+  fullName: MessagePack.MessagePackWriter.Write(long)
+  type: Method
+  assemblies:
+  - MessagePack
+  namespace: MessagePack
+  summary: >-
+    Writes an <xref href="System.Int64" data-throw-if-not-resolved="false"></xref> using a built-in 1-byte code when within specific MessagePack-supported ranges,
+
+    or the most compact of
+
+    <xref href="MessagePack.MessagePackCode.UInt8" data-throw-if-not-resolved="false"></xref>,
+
+    <xref href="MessagePack.MessagePackCode.UInt16" data-throw-if-not-resolved="false"></xref>,
+
+    <xref href="MessagePack.MessagePackCode.UInt32" data-throw-if-not-resolved="false"></xref>,
+
+    <xref href="MessagePack.MessagePackCode.UInt64" data-throw-if-not-resolved="false"></xref>,
+
+    <xref href="MessagePack.MessagePackCode.Int8" data-throw-if-not-resolved="false"></xref>,
+
+    <xref href="MessagePack.MessagePackCode.Int16" data-throw-if-not-resolved="false"></xref>,
+
+    <xref href="MessagePack.MessagePackCode.Int32" data-throw-if-not-resolved="false"></xref>,
+
+    <xref href="MessagePack.MessagePackCode.Int64" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public void Write(long value)
+    parameters:
+    - id: value
+      type: System.Int64
+      description: The value to write.
+    content.vb: Public Sub Write(value As Long)
+  overload: MessagePack.MessagePackWriter.Write*
+  nameWithType.vb: MessagePackWriter.Write(Long)
+  fullName.vb: MessagePack.MessagePackWriter.Write(Long)
+  name.vb: Write(Long)
+- uid: MessagePack.MessagePackWriter.WriteInt64(System.Int64)
+  commentId: M:MessagePack.MessagePackWriter.WriteInt64(System.Int64)
+  id: WriteInt64(System.Int64)
+  parent: MessagePack.MessagePackWriter
+  langs:
+  - csharp
+  - vb
+  name: WriteInt64(long)
+  nameWithType: MessagePackWriter.WriteInt64(long)
+  fullName: MessagePack.MessagePackWriter.WriteInt64(long)
+  type: Method
+  assemblies:
+  - MessagePack
+  namespace: MessagePack
+  summary: Writes a <xref href="System.Int64" data-throw-if-not-resolved="false"></xref> using <xref href="MessagePack.MessagePackCode.Int64" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public void WriteInt64(long value)
+    parameters:
+    - id: value
+      type: System.Int64
+      description: The value to write.
+    content.vb: Public Sub WriteInt64(value As Long)
+  overload: MessagePack.MessagePackWriter.WriteInt64*
+  nameWithType.vb: MessagePackWriter.WriteInt64(Long)
+  fullName.vb: MessagePack.MessagePackWriter.WriteInt64(Long)
+  name.vb: WriteInt64(Long)
+- uid: MessagePack.MessagePackWriter.Write(System.Boolean)
+  commentId: M:MessagePack.MessagePackWriter.Write(System.Boolean)
+  id: Write(System.Boolean)
+  parent: MessagePack.MessagePackWriter
+  langs:
+  - csharp
+  - vb
+  name: Write(bool)
+  nameWithType: MessagePackWriter.Write(bool)
+  fullName: MessagePack.MessagePackWriter.Write(bool)
+  type: Method
+  assemblies:
+  - MessagePack
+  namespace: MessagePack
+  summary: Writes a <xref href="System.Boolean" data-throw-if-not-resolved="false"></xref> value using either <xref href="MessagePack.MessagePackCode.True" data-throw-if-not-resolved="false"></xref> or <xref href="MessagePack.MessagePackCode.False" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public void Write(bool value)
+    parameters:
+    - id: value
+      type: System.Boolean
+      description: The value.
+    content.vb: Public Sub Write(value As Boolean)
+  overload: MessagePack.MessagePackWriter.Write*
+  nameWithType.vb: MessagePackWriter.Write(Boolean)
+  fullName.vb: MessagePack.MessagePackWriter.Write(Boolean)
+  name.vb: Write(Boolean)
+- uid: MessagePack.MessagePackWriter.Write(System.Char)
+  commentId: M:MessagePack.MessagePackWriter.Write(System.Char)
+  id: Write(System.Char)
+  parent: MessagePack.MessagePackWriter
+  langs:
+  - csharp
+  - vb
+  name: Write(char)
+  nameWithType: MessagePackWriter.Write(char)
+  fullName: MessagePack.MessagePackWriter.Write(char)
+  type: Method
+  assemblies:
+  - MessagePack
+  namespace: MessagePack
+  summary: Writes a <xref href="System.Char" data-throw-if-not-resolved="false"></xref> value using a 1-byte code when possible, otherwise as <xref href="MessagePack.MessagePackCode.UInt8" data-throw-if-not-resolved="false"></xref> or <xref href="MessagePack.MessagePackCode.UInt16" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public void Write(char value)
+    parameters:
+    - id: value
+      type: System.Char
+      description: The value.
+    content.vb: Public Sub Write(value As Char)
+  overload: MessagePack.MessagePackWriter.Write*
+  nameWithType.vb: MessagePackWriter.Write(Char)
+  fullName.vb: MessagePack.MessagePackWriter.Write(Char)
+  name.vb: Write(Char)
+- uid: MessagePack.MessagePackWriter.Write(System.Single)
+  commentId: M:MessagePack.MessagePackWriter.Write(System.Single)
+  id: Write(System.Single)
+  parent: MessagePack.MessagePackWriter
+  langs:
+  - csharp
+  - vb
+  name: Write(float)
+  nameWithType: MessagePackWriter.Write(float)
+  fullName: MessagePack.MessagePackWriter.Write(float)
+  type: Method
+  assemblies:
+  - MessagePack
+  namespace: MessagePack
+  summary: Writes a <xref href="MessagePack.MessagePackCode.Float32" data-throw-if-not-resolved="false"></xref> value.
+  example: []
+  syntax:
+    content: public void Write(float value)
+    parameters:
+    - id: value
+      type: System.Single
+      description: The value.
+    content.vb: Public Sub Write(value As Single)
+  overload: MessagePack.MessagePackWriter.Write*
+  nameWithType.vb: MessagePackWriter.Write(Single)
+  fullName.vb: MessagePack.MessagePackWriter.Write(Single)
+  name.vb: Write(Single)
+- uid: MessagePack.MessagePackWriter.Write(System.Double)
+  commentId: M:MessagePack.MessagePackWriter.Write(System.Double)
+  id: Write(System.Double)
+  parent: MessagePack.MessagePackWriter
+  langs:
+  - csharp
+  - vb
+  name: Write(double)
+  nameWithType: MessagePackWriter.Write(double)
+  fullName: MessagePack.MessagePackWriter.Write(double)
+  type: Method
+  assemblies:
+  - MessagePack
+  namespace: MessagePack
+  summary: Writes a <xref href="MessagePack.MessagePackCode.Float64" data-throw-if-not-resolved="false"></xref> value.
+  example: []
+  syntax:
+    content: public void Write(double value)
+    parameters:
+    - id: value
+      type: System.Double
+      description: The value.
+    content.vb: Public Sub Write(value As Double)
+  overload: MessagePack.MessagePackWriter.Write*
+  nameWithType.vb: MessagePackWriter.Write(Double)
+  fullName.vb: MessagePack.MessagePackWriter.Write(Double)
+  name.vb: Write(Double)
+- uid: MessagePack.MessagePackWriter.Write(System.DateTime)
+  commentId: M:MessagePack.MessagePackWriter.Write(System.DateTime)
+  id: Write(System.DateTime)
+  parent: MessagePack.MessagePackWriter
+  langs:
+  - csharp
+  - vb
+  name: Write(DateTime)
+  nameWithType: MessagePackWriter.Write(DateTime)
+  fullName: MessagePack.MessagePackWriter.Write(System.DateTime)
+  type: Method
+  assemblies:
+  - MessagePack
+  namespace: MessagePack
+  summary: Writes a <xref href="System.DateTime" data-throw-if-not-resolved="false"></xref> using the message code <xref href="MessagePack.ReservedMessagePackExtensionTypeCode.DateTime" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public void Write(DateTime dateTime)
+    parameters:
+    - id: dateTime
+      type: System.DateTime
+      description: The value to write.
+    content.vb: Public Sub Write(dateTime As Date)
+  overload: MessagePack.MessagePackWriter.Write*
+  exceptions:
+  - type: System.NotSupportedException
+    commentId: T:System.NotSupportedException
+    description: Thrown when <xref href="MessagePack.MessagePackWriter.OldSpec" data-throw-if-not-resolved="false"></xref> is true because the old spec does not define a <xref href="System.DateTime" data-throw-if-not-resolved="false"></xref> format.
+  nameWithType.vb: MessagePackWriter.Write(Date)
+  fullName.vb: MessagePack.MessagePackWriter.Write(Date)
+  name.vb: Write(Date)
+- uid: MessagePack.MessagePackWriter.Write(System.Byte[])
+  commentId: M:MessagePack.MessagePackWriter.Write(System.Byte[])
+  id: Write(System.Byte[])
+  parent: MessagePack.MessagePackWriter
+  langs:
+  - csharp
+  - vb
+  name: Write(byte[]?)
+  nameWithType: MessagePackWriter.Write(byte[]?)
+  fullName: MessagePack.MessagePackWriter.Write(byte[]?)
+  type: Method
+  assemblies:
+  - MessagePack
+  namespace: MessagePack
+  summary: >-
+    Writes a <xref href="System.Byte" data-throw-if-not-resolved="false"></xref>[], prefixed with a length encoded as the smallest fitting from:
+
+    <xref href="MessagePack.MessagePackCode.Bin8" data-throw-if-not-resolved="false"></xref>,
+
+    <xref href="MessagePack.MessagePackCode.Bin16" data-throw-if-not-resolved="false"></xref>,
+
+    <xref href="MessagePack.MessagePackCode.Bin32" data-throw-if-not-resolved="false"></xref>,
+
+    or <xref href="MessagePack.MessagePackCode.Nil" data-throw-if-not-resolved="false"></xref> if <code class="paramref">src</code> is <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.
+  example: []
+  syntax:
+    content: public void Write(byte[]? src)
+    parameters:
+    - id: src
+      type: System.Byte[]
+      description: The array of bytes to write. May be <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.
+    content.vb: Public Sub Write(src As Byte())
+  overload: MessagePack.MessagePackWriter.Write*
+  nameWithType.vb: MessagePackWriter.Write(Byte())
+  fullName.vb: MessagePack.MessagePackWriter.Write(Byte())
+  name.vb: Write(Byte())
+- uid: MessagePack.MessagePackWriter.Write(System.ReadOnlySpan{System.Byte})
+  commentId: M:MessagePack.MessagePackWriter.Write(System.ReadOnlySpan{System.Byte})
+  id: Write(System.ReadOnlySpan{System.Byte})
+  parent: MessagePack.MessagePackWriter
+  langs:
+  - csharp
+  - vb
+  name: Write(ReadOnlySpan<byte>)
+  nameWithType: MessagePackWriter.Write(ReadOnlySpan<byte>)
+  fullName: MessagePack.MessagePackWriter.Write(System.ReadOnlySpan<byte>)
+  type: Method
+  assemblies:
+  - MessagePack
+  namespace: MessagePack
+  summary: >-
+    Writes a span of bytes, prefixed with a length encoded as the smallest fitting from:
+
+    <xref href="MessagePack.MessagePackCode.Bin8" data-throw-if-not-resolved="false"></xref>,
+
+    <xref href="MessagePack.MessagePackCode.Bin16" data-throw-if-not-resolved="false"></xref>, or
+
+    <xref href="MessagePack.MessagePackCode.Bin32" data-throw-if-not-resolved="false"></xref>.
+  remarks: When <xref href="MessagePack.MessagePackWriter.OldSpec" data-throw-if-not-resolved="false"></xref> is <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a>, the msgpack code used is <xref href="MessagePack.MessagePackCode.Str8" data-throw-if-not-resolved="false"></xref>, <xref href="MessagePack.MessagePackCode.Str16" data-throw-if-not-resolved="false"></xref> or <xref href="MessagePack.MessagePackCode.Str32" data-throw-if-not-resolved="false"></xref> instead.
+  example: []
+  syntax:
+    content: public void Write(ReadOnlySpan<byte> src)
+    parameters:
+    - id: src
+      type: System.ReadOnlySpan{System.Byte}
+      description: The span of bytes to write.
+    content.vb: Public Sub Write(src As ReadOnlySpan(Of Byte))
+  overload: MessagePack.MessagePackWriter.Write*
+  nameWithType.vb: MessagePackWriter.Write(ReadOnlySpan(Of Byte))
+  fullName.vb: MessagePack.MessagePackWriter.Write(System.ReadOnlySpan(Of Byte))
+  name.vb: Write(ReadOnlySpan(Of Byte))
+- uid: MessagePack.MessagePackWriter.Write(System.Buffers.ReadOnlySequence{System.Byte}@)
+  commentId: M:MessagePack.MessagePackWriter.Write(System.Buffers.ReadOnlySequence{System.Byte}@)
+  id: Write(System.Buffers.ReadOnlySequence{System.Byte}@)
+  parent: MessagePack.MessagePackWriter
+  langs:
+  - csharp
+  - vb
+  name: Write(in ReadOnlySequence<byte>)
+  nameWithType: MessagePackWriter.Write(in ReadOnlySequence<byte>)
+  fullName: MessagePack.MessagePackWriter.Write(in System.Buffers.ReadOnlySequence<byte>)
+  type: Method
+  assemblies:
+  - MessagePack
+  namespace: MessagePack
+  summary: >-
+    Writes a sequence of bytes, prefixed with a length encoded as the smallest fitting from:
+
+    <xref href="MessagePack.MessagePackCode.Bin8" data-throw-if-not-resolved="false"></xref>,
+
+    <xref href="MessagePack.MessagePackCode.Bin16" data-throw-if-not-resolved="false"></xref>, or
+
+    <xref href="MessagePack.MessagePackCode.Bin32" data-throw-if-not-resolved="false"></xref>.
+  remarks: When <xref href="MessagePack.MessagePackWriter.OldSpec" data-throw-if-not-resolved="false"></xref> is <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a>, the msgpack code used is <xref href="MessagePack.MessagePackCode.Str8" data-throw-if-not-resolved="false"></xref>, <xref href="MessagePack.MessagePackCode.Str16" data-throw-if-not-resolved="false"></xref> or <xref href="MessagePack.MessagePackCode.Str32" data-throw-if-not-resolved="false"></xref> instead.
+  example: []
+  syntax:
+    content: public void Write(in ReadOnlySequence<byte> src)
+    parameters:
+    - id: src
+      type: System.Buffers.ReadOnlySequence{System.Byte}
+      description: The span of bytes to write.
+    content.vb: Public Sub Write(src As ReadOnlySequence(Of Byte))
+  overload: MessagePack.MessagePackWriter.Write*
+  nameWithType.vb: MessagePackWriter.Write(ReadOnlySequence(Of Byte))
+  fullName.vb: MessagePack.MessagePackWriter.Write(System.Buffers.ReadOnlySequence(Of Byte))
+  name.vb: Write(ReadOnlySequence(Of Byte))
+- uid: MessagePack.MessagePackWriter.WriteBinHeader(System.Int32)
+  commentId: M:MessagePack.MessagePackWriter.WriteBinHeader(System.Int32)
+  id: WriteBinHeader(System.Int32)
+  parent: MessagePack.MessagePackWriter
+  langs:
+  - csharp
+  - vb
+  name: WriteBinHeader(int)
+  nameWithType: MessagePackWriter.WriteBinHeader(int)
+  fullName: MessagePack.MessagePackWriter.WriteBinHeader(int)
+  type: Method
+  assemblies:
+  - MessagePack
+  namespace: MessagePack
+  summary: >-
+    Writes the header that precedes a raw binary sequence with a length encoded as the smallest fitting from:
+
+    <xref href="MessagePack.MessagePackCode.Bin8" data-throw-if-not-resolved="false"></xref>,
+
+    <xref href="MessagePack.MessagePackCode.Bin16" data-throw-if-not-resolved="false"></xref>, or
+
+    <xref href="MessagePack.MessagePackCode.Bin32" data-throw-if-not-resolved="false"></xref>.
+  remarks: >-
+    <p>
+            The caller should use <xref href="MessagePack.MessagePackWriter.WriteRaw(System.Buffers.ReadOnlySequence%7bSystem.Byte%7d%40)" data-throw-if-not-resolved="false"></xref> or <xref href="MessagePack.MessagePackWriter.WriteRaw(System.ReadOnlySpan%7bSystem.Byte%7d)" data-throw-if-not-resolved="false"></xref>
+            after calling this method to actually write the content.
+            Alternatively a single call to <xref href="MessagePack.MessagePackWriter.Write(System.ReadOnlySpan%7bSystem.Byte%7d)" data-throw-if-not-resolved="false"></xref> or <xref href="MessagePack.MessagePackWriter.Write(System.Buffers.ReadOnlySequence%7bSystem.Byte%7d%40)" data-throw-if-not-resolved="false"></xref> will take care of the header and content in one call.
+            </p>
+    <p>
+            When <xref href="MessagePack.MessagePackWriter.OldSpec" data-throw-if-not-resolved="false"></xref> is <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a>, the msgpack code used is <xref href="MessagePack.MessagePackCode.Str8" data-throw-if-not-resolved="false"></xref>, <xref href="MessagePack.MessagePackCode.Str16" data-throw-if-not-resolved="false"></xref> or <xref href="MessagePack.MessagePackCode.Str32" data-throw-if-not-resolved="false"></xref> instead.
+            </p>
+  example: []
+  syntax:
+    content: public void WriteBinHeader(int length)
+    parameters:
+    - id: length
+      type: System.Int32
+      description: The length of bytes that will be written next.
+    content.vb: Public Sub WriteBinHeader(length As Integer)
+  overload: MessagePack.MessagePackWriter.WriteBinHeader*
+  nameWithType.vb: MessagePackWriter.WriteBinHeader(Integer)
+  fullName.vb: MessagePack.MessagePackWriter.WriteBinHeader(Integer)
+  name.vb: WriteBinHeader(Integer)
+- uid: MessagePack.MessagePackWriter.WriteString(System.Buffers.ReadOnlySequence{System.Byte}@)
+  commentId: M:MessagePack.MessagePackWriter.WriteString(System.Buffers.ReadOnlySequence{System.Byte}@)
+  id: WriteString(System.Buffers.ReadOnlySequence{System.Byte}@)
+  parent: MessagePack.MessagePackWriter
+  langs:
+  - csharp
+  - vb
+  name: WriteString(in ReadOnlySequence<byte>)
+  nameWithType: MessagePackWriter.WriteString(in ReadOnlySequence<byte>)
+  fullName: MessagePack.MessagePackWriter.WriteString(in System.Buffers.ReadOnlySequence<byte>)
+  type: Method
+  assemblies:
+  - MessagePack
+  namespace: MessagePack
+  summary: >-
+    Writes out an array of bytes that (may) represent a UTF-8 encoded string, prefixed with the length using one of these message codes:
+
+    <xref href="MessagePack.MessagePackCode.MinFixStr" data-throw-if-not-resolved="false"></xref>,
+
+    <xref href="MessagePack.MessagePackCode.Str8" data-throw-if-not-resolved="false"></xref>,
+
+    <xref href="MessagePack.MessagePackCode.Str16" data-throw-if-not-resolved="false"></xref>, or
+
+    <xref href="MessagePack.MessagePackCode.Str32" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public void WriteString(in ReadOnlySequence<byte> utf8stringBytes)
+    parameters:
+    - id: utf8stringBytes
+      type: System.Buffers.ReadOnlySequence{System.Byte}
+      description: The bytes to write.
+    content.vb: Public Sub WriteString(utf8stringBytes As ReadOnlySequence(Of Byte))
+  overload: MessagePack.MessagePackWriter.WriteString*
+  nameWithType.vb: MessagePackWriter.WriteString(ReadOnlySequence(Of Byte))
+  fullName.vb: MessagePack.MessagePackWriter.WriteString(System.Buffers.ReadOnlySequence(Of Byte))
+  name.vb: WriteString(ReadOnlySequence(Of Byte))
+- uid: MessagePack.MessagePackWriter.WriteString(System.ReadOnlySpan{System.Byte})
+  commentId: M:MessagePack.MessagePackWriter.WriteString(System.ReadOnlySpan{System.Byte})
+  id: WriteString(System.ReadOnlySpan{System.Byte})
+  parent: MessagePack.MessagePackWriter
+  langs:
+  - csharp
+  - vb
+  name: WriteString(ReadOnlySpan<byte>)
+  nameWithType: MessagePackWriter.WriteString(ReadOnlySpan<byte>)
+  fullName: MessagePack.MessagePackWriter.WriteString(System.ReadOnlySpan<byte>)
+  type: Method
+  assemblies:
+  - MessagePack
+  namespace: MessagePack
+  summary: >-
+    Writes out an array of bytes that (may) represent a UTF-8 encoded string, prefixed with the length using one of these message codes:
+
+    <xref href="MessagePack.MessagePackCode.MinFixStr" data-throw-if-not-resolved="false"></xref>,
+
+    <xref href="MessagePack.MessagePackCode.Str8" data-throw-if-not-resolved="false"></xref>,
+
+    <xref href="MessagePack.MessagePackCode.Str16" data-throw-if-not-resolved="false"></xref>, or
+
+    <xref href="MessagePack.MessagePackCode.Str32" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public void WriteString(ReadOnlySpan<byte> utf8stringBytes)
+    parameters:
+    - id: utf8stringBytes
+      type: System.ReadOnlySpan{System.Byte}
+      description: The bytes to write.
+    content.vb: Public Sub WriteString(utf8stringBytes As ReadOnlySpan(Of Byte))
+  overload: MessagePack.MessagePackWriter.WriteString*
+  nameWithType.vb: MessagePackWriter.WriteString(ReadOnlySpan(Of Byte))
+  fullName.vb: MessagePack.MessagePackWriter.WriteString(System.ReadOnlySpan(Of Byte))
+  name.vb: WriteString(ReadOnlySpan(Of Byte))
+- uid: MessagePack.MessagePackWriter.WriteStringHeader(System.Int32)
+  commentId: M:MessagePack.MessagePackWriter.WriteStringHeader(System.Int32)
+  id: WriteStringHeader(System.Int32)
+  parent: MessagePack.MessagePackWriter
+  langs:
+  - csharp
+  - vb
+  name: WriteStringHeader(int)
+  nameWithType: MessagePackWriter.WriteStringHeader(int)
+  fullName: MessagePack.MessagePackWriter.WriteStringHeader(int)
+  type: Method
+  assemblies:
+  - MessagePack
+  namespace: MessagePack
+  summary: >-
+    Writes out the header that may precede a UTF-8 encoded string, prefixed with the length using one of these message codes:
+
+    <xref href="MessagePack.MessagePackCode.MinFixStr" data-throw-if-not-resolved="false"></xref>,
+
+    <xref href="MessagePack.MessagePackCode.Str8" data-throw-if-not-resolved="false"></xref>,
+
+    <xref href="MessagePack.MessagePackCode.Str16" data-throw-if-not-resolved="false"></xref>, or
+
+    <xref href="MessagePack.MessagePackCode.Str32" data-throw-if-not-resolved="false"></xref>.
+  remarks: >-
+    The caller should use <xref href="MessagePack.MessagePackWriter.WriteRaw(System.Buffers.ReadOnlySequence%7bSystem.Byte%7d%40)" data-throw-if-not-resolved="false"></xref> or <xref href="MessagePack.MessagePackWriter.WriteRaw(System.ReadOnlySpan%7bSystem.Byte%7d)" data-throw-if-not-resolved="false"></xref>
+
+    after calling this method to actually write the content.
+
+    Alternatively a single call to <xref href="MessagePack.MessagePackWriter.WriteString(System.ReadOnlySpan%7bSystem.Byte%7d)" data-throw-if-not-resolved="false"></xref> or <xref href="MessagePack.MessagePackWriter.WriteString(System.Buffers.ReadOnlySequence%7bSystem.Byte%7d%40)" data-throw-if-not-resolved="false"></xref> will take care of the header and content in one call.
+  example: []
+  syntax:
+    content: public void WriteStringHeader(int byteCount)
+    parameters:
+    - id: byteCount
+      type: System.Int32
+      description: The number of bytes in the string that will follow this header.
+    content.vb: Public Sub WriteStringHeader(byteCount As Integer)
+  overload: MessagePack.MessagePackWriter.WriteStringHeader*
+  nameWithType.vb: MessagePackWriter.WriteStringHeader(Integer)
+  fullName.vb: MessagePack.MessagePackWriter.WriteStringHeader(Integer)
+  name.vb: WriteStringHeader(Integer)
+- uid: MessagePack.MessagePackWriter.Write(System.String)
+  commentId: M:MessagePack.MessagePackWriter.Write(System.String)
+  id: Write(System.String)
+  parent: MessagePack.MessagePackWriter
+  langs:
+  - csharp
+  - vb
+  name: Write(string?)
+  nameWithType: MessagePackWriter.Write(string?)
+  fullName: MessagePack.MessagePackWriter.Write(string?)
+  type: Method
+  assemblies:
+  - MessagePack
+  namespace: MessagePack
+  summary: >-
+    Writes out a <xref href="System.String" data-throw-if-not-resolved="false"></xref>, prefixed with the length using one of these message codes:
+
+    <xref href="MessagePack.MessagePackCode.MinFixStr" data-throw-if-not-resolved="false"></xref>,
+
+    <xref href="MessagePack.MessagePackCode.Str8" data-throw-if-not-resolved="false"></xref>,
+
+    <xref href="MessagePack.MessagePackCode.Str16" data-throw-if-not-resolved="false"></xref>,
+
+    <xref href="MessagePack.MessagePackCode.Str32" data-throw-if-not-resolved="false"></xref>,
+
+    or <xref href="MessagePack.MessagePackCode.Nil" data-throw-if-not-resolved="false"></xref> if the <code class="paramref">value</code> is <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.
+  example: []
+  syntax:
+    content: public void Write(string? value)
+    parameters:
+    - id: value
+      type: System.String
+      description: The value to write. May be null.
+    content.vb: Public Sub Write(value As String)
+  overload: MessagePack.MessagePackWriter.Write*
+  nameWithType.vb: MessagePackWriter.Write(String)
+  fullName.vb: MessagePack.MessagePackWriter.Write(String)
+  name.vb: Write(String)
+- uid: MessagePack.MessagePackWriter.Write(System.ReadOnlySpan{System.Char})
+  commentId: M:MessagePack.MessagePackWriter.Write(System.ReadOnlySpan{System.Char})
+  id: Write(System.ReadOnlySpan{System.Char})
+  parent: MessagePack.MessagePackWriter
+  langs:
+  - csharp
+  - vb
+  name: Write(ReadOnlySpan<char>)
+  nameWithType: MessagePackWriter.Write(ReadOnlySpan<char>)
+  fullName: MessagePack.MessagePackWriter.Write(System.ReadOnlySpan<char>)
+  type: Method
+  assemblies:
+  - MessagePack
+  namespace: MessagePack
+  summary: >-
+    Writes out a <xref href="System.String" data-throw-if-not-resolved="false"></xref>, prefixed with the length using one of these message codes:
+
+    <xref href="MessagePack.MessagePackCode.MinFixStr" data-throw-if-not-resolved="false"></xref>,
+
+    <xref href="MessagePack.MessagePackCode.Str8" data-throw-if-not-resolved="false"></xref>,
+
+    <xref href="MessagePack.MessagePackCode.Str16" data-throw-if-not-resolved="false"></xref>,
+
+    <xref href="MessagePack.MessagePackCode.Str32" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public void Write(ReadOnlySpan<char> value)
+    parameters:
+    - id: value
+      type: System.ReadOnlySpan{System.Char}
+      description: The value to write.
+    content.vb: Public Sub Write(value As ReadOnlySpan(Of Char))
+  overload: MessagePack.MessagePackWriter.Write*
+  nameWithType.vb: MessagePackWriter.Write(ReadOnlySpan(Of Char))
+  fullName.vb: MessagePack.MessagePackWriter.Write(System.ReadOnlySpan(Of Char))
+  name.vb: Write(ReadOnlySpan(Of Char))
+- uid: MessagePack.MessagePackWriter.WriteExtensionFormatHeader(MessagePack.ExtensionHeader)
+  commentId: M:MessagePack.MessagePackWriter.WriteExtensionFormatHeader(MessagePack.ExtensionHeader)
+  id: WriteExtensionFormatHeader(MessagePack.ExtensionHeader)
+  parent: MessagePack.MessagePackWriter
+  langs:
+  - csharp
+  - vb
+  name: WriteExtensionFormatHeader(ExtensionHeader)
+  nameWithType: MessagePackWriter.WriteExtensionFormatHeader(ExtensionHeader)
+  fullName: MessagePack.MessagePackWriter.WriteExtensionFormatHeader(MessagePack.ExtensionHeader)
+  type: Method
+  assemblies:
+  - MessagePack
+  namespace: MessagePack
+  summary: >-
+    Writes the extension format header, using the smallest one of these codes:
+
+    <xref href="MessagePack.MessagePackCode.FixExt1" data-throw-if-not-resolved="false"></xref>,
+
+    <xref href="MessagePack.MessagePackCode.FixExt2" data-throw-if-not-resolved="false"></xref>,
+
+    <xref href="MessagePack.MessagePackCode.FixExt4" data-throw-if-not-resolved="false"></xref>,
+
+    <xref href="MessagePack.MessagePackCode.FixExt8" data-throw-if-not-resolved="false"></xref>,
+
+    <xref href="MessagePack.MessagePackCode.FixExt16" data-throw-if-not-resolved="false"></xref>,
+
+    <xref href="MessagePack.MessagePackCode.Ext8" data-throw-if-not-resolved="false"></xref>,
+
+    <xref href="MessagePack.MessagePackCode.Ext16" data-throw-if-not-resolved="false"></xref>, or
+
+    <xref href="MessagePack.MessagePackCode.Ext32" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public void WriteExtensionFormatHeader(ExtensionHeader extensionHeader)
+    parameters:
+    - id: extensionHeader
+      type: MessagePack.ExtensionHeader
+      description: The extension header.
+    content.vb: Public Sub WriteExtensionFormatHeader(extensionHeader As ExtensionHeader)
+  overload: MessagePack.MessagePackWriter.WriteExtensionFormatHeader*
+- uid: MessagePack.MessagePackWriter.WriteExtensionFormat(MessagePack.ExtensionResult)
+  commentId: M:MessagePack.MessagePackWriter.WriteExtensionFormat(MessagePack.ExtensionResult)
+  id: WriteExtensionFormat(MessagePack.ExtensionResult)
+  parent: MessagePack.MessagePackWriter
+  langs:
+  - csharp
+  - vb
+  name: WriteExtensionFormat(ExtensionResult)
+  nameWithType: MessagePackWriter.WriteExtensionFormat(ExtensionResult)
+  fullName: MessagePack.MessagePackWriter.WriteExtensionFormat(MessagePack.ExtensionResult)
+  type: Method
+  assemblies:
+  - MessagePack
+  namespace: MessagePack
+  summary: >-
+    Writes an extension format, using the smallest one of these codes:
+
+    <xref href="MessagePack.MessagePackCode.FixExt1" data-throw-if-not-resolved="false"></xref>,
+
+    <xref href="MessagePack.MessagePackCode.FixExt2" data-throw-if-not-resolved="false"></xref>,
+
+    <xref href="MessagePack.MessagePackCode.FixExt4" data-throw-if-not-resolved="false"></xref>,
+
+    <xref href="MessagePack.MessagePackCode.FixExt8" data-throw-if-not-resolved="false"></xref>,
+
+    <xref href="MessagePack.MessagePackCode.FixExt16" data-throw-if-not-resolved="false"></xref>,
+
+    <xref href="MessagePack.MessagePackCode.Ext8" data-throw-if-not-resolved="false"></xref>,
+
+    <xref href="MessagePack.MessagePackCode.Ext16" data-throw-if-not-resolved="false"></xref>, or
+
+    <xref href="MessagePack.MessagePackCode.Ext32" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public void WriteExtensionFormat(ExtensionResult extensionData)
+    parameters:
+    - id: extensionData
+      type: MessagePack.ExtensionResult
+      description: The extension data.
+    content.vb: Public Sub WriteExtensionFormat(extensionData As ExtensionResult)
+  overload: MessagePack.MessagePackWriter.WriteExtensionFormat*
+- uid: MessagePack.MessagePackWriter.GetSpan(System.Int32)
+  commentId: M:MessagePack.MessagePackWriter.GetSpan(System.Int32)
+  id: GetSpan(System.Int32)
+  parent: MessagePack.MessagePackWriter
+  langs:
+  - csharp
+  - vb
+  name: GetSpan(int)
+  nameWithType: MessagePackWriter.GetSpan(int)
+  fullName: MessagePack.MessagePackWriter.GetSpan(int)
+  type: Method
+  assemblies:
+  - MessagePack
+  namespace: MessagePack
+  summary: Gets memory where raw messagepack data can be written.
+  remarks: >-
+    <p>After initializing the resulting memory, always follow up with a call to <xref href="MessagePack.MessagePackWriter.Advance(System.Int32)" data-throw-if-not-resolved="false"></xref>.</p>
+
+    <p>
+            This is similar in purpose to <xref href="MessagePack.MessagePackWriter.WriteRaw(System.ReadOnlySpan%7bSystem.Byte%7d)" data-throw-if-not-resolved="false"></xref>
+            but provides uninitialized memory for the caller to write to instead of copying initialized memory from elsewhere.
+            </p>
+  example: []
+  syntax:
+    content: public Span<byte> GetSpan(int length)
+    parameters:
+    - id: length
+      type: System.Int32
+      description: The size of the memory block required.
+    return:
+      type: System.Span{System.Byte}
+      description: The span of memory to write to. This *may* exceed <code class="paramref">length</code>.
+    content.vb: Public Function GetSpan(length As Integer) As Span(Of Byte)
+  overload: MessagePack.MessagePackWriter.GetSpan*
+  seealso:
+  - linkId: System.Buffers.IBufferWriter`1.GetSpan(System.Int32)
+    commentId: M:System.Buffers.IBufferWriter`1.GetSpan(System.Int32)
+  nameWithType.vb: MessagePackWriter.GetSpan(Integer)
+  fullName.vb: MessagePack.MessagePackWriter.GetSpan(Integer)
+  name.vb: GetSpan(Integer)
+- uid: MessagePack.MessagePackWriter.Advance(System.Int32)
+  commentId: M:MessagePack.MessagePackWriter.Advance(System.Int32)
+  id: Advance(System.Int32)
+  parent: MessagePack.MessagePackWriter
+  langs:
+  - csharp
+  - vb
+  name: Advance(int)
+  nameWithType: MessagePackWriter.Advance(int)
+  fullName: MessagePack.MessagePackWriter.Advance(int)
+  type: Method
+  assemblies:
+  - MessagePack
+  namespace: MessagePack
+  summary: Commits memory previously returned from <xref href="MessagePack.MessagePackWriter.GetSpan(System.Int32)" data-throw-if-not-resolved="false"></xref> as initialized.
+  example: []
+  syntax:
+    content: public void Advance(int length)
+    parameters:
+    - id: length
+      type: System.Int32
+      description: The number of bytes initialized with messagepack data from the previously returned span.
+    content.vb: Public Sub Advance(length As Integer)
+  overload: MessagePack.MessagePackWriter.Advance*
+  seealso:
+  - linkId: System.Buffers.IBufferWriter`1.Advance(System.Int32)
+    commentId: M:System.Buffers.IBufferWriter`1.Advance(System.Int32)
+  nameWithType.vb: MessagePackWriter.Advance(Integer)
+  fullName.vb: MessagePack.MessagePackWriter.Advance(Integer)
+  name.vb: Advance(Integer)
+- uid: MessagePack.MessagePackWriter.GetEncodedLength(System.Int64)
+  commentId: M:MessagePack.MessagePackWriter.GetEncodedLength(System.Int64)
+  id: GetEncodedLength(System.Int64)
+  parent: MessagePack.MessagePackWriter
+  langs:
+  - csharp
+  - vb
+  name: GetEncodedLength(long)
+  nameWithType: MessagePackWriter.GetEncodedLength(long)
+  fullName: MessagePack.MessagePackWriter.GetEncodedLength(long)
+  type: Method
+  assemblies:
+  - MessagePack
+  namespace: MessagePack
+  summary: Get the number of bytes required to encode a value in msgpack.
+  example: []
+  syntax:
+    content: public static int GetEncodedLength(long value)
+    parameters:
+    - id: value
+      type: System.Int64
+      description: The value to encode.
+    return:
+      type: System.Int32
+      description: The byte length; One of 1, 2, 3, 5 or 9 bytes.
+    content.vb: Public Shared Function GetEncodedLength(value As Long) As Integer
+  overload: MessagePack.MessagePackWriter.GetEncodedLength*
+  nameWithType.vb: MessagePackWriter.GetEncodedLength(Long)
+  fullName.vb: MessagePack.MessagePackWriter.GetEncodedLength(Long)
+  name.vb: GetEncodedLength(Long)
+- uid: MessagePack.MessagePackWriter.GetEncodedLength(System.UInt64)
+  commentId: M:MessagePack.MessagePackWriter.GetEncodedLength(System.UInt64)
+  id: GetEncodedLength(System.UInt64)
+  parent: MessagePack.MessagePackWriter
+  langs:
+  - csharp
+  - vb
+  name: GetEncodedLength(ulong)
+  nameWithType: MessagePackWriter.GetEncodedLength(ulong)
+  fullName: MessagePack.MessagePackWriter.GetEncodedLength(ulong)
+  type: Method
+  assemblies:
+  - MessagePack
+  namespace: MessagePack
+  summary: Get the number of bytes required to encode a value in msgpack.
+  example: []
+  syntax:
+    content: public static int GetEncodedLength(ulong value)
+    parameters:
+    - id: value
+      type: System.UInt64
+      description: The value to encode.
+    return:
+      type: System.Int32
+      description: The byte length; One of 1, 2, 3, 5 or 9 bytes.
+    content.vb: Public Shared Function GetEncodedLength(value As ULong) As Integer
+  overload: MessagePack.MessagePackWriter.GetEncodedLength*
+  nameWithType.vb: MessagePackWriter.GetEncodedLength(ULong)
+  fullName.vb: MessagePack.MessagePackWriter.GetEncodedLength(ULong)
+  name.vb: GetEncodedLength(ULong)
+- uid: MessagePack.MessagePackWriter.CancellationToken
+  commentId: P:MessagePack.MessagePackWriter.CancellationToken
+  id: CancellationToken
+  parent: MessagePack.MessagePackWriter
+  langs:
+  - csharp
+  - vb
+  name: CancellationToken
+  nameWithType: MessagePackWriter.CancellationToken
+  fullName: MessagePack.MessagePackWriter.CancellationToken
+  type: Property
+  assemblies:
+  - MessagePack
+  namespace: MessagePack
+  summary: Gets or sets the cancellation token for this serialization operation.
+  example: []
+  syntax:
+    content: public CancellationToken CancellationToken { readonly get; set; }
+    parameters: []
+    return:
+      type: System.Threading.CancellationToken
+    content.vb: Public Property CancellationToken As CancellationToken
+  overload: MessagePack.MessagePackWriter.CancellationToken*
+- uid: MessagePack.MessagePackWriter.OldSpec
+  commentId: P:MessagePack.MessagePackWriter.OldSpec
+  id: OldSpec
+  parent: MessagePack.MessagePackWriter
+  langs:
+  - csharp
+  - vb
+  name: OldSpec
+  nameWithType: MessagePackWriter.OldSpec
+  fullName: MessagePack.MessagePackWriter.OldSpec
+  type: Property
+  assemblies:
+  - MessagePack
+  namespace: MessagePack
+  summary: Gets or sets a value indicating whether to write in <a href="https://github.com/msgpack/msgpack/blob/master/spec-old.md">old spec</a> compatibility mode.
+  example: []
+  syntax:
+    content: public bool OldSpec { readonly get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property OldSpec As Boolean
+  overload: MessagePack.MessagePackWriter.OldSpec*
+references:
+- uid: MessagePack
+  commentId: N:MessagePack
+  isExternal: true
+  href: MessagePack.html
+  name: MessagePack
+  nameWithType: MessagePack
+  fullName: MessagePack
+- uid: System.ValueType.Equals(System.Object)
+  commentId: M:System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  name: Equals(object)
+  nameWithType: ValueType.Equals(object)
+  fullName: System.ValueType.Equals(object)
+  nameWithType.vb: ValueType.Equals(Object)
+  fullName.vb: System.ValueType.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType.GetHashCode
+  commentId: M:System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  name: GetHashCode()
+  nameWithType: ValueType.GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+- uid: System.ValueType.ToString
+  commentId: M:System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  name: ToString()
+  nameWithType: ValueType.ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType
+  commentId: T:System.ValueType
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype
+  name: ValueType
+  nameWithType: ValueType
+  fullName: System.ValueType
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: MessagePack.MessagePackWriter
+  commentId: T:MessagePack.MessagePackWriter
+  parent: MessagePack
+  isExternal: true
+  href: MessagePack.MessagePackWriter.html
+  name: MessagePackWriter
+  nameWithType: MessagePackWriter
+  fullName: MessagePack.MessagePackWriter
+- uid: MessagePack.MessagePackWriter.#ctor*
+  commentId: Overload:MessagePack.MessagePackWriter.#ctor
+  isExternal: true
+  href: MessagePack.MessagePackWriter.html#MessagePack_MessagePackWriter__ctor_System_Buffers_IBufferWriter_System_Byte__
+  name: MessagePackWriter
+  nameWithType: MessagePackWriter.MessagePackWriter
+  fullName: MessagePack.MessagePackWriter.MessagePackWriter
+  nameWithType.vb: MessagePackWriter.New
+  fullName.vb: MessagePack.MessagePackWriter.New
+  name.vb: New
+- uid: System.Buffers.IBufferWriter{System.Byte}
+  commentId: T:System.Buffers.IBufferWriter{System.Byte}
+  parent: System.Buffers
+  definition: System.Buffers.IBufferWriter`1
+  href: https://learn.microsoft.com/dotnet/api/system.buffers.ibufferwriter-1
+  name: IBufferWriter<byte>
+  nameWithType: IBufferWriter<byte>
+  fullName: System.Buffers.IBufferWriter<byte>
+  nameWithType.vb: IBufferWriter(Of Byte)
+  fullName.vb: System.Buffers.IBufferWriter(Of Byte)
+  name.vb: IBufferWriter(Of Byte)
+  spec.csharp:
+  - uid: System.Buffers.IBufferWriter`1
+    name: IBufferWriter
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.buffers.ibufferwriter-1
+  - name: <
+  - uid: System.Byte
+    name: byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: '>'
+  spec.vb:
+  - uid: System.Buffers.IBufferWriter`1
+    name: IBufferWriter
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.buffers.ibufferwriter-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Byte
+    name: Byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: )
+- uid: System.Buffers.IBufferWriter`1
+  commentId: T:System.Buffers.IBufferWriter`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.buffers.ibufferwriter-1
+  name: IBufferWriter<T>
+  nameWithType: IBufferWriter<T>
+  fullName: System.Buffers.IBufferWriter<T>
+  nameWithType.vb: IBufferWriter(Of T)
+  fullName.vb: System.Buffers.IBufferWriter(Of T)
+  name.vb: IBufferWriter(Of T)
+  spec.csharp:
+  - uid: System.Buffers.IBufferWriter`1
+    name: IBufferWriter
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.buffers.ibufferwriter-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Buffers.IBufferWriter`1
+    name: IBufferWriter
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.buffers.ibufferwriter-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Buffers
+  commentId: N:System.Buffers
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Buffers
+  nameWithType: System.Buffers
+  fullName: System.Buffers
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Buffers
+    name: Buffers
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.buffers
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Buffers
+    name: Buffers
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.buffers
+- uid: MessagePack.MessagePackWriter.Clone*
+  commentId: Overload:MessagePack.MessagePackWriter.Clone
+  isExternal: true
+  href: MessagePack.MessagePackWriter.html#MessagePack_MessagePackWriter_Clone_System_Buffers_IBufferWriter_System_Byte__
+  name: Clone
+  nameWithType: MessagePackWriter.Clone
+  fullName: MessagePack.MessagePackWriter.Clone
+- uid: MessagePack.MessagePackWriter.Flush*
+  commentId: Overload:MessagePack.MessagePackWriter.Flush
+  isExternal: true
+  href: MessagePack.MessagePackWriter.html#MessagePack_MessagePackWriter_Flush
+  name: Flush
+  nameWithType: MessagePackWriter.Flush
+  fullName: MessagePack.MessagePackWriter.Flush
+- uid: MessagePack.MessagePackCode.Nil
+  commentId: F:MessagePack.MessagePackCode.Nil
+  isExternal: true
+  href: MessagePack.MessagePackCode.html#MessagePack_MessagePackCode_Nil
+  name: Nil
+  nameWithType: MessagePackCode.Nil
+  fullName: MessagePack.MessagePackCode.Nil
+- uid: MessagePack.MessagePackWriter.WriteNil*
+  commentId: Overload:MessagePack.MessagePackWriter.WriteNil
+  isExternal: true
+  href: MessagePack.MessagePackWriter.html#MessagePack_MessagePackWriter_WriteNil
+  name: WriteNil
+  nameWithType: MessagePackWriter.WriteNil
+  fullName: MessagePack.MessagePackWriter.WriteNil
+- uid: MessagePack.MessagePackWriter.WriteRaw*
+  commentId: Overload:MessagePack.MessagePackWriter.WriteRaw
+  isExternal: true
+  href: MessagePack.MessagePackWriter.html#MessagePack_MessagePackWriter_WriteRaw_System_ReadOnlySpan_System_Byte__
+  name: WriteRaw
+  nameWithType: MessagePackWriter.WriteRaw
+  fullName: MessagePack.MessagePackWriter.WriteRaw
+- uid: System.ReadOnlySpan{System.Byte}
+  commentId: T:System.ReadOnlySpan{System.Byte}
+  parent: System
+  definition: System.ReadOnlySpan`1
+  href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  name: ReadOnlySpan<byte>
+  nameWithType: ReadOnlySpan<byte>
+  fullName: System.ReadOnlySpan<byte>
+  nameWithType.vb: ReadOnlySpan(Of Byte)
+  fullName.vb: System.ReadOnlySpan(Of Byte)
+  name.vb: ReadOnlySpan(Of Byte)
+  spec.csharp:
+  - uid: System.ReadOnlySpan`1
+    name: ReadOnlySpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  - name: <
+  - uid: System.Byte
+    name: byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: '>'
+  spec.vb:
+  - uid: System.ReadOnlySpan`1
+    name: ReadOnlySpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Byte
+    name: Byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: )
+- uid: System.ReadOnlySpan`1
+  commentId: T:System.ReadOnlySpan`1
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  name: ReadOnlySpan<T>
+  nameWithType: ReadOnlySpan<T>
+  fullName: System.ReadOnlySpan<T>
+  nameWithType.vb: ReadOnlySpan(Of T)
+  fullName.vb: System.ReadOnlySpan(Of T)
+  name.vb: ReadOnlySpan(Of T)
+  spec.csharp:
+  - uid: System.ReadOnlySpan`1
+    name: ReadOnlySpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.ReadOnlySpan`1
+    name: ReadOnlySpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Buffers.ReadOnlySequence{System.Byte}
+  commentId: T:System.Buffers.ReadOnlySequence{System.Byte}
+  parent: System.Buffers
+  definition: System.Buffers.ReadOnlySequence`1
+  href: https://learn.microsoft.com/dotnet/api/system.buffers.readonlysequence-1
+  name: ReadOnlySequence<byte>
+  nameWithType: ReadOnlySequence<byte>
+  fullName: System.Buffers.ReadOnlySequence<byte>
+  nameWithType.vb: ReadOnlySequence(Of Byte)
+  fullName.vb: System.Buffers.ReadOnlySequence(Of Byte)
+  name.vb: ReadOnlySequence(Of Byte)
+  spec.csharp:
+  - uid: System.Buffers.ReadOnlySequence`1
+    name: ReadOnlySequence
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.buffers.readonlysequence-1
+  - name: <
+  - uid: System.Byte
+    name: byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: '>'
+  spec.vb:
+  - uid: System.Buffers.ReadOnlySequence`1
+    name: ReadOnlySequence
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.buffers.readonlysequence-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Byte
+    name: Byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: )
+- uid: System.Buffers.ReadOnlySequence`1
+  commentId: T:System.Buffers.ReadOnlySequence`1
+  parent: System.Buffers
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.buffers.readonlysequence-1
+  name: ReadOnlySequence<T>
+  nameWithType: ReadOnlySequence<T>
+  fullName: System.Buffers.ReadOnlySequence<T>
+  nameWithType.vb: ReadOnlySequence(Of T)
+  fullName.vb: System.Buffers.ReadOnlySequence(Of T)
+  name.vb: ReadOnlySequence(Of T)
+  spec.csharp:
+  - uid: System.Buffers.ReadOnlySequence`1
+    name: ReadOnlySequence
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.buffers.readonlysequence-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Buffers.ReadOnlySequence`1
+    name: ReadOnlySequence
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.buffers.readonlysequence-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: MessagePack.MessagePackCode.MinFixArray
+  commentId: F:MessagePack.MessagePackCode.MinFixArray
+  isExternal: true
+  href: MessagePack.MessagePackCode.html#MessagePack_MessagePackCode_MinFixArray
+  name: MinFixArray
+  nameWithType: MessagePackCode.MinFixArray
+  fullName: MessagePack.MessagePackCode.MinFixArray
+- uid: MessagePack.MessagePackCode.Array16
+  commentId: F:MessagePack.MessagePackCode.Array16
+  isExternal: true
+  href: MessagePack.MessagePackCode.html#MessagePack_MessagePackCode_Array16
+  name: Array16
+  nameWithType: MessagePackCode.Array16
+  fullName: MessagePack.MessagePackCode.Array16
+- uid: MessagePack.MessagePackCode.Array32
+  commentId: F:MessagePack.MessagePackCode.Array32
+  isExternal: true
+  href: MessagePack.MessagePackCode.html#MessagePack_MessagePackCode_Array32
+  name: Array32
+  nameWithType: MessagePackCode.Array32
+  fullName: MessagePack.MessagePackCode.Array32
+- uid: MessagePack.MessagePackWriter.WriteArrayHeader*
+  commentId: Overload:MessagePack.MessagePackWriter.WriteArrayHeader
+  isExternal: true
+  href: MessagePack.MessagePackWriter.html#MessagePack_MessagePackWriter_WriteArrayHeader_System_Int32_
+  name: WriteArrayHeader
+  nameWithType: MessagePackWriter.WriteArrayHeader
+  fullName: MessagePack.MessagePackWriter.WriteArrayHeader
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.UInt32
+  commentId: T:System.UInt32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.uint32
+  name: uint
+  nameWithType: uint
+  fullName: uint
+  nameWithType.vb: UInteger
+  fullName.vb: UInteger
+  name.vb: UInteger
+- uid: MessagePack.MessagePackCode.MinFixMap
+  commentId: F:MessagePack.MessagePackCode.MinFixMap
+  isExternal: true
+  href: MessagePack.MessagePackCode.html#MessagePack_MessagePackCode_MinFixMap
+  name: MinFixMap
+  nameWithType: MessagePackCode.MinFixMap
+  fullName: MessagePack.MessagePackCode.MinFixMap
+- uid: MessagePack.MessagePackCode.Map16
+  commentId: F:MessagePack.MessagePackCode.Map16
+  isExternal: true
+  href: MessagePack.MessagePackCode.html#MessagePack_MessagePackCode_Map16
+  name: Map16
+  nameWithType: MessagePackCode.Map16
+  fullName: MessagePack.MessagePackCode.Map16
+- uid: MessagePack.MessagePackCode.Map32
+  commentId: F:MessagePack.MessagePackCode.Map32
+  isExternal: true
+  href: MessagePack.MessagePackCode.html#MessagePack_MessagePackCode_Map32
+  name: Map32
+  nameWithType: MessagePackCode.Map32
+  fullName: MessagePack.MessagePackCode.Map32
+- uid: MessagePack.MessagePackWriter.WriteMapHeader*
+  commentId: Overload:MessagePack.MessagePackWriter.WriteMapHeader
+  isExternal: true
+  href: MessagePack.MessagePackWriter.html#MessagePack_MessagePackWriter_WriteMapHeader_System_Int32_
+  name: WriteMapHeader
+  nameWithType: MessagePackWriter.WriteMapHeader
+  fullName: MessagePack.MessagePackWriter.WriteMapHeader
+- uid: System.Byte
+  commentId: T:System.Byte
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.byte
+  name: byte
+  nameWithType: byte
+  fullName: byte
+  nameWithType.vb: Byte
+  fullName.vb: Byte
+  name.vb: Byte
+- uid: MessagePack.MessagePackCode.UInt8
+  commentId: F:MessagePack.MessagePackCode.UInt8
+  isExternal: true
+  href: MessagePack.MessagePackCode.html#MessagePack_MessagePackCode_UInt8
+  name: UInt8
+  nameWithType: MessagePackCode.UInt8
+  fullName: MessagePack.MessagePackCode.UInt8
+- uid: MessagePack.MessagePackWriter.Write*
+  commentId: Overload:MessagePack.MessagePackWriter.Write
+  isExternal: true
+  href: MessagePack.MessagePackWriter.html#MessagePack_MessagePackWriter_Write_System_Byte_
+  name: Write
+  nameWithType: MessagePackWriter.Write
+  fullName: MessagePack.MessagePackWriter.Write
+- uid: MessagePack.MessagePackWriter.WriteUInt8*
+  commentId: Overload:MessagePack.MessagePackWriter.WriteUInt8
+  isExternal: true
+  href: MessagePack.MessagePackWriter.html#MessagePack_MessagePackWriter_WriteUInt8_System_Byte_
+  name: WriteUInt8
+  nameWithType: MessagePackWriter.WriteUInt8
+  fullName: MessagePack.MessagePackWriter.WriteUInt8
+- uid: MessagePack.MessagePackCode.Int8
+  commentId: F:MessagePack.MessagePackCode.Int8
+  isExternal: true
+  href: MessagePack.MessagePackCode.html#MessagePack_MessagePackCode_Int8
+  name: Int8
+  nameWithType: MessagePackCode.Int8
+  fullName: MessagePack.MessagePackCode.Int8
+- uid: System.SByte
+  commentId: T:System.SByte
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.sbyte
+  name: sbyte
+  nameWithType: sbyte
+  fullName: sbyte
+  nameWithType.vb: SByte
+  fullName.vb: SByte
+  name.vb: SByte
+- uid: MessagePack.MessagePackWriter.WriteInt8*
+  commentId: Overload:MessagePack.MessagePackWriter.WriteInt8
+  isExternal: true
+  href: MessagePack.MessagePackWriter.html#MessagePack_MessagePackWriter_WriteInt8_System_SByte_
+  name: WriteInt8
+  nameWithType: MessagePackWriter.WriteInt8
+  fullName: MessagePack.MessagePackWriter.WriteInt8
+- uid: System.UInt16
+  commentId: T:System.UInt16
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.uint16
+  name: ushort
+  nameWithType: ushort
+  fullName: ushort
+  nameWithType.vb: UShort
+  fullName.vb: UShort
+  name.vb: UShort
+- uid: MessagePack.MessagePackCode.UInt16
+  commentId: F:MessagePack.MessagePackCode.UInt16
+  isExternal: true
+  href: MessagePack.MessagePackCode.html#MessagePack_MessagePackCode_UInt16
+  name: UInt16
+  nameWithType: MessagePackCode.UInt16
+  fullName: MessagePack.MessagePackCode.UInt16
+- uid: MessagePack.MessagePackWriter.WriteUInt16*
+  commentId: Overload:MessagePack.MessagePackWriter.WriteUInt16
+  isExternal: true
+  href: MessagePack.MessagePackWriter.html#MessagePack_MessagePackWriter_WriteUInt16_System_UInt16_
+  name: WriteUInt16
+  nameWithType: MessagePackWriter.WriteUInt16
+  fullName: MessagePack.MessagePackWriter.WriteUInt16
+- uid: System.Int16
+  commentId: T:System.Int16
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int16
+  name: short
+  nameWithType: short
+  fullName: short
+  nameWithType.vb: Short
+  fullName.vb: Short
+  name.vb: Short
+- uid: MessagePack.MessagePackCode.Int16
+  commentId: F:MessagePack.MessagePackCode.Int16
+  isExternal: true
+  href: MessagePack.MessagePackCode.html#MessagePack_MessagePackCode_Int16
+  name: Int16
+  nameWithType: MessagePackCode.Int16
+  fullName: MessagePack.MessagePackCode.Int16
+- uid: MessagePack.MessagePackWriter.WriteInt16*
+  commentId: Overload:MessagePack.MessagePackWriter.WriteInt16
+  isExternal: true
+  href: MessagePack.MessagePackWriter.html#MessagePack_MessagePackWriter_WriteInt16_System_Int16_
+  name: WriteInt16
+  nameWithType: MessagePackWriter.WriteInt16
+  fullName: MessagePack.MessagePackWriter.WriteInt16
+- uid: MessagePack.MessagePackCode.UInt32
+  commentId: F:MessagePack.MessagePackCode.UInt32
+  isExternal: true
+  href: MessagePack.MessagePackCode.html#MessagePack_MessagePackCode_UInt32
+  name: UInt32
+  nameWithType: MessagePackCode.UInt32
+  fullName: MessagePack.MessagePackCode.UInt32
+- uid: MessagePack.MessagePackWriter.WriteUInt32*
+  commentId: Overload:MessagePack.MessagePackWriter.WriteUInt32
+  isExternal: true
+  href: MessagePack.MessagePackWriter.html#MessagePack_MessagePackWriter_WriteUInt32_System_UInt32_
+  name: WriteUInt32
+  nameWithType: MessagePackWriter.WriteUInt32
+  fullName: MessagePack.MessagePackWriter.WriteUInt32
+- uid: MessagePack.MessagePackCode.Int32
+  commentId: F:MessagePack.MessagePackCode.Int32
+  isExternal: true
+  href: MessagePack.MessagePackCode.html#MessagePack_MessagePackCode_Int32
+  name: Int32
+  nameWithType: MessagePackCode.Int32
+  fullName: MessagePack.MessagePackCode.Int32
+- uid: MessagePack.MessagePackWriter.WriteInt32*
+  commentId: Overload:MessagePack.MessagePackWriter.WriteInt32
+  isExternal: true
+  href: MessagePack.MessagePackWriter.html#MessagePack_MessagePackWriter_WriteInt32_System_Int32_
+  name: WriteInt32
+  nameWithType: MessagePackWriter.WriteInt32
+  fullName: MessagePack.MessagePackWriter.WriteInt32
+- uid: System.UInt64
+  commentId: T:System.UInt64
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.uint64
+  name: ulong
+  nameWithType: ulong
+  fullName: ulong
+  nameWithType.vb: ULong
+  fullName.vb: ULong
+  name.vb: ULong
+- uid: MessagePack.MessagePackWriter.WriteUInt64*
+  commentId: Overload:MessagePack.MessagePackWriter.WriteUInt64
+  isExternal: true
+  href: MessagePack.MessagePackWriter.html#MessagePack_MessagePackWriter_WriteUInt64_System_UInt64_
+  name: WriteUInt64
+  nameWithType: MessagePackWriter.WriteUInt64
+  fullName: MessagePack.MessagePackWriter.WriteUInt64
+- uid: System.Int64
+  commentId: T:System.Int64
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int64
+  name: long
+  nameWithType: long
+  fullName: long
+  nameWithType.vb: Long
+  fullName.vb: Long
+  name.vb: Long
+- uid: MessagePack.MessagePackCode.UInt64
+  commentId: F:MessagePack.MessagePackCode.UInt64
+  isExternal: true
+  href: MessagePack.MessagePackCode.html#MessagePack_MessagePackCode_UInt64
+  name: UInt64
+  nameWithType: MessagePackCode.UInt64
+  fullName: MessagePack.MessagePackCode.UInt64
+- uid: MessagePack.MessagePackCode.Int64
+  commentId: F:MessagePack.MessagePackCode.Int64
+  isExternal: true
+  href: MessagePack.MessagePackCode.html#MessagePack_MessagePackCode_Int64
+  name: Int64
+  nameWithType: MessagePackCode.Int64
+  fullName: MessagePack.MessagePackCode.Int64
+- uid: MessagePack.MessagePackWriter.WriteInt64*
+  commentId: Overload:MessagePack.MessagePackWriter.WriteInt64
+  isExternal: true
+  href: MessagePack.MessagePackWriter.html#MessagePack_MessagePackWriter_WriteInt64_System_Int64_
+  name: WriteInt64
+  nameWithType: MessagePackWriter.WriteInt64
+  fullName: MessagePack.MessagePackWriter.WriteInt64
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: MessagePack.MessagePackCode.True
+  commentId: F:MessagePack.MessagePackCode.True
+  isExternal: true
+  href: MessagePack.MessagePackCode.html#MessagePack_MessagePackCode_True
+  name: "True"
+  nameWithType: MessagePackCode.True
+  fullName: MessagePack.MessagePackCode.True
+- uid: MessagePack.MessagePackCode.False
+  commentId: F:MessagePack.MessagePackCode.False
+  isExternal: true
+  href: MessagePack.MessagePackCode.html#MessagePack_MessagePackCode_False
+  name: "False"
+  nameWithType: MessagePackCode.False
+  fullName: MessagePack.MessagePackCode.False
+- uid: System.Char
+  commentId: T:System.Char
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.char
+  name: char
+  nameWithType: char
+  fullName: char
+  nameWithType.vb: Char
+  fullName.vb: Char
+  name.vb: Char
+- uid: MessagePack.MessagePackCode.Float32
+  commentId: F:MessagePack.MessagePackCode.Float32
+  isExternal: true
+  href: MessagePack.MessagePackCode.html#MessagePack_MessagePackCode_Float32
+  name: Float32
+  nameWithType: MessagePackCode.Float32
+  fullName: MessagePack.MessagePackCode.Float32
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: MessagePack.MessagePackCode.Float64
+  commentId: F:MessagePack.MessagePackCode.Float64
+  isExternal: true
+  href: MessagePack.MessagePackCode.html#MessagePack_MessagePackCode_Float64
+  name: Float64
+  nameWithType: MessagePackCode.Float64
+  fullName: MessagePack.MessagePackCode.Float64
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: System.DateTime
+  commentId: T:System.DateTime
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.datetime
+  name: DateTime
+  nameWithType: DateTime
+  fullName: System.DateTime
+  nameWithType.vb: Date
+  fullName.vb: Date
+  name.vb: Date
+- uid: MessagePack.ReservedMessagePackExtensionTypeCode.DateTime
+  commentId: F:MessagePack.ReservedMessagePackExtensionTypeCode.DateTime
+  isExternal: true
+  href: MessagePack.ReservedMessagePackExtensionTypeCode.html#MessagePack_ReservedMessagePackExtensionTypeCode_DateTime
+  name: DateTime
+  nameWithType: ReservedMessagePackExtensionTypeCode.DateTime
+  fullName: MessagePack.ReservedMessagePackExtensionTypeCode.DateTime
+- uid: MessagePack.MessagePackWriter.OldSpec
+  commentId: P:MessagePack.MessagePackWriter.OldSpec
+  isExternal: true
+  href: MessagePack.MessagePackWriter.html#MessagePack_MessagePackWriter_OldSpec
+  name: OldSpec
+  nameWithType: MessagePackWriter.OldSpec
+  fullName: MessagePack.MessagePackWriter.OldSpec
+- uid: System.NotSupportedException
+  commentId: T:System.NotSupportedException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.notsupportedexception
+  name: NotSupportedException
+  nameWithType: NotSupportedException
+  fullName: System.NotSupportedException
+- uid: MessagePack.MessagePackCode.Bin8
+  commentId: F:MessagePack.MessagePackCode.Bin8
+  isExternal: true
+  href: MessagePack.MessagePackCode.html#MessagePack_MessagePackCode_Bin8
+  name: Bin8
+  nameWithType: MessagePackCode.Bin8
+  fullName: MessagePack.MessagePackCode.Bin8
+- uid: MessagePack.MessagePackCode.Bin16
+  commentId: F:MessagePack.MessagePackCode.Bin16
+  isExternal: true
+  href: MessagePack.MessagePackCode.html#MessagePack_MessagePackCode_Bin16
+  name: Bin16
+  nameWithType: MessagePackCode.Bin16
+  fullName: MessagePack.MessagePackCode.Bin16
+- uid: MessagePack.MessagePackCode.Bin32
+  commentId: F:MessagePack.MessagePackCode.Bin32
+  isExternal: true
+  href: MessagePack.MessagePackCode.html#MessagePack_MessagePackCode_Bin32
+  name: Bin32
+  nameWithType: MessagePackCode.Bin32
+  fullName: MessagePack.MessagePackCode.Bin32
+- uid: System.Byte[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.byte
+  name: byte[]
+  nameWithType: byte[]
+  fullName: byte[]
+  nameWithType.vb: Byte()
+  fullName.vb: Byte()
+  name.vb: Byte()
+  spec.csharp:
+  - uid: System.Byte
+    name: byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.Byte
+    name: Byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: (
+  - name: )
+- uid: MessagePack.MessagePackCode.Str8
+  commentId: F:MessagePack.MessagePackCode.Str8
+  isExternal: true
+  href: MessagePack.MessagePackCode.html#MessagePack_MessagePackCode_Str8
+  name: Str8
+  nameWithType: MessagePackCode.Str8
+  fullName: MessagePack.MessagePackCode.Str8
+- uid: MessagePack.MessagePackCode.Str16
+  commentId: F:MessagePack.MessagePackCode.Str16
+  isExternal: true
+  href: MessagePack.MessagePackCode.html#MessagePack_MessagePackCode_Str16
+  name: Str16
+  nameWithType: MessagePackCode.Str16
+  fullName: MessagePack.MessagePackCode.Str16
+- uid: MessagePack.MessagePackCode.Str32
+  commentId: F:MessagePack.MessagePackCode.Str32
+  isExternal: true
+  href: MessagePack.MessagePackCode.html#MessagePack_MessagePackCode_Str32
+  name: Str32
+  nameWithType: MessagePackCode.Str32
+  fullName: MessagePack.MessagePackCode.Str32
+- uid: MessagePack.MessagePackWriter.WriteRaw(System.Buffers.ReadOnlySequence{System.Byte}@)
+  commentId: M:MessagePack.MessagePackWriter.WriteRaw(System.Buffers.ReadOnlySequence{System.Byte}@)
+  isExternal: true
+  href: MessagePack.MessagePackWriter.html#MessagePack_MessagePackWriter_WriteRaw_System_Buffers_ReadOnlySequence_System_Byte___
+  name: WriteRaw(in ReadOnlySequence<byte>)
+  nameWithType: MessagePackWriter.WriteRaw(in ReadOnlySequence<byte>)
+  fullName: MessagePack.MessagePackWriter.WriteRaw(in System.Buffers.ReadOnlySequence<byte>)
+  nameWithType.vb: MessagePackWriter.WriteRaw(ReadOnlySequence(Of Byte))
+  fullName.vb: MessagePack.MessagePackWriter.WriteRaw(System.Buffers.ReadOnlySequence(Of Byte))
+  name.vb: WriteRaw(ReadOnlySequence(Of Byte))
+  spec.csharp:
+  - uid: MessagePack.MessagePackWriter.WriteRaw(System.Buffers.ReadOnlySequence{System.Byte}@)
+    name: WriteRaw
+    isExternal: true
+    href: MessagePack.MessagePackWriter.html#MessagePack_MessagePackWriter_WriteRaw_System_Buffers_ReadOnlySequence_System_Byte___
+  - name: (
+  - name: in
+  - name: " "
+  - uid: System.Buffers.ReadOnlySequence`1
+    name: ReadOnlySequence
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.buffers.readonlysequence-1
+  - name: <
+  - uid: System.Byte
+    name: byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: MessagePack.MessagePackWriter.WriteRaw(System.Buffers.ReadOnlySequence{System.Byte}@)
+    name: WriteRaw
+    isExternal: true
+    href: MessagePack.MessagePackWriter.html#MessagePack_MessagePackWriter_WriteRaw_System_Buffers_ReadOnlySequence_System_Byte___
+  - name: (
+  - uid: System.Buffers.ReadOnlySequence`1
+    name: ReadOnlySequence
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.buffers.readonlysequence-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Byte
+    name: Byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: )
+  - name: )
+- uid: MessagePack.MessagePackWriter.WriteRaw(System.ReadOnlySpan{System.Byte})
+  commentId: M:MessagePack.MessagePackWriter.WriteRaw(System.ReadOnlySpan{System.Byte})
+  isExternal: true
+- uid: MessagePack.MessagePackWriter.Write(System.ReadOnlySpan{System.Byte})
+  commentId: M:MessagePack.MessagePackWriter.Write(System.ReadOnlySpan{System.Byte})
+  isExternal: true
+- uid: MessagePack.MessagePackWriter.Write(System.Buffers.ReadOnlySequence{System.Byte}@)
+  commentId: M:MessagePack.MessagePackWriter.Write(System.Buffers.ReadOnlySequence{System.Byte}@)
+  isExternal: true
+  href: MessagePack.MessagePackWriter.html#MessagePack_MessagePackWriter_Write_System_Buffers_ReadOnlySequence_System_Byte___
+  name: Write(in ReadOnlySequence<byte>)
+  nameWithType: MessagePackWriter.Write(in ReadOnlySequence<byte>)
+  fullName: MessagePack.MessagePackWriter.Write(in System.Buffers.ReadOnlySequence<byte>)
+  nameWithType.vb: MessagePackWriter.Write(ReadOnlySequence(Of Byte))
+  fullName.vb: MessagePack.MessagePackWriter.Write(System.Buffers.ReadOnlySequence(Of Byte))
+  name.vb: Write(ReadOnlySequence(Of Byte))
+  spec.csharp:
+  - uid: MessagePack.MessagePackWriter.Write(System.Buffers.ReadOnlySequence{System.Byte}@)
+    name: Write
+    isExternal: true
+    href: MessagePack.MessagePackWriter.html#MessagePack_MessagePackWriter_Write_System_Buffers_ReadOnlySequence_System_Byte___
+  - name: (
+  - name: in
+  - name: " "
+  - uid: System.Buffers.ReadOnlySequence`1
+    name: ReadOnlySequence
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.buffers.readonlysequence-1
+  - name: <
+  - uid: System.Byte
+    name: byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: MessagePack.MessagePackWriter.Write(System.Buffers.ReadOnlySequence{System.Byte}@)
+    name: Write
+    isExternal: true
+    href: MessagePack.MessagePackWriter.html#MessagePack_MessagePackWriter_Write_System_Buffers_ReadOnlySequence_System_Byte___
+  - name: (
+  - uid: System.Buffers.ReadOnlySequence`1
+    name: ReadOnlySequence
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.buffers.readonlysequence-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Byte
+    name: Byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: )
+  - name: )
+- uid: MessagePack.MessagePackWriter.WriteBinHeader*
+  commentId: Overload:MessagePack.MessagePackWriter.WriteBinHeader
+  isExternal: true
+  href: MessagePack.MessagePackWriter.html#MessagePack_MessagePackWriter_WriteBinHeader_System_Int32_
+  name: WriteBinHeader
+  nameWithType: MessagePackWriter.WriteBinHeader
+  fullName: MessagePack.MessagePackWriter.WriteBinHeader
+- uid: MessagePack.MessagePackCode.MinFixStr
+  commentId: F:MessagePack.MessagePackCode.MinFixStr
+  isExternal: true
+  href: MessagePack.MessagePackCode.html#MessagePack_MessagePackCode_MinFixStr
+  name: MinFixStr
+  nameWithType: MessagePackCode.MinFixStr
+  fullName: MessagePack.MessagePackCode.MinFixStr
+- uid: MessagePack.MessagePackWriter.WriteString*
+  commentId: Overload:MessagePack.MessagePackWriter.WriteString
+  isExternal: true
+  href: MessagePack.MessagePackWriter.html#MessagePack_MessagePackWriter_WriteString_System_Buffers_ReadOnlySequence_System_Byte___
+  name: WriteString
+  nameWithType: MessagePackWriter.WriteString
+  fullName: MessagePack.MessagePackWriter.WriteString
+- uid: MessagePack.MessagePackWriter.WriteString(System.ReadOnlySpan{System.Byte})
+  commentId: M:MessagePack.MessagePackWriter.WriteString(System.ReadOnlySpan{System.Byte})
+  isExternal: true
+- uid: MessagePack.MessagePackWriter.WriteString(System.Buffers.ReadOnlySequence{System.Byte}@)
+  commentId: M:MessagePack.MessagePackWriter.WriteString(System.Buffers.ReadOnlySequence{System.Byte}@)
+  isExternal: true
+  href: MessagePack.MessagePackWriter.html#MessagePack_MessagePackWriter_WriteString_System_Buffers_ReadOnlySequence_System_Byte___
+  name: WriteString(in ReadOnlySequence<byte>)
+  nameWithType: MessagePackWriter.WriteString(in ReadOnlySequence<byte>)
+  fullName: MessagePack.MessagePackWriter.WriteString(in System.Buffers.ReadOnlySequence<byte>)
+  nameWithType.vb: MessagePackWriter.WriteString(ReadOnlySequence(Of Byte))
+  fullName.vb: MessagePack.MessagePackWriter.WriteString(System.Buffers.ReadOnlySequence(Of Byte))
+  name.vb: WriteString(ReadOnlySequence(Of Byte))
+  spec.csharp:
+  - uid: MessagePack.MessagePackWriter.WriteString(System.Buffers.ReadOnlySequence{System.Byte}@)
+    name: WriteString
+    isExternal: true
+    href: MessagePack.MessagePackWriter.html#MessagePack_MessagePackWriter_WriteString_System_Buffers_ReadOnlySequence_System_Byte___
+  - name: (
+  - name: in
+  - name: " "
+  - uid: System.Buffers.ReadOnlySequence`1
+    name: ReadOnlySequence
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.buffers.readonlysequence-1
+  - name: <
+  - uid: System.Byte
+    name: byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: MessagePack.MessagePackWriter.WriteString(System.Buffers.ReadOnlySequence{System.Byte}@)
+    name: WriteString
+    isExternal: true
+    href: MessagePack.MessagePackWriter.html#MessagePack_MessagePackWriter_WriteString_System_Buffers_ReadOnlySequence_System_Byte___
+  - name: (
+  - uid: System.Buffers.ReadOnlySequence`1
+    name: ReadOnlySequence
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.buffers.readonlysequence-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Byte
+    name: Byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: )
+  - name: )
+- uid: MessagePack.MessagePackWriter.WriteStringHeader*
+  commentId: Overload:MessagePack.MessagePackWriter.WriteStringHeader
+  isExternal: true
+  href: MessagePack.MessagePackWriter.html#MessagePack_MessagePackWriter_WriteStringHeader_System_Int32_
+  name: WriteStringHeader
+  nameWithType: MessagePackWriter.WriteStringHeader
+  fullName: MessagePack.MessagePackWriter.WriteStringHeader
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.ReadOnlySpan{System.Char}
+  commentId: T:System.ReadOnlySpan{System.Char}
+  parent: System
+  definition: System.ReadOnlySpan`1
+  href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  name: ReadOnlySpan<char>
+  nameWithType: ReadOnlySpan<char>
+  fullName: System.ReadOnlySpan<char>
+  nameWithType.vb: ReadOnlySpan(Of Char)
+  fullName.vb: System.ReadOnlySpan(Of Char)
+  name.vb: ReadOnlySpan(Of Char)
+  spec.csharp:
+  - uid: System.ReadOnlySpan`1
+    name: ReadOnlySpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  - name: <
+  - uid: System.Char
+    name: char
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.char
+  - name: '>'
+  spec.vb:
+  - uid: System.ReadOnlySpan`1
+    name: ReadOnlySpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Char
+    name: Char
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.char
+  - name: )
+- uid: MessagePack.MessagePackCode.FixExt1
+  commentId: F:MessagePack.MessagePackCode.FixExt1
+  isExternal: true
+  href: MessagePack.MessagePackCode.html#MessagePack_MessagePackCode_FixExt1
+  name: FixExt1
+  nameWithType: MessagePackCode.FixExt1
+  fullName: MessagePack.MessagePackCode.FixExt1
+- uid: MessagePack.MessagePackCode.FixExt2
+  commentId: F:MessagePack.MessagePackCode.FixExt2
+  isExternal: true
+  href: MessagePack.MessagePackCode.html#MessagePack_MessagePackCode_FixExt2
+  name: FixExt2
+  nameWithType: MessagePackCode.FixExt2
+  fullName: MessagePack.MessagePackCode.FixExt2
+- uid: MessagePack.MessagePackCode.FixExt4
+  commentId: F:MessagePack.MessagePackCode.FixExt4
+  isExternal: true
+  href: MessagePack.MessagePackCode.html#MessagePack_MessagePackCode_FixExt4
+  name: FixExt4
+  nameWithType: MessagePackCode.FixExt4
+  fullName: MessagePack.MessagePackCode.FixExt4
+- uid: MessagePack.MessagePackCode.FixExt8
+  commentId: F:MessagePack.MessagePackCode.FixExt8
+  isExternal: true
+  href: MessagePack.MessagePackCode.html#MessagePack_MessagePackCode_FixExt8
+  name: FixExt8
+  nameWithType: MessagePackCode.FixExt8
+  fullName: MessagePack.MessagePackCode.FixExt8
+- uid: MessagePack.MessagePackCode.FixExt16
+  commentId: F:MessagePack.MessagePackCode.FixExt16
+  isExternal: true
+  href: MessagePack.MessagePackCode.html#MessagePack_MessagePackCode_FixExt16
+  name: FixExt16
+  nameWithType: MessagePackCode.FixExt16
+  fullName: MessagePack.MessagePackCode.FixExt16
+- uid: MessagePack.MessagePackCode.Ext8
+  commentId: F:MessagePack.MessagePackCode.Ext8
+  isExternal: true
+  href: MessagePack.MessagePackCode.html#MessagePack_MessagePackCode_Ext8
+  name: Ext8
+  nameWithType: MessagePackCode.Ext8
+  fullName: MessagePack.MessagePackCode.Ext8
+- uid: MessagePack.MessagePackCode.Ext16
+  commentId: F:MessagePack.MessagePackCode.Ext16
+  isExternal: true
+  href: MessagePack.MessagePackCode.html#MessagePack_MessagePackCode_Ext16
+  name: Ext16
+  nameWithType: MessagePackCode.Ext16
+  fullName: MessagePack.MessagePackCode.Ext16
+- uid: MessagePack.MessagePackCode.Ext32
+  commentId: F:MessagePack.MessagePackCode.Ext32
+  isExternal: true
+  href: MessagePack.MessagePackCode.html#MessagePack_MessagePackCode_Ext32
+  name: Ext32
+  nameWithType: MessagePackCode.Ext32
+  fullName: MessagePack.MessagePackCode.Ext32
+- uid: MessagePack.MessagePackWriter.WriteExtensionFormatHeader*
+  commentId: Overload:MessagePack.MessagePackWriter.WriteExtensionFormatHeader
+  isExternal: true
+  href: MessagePack.MessagePackWriter.html#MessagePack_MessagePackWriter_WriteExtensionFormatHeader_MessagePack_ExtensionHeader_
+  name: WriteExtensionFormatHeader
+  nameWithType: MessagePackWriter.WriteExtensionFormatHeader
+  fullName: MessagePack.MessagePackWriter.WriteExtensionFormatHeader
+- uid: MessagePack.ExtensionHeader
+  commentId: T:MessagePack.ExtensionHeader
+  parent: MessagePack
+  isExternal: true
+  href: MessagePack.ExtensionHeader.html
+  name: ExtensionHeader
+  nameWithType: ExtensionHeader
+  fullName: MessagePack.ExtensionHeader
+- uid: MessagePack.MessagePackWriter.WriteExtensionFormat*
+  commentId: Overload:MessagePack.MessagePackWriter.WriteExtensionFormat
+  isExternal: true
+  href: MessagePack.MessagePackWriter.html#MessagePack_MessagePackWriter_WriteExtensionFormat_MessagePack_ExtensionResult_
+  name: WriteExtensionFormat
+  nameWithType: MessagePackWriter.WriteExtensionFormat
+  fullName: MessagePack.MessagePackWriter.WriteExtensionFormat
+- uid: MessagePack.ExtensionResult
+  commentId: T:MessagePack.ExtensionResult
+  parent: MessagePack
+  isExternal: true
+  href: MessagePack.ExtensionResult.html
+  name: ExtensionResult
+  nameWithType: ExtensionResult
+  fullName: MessagePack.ExtensionResult
+- uid: System.Buffers.IBufferWriter`1.GetSpan(System.Int32)
+  commentId: M:System.Buffers.IBufferWriter`1.GetSpan(System.Int32)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.buffers.ibufferwriter-1.getspan
+  name: GetSpan(int)
+  nameWithType: IBufferWriter<T>.GetSpan(int)
+  fullName: System.Buffers.IBufferWriter<T>.GetSpan(int)
+  nameWithType.vb: IBufferWriter(Of T).GetSpan(Integer)
+  fullName.vb: System.Buffers.IBufferWriter(Of T).GetSpan(Integer)
+  name.vb: GetSpan(Integer)
+  spec.csharp:
+  - uid: System.Buffers.IBufferWriter`1.GetSpan(System.Int32)
+    name: GetSpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.buffers.ibufferwriter-1.getspan
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: System.Buffers.IBufferWriter`1.GetSpan(System.Int32)
+    name: GetSpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.buffers.ibufferwriter-1.getspan
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: MessagePack.MessagePackWriter.Advance(System.Int32)
+  commentId: M:MessagePack.MessagePackWriter.Advance(System.Int32)
+  isExternal: true
+  href: MessagePack.MessagePackWriter.html#MessagePack_MessagePackWriter_Advance_System_Int32_
+  name: Advance(int)
+  nameWithType: MessagePackWriter.Advance(int)
+  fullName: MessagePack.MessagePackWriter.Advance(int)
+  nameWithType.vb: MessagePackWriter.Advance(Integer)
+  fullName.vb: MessagePack.MessagePackWriter.Advance(Integer)
+  name.vb: Advance(Integer)
+  spec.csharp:
+  - uid: MessagePack.MessagePackWriter.Advance(System.Int32)
+    name: Advance
+    isExternal: true
+    href: MessagePack.MessagePackWriter.html#MessagePack_MessagePackWriter_Advance_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: MessagePack.MessagePackWriter.Advance(System.Int32)
+    name: Advance
+    isExternal: true
+    href: MessagePack.MessagePackWriter.html#MessagePack_MessagePackWriter_Advance_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: MessagePack.MessagePackWriter.GetSpan*
+  commentId: Overload:MessagePack.MessagePackWriter.GetSpan
+  isExternal: true
+  href: MessagePack.MessagePackWriter.html#MessagePack_MessagePackWriter_GetSpan_System_Int32_
+  name: GetSpan
+  nameWithType: MessagePackWriter.GetSpan
+  fullName: MessagePack.MessagePackWriter.GetSpan
+- uid: System.Span{System.Byte}
+  commentId: T:System.Span{System.Byte}
+  parent: System
+  definition: System.Span`1
+  href: https://learn.microsoft.com/dotnet/api/system.span-1
+  name: Span<byte>
+  nameWithType: Span<byte>
+  fullName: System.Span<byte>
+  nameWithType.vb: Span(Of Byte)
+  fullName.vb: System.Span(Of Byte)
+  name.vb: Span(Of Byte)
+  spec.csharp:
+  - uid: System.Span`1
+    name: Span
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.span-1
+  - name: <
+  - uid: System.Byte
+    name: byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: '>'
+  spec.vb:
+  - uid: System.Span`1
+    name: Span
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.span-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Byte
+    name: Byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: )
+- uid: System.Span`1
+  commentId: T:System.Span`1
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.span-1
+  name: Span<T>
+  nameWithType: Span<T>
+  fullName: System.Span<T>
+  nameWithType.vb: Span(Of T)
+  fullName.vb: System.Span(Of T)
+  name.vb: Span(Of T)
+  spec.csharp:
+  - uid: System.Span`1
+    name: Span
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.span-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Span`1
+    name: Span
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.span-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Buffers.IBufferWriter`1.Advance(System.Int32)
+  commentId: M:System.Buffers.IBufferWriter`1.Advance(System.Int32)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.buffers.ibufferwriter-1.advance
+  name: Advance(int)
+  nameWithType: IBufferWriter<T>.Advance(int)
+  fullName: System.Buffers.IBufferWriter<T>.Advance(int)
+  nameWithType.vb: IBufferWriter(Of T).Advance(Integer)
+  fullName.vb: System.Buffers.IBufferWriter(Of T).Advance(Integer)
+  name.vb: Advance(Integer)
+  spec.csharp:
+  - uid: System.Buffers.IBufferWriter`1.Advance(System.Int32)
+    name: Advance
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.buffers.ibufferwriter-1.advance
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: System.Buffers.IBufferWriter`1.Advance(System.Int32)
+    name: Advance
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.buffers.ibufferwriter-1.advance
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: MessagePack.MessagePackWriter.GetSpan(System.Int32)
+  commentId: M:MessagePack.MessagePackWriter.GetSpan(System.Int32)
+  isExternal: true
+  href: MessagePack.MessagePackWriter.html#MessagePack_MessagePackWriter_GetSpan_System_Int32_
+  name: GetSpan(int)
+  nameWithType: MessagePackWriter.GetSpan(int)
+  fullName: MessagePack.MessagePackWriter.GetSpan(int)
+  nameWithType.vb: MessagePackWriter.GetSpan(Integer)
+  fullName.vb: MessagePack.MessagePackWriter.GetSpan(Integer)
+  name.vb: GetSpan(Integer)
+  spec.csharp:
+  - uid: MessagePack.MessagePackWriter.GetSpan(System.Int32)
+    name: GetSpan
+    isExternal: true
+    href: MessagePack.MessagePackWriter.html#MessagePack_MessagePackWriter_GetSpan_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: MessagePack.MessagePackWriter.GetSpan(System.Int32)
+    name: GetSpan
+    isExternal: true
+    href: MessagePack.MessagePackWriter.html#MessagePack_MessagePackWriter_GetSpan_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: MessagePack.MessagePackWriter.Advance*
+  commentId: Overload:MessagePack.MessagePackWriter.Advance
+  isExternal: true
+  href: MessagePack.MessagePackWriter.html#MessagePack_MessagePackWriter_Advance_System_Int32_
+  name: Advance
+  nameWithType: MessagePackWriter.Advance
+  fullName: MessagePack.MessagePackWriter.Advance
+- uid: MessagePack.MessagePackWriter.GetEncodedLength*
+  commentId: Overload:MessagePack.MessagePackWriter.GetEncodedLength
+  isExternal: true
+  href: MessagePack.MessagePackWriter.html#MessagePack_MessagePackWriter_GetEncodedLength_System_Int64_
+  name: GetEncodedLength
+  nameWithType: MessagePackWriter.GetEncodedLength
+  fullName: MessagePack.MessagePackWriter.GetEncodedLength
+- uid: MessagePack.MessagePackWriter.CancellationToken*
+  commentId: Overload:MessagePack.MessagePackWriter.CancellationToken
+  isExternal: true
+  href: MessagePack.MessagePackWriter.html#MessagePack_MessagePackWriter_CancellationToken
+  name: CancellationToken
+  nameWithType: MessagePackWriter.CancellationToken
+  fullName: MessagePack.MessagePackWriter.CancellationToken
+- uid: System.Threading.CancellationToken
+  commentId: T:System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  name: CancellationToken
+  nameWithType: CancellationToken
+  fullName: System.Threading.CancellationToken
+- uid: System.Threading
+  commentId: N:System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading
+  nameWithType: System.Threading
+  fullName: System.Threading
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+- uid: MessagePack.MessagePackWriter.OldSpec*
+  commentId: Overload:MessagePack.MessagePackWriter.OldSpec
+  isExternal: true
+  href: MessagePack.MessagePackWriter.html#MessagePack_MessagePackWriter_OldSpec
+  name: OldSpec
+  nameWithType: MessagePackWriter.OldSpec
+  fullName: MessagePack.MessagePackWriter.OldSpec

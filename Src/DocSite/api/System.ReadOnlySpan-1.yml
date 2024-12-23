@@ -1,0 +1,1891 @@
+### YamlMime:ManagedReference
+items:
+- uid: System.ReadOnlySpan`1
+  commentId: T:System.ReadOnlySpan`1
+  id: ReadOnlySpan`1
+  parent: System
+  children:
+  - System.ReadOnlySpan`1.#ctor(System.Void*,System.Int32)
+  - System.ReadOnlySpan`1.#ctor(`0[])
+  - System.ReadOnlySpan`1.#ctor(`0[],System.Int32,System.Int32)
+  - System.ReadOnlySpan`1.CopyTo(System.Span{`0})
+  - System.ReadOnlySpan`1.Empty
+  - System.ReadOnlySpan`1.GetEnumerator
+  - System.ReadOnlySpan`1.IsEmpty
+  - System.ReadOnlySpan`1.Item(System.Int32)
+  - System.ReadOnlySpan`1.Length
+  - System.ReadOnlySpan`1.Slice(System.Int32)
+  - System.ReadOnlySpan`1.Slice(System.Int32,System.Int32)
+  - System.ReadOnlySpan`1.ToArray
+  - System.ReadOnlySpan`1.ToString
+  - System.ReadOnlySpan`1.TryCopyTo(System.Span{`0})
+  - System.ReadOnlySpan`1.op_Equality(System.ReadOnlySpan{`0},System.ReadOnlySpan{`0})
+  - System.ReadOnlySpan`1.op_Implicit(System.ArraySegment{`0})~System.ReadOnlySpan{`0}
+  - System.ReadOnlySpan`1.op_Implicit(`0[])~System.ReadOnlySpan{`0}
+  - System.ReadOnlySpan`1.op_Inequality(System.ReadOnlySpan{`0},System.ReadOnlySpan{`0})
+  langs:
+  - csharp
+  - vb
+  name: ReadOnlySpan<T>
+  nameWithType: ReadOnlySpan<T>
+  fullName: System.ReadOnlySpan<T>
+  type: Struct
+  assemblies:
+  - System.Memory
+  namespace: System
+  example: []
+  syntax:
+    content: public readonly ref struct ReadOnlySpan<T>
+    typeParameters:
+    - id: T
+      description: ''
+    content.vb: Public Structure ReadOnlySpan(Of T)
+  inheritedMembers:
+  - System.ValueType.Equals(System.Object)
+  - System.ValueType.GetHashCode
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetType
+  extensionMethods:
+  - System.ReadOnlySpan`1.System.MemoryExtensions.BinarySearch``1(System.IComparable{{T}})
+  - System.ReadOnlySpan`1.System.MemoryExtensions.BinarySearch``2({TComparable})
+  - System.ReadOnlySpan`1.System.MemoryExtensions.BinarySearch``2({T},{TComparer})
+  - System.ReadOnlySpan`1.System.MemoryExtensions.Overlaps``1(System.ReadOnlySpan{{T}})
+  - System.ReadOnlySpan`1.System.MemoryExtensions.Overlaps``1(System.ReadOnlySpan{{T}},System.Int32@)
+  nameWithType.vb: ReadOnlySpan(Of T)
+  fullName.vb: System.ReadOnlySpan(Of T)
+  name.vb: ReadOnlySpan(Of T)
+- uid: System.ReadOnlySpan`1.op_Inequality(System.ReadOnlySpan{`0},System.ReadOnlySpan{`0})
+  commentId: M:System.ReadOnlySpan`1.op_Inequality(System.ReadOnlySpan{`0},System.ReadOnlySpan{`0})
+  id: op_Inequality(System.ReadOnlySpan{`0},System.ReadOnlySpan{`0})
+  parent: System.ReadOnlySpan`1
+  langs:
+  - csharp
+  - vb
+  name: operator !=(ReadOnlySpan<T>, ReadOnlySpan<T>)
+  nameWithType: ReadOnlySpan<T>.operator !=(ReadOnlySpan<T>, ReadOnlySpan<T>)
+  fullName: System.ReadOnlySpan<T>.operator !=(System.ReadOnlySpan<T>, System.ReadOnlySpan<T>)
+  type: Operator
+  assemblies:
+  - System.Memory
+  namespace: System
+  example: []
+  syntax:
+    content: public static bool operator !=(ReadOnlySpan<T> left, ReadOnlySpan<T> right)
+    parameters:
+    - id: left
+      type: System.ReadOnlySpan`1
+      description: ''
+    - id: right
+      type: System.ReadOnlySpan`1
+      description: ''
+    return:
+      type: System.Boolean
+      description: ''
+    content.vb: Public Shared Operator <>(left As ReadOnlySpan(Of T), right As ReadOnlySpan(Of T)) As Boolean
+  overload: System.ReadOnlySpan`1.op_Inequality*
+  nameWithType.vb: ReadOnlySpan(Of T).<>(ReadOnlySpan(Of T), ReadOnlySpan(Of T))
+  fullName.vb: System.ReadOnlySpan(Of T).<>(System.ReadOnlySpan(Of T), System.ReadOnlySpan(Of T))
+  name.vb: <>(ReadOnlySpan(Of T), ReadOnlySpan(Of T))
+- uid: System.ReadOnlySpan`1.op_Implicit(`0[])~System.ReadOnlySpan{`0}
+  commentId: M:System.ReadOnlySpan`1.op_Implicit(`0[])~System.ReadOnlySpan{`0}
+  id: op_Implicit(`0[])~System.ReadOnlySpan{`0}
+  parent: System.ReadOnlySpan`1
+  langs:
+  - csharp
+  - vb
+  name: implicit operator ReadOnlySpan<T>(T[])
+  nameWithType: ReadOnlySpan<T>.implicit operator ReadOnlySpan<T>(T[])
+  fullName: System.ReadOnlySpan<T>.implicit operator System.ReadOnlySpan<T>(T[])
+  type: Operator
+  assemblies:
+  - System.Memory
+  namespace: System
+  syntax:
+    content: public static implicit operator ReadOnlySpan<T>(T[] array)
+    parameters:
+    - id: array
+      type: '{T}[]'
+    return:
+      type: System.ReadOnlySpan`1
+    content.vb: Public Shared Widening Operator CType(array As T()) As ReadOnlySpan(Of T)
+  overload: System.ReadOnlySpan`1.op_Implicit*
+  nameWithType.vb: ReadOnlySpan(Of T).CType(T())
+  fullName.vb: System.ReadOnlySpan(Of T).CType(T())
+  name.vb: CType(T())
+- uid: System.ReadOnlySpan`1.op_Implicit(System.ArraySegment{`0})~System.ReadOnlySpan{`0}
+  commentId: M:System.ReadOnlySpan`1.op_Implicit(System.ArraySegment{`0})~System.ReadOnlySpan{`0}
+  id: op_Implicit(System.ArraySegment{`0})~System.ReadOnlySpan{`0}
+  parent: System.ReadOnlySpan`1
+  langs:
+  - csharp
+  - vb
+  name: implicit operator ReadOnlySpan<T>(ArraySegment<T>)
+  nameWithType: ReadOnlySpan<T>.implicit operator ReadOnlySpan<T>(ArraySegment<T>)
+  fullName: System.ReadOnlySpan<T>.implicit operator System.ReadOnlySpan<T>(System.ArraySegment<T>)
+  type: Operator
+  assemblies:
+  - System.Memory
+  namespace: System
+  syntax:
+    content: public static implicit operator ReadOnlySpan<T>(ArraySegment<T> segment)
+    parameters:
+    - id: segment
+      type: System.ArraySegment{{T}}
+    return:
+      type: System.ReadOnlySpan`1
+    content.vb: Public Shared Widening Operator CType(segment As ArraySegment(Of T)) As ReadOnlySpan(Of T)
+  overload: System.ReadOnlySpan`1.op_Implicit*
+  nameWithType.vb: ReadOnlySpan(Of T).CType(ArraySegment(Of T))
+  fullName.vb: System.ReadOnlySpan(Of T).CType(System.ArraySegment(Of T))
+  name.vb: CType(ArraySegment(Of T))
+- uid: System.ReadOnlySpan`1.GetEnumerator
+  commentId: M:System.ReadOnlySpan`1.GetEnumerator
+  id: GetEnumerator
+  parent: System.ReadOnlySpan`1
+  langs:
+  - csharp
+  - vb
+  name: GetEnumerator()
+  nameWithType: ReadOnlySpan<T>.GetEnumerator()
+  fullName: System.ReadOnlySpan<T>.GetEnumerator()
+  type: Method
+  assemblies:
+  - System.Memory
+  namespace: System
+  syntax:
+    content: public ReadOnlySpan<T>.Enumerator GetEnumerator()
+    return:
+      type: System.ReadOnlySpan`1.Enumerator
+    content.vb: Public Function GetEnumerator() As ReadOnlySpan(Of T).Enumerator
+  overload: System.ReadOnlySpan`1.GetEnumerator*
+  nameWithType.vb: ReadOnlySpan(Of T).GetEnumerator()
+  fullName.vb: System.ReadOnlySpan(Of T).GetEnumerator()
+- uid: System.ReadOnlySpan`1.#ctor(`0[])
+  commentId: M:System.ReadOnlySpan`1.#ctor(`0[])
+  id: '#ctor(`0[])'
+  parent: System.ReadOnlySpan`1
+  langs:
+  - csharp
+  - vb
+  name: ReadOnlySpan(T[])
+  nameWithType: ReadOnlySpan<T>.ReadOnlySpan(T[])
+  fullName: System.ReadOnlySpan<T>.ReadOnlySpan(T[])
+  type: Constructor
+  assemblies:
+  - System.Memory
+  namespace: System
+  example: []
+  syntax:
+    content: public ReadOnlySpan(T[] array)
+    parameters:
+    - id: array
+      type: '{T}[]'
+      description: ''
+    content.vb: Public Sub New(array As T())
+  overload: System.ReadOnlySpan`1.#ctor*
+  nameWithType.vb: ReadOnlySpan(Of T).New(T())
+  fullName.vb: System.ReadOnlySpan(Of T).New(T())
+  name.vb: New(T())
+- uid: System.ReadOnlySpan`1.#ctor(`0[],System.Int32,System.Int32)
+  commentId: M:System.ReadOnlySpan`1.#ctor(`0[],System.Int32,System.Int32)
+  id: '#ctor(`0[],System.Int32,System.Int32)'
+  parent: System.ReadOnlySpan`1
+  langs:
+  - csharp
+  - vb
+  name: ReadOnlySpan(T[], int, int)
+  nameWithType: ReadOnlySpan<T>.ReadOnlySpan(T[], int, int)
+  fullName: System.ReadOnlySpan<T>.ReadOnlySpan(T[], int, int)
+  type: Constructor
+  assemblies:
+  - System.Memory
+  namespace: System
+  example: []
+  syntax:
+    content: public ReadOnlySpan(T[] array, int start, int length)
+    parameters:
+    - id: array
+      type: '{T}[]'
+      description: ''
+    - id: start
+      type: System.Int32
+      description: ''
+    - id: length
+      type: System.Int32
+      description: ''
+    content.vb: Public Sub New(array As T(), start As Integer, length As Integer)
+  overload: System.ReadOnlySpan`1.#ctor*
+  nameWithType.vb: ReadOnlySpan(Of T).New(T(), Integer, Integer)
+  fullName.vb: System.ReadOnlySpan(Of T).New(T(), Integer, Integer)
+  name.vb: New(T(), Integer, Integer)
+- uid: System.ReadOnlySpan`1.#ctor(System.Void*,System.Int32)
+  commentId: M:System.ReadOnlySpan`1.#ctor(System.Void*,System.Int32)
+  id: '#ctor(System.Void*,System.Int32)'
+  parent: System.ReadOnlySpan`1
+  langs:
+  - csharp
+  - vb
+  name: ReadOnlySpan(void*, int)
+  nameWithType: ReadOnlySpan<T>.ReadOnlySpan(void*, int)
+  fullName: System.ReadOnlySpan<T>.ReadOnlySpan(void*, int)
+  type: Constructor
+  assemblies:
+  - System.Memory
+  namespace: System
+  example: []
+  syntax:
+    content: >-
+      [CLSCompliant(false)]
+
+      public ReadOnlySpan(void* pointer, int length)
+    parameters:
+    - id: pointer
+      type: System.Void*
+      description: ''
+    - id: length
+      type: System.Int32
+      description: ''
+    content.vb: >-
+      <CLSCompliant(False)>
+
+      Public Sub New(pointer As Void*, length As Integer)
+  overload: System.ReadOnlySpan`1.#ctor*
+  attributes:
+  - type: System.CLSCompliantAttribute
+    ctor: System.CLSCompliantAttribute.#ctor(System.Boolean)
+    arguments:
+    - type: System.Boolean
+      value: false
+  nameWithType.vb: ReadOnlySpan(Of T).New(Void*, Integer)
+  fullName.vb: System.ReadOnlySpan(Of T).New(Void*, Integer)
+  name.vb: New(Void*, Integer)
+- uid: System.ReadOnlySpan`1.CopyTo(System.Span{`0})
+  commentId: M:System.ReadOnlySpan`1.CopyTo(System.Span{`0})
+  id: CopyTo(System.Span{`0})
+  parent: System.ReadOnlySpan`1
+  langs:
+  - csharp
+  - vb
+  name: CopyTo(Span<T>)
+  nameWithType: ReadOnlySpan<T>.CopyTo(Span<T>)
+  fullName: System.ReadOnlySpan<T>.CopyTo(System.Span<T>)
+  type: Method
+  assemblies:
+  - System.Memory
+  namespace: System
+  example: []
+  syntax:
+    content: public void CopyTo(Span<T> destination)
+    parameters:
+    - id: destination
+      type: System.Span{{T}}
+      description: ''
+    content.vb: Public Sub CopyTo(destination As Span(Of T))
+  overload: System.ReadOnlySpan`1.CopyTo*
+  nameWithType.vb: ReadOnlySpan(Of T).CopyTo(Span(Of T))
+  fullName.vb: System.ReadOnlySpan(Of T).CopyTo(System.Span(Of T))
+  name.vb: CopyTo(Span(Of T))
+- uid: System.ReadOnlySpan`1.TryCopyTo(System.Span{`0})
+  commentId: M:System.ReadOnlySpan`1.TryCopyTo(System.Span{`0})
+  id: TryCopyTo(System.Span{`0})
+  parent: System.ReadOnlySpan`1
+  langs:
+  - csharp
+  - vb
+  name: TryCopyTo(Span<T>)
+  nameWithType: ReadOnlySpan<T>.TryCopyTo(Span<T>)
+  fullName: System.ReadOnlySpan<T>.TryCopyTo(System.Span<T>)
+  type: Method
+  assemblies:
+  - System.Memory
+  namespace: System
+  example: []
+  syntax:
+    content: public bool TryCopyTo(Span<T> destination)
+    parameters:
+    - id: destination
+      type: System.Span{{T}}
+      description: ''
+    return:
+      type: System.Boolean
+      description: ''
+    content.vb: Public Function TryCopyTo(destination As Span(Of T)) As Boolean
+  overload: System.ReadOnlySpan`1.TryCopyTo*
+  nameWithType.vb: ReadOnlySpan(Of T).TryCopyTo(Span(Of T))
+  fullName.vb: System.ReadOnlySpan(Of T).TryCopyTo(System.Span(Of T))
+  name.vb: TryCopyTo(Span(Of T))
+- uid: System.ReadOnlySpan`1.op_Equality(System.ReadOnlySpan{`0},System.ReadOnlySpan{`0})
+  commentId: M:System.ReadOnlySpan`1.op_Equality(System.ReadOnlySpan{`0},System.ReadOnlySpan{`0})
+  id: op_Equality(System.ReadOnlySpan{`0},System.ReadOnlySpan{`0})
+  parent: System.ReadOnlySpan`1
+  langs:
+  - csharp
+  - vb
+  name: operator ==(ReadOnlySpan<T>, ReadOnlySpan<T>)
+  nameWithType: ReadOnlySpan<T>.operator ==(ReadOnlySpan<T>, ReadOnlySpan<T>)
+  fullName: System.ReadOnlySpan<T>.operator ==(System.ReadOnlySpan<T>, System.ReadOnlySpan<T>)
+  type: Operator
+  assemblies:
+  - System.Memory
+  namespace: System
+  example: []
+  syntax:
+    content: public static bool operator ==(ReadOnlySpan<T> left, ReadOnlySpan<T> right)
+    parameters:
+    - id: left
+      type: System.ReadOnlySpan`1
+      description: ''
+    - id: right
+      type: System.ReadOnlySpan`1
+      description: ''
+    return:
+      type: System.Boolean
+      description: ''
+    content.vb: Public Shared Operator =(left As ReadOnlySpan(Of T), right As ReadOnlySpan(Of T)) As Boolean
+  overload: System.ReadOnlySpan`1.op_Equality*
+  nameWithType.vb: ReadOnlySpan(Of T).=(ReadOnlySpan(Of T), ReadOnlySpan(Of T))
+  fullName.vb: System.ReadOnlySpan(Of T).=(System.ReadOnlySpan(Of T), System.ReadOnlySpan(Of T))
+  name.vb: =(ReadOnlySpan(Of T), ReadOnlySpan(Of T))
+- uid: System.ReadOnlySpan`1.ToString
+  commentId: M:System.ReadOnlySpan`1.ToString
+  id: ToString
+  parent: System.ReadOnlySpan`1
+  langs:
+  - csharp
+  - vb
+  name: ToString()
+  nameWithType: ReadOnlySpan<T>.ToString()
+  fullName: System.ReadOnlySpan<T>.ToString()
+  type: Method
+  assemblies:
+  - System.Memory
+  namespace: System
+  example: []
+  syntax:
+    content: public override string ToString()
+    return:
+      type: System.String
+    content.vb: Public Overrides Function ToString() As String
+  overridden: System.ValueType.ToString
+  overload: System.ReadOnlySpan`1.ToString*
+  nameWithType.vb: ReadOnlySpan(Of T).ToString()
+  fullName.vb: System.ReadOnlySpan(Of T).ToString()
+- uid: System.ReadOnlySpan`1.Slice(System.Int32)
+  commentId: M:System.ReadOnlySpan`1.Slice(System.Int32)
+  id: Slice(System.Int32)
+  parent: System.ReadOnlySpan`1
+  langs:
+  - csharp
+  - vb
+  name: Slice(int)
+  nameWithType: ReadOnlySpan<T>.Slice(int)
+  fullName: System.ReadOnlySpan<T>.Slice(int)
+  type: Method
+  assemblies:
+  - System.Memory
+  namespace: System
+  example: []
+  syntax:
+    content: public ReadOnlySpan<T> Slice(int start)
+    parameters:
+    - id: start
+      type: System.Int32
+      description: ''
+    return:
+      type: System.ReadOnlySpan`1
+      description: ''
+    content.vb: Public Function Slice(start As Integer) As ReadOnlySpan(Of T)
+  overload: System.ReadOnlySpan`1.Slice*
+  nameWithType.vb: ReadOnlySpan(Of T).Slice(Integer)
+  fullName.vb: System.ReadOnlySpan(Of T).Slice(Integer)
+  name.vb: Slice(Integer)
+- uid: System.ReadOnlySpan`1.Slice(System.Int32,System.Int32)
+  commentId: M:System.ReadOnlySpan`1.Slice(System.Int32,System.Int32)
+  id: Slice(System.Int32,System.Int32)
+  parent: System.ReadOnlySpan`1
+  langs:
+  - csharp
+  - vb
+  name: Slice(int, int)
+  nameWithType: ReadOnlySpan<T>.Slice(int, int)
+  fullName: System.ReadOnlySpan<T>.Slice(int, int)
+  type: Method
+  assemblies:
+  - System.Memory
+  namespace: System
+  example: []
+  syntax:
+    content: public ReadOnlySpan<T> Slice(int start, int length)
+    parameters:
+    - id: start
+      type: System.Int32
+      description: ''
+    - id: length
+      type: System.Int32
+      description: ''
+    return:
+      type: System.ReadOnlySpan`1
+      description: ''
+    content.vb: Public Function Slice(start As Integer, length As Integer) As ReadOnlySpan(Of T)
+  overload: System.ReadOnlySpan`1.Slice*
+  nameWithType.vb: ReadOnlySpan(Of T).Slice(Integer, Integer)
+  fullName.vb: System.ReadOnlySpan(Of T).Slice(Integer, Integer)
+  name.vb: Slice(Integer, Integer)
+- uid: System.ReadOnlySpan`1.ToArray
+  commentId: M:System.ReadOnlySpan`1.ToArray
+  id: ToArray
+  parent: System.ReadOnlySpan`1
+  langs:
+  - csharp
+  - vb
+  name: ToArray()
+  nameWithType: ReadOnlySpan<T>.ToArray()
+  fullName: System.ReadOnlySpan<T>.ToArray()
+  type: Method
+  assemblies:
+  - System.Memory
+  namespace: System
+  example: []
+  syntax:
+    content: public T[] ToArray()
+    return:
+      type: '{T}[]'
+      description: ''
+    content.vb: Public Function ToArray() As T()
+  overload: System.ReadOnlySpan`1.ToArray*
+  nameWithType.vb: ReadOnlySpan(Of T).ToArray()
+  fullName.vb: System.ReadOnlySpan(Of T).ToArray()
+- uid: System.ReadOnlySpan`1.Length
+  commentId: P:System.ReadOnlySpan`1.Length
+  id: Length
+  parent: System.ReadOnlySpan`1
+  langs:
+  - csharp
+  - vb
+  name: Length
+  nameWithType: ReadOnlySpan<T>.Length
+  fullName: System.ReadOnlySpan<T>.Length
+  type: Property
+  assemblies:
+  - System.Memory
+  namespace: System
+  example: []
+  syntax:
+    content: public int Length { get; }
+    parameters: []
+    return:
+      type: System.Int32
+      description: ''
+    content.vb: Public ReadOnly Property Length As Integer
+  overload: System.ReadOnlySpan`1.Length*
+  nameWithType.vb: ReadOnlySpan(Of T).Length
+  fullName.vb: System.ReadOnlySpan(Of T).Length
+- uid: System.ReadOnlySpan`1.IsEmpty
+  commentId: P:System.ReadOnlySpan`1.IsEmpty
+  id: IsEmpty
+  parent: System.ReadOnlySpan`1
+  langs:
+  - csharp
+  - vb
+  name: IsEmpty
+  nameWithType: ReadOnlySpan<T>.IsEmpty
+  fullName: System.ReadOnlySpan<T>.IsEmpty
+  type: Property
+  assemblies:
+  - System.Memory
+  namespace: System
+  example: []
+  syntax:
+    content: public bool IsEmpty { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+      description: ''
+    content.vb: Public ReadOnly Property IsEmpty As Boolean
+  overload: System.ReadOnlySpan`1.IsEmpty*
+  nameWithType.vb: ReadOnlySpan(Of T).IsEmpty
+  fullName.vb: System.ReadOnlySpan(Of T).IsEmpty
+- uid: System.ReadOnlySpan`1.Empty
+  commentId: P:System.ReadOnlySpan`1.Empty
+  id: Empty
+  parent: System.ReadOnlySpan`1
+  langs:
+  - csharp
+  - vb
+  name: Empty
+  nameWithType: ReadOnlySpan<T>.Empty
+  fullName: System.ReadOnlySpan<T>.Empty
+  type: Property
+  assemblies:
+  - System.Memory
+  namespace: System
+  example: []
+  syntax:
+    content: public static ReadOnlySpan<T> Empty { get; }
+    parameters: []
+    return:
+      type: System.ReadOnlySpan`1
+      description: ''
+    content.vb: Public Shared ReadOnly Property Empty As ReadOnlySpan(Of T)
+  overload: System.ReadOnlySpan`1.Empty*
+  nameWithType.vb: ReadOnlySpan(Of T).Empty
+  fullName.vb: System.ReadOnlySpan(Of T).Empty
+- uid: System.ReadOnlySpan`1.Item(System.Int32)
+  commentId: P:System.ReadOnlySpan`1.Item(System.Int32)
+  id: Item(System.Int32)
+  parent: System.ReadOnlySpan`1
+  langs:
+  - csharp
+  - vb
+  name: this[int]
+  nameWithType: ReadOnlySpan<T>.this[int]
+  fullName: System.ReadOnlySpan<T>.this[int]
+  type: Property
+  assemblies:
+  - System.Memory
+  namespace: System
+  example: []
+  syntax:
+    content: public ref readonly T this[int index] { get; }
+    parameters:
+    - id: index
+      type: System.Int32
+      description: ''
+    return:
+      type: '{T}'
+      description: ''
+    content.vb: Public ReadOnly Default Property this[](index As Integer) As T
+  overload: System.ReadOnlySpan`1.Item*
+  nameWithType.vb: ReadOnlySpan(Of T).this[](Integer)
+  fullName.vb: System.ReadOnlySpan(Of T).this[](Integer)
+  name.vb: this[](Integer)
+references:
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.ValueType.Equals(System.Object)
+  commentId: M:System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  name: Equals(object)
+  nameWithType: ValueType.Equals(object)
+  fullName: System.ValueType.Equals(object)
+  nameWithType.vb: ValueType.Equals(Object)
+  fullName.vb: System.ValueType.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType.GetHashCode
+  commentId: M:System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  name: GetHashCode()
+  nameWithType: ValueType.GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.ReadOnlySpan`1.System.MemoryExtensions.BinarySearch``1(System.IComparable{{T}})
+  commentId: M:System.MemoryExtensions.BinarySearch``1(System.ReadOnlySpan{``0},System.IComparable{``0})
+  parent: System.MemoryExtensions
+  definition: System.MemoryExtensions.BinarySearch``1(System.ReadOnlySpan{``0},System.IComparable{``0})
+  href: System.MemoryExtensions.html#System_MemoryExtensions_BinarySearch__1_System_ReadOnlySpan___0__System_IComparable___0__
+  name: BinarySearch<T>(ReadOnlySpan<T>, IComparable<T>)
+  nameWithType: MemoryExtensions.BinarySearch<T>(ReadOnlySpan<T>, IComparable<T>)
+  fullName: System.MemoryExtensions.BinarySearch<T>(System.ReadOnlySpan<T>, System.IComparable<T>)
+  nameWithType.vb: MemoryExtensions.BinarySearch(Of T)(ReadOnlySpan(Of T), IComparable(Of T))
+  fullName.vb: System.MemoryExtensions.BinarySearch(Of T)(System.ReadOnlySpan(Of T), System.IComparable(Of T))
+  name.vb: BinarySearch(Of T)(ReadOnlySpan(Of T), IComparable(Of T))
+  spec.csharp:
+  - uid: System.MemoryExtensions.BinarySearch``1(System.ReadOnlySpan{`0},System.IComparable{`0})
+    name: BinarySearch
+    isExternal: true
+    href: System.MemoryExtensions.html#System_MemoryExtensions_BinarySearch__1_System_ReadOnlySpan___0__System_IComparable___0__
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: System.ReadOnlySpan`1
+    name: ReadOnlySpan
+    isExternal: true
+    href: System.ReadOnlySpan-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.IComparable`1
+    name: IComparable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.icomparable-1
+  - name: <
+  - name: T
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: System.MemoryExtensions.BinarySearch``1(System.ReadOnlySpan{`0},System.IComparable{`0})
+    name: BinarySearch
+    isExternal: true
+    href: System.MemoryExtensions.html#System_MemoryExtensions_BinarySearch__1_System_ReadOnlySpan___0__System_IComparable___0__
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: System.ReadOnlySpan`1
+    name: ReadOnlySpan
+    isExternal: true
+    href: System.ReadOnlySpan-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.IComparable`1
+    name: IComparable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.icomparable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: )
+- uid: System.ReadOnlySpan`1.System.MemoryExtensions.BinarySearch``2({TComparable})
+  commentId: M:System.MemoryExtensions.BinarySearch``2(System.ReadOnlySpan{``0},``1)
+  parent: System.MemoryExtensions
+  definition: System.MemoryExtensions.BinarySearch``2(System.ReadOnlySpan{``0},``1)
+  href: System.MemoryExtensions.html#System_MemoryExtensions_BinarySearch__2_System_ReadOnlySpan___0____1_
+  name: BinarySearch<T, TComparable>(ReadOnlySpan<T>, TComparable)
+  nameWithType: MemoryExtensions.BinarySearch<T, TComparable>(ReadOnlySpan<T>, TComparable)
+  fullName: System.MemoryExtensions.BinarySearch<T, TComparable>(System.ReadOnlySpan<T>, TComparable)
+  nameWithType.vb: MemoryExtensions.BinarySearch(Of T, TComparable)(ReadOnlySpan(Of T), TComparable)
+  fullName.vb: System.MemoryExtensions.BinarySearch(Of T, TComparable)(System.ReadOnlySpan(Of T), TComparable)
+  name.vb: BinarySearch(Of T, TComparable)(ReadOnlySpan(Of T), TComparable)
+  spec.csharp:
+  - uid: System.MemoryExtensions.BinarySearch``2(System.ReadOnlySpan{`0},``1)
+    name: BinarySearch
+    isExternal: true
+    href: System.MemoryExtensions.html#System_MemoryExtensions_BinarySearch__2_System_ReadOnlySpan___0____1_
+  - name: <
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TComparable
+  - name: '>'
+  - name: (
+  - uid: System.ReadOnlySpan`1
+    name: ReadOnlySpan
+    isExternal: true
+    href: System.ReadOnlySpan-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  - name: ','
+  - name: " "
+  - name: TComparable
+  - name: )
+  spec.vb:
+  - uid: System.MemoryExtensions.BinarySearch``2(System.ReadOnlySpan{`0},``1)
+    name: BinarySearch
+    isExternal: true
+    href: System.MemoryExtensions.html#System_MemoryExtensions_BinarySearch__2_System_ReadOnlySpan___0____1_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TComparable
+  - name: )
+  - name: (
+  - uid: System.ReadOnlySpan`1
+    name: ReadOnlySpan
+    isExternal: true
+    href: System.ReadOnlySpan-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: ','
+  - name: " "
+  - name: TComparable
+  - name: )
+- uid: System.ReadOnlySpan`1.System.MemoryExtensions.BinarySearch``2({T},{TComparer})
+  commentId: M:System.MemoryExtensions.BinarySearch``2(System.ReadOnlySpan{``0},``0,``1)
+  parent: System.MemoryExtensions
+  definition: System.MemoryExtensions.BinarySearch``2(System.ReadOnlySpan{``0},``0,``1)
+  href: System.MemoryExtensions.html#System_MemoryExtensions_BinarySearch__2_System_ReadOnlySpan___0____0___1_
+  name: BinarySearch<T, TComparer>(ReadOnlySpan<T>, T, TComparer)
+  nameWithType: MemoryExtensions.BinarySearch<T, TComparer>(ReadOnlySpan<T>, T, TComparer)
+  fullName: System.MemoryExtensions.BinarySearch<T, TComparer>(System.ReadOnlySpan<T>, T, TComparer)
+  nameWithType.vb: MemoryExtensions.BinarySearch(Of T, TComparer)(ReadOnlySpan(Of T), T, TComparer)
+  fullName.vb: System.MemoryExtensions.BinarySearch(Of T, TComparer)(System.ReadOnlySpan(Of T), T, TComparer)
+  name.vb: BinarySearch(Of T, TComparer)(ReadOnlySpan(Of T), T, TComparer)
+  spec.csharp:
+  - uid: System.MemoryExtensions.BinarySearch``2(System.ReadOnlySpan{`0},`0,``1)
+    name: BinarySearch
+    isExternal: true
+    href: System.MemoryExtensions.html#System_MemoryExtensions_BinarySearch__2_System_ReadOnlySpan___0____0___1_
+  - name: <
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TComparer
+  - name: '>'
+  - name: (
+  - uid: System.ReadOnlySpan`1
+    name: ReadOnlySpan
+    isExternal: true
+    href: System.ReadOnlySpan-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  - name: ','
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TComparer
+  - name: )
+  spec.vb:
+  - uid: System.MemoryExtensions.BinarySearch``2(System.ReadOnlySpan{`0},`0,``1)
+    name: BinarySearch
+    isExternal: true
+    href: System.MemoryExtensions.html#System_MemoryExtensions_BinarySearch__2_System_ReadOnlySpan___0____0___1_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TComparer
+  - name: )
+  - name: (
+  - uid: System.ReadOnlySpan`1
+    name: ReadOnlySpan
+    isExternal: true
+    href: System.ReadOnlySpan-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: ','
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TComparer
+  - name: )
+- uid: System.ReadOnlySpan`1.System.MemoryExtensions.Overlaps``1(System.ReadOnlySpan{{T}})
+  commentId: M:System.MemoryExtensions.Overlaps``1(System.ReadOnlySpan{``0},System.ReadOnlySpan{``0})
+  parent: System.MemoryExtensions
+  definition: System.MemoryExtensions.Overlaps``1(System.ReadOnlySpan{``0},System.ReadOnlySpan{``0})
+  href: System.MemoryExtensions.html#System_MemoryExtensions_Overlaps__1_System_ReadOnlySpan___0__System_ReadOnlySpan___0__
+  name: Overlaps<T>(ReadOnlySpan<T>, ReadOnlySpan<T>)
+  nameWithType: MemoryExtensions.Overlaps<T>(ReadOnlySpan<T>, ReadOnlySpan<T>)
+  fullName: System.MemoryExtensions.Overlaps<T>(System.ReadOnlySpan<T>, System.ReadOnlySpan<T>)
+  nameWithType.vb: MemoryExtensions.Overlaps(Of T)(ReadOnlySpan(Of T), ReadOnlySpan(Of T))
+  fullName.vb: System.MemoryExtensions.Overlaps(Of T)(System.ReadOnlySpan(Of T), System.ReadOnlySpan(Of T))
+  name.vb: Overlaps(Of T)(ReadOnlySpan(Of T), ReadOnlySpan(Of T))
+  spec.csharp:
+  - uid: System.MemoryExtensions.Overlaps``1(System.ReadOnlySpan{`0},System.ReadOnlySpan{`0})
+    name: Overlaps
+    isExternal: true
+    href: System.MemoryExtensions.html#System_MemoryExtensions_Overlaps__1_System_ReadOnlySpan___0__System_ReadOnlySpan___0__
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: System.ReadOnlySpan`1
+    name: ReadOnlySpan
+    isExternal: true
+    href: System.ReadOnlySpan-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.ReadOnlySpan`1
+    name: ReadOnlySpan
+    isExternal: true
+    href: System.ReadOnlySpan-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: System.MemoryExtensions.Overlaps``1(System.ReadOnlySpan{`0},System.ReadOnlySpan{`0})
+    name: Overlaps
+    isExternal: true
+    href: System.MemoryExtensions.html#System_MemoryExtensions_Overlaps__1_System_ReadOnlySpan___0__System_ReadOnlySpan___0__
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: System.ReadOnlySpan`1
+    name: ReadOnlySpan
+    isExternal: true
+    href: System.ReadOnlySpan-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.ReadOnlySpan`1
+    name: ReadOnlySpan
+    isExternal: true
+    href: System.ReadOnlySpan-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: )
+- uid: System.ReadOnlySpan`1.System.MemoryExtensions.Overlaps``1(System.ReadOnlySpan{{T}},System.Int32@)
+  commentId: M:System.MemoryExtensions.Overlaps``1(System.ReadOnlySpan{``0},System.ReadOnlySpan{``0},System.Int32@)
+  parent: System.MemoryExtensions
+  definition: System.MemoryExtensions.Overlaps``1(System.ReadOnlySpan{``0},System.ReadOnlySpan{``0},System.Int32@)
+  href: System.MemoryExtensions.html#System_MemoryExtensions_Overlaps__1_System_ReadOnlySpan___0__System_ReadOnlySpan___0__System_Int32__
+  name: Overlaps<T>(ReadOnlySpan<T>, ReadOnlySpan<T>, out int)
+  nameWithType: MemoryExtensions.Overlaps<T>(ReadOnlySpan<T>, ReadOnlySpan<T>, out int)
+  fullName: System.MemoryExtensions.Overlaps<T>(System.ReadOnlySpan<T>, System.ReadOnlySpan<T>, out int)
+  nameWithType.vb: MemoryExtensions.Overlaps(Of T)(ReadOnlySpan(Of T), ReadOnlySpan(Of T), Integer)
+  fullName.vb: System.MemoryExtensions.Overlaps(Of T)(System.ReadOnlySpan(Of T), System.ReadOnlySpan(Of T), Integer)
+  name.vb: Overlaps(Of T)(ReadOnlySpan(Of T), ReadOnlySpan(Of T), Integer)
+  spec.csharp:
+  - uid: System.MemoryExtensions.Overlaps``1(System.ReadOnlySpan{`0},System.ReadOnlySpan{`0},System.Int32@)
+    name: Overlaps
+    isExternal: true
+    href: System.MemoryExtensions.html#System_MemoryExtensions_Overlaps__1_System_ReadOnlySpan___0__System_ReadOnlySpan___0__System_Int32__
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: System.ReadOnlySpan`1
+    name: ReadOnlySpan
+    isExternal: true
+    href: System.ReadOnlySpan-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.ReadOnlySpan`1
+    name: ReadOnlySpan
+    isExternal: true
+    href: System.ReadOnlySpan-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  - name: ','
+  - name: " "
+  - name: out
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: System.MemoryExtensions.Overlaps``1(System.ReadOnlySpan{`0},System.ReadOnlySpan{`0},System.Int32@)
+    name: Overlaps
+    isExternal: true
+    href: System.MemoryExtensions.html#System_MemoryExtensions_Overlaps__1_System_ReadOnlySpan___0__System_ReadOnlySpan___0__System_Int32__
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: System.ReadOnlySpan`1
+    name: ReadOnlySpan
+    isExternal: true
+    href: System.ReadOnlySpan-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.ReadOnlySpan`1
+    name: ReadOnlySpan
+    isExternal: true
+    href: System.ReadOnlySpan-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: System.ValueType
+  commentId: T:System.ValueType
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype
+  name: ValueType
+  nameWithType: ValueType
+  fullName: System.ValueType
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.MemoryExtensions.BinarySearch``1(System.ReadOnlySpan{``0},System.IComparable{``0})
+  commentId: M:System.MemoryExtensions.BinarySearch``1(System.ReadOnlySpan{``0},System.IComparable{``0})
+  isExternal: true
+  href: System.MemoryExtensions.html#System_MemoryExtensions_BinarySearch__1_System_ReadOnlySpan___0__System_IComparable___0__
+  name: BinarySearch<T>(ReadOnlySpan<T>, IComparable<T>)
+  nameWithType: MemoryExtensions.BinarySearch<T>(ReadOnlySpan<T>, IComparable<T>)
+  fullName: System.MemoryExtensions.BinarySearch<T>(System.ReadOnlySpan<T>, System.IComparable<T>)
+  nameWithType.vb: MemoryExtensions.BinarySearch(Of T)(ReadOnlySpan(Of T), IComparable(Of T))
+  fullName.vb: System.MemoryExtensions.BinarySearch(Of T)(System.ReadOnlySpan(Of T), System.IComparable(Of T))
+  name.vb: BinarySearch(Of T)(ReadOnlySpan(Of T), IComparable(Of T))
+  spec.csharp:
+  - uid: System.MemoryExtensions.BinarySearch``1(System.ReadOnlySpan{``0},System.IComparable{``0})
+    name: BinarySearch
+    isExternal: true
+    href: System.MemoryExtensions.html#System_MemoryExtensions_BinarySearch__1_System_ReadOnlySpan___0__System_IComparable___0__
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: System.ReadOnlySpan`1
+    name: ReadOnlySpan
+    isExternal: true
+    href: System.ReadOnlySpan-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.IComparable`1
+    name: IComparable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.icomparable-1
+  - name: <
+  - name: T
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: System.MemoryExtensions.BinarySearch``1(System.ReadOnlySpan{``0},System.IComparable{``0})
+    name: BinarySearch
+    isExternal: true
+    href: System.MemoryExtensions.html#System_MemoryExtensions_BinarySearch__1_System_ReadOnlySpan___0__System_IComparable___0__
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: System.ReadOnlySpan`1
+    name: ReadOnlySpan
+    isExternal: true
+    href: System.ReadOnlySpan-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.IComparable`1
+    name: IComparable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.icomparable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: )
+- uid: System.MemoryExtensions
+  commentId: T:System.MemoryExtensions
+  parent: System
+  isExternal: true
+  href: System.MemoryExtensions.html
+  name: MemoryExtensions
+  nameWithType: MemoryExtensions
+  fullName: System.MemoryExtensions
+- uid: System.MemoryExtensions.BinarySearch``2(System.ReadOnlySpan{``0},``1)
+  commentId: M:System.MemoryExtensions.BinarySearch``2(System.ReadOnlySpan{``0},``1)
+  isExternal: true
+  href: System.MemoryExtensions.html#System_MemoryExtensions_BinarySearch__2_System_ReadOnlySpan___0____1_
+  name: BinarySearch<T, TComparable>(ReadOnlySpan<T>, TComparable)
+  nameWithType: MemoryExtensions.BinarySearch<T, TComparable>(ReadOnlySpan<T>, TComparable)
+  fullName: System.MemoryExtensions.BinarySearch<T, TComparable>(System.ReadOnlySpan<T>, TComparable)
+  nameWithType.vb: MemoryExtensions.BinarySearch(Of T, TComparable)(ReadOnlySpan(Of T), TComparable)
+  fullName.vb: System.MemoryExtensions.BinarySearch(Of T, TComparable)(System.ReadOnlySpan(Of T), TComparable)
+  name.vb: BinarySearch(Of T, TComparable)(ReadOnlySpan(Of T), TComparable)
+  spec.csharp:
+  - uid: System.MemoryExtensions.BinarySearch``2(System.ReadOnlySpan{``0},``1)
+    name: BinarySearch
+    isExternal: true
+    href: System.MemoryExtensions.html#System_MemoryExtensions_BinarySearch__2_System_ReadOnlySpan___0____1_
+  - name: <
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TComparable
+  - name: '>'
+  - name: (
+  - uid: System.ReadOnlySpan`1
+    name: ReadOnlySpan
+    isExternal: true
+    href: System.ReadOnlySpan-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  - name: ','
+  - name: " "
+  - name: TComparable
+  - name: )
+  spec.vb:
+  - uid: System.MemoryExtensions.BinarySearch``2(System.ReadOnlySpan{``0},``1)
+    name: BinarySearch
+    isExternal: true
+    href: System.MemoryExtensions.html#System_MemoryExtensions_BinarySearch__2_System_ReadOnlySpan___0____1_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TComparable
+  - name: )
+  - name: (
+  - uid: System.ReadOnlySpan`1
+    name: ReadOnlySpan
+    isExternal: true
+    href: System.ReadOnlySpan-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: ','
+  - name: " "
+  - name: TComparable
+  - name: )
+- uid: System.MemoryExtensions.BinarySearch``2(System.ReadOnlySpan{``0},``0,``1)
+  commentId: M:System.MemoryExtensions.BinarySearch``2(System.ReadOnlySpan{``0},``0,``1)
+  isExternal: true
+  href: System.MemoryExtensions.html#System_MemoryExtensions_BinarySearch__2_System_ReadOnlySpan___0____0___1_
+  name: BinarySearch<T, TComparer>(ReadOnlySpan<T>, T, TComparer)
+  nameWithType: MemoryExtensions.BinarySearch<T, TComparer>(ReadOnlySpan<T>, T, TComparer)
+  fullName: System.MemoryExtensions.BinarySearch<T, TComparer>(System.ReadOnlySpan<T>, T, TComparer)
+  nameWithType.vb: MemoryExtensions.BinarySearch(Of T, TComparer)(ReadOnlySpan(Of T), T, TComparer)
+  fullName.vb: System.MemoryExtensions.BinarySearch(Of T, TComparer)(System.ReadOnlySpan(Of T), T, TComparer)
+  name.vb: BinarySearch(Of T, TComparer)(ReadOnlySpan(Of T), T, TComparer)
+  spec.csharp:
+  - uid: System.MemoryExtensions.BinarySearch``2(System.ReadOnlySpan{``0},``0,``1)
+    name: BinarySearch
+    isExternal: true
+    href: System.MemoryExtensions.html#System_MemoryExtensions_BinarySearch__2_System_ReadOnlySpan___0____0___1_
+  - name: <
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TComparer
+  - name: '>'
+  - name: (
+  - uid: System.ReadOnlySpan`1
+    name: ReadOnlySpan
+    isExternal: true
+    href: System.ReadOnlySpan-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  - name: ','
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TComparer
+  - name: )
+  spec.vb:
+  - uid: System.MemoryExtensions.BinarySearch``2(System.ReadOnlySpan{``0},``0,``1)
+    name: BinarySearch
+    isExternal: true
+    href: System.MemoryExtensions.html#System_MemoryExtensions_BinarySearch__2_System_ReadOnlySpan___0____0___1_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TComparer
+  - name: )
+  - name: (
+  - uid: System.ReadOnlySpan`1
+    name: ReadOnlySpan
+    isExternal: true
+    href: System.ReadOnlySpan-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: ','
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TComparer
+  - name: )
+- uid: System.MemoryExtensions.Overlaps``1(System.ReadOnlySpan{``0},System.ReadOnlySpan{``0})
+  commentId: M:System.MemoryExtensions.Overlaps``1(System.ReadOnlySpan{``0},System.ReadOnlySpan{``0})
+  isExternal: true
+  href: System.MemoryExtensions.html#System_MemoryExtensions_Overlaps__1_System_ReadOnlySpan___0__System_ReadOnlySpan___0__
+  name: Overlaps<T>(ReadOnlySpan<T>, ReadOnlySpan<T>)
+  nameWithType: MemoryExtensions.Overlaps<T>(ReadOnlySpan<T>, ReadOnlySpan<T>)
+  fullName: System.MemoryExtensions.Overlaps<T>(System.ReadOnlySpan<T>, System.ReadOnlySpan<T>)
+  nameWithType.vb: MemoryExtensions.Overlaps(Of T)(ReadOnlySpan(Of T), ReadOnlySpan(Of T))
+  fullName.vb: System.MemoryExtensions.Overlaps(Of T)(System.ReadOnlySpan(Of T), System.ReadOnlySpan(Of T))
+  name.vb: Overlaps(Of T)(ReadOnlySpan(Of T), ReadOnlySpan(Of T))
+  spec.csharp:
+  - uid: System.MemoryExtensions.Overlaps``1(System.ReadOnlySpan{``0},System.ReadOnlySpan{``0})
+    name: Overlaps
+    isExternal: true
+    href: System.MemoryExtensions.html#System_MemoryExtensions_Overlaps__1_System_ReadOnlySpan___0__System_ReadOnlySpan___0__
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: System.ReadOnlySpan`1
+    name: ReadOnlySpan
+    isExternal: true
+    href: System.ReadOnlySpan-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.ReadOnlySpan`1
+    name: ReadOnlySpan
+    isExternal: true
+    href: System.ReadOnlySpan-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: System.MemoryExtensions.Overlaps``1(System.ReadOnlySpan{``0},System.ReadOnlySpan{``0})
+    name: Overlaps
+    isExternal: true
+    href: System.MemoryExtensions.html#System_MemoryExtensions_Overlaps__1_System_ReadOnlySpan___0__System_ReadOnlySpan___0__
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: System.ReadOnlySpan`1
+    name: ReadOnlySpan
+    isExternal: true
+    href: System.ReadOnlySpan-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.ReadOnlySpan`1
+    name: ReadOnlySpan
+    isExternal: true
+    href: System.ReadOnlySpan-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: )
+- uid: System.MemoryExtensions.Overlaps``1(System.ReadOnlySpan{``0},System.ReadOnlySpan{``0},System.Int32@)
+  commentId: M:System.MemoryExtensions.Overlaps``1(System.ReadOnlySpan{``0},System.ReadOnlySpan{``0},System.Int32@)
+  isExternal: true
+  href: System.MemoryExtensions.html#System_MemoryExtensions_Overlaps__1_System_ReadOnlySpan___0__System_ReadOnlySpan___0__System_Int32__
+  name: Overlaps<T>(ReadOnlySpan<T>, ReadOnlySpan<T>, out int)
+  nameWithType: MemoryExtensions.Overlaps<T>(ReadOnlySpan<T>, ReadOnlySpan<T>, out int)
+  fullName: System.MemoryExtensions.Overlaps<T>(System.ReadOnlySpan<T>, System.ReadOnlySpan<T>, out int)
+  nameWithType.vb: MemoryExtensions.Overlaps(Of T)(ReadOnlySpan(Of T), ReadOnlySpan(Of T), Integer)
+  fullName.vb: System.MemoryExtensions.Overlaps(Of T)(System.ReadOnlySpan(Of T), System.ReadOnlySpan(Of T), Integer)
+  name.vb: Overlaps(Of T)(ReadOnlySpan(Of T), ReadOnlySpan(Of T), Integer)
+  spec.csharp:
+  - uid: System.MemoryExtensions.Overlaps``1(System.ReadOnlySpan{``0},System.ReadOnlySpan{``0},System.Int32@)
+    name: Overlaps
+    isExternal: true
+    href: System.MemoryExtensions.html#System_MemoryExtensions_Overlaps__1_System_ReadOnlySpan___0__System_ReadOnlySpan___0__System_Int32__
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: System.ReadOnlySpan`1
+    name: ReadOnlySpan
+    isExternal: true
+    href: System.ReadOnlySpan-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.ReadOnlySpan`1
+    name: ReadOnlySpan
+    isExternal: true
+    href: System.ReadOnlySpan-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  - name: ','
+  - name: " "
+  - name: out
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: System.MemoryExtensions.Overlaps``1(System.ReadOnlySpan{``0},System.ReadOnlySpan{``0},System.Int32@)
+    name: Overlaps
+    isExternal: true
+    href: System.MemoryExtensions.html#System_MemoryExtensions_Overlaps__1_System_ReadOnlySpan___0__System_ReadOnlySpan___0__System_Int32__
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: System.ReadOnlySpan`1
+    name: ReadOnlySpan
+    isExternal: true
+    href: System.ReadOnlySpan-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.ReadOnlySpan`1
+    name: ReadOnlySpan
+    isExternal: true
+    href: System.ReadOnlySpan-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: System.ReadOnlySpan`1.op_Inequality*
+  commentId: Overload:System.ReadOnlySpan`1.op_Inequality
+  isExternal: true
+  href: System.ReadOnlySpan-1.html#System_ReadOnlySpan_1_op_Inequality_System_ReadOnlySpan__0__System_ReadOnlySpan__0__
+  name: operator !=
+  nameWithType: ReadOnlySpan<T>.operator !=
+  fullName: System.ReadOnlySpan<T>.operator !=
+  nameWithType.vb: ReadOnlySpan(Of T).<>
+  fullName.vb: System.ReadOnlySpan(Of T).<>
+  name.vb: <>
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: System.ReadOnlySpan`1.op_Inequality*
+    name: '!='
+    isExternal: true
+    href: System.ReadOnlySpan-1.html#System_ReadOnlySpan_1_op_Inequality_System_ReadOnlySpan__0__System_ReadOnlySpan__0__
+- uid: System.ReadOnlySpan`1
+  commentId: T:System.ReadOnlySpan`1
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  name: ReadOnlySpan<T>
+  nameWithType: ReadOnlySpan<T>
+  fullName: System.ReadOnlySpan<T>
+  nameWithType.vb: ReadOnlySpan(Of T)
+  fullName.vb: System.ReadOnlySpan(Of T)
+  name.vb: ReadOnlySpan(Of T)
+  spec.csharp:
+  - uid: System.ReadOnlySpan`1
+    name: ReadOnlySpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.ReadOnlySpan`1
+    name: ReadOnlySpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System.ReadOnlySpan`1.op_Implicit*
+  commentId: Overload:System.ReadOnlySpan`1.op_Implicit
+  name: implicit operator
+  nameWithType: ReadOnlySpan<T>.implicit operator
+  fullName: System.ReadOnlySpan<T>.implicit operator
+  nameWithType.vb: ReadOnlySpan(Of T).CType
+  fullName.vb: System.ReadOnlySpan(Of T).CType
+  name.vb: CType
+  spec.csharp:
+  - name: implicit
+  - name: " "
+  - name: operator
+- uid: '{T}[]'
+  isExternal: true
+  name: T[]
+  nameWithType: T[]
+  fullName: T[]
+  nameWithType.vb: T()
+  fullName.vb: T()
+  name.vb: T()
+  spec.csharp:
+  - name: T
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - name: T
+  - name: (
+  - name: )
+- uid: System.ArraySegment{{T}}
+  commentId: T:System.ArraySegment{`0}
+  parent: System
+  definition: System.ArraySegment`1
+  href: https://learn.microsoft.com/dotnet/api/system.arraysegment-1
+  name: ArraySegment<T>
+  nameWithType: ArraySegment<T>
+  fullName: System.ArraySegment<T>
+  nameWithType.vb: ArraySegment(Of T)
+  fullName.vb: System.ArraySegment(Of T)
+  name.vb: ArraySegment(Of T)
+  spec.csharp:
+  - uid: System.ArraySegment`1
+    name: ArraySegment
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.arraysegment-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.ArraySegment`1
+    name: ArraySegment
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.arraysegment-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.ArraySegment`1
+  commentId: T:System.ArraySegment`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.arraysegment-1
+  name: ArraySegment<T>
+  nameWithType: ArraySegment<T>
+  fullName: System.ArraySegment<T>
+  nameWithType.vb: ArraySegment(Of T)
+  fullName.vb: System.ArraySegment(Of T)
+  name.vb: ArraySegment(Of T)
+  spec.csharp:
+  - uid: System.ArraySegment`1
+    name: ArraySegment
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.arraysegment-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.ArraySegment`1
+    name: ArraySegment
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.arraysegment-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.ReadOnlySpan`1.GetEnumerator*
+  commentId: Overload:System.ReadOnlySpan`1.GetEnumerator
+  isExternal: true
+  href: System.ReadOnlySpan-1.html#System_ReadOnlySpan_1_GetEnumerator
+  name: GetEnumerator
+  nameWithType: ReadOnlySpan<T>.GetEnumerator
+  fullName: System.ReadOnlySpan<T>.GetEnumerator
+  nameWithType.vb: ReadOnlySpan(Of T).GetEnumerator
+  fullName.vb: System.ReadOnlySpan(Of T).GetEnumerator
+- uid: System.ReadOnlySpan`1.Enumerator
+  commentId: T:System.ReadOnlySpan`1.Enumerator
+  parent: System
+  isExternal: true
+  href: System.ReadOnlySpan-1.html
+  name: ReadOnlySpan<T>.Enumerator
+  nameWithType: ReadOnlySpan<T>.Enumerator
+  fullName: System.ReadOnlySpan<T>.Enumerator
+  nameWithType.vb: ReadOnlySpan(Of T).Enumerator
+  fullName.vb: System.ReadOnlySpan(Of T).Enumerator
+  name.vb: ReadOnlySpan(Of T).Enumerator
+  spec.csharp:
+  - uid: System.ReadOnlySpan`1
+    name: ReadOnlySpan
+    isExternal: true
+    href: System.ReadOnlySpan-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  - name: .
+  - uid: System.ReadOnlySpan`1.Enumerator
+    name: Enumerator
+    isExternal: true
+    href: System.ReadOnlySpan-1.Enumerator.html
+  spec.vb:
+  - uid: System.ReadOnlySpan`1
+    name: ReadOnlySpan
+    isExternal: true
+    href: System.ReadOnlySpan-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: .
+  - uid: System.ReadOnlySpan`1.Enumerator
+    name: Enumerator
+    isExternal: true
+    href: System.ReadOnlySpan-1.Enumerator.html
+- uid: System.ReadOnlySpan`1.#ctor*
+  commentId: Overload:System.ReadOnlySpan`1.#ctor
+  isExternal: true
+  href: System.ReadOnlySpan-1.html#System_ReadOnlySpan_1__ctor__0___
+  name: ReadOnlySpan
+  nameWithType: ReadOnlySpan<T>.ReadOnlySpan
+  fullName: System.ReadOnlySpan<T>.ReadOnlySpan
+  nameWithType.vb: ReadOnlySpan(Of T).New
+  fullName.vb: System.ReadOnlySpan(Of T).New
+  name.vb: New
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.Void*
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.void
+  name: void*
+  nameWithType: void*
+  fullName: void*
+  nameWithType.vb: Void*
+  fullName.vb: Void*
+  name.vb: Void*
+  spec.csharp:
+  - uid: System.Void
+    name: void
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.void
+  - name: '*'
+  spec.vb:
+  - uid: System.Void
+    name: Void
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.void
+  - name: '*'
+- uid: System.ReadOnlySpan`1.CopyTo*
+  commentId: Overload:System.ReadOnlySpan`1.CopyTo
+  isExternal: true
+  href: System.ReadOnlySpan-1.html#System_ReadOnlySpan_1_CopyTo_System_Span__0__
+  name: CopyTo
+  nameWithType: ReadOnlySpan<T>.CopyTo
+  fullName: System.ReadOnlySpan<T>.CopyTo
+  nameWithType.vb: ReadOnlySpan(Of T).CopyTo
+  fullName.vb: System.ReadOnlySpan(Of T).CopyTo
+- uid: System.Span{{T}}
+  commentId: T:System.Span{`0}
+  parent: System
+  definition: System.Span`1
+  href: System.Span-1.html
+  name: Span<T>
+  nameWithType: Span<T>
+  fullName: System.Span<T>
+  nameWithType.vb: Span(Of T)
+  fullName.vb: System.Span(Of T)
+  name.vb: Span(Of T)
+  spec.csharp:
+  - uid: System.Span`1
+    name: Span
+    isExternal: true
+    href: System.Span-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Span`1
+    name: Span
+    isExternal: true
+    href: System.Span-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Span`1
+  commentId: T:System.Span`1
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.span-1
+  name: Span<T>
+  nameWithType: Span<T>
+  fullName: System.Span<T>
+  nameWithType.vb: Span(Of T)
+  fullName.vb: System.Span(Of T)
+  name.vb: Span(Of T)
+  spec.csharp:
+  - uid: System.Span`1
+    name: Span
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.span-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Span`1
+    name: Span
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.span-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.ReadOnlySpan`1.TryCopyTo*
+  commentId: Overload:System.ReadOnlySpan`1.TryCopyTo
+  isExternal: true
+  href: System.ReadOnlySpan-1.html#System_ReadOnlySpan_1_TryCopyTo_System_Span__0__
+  name: TryCopyTo
+  nameWithType: ReadOnlySpan<T>.TryCopyTo
+  fullName: System.ReadOnlySpan<T>.TryCopyTo
+  nameWithType.vb: ReadOnlySpan(Of T).TryCopyTo
+  fullName.vb: System.ReadOnlySpan(Of T).TryCopyTo
+- uid: System.ReadOnlySpan`1.op_Equality*
+  commentId: Overload:System.ReadOnlySpan`1.op_Equality
+  isExternal: true
+  href: System.ReadOnlySpan-1.html#System_ReadOnlySpan_1_op_Equality_System_ReadOnlySpan__0__System_ReadOnlySpan__0__
+  name: operator ==
+  nameWithType: ReadOnlySpan<T>.operator ==
+  fullName: System.ReadOnlySpan<T>.operator ==
+  nameWithType.vb: ReadOnlySpan(Of T).=
+  fullName.vb: System.ReadOnlySpan(Of T).=
+  name.vb: =
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: System.ReadOnlySpan`1.op_Equality*
+    name: ==
+    isExternal: true
+    href: System.ReadOnlySpan-1.html#System_ReadOnlySpan_1_op_Equality_System_ReadOnlySpan__0__System_ReadOnlySpan__0__
+- uid: System.ValueType.ToString
+  commentId: M:System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  name: ToString()
+  nameWithType: ValueType.ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+- uid: System.ReadOnlySpan`1.ToString*
+  commentId: Overload:System.ReadOnlySpan`1.ToString
+  isExternal: true
+  href: System.ReadOnlySpan-1.html#System_ReadOnlySpan_1_ToString
+  name: ToString
+  nameWithType: ReadOnlySpan<T>.ToString
+  fullName: System.ReadOnlySpan<T>.ToString
+  nameWithType.vb: ReadOnlySpan(Of T).ToString
+  fullName.vb: System.ReadOnlySpan(Of T).ToString
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.ReadOnlySpan`1.Slice*
+  commentId: Overload:System.ReadOnlySpan`1.Slice
+  isExternal: true
+  href: System.ReadOnlySpan-1.html#System_ReadOnlySpan_1_Slice_System_Int32_
+  name: Slice
+  nameWithType: ReadOnlySpan<T>.Slice
+  fullName: System.ReadOnlySpan<T>.Slice
+  nameWithType.vb: ReadOnlySpan(Of T).Slice
+  fullName.vb: System.ReadOnlySpan(Of T).Slice
+- uid: System.ReadOnlySpan`1.ToArray*
+  commentId: Overload:System.ReadOnlySpan`1.ToArray
+  isExternal: true
+  href: System.ReadOnlySpan-1.html#System_ReadOnlySpan_1_ToArray
+  name: ToArray
+  nameWithType: ReadOnlySpan<T>.ToArray
+  fullName: System.ReadOnlySpan<T>.ToArray
+  nameWithType.vb: ReadOnlySpan(Of T).ToArray
+  fullName.vb: System.ReadOnlySpan(Of T).ToArray
+- uid: System.ReadOnlySpan`1.Length*
+  commentId: Overload:System.ReadOnlySpan`1.Length
+  isExternal: true
+  href: System.ReadOnlySpan-1.html#System_ReadOnlySpan_1_Length
+  name: Length
+  nameWithType: ReadOnlySpan<T>.Length
+  fullName: System.ReadOnlySpan<T>.Length
+  nameWithType.vb: ReadOnlySpan(Of T).Length
+  fullName.vb: System.ReadOnlySpan(Of T).Length
+- uid: System.ReadOnlySpan`1.IsEmpty*
+  commentId: Overload:System.ReadOnlySpan`1.IsEmpty
+  isExternal: true
+  href: System.ReadOnlySpan-1.html#System_ReadOnlySpan_1_IsEmpty
+  name: IsEmpty
+  nameWithType: ReadOnlySpan<T>.IsEmpty
+  fullName: System.ReadOnlySpan<T>.IsEmpty
+  nameWithType.vb: ReadOnlySpan(Of T).IsEmpty
+  fullName.vb: System.ReadOnlySpan(Of T).IsEmpty
+- uid: System.ReadOnlySpan`1.Empty*
+  commentId: Overload:System.ReadOnlySpan`1.Empty
+  isExternal: true
+  href: System.ReadOnlySpan-1.html#System_ReadOnlySpan_1_Empty
+  name: Empty
+  nameWithType: ReadOnlySpan<T>.Empty
+  fullName: System.ReadOnlySpan<T>.Empty
+  nameWithType.vb: ReadOnlySpan(Of T).Empty
+  fullName.vb: System.ReadOnlySpan(Of T).Empty
+- uid: System.ReadOnlySpan`1.Item*
+  commentId: Overload:System.ReadOnlySpan`1.Item
+  isExternal: true
+  href: System.ReadOnlySpan-1.html#System_ReadOnlySpan_1_Item_System_Int32_
+  name: this
+  nameWithType: ReadOnlySpan<T>.this
+  fullName: System.ReadOnlySpan<T>.this
+  nameWithType.vb: ReadOnlySpan(Of T).this[]
+  fullName.vb: System.ReadOnlySpan(Of T).this[]
+  name.vb: this[]
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: T
+  name: T
+  nameWithType: T
+  fullName: T

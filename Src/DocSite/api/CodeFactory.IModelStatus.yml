@@ -1,0 +1,256 @@
+### YamlMime:ManagedReference
+items:
+- uid: CodeFactory.IModelStatus
+  commentId: T:CodeFactory.IModelStatus
+  id: IModelStatus
+  parent: CodeFactory
+  children:
+  - CodeFactory.IModelStatus.GetErrors
+  - CodeFactory.IModelStatus.HasErrors
+  - CodeFactory.IModelStatus.IsLoaded
+  langs:
+  - csharp
+  - vb
+  name: IModelStatus
+  nameWithType: IModelStatus
+  fullName: CodeFactory.IModelStatus
+  type: Interface
+  source:
+    href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/19e816ffdf1ba504be6987736bbac42e2d241405/Src/CodeFactoryForWindows/CodeFactory/IModelStatus.cs
+  assemblies:
+  - CodeFactory
+  namespace: CodeFactory
+  summary: Status information about a code factory model that has been created.
+  example: []
+  syntax:
+    content: public interface IModelStatus
+    content.vb: Public Interface IModelStatus
+- uid: CodeFactory.IModelStatus.GetErrors
+  commentId: M:CodeFactory.IModelStatus.GetErrors
+  id: GetErrors
+  parent: CodeFactory.IModelStatus
+  langs:
+  - csharp
+  - vb
+  name: GetErrors()
+  nameWithType: IModelStatus.GetErrors()
+  fullName: CodeFactory.IModelStatus.GetErrors()
+  type: Method
+  source:
+    href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/19e816ffdf1ba504be6987736bbac42e2d241405/Src/CodeFactoryForWindows/CodeFactory/IModelStatus.cs
+  assemblies:
+  - CodeFactory
+  namespace: CodeFactory
+  summary: Gets the <xref href="CodeFactory.ModelLoadException" data-throw-if-not-resolved="false"></xref> from the current model and all child models of this model.
+  example: []
+  syntax:
+    content: IReadOnlyList<ModelLoadException> GetErrors()
+    return:
+      type: System.Collections.Generic.IReadOnlyList{CodeFactory.ModelLoadException}
+      description: Returns a <xref href="System.Collections.Generic.IReadOnlyList%601" data-throw-if-not-resolved="false"></xref> of the <xref href="CodeFactory.ModelLoadException" data-throw-if-not-resolved="false"></xref> exceptions or an empty list if no exceptions exist.
+    content.vb: Function GetErrors() As IReadOnlyList(Of ModelLoadException)
+  overload: CodeFactory.IModelStatus.GetErrors*
+- uid: CodeFactory.IModelStatus.IsLoaded
+  commentId: P:CodeFactory.IModelStatus.IsLoaded
+  id: IsLoaded
+  parent: CodeFactory.IModelStatus
+  langs:
+  - csharp
+  - vb
+  name: IsLoaded
+  nameWithType: IModelStatus.IsLoaded
+  fullName: CodeFactory.IModelStatus.IsLoaded
+  type: Property
+  source:
+    href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/19e816ffdf1ba504be6987736bbac42e2d241405/Src/CodeFactoryForWindows/CodeFactory/IModelStatus.cs
+  assemblies:
+  - CodeFactory
+  namespace: CodeFactory
+  summary: Flag that determines if this model was able to load.
+  example: []
+  syntax:
+    content: bool IsLoaded { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: ReadOnly Property IsLoaded As Boolean
+  overload: CodeFactory.IModelStatus.IsLoaded*
+- uid: CodeFactory.IModelStatus.HasErrors
+  commentId: P:CodeFactory.IModelStatus.HasErrors
+  id: HasErrors
+  parent: CodeFactory.IModelStatus
+  langs:
+  - csharp
+  - vb
+  name: HasErrors
+  nameWithType: IModelStatus.HasErrors
+  fullName: CodeFactory.IModelStatus.HasErrors
+  type: Property
+  source:
+    href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/19e816ffdf1ba504be6987736bbac42e2d241405/Src/CodeFactoryForWindows/CodeFactory/IModelStatus.cs
+  assemblies:
+  - CodeFactory
+  namespace: CodeFactory
+  summary: Flag that determines if this model or one of the children of this model has an error.
+  example: []
+  syntax:
+    content: bool HasErrors { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: ReadOnly Property HasErrors As Boolean
+  overload: CodeFactory.IModelStatus.HasErrors*
+references:
+- uid: CodeFactory
+  commentId: N:CodeFactory
+  isExternal: true
+  href: CodeFactory.html
+  name: CodeFactory
+  nameWithType: CodeFactory
+  fullName: CodeFactory
+- uid: CodeFactory.ModelLoadException
+  commentId: T:CodeFactory.ModelLoadException
+  isExternal: true
+  href: CodeFactory.ModelLoadException.html
+  name: ModelLoadException
+  nameWithType: ModelLoadException
+  fullName: CodeFactory.ModelLoadException
+- uid: System.Collections.Generic.IReadOnlyList`1
+  commentId: T:System.Collections.Generic.IReadOnlyList`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  name: IReadOnlyList<T>
+  nameWithType: IReadOnlyList<T>
+  fullName: System.Collections.Generic.IReadOnlyList<T>
+  nameWithType.vb: IReadOnlyList(Of T)
+  fullName.vb: System.Collections.Generic.IReadOnlyList(Of T)
+  name.vb: IReadOnlyList(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: CodeFactory.IModelStatus.GetErrors*
+  commentId: Overload:CodeFactory.IModelStatus.GetErrors
+  isExternal: true
+  href: CodeFactory.IModelStatus.html#CodeFactory_IModelStatus_GetErrors
+  name: GetErrors
+  nameWithType: IModelStatus.GetErrors
+  fullName: CodeFactory.IModelStatus.GetErrors
+- uid: System.Collections.Generic.IReadOnlyList{CodeFactory.ModelLoadException}
+  commentId: T:System.Collections.Generic.IReadOnlyList{CodeFactory.ModelLoadException}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IReadOnlyList`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  name: IReadOnlyList<ModelLoadException>
+  nameWithType: IReadOnlyList<ModelLoadException>
+  fullName: System.Collections.Generic.IReadOnlyList<CodeFactory.ModelLoadException>
+  nameWithType.vb: IReadOnlyList(Of ModelLoadException)
+  fullName.vb: System.Collections.Generic.IReadOnlyList(Of CodeFactory.ModelLoadException)
+  name.vb: IReadOnlyList(Of ModelLoadException)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - uid: CodeFactory.ModelLoadException
+    name: ModelLoadException
+    isExternal: true
+    href: CodeFactory.ModelLoadException.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: CodeFactory.ModelLoadException
+    name: ModelLoadException
+    isExternal: true
+    href: CodeFactory.ModelLoadException.html
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: CodeFactory.IModelStatus.IsLoaded*
+  commentId: Overload:CodeFactory.IModelStatus.IsLoaded
+  isExternal: true
+  href: CodeFactory.IModelStatus.html#CodeFactory_IModelStatus_IsLoaded
+  name: IsLoaded
+  nameWithType: IModelStatus.IsLoaded
+  fullName: CodeFactory.IModelStatus.IsLoaded
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: CodeFactory.IModelStatus.HasErrors*
+  commentId: Overload:CodeFactory.IModelStatus.HasErrors
+  isExternal: true
+  href: CodeFactory.IModelStatus.html#CodeFactory_IModelStatus_HasErrors
+  name: HasErrors
+  nameWithType: IModelStatus.HasErrors
+  fullName: CodeFactory.IModelStatus.HasErrors

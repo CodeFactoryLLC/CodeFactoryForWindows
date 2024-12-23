@@ -1,0 +1,1183 @@
+### YamlMime:ManagedReference
+items:
+- uid: CodeFactory.WinVs.Models.CSharp.ICsAttribute
+  commentId: T:CodeFactory.WinVs.Models.CSharp.ICsAttribute
+  id: ICsAttribute
+  parent: CodeFactory.WinVs.Models.CSharp
+  children:
+  - CodeFactory.WinVs.Models.CSharp.ICsAttribute.AddAfterAsync(System.String)
+  - CodeFactory.WinVs.Models.CSharp.ICsAttribute.AddAfterAsync(System.String,System.String)
+  - CodeFactory.WinVs.Models.CSharp.ICsAttribute.AddBeforeAsync(System.String)
+  - CodeFactory.WinVs.Models.CSharp.ICsAttribute.AddBeforeAsync(System.String,System.String)
+  - CodeFactory.WinVs.Models.CSharp.ICsAttribute.DeleteAsync
+  - CodeFactory.WinVs.Models.CSharp.ICsAttribute.DeleteAsync(System.String)
+  - CodeFactory.WinVs.Models.CSharp.ICsAttribute.GetSourceLocationAsync
+  - CodeFactory.WinVs.Models.CSharp.ICsAttribute.GetSourceLocationAsync(System.String)
+  - CodeFactory.WinVs.Models.CSharp.ICsAttribute.HasParameters
+  - CodeFactory.WinVs.Models.CSharp.ICsAttribute.Parameters
+  - CodeFactory.WinVs.Models.CSharp.ICsAttribute.ReplaceAsync(System.String)
+  - CodeFactory.WinVs.Models.CSharp.ICsAttribute.ReplaceAsync(System.String,System.String)
+  - CodeFactory.WinVs.Models.CSharp.ICsAttribute.Type
+  langs:
+  - csharp
+  - vb
+  name: ICsAttribute
+  nameWithType: ICsAttribute
+  fullName: CodeFactory.WinVs.Models.CSharp.ICsAttribute
+  type: Interface
+  source:
+    href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/19e816ffdf1ba504be6987736bbac42e2d241405/Src/CodeFactoryForWindows/CodeFactory.WinVs/Models/CSharp/ICsAttribute.cs
+  assemblies:
+  - CodeFactory.WinVs
+  namespace: CodeFactory.WinVs.Models.CSharp
+  summary: Model definition for an attribute in a c# implementation.
+  example: []
+  syntax:
+    content: 'public interface ICsAttribute : ICsModel, IModelStatus, IParent, ISourceFiles'
+    content.vb: Public Interface ICsAttribute Inherits ICsModel, IModelStatus, IParent, ISourceFiles
+  inheritedMembers:
+  - CodeFactory.WinVs.Models.CSharp.ICsModel.GetModel``1(System.String)
+  - CodeFactory.WinVs.Models.CSharp.ICsModel.GetModel(System.String)
+  - CodeFactory.WinVs.Models.CSharp.ICsModel.LoadedFromSource
+  - CodeFactory.WinVs.Models.CSharp.ICsModel.Language
+  - CodeFactory.WinVs.Models.CSharp.ICsModel.ModelType
+  - CodeFactory.WinVs.Models.CSharp.ICsModel.SourceDocument
+  - CodeFactory.IModelStatus.GetErrors
+  - CodeFactory.IModelStatus.IsLoaded
+  - CodeFactory.IModelStatus.HasErrors
+  - CodeFactory.WinVs.Models.CSharp.IParent.Parent
+  - CodeFactory.SourceCode.ISourceFiles.SourceFiles
+  - CodeFactory.SourceCode.ISourceFiles.ModelSourceFile
+- uid: CodeFactory.WinVs.Models.CSharp.ICsAttribute.AddBeforeAsync(System.String,System.String)
+  commentId: M:CodeFactory.WinVs.Models.CSharp.ICsAttribute.AddBeforeAsync(System.String,System.String)
+  id: AddBeforeAsync(System.String,System.String)
+  parent: CodeFactory.WinVs.Models.CSharp.ICsAttribute
+  langs:
+  - csharp
+  - vb
+  name: AddBeforeAsync(string, string)
+  nameWithType: ICsAttribute.AddBeforeAsync(string, string)
+  fullName: CodeFactory.WinVs.Models.CSharp.ICsAttribute.AddBeforeAsync(string, string)
+  type: Method
+  source:
+    href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/19e816ffdf1ba504be6987736bbac42e2d241405/Src/CodeFactoryForWindows/CodeFactory.WinVs/Models/CSharp/ICsAttribute.cs
+  assemblies:
+  - CodeFactory.WinVs
+  namespace: CodeFactory.WinVs.Models.CSharp
+  summary: Adds the source code directly before the definition of the <xref href="CodeFactory.WinVs.Models.CSharp.ICsAttribute" data-throw-if-not-resolved="false"></xref>in the target document.
+  example: []
+  syntax:
+    content: >-
+      [Obsolete("No longer support will be removed in later edition, you no longer need to pass the source document.", false)]
+
+      Task<CsSource> AddBeforeAsync(string sourceDocument, string sourceCode)
+    parameters:
+    - id: sourceDocument
+      type: System.String
+      description: The fully qualified path to the source code document to be updated.
+    - id: sourceCode
+      type: System.String
+      description: The source code that is to be added to the document.
+    return:
+      type: System.Threading.Tasks.Task{CodeFactory.WinVs.Models.CSharp.CsSource}
+      description: A newly loaded copy of the <xref href="CodeFactory.WinVs.Models.CSharp.ICsSource" data-throw-if-not-resolved="false"></xref> model after the changes have been applied.
+    content.vb: >-
+      <Obsolete("No longer support will be removed in later edition, you no longer need to pass the source document.", False)>
+
+      Function AddBeforeAsync(sourceDocument As String, sourceCode As String) As Task(Of CsSource)
+  overload: CodeFactory.WinVs.Models.CSharp.ICsAttribute.AddBeforeAsync*
+  exceptions:
+  - type: CodeFactory.Document.DocumentException
+    commentId: T:CodeFactory.Document.DocumentException
+    description: Error is raised when errors occur updating the source document.
+  attributes:
+  - type: System.ObsoleteAttribute
+    ctor: System.ObsoleteAttribute.#ctor(System.String,System.Boolean)
+    arguments:
+    - type: System.String
+      value: No longer support will be removed in later edition, you no longer need to pass the source document.
+    - type: System.Boolean
+      value: false
+  nameWithType.vb: ICsAttribute.AddBeforeAsync(String, String)
+  fullName.vb: CodeFactory.WinVs.Models.CSharp.ICsAttribute.AddBeforeAsync(String, String)
+  name.vb: AddBeforeAsync(String, String)
+- uid: CodeFactory.WinVs.Models.CSharp.ICsAttribute.AddBeforeAsync(System.String)
+  commentId: M:CodeFactory.WinVs.Models.CSharp.ICsAttribute.AddBeforeAsync(System.String)
+  id: AddBeforeAsync(System.String)
+  parent: CodeFactory.WinVs.Models.CSharp.ICsAttribute
+  langs:
+  - csharp
+  - vb
+  name: AddBeforeAsync(string)
+  nameWithType: ICsAttribute.AddBeforeAsync(string)
+  fullName: CodeFactory.WinVs.Models.CSharp.ICsAttribute.AddBeforeAsync(string)
+  type: Method
+  source:
+    href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/19e816ffdf1ba504be6987736bbac42e2d241405/Src/CodeFactoryForWindows/CodeFactory.WinVs/Models/CSharp/ICsAttribute.cs
+  assemblies:
+  - CodeFactory.WinVs
+  namespace: CodeFactory.WinVs.Models.CSharp
+  summary: Adds the source code directly before the definition of the <xref href="CodeFactory.WinVs.Models.CSharp.ICsAttribute" data-throw-if-not-resolved="false"></xref>in the target document.
+  example: []
+  syntax:
+    content: Task<CsSource> AddBeforeAsync(string sourceCode)
+    parameters:
+    - id: sourceCode
+      type: System.String
+      description: The source code that is to be added to the document.
+    return:
+      type: System.Threading.Tasks.Task{CodeFactory.WinVs.Models.CSharp.CsSource}
+      description: A newly loaded copy of the <xref href="CodeFactory.WinVs.Models.CSharp.ICsSource" data-throw-if-not-resolved="false"></xref> model after the changes have been applied.
+    content.vb: Function AddBeforeAsync(sourceCode As String) As Task(Of CsSource)
+  overload: CodeFactory.WinVs.Models.CSharp.ICsAttribute.AddBeforeAsync*
+  exceptions:
+  - type: CodeFactory.Document.DocumentException
+    commentId: T:CodeFactory.Document.DocumentException
+    description: Error is raised when errors occur updating the source document.
+  nameWithType.vb: ICsAttribute.AddBeforeAsync(String)
+  fullName.vb: CodeFactory.WinVs.Models.CSharp.ICsAttribute.AddBeforeAsync(String)
+  name.vb: AddBeforeAsync(String)
+- uid: CodeFactory.WinVs.Models.CSharp.ICsAttribute.AddAfterAsync(System.String,System.String)
+  commentId: M:CodeFactory.WinVs.Models.CSharp.ICsAttribute.AddAfterAsync(System.String,System.String)
+  id: AddAfterAsync(System.String,System.String)
+  parent: CodeFactory.WinVs.Models.CSharp.ICsAttribute
+  langs:
+  - csharp
+  - vb
+  name: AddAfterAsync(string, string)
+  nameWithType: ICsAttribute.AddAfterAsync(string, string)
+  fullName: CodeFactory.WinVs.Models.CSharp.ICsAttribute.AddAfterAsync(string, string)
+  type: Method
+  source:
+    href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/19e816ffdf1ba504be6987736bbac42e2d241405/Src/CodeFactoryForWindows/CodeFactory.WinVs/Models/CSharp/ICsAttribute.cs
+  assemblies:
+  - CodeFactory.WinVs
+  namespace: CodeFactory.WinVs.Models.CSharp
+  summary: Adds the source code directly after the definition of the <xref href="CodeFactory.WinVs.Models.CSharp.ICsAttribute" data-throw-if-not-resolved="false"></xref>in the target document.
+  example: []
+  syntax:
+    content: >-
+      [Obsolete("No longer support will be removed in later edition, you no longer need to pass the source document.", false)]
+
+      Task<CsSource> AddAfterAsync(string sourceDocument, string sourceCode)
+    parameters:
+    - id: sourceDocument
+      type: System.String
+      description: The fully qualified path to the source code document to be updated.
+    - id: sourceCode
+      type: System.String
+      description: The source code that is to be added to the document.
+    return:
+      type: System.Threading.Tasks.Task{CodeFactory.WinVs.Models.CSharp.CsSource}
+      description: A newly loaded copy of the <xref href="CodeFactory.WinVs.Models.CSharp.ICsSource" data-throw-if-not-resolved="false"></xref> model after the changes have been applied.
+    content.vb: >-
+      <Obsolete("No longer support will be removed in later edition, you no longer need to pass the source document.", False)>
+
+      Function AddAfterAsync(sourceDocument As String, sourceCode As String) As Task(Of CsSource)
+  overload: CodeFactory.WinVs.Models.CSharp.ICsAttribute.AddAfterAsync*
+  exceptions:
+  - type: CodeFactory.Document.DocumentException
+    commentId: T:CodeFactory.Document.DocumentException
+    description: Error is raised when errors occur updating the source document.
+  attributes:
+  - type: System.ObsoleteAttribute
+    ctor: System.ObsoleteAttribute.#ctor(System.String,System.Boolean)
+    arguments:
+    - type: System.String
+      value: No longer support will be removed in later edition, you no longer need to pass the source document.
+    - type: System.Boolean
+      value: false
+  nameWithType.vb: ICsAttribute.AddAfterAsync(String, String)
+  fullName.vb: CodeFactory.WinVs.Models.CSharp.ICsAttribute.AddAfterAsync(String, String)
+  name.vb: AddAfterAsync(String, String)
+- uid: CodeFactory.WinVs.Models.CSharp.ICsAttribute.AddAfterAsync(System.String)
+  commentId: M:CodeFactory.WinVs.Models.CSharp.ICsAttribute.AddAfterAsync(System.String)
+  id: AddAfterAsync(System.String)
+  parent: CodeFactory.WinVs.Models.CSharp.ICsAttribute
+  langs:
+  - csharp
+  - vb
+  name: AddAfterAsync(string)
+  nameWithType: ICsAttribute.AddAfterAsync(string)
+  fullName: CodeFactory.WinVs.Models.CSharp.ICsAttribute.AddAfterAsync(string)
+  type: Method
+  source:
+    href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/19e816ffdf1ba504be6987736bbac42e2d241405/Src/CodeFactoryForWindows/CodeFactory.WinVs/Models/CSharp/ICsAttribute.cs
+  assemblies:
+  - CodeFactory.WinVs
+  namespace: CodeFactory.WinVs.Models.CSharp
+  summary: Adds the source code directly after the definition of the <xref href="CodeFactory.WinVs.Models.CSharp.ICsAttribute" data-throw-if-not-resolved="false"></xref>in the target document.
+  example: []
+  syntax:
+    content: Task<CsSource> AddAfterAsync(string sourceCode)
+    parameters:
+    - id: sourceCode
+      type: System.String
+      description: The source code that is to be added to the document.
+    return:
+      type: System.Threading.Tasks.Task{CodeFactory.WinVs.Models.CSharp.CsSource}
+      description: A newly loaded copy of the <xref href="CodeFactory.WinVs.Models.CSharp.ICsSource" data-throw-if-not-resolved="false"></xref> model after the changes have been applied.
+    content.vb: Function AddAfterAsync(sourceCode As String) As Task(Of CsSource)
+  overload: CodeFactory.WinVs.Models.CSharp.ICsAttribute.AddAfterAsync*
+  exceptions:
+  - type: CodeFactory.Document.DocumentException
+    commentId: T:CodeFactory.Document.DocumentException
+    description: Error is raised when errors occur updating the source document.
+  nameWithType.vb: ICsAttribute.AddAfterAsync(String)
+  fullName.vb: CodeFactory.WinVs.Models.CSharp.ICsAttribute.AddAfterAsync(String)
+  name.vb: AddAfterAsync(String)
+- uid: CodeFactory.WinVs.Models.CSharp.ICsAttribute.DeleteAsync(System.String)
+  commentId: M:CodeFactory.WinVs.Models.CSharp.ICsAttribute.DeleteAsync(System.String)
+  id: DeleteAsync(System.String)
+  parent: CodeFactory.WinVs.Models.CSharp.ICsAttribute
+  langs:
+  - csharp
+  - vb
+  name: DeleteAsync(string)
+  nameWithType: ICsAttribute.DeleteAsync(string)
+  fullName: CodeFactory.WinVs.Models.CSharp.ICsAttribute.DeleteAsync(string)
+  type: Method
+  source:
+    href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/19e816ffdf1ba504be6987736bbac42e2d241405/Src/CodeFactoryForWindows/CodeFactory.WinVs/Models/CSharp/ICsAttribute.cs
+  assemblies:
+  - CodeFactory.WinVs
+  namespace: CodeFactory.WinVs.Models.CSharp
+  summary: Deletes the definition of the attribute from the source document.
+  example: []
+  syntax:
+    content: >-
+      [Obsolete("No longer support will be removed in later edition, you no longer need to pass the source document.", false)]
+
+      Task<CsSource> DeleteAsync(string sourceDocument)
+    parameters:
+    - id: sourceDocument
+      type: System.String
+      description: The source document that the attribute is to be removed from.
+    return:
+      type: System.Threading.Tasks.Task{CodeFactory.WinVs.Models.CSharp.CsSource}
+      description: A newly loaded copy of the <xref href="CodeFactory.WinVs.Models.CSharp.ICsSource" data-throw-if-not-resolved="false"></xref> model after the attribute has been removed from the document.
+    content.vb: >-
+      <Obsolete("No longer support will be removed in later edition, you no longer need to pass the source document.", False)>
+
+      Function DeleteAsync(sourceDocument As String) As Task(Of CsSource)
+  overload: CodeFactory.WinVs.Models.CSharp.ICsAttribute.DeleteAsync*
+  exceptions:
+  - type: CodeFactory.Document.DocumentException
+    commentId: T:CodeFactory.Document.DocumentException
+    description: Error is raised when errors occur updating the source document.
+  attributes:
+  - type: System.ObsoleteAttribute
+    ctor: System.ObsoleteAttribute.#ctor(System.String,System.Boolean)
+    arguments:
+    - type: System.String
+      value: No longer support will be removed in later edition, you no longer need to pass the source document.
+    - type: System.Boolean
+      value: false
+  nameWithType.vb: ICsAttribute.DeleteAsync(String)
+  fullName.vb: CodeFactory.WinVs.Models.CSharp.ICsAttribute.DeleteAsync(String)
+  name.vb: DeleteAsync(String)
+- uid: CodeFactory.WinVs.Models.CSharp.ICsAttribute.DeleteAsync
+  commentId: M:CodeFactory.WinVs.Models.CSharp.ICsAttribute.DeleteAsync
+  id: DeleteAsync
+  parent: CodeFactory.WinVs.Models.CSharp.ICsAttribute
+  langs:
+  - csharp
+  - vb
+  name: DeleteAsync()
+  nameWithType: ICsAttribute.DeleteAsync()
+  fullName: CodeFactory.WinVs.Models.CSharp.ICsAttribute.DeleteAsync()
+  type: Method
+  source:
+    href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/19e816ffdf1ba504be6987736bbac42e2d241405/Src/CodeFactoryForWindows/CodeFactory.WinVs/Models/CSharp/ICsAttribute.cs
+  assemblies:
+  - CodeFactory.WinVs
+  namespace: CodeFactory.WinVs.Models.CSharp
+  summary: Deletes the definition of the attribute from the source document.
+  example: []
+  syntax:
+    content: Task<CsSource> DeleteAsync()
+    return:
+      type: System.Threading.Tasks.Task{CodeFactory.WinVs.Models.CSharp.CsSource}
+      description: A newly loaded copy of the <xref href="CodeFactory.WinVs.Models.CSharp.ICsSource" data-throw-if-not-resolved="false"></xref> model after the attribute has been removed from the document.
+    content.vb: Function DeleteAsync() As Task(Of CsSource)
+  overload: CodeFactory.WinVs.Models.CSharp.ICsAttribute.DeleteAsync*
+  exceptions:
+  - type: CodeFactory.Document.DocumentException
+    commentId: T:CodeFactory.Document.DocumentException
+    description: Error is raised when errors occur updating the source document.
+- uid: CodeFactory.WinVs.Models.CSharp.ICsAttribute.GetSourceLocationAsync(System.String)
+  commentId: M:CodeFactory.WinVs.Models.CSharp.ICsAttribute.GetSourceLocationAsync(System.String)
+  id: GetSourceLocationAsync(System.String)
+  parent: CodeFactory.WinVs.Models.CSharp.ICsAttribute
+  langs:
+  - csharp
+  - vb
+  name: GetSourceLocationAsync(string)
+  nameWithType: ICsAttribute.GetSourceLocationAsync(string)
+  fullName: CodeFactory.WinVs.Models.CSharp.ICsAttribute.GetSourceLocationAsync(string)
+  type: Method
+  source:
+    href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/19e816ffdf1ba504be6987736bbac42e2d241405/Src/CodeFactoryForWindows/CodeFactory.WinVs/Models/CSharp/ICsAttribute.cs
+  assemblies:
+  - CodeFactory.WinVs
+  namespace: CodeFactory.WinVs.Models.CSharp
+  summary: Gets the starting and ending locations within the document where the attribute is located.
+  example: []
+  syntax:
+    content: >-
+      [Obsolete("No longer support will be removed in later edition, you no longer need to pass the source document.", false)]
+
+      Task<ISourceLocation> GetSourceLocationAsync(string sourceDocument)
+    parameters:
+    - id: sourceDocument
+      type: System.String
+      description: The fully qualified path to the document that has the attribute defined in.
+    return:
+      type: System.Threading.Tasks.Task{CodeFactory.SourceCode.ISourceLocation}
+      description: The source location for the attribute.
+    content.vb: >-
+      <Obsolete("No longer support will be removed in later edition, you no longer need to pass the source document.", False)>
+
+      Function GetSourceLocationAsync(sourceDocument As String) As Task(Of ISourceLocation)
+  overload: CodeFactory.WinVs.Models.CSharp.ICsAttribute.GetSourceLocationAsync*
+  exceptions:
+  - type: CodeFactory.Document.DocumentException
+    commentId: T:CodeFactory.Document.DocumentException
+    description: Raised when an error occurs getting the location from the document.
+  attributes:
+  - type: System.ObsoleteAttribute
+    ctor: System.ObsoleteAttribute.#ctor(System.String,System.Boolean)
+    arguments:
+    - type: System.String
+      value: No longer support will be removed in later edition, you no longer need to pass the source document.
+    - type: System.Boolean
+      value: false
+  nameWithType.vb: ICsAttribute.GetSourceLocationAsync(String)
+  fullName.vb: CodeFactory.WinVs.Models.CSharp.ICsAttribute.GetSourceLocationAsync(String)
+  name.vb: GetSourceLocationAsync(String)
+- uid: CodeFactory.WinVs.Models.CSharp.ICsAttribute.GetSourceLocationAsync
+  commentId: M:CodeFactory.WinVs.Models.CSharp.ICsAttribute.GetSourceLocationAsync
+  id: GetSourceLocationAsync
+  parent: CodeFactory.WinVs.Models.CSharp.ICsAttribute
+  langs:
+  - csharp
+  - vb
+  name: GetSourceLocationAsync()
+  nameWithType: ICsAttribute.GetSourceLocationAsync()
+  fullName: CodeFactory.WinVs.Models.CSharp.ICsAttribute.GetSourceLocationAsync()
+  type: Method
+  source:
+    href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/19e816ffdf1ba504be6987736bbac42e2d241405/Src/CodeFactoryForWindows/CodeFactory.WinVs/Models/CSharp/ICsAttribute.cs
+  assemblies:
+  - CodeFactory.WinVs
+  namespace: CodeFactory.WinVs.Models.CSharp
+  summary: Gets the starting and ending locations within the document where the attribute is located.
+  example: []
+  syntax:
+    content: Task<ISourceLocation> GetSourceLocationAsync()
+    return:
+      type: System.Threading.Tasks.Task{CodeFactory.SourceCode.ISourceLocation}
+      description: The source location for the attribute.
+    content.vb: Function GetSourceLocationAsync() As Task(Of ISourceLocation)
+  overload: CodeFactory.WinVs.Models.CSharp.ICsAttribute.GetSourceLocationAsync*
+  exceptions:
+  - type: CodeFactory.Document.DocumentException
+    commentId: T:CodeFactory.Document.DocumentException
+    description: Raised when an error occurs getting the location from the document.
+- uid: CodeFactory.WinVs.Models.CSharp.ICsAttribute.ReplaceAsync(System.String,System.String)
+  commentId: M:CodeFactory.WinVs.Models.CSharp.ICsAttribute.ReplaceAsync(System.String,System.String)
+  id: ReplaceAsync(System.String,System.String)
+  parent: CodeFactory.WinVs.Models.CSharp.ICsAttribute
+  langs:
+  - csharp
+  - vb
+  name: ReplaceAsync(string, string)
+  nameWithType: ICsAttribute.ReplaceAsync(string, string)
+  fullName: CodeFactory.WinVs.Models.CSharp.ICsAttribute.ReplaceAsync(string, string)
+  type: Method
+  source:
+    href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/19e816ffdf1ba504be6987736bbac42e2d241405/Src/CodeFactoryForWindows/CodeFactory.WinVs/Models/CSharp/ICsAttribute.cs
+  assemblies:
+  - CodeFactory.WinVs
+  namespace: CodeFactory.WinVs.Models.CSharp
+  summary: Replaces the current attribute with the provided source code.
+  example: []
+  syntax:
+    content: >-
+      [Obsolete("No longer support will be removed in later edition, you no longer need to pass the source document.", false)]
+
+      Task<CsSource> ReplaceAsync(string sourceDocument, string sourceCode)
+    parameters:
+    - id: sourceDocument
+      type: System.String
+      description: The fully qualified path to the source code document to be updated.
+    - id: sourceCode
+      type: System.String
+      description: The source code that is to be used to replace the original definition in the document.
+    return:
+      type: System.Threading.Tasks.Task{CodeFactory.WinVs.Models.CSharp.CsSource}
+      description: A newly loaded copy of the <xref href="CodeFactory.WinVs.Models.CSharp.ICsSource" data-throw-if-not-resolved="false"></xref> model after the changes have been applied.
+    content.vb: >-
+      <Obsolete("No longer support will be removed in later edition, you no longer need to pass the source document.", False)>
+
+      Function ReplaceAsync(sourceDocument As String, sourceCode As String) As Task(Of CsSource)
+  overload: CodeFactory.WinVs.Models.CSharp.ICsAttribute.ReplaceAsync*
+  exceptions:
+  - type: CodeFactory.Document.DocumentException
+    commentId: T:CodeFactory.Document.DocumentException
+    description: Error is raised when errors occur updating the source document.
+  attributes:
+  - type: System.ObsoleteAttribute
+    ctor: System.ObsoleteAttribute.#ctor(System.String,System.Boolean)
+    arguments:
+    - type: System.String
+      value: No longer support will be removed in later edition, you no longer need to pass the source document.
+    - type: System.Boolean
+      value: false
+  nameWithType.vb: ICsAttribute.ReplaceAsync(String, String)
+  fullName.vb: CodeFactory.WinVs.Models.CSharp.ICsAttribute.ReplaceAsync(String, String)
+  name.vb: ReplaceAsync(String, String)
+- uid: CodeFactory.WinVs.Models.CSharp.ICsAttribute.ReplaceAsync(System.String)
+  commentId: M:CodeFactory.WinVs.Models.CSharp.ICsAttribute.ReplaceAsync(System.String)
+  id: ReplaceAsync(System.String)
+  parent: CodeFactory.WinVs.Models.CSharp.ICsAttribute
+  langs:
+  - csharp
+  - vb
+  name: ReplaceAsync(string)
+  nameWithType: ICsAttribute.ReplaceAsync(string)
+  fullName: CodeFactory.WinVs.Models.CSharp.ICsAttribute.ReplaceAsync(string)
+  type: Method
+  source:
+    href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/19e816ffdf1ba504be6987736bbac42e2d241405/Src/CodeFactoryForWindows/CodeFactory.WinVs/Models/CSharp/ICsAttribute.cs
+  assemblies:
+  - CodeFactory.WinVs
+  namespace: CodeFactory.WinVs.Models.CSharp
+  summary: Replaces the current attribute with the provided source code.
+  example: []
+  syntax:
+    content: Task<CsSource> ReplaceAsync(string sourceCode)
+    parameters:
+    - id: sourceCode
+      type: System.String
+      description: The source code that is to be used to replace the original definition in the document.
+    return:
+      type: System.Threading.Tasks.Task{CodeFactory.WinVs.Models.CSharp.CsSource}
+      description: A newly loaded copy of the <xref href="CodeFactory.WinVs.Models.CSharp.ICsSource" data-throw-if-not-resolved="false"></xref> model after the changes have been applied.
+    content.vb: Function ReplaceAsync(sourceCode As String) As Task(Of CsSource)
+  overload: CodeFactory.WinVs.Models.CSharp.ICsAttribute.ReplaceAsync*
+  exceptions:
+  - type: CodeFactory.Document.DocumentException
+    commentId: T:CodeFactory.Document.DocumentException
+    description: Error is raised when errors occur updating the source document.
+  nameWithType.vb: ICsAttribute.ReplaceAsync(String)
+  fullName.vb: CodeFactory.WinVs.Models.CSharp.ICsAttribute.ReplaceAsync(String)
+  name.vb: ReplaceAsync(String)
+- uid: CodeFactory.WinVs.Models.CSharp.ICsAttribute.Parameters
+  commentId: P:CodeFactory.WinVs.Models.CSharp.ICsAttribute.Parameters
+  id: Parameters
+  parent: CodeFactory.WinVs.Models.CSharp.ICsAttribute
+  langs:
+  - csharp
+  - vb
+  name: Parameters
+  nameWithType: ICsAttribute.Parameters
+  fullName: CodeFactory.WinVs.Models.CSharp.ICsAttribute.Parameters
+  type: Property
+  source:
+    href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/19e816ffdf1ba504be6987736bbac42e2d241405/Src/CodeFactoryForWindows/CodeFactory.WinVs/Models/CSharp/ICsAttribute.cs
+  assemblies:
+  - CodeFactory.WinVs
+  namespace: CodeFactory.WinVs.Models.CSharp
+  summary: Enumeration of the parameters that are assigned to the attribute. This will be an empty list if HasParameters is false.
+  example: []
+  syntax:
+    content: IReadOnlyList<CsAttributeParameter> Parameters { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.IReadOnlyList{CodeFactory.WinVs.Models.CSharp.CsAttributeParameter}
+    content.vb: ReadOnly Property Parameters As IReadOnlyList(Of CsAttributeParameter)
+  overload: CodeFactory.WinVs.Models.CSharp.ICsAttribute.Parameters*
+- uid: CodeFactory.WinVs.Models.CSharp.ICsAttribute.HasParameters
+  commentId: P:CodeFactory.WinVs.Models.CSharp.ICsAttribute.HasParameters
+  id: HasParameters
+  parent: CodeFactory.WinVs.Models.CSharp.ICsAttribute
+  langs:
+  - csharp
+  - vb
+  name: HasParameters
+  nameWithType: ICsAttribute.HasParameters
+  fullName: CodeFactory.WinVs.Models.CSharp.ICsAttribute.HasParameters
+  type: Property
+  source:
+    href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/19e816ffdf1ba504be6987736bbac42e2d241405/Src/CodeFactoryForWindows/CodeFactory.WinVs/Models/CSharp/ICsAttribute.cs
+  assemblies:
+  - CodeFactory.WinVs
+  namespace: CodeFactory.WinVs.Models.CSharp
+  summary: Flag that determines if the attribute has parameters
+  example: []
+  syntax:
+    content: bool HasParameters { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: ReadOnly Property HasParameters As Boolean
+  overload: CodeFactory.WinVs.Models.CSharp.ICsAttribute.HasParameters*
+- uid: CodeFactory.WinVs.Models.CSharp.ICsAttribute.Type
+  commentId: P:CodeFactory.WinVs.Models.CSharp.ICsAttribute.Type
+  id: Type
+  parent: CodeFactory.WinVs.Models.CSharp.ICsAttribute
+  langs:
+  - csharp
+  - vb
+  name: Type
+  nameWithType: ICsAttribute.Type
+  fullName: CodeFactory.WinVs.Models.CSharp.ICsAttribute.Type
+  type: Property
+  source:
+    href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/19e816ffdf1ba504be6987736bbac42e2d241405/Src/CodeFactoryForWindows/CodeFactory.WinVs/Models/CSharp/ICsAttribute.cs
+  assemblies:
+  - CodeFactory.WinVs
+  namespace: CodeFactory.WinVs.Models.CSharp
+  summary: The type information for the attribute itself.
+  example: []
+  syntax:
+    content: CsType Type { get; }
+    parameters: []
+    return:
+      type: CodeFactory.WinVs.Models.CSharp.CsType
+    content.vb: ReadOnly Property Type As CsType
+  overload: CodeFactory.WinVs.Models.CSharp.ICsAttribute.Type*
+references:
+- uid: CodeFactory.WinVs.Models.CSharp
+  commentId: N:CodeFactory.WinVs.Models.CSharp
+  isExternal: true
+  href: CodeFactory.html
+  name: CodeFactory.WinVs.Models.CSharp
+  nameWithType: CodeFactory.WinVs.Models.CSharp
+  fullName: CodeFactory.WinVs.Models.CSharp
+  spec.csharp:
+  - uid: CodeFactory
+    name: CodeFactory
+    isExternal: true
+    href: CodeFactory.html
+  - name: .
+  - uid: CodeFactory.WinVs
+    name: WinVs
+    isExternal: true
+    href: CodeFactory.WinVs.html
+  - name: .
+  - uid: CodeFactory.WinVs.Models
+    name: Models
+    isExternal: true
+    href: CodeFactory.WinVs.Models.html
+  - name: .
+  - uid: CodeFactory.WinVs.Models.CSharp
+    name: CSharp
+    isExternal: true
+    href: CodeFactory.WinVs.Models.CSharp.html
+  spec.vb:
+  - uid: CodeFactory
+    name: CodeFactory
+    isExternal: true
+    href: CodeFactory.html
+  - name: .
+  - uid: CodeFactory.WinVs
+    name: WinVs
+    isExternal: true
+    href: CodeFactory.WinVs.html
+  - name: .
+  - uid: CodeFactory.WinVs.Models
+    name: Models
+    isExternal: true
+    href: CodeFactory.WinVs.Models.html
+  - name: .
+  - uid: CodeFactory.WinVs.Models.CSharp
+    name: CSharp
+    isExternal: true
+    href: CodeFactory.WinVs.Models.CSharp.html
+- uid: CodeFactory.WinVs.Models.CSharp.ICsModel.GetModel``1(System.String)
+  commentId: M:CodeFactory.WinVs.Models.CSharp.ICsModel.GetModel``1(System.String)
+  parent: CodeFactory.WinVs.Models.CSharp.ICsModel
+  isExternal: true
+  href: CodeFactory.WinVs.Models.CSharp.ICsModel.html#CodeFactory_WinVs_Models_CSharp_ICsModel_GetModel__1_System_String_
+  name: GetModel<T>(string)
+  nameWithType: ICsModel.GetModel<T>(string)
+  fullName: CodeFactory.WinVs.Models.CSharp.ICsModel.GetModel<T>(string)
+  nameWithType.vb: ICsModel.GetModel(Of T)(String)
+  fullName.vb: CodeFactory.WinVs.Models.CSharp.ICsModel.GetModel(Of T)(String)
+  name.vb: GetModel(Of T)(String)
+  spec.csharp:
+  - uid: CodeFactory.WinVs.Models.CSharp.ICsModel.GetModel``1(System.String)
+    name: GetModel
+    isExternal: true
+    href: CodeFactory.WinVs.Models.CSharp.ICsModel.html#CodeFactory_WinVs_Models_CSharp_ICsModel_GetModel__1_System_String_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: CodeFactory.WinVs.Models.CSharp.ICsModel.GetModel``1(System.String)
+    name: GetModel
+    isExternal: true
+    href: CodeFactory.WinVs.Models.CSharp.ICsModel.html#CodeFactory_WinVs_Models_CSharp_ICsModel_GetModel__1_System_String_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: CodeFactory.WinVs.Models.CSharp.ICsModel.GetModel(System.String)
+  commentId: M:CodeFactory.WinVs.Models.CSharp.ICsModel.GetModel(System.String)
+  parent: CodeFactory.WinVs.Models.CSharp.ICsModel
+  isExternal: true
+  href: CodeFactory.WinVs.Models.CSharp.ICsModel.html#CodeFactory_WinVs_Models_CSharp_ICsModel_GetModel_System_String_
+  name: GetModel(string)
+  nameWithType: ICsModel.GetModel(string)
+  fullName: CodeFactory.WinVs.Models.CSharp.ICsModel.GetModel(string)
+  nameWithType.vb: ICsModel.GetModel(String)
+  fullName.vb: CodeFactory.WinVs.Models.CSharp.ICsModel.GetModel(String)
+  name.vb: GetModel(String)
+  spec.csharp:
+  - uid: CodeFactory.WinVs.Models.CSharp.ICsModel.GetModel(System.String)
+    name: GetModel
+    isExternal: true
+    href: CodeFactory.WinVs.Models.CSharp.ICsModel.html#CodeFactory_WinVs_Models_CSharp_ICsModel_GetModel_System_String_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: CodeFactory.WinVs.Models.CSharp.ICsModel.GetModel(System.String)
+    name: GetModel
+    isExternal: true
+    href: CodeFactory.WinVs.Models.CSharp.ICsModel.html#CodeFactory_WinVs_Models_CSharp_ICsModel_GetModel_System_String_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: CodeFactory.WinVs.Models.CSharp.ICsModel.LoadedFromSource
+  commentId: P:CodeFactory.WinVs.Models.CSharp.ICsModel.LoadedFromSource
+  parent: CodeFactory.WinVs.Models.CSharp.ICsModel
+  isExternal: true
+  href: CodeFactory.WinVs.Models.CSharp.ICsModel.html#CodeFactory_WinVs_Models_CSharp_ICsModel_LoadedFromSource
+  name: LoadedFromSource
+  nameWithType: ICsModel.LoadedFromSource
+  fullName: CodeFactory.WinVs.Models.CSharp.ICsModel.LoadedFromSource
+- uid: CodeFactory.WinVs.Models.CSharp.ICsModel.Language
+  commentId: P:CodeFactory.WinVs.Models.CSharp.ICsModel.Language
+  parent: CodeFactory.WinVs.Models.CSharp.ICsModel
+  isExternal: true
+  href: CodeFactory.WinVs.Models.CSharp.ICsModel.html#CodeFactory_WinVs_Models_CSharp_ICsModel_Language
+  name: Language
+  nameWithType: ICsModel.Language
+  fullName: CodeFactory.WinVs.Models.CSharp.ICsModel.Language
+- uid: CodeFactory.WinVs.Models.CSharp.ICsModel.ModelType
+  commentId: P:CodeFactory.WinVs.Models.CSharp.ICsModel.ModelType
+  parent: CodeFactory.WinVs.Models.CSharp.ICsModel
+  isExternal: true
+  href: CodeFactory.WinVs.Models.CSharp.ICsModel.html#CodeFactory_WinVs_Models_CSharp_ICsModel_ModelType
+  name: ModelType
+  nameWithType: ICsModel.ModelType
+  fullName: CodeFactory.WinVs.Models.CSharp.ICsModel.ModelType
+- uid: CodeFactory.WinVs.Models.CSharp.ICsModel.SourceDocument
+  commentId: P:CodeFactory.WinVs.Models.CSharp.ICsModel.SourceDocument
+  parent: CodeFactory.WinVs.Models.CSharp.ICsModel
+  isExternal: true
+  href: CodeFactory.WinVs.Models.CSharp.ICsModel.html#CodeFactory_WinVs_Models_CSharp_ICsModel_SourceDocument
+  name: SourceDocument
+  nameWithType: ICsModel.SourceDocument
+  fullName: CodeFactory.WinVs.Models.CSharp.ICsModel.SourceDocument
+- uid: CodeFactory.IModelStatus.GetErrors
+  commentId: M:CodeFactory.IModelStatus.GetErrors
+  parent: CodeFactory.IModelStatus
+  isExternal: true
+  href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/19e816ffdf1ba504be6987736bbac42e2d241405/Src/CodeFactoryForWindows/CodeFactory/IModelStatus.cs
+  name: GetErrors()
+  nameWithType: IModelStatus.GetErrors()
+  fullName: CodeFactory.IModelStatus.GetErrors()
+  spec.csharp:
+  - uid: CodeFactory.IModelStatus.GetErrors
+    name: GetErrors
+    isExternal: true
+    href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/19e816ffdf1ba504be6987736bbac42e2d241405/Src/CodeFactoryForWindows/CodeFactory/IModelStatus.cs
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: CodeFactory.IModelStatus.GetErrors
+    name: GetErrors
+    isExternal: true
+    href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/19e816ffdf1ba504be6987736bbac42e2d241405/Src/CodeFactoryForWindows/CodeFactory/IModelStatus.cs
+  - name: (
+  - name: )
+- uid: CodeFactory.IModelStatus.IsLoaded
+  commentId: P:CodeFactory.IModelStatus.IsLoaded
+  parent: CodeFactory.IModelStatus
+  isExternal: true
+  href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/19e816ffdf1ba504be6987736bbac42e2d241405/Src/CodeFactoryForWindows/CodeFactory/IModelStatus.cs
+  name: IsLoaded
+  nameWithType: IModelStatus.IsLoaded
+  fullName: CodeFactory.IModelStatus.IsLoaded
+- uid: CodeFactory.IModelStatus.HasErrors
+  commentId: P:CodeFactory.IModelStatus.HasErrors
+  parent: CodeFactory.IModelStatus
+  isExternal: true
+  href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/19e816ffdf1ba504be6987736bbac42e2d241405/Src/CodeFactoryForWindows/CodeFactory/IModelStatus.cs
+  name: HasErrors
+  nameWithType: IModelStatus.HasErrors
+  fullName: CodeFactory.IModelStatus.HasErrors
+- uid: CodeFactory.WinVs.Models.CSharp.IParent.Parent
+  commentId: P:CodeFactory.WinVs.Models.CSharp.IParent.Parent
+  parent: CodeFactory.WinVs.Models.CSharp.IParent
+  isExternal: true
+  href: CodeFactory.WinVs.Models.CSharp.IParent.html#CodeFactory_WinVs_Models_CSharp_IParent_Parent
+  name: Parent
+  nameWithType: IParent.Parent
+  fullName: CodeFactory.WinVs.Models.CSharp.IParent.Parent
+- uid: CodeFactory.SourceCode.ISourceFiles.SourceFiles
+  commentId: P:CodeFactory.SourceCode.ISourceFiles.SourceFiles
+  parent: CodeFactory.SourceCode.ISourceFiles
+  isExternal: true
+  href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/19e816ffdf1ba504be6987736bbac42e2d241405/Src/CodeFactoryForWindows/CodeFactory/SourceCode/ISourceFiles.cs
+  name: SourceFiles
+  nameWithType: ISourceFiles.SourceFiles
+  fullName: CodeFactory.SourceCode.ISourceFiles.SourceFiles
+- uid: CodeFactory.SourceCode.ISourceFiles.ModelSourceFile
+  commentId: P:CodeFactory.SourceCode.ISourceFiles.ModelSourceFile
+  parent: CodeFactory.SourceCode.ISourceFiles
+  isExternal: true
+  href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/19e816ffdf1ba504be6987736bbac42e2d241405/Src/CodeFactoryForWindows/CodeFactory/SourceCode/ISourceFiles.cs
+  name: ModelSourceFile
+  nameWithType: ISourceFiles.ModelSourceFile
+  fullName: CodeFactory.SourceCode.ISourceFiles.ModelSourceFile
+- uid: CodeFactory.WinVs.Models.CSharp.ICsModel
+  commentId: T:CodeFactory.WinVs.Models.CSharp.ICsModel
+  parent: CodeFactory.WinVs.Models.CSharp
+  isExternal: true
+  href: CodeFactory.WinVs.Models.CSharp.ICsModel.html
+  name: ICsModel
+  nameWithType: ICsModel
+  fullName: CodeFactory.WinVs.Models.CSharp.ICsModel
+- uid: CodeFactory.IModelStatus
+  commentId: T:CodeFactory.IModelStatus
+  parent: CodeFactory
+  isExternal: true
+  href: CodeFactory.IModelStatus.html
+  name: IModelStatus
+  nameWithType: IModelStatus
+  fullName: CodeFactory.IModelStatus
+- uid: CodeFactory.WinVs.Models.CSharp.IParent
+  commentId: T:CodeFactory.WinVs.Models.CSharp.IParent
+  parent: CodeFactory.WinVs.Models.CSharp
+  isExternal: true
+  href: CodeFactory.WinVs.Models.CSharp.IParent.html
+  name: IParent
+  nameWithType: IParent
+  fullName: CodeFactory.WinVs.Models.CSharp.IParent
+- uid: CodeFactory.SourceCode.ISourceFiles
+  commentId: T:CodeFactory.SourceCode.ISourceFiles
+  parent: CodeFactory.SourceCode
+  isExternal: true
+  href: CodeFactory.SourceCode.ISourceFiles.html
+  name: ISourceFiles
+  nameWithType: ISourceFiles
+  fullName: CodeFactory.SourceCode.ISourceFiles
+- uid: CodeFactory
+  commentId: N:CodeFactory
+  isExternal: true
+  href: CodeFactory.html
+  name: CodeFactory
+  nameWithType: CodeFactory
+  fullName: CodeFactory
+- uid: CodeFactory.SourceCode
+  commentId: N:CodeFactory.SourceCode
+  isExternal: true
+  href: CodeFactory.html
+  name: CodeFactory.SourceCode
+  nameWithType: CodeFactory.SourceCode
+  fullName: CodeFactory.SourceCode
+  spec.csharp:
+  - uid: CodeFactory
+    name: CodeFactory
+    isExternal: true
+    href: CodeFactory.html
+  - name: .
+  - uid: CodeFactory.SourceCode
+    name: SourceCode
+    isExternal: true
+    href: CodeFactory.SourceCode.html
+  spec.vb:
+  - uid: CodeFactory
+    name: CodeFactory
+    isExternal: true
+    href: CodeFactory.html
+  - name: .
+  - uid: CodeFactory.SourceCode
+    name: SourceCode
+    isExternal: true
+    href: CodeFactory.SourceCode.html
+- uid: CodeFactory.WinVs.Models.CSharp.ICsAttribute
+  commentId: T:CodeFactory.WinVs.Models.CSharp.ICsAttribute
+  parent: CodeFactory.WinVs.Models.CSharp
+  isExternal: true
+  href: CodeFactory.WinVs.Models.CSharp.ICsAttribute.html
+  name: ICsAttribute
+  nameWithType: ICsAttribute
+  fullName: CodeFactory.WinVs.Models.CSharp.ICsAttribute
+- uid: CodeFactory.WinVs.Models.CSharp.ICsSource
+  commentId: T:CodeFactory.WinVs.Models.CSharp.ICsSource
+  parent: CodeFactory.WinVs.Models.CSharp
+  isExternal: true
+  href: CodeFactory.WinVs.Models.CSharp.ICsSource.html
+  name: ICsSource
+  nameWithType: ICsSource
+  fullName: CodeFactory.WinVs.Models.CSharp.ICsSource
+- uid: CodeFactory.Document.DocumentException
+  commentId: T:CodeFactory.Document.DocumentException
+  isExternal: true
+  href: CodeFactory.Document.DocumentException.html
+  name: DocumentException
+  nameWithType: DocumentException
+  fullName: CodeFactory.Document.DocumentException
+- uid: CodeFactory.WinVs.Models.CSharp.ICsAttribute.AddBeforeAsync*
+  commentId: Overload:CodeFactory.WinVs.Models.CSharp.ICsAttribute.AddBeforeAsync
+  isExternal: true
+  href: CodeFactory.WinVs.Models.CSharp.ICsAttribute.html#CodeFactory_WinVs_Models_CSharp_ICsAttribute_AddBeforeAsync_System_String_System_String_
+  name: AddBeforeAsync
+  nameWithType: ICsAttribute.AddBeforeAsync
+  fullName: CodeFactory.WinVs.Models.CSharp.ICsAttribute.AddBeforeAsync
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Threading.Tasks.Task{CodeFactory.WinVs.Models.CSharp.CsSource}
+  commentId: T:System.Threading.Tasks.Task{CodeFactory.WinVs.Models.CSharp.CsSource}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<CsSource>
+  nameWithType: Task<CsSource>
+  fullName: System.Threading.Tasks.Task<CodeFactory.WinVs.Models.CSharp.CsSource>
+  nameWithType.vb: Task(Of CsSource)
+  fullName.vb: System.Threading.Tasks.Task(Of CodeFactory.WinVs.Models.CSharp.CsSource)
+  name.vb: Task(Of CsSource)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: CodeFactory.WinVs.Models.CSharp.CsSource
+    name: CsSource
+    isExternal: true
+    href: CodeFactory.WinVs.Models.CSharp.CsSource.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: CodeFactory.WinVs.Models.CSharp.CsSource
+    name: CsSource
+    isExternal: true
+    href: CodeFactory.WinVs.Models.CSharp.CsSource.html
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: CodeFactory.WinVs.Models.CSharp.ICsAttribute.AddAfterAsync*
+  commentId: Overload:CodeFactory.WinVs.Models.CSharp.ICsAttribute.AddAfterAsync
+  isExternal: true
+  href: CodeFactory.WinVs.Models.CSharp.ICsAttribute.html#CodeFactory_WinVs_Models_CSharp_ICsAttribute_AddAfterAsync_System_String_System_String_
+  name: AddAfterAsync
+  nameWithType: ICsAttribute.AddAfterAsync
+  fullName: CodeFactory.WinVs.Models.CSharp.ICsAttribute.AddAfterAsync
+- uid: CodeFactory.WinVs.Models.CSharp.ICsAttribute.DeleteAsync*
+  commentId: Overload:CodeFactory.WinVs.Models.CSharp.ICsAttribute.DeleteAsync
+  isExternal: true
+  href: CodeFactory.WinVs.Models.CSharp.ICsAttribute.html#CodeFactory_WinVs_Models_CSharp_ICsAttribute_DeleteAsync_System_String_
+  name: DeleteAsync
+  nameWithType: ICsAttribute.DeleteAsync
+  fullName: CodeFactory.WinVs.Models.CSharp.ICsAttribute.DeleteAsync
+- uid: CodeFactory.WinVs.Models.CSharp.ICsAttribute.GetSourceLocationAsync*
+  commentId: Overload:CodeFactory.WinVs.Models.CSharp.ICsAttribute.GetSourceLocationAsync
+  isExternal: true
+  href: CodeFactory.WinVs.Models.CSharp.ICsAttribute.html#CodeFactory_WinVs_Models_CSharp_ICsAttribute_GetSourceLocationAsync_System_String_
+  name: GetSourceLocationAsync
+  nameWithType: ICsAttribute.GetSourceLocationAsync
+  fullName: CodeFactory.WinVs.Models.CSharp.ICsAttribute.GetSourceLocationAsync
+- uid: System.Threading.Tasks.Task{CodeFactory.SourceCode.ISourceLocation}
+  commentId: T:System.Threading.Tasks.Task{CodeFactory.SourceCode.ISourceLocation}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<ISourceLocation>
+  nameWithType: Task<ISourceLocation>
+  fullName: System.Threading.Tasks.Task<CodeFactory.SourceCode.ISourceLocation>
+  nameWithType.vb: Task(Of ISourceLocation)
+  fullName.vb: System.Threading.Tasks.Task(Of CodeFactory.SourceCode.ISourceLocation)
+  name.vb: Task(Of ISourceLocation)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: CodeFactory.SourceCode.ISourceLocation
+    name: ISourceLocation
+    isExternal: true
+    href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/19e816ffdf1ba504be6987736bbac42e2d241405/Src/CodeFactoryForWindows/CodeFactory/SourceCode/ISourceLocation.cs
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: CodeFactory.SourceCode.ISourceLocation
+    name: ISourceLocation
+    isExternal: true
+    href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/19e816ffdf1ba504be6987736bbac42e2d241405/Src/CodeFactoryForWindows/CodeFactory/SourceCode/ISourceLocation.cs
+  - name: )
+- uid: CodeFactory.WinVs.Models.CSharp.ICsAttribute.ReplaceAsync*
+  commentId: Overload:CodeFactory.WinVs.Models.CSharp.ICsAttribute.ReplaceAsync
+  isExternal: true
+  href: CodeFactory.WinVs.Models.CSharp.ICsAttribute.html#CodeFactory_WinVs_Models_CSharp_ICsAttribute_ReplaceAsync_System_String_System_String_
+  name: ReplaceAsync
+  nameWithType: ICsAttribute.ReplaceAsync
+  fullName: CodeFactory.WinVs.Models.CSharp.ICsAttribute.ReplaceAsync
+- uid: CodeFactory.WinVs.Models.CSharp.ICsAttribute.Parameters*
+  commentId: Overload:CodeFactory.WinVs.Models.CSharp.ICsAttribute.Parameters
+  isExternal: true
+  href: CodeFactory.WinVs.Models.CSharp.ICsAttribute.html#CodeFactory_WinVs_Models_CSharp_ICsAttribute_Parameters
+  name: Parameters
+  nameWithType: ICsAttribute.Parameters
+  fullName: CodeFactory.WinVs.Models.CSharp.ICsAttribute.Parameters
+- uid: System.Collections.Generic.IReadOnlyList{CodeFactory.WinVs.Models.CSharp.CsAttributeParameter}
+  commentId: T:System.Collections.Generic.IReadOnlyList{CodeFactory.WinVs.Models.CSharp.CsAttributeParameter}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IReadOnlyList`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  name: IReadOnlyList<CsAttributeParameter>
+  nameWithType: IReadOnlyList<CsAttributeParameter>
+  fullName: System.Collections.Generic.IReadOnlyList<CodeFactory.WinVs.Models.CSharp.CsAttributeParameter>
+  nameWithType.vb: IReadOnlyList(Of CsAttributeParameter)
+  fullName.vb: System.Collections.Generic.IReadOnlyList(Of CodeFactory.WinVs.Models.CSharp.CsAttributeParameter)
+  name.vb: IReadOnlyList(Of CsAttributeParameter)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - uid: CodeFactory.WinVs.Models.CSharp.CsAttributeParameter
+    name: CsAttributeParameter
+    isExternal: true
+    href: CodeFactory.WinVs.Models.CSharp.CsAttributeParameter.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: CodeFactory.WinVs.Models.CSharp.CsAttributeParameter
+    name: CsAttributeParameter
+    isExternal: true
+    href: CodeFactory.WinVs.Models.CSharp.CsAttributeParameter.html
+  - name: )
+- uid: System.Collections.Generic.IReadOnlyList`1
+  commentId: T:System.Collections.Generic.IReadOnlyList`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  name: IReadOnlyList<T>
+  nameWithType: IReadOnlyList<T>
+  fullName: System.Collections.Generic.IReadOnlyList<T>
+  nameWithType.vb: IReadOnlyList(Of T)
+  fullName.vb: System.Collections.Generic.IReadOnlyList(Of T)
+  name.vb: IReadOnlyList(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: CodeFactory.WinVs.Models.CSharp.ICsAttribute.HasParameters*
+  commentId: Overload:CodeFactory.WinVs.Models.CSharp.ICsAttribute.HasParameters
+  isExternal: true
+  href: CodeFactory.WinVs.Models.CSharp.ICsAttribute.html#CodeFactory_WinVs_Models_CSharp_ICsAttribute_HasParameters
+  name: HasParameters
+  nameWithType: ICsAttribute.HasParameters
+  fullName: CodeFactory.WinVs.Models.CSharp.ICsAttribute.HasParameters
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: CodeFactory.WinVs.Models.CSharp.ICsAttribute.Type*
+  commentId: Overload:CodeFactory.WinVs.Models.CSharp.ICsAttribute.Type
+  isExternal: true
+  href: CodeFactory.WinVs.Models.CSharp.ICsAttribute.html#CodeFactory_WinVs_Models_CSharp_ICsAttribute_Type
+  name: Type
+  nameWithType: ICsAttribute.Type
+  fullName: CodeFactory.WinVs.Models.CSharp.ICsAttribute.Type
+- uid: CodeFactory.WinVs.Models.CSharp.CsType
+  commentId: T:CodeFactory.WinVs.Models.CSharp.CsType
+  parent: CodeFactory.WinVs.Models.CSharp
+  isExternal: true
+  href: CodeFactory.WinVs.Models.CSharp.CsType.html
+  name: CsType
+  nameWithType: CsType
+  fullName: CodeFactory.WinVs.Models.CSharp.CsType

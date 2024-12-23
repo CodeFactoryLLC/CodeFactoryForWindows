@@ -1,0 +1,714 @@
+### YamlMime:ManagedReference
+items:
+- uid: CodeFactory.WinVs.Logging.ILogger
+  commentId: T:CodeFactory.WinVs.Logging.ILogger
+  id: ILogger
+  parent: CodeFactory.WinVs.Logging
+  children:
+  - CodeFactory.WinVs.Logging.ILogger.Critical(System.String,System.Exception,System.String,System.Int32)
+  - CodeFactory.WinVs.Logging.ILogger.Critical(System.String,System.String,System.Int32)
+  - CodeFactory.WinVs.Logging.ILogger.Debug(System.String,System.String,System.Int32)
+  - CodeFactory.WinVs.Logging.ILogger.DebugEnter(System.String,System.Int32)
+  - CodeFactory.WinVs.Logging.ILogger.DebugExit(System.String,System.Int32)
+  - CodeFactory.WinVs.Logging.ILogger.Error(System.String,System.Exception,System.String,System.Int32)
+  - CodeFactory.WinVs.Logging.ILogger.Error(System.String,System.String,System.Int32)
+  - CodeFactory.WinVs.Logging.ILogger.InfoEnter(System.String,System.Int32)
+  - CodeFactory.WinVs.Logging.ILogger.InfoExit(System.String,System.Int32)
+  - CodeFactory.WinVs.Logging.ILogger.Information(System.String,System.String,System.Int32)
+  - CodeFactory.WinVs.Logging.ILogger.Trace(System.String,System.String,System.Int32)
+  - CodeFactory.WinVs.Logging.ILogger.TraceEnter(System.String,System.Int32)
+  - CodeFactory.WinVs.Logging.ILogger.TraceExit(System.String,System.Int32)
+  - CodeFactory.WinVs.Logging.ILogger.Warning(System.String,System.Exception,System.String,System.Int32)
+  - CodeFactory.WinVs.Logging.ILogger.Warning(System.String,System.String,System.Int32)
+  langs:
+  - csharp
+  - vb
+  name: ILogger
+  nameWithType: ILogger
+  fullName: CodeFactory.WinVs.Logging.ILogger
+  type: Interface
+  source:
+    href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/19e816ffdf1ba504be6987736bbac42e2d241405/Src/CodeFactoryForWindows/CodeFactory.WinVs/Logging/ILogger.cs
+  assemblies:
+  - CodeFactory.WinVs
+  namespace: CodeFactory.WinVs.Logging
+  summary: Standard logging interface used by Code factory to log information about the execution of code factory.
+  example: []
+  syntax:
+    content: public interface ILogger
+    content.vb: Public Interface ILogger
+- uid: CodeFactory.WinVs.Logging.ILogger.TraceEnter(System.String,System.Int32)
+  commentId: M:CodeFactory.WinVs.Logging.ILogger.TraceEnter(System.String,System.Int32)
+  id: TraceEnter(System.String,System.Int32)
+  parent: CodeFactory.WinVs.Logging.ILogger
+  langs:
+  - csharp
+  - vb
+  name: TraceEnter(string, int)
+  nameWithType: ILogger.TraceEnter(string, int)
+  fullName: CodeFactory.WinVs.Logging.ILogger.TraceEnter(string, int)
+  type: Method
+  source:
+    href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/19e816ffdf1ba504be6987736bbac42e2d241405/Src/CodeFactoryForWindows/CodeFactory.WinVs/Logging/ILogger.cs
+  assemblies:
+  - CodeFactory.WinVs
+  namespace: CodeFactory.WinVs.Logging
+  summary: Logs the entering into a member. This is an trace level log message.
+  example: []
+  syntax:
+    content: void TraceEnter(string memberName = null, int lineNumber = 0)
+    parameters:
+    - id: memberName
+      type: System.String
+      description: The name of the member being logged. Important the compiler will populate this value automatically.
+    - id: lineNumber
+      type: System.Int32
+      description: The line number where the logging event occurs. Important the compiler will populate this value automatically.
+    content.vb: Sub TraceEnter(memberName As String = Nothing, lineNumber As Integer = 0)
+  overload: CodeFactory.WinVs.Logging.ILogger.TraceEnter*
+  nameWithType.vb: ILogger.TraceEnter(String, Integer)
+  fullName.vb: CodeFactory.WinVs.Logging.ILogger.TraceEnter(String, Integer)
+  name.vb: TraceEnter(String, Integer)
+- uid: CodeFactory.WinVs.Logging.ILogger.TraceExit(System.String,System.Int32)
+  commentId: M:CodeFactory.WinVs.Logging.ILogger.TraceExit(System.String,System.Int32)
+  id: TraceExit(System.String,System.Int32)
+  parent: CodeFactory.WinVs.Logging.ILogger
+  langs:
+  - csharp
+  - vb
+  name: TraceExit(string, int)
+  nameWithType: ILogger.TraceExit(string, int)
+  fullName: CodeFactory.WinVs.Logging.ILogger.TraceExit(string, int)
+  type: Method
+  source:
+    href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/19e816ffdf1ba504be6987736bbac42e2d241405/Src/CodeFactoryForWindows/CodeFactory.WinVs/Logging/ILogger.cs
+  assemblies:
+  - CodeFactory.WinVs
+  namespace: CodeFactory.WinVs.Logging
+  summary: Logs the exiting of a member. This is an trace level log message.
+  example: []
+  syntax:
+    content: void TraceExit(string memberName = null, int lineNumber = 0)
+    parameters:
+    - id: memberName
+      type: System.String
+      description: The name of the member being logged.Important the compiler will populate this value automatically.
+    - id: lineNumber
+      type: System.Int32
+      description: The line number where the logging event occurs.Important the compiler will populate this value automatically.
+    content.vb: Sub TraceExit(memberName As String = Nothing, lineNumber As Integer = 0)
+  overload: CodeFactory.WinVs.Logging.ILogger.TraceExit*
+  nameWithType.vb: ILogger.TraceExit(String, Integer)
+  fullName.vb: CodeFactory.WinVs.Logging.ILogger.TraceExit(String, Integer)
+  name.vb: TraceExit(String, Integer)
+- uid: CodeFactory.WinVs.Logging.ILogger.DebugEnter(System.String,System.Int32)
+  commentId: M:CodeFactory.WinVs.Logging.ILogger.DebugEnter(System.String,System.Int32)
+  id: DebugEnter(System.String,System.Int32)
+  parent: CodeFactory.WinVs.Logging.ILogger
+  langs:
+  - csharp
+  - vb
+  name: DebugEnter(string, int)
+  nameWithType: ILogger.DebugEnter(string, int)
+  fullName: CodeFactory.WinVs.Logging.ILogger.DebugEnter(string, int)
+  type: Method
+  source:
+    href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/19e816ffdf1ba504be6987736bbac42e2d241405/Src/CodeFactoryForWindows/CodeFactory.WinVs/Logging/ILogger.cs
+  assemblies:
+  - CodeFactory.WinVs
+  namespace: CodeFactory.WinVs.Logging
+  summary: Logs the entering into a member. This is an debuglevel log message.
+  example: []
+  syntax:
+    content: void DebugEnter(string memberName = null, int lineNumber = 0)
+    parameters:
+    - id: memberName
+      type: System.String
+      description: The name of the member being logged. Important the compiler will populate this value automatically.
+    - id: lineNumber
+      type: System.Int32
+      description: The line number where the logging event occurs. Important the compiler will populate this value automatically.
+    content.vb: Sub DebugEnter(memberName As String = Nothing, lineNumber As Integer = 0)
+  overload: CodeFactory.WinVs.Logging.ILogger.DebugEnter*
+  nameWithType.vb: ILogger.DebugEnter(String, Integer)
+  fullName.vb: CodeFactory.WinVs.Logging.ILogger.DebugEnter(String, Integer)
+  name.vb: DebugEnter(String, Integer)
+- uid: CodeFactory.WinVs.Logging.ILogger.DebugExit(System.String,System.Int32)
+  commentId: M:CodeFactory.WinVs.Logging.ILogger.DebugExit(System.String,System.Int32)
+  id: DebugExit(System.String,System.Int32)
+  parent: CodeFactory.WinVs.Logging.ILogger
+  langs:
+  - csharp
+  - vb
+  name: DebugExit(string, int)
+  nameWithType: ILogger.DebugExit(string, int)
+  fullName: CodeFactory.WinVs.Logging.ILogger.DebugExit(string, int)
+  type: Method
+  source:
+    href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/19e816ffdf1ba504be6987736bbac42e2d241405/Src/CodeFactoryForWindows/CodeFactory.WinVs/Logging/ILogger.cs
+  assemblies:
+  - CodeFactory.WinVs
+  namespace: CodeFactory.WinVs.Logging
+  summary: Logs the exiting of a member. This is an debug level log message.
+  example: []
+  syntax:
+    content: void DebugExit(string memberName = null, int lineNumber = 0)
+    parameters:
+    - id: memberName
+      type: System.String
+      description: The name of the member being logged.Important the compiler will populate this value automatically.
+    - id: lineNumber
+      type: System.Int32
+      description: The line number where the logging event occurs.Important the compiler will populate this value automatically.
+    content.vb: Sub DebugExit(memberName As String = Nothing, lineNumber As Integer = 0)
+  overload: CodeFactory.WinVs.Logging.ILogger.DebugExit*
+  nameWithType.vb: ILogger.DebugExit(String, Integer)
+  fullName.vb: CodeFactory.WinVs.Logging.ILogger.DebugExit(String, Integer)
+  name.vb: DebugExit(String, Integer)
+- uid: CodeFactory.WinVs.Logging.ILogger.InfoEnter(System.String,System.Int32)
+  commentId: M:CodeFactory.WinVs.Logging.ILogger.InfoEnter(System.String,System.Int32)
+  id: InfoEnter(System.String,System.Int32)
+  parent: CodeFactory.WinVs.Logging.ILogger
+  langs:
+  - csharp
+  - vb
+  name: InfoEnter(string, int)
+  nameWithType: ILogger.InfoEnter(string, int)
+  fullName: CodeFactory.WinVs.Logging.ILogger.InfoEnter(string, int)
+  type: Method
+  source:
+    href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/19e816ffdf1ba504be6987736bbac42e2d241405/Src/CodeFactoryForWindows/CodeFactory.WinVs/Logging/ILogger.cs
+  assemblies:
+  - CodeFactory.WinVs
+  namespace: CodeFactory.WinVs.Logging
+  summary: Logs the entering into a member. This is an information level log message.
+  example: []
+  syntax:
+    content: void InfoEnter(string memberName = null, int lineNumber = 0)
+    parameters:
+    - id: memberName
+      type: System.String
+      description: The name of the member being logged. Important the compiler will populate this value automatically.
+    - id: lineNumber
+      type: System.Int32
+      description: The line number where the logging event occurs. Important the compiler will populate this value automatically.
+    content.vb: Sub InfoEnter(memberName As String = Nothing, lineNumber As Integer = 0)
+  overload: CodeFactory.WinVs.Logging.ILogger.InfoEnter*
+  nameWithType.vb: ILogger.InfoEnter(String, Integer)
+  fullName.vb: CodeFactory.WinVs.Logging.ILogger.InfoEnter(String, Integer)
+  name.vb: InfoEnter(String, Integer)
+- uid: CodeFactory.WinVs.Logging.ILogger.InfoExit(System.String,System.Int32)
+  commentId: M:CodeFactory.WinVs.Logging.ILogger.InfoExit(System.String,System.Int32)
+  id: InfoExit(System.String,System.Int32)
+  parent: CodeFactory.WinVs.Logging.ILogger
+  langs:
+  - csharp
+  - vb
+  name: InfoExit(string, int)
+  nameWithType: ILogger.InfoExit(string, int)
+  fullName: CodeFactory.WinVs.Logging.ILogger.InfoExit(string, int)
+  type: Method
+  source:
+    href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/19e816ffdf1ba504be6987736bbac42e2d241405/Src/CodeFactoryForWindows/CodeFactory.WinVs/Logging/ILogger.cs
+  assemblies:
+  - CodeFactory.WinVs
+  namespace: CodeFactory.WinVs.Logging
+  summary: Logs the exiting of a member. This is an information level log message.
+  example: []
+  syntax:
+    content: void InfoExit(string memberName = null, int lineNumber = 0)
+    parameters:
+    - id: memberName
+      type: System.String
+      description: The name of the member being logged.Important the compiler will populate this value automatically.
+    - id: lineNumber
+      type: System.Int32
+      description: The line number where the logging event occurs.Important the compiler will populate this value automatically.
+    content.vb: Sub InfoExit(memberName As String = Nothing, lineNumber As Integer = 0)
+  overload: CodeFactory.WinVs.Logging.ILogger.InfoExit*
+  nameWithType.vb: ILogger.InfoExit(String, Integer)
+  fullName.vb: CodeFactory.WinVs.Logging.ILogger.InfoExit(String, Integer)
+  name.vb: InfoExit(String, Integer)
+- uid: CodeFactory.WinVs.Logging.ILogger.Trace(System.String,System.String,System.Int32)
+  commentId: M:CodeFactory.WinVs.Logging.ILogger.Trace(System.String,System.String,System.Int32)
+  id: Trace(System.String,System.String,System.Int32)
+  parent: CodeFactory.WinVs.Logging.ILogger
+  langs:
+  - csharp
+  - vb
+  name: Trace(string, string, int)
+  nameWithType: ILogger.Trace(string, string, int)
+  fullName: CodeFactory.WinVs.Logging.ILogger.Trace(string, string, int)
+  type: Method
+  source:
+    href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/19e816ffdf1ba504be6987736bbac42e2d241405/Src/CodeFactoryForWindows/CodeFactory.WinVs/Logging/ILogger.cs
+  assemblies:
+  - CodeFactory.WinVs
+  namespace: CodeFactory.WinVs.Logging
+  summary: Logs detailed execution information. This level is used for application tracing.
+  example: []
+  syntax:
+    content: void Trace(string message, string memberName = null, int lineNumber = 0)
+    parameters:
+    - id: message
+      type: System.String
+      description: Message to be logged.
+    - id: memberName
+      type: System.String
+      description: The name of the member being logged.Important the compiler will populate this value automatically.
+    - id: lineNumber
+      type: System.Int32
+      description: The line number where the logging event occurs.Important the compiler will populate this value automatically.
+    content.vb: Sub Trace(message As String, memberName As String = Nothing, lineNumber As Integer = 0)
+  overload: CodeFactory.WinVs.Logging.ILogger.Trace*
+  nameWithType.vb: ILogger.Trace(String, String, Integer)
+  fullName.vb: CodeFactory.WinVs.Logging.ILogger.Trace(String, String, Integer)
+  name.vb: Trace(String, String, Integer)
+- uid: CodeFactory.WinVs.Logging.ILogger.Debug(System.String,System.String,System.Int32)
+  commentId: M:CodeFactory.WinVs.Logging.ILogger.Debug(System.String,System.String,System.Int32)
+  id: Debug(System.String,System.String,System.Int32)
+  parent: CodeFactory.WinVs.Logging.ILogger
+  langs:
+  - csharp
+  - vb
+  name: Debug(string, string, int)
+  nameWithType: ILogger.Debug(string, string, int)
+  fullName: CodeFactory.WinVs.Logging.ILogger.Debug(string, string, int)
+  type: Method
+  source:
+    href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/19e816ffdf1ba504be6987736bbac42e2d241405/Src/CodeFactoryForWindows/CodeFactory.WinVs/Logging/ILogger.cs
+  assemblies:
+  - CodeFactory.WinVs
+  namespace: CodeFactory.WinVs.Logging
+  summary: Logs debug level information. This level is used for application debugging.
+  example: []
+  syntax:
+    content: void Debug(string message, string memberName = null, int lineNumber = 0)
+    parameters:
+    - id: message
+      type: System.String
+      description: Message to be logged.
+    - id: memberName
+      type: System.String
+      description: The name of the member being logged.Important the compiler will populate this value automatically.
+    - id: lineNumber
+      type: System.Int32
+      description: The line number where the logging event occurs.Important the compiler will populate this value automatically.
+    content.vb: Sub Debug(message As String, memberName As String = Nothing, lineNumber As Integer = 0)
+  overload: CodeFactory.WinVs.Logging.ILogger.Debug*
+  nameWithType.vb: ILogger.Debug(String, String, Integer)
+  fullName.vb: CodeFactory.WinVs.Logging.ILogger.Debug(String, String, Integer)
+  name.vb: Debug(String, String, Integer)
+- uid: CodeFactory.WinVs.Logging.ILogger.Information(System.String,System.String,System.Int32)
+  commentId: M:CodeFactory.WinVs.Logging.ILogger.Information(System.String,System.String,System.Int32)
+  id: Information(System.String,System.String,System.Int32)
+  parent: CodeFactory.WinVs.Logging.ILogger
+  langs:
+  - csharp
+  - vb
+  name: Information(string, string, int)
+  nameWithType: ILogger.Information(string, string, int)
+  fullName: CodeFactory.WinVs.Logging.ILogger.Information(string, string, int)
+  type: Method
+  source:
+    href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/19e816ffdf1ba504be6987736bbac42e2d241405/Src/CodeFactoryForWindows/CodeFactory.WinVs/Logging/ILogger.cs
+  assemblies:
+  - CodeFactory.WinVs
+  namespace: CodeFactory.WinVs.Logging
+  summary: Logs general information about the executing code base. This is the default logging level.
+  example: []
+  syntax:
+    content: void Information(string message, string memberName = null, int lineNumber = 0)
+    parameters:
+    - id: message
+      type: System.String
+      description: Message to be logged.
+    - id: memberName
+      type: System.String
+      description: The name of the member being logged.Important the compiler will populate this value automatically.
+    - id: lineNumber
+      type: System.Int32
+      description: The line number where the logging event occurs.Important the compiler will populate this value automatically.
+    content.vb: Sub Information(message As String, memberName As String = Nothing, lineNumber As Integer = 0)
+  overload: CodeFactory.WinVs.Logging.ILogger.Information*
+  nameWithType.vb: ILogger.Information(String, String, Integer)
+  fullName.vb: CodeFactory.WinVs.Logging.ILogger.Information(String, String, Integer)
+  name.vb: Information(String, String, Integer)
+- uid: CodeFactory.WinVs.Logging.ILogger.Warning(System.String,System.String,System.Int32)
+  commentId: M:CodeFactory.WinVs.Logging.ILogger.Warning(System.String,System.String,System.Int32)
+  id: Warning(System.String,System.String,System.Int32)
+  parent: CodeFactory.WinVs.Logging.ILogger
+  langs:
+  - csharp
+  - vb
+  name: Warning(string, string, int)
+  nameWithType: ILogger.Warning(string, string, int)
+  fullName: CodeFactory.WinVs.Logging.ILogger.Warning(string, string, int)
+  type: Method
+  source:
+    href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/19e816ffdf1ba504be6987736bbac42e2d241405/Src/CodeFactoryForWindows/CodeFactory.WinVs/Logging/ILogger.cs
+  assemblies:
+  - CodeFactory.WinVs
+  namespace: CodeFactory.WinVs.Logging
+  summary: Logs warning level information about the executing code base. This level is always logged when enabled.
+  example: []
+  syntax:
+    content: void Warning(string message, string memberName = null, int lineNumber = 0)
+    parameters:
+    - id: message
+      type: System.String
+      description: Message to be logged.
+    - id: memberName
+      type: System.String
+      description: The name of the member being logged.Important the compiler will populate this value automatically.
+    - id: lineNumber
+      type: System.Int32
+      description: The line number where the logging event occurs.Important the compiler will populate this value automatically.
+    content.vb: Sub Warning(message As String, memberName As String = Nothing, lineNumber As Integer = 0)
+  overload: CodeFactory.WinVs.Logging.ILogger.Warning*
+  nameWithType.vb: ILogger.Warning(String, String, Integer)
+  fullName.vb: CodeFactory.WinVs.Logging.ILogger.Warning(String, String, Integer)
+  name.vb: Warning(String, String, Integer)
+- uid: CodeFactory.WinVs.Logging.ILogger.Warning(System.String,System.Exception,System.String,System.Int32)
+  commentId: M:CodeFactory.WinVs.Logging.ILogger.Warning(System.String,System.Exception,System.String,System.Int32)
+  id: Warning(System.String,System.Exception,System.String,System.Int32)
+  parent: CodeFactory.WinVs.Logging.ILogger
+  langs:
+  - csharp
+  - vb
+  name: Warning(string, Exception, string, int)
+  nameWithType: ILogger.Warning(string, Exception, string, int)
+  fullName: CodeFactory.WinVs.Logging.ILogger.Warning(string, System.Exception, string, int)
+  type: Method
+  source:
+    href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/19e816ffdf1ba504be6987736bbac42e2d241405/Src/CodeFactoryForWindows/CodeFactory.WinVs/Logging/ILogger.cs
+  assemblies:
+  - CodeFactory.WinVs
+  namespace: CodeFactory.WinVs.Logging
+  summary: Logs warning level information about the executing code base. This level is always logged when enabled.
+  example: []
+  syntax:
+    content: void Warning(string message, Exception exception, string memberName = null, int lineNumber = 0)
+    parameters:
+    - id: message
+      type: System.String
+      description: Message to be logged.
+    - id: exception
+      type: System.Exception
+      description: The exception that occurred that needs to be logged.
+    - id: memberName
+      type: System.String
+      description: The name of the member being logged.Important the compiler will populate this value automatically.
+    - id: lineNumber
+      type: System.Int32
+      description: The line number where the logging event occurs.Important the compiler will populate this value automatically.
+    content.vb: Sub Warning(message As String, exception As Exception, memberName As String = Nothing, lineNumber As Integer = 0)
+  overload: CodeFactory.WinVs.Logging.ILogger.Warning*
+  nameWithType.vb: ILogger.Warning(String, Exception, String, Integer)
+  fullName.vb: CodeFactory.WinVs.Logging.ILogger.Warning(String, System.Exception, String, Integer)
+  name.vb: Warning(String, Exception, String, Integer)
+- uid: CodeFactory.WinVs.Logging.ILogger.Error(System.String,System.String,System.Int32)
+  commentId: M:CodeFactory.WinVs.Logging.ILogger.Error(System.String,System.String,System.Int32)
+  id: Error(System.String,System.String,System.Int32)
+  parent: CodeFactory.WinVs.Logging.ILogger
+  langs:
+  - csharp
+  - vb
+  name: Error(string, string, int)
+  nameWithType: ILogger.Error(string, string, int)
+  fullName: CodeFactory.WinVs.Logging.ILogger.Error(string, string, int)
+  type: Method
+  source:
+    href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/19e816ffdf1ba504be6987736bbac42e2d241405/Src/CodeFactoryForWindows/CodeFactory.WinVs/Logging/ILogger.cs
+  assemblies:
+  - CodeFactory.WinVs
+  namespace: CodeFactory.WinVs.Logging
+  summary: Logs error level information about the executing code base. This level is always logged when enabled.
+  example: []
+  syntax:
+    content: void Error(string message, string memberName = null, int lineNumber = 0)
+    parameters:
+    - id: message
+      type: System.String
+      description: Message to be logged.
+    - id: memberName
+      type: System.String
+      description: The name of the member being logged.Important the compiler will populate this value automatically.
+    - id: lineNumber
+      type: System.Int32
+      description: The line number where the logging event occurs.Important the compiler will populate this value automatically.
+    content.vb: Sub [Error](message As String, memberName As String = Nothing, lineNumber As Integer = 0)
+  overload: CodeFactory.WinVs.Logging.ILogger.Error*
+  nameWithType.vb: ILogger.Error(String, String, Integer)
+  fullName.vb: CodeFactory.WinVs.Logging.ILogger.Error(String, String, Integer)
+  name.vb: Error(String, String, Integer)
+- uid: CodeFactory.WinVs.Logging.ILogger.Error(System.String,System.Exception,System.String,System.Int32)
+  commentId: M:CodeFactory.WinVs.Logging.ILogger.Error(System.String,System.Exception,System.String,System.Int32)
+  id: Error(System.String,System.Exception,System.String,System.Int32)
+  parent: CodeFactory.WinVs.Logging.ILogger
+  langs:
+  - csharp
+  - vb
+  name: Error(string, Exception, string, int)
+  nameWithType: ILogger.Error(string, Exception, string, int)
+  fullName: CodeFactory.WinVs.Logging.ILogger.Error(string, System.Exception, string, int)
+  type: Method
+  source:
+    href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/19e816ffdf1ba504be6987736bbac42e2d241405/Src/CodeFactoryForWindows/CodeFactory.WinVs/Logging/ILogger.cs
+  assemblies:
+  - CodeFactory.WinVs
+  namespace: CodeFactory.WinVs.Logging
+  summary: Logs error level information about the executing code base. This level is always logged when enabled.
+  example: []
+  syntax:
+    content: void Error(string message, Exception exception, string memberName = null, int lineNumber = 0)
+    parameters:
+    - id: message
+      type: System.String
+      description: Message to be logged.
+    - id: exception
+      type: System.Exception
+      description: The exception that occurred that needs to be logged.
+    - id: memberName
+      type: System.String
+      description: The name of the member being logged.Important the compiler will populate this value automatically.
+    - id: lineNumber
+      type: System.Int32
+      description: The line number where the logging event occurs.Important the compiler will populate this value automatically.
+    content.vb: Sub [Error](message As String, exception As Exception, memberName As String = Nothing, lineNumber As Integer = 0)
+  overload: CodeFactory.WinVs.Logging.ILogger.Error*
+  nameWithType.vb: ILogger.Error(String, Exception, String, Integer)
+  fullName.vb: CodeFactory.WinVs.Logging.ILogger.Error(String, System.Exception, String, Integer)
+  name.vb: Error(String, Exception, String, Integer)
+- uid: CodeFactory.WinVs.Logging.ILogger.Critical(System.String,System.String,System.Int32)
+  commentId: M:CodeFactory.WinVs.Logging.ILogger.Critical(System.String,System.String,System.Int32)
+  id: Critical(System.String,System.String,System.Int32)
+  parent: CodeFactory.WinVs.Logging.ILogger
+  langs:
+  - csharp
+  - vb
+  name: Critical(string, string, int)
+  nameWithType: ILogger.Critical(string, string, int)
+  fullName: CodeFactory.WinVs.Logging.ILogger.Critical(string, string, int)
+  type: Method
+  source:
+    href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/19e816ffdf1ba504be6987736bbac42e2d241405/Src/CodeFactoryForWindows/CodeFactory.WinVs/Logging/ILogger.cs
+  assemblies:
+  - CodeFactory.WinVs
+  namespace: CodeFactory.WinVs.Logging
+  summary: Logs critical level information about the executing code base. This level is always logged when enabled.
+  example: []
+  syntax:
+    content: void Critical(string message, string memberName = null, int lineNumber = 0)
+    parameters:
+    - id: message
+      type: System.String
+      description: Message to be logged.
+    - id: memberName
+      type: System.String
+      description: The name of the member being logged.Important the compiler will populate this value automatically.
+    - id: lineNumber
+      type: System.Int32
+      description: The line number where the logging event occurs.Important the compiler will populate this value automatically.
+    content.vb: Sub Critical(message As String, memberName As String = Nothing, lineNumber As Integer = 0)
+  overload: CodeFactory.WinVs.Logging.ILogger.Critical*
+  nameWithType.vb: ILogger.Critical(String, String, Integer)
+  fullName.vb: CodeFactory.WinVs.Logging.ILogger.Critical(String, String, Integer)
+  name.vb: Critical(String, String, Integer)
+- uid: CodeFactory.WinVs.Logging.ILogger.Critical(System.String,System.Exception,System.String,System.Int32)
+  commentId: M:CodeFactory.WinVs.Logging.ILogger.Critical(System.String,System.Exception,System.String,System.Int32)
+  id: Critical(System.String,System.Exception,System.String,System.Int32)
+  parent: CodeFactory.WinVs.Logging.ILogger
+  langs:
+  - csharp
+  - vb
+  name: Critical(string, Exception, string, int)
+  nameWithType: ILogger.Critical(string, Exception, string, int)
+  fullName: CodeFactory.WinVs.Logging.ILogger.Critical(string, System.Exception, string, int)
+  type: Method
+  source:
+    href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/19e816ffdf1ba504be6987736bbac42e2d241405/Src/CodeFactoryForWindows/CodeFactory.WinVs/Logging/ILogger.cs
+  assemblies:
+  - CodeFactory.WinVs
+  namespace: CodeFactory.WinVs.Logging
+  summary: Logs critical level information about the executing code base. This level is always logged when enabled.
+  example: []
+  syntax:
+    content: void Critical(string message, Exception exception, string memberName = null, int lineNumber = 0)
+    parameters:
+    - id: message
+      type: System.String
+      description: Message to be logged.
+    - id: exception
+      type: System.Exception
+      description: The exception that occurred that needs to be logged.
+    - id: memberName
+      type: System.String
+      description: The name of the member being logged.Important the compiler will populate this value automatically.
+    - id: lineNumber
+      type: System.Int32
+      description: The line number where the logging event occurs.Important the compiler will populate this value automatically.
+    content.vb: Sub Critical(message As String, exception As Exception, memberName As String = Nothing, lineNumber As Integer = 0)
+  overload: CodeFactory.WinVs.Logging.ILogger.Critical*
+  nameWithType.vb: ILogger.Critical(String, Exception, String, Integer)
+  fullName.vb: CodeFactory.WinVs.Logging.ILogger.Critical(String, System.Exception, String, Integer)
+  name.vb: Critical(String, Exception, String, Integer)
+references:
+- uid: CodeFactory.WinVs.Logging
+  commentId: N:CodeFactory.WinVs.Logging
+  isExternal: true
+  href: CodeFactory.html
+  name: CodeFactory.WinVs.Logging
+  nameWithType: CodeFactory.WinVs.Logging
+  fullName: CodeFactory.WinVs.Logging
+  spec.csharp:
+  - uid: CodeFactory
+    name: CodeFactory
+    isExternal: true
+    href: CodeFactory.html
+  - name: .
+  - uid: CodeFactory.WinVs
+    name: WinVs
+    isExternal: true
+    href: CodeFactory.WinVs.html
+  - name: .
+  - uid: CodeFactory.WinVs.Logging
+    name: Logging
+    isExternal: true
+    href: CodeFactory.WinVs.Logging.html
+  spec.vb:
+  - uid: CodeFactory
+    name: CodeFactory
+    isExternal: true
+    href: CodeFactory.html
+  - name: .
+  - uid: CodeFactory.WinVs
+    name: WinVs
+    isExternal: true
+    href: CodeFactory.WinVs.html
+  - name: .
+  - uid: CodeFactory.WinVs.Logging
+    name: Logging
+    isExternal: true
+    href: CodeFactory.WinVs.Logging.html
+- uid: CodeFactory.WinVs.Logging.ILogger.TraceEnter*
+  commentId: Overload:CodeFactory.WinVs.Logging.ILogger.TraceEnter
+  isExternal: true
+  href: CodeFactory.WinVs.Logging.ILogger.html#CodeFactory_WinVs_Logging_ILogger_TraceEnter_System_String_System_Int32_
+  name: TraceEnter
+  nameWithType: ILogger.TraceEnter
+  fullName: CodeFactory.WinVs.Logging.ILogger.TraceEnter
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: CodeFactory.WinVs.Logging.ILogger.TraceExit*
+  commentId: Overload:CodeFactory.WinVs.Logging.ILogger.TraceExit
+  isExternal: true
+  href: CodeFactory.WinVs.Logging.ILogger.html#CodeFactory_WinVs_Logging_ILogger_TraceExit_System_String_System_Int32_
+  name: TraceExit
+  nameWithType: ILogger.TraceExit
+  fullName: CodeFactory.WinVs.Logging.ILogger.TraceExit
+- uid: CodeFactory.WinVs.Logging.ILogger.DebugEnter*
+  commentId: Overload:CodeFactory.WinVs.Logging.ILogger.DebugEnter
+  isExternal: true
+  href: CodeFactory.WinVs.Logging.ILogger.html#CodeFactory_WinVs_Logging_ILogger_DebugEnter_System_String_System_Int32_
+  name: DebugEnter
+  nameWithType: ILogger.DebugEnter
+  fullName: CodeFactory.WinVs.Logging.ILogger.DebugEnter
+- uid: CodeFactory.WinVs.Logging.ILogger.DebugExit*
+  commentId: Overload:CodeFactory.WinVs.Logging.ILogger.DebugExit
+  isExternal: true
+  href: CodeFactory.WinVs.Logging.ILogger.html#CodeFactory_WinVs_Logging_ILogger_DebugExit_System_String_System_Int32_
+  name: DebugExit
+  nameWithType: ILogger.DebugExit
+  fullName: CodeFactory.WinVs.Logging.ILogger.DebugExit
+- uid: CodeFactory.WinVs.Logging.ILogger.InfoEnter*
+  commentId: Overload:CodeFactory.WinVs.Logging.ILogger.InfoEnter
+  isExternal: true
+  href: CodeFactory.WinVs.Logging.ILogger.html#CodeFactory_WinVs_Logging_ILogger_InfoEnter_System_String_System_Int32_
+  name: InfoEnter
+  nameWithType: ILogger.InfoEnter
+  fullName: CodeFactory.WinVs.Logging.ILogger.InfoEnter
+- uid: CodeFactory.WinVs.Logging.ILogger.InfoExit*
+  commentId: Overload:CodeFactory.WinVs.Logging.ILogger.InfoExit
+  isExternal: true
+  href: CodeFactory.WinVs.Logging.ILogger.html#CodeFactory_WinVs_Logging_ILogger_InfoExit_System_String_System_Int32_
+  name: InfoExit
+  nameWithType: ILogger.InfoExit
+  fullName: CodeFactory.WinVs.Logging.ILogger.InfoExit
+- uid: CodeFactory.WinVs.Logging.ILogger.Trace*
+  commentId: Overload:CodeFactory.WinVs.Logging.ILogger.Trace
+  isExternal: true
+  href: CodeFactory.WinVs.Logging.ILogger.html#CodeFactory_WinVs_Logging_ILogger_Trace_System_String_System_String_System_Int32_
+  name: Trace
+  nameWithType: ILogger.Trace
+  fullName: CodeFactory.WinVs.Logging.ILogger.Trace
+- uid: CodeFactory.WinVs.Logging.ILogger.Debug*
+  commentId: Overload:CodeFactory.WinVs.Logging.ILogger.Debug
+  isExternal: true
+  href: CodeFactory.WinVs.Logging.ILogger.html#CodeFactory_WinVs_Logging_ILogger_Debug_System_String_System_String_System_Int32_
+  name: Debug
+  nameWithType: ILogger.Debug
+  fullName: CodeFactory.WinVs.Logging.ILogger.Debug
+- uid: CodeFactory.WinVs.Logging.ILogger.Information*
+  commentId: Overload:CodeFactory.WinVs.Logging.ILogger.Information
+  isExternal: true
+  href: CodeFactory.WinVs.Logging.ILogger.html#CodeFactory_WinVs_Logging_ILogger_Information_System_String_System_String_System_Int32_
+  name: Information
+  nameWithType: ILogger.Information
+  fullName: CodeFactory.WinVs.Logging.ILogger.Information
+- uid: CodeFactory.WinVs.Logging.ILogger.Warning*
+  commentId: Overload:CodeFactory.WinVs.Logging.ILogger.Warning
+  isExternal: true
+  href: CodeFactory.WinVs.Logging.ILogger.html#CodeFactory_WinVs_Logging_ILogger_Warning_System_String_System_String_System_Int32_
+  name: Warning
+  nameWithType: ILogger.Warning
+  fullName: CodeFactory.WinVs.Logging.ILogger.Warning
+- uid: System.Exception
+  commentId: T:System.Exception
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.exception
+  name: Exception
+  nameWithType: Exception
+  fullName: System.Exception
+- uid: CodeFactory.WinVs.Logging.ILogger.Error*
+  commentId: Overload:CodeFactory.WinVs.Logging.ILogger.Error
+  isExternal: true
+  href: CodeFactory.WinVs.Logging.ILogger.html#CodeFactory_WinVs_Logging_ILogger_Error_System_String_System_String_System_Int32_
+  name: Error
+  nameWithType: ILogger.Error
+  fullName: CodeFactory.WinVs.Logging.ILogger.Error
+- uid: CodeFactory.WinVs.Logging.ILogger.Critical*
+  commentId: Overload:CodeFactory.WinVs.Logging.ILogger.Critical
+  isExternal: true
+  href: CodeFactory.WinVs.Logging.ILogger.html#CodeFactory_WinVs_Logging_ILogger_Critical_System_String_System_String_System_Int32_
+  name: Critical
+  nameWithType: ILogger.Critical
+  fullName: CodeFactory.WinVs.Logging.ILogger.Critical

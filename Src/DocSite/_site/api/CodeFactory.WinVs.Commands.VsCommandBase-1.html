@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+    <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Class VsCommandBase&lt;TModel&gt; | CodeFactory for Windows </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Class VsCommandBase&lt;TModel&gt; | CodeFactory for Windows ">
+      <meta name="generator" content="docfx ">
+  
+      <link rel="shortcut icon" href="../images/cfLogo70White.png">
+      <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/night-owl.min.css">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" integrity="sha384-EvBWSlnoFgZlXJvpzS+MAUEjvN7+gcCwH+qh7GRFOGgZO0PuwOFro7qPOJnLfe7l" crossorigin="anonymous">
+      <link rel="stylesheet" href="../styles/config.css">
+      <link rel="stylesheet" href="../styles/singulink.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+  
+  <meta property="docfx:rel" content="../">
+  <meta property="docfx:newtab" content="true">
+    </head>
+    <body>
+        <!-- Header required for docfx anchor scroll to work -->
+        <header id="head"></header>
+        <div class="top-navbar">
+            <a class="burger-icon" onclick="toggleMenu()">
+                <svg name="Hamburger" style="vertical-align: middle;" width="34" height="34" viewbox="0 0 24 24"><path fill="currentColor" fill-rule="evenodd" clip-rule="evenodd" d="M20 6H4V9H20V6ZM4 10.999H20V13.999H4V10.999ZM4 15.999H20V18.999H4V15.999Z"></path></svg>
+            </a>
+
+
+            <a class="brand" href="../index.html">
+              <img src="../images/cfLogo70White.png" alt="CodeFactory for Windows" class="logomark">
+              <span class="brand-title">CodeFactory for Windows</span>
+            </a>        </div>
+
+        <div class="body-content">
+            <div id="blackout" class="blackout" onclick="toggleMenu()"></div>
+
+            <nav id="sidebar" role="navigation">
+                <div class="sidebar">
+
+                    <div>
+                      <div class="mobile-hide">
+
+                        <a class="brand" href="../index.html">
+                          <img src="../images/cfLogo70White.png" alt="CodeFactory for Windows" class="logomark">
+                          <span class="brand-title">CodeFactory for Windows</span>
+                        </a>                      </div>
+
+                      <div class="sidesearch">
+                        <form id="search" role="search" class="search">
+                            <i class="bi bi-search search-icon"></i>
+                            <input type="text" id="search-query" placeholder="Search" autocomplete="off">
+                        </form>
+                      </div>
+
+                      <div id="navbar">
+                      </div>
+                    </div>                    <div class="sidebar-item-separator"></div>
+
+                        <div id="sidetoggle">
+                          <div id="sidetoc"></div>
+                        </div>
+                </div>
+                <div class="footer">
+  CodeFactory for Windows SDK
+  
+                </div>            </nav>
+
+            <main class="main-panel">
+
+                <div id="search-results" style="display: none;">
+                  <h1 class="search-list">Search Results for <span></span></h1>
+                  <div class="sr-items">
+                    <p><i class="bi bi-hourglass-split index-loading"></i></p>
+                  </div>
+                  <ul id="pagination" data-first=First data-prev=Previous data-next=Next data-last=Last></ul>
+                </div>
+ 
+
+                <div role="main" class="hide-when-search">
+
+                        <div class="subnav navbar navbar-default">
+                          <div class="container hide-when-search" id="breadcrumb">
+                            <ul class="breadcrumb">
+                              <li></li>
+                            </ul>
+                          </div>
+                        </div>
+
+
+                    <article class="content wrap" id="_content" data-uid="CodeFactory.WinVs.Commands.VsCommandBase`1">
+
+
+
+  <h1 id="CodeFactory_WinVs_Commands_VsCommandBase_1" data-uid="CodeFactory.WinVs.Commands.VsCommandBase`1" class="text-break">Class VsCommandBase&lt;TModel&gt;</h1>
+  <div class="markdown level0 summary"><p>Base implementation for a factory command that supports integration with visual studio.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+    <div class="level1"><span class="xref">VsCommandBase&lt;TModel&gt;</span></div>
+      <div class="level2"><a class="xref" href="CodeFactory.WinVs.Commands.SolutionExplorer.CSharpSourceCommandBase.html">CSharpSourceCommandBase</a></div>
+      <div class="level2"><a class="xref" href="CodeFactory.WinVs.Commands.SolutionExplorer.ProjectCommandBase.html">ProjectCommandBase</a></div>
+      <div class="level2"><a class="xref" href="CodeFactory.WinVs.Commands.SolutionExplorer.ProjectDocumentCommandBase.html">ProjectDocumentCommandBase</a></div>
+      <div class="level2"><a class="xref" href="CodeFactory.WinVs.Commands.SolutionExplorer.ProjectFolderCommandBase.html">ProjectFolderCommandBase</a></div>
+      <div class="level2"><a class="xref" href="CodeFactory.WinVs.Commands.SolutionExplorer.SolutionCommandBase.html">SolutionCommandBase</a></div>
+      <div class="level2"><a class="xref" href="CodeFactory.WinVs.Commands.SolutionExplorer.SolutionDocumentCommandBase.html">SolutionDocumentCommandBase</a></div>
+      <div class="level2"><a class="xref" href="CodeFactory.WinVs.Commands.SolutionExplorer.SolutionFolderCommandBase.html">SolutionFolderCommandBase</a></div>
+  </div>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="CodeFactory.WinVs.Commands.IVsConfigurableCommand-1.html">IVsConfigurableCommand</a>&lt;TModel&gt;</div>
+    <div><a class="xref" href="CodeFactory.WinVs.Commands.IVsFactoryCommand-1.html">IVsFactoryCommand</a>&lt;TModel&gt;</div>
+    <div><a class="xref" href="CodeFactory.WinVs.Commands.IVsCommandInformation.html">IVsCommandInformation</a></div>
+    <div><a class="xref" href="https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/19e816ffdf1ba504be6987736bbac42e2d241405/Src/CodeFactoryForWindows/CodeFactory/ICommand.cs">ICommand</a>&lt;TModel&gt;</div>
+    <div><a class="xref" href="CodeFactory.ICommandBase-1.html">ICommandBase</a>&lt;TModel&gt;</div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="CodeFactory.html">CodeFactory</a>.<a class="xref" href="CodeFactory.WinVs.html">WinVs</a>.<a class="xref" href="CodeFactory.WinVs.Commands.html">Commands</a></h6>
+  <h6><strong>Assembly</strong>: CodeFactory.WinVs.dll</h6>
+  <h5 id="CodeFactory_WinVs_Commands_VsCommandBase_1_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract class VsCommandBase&lt;TModel&gt; : IVsConfigurableCommand&lt;TModel&gt;, IVsFactoryCommand&lt;TModel&gt;, IVsCommandInformation, ICommand&lt;TModel&gt;, ICommandBase&lt;TModel&gt; where TModel : class</code></pre>
+  </div>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TModel</span></td>
+        <td><p>The target visual studio model type to be returned from the visual studio command.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="constructors">Constructors
+</h3>
+  <a id="CodeFactory_WinVs_Commands_VsCommandBase_1__ctor_" data-uid="CodeFactory.WinVs.Commands.VsCommandBase`1.#ctor*"></a>
+  <h4 id="CodeFactory_WinVs_Commands_VsCommandBase_1__ctor_CodeFactory_WinVs_Logging_ILogger_CodeFactory_WinVs_IVsActions_CodeFactory_WinVs_Commands_VsCommandType_System_String_System_String_" data-uid="CodeFactory.WinVs.Commands.VsCommandBase`1.#ctor(CodeFactory.WinVs.Logging.ILogger,CodeFactory.WinVs.IVsActions,CodeFactory.WinVs.Commands.VsCommandType,System.String,System.String)">VsCommandBase(ILogger, IVsActions, VsCommandType, string, string)</h4>
+  <div class="markdown level1 summary"><p>Base constructor used it initialize a visual studio command.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected VsCommandBase(ILogger logger, IVsActions commands, VsCommandType commandType, string commandTitle, string commandDescription)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CodeFactory.WinVs.Logging.ILogger.html">ILogger</a></td>
+        <td><span class="parametername">logger</span></td>
+        <td><p>The code factory logger to be used by the logger.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="CodeFactory.WinVs.IVsActions.html">IVsActions</a></td>
+        <td><span class="parametername">commands</span></td>
+        <td><p>The global visual studio commands that can be used by this visual studio command.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="CodeFactory.WinVs.Commands.VsCommandType.html">VsCommandType</a></td>
+        <td><span class="parametername">commandType</span></td>
+        <td><p>The target type of command being created.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">commandTitle</span></td>
+        <td><p>The title displayed in visual studio for this command.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">commandDescription</span></td>
+        <td><p>A brief description of the purpose of this command.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="fields">Fields
+</h3>
+  <h4 id="CodeFactory_WinVs_Commands_VsCommandBase_1__commandDescription" data-uid="CodeFactory.WinVs.Commands.VsCommandBase`1._commandDescription">_commandDescription</h4>
+  <div class="markdown level1 summary"><p>Backing field for the property <a class="xref" href="CodeFactory.WinVs.Commands.VsCommandBase-1.html#CodeFactory_WinVs_Commands_VsCommandBase_1_CommandDescription">CommandDescription</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected readonly string _commandDescription</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="CodeFactory_WinVs_Commands_VsCommandBase_1__commandTitle" data-uid="CodeFactory.WinVs.Commands.VsCommandBase`1._commandTitle">_commandTitle</h4>
+  <div class="markdown level1 summary"><p>Backing field for the property <a class="xref" href="CodeFactory.WinVs.Commands.VsCommandBase-1.html#CodeFactory_WinVs_Commands_VsCommandBase_1_CommandTitle">CommandTitle</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected readonly string _commandTitle</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="CodeFactory_WinVs_Commands_VsCommandBase_1__logger" data-uid="CodeFactory.WinVs.Commands.VsCommandBase`1._logger">_logger</h4>
+  <div class="markdown level1 summary"><p>Logging method that is used by the command to log to the code factory logging framework.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected readonly ILogger _logger</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CodeFactory.WinVs.Logging.ILogger.html">ILogger</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+</h3>
+  <a id="CodeFactory_WinVs_Commands_VsCommandBase_1_CommandDescription_" data-uid="CodeFactory.WinVs.Commands.VsCommandBase`1.CommandDescription*"></a>
+  <h4 id="CodeFactory_WinVs_Commands_VsCommandBase_1_CommandDescription" data-uid="CodeFactory.WinVs.Commands.VsCommandBase`1.CommandDescription">CommandDescription</h4>
+  <div class="markdown level1 summary"><p>An optional discription that discribes what this factory command is intended for.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string CommandDescription { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="CodeFactory_WinVs_Commands_VsCommandBase_1_CommandTitle_" data-uid="CodeFactory.WinVs.Commands.VsCommandBase`1.CommandTitle*"></a>
+  <h4 id="CodeFactory_WinVs_Commands_VsCommandBase_1_CommandTitle" data-uid="CodeFactory.WinVs.Commands.VsCommandBase`1.CommandTitle">CommandTitle</h4>
+  <div class="markdown level1 summary"><p>Action title that will be displayed within visual studio.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string CommandTitle { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="CodeFactory_WinVs_Commands_VsCommandBase_1_CommandType_" data-uid="CodeFactory.WinVs.Commands.VsCommandBase`1.CommandType*"></a>
+  <h4 id="CodeFactory_WinVs_Commands_VsCommandBase_1_CommandType" data-uid="CodeFactory.WinVs.Commands.VsCommandBase`1.CommandType">CommandType</h4>
+  <div class="markdown level1 summary"><p>The target type of command that is being loaded.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public VsCommandType CommandType { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CodeFactory.WinVs.Commands.VsCommandType.html">VsCommandType</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="CodeFactory_WinVs_Commands_VsCommandBase_1_VisualStudioActions_" data-uid="CodeFactory.WinVs.Commands.VsCommandBase`1.VisualStudioActions*"></a>
+  <h4 id="CodeFactory_WinVs_Commands_VsCommandBase_1_VisualStudioActions" data-uid="CodeFactory.WinVs.Commands.VsCommandBase`1.VisualStudioActions">VisualStudioActions</h4>
+  <div class="markdown level1 summary"><p>Global visual studio commands that can be accessed from this visual studio command.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IVsActions VisualStudioActions { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CodeFactory.WinVs.IVsActions.html">IVsActions</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+</h3>
+  <a id="CodeFactory_WinVs_Commands_VsCommandBase_1_EnableCommandAsync_" data-uid="CodeFactory.WinVs.Commands.VsCommandBase`1.EnableCommandAsync*"></a>
+  <h4 id="CodeFactory_WinVs_Commands_VsCommandBase_1_EnableCommandAsync__0_" data-uid="CodeFactory.WinVs.Commands.VsCommandBase`1.EnableCommandAsync(`0)">EnableCommandAsync(TModel)</h4>
+  <div class="markdown level1 summary"><p>Validation logic that will determine if this command should be enabled for execution.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract Task&lt;bool&gt; EnableCommandAsync(TModel result)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TModel</span></td>
+        <td><span class="parametername">result</span></td>
+        <td><p>The target model data that will be used to determine if this command should be enabled.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>&gt;</td>
+        <td><p>Boolean flag that will tell code factory to enable this command or disable it.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="CodeFactory_WinVs_Commands_VsCommandBase_1_ExecuteCommandAsync_" data-uid="CodeFactory.WinVs.Commands.VsCommandBase`1.ExecuteCommandAsync*"></a>
+  <h4 id="CodeFactory_WinVs_Commands_VsCommandBase_1_ExecuteCommandAsync__0_" data-uid="CodeFactory.WinVs.Commands.VsCommandBase`1.ExecuteCommandAsync(`0)">ExecuteCommandAsync(TModel)</h4>
+  <div class="markdown level1 summary"><p>Code factory framework calls this method when the command has been executed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract Task ExecuteCommandAsync(TModel result)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TModel</span></td>
+        <td><span class="parametername">result</span></td>
+        <td><p>The code factory model that has generated and provided to the command to process.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="CodeFactory_WinVs_Commands_VsCommandBase_1_LoadExternalConfigDefinition_" data-uid="CodeFactory.WinVs.Commands.VsCommandBase`1.LoadExternalConfigDefinition*"></a>
+  <h4 id="CodeFactory_WinVs_Commands_VsCommandBase_1_LoadExternalConfigDefinition" data-uid="CodeFactory.WinVs.Commands.VsCommandBase`1.LoadExternalConfigDefinition">LoadExternalConfigDefinition()</h4>
+  <div class="markdown level1 summary"><p>Loads the external configuration definition for this command.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract ConfigCommand LoadExternalConfigDefinition()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CodeFactory.WinVs.Commands.ConfigCommand.html">ConfigCommand</a></td>
+        <td><p>Will return the command configuration or null if this command does not support external configurations.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="CodeFactory.WinVs.Commands.IVsConfigurableCommand-1.html">IVsConfigurableCommand&lt;TModel&gt;</a>
+  </div>
+  <div>
+      <a class="xref" href="CodeFactory.WinVs.Commands.IVsFactoryCommand-1.html">IVsFactoryCommand&lt;TModel&gt;</a>
+  </div>
+  <div>
+      <a class="xref" href="CodeFactory.WinVs.Commands.IVsCommandInformation.html">IVsCommandInformation</a>
+  </div>
+  <div>
+      <a class="xref" href="CodeFactory.ICommand-1.html">ICommand&lt;TModel&gt;</a>
+  </div>
+  <div>
+      <a class="xref" href="CodeFactory.ICommandBase-1.html">ICommandBase&lt;TModel&gt;</a>
+  </div>
+
+</article>
+                </div>
+
+                <div class="copyright-footer">
+                    <span>&#169; CodeFactory, LLC. All rights reserved.</span>
+                </div>
+            </main>
+        </div>
+
+
+        <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+        <script type="text/javascript" src="../styles/jquery.twbsPagination.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/mark.js@8.11.1/dist/jquery.mark.min.js"></script>
+        <script type="text/javascript" src="../styles/url.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/anchor-js@5.0.0/anchor.min.js"></script>
+        <script type="text/javascript" src="../styles/docfx.js"></script>
+        <script type="text/javascript" src="../styles/main.js"></script>
+        <script type="text/javascript" src="../styles/singulink.js"></script>    </body>
+</html>

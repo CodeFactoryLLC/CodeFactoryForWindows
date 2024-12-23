@@ -1,0 +1,639 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.NET.StringTools.Strings
+  commentId: T:Microsoft.NET.StringTools.Strings
+  id: Strings
+  parent: Microsoft.NET.StringTools
+  children:
+  - Microsoft.NET.StringTools.Strings.CreateDiagnosticReport
+  - Microsoft.NET.StringTools.Strings.EnableDiagnostics
+  - Microsoft.NET.StringTools.Strings.GetSpanBasedStringBuilder
+  - Microsoft.NET.StringTools.Strings.WeakIntern(System.ReadOnlySpan{System.Char})
+  - Microsoft.NET.StringTools.Strings.WeakIntern(System.String)
+  langs:
+  - csharp
+  - vb
+  name: Strings
+  nameWithType: Strings
+  fullName: Microsoft.NET.StringTools.Strings
+  type: Class
+  source:
+    href: https://github.com/dotnet/msbuild/blob/18d5aef85920037c9d6ff49b1215a4daf515197f/src/StringTools/StringTools.cs
+  assemblies:
+  - Microsoft.NET.StringTools
+  namespace: Microsoft.NET.StringTools
+  syntax:
+    content: public static class Strings
+    content.vb: Public Module Strings
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: Microsoft.NET.StringTools.Strings.WeakIntern(System.String)
+  commentId: M:Microsoft.NET.StringTools.Strings.WeakIntern(System.String)
+  id: WeakIntern(System.String)
+  parent: Microsoft.NET.StringTools.Strings
+  langs:
+  - csharp
+  - vb
+  name: WeakIntern(string)
+  nameWithType: Strings.WeakIntern(string)
+  fullName: Microsoft.NET.StringTools.Strings.WeakIntern(string)
+  type: Method
+  source:
+    href: https://github.com/dotnet/msbuild/blob/18d5aef85920037c9d6ff49b1215a4daf515197f/src/StringTools/StringTools.cs
+  assemblies:
+  - Microsoft.NET.StringTools
+  namespace: Microsoft.NET.StringTools
+  summary: Interns the given string, keeping only a weak reference to the returned value.
+  remarks: >-
+    The intern pool does not retain strong references to the strings it's holding so strings are automatically evicted
+
+    after they become unrooted. This is in contrast to <code>System.String.Intern</code> which holds strings forever.
+  example: []
+  syntax:
+    content: public static string WeakIntern(string str)
+    parameters:
+    - id: str
+      type: System.String
+      description: The string to intern.
+    return:
+      type: System.String
+      description: A string equal to <code class="paramref">str</code>, could be the same object as <code class="paramref">str</code>.
+    content.vb: Public Shared Function WeakIntern(str As String) As String
+  overload: Microsoft.NET.StringTools.Strings.WeakIntern*
+  nameWithType.vb: Strings.WeakIntern(String)
+  fullName.vb: Microsoft.NET.StringTools.Strings.WeakIntern(String)
+  name.vb: WeakIntern(String)
+- uid: Microsoft.NET.StringTools.Strings.WeakIntern(System.ReadOnlySpan{System.Char})
+  commentId: M:Microsoft.NET.StringTools.Strings.WeakIntern(System.ReadOnlySpan{System.Char})
+  id: WeakIntern(System.ReadOnlySpan{System.Char})
+  parent: Microsoft.NET.StringTools.Strings
+  langs:
+  - csharp
+  - vb
+  name: WeakIntern(ReadOnlySpan<char>)
+  nameWithType: Strings.WeakIntern(ReadOnlySpan<char>)
+  fullName: Microsoft.NET.StringTools.Strings.WeakIntern(System.ReadOnlySpan<char>)
+  type: Method
+  source:
+    href: https://github.com/dotnet/msbuild/blob/18d5aef85920037c9d6ff49b1215a4daf515197f/src/StringTools/StringTools.cs
+  assemblies:
+  - Microsoft.NET.StringTools
+  namespace: Microsoft.NET.StringTools
+  summary: Interns the given readonly span of characters, keeping only a weak reference to the returned value.
+  remarks: >-
+    The intern pool does not retain strong references to the strings it's holding so strings are automatically evicted
+
+    after they become unrooted. This is in contrast to <code>System.String.Intern</code> which holds strings forever.
+  example: []
+  syntax:
+    content: public static string WeakIntern(ReadOnlySpan<char> str)
+    parameters:
+    - id: str
+      type: System.ReadOnlySpan{System.Char}
+      description: The character span to intern.
+    return:
+      type: System.String
+      description: A string equal to <code class="paramref">str</code>, could be the result of calling ToString() on <code class="paramref">str</code>.
+    content.vb: Public Shared Function WeakIntern(str As ReadOnlySpan(Of Char)) As String
+  overload: Microsoft.NET.StringTools.Strings.WeakIntern*
+  nameWithType.vb: Strings.WeakIntern(ReadOnlySpan(Of Char))
+  fullName.vb: Microsoft.NET.StringTools.Strings.WeakIntern(System.ReadOnlySpan(Of Char))
+  name.vb: WeakIntern(ReadOnlySpan(Of Char))
+- uid: Microsoft.NET.StringTools.Strings.GetSpanBasedStringBuilder
+  commentId: M:Microsoft.NET.StringTools.Strings.GetSpanBasedStringBuilder
+  id: GetSpanBasedStringBuilder
+  parent: Microsoft.NET.StringTools.Strings
+  langs:
+  - csharp
+  - vb
+  name: GetSpanBasedStringBuilder()
+  nameWithType: Strings.GetSpanBasedStringBuilder()
+  fullName: Microsoft.NET.StringTools.Strings.GetSpanBasedStringBuilder()
+  type: Method
+  source:
+    href: https://github.com/dotnet/msbuild/blob/18d5aef85920037c9d6ff49b1215a4daf515197f/src/StringTools/StringTools.cs
+  assemblies:
+  - Microsoft.NET.StringTools
+  namespace: Microsoft.NET.StringTools
+  summary: Returns a new or recycled <xref href="Microsoft.NET.StringTools.SpanBasedStringBuilder" data-throw-if-not-resolved="false"></xref>.
+  remarks: Call <xref href="System.IDisposable.Dispose" data-throw-if-not-resolved="false"></xref> on the returned instance to recycle it.
+  example: []
+  syntax:
+    content: public static SpanBasedStringBuilder GetSpanBasedStringBuilder()
+    return:
+      type: Microsoft.NET.StringTools.SpanBasedStringBuilder
+      description: The SpanBasedStringBuilder.
+    content.vb: Public Shared Function GetSpanBasedStringBuilder() As SpanBasedStringBuilder
+  overload: Microsoft.NET.StringTools.Strings.GetSpanBasedStringBuilder*
+- uid: Microsoft.NET.StringTools.Strings.EnableDiagnostics
+  commentId: M:Microsoft.NET.StringTools.Strings.EnableDiagnostics
+  id: EnableDiagnostics
+  parent: Microsoft.NET.StringTools.Strings
+  langs:
+  - csharp
+  - vb
+  name: EnableDiagnostics()
+  nameWithType: Strings.EnableDiagnostics()
+  fullName: Microsoft.NET.StringTools.Strings.EnableDiagnostics()
+  type: Method
+  source:
+    href: https://github.com/dotnet/msbuild/blob/18d5aef85920037c9d6ff49b1215a4daf515197f/src/StringTools/StringTools.cs
+  assemblies:
+  - Microsoft.NET.StringTools
+  namespace: Microsoft.NET.StringTools
+  summary: Enables diagnostics in the interner. Call <xref href="Microsoft.NET.StringTools.Strings.CreateDiagnosticReport" data-throw-if-not-resolved="false"></xref> to retrieve the diagnostic data.
+  example: []
+  syntax:
+    content: public static void EnableDiagnostics()
+    content.vb: Public Shared Sub EnableDiagnostics()
+  overload: Microsoft.NET.StringTools.Strings.EnableDiagnostics*
+- uid: Microsoft.NET.StringTools.Strings.CreateDiagnosticReport
+  commentId: M:Microsoft.NET.StringTools.Strings.CreateDiagnosticReport
+  id: CreateDiagnosticReport
+  parent: Microsoft.NET.StringTools.Strings
+  langs:
+  - csharp
+  - vb
+  name: CreateDiagnosticReport()
+  nameWithType: Strings.CreateDiagnosticReport()
+  fullName: Microsoft.NET.StringTools.Strings.CreateDiagnosticReport()
+  type: Method
+  source:
+    href: https://github.com/dotnet/msbuild/blob/18d5aef85920037c9d6ff49b1215a4daf515197f/src/StringTools/StringTools.cs
+  assemblies:
+  - Microsoft.NET.StringTools
+  namespace: Microsoft.NET.StringTools
+  summary: Retrieves the diagnostic data describing the current state of the interner. Make sure to call <xref href="Microsoft.NET.StringTools.Strings.EnableDiagnostics" data-throw-if-not-resolved="false"></xref> beforehand.
+  example: []
+  syntax:
+    content: public static string CreateDiagnosticReport()
+    return:
+      type: System.String
+    content.vb: Public Shared Function CreateDiagnosticReport() As String
+  overload: Microsoft.NET.StringTools.Strings.CreateDiagnosticReport*
+references:
+- uid: Microsoft.NET.StringTools
+  commentId: N:Microsoft.NET.StringTools
+  isExternal: true
+  href: Microsoft.html
+  name: Microsoft.NET.StringTools
+  nameWithType: Microsoft.NET.StringTools
+  fullName: Microsoft.NET.StringTools
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.NET
+    name: NET
+    isExternal: true
+    href: Microsoft.NET.html
+  - name: .
+  - uid: Microsoft.NET.StringTools
+    name: StringTools
+    isExternal: true
+    href: Microsoft.NET.StringTools.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.NET
+    name: NET
+    isExternal: true
+    href: Microsoft.NET.html
+  - name: .
+  - uid: Microsoft.NET.StringTools
+    name: StringTools
+    isExternal: true
+    href: Microsoft.NET.StringTools.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Microsoft.NET.StringTools.Strings.WeakIntern*
+  commentId: Overload:Microsoft.NET.StringTools.Strings.WeakIntern
+  isExternal: true
+  href: Microsoft.NET.StringTools.Strings.html#Microsoft_NET_StringTools_Strings_WeakIntern_System_String_
+  name: WeakIntern
+  nameWithType: Strings.WeakIntern
+  fullName: Microsoft.NET.StringTools.Strings.WeakIntern
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.ReadOnlySpan{System.Char}
+  commentId: T:System.ReadOnlySpan{System.Char}
+  parent: System
+  definition: System.ReadOnlySpan`1
+  href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  name: ReadOnlySpan<char>
+  nameWithType: ReadOnlySpan<char>
+  fullName: System.ReadOnlySpan<char>
+  nameWithType.vb: ReadOnlySpan(Of Char)
+  fullName.vb: System.ReadOnlySpan(Of Char)
+  name.vb: ReadOnlySpan(Of Char)
+  spec.csharp:
+  - uid: System.ReadOnlySpan`1
+    name: ReadOnlySpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  - name: <
+  - uid: System.Char
+    name: char
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.char
+  - name: '>'
+  spec.vb:
+  - uid: System.ReadOnlySpan`1
+    name: ReadOnlySpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Char
+    name: Char
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.char
+  - name: )
+- uid: System.ReadOnlySpan`1
+  commentId: T:System.ReadOnlySpan`1
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  name: ReadOnlySpan<T>
+  nameWithType: ReadOnlySpan<T>
+  fullName: System.ReadOnlySpan<T>
+  nameWithType.vb: ReadOnlySpan(Of T)
+  fullName.vb: System.ReadOnlySpan(Of T)
+  name.vb: ReadOnlySpan(Of T)
+  spec.csharp:
+  - uid: System.ReadOnlySpan`1
+    name: ReadOnlySpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.ReadOnlySpan`1
+    name: ReadOnlySpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Microsoft.NET.StringTools.SpanBasedStringBuilder
+  commentId: T:Microsoft.NET.StringTools.SpanBasedStringBuilder
+  parent: Microsoft.NET.StringTools
+  isExternal: true
+  href: Microsoft.NET.StringTools.SpanBasedStringBuilder.html
+  name: SpanBasedStringBuilder
+  nameWithType: SpanBasedStringBuilder
+  fullName: Microsoft.NET.StringTools.SpanBasedStringBuilder
+- uid: System.IDisposable.Dispose
+  commentId: M:System.IDisposable.Dispose
+  parent: System.IDisposable
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  name: Dispose()
+  nameWithType: IDisposable.Dispose()
+  fullName: System.IDisposable.Dispose()
+  spec.csharp:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  - name: (
+  - name: )
+- uid: Microsoft.NET.StringTools.Strings.GetSpanBasedStringBuilder*
+  commentId: Overload:Microsoft.NET.StringTools.Strings.GetSpanBasedStringBuilder
+  isExternal: true
+  href: Microsoft.NET.StringTools.Strings.html#Microsoft_NET_StringTools_Strings_GetSpanBasedStringBuilder
+  name: GetSpanBasedStringBuilder
+  nameWithType: Strings.GetSpanBasedStringBuilder
+  fullName: Microsoft.NET.StringTools.Strings.GetSpanBasedStringBuilder
+- uid: System.IDisposable
+  commentId: T:System.IDisposable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable
+- uid: Microsoft.NET.StringTools.Strings.CreateDiagnosticReport
+  commentId: M:Microsoft.NET.StringTools.Strings.CreateDiagnosticReport
+  isExternal: true
+  href: Microsoft.NET.StringTools.Strings.html#Microsoft_NET_StringTools_Strings_CreateDiagnosticReport
+  name: CreateDiagnosticReport()
+  nameWithType: Strings.CreateDiagnosticReport()
+  fullName: Microsoft.NET.StringTools.Strings.CreateDiagnosticReport()
+  spec.csharp:
+  - uid: Microsoft.NET.StringTools.Strings.CreateDiagnosticReport
+    name: CreateDiagnosticReport
+    isExternal: true
+    href: Microsoft.NET.StringTools.Strings.html#Microsoft_NET_StringTools_Strings_CreateDiagnosticReport
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Microsoft.NET.StringTools.Strings.CreateDiagnosticReport
+    name: CreateDiagnosticReport
+    isExternal: true
+    href: Microsoft.NET.StringTools.Strings.html#Microsoft_NET_StringTools_Strings_CreateDiagnosticReport
+  - name: (
+  - name: )
+- uid: Microsoft.NET.StringTools.Strings.EnableDiagnostics*
+  commentId: Overload:Microsoft.NET.StringTools.Strings.EnableDiagnostics
+  isExternal: true
+  href: Microsoft.NET.StringTools.Strings.html#Microsoft_NET_StringTools_Strings_EnableDiagnostics
+  name: EnableDiagnostics
+  nameWithType: Strings.EnableDiagnostics
+  fullName: Microsoft.NET.StringTools.Strings.EnableDiagnostics
+- uid: Microsoft.NET.StringTools.Strings.EnableDiagnostics
+  commentId: M:Microsoft.NET.StringTools.Strings.EnableDiagnostics
+  isExternal: true
+  href: Microsoft.NET.StringTools.Strings.html#Microsoft_NET_StringTools_Strings_EnableDiagnostics
+  name: EnableDiagnostics()
+  nameWithType: Strings.EnableDiagnostics()
+  fullName: Microsoft.NET.StringTools.Strings.EnableDiagnostics()
+  spec.csharp:
+  - uid: Microsoft.NET.StringTools.Strings.EnableDiagnostics
+    name: EnableDiagnostics
+    isExternal: true
+    href: Microsoft.NET.StringTools.Strings.html#Microsoft_NET_StringTools_Strings_EnableDiagnostics
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Microsoft.NET.StringTools.Strings.EnableDiagnostics
+    name: EnableDiagnostics
+    isExternal: true
+    href: Microsoft.NET.StringTools.Strings.html#Microsoft_NET_StringTools_Strings_EnableDiagnostics
+  - name: (
+  - name: )
+- uid: Microsoft.NET.StringTools.Strings.CreateDiagnosticReport*
+  commentId: Overload:Microsoft.NET.StringTools.Strings.CreateDiagnosticReport
+  isExternal: true
+  href: Microsoft.NET.StringTools.Strings.html#Microsoft_NET_StringTools_Strings_CreateDiagnosticReport
+  name: CreateDiagnosticReport
+  nameWithType: Strings.CreateDiagnosticReport
+  fullName: Microsoft.NET.StringTools.Strings.CreateDiagnosticReport
