@@ -14,7 +14,7 @@ namespace CodeFactory.WinVs.Models.CSharp
     /// </summary>
     public interface ICsUsingStatement:ICsModel,IParent,ILookup,IUsingStatementNamespace
     {
-
+        
         /// <summary>
         /// Adds the source code directly before the definition of the <see cref="ICsUsingStatement"/> in the target document.
         /// </summary>

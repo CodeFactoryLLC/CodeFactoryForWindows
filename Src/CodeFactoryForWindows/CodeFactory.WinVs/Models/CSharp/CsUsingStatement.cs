@@ -66,7 +66,7 @@ namespace CodeFactory.WinVs.Models.CSharp
         public bool HasAlias => _hasAlias;
 
         /// <summary>
-        /// The alias assigned to the namespace being imported. This will be null if the <see cref="ICsUsingStatement.HasAlias"/> is false. 
+        /// The alias assigned to the namespace being imported. This will be null if the <see cref="HasAlias"/> is false. 
         /// </summary>
         public string Alias => _alias;
 
@@ -84,6 +84,16 @@ namespace CodeFactory.WinVs.Models.CSharp
         /// <exception cref="DocumentException">Error is raised when errors occur updating the source document.</exception>
         public abstract Task<CsSource> AddBeforeAsync(string sourceDocument, string sourceCode);
 
+
+        /// <summary>
+        /// Adds the source code directly before the definition of the <see cref="ICsUsingStatement"/> in the target document.
+        /// </summary>
+        /// <param name="sourceDocument">The fully qualified path to the source code document to be updated.</param>
+        /// <param name="sourceCode">The source code that is to be added to the document.</param>
+        /// <returns>Updated source model and the transaction details.</returns>
+        /// <exception cref="DocumentException">Error is raised when errors occur updating the source document.</exception>
+        public abstract Task<CsSourceTransaction> AddBeforeTransactionAsync(string sourceDocument, string sourceCode);
+
         /// <summary>
         /// Adds the source code directly before the definition of the <see cref="ICsUsingStatement"/> in the target document.
         /// </summary>
@@ -91,6 +101,14 @@ namespace CodeFactory.WinVs.Models.CSharp
         /// <returns>A newly loaded copy of the <see cref="ICsSource"/> model after the changes have been applied.</returns>
         /// <exception cref="DocumentException">Error is raised when errors occur updating the source document.</exception>
         public abstract Task<CsSource> AddBeforeAsync(string sourceCode);
+
+        /// <summary>
+        /// Adds the source code directly before the definition of the <see cref="ICsUsingStatement"/> in the target document.
+        /// </summary>
+        /// <param name="sourceCode">The source code that is to be added to the document.</param>
+        /// <returns>Updated source model and the transaction details.</returns>
+        /// <exception cref="DocumentException">Error is raised when errors occur updating the source document.</exception>
+        public abstract Task<CsSourceTransaction> AddBeforeTransactionAsync(string sourceCode);
 
         /// <summary>
         /// Adds the source code directly after the definition of the <see cref="ICsUsingStatement"/> in the target document.
@@ -104,10 +122,27 @@ namespace CodeFactory.WinVs.Models.CSharp
         /// <summary>
         /// Adds the source code directly after the definition of the <see cref="ICsUsingStatement"/> in the target document.
         /// </summary>
+        /// <param name="sourceDocument">The fully qualified path to the source code document to be updated.</param>
+        /// <param name="sourceCode">The source code that is to be added to the document.</param>
+        /// <returns>Updated source model and the transaction details.</returns>
+        /// <exception cref="DocumentException">Error is raised when errors occur updating the source document.</exception>
+        public abstract Task<CsSourceTransaction> AddAfterTransactionAsync(string sourceDocument, string sourceCode);
+
+        /// <summary>
+        /// Adds the source code directly after the definition of the <see cref="ICsUsingStatement"/> in the target document.
+        /// </summary>
         /// <param name="sourceCode">The source code that is to be added to the document.</param>
         /// <returns>A newly loaded copy of the <see cref="ICsSource"/> model after the changes have been applied.</returns>
         /// <exception cref="DocumentException">Error is raised when errors occur updating the source document.</exception>
         public abstract Task<CsSource> AddAfterAsync(string sourceCode);
+
+        /// <summary>
+        /// Adds the source code directly after the definition of the <see cref="ICsUsingStatement"/> in the target document.
+        /// </summary>
+        /// <param name="sourceCode">The source code that is to be added to the document.</param>
+        /// <returns>Updated source model and the transaction details.</returns>
+        /// <exception cref="DocumentException">Error is raised when errors occur updating the source document.</exception>
+        public abstract Task<CsSourceTransaction> AddAfterTransactionAsync(string sourceCode);
 
         /// <summary>
         /// Deletes the definition of the using statement from the source document. 
@@ -151,10 +186,27 @@ namespace CodeFactory.WinVs.Models.CSharp
         /// <summary>
         /// Replaces the current using statement with the provided source code.
         /// </summary>
+        /// <param name="sourceDocument">The fully qualified path to the source code document to be updated.</param>
+        /// <param name="sourceCode">The source code that is to be used to replace the original definition in the document.</param>
+        /// <returns>Updated source model and the transaction details.</returns>
+        /// <exception cref="DocumentException">Error is raised when errors occur updating the source document.</exception>
+        public abstract Task<CsSourceTransaction> ReplaceTransactionAsync(string sourceDocument, string sourceCode);
+
+        /// <summary>
+        /// Replaces the current using statement with the provided source code.
+        /// </summary>
         /// <param name="sourceCode">The source code that is to be used to replace the original definition in the document.</param>
         /// <returns>A newly loaded copy of the <see cref="ICsSource"/> model after the changes have been applied.</returns>
         /// <exception cref="DocumentException">Error is raised when errors occur updating the source document.</exception>
         public abstract Task<CsSource> ReplaceAsync(string sourceCode);
+
+        /// <summary>
+        /// Replaces the current using statement with the provided source code.
+        /// </summary>
+        /// <param name="sourceCode">The source code that is to be used to replace the original definition in the document.</param>
+        /// <returns>Updated source model and the transaction details.</returns>
+        /// <exception cref="DocumentException">Error is raised when errors occur updating the source document.</exception>
+        public abstract Task<CsSourceTransaction> ReplaceTransactionAsync(string sourceCode);
 
     }
 }

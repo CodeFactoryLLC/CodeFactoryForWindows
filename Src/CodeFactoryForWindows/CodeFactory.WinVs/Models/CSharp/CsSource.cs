@@ -41,6 +41,7 @@ namespace CodeFactory.WinVs.Models.CSharp
         /// <param name="loadedFromSource">Flag that determines if the model was loaded from source code or from an existing library.</param>
         /// <param name="language">The target language the model was generated from.</param>
         /// <param name="namespaces">The namespaces that are defined in this source.</param>
+        /// <param name="projectName">The name of the project the source belongs to. This will be null if the source is not hosted in a project.</param>
         /// <param name="modelStore">Optional the lookup storage for models created during the compile or lookup of the model.</param>
         /// <param name="modelErrors">Optional the error that occurred while creating the model.</param>
         /// <param name="lookupPath">The fully qualified name of the model to be used with the model store.</param>
@@ -54,7 +55,7 @@ namespace CodeFactory.WinVs.Models.CSharp
         /// <param name="recordStructures">The record structures that are defined in this source.</param>
         /// <param name="delegates">The delegates that are defined in this source.</param>
         /// <param name="enums">The enumerations defined in this source.</param>
-
+        /// <param name="hostedInProject">Flag that determines if the source is hosted in a project.</param>
         protected CsSource(bool isLoaded, bool hasErrors, bool loadedFromSource, SourceCodeType language, string lookupPath, 
             string sourceDocument, string parentPath, IReadOnlyList<CsUsingStatement> namespaceReferences,
             IReadOnlyList<CsInterface> interfaces, IReadOnlyList<CsClass> classes, IReadOnlyList<CsStructure> structures, 
@@ -147,12 +148,29 @@ namespace CodeFactory.WinVs.Models.CSharp
         public abstract Task<CsSource> AddToBeginningAsync(string sourceCode);
 
         /// <summary>
+        /// Adds the source code to the beginning of the <see cref="ICsSource"/> model.
+        /// </summary>
+        /// <param name="sourceCode">The source code that is to be added to the document.</param>
+        /// <returns>Updated source model and the transaction details.</returns>
+        /// <exception cref="DocumentException">Error is raised when errors occur updating the source document.</exception>
+        public abstract Task<CsSourceTransaction> AddToBeginningTransactionAsync(string sourceCode);
+
+        
+        /// <summary>
         /// Adds the source code the end of the <see cref="ICsSource"/> model.
         /// </summary>
         /// <param name="sourceCode">The source code that is to be added to the document.</param>
         /// <returns>A newly loaded copy of the <see cref="ICsSource"/> model after the changes have been applied.</returns>
         /// <exception cref="DocumentException">Error is raised when errors occur updating the source document.</exception>
         public abstract Task<CsSource> AddToEndAsync(string sourceCode);
+
+        /// <summary>
+        /// Adds the source code the end of the <see cref="ICsSource"/> model.
+        /// </summary>
+        /// <param name="sourceCode">The source code that is to be added to the document.</param>
+        /// <returns>Updated source model and the transaction details.</returns>
+        /// <exception cref="DocumentException">Error is raised when errors occur updating the source document.</exception>
+        public abstract Task<CsSourceTransaction> AddToEndTransactionAsync(string sourceCode);
 
         /// <summary>
         /// Deletes the content from the <see cref="ICsSource"/> model.
@@ -168,6 +186,14 @@ namespace CodeFactory.WinVs.Models.CSharp
         /// <returns>A newly loaded copy of the <see cref="ICsSource"/> model after the changes have been applied.</returns>
         /// <exception cref="DocumentException">Error is raised when errors occur updating the source document.</exception>
         public abstract Task<CsSource> ReplaceAsync(string sourceCode);
+
+        /// <summary>
+        /// Replaces the content of the <see cref="ICsSource"/> model.
+        /// </summary>
+        /// <param name="sourceCode">The source code that is to be used to replace the original definition in the document.</param>
+        /// <returns>Updated source model and the transaction details.</returns>
+        /// <exception cref="DocumentException">Error is raised when errors occur updating the source document.</exception>
+        public abstract Task<CsSourceTransaction> ReplaceTransactionAsync(string sourceCode);
 
         /// <summary>
         /// The parent to the current model. This will return null if there is no parent for this model, or the parent could not be located. 

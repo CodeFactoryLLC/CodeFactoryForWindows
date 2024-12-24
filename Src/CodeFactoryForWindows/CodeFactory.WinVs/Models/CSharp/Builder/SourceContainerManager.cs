@@ -20,7 +20,9 @@ namespace CodeFactory.WinVs.Models.CSharp.Builder
         private NamespaceManager _namespaceManager;
         private List<MapNamespace> _mappedNamespaces;
 
-        //Lookup path used for loading the container from the source. 
+        /// <summary>
+        /// Lookup path used for loading the container from the source. 
+        /// </summary>
         protected readonly string ContainerPath;
 
         /// <summary>
@@ -108,7 +110,7 @@ namespace CodeFactory.WinVs.Models.CSharp.Builder
         }
 
         /// <summary>
-        /// Loads a new instance of a <see cref="IUpdateSource{TContainerType}.NamespaceManager"/> from the current source and assigns it to the <see cref="IUpdateSource{TContainerType}.NamespaceManager"/> property.
+        /// Loads a new instance of a <see cref="SourceContainerManager{TContainerType}.NamespaceManager"/> from the current source and assigns it to the <see cref="SourceContainerManager{TContainerType}.NamespaceManager"/> property.
         /// </summary>
         /// <exception cref="ArgumentNullException">Thrown if either the source or container is null.</exception>
         public void LoadNamespaceManager()

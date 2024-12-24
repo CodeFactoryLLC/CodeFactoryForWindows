@@ -4,6 +4,10 @@ using System.Text;
 
 namespace CodeFactory.WinVs.Commands
 {
+    /// <summary>
+    /// Interface that defines a visual studio command that can be configured.
+    /// </summary>
+    /// <typeparam name="TModel"></typeparam>
     public interface IVsConfigurableCommand<TModel> : IVsFactoryCommand<TModel> where TModel : class
     {
         /// <summary>

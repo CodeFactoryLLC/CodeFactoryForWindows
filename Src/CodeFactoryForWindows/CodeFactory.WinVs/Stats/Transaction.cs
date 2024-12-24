@@ -4,6 +4,9 @@ using System.Text;
 
 namespace CodeFactory.WinVs.Stats
 {
+    /// <summary>
+    /// Represents the details of a transaction that was performed on a file.
+    /// </summary>
     public class Transaction
     {
         /// <summary>

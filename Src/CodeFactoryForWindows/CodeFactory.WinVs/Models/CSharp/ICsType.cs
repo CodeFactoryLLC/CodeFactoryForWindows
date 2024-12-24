@@ -2,6 +2,8 @@
 //* Code Factory SDK
 //* Copyright (c) 2020-2023 CodeFactory, LLC
 //*****************************************************************************
+
+using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 

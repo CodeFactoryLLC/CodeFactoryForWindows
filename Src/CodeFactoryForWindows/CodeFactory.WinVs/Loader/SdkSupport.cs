@@ -23,24 +23,27 @@ namespace CodeFactory.WinVs.Loader
         /// <summary>
         /// The maximum version of the SDK that can be loaded and used.
         /// </summary>
-        public const string MaxVersion = "2.24224.0.1";
+        public const string MaxVersion = "2.24359.0.1";
 
         /// <summary>
         /// The target version of the NuGet package this SDK is deployed from.
         /// </summary>
-        public const string NuGetSdkVersion = "2.24224.0.1-PreRelease";
+        public const string NuGetSdkVersion = "2.24359.0.1-PreRelease";
 
         /// <summary>
         /// The name of the assembly type for the CodeFactory SDK version attribute.
         /// </summary>
         public const string CodeFactorySdkVersionAttributeName = "AssemblyCFSdkVersion";
 
+        /// <summary>
+        /// The name of the assembly that contains the CodeFactory SDK.
+        /// </summary>
         public const string CodeFactoryAssemblyName = "CodeFactory";
 
         /// <summary>
         /// Checks the assembly to see if it was created by a CodeFactory SDK. If so it checks the version to confirms it can be used by the runtime.
         /// </summary>
-        /// <param name="sourceAssembly"></param>
+        /// <param name="sourceAssembly">The target assembly to check if it supports the CodeFactory SDK.</param>
         public static void  SupportedAssembly(Assembly sourceAssembly)
         {
             if (sourceAssembly == null) return ;

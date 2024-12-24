@@ -4,6 +4,9 @@ using System.Text;
 
 namespace CodeFactory.WinVs.Models.CSharp.Builder
 {
+    /// <summary>
+    /// Base class definition all custom blocks implementation should implement.
+    /// </summary>
     public abstract class BaseCustomBlock:ICustomBlock
     {
 

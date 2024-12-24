@@ -150,11 +150,28 @@ namespace CodeFactory.WinVs.Models.CSharp
         public abstract Task<CsSource> AddBeforeDocsAsync(string sourceCode);
 
         /// <summary>
+        /// Adds the supplied source code directly before the documentation.
+        /// </summary>
+        /// <param name="sourceCode">The target syntax to be added to the document.</param>
+        /// <returns>A newly loaded copy of the <see cref="ICsSource"/> model after the changes have been applied.</returns>
+        /// <exception cref="DocumentException">Error is raised when errors occur updating the source document.</exception>
+        public abstract Task<CsSourceTransaction> AddBeforeDocsTransactionAsync(string sourceCode);
+
+        /// <summary>
         /// Adds the supplied source code directly after the documentation.
         /// </summary>
         /// <param name="sourceCode">The target syntax to be added to the document.</param>
         /// <returns>Updated <see cref="CsSource"/> model with the injected source code.</returns>
         public abstract Task<CsSource> AddAfterDocsAsync(string sourceCode);
+
+
+        /// <summary>
+        /// Adds the supplied source code directly after the documentation.
+        /// </summary>
+        /// <param name="sourceCode">The target syntax to be added to the document.</param>
+        /// <returns>A newly loaded copy of the <see cref="ICsSource"/> model after the changes have been applied.</returns>
+        /// <exception cref="DocumentException">Error is raised when errors occur updating the source document.</exception>
+        public abstract Task<CsSourceTransaction> AddAfterDocsTransactionAsync(string sourceCode);
 
         /// <summary>
         /// Replaces the supplied source code directly this the documentation.
@@ -162,6 +179,14 @@ namespace CodeFactory.WinVs.Models.CSharp
         /// <param name="sourceCode">The target syntax to be added to the document.</param>
         /// <returns>Updated <see cref="CsSource"/> model with the injected source code.</returns>
         public abstract Task<CsSource> ReplaceDocsAsync(string sourceCode);
+
+        /// <summary>
+        /// Replaces the supplied source code directly this the documentation.
+        /// </summary>
+        /// <param name="sourceCode">The target syntax to be added to the document.</param>
+        /// <returns>A newly loaded copy of the <see cref="ICsSource"/> model after the changes have been applied.</returns>
+        /// <exception cref="DocumentException">Error is raised when errors occur updating the source document.</exception>
+        public abstract Task<CsSourceTransaction> ReplaceDocsTransactionAsync(string sourceCode);
 
         /// <summary>
         /// Deletes the documentation from the target supporting code artifact.
@@ -236,6 +261,14 @@ namespace CodeFactory.WinVs.Models.CSharp
         /// <exception cref="DocumentException">Error is raised when errors occur updating the source document.</exception>
         public abstract Task<CsSource> AddBeforeAsync(string sourceCode);
 
+        /// <summary>
+        /// Adds the source code directly before the definition of the <see cref="ICsDelegate"/>in the target document.
+        /// </summary>
+        /// <param name="sourceCode">The source code that is to be added to the document.</param>
+        /// <returns>Updated source model and the transaction details.</returns>
+        /// <exception cref="DocumentException">Error is raised when errors occur updating the source document.</exception>
+        public abstract Task<CsSourceTransaction> AddBeforeTransactionAsync(string sourceCode);
+
 
         /// <summary>
         /// Adds the source code directly after the definition of the <see cref="ICsDelegate"/>in the target document.
@@ -253,6 +286,14 @@ namespace CodeFactory.WinVs.Models.CSharp
         /// <returns>A newly loaded copy of the <see cref="ICsSource"/> model after the changes have been applied.</returns>
         /// <exception cref="DocumentException">Error is raised when errors occur updating the source document.</exception>
         public abstract Task<CsSource> AddAfterAsync(string sourceCode);
+
+        /// <summary>
+        /// Adds the source code directly after the definition of the <see cref="ICsDelegate"/>in the target document.
+        /// </summary>
+        /// <param name="sourceCode">The source code that is to be added to the document.</param>
+        /// <returns>Updated source model and the transaction details.</returns>
+        /// <exception cref="DocumentException">Error is raised when errors occur updating the source document.</exception>
+        public abstract Task<CsSourceTransaction> AddAfterTransactionAsync(string sourceCode);
 
 
         /// <summary>
@@ -304,6 +345,15 @@ namespace CodeFactory.WinVs.Models.CSharp
         public abstract Task<CsSource> ReplaceAsync(string sourceCode);
 
 
+        /// <summary>
+        /// Replaces the current delegate with the provided source code.
+        /// </summary>
+        /// <param name="sourceCode">The source code that is to be used to replace the original definition in the document.</param>
+        /// <returns>Updated source model and the transaction details.</returns>
+        /// <exception cref="DocumentException">Error is raised when errors occur updating the source document.</exception>
+        public abstract Task<CsSourceTransaction> ReplaceTransactionAsync(string sourceCode);
+
+
         ///// <summary>
         ///// Gets a <see cref="ICsModel"/> from the currently loaded source code. 
         ///// </summary>
@@ -313,6 +363,15 @@ namespace CodeFactory.WinVs.Models.CSharp
 
         /// <inheritdoc/>
         public abstract Task<CsSource> AddBeforeAsync(string sourceCode, bool ignoreLeadingModelsAndDocs);
+
+        /// <summary>
+        /// Adds the source code directly before the definition of the <see cref="ICsDelegate"/>in the target document.
+        /// </summary>
+        /// <param name="sourceCode">The source code that is to be added to the document.</param>
+        /// <param name="ignoreLeadingModelsAndDocs">Changes the before entry point to the start of the delegate definition not before the documentation or attributes that are assigned.</param>
+        /// <returns>Updated source model and the transaction details.</returns>
+        /// <exception cref="DocumentException">Error is raised when errors occur updating the source document.</exception>
+        public abstract Task<CsSourceTransaction> AddBeforeTransactionAsync(string sourceCode, bool ignoreLeadingModelsAndDocs);
 
         /// <summary>
         ///     Flag that determines if the delegate has parameters assigned to it.

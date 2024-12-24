@@ -20,7 +20,7 @@ namespace CodeFactory.WinVs.Models.CSharp
         CsMethodType MethodType { get; }
 
         /// <summary>
-        ///     The type information about the return type assigned to the method. if flag <see cref="IDotNetMethod.IsVoid"/> is true then the return type will be set to null.
+        ///     The type information about the return type assigned to the method. if flag <see cref="ICsMethod.IsVoid"/> is true then the return type will be set to null.
         /// </summary>
         CsType ReturnType { get; }
 
