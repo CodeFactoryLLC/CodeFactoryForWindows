@@ -6,6 +6,7 @@ using System.Collections.Generic;
 using System.Threading.Tasks;
 using CodeFactory.Document;
 using CodeFactory.WinVs.Models.CSharp;
+using CodeFactory.WinVs.Stats;
 
 namespace CodeFactory.WinVs.Models.ProjectSystem
 {    
@@ -77,11 +78,27 @@ namespace CodeFactory.WinVs.Models.ProjectSystem
         Task AddContentToBeginningAsync(VsDocument source, string content);
 
         /// <summary>
+        /// Adds content to the beginning of a document.
+        /// </summary>
+        /// <param name="source">Document to add content to.</param>
+        /// <param name="content">The content to be added.</param>
+        /// <returns>The details of document update or null if the update details could processed.</returns>
+        Task<TransactionDetail> AddContentToBeginningTransactionAsync(VsDocument source, string content);
+
+        /// <summary>
         /// Adds content to the end of a document.
         /// </summary>
         /// <param name="source">Document to add content to.</param>
         /// <param name="content">The content to be added.</param>
         Task AddContentToEndAsync(VsDocument source, string content);
+
+        /// <summary>
+        /// Adds content to the end of a document.
+        /// </summary>
+        /// <param name="source">Document to add content to.</param>
+        /// <param name="content">The content to be added.</param>
+        /// <returns>The details of document update or null if the update details could processed.</returns>
+        Task<TransactionDetail> AddContentToEndTransactionAsync(VsDocument source, string content);
 
         /// <summary>
         /// Adds content to a target starting at an assigned
@@ -90,6 +107,16 @@ namespace CodeFactory.WinVs.Models.ProjectSystem
         /// <param name="location">Location within the document to add content to.</param>
         /// <param name="content">The content to be added to the document.</param>
         Task AddContentAsync(VsDocument source, IDocumentLocation location, string content);
+
+
+        /// <summary>
+        /// Adds content to a target starting at an assigned
+        /// </summary>
+        /// <param name="source">Document to have content added to.</param>
+        /// <param name="location">Location within the document to add content to.</param>
+        /// <param name="content">The content to be added to the document.</param>
+        /// <returns>The details of document update or null if the update details could processed.</returns>
+        Task<TransactionDetail> AddContentTransactionAsync(VsDocument source, IDocumentLocation location, string content);
 
         /// <summary>
         /// Removes all the content from a document.
@@ -118,9 +145,27 @@ namespace CodeFactory.WinVs.Models.ProjectSystem
         /// </summary>
         /// <param name="source">The target document to have content replaced.</param>
         /// <param name="content">Content to replace the existing content in the document.</param>
+        /// <returns>The details of document update or null if the update details could processed.</returns>
+        Task<TransactionDetail> ReplaceContentTransactionAsync(VsDocument source, string content);
+
+        /// <summary>
+        /// Replaces all the content within the document.
+        /// </summary>
+        /// <param name="source">The target document to have content replaced.</param>
+        /// <param name="content">Content to replace the existing content in the document.</param>
         /// <param name="startLocation">The starting position within the document to replace content.</param>
         /// <param name="endLocation">The ending location within the document to replace content.</param>
         Task ReplaceContentAsync(VsDocument source, string content,IDocumentLocation startLocation, IDocumentLocation endLocation);
+
+        /// <summary>
+        /// Replaces all the content within the document.
+        /// </summary>
+        /// <param name="source">The target document to have content replaced.</param>
+        /// <param name="content">Content to replace the existing content in the document.</param>
+        /// <param name="startLocation">The starting position within the document to replace content.</param>
+        /// <param name="endLocation">The ending location within the document to replace content.</param>
+        /// <returns>The details of document update or null if the update details could processed.</returns>
+        Task<TransactionDetail> ReplaceContentTransactionAsync(VsDocument source, string content, IDocumentLocation startLocation, IDocumentLocation endLocation);
 
         /// <summary>
         /// If the document is implemented as a C# code model. Will return the C# source code model from the visual studio document.

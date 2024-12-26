@@ -122,7 +122,7 @@ namespace CodeFactory.WinVs.Models.CSharp
         /// <param name="sourceCode">The target syntax to be added to the document.</param>
         /// <returns>Updated source model and the transaction details.</returns>
         /// <exception cref="DocumentException">Error is raised when errors occur updating the source document.</exception>
-        public abstract Task<CsSource> AddAfterDocsTransactionAsync(string sourceCode);
+        public abstract Task<CsSourceTransaction> AddAfterDocsTransactionAsync(string sourceCode);
 
         /// <summary>
         /// Replaces the supplied source code directly this the documentation.
