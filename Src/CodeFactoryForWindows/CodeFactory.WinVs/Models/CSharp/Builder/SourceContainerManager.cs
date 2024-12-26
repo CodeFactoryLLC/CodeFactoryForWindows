@@ -446,10 +446,8 @@ namespace CodeFactory.WinVs.Models.CSharp.Builder
         /// <param name="syntax">Target syntax to be added.</param>
         /// <exception cref="ArgumentNullException">Thrown if either the source or the container is null after updating.</exception>
         /// <returns>The details of the updated source or null if the transaction details could not be saved.</returns>
-        public async Task<TransactionDetail> FieldsAddBeforeTransactionAsync(string syntax)
-        {
-            throw new NotImplementedException();
-        }
+        public abstract Task<TransactionDetail> FieldsAddBeforeTransactionAsync(string syntax);
+
 
         /// <summary>
         /// Adds the provided syntax after the field definitions.
@@ -464,10 +462,8 @@ namespace CodeFactory.WinVs.Models.CSharp.Builder
         /// <param name="syntax">Target syntax to be added.</param>
         /// <exception cref="ArgumentNullException">Thrown if either the source or the container is null after updating.</exception>
         /// <returns>The details of the updated source or null if the transaction details could not be saved.</returns>
-        public async Task<TransactionDetail> FieldsAddAfterTransactionAsync(string syntax)
-        {
-            throw new NotImplementedException();
-        }
+        public abstract Task<TransactionDetail> FieldsAddAfterTransactionAsync(string syntax);
+    
 
         /// <summary>
         /// Add the provided syntax before the constructor definitions.
