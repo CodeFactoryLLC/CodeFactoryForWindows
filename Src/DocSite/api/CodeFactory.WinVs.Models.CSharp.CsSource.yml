@@ -7,7 +7,9 @@ items:
   children:
   - CodeFactory.WinVs.Models.CSharp.CsSource.#ctor(System.Boolean,System.Boolean,System.Boolean,CodeFactory.SourceCode.SourceCodeType,System.String,System.String,System.String,System.Collections.Generic.IReadOnlyList{CodeFactory.WinVs.Models.CSharp.CsUsingStatement},System.Collections.Generic.IReadOnlyList{CodeFactory.WinVs.Models.CSharp.CsInterface},System.Collections.Generic.IReadOnlyList{CodeFactory.WinVs.Models.CSharp.CsClass},System.Collections.Generic.IReadOnlyList{CodeFactory.WinVs.Models.CSharp.CsStructure},System.Collections.Generic.IReadOnlyList{CodeFactory.WinVs.Models.CSharp.CsRecord},System.Collections.Generic.IReadOnlyList{CodeFactory.WinVs.Models.CSharp.CsRecordStructure},System.Collections.Generic.IReadOnlyList{CodeFactory.WinVs.Models.CSharp.CsDelegate},System.Collections.Generic.IReadOnlyList{CodeFactory.WinVs.Models.CSharp.CsEnum},System.Collections.Generic.IReadOnlyList{CodeFactory.WinVs.Models.CSharp.CsNamespace},System.Boolean,System.String,CodeFactory.ModelStore{CodeFactory.WinVs.Models.CSharp.ICsModel},System.Collections.Generic.IReadOnlyList{CodeFactory.ModelLoadException})
   - CodeFactory.WinVs.Models.CSharp.CsSource.AddToBeginningAsync(System.String)
+  - CodeFactory.WinVs.Models.CSharp.CsSource.AddToBeginningTransactionAsync(System.String)
   - CodeFactory.WinVs.Models.CSharp.CsSource.AddToEndAsync(System.String)
+  - CodeFactory.WinVs.Models.CSharp.CsSource.AddToEndTransactionAsync(System.String)
   - CodeFactory.WinVs.Models.CSharp.CsSource.Classes
   - CodeFactory.WinVs.Models.CSharp.CsSource.Delegates
   - CodeFactory.WinVs.Models.CSharp.CsSource.DeleteAsync
@@ -22,6 +24,7 @@ items:
   - CodeFactory.WinVs.Models.CSharp.CsSource.RecordStructures
   - CodeFactory.WinVs.Models.CSharp.CsSource.Records
   - CodeFactory.WinVs.Models.CSharp.CsSource.ReplaceAsync(System.String)
+  - CodeFactory.WinVs.Models.CSharp.CsSource.ReplaceTransactionAsync(System.String)
   - CodeFactory.WinVs.Models.CSharp.CsSource.Structures
   langs:
   - csharp
@@ -31,7 +34,7 @@ items:
   fullName: CodeFactory.WinVs.Models.CSharp.CsSource
   type: Class
   source:
-    href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/19e816ffdf1ba504be6987736bbac42e2d241405/Src/CodeFactoryForWindows/CodeFactory.WinVs/Models/CSharp/CsSource.cs
+    href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/e63c05962945f61f2329e19d324f24a768806f18/Src/CodeFactoryForWindows/CodeFactory.WinVs/Models/CSharp/CsSource.cs
   assemblies:
   - CodeFactory.WinVs
   namespace: CodeFactory.WinVs.Models.CSharp
@@ -85,7 +88,7 @@ items:
   fullName: CodeFactory.WinVs.Models.CSharp.CsSource.CsSource(bool, bool, bool, CodeFactory.SourceCode.SourceCodeType, string, string, string, System.Collections.Generic.IReadOnlyList<CodeFactory.WinVs.Models.CSharp.CsUsingStatement>, System.Collections.Generic.IReadOnlyList<CodeFactory.WinVs.Models.CSharp.CsInterface>, System.Collections.Generic.IReadOnlyList<CodeFactory.WinVs.Models.CSharp.CsClass>, System.Collections.Generic.IReadOnlyList<CodeFactory.WinVs.Models.CSharp.CsStructure>, System.Collections.Generic.IReadOnlyList<CodeFactory.WinVs.Models.CSharp.CsRecord>, System.Collections.Generic.IReadOnlyList<CodeFactory.WinVs.Models.CSharp.CsRecordStructure>, System.Collections.Generic.IReadOnlyList<CodeFactory.WinVs.Models.CSharp.CsDelegate>, System.Collections.Generic.IReadOnlyList<CodeFactory.WinVs.Models.CSharp.CsEnum>, System.Collections.Generic.IReadOnlyList<CodeFactory.WinVs.Models.CSharp.CsNamespace>, bool, string, CodeFactory.ModelStore<CodeFactory.WinVs.Models.CSharp.ICsModel>, System.Collections.Generic.IReadOnlyList<CodeFactory.ModelLoadException>)
   type: Constructor
   source:
-    href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/19e816ffdf1ba504be6987736bbac42e2d241405/Src/CodeFactoryForWindows/CodeFactory.WinVs/Models/CSharp/CsSource.cs
+    href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/e63c05962945f61f2329e19d324f24a768806f18/Src/CodeFactoryForWindows/CodeFactory.WinVs/Models/CSharp/CsSource.cs
   assemblies:
   - CodeFactory.WinVs
   namespace: CodeFactory.WinVs.Models.CSharp
@@ -144,8 +147,10 @@ items:
       description: The namespaces that are defined in this source.
     - id: hostedInProject
       type: System.Boolean
+      description: Flag that determines if the source is hosted in a project.
     - id: projectName
       type: System.String
+      description: The name of the project the source belongs to. This will be null if the source is not hosted in a project.
     - id: modelStore
       type: CodeFactory.ModelStore{CodeFactory.WinVs.Models.CSharp.ICsModel}
       description: Optional the lookup storage for models created during the compile or lookup of the model.
@@ -169,7 +174,7 @@ items:
   fullName: CodeFactory.WinVs.Models.CSharp.CsSource.AddToBeginningAsync(string)
   type: Method
   source:
-    href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/19e816ffdf1ba504be6987736bbac42e2d241405/Src/CodeFactoryForWindows/CodeFactory.WinVs/Models/CSharp/CsSource.cs
+    href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/e63c05962945f61f2329e19d324f24a768806f18/Src/CodeFactoryForWindows/CodeFactory.WinVs/Models/CSharp/CsSource.cs
   assemblies:
   - CodeFactory.WinVs
   namespace: CodeFactory.WinVs.Models.CSharp
@@ -195,6 +200,42 @@ items:
   nameWithType.vb: CsSource.AddToBeginningAsync(String)
   fullName.vb: CodeFactory.WinVs.Models.CSharp.CsSource.AddToBeginningAsync(String)
   name.vb: AddToBeginningAsync(String)
+- uid: CodeFactory.WinVs.Models.CSharp.CsSource.AddToBeginningTransactionAsync(System.String)
+  commentId: M:CodeFactory.WinVs.Models.CSharp.CsSource.AddToBeginningTransactionAsync(System.String)
+  id: AddToBeginningTransactionAsync(System.String)
+  parent: CodeFactory.WinVs.Models.CSharp.CsSource
+  langs:
+  - csharp
+  - vb
+  name: AddToBeginningTransactionAsync(string)
+  nameWithType: CsSource.AddToBeginningTransactionAsync(string)
+  fullName: CodeFactory.WinVs.Models.CSharp.CsSource.AddToBeginningTransactionAsync(string)
+  type: Method
+  source:
+    href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/e63c05962945f61f2329e19d324f24a768806f18/Src/CodeFactoryForWindows/CodeFactory.WinVs/Models/CSharp/CsSource.cs
+  assemblies:
+  - CodeFactory.WinVs
+  namespace: CodeFactory.WinVs.Models.CSharp
+  summary: Adds the source code to the beginning of the <xref href="CodeFactory.WinVs.Models.CSharp.ICsSource" data-throw-if-not-resolved="false"></xref> model.
+  example: []
+  syntax:
+    content: public abstract Task<CsSourceTransaction> AddToBeginningTransactionAsync(string sourceCode)
+    parameters:
+    - id: sourceCode
+      type: System.String
+      description: The source code that is to be added to the document.
+    return:
+      type: System.Threading.Tasks.Task{CodeFactory.WinVs.Models.CSharp.CsSourceTransaction}
+      description: Updated source model and the transaction details.
+    content.vb: Public MustOverride Function AddToBeginningTransactionAsync(sourceCode As String) As Task(Of CsSourceTransaction)
+  overload: CodeFactory.WinVs.Models.CSharp.CsSource.AddToBeginningTransactionAsync*
+  exceptions:
+  - type: CodeFactory.Document.DocumentException
+    commentId: T:CodeFactory.Document.DocumentException
+    description: Error is raised when errors occur updating the source document.
+  nameWithType.vb: CsSource.AddToBeginningTransactionAsync(String)
+  fullName.vb: CodeFactory.WinVs.Models.CSharp.CsSource.AddToBeginningTransactionAsync(String)
+  name.vb: AddToBeginningTransactionAsync(String)
 - uid: CodeFactory.WinVs.Models.CSharp.CsSource.AddToEndAsync(System.String)
   commentId: M:CodeFactory.WinVs.Models.CSharp.CsSource.AddToEndAsync(System.String)
   id: AddToEndAsync(System.String)
@@ -207,7 +248,7 @@ items:
   fullName: CodeFactory.WinVs.Models.CSharp.CsSource.AddToEndAsync(string)
   type: Method
   source:
-    href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/19e816ffdf1ba504be6987736bbac42e2d241405/Src/CodeFactoryForWindows/CodeFactory.WinVs/Models/CSharp/CsSource.cs
+    href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/e63c05962945f61f2329e19d324f24a768806f18/Src/CodeFactoryForWindows/CodeFactory.WinVs/Models/CSharp/CsSource.cs
   assemblies:
   - CodeFactory.WinVs
   namespace: CodeFactory.WinVs.Models.CSharp
@@ -233,6 +274,42 @@ items:
   nameWithType.vb: CsSource.AddToEndAsync(String)
   fullName.vb: CodeFactory.WinVs.Models.CSharp.CsSource.AddToEndAsync(String)
   name.vb: AddToEndAsync(String)
+- uid: CodeFactory.WinVs.Models.CSharp.CsSource.AddToEndTransactionAsync(System.String)
+  commentId: M:CodeFactory.WinVs.Models.CSharp.CsSource.AddToEndTransactionAsync(System.String)
+  id: AddToEndTransactionAsync(System.String)
+  parent: CodeFactory.WinVs.Models.CSharp.CsSource
+  langs:
+  - csharp
+  - vb
+  name: AddToEndTransactionAsync(string)
+  nameWithType: CsSource.AddToEndTransactionAsync(string)
+  fullName: CodeFactory.WinVs.Models.CSharp.CsSource.AddToEndTransactionAsync(string)
+  type: Method
+  source:
+    href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/e63c05962945f61f2329e19d324f24a768806f18/Src/CodeFactoryForWindows/CodeFactory.WinVs/Models/CSharp/CsSource.cs
+  assemblies:
+  - CodeFactory.WinVs
+  namespace: CodeFactory.WinVs.Models.CSharp
+  summary: Adds the source code the end of the <xref href="CodeFactory.WinVs.Models.CSharp.ICsSource" data-throw-if-not-resolved="false"></xref> model.
+  example: []
+  syntax:
+    content: public abstract Task<CsSourceTransaction> AddToEndTransactionAsync(string sourceCode)
+    parameters:
+    - id: sourceCode
+      type: System.String
+      description: The source code that is to be added to the document.
+    return:
+      type: System.Threading.Tasks.Task{CodeFactory.WinVs.Models.CSharp.CsSourceTransaction}
+      description: Updated source model and the transaction details.
+    content.vb: Public MustOverride Function AddToEndTransactionAsync(sourceCode As String) As Task(Of CsSourceTransaction)
+  overload: CodeFactory.WinVs.Models.CSharp.CsSource.AddToEndTransactionAsync*
+  exceptions:
+  - type: CodeFactory.Document.DocumentException
+    commentId: T:CodeFactory.Document.DocumentException
+    description: Error is raised when errors occur updating the source document.
+  nameWithType.vb: CsSource.AddToEndTransactionAsync(String)
+  fullName.vb: CodeFactory.WinVs.Models.CSharp.CsSource.AddToEndTransactionAsync(String)
+  name.vb: AddToEndTransactionAsync(String)
 - uid: CodeFactory.WinVs.Models.CSharp.CsSource.DeleteAsync
   commentId: M:CodeFactory.WinVs.Models.CSharp.CsSource.DeleteAsync
   id: DeleteAsync
@@ -245,7 +322,7 @@ items:
   fullName: CodeFactory.WinVs.Models.CSharp.CsSource.DeleteAsync()
   type: Method
   source:
-    href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/19e816ffdf1ba504be6987736bbac42e2d241405/Src/CodeFactoryForWindows/CodeFactory.WinVs/Models/CSharp/CsSource.cs
+    href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/e63c05962945f61f2329e19d324f24a768806f18/Src/CodeFactoryForWindows/CodeFactory.WinVs/Models/CSharp/CsSource.cs
   assemblies:
   - CodeFactory.WinVs
   namespace: CodeFactory.WinVs.Models.CSharp
@@ -276,7 +353,7 @@ items:
   fullName: CodeFactory.WinVs.Models.CSharp.CsSource.ReplaceAsync(string)
   type: Method
   source:
-    href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/19e816ffdf1ba504be6987736bbac42e2d241405/Src/CodeFactoryForWindows/CodeFactory.WinVs/Models/CSharp/CsSource.cs
+    href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/e63c05962945f61f2329e19d324f24a768806f18/Src/CodeFactoryForWindows/CodeFactory.WinVs/Models/CSharp/CsSource.cs
   assemblies:
   - CodeFactory.WinVs
   namespace: CodeFactory.WinVs.Models.CSharp
@@ -302,6 +379,42 @@ items:
   nameWithType.vb: CsSource.ReplaceAsync(String)
   fullName.vb: CodeFactory.WinVs.Models.CSharp.CsSource.ReplaceAsync(String)
   name.vb: ReplaceAsync(String)
+- uid: CodeFactory.WinVs.Models.CSharp.CsSource.ReplaceTransactionAsync(System.String)
+  commentId: M:CodeFactory.WinVs.Models.CSharp.CsSource.ReplaceTransactionAsync(System.String)
+  id: ReplaceTransactionAsync(System.String)
+  parent: CodeFactory.WinVs.Models.CSharp.CsSource
+  langs:
+  - csharp
+  - vb
+  name: ReplaceTransactionAsync(string)
+  nameWithType: CsSource.ReplaceTransactionAsync(string)
+  fullName: CodeFactory.WinVs.Models.CSharp.CsSource.ReplaceTransactionAsync(string)
+  type: Method
+  source:
+    href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/e63c05962945f61f2329e19d324f24a768806f18/Src/CodeFactoryForWindows/CodeFactory.WinVs/Models/CSharp/CsSource.cs
+  assemblies:
+  - CodeFactory.WinVs
+  namespace: CodeFactory.WinVs.Models.CSharp
+  summary: Replaces the content of the <xref href="CodeFactory.WinVs.Models.CSharp.ICsSource" data-throw-if-not-resolved="false"></xref> model.
+  example: []
+  syntax:
+    content: public abstract Task<CsSourceTransaction> ReplaceTransactionAsync(string sourceCode)
+    parameters:
+    - id: sourceCode
+      type: System.String
+      description: The source code that is to be used to replace the original definition in the document.
+    return:
+      type: System.Threading.Tasks.Task{CodeFactory.WinVs.Models.CSharp.CsSourceTransaction}
+      description: Updated source model and the transaction details.
+    content.vb: Public MustOverride Function ReplaceTransactionAsync(sourceCode As String) As Task(Of CsSourceTransaction)
+  overload: CodeFactory.WinVs.Models.CSharp.CsSource.ReplaceTransactionAsync*
+  exceptions:
+  - type: CodeFactory.Document.DocumentException
+    commentId: T:CodeFactory.Document.DocumentException
+    description: Error is raised when errors occur updating the source document.
+  nameWithType.vb: CsSource.ReplaceTransactionAsync(String)
+  fullName.vb: CodeFactory.WinVs.Models.CSharp.CsSource.ReplaceTransactionAsync(String)
+  name.vb: ReplaceTransactionAsync(String)
 - uid: CodeFactory.WinVs.Models.CSharp.CsSource.LookupPath
   commentId: P:CodeFactory.WinVs.Models.CSharp.CsSource.LookupPath
   id: LookupPath
@@ -314,7 +427,7 @@ items:
   fullName: CodeFactory.WinVs.Models.CSharp.CsSource.LookupPath
   type: Property
   source:
-    href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/19e816ffdf1ba504be6987736bbac42e2d241405/Src/CodeFactoryForWindows/CodeFactory.WinVs/Models/CSharp/CsSource.cs
+    href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/e63c05962945f61f2329e19d324f24a768806f18/Src/CodeFactoryForWindows/CodeFactory.WinVs/Models/CSharp/CsSource.cs
   assemblies:
   - CodeFactory.WinVs
   namespace: CodeFactory.WinVs.Models.CSharp
@@ -341,7 +454,7 @@ items:
   fullName: CodeFactory.WinVs.Models.CSharp.CsSource.NamespaceReferences
   type: Property
   source:
-    href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/19e816ffdf1ba504be6987736bbac42e2d241405/Src/CodeFactoryForWindows/CodeFactory.WinVs/Models/CSharp/CsSource.cs
+    href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/e63c05962945f61f2329e19d324f24a768806f18/Src/CodeFactoryForWindows/CodeFactory.WinVs/Models/CSharp/CsSource.cs
   assemblies:
   - CodeFactory.WinVs
   namespace: CodeFactory.WinVs.Models.CSharp
@@ -368,7 +481,7 @@ items:
   fullName: CodeFactory.WinVs.Models.CSharp.CsSource.Interfaces
   type: Property
   source:
-    href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/19e816ffdf1ba504be6987736bbac42e2d241405/Src/CodeFactoryForWindows/CodeFactory.WinVs/Models/CSharp/CsSource.cs
+    href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/e63c05962945f61f2329e19d324f24a768806f18/Src/CodeFactoryForWindows/CodeFactory.WinVs/Models/CSharp/CsSource.cs
   assemblies:
   - CodeFactory.WinVs
   namespace: CodeFactory.WinVs.Models.CSharp
@@ -395,7 +508,7 @@ items:
   fullName: CodeFactory.WinVs.Models.CSharp.CsSource.Classes
   type: Property
   source:
-    href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/19e816ffdf1ba504be6987736bbac42e2d241405/Src/CodeFactoryForWindows/CodeFactory.WinVs/Models/CSharp/CsSource.cs
+    href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/e63c05962945f61f2329e19d324f24a768806f18/Src/CodeFactoryForWindows/CodeFactory.WinVs/Models/CSharp/CsSource.cs
   assemblies:
   - CodeFactory.WinVs
   namespace: CodeFactory.WinVs.Models.CSharp
@@ -422,7 +535,7 @@ items:
   fullName: CodeFactory.WinVs.Models.CSharp.CsSource.Structures
   type: Property
   source:
-    href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/19e816ffdf1ba504be6987736bbac42e2d241405/Src/CodeFactoryForWindows/CodeFactory.WinVs/Models/CSharp/CsSource.cs
+    href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/e63c05962945f61f2329e19d324f24a768806f18/Src/CodeFactoryForWindows/CodeFactory.WinVs/Models/CSharp/CsSource.cs
   assemblies:
   - CodeFactory.WinVs
   namespace: CodeFactory.WinVs.Models.CSharp
@@ -449,7 +562,7 @@ items:
   fullName: CodeFactory.WinVs.Models.CSharp.CsSource.Records
   type: Property
   source:
-    href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/19e816ffdf1ba504be6987736bbac42e2d241405/Src/CodeFactoryForWindows/CodeFactory.WinVs/Models/CSharp/CsSource.cs
+    href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/e63c05962945f61f2329e19d324f24a768806f18/Src/CodeFactoryForWindows/CodeFactory.WinVs/Models/CSharp/CsSource.cs
   assemblies:
   - CodeFactory.WinVs
   namespace: CodeFactory.WinVs.Models.CSharp
@@ -476,7 +589,7 @@ items:
   fullName: CodeFactory.WinVs.Models.CSharp.CsSource.RecordStructures
   type: Property
   source:
-    href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/19e816ffdf1ba504be6987736bbac42e2d241405/Src/CodeFactoryForWindows/CodeFactory.WinVs/Models/CSharp/CsSource.cs
+    href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/e63c05962945f61f2329e19d324f24a768806f18/Src/CodeFactoryForWindows/CodeFactory.WinVs/Models/CSharp/CsSource.cs
   assemblies:
   - CodeFactory.WinVs
   namespace: CodeFactory.WinVs.Models.CSharp
@@ -503,7 +616,7 @@ items:
   fullName: CodeFactory.WinVs.Models.CSharp.CsSource.Delegates
   type: Property
   source:
-    href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/19e816ffdf1ba504be6987736bbac42e2d241405/Src/CodeFactoryForWindows/CodeFactory.WinVs/Models/CSharp/CsSource.cs
+    href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/e63c05962945f61f2329e19d324f24a768806f18/Src/CodeFactoryForWindows/CodeFactory.WinVs/Models/CSharp/CsSource.cs
   assemblies:
   - CodeFactory.WinVs
   namespace: CodeFactory.WinVs.Models.CSharp
@@ -530,7 +643,7 @@ items:
   fullName: CodeFactory.WinVs.Models.CSharp.CsSource.Enums
   type: Property
   source:
-    href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/19e816ffdf1ba504be6987736bbac42e2d241405/Src/CodeFactoryForWindows/CodeFactory.WinVs/Models/CSharp/CsSource.cs
+    href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/e63c05962945f61f2329e19d324f24a768806f18/Src/CodeFactoryForWindows/CodeFactory.WinVs/Models/CSharp/CsSource.cs
   assemblies:
   - CodeFactory.WinVs
   namespace: CodeFactory.WinVs.Models.CSharp
@@ -557,7 +670,7 @@ items:
   fullName: CodeFactory.WinVs.Models.CSharp.CsSource.Namespaces
   type: Property
   source:
-    href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/19e816ffdf1ba504be6987736bbac42e2d241405/Src/CodeFactoryForWindows/CodeFactory.WinVs/Models/CSharp/CsSource.cs
+    href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/e63c05962945f61f2329e19d324f24a768806f18/Src/CodeFactoryForWindows/CodeFactory.WinVs/Models/CSharp/CsSource.cs
   assemblies:
   - CodeFactory.WinVs
   namespace: CodeFactory.WinVs.Models.CSharp
@@ -584,7 +697,7 @@ items:
   fullName: CodeFactory.WinVs.Models.CSharp.CsSource.HostedInProject
   type: Property
   source:
-    href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/19e816ffdf1ba504be6987736bbac42e2d241405/Src/CodeFactoryForWindows/CodeFactory.WinVs/Models/CSharp/CsSource.cs
+    href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/e63c05962945f61f2329e19d324f24a768806f18/Src/CodeFactoryForWindows/CodeFactory.WinVs/Models/CSharp/CsSource.cs
   assemblies:
   - CodeFactory.WinVs
   namespace: CodeFactory.WinVs.Models.CSharp
@@ -611,7 +724,7 @@ items:
   fullName: CodeFactory.WinVs.Models.CSharp.CsSource.ProjectName
   type: Property
   source:
-    href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/19e816ffdf1ba504be6987736bbac42e2d241405/Src/CodeFactoryForWindows/CodeFactory.WinVs/Models/CSharp/CsSource.cs
+    href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/e63c05962945f61f2329e19d324f24a768806f18/Src/CodeFactoryForWindows/CodeFactory.WinVs/Models/CSharp/CsSource.cs
   assemblies:
   - CodeFactory.WinVs
   namespace: CodeFactory.WinVs.Models.CSharp
@@ -638,7 +751,7 @@ items:
   fullName: CodeFactory.WinVs.Models.CSharp.CsSource.Parent
   type: Property
   source:
-    href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/19e816ffdf1ba504be6987736bbac42e2d241405/Src/CodeFactoryForWindows/CodeFactory.WinVs/Models/CSharp/CsSource.cs
+    href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/e63c05962945f61f2329e19d324f24a768806f18/Src/CodeFactoryForWindows/CodeFactory.WinVs/Models/CSharp/CsSource.cs
   assemblies:
   - CodeFactory.WinVs
   namespace: CodeFactory.WinVs.Models.CSharp
@@ -1928,7 +2041,7 @@ references:
   commentId: T:CodeFactory.ModelStore{CodeFactory.WinVs.Models.CSharp.ICsModel}
   parent: CodeFactory
   definition: CodeFactory.ModelStore`1
-  href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/19e816ffdf1ba504be6987736bbac42e2d241405/Src/CodeFactoryForWindows/CodeFactory/ModelStore.cs
+  href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/e63c05962945f61f2329e19d324f24a768806f18/Src/CodeFactoryForWindows/CodeFactory/ModelStore.cs
   name: ModelStore<ICsModel>
   nameWithType: ModelStore<ICsModel>
   fullName: CodeFactory.ModelStore<CodeFactory.WinVs.Models.CSharp.ICsModel>
@@ -1939,7 +2052,7 @@ references:
   - uid: CodeFactory.ModelStore`1
     name: ModelStore
     isExternal: true
-    href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/19e816ffdf1ba504be6987736bbac42e2d241405/Src/CodeFactoryForWindows/CodeFactory/ModelStore.cs
+    href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/e63c05962945f61f2329e19d324f24a768806f18/Src/CodeFactoryForWindows/CodeFactory/ModelStore.cs
   - name: <
   - uid: CodeFactory.WinVs.Models.CSharp.ICsModel
     name: ICsModel
@@ -1950,7 +2063,7 @@ references:
   - uid: CodeFactory.ModelStore`1
     name: ModelStore
     isExternal: true
-    href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/19e816ffdf1ba504be6987736bbac42e2d241405/Src/CodeFactoryForWindows/CodeFactory/ModelStore.cs
+    href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/e63c05962945f61f2329e19d324f24a768806f18/Src/CodeFactoryForWindows/CodeFactory/ModelStore.cs
   - name: (
   - name: Of
   - name: " "
@@ -2261,6 +2374,48 @@ references:
     name: Tasks
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: CodeFactory.WinVs.Models.CSharp.CsSource.AddToBeginningTransactionAsync*
+  commentId: Overload:CodeFactory.WinVs.Models.CSharp.CsSource.AddToBeginningTransactionAsync
+  isExternal: true
+  href: CodeFactory.WinVs.Models.CSharp.CsSource.html#CodeFactory_WinVs_Models_CSharp_CsSource_AddToBeginningTransactionAsync_System_String_
+  name: AddToBeginningTransactionAsync
+  nameWithType: CsSource.AddToBeginningTransactionAsync
+  fullName: CodeFactory.WinVs.Models.CSharp.CsSource.AddToBeginningTransactionAsync
+- uid: System.Threading.Tasks.Task{CodeFactory.WinVs.Models.CSharp.CsSourceTransaction}
+  commentId: T:System.Threading.Tasks.Task{CodeFactory.WinVs.Models.CSharp.CsSourceTransaction}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<CsSourceTransaction>
+  nameWithType: Task<CsSourceTransaction>
+  fullName: System.Threading.Tasks.Task<CodeFactory.WinVs.Models.CSharp.CsSourceTransaction>
+  nameWithType.vb: Task(Of CsSourceTransaction)
+  fullName.vb: System.Threading.Tasks.Task(Of CodeFactory.WinVs.Models.CSharp.CsSourceTransaction)
+  name.vb: Task(Of CsSourceTransaction)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: CodeFactory.WinVs.Models.CSharp.CsSourceTransaction
+    name: CsSourceTransaction
+    isExternal: true
+    href: CodeFactory.WinVs.Models.CSharp.CsSourceTransaction.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: CodeFactory.WinVs.Models.CSharp.CsSourceTransaction
+    name: CsSourceTransaction
+    isExternal: true
+    href: CodeFactory.WinVs.Models.CSharp.CsSourceTransaction.html
+  - name: )
 - uid: CodeFactory.WinVs.Models.CSharp.CsSource.AddToEndAsync*
   commentId: Overload:CodeFactory.WinVs.Models.CSharp.CsSource.AddToEndAsync
   isExternal: true
@@ -2301,6 +2456,13 @@ references:
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.string
   - name: )
+- uid: CodeFactory.WinVs.Models.CSharp.CsSource.AddToEndTransactionAsync*
+  commentId: Overload:CodeFactory.WinVs.Models.CSharp.CsSource.AddToEndTransactionAsync
+  isExternal: true
+  href: CodeFactory.WinVs.Models.CSharp.CsSource.html#CodeFactory_WinVs_Models_CSharp_CsSource_AddToEndTransactionAsync_System_String_
+  name: AddToEndTransactionAsync
+  nameWithType: CsSource.AddToEndTransactionAsync
+  fullName: CodeFactory.WinVs.Models.CSharp.CsSource.AddToEndTransactionAsync
 - uid: CodeFactory.WinVs.Models.CSharp.CsSource.DeleteAsync*
   commentId: Overload:CodeFactory.WinVs.Models.CSharp.CsSource.DeleteAsync
   isExternal: true
@@ -2370,6 +2532,13 @@ references:
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.string
   - name: )
+- uid: CodeFactory.WinVs.Models.CSharp.CsSource.ReplaceTransactionAsync*
+  commentId: Overload:CodeFactory.WinVs.Models.CSharp.CsSource.ReplaceTransactionAsync
+  isExternal: true
+  href: CodeFactory.WinVs.Models.CSharp.CsSource.html#CodeFactory_WinVs_Models_CSharp_CsSource_ReplaceTransactionAsync_System_String_
+  name: ReplaceTransactionAsync
+  nameWithType: CsSource.ReplaceTransactionAsync
+  fullName: CodeFactory.WinVs.Models.CSharp.CsSource.ReplaceTransactionAsync
 - uid: CodeFactory.WinVs.Models.CSharp.CsSource.LookupPath*
   commentId: Overload:CodeFactory.WinVs.Models.CSharp.CsSource.LookupPath
   isExternal: true
