@@ -1,0 +1,2509 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+    <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Class Unsafe | CodeFactory for Windows </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Class Unsafe | CodeFactory for Windows ">
+      <meta name="generator" content="docfx ">
+  
+      <link rel="shortcut icon" href="../images/cfLogo70White.png">
+      <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/night-owl.min.css">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" integrity="sha384-EvBWSlnoFgZlXJvpzS+MAUEjvN7+gcCwH+qh7GRFOGgZO0PuwOFro7qPOJnLfe7l" crossorigin="anonymous">
+      <link rel="stylesheet" href="../styles/config.css">
+      <link rel="stylesheet" href="../styles/singulink.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+  
+  <meta property="docfx:rel" content="../">
+  <meta property="docfx:newtab" content="true">
+    </head>
+    <body>
+        <!-- Header required for docfx anchor scroll to work -->
+        <header id="head"></header>
+        <div class="top-navbar">
+            <a class="burger-icon" onclick="toggleMenu()">
+                <svg name="Hamburger" style="vertical-align: middle;" width="34" height="34" viewbox="0 0 24 24"><path fill="currentColor" fill-rule="evenodd" clip-rule="evenodd" d="M20 6H4V9H20V6ZM4 10.999H20V13.999H4V10.999ZM4 15.999H20V18.999H4V15.999Z"></path></svg>
+            </a>
+
+
+            <a class="brand" href="../index.html">
+              <img src="../images/cfLogo70White.png" alt="CodeFactory for Windows" class="logomark">
+              <span class="brand-title">CodeFactory for Windows</span>
+            </a>        </div>
+
+        <div class="body-content">
+            <div id="blackout" class="blackout" onclick="toggleMenu()"></div>
+
+            <nav id="sidebar" role="navigation">
+                <div class="sidebar">
+
+                    <div>
+                      <div class="mobile-hide">
+
+                        <a class="brand" href="../index.html">
+                          <img src="../images/cfLogo70White.png" alt="CodeFactory for Windows" class="logomark">
+                          <span class="brand-title">CodeFactory for Windows</span>
+                        </a>                      </div>
+
+                      <div class="sidesearch">
+                        <form id="search" role="search" class="search">
+                            <i class="bi bi-search search-icon"></i>
+                            <input type="text" id="search-query" placeholder="Search" autocomplete="off">
+                        </form>
+                      </div>
+
+                      <div id="navbar">
+                      </div>
+                    </div>                    <div class="sidebar-item-separator"></div>
+
+                        <div id="sidetoggle">
+                          <div id="sidetoc"></div>
+                        </div>
+                </div>
+                <div class="footer">
+  CodeFactory for Windows SDK
+  
+                </div>            </nav>
+
+            <main class="main-panel">
+
+                <div id="search-results" style="display: none;">
+                  <h1 class="search-list">Search Results for <span></span></h1>
+                  <div class="sr-items">
+                    <p><i class="bi bi-hourglass-split index-loading"></i></p>
+                  </div>
+                  <ul id="pagination" data-first=First data-prev=Previous data-next=Next data-last=Last></ul>
+                </div>
+ 
+
+                <div role="main" class="hide-when-search">
+
+                        <div class="subnav navbar navbar-default">
+                          <div class="container hide-when-search" id="breadcrumb">
+                            <ul class="breadcrumb">
+                              <li></li>
+                            </ul>
+                          </div>
+                        </div>
+
+
+                    <article class="content wrap" id="_content" data-uid="System.Runtime.CompilerServices.Unsafe">
+
+
+
+  <h1 id="System_Runtime_CompilerServices_Unsafe" data-uid="System.Runtime.CompilerServices.Unsafe" class="text-break">Class Unsafe</h1>
+  <div class="markdown level0 summary"><p>Contains generic, low-level functionality for manipulating pointers.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+    <div class="level1"><span class="xref">Unsafe</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="System.html">System</a>.<a class="xref" href="System.Runtime.html">Runtime</a>.<a class="xref" href="System.Runtime.CompilerServices.html">CompilerServices</a></h6>
+  <h6><strong>Assembly</strong>: System.Runtime.CompilerServices.Unsafe.dll</h6>
+  <h5 id="System_Runtime_CompilerServices_Unsafe_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class Unsafe</code></pre>
+  </div>
+  <h3 id="methods">Methods
+</h3>
+  <a id="System_Runtime_CompilerServices_Unsafe_AddByteOffset_" data-uid="System.Runtime.CompilerServices.Unsafe.AddByteOffset*"></a>
+  <h4 id="System_Runtime_CompilerServices_Unsafe_AddByteOffset__1___0__System_IntPtr_" data-uid="System.Runtime.CompilerServices.Unsafe.AddByteOffset``1(``0@,System.IntPtr)">AddByteOffset&lt;T&gt;(ref T, IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Adds a byte offset to the given reference.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ref T AddByteOffset&lt;T&gt;(ref T source, IntPtr byteOffset)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">source</span></td>
+        <td><p>The reference to add the offset to.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">IntPtr</a></td>
+        <td><span class="parametername">byteOffset</span></td>
+        <td><p>The offset to add.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><p>A new reference that reflects the addition of byte offset to pointer.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>The type of reference.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="System_Runtime_CompilerServices_Unsafe_AddByteOffset_" data-uid="System.Runtime.CompilerServices.Unsafe.AddByteOffset*"></a>
+  <h4 id="System_Runtime_CompilerServices_Unsafe_AddByteOffset__1___0__System_UIntPtr_" data-uid="System.Runtime.CompilerServices.Unsafe.AddByteOffset``1(``0@,System.UIntPtr)">AddByteOffset&lt;T&gt;(ref T, nuint)</h4>
+  <div class="markdown level1 summary"><p>Adds a byte offset to the given reference.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ref T AddByteOffset&lt;T&gt;(ref T source, nuint byteOffset)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">source</span></td>
+        <td><p>The reference to add the offset to.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">UIntPtr</a></td>
+        <td><span class="parametername">byteOffset</span></td>
+        <td><p>The offset to add.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><p>A new reference that reflects the addition of byte offset to pointer.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>The type of reference.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="System_Runtime_CompilerServices_Unsafe_Add_" data-uid="System.Runtime.CompilerServices.Unsafe.Add*"></a>
+  <h4 id="System_Runtime_CompilerServices_Unsafe_Add__1_System_Void__System_Int32_" data-uid="System.Runtime.CompilerServices.Unsafe.Add``1(System.Void*,System.Int32)">Add&lt;T&gt;(void*, int)</h4>
+  <div class="markdown level1 summary"><p>Adds an element offset to the given void pointer.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void* Add&lt;T&gt;(void* source, int elementOffset)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.void">void</a>*</td>
+        <td><span class="parametername">source</span></td>
+        <td><p>The void pointer to add the offset to.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">elementOffset</span></td>
+        <td><p>The offset to add.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.void">void</a>*</td>
+        <td><p>A new void pointer that reflects the addition of offset to the specified pointer.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>The type of void pointer.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="System_Runtime_CompilerServices_Unsafe_Add_" data-uid="System.Runtime.CompilerServices.Unsafe.Add*"></a>
+  <h4 id="System_Runtime_CompilerServices_Unsafe_Add__1___0__System_Int32_" data-uid="System.Runtime.CompilerServices.Unsafe.Add``1(``0@,System.Int32)">Add&lt;T&gt;(ref T, int)</h4>
+  <div class="markdown level1 summary"><p>Adds an element offset to the given reference.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ref T Add&lt;T&gt;(ref T source, int elementOffset)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">source</span></td>
+        <td><p>The reference to add the offset to.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">elementOffset</span></td>
+        <td><p>The offset to add.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><p>A new reference that reflects the addition of offset to pointer.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>The type of reference.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="System_Runtime_CompilerServices_Unsafe_Add_" data-uid="System.Runtime.CompilerServices.Unsafe.Add*"></a>
+  <h4 id="System_Runtime_CompilerServices_Unsafe_Add__1___0__System_IntPtr_" data-uid="System.Runtime.CompilerServices.Unsafe.Add``1(``0@,System.IntPtr)">Add&lt;T&gt;(ref T, IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Adds an element offset to the given reference.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ref T Add&lt;T&gt;(ref T source, IntPtr elementOffset)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">source</span></td>
+        <td><p>The reference to add the offset to.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">IntPtr</a></td>
+        <td><span class="parametername">elementOffset</span></td>
+        <td><p>The offset to add.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><p>A new reference that reflects the addition of offset to pointer.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>The type of reference.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="System_Runtime_CompilerServices_Unsafe_Add_" data-uid="System.Runtime.CompilerServices.Unsafe.Add*"></a>
+  <h4 id="System_Runtime_CompilerServices_Unsafe_Add__1___0__System_UIntPtr_" data-uid="System.Runtime.CompilerServices.Unsafe.Add``1(``0@,System.UIntPtr)">Add&lt;T&gt;(ref T, nuint)</h4>
+  <div class="markdown level1 summary"><p>Adds an element offset to the given reference.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ref T Add&lt;T&gt;(ref T source, nuint elementOffset)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">source</span></td>
+        <td><p>The reference to add the offset to.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">UIntPtr</a></td>
+        <td><span class="parametername">elementOffset</span></td>
+        <td><p>The offset to add.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><p>A new reference that reflects the addition of offset to pointer.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>The type of reference.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="System_Runtime_CompilerServices_Unsafe_AreSame_" data-uid="System.Runtime.CompilerServices.Unsafe.AreSame*"></a>
+  <h4 id="System_Runtime_CompilerServices_Unsafe_AreSame__1___0____0__" data-uid="System.Runtime.CompilerServices.Unsafe.AreSame``1(``0@,``0@)">AreSame&lt;T&gt;(ref T, ref T)</h4>
+  <div class="markdown level1 summary"><p>Determines whether the specified references point to the same location.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool AreSame&lt;T&gt;(ref T left, ref T right)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">left</span></td>
+        <td><p>The first reference to compare.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">right</span></td>
+        <td><p>The second reference to compare.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if <code class="paramref">left</code> and <code class="paramref">right</code> point to the same location; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>The type of reference.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="System_Runtime_CompilerServices_Unsafe_AsPointer_" data-uid="System.Runtime.CompilerServices.Unsafe.AsPointer*"></a>
+  <h4 id="System_Runtime_CompilerServices_Unsafe_AsPointer__1___0__" data-uid="System.Runtime.CompilerServices.Unsafe.AsPointer``1(``0@)">AsPointer&lt;T&gt;(ref T)</h4>
+  <div class="markdown level1 summary"><p>Returns a pointer to the given by-ref parameter.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void* AsPointer&lt;T&gt;(ref T value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>The object whose pointer is obtained.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.void">void</a>*</td>
+        <td><p>A pointer to the given value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>The type of object.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="System_Runtime_CompilerServices_Unsafe_AsRef_" data-uid="System.Runtime.CompilerServices.Unsafe.AsRef*"></a>
+  <h4 id="System_Runtime_CompilerServices_Unsafe_AsRef__1_System_Void__" data-uid="System.Runtime.CompilerServices.Unsafe.AsRef``1(System.Void*)">AsRef&lt;T&gt;(void*)</h4>
+  <div class="markdown level1 summary"><p>Reinterprets the given location as a reference to a value of type <code class="typeparamref">T</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ref T AsRef&lt;T&gt;(void* source)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.void">void</a>*</td>
+        <td><span class="parametername">source</span></td>
+        <td><p>The location of the value to reference.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><p>A reference to a value of type <code class="typeparamref">T</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>The type of the interpreted location.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="System_Runtime_CompilerServices_Unsafe_AsRef_" data-uid="System.Runtime.CompilerServices.Unsafe.AsRef*"></a>
+  <h4 id="System_Runtime_CompilerServices_Unsafe_AsRef__1___0__" data-uid="System.Runtime.CompilerServices.Unsafe.AsRef``1(``0@)">AsRef&lt;T&gt;(in T)</h4>
+  <div class="markdown level1 summary"><p>Reinterprets the given read-only reference as a reference.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ref T AsRef&lt;T&gt;(in T source)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">source</span></td>
+        <td><p>The read-only reference to reinterpret.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><p>A reference to a value of type <code class="typeparamref">T</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>The type of reference.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="System_Runtime_CompilerServices_Unsafe_As_" data-uid="System.Runtime.CompilerServices.Unsafe.As*"></a>
+  <h4 id="System_Runtime_CompilerServices_Unsafe_As__1_System_Object_" data-uid="System.Runtime.CompilerServices.Unsafe.As``1(System.Object)">As&lt;T&gt;(object)</h4>
+  <div class="markdown level1 summary"><p>Casts the given object to the specified type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static T As&lt;T&gt;(object o) where T : class</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></td>
+        <td><span class="parametername">o</span></td>
+        <td><p>The object to cast.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><p>The original object, casted to the given type.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>The type which the object will be cast to.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="System_Runtime_CompilerServices_Unsafe_As_" data-uid="System.Runtime.CompilerServices.Unsafe.As*"></a>
+  <h4 id="System_Runtime_CompilerServices_Unsafe_As__2___0__" data-uid="System.Runtime.CompilerServices.Unsafe.As``2(``0@)">As&lt;TFrom, TTo&gt;(ref TFrom)</h4>
+  <div class="markdown level1 summary"><p>Reinterprets the given reference as a reference to a value of type <code class="typeparamref">TTo</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ref TTo As&lt;TFrom, TTo&gt;(ref TFrom source)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TFrom</span></td>
+        <td><span class="parametername">source</span></td>
+        <td><p>The reference to reinterpret.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TTo</span></td>
+        <td><p>A reference to a value of type <code class="typeparamref">TTo</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TFrom</span></td>
+        <td><p>The type of reference to reinterpret.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TTo</span></td>
+        <td><p>The desired type of the reference.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="System_Runtime_CompilerServices_Unsafe_ByteOffset_" data-uid="System.Runtime.CompilerServices.Unsafe.ByteOffset*"></a>
+  <h4 id="System_Runtime_CompilerServices_Unsafe_ByteOffset__1___0____0__" data-uid="System.Runtime.CompilerServices.Unsafe.ByteOffset``1(``0@,``0@)">ByteOffset&lt;T&gt;(ref T, ref T)</h4>
+  <div class="markdown level1 summary"><p>Determines the byte offset from origin to target from the given references.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IntPtr ByteOffset&lt;T&gt;(ref T origin, ref T target)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">origin</span></td>
+        <td><p>The reference to origin.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">target</span></td>
+        <td><p>The reference to target.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">IntPtr</a></td>
+        <td><p>Byte offset from origin to target i.e. <code class="paramref">target</code> - <code class="paramref">origin</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>The type of reference.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="System_Runtime_CompilerServices_Unsafe_CopyBlock_" data-uid="System.Runtime.CompilerServices.Unsafe.CopyBlock*"></a>
+  <h4 id="System_Runtime_CompilerServices_Unsafe_CopyBlock_System_Byte__System_Byte__System_UInt32_" data-uid="System.Runtime.CompilerServices.Unsafe.CopyBlock(System.Byte@,System.Byte@,System.UInt32)">CopyBlock(ref byte, ref byte, uint)</h4>
+  <div class="markdown level1 summary"><p>Copies bytes from the source address to the destination address.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void CopyBlock(ref byte destination, ref byte source, uint byteCount)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a></td>
+        <td><span class="parametername">destination</span></td>
+        <td><p>The destination address to copy to.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a></td>
+        <td><span class="parametername">source</span></td>
+        <td><p>The source address to copy from.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></td>
+        <td><span class="parametername">byteCount</span></td>
+        <td><p>The number of bytes to copy.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="System_Runtime_CompilerServices_Unsafe_CopyBlock_" data-uid="System.Runtime.CompilerServices.Unsafe.CopyBlock*"></a>
+  <h4 id="System_Runtime_CompilerServices_Unsafe_CopyBlock_System_Void__System_Void__System_UInt32_" data-uid="System.Runtime.CompilerServices.Unsafe.CopyBlock(System.Void*,System.Void*,System.UInt32)">CopyBlock(void*, void*, uint)</h4>
+  <div class="markdown level1 summary"><p>Copies bytes from the source address to the destination address.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void CopyBlock(void* destination, void* source, uint byteCount)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.void">void</a>*</td>
+        <td><span class="parametername">destination</span></td>
+        <td><p>The destination address to copy to.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.void">void</a>*</td>
+        <td><span class="parametername">source</span></td>
+        <td><p>The source address to copy from.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></td>
+        <td><span class="parametername">byteCount</span></td>
+        <td><p>The number of bytes to copy.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="System_Runtime_CompilerServices_Unsafe_CopyBlockUnaligned_" data-uid="System.Runtime.CompilerServices.Unsafe.CopyBlockUnaligned*"></a>
+  <h4 id="System_Runtime_CompilerServices_Unsafe_CopyBlockUnaligned_System_Byte__System_Byte__System_UInt32_" data-uid="System.Runtime.CompilerServices.Unsafe.CopyBlockUnaligned(System.Byte@,System.Byte@,System.UInt32)">CopyBlockUnaligned(ref byte, ref byte, uint)</h4>
+  <div class="markdown level1 summary"><p>Copies bytes from the source address to the destination address without assuming architecture dependent alignment of the addresses.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void CopyBlockUnaligned(ref byte destination, ref byte source, uint byteCount)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a></td>
+        <td><span class="parametername">destination</span></td>
+        <td><p>The destination address to copy to.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a></td>
+        <td><span class="parametername">source</span></td>
+        <td><p>The source address to copy from.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></td>
+        <td><span class="parametername">byteCount</span></td>
+        <td><p>The number of bytes to copy.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="System_Runtime_CompilerServices_Unsafe_CopyBlockUnaligned_" data-uid="System.Runtime.CompilerServices.Unsafe.CopyBlockUnaligned*"></a>
+  <h4 id="System_Runtime_CompilerServices_Unsafe_CopyBlockUnaligned_System_Void__System_Void__System_UInt32_" data-uid="System.Runtime.CompilerServices.Unsafe.CopyBlockUnaligned(System.Void*,System.Void*,System.UInt32)">CopyBlockUnaligned(void*, void*, uint)</h4>
+  <div class="markdown level1 summary"><p>Copies bytes from the source address to the destination address without assuming architecture dependent alignment of the addresses.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void CopyBlockUnaligned(void* destination, void* source, uint byteCount)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.void">void</a>*</td>
+        <td><span class="parametername">destination</span></td>
+        <td><p>The destination address to copy to.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.void">void</a>*</td>
+        <td><span class="parametername">source</span></td>
+        <td><p>The source address to copy from.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></td>
+        <td><span class="parametername">byteCount</span></td>
+        <td><p>The number of bytes to copy.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="System_Runtime_CompilerServices_Unsafe_Copy_" data-uid="System.Runtime.CompilerServices.Unsafe.Copy*"></a>
+  <h4 id="System_Runtime_CompilerServices_Unsafe_Copy__1_System_Void____0__" data-uid="System.Runtime.CompilerServices.Unsafe.Copy``1(System.Void*,``0@)">Copy&lt;T&gt;(void*, ref T)</h4>
+  <div class="markdown level1 summary"><p>Copies a value of type <code class="typeparamref">T</code> to the given location.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Copy&lt;T&gt;(void* destination, ref T source)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.void">void</a>*</td>
+        <td><span class="parametername">destination</span></td>
+        <td><p>The location to copy to.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">source</span></td>
+        <td><p>A reference to the value to copy.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>The type of value to copy.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="System_Runtime_CompilerServices_Unsafe_Copy_" data-uid="System.Runtime.CompilerServices.Unsafe.Copy*"></a>
+  <h4 id="System_Runtime_CompilerServices_Unsafe_Copy__1___0__System_Void__" data-uid="System.Runtime.CompilerServices.Unsafe.Copy``1(``0@,System.Void*)">Copy&lt;T&gt;(ref T, void*)</h4>
+  <div class="markdown level1 summary"><p>Copies a value of type <code class="typeparamref">T</code> to the given location.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Copy&lt;T&gt;(ref T destination, void* source)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">destination</span></td>
+        <td><p>The location to copy to.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.void">void</a>*</td>
+        <td><span class="parametername">source</span></td>
+        <td><p>A pointer to the value to copy.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>The type of value to copy.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="System_Runtime_CompilerServices_Unsafe_InitBlock_" data-uid="System.Runtime.CompilerServices.Unsafe.InitBlock*"></a>
+  <h4 id="System_Runtime_CompilerServices_Unsafe_InitBlock_System_Byte__System_Byte_System_UInt32_" data-uid="System.Runtime.CompilerServices.Unsafe.InitBlock(System.Byte@,System.Byte,System.UInt32)">InitBlock(ref byte, byte, uint)</h4>
+  <div class="markdown level1 summary"><p>Initializes a block of memory at the given location with a given initial value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void InitBlock(ref byte startAddress, byte value, uint byteCount)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a></td>
+        <td><span class="parametername">startAddress</span></td>
+        <td><p>The address of the start of the memory block to initialize.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>The value to initialize the block to.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></td>
+        <td><span class="parametername">byteCount</span></td>
+        <td><p>The number of bytes to initialize.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="System_Runtime_CompilerServices_Unsafe_InitBlock_" data-uid="System.Runtime.CompilerServices.Unsafe.InitBlock*"></a>
+  <h4 id="System_Runtime_CompilerServices_Unsafe_InitBlock_System_Void__System_Byte_System_UInt32_" data-uid="System.Runtime.CompilerServices.Unsafe.InitBlock(System.Void*,System.Byte,System.UInt32)">InitBlock(void*, byte, uint)</h4>
+  <div class="markdown level1 summary"><p>Initializes a block of memory at the given location with a given initial value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void InitBlock(void* startAddress, byte value, uint byteCount)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.void">void</a>*</td>
+        <td><span class="parametername">startAddress</span></td>
+        <td><p>The address of the start of the memory block to initialize.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>The value to initialize the block to.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></td>
+        <td><span class="parametername">byteCount</span></td>
+        <td><p>The number of bytes to initialize.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="System_Runtime_CompilerServices_Unsafe_InitBlockUnaligned_" data-uid="System.Runtime.CompilerServices.Unsafe.InitBlockUnaligned*"></a>
+  <h4 id="System_Runtime_CompilerServices_Unsafe_InitBlockUnaligned_System_Byte__System_Byte_System_UInt32_" data-uid="System.Runtime.CompilerServices.Unsafe.InitBlockUnaligned(System.Byte@,System.Byte,System.UInt32)">InitBlockUnaligned(ref byte, byte, uint)</h4>
+  <div class="markdown level1 summary"><p>Initializes a block of memory at the given location with a given initial value without assuming architecture dependent alignment of the address.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void InitBlockUnaligned(ref byte startAddress, byte value, uint byteCount)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a></td>
+        <td><span class="parametername">startAddress</span></td>
+        <td><p>The address of the start of the memory block to initialize.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>The value to initialize the block to.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></td>
+        <td><span class="parametername">byteCount</span></td>
+        <td><p>The number of bytes to initialize.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="System_Runtime_CompilerServices_Unsafe_InitBlockUnaligned_" data-uid="System.Runtime.CompilerServices.Unsafe.InitBlockUnaligned*"></a>
+  <h4 id="System_Runtime_CompilerServices_Unsafe_InitBlockUnaligned_System_Void__System_Byte_System_UInt32_" data-uid="System.Runtime.CompilerServices.Unsafe.InitBlockUnaligned(System.Void*,System.Byte,System.UInt32)">InitBlockUnaligned(void*, byte, uint)</h4>
+  <div class="markdown level1 summary"><p>Initializes a block of memory at the given location with a given initial value without assuming architecture dependent alignment of the address.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void InitBlockUnaligned(void* startAddress, byte value, uint byteCount)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.void">void</a>*</td>
+        <td><span class="parametername">startAddress</span></td>
+        <td><p>The address of the start of the memory block to initialize.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>The value to initialize the block to.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></td>
+        <td><span class="parametername">byteCount</span></td>
+        <td><p>The number of bytes to initialize.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="System_Runtime_CompilerServices_Unsafe_IsAddressGreaterThan_" data-uid="System.Runtime.CompilerServices.Unsafe.IsAddressGreaterThan*"></a>
+  <h4 id="System_Runtime_CompilerServices_Unsafe_IsAddressGreaterThan__1___0____0__" data-uid="System.Runtime.CompilerServices.Unsafe.IsAddressGreaterThan``1(``0@,``0@)">IsAddressGreaterThan&lt;T&gt;(ref T, ref T)</h4>
+  <div class="markdown level1 summary"><p>Returns a value that indicates whether a specified reference is greater than another specified reference.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsAddressGreaterThan&lt;T&gt;(ref T left, ref T right)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">left</span></td>
+        <td><p>The first value to compare.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">right</span></td>
+        <td><p>The second value to compare.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if <code class="paramref">left</code> is greater than <code class="paramref">right</code>; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>The type of the reference.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="System_Runtime_CompilerServices_Unsafe_IsAddressLessThan_" data-uid="System.Runtime.CompilerServices.Unsafe.IsAddressLessThan*"></a>
+  <h4 id="System_Runtime_CompilerServices_Unsafe_IsAddressLessThan__1___0____0__" data-uid="System.Runtime.CompilerServices.Unsafe.IsAddressLessThan``1(``0@,``0@)">IsAddressLessThan&lt;T&gt;(ref T, ref T)</h4>
+  <div class="markdown level1 summary"><p>Returns a value that indicates whether a specified reference is less than another specified reference.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsAddressLessThan&lt;T&gt;(ref T left, ref T right)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">left</span></td>
+        <td><p>The first value to compare.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">right</span></td>
+        <td><p>The second value to compare.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if <code class="paramref">left</code> is less than <code class="paramref">right</code>; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>The type of the reference.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="System_Runtime_CompilerServices_Unsafe_IsNullRef_" data-uid="System.Runtime.CompilerServices.Unsafe.IsNullRef*"></a>
+  <h4 id="System_Runtime_CompilerServices_Unsafe_IsNullRef__1___0__" data-uid="System.Runtime.CompilerServices.Unsafe.IsNullRef``1(``0@)">IsNullRef&lt;T&gt;(ref T)</h4>
+  <div class="markdown level1 summary"><p>Determines if a given reference to a value of type <code class="typeparamref">T</code> is a null reference.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsNullRef&lt;T&gt;(ref T source)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">source</span></td>
+        <td><p>The reference to check.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if <code class="paramref">source</code> is a null reference; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>The type of the reference.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="System_Runtime_CompilerServices_Unsafe_NullRef_" data-uid="System.Runtime.CompilerServices.Unsafe.NullRef*"></a>
+  <h4 id="System_Runtime_CompilerServices_Unsafe_NullRef__1" data-uid="System.Runtime.CompilerServices.Unsafe.NullRef``1">NullRef&lt;T&gt;()</h4>
+  <div class="markdown level1 summary"><p>Returns a reference to a value of type <code class="typeparamref">T</code> that is a null reference.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ref T NullRef&lt;T&gt;()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><p>A reference to a value of type <code class="typeparamref">T</code> that is a null reference.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>The type of the reference.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="System_Runtime_CompilerServices_Unsafe_ReadUnaligned_" data-uid="System.Runtime.CompilerServices.Unsafe.ReadUnaligned*"></a>
+  <h4 id="System_Runtime_CompilerServices_Unsafe_ReadUnaligned__1_System_Byte__" data-uid="System.Runtime.CompilerServices.Unsafe.ReadUnaligned``1(System.Byte@)">ReadUnaligned&lt;T&gt;(ref byte)</h4>
+  <div class="markdown level1 summary"><p>Reads a value of type <code class="typeparamref">T</code> from the given location without assuming architecture dependent alignment of the addresses.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static T ReadUnaligned&lt;T&gt;(ref byte source)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a></td>
+        <td><span class="parametername">source</span></td>
+        <td><p>The location to read from.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><p>An object of type <code class="typeparamref">T</code> read from the given location.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>The type to read.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="System_Runtime_CompilerServices_Unsafe_ReadUnaligned_" data-uid="System.Runtime.CompilerServices.Unsafe.ReadUnaligned*"></a>
+  <h4 id="System_Runtime_CompilerServices_Unsafe_ReadUnaligned__1_System_Void__" data-uid="System.Runtime.CompilerServices.Unsafe.ReadUnaligned``1(System.Void*)">ReadUnaligned&lt;T&gt;(void*)</h4>
+  <div class="markdown level1 summary"><p>Reads a value of type <code class="typeparamref">T</code> from the given location without assuming architecture dependent alignment of the addresses.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static T ReadUnaligned&lt;T&gt;(void* source)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.void">void</a>*</td>
+        <td><span class="parametername">source</span></td>
+        <td><p>The location to read from.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><p>An object of type <code class="typeparamref">T</code> read from the given location.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>The type to read.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="System_Runtime_CompilerServices_Unsafe_Read_" data-uid="System.Runtime.CompilerServices.Unsafe.Read*"></a>
+  <h4 id="System_Runtime_CompilerServices_Unsafe_Read__1_System_Void__" data-uid="System.Runtime.CompilerServices.Unsafe.Read``1(System.Void*)">Read&lt;T&gt;(void*)</h4>
+  <div class="markdown level1 summary"><p>Reads a value of type <code class="typeparamref">T</code> from the given location.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static T Read&lt;T&gt;(void* source)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.void">void</a>*</td>
+        <td><span class="parametername">source</span></td>
+        <td><p>The location to read from.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><p>An object of type <code class="typeparamref">T</code> read from the given location.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>The type to read.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="System_Runtime_CompilerServices_Unsafe_SizeOf_" data-uid="System.Runtime.CompilerServices.Unsafe.SizeOf*"></a>
+  <h4 id="System_Runtime_CompilerServices_Unsafe_SizeOf__1" data-uid="System.Runtime.CompilerServices.Unsafe.SizeOf``1">SizeOf&lt;T&gt;()</h4>
+  <div class="markdown level1 summary"><p>Returns the size of an object of the given type parameter.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int SizeOf&lt;T&gt;()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><p>The size of an object of type <code class="typeparamref">T</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>The type of object whose size is retrieved.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="System_Runtime_CompilerServices_Unsafe_SkipInit_" data-uid="System.Runtime.CompilerServices.Unsafe.SkipInit*"></a>
+  <h4 id="System_Runtime_CompilerServices_Unsafe_SkipInit__1___0__" data-uid="System.Runtime.CompilerServices.Unsafe.SkipInit``1(``0@)">SkipInit&lt;T&gt;(out T)</h4>
+  <div class="markdown level1 summary"><p>Bypasses definite assignment rules for a given value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SkipInit&lt;T&gt;(out T value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>The uninitialized object.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>The type of the uninitialized object.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="System_Runtime_CompilerServices_Unsafe_SubtractByteOffset_" data-uid="System.Runtime.CompilerServices.Unsafe.SubtractByteOffset*"></a>
+  <h4 id="System_Runtime_CompilerServices_Unsafe_SubtractByteOffset__1___0__System_IntPtr_" data-uid="System.Runtime.CompilerServices.Unsafe.SubtractByteOffset``1(``0@,System.IntPtr)">SubtractByteOffset&lt;T&gt;(ref T, IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Subtracts a byte offset from the given reference.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ref T SubtractByteOffset&lt;T&gt;(ref T source, IntPtr byteOffset)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">source</span></td>
+        <td><p>The reference to subtract the offset from.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">IntPtr</a></td>
+        <td><span class="parametername">byteOffset</span></td>
+        <td><p>The offset to subtract.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><p>A new reference that reflects the subtraction of byte offset from pointer.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>The type of reference.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="System_Runtime_CompilerServices_Unsafe_SubtractByteOffset_" data-uid="System.Runtime.CompilerServices.Unsafe.SubtractByteOffset*"></a>
+  <h4 id="System_Runtime_CompilerServices_Unsafe_SubtractByteOffset__1___0__System_UIntPtr_" data-uid="System.Runtime.CompilerServices.Unsafe.SubtractByteOffset``1(``0@,System.UIntPtr)">SubtractByteOffset&lt;T&gt;(ref T, nuint)</h4>
+  <div class="markdown level1 summary"><p>Subtracts a byte offset from the given reference.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ref T SubtractByteOffset&lt;T&gt;(ref T source, nuint byteOffset)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">source</span></td>
+        <td><p>The reference to subtract the offset from.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">UIntPtr</a></td>
+        <td><span class="parametername">byteOffset</span></td>
+        <td><p>The offset to subtract.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><p>A new reference that reflects the subraction of byte offset from pointer.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>The type of reference.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="System_Runtime_CompilerServices_Unsafe_Subtract_" data-uid="System.Runtime.CompilerServices.Unsafe.Subtract*"></a>
+  <h4 id="System_Runtime_CompilerServices_Unsafe_Subtract__1_System_Void__System_Int32_" data-uid="System.Runtime.CompilerServices.Unsafe.Subtract``1(System.Void*,System.Int32)">Subtract&lt;T&gt;(void*, int)</h4>
+  <div class="markdown level1 summary"><p>Subtracts an element offset from the given void pointer.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void* Subtract&lt;T&gt;(void* source, int elementOffset)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.void">void</a>*</td>
+        <td><span class="parametername">source</span></td>
+        <td><p>The void pointer to subtract the offset from.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">elementOffset</span></td>
+        <td><p>The offset to subtract.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.void">void</a>*</td>
+        <td><p>A new void pointer that reflects the subtraction of offset from the specified pointer.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>The type of the void pointer.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="System_Runtime_CompilerServices_Unsafe_Subtract_" data-uid="System.Runtime.CompilerServices.Unsafe.Subtract*"></a>
+  <h4 id="System_Runtime_CompilerServices_Unsafe_Subtract__1___0__System_Int32_" data-uid="System.Runtime.CompilerServices.Unsafe.Subtract``1(``0@,System.Int32)">Subtract&lt;T&gt;(ref T, int)</h4>
+  <div class="markdown level1 summary"><p>Subtracts an element offset from the given reference.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ref T Subtract&lt;T&gt;(ref T source, int elementOffset)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">source</span></td>
+        <td><p>The reference to subtract the offset from.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">elementOffset</span></td>
+        <td><p>The offset to subtract.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><p>A new reference that reflects the subtraction of offset from pointer.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>The type of reference.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="System_Runtime_CompilerServices_Unsafe_Subtract_" data-uid="System.Runtime.CompilerServices.Unsafe.Subtract*"></a>
+  <h4 id="System_Runtime_CompilerServices_Unsafe_Subtract__1___0__System_IntPtr_" data-uid="System.Runtime.CompilerServices.Unsafe.Subtract``1(``0@,System.IntPtr)">Subtract&lt;T&gt;(ref T, IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Subtracts an element offset from the given reference.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ref T Subtract&lt;T&gt;(ref T source, IntPtr elementOffset)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">source</span></td>
+        <td><p>The reference to subtract the offset from.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">IntPtr</a></td>
+        <td><span class="parametername">elementOffset</span></td>
+        <td><p>The offset to subtract.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><p>A new reference that reflects the subtraction of offset from pointer.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>The type of reference.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="System_Runtime_CompilerServices_Unsafe_Subtract_" data-uid="System.Runtime.CompilerServices.Unsafe.Subtract*"></a>
+  <h4 id="System_Runtime_CompilerServices_Unsafe_Subtract__1___0__System_UIntPtr_" data-uid="System.Runtime.CompilerServices.Unsafe.Subtract``1(``0@,System.UIntPtr)">Subtract&lt;T&gt;(ref T, nuint)</h4>
+  <div class="markdown level1 summary"><p>Subtracts an element offset from the given reference.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ref T Subtract&lt;T&gt;(ref T source, nuint elementOffset)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">source</span></td>
+        <td><p>The reference to subtract the offset from.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">UIntPtr</a></td>
+        <td><span class="parametername">elementOffset</span></td>
+        <td><p>The offset to subtract.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><p>A new reference that reflects the subraction of offset from pointer.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>The type of reference.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="System_Runtime_CompilerServices_Unsafe_Unbox_" data-uid="System.Runtime.CompilerServices.Unsafe.Unbox*"></a>
+  <h4 id="System_Runtime_CompilerServices_Unsafe_Unbox__1_System_Object_" data-uid="System.Runtime.CompilerServices.Unsafe.Unbox``1(System.Object)">Unbox&lt;T&gt;(object)</h4>
+  <div class="markdown level1 summary"><p>Returns a <code>mutable ref</code> to a boxed value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ref T Unbox&lt;T&gt;(object box) where T : struct</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></td>
+        <td><span class="parametername">box</span></td>
+        <td><p>The value to unbox.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><p>A <code>mutable ref</code> to the boxed value <code class="paramref">box</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>The type to be unboxed.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.nullreferenceexception">NullReferenceException</a></td>
+        <td><p><code class="paramref">box</code> is <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>, and <code class="typeparamref">T</code> is a non-nullable value type.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.invalidcastexception">InvalidCastException</a></td>
+        <td><pre><code>&lt;code class=&quot;paramref&quot;&gt;box&lt;/code&gt; is not a boxed value type.
+</code></pre>
+<p>-or-</p>
+<p><code class="paramref">box</code> is not a boxed <code class="typeparamref">T</code>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.typeloadexception">TypeLoadException</a></td>
+        <td><p><code class="typeparamref">T</code> cannot be found.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="System_Runtime_CompilerServices_Unsafe_WriteUnaligned_" data-uid="System.Runtime.CompilerServices.Unsafe.WriteUnaligned*"></a>
+  <h4 id="System_Runtime_CompilerServices_Unsafe_WriteUnaligned__1_System_Byte____0_" data-uid="System.Runtime.CompilerServices.Unsafe.WriteUnaligned``1(System.Byte@,``0)">WriteUnaligned&lt;T&gt;(ref byte, T)</h4>
+  <div class="markdown level1 summary"><p>Writes a value of type <code class="typeparamref">T</code> to the given location without assuming architecture dependent alignment of the addresses.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void WriteUnaligned&lt;T&gt;(ref byte destination, T value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a></td>
+        <td><span class="parametername">destination</span></td>
+        <td><p>The location to write to.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>The value to write.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>The type of value to write.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="System_Runtime_CompilerServices_Unsafe_WriteUnaligned_" data-uid="System.Runtime.CompilerServices.Unsafe.WriteUnaligned*"></a>
+  <h4 id="System_Runtime_CompilerServices_Unsafe_WriteUnaligned__1_System_Void____0_" data-uid="System.Runtime.CompilerServices.Unsafe.WriteUnaligned``1(System.Void*,``0)">WriteUnaligned&lt;T&gt;(void*, T)</h4>
+  <div class="markdown level1 summary"><p>Writes a value of type <code class="typeparamref">T</code> to the given location without assuming architecture dependent alignment of the addresses.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void WriteUnaligned&lt;T&gt;(void* destination, T value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.void">void</a>*</td>
+        <td><span class="parametername">destination</span></td>
+        <td><p>The location to write to.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>The value to write.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>The type of value to write.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="System_Runtime_CompilerServices_Unsafe_Write_" data-uid="System.Runtime.CompilerServices.Unsafe.Write*"></a>
+  <h4 id="System_Runtime_CompilerServices_Unsafe_Write__1_System_Void____0_" data-uid="System.Runtime.CompilerServices.Unsafe.Write``1(System.Void*,``0)">Write&lt;T&gt;(void*, T)</h4>
+  <div class="markdown level1 summary"><p>Writes a value of type <code class="typeparamref">T</code> to the given location.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Write&lt;T&gt;(void* destination, T value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.void">void</a>*</td>
+        <td><span class="parametername">destination</span></td>
+        <td><p>The location to write to.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>The value to write.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>The type of value to write.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+</article>
+                </div>
+
+                <div class="copyright-footer">
+                    <span>&#169; CodeFactory, LLC. All rights reserved.</span>
+                </div>
+            </main>
+        </div>
+
+
+        <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+        <script type="text/javascript" src="../styles/jquery.twbsPagination.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/mark.js@8.11.1/dist/jquery.mark.min.js"></script>
+        <script type="text/javascript" src="../styles/url.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/anchor-js@5.0.0/anchor.min.js"></script>
+        <script type="text/javascript" src="../styles/docfx.js"></script>
+        <script type="text/javascript" src="../styles/main.js"></script>
+        <script type="text/javascript" src="../styles/singulink.js"></script>    </body>
+</html>

@@ -1,0 +1,621 @@
+### YamlMime:ManagedReference
+items:
+- uid: Serilog.Parsing.MessageTemplateToken
+  commentId: T:Serilog.Parsing.MessageTemplateToken
+  id: MessageTemplateToken
+  parent: Serilog.Parsing
+  children:
+  - Serilog.Parsing.MessageTemplateToken.#ctor(System.Int32)
+  - Serilog.Parsing.MessageTemplateToken.Length
+  - Serilog.Parsing.MessageTemplateToken.Render(System.Collections.Generic.IReadOnlyDictionary{System.String,Serilog.Events.LogEventPropertyValue},System.IO.TextWriter,System.IFormatProvider)
+  - Serilog.Parsing.MessageTemplateToken.StartIndex
+  langs:
+  - csharp
+  - vb
+  name: MessageTemplateToken
+  nameWithType: MessageTemplateToken
+  fullName: Serilog.Parsing.MessageTemplateToken
+  type: Class
+  assemblies:
+  - Serilog
+  namespace: Serilog.Parsing
+  summary: An element parsed from a message template string.
+  example: []
+  syntax:
+    content: public abstract class MessageTemplateToken
+    content.vb: Public MustInherit Class MessageTemplateToken
+  inheritance:
+  - System.Object
+  derivedClasses:
+  - Serilog.Parsing.PropertyToken
+  - Serilog.Parsing.TextToken
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: Serilog.Parsing.MessageTemplateToken.#ctor(System.Int32)
+  commentId: M:Serilog.Parsing.MessageTemplateToken.#ctor(System.Int32)
+  id: '#ctor(System.Int32)'
+  parent: Serilog.Parsing.MessageTemplateToken
+  langs:
+  - csharp
+  - vb
+  name: MessageTemplateToken(int)
+  nameWithType: MessageTemplateToken.MessageTemplateToken(int)
+  fullName: Serilog.Parsing.MessageTemplateToken.MessageTemplateToken(int)
+  type: Constructor
+  assemblies:
+  - Serilog
+  namespace: Serilog.Parsing
+  summary: Construct a <xref href="Serilog.Parsing.MessageTemplateToken" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: protected MessageTemplateToken(int startIndex)
+    parameters:
+    - id: startIndex
+      type: System.Int32
+      description: The token's start index in the template.
+    content.vb: Protected Sub New(startIndex As Integer)
+  overload: Serilog.Parsing.MessageTemplateToken.#ctor*
+  nameWithType.vb: MessageTemplateToken.New(Integer)
+  fullName.vb: Serilog.Parsing.MessageTemplateToken.New(Integer)
+  name.vb: New(Integer)
+- uid: Serilog.Parsing.MessageTemplateToken.Render(System.Collections.Generic.IReadOnlyDictionary{System.String,Serilog.Events.LogEventPropertyValue},System.IO.TextWriter,System.IFormatProvider)
+  commentId: M:Serilog.Parsing.MessageTemplateToken.Render(System.Collections.Generic.IReadOnlyDictionary{System.String,Serilog.Events.LogEventPropertyValue},System.IO.TextWriter,System.IFormatProvider)
+  id: Render(System.Collections.Generic.IReadOnlyDictionary{System.String,Serilog.Events.LogEventPropertyValue},System.IO.TextWriter,System.IFormatProvider)
+  parent: Serilog.Parsing.MessageTemplateToken
+  langs:
+  - csharp
+  - vb
+  name: Render(IReadOnlyDictionary<string, LogEventPropertyValue>, TextWriter, IFormatProvider?)
+  nameWithType: MessageTemplateToken.Render(IReadOnlyDictionary<string, LogEventPropertyValue>, TextWriter, IFormatProvider?)
+  fullName: Serilog.Parsing.MessageTemplateToken.Render(System.Collections.Generic.IReadOnlyDictionary<string, Serilog.Events.LogEventPropertyValue>, System.IO.TextWriter, System.IFormatProvider?)
+  type: Method
+  assemblies:
+  - Serilog
+  namespace: Serilog.Parsing
+  summary: Render the token to the output.
+  example: []
+  syntax:
+    content: public abstract void Render(IReadOnlyDictionary<string, LogEventPropertyValue> properties, TextWriter output, IFormatProvider? formatProvider = null)
+    parameters:
+    - id: properties
+      type: System.Collections.Generic.IReadOnlyDictionary{System.String,Serilog.Events.LogEventPropertyValue}
+      description: Properties that may be represented by the token.
+    - id: output
+      type: System.IO.TextWriter
+      description: Output for the rendered string.
+    - id: formatProvider
+      type: System.IFormatProvider
+      description: Supplies culture-specific formatting information, or null.
+    content.vb: Public MustOverride Sub Render(properties As IReadOnlyDictionary(Of String, LogEventPropertyValue), output As TextWriter, formatProvider As IFormatProvider = Nothing)
+  overload: Serilog.Parsing.MessageTemplateToken.Render*
+  nameWithType.vb: MessageTemplateToken.Render(IReadOnlyDictionary(Of String, LogEventPropertyValue), TextWriter, IFormatProvider)
+  fullName.vb: Serilog.Parsing.MessageTemplateToken.Render(System.Collections.Generic.IReadOnlyDictionary(Of String, Serilog.Events.LogEventPropertyValue), System.IO.TextWriter, System.IFormatProvider)
+  name.vb: Render(IReadOnlyDictionary(Of String, LogEventPropertyValue), TextWriter, IFormatProvider)
+- uid: Serilog.Parsing.MessageTemplateToken.StartIndex
+  commentId: P:Serilog.Parsing.MessageTemplateToken.StartIndex
+  id: StartIndex
+  parent: Serilog.Parsing.MessageTemplateToken
+  langs:
+  - csharp
+  - vb
+  name: StartIndex
+  nameWithType: MessageTemplateToken.StartIndex
+  fullName: Serilog.Parsing.MessageTemplateToken.StartIndex
+  type: Property
+  assemblies:
+  - Serilog
+  namespace: Serilog.Parsing
+  summary: The token's start index in the template.
+  example: []
+  syntax:
+    content: public int StartIndex { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Property StartIndex As Integer
+  overload: Serilog.Parsing.MessageTemplateToken.StartIndex*
+- uid: Serilog.Parsing.MessageTemplateToken.Length
+  commentId: P:Serilog.Parsing.MessageTemplateToken.Length
+  id: Length
+  parent: Serilog.Parsing.MessageTemplateToken
+  langs:
+  - csharp
+  - vb
+  name: Length
+  nameWithType: MessageTemplateToken.Length
+  fullName: Serilog.Parsing.MessageTemplateToken.Length
+  type: Property
+  assemblies:
+  - Serilog
+  namespace: Serilog.Parsing
+  summary: The token's length.
+  example: []
+  syntax:
+    content: public abstract int Length { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public MustOverride ReadOnly Property Length As Integer
+  overload: Serilog.Parsing.MessageTemplateToken.Length*
+references:
+- uid: Serilog.Parsing
+  commentId: N:Serilog.Parsing
+  isExternal: true
+  href: Serilog.html
+  name: Serilog.Parsing
+  nameWithType: Serilog.Parsing
+  fullName: Serilog.Parsing
+  spec.csharp:
+  - uid: Serilog
+    name: Serilog
+    isExternal: true
+    href: Serilog.html
+  - name: .
+  - uid: Serilog.Parsing
+    name: Parsing
+    isExternal: true
+    href: Serilog.Parsing.html
+  spec.vb:
+  - uid: Serilog
+    name: Serilog
+    isExternal: true
+    href: Serilog.html
+  - name: .
+  - uid: Serilog.Parsing
+    name: Parsing
+    isExternal: true
+    href: Serilog.Parsing.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Serilog.Parsing.MessageTemplateToken
+  commentId: T:Serilog.Parsing.MessageTemplateToken
+  parent: Serilog.Parsing
+  isExternal: true
+  href: Serilog.Parsing.MessageTemplateToken.html
+  name: MessageTemplateToken
+  nameWithType: MessageTemplateToken
+  fullName: Serilog.Parsing.MessageTemplateToken
+- uid: Serilog.Parsing.MessageTemplateToken.#ctor*
+  commentId: Overload:Serilog.Parsing.MessageTemplateToken.#ctor
+  isExternal: true
+  href: Serilog.Parsing.MessageTemplateToken.html#Serilog_Parsing_MessageTemplateToken__ctor_System_Int32_
+  name: MessageTemplateToken
+  nameWithType: MessageTemplateToken.MessageTemplateToken
+  fullName: Serilog.Parsing.MessageTemplateToken.MessageTemplateToken
+  nameWithType.vb: MessageTemplateToken.New
+  fullName.vb: Serilog.Parsing.MessageTemplateToken.New
+  name.vb: New
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: Serilog.Parsing.MessageTemplateToken.Render*
+  commentId: Overload:Serilog.Parsing.MessageTemplateToken.Render
+  isExternal: true
+  href: Serilog.Parsing.MessageTemplateToken.html#Serilog_Parsing_MessageTemplateToken_Render_System_Collections_Generic_IReadOnlyDictionary_System_String_Serilog_Events_LogEventPropertyValue__System_IO_TextWriter_System_IFormatProvider_
+  name: Render
+  nameWithType: MessageTemplateToken.Render
+  fullName: Serilog.Parsing.MessageTemplateToken.Render
+- uid: System.Collections.Generic.IReadOnlyDictionary{System.String,Serilog.Events.LogEventPropertyValue}
+  commentId: T:System.Collections.Generic.IReadOnlyDictionary{System.String,Serilog.Events.LogEventPropertyValue}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IReadOnlyDictionary`2
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlydictionary-2
+  name: IReadOnlyDictionary<string, LogEventPropertyValue>
+  nameWithType: IReadOnlyDictionary<string, LogEventPropertyValue>
+  fullName: System.Collections.Generic.IReadOnlyDictionary<string, Serilog.Events.LogEventPropertyValue>
+  nameWithType.vb: IReadOnlyDictionary(Of String, LogEventPropertyValue)
+  fullName.vb: System.Collections.Generic.IReadOnlyDictionary(Of String, Serilog.Events.LogEventPropertyValue)
+  name.vb: IReadOnlyDictionary(Of String, LogEventPropertyValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyDictionary`2
+    name: IReadOnlyDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlydictionary-2
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: Serilog.Events.LogEventPropertyValue
+    name: LogEventPropertyValue
+    isExternal: true
+    href: Serilog.Events.LogEventPropertyValue.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyDictionary`2
+    name: IReadOnlyDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlydictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: Serilog.Events.LogEventPropertyValue
+    name: LogEventPropertyValue
+    isExternal: true
+    href: Serilog.Events.LogEventPropertyValue.html
+  - name: )
+- uid: System.IO.TextWriter
+  commentId: T:System.IO.TextWriter
+  parent: System.IO
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.io.textwriter
+  name: TextWriter
+  nameWithType: TextWriter
+  fullName: System.IO.TextWriter
+- uid: System.IFormatProvider
+  commentId: T:System.IFormatProvider
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iformatprovider
+  name: IFormatProvider
+  nameWithType: IFormatProvider
+  fullName: System.IFormatProvider
+- uid: System.Collections.Generic.IReadOnlyDictionary`2
+  commentId: T:System.Collections.Generic.IReadOnlyDictionary`2
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlydictionary-2
+  name: IReadOnlyDictionary<TKey, TValue>
+  nameWithType: IReadOnlyDictionary<TKey, TValue>
+  fullName: System.Collections.Generic.IReadOnlyDictionary<TKey, TValue>
+  nameWithType.vb: IReadOnlyDictionary(Of TKey, TValue)
+  fullName.vb: System.Collections.Generic.IReadOnlyDictionary(Of TKey, TValue)
+  name.vb: IReadOnlyDictionary(Of TKey, TValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyDictionary`2
+    name: IReadOnlyDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlydictionary-2
+  - name: <
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyDictionary`2
+    name: IReadOnlyDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlydictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: System.IO
+  commentId: N:System.IO
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.IO
+  nameWithType: System.IO
+  fullName: System.IO
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.IO
+    name: IO
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.IO
+    name: IO
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io
+- uid: Serilog.Parsing.MessageTemplateToken.StartIndex*
+  commentId: Overload:Serilog.Parsing.MessageTemplateToken.StartIndex
+  isExternal: true
+  href: Serilog.Parsing.MessageTemplateToken.html#Serilog_Parsing_MessageTemplateToken_StartIndex
+  name: StartIndex
+  nameWithType: MessageTemplateToken.StartIndex
+  fullName: Serilog.Parsing.MessageTemplateToken.StartIndex
+- uid: Serilog.Parsing.MessageTemplateToken.Length*
+  commentId: Overload:Serilog.Parsing.MessageTemplateToken.Length
+  isExternal: true
+  href: Serilog.Parsing.MessageTemplateToken.html#Serilog_Parsing_MessageTemplateToken_Length
+  name: Length
+  nameWithType: MessageTemplateToken.Length
+  fullName: Serilog.Parsing.MessageTemplateToken.Length

@@ -1,0 +1,977 @@
+### YamlMime:ManagedReference
+items:
+- uid: MessagePack.Resolvers.StaticCompositeResolver
+  commentId: T:MessagePack.Resolvers.StaticCompositeResolver
+  id: StaticCompositeResolver
+  parent: MessagePack.Resolvers
+  children:
+  - MessagePack.Resolvers.StaticCompositeResolver.GetFormatter``1
+  - MessagePack.Resolvers.StaticCompositeResolver.Instance
+  - MessagePack.Resolvers.StaticCompositeResolver.Register(MessagePack.Formatters.IMessagePackFormatter[])
+  - MessagePack.Resolvers.StaticCompositeResolver.Register(MessagePack.IFormatterResolver[])
+  - MessagePack.Resolvers.StaticCompositeResolver.Register(System.Collections.Generic.IReadOnlyList{MessagePack.Formatters.IMessagePackFormatter},System.Collections.Generic.IReadOnlyList{MessagePack.IFormatterResolver})
+  langs:
+  - csharp
+  - vb
+  name: StaticCompositeResolver
+  nameWithType: StaticCompositeResolver
+  fullName: MessagePack.Resolvers.StaticCompositeResolver
+  type: Class
+  assemblies:
+  - MessagePack
+  namespace: MessagePack.Resolvers
+  summary: Singleton version of <xref href="MessagePack.Resolvers.CompositeResolver" data-throw-if-not-resolved="false"></xref>, which can register a collection of formatters and resolvers to a single instance.
+  example: []
+  syntax:
+    content: 'public class StaticCompositeResolver : IFormatterResolver'
+    content.vb: Public Class StaticCompositeResolver Implements IFormatterResolver
+  inheritance:
+  - System.Object
+  implements:
+  - MessagePack.IFormatterResolver
+  inheritedMembers:
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  extensionMethods:
+  - MessagePack.IFormatterResolver.MessagePack.FormatterResolverExtensions.GetFormatterDynamic(System.Type)
+  - MessagePack.IFormatterResolver.MessagePack.FormatterResolverExtensions.GetFormatterWithVerify``1
+- uid: MessagePack.Resolvers.StaticCompositeResolver.Instance
+  commentId: F:MessagePack.Resolvers.StaticCompositeResolver.Instance
+  id: Instance
+  parent: MessagePack.Resolvers.StaticCompositeResolver
+  langs:
+  - csharp
+  - vb
+  name: Instance
+  nameWithType: StaticCompositeResolver.Instance
+  fullName: MessagePack.Resolvers.StaticCompositeResolver.Instance
+  type: Field
+  assemblies:
+  - MessagePack
+  namespace: MessagePack.Resolvers
+  syntax:
+    content: public static readonly StaticCompositeResolver Instance
+    return:
+      type: MessagePack.Resolvers.StaticCompositeResolver
+    content.vb: Public Shared ReadOnly Instance As StaticCompositeResolver
+- uid: MessagePack.Resolvers.StaticCompositeResolver.Register(MessagePack.Formatters.IMessagePackFormatter[])
+  commentId: M:MessagePack.Resolvers.StaticCompositeResolver.Register(MessagePack.Formatters.IMessagePackFormatter[])
+  id: Register(MessagePack.Formatters.IMessagePackFormatter[])
+  parent: MessagePack.Resolvers.StaticCompositeResolver
+  langs:
+  - csharp
+  - vb
+  name: Register(params IMessagePackFormatter[])
+  nameWithType: StaticCompositeResolver.Register(params IMessagePackFormatter[])
+  fullName: MessagePack.Resolvers.StaticCompositeResolver.Register(params MessagePack.Formatters.IMessagePackFormatter[])
+  type: Method
+  assemblies:
+  - MessagePack
+  namespace: MessagePack.Resolvers
+  summary: >-
+    Initializes a singleton instance with the specified formatters.
+
+    This method can only call before use StaticCompositeResolver.Instance.GetFormatter.
+
+    If call twice in the Register methods, registered formatters and resolvers will be overridden.
+  example: []
+  syntax:
+    content: public void Register(params IMessagePackFormatter[] formatters)
+    parameters:
+    - id: formatters
+      type: MessagePack.Formatters.IMessagePackFormatter[]
+      description: >-
+        A list of instances of <xref href="MessagePack.Formatters.IMessagePackFormatter%601" data-throw-if-not-resolved="false"></xref>.
+
+        The formatters are searched in the order given, so if two formatters support serializing the same type, the first one is used.
+    content.vb: Public Sub Register(ParamArray formatters As IMessagePackFormatter())
+  overload: MessagePack.Resolvers.StaticCompositeResolver.Register*
+  nameWithType.vb: StaticCompositeResolver.Register(ParamArray IMessagePackFormatter())
+  fullName.vb: MessagePack.Resolvers.StaticCompositeResolver.Register(ParamArray MessagePack.Formatters.IMessagePackFormatter())
+  name.vb: Register(ParamArray IMessagePackFormatter())
+- uid: MessagePack.Resolvers.StaticCompositeResolver.Register(MessagePack.IFormatterResolver[])
+  commentId: M:MessagePack.Resolvers.StaticCompositeResolver.Register(MessagePack.IFormatterResolver[])
+  id: Register(MessagePack.IFormatterResolver[])
+  parent: MessagePack.Resolvers.StaticCompositeResolver
+  langs:
+  - csharp
+  - vb
+  name: Register(params IFormatterResolver[])
+  nameWithType: StaticCompositeResolver.Register(params IFormatterResolver[])
+  fullName: MessagePack.Resolvers.StaticCompositeResolver.Register(params MessagePack.IFormatterResolver[])
+  type: Method
+  assemblies:
+  - MessagePack
+  namespace: MessagePack.Resolvers
+  summary: >-
+    Initializes a singleton instance with the specified formatters and sub-resolvers.
+
+    This method can only call before use StaticCompositeResolver.Instance.GetFormatter.
+
+    If call twice in the Register methods, registered formatters and resolvers will be overridden.
+  example: []
+  syntax:
+    content: public void Register(params IFormatterResolver[] resolvers)
+    parameters:
+    - id: resolvers
+      type: MessagePack.IFormatterResolver[]
+      description: >-
+        A list of resolvers to use for serializing types.
+
+        The resolvers are searched in the order given, so if two resolvers support serializing the same type, the first one is used.
+    content.vb: Public Sub Register(ParamArray resolvers As IFormatterResolver())
+  overload: MessagePack.Resolvers.StaticCompositeResolver.Register*
+  nameWithType.vb: StaticCompositeResolver.Register(ParamArray IFormatterResolver())
+  fullName.vb: MessagePack.Resolvers.StaticCompositeResolver.Register(ParamArray MessagePack.IFormatterResolver())
+  name.vb: Register(ParamArray IFormatterResolver())
+- uid: MessagePack.Resolvers.StaticCompositeResolver.Register(System.Collections.Generic.IReadOnlyList{MessagePack.Formatters.IMessagePackFormatter},System.Collections.Generic.IReadOnlyList{MessagePack.IFormatterResolver})
+  commentId: M:MessagePack.Resolvers.StaticCompositeResolver.Register(System.Collections.Generic.IReadOnlyList{MessagePack.Formatters.IMessagePackFormatter},System.Collections.Generic.IReadOnlyList{MessagePack.IFormatterResolver})
+  id: Register(System.Collections.Generic.IReadOnlyList{MessagePack.Formatters.IMessagePackFormatter},System.Collections.Generic.IReadOnlyList{MessagePack.IFormatterResolver})
+  parent: MessagePack.Resolvers.StaticCompositeResolver
+  langs:
+  - csharp
+  - vb
+  name: Register(IReadOnlyList<IMessagePackFormatter>, IReadOnlyList<IFormatterResolver>)
+  nameWithType: StaticCompositeResolver.Register(IReadOnlyList<IMessagePackFormatter>, IReadOnlyList<IFormatterResolver>)
+  fullName: MessagePack.Resolvers.StaticCompositeResolver.Register(System.Collections.Generic.IReadOnlyList<MessagePack.Formatters.IMessagePackFormatter>, System.Collections.Generic.IReadOnlyList<MessagePack.IFormatterResolver>)
+  type: Method
+  assemblies:
+  - MessagePack
+  namespace: MessagePack.Resolvers
+  summary: >-
+    Initializes a singleton instance with the specified formatters and sub-resolvers.
+
+    This method can only call before use StaticCompositeResolver.Instance.GetFormatter.
+
+    If call twice in the Register methods, registered formatters and resolvers will be overridden.
+  example: []
+  syntax:
+    content: public void Register(IReadOnlyList<IMessagePackFormatter> formatters, IReadOnlyList<IFormatterResolver> resolvers)
+    parameters:
+    - id: formatters
+      type: System.Collections.Generic.IReadOnlyList{MessagePack.Formatters.IMessagePackFormatter}
+      description: >-
+        A list of instances of <xref href="MessagePack.Formatters.IMessagePackFormatter%601" data-throw-if-not-resolved="false"></xref>.
+
+        The formatters are searched in the order given, so if two formatters support serializing the same type, the first one is used.
+    - id: resolvers
+      type: System.Collections.Generic.IReadOnlyList{MessagePack.IFormatterResolver}
+      description: >-
+        A list of resolvers to use for serializing types for which <code class="paramref">formatters</code> does not include a formatter.
+
+        The resolvers are searched in the order given, so if two resolvers support serializing the same type, the first one is used.
+    content.vb: Public Sub Register(formatters As IReadOnlyList(Of IMessagePackFormatter), resolvers As IReadOnlyList(Of IFormatterResolver))
+  overload: MessagePack.Resolvers.StaticCompositeResolver.Register*
+  nameWithType.vb: StaticCompositeResolver.Register(IReadOnlyList(Of IMessagePackFormatter), IReadOnlyList(Of IFormatterResolver))
+  fullName.vb: MessagePack.Resolvers.StaticCompositeResolver.Register(System.Collections.Generic.IReadOnlyList(Of MessagePack.Formatters.IMessagePackFormatter), System.Collections.Generic.IReadOnlyList(Of MessagePack.IFormatterResolver))
+  name.vb: Register(IReadOnlyList(Of IMessagePackFormatter), IReadOnlyList(Of IFormatterResolver))
+- uid: MessagePack.Resolvers.StaticCompositeResolver.GetFormatter``1
+  commentId: M:MessagePack.Resolvers.StaticCompositeResolver.GetFormatter``1
+  id: GetFormatter``1
+  parent: MessagePack.Resolvers.StaticCompositeResolver
+  langs:
+  - csharp
+  - vb
+  name: GetFormatter<T>()
+  nameWithType: StaticCompositeResolver.GetFormatter<T>()
+  fullName: MessagePack.Resolvers.StaticCompositeResolver.GetFormatter<T>()
+  type: Method
+  assemblies:
+  - MessagePack
+  namespace: MessagePack.Resolvers
+  summary: Gets an <xref href="MessagePack.Formatters.IMessagePackFormatter%601" data-throw-if-not-resolved="false"></xref> instance that can serialize or deserialize some type <code class="typeparamref">T</code>.
+  example: []
+  syntax:
+    content: public IMessagePackFormatter<T>? GetFormatter<T>()
+    typeParameters:
+    - id: T
+      description: The type of value to be serialized or deserialized.
+    return:
+      type: MessagePack.Formatters.IMessagePackFormatter{{T}}
+      description: A formatter, if this resolver supplies one for type <code class="typeparamref">T</code>; otherwise <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.
+    content.vb: Public Function GetFormatter(Of T)() As IMessagePackFormatter(Of T)
+  overload: MessagePack.Resolvers.StaticCompositeResolver.GetFormatter*
+  implements:
+  - MessagePack.IFormatterResolver.GetFormatter``1
+  nameWithType.vb: StaticCompositeResolver.GetFormatter(Of T)()
+  fullName.vb: MessagePack.Resolvers.StaticCompositeResolver.GetFormatter(Of T)()
+  name.vb: GetFormatter(Of T)()
+references:
+- uid: MessagePack.Resolvers.CompositeResolver
+  commentId: T:MessagePack.Resolvers.CompositeResolver
+  isExternal: true
+  href: MessagePack.Resolvers.CompositeResolver.html
+  name: CompositeResolver
+  nameWithType: CompositeResolver
+  fullName: MessagePack.Resolvers.CompositeResolver
+- uid: MessagePack.Resolvers
+  commentId: N:MessagePack.Resolvers
+  isExternal: true
+  href: MessagePack.html
+  name: MessagePack.Resolvers
+  nameWithType: MessagePack.Resolvers
+  fullName: MessagePack.Resolvers
+  spec.csharp:
+  - uid: MessagePack
+    name: MessagePack
+    isExternal: true
+    href: MessagePack.html
+  - name: .
+  - uid: MessagePack.Resolvers
+    name: Resolvers
+    isExternal: true
+    href: MessagePack.Resolvers.html
+  spec.vb:
+  - uid: MessagePack
+    name: MessagePack
+    isExternal: true
+    href: MessagePack.html
+  - name: .
+  - uid: MessagePack.Resolvers
+    name: Resolvers
+    isExternal: true
+    href: MessagePack.Resolvers.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: MessagePack.IFormatterResolver
+  commentId: T:MessagePack.IFormatterResolver
+  parent: MessagePack
+  isExternal: true
+  href: MessagePack.IFormatterResolver.html
+  name: IFormatterResolver
+  nameWithType: IFormatterResolver
+  fullName: MessagePack.IFormatterResolver
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: MessagePack.IFormatterResolver.MessagePack.FormatterResolverExtensions.GetFormatterDynamic(System.Type)
+  commentId: M:MessagePack.FormatterResolverExtensions.GetFormatterDynamic(MessagePack.IFormatterResolver,System.Type)
+  parent: MessagePack.FormatterResolverExtensions
+  definition: MessagePack.FormatterResolverExtensions.GetFormatterDynamic(MessagePack.IFormatterResolver,System.Type)
+  href: MessagePack.FormatterResolverExtensions.html#MessagePack_FormatterResolverExtensions_GetFormatterDynamic_MessagePack_IFormatterResolver_System_Type_
+  name: GetFormatterDynamic(IFormatterResolver, Type)
+  nameWithType: FormatterResolverExtensions.GetFormatterDynamic(IFormatterResolver, Type)
+  fullName: MessagePack.FormatterResolverExtensions.GetFormatterDynamic(MessagePack.IFormatterResolver, System.Type)
+  spec.csharp:
+  - uid: MessagePack.FormatterResolverExtensions.GetFormatterDynamic(MessagePack.IFormatterResolver,System.Type)
+    name: GetFormatterDynamic
+    isExternal: true
+    href: MessagePack.FormatterResolverExtensions.html#MessagePack_FormatterResolverExtensions_GetFormatterDynamic_MessagePack_IFormatterResolver_System_Type_
+  - name: (
+  - uid: MessagePack.IFormatterResolver
+    name: IFormatterResolver
+    isExternal: true
+    href: MessagePack.IFormatterResolver.html
+  - name: ','
+  - name: " "
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: )
+  spec.vb:
+  - uid: MessagePack.FormatterResolverExtensions.GetFormatterDynamic(MessagePack.IFormatterResolver,System.Type)
+    name: GetFormatterDynamic
+    isExternal: true
+    href: MessagePack.FormatterResolverExtensions.html#MessagePack_FormatterResolverExtensions_GetFormatterDynamic_MessagePack_IFormatterResolver_System_Type_
+  - name: (
+  - uid: MessagePack.IFormatterResolver
+    name: IFormatterResolver
+    isExternal: true
+    href: MessagePack.IFormatterResolver.html
+  - name: ','
+  - name: " "
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: )
+- uid: MessagePack.IFormatterResolver.MessagePack.FormatterResolverExtensions.GetFormatterWithVerify``1
+  commentId: M:MessagePack.FormatterResolverExtensions.GetFormatterWithVerify``1(MessagePack.IFormatterResolver)
+  parent: MessagePack.FormatterResolverExtensions
+  definition: MessagePack.FormatterResolverExtensions.GetFormatterWithVerify``1(MessagePack.IFormatterResolver)
+  href: MessagePack.FormatterResolverExtensions.html#MessagePack_FormatterResolverExtensions_GetFormatterWithVerify__1_MessagePack_IFormatterResolver_
+  name: GetFormatterWithVerify<T>(IFormatterResolver)
+  nameWithType: FormatterResolverExtensions.GetFormatterWithVerify<T>(IFormatterResolver)
+  fullName: MessagePack.FormatterResolverExtensions.GetFormatterWithVerify<T>(MessagePack.IFormatterResolver)
+  nameWithType.vb: FormatterResolverExtensions.GetFormatterWithVerify(Of T)(IFormatterResolver)
+  fullName.vb: MessagePack.FormatterResolverExtensions.GetFormatterWithVerify(Of T)(MessagePack.IFormatterResolver)
+  name.vb: GetFormatterWithVerify(Of T)(IFormatterResolver)
+  spec.csharp:
+  - uid: MessagePack.FormatterResolverExtensions.GetFormatterWithVerify``1(MessagePack.IFormatterResolver)
+    name: GetFormatterWithVerify
+    isExternal: true
+    href: MessagePack.FormatterResolverExtensions.html#MessagePack_FormatterResolverExtensions_GetFormatterWithVerify__1_MessagePack_IFormatterResolver_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: MessagePack.IFormatterResolver
+    name: IFormatterResolver
+    isExternal: true
+    href: MessagePack.IFormatterResolver.html
+  - name: )
+  spec.vb:
+  - uid: MessagePack.FormatterResolverExtensions.GetFormatterWithVerify``1(MessagePack.IFormatterResolver)
+    name: GetFormatterWithVerify
+    isExternal: true
+    href: MessagePack.FormatterResolverExtensions.html#MessagePack_FormatterResolverExtensions_GetFormatterWithVerify__1_MessagePack_IFormatterResolver_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: MessagePack.IFormatterResolver
+    name: IFormatterResolver
+    isExternal: true
+    href: MessagePack.IFormatterResolver.html
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: MessagePack
+  commentId: N:MessagePack
+  isExternal: true
+  href: MessagePack.html
+  name: MessagePack
+  nameWithType: MessagePack
+  fullName: MessagePack
+- uid: MessagePack.FormatterResolverExtensions.GetFormatterDynamic(MessagePack.IFormatterResolver,System.Type)
+  commentId: M:MessagePack.FormatterResolverExtensions.GetFormatterDynamic(MessagePack.IFormatterResolver,System.Type)
+  isExternal: true
+  href: MessagePack.FormatterResolverExtensions.html#MessagePack_FormatterResolverExtensions_GetFormatterDynamic_MessagePack_IFormatterResolver_System_Type_
+  name: GetFormatterDynamic(IFormatterResolver, Type)
+  nameWithType: FormatterResolverExtensions.GetFormatterDynamic(IFormatterResolver, Type)
+  fullName: MessagePack.FormatterResolverExtensions.GetFormatterDynamic(MessagePack.IFormatterResolver, System.Type)
+  spec.csharp:
+  - uid: MessagePack.FormatterResolverExtensions.GetFormatterDynamic(MessagePack.IFormatterResolver,System.Type)
+    name: GetFormatterDynamic
+    isExternal: true
+    href: MessagePack.FormatterResolverExtensions.html#MessagePack_FormatterResolverExtensions_GetFormatterDynamic_MessagePack_IFormatterResolver_System_Type_
+  - name: (
+  - uid: MessagePack.IFormatterResolver
+    name: IFormatterResolver
+    isExternal: true
+    href: MessagePack.IFormatterResolver.html
+  - name: ','
+  - name: " "
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: )
+  spec.vb:
+  - uid: MessagePack.FormatterResolverExtensions.GetFormatterDynamic(MessagePack.IFormatterResolver,System.Type)
+    name: GetFormatterDynamic
+    isExternal: true
+    href: MessagePack.FormatterResolverExtensions.html#MessagePack_FormatterResolverExtensions_GetFormatterDynamic_MessagePack_IFormatterResolver_System_Type_
+  - name: (
+  - uid: MessagePack.IFormatterResolver
+    name: IFormatterResolver
+    isExternal: true
+    href: MessagePack.IFormatterResolver.html
+  - name: ','
+  - name: " "
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: )
+- uid: MessagePack.FormatterResolverExtensions
+  commentId: T:MessagePack.FormatterResolverExtensions
+  parent: MessagePack
+  isExternal: true
+  href: MessagePack.FormatterResolverExtensions.html
+  name: FormatterResolverExtensions
+  nameWithType: FormatterResolverExtensions
+  fullName: MessagePack.FormatterResolverExtensions
+- uid: MessagePack.FormatterResolverExtensions.GetFormatterWithVerify``1(MessagePack.IFormatterResolver)
+  commentId: M:MessagePack.FormatterResolverExtensions.GetFormatterWithVerify``1(MessagePack.IFormatterResolver)
+  isExternal: true
+  href: MessagePack.FormatterResolverExtensions.html#MessagePack_FormatterResolverExtensions_GetFormatterWithVerify__1_MessagePack_IFormatterResolver_
+  name: GetFormatterWithVerify<T>(IFormatterResolver)
+  nameWithType: FormatterResolverExtensions.GetFormatterWithVerify<T>(IFormatterResolver)
+  fullName: MessagePack.FormatterResolverExtensions.GetFormatterWithVerify<T>(MessagePack.IFormatterResolver)
+  nameWithType.vb: FormatterResolverExtensions.GetFormatterWithVerify(Of T)(IFormatterResolver)
+  fullName.vb: MessagePack.FormatterResolverExtensions.GetFormatterWithVerify(Of T)(MessagePack.IFormatterResolver)
+  name.vb: GetFormatterWithVerify(Of T)(IFormatterResolver)
+  spec.csharp:
+  - uid: MessagePack.FormatterResolverExtensions.GetFormatterWithVerify``1(MessagePack.IFormatterResolver)
+    name: GetFormatterWithVerify
+    isExternal: true
+    href: MessagePack.FormatterResolverExtensions.html#MessagePack_FormatterResolverExtensions_GetFormatterWithVerify__1_MessagePack_IFormatterResolver_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: MessagePack.IFormatterResolver
+    name: IFormatterResolver
+    isExternal: true
+    href: MessagePack.IFormatterResolver.html
+  - name: )
+  spec.vb:
+  - uid: MessagePack.FormatterResolverExtensions.GetFormatterWithVerify``1(MessagePack.IFormatterResolver)
+    name: GetFormatterWithVerify
+    isExternal: true
+    href: MessagePack.FormatterResolverExtensions.html#MessagePack_FormatterResolverExtensions_GetFormatterWithVerify__1_MessagePack_IFormatterResolver_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: MessagePack.IFormatterResolver
+    name: IFormatterResolver
+    isExternal: true
+    href: MessagePack.IFormatterResolver.html
+  - name: )
+- uid: MessagePack.Resolvers.StaticCompositeResolver
+  commentId: T:MessagePack.Resolvers.StaticCompositeResolver
+  parent: MessagePack.Resolvers
+  isExternal: true
+  href: MessagePack.Resolvers.StaticCompositeResolver.html
+  name: StaticCompositeResolver
+  nameWithType: StaticCompositeResolver
+  fullName: MessagePack.Resolvers.StaticCompositeResolver
+- uid: MessagePack.Formatters.IMessagePackFormatter`1
+  commentId: T:MessagePack.Formatters.IMessagePackFormatter`1
+  isExternal: true
+  href: MessagePack.Formatters.IMessagePackFormatter-1.html
+  name: IMessagePackFormatter<T>
+  nameWithType: IMessagePackFormatter<T>
+  fullName: MessagePack.Formatters.IMessagePackFormatter<T>
+  nameWithType.vb: IMessagePackFormatter(Of T)
+  fullName.vb: MessagePack.Formatters.IMessagePackFormatter(Of T)
+  name.vb: IMessagePackFormatter(Of T)
+  spec.csharp:
+  - uid: MessagePack.Formatters.IMessagePackFormatter`1
+    name: IMessagePackFormatter
+    isExternal: true
+    href: MessagePack.Formatters.IMessagePackFormatter-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: MessagePack.Formatters.IMessagePackFormatter`1
+    name: IMessagePackFormatter
+    isExternal: true
+    href: MessagePack.Formatters.IMessagePackFormatter-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: MessagePack.Resolvers.StaticCompositeResolver.Register*
+  commentId: Overload:MessagePack.Resolvers.StaticCompositeResolver.Register
+  isExternal: true
+  href: MessagePack.Resolvers.StaticCompositeResolver.html#MessagePack_Resolvers_StaticCompositeResolver_Register_MessagePack_Formatters_IMessagePackFormatter___
+  name: Register
+  nameWithType: StaticCompositeResolver.Register
+  fullName: MessagePack.Resolvers.StaticCompositeResolver.Register
+- uid: MessagePack.Formatters.IMessagePackFormatter[]
+  isExternal: true
+  name: IMessagePackFormatter[]
+  nameWithType: IMessagePackFormatter[]
+  fullName: MessagePack.Formatters.IMessagePackFormatter[]
+  nameWithType.vb: IMessagePackFormatter()
+  fullName.vb: MessagePack.Formatters.IMessagePackFormatter()
+  name.vb: IMessagePackFormatter()
+  spec.csharp:
+  - uid: MessagePack.Formatters.IMessagePackFormatter
+    name: IMessagePackFormatter
+    isExternal: true
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: MessagePack.Formatters.IMessagePackFormatter
+    name: IMessagePackFormatter
+    isExternal: true
+  - name: (
+  - name: )
+- uid: MessagePack.IFormatterResolver[]
+  isExternal: true
+  href: MessagePack.IFormatterResolver.html
+  name: IFormatterResolver[]
+  nameWithType: IFormatterResolver[]
+  fullName: MessagePack.IFormatterResolver[]
+  nameWithType.vb: IFormatterResolver()
+  fullName.vb: MessagePack.IFormatterResolver()
+  name.vb: IFormatterResolver()
+  spec.csharp:
+  - uid: MessagePack.IFormatterResolver
+    name: IFormatterResolver
+    isExternal: true
+    href: MessagePack.IFormatterResolver.html
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: MessagePack.IFormatterResolver
+    name: IFormatterResolver
+    isExternal: true
+    href: MessagePack.IFormatterResolver.html
+  - name: (
+  - name: )
+- uid: System.Collections.Generic.IReadOnlyList{MessagePack.Formatters.IMessagePackFormatter}
+  commentId: T:System.Collections.Generic.IReadOnlyList{MessagePack.Formatters.IMessagePackFormatter}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IReadOnlyList`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  name: IReadOnlyList<IMessagePackFormatter>
+  nameWithType: IReadOnlyList<IMessagePackFormatter>
+  fullName: System.Collections.Generic.IReadOnlyList<MessagePack.Formatters.IMessagePackFormatter>
+  nameWithType.vb: IReadOnlyList(Of IMessagePackFormatter)
+  fullName.vb: System.Collections.Generic.IReadOnlyList(Of MessagePack.Formatters.IMessagePackFormatter)
+  name.vb: IReadOnlyList(Of IMessagePackFormatter)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - uid: MessagePack.Formatters.IMessagePackFormatter
+    name: IMessagePackFormatter
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: MessagePack.Formatters.IMessagePackFormatter
+    name: IMessagePackFormatter
+    isExternal: true
+  - name: )
+- uid: System.Collections.Generic.IReadOnlyList{MessagePack.IFormatterResolver}
+  commentId: T:System.Collections.Generic.IReadOnlyList{MessagePack.IFormatterResolver}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IReadOnlyList`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  name: IReadOnlyList<IFormatterResolver>
+  nameWithType: IReadOnlyList<IFormatterResolver>
+  fullName: System.Collections.Generic.IReadOnlyList<MessagePack.IFormatterResolver>
+  nameWithType.vb: IReadOnlyList(Of IFormatterResolver)
+  fullName.vb: System.Collections.Generic.IReadOnlyList(Of MessagePack.IFormatterResolver)
+  name.vb: IReadOnlyList(Of IFormatterResolver)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - uid: MessagePack.IFormatterResolver
+    name: IFormatterResolver
+    isExternal: true
+    href: MessagePack.IFormatterResolver.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: MessagePack.IFormatterResolver
+    name: IFormatterResolver
+    isExternal: true
+    href: MessagePack.IFormatterResolver.html
+  - name: )
+- uid: System.Collections.Generic.IReadOnlyList`1
+  commentId: T:System.Collections.Generic.IReadOnlyList`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  name: IReadOnlyList<T>
+  nameWithType: IReadOnlyList<T>
+  fullName: System.Collections.Generic.IReadOnlyList<T>
+  nameWithType.vb: IReadOnlyList(Of T)
+  fullName.vb: System.Collections.Generic.IReadOnlyList(Of T)
+  name.vb: IReadOnlyList(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: MessagePack.Resolvers.StaticCompositeResolver.GetFormatter*
+  commentId: Overload:MessagePack.Resolvers.StaticCompositeResolver.GetFormatter
+  isExternal: true
+  href: MessagePack.Resolvers.StaticCompositeResolver.html#MessagePack_Resolvers_StaticCompositeResolver_GetFormatter__1
+  name: GetFormatter
+  nameWithType: StaticCompositeResolver.GetFormatter
+  fullName: MessagePack.Resolvers.StaticCompositeResolver.GetFormatter
+- uid: MessagePack.IFormatterResolver.GetFormatter``1
+  commentId: M:MessagePack.IFormatterResolver.GetFormatter``1
+  parent: MessagePack.IFormatterResolver
+  isExternal: true
+  href: MessagePack.IFormatterResolver.html#MessagePack_IFormatterResolver_GetFormatter__1
+  name: GetFormatter<T>()
+  nameWithType: IFormatterResolver.GetFormatter<T>()
+  fullName: MessagePack.IFormatterResolver.GetFormatter<T>()
+  nameWithType.vb: IFormatterResolver.GetFormatter(Of T)()
+  fullName.vb: MessagePack.IFormatterResolver.GetFormatter(Of T)()
+  name.vb: GetFormatter(Of T)()
+  spec.csharp:
+  - uid: MessagePack.IFormatterResolver.GetFormatter``1
+    name: GetFormatter
+    isExternal: true
+    href: MessagePack.IFormatterResolver.html#MessagePack_IFormatterResolver_GetFormatter__1
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: MessagePack.IFormatterResolver.GetFormatter``1
+    name: GetFormatter
+    isExternal: true
+    href: MessagePack.IFormatterResolver.html#MessagePack_IFormatterResolver_GetFormatter__1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: )
+- uid: MessagePack.Formatters.IMessagePackFormatter{{T}}
+  commentId: T:MessagePack.Formatters.IMessagePackFormatter{``0}
+  parent: MessagePack.Formatters
+  definition: MessagePack.Formatters.IMessagePackFormatter`1
+  href: MessagePack.Formatters.IMessagePackFormatter-1.html
+  name: IMessagePackFormatter<T>
+  nameWithType: IMessagePackFormatter<T>
+  fullName: MessagePack.Formatters.IMessagePackFormatter<T>
+  nameWithType.vb: IMessagePackFormatter(Of T)
+  fullName.vb: MessagePack.Formatters.IMessagePackFormatter(Of T)
+  name.vb: IMessagePackFormatter(Of T)
+  spec.csharp:
+  - uid: MessagePack.Formatters.IMessagePackFormatter`1
+    name: IMessagePackFormatter
+    isExternal: true
+    href: MessagePack.Formatters.IMessagePackFormatter-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: MessagePack.Formatters.IMessagePackFormatter`1
+    name: IMessagePackFormatter
+    isExternal: true
+    href: MessagePack.Formatters.IMessagePackFormatter-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: MessagePack.Formatters
+  commentId: N:MessagePack.Formatters
+  isExternal: true
+  href: MessagePack.html
+  name: MessagePack.Formatters
+  nameWithType: MessagePack.Formatters
+  fullName: MessagePack.Formatters
+  spec.csharp:
+  - uid: MessagePack
+    name: MessagePack
+    isExternal: true
+    href: MessagePack.html
+  - name: .
+  - uid: MessagePack.Formatters
+    name: Formatters
+    isExternal: true
+    href: MessagePack.Formatters.html
+  spec.vb:
+  - uid: MessagePack
+    name: MessagePack
+    isExternal: true
+    href: MessagePack.html
+  - name: .
+  - uid: MessagePack.Formatters
+    name: Formatters
+    isExternal: true
+    href: MessagePack.Formatters.html

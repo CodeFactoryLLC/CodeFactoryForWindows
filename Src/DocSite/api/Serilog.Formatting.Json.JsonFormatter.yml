@@ -1,0 +1,1832 @@
+### YamlMime:ManagedReference
+items:
+- uid: Serilog.Formatting.Json.JsonFormatter
+  commentId: T:Serilog.Formatting.Json.JsonFormatter
+  id: JsonFormatter
+  parent: Serilog.Formatting.Json
+  children:
+  - Serilog.Formatting.Json.JsonFormatter.#ctor(System.Boolean,System.String,System.Boolean,System.IFormatProvider)
+  - Serilog.Formatting.Json.JsonFormatter.#ctor(System.String,System.Boolean,System.IFormatProvider)
+  - Serilog.Formatting.Json.JsonFormatter.AddLiteralWriter(System.Type,System.Action{System.Object,System.IO.TextWriter})
+  - Serilog.Formatting.Json.JsonFormatter.Format(Serilog.Events.LogEvent,System.IO.TextWriter)
+  - Serilog.Formatting.Json.JsonFormatter.WriteDictionary(System.Collections.Generic.IReadOnlyDictionary{Serilog.Events.ScalarValue,Serilog.Events.LogEventPropertyValue},System.IO.TextWriter)
+  - Serilog.Formatting.Json.JsonFormatter.WriteException(System.Exception,System.String@,System.IO.TextWriter)
+  - Serilog.Formatting.Json.JsonFormatter.WriteJsonProperty(System.String,System.Object,System.String@,System.IO.TextWriter)
+  - Serilog.Formatting.Json.JsonFormatter.WriteLevel(Serilog.Events.LogEventLevel,System.String@,System.IO.TextWriter)
+  - Serilog.Formatting.Json.JsonFormatter.WriteLiteralValue(System.Object,System.IO.TextWriter)
+  - Serilog.Formatting.Json.JsonFormatter.WriteMessageTemplate(System.String,System.String@,System.IO.TextWriter)
+  - Serilog.Formatting.Json.JsonFormatter.WriteProperties(System.Collections.Generic.IReadOnlyDictionary{System.String,Serilog.Events.LogEventPropertyValue},System.IO.TextWriter)
+  - Serilog.Formatting.Json.JsonFormatter.WritePropertiesValues(System.Collections.Generic.IReadOnlyDictionary{System.String,Serilog.Events.LogEventPropertyValue},System.IO.TextWriter)
+  - Serilog.Formatting.Json.JsonFormatter.WriteRenderedMessage(System.String,System.String@,System.IO.TextWriter)
+  - Serilog.Formatting.Json.JsonFormatter.WriteRenderings(System.Linq.IGrouping{System.String,Serilog.Parsing.PropertyToken}[],System.Collections.Generic.IReadOnlyDictionary{System.String,Serilog.Events.LogEventPropertyValue},System.IO.TextWriter)
+  - Serilog.Formatting.Json.JsonFormatter.WriteRenderingsValues(System.Linq.IGrouping{System.String,Serilog.Parsing.PropertyToken}[],System.Collections.Generic.IReadOnlyDictionary{System.String,Serilog.Events.LogEventPropertyValue},System.IO.TextWriter)
+  - Serilog.Formatting.Json.JsonFormatter.WriteSequence(System.Collections.IEnumerable,System.IO.TextWriter)
+  - Serilog.Formatting.Json.JsonFormatter.WriteStructure(System.String,System.Collections.Generic.IEnumerable{Serilog.Events.LogEventProperty},System.IO.TextWriter)
+  - Serilog.Formatting.Json.JsonFormatter.WriteTimestamp(System.DateTimeOffset,System.String@,System.IO.TextWriter)
+  langs:
+  - csharp
+  - vb
+  name: JsonFormatter
+  nameWithType: JsonFormatter
+  fullName: Serilog.Formatting.Json.JsonFormatter
+  type: Class
+  assemblies:
+  - Serilog
+  namespace: Serilog.Formatting.Json
+  summary: >-
+    Formats log events in a simple JSON structure. Instances of this class
+
+    are safe for concurrent access by multiple threads.
+  example: []
+  syntax:
+    content: 'public class JsonFormatter : ITextFormatter'
+    content.vb: Public Class JsonFormatter Implements ITextFormatter
+  inheritance:
+  - System.Object
+  implements:
+  - Serilog.Formatting.ITextFormatter
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: Serilog.Formatting.Json.JsonFormatter.#ctor(System.String,System.Boolean,System.IFormatProvider)
+  commentId: M:Serilog.Formatting.Json.JsonFormatter.#ctor(System.String,System.Boolean,System.IFormatProvider)
+  id: '#ctor(System.String,System.Boolean,System.IFormatProvider)'
+  parent: Serilog.Formatting.Json.JsonFormatter
+  langs:
+  - csharp
+  - vb
+  name: JsonFormatter(string?, bool, IFormatProvider?)
+  nameWithType: JsonFormatter.JsonFormatter(string?, bool, IFormatProvider?)
+  fullName: Serilog.Formatting.Json.JsonFormatter.JsonFormatter(string?, bool, System.IFormatProvider?)
+  type: Constructor
+  assemblies:
+  - Serilog
+  namespace: Serilog.Formatting.Json
+  summary: Construct a <xref href="Serilog.Formatting.Json.JsonFormatter" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public JsonFormatter(string? closingDelimiter = null, bool renderMessage = false, IFormatProvider? formatProvider = null)
+    parameters:
+    - id: closingDelimiter
+      type: System.String
+      description: >-
+        A string that will be written after each log event is formatted.
+                    If null, <xref href="System.Environment.NewLine" data-throw-if-not-resolved="false"></xref> will be used.
+    - id: renderMessage
+      type: System.Boolean
+      description: >-
+        If true, the message will be rendered and written to the output as a
+                    property named RenderedMessage.
+    - id: formatProvider
+      type: System.IFormatProvider
+      description: Supplies culture-specific formatting information, or null.
+    content.vb: Public Sub New(closingDelimiter As String = Nothing, renderMessage As Boolean = False, formatProvider As IFormatProvider = Nothing)
+  overload: Serilog.Formatting.Json.JsonFormatter.#ctor*
+  nameWithType.vb: JsonFormatter.New(String, Boolean, IFormatProvider)
+  fullName.vb: Serilog.Formatting.Json.JsonFormatter.New(String, Boolean, System.IFormatProvider)
+  name.vb: New(String, Boolean, IFormatProvider)
+- uid: Serilog.Formatting.Json.JsonFormatter.#ctor(System.Boolean,System.String,System.Boolean,System.IFormatProvider)
+  commentId: M:Serilog.Formatting.Json.JsonFormatter.#ctor(System.Boolean,System.String,System.Boolean,System.IFormatProvider)
+  id: '#ctor(System.Boolean,System.String,System.Boolean,System.IFormatProvider)'
+  parent: Serilog.Formatting.Json.JsonFormatter
+  langs:
+  - csharp
+  - vb
+  name: JsonFormatter(bool, string?, bool, IFormatProvider?)
+  nameWithType: JsonFormatter.JsonFormatter(bool, string?, bool, IFormatProvider?)
+  fullName: Serilog.Formatting.Json.JsonFormatter.JsonFormatter(bool, string?, bool, System.IFormatProvider?)
+  type: Constructor
+  assemblies:
+  - Serilog
+  namespace: Serilog.Formatting.Json
+  summary: Construct a <xref href="Serilog.Formatting.Json.JsonFormatter" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: >-
+      [Obsolete("The omitEnclosingObject parameter is obsolete and will be removed in a future Serilog version.")]
+
+      public JsonFormatter(bool omitEnclosingObject, string? closingDelimiter = null, bool renderMessage = false, IFormatProvider? formatProvider = null)
+    parameters:
+    - id: omitEnclosingObject
+      type: System.Boolean
+      description: >-
+        If true, the properties of the event will be written to
+                    the output without enclosing braces. Otherwise, if false, each event will be written as a well-formed
+                    JSON object.
+    - id: closingDelimiter
+      type: System.String
+      description: >-
+        A string that will be written after each log event is formatted.
+                    If null, <xref href="System.Environment.NewLine" data-throw-if-not-resolved="false"></xref> will be used. Ignored if <code class="paramref">omitEnclosingObject</code>
+                    is true.
+    - id: renderMessage
+      type: System.Boolean
+      description: >-
+        If true, the message will be rendered and written to the output as a
+                    property named RenderedMessage.
+    - id: formatProvider
+      type: System.IFormatProvider
+      description: Supplies culture-specific formatting information, or null.
+    content.vb: >-
+      <Obsolete("The omitEnclosingObject parameter is obsolete and will be removed in a future Serilog version.")>
+
+      Public Sub New(omitEnclosingObject As Boolean, closingDelimiter As String = Nothing, renderMessage As Boolean = False, formatProvider As IFormatProvider = Nothing)
+  overload: Serilog.Formatting.Json.JsonFormatter.#ctor*
+  attributes:
+  - type: System.ObsoleteAttribute
+    ctor: System.ObsoleteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: The omitEnclosingObject parameter is obsolete and will be removed in a future Serilog version.
+  nameWithType.vb: JsonFormatter.New(Boolean, String, Boolean, IFormatProvider)
+  fullName.vb: Serilog.Formatting.Json.JsonFormatter.New(Boolean, String, Boolean, System.IFormatProvider)
+  name.vb: New(Boolean, String, Boolean, IFormatProvider)
+- uid: Serilog.Formatting.Json.JsonFormatter.Format(Serilog.Events.LogEvent,System.IO.TextWriter)
+  commentId: M:Serilog.Formatting.Json.JsonFormatter.Format(Serilog.Events.LogEvent,System.IO.TextWriter)
+  id: Format(Serilog.Events.LogEvent,System.IO.TextWriter)
+  parent: Serilog.Formatting.Json.JsonFormatter
+  langs:
+  - csharp
+  - vb
+  name: Format(LogEvent, TextWriter)
+  nameWithType: JsonFormatter.Format(LogEvent, TextWriter)
+  fullName: Serilog.Formatting.Json.JsonFormatter.Format(Serilog.Events.LogEvent, System.IO.TextWriter)
+  type: Method
+  assemblies:
+  - Serilog
+  namespace: Serilog.Formatting.Json
+  summary: Format the log event into the output.
+  example: []
+  syntax:
+    content: public void Format(LogEvent logEvent, TextWriter output)
+    parameters:
+    - id: logEvent
+      type: Serilog.Events.LogEvent
+      description: The event to format.
+    - id: output
+      type: System.IO.TextWriter
+      description: The output.
+    content.vb: Public Sub Format(logEvent As LogEvent, output As TextWriter)
+  overload: Serilog.Formatting.Json.JsonFormatter.Format*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: When <code class="paramref">logEvent</code> is <pre><code class="lang-csharp">null</code></pre>
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: When <code class="paramref">output</code> is <pre><code class="lang-csharp">null</code></pre>
+  implements:
+  - Serilog.Formatting.ITextFormatter.Format(Serilog.Events.LogEvent,System.IO.TextWriter)
+- uid: Serilog.Formatting.Json.JsonFormatter.AddLiteralWriter(System.Type,System.Action{System.Object,System.IO.TextWriter})
+  commentId: M:Serilog.Formatting.Json.JsonFormatter.AddLiteralWriter(System.Type,System.Action{System.Object,System.IO.TextWriter})
+  id: AddLiteralWriter(System.Type,System.Action{System.Object,System.IO.TextWriter})
+  parent: Serilog.Formatting.Json.JsonFormatter
+  langs:
+  - csharp
+  - vb
+  name: AddLiteralWriter(Type, Action<object, TextWriter>)
+  nameWithType: JsonFormatter.AddLiteralWriter(Type, Action<object, TextWriter>)
+  fullName: Serilog.Formatting.Json.JsonFormatter.AddLiteralWriter(System.Type, System.Action<object, System.IO.TextWriter>)
+  type: Method
+  assemblies:
+  - Serilog
+  namespace: Serilog.Formatting.Json
+  summary: Adds a writer function for a given type.
+  example: []
+  syntax:
+    content: >-
+      [Obsolete("Extension of JsonFormatter by subclassing is obsolete and will be removed in a future Serilog version. Write a custom formatter based on JsonValueFormatter instead. See https://github.com/serilog/serilog/pull/819.")]
+
+      protected void AddLiteralWriter(Type type, Action<object, TextWriter> writer)
+    parameters:
+    - id: type
+      type: System.Type
+      description: The type of values, which <code class="paramref">writer</code> handles.
+    - id: writer
+      type: System.Action{System.Object,System.IO.TextWriter}
+      description: The function, which writes the values.
+    content.vb: >-
+      <Obsolete("Extension of JsonFormatter by subclassing is obsolete and will be removed in a future Serilog version. Write a custom formatter based on JsonValueFormatter instead. See https://github.com/serilog/serilog/pull/819.")>
+
+      Protected Sub AddLiteralWriter(type As Type, writer As Action(Of Object, TextWriter))
+  overload: Serilog.Formatting.Json.JsonFormatter.AddLiteralWriter*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: When <code class="paramref">type</code> is <pre><code class="lang-csharp">null</code></pre>
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: When <code class="paramref">writer</code> is <pre><code class="lang-csharp">null</code></pre>
+  attributes:
+  - type: System.ObsoleteAttribute
+    ctor: System.ObsoleteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Extension of JsonFormatter by subclassing is obsolete and will be removed in a future Serilog version. Write a custom formatter based on JsonValueFormatter instead. See https://github.com/serilog/serilog/pull/819.
+  nameWithType.vb: JsonFormatter.AddLiteralWriter(Type, Action(Of Object, TextWriter))
+  fullName.vb: Serilog.Formatting.Json.JsonFormatter.AddLiteralWriter(System.Type, System.Action(Of Object, System.IO.TextWriter))
+  name.vb: AddLiteralWriter(Type, Action(Of Object, TextWriter))
+- uid: Serilog.Formatting.Json.JsonFormatter.WriteRenderings(System.Linq.IGrouping{System.String,Serilog.Parsing.PropertyToken}[],System.Collections.Generic.IReadOnlyDictionary{System.String,Serilog.Events.LogEventPropertyValue},System.IO.TextWriter)
+  commentId: M:Serilog.Formatting.Json.JsonFormatter.WriteRenderings(System.Linq.IGrouping{System.String,Serilog.Parsing.PropertyToken}[],System.Collections.Generic.IReadOnlyDictionary{System.String,Serilog.Events.LogEventPropertyValue},System.IO.TextWriter)
+  id: WriteRenderings(System.Linq.IGrouping{System.String,Serilog.Parsing.PropertyToken}[],System.Collections.Generic.IReadOnlyDictionary{System.String,Serilog.Events.LogEventPropertyValue},System.IO.TextWriter)
+  parent: Serilog.Formatting.Json.JsonFormatter
+  langs:
+  - csharp
+  - vb
+  name: WriteRenderings(IGrouping<string, PropertyToken>[], IReadOnlyDictionary<string, LogEventPropertyValue>, TextWriter)
+  nameWithType: JsonFormatter.WriteRenderings(IGrouping<string, PropertyToken>[], IReadOnlyDictionary<string, LogEventPropertyValue>, TextWriter)
+  fullName: Serilog.Formatting.Json.JsonFormatter.WriteRenderings(System.Linq.IGrouping<string, Serilog.Parsing.PropertyToken>[], System.Collections.Generic.IReadOnlyDictionary<string, Serilog.Events.LogEventPropertyValue>, System.IO.TextWriter)
+  type: Method
+  assemblies:
+  - Serilog
+  namespace: Serilog.Formatting.Json
+  summary: Writes out individual renderings of attached properties
+  example: []
+  syntax:
+    content: >-
+      [Obsolete("Extension of JsonFormatter by subclassing is obsolete and will be removed in a future Serilog version. Write a custom formatter based on JsonValueFormatter instead. See https://github.com/serilog/serilog/pull/819.")]
+
+      protected virtual void WriteRenderings(IGrouping<string, PropertyToken>[] tokensWithFormat, IReadOnlyDictionary<string, LogEventPropertyValue> properties, TextWriter output)
+    parameters:
+    - id: tokensWithFormat
+      type: System.Linq.IGrouping{System.String,Serilog.Parsing.PropertyToken}[]
+    - id: properties
+      type: System.Collections.Generic.IReadOnlyDictionary{System.String,Serilog.Events.LogEventPropertyValue}
+    - id: output
+      type: System.IO.TextWriter
+    content.vb: >-
+      <Obsolete("Extension of JsonFormatter by subclassing is obsolete and will be removed in a future Serilog version. Write a custom formatter based on JsonValueFormatter instead. See https://github.com/serilog/serilog/pull/819.")>
+
+      Protected Overridable Sub WriteRenderings(tokensWithFormat As IGrouping(Of String, PropertyToken)(), properties As IReadOnlyDictionary(Of String, LogEventPropertyValue), output As TextWriter)
+  overload: Serilog.Formatting.Json.JsonFormatter.WriteRenderings*
+  attributes:
+  - type: System.ObsoleteAttribute
+    ctor: System.ObsoleteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Extension of JsonFormatter by subclassing is obsolete and will be removed in a future Serilog version. Write a custom formatter based on JsonValueFormatter instead. See https://github.com/serilog/serilog/pull/819.
+  nameWithType.vb: JsonFormatter.WriteRenderings(IGrouping(Of String, PropertyToken)(), IReadOnlyDictionary(Of String, LogEventPropertyValue), TextWriter)
+  fullName.vb: Serilog.Formatting.Json.JsonFormatter.WriteRenderings(System.Linq.IGrouping(Of String, Serilog.Parsing.PropertyToken)(), System.Collections.Generic.IReadOnlyDictionary(Of String, Serilog.Events.LogEventPropertyValue), System.IO.TextWriter)
+  name.vb: WriteRenderings(IGrouping(Of String, PropertyToken)(), IReadOnlyDictionary(Of String, LogEventPropertyValue), TextWriter)
+- uid: Serilog.Formatting.Json.JsonFormatter.WriteRenderingsValues(System.Linq.IGrouping{System.String,Serilog.Parsing.PropertyToken}[],System.Collections.Generic.IReadOnlyDictionary{System.String,Serilog.Events.LogEventPropertyValue},System.IO.TextWriter)
+  commentId: M:Serilog.Formatting.Json.JsonFormatter.WriteRenderingsValues(System.Linq.IGrouping{System.String,Serilog.Parsing.PropertyToken}[],System.Collections.Generic.IReadOnlyDictionary{System.String,Serilog.Events.LogEventPropertyValue},System.IO.TextWriter)
+  id: WriteRenderingsValues(System.Linq.IGrouping{System.String,Serilog.Parsing.PropertyToken}[],System.Collections.Generic.IReadOnlyDictionary{System.String,Serilog.Events.LogEventPropertyValue},System.IO.TextWriter)
+  parent: Serilog.Formatting.Json.JsonFormatter
+  langs:
+  - csharp
+  - vb
+  name: WriteRenderingsValues(IGrouping<string, PropertyToken>[], IReadOnlyDictionary<string, LogEventPropertyValue>, TextWriter)
+  nameWithType: JsonFormatter.WriteRenderingsValues(IGrouping<string, PropertyToken>[], IReadOnlyDictionary<string, LogEventPropertyValue>, TextWriter)
+  fullName: Serilog.Formatting.Json.JsonFormatter.WriteRenderingsValues(System.Linq.IGrouping<string, Serilog.Parsing.PropertyToken>[], System.Collections.Generic.IReadOnlyDictionary<string, Serilog.Events.LogEventPropertyValue>, System.IO.TextWriter)
+  type: Method
+  assemblies:
+  - Serilog
+  namespace: Serilog.Formatting.Json
+  summary: Writes out the values of individual renderings of attached properties
+  example: []
+  syntax:
+    content: >-
+      [Obsolete("Extension of JsonFormatter by subclassing is obsolete and will be removed in a future Serilog version. Write a custom formatter based on JsonValueFormatter instead. See https://github.com/serilog/serilog/pull/819.")]
+
+      protected virtual void WriteRenderingsValues(IGrouping<string, PropertyToken>[] tokensWithFormat, IReadOnlyDictionary<string, LogEventPropertyValue> properties, TextWriter output)
+    parameters:
+    - id: tokensWithFormat
+      type: System.Linq.IGrouping{System.String,Serilog.Parsing.PropertyToken}[]
+    - id: properties
+      type: System.Collections.Generic.IReadOnlyDictionary{System.String,Serilog.Events.LogEventPropertyValue}
+    - id: output
+      type: System.IO.TextWriter
+    content.vb: >-
+      <Obsolete("Extension of JsonFormatter by subclassing is obsolete and will be removed in a future Serilog version. Write a custom formatter based on JsonValueFormatter instead. See https://github.com/serilog/serilog/pull/819.")>
+
+      Protected Overridable Sub WriteRenderingsValues(tokensWithFormat As IGrouping(Of String, PropertyToken)(), properties As IReadOnlyDictionary(Of String, LogEventPropertyValue), output As TextWriter)
+  overload: Serilog.Formatting.Json.JsonFormatter.WriteRenderingsValues*
+  attributes:
+  - type: System.ObsoleteAttribute
+    ctor: System.ObsoleteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Extension of JsonFormatter by subclassing is obsolete and will be removed in a future Serilog version. Write a custom formatter based on JsonValueFormatter instead. See https://github.com/serilog/serilog/pull/819.
+  nameWithType.vb: JsonFormatter.WriteRenderingsValues(IGrouping(Of String, PropertyToken)(), IReadOnlyDictionary(Of String, LogEventPropertyValue), TextWriter)
+  fullName.vb: Serilog.Formatting.Json.JsonFormatter.WriteRenderingsValues(System.Linq.IGrouping(Of String, Serilog.Parsing.PropertyToken)(), System.Collections.Generic.IReadOnlyDictionary(Of String, Serilog.Events.LogEventPropertyValue), System.IO.TextWriter)
+  name.vb: WriteRenderingsValues(IGrouping(Of String, PropertyToken)(), IReadOnlyDictionary(Of String, LogEventPropertyValue), TextWriter)
+- uid: Serilog.Formatting.Json.JsonFormatter.WriteProperties(System.Collections.Generic.IReadOnlyDictionary{System.String,Serilog.Events.LogEventPropertyValue},System.IO.TextWriter)
+  commentId: M:Serilog.Formatting.Json.JsonFormatter.WriteProperties(System.Collections.Generic.IReadOnlyDictionary{System.String,Serilog.Events.LogEventPropertyValue},System.IO.TextWriter)
+  id: WriteProperties(System.Collections.Generic.IReadOnlyDictionary{System.String,Serilog.Events.LogEventPropertyValue},System.IO.TextWriter)
+  parent: Serilog.Formatting.Json.JsonFormatter
+  langs:
+  - csharp
+  - vb
+  name: WriteProperties(IReadOnlyDictionary<string, LogEventPropertyValue>, TextWriter)
+  nameWithType: JsonFormatter.WriteProperties(IReadOnlyDictionary<string, LogEventPropertyValue>, TextWriter)
+  fullName: Serilog.Formatting.Json.JsonFormatter.WriteProperties(System.Collections.Generic.IReadOnlyDictionary<string, Serilog.Events.LogEventPropertyValue>, System.IO.TextWriter)
+  type: Method
+  assemblies:
+  - Serilog
+  namespace: Serilog.Formatting.Json
+  summary: Writes out the attached properties
+  example: []
+  syntax:
+    content: >-
+      [Obsolete("Extension of JsonFormatter by subclassing is obsolete and will be removed in a future Serilog version. Write a custom formatter based on JsonValueFormatter instead. See https://github.com/serilog/serilog/pull/819.")]
+
+      protected virtual void WriteProperties(IReadOnlyDictionary<string, LogEventPropertyValue> properties, TextWriter output)
+    parameters:
+    - id: properties
+      type: System.Collections.Generic.IReadOnlyDictionary{System.String,Serilog.Events.LogEventPropertyValue}
+    - id: output
+      type: System.IO.TextWriter
+    content.vb: >-
+      <Obsolete("Extension of JsonFormatter by subclassing is obsolete and will be removed in a future Serilog version. Write a custom formatter based on JsonValueFormatter instead. See https://github.com/serilog/serilog/pull/819.")>
+
+      Protected Overridable Sub WriteProperties(properties As IReadOnlyDictionary(Of String, LogEventPropertyValue), output As TextWriter)
+  overload: Serilog.Formatting.Json.JsonFormatter.WriteProperties*
+  attributes:
+  - type: System.ObsoleteAttribute
+    ctor: System.ObsoleteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Extension of JsonFormatter by subclassing is obsolete and will be removed in a future Serilog version. Write a custom formatter based on JsonValueFormatter instead. See https://github.com/serilog/serilog/pull/819.
+  nameWithType.vb: JsonFormatter.WriteProperties(IReadOnlyDictionary(Of String, LogEventPropertyValue), TextWriter)
+  fullName.vb: Serilog.Formatting.Json.JsonFormatter.WriteProperties(System.Collections.Generic.IReadOnlyDictionary(Of String, Serilog.Events.LogEventPropertyValue), System.IO.TextWriter)
+  name.vb: WriteProperties(IReadOnlyDictionary(Of String, LogEventPropertyValue), TextWriter)
+- uid: Serilog.Formatting.Json.JsonFormatter.WritePropertiesValues(System.Collections.Generic.IReadOnlyDictionary{System.String,Serilog.Events.LogEventPropertyValue},System.IO.TextWriter)
+  commentId: M:Serilog.Formatting.Json.JsonFormatter.WritePropertiesValues(System.Collections.Generic.IReadOnlyDictionary{System.String,Serilog.Events.LogEventPropertyValue},System.IO.TextWriter)
+  id: WritePropertiesValues(System.Collections.Generic.IReadOnlyDictionary{System.String,Serilog.Events.LogEventPropertyValue},System.IO.TextWriter)
+  parent: Serilog.Formatting.Json.JsonFormatter
+  langs:
+  - csharp
+  - vb
+  name: WritePropertiesValues(IReadOnlyDictionary<string, LogEventPropertyValue>, TextWriter)
+  nameWithType: JsonFormatter.WritePropertiesValues(IReadOnlyDictionary<string, LogEventPropertyValue>, TextWriter)
+  fullName: Serilog.Formatting.Json.JsonFormatter.WritePropertiesValues(System.Collections.Generic.IReadOnlyDictionary<string, Serilog.Events.LogEventPropertyValue>, System.IO.TextWriter)
+  type: Method
+  assemblies:
+  - Serilog
+  namespace: Serilog.Formatting.Json
+  summary: Writes out the attached properties values
+  example: []
+  syntax:
+    content: >-
+      [Obsolete("Extension of JsonFormatter by subclassing is obsolete and will be removed in a future Serilog version. Write a custom formatter based on JsonValueFormatter instead. See https://github.com/serilog/serilog/pull/819.")]
+
+      protected virtual void WritePropertiesValues(IReadOnlyDictionary<string, LogEventPropertyValue> properties, TextWriter output)
+    parameters:
+    - id: properties
+      type: System.Collections.Generic.IReadOnlyDictionary{System.String,Serilog.Events.LogEventPropertyValue}
+    - id: output
+      type: System.IO.TextWriter
+    content.vb: >-
+      <Obsolete("Extension of JsonFormatter by subclassing is obsolete and will be removed in a future Serilog version. Write a custom formatter based on JsonValueFormatter instead. See https://github.com/serilog/serilog/pull/819.")>
+
+      Protected Overridable Sub WritePropertiesValues(properties As IReadOnlyDictionary(Of String, LogEventPropertyValue), output As TextWriter)
+  overload: Serilog.Formatting.Json.JsonFormatter.WritePropertiesValues*
+  attributes:
+  - type: System.ObsoleteAttribute
+    ctor: System.ObsoleteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Extension of JsonFormatter by subclassing is obsolete and will be removed in a future Serilog version. Write a custom formatter based on JsonValueFormatter instead. See https://github.com/serilog/serilog/pull/819.
+  nameWithType.vb: JsonFormatter.WritePropertiesValues(IReadOnlyDictionary(Of String, LogEventPropertyValue), TextWriter)
+  fullName.vb: Serilog.Formatting.Json.JsonFormatter.WritePropertiesValues(System.Collections.Generic.IReadOnlyDictionary(Of String, Serilog.Events.LogEventPropertyValue), System.IO.TextWriter)
+  name.vb: WritePropertiesValues(IReadOnlyDictionary(Of String, LogEventPropertyValue), TextWriter)
+- uid: Serilog.Formatting.Json.JsonFormatter.WriteException(System.Exception,System.String@,System.IO.TextWriter)
+  commentId: M:Serilog.Formatting.Json.JsonFormatter.WriteException(System.Exception,System.String@,System.IO.TextWriter)
+  id: WriteException(System.Exception,System.String@,System.IO.TextWriter)
+  parent: Serilog.Formatting.Json.JsonFormatter
+  langs:
+  - csharp
+  - vb
+  name: WriteException(Exception, ref string, TextWriter)
+  nameWithType: JsonFormatter.WriteException(Exception, ref string, TextWriter)
+  fullName: Serilog.Formatting.Json.JsonFormatter.WriteException(System.Exception, ref string, System.IO.TextWriter)
+  type: Method
+  assemblies:
+  - Serilog
+  namespace: Serilog.Formatting.Json
+  summary: Writes out the attached exception
+  example: []
+  syntax:
+    content: >-
+      [Obsolete("Extension of JsonFormatter by subclassing is obsolete and will be removed in a future Serilog version. Write a custom formatter based on JsonValueFormatter instead. See https://github.com/serilog/serilog/pull/819.")]
+
+      protected virtual void WriteException(Exception exception, ref string delim, TextWriter output)
+    parameters:
+    - id: exception
+      type: System.Exception
+    - id: delim
+      type: System.String
+    - id: output
+      type: System.IO.TextWriter
+    content.vb: >-
+      <Obsolete("Extension of JsonFormatter by subclassing is obsolete and will be removed in a future Serilog version. Write a custom formatter based on JsonValueFormatter instead. See https://github.com/serilog/serilog/pull/819.")>
+
+      Protected Overridable Sub WriteException(exception As Exception, delim As String, output As TextWriter)
+  overload: Serilog.Formatting.Json.JsonFormatter.WriteException*
+  attributes:
+  - type: System.ObsoleteAttribute
+    ctor: System.ObsoleteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Extension of JsonFormatter by subclassing is obsolete and will be removed in a future Serilog version. Write a custom formatter based on JsonValueFormatter instead. See https://github.com/serilog/serilog/pull/819.
+  nameWithType.vb: JsonFormatter.WriteException(Exception, String, TextWriter)
+  fullName.vb: Serilog.Formatting.Json.JsonFormatter.WriteException(System.Exception, String, System.IO.TextWriter)
+  name.vb: WriteException(Exception, String, TextWriter)
+- uid: Serilog.Formatting.Json.JsonFormatter.WriteRenderedMessage(System.String,System.String@,System.IO.TextWriter)
+  commentId: M:Serilog.Formatting.Json.JsonFormatter.WriteRenderedMessage(System.String,System.String@,System.IO.TextWriter)
+  id: WriteRenderedMessage(System.String,System.String@,System.IO.TextWriter)
+  parent: Serilog.Formatting.Json.JsonFormatter
+  langs:
+  - csharp
+  - vb
+  name: WriteRenderedMessage(string, ref string, TextWriter)
+  nameWithType: JsonFormatter.WriteRenderedMessage(string, ref string, TextWriter)
+  fullName: Serilog.Formatting.Json.JsonFormatter.WriteRenderedMessage(string, ref string, System.IO.TextWriter)
+  type: Method
+  assemblies:
+  - Serilog
+  namespace: Serilog.Formatting.Json
+  summary: (Optionally) writes out the rendered message
+  example: []
+  syntax:
+    content: >-
+      [Obsolete("Extension of JsonFormatter by subclassing is obsolete and will be removed in a future Serilog version. Write a custom formatter based on JsonValueFormatter instead. See https://github.com/serilog/serilog/pull/819.")]
+
+      protected virtual void WriteRenderedMessage(string message, ref string delim, TextWriter output)
+    parameters:
+    - id: message
+      type: System.String
+    - id: delim
+      type: System.String
+    - id: output
+      type: System.IO.TextWriter
+    content.vb: >-
+      <Obsolete("Extension of JsonFormatter by subclassing is obsolete and will be removed in a future Serilog version. Write a custom formatter based on JsonValueFormatter instead. See https://github.com/serilog/serilog/pull/819.")>
+
+      Protected Overridable Sub WriteRenderedMessage(message As String, delim As String, output As TextWriter)
+  overload: Serilog.Formatting.Json.JsonFormatter.WriteRenderedMessage*
+  attributes:
+  - type: System.ObsoleteAttribute
+    ctor: System.ObsoleteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Extension of JsonFormatter by subclassing is obsolete and will be removed in a future Serilog version. Write a custom formatter based on JsonValueFormatter instead. See https://github.com/serilog/serilog/pull/819.
+  nameWithType.vb: JsonFormatter.WriteRenderedMessage(String, String, TextWriter)
+  fullName.vb: Serilog.Formatting.Json.JsonFormatter.WriteRenderedMessage(String, String, System.IO.TextWriter)
+  name.vb: WriteRenderedMessage(String, String, TextWriter)
+- uid: Serilog.Formatting.Json.JsonFormatter.WriteMessageTemplate(System.String,System.String@,System.IO.TextWriter)
+  commentId: M:Serilog.Formatting.Json.JsonFormatter.WriteMessageTemplate(System.String,System.String@,System.IO.TextWriter)
+  id: WriteMessageTemplate(System.String,System.String@,System.IO.TextWriter)
+  parent: Serilog.Formatting.Json.JsonFormatter
+  langs:
+  - csharp
+  - vb
+  name: WriteMessageTemplate(string, ref string, TextWriter)
+  nameWithType: JsonFormatter.WriteMessageTemplate(string, ref string, TextWriter)
+  fullName: Serilog.Formatting.Json.JsonFormatter.WriteMessageTemplate(string, ref string, System.IO.TextWriter)
+  type: Method
+  assemblies:
+  - Serilog
+  namespace: Serilog.Formatting.Json
+  summary: Writes out the message template for the logevent.
+  example: []
+  syntax:
+    content: >-
+      [Obsolete("Extension of JsonFormatter by subclassing is obsolete and will be removed in a future Serilog version. Write a custom formatter based on JsonValueFormatter instead. See https://github.com/serilog/serilog/pull/819.")]
+
+      protected virtual void WriteMessageTemplate(string template, ref string delim, TextWriter output)
+    parameters:
+    - id: template
+      type: System.String
+    - id: delim
+      type: System.String
+    - id: output
+      type: System.IO.TextWriter
+    content.vb: >-
+      <Obsolete("Extension of JsonFormatter by subclassing is obsolete and will be removed in a future Serilog version. Write a custom formatter based on JsonValueFormatter instead. See https://github.com/serilog/serilog/pull/819.")>
+
+      Protected Overridable Sub WriteMessageTemplate(template As String, delim As String, output As TextWriter)
+  overload: Serilog.Formatting.Json.JsonFormatter.WriteMessageTemplate*
+  attributes:
+  - type: System.ObsoleteAttribute
+    ctor: System.ObsoleteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Extension of JsonFormatter by subclassing is obsolete and will be removed in a future Serilog version. Write a custom formatter based on JsonValueFormatter instead. See https://github.com/serilog/serilog/pull/819.
+  nameWithType.vb: JsonFormatter.WriteMessageTemplate(String, String, TextWriter)
+  fullName.vb: Serilog.Formatting.Json.JsonFormatter.WriteMessageTemplate(String, String, System.IO.TextWriter)
+  name.vb: WriteMessageTemplate(String, String, TextWriter)
+- uid: Serilog.Formatting.Json.JsonFormatter.WriteLevel(Serilog.Events.LogEventLevel,System.String@,System.IO.TextWriter)
+  commentId: M:Serilog.Formatting.Json.JsonFormatter.WriteLevel(Serilog.Events.LogEventLevel,System.String@,System.IO.TextWriter)
+  id: WriteLevel(Serilog.Events.LogEventLevel,System.String@,System.IO.TextWriter)
+  parent: Serilog.Formatting.Json.JsonFormatter
+  langs:
+  - csharp
+  - vb
+  name: WriteLevel(LogEventLevel, ref string, TextWriter)
+  nameWithType: JsonFormatter.WriteLevel(LogEventLevel, ref string, TextWriter)
+  fullName: Serilog.Formatting.Json.JsonFormatter.WriteLevel(Serilog.Events.LogEventLevel, ref string, System.IO.TextWriter)
+  type: Method
+  assemblies:
+  - Serilog
+  namespace: Serilog.Formatting.Json
+  summary: Writes out the log level
+  example: []
+  syntax:
+    content: >-
+      [Obsolete("Extension of JsonFormatter by subclassing is obsolete and will be removed in a future Serilog version. Write a custom formatter based on JsonValueFormatter instead. See https://github.com/serilog/serilog/pull/819.")]
+
+      protected virtual void WriteLevel(LogEventLevel level, ref string delim, TextWriter output)
+    parameters:
+    - id: level
+      type: Serilog.Events.LogEventLevel
+    - id: delim
+      type: System.String
+    - id: output
+      type: System.IO.TextWriter
+    content.vb: >-
+      <Obsolete("Extension of JsonFormatter by subclassing is obsolete and will be removed in a future Serilog version. Write a custom formatter based on JsonValueFormatter instead. See https://github.com/serilog/serilog/pull/819.")>
+
+      Protected Overridable Sub WriteLevel(level As LogEventLevel, delim As String, output As TextWriter)
+  overload: Serilog.Formatting.Json.JsonFormatter.WriteLevel*
+  attributes:
+  - type: System.ObsoleteAttribute
+    ctor: System.ObsoleteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Extension of JsonFormatter by subclassing is obsolete and will be removed in a future Serilog version. Write a custom formatter based on JsonValueFormatter instead. See https://github.com/serilog/serilog/pull/819.
+  nameWithType.vb: JsonFormatter.WriteLevel(LogEventLevel, String, TextWriter)
+  fullName.vb: Serilog.Formatting.Json.JsonFormatter.WriteLevel(Serilog.Events.LogEventLevel, String, System.IO.TextWriter)
+  name.vb: WriteLevel(LogEventLevel, String, TextWriter)
+- uid: Serilog.Formatting.Json.JsonFormatter.WriteTimestamp(System.DateTimeOffset,System.String@,System.IO.TextWriter)
+  commentId: M:Serilog.Formatting.Json.JsonFormatter.WriteTimestamp(System.DateTimeOffset,System.String@,System.IO.TextWriter)
+  id: WriteTimestamp(System.DateTimeOffset,System.String@,System.IO.TextWriter)
+  parent: Serilog.Formatting.Json.JsonFormatter
+  langs:
+  - csharp
+  - vb
+  name: WriteTimestamp(DateTimeOffset, ref string, TextWriter)
+  nameWithType: JsonFormatter.WriteTimestamp(DateTimeOffset, ref string, TextWriter)
+  fullName: Serilog.Formatting.Json.JsonFormatter.WriteTimestamp(System.DateTimeOffset, ref string, System.IO.TextWriter)
+  type: Method
+  assemblies:
+  - Serilog
+  namespace: Serilog.Formatting.Json
+  summary: Writes out the log timestamp
+  example: []
+  syntax:
+    content: >-
+      [Obsolete("Extension of JsonFormatter by subclassing is obsolete and will be removed in a future Serilog version. Write a custom formatter based on JsonValueFormatter instead. See https://github.com/serilog/serilog/pull/819.")]
+
+      protected virtual void WriteTimestamp(DateTimeOffset timestamp, ref string delim, TextWriter output)
+    parameters:
+    - id: timestamp
+      type: System.DateTimeOffset
+    - id: delim
+      type: System.String
+    - id: output
+      type: System.IO.TextWriter
+    content.vb: >-
+      <Obsolete("Extension of JsonFormatter by subclassing is obsolete and will be removed in a future Serilog version. Write a custom formatter based on JsonValueFormatter instead. See https://github.com/serilog/serilog/pull/819.")>
+
+      Protected Overridable Sub WriteTimestamp(timestamp As DateTimeOffset, delim As String, output As TextWriter)
+  overload: Serilog.Formatting.Json.JsonFormatter.WriteTimestamp*
+  attributes:
+  - type: System.ObsoleteAttribute
+    ctor: System.ObsoleteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Extension of JsonFormatter by subclassing is obsolete and will be removed in a future Serilog version. Write a custom formatter based on JsonValueFormatter instead. See https://github.com/serilog/serilog/pull/819.
+  nameWithType.vb: JsonFormatter.WriteTimestamp(DateTimeOffset, String, TextWriter)
+  fullName.vb: Serilog.Formatting.Json.JsonFormatter.WriteTimestamp(System.DateTimeOffset, String, System.IO.TextWriter)
+  name.vb: WriteTimestamp(DateTimeOffset, String, TextWriter)
+- uid: Serilog.Formatting.Json.JsonFormatter.WriteStructure(System.String,System.Collections.Generic.IEnumerable{Serilog.Events.LogEventProperty},System.IO.TextWriter)
+  commentId: M:Serilog.Formatting.Json.JsonFormatter.WriteStructure(System.String,System.Collections.Generic.IEnumerable{Serilog.Events.LogEventProperty},System.IO.TextWriter)
+  id: WriteStructure(System.String,System.Collections.Generic.IEnumerable{Serilog.Events.LogEventProperty},System.IO.TextWriter)
+  parent: Serilog.Formatting.Json.JsonFormatter
+  langs:
+  - csharp
+  - vb
+  name: WriteStructure(string?, IEnumerable<LogEventProperty>, TextWriter)
+  nameWithType: JsonFormatter.WriteStructure(string?, IEnumerable<LogEventProperty>, TextWriter)
+  fullName: Serilog.Formatting.Json.JsonFormatter.WriteStructure(string?, System.Collections.Generic.IEnumerable<Serilog.Events.LogEventProperty>, System.IO.TextWriter)
+  type: Method
+  assemblies:
+  - Serilog
+  namespace: Serilog.Formatting.Json
+  summary: Writes out a structure property
+  example: []
+  syntax:
+    content: >-
+      [Obsolete("Extension of JsonFormatter by subclassing is obsolete and will be removed in a future Serilog version. Write a custom formatter based on JsonValueFormatter instead. See https://github.com/serilog/serilog/pull/819.")]
+
+      protected virtual void WriteStructure(string? typeTag, IEnumerable<LogEventProperty> properties, TextWriter output)
+    parameters:
+    - id: typeTag
+      type: System.String
+    - id: properties
+      type: System.Collections.Generic.IEnumerable{Serilog.Events.LogEventProperty}
+    - id: output
+      type: System.IO.TextWriter
+    content.vb: >-
+      <Obsolete("Extension of JsonFormatter by subclassing is obsolete and will be removed in a future Serilog version. Write a custom formatter based on JsonValueFormatter instead. See https://github.com/serilog/serilog/pull/819.")>
+
+      Protected Overridable Sub WriteStructure(typeTag As String, properties As IEnumerable(Of LogEventProperty), output As TextWriter)
+  overload: Serilog.Formatting.Json.JsonFormatter.WriteStructure*
+  attributes:
+  - type: System.ObsoleteAttribute
+    ctor: System.ObsoleteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Extension of JsonFormatter by subclassing is obsolete and will be removed in a future Serilog version. Write a custom formatter based on JsonValueFormatter instead. See https://github.com/serilog/serilog/pull/819.
+  nameWithType.vb: JsonFormatter.WriteStructure(String, IEnumerable(Of LogEventProperty), TextWriter)
+  fullName.vb: Serilog.Formatting.Json.JsonFormatter.WriteStructure(String, System.Collections.Generic.IEnumerable(Of Serilog.Events.LogEventProperty), System.IO.TextWriter)
+  name.vb: WriteStructure(String, IEnumerable(Of LogEventProperty), TextWriter)
+- uid: Serilog.Formatting.Json.JsonFormatter.WriteSequence(System.Collections.IEnumerable,System.IO.TextWriter)
+  commentId: M:Serilog.Formatting.Json.JsonFormatter.WriteSequence(System.Collections.IEnumerable,System.IO.TextWriter)
+  id: WriteSequence(System.Collections.IEnumerable,System.IO.TextWriter)
+  parent: Serilog.Formatting.Json.JsonFormatter
+  langs:
+  - csharp
+  - vb
+  name: WriteSequence(IEnumerable, TextWriter)
+  nameWithType: JsonFormatter.WriteSequence(IEnumerable, TextWriter)
+  fullName: Serilog.Formatting.Json.JsonFormatter.WriteSequence(System.Collections.IEnumerable, System.IO.TextWriter)
+  type: Method
+  assemblies:
+  - Serilog
+  namespace: Serilog.Formatting.Json
+  summary: Writes out a sequence property
+  example: []
+  syntax:
+    content: >-
+      [Obsolete("Extension of JsonFormatter by subclassing is obsolete and will be removed in a future Serilog version. Write a custom formatter based on JsonValueFormatter instead. See https://github.com/serilog/serilog/pull/819.")]
+
+      protected virtual void WriteSequence(IEnumerable elements, TextWriter output)
+    parameters:
+    - id: elements
+      type: System.Collections.IEnumerable
+    - id: output
+      type: System.IO.TextWriter
+    content.vb: >-
+      <Obsolete("Extension of JsonFormatter by subclassing is obsolete and will be removed in a future Serilog version. Write a custom formatter based on JsonValueFormatter instead. See https://github.com/serilog/serilog/pull/819.")>
+
+      Protected Overridable Sub WriteSequence(elements As IEnumerable, output As TextWriter)
+  overload: Serilog.Formatting.Json.JsonFormatter.WriteSequence*
+  attributes:
+  - type: System.ObsoleteAttribute
+    ctor: System.ObsoleteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Extension of JsonFormatter by subclassing is obsolete and will be removed in a future Serilog version. Write a custom formatter based on JsonValueFormatter instead. See https://github.com/serilog/serilog/pull/819.
+- uid: Serilog.Formatting.Json.JsonFormatter.WriteDictionary(System.Collections.Generic.IReadOnlyDictionary{Serilog.Events.ScalarValue,Serilog.Events.LogEventPropertyValue},System.IO.TextWriter)
+  commentId: M:Serilog.Formatting.Json.JsonFormatter.WriteDictionary(System.Collections.Generic.IReadOnlyDictionary{Serilog.Events.ScalarValue,Serilog.Events.LogEventPropertyValue},System.IO.TextWriter)
+  id: WriteDictionary(System.Collections.Generic.IReadOnlyDictionary{Serilog.Events.ScalarValue,Serilog.Events.LogEventPropertyValue},System.IO.TextWriter)
+  parent: Serilog.Formatting.Json.JsonFormatter
+  langs:
+  - csharp
+  - vb
+  name: WriteDictionary(IReadOnlyDictionary<ScalarValue, LogEventPropertyValue>, TextWriter)
+  nameWithType: JsonFormatter.WriteDictionary(IReadOnlyDictionary<ScalarValue, LogEventPropertyValue>, TextWriter)
+  fullName: Serilog.Formatting.Json.JsonFormatter.WriteDictionary(System.Collections.Generic.IReadOnlyDictionary<Serilog.Events.ScalarValue, Serilog.Events.LogEventPropertyValue>, System.IO.TextWriter)
+  type: Method
+  assemblies:
+  - Serilog
+  namespace: Serilog.Formatting.Json
+  summary: Writes out a dictionary
+  example: []
+  syntax:
+    content: >-
+      [Obsolete("Extension of JsonFormatter by subclassing is obsolete and will be removed in a future Serilog version. Write a custom formatter based on JsonValueFormatter instead. See https://github.com/serilog/serilog/pull/819.")]
+
+      protected virtual void WriteDictionary(IReadOnlyDictionary<ScalarValue, LogEventPropertyValue> elements, TextWriter output)
+    parameters:
+    - id: elements
+      type: System.Collections.Generic.IReadOnlyDictionary{Serilog.Events.ScalarValue,Serilog.Events.LogEventPropertyValue}
+    - id: output
+      type: System.IO.TextWriter
+    content.vb: >-
+      <Obsolete("Extension of JsonFormatter by subclassing is obsolete and will be removed in a future Serilog version. Write a custom formatter based on JsonValueFormatter instead. See https://github.com/serilog/serilog/pull/819.")>
+
+      Protected Overridable Sub WriteDictionary(elements As IReadOnlyDictionary(Of ScalarValue, LogEventPropertyValue), output As TextWriter)
+  overload: Serilog.Formatting.Json.JsonFormatter.WriteDictionary*
+  attributes:
+  - type: System.ObsoleteAttribute
+    ctor: System.ObsoleteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Extension of JsonFormatter by subclassing is obsolete and will be removed in a future Serilog version. Write a custom formatter based on JsonValueFormatter instead. See https://github.com/serilog/serilog/pull/819.
+  nameWithType.vb: JsonFormatter.WriteDictionary(IReadOnlyDictionary(Of ScalarValue, LogEventPropertyValue), TextWriter)
+  fullName.vb: Serilog.Formatting.Json.JsonFormatter.WriteDictionary(System.Collections.Generic.IReadOnlyDictionary(Of Serilog.Events.ScalarValue, Serilog.Events.LogEventPropertyValue), System.IO.TextWriter)
+  name.vb: WriteDictionary(IReadOnlyDictionary(Of ScalarValue, LogEventPropertyValue), TextWriter)
+- uid: Serilog.Formatting.Json.JsonFormatter.WriteJsonProperty(System.String,System.Object,System.String@,System.IO.TextWriter)
+  commentId: M:Serilog.Formatting.Json.JsonFormatter.WriteJsonProperty(System.String,System.Object,System.String@,System.IO.TextWriter)
+  id: WriteJsonProperty(System.String,System.Object,System.String@,System.IO.TextWriter)
+  parent: Serilog.Formatting.Json.JsonFormatter
+  langs:
+  - csharp
+  - vb
+  name: WriteJsonProperty(string, object?, ref string, TextWriter)
+  nameWithType: JsonFormatter.WriteJsonProperty(string, object?, ref string, TextWriter)
+  fullName: Serilog.Formatting.Json.JsonFormatter.WriteJsonProperty(string, object?, ref string, System.IO.TextWriter)
+  type: Method
+  assemblies:
+  - Serilog
+  namespace: Serilog.Formatting.Json
+  summary: Writes out a json property with the specified value on output writer
+  example: []
+  syntax:
+    content: >-
+      [Obsolete("Extension of JsonFormatter by subclassing is obsolete and will be removed in a future Serilog version. Write a custom formatter based on JsonValueFormatter instead. See https://github.com/serilog/serilog/pull/819.")]
+
+      protected virtual void WriteJsonProperty(string name, object? value, ref string precedingDelimiter, TextWriter output)
+    parameters:
+    - id: name
+      type: System.String
+    - id: value
+      type: System.Object
+    - id: precedingDelimiter
+      type: System.String
+    - id: output
+      type: System.IO.TextWriter
+    content.vb: >-
+      <Obsolete("Extension of JsonFormatter by subclassing is obsolete and will be removed in a future Serilog version. Write a custom formatter based on JsonValueFormatter instead. See https://github.com/serilog/serilog/pull/819.")>
+
+      Protected Overridable Sub WriteJsonProperty(name As String, value As Object, precedingDelimiter As String, output As TextWriter)
+  overload: Serilog.Formatting.Json.JsonFormatter.WriteJsonProperty*
+  attributes:
+  - type: System.ObsoleteAttribute
+    ctor: System.ObsoleteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Extension of JsonFormatter by subclassing is obsolete and will be removed in a future Serilog version. Write a custom formatter based on JsonValueFormatter instead. See https://github.com/serilog/serilog/pull/819.
+  nameWithType.vb: JsonFormatter.WriteJsonProperty(String, Object, String, TextWriter)
+  fullName.vb: Serilog.Formatting.Json.JsonFormatter.WriteJsonProperty(String, Object, String, System.IO.TextWriter)
+  name.vb: WriteJsonProperty(String, Object, String, TextWriter)
+- uid: Serilog.Formatting.Json.JsonFormatter.WriteLiteralValue(System.Object,System.IO.TextWriter)
+  commentId: M:Serilog.Formatting.Json.JsonFormatter.WriteLiteralValue(System.Object,System.IO.TextWriter)
+  id: WriteLiteralValue(System.Object,System.IO.TextWriter)
+  parent: Serilog.Formatting.Json.JsonFormatter
+  langs:
+  - csharp
+  - vb
+  name: WriteLiteralValue(object, TextWriter)
+  nameWithType: JsonFormatter.WriteLiteralValue(object, TextWriter)
+  fullName: Serilog.Formatting.Json.JsonFormatter.WriteLiteralValue(object, System.IO.TextWriter)
+  type: Method
+  assemblies:
+  - Serilog
+  namespace: Serilog.Formatting.Json
+  summary: Allows a subclass to write out objects that have no configured literal writer.
+  example: []
+  syntax:
+    content: >-
+      [Obsolete("Extension of JsonFormatter by subclassing is obsolete and will be removed in a future Serilog version. Write a custom formatter based on JsonValueFormatter instead. See https://github.com/serilog/serilog/pull/819.")]
+
+      protected virtual void WriteLiteralValue(object value, TextWriter output)
+    parameters:
+    - id: value
+      type: System.Object
+      description: The value to be written as a json construct
+    - id: output
+      type: System.IO.TextWriter
+      description: The writer to write on
+    content.vb: >-
+      <Obsolete("Extension of JsonFormatter by subclassing is obsolete and will be removed in a future Serilog version. Write a custom formatter based on JsonValueFormatter instead. See https://github.com/serilog/serilog/pull/819.")>
+
+      Protected Overridable Sub WriteLiteralValue(value As Object, output As TextWriter)
+  overload: Serilog.Formatting.Json.JsonFormatter.WriteLiteralValue*
+  attributes:
+  - type: System.ObsoleteAttribute
+    ctor: System.ObsoleteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Extension of JsonFormatter by subclassing is obsolete and will be removed in a future Serilog version. Write a custom formatter based on JsonValueFormatter instead. See https://github.com/serilog/serilog/pull/819.
+  nameWithType.vb: JsonFormatter.WriteLiteralValue(Object, TextWriter)
+  fullName.vb: Serilog.Formatting.Json.JsonFormatter.WriteLiteralValue(Object, System.IO.TextWriter)
+  name.vb: WriteLiteralValue(Object, TextWriter)
+references:
+- uid: Serilog.Formatting.Json
+  commentId: N:Serilog.Formatting.Json
+  isExternal: true
+  href: Serilog.html
+  name: Serilog.Formatting.Json
+  nameWithType: Serilog.Formatting.Json
+  fullName: Serilog.Formatting.Json
+  spec.csharp:
+  - uid: Serilog
+    name: Serilog
+    isExternal: true
+    href: Serilog.html
+  - name: .
+  - uid: Serilog.Formatting
+    name: Formatting
+    isExternal: true
+    href: Serilog.Formatting.html
+  - name: .
+  - uid: Serilog.Formatting.Json
+    name: Json
+    isExternal: true
+    href: Serilog.Formatting.Json.html
+  spec.vb:
+  - uid: Serilog
+    name: Serilog
+    isExternal: true
+    href: Serilog.html
+  - name: .
+  - uid: Serilog.Formatting
+    name: Formatting
+    isExternal: true
+    href: Serilog.Formatting.html
+  - name: .
+  - uid: Serilog.Formatting.Json
+    name: Json
+    isExternal: true
+    href: Serilog.Formatting.Json.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Serilog.Formatting.ITextFormatter
+  commentId: T:Serilog.Formatting.ITextFormatter
+  parent: Serilog.Formatting
+  isExternal: true
+  href: Serilog.Formatting.ITextFormatter.html
+  name: ITextFormatter
+  nameWithType: ITextFormatter
+  fullName: Serilog.Formatting.ITextFormatter
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Serilog.Formatting
+  commentId: N:Serilog.Formatting
+  isExternal: true
+  href: Serilog.html
+  name: Serilog.Formatting
+  nameWithType: Serilog.Formatting
+  fullName: Serilog.Formatting
+  spec.csharp:
+  - uid: Serilog
+    name: Serilog
+    isExternal: true
+    href: Serilog.html
+  - name: .
+  - uid: Serilog.Formatting
+    name: Formatting
+    isExternal: true
+    href: Serilog.Formatting.html
+  spec.vb:
+  - uid: Serilog
+    name: Serilog
+    isExternal: true
+    href: Serilog.html
+  - name: .
+  - uid: Serilog.Formatting
+    name: Formatting
+    isExternal: true
+    href: Serilog.Formatting.html
+- uid: Serilog.Formatting.Json.JsonFormatter
+  commentId: T:Serilog.Formatting.Json.JsonFormatter
+  isExternal: true
+  href: Serilog.Formatting.Json.JsonFormatter.html
+  name: JsonFormatter
+  nameWithType: JsonFormatter
+  fullName: Serilog.Formatting.Json.JsonFormatter
+- uid: System.Environment.NewLine
+  commentId: P:System.Environment.NewLine
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.environment.newline
+  name: NewLine
+  nameWithType: Environment.NewLine
+  fullName: System.Environment.NewLine
+- uid: Serilog.Formatting.Json.JsonFormatter.#ctor*
+  commentId: Overload:Serilog.Formatting.Json.JsonFormatter.#ctor
+  isExternal: true
+  href: Serilog.Formatting.Json.JsonFormatter.html#Serilog_Formatting_Json_JsonFormatter__ctor_System_String_System_Boolean_System_IFormatProvider_
+  name: JsonFormatter
+  nameWithType: JsonFormatter.JsonFormatter
+  fullName: Serilog.Formatting.Json.JsonFormatter.JsonFormatter
+  nameWithType.vb: JsonFormatter.New
+  fullName.vb: Serilog.Formatting.Json.JsonFormatter.New
+  name.vb: New
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System.IFormatProvider
+  commentId: T:System.IFormatProvider
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iformatprovider
+  name: IFormatProvider
+  nameWithType: IFormatProvider
+  fullName: System.IFormatProvider
+- uid: System.ArgumentNullException
+  commentId: T:System.ArgumentNullException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.argumentnullexception
+  name: ArgumentNullException
+  nameWithType: ArgumentNullException
+  fullName: System.ArgumentNullException
+- uid: Serilog.Formatting.Json.JsonFormatter.Format*
+  commentId: Overload:Serilog.Formatting.Json.JsonFormatter.Format
+  isExternal: true
+  href: Serilog.Formatting.Json.JsonFormatter.html#Serilog_Formatting_Json_JsonFormatter_Format_Serilog_Events_LogEvent_System_IO_TextWriter_
+  name: Format
+  nameWithType: JsonFormatter.Format
+  fullName: Serilog.Formatting.Json.JsonFormatter.Format
+- uid: Serilog.Formatting.ITextFormatter.Format(Serilog.Events.LogEvent,System.IO.TextWriter)
+  commentId: M:Serilog.Formatting.ITextFormatter.Format(Serilog.Events.LogEvent,System.IO.TextWriter)
+  parent: Serilog.Formatting.ITextFormatter
+  isExternal: true
+  href: Serilog.Formatting.ITextFormatter.html#Serilog_Formatting_ITextFormatter_Format_Serilog_Events_LogEvent_System_IO_TextWriter_
+  name: Format(LogEvent, TextWriter)
+  nameWithType: ITextFormatter.Format(LogEvent, TextWriter)
+  fullName: Serilog.Formatting.ITextFormatter.Format(Serilog.Events.LogEvent, System.IO.TextWriter)
+  spec.csharp:
+  - uid: Serilog.Formatting.ITextFormatter.Format(Serilog.Events.LogEvent,System.IO.TextWriter)
+    name: Format
+    isExternal: true
+    href: Serilog.Formatting.ITextFormatter.html#Serilog_Formatting_ITextFormatter_Format_Serilog_Events_LogEvent_System_IO_TextWriter_
+  - name: (
+  - uid: Serilog.Events.LogEvent
+    name: LogEvent
+    isExternal: true
+    href: Serilog.Events.LogEvent.html
+  - name: ','
+  - name: " "
+  - uid: System.IO.TextWriter
+    name: TextWriter
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io.textwriter
+  - name: )
+  spec.vb:
+  - uid: Serilog.Formatting.ITextFormatter.Format(Serilog.Events.LogEvent,System.IO.TextWriter)
+    name: Format
+    isExternal: true
+    href: Serilog.Formatting.ITextFormatter.html#Serilog_Formatting_ITextFormatter_Format_Serilog_Events_LogEvent_System_IO_TextWriter_
+  - name: (
+  - uid: Serilog.Events.LogEvent
+    name: LogEvent
+    isExternal: true
+    href: Serilog.Events.LogEvent.html
+  - name: ','
+  - name: " "
+  - uid: System.IO.TextWriter
+    name: TextWriter
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io.textwriter
+  - name: )
+- uid: Serilog.Events.LogEvent
+  commentId: T:Serilog.Events.LogEvent
+  parent: Serilog.Events
+  isExternal: true
+  href: Serilog.Events.LogEvent.html
+  name: LogEvent
+  nameWithType: LogEvent
+  fullName: Serilog.Events.LogEvent
+- uid: System.IO.TextWriter
+  commentId: T:System.IO.TextWriter
+  parent: System.IO
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.io.textwriter
+  name: TextWriter
+  nameWithType: TextWriter
+  fullName: System.IO.TextWriter
+- uid: Serilog.Events
+  commentId: N:Serilog.Events
+  isExternal: true
+  href: Serilog.html
+  name: Serilog.Events
+  nameWithType: Serilog.Events
+  fullName: Serilog.Events
+  spec.csharp:
+  - uid: Serilog
+    name: Serilog
+    isExternal: true
+    href: Serilog.html
+  - name: .
+  - uid: Serilog.Events
+    name: Events
+    isExternal: true
+    href: Serilog.Events.html
+  spec.vb:
+  - uid: Serilog
+    name: Serilog
+    isExternal: true
+    href: Serilog.html
+  - name: .
+  - uid: Serilog.Events
+    name: Events
+    isExternal: true
+    href: Serilog.Events.html
+- uid: System.IO
+  commentId: N:System.IO
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.IO
+  nameWithType: System.IO
+  fullName: System.IO
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.IO
+    name: IO
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.IO
+    name: IO
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io
+- uid: Serilog.Formatting.Json.JsonFormatter.AddLiteralWriter*
+  commentId: Overload:Serilog.Formatting.Json.JsonFormatter.AddLiteralWriter
+  isExternal: true
+  href: Serilog.Formatting.Json.JsonFormatter.html#Serilog_Formatting_Json_JsonFormatter_AddLiteralWriter_System_Type_System_Action_System_Object_System_IO_TextWriter__
+  name: AddLiteralWriter
+  nameWithType: JsonFormatter.AddLiteralWriter
+  fullName: Serilog.Formatting.Json.JsonFormatter.AddLiteralWriter
+- uid: System.Type
+  commentId: T:System.Type
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.type
+  name: Type
+  nameWithType: Type
+  fullName: System.Type
+- uid: System.Action{System.Object,System.IO.TextWriter}
+  commentId: T:System.Action{System.Object,System.IO.TextWriter}
+  parent: System
+  definition: System.Action`2
+  href: https://learn.microsoft.com/dotnet/api/system.action-2
+  name: Action<object, TextWriter>
+  nameWithType: Action<object, TextWriter>
+  fullName: System.Action<object, System.IO.TextWriter>
+  nameWithType.vb: Action(Of Object, TextWriter)
+  fullName.vb: System.Action(Of Object, System.IO.TextWriter)
+  name.vb: Action(Of Object, TextWriter)
+  spec.csharp:
+  - uid: System.Action`2
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-2
+  - name: <
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.IO.TextWriter
+    name: TextWriter
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io.textwriter
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`2
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.IO.TextWriter
+    name: TextWriter
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io.textwriter
+  - name: )
+- uid: System.Action`2
+  commentId: T:System.Action`2
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.action-2
+  name: Action<T1, T2>
+  nameWithType: Action<T1, T2>
+  fullName: System.Action<T1, T2>
+  nameWithType.vb: Action(Of T1, T2)
+  fullName.vb: System.Action(Of T1, T2)
+  name.vb: Action(Of T1, T2)
+  spec.csharp:
+  - uid: System.Action`2
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-2
+  - name: <
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`2
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: )
+- uid: Serilog.Formatting.Json.JsonFormatter.WriteRenderings*
+  commentId: Overload:Serilog.Formatting.Json.JsonFormatter.WriteRenderings
+  isExternal: true
+  href: Serilog.Formatting.Json.JsonFormatter.html#Serilog_Formatting_Json_JsonFormatter_WriteRenderings_System_Linq_IGrouping_System_String_Serilog_Parsing_PropertyToken____System_Collections_Generic_IReadOnlyDictionary_System_String_Serilog_Events_LogEventPropertyValue__System_IO_TextWriter_
+  name: WriteRenderings
+  nameWithType: JsonFormatter.WriteRenderings
+  fullName: Serilog.Formatting.Json.JsonFormatter.WriteRenderings
+- uid: System.Linq.IGrouping{System.String,Serilog.Parsing.PropertyToken}[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.linq.igrouping-2
+  name: IGrouping<string, PropertyToken>[]
+  nameWithType: IGrouping<string, PropertyToken>[]
+  fullName: System.Linq.IGrouping<string, Serilog.Parsing.PropertyToken>[]
+  nameWithType.vb: IGrouping(Of String, PropertyToken)()
+  fullName.vb: System.Linq.IGrouping(Of String, Serilog.Parsing.PropertyToken)()
+  name.vb: IGrouping(Of String, PropertyToken)()
+  spec.csharp:
+  - uid: System.Linq.IGrouping`2
+    name: IGrouping
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.igrouping-2
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: Serilog.Parsing.PropertyToken
+    name: PropertyToken
+    isExternal: true
+    href: Serilog.Parsing.PropertyToken.html
+  - name: '>'
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.Linq.IGrouping`2
+    name: IGrouping
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.igrouping-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: Serilog.Parsing.PropertyToken
+    name: PropertyToken
+    isExternal: true
+    href: Serilog.Parsing.PropertyToken.html
+  - name: )
+  - name: (
+  - name: )
+- uid: System.Collections.Generic.IReadOnlyDictionary{System.String,Serilog.Events.LogEventPropertyValue}
+  commentId: T:System.Collections.Generic.IReadOnlyDictionary{System.String,Serilog.Events.LogEventPropertyValue}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IReadOnlyDictionary`2
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlydictionary-2
+  name: IReadOnlyDictionary<string, LogEventPropertyValue>
+  nameWithType: IReadOnlyDictionary<string, LogEventPropertyValue>
+  fullName: System.Collections.Generic.IReadOnlyDictionary<string, Serilog.Events.LogEventPropertyValue>
+  nameWithType.vb: IReadOnlyDictionary(Of String, LogEventPropertyValue)
+  fullName.vb: System.Collections.Generic.IReadOnlyDictionary(Of String, Serilog.Events.LogEventPropertyValue)
+  name.vb: IReadOnlyDictionary(Of String, LogEventPropertyValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyDictionary`2
+    name: IReadOnlyDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlydictionary-2
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: Serilog.Events.LogEventPropertyValue
+    name: LogEventPropertyValue
+    isExternal: true
+    href: Serilog.Events.LogEventPropertyValue.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyDictionary`2
+    name: IReadOnlyDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlydictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: Serilog.Events.LogEventPropertyValue
+    name: LogEventPropertyValue
+    isExternal: true
+    href: Serilog.Events.LogEventPropertyValue.html
+  - name: )
+- uid: System.Collections.Generic.IReadOnlyDictionary`2
+  commentId: T:System.Collections.Generic.IReadOnlyDictionary`2
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlydictionary-2
+  name: IReadOnlyDictionary<TKey, TValue>
+  nameWithType: IReadOnlyDictionary<TKey, TValue>
+  fullName: System.Collections.Generic.IReadOnlyDictionary<TKey, TValue>
+  nameWithType.vb: IReadOnlyDictionary(Of TKey, TValue)
+  fullName.vb: System.Collections.Generic.IReadOnlyDictionary(Of TKey, TValue)
+  name.vb: IReadOnlyDictionary(Of TKey, TValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyDictionary`2
+    name: IReadOnlyDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlydictionary-2
+  - name: <
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyDictionary`2
+    name: IReadOnlyDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlydictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: Serilog.Formatting.Json.JsonFormatter.WriteRenderingsValues*
+  commentId: Overload:Serilog.Formatting.Json.JsonFormatter.WriteRenderingsValues
+  isExternal: true
+  href: Serilog.Formatting.Json.JsonFormatter.html#Serilog_Formatting_Json_JsonFormatter_WriteRenderingsValues_System_Linq_IGrouping_System_String_Serilog_Parsing_PropertyToken____System_Collections_Generic_IReadOnlyDictionary_System_String_Serilog_Events_LogEventPropertyValue__System_IO_TextWriter_
+  name: WriteRenderingsValues
+  nameWithType: JsonFormatter.WriteRenderingsValues
+  fullName: Serilog.Formatting.Json.JsonFormatter.WriteRenderingsValues
+- uid: Serilog.Formatting.Json.JsonFormatter.WriteProperties*
+  commentId: Overload:Serilog.Formatting.Json.JsonFormatter.WriteProperties
+  isExternal: true
+  href: Serilog.Formatting.Json.JsonFormatter.html#Serilog_Formatting_Json_JsonFormatter_WriteProperties_System_Collections_Generic_IReadOnlyDictionary_System_String_Serilog_Events_LogEventPropertyValue__System_IO_TextWriter_
+  name: WriteProperties
+  nameWithType: JsonFormatter.WriteProperties
+  fullName: Serilog.Formatting.Json.JsonFormatter.WriteProperties
+- uid: Serilog.Formatting.Json.JsonFormatter.WritePropertiesValues*
+  commentId: Overload:Serilog.Formatting.Json.JsonFormatter.WritePropertiesValues
+  isExternal: true
+  href: Serilog.Formatting.Json.JsonFormatter.html#Serilog_Formatting_Json_JsonFormatter_WritePropertiesValues_System_Collections_Generic_IReadOnlyDictionary_System_String_Serilog_Events_LogEventPropertyValue__System_IO_TextWriter_
+  name: WritePropertiesValues
+  nameWithType: JsonFormatter.WritePropertiesValues
+  fullName: Serilog.Formatting.Json.JsonFormatter.WritePropertiesValues
+- uid: Serilog.Formatting.Json.JsonFormatter.WriteException*
+  commentId: Overload:Serilog.Formatting.Json.JsonFormatter.WriteException
+  isExternal: true
+  href: Serilog.Formatting.Json.JsonFormatter.html#Serilog_Formatting_Json_JsonFormatter_WriteException_System_Exception_System_String__System_IO_TextWriter_
+  name: WriteException
+  nameWithType: JsonFormatter.WriteException
+  fullName: Serilog.Formatting.Json.JsonFormatter.WriteException
+- uid: System.Exception
+  commentId: T:System.Exception
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.exception
+  name: Exception
+  nameWithType: Exception
+  fullName: System.Exception
+- uid: Serilog.Formatting.Json.JsonFormatter.WriteRenderedMessage*
+  commentId: Overload:Serilog.Formatting.Json.JsonFormatter.WriteRenderedMessage
+  isExternal: true
+  href: Serilog.Formatting.Json.JsonFormatter.html#Serilog_Formatting_Json_JsonFormatter_WriteRenderedMessage_System_String_System_String__System_IO_TextWriter_
+  name: WriteRenderedMessage
+  nameWithType: JsonFormatter.WriteRenderedMessage
+  fullName: Serilog.Formatting.Json.JsonFormatter.WriteRenderedMessage
+- uid: Serilog.Formatting.Json.JsonFormatter.WriteMessageTemplate*
+  commentId: Overload:Serilog.Formatting.Json.JsonFormatter.WriteMessageTemplate
+  isExternal: true
+  href: Serilog.Formatting.Json.JsonFormatter.html#Serilog_Formatting_Json_JsonFormatter_WriteMessageTemplate_System_String_System_String__System_IO_TextWriter_
+  name: WriteMessageTemplate
+  nameWithType: JsonFormatter.WriteMessageTemplate
+  fullName: Serilog.Formatting.Json.JsonFormatter.WriteMessageTemplate
+- uid: Serilog.Formatting.Json.JsonFormatter.WriteLevel*
+  commentId: Overload:Serilog.Formatting.Json.JsonFormatter.WriteLevel
+  isExternal: true
+  href: Serilog.Formatting.Json.JsonFormatter.html#Serilog_Formatting_Json_JsonFormatter_WriteLevel_Serilog_Events_LogEventLevel_System_String__System_IO_TextWriter_
+  name: WriteLevel
+  nameWithType: JsonFormatter.WriteLevel
+  fullName: Serilog.Formatting.Json.JsonFormatter.WriteLevel
+- uid: Serilog.Events.LogEventLevel
+  commentId: T:Serilog.Events.LogEventLevel
+  parent: Serilog.Events
+  isExternal: true
+  href: Serilog.Events.LogEventLevel.html
+  name: LogEventLevel
+  nameWithType: LogEventLevel
+  fullName: Serilog.Events.LogEventLevel
+- uid: Serilog.Formatting.Json.JsonFormatter.WriteTimestamp*
+  commentId: Overload:Serilog.Formatting.Json.JsonFormatter.WriteTimestamp
+  isExternal: true
+  href: Serilog.Formatting.Json.JsonFormatter.html#Serilog_Formatting_Json_JsonFormatter_WriteTimestamp_System_DateTimeOffset_System_String__System_IO_TextWriter_
+  name: WriteTimestamp
+  nameWithType: JsonFormatter.WriteTimestamp
+  fullName: Serilog.Formatting.Json.JsonFormatter.WriteTimestamp
+- uid: System.DateTimeOffset
+  commentId: T:System.DateTimeOffset
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.datetimeoffset
+  name: DateTimeOffset
+  nameWithType: DateTimeOffset
+  fullName: System.DateTimeOffset
+- uid: Serilog.Formatting.Json.JsonFormatter.WriteStructure*
+  commentId: Overload:Serilog.Formatting.Json.JsonFormatter.WriteStructure
+  isExternal: true
+  href: Serilog.Formatting.Json.JsonFormatter.html#Serilog_Formatting_Json_JsonFormatter_WriteStructure_System_String_System_Collections_Generic_IEnumerable_Serilog_Events_LogEventProperty__System_IO_TextWriter_
+  name: WriteStructure
+  nameWithType: JsonFormatter.WriteStructure
+  fullName: Serilog.Formatting.Json.JsonFormatter.WriteStructure
+- uid: System.Collections.Generic.IEnumerable{Serilog.Events.LogEventProperty}
+  commentId: T:System.Collections.Generic.IEnumerable{Serilog.Events.LogEventProperty}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<LogEventProperty>
+  nameWithType: IEnumerable<LogEventProperty>
+  fullName: System.Collections.Generic.IEnumerable<Serilog.Events.LogEventProperty>
+  nameWithType.vb: IEnumerable(Of LogEventProperty)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of Serilog.Events.LogEventProperty)
+  name.vb: IEnumerable(Of LogEventProperty)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: Serilog.Events.LogEventProperty
+    name: LogEventProperty
+    isExternal: true
+    href: Serilog.Events.LogEventProperty.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Serilog.Events.LogEventProperty
+    name: LogEventProperty
+    isExternal: true
+    href: Serilog.Events.LogEventProperty.html
+  - name: )
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Serilog.Formatting.Json.JsonFormatter.WriteSequence*
+  commentId: Overload:Serilog.Formatting.Json.JsonFormatter.WriteSequence
+  isExternal: true
+  href: Serilog.Formatting.Json.JsonFormatter.html#Serilog_Formatting_Json_JsonFormatter_WriteSequence_System_Collections_IEnumerable_System_IO_TextWriter_
+  name: WriteSequence
+  nameWithType: JsonFormatter.WriteSequence
+  fullName: Serilog.Formatting.Json.JsonFormatter.WriteSequence
+- uid: System.Collections.IEnumerable
+  commentId: T:System.Collections.IEnumerable
+  parent: System.Collections
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.ienumerable
+  name: IEnumerable
+  nameWithType: IEnumerable
+  fullName: System.Collections.IEnumerable
+- uid: System.Collections
+  commentId: N:System.Collections
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections
+  nameWithType: System.Collections
+  fullName: System.Collections
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+- uid: Serilog.Formatting.Json.JsonFormatter.WriteDictionary*
+  commentId: Overload:Serilog.Formatting.Json.JsonFormatter.WriteDictionary
+  isExternal: true
+  href: Serilog.Formatting.Json.JsonFormatter.html#Serilog_Formatting_Json_JsonFormatter_WriteDictionary_System_Collections_Generic_IReadOnlyDictionary_Serilog_Events_ScalarValue_Serilog_Events_LogEventPropertyValue__System_IO_TextWriter_
+  name: WriteDictionary
+  nameWithType: JsonFormatter.WriteDictionary
+  fullName: Serilog.Formatting.Json.JsonFormatter.WriteDictionary
+- uid: System.Collections.Generic.IReadOnlyDictionary{Serilog.Events.ScalarValue,Serilog.Events.LogEventPropertyValue}
+  commentId: T:System.Collections.Generic.IReadOnlyDictionary{Serilog.Events.ScalarValue,Serilog.Events.LogEventPropertyValue}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IReadOnlyDictionary`2
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlydictionary-2
+  name: IReadOnlyDictionary<ScalarValue, LogEventPropertyValue>
+  nameWithType: IReadOnlyDictionary<ScalarValue, LogEventPropertyValue>
+  fullName: System.Collections.Generic.IReadOnlyDictionary<Serilog.Events.ScalarValue, Serilog.Events.LogEventPropertyValue>
+  nameWithType.vb: IReadOnlyDictionary(Of ScalarValue, LogEventPropertyValue)
+  fullName.vb: System.Collections.Generic.IReadOnlyDictionary(Of Serilog.Events.ScalarValue, Serilog.Events.LogEventPropertyValue)
+  name.vb: IReadOnlyDictionary(Of ScalarValue, LogEventPropertyValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyDictionary`2
+    name: IReadOnlyDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlydictionary-2
+  - name: <
+  - uid: Serilog.Events.ScalarValue
+    name: ScalarValue
+    isExternal: true
+    href: Serilog.Events.ScalarValue.html
+  - name: ','
+  - name: " "
+  - uid: Serilog.Events.LogEventPropertyValue
+    name: LogEventPropertyValue
+    isExternal: true
+    href: Serilog.Events.LogEventPropertyValue.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyDictionary`2
+    name: IReadOnlyDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlydictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Serilog.Events.ScalarValue
+    name: ScalarValue
+    isExternal: true
+    href: Serilog.Events.ScalarValue.html
+  - name: ','
+  - name: " "
+  - uid: Serilog.Events.LogEventPropertyValue
+    name: LogEventPropertyValue
+    isExternal: true
+    href: Serilog.Events.LogEventPropertyValue.html
+  - name: )
+- uid: Serilog.Formatting.Json.JsonFormatter.WriteJsonProperty*
+  commentId: Overload:Serilog.Formatting.Json.JsonFormatter.WriteJsonProperty
+  isExternal: true
+  href: Serilog.Formatting.Json.JsonFormatter.html#Serilog_Formatting_Json_JsonFormatter_WriteJsonProperty_System_String_System_Object_System_String__System_IO_TextWriter_
+  name: WriteJsonProperty
+  nameWithType: JsonFormatter.WriteJsonProperty
+  fullName: Serilog.Formatting.Json.JsonFormatter.WriteJsonProperty
+- uid: Serilog.Formatting.Json.JsonFormatter.WriteLiteralValue*
+  commentId: Overload:Serilog.Formatting.Json.JsonFormatter.WriteLiteralValue
+  isExternal: true
+  href: Serilog.Formatting.Json.JsonFormatter.html#Serilog_Formatting_Json_JsonFormatter_WriteLiteralValue_System_Object_System_IO_TextWriter_
+  name: WriteLiteralValue
+  nameWithType: JsonFormatter.WriteLiteralValue
+  fullName: Serilog.Formatting.Json.JsonFormatter.WriteLiteralValue

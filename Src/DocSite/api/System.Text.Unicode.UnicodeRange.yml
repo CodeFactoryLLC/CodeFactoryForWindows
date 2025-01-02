@@ -1,0 +1,473 @@
+### YamlMime:ManagedReference
+items:
+- uid: System.Text.Unicode.UnicodeRange
+  commentId: T:System.Text.Unicode.UnicodeRange
+  id: UnicodeRange
+  parent: System.Text.Unicode
+  children:
+  - System.Text.Unicode.UnicodeRange.#ctor(System.Int32,System.Int32)
+  - System.Text.Unicode.UnicodeRange.Create(System.Char,System.Char)
+  - System.Text.Unicode.UnicodeRange.FirstCodePoint
+  - System.Text.Unicode.UnicodeRange.Length
+  langs:
+  - csharp
+  - vb
+  name: UnicodeRange
+  nameWithType: UnicodeRange
+  fullName: System.Text.Unicode.UnicodeRange
+  type: Class
+  assemblies:
+  - System.Text.Encodings.Web
+  namespace: System.Text.Unicode
+  summary: Represents a contiguous range of Unicode code points.
+  example: []
+  syntax:
+    content: public sealed class UnicodeRange
+    content.vb: Public NotInheritable Class UnicodeRange
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+- uid: System.Text.Unicode.UnicodeRange.#ctor(System.Int32,System.Int32)
+  commentId: M:System.Text.Unicode.UnicodeRange.#ctor(System.Int32,System.Int32)
+  id: '#ctor(System.Int32,System.Int32)'
+  parent: System.Text.Unicode.UnicodeRange
+  langs:
+  - csharp
+  - vb
+  name: UnicodeRange(int, int)
+  nameWithType: UnicodeRange.UnicodeRange(int, int)
+  fullName: System.Text.Unicode.UnicodeRange.UnicodeRange(int, int)
+  type: Constructor
+  assemblies:
+  - System.Text.Encodings.Web
+  namespace: System.Text.Unicode
+  summary: Creates a new <xref href="System.Text.Unicode.UnicodeRange" data-throw-if-not-resolved="false"></xref> that includes a specified number of characters starting at a specified Unicode code point.
+  example: []
+  syntax:
+    content: public UnicodeRange(int firstCodePoint, int length)
+    parameters:
+    - id: firstCodePoint
+      type: System.Int32
+      description: The first code point in the range.
+    - id: length
+      type: System.Int32
+      description: The number of code points in the range.
+    content.vb: Public Sub New(firstCodePoint As Integer, length As Integer)
+  overload: System.Text.Unicode.UnicodeRange.#ctor*
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: "    <code class=\"paramref\">firstCodePoint</code> is less than zero or greater than 0xFFFF. \r\n\r\n-or-           \r\n\r\n<code class=\"paramref\">length</code> is less than zero.\r\n\r\n-or-\r\n\r\n<code class=\"paramref\">firstCodePoint</code> plus <code class=\"paramref\">length</code> is greater than 0xFFFF."
+  nameWithType.vb: UnicodeRange.New(Integer, Integer)
+  fullName.vb: System.Text.Unicode.UnicodeRange.New(Integer, Integer)
+  name.vb: New(Integer, Integer)
+- uid: System.Text.Unicode.UnicodeRange.Create(System.Char,System.Char)
+  commentId: M:System.Text.Unicode.UnicodeRange.Create(System.Char,System.Char)
+  id: Create(System.Char,System.Char)
+  parent: System.Text.Unicode.UnicodeRange
+  langs:
+  - csharp
+  - vb
+  name: Create(char, char)
+  nameWithType: UnicodeRange.Create(char, char)
+  fullName: System.Text.Unicode.UnicodeRange.Create(char, char)
+  type: Method
+  assemblies:
+  - System.Text.Encodings.Web
+  namespace: System.Text.Unicode
+  summary: Creates a new <xref href="System.Text.Unicode.UnicodeRange" data-throw-if-not-resolved="false"></xref> instance from a span of characters.
+  example: []
+  syntax:
+    content: public static UnicodeRange Create(char firstCharacter, char lastCharacter)
+    parameters:
+    - id: firstCharacter
+      type: System.Char
+      description: The first character in the range.
+    - id: lastCharacter
+      type: System.Char
+      description: The last character in the range.
+    return:
+      type: System.Text.Unicode.UnicodeRange
+      description: A range that includes all characters between <code class="paramref">firstCharacter</code> and <code class="paramref">lastCharacter</code>.
+    content.vb: Public Shared Function Create(firstCharacter As Char, lastCharacter As Char) As UnicodeRange
+  overload: System.Text.Unicode.UnicodeRange.Create*
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: <code class="paramref">lastCharacter</code> precedes <code class="paramref">firstCharacter</code>.
+  nameWithType.vb: UnicodeRange.Create(Char, Char)
+  fullName.vb: System.Text.Unicode.UnicodeRange.Create(Char, Char)
+  name.vb: Create(Char, Char)
+- uid: System.Text.Unicode.UnicodeRange.FirstCodePoint
+  commentId: P:System.Text.Unicode.UnicodeRange.FirstCodePoint
+  id: FirstCodePoint
+  parent: System.Text.Unicode.UnicodeRange
+  langs:
+  - csharp
+  - vb
+  name: FirstCodePoint
+  nameWithType: UnicodeRange.FirstCodePoint
+  fullName: System.Text.Unicode.UnicodeRange.FirstCodePoint
+  type: Property
+  assemblies:
+  - System.Text.Encodings.Web
+  namespace: System.Text.Unicode
+  summary: Gets the first code point in the range represented by this <xref href="System.Text.Unicode.UnicodeRange" data-throw-if-not-resolved="false"></xref> instance.
+  example: []
+  syntax:
+    content: public int FirstCodePoint { get; }
+    parameters: []
+    return:
+      type: System.Int32
+      description: The first code point in the range.
+    content.vb: Public ReadOnly Property FirstCodePoint As Integer
+  overload: System.Text.Unicode.UnicodeRange.FirstCodePoint*
+- uid: System.Text.Unicode.UnicodeRange.Length
+  commentId: P:System.Text.Unicode.UnicodeRange.Length
+  id: Length
+  parent: System.Text.Unicode.UnicodeRange
+  langs:
+  - csharp
+  - vb
+  name: Length
+  nameWithType: UnicodeRange.Length
+  fullName: System.Text.Unicode.UnicodeRange.Length
+  type: Property
+  assemblies:
+  - System.Text.Encodings.Web
+  namespace: System.Text.Unicode
+  summary: Gets the number of code points in the range represented by this <xref href="System.Text.Unicode.UnicodeRange" data-throw-if-not-resolved="false"></xref> instance.
+  example: []
+  syntax:
+    content: public int Length { get; }
+    parameters: []
+    return:
+      type: System.Int32
+      description: The number of code points in the range.
+    content.vb: Public ReadOnly Property Length As Integer
+  overload: System.Text.Unicode.UnicodeRange.Length*
+references:
+- uid: System.Text.Unicode
+  commentId: N:System.Text.Unicode
+  isExternal: true
+  href: System.html
+  name: System.Text.Unicode
+  nameWithType: System.Text.Unicode
+  fullName: System.Text.Unicode
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: System.html
+  - name: .
+  - uid: System.Text
+    name: Text
+    isExternal: true
+    href: System.Text.html
+  - name: .
+  - uid: System.Text.Unicode
+    name: Unicode
+    isExternal: true
+    href: System.Text.Unicode.html
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: System.html
+  - name: .
+  - uid: System.Text
+    name: Text
+    isExternal: true
+    href: System.Text.html
+  - name: .
+  - uid: System.Text.Unicode
+    name: Unicode
+    isExternal: true
+    href: System.Text.Unicode.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Text.Unicode.UnicodeRange
+  commentId: T:System.Text.Unicode.UnicodeRange
+  parent: System.Text.Unicode
+  isExternal: true
+  href: System.Text.Unicode.UnicodeRange.html
+  name: UnicodeRange
+  nameWithType: UnicodeRange
+  fullName: System.Text.Unicode.UnicodeRange
+- uid: System.ArgumentOutOfRangeException
+  commentId: T:System.ArgumentOutOfRangeException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.argumentoutofrangeexception
+  name: ArgumentOutOfRangeException
+  nameWithType: ArgumentOutOfRangeException
+  fullName: System.ArgumentOutOfRangeException
+- uid: System.Text.Unicode.UnicodeRange.#ctor*
+  commentId: Overload:System.Text.Unicode.UnicodeRange.#ctor
+  isExternal: true
+  href: System.Text.Unicode.UnicodeRange.html#System_Text_Unicode_UnicodeRange__ctor_System_Int32_System_Int32_
+  name: UnicodeRange
+  nameWithType: UnicodeRange.UnicodeRange
+  fullName: System.Text.Unicode.UnicodeRange.UnicodeRange
+  nameWithType.vb: UnicodeRange.New
+  fullName.vb: System.Text.Unicode.UnicodeRange.New
+  name.vb: New
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.Text.Unicode.UnicodeRange.Create*
+  commentId: Overload:System.Text.Unicode.UnicodeRange.Create
+  isExternal: true
+  href: System.Text.Unicode.UnicodeRange.html#System_Text_Unicode_UnicodeRange_Create_System_Char_System_Char_
+  name: Create
+  nameWithType: UnicodeRange.Create
+  fullName: System.Text.Unicode.UnicodeRange.Create
+- uid: System.Char
+  commentId: T:System.Char
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.char
+  name: char
+  nameWithType: char
+  fullName: char
+  nameWithType.vb: Char
+  fullName.vb: Char
+  name.vb: Char
+- uid: System.Text.Unicode.UnicodeRange.FirstCodePoint*
+  commentId: Overload:System.Text.Unicode.UnicodeRange.FirstCodePoint
+  isExternal: true
+  href: System.Text.Unicode.UnicodeRange.html#System_Text_Unicode_UnicodeRange_FirstCodePoint
+  name: FirstCodePoint
+  nameWithType: UnicodeRange.FirstCodePoint
+  fullName: System.Text.Unicode.UnicodeRange.FirstCodePoint
+- uid: System.Text.Unicode.UnicodeRange.Length*
+  commentId: Overload:System.Text.Unicode.UnicodeRange.Length
+  isExternal: true
+  href: System.Text.Unicode.UnicodeRange.html#System_Text_Unicode_UnicodeRange_Length
+  name: Length
+  nameWithType: UnicodeRange.Length
+  fullName: System.Text.Unicode.UnicodeRange.Length

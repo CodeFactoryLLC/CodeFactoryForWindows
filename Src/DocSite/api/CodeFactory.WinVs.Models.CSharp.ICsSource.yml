@@ -1,0 +1,1339 @@
+### YamlMime:ManagedReference
+items:
+- uid: CodeFactory.WinVs.Models.CSharp.ICsSource
+  commentId: T:CodeFactory.WinVs.Models.CSharp.ICsSource
+  id: ICsSource
+  parent: CodeFactory.WinVs.Models.CSharp
+  children:
+  - CodeFactory.WinVs.Models.CSharp.ICsSource.AddToBeginningAsync(System.String)
+  - CodeFactory.WinVs.Models.CSharp.ICsSource.AddToEndAsync(System.String)
+  - CodeFactory.WinVs.Models.CSharp.ICsSource.Classes
+  - CodeFactory.WinVs.Models.CSharp.ICsSource.Delegates
+  - CodeFactory.WinVs.Models.CSharp.ICsSource.DeleteAsync
+  - CodeFactory.WinVs.Models.CSharp.ICsSource.Enums
+  - CodeFactory.WinVs.Models.CSharp.ICsSource.HostedInProject
+  - CodeFactory.WinVs.Models.CSharp.ICsSource.Interfaces
+  - CodeFactory.WinVs.Models.CSharp.ICsSource.NamespaceReferences
+  - CodeFactory.WinVs.Models.CSharp.ICsSource.Namespaces
+  - CodeFactory.WinVs.Models.CSharp.ICsSource.ProjectName
+  - CodeFactory.WinVs.Models.CSharp.ICsSource.RecordStructures
+  - CodeFactory.WinVs.Models.CSharp.ICsSource.Records
+  - CodeFactory.WinVs.Models.CSharp.ICsSource.ReplaceAsync(System.String)
+  - CodeFactory.WinVs.Models.CSharp.ICsSource.Structures
+  langs:
+  - csharp
+  - vb
+  name: ICsSource
+  nameWithType: ICsSource
+  fullName: CodeFactory.WinVs.Models.CSharp.ICsSource
+  type: Interface
+  source:
+    href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/e63c05962945f61f2329e19d324f24a768806f18/Src/CodeFactoryForWindows/CodeFactory.WinVs/Models/CSharp/ICsSource.cs
+  assemblies:
+  - CodeFactory.WinVs
+  namespace: CodeFactory.WinVs.Models.CSharp
+  summary: Source definition from a source that was written in C#.
+  example: []
+  syntax:
+    content: 'public interface ICsSource : ICsModel, IModelStatus, IParent, ILookup'
+    content.vb: Public Interface ICsSource Inherits ICsModel, IModelStatus, IParent, ILookup
+  inheritedMembers:
+  - CodeFactory.WinVs.Models.CSharp.ICsModel.GetModel``1(System.String)
+  - CodeFactory.WinVs.Models.CSharp.ICsModel.GetModel(System.String)
+  - CodeFactory.WinVs.Models.CSharp.ICsModel.LoadedFromSource
+  - CodeFactory.WinVs.Models.CSharp.ICsModel.Language
+  - CodeFactory.WinVs.Models.CSharp.ICsModel.ModelType
+  - CodeFactory.WinVs.Models.CSharp.ICsModel.SourceDocument
+  - CodeFactory.IModelStatus.GetErrors
+  - CodeFactory.IModelStatus.IsLoaded
+  - CodeFactory.IModelStatus.HasErrors
+  - CodeFactory.WinVs.Models.CSharp.IParent.Parent
+  - CodeFactory.WinVs.Models.CSharp.ILookup.LookupPath
+- uid: CodeFactory.WinVs.Models.CSharp.ICsSource.AddToBeginningAsync(System.String)
+  commentId: M:CodeFactory.WinVs.Models.CSharp.ICsSource.AddToBeginningAsync(System.String)
+  id: AddToBeginningAsync(System.String)
+  parent: CodeFactory.WinVs.Models.CSharp.ICsSource
+  langs:
+  - csharp
+  - vb
+  name: AddToBeginningAsync(string)
+  nameWithType: ICsSource.AddToBeginningAsync(string)
+  fullName: CodeFactory.WinVs.Models.CSharp.ICsSource.AddToBeginningAsync(string)
+  type: Method
+  source:
+    href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/e63c05962945f61f2329e19d324f24a768806f18/Src/CodeFactoryForWindows/CodeFactory.WinVs/Models/CSharp/ICsSource.cs
+  assemblies:
+  - CodeFactory.WinVs
+  namespace: CodeFactory.WinVs.Models.CSharp
+  summary: Adds the source code to the beginning of the <xref href="CodeFactory.WinVs.Models.CSharp.ICsSource" data-throw-if-not-resolved="false"></xref> model.
+  example: []
+  syntax:
+    content: Task<CsSource> AddToBeginningAsync(string sourceCode)
+    parameters:
+    - id: sourceCode
+      type: System.String
+      description: The source code that is to be added to the document.
+    return:
+      type: System.Threading.Tasks.Task{CodeFactory.WinVs.Models.CSharp.CsSource}
+      description: A newly loaded copy of the <xref href="CodeFactory.WinVs.Models.CSharp.ICsSource" data-throw-if-not-resolved="false"></xref> model after the changes have been applied.
+    content.vb: Function AddToBeginningAsync(sourceCode As String) As Task(Of CsSource)
+  overload: CodeFactory.WinVs.Models.CSharp.ICsSource.AddToBeginningAsync*
+  exceptions:
+  - type: CodeFactory.Document.DocumentException
+    commentId: T:CodeFactory.Document.DocumentException
+    description: Error is raised when errors occur updating the source document.
+  nameWithType.vb: ICsSource.AddToBeginningAsync(String)
+  fullName.vb: CodeFactory.WinVs.Models.CSharp.ICsSource.AddToBeginningAsync(String)
+  name.vb: AddToBeginningAsync(String)
+- uid: CodeFactory.WinVs.Models.CSharp.ICsSource.AddToEndAsync(System.String)
+  commentId: M:CodeFactory.WinVs.Models.CSharp.ICsSource.AddToEndAsync(System.String)
+  id: AddToEndAsync(System.String)
+  parent: CodeFactory.WinVs.Models.CSharp.ICsSource
+  langs:
+  - csharp
+  - vb
+  name: AddToEndAsync(string)
+  nameWithType: ICsSource.AddToEndAsync(string)
+  fullName: CodeFactory.WinVs.Models.CSharp.ICsSource.AddToEndAsync(string)
+  type: Method
+  source:
+    href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/e63c05962945f61f2329e19d324f24a768806f18/Src/CodeFactoryForWindows/CodeFactory.WinVs/Models/CSharp/ICsSource.cs
+  assemblies:
+  - CodeFactory.WinVs
+  namespace: CodeFactory.WinVs.Models.CSharp
+  summary: Adds the source code the end of the <xref href="CodeFactory.WinVs.Models.CSharp.ICsSource" data-throw-if-not-resolved="false"></xref> model.
+  example: []
+  syntax:
+    content: Task<CsSource> AddToEndAsync(string sourceCode)
+    parameters:
+    - id: sourceCode
+      type: System.String
+      description: The source code that is to be added to the document.
+    return:
+      type: System.Threading.Tasks.Task{CodeFactory.WinVs.Models.CSharp.CsSource}
+      description: A newly loaded copy of the <xref href="CodeFactory.WinVs.Models.CSharp.ICsSource" data-throw-if-not-resolved="false"></xref> model after the changes have been applied.
+    content.vb: Function AddToEndAsync(sourceCode As String) As Task(Of CsSource)
+  overload: CodeFactory.WinVs.Models.CSharp.ICsSource.AddToEndAsync*
+  exceptions:
+  - type: CodeFactory.Document.DocumentException
+    commentId: T:CodeFactory.Document.DocumentException
+    description: Error is raised when errors occur updating the source document.
+  nameWithType.vb: ICsSource.AddToEndAsync(String)
+  fullName.vb: CodeFactory.WinVs.Models.CSharp.ICsSource.AddToEndAsync(String)
+  name.vb: AddToEndAsync(String)
+- uid: CodeFactory.WinVs.Models.CSharp.ICsSource.DeleteAsync
+  commentId: M:CodeFactory.WinVs.Models.CSharp.ICsSource.DeleteAsync
+  id: DeleteAsync
+  parent: CodeFactory.WinVs.Models.CSharp.ICsSource
+  langs:
+  - csharp
+  - vb
+  name: DeleteAsync()
+  nameWithType: ICsSource.DeleteAsync()
+  fullName: CodeFactory.WinVs.Models.CSharp.ICsSource.DeleteAsync()
+  type: Method
+  source:
+    href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/e63c05962945f61f2329e19d324f24a768806f18/Src/CodeFactoryForWindows/CodeFactory.WinVs/Models/CSharp/ICsSource.cs
+  assemblies:
+  - CodeFactory.WinVs
+  namespace: CodeFactory.WinVs.Models.CSharp
+  summary: Deletes the content from the <xref href="CodeFactory.WinVs.Models.CSharp.ICsSource" data-throw-if-not-resolved="false"></xref> model.
+  example: []
+  syntax:
+    content: Task<CsSource> DeleteAsync()
+    return:
+      type: System.Threading.Tasks.Task{CodeFactory.WinVs.Models.CSharp.CsSource}
+      description: A newly loaded copy of the <xref href="CodeFactory.WinVs.Models.CSharp.ICsSource" data-throw-if-not-resolved="false"></xref> model after the delegate has been removed from the document.
+    content.vb: Function DeleteAsync() As Task(Of CsSource)
+  overload: CodeFactory.WinVs.Models.CSharp.ICsSource.DeleteAsync*
+  exceptions:
+  - type: CodeFactory.Document.DocumentException
+    commentId: T:CodeFactory.Document.DocumentException
+    description: Error is raised when errors occur updating the source document.
+- uid: CodeFactory.WinVs.Models.CSharp.ICsSource.ReplaceAsync(System.String)
+  commentId: M:CodeFactory.WinVs.Models.CSharp.ICsSource.ReplaceAsync(System.String)
+  id: ReplaceAsync(System.String)
+  parent: CodeFactory.WinVs.Models.CSharp.ICsSource
+  langs:
+  - csharp
+  - vb
+  name: ReplaceAsync(string)
+  nameWithType: ICsSource.ReplaceAsync(string)
+  fullName: CodeFactory.WinVs.Models.CSharp.ICsSource.ReplaceAsync(string)
+  type: Method
+  source:
+    href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/e63c05962945f61f2329e19d324f24a768806f18/Src/CodeFactoryForWindows/CodeFactory.WinVs/Models/CSharp/ICsSource.cs
+  assemblies:
+  - CodeFactory.WinVs
+  namespace: CodeFactory.WinVs.Models.CSharp
+  summary: Replaces the content of the <xref href="CodeFactory.WinVs.Models.CSharp.ICsSource" data-throw-if-not-resolved="false"></xref> model.
+  example: []
+  syntax:
+    content: Task<CsSource> ReplaceAsync(string sourceCode)
+    parameters:
+    - id: sourceCode
+      type: System.String
+      description: The source code that is to be used to replace the original definition in the document.
+    return:
+      type: System.Threading.Tasks.Task{CodeFactory.WinVs.Models.CSharp.CsSource}
+      description: A newly loaded copy of the <xref href="CodeFactory.WinVs.Models.CSharp.ICsSource" data-throw-if-not-resolved="false"></xref> model after the changes have been applied.
+    content.vb: Function ReplaceAsync(sourceCode As String) As Task(Of CsSource)
+  overload: CodeFactory.WinVs.Models.CSharp.ICsSource.ReplaceAsync*
+  exceptions:
+  - type: CodeFactory.Document.DocumentException
+    commentId: T:CodeFactory.Document.DocumentException
+    description: Error is raised when errors occur updating the source document.
+  nameWithType.vb: ICsSource.ReplaceAsync(String)
+  fullName.vb: CodeFactory.WinVs.Models.CSharp.ICsSource.ReplaceAsync(String)
+  name.vb: ReplaceAsync(String)
+- uid: CodeFactory.WinVs.Models.CSharp.ICsSource.NamespaceReferences
+  commentId: P:CodeFactory.WinVs.Models.CSharp.ICsSource.NamespaceReferences
+  id: NamespaceReferences
+  parent: CodeFactory.WinVs.Models.CSharp.ICsSource
+  langs:
+  - csharp
+  - vb
+  name: NamespaceReferences
+  nameWithType: ICsSource.NamespaceReferences
+  fullName: CodeFactory.WinVs.Models.CSharp.ICsSource.NamespaceReferences
+  type: Property
+  source:
+    href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/e63c05962945f61f2329e19d324f24a768806f18/Src/CodeFactoryForWindows/CodeFactory.WinVs/Models/CSharp/ICsSource.cs
+  assemblies:
+  - CodeFactory.WinVs
+  namespace: CodeFactory.WinVs.Models.CSharp
+  summary: The namespaces that are used as references to access other libraries not hosted in the source document.
+  example: []
+  syntax:
+    content: IReadOnlyList<CsUsingStatement> NamespaceReferences { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.IReadOnlyList{CodeFactory.WinVs.Models.CSharp.CsUsingStatement}
+    content.vb: ReadOnly Property NamespaceReferences As IReadOnlyList(Of CsUsingStatement)
+  overload: CodeFactory.WinVs.Models.CSharp.ICsSource.NamespaceReferences*
+- uid: CodeFactory.WinVs.Models.CSharp.ICsSource.Interfaces
+  commentId: P:CodeFactory.WinVs.Models.CSharp.ICsSource.Interfaces
+  id: Interfaces
+  parent: CodeFactory.WinVs.Models.CSharp.ICsSource
+  langs:
+  - csharp
+  - vb
+  name: Interfaces
+  nameWithType: ICsSource.Interfaces
+  fullName: CodeFactory.WinVs.Models.CSharp.ICsSource.Interfaces
+  type: Property
+  source:
+    href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/e63c05962945f61f2329e19d324f24a768806f18/Src/CodeFactoryForWindows/CodeFactory.WinVs/Models/CSharp/ICsSource.cs
+  assemblies:
+  - CodeFactory.WinVs
+  namespace: CodeFactory.WinVs.Models.CSharp
+  summary: The interfaces that were defined in the source.
+  example: []
+  syntax:
+    content: IReadOnlyList<CsInterface> Interfaces { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.IReadOnlyList{CodeFactory.WinVs.Models.CSharp.CsInterface}
+    content.vb: ReadOnly Property Interfaces As IReadOnlyList(Of CsInterface)
+  overload: CodeFactory.WinVs.Models.CSharp.ICsSource.Interfaces*
+- uid: CodeFactory.WinVs.Models.CSharp.ICsSource.Classes
+  commentId: P:CodeFactory.WinVs.Models.CSharp.ICsSource.Classes
+  id: Classes
+  parent: CodeFactory.WinVs.Models.CSharp.ICsSource
+  langs:
+  - csharp
+  - vb
+  name: Classes
+  nameWithType: ICsSource.Classes
+  fullName: CodeFactory.WinVs.Models.CSharp.ICsSource.Classes
+  type: Property
+  source:
+    href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/e63c05962945f61f2329e19d324f24a768806f18/Src/CodeFactoryForWindows/CodeFactory.WinVs/Models/CSharp/ICsSource.cs
+  assemblies:
+  - CodeFactory.WinVs
+  namespace: CodeFactory.WinVs.Models.CSharp
+  summary: The classes that were defined in the source.
+  example: []
+  syntax:
+    content: IReadOnlyList<CsClass> Classes { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.IReadOnlyList{CodeFactory.WinVs.Models.CSharp.CsClass}
+    content.vb: ReadOnly Property Classes As IReadOnlyList(Of CsClass)
+  overload: CodeFactory.WinVs.Models.CSharp.ICsSource.Classes*
+- uid: CodeFactory.WinVs.Models.CSharp.ICsSource.Structures
+  commentId: P:CodeFactory.WinVs.Models.CSharp.ICsSource.Structures
+  id: Structures
+  parent: CodeFactory.WinVs.Models.CSharp.ICsSource
+  langs:
+  - csharp
+  - vb
+  name: Structures
+  nameWithType: ICsSource.Structures
+  fullName: CodeFactory.WinVs.Models.CSharp.ICsSource.Structures
+  type: Property
+  source:
+    href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/e63c05962945f61f2329e19d324f24a768806f18/Src/CodeFactoryForWindows/CodeFactory.WinVs/Models/CSharp/ICsSource.cs
+  assemblies:
+  - CodeFactory.WinVs
+  namespace: CodeFactory.WinVs.Models.CSharp
+  summary: The structures that were defined in the source.
+  example: []
+  syntax:
+    content: IReadOnlyList<CsStructure> Structures { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.IReadOnlyList{CodeFactory.WinVs.Models.CSharp.CsStructure}
+    content.vb: ReadOnly Property Structures As IReadOnlyList(Of CsStructure)
+  overload: CodeFactory.WinVs.Models.CSharp.ICsSource.Structures*
+- uid: CodeFactory.WinVs.Models.CSharp.ICsSource.Records
+  commentId: P:CodeFactory.WinVs.Models.CSharp.ICsSource.Records
+  id: Records
+  parent: CodeFactory.WinVs.Models.CSharp.ICsSource
+  langs:
+  - csharp
+  - vb
+  name: Records
+  nameWithType: ICsSource.Records
+  fullName: CodeFactory.WinVs.Models.CSharp.ICsSource.Records
+  type: Property
+  source:
+    href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/e63c05962945f61f2329e19d324f24a768806f18/Src/CodeFactoryForWindows/CodeFactory.WinVs/Models/CSharp/ICsSource.cs
+  assemblies:
+  - CodeFactory.WinVs
+  namespace: CodeFactory.WinVs.Models.CSharp
+  summary: The records that were defined in the source.
+  example: []
+  syntax:
+    content: IReadOnlyList<CsRecord> Records { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.IReadOnlyList{CodeFactory.WinVs.Models.CSharp.CsRecord}
+    content.vb: ReadOnly Property Records As IReadOnlyList(Of CsRecord)
+  overload: CodeFactory.WinVs.Models.CSharp.ICsSource.Records*
+- uid: CodeFactory.WinVs.Models.CSharp.ICsSource.RecordStructures
+  commentId: P:CodeFactory.WinVs.Models.CSharp.ICsSource.RecordStructures
+  id: RecordStructures
+  parent: CodeFactory.WinVs.Models.CSharp.ICsSource
+  langs:
+  - csharp
+  - vb
+  name: RecordStructures
+  nameWithType: ICsSource.RecordStructures
+  fullName: CodeFactory.WinVs.Models.CSharp.ICsSource.RecordStructures
+  type: Property
+  source:
+    href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/e63c05962945f61f2329e19d324f24a768806f18/Src/CodeFactoryForWindows/CodeFactory.WinVs/Models/CSharp/ICsSource.cs
+  assemblies:
+  - CodeFactory.WinVs
+  namespace: CodeFactory.WinVs.Models.CSharp
+  summary: The record structures that were defined in the source.
+  example: []
+  syntax:
+    content: IReadOnlyList<CsRecordStructure> RecordStructures { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.IReadOnlyList{CodeFactory.WinVs.Models.CSharp.CsRecordStructure}
+    content.vb: ReadOnly Property RecordStructures As IReadOnlyList(Of CsRecordStructure)
+  overload: CodeFactory.WinVs.Models.CSharp.ICsSource.RecordStructures*
+- uid: CodeFactory.WinVs.Models.CSharp.ICsSource.Delegates
+  commentId: P:CodeFactory.WinVs.Models.CSharp.ICsSource.Delegates
+  id: Delegates
+  parent: CodeFactory.WinVs.Models.CSharp.ICsSource
+  langs:
+  - csharp
+  - vb
+  name: Delegates
+  nameWithType: ICsSource.Delegates
+  fullName: CodeFactory.WinVs.Models.CSharp.ICsSource.Delegates
+  type: Property
+  source:
+    href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/e63c05962945f61f2329e19d324f24a768806f18/Src/CodeFactoryForWindows/CodeFactory.WinVs/Models/CSharp/ICsSource.cs
+  assemblies:
+  - CodeFactory.WinVs
+  namespace: CodeFactory.WinVs.Models.CSharp
+  summary: The delegates that were defined in the source.
+  example: []
+  syntax:
+    content: IReadOnlyList<CsDelegate> Delegates { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.IReadOnlyList{CodeFactory.WinVs.Models.CSharp.CsDelegate}
+    content.vb: ReadOnly Property Delegates As IReadOnlyList(Of CsDelegate)
+  overload: CodeFactory.WinVs.Models.CSharp.ICsSource.Delegates*
+- uid: CodeFactory.WinVs.Models.CSharp.ICsSource.Enums
+  commentId: P:CodeFactory.WinVs.Models.CSharp.ICsSource.Enums
+  id: Enums
+  parent: CodeFactory.WinVs.Models.CSharp.ICsSource
+  langs:
+  - csharp
+  - vb
+  name: Enums
+  nameWithType: ICsSource.Enums
+  fullName: CodeFactory.WinVs.Models.CSharp.ICsSource.Enums
+  type: Property
+  source:
+    href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/e63c05962945f61f2329e19d324f24a768806f18/Src/CodeFactoryForWindows/CodeFactory.WinVs/Models/CSharp/ICsSource.cs
+  assemblies:
+  - CodeFactory.WinVs
+  namespace: CodeFactory.WinVs.Models.CSharp
+  summary: The enumerations that were defined in the source.
+  example: []
+  syntax:
+    content: IReadOnlyList<CsEnum> Enums { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.IReadOnlyList{CodeFactory.WinVs.Models.CSharp.CsEnum}
+    content.vb: ReadOnly Property Enums As IReadOnlyList(Of CsEnum)
+  overload: CodeFactory.WinVs.Models.CSharp.ICsSource.Enums*
+- uid: CodeFactory.WinVs.Models.CSharp.ICsSource.Namespaces
+  commentId: P:CodeFactory.WinVs.Models.CSharp.ICsSource.Namespaces
+  id: Namespaces
+  parent: CodeFactory.WinVs.Models.CSharp.ICsSource
+  langs:
+  - csharp
+  - vb
+  name: Namespaces
+  nameWithType: ICsSource.Namespaces
+  fullName: CodeFactory.WinVs.Models.CSharp.ICsSource.Namespaces
+  type: Property
+  source:
+    href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/e63c05962945f61f2329e19d324f24a768806f18/Src/CodeFactoryForWindows/CodeFactory.WinVs/Models/CSharp/ICsSource.cs
+  assemblies:
+  - CodeFactory.WinVs
+  namespace: CodeFactory.WinVs.Models.CSharp
+  summary: The namespaces that were defined in the source.
+  example: []
+  syntax:
+    content: IReadOnlyList<CsNamespace> Namespaces { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.IReadOnlyList{CodeFactory.WinVs.Models.CSharp.CsNamespace}
+    content.vb: ReadOnly Property Namespaces As IReadOnlyList(Of CsNamespace)
+  overload: CodeFactory.WinVs.Models.CSharp.ICsSource.Namespaces*
+- uid: CodeFactory.WinVs.Models.CSharp.ICsSource.HostedInProject
+  commentId: P:CodeFactory.WinVs.Models.CSharp.ICsSource.HostedInProject
+  id: HostedInProject
+  parent: CodeFactory.WinVs.Models.CSharp.ICsSource
+  langs:
+  - csharp
+  - vb
+  name: HostedInProject
+  nameWithType: ICsSource.HostedInProject
+  fullName: CodeFactory.WinVs.Models.CSharp.ICsSource.HostedInProject
+  type: Property
+  source:
+    href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/e63c05962945f61f2329e19d324f24a768806f18/Src/CodeFactoryForWindows/CodeFactory.WinVs/Models/CSharp/ICsSource.cs
+  assemblies:
+  - CodeFactory.WinVs
+  namespace: CodeFactory.WinVs.Models.CSharp
+  summary: Flag that determines if the source code was hosted in a project.
+  example: []
+  syntax:
+    content: bool HostedInProject { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: ReadOnly Property HostedInProject As Boolean
+  overload: CodeFactory.WinVs.Models.CSharp.ICsSource.HostedInProject*
+- uid: CodeFactory.WinVs.Models.CSharp.ICsSource.ProjectName
+  commentId: P:CodeFactory.WinVs.Models.CSharp.ICsSource.ProjectName
+  id: ProjectName
+  parent: CodeFactory.WinVs.Models.CSharp.ICsSource
+  langs:
+  - csharp
+  - vb
+  name: ProjectName
+  nameWithType: ICsSource.ProjectName
+  fullName: CodeFactory.WinVs.Models.CSharp.ICsSource.ProjectName
+  type: Property
+  source:
+    href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/e63c05962945f61f2329e19d324f24a768806f18/Src/CodeFactoryForWindows/CodeFactory.WinVs/Models/CSharp/ICsSource.cs
+  assemblies:
+  - CodeFactory.WinVs
+  namespace: CodeFactory.WinVs.Models.CSharp
+  summary: The name of the project the source is hosted in. This will be null if this source is not hosted in a project.
+  example: []
+  syntax:
+    content: string ProjectName { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: ReadOnly Property ProjectName As String
+  overload: CodeFactory.WinVs.Models.CSharp.ICsSource.ProjectName*
+references:
+- uid: CodeFactory.WinVs.Models.CSharp
+  commentId: N:CodeFactory.WinVs.Models.CSharp
+  isExternal: true
+  href: CodeFactory.html
+  name: CodeFactory.WinVs.Models.CSharp
+  nameWithType: CodeFactory.WinVs.Models.CSharp
+  fullName: CodeFactory.WinVs.Models.CSharp
+  spec.csharp:
+  - uid: CodeFactory
+    name: CodeFactory
+    isExternal: true
+    href: CodeFactory.html
+  - name: .
+  - uid: CodeFactory.WinVs
+    name: WinVs
+    isExternal: true
+    href: CodeFactory.WinVs.html
+  - name: .
+  - uid: CodeFactory.WinVs.Models
+    name: Models
+    isExternal: true
+    href: CodeFactory.WinVs.Models.html
+  - name: .
+  - uid: CodeFactory.WinVs.Models.CSharp
+    name: CSharp
+    isExternal: true
+    href: CodeFactory.WinVs.Models.CSharp.html
+  spec.vb:
+  - uid: CodeFactory
+    name: CodeFactory
+    isExternal: true
+    href: CodeFactory.html
+  - name: .
+  - uid: CodeFactory.WinVs
+    name: WinVs
+    isExternal: true
+    href: CodeFactory.WinVs.html
+  - name: .
+  - uid: CodeFactory.WinVs.Models
+    name: Models
+    isExternal: true
+    href: CodeFactory.WinVs.Models.html
+  - name: .
+  - uid: CodeFactory.WinVs.Models.CSharp
+    name: CSharp
+    isExternal: true
+    href: CodeFactory.WinVs.Models.CSharp.html
+- uid: CodeFactory.WinVs.Models.CSharp.ICsModel.GetModel``1(System.String)
+  commentId: M:CodeFactory.WinVs.Models.CSharp.ICsModel.GetModel``1(System.String)
+  parent: CodeFactory.WinVs.Models.CSharp.ICsModel
+  isExternal: true
+  href: CodeFactory.WinVs.Models.CSharp.ICsModel.html#CodeFactory_WinVs_Models_CSharp_ICsModel_GetModel__1_System_String_
+  name: GetModel<T>(string)
+  nameWithType: ICsModel.GetModel<T>(string)
+  fullName: CodeFactory.WinVs.Models.CSharp.ICsModel.GetModel<T>(string)
+  nameWithType.vb: ICsModel.GetModel(Of T)(String)
+  fullName.vb: CodeFactory.WinVs.Models.CSharp.ICsModel.GetModel(Of T)(String)
+  name.vb: GetModel(Of T)(String)
+  spec.csharp:
+  - uid: CodeFactory.WinVs.Models.CSharp.ICsModel.GetModel``1(System.String)
+    name: GetModel
+    isExternal: true
+    href: CodeFactory.WinVs.Models.CSharp.ICsModel.html#CodeFactory_WinVs_Models_CSharp_ICsModel_GetModel__1_System_String_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: CodeFactory.WinVs.Models.CSharp.ICsModel.GetModel``1(System.String)
+    name: GetModel
+    isExternal: true
+    href: CodeFactory.WinVs.Models.CSharp.ICsModel.html#CodeFactory_WinVs_Models_CSharp_ICsModel_GetModel__1_System_String_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: CodeFactory.WinVs.Models.CSharp.ICsModel.GetModel(System.String)
+  commentId: M:CodeFactory.WinVs.Models.CSharp.ICsModel.GetModel(System.String)
+  parent: CodeFactory.WinVs.Models.CSharp.ICsModel
+  isExternal: true
+  href: CodeFactory.WinVs.Models.CSharp.ICsModel.html#CodeFactory_WinVs_Models_CSharp_ICsModel_GetModel_System_String_
+  name: GetModel(string)
+  nameWithType: ICsModel.GetModel(string)
+  fullName: CodeFactory.WinVs.Models.CSharp.ICsModel.GetModel(string)
+  nameWithType.vb: ICsModel.GetModel(String)
+  fullName.vb: CodeFactory.WinVs.Models.CSharp.ICsModel.GetModel(String)
+  name.vb: GetModel(String)
+  spec.csharp:
+  - uid: CodeFactory.WinVs.Models.CSharp.ICsModel.GetModel(System.String)
+    name: GetModel
+    isExternal: true
+    href: CodeFactory.WinVs.Models.CSharp.ICsModel.html#CodeFactory_WinVs_Models_CSharp_ICsModel_GetModel_System_String_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: CodeFactory.WinVs.Models.CSharp.ICsModel.GetModel(System.String)
+    name: GetModel
+    isExternal: true
+    href: CodeFactory.WinVs.Models.CSharp.ICsModel.html#CodeFactory_WinVs_Models_CSharp_ICsModel_GetModel_System_String_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: CodeFactory.WinVs.Models.CSharp.ICsModel.LoadedFromSource
+  commentId: P:CodeFactory.WinVs.Models.CSharp.ICsModel.LoadedFromSource
+  parent: CodeFactory.WinVs.Models.CSharp.ICsModel
+  isExternal: true
+  href: CodeFactory.WinVs.Models.CSharp.ICsModel.html#CodeFactory_WinVs_Models_CSharp_ICsModel_LoadedFromSource
+  name: LoadedFromSource
+  nameWithType: ICsModel.LoadedFromSource
+  fullName: CodeFactory.WinVs.Models.CSharp.ICsModel.LoadedFromSource
+- uid: CodeFactory.WinVs.Models.CSharp.ICsModel.Language
+  commentId: P:CodeFactory.WinVs.Models.CSharp.ICsModel.Language
+  parent: CodeFactory.WinVs.Models.CSharp.ICsModel
+  isExternal: true
+  href: CodeFactory.WinVs.Models.CSharp.ICsModel.html#CodeFactory_WinVs_Models_CSharp_ICsModel_Language
+  name: Language
+  nameWithType: ICsModel.Language
+  fullName: CodeFactory.WinVs.Models.CSharp.ICsModel.Language
+- uid: CodeFactory.WinVs.Models.CSharp.ICsModel.ModelType
+  commentId: P:CodeFactory.WinVs.Models.CSharp.ICsModel.ModelType
+  parent: CodeFactory.WinVs.Models.CSharp.ICsModel
+  isExternal: true
+  href: CodeFactory.WinVs.Models.CSharp.ICsModel.html#CodeFactory_WinVs_Models_CSharp_ICsModel_ModelType
+  name: ModelType
+  nameWithType: ICsModel.ModelType
+  fullName: CodeFactory.WinVs.Models.CSharp.ICsModel.ModelType
+- uid: CodeFactory.WinVs.Models.CSharp.ICsModel.SourceDocument
+  commentId: P:CodeFactory.WinVs.Models.CSharp.ICsModel.SourceDocument
+  parent: CodeFactory.WinVs.Models.CSharp.ICsModel
+  isExternal: true
+  href: CodeFactory.WinVs.Models.CSharp.ICsModel.html#CodeFactory_WinVs_Models_CSharp_ICsModel_SourceDocument
+  name: SourceDocument
+  nameWithType: ICsModel.SourceDocument
+  fullName: CodeFactory.WinVs.Models.CSharp.ICsModel.SourceDocument
+- uid: CodeFactory.IModelStatus.GetErrors
+  commentId: M:CodeFactory.IModelStatus.GetErrors
+  parent: CodeFactory.IModelStatus
+  isExternal: true
+  href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/e63c05962945f61f2329e19d324f24a768806f18/Src/CodeFactoryForWindows/CodeFactory/IModelStatus.cs
+  name: GetErrors()
+  nameWithType: IModelStatus.GetErrors()
+  fullName: CodeFactory.IModelStatus.GetErrors()
+  spec.csharp:
+  - uid: CodeFactory.IModelStatus.GetErrors
+    name: GetErrors
+    isExternal: true
+    href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/e63c05962945f61f2329e19d324f24a768806f18/Src/CodeFactoryForWindows/CodeFactory/IModelStatus.cs
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: CodeFactory.IModelStatus.GetErrors
+    name: GetErrors
+    isExternal: true
+    href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/e63c05962945f61f2329e19d324f24a768806f18/Src/CodeFactoryForWindows/CodeFactory/IModelStatus.cs
+  - name: (
+  - name: )
+- uid: CodeFactory.IModelStatus.IsLoaded
+  commentId: P:CodeFactory.IModelStatus.IsLoaded
+  parent: CodeFactory.IModelStatus
+  isExternal: true
+  href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/e63c05962945f61f2329e19d324f24a768806f18/Src/CodeFactoryForWindows/CodeFactory/IModelStatus.cs
+  name: IsLoaded
+  nameWithType: IModelStatus.IsLoaded
+  fullName: CodeFactory.IModelStatus.IsLoaded
+- uid: CodeFactory.IModelStatus.HasErrors
+  commentId: P:CodeFactory.IModelStatus.HasErrors
+  parent: CodeFactory.IModelStatus
+  isExternal: true
+  href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/e63c05962945f61f2329e19d324f24a768806f18/Src/CodeFactoryForWindows/CodeFactory/IModelStatus.cs
+  name: HasErrors
+  nameWithType: IModelStatus.HasErrors
+  fullName: CodeFactory.IModelStatus.HasErrors
+- uid: CodeFactory.WinVs.Models.CSharp.IParent.Parent
+  commentId: P:CodeFactory.WinVs.Models.CSharp.IParent.Parent
+  parent: CodeFactory.WinVs.Models.CSharp.IParent
+  isExternal: true
+  href: CodeFactory.WinVs.Models.CSharp.IParent.html#CodeFactory_WinVs_Models_CSharp_IParent_Parent
+  name: Parent
+  nameWithType: IParent.Parent
+  fullName: CodeFactory.WinVs.Models.CSharp.IParent.Parent
+- uid: CodeFactory.WinVs.Models.CSharp.ILookup.LookupPath
+  commentId: P:CodeFactory.WinVs.Models.CSharp.ILookup.LookupPath
+  parent: CodeFactory.WinVs.Models.CSharp.ILookup
+  isExternal: true
+  href: CodeFactory.WinVs.Models.CSharp.ILookup.html#CodeFactory_WinVs_Models_CSharp_ILookup_LookupPath
+  name: LookupPath
+  nameWithType: ILookup.LookupPath
+  fullName: CodeFactory.WinVs.Models.CSharp.ILookup.LookupPath
+- uid: CodeFactory.WinVs.Models.CSharp.ICsModel
+  commentId: T:CodeFactory.WinVs.Models.CSharp.ICsModel
+  parent: CodeFactory.WinVs.Models.CSharp
+  isExternal: true
+  href: CodeFactory.WinVs.Models.CSharp.ICsModel.html
+  name: ICsModel
+  nameWithType: ICsModel
+  fullName: CodeFactory.WinVs.Models.CSharp.ICsModel
+- uid: CodeFactory.IModelStatus
+  commentId: T:CodeFactory.IModelStatus
+  parent: CodeFactory
+  isExternal: true
+  href: CodeFactory.IModelStatus.html
+  name: IModelStatus
+  nameWithType: IModelStatus
+  fullName: CodeFactory.IModelStatus
+- uid: CodeFactory.WinVs.Models.CSharp.IParent
+  commentId: T:CodeFactory.WinVs.Models.CSharp.IParent
+  parent: CodeFactory.WinVs.Models.CSharp
+  isExternal: true
+  href: CodeFactory.WinVs.Models.CSharp.IParent.html
+  name: IParent
+  nameWithType: IParent
+  fullName: CodeFactory.WinVs.Models.CSharp.IParent
+- uid: CodeFactory.WinVs.Models.CSharp.ILookup
+  commentId: T:CodeFactory.WinVs.Models.CSharp.ILookup
+  parent: CodeFactory.WinVs.Models.CSharp
+  isExternal: true
+  href: CodeFactory.WinVs.Models.CSharp.ILookup.html
+  name: ILookup
+  nameWithType: ILookup
+  fullName: CodeFactory.WinVs.Models.CSharp.ILookup
+- uid: CodeFactory
+  commentId: N:CodeFactory
+  isExternal: true
+  href: CodeFactory.html
+  name: CodeFactory
+  nameWithType: CodeFactory
+  fullName: CodeFactory
+- uid: CodeFactory.WinVs.Models.CSharp.ICsSource
+  commentId: T:CodeFactory.WinVs.Models.CSharp.ICsSource
+  parent: CodeFactory.WinVs.Models.CSharp
+  isExternal: true
+  href: CodeFactory.WinVs.Models.CSharp.ICsSource.html
+  name: ICsSource
+  nameWithType: ICsSource
+  fullName: CodeFactory.WinVs.Models.CSharp.ICsSource
+- uid: CodeFactory.Document.DocumentException
+  commentId: T:CodeFactory.Document.DocumentException
+  isExternal: true
+  href: CodeFactory.Document.DocumentException.html
+  name: DocumentException
+  nameWithType: DocumentException
+  fullName: CodeFactory.Document.DocumentException
+- uid: CodeFactory.WinVs.Models.CSharp.ICsSource.AddToBeginningAsync*
+  commentId: Overload:CodeFactory.WinVs.Models.CSharp.ICsSource.AddToBeginningAsync
+  isExternal: true
+  href: CodeFactory.WinVs.Models.CSharp.ICsSource.html#CodeFactory_WinVs_Models_CSharp_ICsSource_AddToBeginningAsync_System_String_
+  name: AddToBeginningAsync
+  nameWithType: ICsSource.AddToBeginningAsync
+  fullName: CodeFactory.WinVs.Models.CSharp.ICsSource.AddToBeginningAsync
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Threading.Tasks.Task{CodeFactory.WinVs.Models.CSharp.CsSource}
+  commentId: T:System.Threading.Tasks.Task{CodeFactory.WinVs.Models.CSharp.CsSource}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<CsSource>
+  nameWithType: Task<CsSource>
+  fullName: System.Threading.Tasks.Task<CodeFactory.WinVs.Models.CSharp.CsSource>
+  nameWithType.vb: Task(Of CsSource)
+  fullName.vb: System.Threading.Tasks.Task(Of CodeFactory.WinVs.Models.CSharp.CsSource)
+  name.vb: Task(Of CsSource)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: CodeFactory.WinVs.Models.CSharp.CsSource
+    name: CsSource
+    isExternal: true
+    href: CodeFactory.WinVs.Models.CSharp.CsSource.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: CodeFactory.WinVs.Models.CSharp.CsSource
+    name: CsSource
+    isExternal: true
+    href: CodeFactory.WinVs.Models.CSharp.CsSource.html
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: CodeFactory.WinVs.Models.CSharp.ICsSource.AddToEndAsync*
+  commentId: Overload:CodeFactory.WinVs.Models.CSharp.ICsSource.AddToEndAsync
+  isExternal: true
+  href: CodeFactory.WinVs.Models.CSharp.ICsSource.html#CodeFactory_WinVs_Models_CSharp_ICsSource_AddToEndAsync_System_String_
+  name: AddToEndAsync
+  nameWithType: ICsSource.AddToEndAsync
+  fullName: CodeFactory.WinVs.Models.CSharp.ICsSource.AddToEndAsync
+- uid: CodeFactory.WinVs.Models.CSharp.ICsSource.DeleteAsync*
+  commentId: Overload:CodeFactory.WinVs.Models.CSharp.ICsSource.DeleteAsync
+  isExternal: true
+  href: CodeFactory.WinVs.Models.CSharp.ICsSource.html#CodeFactory_WinVs_Models_CSharp_ICsSource_DeleteAsync
+  name: DeleteAsync
+  nameWithType: ICsSource.DeleteAsync
+  fullName: CodeFactory.WinVs.Models.CSharp.ICsSource.DeleteAsync
+- uid: CodeFactory.WinVs.Models.CSharp.ICsSource.ReplaceAsync*
+  commentId: Overload:CodeFactory.WinVs.Models.CSharp.ICsSource.ReplaceAsync
+  isExternal: true
+  href: CodeFactory.WinVs.Models.CSharp.ICsSource.html#CodeFactory_WinVs_Models_CSharp_ICsSource_ReplaceAsync_System_String_
+  name: ReplaceAsync
+  nameWithType: ICsSource.ReplaceAsync
+  fullName: CodeFactory.WinVs.Models.CSharp.ICsSource.ReplaceAsync
+- uid: CodeFactory.WinVs.Models.CSharp.ICsSource.NamespaceReferences*
+  commentId: Overload:CodeFactory.WinVs.Models.CSharp.ICsSource.NamespaceReferences
+  isExternal: true
+  href: CodeFactory.WinVs.Models.CSharp.ICsSource.html#CodeFactory_WinVs_Models_CSharp_ICsSource_NamespaceReferences
+  name: NamespaceReferences
+  nameWithType: ICsSource.NamespaceReferences
+  fullName: CodeFactory.WinVs.Models.CSharp.ICsSource.NamespaceReferences
+- uid: System.Collections.Generic.IReadOnlyList{CodeFactory.WinVs.Models.CSharp.CsUsingStatement}
+  commentId: T:System.Collections.Generic.IReadOnlyList{CodeFactory.WinVs.Models.CSharp.CsUsingStatement}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IReadOnlyList`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  name: IReadOnlyList<CsUsingStatement>
+  nameWithType: IReadOnlyList<CsUsingStatement>
+  fullName: System.Collections.Generic.IReadOnlyList<CodeFactory.WinVs.Models.CSharp.CsUsingStatement>
+  nameWithType.vb: IReadOnlyList(Of CsUsingStatement)
+  fullName.vb: System.Collections.Generic.IReadOnlyList(Of CodeFactory.WinVs.Models.CSharp.CsUsingStatement)
+  name.vb: IReadOnlyList(Of CsUsingStatement)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - uid: CodeFactory.WinVs.Models.CSharp.CsUsingStatement
+    name: CsUsingStatement
+    isExternal: true
+    href: CodeFactory.WinVs.Models.CSharp.CsUsingStatement.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: CodeFactory.WinVs.Models.CSharp.CsUsingStatement
+    name: CsUsingStatement
+    isExternal: true
+    href: CodeFactory.WinVs.Models.CSharp.CsUsingStatement.html
+  - name: )
+- uid: System.Collections.Generic.IReadOnlyList`1
+  commentId: T:System.Collections.Generic.IReadOnlyList`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  name: IReadOnlyList<T>
+  nameWithType: IReadOnlyList<T>
+  fullName: System.Collections.Generic.IReadOnlyList<T>
+  nameWithType.vb: IReadOnlyList(Of T)
+  fullName.vb: System.Collections.Generic.IReadOnlyList(Of T)
+  name.vb: IReadOnlyList(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: CodeFactory.WinVs.Models.CSharp.ICsSource.Interfaces*
+  commentId: Overload:CodeFactory.WinVs.Models.CSharp.ICsSource.Interfaces
+  isExternal: true
+  href: CodeFactory.WinVs.Models.CSharp.ICsSource.html#CodeFactory_WinVs_Models_CSharp_ICsSource_Interfaces
+  name: Interfaces
+  nameWithType: ICsSource.Interfaces
+  fullName: CodeFactory.WinVs.Models.CSharp.ICsSource.Interfaces
+- uid: System.Collections.Generic.IReadOnlyList{CodeFactory.WinVs.Models.CSharp.CsInterface}
+  commentId: T:System.Collections.Generic.IReadOnlyList{CodeFactory.WinVs.Models.CSharp.CsInterface}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IReadOnlyList`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  name: IReadOnlyList<CsInterface>
+  nameWithType: IReadOnlyList<CsInterface>
+  fullName: System.Collections.Generic.IReadOnlyList<CodeFactory.WinVs.Models.CSharp.CsInterface>
+  nameWithType.vb: IReadOnlyList(Of CsInterface)
+  fullName.vb: System.Collections.Generic.IReadOnlyList(Of CodeFactory.WinVs.Models.CSharp.CsInterface)
+  name.vb: IReadOnlyList(Of CsInterface)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - uid: CodeFactory.WinVs.Models.CSharp.CsInterface
+    name: CsInterface
+    isExternal: true
+    href: CodeFactory.WinVs.Models.CSharp.CsInterface.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: CodeFactory.WinVs.Models.CSharp.CsInterface
+    name: CsInterface
+    isExternal: true
+    href: CodeFactory.WinVs.Models.CSharp.CsInterface.html
+  - name: )
+- uid: CodeFactory.WinVs.Models.CSharp.ICsSource.Classes*
+  commentId: Overload:CodeFactory.WinVs.Models.CSharp.ICsSource.Classes
+  isExternal: true
+  href: CodeFactory.WinVs.Models.CSharp.ICsSource.html#CodeFactory_WinVs_Models_CSharp_ICsSource_Classes
+  name: Classes
+  nameWithType: ICsSource.Classes
+  fullName: CodeFactory.WinVs.Models.CSharp.ICsSource.Classes
+- uid: System.Collections.Generic.IReadOnlyList{CodeFactory.WinVs.Models.CSharp.CsClass}
+  commentId: T:System.Collections.Generic.IReadOnlyList{CodeFactory.WinVs.Models.CSharp.CsClass}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IReadOnlyList`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  name: IReadOnlyList<CsClass>
+  nameWithType: IReadOnlyList<CsClass>
+  fullName: System.Collections.Generic.IReadOnlyList<CodeFactory.WinVs.Models.CSharp.CsClass>
+  nameWithType.vb: IReadOnlyList(Of CsClass)
+  fullName.vb: System.Collections.Generic.IReadOnlyList(Of CodeFactory.WinVs.Models.CSharp.CsClass)
+  name.vb: IReadOnlyList(Of CsClass)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - uid: CodeFactory.WinVs.Models.CSharp.CsClass
+    name: CsClass
+    isExternal: true
+    href: CodeFactory.WinVs.Models.CSharp.CsClass.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: CodeFactory.WinVs.Models.CSharp.CsClass
+    name: CsClass
+    isExternal: true
+    href: CodeFactory.WinVs.Models.CSharp.CsClass.html
+  - name: )
+- uid: CodeFactory.WinVs.Models.CSharp.ICsSource.Structures*
+  commentId: Overload:CodeFactory.WinVs.Models.CSharp.ICsSource.Structures
+  isExternal: true
+  href: CodeFactory.WinVs.Models.CSharp.ICsSource.html#CodeFactory_WinVs_Models_CSharp_ICsSource_Structures
+  name: Structures
+  nameWithType: ICsSource.Structures
+  fullName: CodeFactory.WinVs.Models.CSharp.ICsSource.Structures
+- uid: System.Collections.Generic.IReadOnlyList{CodeFactory.WinVs.Models.CSharp.CsStructure}
+  commentId: T:System.Collections.Generic.IReadOnlyList{CodeFactory.WinVs.Models.CSharp.CsStructure}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IReadOnlyList`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  name: IReadOnlyList<CsStructure>
+  nameWithType: IReadOnlyList<CsStructure>
+  fullName: System.Collections.Generic.IReadOnlyList<CodeFactory.WinVs.Models.CSharp.CsStructure>
+  nameWithType.vb: IReadOnlyList(Of CsStructure)
+  fullName.vb: System.Collections.Generic.IReadOnlyList(Of CodeFactory.WinVs.Models.CSharp.CsStructure)
+  name.vb: IReadOnlyList(Of CsStructure)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - uid: CodeFactory.WinVs.Models.CSharp.CsStructure
+    name: CsStructure
+    isExternal: true
+    href: CodeFactory.WinVs.Models.CSharp.CsStructure.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: CodeFactory.WinVs.Models.CSharp.CsStructure
+    name: CsStructure
+    isExternal: true
+    href: CodeFactory.WinVs.Models.CSharp.CsStructure.html
+  - name: )
+- uid: CodeFactory.WinVs.Models.CSharp.ICsSource.Records*
+  commentId: Overload:CodeFactory.WinVs.Models.CSharp.ICsSource.Records
+  isExternal: true
+  href: CodeFactory.WinVs.Models.CSharp.ICsSource.html#CodeFactory_WinVs_Models_CSharp_ICsSource_Records
+  name: Records
+  nameWithType: ICsSource.Records
+  fullName: CodeFactory.WinVs.Models.CSharp.ICsSource.Records
+- uid: System.Collections.Generic.IReadOnlyList{CodeFactory.WinVs.Models.CSharp.CsRecord}
+  commentId: T:System.Collections.Generic.IReadOnlyList{CodeFactory.WinVs.Models.CSharp.CsRecord}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IReadOnlyList`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  name: IReadOnlyList<CsRecord>
+  nameWithType: IReadOnlyList<CsRecord>
+  fullName: System.Collections.Generic.IReadOnlyList<CodeFactory.WinVs.Models.CSharp.CsRecord>
+  nameWithType.vb: IReadOnlyList(Of CsRecord)
+  fullName.vb: System.Collections.Generic.IReadOnlyList(Of CodeFactory.WinVs.Models.CSharp.CsRecord)
+  name.vb: IReadOnlyList(Of CsRecord)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - uid: CodeFactory.WinVs.Models.CSharp.CsRecord
+    name: CsRecord
+    isExternal: true
+    href: CodeFactory.WinVs.Models.CSharp.CsRecord.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: CodeFactory.WinVs.Models.CSharp.CsRecord
+    name: CsRecord
+    isExternal: true
+    href: CodeFactory.WinVs.Models.CSharp.CsRecord.html
+  - name: )
+- uid: CodeFactory.WinVs.Models.CSharp.ICsSource.RecordStructures*
+  commentId: Overload:CodeFactory.WinVs.Models.CSharp.ICsSource.RecordStructures
+  isExternal: true
+  href: CodeFactory.WinVs.Models.CSharp.ICsSource.html#CodeFactory_WinVs_Models_CSharp_ICsSource_RecordStructures
+  name: RecordStructures
+  nameWithType: ICsSource.RecordStructures
+  fullName: CodeFactory.WinVs.Models.CSharp.ICsSource.RecordStructures
+- uid: System.Collections.Generic.IReadOnlyList{CodeFactory.WinVs.Models.CSharp.CsRecordStructure}
+  commentId: T:System.Collections.Generic.IReadOnlyList{CodeFactory.WinVs.Models.CSharp.CsRecordStructure}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IReadOnlyList`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  name: IReadOnlyList<CsRecordStructure>
+  nameWithType: IReadOnlyList<CsRecordStructure>
+  fullName: System.Collections.Generic.IReadOnlyList<CodeFactory.WinVs.Models.CSharp.CsRecordStructure>
+  nameWithType.vb: IReadOnlyList(Of CsRecordStructure)
+  fullName.vb: System.Collections.Generic.IReadOnlyList(Of CodeFactory.WinVs.Models.CSharp.CsRecordStructure)
+  name.vb: IReadOnlyList(Of CsRecordStructure)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - uid: CodeFactory.WinVs.Models.CSharp.CsRecordStructure
+    name: CsRecordStructure
+    isExternal: true
+    href: CodeFactory.WinVs.Models.CSharp.CsRecordStructure.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: CodeFactory.WinVs.Models.CSharp.CsRecordStructure
+    name: CsRecordStructure
+    isExternal: true
+    href: CodeFactory.WinVs.Models.CSharp.CsRecordStructure.html
+  - name: )
+- uid: CodeFactory.WinVs.Models.CSharp.ICsSource.Delegates*
+  commentId: Overload:CodeFactory.WinVs.Models.CSharp.ICsSource.Delegates
+  isExternal: true
+  href: CodeFactory.WinVs.Models.CSharp.ICsSource.html#CodeFactory_WinVs_Models_CSharp_ICsSource_Delegates
+  name: Delegates
+  nameWithType: ICsSource.Delegates
+  fullName: CodeFactory.WinVs.Models.CSharp.ICsSource.Delegates
+- uid: System.Collections.Generic.IReadOnlyList{CodeFactory.WinVs.Models.CSharp.CsDelegate}
+  commentId: T:System.Collections.Generic.IReadOnlyList{CodeFactory.WinVs.Models.CSharp.CsDelegate}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IReadOnlyList`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  name: IReadOnlyList<CsDelegate>
+  nameWithType: IReadOnlyList<CsDelegate>
+  fullName: System.Collections.Generic.IReadOnlyList<CodeFactory.WinVs.Models.CSharp.CsDelegate>
+  nameWithType.vb: IReadOnlyList(Of CsDelegate)
+  fullName.vb: System.Collections.Generic.IReadOnlyList(Of CodeFactory.WinVs.Models.CSharp.CsDelegate)
+  name.vb: IReadOnlyList(Of CsDelegate)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - uid: CodeFactory.WinVs.Models.CSharp.CsDelegate
+    name: CsDelegate
+    isExternal: true
+    href: CodeFactory.WinVs.Models.CSharp.CsDelegate.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: CodeFactory.WinVs.Models.CSharp.CsDelegate
+    name: CsDelegate
+    isExternal: true
+    href: CodeFactory.WinVs.Models.CSharp.CsDelegate.html
+  - name: )
+- uid: CodeFactory.WinVs.Models.CSharp.ICsSource.Enums*
+  commentId: Overload:CodeFactory.WinVs.Models.CSharp.ICsSource.Enums
+  isExternal: true
+  href: CodeFactory.WinVs.Models.CSharp.ICsSource.html#CodeFactory_WinVs_Models_CSharp_ICsSource_Enums
+  name: Enums
+  nameWithType: ICsSource.Enums
+  fullName: CodeFactory.WinVs.Models.CSharp.ICsSource.Enums
+- uid: System.Collections.Generic.IReadOnlyList{CodeFactory.WinVs.Models.CSharp.CsEnum}
+  commentId: T:System.Collections.Generic.IReadOnlyList{CodeFactory.WinVs.Models.CSharp.CsEnum}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IReadOnlyList`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  name: IReadOnlyList<CsEnum>
+  nameWithType: IReadOnlyList<CsEnum>
+  fullName: System.Collections.Generic.IReadOnlyList<CodeFactory.WinVs.Models.CSharp.CsEnum>
+  nameWithType.vb: IReadOnlyList(Of CsEnum)
+  fullName.vb: System.Collections.Generic.IReadOnlyList(Of CodeFactory.WinVs.Models.CSharp.CsEnum)
+  name.vb: IReadOnlyList(Of CsEnum)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - uid: CodeFactory.WinVs.Models.CSharp.CsEnum
+    name: CsEnum
+    isExternal: true
+    href: CodeFactory.WinVs.Models.CSharp.CsEnum.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: CodeFactory.WinVs.Models.CSharp.CsEnum
+    name: CsEnum
+    isExternal: true
+    href: CodeFactory.WinVs.Models.CSharp.CsEnum.html
+  - name: )
+- uid: CodeFactory.WinVs.Models.CSharp.ICsSource.Namespaces*
+  commentId: Overload:CodeFactory.WinVs.Models.CSharp.ICsSource.Namespaces
+  isExternal: true
+  href: CodeFactory.WinVs.Models.CSharp.ICsSource.html#CodeFactory_WinVs_Models_CSharp_ICsSource_Namespaces
+  name: Namespaces
+  nameWithType: ICsSource.Namespaces
+  fullName: CodeFactory.WinVs.Models.CSharp.ICsSource.Namespaces
+- uid: System.Collections.Generic.IReadOnlyList{CodeFactory.WinVs.Models.CSharp.CsNamespace}
+  commentId: T:System.Collections.Generic.IReadOnlyList{CodeFactory.WinVs.Models.CSharp.CsNamespace}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IReadOnlyList`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  name: IReadOnlyList<CsNamespace>
+  nameWithType: IReadOnlyList<CsNamespace>
+  fullName: System.Collections.Generic.IReadOnlyList<CodeFactory.WinVs.Models.CSharp.CsNamespace>
+  nameWithType.vb: IReadOnlyList(Of CsNamespace)
+  fullName.vb: System.Collections.Generic.IReadOnlyList(Of CodeFactory.WinVs.Models.CSharp.CsNamespace)
+  name.vb: IReadOnlyList(Of CsNamespace)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - uid: CodeFactory.WinVs.Models.CSharp.CsNamespace
+    name: CsNamespace
+    isExternal: true
+    href: CodeFactory.WinVs.Models.CSharp.CsNamespace.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: CodeFactory.WinVs.Models.CSharp.CsNamespace
+    name: CsNamespace
+    isExternal: true
+    href: CodeFactory.WinVs.Models.CSharp.CsNamespace.html
+  - name: )
+- uid: CodeFactory.WinVs.Models.CSharp.ICsSource.HostedInProject*
+  commentId: Overload:CodeFactory.WinVs.Models.CSharp.ICsSource.HostedInProject
+  isExternal: true
+  href: CodeFactory.WinVs.Models.CSharp.ICsSource.html#CodeFactory_WinVs_Models_CSharp_ICsSource_HostedInProject
+  name: HostedInProject
+  nameWithType: ICsSource.HostedInProject
+  fullName: CodeFactory.WinVs.Models.CSharp.ICsSource.HostedInProject
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: CodeFactory.WinVs.Models.CSharp.ICsSource.ProjectName*
+  commentId: Overload:CodeFactory.WinVs.Models.CSharp.ICsSource.ProjectName
+  isExternal: true
+  href: CodeFactory.WinVs.Models.CSharp.ICsSource.html#CodeFactory_WinVs_Models_CSharp_ICsSource_ProjectName
+  name: ProjectName
+  nameWithType: ICsSource.ProjectName
+  fullName: CodeFactory.WinVs.Models.CSharp.ICsSource.ProjectName

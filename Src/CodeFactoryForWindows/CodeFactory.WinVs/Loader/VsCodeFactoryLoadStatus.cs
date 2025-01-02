@@ -39,7 +39,7 @@ namespace CodeFactory.WinVs.Loader
         }
 
         /// <summary>
-        /// The error messages that was captured while trying to load the code factory commands. This will be null if <see cref="IVsCodeFactoryLoadStatus.HasError"/> is false.
+        /// The error messages that was captured while trying to load the code factory commands. This will be null if <see cref="IVsCodeFactoryLoadStatus.HasErrors"/> is false.
         /// </summary>
         public List<string> ErrorMessages
         {

@@ -1,0 +1,722 @@
+### YamlMime:ManagedReference
+items:
+- uid: CodeFactory.WinVs.Models.CSharp.CsContainerExtensions
+  commentId: T:CodeFactory.WinVs.Models.CSharp.CsContainerExtensions
+  id: CsContainerExtensions
+  parent: CodeFactory.WinVs.Models.CSharp
+  children:
+  - CodeFactory.WinVs.Models.CSharp.CsContainerExtensions.GetComparisonMembers(CodeFactory.WinVs.Models.CSharp.CsContainer,CodeFactory.WinVs.Models.CSharp.MemberComparisonType,System.Collections.Generic.List{CodeFactory.WinVs.Models.CSharp.MapNamespace})
+  - CodeFactory.WinVs.Models.CSharp.CsContainerExtensions.GetMissingInterfaceMembers(CodeFactory.WinVs.Models.CSharp.CsClass,System.Collections.Generic.List{CodeFactory.WinVs.Models.CSharp.MapNamespace})
+  - CodeFactory.WinVs.Models.CSharp.CsContainerExtensions.GetMissingInterfaceMembers(CodeFactory.WinVs.Models.CSharp.CsStructure,System.Collections.Generic.List{CodeFactory.WinVs.Models.CSharp.MapNamespace})
+  langs:
+  - csharp
+  - vb
+  name: CsContainerExtensions
+  nameWithType: CsContainerExtensions
+  fullName: CodeFactory.WinVs.Models.CSharp.CsContainerExtensions
+  type: Class
+  source:
+    href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/e63c05962945f61f2329e19d324f24a768806f18/Src/CodeFactoryForWindows/CodeFactory.WinVs/Models/CSharp/CsContainerExtensions.cs
+  assemblies:
+  - CodeFactory.WinVs
+  namespace: CodeFactory.WinVs.Models.CSharp
+  summary: Extension management class that manages  models that implement <xref href="CodeFactory.WinVs.Models.CSharp.CsContainer" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public static class CsContainerExtensions
+    content.vb: Public Module CsContainerExtensions
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+- uid: CodeFactory.WinVs.Models.CSharp.CsContainerExtensions.GetComparisonMembers(CodeFactory.WinVs.Models.CSharp.CsContainer,CodeFactory.WinVs.Models.CSharp.MemberComparisonType,System.Collections.Generic.List{CodeFactory.WinVs.Models.CSharp.MapNamespace})
+  commentId: M:CodeFactory.WinVs.Models.CSharp.CsContainerExtensions.GetComparisonMembers(CodeFactory.WinVs.Models.CSharp.CsContainer,CodeFactory.WinVs.Models.CSharp.MemberComparisonType,System.Collections.Generic.List{CodeFactory.WinVs.Models.CSharp.MapNamespace})
+  id: GetComparisonMembers(CodeFactory.WinVs.Models.CSharp.CsContainer,CodeFactory.WinVs.Models.CSharp.MemberComparisonType,System.Collections.Generic.List{CodeFactory.WinVs.Models.CSharp.MapNamespace})
+  isExtensionMethod: true
+  parent: CodeFactory.WinVs.Models.CSharp.CsContainerExtensions
+  langs:
+  - csharp
+  - vb
+  name: GetComparisonMembers(CsContainer, MemberComparisonType, List<MapNamespace>)
+  nameWithType: CsContainerExtensions.GetComparisonMembers(CsContainer, MemberComparisonType, List<MapNamespace>)
+  fullName: CodeFactory.WinVs.Models.CSharp.CsContainerExtensions.GetComparisonMembers(CodeFactory.WinVs.Models.CSharp.CsContainer, CodeFactory.WinVs.Models.CSharp.MemberComparisonType, System.Collections.Generic.List<CodeFactory.WinVs.Models.CSharp.MapNamespace>)
+  type: Method
+  source:
+    href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/e63c05962945f61f2329e19d324f24a768806f18/Src/CodeFactoryForWindows/CodeFactory.WinVs/Models/CSharp/CsContainerExtensions.cs
+  assemblies:
+  - CodeFactory.WinVs
+  namespace: CodeFactory.WinVs.Models.CSharp
+  summary: Loads all members from a target model that implements <xref href="CodeFactory.WinVs.Models.CSharp.CsContainer" data-throw-if-not-resolved="false"></xref> and returns all members and the comparison hash code for each member.
+  example: []
+  syntax:
+    content: public static IReadOnlyList<KeyValuePair<int, CsMember>> GetComparisonMembers(this CsContainer source, MemberComparisonType comparisonType = MemberComparisonType.Base, List<MapNamespace> mappedNamespaces = null)
+    parameters:
+    - id: source
+      type: CodeFactory.WinVs.Models.CSharp.CsContainer
+      description: The target container to load members from.
+    - id: comparisonType
+      type: CodeFactory.WinVs.Models.CSharp.MemberComparisonType
+      description: The type of hash code to build for comparision. Default comparison type is set to the base comparison.
+    - id: mappedNamespaces
+      type: System.Collections.Generic.List{CodeFactory.WinVs.Models.CSharp.MapNamespace}
+      description: Optional parameter that provides namespaces to be mapped to.
+    return:
+      type: System.Collections.Generic.IReadOnlyList{System.Collections.Generic.KeyValuePair{System.Int32,CodeFactory.WinVs.Models.CSharp.CsMember}}
+      description: List of all the hash codes and the members for each hashcode.
+    content.vb: Public Shared Function GetComparisonMembers(source As CsContainer, comparisonType As MemberComparisonType = MemberComparisonType.Base, mappedNamespaces As List(Of MapNamespace) = Nothing) As IReadOnlyList(Of KeyValuePair(Of Integer, CsMember))
+  overload: CodeFactory.WinVs.Models.CSharp.CsContainerExtensions.GetComparisonMembers*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: Thrown if the source container is null.
+  nameWithType.vb: CsContainerExtensions.GetComparisonMembers(CsContainer, MemberComparisonType, List(Of MapNamespace))
+  fullName.vb: CodeFactory.WinVs.Models.CSharp.CsContainerExtensions.GetComparisonMembers(CodeFactory.WinVs.Models.CSharp.CsContainer, CodeFactory.WinVs.Models.CSharp.MemberComparisonType, System.Collections.Generic.List(Of CodeFactory.WinVs.Models.CSharp.MapNamespace))
+  name.vb: GetComparisonMembers(CsContainer, MemberComparisonType, List(Of MapNamespace))
+- uid: CodeFactory.WinVs.Models.CSharp.CsContainerExtensions.GetMissingInterfaceMembers(CodeFactory.WinVs.Models.CSharp.CsClass,System.Collections.Generic.List{CodeFactory.WinVs.Models.CSharp.MapNamespace})
+  commentId: M:CodeFactory.WinVs.Models.CSharp.CsContainerExtensions.GetMissingInterfaceMembers(CodeFactory.WinVs.Models.CSharp.CsClass,System.Collections.Generic.List{CodeFactory.WinVs.Models.CSharp.MapNamespace})
+  id: GetMissingInterfaceMembers(CodeFactory.WinVs.Models.CSharp.CsClass,System.Collections.Generic.List{CodeFactory.WinVs.Models.CSharp.MapNamespace})
+  isExtensionMethod: true
+  parent: CodeFactory.WinVs.Models.CSharp.CsContainerExtensions
+  langs:
+  - csharp
+  - vb
+  name: GetMissingInterfaceMembers(CsClass, List<MapNamespace>)
+  nameWithType: CsContainerExtensions.GetMissingInterfaceMembers(CsClass, List<MapNamespace>)
+  fullName: CodeFactory.WinVs.Models.CSharp.CsContainerExtensions.GetMissingInterfaceMembers(CodeFactory.WinVs.Models.CSharp.CsClass, System.Collections.Generic.List<CodeFactory.WinVs.Models.CSharp.MapNamespace>)
+  type: Method
+  source:
+    href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/e63c05962945f61f2329e19d324f24a768806f18/Src/CodeFactoryForWindows/CodeFactory.WinVs/Models/CSharp/CsContainerExtensions.cs
+  assemblies:
+  - CodeFactory.WinVs
+  namespace: CodeFactory.WinVs.Models.CSharp
+  summary: Creates a list of the interface members that are not implemented in the <xref href="CodeFactory.WinVs.Models.CSharp.CsClass" data-throw-if-not-resolved="false"></xref> model.
+  example: []
+  syntax:
+    content: public static IReadOnlyList<CsMember> GetMissingInterfaceMembers(this CsClass source, List<MapNamespace> mappedNamespaces = null)
+    parameters:
+    - id: source
+      type: CodeFactory.WinVs.Models.CSharp.CsClass
+      description: The source model to check.
+    - id: mappedNamespaces
+      type: System.Collections.Generic.List{CodeFactory.WinVs.Models.CSharp.MapNamespace}
+      description: Optional parameter that provides namespaces to be mapped to.
+    return:
+      type: System.Collections.Generic.IReadOnlyList{CodeFactory.WinVs.Models.CSharp.CsMember}
+      description: List of models that are missing or an empty list if there are no missing members.
+    content.vb: Public Shared Function GetMissingInterfaceMembers(source As CsClass, mappedNamespaces As List(Of MapNamespace) = Nothing) As IReadOnlyList(Of CsMember)
+  overload: CodeFactory.WinVs.Models.CSharp.CsContainerExtensions.GetMissingInterfaceMembers*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: Throws an argument null exception if the model does not exist.
+  nameWithType.vb: CsContainerExtensions.GetMissingInterfaceMembers(CsClass, List(Of MapNamespace))
+  fullName.vb: CodeFactory.WinVs.Models.CSharp.CsContainerExtensions.GetMissingInterfaceMembers(CodeFactory.WinVs.Models.CSharp.CsClass, System.Collections.Generic.List(Of CodeFactory.WinVs.Models.CSharp.MapNamespace))
+  name.vb: GetMissingInterfaceMembers(CsClass, List(Of MapNamespace))
+- uid: CodeFactory.WinVs.Models.CSharp.CsContainerExtensions.GetMissingInterfaceMembers(CodeFactory.WinVs.Models.CSharp.CsStructure,System.Collections.Generic.List{CodeFactory.WinVs.Models.CSharp.MapNamespace})
+  commentId: M:CodeFactory.WinVs.Models.CSharp.CsContainerExtensions.GetMissingInterfaceMembers(CodeFactory.WinVs.Models.CSharp.CsStructure,System.Collections.Generic.List{CodeFactory.WinVs.Models.CSharp.MapNamespace})
+  id: GetMissingInterfaceMembers(CodeFactory.WinVs.Models.CSharp.CsStructure,System.Collections.Generic.List{CodeFactory.WinVs.Models.CSharp.MapNamespace})
+  isExtensionMethod: true
+  parent: CodeFactory.WinVs.Models.CSharp.CsContainerExtensions
+  langs:
+  - csharp
+  - vb
+  name: GetMissingInterfaceMembers(CsStructure, List<MapNamespace>)
+  nameWithType: CsContainerExtensions.GetMissingInterfaceMembers(CsStructure, List<MapNamespace>)
+  fullName: CodeFactory.WinVs.Models.CSharp.CsContainerExtensions.GetMissingInterfaceMembers(CodeFactory.WinVs.Models.CSharp.CsStructure, System.Collections.Generic.List<CodeFactory.WinVs.Models.CSharp.MapNamespace>)
+  type: Method
+  source:
+    href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/e63c05962945f61f2329e19d324f24a768806f18/Src/CodeFactoryForWindows/CodeFactory.WinVs/Models/CSharp/CsContainerExtensions.cs
+  assemblies:
+  - CodeFactory.WinVs
+  namespace: CodeFactory.WinVs.Models.CSharp
+  summary: Creates a list of the interface members that are not implemented in the <xref href="CodeFactory.WinVs.Models.CSharp.CsStructure" data-throw-if-not-resolved="false"></xref> model.
+  example: []
+  syntax:
+    content: public static IReadOnlyList<CsMember> GetMissingInterfaceMembers(this CsStructure source, List<MapNamespace> mappedNamespaces = null)
+    parameters:
+    - id: source
+      type: CodeFactory.WinVs.Models.CSharp.CsStructure
+      description: The source model to check.
+    - id: mappedNamespaces
+      type: System.Collections.Generic.List{CodeFactory.WinVs.Models.CSharp.MapNamespace}
+      description: Optional parameter that provides namespaces to be mapped to.
+    return:
+      type: System.Collections.Generic.IReadOnlyList{CodeFactory.WinVs.Models.CSharp.CsMember}
+      description: List of models that are missing or an empty list if there are no missing members.
+    content.vb: Public Shared Function GetMissingInterfaceMembers(source As CsStructure, mappedNamespaces As List(Of MapNamespace) = Nothing) As IReadOnlyList(Of CsMember)
+  overload: CodeFactory.WinVs.Models.CSharp.CsContainerExtensions.GetMissingInterfaceMembers*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: Throws an argument null exception if the model does not exist.
+  nameWithType.vb: CsContainerExtensions.GetMissingInterfaceMembers(CsStructure, List(Of MapNamespace))
+  fullName.vb: CodeFactory.WinVs.Models.CSharp.CsContainerExtensions.GetMissingInterfaceMembers(CodeFactory.WinVs.Models.CSharp.CsStructure, System.Collections.Generic.List(Of CodeFactory.WinVs.Models.CSharp.MapNamespace))
+  name.vb: GetMissingInterfaceMembers(CsStructure, List(Of MapNamespace))
+references:
+- uid: CodeFactory.WinVs.Models.CSharp.CsContainer
+  commentId: T:CodeFactory.WinVs.Models.CSharp.CsContainer
+  parent: CodeFactory.WinVs.Models.CSharp
+  isExternal: true
+  href: CodeFactory.WinVs.Models.CSharp.CsContainer.html
+  name: CsContainer
+  nameWithType: CsContainer
+  fullName: CodeFactory.WinVs.Models.CSharp.CsContainer
+- uid: CodeFactory.WinVs.Models.CSharp
+  commentId: N:CodeFactory.WinVs.Models.CSharp
+  isExternal: true
+  href: CodeFactory.html
+  name: CodeFactory.WinVs.Models.CSharp
+  nameWithType: CodeFactory.WinVs.Models.CSharp
+  fullName: CodeFactory.WinVs.Models.CSharp
+  spec.csharp:
+  - uid: CodeFactory
+    name: CodeFactory
+    isExternal: true
+    href: CodeFactory.html
+  - name: .
+  - uid: CodeFactory.WinVs
+    name: WinVs
+    isExternal: true
+    href: CodeFactory.WinVs.html
+  - name: .
+  - uid: CodeFactory.WinVs.Models
+    name: Models
+    isExternal: true
+    href: CodeFactory.WinVs.Models.html
+  - name: .
+  - uid: CodeFactory.WinVs.Models.CSharp
+    name: CSharp
+    isExternal: true
+    href: CodeFactory.WinVs.Models.CSharp.html
+  spec.vb:
+  - uid: CodeFactory
+    name: CodeFactory
+    isExternal: true
+    href: CodeFactory.html
+  - name: .
+  - uid: CodeFactory.WinVs
+    name: WinVs
+    isExternal: true
+    href: CodeFactory.WinVs.html
+  - name: .
+  - uid: CodeFactory.WinVs.Models
+    name: Models
+    isExternal: true
+    href: CodeFactory.WinVs.Models.html
+  - name: .
+  - uid: CodeFactory.WinVs.Models.CSharp
+    name: CSharp
+    isExternal: true
+    href: CodeFactory.WinVs.Models.CSharp.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.ArgumentNullException
+  commentId: T:System.ArgumentNullException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.argumentnullexception
+  name: ArgumentNullException
+  nameWithType: ArgumentNullException
+  fullName: System.ArgumentNullException
+- uid: CodeFactory.WinVs.Models.CSharp.CsContainerExtensions.GetComparisonMembers*
+  commentId: Overload:CodeFactory.WinVs.Models.CSharp.CsContainerExtensions.GetComparisonMembers
+  isExternal: true
+  href: CodeFactory.WinVs.Models.CSharp.CsContainerExtensions.html#CodeFactory_WinVs_Models_CSharp_CsContainerExtensions_GetComparisonMembers_CodeFactory_WinVs_Models_CSharp_CsContainer_CodeFactory_WinVs_Models_CSharp_MemberComparisonType_System_Collections_Generic_List_CodeFactory_WinVs_Models_CSharp_MapNamespace__
+  name: GetComparisonMembers
+  nameWithType: CsContainerExtensions.GetComparisonMembers
+  fullName: CodeFactory.WinVs.Models.CSharp.CsContainerExtensions.GetComparisonMembers
+- uid: CodeFactory.WinVs.Models.CSharp.MemberComparisonType
+  commentId: T:CodeFactory.WinVs.Models.CSharp.MemberComparisonType
+  parent: CodeFactory.WinVs.Models.CSharp
+  isExternal: true
+  href: CodeFactory.WinVs.Models.CSharp.MemberComparisonType.html
+  name: MemberComparisonType
+  nameWithType: MemberComparisonType
+  fullName: CodeFactory.WinVs.Models.CSharp.MemberComparisonType
+- uid: System.Collections.Generic.List{CodeFactory.WinVs.Models.CSharp.MapNamespace}
+  commentId: T:System.Collections.Generic.List{CodeFactory.WinVs.Models.CSharp.MapNamespace}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<MapNamespace>
+  nameWithType: List<MapNamespace>
+  fullName: System.Collections.Generic.List<CodeFactory.WinVs.Models.CSharp.MapNamespace>
+  nameWithType.vb: List(Of MapNamespace)
+  fullName.vb: System.Collections.Generic.List(Of CodeFactory.WinVs.Models.CSharp.MapNamespace)
+  name.vb: List(Of MapNamespace)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: CodeFactory.WinVs.Models.CSharp.MapNamespace
+    name: MapNamespace
+    isExternal: true
+    href: CodeFactory.WinVs.Models.CSharp.MapNamespace.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: CodeFactory.WinVs.Models.CSharp.MapNamespace
+    name: MapNamespace
+    isExternal: true
+    href: CodeFactory.WinVs.Models.CSharp.MapNamespace.html
+  - name: )
+- uid: System.Collections.Generic.IReadOnlyList{System.Collections.Generic.KeyValuePair{System.Int32,CodeFactory.WinVs.Models.CSharp.CsMember}}
+  commentId: T:System.Collections.Generic.IReadOnlyList{System.Collections.Generic.KeyValuePair{System.Int32,CodeFactory.WinVs.Models.CSharp.CsMember}}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IReadOnlyList`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  name: IReadOnlyList<KeyValuePair<int, CsMember>>
+  nameWithType: IReadOnlyList<KeyValuePair<int, CsMember>>
+  fullName: System.Collections.Generic.IReadOnlyList<System.Collections.Generic.KeyValuePair<int, CodeFactory.WinVs.Models.CSharp.CsMember>>
+  nameWithType.vb: IReadOnlyList(Of KeyValuePair(Of Integer, CsMember))
+  fullName.vb: System.Collections.Generic.IReadOnlyList(Of System.Collections.Generic.KeyValuePair(Of Integer, CodeFactory.WinVs.Models.CSharp.CsMember))
+  name.vb: IReadOnlyList(Of KeyValuePair(Of Integer, CsMember))
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - uid: System.Collections.Generic.KeyValuePair`2
+    name: KeyValuePair
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.keyvaluepair-2
+  - name: <
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: CodeFactory.WinVs.Models.CSharp.CsMember
+    name: CsMember
+    isExternal: true
+    href: CodeFactory.WinVs.Models.CSharp.CsMember.html
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Collections.Generic.KeyValuePair`2
+    name: KeyValuePair
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.keyvaluepair-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: CodeFactory.WinVs.Models.CSharp.CsMember
+    name: CsMember
+    isExternal: true
+    href: CodeFactory.WinVs.Models.CSharp.CsMember.html
+  - name: )
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: System.Collections.Generic.IReadOnlyList`1
+  commentId: T:System.Collections.Generic.IReadOnlyList`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  name: IReadOnlyList<T>
+  nameWithType: IReadOnlyList<T>
+  fullName: System.Collections.Generic.IReadOnlyList<T>
+  nameWithType.vb: IReadOnlyList(Of T)
+  fullName.vb: System.Collections.Generic.IReadOnlyList(Of T)
+  name.vb: IReadOnlyList(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: CodeFactory.WinVs.Models.CSharp.CsClass
+  commentId: T:CodeFactory.WinVs.Models.CSharp.CsClass
+  parent: CodeFactory.WinVs.Models.CSharp
+  isExternal: true
+  href: CodeFactory.WinVs.Models.CSharp.CsClass.html
+  name: CsClass
+  nameWithType: CsClass
+  fullName: CodeFactory.WinVs.Models.CSharp.CsClass
+- uid: CodeFactory.WinVs.Models.CSharp.CsContainerExtensions.GetMissingInterfaceMembers*
+  commentId: Overload:CodeFactory.WinVs.Models.CSharp.CsContainerExtensions.GetMissingInterfaceMembers
+  isExternal: true
+  href: CodeFactory.WinVs.Models.CSharp.CsContainerExtensions.html#CodeFactory_WinVs_Models_CSharp_CsContainerExtensions_GetMissingInterfaceMembers_CodeFactory_WinVs_Models_CSharp_CsClass_System_Collections_Generic_List_CodeFactory_WinVs_Models_CSharp_MapNamespace__
+  name: GetMissingInterfaceMembers
+  nameWithType: CsContainerExtensions.GetMissingInterfaceMembers
+  fullName: CodeFactory.WinVs.Models.CSharp.CsContainerExtensions.GetMissingInterfaceMembers
+- uid: System.Collections.Generic.IReadOnlyList{CodeFactory.WinVs.Models.CSharp.CsMember}
+  commentId: T:System.Collections.Generic.IReadOnlyList{CodeFactory.WinVs.Models.CSharp.CsMember}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IReadOnlyList`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  name: IReadOnlyList<CsMember>
+  nameWithType: IReadOnlyList<CsMember>
+  fullName: System.Collections.Generic.IReadOnlyList<CodeFactory.WinVs.Models.CSharp.CsMember>
+  nameWithType.vb: IReadOnlyList(Of CsMember)
+  fullName.vb: System.Collections.Generic.IReadOnlyList(Of CodeFactory.WinVs.Models.CSharp.CsMember)
+  name.vb: IReadOnlyList(Of CsMember)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - uid: CodeFactory.WinVs.Models.CSharp.CsMember
+    name: CsMember
+    isExternal: true
+    href: CodeFactory.WinVs.Models.CSharp.CsMember.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: CodeFactory.WinVs.Models.CSharp.CsMember
+    name: CsMember
+    isExternal: true
+    href: CodeFactory.WinVs.Models.CSharp.CsMember.html
+  - name: )
+- uid: CodeFactory.WinVs.Models.CSharp.CsStructure
+  commentId: T:CodeFactory.WinVs.Models.CSharp.CsStructure
+  parent: CodeFactory.WinVs.Models.CSharp
+  isExternal: true
+  href: CodeFactory.WinVs.Models.CSharp.CsStructure.html
+  name: CsStructure
+  nameWithType: CsStructure
+  fullName: CodeFactory.WinVs.Models.CSharp.CsStructure

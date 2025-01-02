@@ -1,0 +1,133 @@
+### YamlMime:ManagedReference
+items:
+- uid: CodeFactory.ICommandBase`1
+  commentId: T:CodeFactory.ICommandBase`1
+  id: ICommandBase`1
+  parent: CodeFactory
+  children:
+  - CodeFactory.ICommandBase`1.ExecuteCommandAsync(`0)
+  langs:
+  - csharp
+  - vb
+  name: ICommandBase<TModel>
+  nameWithType: ICommandBase<TModel>
+  fullName: CodeFactory.ICommandBase<TModel>
+  type: Interface
+  source:
+    href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/e63c05962945f61f2329e19d324f24a768806f18/Src/CodeFactoryForWindows/CodeFactory/ICommandBase.cs
+  assemblies:
+  - CodeFactory
+  namespace: CodeFactory
+  summary: Minimum implementation for all code factory commands.
+  example: []
+  syntax:
+    content: 'public interface ICommandBase<TModel> where TModel : class'
+    typeParameters:
+    - id: TModel
+      description: Target code factory model to be provided for the command.
+    content.vb: Public Interface ICommandBase(Of TModel As Class)
+  nameWithType.vb: ICommandBase(Of TModel)
+  fullName.vb: CodeFactory.ICommandBase(Of TModel)
+  name.vb: ICommandBase(Of TModel)
+- uid: CodeFactory.ICommandBase`1.ExecuteCommandAsync(`0)
+  commentId: M:CodeFactory.ICommandBase`1.ExecuteCommandAsync(`0)
+  id: ExecuteCommandAsync(`0)
+  parent: CodeFactory.ICommandBase`1
+  langs:
+  - csharp
+  - vb
+  name: ExecuteCommandAsync(TModel)
+  nameWithType: ICommandBase<TModel>.ExecuteCommandAsync(TModel)
+  fullName: CodeFactory.ICommandBase<TModel>.ExecuteCommandAsync(TModel)
+  type: Method
+  source:
+    href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/e63c05962945f61f2329e19d324f24a768806f18/Src/CodeFactoryForWindows/CodeFactory/ICommandBase.cs
+  assemblies:
+  - CodeFactory
+  namespace: CodeFactory
+  summary: Code factory framework calls this method when the command has been executed.
+  example: []
+  syntax:
+    content: Task ExecuteCommandAsync(TModel result)
+    parameters:
+    - id: result
+      type: '{TModel}'
+      description: The code factory model that has generated and provided to the command to process.
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Function ExecuteCommandAsync(result As TModel) As Task
+  overload: CodeFactory.ICommandBase`1.ExecuteCommandAsync*
+  nameWithType.vb: ICommandBase(Of TModel).ExecuteCommandAsync(TModel)
+  fullName.vb: CodeFactory.ICommandBase(Of TModel).ExecuteCommandAsync(TModel)
+references:
+- uid: CodeFactory
+  commentId: N:CodeFactory
+  isExternal: true
+  href: CodeFactory.html
+  name: CodeFactory
+  nameWithType: CodeFactory
+  fullName: CodeFactory
+- uid: CodeFactory.ICommandBase`1.ExecuteCommandAsync*
+  commentId: Overload:CodeFactory.ICommandBase`1.ExecuteCommandAsync
+  isExternal: true
+  href: CodeFactory.ICommandBase-1.html#CodeFactory_ICommandBase_1_ExecuteCommandAsync__0_
+  name: ExecuteCommandAsync
+  nameWithType: ICommandBase<TModel>.ExecuteCommandAsync
+  fullName: CodeFactory.ICommandBase<TModel>.ExecuteCommandAsync
+  nameWithType.vb: ICommandBase(Of TModel).ExecuteCommandAsync
+  fullName.vb: CodeFactory.ICommandBase(Of TModel).ExecuteCommandAsync
+- uid: '{TModel}'
+  commentId: '!:TModel'
+  definition: TModel
+  name: TModel
+  nameWithType: TModel
+  fullName: TModel
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: TModel
+  name: TModel
+  nameWithType: TModel
+  fullName: TModel
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks

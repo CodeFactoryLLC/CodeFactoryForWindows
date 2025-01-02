@@ -1,0 +1,840 @@
+### YamlMime:ManagedReference
+items:
+- uid: Serilog.LoggerConfiguration
+  commentId: T:Serilog.LoggerConfiguration
+  id: LoggerConfiguration
+  parent: Serilog
+  children:
+  - Serilog.LoggerConfiguration.#ctor
+  - Serilog.LoggerConfiguration.AuditTo
+  - Serilog.LoggerConfiguration.CreateLogger
+  - Serilog.LoggerConfiguration.Destructure
+  - Serilog.LoggerConfiguration.Enrich
+  - Serilog.LoggerConfiguration.Filter
+  - Serilog.LoggerConfiguration.MinimumLevel
+  - Serilog.LoggerConfiguration.ReadFrom
+  - Serilog.LoggerConfiguration.WriteTo
+  langs:
+  - csharp
+  - vb
+  name: LoggerConfiguration
+  nameWithType: LoggerConfiguration
+  fullName: Serilog.LoggerConfiguration
+  type: Class
+  assemblies:
+  - Serilog
+  namespace: Serilog
+  summary: Configuration object for creating <xref href="Serilog.ILogger" data-throw-if-not-resolved="false"></xref> instances.
+  example: []
+  syntax:
+    content: public class LoggerConfiguration
+    content.vb: Public Class LoggerConfiguration
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: Serilog.LoggerConfiguration.#ctor
+  commentId: M:Serilog.LoggerConfiguration.#ctor
+  id: '#ctor'
+  parent: Serilog.LoggerConfiguration
+  langs:
+  - csharp
+  - vb
+  name: LoggerConfiguration()
+  nameWithType: LoggerConfiguration.LoggerConfiguration()
+  fullName: Serilog.LoggerConfiguration.LoggerConfiguration()
+  type: Constructor
+  assemblies:
+  - Serilog
+  namespace: Serilog
+  summary: Construct a <xref href="Serilog.LoggerConfiguration" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public LoggerConfiguration()
+    content.vb: Public Sub New()
+  overload: Serilog.LoggerConfiguration.#ctor*
+  nameWithType.vb: LoggerConfiguration.New()
+  fullName.vb: Serilog.LoggerConfiguration.New()
+  name.vb: New()
+- uid: Serilog.LoggerConfiguration.CreateLogger
+  commentId: M:Serilog.LoggerConfiguration.CreateLogger
+  id: CreateLogger
+  parent: Serilog.LoggerConfiguration
+  langs:
+  - csharp
+  - vb
+  name: CreateLogger()
+  nameWithType: LoggerConfiguration.CreateLogger()
+  fullName: Serilog.LoggerConfiguration.CreateLogger()
+  type: Method
+  assemblies:
+  - Serilog
+  namespace: Serilog
+  summary: Create a logger using the configured sinks, enrichers and minimum level.
+  remarks: >-
+    To free resources held by sinks ahead of program shutdown,
+                the returned logger may be cast to <xref href="System.IDisposable" data-throw-if-not-resolved="false"></xref> and
+                disposed.
+  example: []
+  syntax:
+    content: public Logger CreateLogger()
+    return:
+      type: Serilog.Core.Logger
+      description: The logger.
+    content.vb: Public Function CreateLogger() As Logger
+  overload: Serilog.LoggerConfiguration.CreateLogger*
+  exceptions:
+  - type: System.InvalidOperationException
+    commentId: T:System.InvalidOperationException
+    description: When the logger is already created
+- uid: Serilog.LoggerConfiguration.WriteTo
+  commentId: P:Serilog.LoggerConfiguration.WriteTo
+  id: WriteTo
+  parent: Serilog.LoggerConfiguration
+  langs:
+  - csharp
+  - vb
+  name: WriteTo
+  nameWithType: LoggerConfiguration.WriteTo
+  fullName: Serilog.LoggerConfiguration.WriteTo
+  type: Property
+  assemblies:
+  - Serilog
+  namespace: Serilog
+  summary: Configures the sinks that log events will be emitted to.
+  example: []
+  syntax:
+    content: public LoggerSinkConfiguration WriteTo { get; }
+    parameters: []
+    return:
+      type: Serilog.Configuration.LoggerSinkConfiguration
+    content.vb: Public ReadOnly Property WriteTo As LoggerSinkConfiguration
+  overload: Serilog.LoggerConfiguration.WriteTo*
+- uid: Serilog.LoggerConfiguration.AuditTo
+  commentId: P:Serilog.LoggerConfiguration.AuditTo
+  id: AuditTo
+  parent: Serilog.LoggerConfiguration
+  langs:
+  - csharp
+  - vb
+  name: AuditTo
+  nameWithType: LoggerConfiguration.AuditTo
+  fullName: Serilog.LoggerConfiguration.AuditTo
+  type: Property
+  assemblies:
+  - Serilog
+  namespace: Serilog
+  summary: >-
+    Configures sinks for auditing, instead of regular (safe) logging. When auditing is used,
+
+    exceptions from sinks and any intermediate filters propagate back to the caller. Most callers
+
+    should use <xref href="Serilog.LoggerConfiguration.WriteTo" data-throw-if-not-resolved="false"></xref> instead.
+  remarks: >-
+    Not all sinks are compatible with transactional auditing requirements (many will use asynchronous
+
+    batching to improve write throughput and latency). Sinks need to opt-in to auditing support by
+
+    extending <xref href="Serilog.Configuration.LoggerAuditSinkConfiguration" data-throw-if-not-resolved="false"></xref>, though the generic <xref href="Serilog.Configuration.LoggerAuditSinkConfiguration.Sink(Serilog.Core.ILogEventSink%2cSerilog.Events.LogEventLevel%2cSerilog.Core.LoggingLevelSwitch)" data-throw-if-not-resolved="false"></xref>
+
+    method allows any sink class to be adapted for auditing.
+  example: []
+  syntax:
+    content: public LoggerAuditSinkConfiguration AuditTo { get; }
+    parameters: []
+    return:
+      type: Serilog.Configuration.LoggerAuditSinkConfiguration
+    content.vb: Public ReadOnly Property AuditTo As LoggerAuditSinkConfiguration
+  overload: Serilog.LoggerConfiguration.AuditTo*
+- uid: Serilog.LoggerConfiguration.MinimumLevel
+  commentId: P:Serilog.LoggerConfiguration.MinimumLevel
+  id: MinimumLevel
+  parent: Serilog.LoggerConfiguration
+  langs:
+  - csharp
+  - vb
+  name: MinimumLevel
+  nameWithType: LoggerConfiguration.MinimumLevel
+  fullName: Serilog.LoggerConfiguration.MinimumLevel
+  type: Property
+  assemblies:
+  - Serilog
+  namespace: Serilog
+  summary: >-
+    Configures the minimum level at which events will be passed to sinks. If
+
+    not specified, only events at the <xref href="Serilog.Events.LogEventLevel.Information" data-throw-if-not-resolved="false"></xref>
+
+    level and above will be passed through.
+  example: []
+  syntax:
+    content: public LoggerMinimumLevelConfiguration MinimumLevel { get; }
+    parameters: []
+    return:
+      type: Serilog.Configuration.LoggerMinimumLevelConfiguration
+      description: Configuration object allowing method chaining.
+    content.vb: Public ReadOnly Property MinimumLevel As LoggerMinimumLevelConfiguration
+  overload: Serilog.LoggerConfiguration.MinimumLevel*
+- uid: Serilog.LoggerConfiguration.Enrich
+  commentId: P:Serilog.LoggerConfiguration.Enrich
+  id: Enrich
+  parent: Serilog.LoggerConfiguration
+  langs:
+  - csharp
+  - vb
+  name: Enrich
+  nameWithType: LoggerConfiguration.Enrich
+  fullName: Serilog.LoggerConfiguration.Enrich
+  type: Property
+  assemblies:
+  - Serilog
+  namespace: Serilog
+  summary: >-
+    Configures enrichment of <xref href="Serilog.Events.LogEvent" data-throw-if-not-resolved="false"></xref>s. Enrichers can add, remove and
+
+    modify the properties associated with events.
+  example: []
+  syntax:
+    content: public LoggerEnrichmentConfiguration Enrich { get; }
+    parameters: []
+    return:
+      type: Serilog.Configuration.LoggerEnrichmentConfiguration
+    content.vb: Public ReadOnly Property Enrich As LoggerEnrichmentConfiguration
+  overload: Serilog.LoggerConfiguration.Enrich*
+- uid: Serilog.LoggerConfiguration.Filter
+  commentId: P:Serilog.LoggerConfiguration.Filter
+  id: Filter
+  parent: Serilog.LoggerConfiguration
+  langs:
+  - csharp
+  - vb
+  name: Filter
+  nameWithType: LoggerConfiguration.Filter
+  fullName: Serilog.LoggerConfiguration.Filter
+  type: Property
+  assemblies:
+  - Serilog
+  namespace: Serilog
+  summary: Configures global filtering of <xref href="Serilog.Events.LogEvent" data-throw-if-not-resolved="false"></xref>s.
+  example: []
+  syntax:
+    content: public LoggerFilterConfiguration Filter { get; }
+    parameters: []
+    return:
+      type: Serilog.Configuration.LoggerFilterConfiguration
+    content.vb: Public ReadOnly Property Filter As LoggerFilterConfiguration
+  overload: Serilog.LoggerConfiguration.Filter*
+- uid: Serilog.LoggerConfiguration.Destructure
+  commentId: P:Serilog.LoggerConfiguration.Destructure
+  id: Destructure
+  parent: Serilog.LoggerConfiguration
+  langs:
+  - csharp
+  - vb
+  name: Destructure
+  nameWithType: LoggerConfiguration.Destructure
+  fullName: Serilog.LoggerConfiguration.Destructure
+  type: Property
+  assemblies:
+  - Serilog
+  namespace: Serilog
+  summary: Configures destructuring of message template parameters.
+  example: []
+  syntax:
+    content: public LoggerDestructuringConfiguration Destructure { get; }
+    parameters: []
+    return:
+      type: Serilog.Configuration.LoggerDestructuringConfiguration
+    content.vb: Public ReadOnly Property Destructure As LoggerDestructuringConfiguration
+  overload: Serilog.LoggerConfiguration.Destructure*
+- uid: Serilog.LoggerConfiguration.ReadFrom
+  commentId: P:Serilog.LoggerConfiguration.ReadFrom
+  id: ReadFrom
+  parent: Serilog.LoggerConfiguration
+  langs:
+  - csharp
+  - vb
+  name: ReadFrom
+  nameWithType: LoggerConfiguration.ReadFrom
+  fullName: Serilog.LoggerConfiguration.ReadFrom
+  type: Property
+  assemblies:
+  - Serilog
+  namespace: Serilog
+  summary: Apply external settings to the logger configuration.
+  example: []
+  syntax:
+    content: public LoggerSettingsConfiguration ReadFrom { get; }
+    parameters: []
+    return:
+      type: Serilog.Configuration.LoggerSettingsConfiguration
+    content.vb: Public ReadOnly Property ReadFrom As LoggerSettingsConfiguration
+  overload: Serilog.LoggerConfiguration.ReadFrom*
+references:
+- uid: Serilog.ILogger
+  commentId: T:Serilog.ILogger
+  parent: Serilog
+  isExternal: true
+  href: Serilog.ILogger.html
+  name: ILogger
+  nameWithType: ILogger
+  fullName: Serilog.ILogger
+- uid: Serilog
+  commentId: N:Serilog
+  isExternal: true
+  href: Serilog.html
+  name: Serilog
+  nameWithType: Serilog
+  fullName: Serilog
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Serilog.LoggerConfiguration
+  commentId: T:Serilog.LoggerConfiguration
+  parent: Serilog
+  isExternal: true
+  href: Serilog.LoggerConfiguration.html
+  name: LoggerConfiguration
+  nameWithType: LoggerConfiguration
+  fullName: Serilog.LoggerConfiguration
+- uid: Serilog.LoggerConfiguration.#ctor*
+  commentId: Overload:Serilog.LoggerConfiguration.#ctor
+  isExternal: true
+  href: Serilog.LoggerConfiguration.html#Serilog_LoggerConfiguration__ctor
+  name: LoggerConfiguration
+  nameWithType: LoggerConfiguration.LoggerConfiguration
+  fullName: Serilog.LoggerConfiguration.LoggerConfiguration
+  nameWithType.vb: LoggerConfiguration.New
+  fullName.vb: Serilog.LoggerConfiguration.New
+  name.vb: New
+- uid: System.IDisposable
+  commentId: T:System.IDisposable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable
+- uid: System.InvalidOperationException
+  commentId: T:System.InvalidOperationException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.invalidoperationexception
+  name: InvalidOperationException
+  nameWithType: InvalidOperationException
+  fullName: System.InvalidOperationException
+- uid: Serilog.LoggerConfiguration.CreateLogger*
+  commentId: Overload:Serilog.LoggerConfiguration.CreateLogger
+  isExternal: true
+  href: Serilog.LoggerConfiguration.html#Serilog_LoggerConfiguration_CreateLogger
+  name: CreateLogger
+  nameWithType: LoggerConfiguration.CreateLogger
+  fullName: Serilog.LoggerConfiguration.CreateLogger
+- uid: Serilog.Core.Logger
+  commentId: T:Serilog.Core.Logger
+  parent: Serilog.Core
+  isExternal: true
+  href: Serilog.Core.Logger.html
+  name: Logger
+  nameWithType: Logger
+  fullName: Serilog.Core.Logger
+- uid: Serilog.Core
+  commentId: N:Serilog.Core
+  isExternal: true
+  href: Serilog.html
+  name: Serilog.Core
+  nameWithType: Serilog.Core
+  fullName: Serilog.Core
+  spec.csharp:
+  - uid: Serilog
+    name: Serilog
+    isExternal: true
+    href: Serilog.html
+  - name: .
+  - uid: Serilog.Core
+    name: Core
+    isExternal: true
+    href: Serilog.Core.html
+  spec.vb:
+  - uid: Serilog
+    name: Serilog
+    isExternal: true
+    href: Serilog.html
+  - name: .
+  - uid: Serilog.Core
+    name: Core
+    isExternal: true
+    href: Serilog.Core.html
+- uid: Serilog.LoggerConfiguration.WriteTo*
+  commentId: Overload:Serilog.LoggerConfiguration.WriteTo
+  isExternal: true
+  href: Serilog.LoggerConfiguration.html#Serilog_LoggerConfiguration_WriteTo
+  name: WriteTo
+  nameWithType: LoggerConfiguration.WriteTo
+  fullName: Serilog.LoggerConfiguration.WriteTo
+- uid: Serilog.Configuration.LoggerSinkConfiguration
+  commentId: T:Serilog.Configuration.LoggerSinkConfiguration
+  parent: Serilog.Configuration
+  isExternal: true
+  href: Serilog.Configuration.LoggerSinkConfiguration.html
+  name: LoggerSinkConfiguration
+  nameWithType: LoggerSinkConfiguration
+  fullName: Serilog.Configuration.LoggerSinkConfiguration
+- uid: Serilog.Configuration
+  commentId: N:Serilog.Configuration
+  isExternal: true
+  href: Serilog.html
+  name: Serilog.Configuration
+  nameWithType: Serilog.Configuration
+  fullName: Serilog.Configuration
+  spec.csharp:
+  - uid: Serilog
+    name: Serilog
+    isExternal: true
+    href: Serilog.html
+  - name: .
+  - uid: Serilog.Configuration
+    name: Configuration
+    isExternal: true
+    href: Serilog.Configuration.html
+  spec.vb:
+  - uid: Serilog
+    name: Serilog
+    isExternal: true
+    href: Serilog.html
+  - name: .
+  - uid: Serilog.Configuration
+    name: Configuration
+    isExternal: true
+    href: Serilog.Configuration.html
+- uid: Serilog.LoggerConfiguration.WriteTo
+  commentId: P:Serilog.LoggerConfiguration.WriteTo
+  isExternal: true
+  href: Serilog.LoggerConfiguration.html#Serilog_LoggerConfiguration_WriteTo
+  name: WriteTo
+  nameWithType: LoggerConfiguration.WriteTo
+  fullName: Serilog.LoggerConfiguration.WriteTo
+- uid: Serilog.Configuration.LoggerAuditSinkConfiguration
+  commentId: T:Serilog.Configuration.LoggerAuditSinkConfiguration
+  parent: Serilog.Configuration
+  isExternal: true
+  href: Serilog.Configuration.LoggerAuditSinkConfiguration.html
+  name: LoggerAuditSinkConfiguration
+  nameWithType: LoggerAuditSinkConfiguration
+  fullName: Serilog.Configuration.LoggerAuditSinkConfiguration
+- uid: Serilog.Configuration.LoggerAuditSinkConfiguration.Sink(Serilog.Core.ILogEventSink,Serilog.Events.LogEventLevel,Serilog.Core.LoggingLevelSwitch)
+  commentId: M:Serilog.Configuration.LoggerAuditSinkConfiguration.Sink(Serilog.Core.ILogEventSink,Serilog.Events.LogEventLevel,Serilog.Core.LoggingLevelSwitch)
+  isExternal: true
+  href: Serilog.Configuration.LoggerAuditSinkConfiguration.html#Serilog_Configuration_LoggerAuditSinkConfiguration_Sink_Serilog_Core_ILogEventSink_Serilog_Events_LogEventLevel_Serilog_Core_LoggingLevelSwitch_
+  name: Sink(ILogEventSink, LogEventLevel, LoggingLevelSwitch)
+  nameWithType: LoggerAuditSinkConfiguration.Sink(ILogEventSink, LogEventLevel, LoggingLevelSwitch)
+  fullName: Serilog.Configuration.LoggerAuditSinkConfiguration.Sink(Serilog.Core.ILogEventSink, Serilog.Events.LogEventLevel, Serilog.Core.LoggingLevelSwitch)
+  spec.csharp:
+  - uid: Serilog.Configuration.LoggerAuditSinkConfiguration.Sink(Serilog.Core.ILogEventSink,Serilog.Events.LogEventLevel,Serilog.Core.LoggingLevelSwitch)
+    name: Sink
+    isExternal: true
+    href: Serilog.Configuration.LoggerAuditSinkConfiguration.html#Serilog_Configuration_LoggerAuditSinkConfiguration_Sink_Serilog_Core_ILogEventSink_Serilog_Events_LogEventLevel_Serilog_Core_LoggingLevelSwitch_
+  - name: (
+  - uid: Serilog.Core.ILogEventSink
+    name: ILogEventSink
+    isExternal: true
+    href: Serilog.Core.ILogEventSink.html
+  - name: ','
+  - name: " "
+  - uid: Serilog.Events.LogEventLevel
+    name: LogEventLevel
+    isExternal: true
+    href: Serilog.Events.LogEventLevel.html
+  - name: ','
+  - name: " "
+  - uid: Serilog.Core.LoggingLevelSwitch
+    name: LoggingLevelSwitch
+    isExternal: true
+    href: Serilog.Core.LoggingLevelSwitch.html
+  - name: )
+  spec.vb:
+  - uid: Serilog.Configuration.LoggerAuditSinkConfiguration.Sink(Serilog.Core.ILogEventSink,Serilog.Events.LogEventLevel,Serilog.Core.LoggingLevelSwitch)
+    name: Sink
+    isExternal: true
+    href: Serilog.Configuration.LoggerAuditSinkConfiguration.html#Serilog_Configuration_LoggerAuditSinkConfiguration_Sink_Serilog_Core_ILogEventSink_Serilog_Events_LogEventLevel_Serilog_Core_LoggingLevelSwitch_
+  - name: (
+  - uid: Serilog.Core.ILogEventSink
+    name: ILogEventSink
+    isExternal: true
+    href: Serilog.Core.ILogEventSink.html
+  - name: ','
+  - name: " "
+  - uid: Serilog.Events.LogEventLevel
+    name: LogEventLevel
+    isExternal: true
+    href: Serilog.Events.LogEventLevel.html
+  - name: ','
+  - name: " "
+  - uid: Serilog.Core.LoggingLevelSwitch
+    name: LoggingLevelSwitch
+    isExternal: true
+    href: Serilog.Core.LoggingLevelSwitch.html
+  - name: )
+- uid: Serilog.LoggerConfiguration.AuditTo*
+  commentId: Overload:Serilog.LoggerConfiguration.AuditTo
+  isExternal: true
+  href: Serilog.LoggerConfiguration.html#Serilog_LoggerConfiguration_AuditTo
+  name: AuditTo
+  nameWithType: LoggerConfiguration.AuditTo
+  fullName: Serilog.LoggerConfiguration.AuditTo
+- uid: Serilog.Events.LogEventLevel.Information
+  commentId: F:Serilog.Events.LogEventLevel.Information
+  isExternal: true
+  href: Serilog.Events.LogEventLevel.html#Serilog_Events_LogEventLevel_Information
+  name: Information
+  nameWithType: LogEventLevel.Information
+  fullName: Serilog.Events.LogEventLevel.Information
+- uid: Serilog.LoggerConfiguration.MinimumLevel*
+  commentId: Overload:Serilog.LoggerConfiguration.MinimumLevel
+  isExternal: true
+  href: Serilog.LoggerConfiguration.html#Serilog_LoggerConfiguration_MinimumLevel
+  name: MinimumLevel
+  nameWithType: LoggerConfiguration.MinimumLevel
+  fullName: Serilog.LoggerConfiguration.MinimumLevel
+- uid: Serilog.Configuration.LoggerMinimumLevelConfiguration
+  commentId: T:Serilog.Configuration.LoggerMinimumLevelConfiguration
+  parent: Serilog.Configuration
+  isExternal: true
+  href: Serilog.Configuration.LoggerMinimumLevelConfiguration.html
+  name: LoggerMinimumLevelConfiguration
+  nameWithType: LoggerMinimumLevelConfiguration
+  fullName: Serilog.Configuration.LoggerMinimumLevelConfiguration
+- uid: Serilog.Events.LogEvent
+  commentId: T:Serilog.Events.LogEvent
+  parent: Serilog.Events
+  isExternal: true
+  href: Serilog.Events.LogEvent.html
+  name: LogEvent
+  nameWithType: LogEvent
+  fullName: Serilog.Events.LogEvent
+- uid: Serilog.LoggerConfiguration.Enrich*
+  commentId: Overload:Serilog.LoggerConfiguration.Enrich
+  isExternal: true
+  href: Serilog.LoggerConfiguration.html#Serilog_LoggerConfiguration_Enrich
+  name: Enrich
+  nameWithType: LoggerConfiguration.Enrich
+  fullName: Serilog.LoggerConfiguration.Enrich
+- uid: Serilog.Configuration.LoggerEnrichmentConfiguration
+  commentId: T:Serilog.Configuration.LoggerEnrichmentConfiguration
+  parent: Serilog.Configuration
+  isExternal: true
+  href: Serilog.Configuration.LoggerEnrichmentConfiguration.html
+  name: LoggerEnrichmentConfiguration
+  nameWithType: LoggerEnrichmentConfiguration
+  fullName: Serilog.Configuration.LoggerEnrichmentConfiguration
+- uid: Serilog.Events
+  commentId: N:Serilog.Events
+  isExternal: true
+  href: Serilog.html
+  name: Serilog.Events
+  nameWithType: Serilog.Events
+  fullName: Serilog.Events
+  spec.csharp:
+  - uid: Serilog
+    name: Serilog
+    isExternal: true
+    href: Serilog.html
+  - name: .
+  - uid: Serilog.Events
+    name: Events
+    isExternal: true
+    href: Serilog.Events.html
+  spec.vb:
+  - uid: Serilog
+    name: Serilog
+    isExternal: true
+    href: Serilog.html
+  - name: .
+  - uid: Serilog.Events
+    name: Events
+    isExternal: true
+    href: Serilog.Events.html
+- uid: Serilog.LoggerConfiguration.Filter*
+  commentId: Overload:Serilog.LoggerConfiguration.Filter
+  isExternal: true
+  href: Serilog.LoggerConfiguration.html#Serilog_LoggerConfiguration_Filter
+  name: Filter
+  nameWithType: LoggerConfiguration.Filter
+  fullName: Serilog.LoggerConfiguration.Filter
+- uid: Serilog.Configuration.LoggerFilterConfiguration
+  commentId: T:Serilog.Configuration.LoggerFilterConfiguration
+  parent: Serilog.Configuration
+  isExternal: true
+  href: Serilog.Configuration.LoggerFilterConfiguration.html
+  name: LoggerFilterConfiguration
+  nameWithType: LoggerFilterConfiguration
+  fullName: Serilog.Configuration.LoggerFilterConfiguration
+- uid: Serilog.LoggerConfiguration.Destructure*
+  commentId: Overload:Serilog.LoggerConfiguration.Destructure
+  isExternal: true
+  href: Serilog.LoggerConfiguration.html#Serilog_LoggerConfiguration_Destructure
+  name: Destructure
+  nameWithType: LoggerConfiguration.Destructure
+  fullName: Serilog.LoggerConfiguration.Destructure
+- uid: Serilog.Configuration.LoggerDestructuringConfiguration
+  commentId: T:Serilog.Configuration.LoggerDestructuringConfiguration
+  parent: Serilog.Configuration
+  isExternal: true
+  href: Serilog.Configuration.LoggerDestructuringConfiguration.html
+  name: LoggerDestructuringConfiguration
+  nameWithType: LoggerDestructuringConfiguration
+  fullName: Serilog.Configuration.LoggerDestructuringConfiguration
+- uid: Serilog.LoggerConfiguration.ReadFrom*
+  commentId: Overload:Serilog.LoggerConfiguration.ReadFrom
+  isExternal: true
+  href: Serilog.LoggerConfiguration.html#Serilog_LoggerConfiguration_ReadFrom
+  name: ReadFrom
+  nameWithType: LoggerConfiguration.ReadFrom
+  fullName: Serilog.LoggerConfiguration.ReadFrom
+- uid: Serilog.Configuration.LoggerSettingsConfiguration
+  commentId: T:Serilog.Configuration.LoggerSettingsConfiguration
+  parent: Serilog.Configuration
+  isExternal: true
+  href: Serilog.Configuration.LoggerSettingsConfiguration.html
+  name: LoggerSettingsConfiguration
+  nameWithType: LoggerSettingsConfiguration
+  fullName: Serilog.Configuration.LoggerSettingsConfiguration

@@ -1,0 +1,1092 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+    <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Class UnsafeMemory32 | CodeFactory for Windows </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Class UnsafeMemory32 | CodeFactory for Windows ">
+      <meta name="generator" content="docfx ">
+  
+      <link rel="shortcut icon" href="../images/cfLogo70White.png">
+      <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/night-owl.min.css">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" integrity="sha384-EvBWSlnoFgZlXJvpzS+MAUEjvN7+gcCwH+qh7GRFOGgZO0PuwOFro7qPOJnLfe7l" crossorigin="anonymous">
+      <link rel="stylesheet" href="../styles/config.css">
+      <link rel="stylesheet" href="../styles/singulink.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+  
+  <meta property="docfx:rel" content="../">
+  <meta property="docfx:newtab" content="true">
+    </head>
+    <body>
+        <!-- Header required for docfx anchor scroll to work -->
+        <header id="head"></header>
+        <div class="top-navbar">
+            <a class="burger-icon" onclick="toggleMenu()">
+                <svg name="Hamburger" style="vertical-align: middle;" width="34" height="34" viewbox="0 0 24 24"><path fill="currentColor" fill-rule="evenodd" clip-rule="evenodd" d="M20 6H4V9H20V6ZM4 10.999H20V13.999H4V10.999ZM4 15.999H20V18.999H4V15.999Z"></path></svg>
+            </a>
+
+
+            <a class="brand" href="../index.html">
+              <img src="../images/cfLogo70White.png" alt="CodeFactory for Windows" class="logomark">
+              <span class="brand-title">CodeFactory for Windows</span>
+            </a>        </div>
+
+        <div class="body-content">
+            <div id="blackout" class="blackout" onclick="toggleMenu()"></div>
+
+            <nav id="sidebar" role="navigation">
+                <div class="sidebar">
+
+                    <div>
+                      <div class="mobile-hide">
+
+                        <a class="brand" href="../index.html">
+                          <img src="../images/cfLogo70White.png" alt="CodeFactory for Windows" class="logomark">
+                          <span class="brand-title">CodeFactory for Windows</span>
+                        </a>                      </div>
+
+                      <div class="sidesearch">
+                        <form id="search" role="search" class="search">
+                            <i class="bi bi-search search-icon"></i>
+                            <input type="text" id="search-query" placeholder="Search" autocomplete="off">
+                        </form>
+                      </div>
+
+                      <div id="navbar">
+                      </div>
+                    </div>                    <div class="sidebar-item-separator"></div>
+
+                        <div id="sidetoggle">
+                          <div id="sidetoc"></div>
+                        </div>
+                </div>
+                <div class="footer">
+  CodeFactory for Windows SDK
+  
+                </div>            </nav>
+
+            <main class="main-panel">
+
+                <div id="search-results" style="display: none;">
+                  <h1 class="search-list">Search Results for <span></span></h1>
+                  <div class="sr-items">
+                    <p><i class="bi bi-hourglass-split index-loading"></i></p>
+                  </div>
+                  <ul id="pagination" data-first=First data-prev=Previous data-next=Next data-last=Last></ul>
+                </div>
+ 
+
+                <div role="main" class="hide-when-search">
+
+                        <div class="subnav navbar navbar-default">
+                          <div class="container hide-when-search" id="breadcrumb">
+                            <ul class="breadcrumb">
+                              <li></li>
+                            </ul>
+                          </div>
+                        </div>
+
+
+                    <article class="content wrap" id="_content" data-uid="MessagePack.Internal.UnsafeMemory32">
+
+
+
+  <h1 id="MessagePack_Internal_UnsafeMemory32" data-uid="MessagePack.Internal.UnsafeMemory32" class="text-break">Class UnsafeMemory32</h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+    <div class="level1"><span class="xref">UnsafeMemory32</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="MessagePack.html">MessagePack</a>.<a class="xref" href="MessagePack.Internal.html">Internal</a></h6>
+  <h6><strong>Assembly</strong>: MessagePack.dll</h6>
+  <h5 id="MessagePack_Internal_UnsafeMemory32_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class UnsafeMemory32</code></pre>
+  </div>
+  <h3 id="methods">Methods
+</h3>
+  <a id="MessagePack_Internal_UnsafeMemory32_WriteRaw1_" data-uid="MessagePack.Internal.UnsafeMemory32.WriteRaw1*"></a>
+  <h4 id="MessagePack_Internal_UnsafeMemory32_WriteRaw1_MessagePack_MessagePackWriter__System_ReadOnlySpan_System_Byte__" data-uid="MessagePack.Internal.UnsafeMemory32.WriteRaw1(MessagePack.MessagePackWriter@,System.ReadOnlySpan{System.Byte})">WriteRaw1(ref MessagePackWriter, ReadOnlySpan&lt;byte&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void WriteRaw1(ref MessagePackWriter writer, ReadOnlySpan&lt;byte&gt; src)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MessagePack.MessagePackWriter.html">MessagePackWriter</a></td>
+        <td><span class="parametername">writer</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>&gt;</td>
+        <td><span class="parametername">src</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="MessagePack_Internal_UnsafeMemory32_WriteRaw10_" data-uid="MessagePack.Internal.UnsafeMemory32.WriteRaw10*"></a>
+  <h4 id="MessagePack_Internal_UnsafeMemory32_WriteRaw10_MessagePack_MessagePackWriter__System_ReadOnlySpan_System_Byte__" data-uid="MessagePack.Internal.UnsafeMemory32.WriteRaw10(MessagePack.MessagePackWriter@,System.ReadOnlySpan{System.Byte})">WriteRaw10(ref MessagePackWriter, ReadOnlySpan&lt;byte&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void WriteRaw10(ref MessagePackWriter writer, ReadOnlySpan&lt;byte&gt; src)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MessagePack.MessagePackWriter.html">MessagePackWriter</a></td>
+        <td><span class="parametername">writer</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>&gt;</td>
+        <td><span class="parametername">src</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="MessagePack_Internal_UnsafeMemory32_WriteRaw11_" data-uid="MessagePack.Internal.UnsafeMemory32.WriteRaw11*"></a>
+  <h4 id="MessagePack_Internal_UnsafeMemory32_WriteRaw11_MessagePack_MessagePackWriter__System_ReadOnlySpan_System_Byte__" data-uid="MessagePack.Internal.UnsafeMemory32.WriteRaw11(MessagePack.MessagePackWriter@,System.ReadOnlySpan{System.Byte})">WriteRaw11(ref MessagePackWriter, ReadOnlySpan&lt;byte&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void WriteRaw11(ref MessagePackWriter writer, ReadOnlySpan&lt;byte&gt; src)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MessagePack.MessagePackWriter.html">MessagePackWriter</a></td>
+        <td><span class="parametername">writer</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>&gt;</td>
+        <td><span class="parametername">src</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="MessagePack_Internal_UnsafeMemory32_WriteRaw12_" data-uid="MessagePack.Internal.UnsafeMemory32.WriteRaw12*"></a>
+  <h4 id="MessagePack_Internal_UnsafeMemory32_WriteRaw12_MessagePack_MessagePackWriter__System_ReadOnlySpan_System_Byte__" data-uid="MessagePack.Internal.UnsafeMemory32.WriteRaw12(MessagePack.MessagePackWriter@,System.ReadOnlySpan{System.Byte})">WriteRaw12(ref MessagePackWriter, ReadOnlySpan&lt;byte&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void WriteRaw12(ref MessagePackWriter writer, ReadOnlySpan&lt;byte&gt; src)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MessagePack.MessagePackWriter.html">MessagePackWriter</a></td>
+        <td><span class="parametername">writer</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>&gt;</td>
+        <td><span class="parametername">src</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="MessagePack_Internal_UnsafeMemory32_WriteRaw13_" data-uid="MessagePack.Internal.UnsafeMemory32.WriteRaw13*"></a>
+  <h4 id="MessagePack_Internal_UnsafeMemory32_WriteRaw13_MessagePack_MessagePackWriter__System_ReadOnlySpan_System_Byte__" data-uid="MessagePack.Internal.UnsafeMemory32.WriteRaw13(MessagePack.MessagePackWriter@,System.ReadOnlySpan{System.Byte})">WriteRaw13(ref MessagePackWriter, ReadOnlySpan&lt;byte&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void WriteRaw13(ref MessagePackWriter writer, ReadOnlySpan&lt;byte&gt; src)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MessagePack.MessagePackWriter.html">MessagePackWriter</a></td>
+        <td><span class="parametername">writer</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>&gt;</td>
+        <td><span class="parametername">src</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="MessagePack_Internal_UnsafeMemory32_WriteRaw14_" data-uid="MessagePack.Internal.UnsafeMemory32.WriteRaw14*"></a>
+  <h4 id="MessagePack_Internal_UnsafeMemory32_WriteRaw14_MessagePack_MessagePackWriter__System_ReadOnlySpan_System_Byte__" data-uid="MessagePack.Internal.UnsafeMemory32.WriteRaw14(MessagePack.MessagePackWriter@,System.ReadOnlySpan{System.Byte})">WriteRaw14(ref MessagePackWriter, ReadOnlySpan&lt;byte&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void WriteRaw14(ref MessagePackWriter writer, ReadOnlySpan&lt;byte&gt; src)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MessagePack.MessagePackWriter.html">MessagePackWriter</a></td>
+        <td><span class="parametername">writer</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>&gt;</td>
+        <td><span class="parametername">src</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="MessagePack_Internal_UnsafeMemory32_WriteRaw15_" data-uid="MessagePack.Internal.UnsafeMemory32.WriteRaw15*"></a>
+  <h4 id="MessagePack_Internal_UnsafeMemory32_WriteRaw15_MessagePack_MessagePackWriter__System_ReadOnlySpan_System_Byte__" data-uid="MessagePack.Internal.UnsafeMemory32.WriteRaw15(MessagePack.MessagePackWriter@,System.ReadOnlySpan{System.Byte})">WriteRaw15(ref MessagePackWriter, ReadOnlySpan&lt;byte&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void WriteRaw15(ref MessagePackWriter writer, ReadOnlySpan&lt;byte&gt; src)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MessagePack.MessagePackWriter.html">MessagePackWriter</a></td>
+        <td><span class="parametername">writer</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>&gt;</td>
+        <td><span class="parametername">src</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="MessagePack_Internal_UnsafeMemory32_WriteRaw16_" data-uid="MessagePack.Internal.UnsafeMemory32.WriteRaw16*"></a>
+  <h4 id="MessagePack_Internal_UnsafeMemory32_WriteRaw16_MessagePack_MessagePackWriter__System_ReadOnlySpan_System_Byte__" data-uid="MessagePack.Internal.UnsafeMemory32.WriteRaw16(MessagePack.MessagePackWriter@,System.ReadOnlySpan{System.Byte})">WriteRaw16(ref MessagePackWriter, ReadOnlySpan&lt;byte&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void WriteRaw16(ref MessagePackWriter writer, ReadOnlySpan&lt;byte&gt; src)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MessagePack.MessagePackWriter.html">MessagePackWriter</a></td>
+        <td><span class="parametername">writer</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>&gt;</td>
+        <td><span class="parametername">src</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="MessagePack_Internal_UnsafeMemory32_WriteRaw17_" data-uid="MessagePack.Internal.UnsafeMemory32.WriteRaw17*"></a>
+  <h4 id="MessagePack_Internal_UnsafeMemory32_WriteRaw17_MessagePack_MessagePackWriter__System_ReadOnlySpan_System_Byte__" data-uid="MessagePack.Internal.UnsafeMemory32.WriteRaw17(MessagePack.MessagePackWriter@,System.ReadOnlySpan{System.Byte})">WriteRaw17(ref MessagePackWriter, ReadOnlySpan&lt;byte&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void WriteRaw17(ref MessagePackWriter writer, ReadOnlySpan&lt;byte&gt; src)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MessagePack.MessagePackWriter.html">MessagePackWriter</a></td>
+        <td><span class="parametername">writer</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>&gt;</td>
+        <td><span class="parametername">src</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="MessagePack_Internal_UnsafeMemory32_WriteRaw18_" data-uid="MessagePack.Internal.UnsafeMemory32.WriteRaw18*"></a>
+  <h4 id="MessagePack_Internal_UnsafeMemory32_WriteRaw18_MessagePack_MessagePackWriter__System_ReadOnlySpan_System_Byte__" data-uid="MessagePack.Internal.UnsafeMemory32.WriteRaw18(MessagePack.MessagePackWriter@,System.ReadOnlySpan{System.Byte})">WriteRaw18(ref MessagePackWriter, ReadOnlySpan&lt;byte&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void WriteRaw18(ref MessagePackWriter writer, ReadOnlySpan&lt;byte&gt; src)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MessagePack.MessagePackWriter.html">MessagePackWriter</a></td>
+        <td><span class="parametername">writer</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>&gt;</td>
+        <td><span class="parametername">src</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="MessagePack_Internal_UnsafeMemory32_WriteRaw19_" data-uid="MessagePack.Internal.UnsafeMemory32.WriteRaw19*"></a>
+  <h4 id="MessagePack_Internal_UnsafeMemory32_WriteRaw19_MessagePack_MessagePackWriter__System_ReadOnlySpan_System_Byte__" data-uid="MessagePack.Internal.UnsafeMemory32.WriteRaw19(MessagePack.MessagePackWriter@,System.ReadOnlySpan{System.Byte})">WriteRaw19(ref MessagePackWriter, ReadOnlySpan&lt;byte&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void WriteRaw19(ref MessagePackWriter writer, ReadOnlySpan&lt;byte&gt; src)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MessagePack.MessagePackWriter.html">MessagePackWriter</a></td>
+        <td><span class="parametername">writer</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>&gt;</td>
+        <td><span class="parametername">src</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="MessagePack_Internal_UnsafeMemory32_WriteRaw2_" data-uid="MessagePack.Internal.UnsafeMemory32.WriteRaw2*"></a>
+  <h4 id="MessagePack_Internal_UnsafeMemory32_WriteRaw2_MessagePack_MessagePackWriter__System_ReadOnlySpan_System_Byte__" data-uid="MessagePack.Internal.UnsafeMemory32.WriteRaw2(MessagePack.MessagePackWriter@,System.ReadOnlySpan{System.Byte})">WriteRaw2(ref MessagePackWriter, ReadOnlySpan&lt;byte&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void WriteRaw2(ref MessagePackWriter writer, ReadOnlySpan&lt;byte&gt; src)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MessagePack.MessagePackWriter.html">MessagePackWriter</a></td>
+        <td><span class="parametername">writer</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>&gt;</td>
+        <td><span class="parametername">src</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="MessagePack_Internal_UnsafeMemory32_WriteRaw20_" data-uid="MessagePack.Internal.UnsafeMemory32.WriteRaw20*"></a>
+  <h4 id="MessagePack_Internal_UnsafeMemory32_WriteRaw20_MessagePack_MessagePackWriter__System_ReadOnlySpan_System_Byte__" data-uid="MessagePack.Internal.UnsafeMemory32.WriteRaw20(MessagePack.MessagePackWriter@,System.ReadOnlySpan{System.Byte})">WriteRaw20(ref MessagePackWriter, ReadOnlySpan&lt;byte&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void WriteRaw20(ref MessagePackWriter writer, ReadOnlySpan&lt;byte&gt; src)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MessagePack.MessagePackWriter.html">MessagePackWriter</a></td>
+        <td><span class="parametername">writer</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>&gt;</td>
+        <td><span class="parametername">src</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="MessagePack_Internal_UnsafeMemory32_WriteRaw21_" data-uid="MessagePack.Internal.UnsafeMemory32.WriteRaw21*"></a>
+  <h4 id="MessagePack_Internal_UnsafeMemory32_WriteRaw21_MessagePack_MessagePackWriter__System_ReadOnlySpan_System_Byte__" data-uid="MessagePack.Internal.UnsafeMemory32.WriteRaw21(MessagePack.MessagePackWriter@,System.ReadOnlySpan{System.Byte})">WriteRaw21(ref MessagePackWriter, ReadOnlySpan&lt;byte&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void WriteRaw21(ref MessagePackWriter writer, ReadOnlySpan&lt;byte&gt; src)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MessagePack.MessagePackWriter.html">MessagePackWriter</a></td>
+        <td><span class="parametername">writer</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>&gt;</td>
+        <td><span class="parametername">src</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="MessagePack_Internal_UnsafeMemory32_WriteRaw22_" data-uid="MessagePack.Internal.UnsafeMemory32.WriteRaw22*"></a>
+  <h4 id="MessagePack_Internal_UnsafeMemory32_WriteRaw22_MessagePack_MessagePackWriter__System_ReadOnlySpan_System_Byte__" data-uid="MessagePack.Internal.UnsafeMemory32.WriteRaw22(MessagePack.MessagePackWriter@,System.ReadOnlySpan{System.Byte})">WriteRaw22(ref MessagePackWriter, ReadOnlySpan&lt;byte&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void WriteRaw22(ref MessagePackWriter writer, ReadOnlySpan&lt;byte&gt; src)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MessagePack.MessagePackWriter.html">MessagePackWriter</a></td>
+        <td><span class="parametername">writer</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>&gt;</td>
+        <td><span class="parametername">src</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="MessagePack_Internal_UnsafeMemory32_WriteRaw23_" data-uid="MessagePack.Internal.UnsafeMemory32.WriteRaw23*"></a>
+  <h4 id="MessagePack_Internal_UnsafeMemory32_WriteRaw23_MessagePack_MessagePackWriter__System_ReadOnlySpan_System_Byte__" data-uid="MessagePack.Internal.UnsafeMemory32.WriteRaw23(MessagePack.MessagePackWriter@,System.ReadOnlySpan{System.Byte})">WriteRaw23(ref MessagePackWriter, ReadOnlySpan&lt;byte&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void WriteRaw23(ref MessagePackWriter writer, ReadOnlySpan&lt;byte&gt; src)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MessagePack.MessagePackWriter.html">MessagePackWriter</a></td>
+        <td><span class="parametername">writer</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>&gt;</td>
+        <td><span class="parametername">src</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="MessagePack_Internal_UnsafeMemory32_WriteRaw24_" data-uid="MessagePack.Internal.UnsafeMemory32.WriteRaw24*"></a>
+  <h4 id="MessagePack_Internal_UnsafeMemory32_WriteRaw24_MessagePack_MessagePackWriter__System_ReadOnlySpan_System_Byte__" data-uid="MessagePack.Internal.UnsafeMemory32.WriteRaw24(MessagePack.MessagePackWriter@,System.ReadOnlySpan{System.Byte})">WriteRaw24(ref MessagePackWriter, ReadOnlySpan&lt;byte&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void WriteRaw24(ref MessagePackWriter writer, ReadOnlySpan&lt;byte&gt; src)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MessagePack.MessagePackWriter.html">MessagePackWriter</a></td>
+        <td><span class="parametername">writer</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>&gt;</td>
+        <td><span class="parametername">src</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="MessagePack_Internal_UnsafeMemory32_WriteRaw25_" data-uid="MessagePack.Internal.UnsafeMemory32.WriteRaw25*"></a>
+  <h4 id="MessagePack_Internal_UnsafeMemory32_WriteRaw25_MessagePack_MessagePackWriter__System_ReadOnlySpan_System_Byte__" data-uid="MessagePack.Internal.UnsafeMemory32.WriteRaw25(MessagePack.MessagePackWriter@,System.ReadOnlySpan{System.Byte})">WriteRaw25(ref MessagePackWriter, ReadOnlySpan&lt;byte&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void WriteRaw25(ref MessagePackWriter writer, ReadOnlySpan&lt;byte&gt; src)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MessagePack.MessagePackWriter.html">MessagePackWriter</a></td>
+        <td><span class="parametername">writer</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>&gt;</td>
+        <td><span class="parametername">src</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="MessagePack_Internal_UnsafeMemory32_WriteRaw26_" data-uid="MessagePack.Internal.UnsafeMemory32.WriteRaw26*"></a>
+  <h4 id="MessagePack_Internal_UnsafeMemory32_WriteRaw26_MessagePack_MessagePackWriter__System_ReadOnlySpan_System_Byte__" data-uid="MessagePack.Internal.UnsafeMemory32.WriteRaw26(MessagePack.MessagePackWriter@,System.ReadOnlySpan{System.Byte})">WriteRaw26(ref MessagePackWriter, ReadOnlySpan&lt;byte&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void WriteRaw26(ref MessagePackWriter writer, ReadOnlySpan&lt;byte&gt; src)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MessagePack.MessagePackWriter.html">MessagePackWriter</a></td>
+        <td><span class="parametername">writer</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>&gt;</td>
+        <td><span class="parametername">src</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="MessagePack_Internal_UnsafeMemory32_WriteRaw27_" data-uid="MessagePack.Internal.UnsafeMemory32.WriteRaw27*"></a>
+  <h4 id="MessagePack_Internal_UnsafeMemory32_WriteRaw27_MessagePack_MessagePackWriter__System_ReadOnlySpan_System_Byte__" data-uid="MessagePack.Internal.UnsafeMemory32.WriteRaw27(MessagePack.MessagePackWriter@,System.ReadOnlySpan{System.Byte})">WriteRaw27(ref MessagePackWriter, ReadOnlySpan&lt;byte&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void WriteRaw27(ref MessagePackWriter writer, ReadOnlySpan&lt;byte&gt; src)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MessagePack.MessagePackWriter.html">MessagePackWriter</a></td>
+        <td><span class="parametername">writer</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>&gt;</td>
+        <td><span class="parametername">src</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="MessagePack_Internal_UnsafeMemory32_WriteRaw28_" data-uid="MessagePack.Internal.UnsafeMemory32.WriteRaw28*"></a>
+  <h4 id="MessagePack_Internal_UnsafeMemory32_WriteRaw28_MessagePack_MessagePackWriter__System_ReadOnlySpan_System_Byte__" data-uid="MessagePack.Internal.UnsafeMemory32.WriteRaw28(MessagePack.MessagePackWriter@,System.ReadOnlySpan{System.Byte})">WriteRaw28(ref MessagePackWriter, ReadOnlySpan&lt;byte&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void WriteRaw28(ref MessagePackWriter writer, ReadOnlySpan&lt;byte&gt; src)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MessagePack.MessagePackWriter.html">MessagePackWriter</a></td>
+        <td><span class="parametername">writer</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>&gt;</td>
+        <td><span class="parametername">src</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="MessagePack_Internal_UnsafeMemory32_WriteRaw29_" data-uid="MessagePack.Internal.UnsafeMemory32.WriteRaw29*"></a>
+  <h4 id="MessagePack_Internal_UnsafeMemory32_WriteRaw29_MessagePack_MessagePackWriter__System_ReadOnlySpan_System_Byte__" data-uid="MessagePack.Internal.UnsafeMemory32.WriteRaw29(MessagePack.MessagePackWriter@,System.ReadOnlySpan{System.Byte})">WriteRaw29(ref MessagePackWriter, ReadOnlySpan&lt;byte&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void WriteRaw29(ref MessagePackWriter writer, ReadOnlySpan&lt;byte&gt; src)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MessagePack.MessagePackWriter.html">MessagePackWriter</a></td>
+        <td><span class="parametername">writer</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>&gt;</td>
+        <td><span class="parametername">src</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="MessagePack_Internal_UnsafeMemory32_WriteRaw3_" data-uid="MessagePack.Internal.UnsafeMemory32.WriteRaw3*"></a>
+  <h4 id="MessagePack_Internal_UnsafeMemory32_WriteRaw3_MessagePack_MessagePackWriter__System_ReadOnlySpan_System_Byte__" data-uid="MessagePack.Internal.UnsafeMemory32.WriteRaw3(MessagePack.MessagePackWriter@,System.ReadOnlySpan{System.Byte})">WriteRaw3(ref MessagePackWriter, ReadOnlySpan&lt;byte&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void WriteRaw3(ref MessagePackWriter writer, ReadOnlySpan&lt;byte&gt; src)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MessagePack.MessagePackWriter.html">MessagePackWriter</a></td>
+        <td><span class="parametername">writer</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>&gt;</td>
+        <td><span class="parametername">src</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="MessagePack_Internal_UnsafeMemory32_WriteRaw30_" data-uid="MessagePack.Internal.UnsafeMemory32.WriteRaw30*"></a>
+  <h4 id="MessagePack_Internal_UnsafeMemory32_WriteRaw30_MessagePack_MessagePackWriter__System_ReadOnlySpan_System_Byte__" data-uid="MessagePack.Internal.UnsafeMemory32.WriteRaw30(MessagePack.MessagePackWriter@,System.ReadOnlySpan{System.Byte})">WriteRaw30(ref MessagePackWriter, ReadOnlySpan&lt;byte&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void WriteRaw30(ref MessagePackWriter writer, ReadOnlySpan&lt;byte&gt; src)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MessagePack.MessagePackWriter.html">MessagePackWriter</a></td>
+        <td><span class="parametername">writer</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>&gt;</td>
+        <td><span class="parametername">src</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="MessagePack_Internal_UnsafeMemory32_WriteRaw31_" data-uid="MessagePack.Internal.UnsafeMemory32.WriteRaw31*"></a>
+  <h4 id="MessagePack_Internal_UnsafeMemory32_WriteRaw31_MessagePack_MessagePackWriter__System_ReadOnlySpan_System_Byte__" data-uid="MessagePack.Internal.UnsafeMemory32.WriteRaw31(MessagePack.MessagePackWriter@,System.ReadOnlySpan{System.Byte})">WriteRaw31(ref MessagePackWriter, ReadOnlySpan&lt;byte&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void WriteRaw31(ref MessagePackWriter writer, ReadOnlySpan&lt;byte&gt; src)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MessagePack.MessagePackWriter.html">MessagePackWriter</a></td>
+        <td><span class="parametername">writer</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>&gt;</td>
+        <td><span class="parametername">src</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="MessagePack_Internal_UnsafeMemory32_WriteRaw4_" data-uid="MessagePack.Internal.UnsafeMemory32.WriteRaw4*"></a>
+  <h4 id="MessagePack_Internal_UnsafeMemory32_WriteRaw4_MessagePack_MessagePackWriter__System_ReadOnlySpan_System_Byte__" data-uid="MessagePack.Internal.UnsafeMemory32.WriteRaw4(MessagePack.MessagePackWriter@,System.ReadOnlySpan{System.Byte})">WriteRaw4(ref MessagePackWriter, ReadOnlySpan&lt;byte&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void WriteRaw4(ref MessagePackWriter writer, ReadOnlySpan&lt;byte&gt; src)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MessagePack.MessagePackWriter.html">MessagePackWriter</a></td>
+        <td><span class="parametername">writer</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>&gt;</td>
+        <td><span class="parametername">src</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="MessagePack_Internal_UnsafeMemory32_WriteRaw5_" data-uid="MessagePack.Internal.UnsafeMemory32.WriteRaw5*"></a>
+  <h4 id="MessagePack_Internal_UnsafeMemory32_WriteRaw5_MessagePack_MessagePackWriter__System_ReadOnlySpan_System_Byte__" data-uid="MessagePack.Internal.UnsafeMemory32.WriteRaw5(MessagePack.MessagePackWriter@,System.ReadOnlySpan{System.Byte})">WriteRaw5(ref MessagePackWriter, ReadOnlySpan&lt;byte&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void WriteRaw5(ref MessagePackWriter writer, ReadOnlySpan&lt;byte&gt; src)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MessagePack.MessagePackWriter.html">MessagePackWriter</a></td>
+        <td><span class="parametername">writer</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>&gt;</td>
+        <td><span class="parametername">src</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="MessagePack_Internal_UnsafeMemory32_WriteRaw6_" data-uid="MessagePack.Internal.UnsafeMemory32.WriteRaw6*"></a>
+  <h4 id="MessagePack_Internal_UnsafeMemory32_WriteRaw6_MessagePack_MessagePackWriter__System_ReadOnlySpan_System_Byte__" data-uid="MessagePack.Internal.UnsafeMemory32.WriteRaw6(MessagePack.MessagePackWriter@,System.ReadOnlySpan{System.Byte})">WriteRaw6(ref MessagePackWriter, ReadOnlySpan&lt;byte&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void WriteRaw6(ref MessagePackWriter writer, ReadOnlySpan&lt;byte&gt; src)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MessagePack.MessagePackWriter.html">MessagePackWriter</a></td>
+        <td><span class="parametername">writer</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>&gt;</td>
+        <td><span class="parametername">src</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="MessagePack_Internal_UnsafeMemory32_WriteRaw7_" data-uid="MessagePack.Internal.UnsafeMemory32.WriteRaw7*"></a>
+  <h4 id="MessagePack_Internal_UnsafeMemory32_WriteRaw7_MessagePack_MessagePackWriter__System_ReadOnlySpan_System_Byte__" data-uid="MessagePack.Internal.UnsafeMemory32.WriteRaw7(MessagePack.MessagePackWriter@,System.ReadOnlySpan{System.Byte})">WriteRaw7(ref MessagePackWriter, ReadOnlySpan&lt;byte&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void WriteRaw7(ref MessagePackWriter writer, ReadOnlySpan&lt;byte&gt; src)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MessagePack.MessagePackWriter.html">MessagePackWriter</a></td>
+        <td><span class="parametername">writer</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>&gt;</td>
+        <td><span class="parametername">src</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="MessagePack_Internal_UnsafeMemory32_WriteRaw8_" data-uid="MessagePack.Internal.UnsafeMemory32.WriteRaw8*"></a>
+  <h4 id="MessagePack_Internal_UnsafeMemory32_WriteRaw8_MessagePack_MessagePackWriter__System_ReadOnlySpan_System_Byte__" data-uid="MessagePack.Internal.UnsafeMemory32.WriteRaw8(MessagePack.MessagePackWriter@,System.ReadOnlySpan{System.Byte})">WriteRaw8(ref MessagePackWriter, ReadOnlySpan&lt;byte&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void WriteRaw8(ref MessagePackWriter writer, ReadOnlySpan&lt;byte&gt; src)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MessagePack.MessagePackWriter.html">MessagePackWriter</a></td>
+        <td><span class="parametername">writer</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>&gt;</td>
+        <td><span class="parametername">src</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="MessagePack_Internal_UnsafeMemory32_WriteRaw9_" data-uid="MessagePack.Internal.UnsafeMemory32.WriteRaw9*"></a>
+  <h4 id="MessagePack_Internal_UnsafeMemory32_WriteRaw9_MessagePack_MessagePackWriter__System_ReadOnlySpan_System_Byte__" data-uid="MessagePack.Internal.UnsafeMemory32.WriteRaw9(MessagePack.MessagePackWriter@,System.ReadOnlySpan{System.Byte})">WriteRaw9(ref MessagePackWriter, ReadOnlySpan&lt;byte&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void WriteRaw9(ref MessagePackWriter writer, ReadOnlySpan&lt;byte&gt; src)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MessagePack.MessagePackWriter.html">MessagePackWriter</a></td>
+        <td><span class="parametername">writer</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>&gt;</td>
+        <td><span class="parametername">src</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+</article>
+                </div>
+
+                <div class="copyright-footer">
+                    <span>&#169; CodeFactory, LLC. All rights reserved.</span>
+                </div>
+            </main>
+        </div>
+
+
+        <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+        <script type="text/javascript" src="../styles/jquery.twbsPagination.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/mark.js@8.11.1/dist/jquery.mark.min.js"></script>
+        <script type="text/javascript" src="../styles/url.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/anchor-js@5.0.0/anchor.min.js"></script>
+        <script type="text/javascript" src="../styles/docfx.js"></script>
+        <script type="text/javascript" src="../styles/main.js"></script>
+        <script type="text/javascript" src="../styles/singulink.js"></script>    </body>
+</html>

@@ -1,0 +1,1556 @@
+### YamlMime:ManagedReference
+items:
+- uid: System.Buffers.ReadOnlySequence`1
+  commentId: T:System.Buffers.ReadOnlySequence`1
+  id: ReadOnlySequence`1
+  parent: System.Buffers
+  children:
+  - System.Buffers.ReadOnlySequence`1.#ctor(System.Buffers.ReadOnlySequenceSegment{`0},System.Int32,System.Buffers.ReadOnlySequenceSegment{`0},System.Int32)
+  - System.Buffers.ReadOnlySequence`1.#ctor(System.ReadOnlyMemory{`0})
+  - System.Buffers.ReadOnlySequence`1.#ctor(`0[])
+  - System.Buffers.ReadOnlySequence`1.#ctor(`0[],System.Int32,System.Int32)
+  - System.Buffers.ReadOnlySequence`1.Empty
+  - System.Buffers.ReadOnlySequence`1.End
+  - System.Buffers.ReadOnlySequence`1.First
+  - System.Buffers.ReadOnlySequence`1.GetEnumerator
+  - System.Buffers.ReadOnlySequence`1.GetPosition(System.Int64)
+  - System.Buffers.ReadOnlySequence`1.GetPosition(System.Int64,System.SequencePosition)
+  - System.Buffers.ReadOnlySequence`1.IsEmpty
+  - System.Buffers.ReadOnlySequence`1.IsSingleSegment
+  - System.Buffers.ReadOnlySequence`1.Length
+  - System.Buffers.ReadOnlySequence`1.Slice(System.Int32,System.Int32)
+  - System.Buffers.ReadOnlySequence`1.Slice(System.Int32,System.SequencePosition)
+  - System.Buffers.ReadOnlySequence`1.Slice(System.Int64)
+  - System.Buffers.ReadOnlySequence`1.Slice(System.Int64,System.Int64)
+  - System.Buffers.ReadOnlySequence`1.Slice(System.Int64,System.SequencePosition)
+  - System.Buffers.ReadOnlySequence`1.Slice(System.SequencePosition)
+  - System.Buffers.ReadOnlySequence`1.Slice(System.SequencePosition,System.Int32)
+  - System.Buffers.ReadOnlySequence`1.Slice(System.SequencePosition,System.Int64)
+  - System.Buffers.ReadOnlySequence`1.Slice(System.SequencePosition,System.SequencePosition)
+  - System.Buffers.ReadOnlySequence`1.Start
+  - System.Buffers.ReadOnlySequence`1.ToString
+  - System.Buffers.ReadOnlySequence`1.TryGet(System.SequencePosition@,System.ReadOnlyMemory{`0}@,System.Boolean)
+  langs:
+  - csharp
+  - vb
+  name: ReadOnlySequence<T>
+  nameWithType: ReadOnlySequence<T>
+  fullName: System.Buffers.ReadOnlySequence<T>
+  type: Struct
+  assemblies:
+  - System.Memory
+  namespace: System.Buffers
+  syntax:
+    content: public readonly struct ReadOnlySequence<T>
+    typeParameters:
+    - id: T
+    content.vb: Public Structure ReadOnlySequence(Of T)
+  inheritedMembers:
+  - System.ValueType.Equals(System.Object)
+  - System.ValueType.GetHashCode
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetType
+  extensionMethods:
+  - System.Buffers.ReadOnlySequence`1.System.Buffers.BuffersExtensions.CopyTo``1(System.Span{{T}})
+  - System.Buffers.ReadOnlySequence`1.System.Buffers.BuffersExtensions.ToArray``1
+  nameWithType.vb: ReadOnlySequence(Of T)
+  fullName.vb: System.Buffers.ReadOnlySequence(Of T)
+  name.vb: ReadOnlySequence(Of T)
+- uid: System.Buffers.ReadOnlySequence`1.Empty
+  commentId: F:System.Buffers.ReadOnlySequence`1.Empty
+  id: Empty
+  parent: System.Buffers.ReadOnlySequence`1
+  langs:
+  - csharp
+  - vb
+  name: Empty
+  nameWithType: ReadOnlySequence<T>.Empty
+  fullName: System.Buffers.ReadOnlySequence<T>.Empty
+  type: Field
+  assemblies:
+  - System.Memory
+  namespace: System.Buffers
+  syntax:
+    content: public static readonly ReadOnlySequence<T> Empty
+    return:
+      type: System.Buffers.ReadOnlySequence`1
+    content.vb: Public Shared ReadOnly Empty As ReadOnlySequence(Of T)
+  nameWithType.vb: ReadOnlySequence(Of T).Empty
+  fullName.vb: System.Buffers.ReadOnlySequence(Of T).Empty
+- uid: System.Buffers.ReadOnlySequence`1.#ctor(System.Buffers.ReadOnlySequenceSegment{`0},System.Int32,System.Buffers.ReadOnlySequenceSegment{`0},System.Int32)
+  commentId: M:System.Buffers.ReadOnlySequence`1.#ctor(System.Buffers.ReadOnlySequenceSegment{`0},System.Int32,System.Buffers.ReadOnlySequenceSegment{`0},System.Int32)
+  id: '#ctor(System.Buffers.ReadOnlySequenceSegment{`0},System.Int32,System.Buffers.ReadOnlySequenceSegment{`0},System.Int32)'
+  parent: System.Buffers.ReadOnlySequence`1
+  langs:
+  - csharp
+  - vb
+  name: ReadOnlySequence(ReadOnlySequenceSegment<T>, int, ReadOnlySequenceSegment<T>, int)
+  nameWithType: ReadOnlySequence<T>.ReadOnlySequence(ReadOnlySequenceSegment<T>, int, ReadOnlySequenceSegment<T>, int)
+  fullName: System.Buffers.ReadOnlySequence<T>.ReadOnlySequence(System.Buffers.ReadOnlySequenceSegment<T>, int, System.Buffers.ReadOnlySequenceSegment<T>, int)
+  type: Constructor
+  assemblies:
+  - System.Memory
+  namespace: System.Buffers
+  syntax:
+    content: public ReadOnlySequence(ReadOnlySequenceSegment<T> startSegment, int startIndex, ReadOnlySequenceSegment<T> endSegment, int endIndex)
+    parameters:
+    - id: startSegment
+      type: System.Buffers.ReadOnlySequenceSegment{{T}}
+    - id: startIndex
+      type: System.Int32
+    - id: endSegment
+      type: System.Buffers.ReadOnlySequenceSegment{{T}}
+    - id: endIndex
+      type: System.Int32
+    content.vb: Public Sub New(startSegment As ReadOnlySequenceSegment(Of T), startIndex As Integer, endSegment As ReadOnlySequenceSegment(Of T), endIndex As Integer)
+  overload: System.Buffers.ReadOnlySequence`1.#ctor*
+  nameWithType.vb: ReadOnlySequence(Of T).New(ReadOnlySequenceSegment(Of T), Integer, ReadOnlySequenceSegment(Of T), Integer)
+  fullName.vb: System.Buffers.ReadOnlySequence(Of T).New(System.Buffers.ReadOnlySequenceSegment(Of T), Integer, System.Buffers.ReadOnlySequenceSegment(Of T), Integer)
+  name.vb: New(ReadOnlySequenceSegment(Of T), Integer, ReadOnlySequenceSegment(Of T), Integer)
+- uid: System.Buffers.ReadOnlySequence`1.#ctor(`0[])
+  commentId: M:System.Buffers.ReadOnlySequence`1.#ctor(`0[])
+  id: '#ctor(`0[])'
+  parent: System.Buffers.ReadOnlySequence`1
+  langs:
+  - csharp
+  - vb
+  name: ReadOnlySequence(T[])
+  nameWithType: ReadOnlySequence<T>.ReadOnlySequence(T[])
+  fullName: System.Buffers.ReadOnlySequence<T>.ReadOnlySequence(T[])
+  type: Constructor
+  assemblies:
+  - System.Memory
+  namespace: System.Buffers
+  syntax:
+    content: public ReadOnlySequence(T[] array)
+    parameters:
+    - id: array
+      type: '{T}[]'
+    content.vb: Public Sub New(array As T())
+  overload: System.Buffers.ReadOnlySequence`1.#ctor*
+  nameWithType.vb: ReadOnlySequence(Of T).New(T())
+  fullName.vb: System.Buffers.ReadOnlySequence(Of T).New(T())
+  name.vb: New(T())
+- uid: System.Buffers.ReadOnlySequence`1.#ctor(`0[],System.Int32,System.Int32)
+  commentId: M:System.Buffers.ReadOnlySequence`1.#ctor(`0[],System.Int32,System.Int32)
+  id: '#ctor(`0[],System.Int32,System.Int32)'
+  parent: System.Buffers.ReadOnlySequence`1
+  langs:
+  - csharp
+  - vb
+  name: ReadOnlySequence(T[], int, int)
+  nameWithType: ReadOnlySequence<T>.ReadOnlySequence(T[], int, int)
+  fullName: System.Buffers.ReadOnlySequence<T>.ReadOnlySequence(T[], int, int)
+  type: Constructor
+  assemblies:
+  - System.Memory
+  namespace: System.Buffers
+  syntax:
+    content: public ReadOnlySequence(T[] array, int start, int length)
+    parameters:
+    - id: array
+      type: '{T}[]'
+    - id: start
+      type: System.Int32
+    - id: length
+      type: System.Int32
+    content.vb: Public Sub New(array As T(), start As Integer, length As Integer)
+  overload: System.Buffers.ReadOnlySequence`1.#ctor*
+  nameWithType.vb: ReadOnlySequence(Of T).New(T(), Integer, Integer)
+  fullName.vb: System.Buffers.ReadOnlySequence(Of T).New(T(), Integer, Integer)
+  name.vb: New(T(), Integer, Integer)
+- uid: System.Buffers.ReadOnlySequence`1.#ctor(System.ReadOnlyMemory{`0})
+  commentId: M:System.Buffers.ReadOnlySequence`1.#ctor(System.ReadOnlyMemory{`0})
+  id: '#ctor(System.ReadOnlyMemory{`0})'
+  parent: System.Buffers.ReadOnlySequence`1
+  langs:
+  - csharp
+  - vb
+  name: ReadOnlySequence(ReadOnlyMemory<T>)
+  nameWithType: ReadOnlySequence<T>.ReadOnlySequence(ReadOnlyMemory<T>)
+  fullName: System.Buffers.ReadOnlySequence<T>.ReadOnlySequence(System.ReadOnlyMemory<T>)
+  type: Constructor
+  assemblies:
+  - System.Memory
+  namespace: System.Buffers
+  syntax:
+    content: public ReadOnlySequence(ReadOnlyMemory<T> memory)
+    parameters:
+    - id: memory
+      type: System.ReadOnlyMemory{{T}}
+    content.vb: Public Sub New(memory As ReadOnlyMemory(Of T))
+  overload: System.Buffers.ReadOnlySequence`1.#ctor*
+  nameWithType.vb: ReadOnlySequence(Of T).New(ReadOnlyMemory(Of T))
+  fullName.vb: System.Buffers.ReadOnlySequence(Of T).New(System.ReadOnlyMemory(Of T))
+  name.vb: New(ReadOnlyMemory(Of T))
+- uid: System.Buffers.ReadOnlySequence`1.Slice(System.Int64,System.Int64)
+  commentId: M:System.Buffers.ReadOnlySequence`1.Slice(System.Int64,System.Int64)
+  id: Slice(System.Int64,System.Int64)
+  parent: System.Buffers.ReadOnlySequence`1
+  langs:
+  - csharp
+  - vb
+  name: Slice(long, long)
+  nameWithType: ReadOnlySequence<T>.Slice(long, long)
+  fullName: System.Buffers.ReadOnlySequence<T>.Slice(long, long)
+  type: Method
+  assemblies:
+  - System.Memory
+  namespace: System.Buffers
+  syntax:
+    content: public ReadOnlySequence<T> Slice(long start, long length)
+    parameters:
+    - id: start
+      type: System.Int64
+    - id: length
+      type: System.Int64
+    return:
+      type: System.Buffers.ReadOnlySequence`1
+    content.vb: Public Function Slice(start As Long, length As Long) As ReadOnlySequence(Of T)
+  overload: System.Buffers.ReadOnlySequence`1.Slice*
+  nameWithType.vb: ReadOnlySequence(Of T).Slice(Long, Long)
+  fullName.vb: System.Buffers.ReadOnlySequence(Of T).Slice(Long, Long)
+  name.vb: Slice(Long, Long)
+- uid: System.Buffers.ReadOnlySequence`1.Slice(System.Int64,System.SequencePosition)
+  commentId: M:System.Buffers.ReadOnlySequence`1.Slice(System.Int64,System.SequencePosition)
+  id: Slice(System.Int64,System.SequencePosition)
+  parent: System.Buffers.ReadOnlySequence`1
+  langs:
+  - csharp
+  - vb
+  name: Slice(long, SequencePosition)
+  nameWithType: ReadOnlySequence<T>.Slice(long, SequencePosition)
+  fullName: System.Buffers.ReadOnlySequence<T>.Slice(long, System.SequencePosition)
+  type: Method
+  assemblies:
+  - System.Memory
+  namespace: System.Buffers
+  syntax:
+    content: public ReadOnlySequence<T> Slice(long start, SequencePosition end)
+    parameters:
+    - id: start
+      type: System.Int64
+    - id: end
+      type: System.SequencePosition
+    return:
+      type: System.Buffers.ReadOnlySequence`1
+    content.vb: Public Function Slice(start As Long, [end] As SequencePosition) As ReadOnlySequence(Of T)
+  overload: System.Buffers.ReadOnlySequence`1.Slice*
+  nameWithType.vb: ReadOnlySequence(Of T).Slice(Long, SequencePosition)
+  fullName.vb: System.Buffers.ReadOnlySequence(Of T).Slice(Long, System.SequencePosition)
+  name.vb: Slice(Long, SequencePosition)
+- uid: System.Buffers.ReadOnlySequence`1.Slice(System.SequencePosition,System.Int64)
+  commentId: M:System.Buffers.ReadOnlySequence`1.Slice(System.SequencePosition,System.Int64)
+  id: Slice(System.SequencePosition,System.Int64)
+  parent: System.Buffers.ReadOnlySequence`1
+  langs:
+  - csharp
+  - vb
+  name: Slice(SequencePosition, long)
+  nameWithType: ReadOnlySequence<T>.Slice(SequencePosition, long)
+  fullName: System.Buffers.ReadOnlySequence<T>.Slice(System.SequencePosition, long)
+  type: Method
+  assemblies:
+  - System.Memory
+  namespace: System.Buffers
+  syntax:
+    content: public ReadOnlySequence<T> Slice(SequencePosition start, long length)
+    parameters:
+    - id: start
+      type: System.SequencePosition
+    - id: length
+      type: System.Int64
+    return:
+      type: System.Buffers.ReadOnlySequence`1
+    content.vb: Public Function Slice(start As SequencePosition, length As Long) As ReadOnlySequence(Of T)
+  overload: System.Buffers.ReadOnlySequence`1.Slice*
+  nameWithType.vb: ReadOnlySequence(Of T).Slice(SequencePosition, Long)
+  fullName.vb: System.Buffers.ReadOnlySequence(Of T).Slice(System.SequencePosition, Long)
+  name.vb: Slice(SequencePosition, Long)
+- uid: System.Buffers.ReadOnlySequence`1.Slice(System.Int32,System.Int32)
+  commentId: M:System.Buffers.ReadOnlySequence`1.Slice(System.Int32,System.Int32)
+  id: Slice(System.Int32,System.Int32)
+  parent: System.Buffers.ReadOnlySequence`1
+  langs:
+  - csharp
+  - vb
+  name: Slice(int, int)
+  nameWithType: ReadOnlySequence<T>.Slice(int, int)
+  fullName: System.Buffers.ReadOnlySequence<T>.Slice(int, int)
+  type: Method
+  assemblies:
+  - System.Memory
+  namespace: System.Buffers
+  syntax:
+    content: public ReadOnlySequence<T> Slice(int start, int length)
+    parameters:
+    - id: start
+      type: System.Int32
+    - id: length
+      type: System.Int32
+    return:
+      type: System.Buffers.ReadOnlySequence`1
+    content.vb: Public Function Slice(start As Integer, length As Integer) As ReadOnlySequence(Of T)
+  overload: System.Buffers.ReadOnlySequence`1.Slice*
+  nameWithType.vb: ReadOnlySequence(Of T).Slice(Integer, Integer)
+  fullName.vb: System.Buffers.ReadOnlySequence(Of T).Slice(Integer, Integer)
+  name.vb: Slice(Integer, Integer)
+- uid: System.Buffers.ReadOnlySequence`1.Slice(System.Int32,System.SequencePosition)
+  commentId: M:System.Buffers.ReadOnlySequence`1.Slice(System.Int32,System.SequencePosition)
+  id: Slice(System.Int32,System.SequencePosition)
+  parent: System.Buffers.ReadOnlySequence`1
+  langs:
+  - csharp
+  - vb
+  name: Slice(int, SequencePosition)
+  nameWithType: ReadOnlySequence<T>.Slice(int, SequencePosition)
+  fullName: System.Buffers.ReadOnlySequence<T>.Slice(int, System.SequencePosition)
+  type: Method
+  assemblies:
+  - System.Memory
+  namespace: System.Buffers
+  syntax:
+    content: public ReadOnlySequence<T> Slice(int start, SequencePosition end)
+    parameters:
+    - id: start
+      type: System.Int32
+    - id: end
+      type: System.SequencePosition
+    return:
+      type: System.Buffers.ReadOnlySequence`1
+    content.vb: Public Function Slice(start As Integer, [end] As SequencePosition) As ReadOnlySequence(Of T)
+  overload: System.Buffers.ReadOnlySequence`1.Slice*
+  nameWithType.vb: ReadOnlySequence(Of T).Slice(Integer, SequencePosition)
+  fullName.vb: System.Buffers.ReadOnlySequence(Of T).Slice(Integer, System.SequencePosition)
+  name.vb: Slice(Integer, SequencePosition)
+- uid: System.Buffers.ReadOnlySequence`1.Slice(System.SequencePosition,System.Int32)
+  commentId: M:System.Buffers.ReadOnlySequence`1.Slice(System.SequencePosition,System.Int32)
+  id: Slice(System.SequencePosition,System.Int32)
+  parent: System.Buffers.ReadOnlySequence`1
+  langs:
+  - csharp
+  - vb
+  name: Slice(SequencePosition, int)
+  nameWithType: ReadOnlySequence<T>.Slice(SequencePosition, int)
+  fullName: System.Buffers.ReadOnlySequence<T>.Slice(System.SequencePosition, int)
+  type: Method
+  assemblies:
+  - System.Memory
+  namespace: System.Buffers
+  syntax:
+    content: public ReadOnlySequence<T> Slice(SequencePosition start, int length)
+    parameters:
+    - id: start
+      type: System.SequencePosition
+    - id: length
+      type: System.Int32
+    return:
+      type: System.Buffers.ReadOnlySequence`1
+    content.vb: Public Function Slice(start As SequencePosition, length As Integer) As ReadOnlySequence(Of T)
+  overload: System.Buffers.ReadOnlySequence`1.Slice*
+  nameWithType.vb: ReadOnlySequence(Of T).Slice(SequencePosition, Integer)
+  fullName.vb: System.Buffers.ReadOnlySequence(Of T).Slice(System.SequencePosition, Integer)
+  name.vb: Slice(SequencePosition, Integer)
+- uid: System.Buffers.ReadOnlySequence`1.Slice(System.SequencePosition,System.SequencePosition)
+  commentId: M:System.Buffers.ReadOnlySequence`1.Slice(System.SequencePosition,System.SequencePosition)
+  id: Slice(System.SequencePosition,System.SequencePosition)
+  parent: System.Buffers.ReadOnlySequence`1
+  langs:
+  - csharp
+  - vb
+  name: Slice(SequencePosition, SequencePosition)
+  nameWithType: ReadOnlySequence<T>.Slice(SequencePosition, SequencePosition)
+  fullName: System.Buffers.ReadOnlySequence<T>.Slice(System.SequencePosition, System.SequencePosition)
+  type: Method
+  assemblies:
+  - System.Memory
+  namespace: System.Buffers
+  syntax:
+    content: public ReadOnlySequence<T> Slice(SequencePosition start, SequencePosition end)
+    parameters:
+    - id: start
+      type: System.SequencePosition
+    - id: end
+      type: System.SequencePosition
+    return:
+      type: System.Buffers.ReadOnlySequence`1
+    content.vb: Public Function Slice(start As SequencePosition, [end] As SequencePosition) As ReadOnlySequence(Of T)
+  overload: System.Buffers.ReadOnlySequence`1.Slice*
+  nameWithType.vb: ReadOnlySequence(Of T).Slice(SequencePosition, SequencePosition)
+  fullName.vb: System.Buffers.ReadOnlySequence(Of T).Slice(System.SequencePosition, System.SequencePosition)
+- uid: System.Buffers.ReadOnlySequence`1.Slice(System.SequencePosition)
+  commentId: M:System.Buffers.ReadOnlySequence`1.Slice(System.SequencePosition)
+  id: Slice(System.SequencePosition)
+  parent: System.Buffers.ReadOnlySequence`1
+  langs:
+  - csharp
+  - vb
+  name: Slice(SequencePosition)
+  nameWithType: ReadOnlySequence<T>.Slice(SequencePosition)
+  fullName: System.Buffers.ReadOnlySequence<T>.Slice(System.SequencePosition)
+  type: Method
+  assemblies:
+  - System.Memory
+  namespace: System.Buffers
+  syntax:
+    content: public ReadOnlySequence<T> Slice(SequencePosition start)
+    parameters:
+    - id: start
+      type: System.SequencePosition
+    return:
+      type: System.Buffers.ReadOnlySequence`1
+    content.vb: Public Function Slice(start As SequencePosition) As ReadOnlySequence(Of T)
+  overload: System.Buffers.ReadOnlySequence`1.Slice*
+  nameWithType.vb: ReadOnlySequence(Of T).Slice(SequencePosition)
+  fullName.vb: System.Buffers.ReadOnlySequence(Of T).Slice(System.SequencePosition)
+- uid: System.Buffers.ReadOnlySequence`1.Slice(System.Int64)
+  commentId: M:System.Buffers.ReadOnlySequence`1.Slice(System.Int64)
+  id: Slice(System.Int64)
+  parent: System.Buffers.ReadOnlySequence`1
+  langs:
+  - csharp
+  - vb
+  name: Slice(long)
+  nameWithType: ReadOnlySequence<T>.Slice(long)
+  fullName: System.Buffers.ReadOnlySequence<T>.Slice(long)
+  type: Method
+  assemblies:
+  - System.Memory
+  namespace: System.Buffers
+  syntax:
+    content: public ReadOnlySequence<T> Slice(long start)
+    parameters:
+    - id: start
+      type: System.Int64
+    return:
+      type: System.Buffers.ReadOnlySequence`1
+    content.vb: Public Function Slice(start As Long) As ReadOnlySequence(Of T)
+  overload: System.Buffers.ReadOnlySequence`1.Slice*
+  nameWithType.vb: ReadOnlySequence(Of T).Slice(Long)
+  fullName.vb: System.Buffers.ReadOnlySequence(Of T).Slice(Long)
+  name.vb: Slice(Long)
+- uid: System.Buffers.ReadOnlySequence`1.ToString
+  commentId: M:System.Buffers.ReadOnlySequence`1.ToString
+  id: ToString
+  parent: System.Buffers.ReadOnlySequence`1
+  langs:
+  - csharp
+  - vb
+  name: ToString()
+  nameWithType: ReadOnlySequence<T>.ToString()
+  fullName: System.Buffers.ReadOnlySequence<T>.ToString()
+  type: Method
+  assemblies:
+  - System.Memory
+  namespace: System.Buffers
+  example: []
+  syntax:
+    content: public override string ToString()
+    return:
+      type: System.String
+    content.vb: Public Overrides Function ToString() As String
+  overridden: System.ValueType.ToString
+  overload: System.Buffers.ReadOnlySequence`1.ToString*
+  nameWithType.vb: ReadOnlySequence(Of T).ToString()
+  fullName.vb: System.Buffers.ReadOnlySequence(Of T).ToString()
+- uid: System.Buffers.ReadOnlySequence`1.GetEnumerator
+  commentId: M:System.Buffers.ReadOnlySequence`1.GetEnumerator
+  id: GetEnumerator
+  parent: System.Buffers.ReadOnlySequence`1
+  langs:
+  - csharp
+  - vb
+  name: GetEnumerator()
+  nameWithType: ReadOnlySequence<T>.GetEnumerator()
+  fullName: System.Buffers.ReadOnlySequence<T>.GetEnumerator()
+  type: Method
+  assemblies:
+  - System.Memory
+  namespace: System.Buffers
+  syntax:
+    content: public ReadOnlySequence<T>.Enumerator GetEnumerator()
+    return:
+      type: System.Buffers.ReadOnlySequence`1.Enumerator
+    content.vb: Public Function GetEnumerator() As ReadOnlySequence(Of T).Enumerator
+  overload: System.Buffers.ReadOnlySequence`1.GetEnumerator*
+  nameWithType.vb: ReadOnlySequence(Of T).GetEnumerator()
+  fullName.vb: System.Buffers.ReadOnlySequence(Of T).GetEnumerator()
+- uid: System.Buffers.ReadOnlySequence`1.GetPosition(System.Int64)
+  commentId: M:System.Buffers.ReadOnlySequence`1.GetPosition(System.Int64)
+  id: GetPosition(System.Int64)
+  parent: System.Buffers.ReadOnlySequence`1
+  langs:
+  - csharp
+  - vb
+  name: GetPosition(long)
+  nameWithType: ReadOnlySequence<T>.GetPosition(long)
+  fullName: System.Buffers.ReadOnlySequence<T>.GetPosition(long)
+  type: Method
+  assemblies:
+  - System.Memory
+  namespace: System.Buffers
+  syntax:
+    content: public SequencePosition GetPosition(long offset)
+    parameters:
+    - id: offset
+      type: System.Int64
+    return:
+      type: System.SequencePosition
+    content.vb: Public Function GetPosition(offset As Long) As SequencePosition
+  overload: System.Buffers.ReadOnlySequence`1.GetPosition*
+  nameWithType.vb: ReadOnlySequence(Of T).GetPosition(Long)
+  fullName.vb: System.Buffers.ReadOnlySequence(Of T).GetPosition(Long)
+  name.vb: GetPosition(Long)
+- uid: System.Buffers.ReadOnlySequence`1.GetPosition(System.Int64,System.SequencePosition)
+  commentId: M:System.Buffers.ReadOnlySequence`1.GetPosition(System.Int64,System.SequencePosition)
+  id: GetPosition(System.Int64,System.SequencePosition)
+  parent: System.Buffers.ReadOnlySequence`1
+  langs:
+  - csharp
+  - vb
+  name: GetPosition(long, SequencePosition)
+  nameWithType: ReadOnlySequence<T>.GetPosition(long, SequencePosition)
+  fullName: System.Buffers.ReadOnlySequence<T>.GetPosition(long, System.SequencePosition)
+  type: Method
+  assemblies:
+  - System.Memory
+  namespace: System.Buffers
+  syntax:
+    content: public SequencePosition GetPosition(long offset, SequencePosition origin)
+    parameters:
+    - id: offset
+      type: System.Int64
+    - id: origin
+      type: System.SequencePosition
+    return:
+      type: System.SequencePosition
+    content.vb: Public Function GetPosition(offset As Long, origin As SequencePosition) As SequencePosition
+  overload: System.Buffers.ReadOnlySequence`1.GetPosition*
+  nameWithType.vb: ReadOnlySequence(Of T).GetPosition(Long, SequencePosition)
+  fullName.vb: System.Buffers.ReadOnlySequence(Of T).GetPosition(Long, System.SequencePosition)
+  name.vb: GetPosition(Long, SequencePosition)
+- uid: System.Buffers.ReadOnlySequence`1.TryGet(System.SequencePosition@,System.ReadOnlyMemory{`0}@,System.Boolean)
+  commentId: M:System.Buffers.ReadOnlySequence`1.TryGet(System.SequencePosition@,System.ReadOnlyMemory{`0}@,System.Boolean)
+  id: TryGet(System.SequencePosition@,System.ReadOnlyMemory{`0}@,System.Boolean)
+  parent: System.Buffers.ReadOnlySequence`1
+  langs:
+  - csharp
+  - vb
+  name: TryGet(ref SequencePosition, out ReadOnlyMemory<T>, bool)
+  nameWithType: ReadOnlySequence<T>.TryGet(ref SequencePosition, out ReadOnlyMemory<T>, bool)
+  fullName: System.Buffers.ReadOnlySequence<T>.TryGet(ref System.SequencePosition, out System.ReadOnlyMemory<T>, bool)
+  type: Method
+  assemblies:
+  - System.Memory
+  namespace: System.Buffers
+  syntax:
+    content: public bool TryGet(ref SequencePosition position, out ReadOnlyMemory<T> memory, bool advance = true)
+    parameters:
+    - id: position
+      type: System.SequencePosition
+    - id: memory
+      type: System.ReadOnlyMemory{{T}}
+    - id: advance
+      type: System.Boolean
+    return:
+      type: System.Boolean
+    content.vb: Public Function TryGet(position As SequencePosition, memory As ReadOnlyMemory(Of T), advance As Boolean = True) As Boolean
+  overload: System.Buffers.ReadOnlySequence`1.TryGet*
+  nameWithType.vb: ReadOnlySequence(Of T).TryGet(SequencePosition, ReadOnlyMemory(Of T), Boolean)
+  fullName.vb: System.Buffers.ReadOnlySequence(Of T).TryGet(System.SequencePosition, System.ReadOnlyMemory(Of T), Boolean)
+  name.vb: TryGet(SequencePosition, ReadOnlyMemory(Of T), Boolean)
+- uid: System.Buffers.ReadOnlySequence`1.Length
+  commentId: P:System.Buffers.ReadOnlySequence`1.Length
+  id: Length
+  parent: System.Buffers.ReadOnlySequence`1
+  langs:
+  - csharp
+  - vb
+  name: Length
+  nameWithType: ReadOnlySequence<T>.Length
+  fullName: System.Buffers.ReadOnlySequence<T>.Length
+  type: Property
+  assemblies:
+  - System.Memory
+  namespace: System.Buffers
+  syntax:
+    content: public long Length { get; }
+    parameters: []
+    return:
+      type: System.Int64
+    content.vb: Public ReadOnly Property Length As Long
+  overload: System.Buffers.ReadOnlySequence`1.Length*
+  nameWithType.vb: ReadOnlySequence(Of T).Length
+  fullName.vb: System.Buffers.ReadOnlySequence(Of T).Length
+- uid: System.Buffers.ReadOnlySequence`1.IsEmpty
+  commentId: P:System.Buffers.ReadOnlySequence`1.IsEmpty
+  id: IsEmpty
+  parent: System.Buffers.ReadOnlySequence`1
+  langs:
+  - csharp
+  - vb
+  name: IsEmpty
+  nameWithType: ReadOnlySequence<T>.IsEmpty
+  fullName: System.Buffers.ReadOnlySequence<T>.IsEmpty
+  type: Property
+  assemblies:
+  - System.Memory
+  namespace: System.Buffers
+  syntax:
+    content: public bool IsEmpty { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property IsEmpty As Boolean
+  overload: System.Buffers.ReadOnlySequence`1.IsEmpty*
+  nameWithType.vb: ReadOnlySequence(Of T).IsEmpty
+  fullName.vb: System.Buffers.ReadOnlySequence(Of T).IsEmpty
+- uid: System.Buffers.ReadOnlySequence`1.IsSingleSegment
+  commentId: P:System.Buffers.ReadOnlySequence`1.IsSingleSegment
+  id: IsSingleSegment
+  parent: System.Buffers.ReadOnlySequence`1
+  langs:
+  - csharp
+  - vb
+  name: IsSingleSegment
+  nameWithType: ReadOnlySequence<T>.IsSingleSegment
+  fullName: System.Buffers.ReadOnlySequence<T>.IsSingleSegment
+  type: Property
+  assemblies:
+  - System.Memory
+  namespace: System.Buffers
+  syntax:
+    content: public bool IsSingleSegment { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property IsSingleSegment As Boolean
+  overload: System.Buffers.ReadOnlySequence`1.IsSingleSegment*
+  nameWithType.vb: ReadOnlySequence(Of T).IsSingleSegment
+  fullName.vb: System.Buffers.ReadOnlySequence(Of T).IsSingleSegment
+- uid: System.Buffers.ReadOnlySequence`1.First
+  commentId: P:System.Buffers.ReadOnlySequence`1.First
+  id: First
+  parent: System.Buffers.ReadOnlySequence`1
+  langs:
+  - csharp
+  - vb
+  name: First
+  nameWithType: ReadOnlySequence<T>.First
+  fullName: System.Buffers.ReadOnlySequence<T>.First
+  type: Property
+  assemblies:
+  - System.Memory
+  namespace: System.Buffers
+  syntax:
+    content: public ReadOnlyMemory<T> First { get; }
+    parameters: []
+    return:
+      type: System.ReadOnlyMemory{{T}}
+    content.vb: Public ReadOnly Property First As ReadOnlyMemory(Of T)
+  overload: System.Buffers.ReadOnlySequence`1.First*
+  nameWithType.vb: ReadOnlySequence(Of T).First
+  fullName.vb: System.Buffers.ReadOnlySequence(Of T).First
+- uid: System.Buffers.ReadOnlySequence`1.Start
+  commentId: P:System.Buffers.ReadOnlySequence`1.Start
+  id: Start
+  parent: System.Buffers.ReadOnlySequence`1
+  langs:
+  - csharp
+  - vb
+  name: Start
+  nameWithType: ReadOnlySequence<T>.Start
+  fullName: System.Buffers.ReadOnlySequence<T>.Start
+  type: Property
+  assemblies:
+  - System.Memory
+  namespace: System.Buffers
+  syntax:
+    content: public SequencePosition Start { get; }
+    parameters: []
+    return:
+      type: System.SequencePosition
+    content.vb: Public ReadOnly Property Start As SequencePosition
+  overload: System.Buffers.ReadOnlySequence`1.Start*
+  nameWithType.vb: ReadOnlySequence(Of T).Start
+  fullName.vb: System.Buffers.ReadOnlySequence(Of T).Start
+- uid: System.Buffers.ReadOnlySequence`1.End
+  commentId: P:System.Buffers.ReadOnlySequence`1.End
+  id: End
+  parent: System.Buffers.ReadOnlySequence`1
+  langs:
+  - csharp
+  - vb
+  name: End
+  nameWithType: ReadOnlySequence<T>.End
+  fullName: System.Buffers.ReadOnlySequence<T>.End
+  type: Property
+  assemblies:
+  - System.Memory
+  namespace: System.Buffers
+  syntax:
+    content: public SequencePosition End { get; }
+    parameters: []
+    return:
+      type: System.SequencePosition
+    content.vb: Public ReadOnly Property [End] As SequencePosition
+  overload: System.Buffers.ReadOnlySequence`1.End*
+  nameWithType.vb: ReadOnlySequence(Of T).End
+  fullName.vb: System.Buffers.ReadOnlySequence(Of T).End
+references:
+- uid: System.Buffers
+  commentId: N:System.Buffers
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Buffers
+  nameWithType: System.Buffers
+  fullName: System.Buffers
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Buffers
+    name: Buffers
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.buffers
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Buffers
+    name: Buffers
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.buffers
+- uid: System.ValueType.Equals(System.Object)
+  commentId: M:System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  name: Equals(object)
+  nameWithType: ValueType.Equals(object)
+  fullName: System.ValueType.Equals(object)
+  nameWithType.vb: ValueType.Equals(Object)
+  fullName.vb: System.ValueType.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType.GetHashCode
+  commentId: M:System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  name: GetHashCode()
+  nameWithType: ValueType.GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Buffers.ReadOnlySequence`1.System.Buffers.BuffersExtensions.CopyTo``1(System.Span{{T}})
+  commentId: M:System.Buffers.BuffersExtensions.CopyTo``1(System.Buffers.ReadOnlySequence{``0}@,System.Span{``0})
+  parent: System.Buffers.BuffersExtensions
+  definition: System.Buffers.BuffersExtensions.CopyTo``1(System.Buffers.ReadOnlySequence{``0}@,System.Span{``0})
+  href: System.Buffers.BuffersExtensions.html#System_Buffers_BuffersExtensions_CopyTo__1_System_Buffers_ReadOnlySequence___0___System_Span___0__
+  name: CopyTo<T>(in ReadOnlySequence<T>, Span<T>)
+  nameWithType: BuffersExtensions.CopyTo<T>(in ReadOnlySequence<T>, Span<T>)
+  fullName: System.Buffers.BuffersExtensions.CopyTo<T>(in System.Buffers.ReadOnlySequence<T>, System.Span<T>)
+  nameWithType.vb: BuffersExtensions.CopyTo(Of T)(ReadOnlySequence(Of T), Span(Of T))
+  fullName.vb: System.Buffers.BuffersExtensions.CopyTo(Of T)(System.Buffers.ReadOnlySequence(Of T), System.Span(Of T))
+  name.vb: CopyTo(Of T)(ReadOnlySequence(Of T), Span(Of T))
+  spec.csharp:
+  - uid: System.Buffers.BuffersExtensions.CopyTo``1(System.Buffers.ReadOnlySequence{`0}@,System.Span{`0})
+    name: CopyTo
+    isExternal: true
+    href: System.Buffers.BuffersExtensions.html#System_Buffers_BuffersExtensions_CopyTo__1_System_Buffers_ReadOnlySequence___0___System_Span___0__
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: in
+  - name: " "
+  - uid: System.Buffers.ReadOnlySequence`1
+    name: ReadOnlySequence
+    isExternal: true
+    href: System.Buffers.ReadOnlySequence-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.Span`1
+    name: Span
+    isExternal: true
+    href: System.Span-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: System.Buffers.BuffersExtensions.CopyTo``1(System.Buffers.ReadOnlySequence{`0}@,System.Span{`0})
+    name: CopyTo
+    isExternal: true
+    href: System.Buffers.BuffersExtensions.html#System_Buffers_BuffersExtensions_CopyTo__1_System_Buffers_ReadOnlySequence___0___System_Span___0__
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: System.Buffers.ReadOnlySequence`1
+    name: ReadOnlySequence
+    isExternal: true
+    href: System.Buffers.ReadOnlySequence-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.Span`1
+    name: Span
+    isExternal: true
+    href: System.Span-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: )
+- uid: System.Buffers.ReadOnlySequence`1.System.Buffers.BuffersExtensions.ToArray``1
+  commentId: M:System.Buffers.BuffersExtensions.ToArray``1(System.Buffers.ReadOnlySequence{``0}@)
+  parent: System.Buffers.BuffersExtensions
+  definition: System.Buffers.BuffersExtensions.ToArray``1(System.Buffers.ReadOnlySequence{``0}@)
+  href: System.Buffers.BuffersExtensions.html#System_Buffers_BuffersExtensions_ToArray__1_System_Buffers_ReadOnlySequence___0___
+  name: ToArray<T>(in ReadOnlySequence<T>)
+  nameWithType: BuffersExtensions.ToArray<T>(in ReadOnlySequence<T>)
+  fullName: System.Buffers.BuffersExtensions.ToArray<T>(in System.Buffers.ReadOnlySequence<T>)
+  nameWithType.vb: BuffersExtensions.ToArray(Of T)(ReadOnlySequence(Of T))
+  fullName.vb: System.Buffers.BuffersExtensions.ToArray(Of T)(System.Buffers.ReadOnlySequence(Of T))
+  name.vb: ToArray(Of T)(ReadOnlySequence(Of T))
+  spec.csharp:
+  - uid: System.Buffers.BuffersExtensions.ToArray``1(System.Buffers.ReadOnlySequence{`0}@)
+    name: ToArray
+    isExternal: true
+    href: System.Buffers.BuffersExtensions.html#System_Buffers_BuffersExtensions_ToArray__1_System_Buffers_ReadOnlySequence___0___
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: in
+  - name: " "
+  - uid: System.Buffers.ReadOnlySequence`1
+    name: ReadOnlySequence
+    isExternal: true
+    href: System.Buffers.ReadOnlySequence-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: System.Buffers.BuffersExtensions.ToArray``1(System.Buffers.ReadOnlySequence{`0}@)
+    name: ToArray
+    isExternal: true
+    href: System.Buffers.BuffersExtensions.html#System_Buffers_BuffersExtensions_ToArray__1_System_Buffers_ReadOnlySequence___0___
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: System.Buffers.ReadOnlySequence`1
+    name: ReadOnlySequence
+    isExternal: true
+    href: System.Buffers.ReadOnlySequence-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: )
+- uid: System.ValueType
+  commentId: T:System.ValueType
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype
+  name: ValueType
+  nameWithType: ValueType
+  fullName: System.ValueType
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Buffers.BuffersExtensions.CopyTo``1(System.Buffers.ReadOnlySequence{``0}@,System.Span{``0})
+  commentId: M:System.Buffers.BuffersExtensions.CopyTo``1(System.Buffers.ReadOnlySequence{``0}@,System.Span{``0})
+  isExternal: true
+  href: System.Buffers.BuffersExtensions.html#System_Buffers_BuffersExtensions_CopyTo__1_System_Buffers_ReadOnlySequence___0___System_Span___0__
+  name: CopyTo<T>(in ReadOnlySequence<T>, Span<T>)
+  nameWithType: BuffersExtensions.CopyTo<T>(in ReadOnlySequence<T>, Span<T>)
+  fullName: System.Buffers.BuffersExtensions.CopyTo<T>(in System.Buffers.ReadOnlySequence<T>, System.Span<T>)
+  nameWithType.vb: BuffersExtensions.CopyTo(Of T)(ReadOnlySequence(Of T), Span(Of T))
+  fullName.vb: System.Buffers.BuffersExtensions.CopyTo(Of T)(System.Buffers.ReadOnlySequence(Of T), System.Span(Of T))
+  name.vb: CopyTo(Of T)(ReadOnlySequence(Of T), Span(Of T))
+  spec.csharp:
+  - uid: System.Buffers.BuffersExtensions.CopyTo``1(System.Buffers.ReadOnlySequence{``0}@,System.Span{``0})
+    name: CopyTo
+    isExternal: true
+    href: System.Buffers.BuffersExtensions.html#System_Buffers_BuffersExtensions_CopyTo__1_System_Buffers_ReadOnlySequence___0___System_Span___0__
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: in
+  - name: " "
+  - uid: System.Buffers.ReadOnlySequence`1
+    name: ReadOnlySequence
+    isExternal: true
+    href: System.Buffers.ReadOnlySequence-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.Span`1
+    name: Span
+    isExternal: true
+    href: System.Span-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: System.Buffers.BuffersExtensions.CopyTo``1(System.Buffers.ReadOnlySequence{``0}@,System.Span{``0})
+    name: CopyTo
+    isExternal: true
+    href: System.Buffers.BuffersExtensions.html#System_Buffers_BuffersExtensions_CopyTo__1_System_Buffers_ReadOnlySequence___0___System_Span___0__
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: System.Buffers.ReadOnlySequence`1
+    name: ReadOnlySequence
+    isExternal: true
+    href: System.Buffers.ReadOnlySequence-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.Span`1
+    name: Span
+    isExternal: true
+    href: System.Span-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: )
+- uid: System.Buffers.BuffersExtensions
+  commentId: T:System.Buffers.BuffersExtensions
+  parent: System.Buffers
+  isExternal: true
+  href: System.Buffers.BuffersExtensions.html
+  name: BuffersExtensions
+  nameWithType: BuffersExtensions
+  fullName: System.Buffers.BuffersExtensions
+- uid: System.Buffers.BuffersExtensions.ToArray``1(System.Buffers.ReadOnlySequence{``0}@)
+  commentId: M:System.Buffers.BuffersExtensions.ToArray``1(System.Buffers.ReadOnlySequence{``0}@)
+  isExternal: true
+  href: System.Buffers.BuffersExtensions.html#System_Buffers_BuffersExtensions_ToArray__1_System_Buffers_ReadOnlySequence___0___
+  name: ToArray<T>(in ReadOnlySequence<T>)
+  nameWithType: BuffersExtensions.ToArray<T>(in ReadOnlySequence<T>)
+  fullName: System.Buffers.BuffersExtensions.ToArray<T>(in System.Buffers.ReadOnlySequence<T>)
+  nameWithType.vb: BuffersExtensions.ToArray(Of T)(ReadOnlySequence(Of T))
+  fullName.vb: System.Buffers.BuffersExtensions.ToArray(Of T)(System.Buffers.ReadOnlySequence(Of T))
+  name.vb: ToArray(Of T)(ReadOnlySequence(Of T))
+  spec.csharp:
+  - uid: System.Buffers.BuffersExtensions.ToArray``1(System.Buffers.ReadOnlySequence{``0}@)
+    name: ToArray
+    isExternal: true
+    href: System.Buffers.BuffersExtensions.html#System_Buffers_BuffersExtensions_ToArray__1_System_Buffers_ReadOnlySequence___0___
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: in
+  - name: " "
+  - uid: System.Buffers.ReadOnlySequence`1
+    name: ReadOnlySequence
+    isExternal: true
+    href: System.Buffers.ReadOnlySequence-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: System.Buffers.BuffersExtensions.ToArray``1(System.Buffers.ReadOnlySequence{``0}@)
+    name: ToArray
+    isExternal: true
+    href: System.Buffers.BuffersExtensions.html#System_Buffers_BuffersExtensions_ToArray__1_System_Buffers_ReadOnlySequence___0___
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: System.Buffers.ReadOnlySequence`1
+    name: ReadOnlySequence
+    isExternal: true
+    href: System.Buffers.ReadOnlySequence-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Buffers.ReadOnlySequence`1
+  commentId: T:System.Buffers.ReadOnlySequence`1
+  parent: System.Buffers
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.buffers.readonlysequence-1
+  name: ReadOnlySequence<T>
+  nameWithType: ReadOnlySequence<T>
+  fullName: System.Buffers.ReadOnlySequence<T>
+  nameWithType.vb: ReadOnlySequence(Of T)
+  fullName.vb: System.Buffers.ReadOnlySequence(Of T)
+  name.vb: ReadOnlySequence(Of T)
+  spec.csharp:
+  - uid: System.Buffers.ReadOnlySequence`1
+    name: ReadOnlySequence
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.buffers.readonlysequence-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Buffers.ReadOnlySequence`1
+    name: ReadOnlySequence
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.buffers.readonlysequence-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Buffers.ReadOnlySequence`1.#ctor*
+  commentId: Overload:System.Buffers.ReadOnlySequence`1.#ctor
+  isExternal: true
+  href: System.Buffers.ReadOnlySequence-1.html#System_Buffers_ReadOnlySequence_1__ctor_System_Buffers_ReadOnlySequenceSegment__0__System_Int32_System_Buffers_ReadOnlySequenceSegment__0__System_Int32_
+  name: ReadOnlySequence
+  nameWithType: ReadOnlySequence<T>.ReadOnlySequence
+  fullName: System.Buffers.ReadOnlySequence<T>.ReadOnlySequence
+  nameWithType.vb: ReadOnlySequence(Of T).New
+  fullName.vb: System.Buffers.ReadOnlySequence(Of T).New
+  name.vb: New
+- uid: System.Buffers.ReadOnlySequenceSegment{{T}}
+  commentId: T:System.Buffers.ReadOnlySequenceSegment{`0}
+  parent: System.Buffers
+  definition: System.Buffers.ReadOnlySequenceSegment`1
+  href: System.Buffers.ReadOnlySequenceSegment-1.html
+  name: ReadOnlySequenceSegment<T>
+  nameWithType: ReadOnlySequenceSegment<T>
+  fullName: System.Buffers.ReadOnlySequenceSegment<T>
+  nameWithType.vb: ReadOnlySequenceSegment(Of T)
+  fullName.vb: System.Buffers.ReadOnlySequenceSegment(Of T)
+  name.vb: ReadOnlySequenceSegment(Of T)
+  spec.csharp:
+  - uid: System.Buffers.ReadOnlySequenceSegment`1
+    name: ReadOnlySequenceSegment
+    isExternal: true
+    href: System.Buffers.ReadOnlySequenceSegment-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Buffers.ReadOnlySequenceSegment`1
+    name: ReadOnlySequenceSegment
+    isExternal: true
+    href: System.Buffers.ReadOnlySequenceSegment-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.Buffers.ReadOnlySequenceSegment`1
+  commentId: T:System.Buffers.ReadOnlySequenceSegment`1
+  parent: System.Buffers
+  isExternal: true
+  href: System.Buffers.ReadOnlySequenceSegment-1.html
+  name: ReadOnlySequenceSegment<T>
+  nameWithType: ReadOnlySequenceSegment<T>
+  fullName: System.Buffers.ReadOnlySequenceSegment<T>
+  nameWithType.vb: ReadOnlySequenceSegment(Of T)
+  fullName.vb: System.Buffers.ReadOnlySequenceSegment(Of T)
+  name.vb: ReadOnlySequenceSegment(Of T)
+  spec.csharp:
+  - uid: System.Buffers.ReadOnlySequenceSegment`1
+    name: ReadOnlySequenceSegment
+    isExternal: true
+    href: System.Buffers.ReadOnlySequenceSegment-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Buffers.ReadOnlySequenceSegment`1
+    name: ReadOnlySequenceSegment
+    isExternal: true
+    href: System.Buffers.ReadOnlySequenceSegment-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: '{T}[]'
+  isExternal: true
+  name: T[]
+  nameWithType: T[]
+  fullName: T[]
+  nameWithType.vb: T()
+  fullName.vb: T()
+  name.vb: T()
+  spec.csharp:
+  - name: T
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - name: T
+  - name: (
+  - name: )
+- uid: System.ReadOnlyMemory{{T}}
+  commentId: T:System.ReadOnlyMemory{`0}
+  parent: System
+  definition: System.ReadOnlyMemory`1
+  href: https://learn.microsoft.com/dotnet/api/system.readonlymemory-1
+  name: ReadOnlyMemory<T>
+  nameWithType: ReadOnlyMemory<T>
+  fullName: System.ReadOnlyMemory<T>
+  nameWithType.vb: ReadOnlyMemory(Of T)
+  fullName.vb: System.ReadOnlyMemory(Of T)
+  name.vb: ReadOnlyMemory(Of T)
+  spec.csharp:
+  - uid: System.ReadOnlyMemory`1
+    name: ReadOnlyMemory
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlymemory-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.ReadOnlyMemory`1
+    name: ReadOnlyMemory
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlymemory-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.ReadOnlyMemory`1
+  commentId: T:System.ReadOnlyMemory`1
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.readonlymemory-1
+  name: ReadOnlyMemory<T>
+  nameWithType: ReadOnlyMemory<T>
+  fullName: System.ReadOnlyMemory<T>
+  nameWithType.vb: ReadOnlyMemory(Of T)
+  fullName.vb: System.ReadOnlyMemory(Of T)
+  name.vb: ReadOnlyMemory(Of T)
+  spec.csharp:
+  - uid: System.ReadOnlyMemory`1
+    name: ReadOnlyMemory
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlymemory-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.ReadOnlyMemory`1
+    name: ReadOnlyMemory
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlymemory-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Buffers.ReadOnlySequence`1.Slice*
+  commentId: Overload:System.Buffers.ReadOnlySequence`1.Slice
+  isExternal: true
+  href: System.Buffers.ReadOnlySequence-1.html#System_Buffers_ReadOnlySequence_1_Slice_System_Int64_System_Int64_
+  name: Slice
+  nameWithType: ReadOnlySequence<T>.Slice
+  fullName: System.Buffers.ReadOnlySequence<T>.Slice
+  nameWithType.vb: ReadOnlySequence(Of T).Slice
+  fullName.vb: System.Buffers.ReadOnlySequence(Of T).Slice
+- uid: System.Int64
+  commentId: T:System.Int64
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int64
+  name: long
+  nameWithType: long
+  fullName: long
+  nameWithType.vb: Long
+  fullName.vb: Long
+  name.vb: Long
+- uid: System.SequencePosition
+  commentId: T:System.SequencePosition
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.sequenceposition
+  name: SequencePosition
+  nameWithType: SequencePosition
+  fullName: System.SequencePosition
+- uid: System.ValueType.ToString
+  commentId: M:System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  name: ToString()
+  nameWithType: ValueType.ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+- uid: System.Buffers.ReadOnlySequence`1.ToString*
+  commentId: Overload:System.Buffers.ReadOnlySequence`1.ToString
+  isExternal: true
+  href: System.Buffers.ReadOnlySequence-1.html#System_Buffers_ReadOnlySequence_1_ToString
+  name: ToString
+  nameWithType: ReadOnlySequence<T>.ToString
+  fullName: System.Buffers.ReadOnlySequence<T>.ToString
+  nameWithType.vb: ReadOnlySequence(Of T).ToString
+  fullName.vb: System.Buffers.ReadOnlySequence(Of T).ToString
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Buffers.ReadOnlySequence`1.GetEnumerator*
+  commentId: Overload:System.Buffers.ReadOnlySequence`1.GetEnumerator
+  isExternal: true
+  href: System.Buffers.ReadOnlySequence-1.html#System_Buffers_ReadOnlySequence_1_GetEnumerator
+  name: GetEnumerator
+  nameWithType: ReadOnlySequence<T>.GetEnumerator
+  fullName: System.Buffers.ReadOnlySequence<T>.GetEnumerator
+  nameWithType.vb: ReadOnlySequence(Of T).GetEnumerator
+  fullName.vb: System.Buffers.ReadOnlySequence(Of T).GetEnumerator
+- uid: System.Buffers.ReadOnlySequence`1.Enumerator
+  commentId: T:System.Buffers.ReadOnlySequence`1.Enumerator
+  parent: System.Buffers
+  isExternal: true
+  href: System.Buffers.ReadOnlySequence-1.html
+  name: ReadOnlySequence<T>.Enumerator
+  nameWithType: ReadOnlySequence<T>.Enumerator
+  fullName: System.Buffers.ReadOnlySequence<T>.Enumerator
+  nameWithType.vb: ReadOnlySequence(Of T).Enumerator
+  fullName.vb: System.Buffers.ReadOnlySequence(Of T).Enumerator
+  name.vb: ReadOnlySequence(Of T).Enumerator
+  spec.csharp:
+  - uid: System.Buffers.ReadOnlySequence`1
+    name: ReadOnlySequence
+    isExternal: true
+    href: System.Buffers.ReadOnlySequence-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  - name: .
+  - uid: System.Buffers.ReadOnlySequence`1.Enumerator
+    name: Enumerator
+    isExternal: true
+    href: System.Buffers.ReadOnlySequence-1.Enumerator.html
+  spec.vb:
+  - uid: System.Buffers.ReadOnlySequence`1
+    name: ReadOnlySequence
+    isExternal: true
+    href: System.Buffers.ReadOnlySequence-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: .
+  - uid: System.Buffers.ReadOnlySequence`1.Enumerator
+    name: Enumerator
+    isExternal: true
+    href: System.Buffers.ReadOnlySequence-1.Enumerator.html
+- uid: System.Buffers.ReadOnlySequence`1.GetPosition*
+  commentId: Overload:System.Buffers.ReadOnlySequence`1.GetPosition
+  isExternal: true
+  href: System.Buffers.ReadOnlySequence-1.html#System_Buffers_ReadOnlySequence_1_GetPosition_System_Int64_
+  name: GetPosition
+  nameWithType: ReadOnlySequence<T>.GetPosition
+  fullName: System.Buffers.ReadOnlySequence<T>.GetPosition
+  nameWithType.vb: ReadOnlySequence(Of T).GetPosition
+  fullName.vb: System.Buffers.ReadOnlySequence(Of T).GetPosition
+- uid: System.Buffers.ReadOnlySequence`1.TryGet*
+  commentId: Overload:System.Buffers.ReadOnlySequence`1.TryGet
+  isExternal: true
+  href: System.Buffers.ReadOnlySequence-1.html#System_Buffers_ReadOnlySequence_1_TryGet_System_SequencePosition__System_ReadOnlyMemory__0___System_Boolean_
+  name: TryGet
+  nameWithType: ReadOnlySequence<T>.TryGet
+  fullName: System.Buffers.ReadOnlySequence<T>.TryGet
+  nameWithType.vb: ReadOnlySequence(Of T).TryGet
+  fullName.vb: System.Buffers.ReadOnlySequence(Of T).TryGet
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System.Buffers.ReadOnlySequence`1.Length*
+  commentId: Overload:System.Buffers.ReadOnlySequence`1.Length
+  isExternal: true
+  href: System.Buffers.ReadOnlySequence-1.html#System_Buffers_ReadOnlySequence_1_Length
+  name: Length
+  nameWithType: ReadOnlySequence<T>.Length
+  fullName: System.Buffers.ReadOnlySequence<T>.Length
+  nameWithType.vb: ReadOnlySequence(Of T).Length
+  fullName.vb: System.Buffers.ReadOnlySequence(Of T).Length
+- uid: System.Buffers.ReadOnlySequence`1.IsEmpty*
+  commentId: Overload:System.Buffers.ReadOnlySequence`1.IsEmpty
+  isExternal: true
+  href: System.Buffers.ReadOnlySequence-1.html#System_Buffers_ReadOnlySequence_1_IsEmpty
+  name: IsEmpty
+  nameWithType: ReadOnlySequence<T>.IsEmpty
+  fullName: System.Buffers.ReadOnlySequence<T>.IsEmpty
+  nameWithType.vb: ReadOnlySequence(Of T).IsEmpty
+  fullName.vb: System.Buffers.ReadOnlySequence(Of T).IsEmpty
+- uid: System.Buffers.ReadOnlySequence`1.IsSingleSegment*
+  commentId: Overload:System.Buffers.ReadOnlySequence`1.IsSingleSegment
+  isExternal: true
+  href: System.Buffers.ReadOnlySequence-1.html#System_Buffers_ReadOnlySequence_1_IsSingleSegment
+  name: IsSingleSegment
+  nameWithType: ReadOnlySequence<T>.IsSingleSegment
+  fullName: System.Buffers.ReadOnlySequence<T>.IsSingleSegment
+  nameWithType.vb: ReadOnlySequence(Of T).IsSingleSegment
+  fullName.vb: System.Buffers.ReadOnlySequence(Of T).IsSingleSegment
+- uid: System.Buffers.ReadOnlySequence`1.First*
+  commentId: Overload:System.Buffers.ReadOnlySequence`1.First
+  isExternal: true
+  href: System.Buffers.ReadOnlySequence-1.html#System_Buffers_ReadOnlySequence_1_First
+  name: First
+  nameWithType: ReadOnlySequence<T>.First
+  fullName: System.Buffers.ReadOnlySequence<T>.First
+  nameWithType.vb: ReadOnlySequence(Of T).First
+  fullName.vb: System.Buffers.ReadOnlySequence(Of T).First
+- uid: System.Buffers.ReadOnlySequence`1.Start*
+  commentId: Overload:System.Buffers.ReadOnlySequence`1.Start
+  isExternal: true
+  href: System.Buffers.ReadOnlySequence-1.html#System_Buffers_ReadOnlySequence_1_Start
+  name: Start
+  nameWithType: ReadOnlySequence<T>.Start
+  fullName: System.Buffers.ReadOnlySequence<T>.Start
+  nameWithType.vb: ReadOnlySequence(Of T).Start
+  fullName.vb: System.Buffers.ReadOnlySequence(Of T).Start
+- uid: System.Buffers.ReadOnlySequence`1.End*
+  commentId: Overload:System.Buffers.ReadOnlySequence`1.End
+  isExternal: true
+  href: System.Buffers.ReadOnlySequence-1.html#System_Buffers_ReadOnlySequence_1_End
+  name: End
+  nameWithType: ReadOnlySequence<T>.End
+  fullName: System.Buffers.ReadOnlySequence<T>.End
+  nameWithType.vb: ReadOnlySequence(Of T).End
+  fullName.vb: System.Buffers.ReadOnlySequence(Of T).End

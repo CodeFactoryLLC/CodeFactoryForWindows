@@ -1,0 +1,487 @@
+### YamlMime:ManagedReference
+items:
+- uid: System.Collections.Generic.IAsyncEnumerable`1
+  commentId: T:System.Collections.Generic.IAsyncEnumerable`1
+  id: IAsyncEnumerable`1
+  parent: System.Collections.Generic
+  children:
+  - System.Collections.Generic.IAsyncEnumerable`1.GetAsyncEnumerator(System.Threading.CancellationToken)
+  langs:
+  - csharp
+  - vb
+  name: IAsyncEnumerable<T>
+  nameWithType: IAsyncEnumerable<T>
+  fullName: System.Collections.Generic.IAsyncEnumerable<T>
+  type: Interface
+  assemblies:
+  - Microsoft.Bcl.AsyncInterfaces
+  namespace: System.Collections.Generic
+  summary: Exposes an enumerator that provides asynchronous iteration over values of a specified type.
+  example: []
+  syntax:
+    content: public interface IAsyncEnumerable<out T>
+    typeParameters:
+    - id: T
+      description: The type of values to enumerate.
+    content.vb: Public Interface IAsyncEnumerable(Of Out T)
+  extensionMethods:
+  - System.Collections.Generic.IAsyncEnumerable`1.System.Threading.Tasks.TaskAsyncEnumerableExtensions.ConfigureAwait``1(System.Boolean)
+  - System.Collections.Generic.IAsyncEnumerable`1.System.Threading.Tasks.TaskAsyncEnumerableExtensions.WithCancellation``1(System.Threading.CancellationToken)
+  nameWithType.vb: IAsyncEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IAsyncEnumerable(Of T)
+  name.vb: IAsyncEnumerable(Of T)
+- uid: System.Collections.Generic.IAsyncEnumerable`1.GetAsyncEnumerator(System.Threading.CancellationToken)
+  commentId: M:System.Collections.Generic.IAsyncEnumerable`1.GetAsyncEnumerator(System.Threading.CancellationToken)
+  id: GetAsyncEnumerator(System.Threading.CancellationToken)
+  parent: System.Collections.Generic.IAsyncEnumerable`1
+  langs:
+  - csharp
+  - vb
+  name: GetAsyncEnumerator(CancellationToken)
+  nameWithType: IAsyncEnumerable<T>.GetAsyncEnumerator(CancellationToken)
+  fullName: System.Collections.Generic.IAsyncEnumerable<T>.GetAsyncEnumerator(System.Threading.CancellationToken)
+  type: Method
+  assemblies:
+  - Microsoft.Bcl.AsyncInterfaces
+  namespace: System.Collections.Generic
+  summary: Returns an enumerator that iterates asynchronously through the collection.
+  example: []
+  syntax:
+    content: IAsyncEnumerator<out T> GetAsyncEnumerator(CancellationToken cancellationToken = default)
+    parameters:
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: A <xref href="System.Threading.CancellationToken" data-throw-if-not-resolved="false"></xref> that may be used to cancel the asynchronous iteration.
+    return:
+      type: System.Collections.Generic.IAsyncEnumerator{{T}}
+      description: An enumerator that can be used to iterate asynchronously through the collection.
+    content.vb: Function GetAsyncEnumerator(cancellationToken As CancellationToken = Nothing) As IAsyncEnumerator(Of Out T)
+  overload: System.Collections.Generic.IAsyncEnumerable`1.GetAsyncEnumerator*
+  nameWithType.vb: IAsyncEnumerable(Of T).GetAsyncEnumerator(CancellationToken)
+  fullName.vb: System.Collections.Generic.IAsyncEnumerable(Of T).GetAsyncEnumerator(System.Threading.CancellationToken)
+references:
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: System.Collections.Generic.IAsyncEnumerable`1.System.Threading.Tasks.TaskAsyncEnumerableExtensions.ConfigureAwait``1(System.Boolean)
+  commentId: M:System.Threading.Tasks.TaskAsyncEnumerableExtensions.ConfigureAwait``1(System.Collections.Generic.IAsyncEnumerable{``0},System.Boolean)
+  parent: System.Threading.Tasks.TaskAsyncEnumerableExtensions
+  definition: System.Threading.Tasks.TaskAsyncEnumerableExtensions.ConfigureAwait``1(System.Collections.Generic.IAsyncEnumerable{``0},System.Boolean)
+  href: System.Threading.Tasks.TaskAsyncEnumerableExtensions.html#System_Threading_Tasks_TaskAsyncEnumerableExtensions_ConfigureAwait__1_System_Collections_Generic_IAsyncEnumerable___0__System_Boolean_
+  name: ConfigureAwait<T>(IAsyncEnumerable<T>, bool)
+  nameWithType: TaskAsyncEnumerableExtensions.ConfigureAwait<T>(IAsyncEnumerable<T>, bool)
+  fullName: System.Threading.Tasks.TaskAsyncEnumerableExtensions.ConfigureAwait<T>(System.Collections.Generic.IAsyncEnumerable<T>, bool)
+  nameWithType.vb: TaskAsyncEnumerableExtensions.ConfigureAwait(Of T)(IAsyncEnumerable(Of T), Boolean)
+  fullName.vb: System.Threading.Tasks.TaskAsyncEnumerableExtensions.ConfigureAwait(Of T)(System.Collections.Generic.IAsyncEnumerable(Of T), Boolean)
+  name.vb: ConfigureAwait(Of T)(IAsyncEnumerable(Of T), Boolean)
+  spec.csharp:
+  - uid: System.Threading.Tasks.TaskAsyncEnumerableExtensions.ConfigureAwait``1(System.Collections.Generic.IAsyncEnumerable{`0},System.Boolean)
+    name: ConfigureAwait
+    isExternal: true
+    href: System.Threading.Tasks.TaskAsyncEnumerableExtensions.html#System_Threading_Tasks_TaskAsyncEnumerableExtensions_ConfigureAwait__1_System_Collections_Generic_IAsyncEnumerable___0__System_Boolean_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: System.Collections.Generic.IAsyncEnumerable`1
+    name: IAsyncEnumerable
+    isExternal: true
+    href: System.Collections.Generic.IAsyncEnumerable-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  spec.vb:
+  - uid: System.Threading.Tasks.TaskAsyncEnumerableExtensions.ConfigureAwait``1(System.Collections.Generic.IAsyncEnumerable{`0},System.Boolean)
+    name: ConfigureAwait
+    isExternal: true
+    href: System.Threading.Tasks.TaskAsyncEnumerableExtensions.html#System_Threading_Tasks_TaskAsyncEnumerableExtensions_ConfigureAwait__1_System_Collections_Generic_IAsyncEnumerable___0__System_Boolean_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: System.Collections.Generic.IAsyncEnumerable`1
+    name: IAsyncEnumerable
+    isExternal: true
+    href: System.Collections.Generic.IAsyncEnumerable-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: System.Collections.Generic.IAsyncEnumerable`1.System.Threading.Tasks.TaskAsyncEnumerableExtensions.WithCancellation``1(System.Threading.CancellationToken)
+  commentId: M:System.Threading.Tasks.TaskAsyncEnumerableExtensions.WithCancellation``1(System.Collections.Generic.IAsyncEnumerable{``0},System.Threading.CancellationToken)
+  parent: System.Threading.Tasks.TaskAsyncEnumerableExtensions
+  definition: System.Threading.Tasks.TaskAsyncEnumerableExtensions.WithCancellation``1(System.Collections.Generic.IAsyncEnumerable{``0},System.Threading.CancellationToken)
+  href: System.Threading.Tasks.TaskAsyncEnumerableExtensions.html#System_Threading_Tasks_TaskAsyncEnumerableExtensions_WithCancellation__1_System_Collections_Generic_IAsyncEnumerable___0__System_Threading_CancellationToken_
+  name: WithCancellation<T>(IAsyncEnumerable<T>, CancellationToken)
+  nameWithType: TaskAsyncEnumerableExtensions.WithCancellation<T>(IAsyncEnumerable<T>, CancellationToken)
+  fullName: System.Threading.Tasks.TaskAsyncEnumerableExtensions.WithCancellation<T>(System.Collections.Generic.IAsyncEnumerable<T>, System.Threading.CancellationToken)
+  nameWithType.vb: TaskAsyncEnumerableExtensions.WithCancellation(Of T)(IAsyncEnumerable(Of T), CancellationToken)
+  fullName.vb: System.Threading.Tasks.TaskAsyncEnumerableExtensions.WithCancellation(Of T)(System.Collections.Generic.IAsyncEnumerable(Of T), System.Threading.CancellationToken)
+  name.vb: WithCancellation(Of T)(IAsyncEnumerable(Of T), CancellationToken)
+  spec.csharp:
+  - uid: System.Threading.Tasks.TaskAsyncEnumerableExtensions.WithCancellation``1(System.Collections.Generic.IAsyncEnumerable{`0},System.Threading.CancellationToken)
+    name: WithCancellation
+    isExternal: true
+    href: System.Threading.Tasks.TaskAsyncEnumerableExtensions.html#System_Threading_Tasks_TaskAsyncEnumerableExtensions_WithCancellation__1_System_Collections_Generic_IAsyncEnumerable___0__System_Threading_CancellationToken_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: System.Collections.Generic.IAsyncEnumerable`1
+    name: IAsyncEnumerable
+    isExternal: true
+    href: System.Collections.Generic.IAsyncEnumerable-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: System.Threading.Tasks.TaskAsyncEnumerableExtensions.WithCancellation``1(System.Collections.Generic.IAsyncEnumerable{`0},System.Threading.CancellationToken)
+    name: WithCancellation
+    isExternal: true
+    href: System.Threading.Tasks.TaskAsyncEnumerableExtensions.html#System_Threading_Tasks_TaskAsyncEnumerableExtensions_WithCancellation__1_System_Collections_Generic_IAsyncEnumerable___0__System_Threading_CancellationToken_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: System.Collections.Generic.IAsyncEnumerable`1
+    name: IAsyncEnumerable
+    isExternal: true
+    href: System.Collections.Generic.IAsyncEnumerable-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: System.Threading.Tasks.TaskAsyncEnumerableExtensions.ConfigureAwait``1(System.Collections.Generic.IAsyncEnumerable{``0},System.Boolean)
+  commentId: M:System.Threading.Tasks.TaskAsyncEnumerableExtensions.ConfigureAwait``1(System.Collections.Generic.IAsyncEnumerable{``0},System.Boolean)
+  isExternal: true
+  href: System.Threading.Tasks.TaskAsyncEnumerableExtensions.html#System_Threading_Tasks_TaskAsyncEnumerableExtensions_ConfigureAwait__1_System_Collections_Generic_IAsyncEnumerable___0__System_Boolean_
+  name: ConfigureAwait<T>(IAsyncEnumerable<T>, bool)
+  nameWithType: TaskAsyncEnumerableExtensions.ConfigureAwait<T>(IAsyncEnumerable<T>, bool)
+  fullName: System.Threading.Tasks.TaskAsyncEnumerableExtensions.ConfigureAwait<T>(System.Collections.Generic.IAsyncEnumerable<T>, bool)
+  nameWithType.vb: TaskAsyncEnumerableExtensions.ConfigureAwait(Of T)(IAsyncEnumerable(Of T), Boolean)
+  fullName.vb: System.Threading.Tasks.TaskAsyncEnumerableExtensions.ConfigureAwait(Of T)(System.Collections.Generic.IAsyncEnumerable(Of T), Boolean)
+  name.vb: ConfigureAwait(Of T)(IAsyncEnumerable(Of T), Boolean)
+  spec.csharp:
+  - uid: System.Threading.Tasks.TaskAsyncEnumerableExtensions.ConfigureAwait``1(System.Collections.Generic.IAsyncEnumerable{``0},System.Boolean)
+    name: ConfigureAwait
+    isExternal: true
+    href: System.Threading.Tasks.TaskAsyncEnumerableExtensions.html#System_Threading_Tasks_TaskAsyncEnumerableExtensions_ConfigureAwait__1_System_Collections_Generic_IAsyncEnumerable___0__System_Boolean_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: System.Collections.Generic.IAsyncEnumerable`1
+    name: IAsyncEnumerable
+    isExternal: true
+    href: System.Collections.Generic.IAsyncEnumerable-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  spec.vb:
+  - uid: System.Threading.Tasks.TaskAsyncEnumerableExtensions.ConfigureAwait``1(System.Collections.Generic.IAsyncEnumerable{``0},System.Boolean)
+    name: ConfigureAwait
+    isExternal: true
+    href: System.Threading.Tasks.TaskAsyncEnumerableExtensions.html#System_Threading_Tasks_TaskAsyncEnumerableExtensions_ConfigureAwait__1_System_Collections_Generic_IAsyncEnumerable___0__System_Boolean_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: System.Collections.Generic.IAsyncEnumerable`1
+    name: IAsyncEnumerable
+    isExternal: true
+    href: System.Collections.Generic.IAsyncEnumerable-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: System.Threading.Tasks.TaskAsyncEnumerableExtensions
+  commentId: T:System.Threading.Tasks.TaskAsyncEnumerableExtensions
+  parent: System.Threading.Tasks
+  isExternal: true
+  href: System.Threading.Tasks.TaskAsyncEnumerableExtensions.html
+  name: TaskAsyncEnumerableExtensions
+  nameWithType: TaskAsyncEnumerableExtensions
+  fullName: System.Threading.Tasks.TaskAsyncEnumerableExtensions
+- uid: System.Threading.Tasks.TaskAsyncEnumerableExtensions.WithCancellation``1(System.Collections.Generic.IAsyncEnumerable{``0},System.Threading.CancellationToken)
+  commentId: M:System.Threading.Tasks.TaskAsyncEnumerableExtensions.WithCancellation``1(System.Collections.Generic.IAsyncEnumerable{``0},System.Threading.CancellationToken)
+  isExternal: true
+  href: System.Threading.Tasks.TaskAsyncEnumerableExtensions.html#System_Threading_Tasks_TaskAsyncEnumerableExtensions_WithCancellation__1_System_Collections_Generic_IAsyncEnumerable___0__System_Threading_CancellationToken_
+  name: WithCancellation<T>(IAsyncEnumerable<T>, CancellationToken)
+  nameWithType: TaskAsyncEnumerableExtensions.WithCancellation<T>(IAsyncEnumerable<T>, CancellationToken)
+  fullName: System.Threading.Tasks.TaskAsyncEnumerableExtensions.WithCancellation<T>(System.Collections.Generic.IAsyncEnumerable<T>, System.Threading.CancellationToken)
+  nameWithType.vb: TaskAsyncEnumerableExtensions.WithCancellation(Of T)(IAsyncEnumerable(Of T), CancellationToken)
+  fullName.vb: System.Threading.Tasks.TaskAsyncEnumerableExtensions.WithCancellation(Of T)(System.Collections.Generic.IAsyncEnumerable(Of T), System.Threading.CancellationToken)
+  name.vb: WithCancellation(Of T)(IAsyncEnumerable(Of T), CancellationToken)
+  spec.csharp:
+  - uid: System.Threading.Tasks.TaskAsyncEnumerableExtensions.WithCancellation``1(System.Collections.Generic.IAsyncEnumerable{``0},System.Threading.CancellationToken)
+    name: WithCancellation
+    isExternal: true
+    href: System.Threading.Tasks.TaskAsyncEnumerableExtensions.html#System_Threading_Tasks_TaskAsyncEnumerableExtensions_WithCancellation__1_System_Collections_Generic_IAsyncEnumerable___0__System_Threading_CancellationToken_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: System.Collections.Generic.IAsyncEnumerable`1
+    name: IAsyncEnumerable
+    isExternal: true
+    href: System.Collections.Generic.IAsyncEnumerable-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: System.Threading.Tasks.TaskAsyncEnumerableExtensions.WithCancellation``1(System.Collections.Generic.IAsyncEnumerable{``0},System.Threading.CancellationToken)
+    name: WithCancellation
+    isExternal: true
+    href: System.Threading.Tasks.TaskAsyncEnumerableExtensions.html#System_Threading_Tasks_TaskAsyncEnumerableExtensions_WithCancellation__1_System_Collections_Generic_IAsyncEnumerable___0__System_Threading_CancellationToken_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: System.Collections.Generic.IAsyncEnumerable`1
+    name: IAsyncEnumerable
+    isExternal: true
+    href: System.Collections.Generic.IAsyncEnumerable-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: System.Threading.CancellationToken
+  commentId: T:System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  name: CancellationToken
+  nameWithType: CancellationToken
+  fullName: System.Threading.CancellationToken
+- uid: System.Collections.Generic.IAsyncEnumerable`1.GetAsyncEnumerator*
+  commentId: Overload:System.Collections.Generic.IAsyncEnumerable`1.GetAsyncEnumerator
+  isExternal: true
+  href: System.Collections.Generic.IAsyncEnumerable-1.html#System_Collections_Generic_IAsyncEnumerable_1_GetAsyncEnumerator_System_Threading_CancellationToken_
+  name: GetAsyncEnumerator
+  nameWithType: IAsyncEnumerable<T>.GetAsyncEnumerator
+  fullName: System.Collections.Generic.IAsyncEnumerable<T>.GetAsyncEnumerator
+  nameWithType.vb: IAsyncEnumerable(Of T).GetAsyncEnumerator
+  fullName.vb: System.Collections.Generic.IAsyncEnumerable(Of T).GetAsyncEnumerator
+- uid: System.Collections.Generic.IAsyncEnumerator{{T}}
+  commentId: T:System.Collections.Generic.IAsyncEnumerator{`0}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IAsyncEnumerator`1
+  href: System.Collections.Generic.IAsyncEnumerator-1.html
+  name: IAsyncEnumerator<T>
+  nameWithType: IAsyncEnumerator<T>
+  fullName: System.Collections.Generic.IAsyncEnumerator<T>
+  nameWithType.vb: IAsyncEnumerator(Of T)
+  fullName.vb: System.Collections.Generic.IAsyncEnumerator(Of T)
+  name.vb: IAsyncEnumerator(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IAsyncEnumerator`1
+    name: IAsyncEnumerator
+    isExternal: true
+    href: System.Collections.Generic.IAsyncEnumerator-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IAsyncEnumerator`1
+    name: IAsyncEnumerator
+    isExternal: true
+    href: System.Collections.Generic.IAsyncEnumerator-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Threading
+  commentId: N:System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading
+  nameWithType: System.Threading
+  fullName: System.Threading
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+- uid: System.Collections.Generic.IAsyncEnumerator`1
+  commentId: T:System.Collections.Generic.IAsyncEnumerator`1
+  isExternal: true
+  href: System.Collections.Generic.IAsyncEnumerator-1.html
+  name: IAsyncEnumerator<T>
+  nameWithType: IAsyncEnumerator<T>
+  fullName: System.Collections.Generic.IAsyncEnumerator<T>
+  nameWithType.vb: IAsyncEnumerator(Of T)
+  fullName.vb: System.Collections.Generic.IAsyncEnumerator(Of T)
+  name.vb: IAsyncEnumerator(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IAsyncEnumerator`1
+    name: IAsyncEnumerator
+    isExternal: true
+    href: System.Collections.Generic.IAsyncEnumerator-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IAsyncEnumerator`1
+    name: IAsyncEnumerator
+    isExternal: true
+    href: System.Collections.Generic.IAsyncEnumerator-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )

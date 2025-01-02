@@ -1,0 +1,507 @@
+### YamlMime:ManagedReference
+items:
+- uid: System.Text.Json.Serialization.ReferenceHandler
+  commentId: T:System.Text.Json.Serialization.ReferenceHandler
+  id: ReferenceHandler
+  parent: System.Text.Json.Serialization
+  children:
+  - System.Text.Json.Serialization.ReferenceHandler.#ctor
+  - System.Text.Json.Serialization.ReferenceHandler.CreateResolver
+  - System.Text.Json.Serialization.ReferenceHandler.IgnoreCycles
+  - System.Text.Json.Serialization.ReferenceHandler.Preserve
+  langs:
+  - csharp
+  - vb
+  name: ReferenceHandler
+  nameWithType: ReferenceHandler
+  fullName: System.Text.Json.Serialization.ReferenceHandler
+  type: Class
+  assemblies:
+  - System.Text.Json
+  namespace: System.Text.Json.Serialization
+  summary: This class defines how the <xref href="System.Text.Json.JsonSerializer" data-throw-if-not-resolved="false"></xref> deals with references on serialization and deserialization.
+  example: []
+  syntax:
+    content: public abstract class ReferenceHandler
+    content.vb: Public MustInherit Class ReferenceHandler
+  inheritance:
+  - System.Object
+  derivedClasses:
+  - System.Text.Json.Serialization.ReferenceHandler`1
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: System.Text.Json.Serialization.ReferenceHandler.CreateResolver
+  commentId: M:System.Text.Json.Serialization.ReferenceHandler.CreateResolver
+  id: CreateResolver
+  parent: System.Text.Json.Serialization.ReferenceHandler
+  langs:
+  - csharp
+  - vb
+  name: CreateResolver()
+  nameWithType: ReferenceHandler.CreateResolver()
+  fullName: System.Text.Json.Serialization.ReferenceHandler.CreateResolver()
+  type: Method
+  assemblies:
+  - System.Text.Json
+  namespace: System.Text.Json.Serialization
+  summary: Returns the <xref href="System.Text.Json.Serialization.ReferenceResolver" data-throw-if-not-resolved="false"></xref> used for each serialization call.
+  example: []
+  syntax:
+    content: public abstract ReferenceResolver CreateResolver()
+    return:
+      type: System.Text.Json.Serialization.ReferenceResolver
+      description: The resolver to use for serialization and deserialization.
+    content.vb: Public MustOverride Function CreateResolver() As ReferenceResolver
+  overload: System.Text.Json.Serialization.ReferenceHandler.CreateResolver*
+- uid: System.Text.Json.Serialization.ReferenceHandler.#ctor
+  commentId: M:System.Text.Json.Serialization.ReferenceHandler.#ctor
+  id: '#ctor'
+  parent: System.Text.Json.Serialization.ReferenceHandler
+  langs:
+  - csharp
+  - vb
+  name: ReferenceHandler()
+  nameWithType: ReferenceHandler.ReferenceHandler()
+  fullName: System.Text.Json.Serialization.ReferenceHandler.ReferenceHandler()
+  type: Constructor
+  assemblies:
+  - System.Text.Json
+  namespace: System.Text.Json.Serialization
+  summary: Initializes a new instance of the <xref href="System.Text.Json.Serialization.ReferenceHandler" data-throw-if-not-resolved="false"></xref> class.
+  example: []
+  syntax:
+    content: protected ReferenceHandler()
+    content.vb: Protected Sub New()
+  overload: System.Text.Json.Serialization.ReferenceHandler.#ctor*
+  nameWithType.vb: ReferenceHandler.New()
+  fullName.vb: System.Text.Json.Serialization.ReferenceHandler.New()
+  name.vb: New()
+- uid: System.Text.Json.Serialization.ReferenceHandler.Preserve
+  commentId: P:System.Text.Json.Serialization.ReferenceHandler.Preserve
+  id: Preserve
+  parent: System.Text.Json.Serialization.ReferenceHandler
+  langs:
+  - csharp
+  - vb
+  name: Preserve
+  nameWithType: ReferenceHandler.Preserve
+  fullName: System.Text.Json.Serialization.ReferenceHandler.Preserve
+  type: Property
+  assemblies:
+  - System.Text.Json
+  namespace: System.Text.Json.Serialization
+  summary: Metadata properties will be honored when deserializing JSON objects and arrays into reference types and written when serializing reference types. This is necessary to create round-trippable JSON from objects that contain cycles or duplicate references.
+  example: []
+  syntax:
+    content: public static ReferenceHandler Preserve { get; }
+    parameters: []
+    return:
+      type: System.Text.Json.Serialization.ReferenceHandler
+    content.vb: Public Shared ReadOnly Property Preserve As ReferenceHandler
+  overload: System.Text.Json.Serialization.ReferenceHandler.Preserve*
+- uid: System.Text.Json.Serialization.ReferenceHandler.IgnoreCycles
+  commentId: P:System.Text.Json.Serialization.ReferenceHandler.IgnoreCycles
+  id: IgnoreCycles
+  parent: System.Text.Json.Serialization.ReferenceHandler
+  langs:
+  - csharp
+  - vb
+  name: IgnoreCycles
+  nameWithType: ReferenceHandler.IgnoreCycles
+  fullName: System.Text.Json.Serialization.ReferenceHandler.IgnoreCycles
+  type: Property
+  assemblies:
+  - System.Text.Json
+  namespace: System.Text.Json.Serialization
+  summary: Ignores an object when a reference cycle is detected during serialization.
+  example: []
+  syntax:
+    content: public static ReferenceHandler IgnoreCycles { get; }
+    parameters: []
+    return:
+      type: System.Text.Json.Serialization.ReferenceHandler
+    content.vb: Public Shared ReadOnly Property IgnoreCycles As ReferenceHandler
+  overload: System.Text.Json.Serialization.ReferenceHandler.IgnoreCycles*
+references:
+- uid: System.Text.Json.JsonSerializer
+  commentId: T:System.Text.Json.JsonSerializer
+  parent: System.Text.Json
+  isExternal: true
+  href: System.Text.Json.JsonSerializer.html
+  name: JsonSerializer
+  nameWithType: JsonSerializer
+  fullName: System.Text.Json.JsonSerializer
+- uid: System.Text.Json.Serialization
+  commentId: N:System.Text.Json.Serialization
+  isExternal: true
+  href: System.html
+  name: System.Text.Json.Serialization
+  nameWithType: System.Text.Json.Serialization
+  fullName: System.Text.Json.Serialization
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: System.html
+  - name: .
+  - uid: System.Text
+    name: Text
+    isExternal: true
+    href: System.Text.html
+  - name: .
+  - uid: System.Text.Json
+    name: Json
+    isExternal: true
+    href: System.Text.Json.html
+  - name: .
+  - uid: System.Text.Json.Serialization
+    name: Serialization
+    isExternal: true
+    href: System.Text.Json.Serialization.html
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: System.html
+  - name: .
+  - uid: System.Text
+    name: Text
+    isExternal: true
+    href: System.Text.html
+  - name: .
+  - uid: System.Text.Json
+    name: Json
+    isExternal: true
+    href: System.Text.Json.html
+  - name: .
+  - uid: System.Text.Json.Serialization
+    name: Serialization
+    isExternal: true
+    href: System.Text.Json.Serialization.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Text.Json
+  commentId: N:System.Text.Json
+  isExternal: true
+  href: System.html
+  name: System.Text.Json
+  nameWithType: System.Text.Json
+  fullName: System.Text.Json
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: System.html
+  - name: .
+  - uid: System.Text
+    name: Text
+    isExternal: true
+    href: System.Text.html
+  - name: .
+  - uid: System.Text.Json
+    name: Json
+    isExternal: true
+    href: System.Text.Json.html
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: System.html
+  - name: .
+  - uid: System.Text
+    name: Text
+    isExternal: true
+    href: System.Text.html
+  - name: .
+  - uid: System.Text.Json
+    name: Json
+    isExternal: true
+    href: System.Text.Json.html
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Text.Json.Serialization.ReferenceResolver
+  commentId: T:System.Text.Json.Serialization.ReferenceResolver
+  parent: System.Text.Json.Serialization
+  isExternal: true
+  href: System.Text.Json.Serialization.ReferenceResolver.html
+  name: ReferenceResolver
+  nameWithType: ReferenceResolver
+  fullName: System.Text.Json.Serialization.ReferenceResolver
+- uid: System.Text.Json.Serialization.ReferenceHandler.CreateResolver*
+  commentId: Overload:System.Text.Json.Serialization.ReferenceHandler.CreateResolver
+  isExternal: true
+  href: System.Text.Json.Serialization.ReferenceHandler.html#System_Text_Json_Serialization_ReferenceHandler_CreateResolver
+  name: CreateResolver
+  nameWithType: ReferenceHandler.CreateResolver
+  fullName: System.Text.Json.Serialization.ReferenceHandler.CreateResolver
+- uid: System.Text.Json.Serialization.ReferenceHandler
+  commentId: T:System.Text.Json.Serialization.ReferenceHandler
+  parent: System.Text.Json.Serialization
+  isExternal: true
+  href: System.Text.Json.Serialization.ReferenceHandler.html
+  name: ReferenceHandler
+  nameWithType: ReferenceHandler
+  fullName: System.Text.Json.Serialization.ReferenceHandler
+- uid: System.Text.Json.Serialization.ReferenceHandler.#ctor*
+  commentId: Overload:System.Text.Json.Serialization.ReferenceHandler.#ctor
+  isExternal: true
+  href: System.Text.Json.Serialization.ReferenceHandler.html#System_Text_Json_Serialization_ReferenceHandler__ctor
+  name: ReferenceHandler
+  nameWithType: ReferenceHandler.ReferenceHandler
+  fullName: System.Text.Json.Serialization.ReferenceHandler.ReferenceHandler
+  nameWithType.vb: ReferenceHandler.New
+  fullName.vb: System.Text.Json.Serialization.ReferenceHandler.New
+  name.vb: New
+- uid: System.Text.Json.Serialization.ReferenceHandler.Preserve*
+  commentId: Overload:System.Text.Json.Serialization.ReferenceHandler.Preserve
+  isExternal: true
+  href: System.Text.Json.Serialization.ReferenceHandler.html#System_Text_Json_Serialization_ReferenceHandler_Preserve
+  name: Preserve
+  nameWithType: ReferenceHandler.Preserve
+  fullName: System.Text.Json.Serialization.ReferenceHandler.Preserve
+- uid: System.Text.Json.Serialization.ReferenceHandler.IgnoreCycles*
+  commentId: Overload:System.Text.Json.Serialization.ReferenceHandler.IgnoreCycles
+  isExternal: true
+  href: System.Text.Json.Serialization.ReferenceHandler.html#System_Text_Json_Serialization_ReferenceHandler_IgnoreCycles
+  name: IgnoreCycles
+  nameWithType: ReferenceHandler.IgnoreCycles
+  fullName: System.Text.Json.Serialization.ReferenceHandler.IgnoreCycles

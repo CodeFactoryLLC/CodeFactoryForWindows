@@ -1,0 +1,852 @@
+### YamlMime:ManagedReference
+items:
+- uid: Serilog.Events.MessageTemplate
+  commentId: T:Serilog.Events.MessageTemplate
+  id: MessageTemplate
+  parent: Serilog.Events
+  children:
+  - Serilog.Events.MessageTemplate.#ctor(System.Collections.Generic.IEnumerable{Serilog.Parsing.MessageTemplateToken})
+  - Serilog.Events.MessageTemplate.#ctor(System.String,System.Collections.Generic.IEnumerable{Serilog.Parsing.MessageTemplateToken})
+  - Serilog.Events.MessageTemplate.Empty
+  - Serilog.Events.MessageTemplate.Render(System.Collections.Generic.IReadOnlyDictionary{System.String,Serilog.Events.LogEventPropertyValue},System.IFormatProvider)
+  - Serilog.Events.MessageTemplate.Render(System.Collections.Generic.IReadOnlyDictionary{System.String,Serilog.Events.LogEventPropertyValue},System.IO.TextWriter,System.IFormatProvider)
+  - Serilog.Events.MessageTemplate.Text
+  - Serilog.Events.MessageTemplate.ToString
+  - Serilog.Events.MessageTemplate.Tokens
+  langs:
+  - csharp
+  - vb
+  name: MessageTemplate
+  nameWithType: MessageTemplate
+  fullName: Serilog.Events.MessageTemplate
+  type: Class
+  assemblies:
+  - Serilog
+  namespace: Serilog.Events
+  summary: >-
+    Represents a message template passed to a log method. The template
+
+    can subsequently render the template in textual form given the list
+
+    of properties.
+  example: []
+  syntax:
+    content: public class MessageTemplate
+    content.vb: Public Class MessageTemplate
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: Serilog.Events.MessageTemplate.#ctor(System.Collections.Generic.IEnumerable{Serilog.Parsing.MessageTemplateToken})
+  commentId: M:Serilog.Events.MessageTemplate.#ctor(System.Collections.Generic.IEnumerable{Serilog.Parsing.MessageTemplateToken})
+  id: '#ctor(System.Collections.Generic.IEnumerable{Serilog.Parsing.MessageTemplateToken})'
+  parent: Serilog.Events.MessageTemplate
+  langs:
+  - csharp
+  - vb
+  name: MessageTemplate(IEnumerable<MessageTemplateToken>)
+  nameWithType: MessageTemplate.MessageTemplate(IEnumerable<MessageTemplateToken>)
+  fullName: Serilog.Events.MessageTemplate.MessageTemplate(System.Collections.Generic.IEnumerable<Serilog.Parsing.MessageTemplateToken>)
+  type: Constructor
+  assemblies:
+  - Serilog
+  namespace: Serilog.Events
+  summary: Construct a message template using manually-defined text and property tokens.
+  example: []
+  syntax:
+    content: public MessageTemplate(IEnumerable<MessageTemplateToken> tokens)
+    parameters:
+    - id: tokens
+      type: System.Collections.Generic.IEnumerable{Serilog.Parsing.MessageTemplateToken}
+      description: The text and property tokens defining the template.
+    content.vb: Public Sub New(tokens As IEnumerable(Of MessageTemplateToken))
+  overload: Serilog.Events.MessageTemplate.#ctor*
+  nameWithType.vb: MessageTemplate.New(IEnumerable(Of MessageTemplateToken))
+  fullName.vb: Serilog.Events.MessageTemplate.New(System.Collections.Generic.IEnumerable(Of Serilog.Parsing.MessageTemplateToken))
+  name.vb: New(IEnumerable(Of MessageTemplateToken))
+- uid: Serilog.Events.MessageTemplate.#ctor(System.String,System.Collections.Generic.IEnumerable{Serilog.Parsing.MessageTemplateToken})
+  commentId: M:Serilog.Events.MessageTemplate.#ctor(System.String,System.Collections.Generic.IEnumerable{Serilog.Parsing.MessageTemplateToken})
+  id: '#ctor(System.String,System.Collections.Generic.IEnumerable{Serilog.Parsing.MessageTemplateToken})'
+  parent: Serilog.Events.MessageTemplate
+  langs:
+  - csharp
+  - vb
+  name: MessageTemplate(string, IEnumerable<MessageTemplateToken>)
+  nameWithType: MessageTemplate.MessageTemplate(string, IEnumerable<MessageTemplateToken>)
+  fullName: Serilog.Events.MessageTemplate.MessageTemplate(string, System.Collections.Generic.IEnumerable<Serilog.Parsing.MessageTemplateToken>)
+  type: Constructor
+  assemblies:
+  - Serilog
+  namespace: Serilog.Events
+  summary: Construct a message template using manually-defined text and property tokens.
+  example: []
+  syntax:
+    content: public MessageTemplate(string text, IEnumerable<MessageTemplateToken> tokens)
+    parameters:
+    - id: text
+      type: System.String
+      description: >-
+        The full text of the template; used by Serilog internally to avoid unneeded
+                    string concatenation.
+    - id: tokens
+      type: System.Collections.Generic.IEnumerable{Serilog.Parsing.MessageTemplateToken}
+      description: The text and property tokens defining the template.
+    content.vb: Public Sub New(text As String, tokens As IEnumerable(Of MessageTemplateToken))
+  overload: Serilog.Events.MessageTemplate.#ctor*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: When <code class="paramref">text</code> is <pre><code class="lang-csharp">null</code></pre>
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: When <code class="paramref">tokens</code> is <pre><code class="lang-csharp">null</code></pre>
+  nameWithType.vb: MessageTemplate.New(String, IEnumerable(Of MessageTemplateToken))
+  fullName.vb: Serilog.Events.MessageTemplate.New(String, System.Collections.Generic.IEnumerable(Of Serilog.Parsing.MessageTemplateToken))
+  name.vb: New(String, IEnumerable(Of MessageTemplateToken))
+- uid: Serilog.Events.MessageTemplate.ToString
+  commentId: M:Serilog.Events.MessageTemplate.ToString
+  id: ToString
+  parent: Serilog.Events.MessageTemplate
+  langs:
+  - csharp
+  - vb
+  name: ToString()
+  nameWithType: MessageTemplate.ToString()
+  fullName: Serilog.Events.MessageTemplate.ToString()
+  type: Method
+  assemblies:
+  - Serilog
+  namespace: Serilog.Events
+  summary: Render the template as a string.
+  example: []
+  syntax:
+    content: public override string ToString()
+    return:
+      type: System.String
+      description: The string representation of the template.
+    content.vb: Public Overrides Function ToString() As String
+  overridden: System.Object.ToString
+  overload: Serilog.Events.MessageTemplate.ToString*
+- uid: Serilog.Events.MessageTemplate.Render(System.Collections.Generic.IReadOnlyDictionary{System.String,Serilog.Events.LogEventPropertyValue},System.IFormatProvider)
+  commentId: M:Serilog.Events.MessageTemplate.Render(System.Collections.Generic.IReadOnlyDictionary{System.String,Serilog.Events.LogEventPropertyValue},System.IFormatProvider)
+  id: Render(System.Collections.Generic.IReadOnlyDictionary{System.String,Serilog.Events.LogEventPropertyValue},System.IFormatProvider)
+  parent: Serilog.Events.MessageTemplate
+  langs:
+  - csharp
+  - vb
+  name: Render(IReadOnlyDictionary<string, LogEventPropertyValue>, IFormatProvider?)
+  nameWithType: MessageTemplate.Render(IReadOnlyDictionary<string, LogEventPropertyValue>, IFormatProvider?)
+  fullName: Serilog.Events.MessageTemplate.Render(System.Collections.Generic.IReadOnlyDictionary<string, Serilog.Events.LogEventPropertyValue>, System.IFormatProvider?)
+  type: Method
+  assemblies:
+  - Serilog
+  namespace: Serilog.Events
+  summary: >-
+    Convert the message template into a textual message, given the
+
+    properties matching the tokens in the message template.
+  example: []
+  syntax:
+    content: public string Render(IReadOnlyDictionary<string, LogEventPropertyValue> properties, IFormatProvider? formatProvider = null)
+    parameters:
+    - id: properties
+      type: System.Collections.Generic.IReadOnlyDictionary{System.String,Serilog.Events.LogEventPropertyValue}
+      description: Properties matching template tokens.
+    - id: formatProvider
+      type: System.IFormatProvider
+      description: Supplies culture-specific formatting information, or null.
+    return:
+      type: System.String
+      description: >-
+        The message created from the template and properties. If the
+                    properties are mismatched with the template, the template will be
+                    returned with incomplete substitution.
+    content.vb: Public Function Render(properties As IReadOnlyDictionary(Of String, LogEventPropertyValue), formatProvider As IFormatProvider = Nothing) As String
+  overload: Serilog.Events.MessageTemplate.Render*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: When <code class="paramref">properties</code> is <pre><code class="lang-csharp">null</code></pre>
+  nameWithType.vb: MessageTemplate.Render(IReadOnlyDictionary(Of String, LogEventPropertyValue), IFormatProvider)
+  fullName.vb: Serilog.Events.MessageTemplate.Render(System.Collections.Generic.IReadOnlyDictionary(Of String, Serilog.Events.LogEventPropertyValue), System.IFormatProvider)
+  name.vb: Render(IReadOnlyDictionary(Of String, LogEventPropertyValue), IFormatProvider)
+- uid: Serilog.Events.MessageTemplate.Render(System.Collections.Generic.IReadOnlyDictionary{System.String,Serilog.Events.LogEventPropertyValue},System.IO.TextWriter,System.IFormatProvider)
+  commentId: M:Serilog.Events.MessageTemplate.Render(System.Collections.Generic.IReadOnlyDictionary{System.String,Serilog.Events.LogEventPropertyValue},System.IO.TextWriter,System.IFormatProvider)
+  id: Render(System.Collections.Generic.IReadOnlyDictionary{System.String,Serilog.Events.LogEventPropertyValue},System.IO.TextWriter,System.IFormatProvider)
+  parent: Serilog.Events.MessageTemplate
+  langs:
+  - csharp
+  - vb
+  name: Render(IReadOnlyDictionary<string, LogEventPropertyValue>, TextWriter, IFormatProvider?)
+  nameWithType: MessageTemplate.Render(IReadOnlyDictionary<string, LogEventPropertyValue>, TextWriter, IFormatProvider?)
+  fullName: Serilog.Events.MessageTemplate.Render(System.Collections.Generic.IReadOnlyDictionary<string, Serilog.Events.LogEventPropertyValue>, System.IO.TextWriter, System.IFormatProvider?)
+  type: Method
+  assemblies:
+  - Serilog
+  namespace: Serilog.Events
+  summary: >-
+    Convert the message template into a textual message, given the
+
+    properties matching the tokens in the message template.
+  example: []
+  syntax:
+    content: public void Render(IReadOnlyDictionary<string, LogEventPropertyValue> properties, TextWriter output, IFormatProvider? formatProvider = null)
+    parameters:
+    - id: properties
+      type: System.Collections.Generic.IReadOnlyDictionary{System.String,Serilog.Events.LogEventPropertyValue}
+      description: Properties matching template tokens.
+    - id: output
+      type: System.IO.TextWriter
+      description: >-
+        The message created from the template and properties. If the
+                    properties are mismatched with the template, the template will be
+                    returned with incomplete substitution.
+    - id: formatProvider
+      type: System.IFormatProvider
+      description: Supplies culture-specific formatting information, or null.
+    content.vb: Public Sub Render(properties As IReadOnlyDictionary(Of String, LogEventPropertyValue), output As TextWriter, formatProvider As IFormatProvider = Nothing)
+  overload: Serilog.Events.MessageTemplate.Render*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: When <code class="paramref">properties</code> is <pre><code class="lang-csharp">null</code></pre>
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: When <code class="paramref">output</code> is <pre><code class="lang-csharp">null</code></pre>
+  nameWithType.vb: MessageTemplate.Render(IReadOnlyDictionary(Of String, LogEventPropertyValue), TextWriter, IFormatProvider)
+  fullName.vb: Serilog.Events.MessageTemplate.Render(System.Collections.Generic.IReadOnlyDictionary(Of String, Serilog.Events.LogEventPropertyValue), System.IO.TextWriter, System.IFormatProvider)
+  name.vb: Render(IReadOnlyDictionary(Of String, LogEventPropertyValue), TextWriter, IFormatProvider)
+- uid: Serilog.Events.MessageTemplate.Empty
+  commentId: P:Serilog.Events.MessageTemplate.Empty
+  id: Empty
+  parent: Serilog.Events.MessageTemplate
+  langs:
+  - csharp
+  - vb
+  name: Empty
+  nameWithType: MessageTemplate.Empty
+  fullName: Serilog.Events.MessageTemplate.Empty
+  type: Property
+  assemblies:
+  - Serilog
+  namespace: Serilog.Events
+  summary: Represents the empty message template.
+  example: []
+  syntax:
+    content: public static MessageTemplate Empty { get; }
+    parameters: []
+    return:
+      type: Serilog.Events.MessageTemplate
+    content.vb: Public Shared ReadOnly Property Empty As MessageTemplate
+  overload: Serilog.Events.MessageTemplate.Empty*
+- uid: Serilog.Events.MessageTemplate.Text
+  commentId: P:Serilog.Events.MessageTemplate.Text
+  id: Text
+  parent: Serilog.Events.MessageTemplate
+  langs:
+  - csharp
+  - vb
+  name: Text
+  nameWithType: MessageTemplate.Text
+  fullName: Serilog.Events.MessageTemplate.Text
+  type: Property
+  assemblies:
+  - Serilog
+  namespace: Serilog.Events
+  summary: The raw text describing the template.
+  example: []
+  syntax:
+    content: public string Text { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property Text As String
+  overload: Serilog.Events.MessageTemplate.Text*
+- uid: Serilog.Events.MessageTemplate.Tokens
+  commentId: P:Serilog.Events.MessageTemplate.Tokens
+  id: Tokens
+  parent: Serilog.Events.MessageTemplate
+  langs:
+  - csharp
+  - vb
+  name: Tokens
+  nameWithType: MessageTemplate.Tokens
+  fullName: Serilog.Events.MessageTemplate.Tokens
+  type: Property
+  assemblies:
+  - Serilog
+  namespace: Serilog.Events
+  summary: The tokens parsed from the template.
+  example: []
+  syntax:
+    content: public IEnumerable<MessageTemplateToken> Tokens { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.IEnumerable{Serilog.Parsing.MessageTemplateToken}
+    content.vb: Public ReadOnly Property Tokens As IEnumerable(Of MessageTemplateToken)
+  overload: Serilog.Events.MessageTemplate.Tokens*
+references:
+- uid: Serilog.Events
+  commentId: N:Serilog.Events
+  isExternal: true
+  href: Serilog.html
+  name: Serilog.Events
+  nameWithType: Serilog.Events
+  fullName: Serilog.Events
+  spec.csharp:
+  - uid: Serilog
+    name: Serilog
+    isExternal: true
+    href: Serilog.html
+  - name: .
+  - uid: Serilog.Events
+    name: Events
+    isExternal: true
+    href: Serilog.Events.html
+  spec.vb:
+  - uid: Serilog
+    name: Serilog
+    isExternal: true
+    href: Serilog.html
+  - name: .
+  - uid: Serilog.Events
+    name: Events
+    isExternal: true
+    href: Serilog.Events.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Serilog.Events.MessageTemplate.#ctor*
+  commentId: Overload:Serilog.Events.MessageTemplate.#ctor
+  isExternal: true
+  href: Serilog.Events.MessageTemplate.html#Serilog_Events_MessageTemplate__ctor_System_Collections_Generic_IEnumerable_Serilog_Parsing_MessageTemplateToken__
+  name: MessageTemplate
+  nameWithType: MessageTemplate.MessageTemplate
+  fullName: Serilog.Events.MessageTemplate.MessageTemplate
+  nameWithType.vb: MessageTemplate.New
+  fullName.vb: Serilog.Events.MessageTemplate.New
+  name.vb: New
+- uid: System.Collections.Generic.IEnumerable{Serilog.Parsing.MessageTemplateToken}
+  commentId: T:System.Collections.Generic.IEnumerable{Serilog.Parsing.MessageTemplateToken}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<MessageTemplateToken>
+  nameWithType: IEnumerable<MessageTemplateToken>
+  fullName: System.Collections.Generic.IEnumerable<Serilog.Parsing.MessageTemplateToken>
+  nameWithType.vb: IEnumerable(Of MessageTemplateToken)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of Serilog.Parsing.MessageTemplateToken)
+  name.vb: IEnumerable(Of MessageTemplateToken)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: Serilog.Parsing.MessageTemplateToken
+    name: MessageTemplateToken
+    isExternal: true
+    href: Serilog.Parsing.MessageTemplateToken.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Serilog.Parsing.MessageTemplateToken
+    name: MessageTemplateToken
+    isExternal: true
+    href: Serilog.Parsing.MessageTemplateToken.html
+  - name: )
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: System.ArgumentNullException
+  commentId: T:System.ArgumentNullException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.argumentnullexception
+  name: ArgumentNullException
+  nameWithType: ArgumentNullException
+  fullName: System.ArgumentNullException
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: Serilog.Events.MessageTemplate.ToString*
+  commentId: Overload:Serilog.Events.MessageTemplate.ToString
+  isExternal: true
+  href: Serilog.Events.MessageTemplate.html#Serilog_Events_MessageTemplate_ToString
+  name: ToString
+  nameWithType: MessageTemplate.ToString
+  fullName: Serilog.Events.MessageTemplate.ToString
+- uid: Serilog.Events.MessageTemplate.Render*
+  commentId: Overload:Serilog.Events.MessageTemplate.Render
+  isExternal: true
+  href: Serilog.Events.MessageTemplate.html#Serilog_Events_MessageTemplate_Render_System_Collections_Generic_IReadOnlyDictionary_System_String_Serilog_Events_LogEventPropertyValue__System_IFormatProvider_
+  name: Render
+  nameWithType: MessageTemplate.Render
+  fullName: Serilog.Events.MessageTemplate.Render
+- uid: System.Collections.Generic.IReadOnlyDictionary{System.String,Serilog.Events.LogEventPropertyValue}
+  commentId: T:System.Collections.Generic.IReadOnlyDictionary{System.String,Serilog.Events.LogEventPropertyValue}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IReadOnlyDictionary`2
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlydictionary-2
+  name: IReadOnlyDictionary<string, LogEventPropertyValue>
+  nameWithType: IReadOnlyDictionary<string, LogEventPropertyValue>
+  fullName: System.Collections.Generic.IReadOnlyDictionary<string, Serilog.Events.LogEventPropertyValue>
+  nameWithType.vb: IReadOnlyDictionary(Of String, LogEventPropertyValue)
+  fullName.vb: System.Collections.Generic.IReadOnlyDictionary(Of String, Serilog.Events.LogEventPropertyValue)
+  name.vb: IReadOnlyDictionary(Of String, LogEventPropertyValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyDictionary`2
+    name: IReadOnlyDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlydictionary-2
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: Serilog.Events.LogEventPropertyValue
+    name: LogEventPropertyValue
+    isExternal: true
+    href: Serilog.Events.LogEventPropertyValue.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyDictionary`2
+    name: IReadOnlyDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlydictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: Serilog.Events.LogEventPropertyValue
+    name: LogEventPropertyValue
+    isExternal: true
+    href: Serilog.Events.LogEventPropertyValue.html
+  - name: )
+- uid: System.IFormatProvider
+  commentId: T:System.IFormatProvider
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iformatprovider
+  name: IFormatProvider
+  nameWithType: IFormatProvider
+  fullName: System.IFormatProvider
+- uid: System.Collections.Generic.IReadOnlyDictionary`2
+  commentId: T:System.Collections.Generic.IReadOnlyDictionary`2
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlydictionary-2
+  name: IReadOnlyDictionary<TKey, TValue>
+  nameWithType: IReadOnlyDictionary<TKey, TValue>
+  fullName: System.Collections.Generic.IReadOnlyDictionary<TKey, TValue>
+  nameWithType.vb: IReadOnlyDictionary(Of TKey, TValue)
+  fullName.vb: System.Collections.Generic.IReadOnlyDictionary(Of TKey, TValue)
+  name.vb: IReadOnlyDictionary(Of TKey, TValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyDictionary`2
+    name: IReadOnlyDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlydictionary-2
+  - name: <
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyDictionary`2
+    name: IReadOnlyDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlydictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: System.IO.TextWriter
+  commentId: T:System.IO.TextWriter
+  parent: System.IO
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.io.textwriter
+  name: TextWriter
+  nameWithType: TextWriter
+  fullName: System.IO.TextWriter
+- uid: System.IO
+  commentId: N:System.IO
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.IO
+  nameWithType: System.IO
+  fullName: System.IO
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.IO
+    name: IO
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.IO
+    name: IO
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io
+- uid: Serilog.Events.MessageTemplate.Empty*
+  commentId: Overload:Serilog.Events.MessageTemplate.Empty
+  isExternal: true
+  href: Serilog.Events.MessageTemplate.html#Serilog_Events_MessageTemplate_Empty
+  name: Empty
+  nameWithType: MessageTemplate.Empty
+  fullName: Serilog.Events.MessageTemplate.Empty
+- uid: Serilog.Events.MessageTemplate
+  commentId: T:Serilog.Events.MessageTemplate
+  parent: Serilog.Events
+  isExternal: true
+  href: Serilog.Events.MessageTemplate.html
+  name: MessageTemplate
+  nameWithType: MessageTemplate
+  fullName: Serilog.Events.MessageTemplate
+- uid: Serilog.Events.MessageTemplate.Text*
+  commentId: Overload:Serilog.Events.MessageTemplate.Text
+  isExternal: true
+  href: Serilog.Events.MessageTemplate.html#Serilog_Events_MessageTemplate_Text
+  name: Text
+  nameWithType: MessageTemplate.Text
+  fullName: Serilog.Events.MessageTemplate.Text
+- uid: Serilog.Events.MessageTemplate.Tokens*
+  commentId: Overload:Serilog.Events.MessageTemplate.Tokens
+  isExternal: true
+  href: Serilog.Events.MessageTemplate.html#Serilog_Events_MessageTemplate_Tokens
+  name: Tokens
+  nameWithType: MessageTemplate.Tokens
+  fullName: Serilog.Events.MessageTemplate.Tokens

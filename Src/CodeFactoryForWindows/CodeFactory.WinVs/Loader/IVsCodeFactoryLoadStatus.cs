@@ -23,7 +23,7 @@ namespace CodeFactory.WinVs.Loader
         bool HasErrors { get; }
 
         /// <summary>
-        /// The error messages that was captured while trying to load the code factory commands. This will be null if <see cref="HasError"/> is false.
+        /// The error messages that was captured while trying to load the code factory commands. This will be null if <see cref="HasErrors"/> is false.
         /// </summary>
         List<string> ErrorMessages { get; }
 

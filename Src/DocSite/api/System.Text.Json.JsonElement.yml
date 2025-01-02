@@ -1,0 +1,3592 @@
+### YamlMime:ManagedReference
+items:
+- uid: System.Text.Json.JsonElement
+  commentId: T:System.Text.Json.JsonElement
+  id: JsonElement
+  parent: System.Text.Json
+  children:
+  - System.Text.Json.JsonElement.Clone
+  - System.Text.Json.JsonElement.EnumerateArray
+  - System.Text.Json.JsonElement.EnumerateObject
+  - System.Text.Json.JsonElement.GetArrayLength
+  - System.Text.Json.JsonElement.GetBoolean
+  - System.Text.Json.JsonElement.GetByte
+  - System.Text.Json.JsonElement.GetBytesFromBase64
+  - System.Text.Json.JsonElement.GetDateTime
+  - System.Text.Json.JsonElement.GetDateTimeOffset
+  - System.Text.Json.JsonElement.GetDecimal
+  - System.Text.Json.JsonElement.GetDouble
+  - System.Text.Json.JsonElement.GetGuid
+  - System.Text.Json.JsonElement.GetInt16
+  - System.Text.Json.JsonElement.GetInt32
+  - System.Text.Json.JsonElement.GetInt64
+  - System.Text.Json.JsonElement.GetProperty(System.ReadOnlySpan{System.Byte})
+  - System.Text.Json.JsonElement.GetProperty(System.ReadOnlySpan{System.Char})
+  - System.Text.Json.JsonElement.GetProperty(System.String)
+  - System.Text.Json.JsonElement.GetRawText
+  - System.Text.Json.JsonElement.GetSByte
+  - System.Text.Json.JsonElement.GetSingle
+  - System.Text.Json.JsonElement.GetString
+  - System.Text.Json.JsonElement.GetUInt16
+  - System.Text.Json.JsonElement.GetUInt32
+  - System.Text.Json.JsonElement.GetUInt64
+  - System.Text.Json.JsonElement.Item(System.Int32)
+  - System.Text.Json.JsonElement.ParseValue(System.Text.Json.Utf8JsonReader@)
+  - System.Text.Json.JsonElement.ToString
+  - System.Text.Json.JsonElement.TryGetByte(System.Byte@)
+  - System.Text.Json.JsonElement.TryGetBytesFromBase64(System.Byte[]@)
+  - System.Text.Json.JsonElement.TryGetDateTime(System.DateTime@)
+  - System.Text.Json.JsonElement.TryGetDateTimeOffset(System.DateTimeOffset@)
+  - System.Text.Json.JsonElement.TryGetDecimal(System.Decimal@)
+  - System.Text.Json.JsonElement.TryGetDouble(System.Double@)
+  - System.Text.Json.JsonElement.TryGetGuid(System.Guid@)
+  - System.Text.Json.JsonElement.TryGetInt16(System.Int16@)
+  - System.Text.Json.JsonElement.TryGetInt32(System.Int32@)
+  - System.Text.Json.JsonElement.TryGetInt64(System.Int64@)
+  - System.Text.Json.JsonElement.TryGetProperty(System.ReadOnlySpan{System.Byte},System.Text.Json.JsonElement@)
+  - System.Text.Json.JsonElement.TryGetProperty(System.ReadOnlySpan{System.Char},System.Text.Json.JsonElement@)
+  - System.Text.Json.JsonElement.TryGetProperty(System.String,System.Text.Json.JsonElement@)
+  - System.Text.Json.JsonElement.TryGetSByte(System.SByte@)
+  - System.Text.Json.JsonElement.TryGetSingle(System.Single@)
+  - System.Text.Json.JsonElement.TryGetUInt16(System.UInt16@)
+  - System.Text.Json.JsonElement.TryGetUInt32(System.UInt32@)
+  - System.Text.Json.JsonElement.TryGetUInt64(System.UInt64@)
+  - System.Text.Json.JsonElement.TryParseValue(System.Text.Json.Utf8JsonReader@,System.Nullable{System.Text.Json.JsonElement}@)
+  - System.Text.Json.JsonElement.ValueEquals(System.ReadOnlySpan{System.Byte})
+  - System.Text.Json.JsonElement.ValueEquals(System.ReadOnlySpan{System.Char})
+  - System.Text.Json.JsonElement.ValueEquals(System.String)
+  - System.Text.Json.JsonElement.ValueKind
+  - System.Text.Json.JsonElement.WriteTo(System.Text.Json.Utf8JsonWriter)
+  langs:
+  - csharp
+  - vb
+  name: JsonElement
+  nameWithType: JsonElement
+  fullName: System.Text.Json.JsonElement
+  type: Struct
+  assemblies:
+  - System.Text.Json
+  namespace: System.Text.Json
+  summary: Represents a specific JSON value within a <xref href="System.Text.Json.JsonDocument" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public readonly struct JsonElement
+    content.vb: Public Structure JsonElement
+  inheritedMembers:
+  - System.ValueType.Equals(System.Object)
+  - System.ValueType.GetHashCode
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetType
+  extensionMethods:
+  - System.Text.Json.JsonElement.System.Text.Json.JsonSerializer.Deserialize(System.Type,System.Text.Json.JsonSerializerOptions)
+  - System.Text.Json.JsonElement.System.Text.Json.JsonSerializer.Deserialize(System.Type,System.Text.Json.Serialization.JsonSerializerContext)
+  - System.Text.Json.JsonElement.System.Text.Json.JsonSerializer.Deserialize``1(System.Text.Json.JsonSerializerOptions)
+  - System.Text.Json.JsonElement.System.Text.Json.JsonSerializer.Deserialize``1(System.Text.Json.Serialization.Metadata.JsonTypeInfo{{TValue}})
+- uid: System.Text.Json.JsonElement.GetArrayLength
+  commentId: M:System.Text.Json.JsonElement.GetArrayLength
+  id: GetArrayLength
+  parent: System.Text.Json.JsonElement
+  langs:
+  - csharp
+  - vb
+  name: GetArrayLength()
+  nameWithType: JsonElement.GetArrayLength()
+  fullName: System.Text.Json.JsonElement.GetArrayLength()
+  type: Method
+  assemblies:
+  - System.Text.Json
+  namespace: System.Text.Json
+  summary: Gets the number of values contained within the current array value.
+  example: []
+  syntax:
+    content: public int GetArrayLength()
+    return:
+      type: System.Int32
+      description: The number of values contained within the current array value.
+    content.vb: Public Function GetArrayLength() As Integer
+  overload: System.Text.Json.JsonElement.GetArrayLength*
+  exceptions:
+  - type: System.InvalidOperationException
+    commentId: T:System.InvalidOperationException
+    description: This value's <xref href="System.Text.Json.JsonElement.ValueKind" data-throw-if-not-resolved="false"></xref> is not <xref href="System.Text.Json.JsonValueKind.Array" data-throw-if-not-resolved="false"></xref>.
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: The parent <xref href="System.Text.Json.JsonDocument" data-throw-if-not-resolved="false"></xref> has been disposed.
+- uid: System.Text.Json.JsonElement.GetProperty(System.String)
+  commentId: M:System.Text.Json.JsonElement.GetProperty(System.String)
+  id: GetProperty(System.String)
+  parent: System.Text.Json.JsonElement
+  langs:
+  - csharp
+  - vb
+  name: GetProperty(string)
+  nameWithType: JsonElement.GetProperty(string)
+  fullName: System.Text.Json.JsonElement.GetProperty(string)
+  type: Method
+  assemblies:
+  - System.Text.Json
+  namespace: System.Text.Json
+  summary: Gets a <xref href="System.Text.Json.JsonElement" data-throw-if-not-resolved="false"></xref> representing the value of a required property identified by <code class="paramref">propertyName</code>.
+  example: []
+  syntax:
+    content: public JsonElement GetProperty(string propertyName)
+    parameters:
+    - id: propertyName
+      type: System.String
+      description: The name of the property whose value is to be returned.
+    return:
+      type: System.Text.Json.JsonElement
+      description: A <xref href="System.Text.Json.JsonElement" data-throw-if-not-resolved="false"></xref> representing the value of the requested property.
+    content.vb: Public Function GetProperty(propertyName As String) As JsonElement
+  overload: System.Text.Json.JsonElement.GetProperty*
+  exceptions:
+  - type: System.InvalidOperationException
+    commentId: T:System.InvalidOperationException
+    description: This value's <xref href="System.Text.Json.JsonElement.ValueKind" data-throw-if-not-resolved="false"></xref> is not <xref href="System.Text.Json.JsonValueKind.Object" data-throw-if-not-resolved="false"></xref>.
+  - type: System.Collections.Generic.KeyNotFoundException
+    commentId: T:System.Collections.Generic.KeyNotFoundException
+    description: No property was found with the requested name.
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: <code class="paramref">propertyName</code> is <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: The parent <xref href="System.Text.Json.JsonDocument" data-throw-if-not-resolved="false"></xref> has been disposed.
+  nameWithType.vb: JsonElement.GetProperty(String)
+  fullName.vb: System.Text.Json.JsonElement.GetProperty(String)
+  name.vb: GetProperty(String)
+- uid: System.Text.Json.JsonElement.GetProperty(System.ReadOnlySpan{System.Char})
+  commentId: M:System.Text.Json.JsonElement.GetProperty(System.ReadOnlySpan{System.Char})
+  id: GetProperty(System.ReadOnlySpan{System.Char})
+  parent: System.Text.Json.JsonElement
+  langs:
+  - csharp
+  - vb
+  name: GetProperty(ReadOnlySpan<char>)
+  nameWithType: JsonElement.GetProperty(ReadOnlySpan<char>)
+  fullName: System.Text.Json.JsonElement.GetProperty(System.ReadOnlySpan<char>)
+  type: Method
+  assemblies:
+  - System.Text.Json
+  namespace: System.Text.Json
+  summary: Gets a <xref href="System.Text.Json.JsonElement" data-throw-if-not-resolved="false"></xref> representing the value of a required property identified by <code class="paramref">propertyName</code>.
+  example: []
+  syntax:
+    content: public JsonElement GetProperty(ReadOnlySpan<char> propertyName)
+    parameters:
+    - id: propertyName
+      type: System.ReadOnlySpan{System.Char}
+      description: The name of the property whose value is to be returned.
+    return:
+      type: System.Text.Json.JsonElement
+      description: A <xref href="System.Text.Json.JsonElement" data-throw-if-not-resolved="false"></xref> representing the value of the requested property.
+    content.vb: Public Function GetProperty(propertyName As ReadOnlySpan(Of Char)) As JsonElement
+  overload: System.Text.Json.JsonElement.GetProperty*
+  exceptions:
+  - type: System.InvalidOperationException
+    commentId: T:System.InvalidOperationException
+    description: This value's <xref href="System.Text.Json.JsonElement.ValueKind" data-throw-if-not-resolved="false"></xref> is not <xref href="System.Text.Json.JsonValueKind.Object" data-throw-if-not-resolved="false"></xref>.
+  - type: System.Collections.Generic.KeyNotFoundException
+    commentId: T:System.Collections.Generic.KeyNotFoundException
+    description: No property was found with the requested name.
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: The parent <xref href="System.Text.Json.JsonDocument" data-throw-if-not-resolved="false"></xref> has been disposed.
+  nameWithType.vb: JsonElement.GetProperty(ReadOnlySpan(Of Char))
+  fullName.vb: System.Text.Json.JsonElement.GetProperty(System.ReadOnlySpan(Of Char))
+  name.vb: GetProperty(ReadOnlySpan(Of Char))
+- uid: System.Text.Json.JsonElement.GetProperty(System.ReadOnlySpan{System.Byte})
+  commentId: M:System.Text.Json.JsonElement.GetProperty(System.ReadOnlySpan{System.Byte})
+  id: GetProperty(System.ReadOnlySpan{System.Byte})
+  parent: System.Text.Json.JsonElement
+  langs:
+  - csharp
+  - vb
+  name: GetProperty(ReadOnlySpan<byte>)
+  nameWithType: JsonElement.GetProperty(ReadOnlySpan<byte>)
+  fullName: System.Text.Json.JsonElement.GetProperty(System.ReadOnlySpan<byte>)
+  type: Method
+  assemblies:
+  - System.Text.Json
+  namespace: System.Text.Json
+  summary: Gets a <xref href="System.Text.Json.JsonElement" data-throw-if-not-resolved="false"></xref> representing the value of a required property identified by <code class="paramref">utf8PropertyName</code>.
+  example: []
+  syntax:
+    content: public JsonElement GetProperty(ReadOnlySpan<byte> utf8PropertyName)
+    parameters:
+    - id: utf8PropertyName
+      type: System.ReadOnlySpan{System.Byte}
+      description: The UTF-8 representation (with no Byte-Order-Mark (BOM)) of the name of the property to return.
+    return:
+      type: System.Text.Json.JsonElement
+      description: A <xref href="System.Text.Json.JsonElement" data-throw-if-not-resolved="false"></xref> representing the value of the requested property.
+    content.vb: Public Function GetProperty(utf8PropertyName As ReadOnlySpan(Of Byte)) As JsonElement
+  overload: System.Text.Json.JsonElement.GetProperty*
+  exceptions:
+  - type: System.InvalidOperationException
+    commentId: T:System.InvalidOperationException
+    description: This value's <xref href="System.Text.Json.JsonElement.ValueKind" data-throw-if-not-resolved="false"></xref> is not <xref href="System.Text.Json.JsonValueKind.Object" data-throw-if-not-resolved="false"></xref>.
+  - type: System.Collections.Generic.KeyNotFoundException
+    commentId: T:System.Collections.Generic.KeyNotFoundException
+    description: No property was found with the requested name.
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: The parent <xref href="System.Text.Json.JsonDocument" data-throw-if-not-resolved="false"></xref> has been disposed.
+  nameWithType.vb: JsonElement.GetProperty(ReadOnlySpan(Of Byte))
+  fullName.vb: System.Text.Json.JsonElement.GetProperty(System.ReadOnlySpan(Of Byte))
+  name.vb: GetProperty(ReadOnlySpan(Of Byte))
+- uid: System.Text.Json.JsonElement.TryGetProperty(System.String,System.Text.Json.JsonElement@)
+  commentId: M:System.Text.Json.JsonElement.TryGetProperty(System.String,System.Text.Json.JsonElement@)
+  id: TryGetProperty(System.String,System.Text.Json.JsonElement@)
+  parent: System.Text.Json.JsonElement
+  langs:
+  - csharp
+  - vb
+  name: TryGetProperty(string, out JsonElement)
+  nameWithType: JsonElement.TryGetProperty(string, out JsonElement)
+  fullName: System.Text.Json.JsonElement.TryGetProperty(string, out System.Text.Json.JsonElement)
+  type: Method
+  assemblies:
+  - System.Text.Json
+  namespace: System.Text.Json
+  summary: Looks for a property named <code class="paramref">propertyName</code> in the current object, returning a value that indicates whether or not such a property exists. When the property exists, its value is assigned to the <code class="paramref">value</code> argument.
+  example: []
+  syntax:
+    content: public bool TryGetProperty(string propertyName, out JsonElement value)
+    parameters:
+    - id: propertyName
+      type: System.String
+      description: The name of the property to find.
+    - id: value
+      type: System.Text.Json.JsonElement
+      description: When this method returns, contains the value of the specified property.
+    return:
+      type: System.Boolean
+      description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the property was found; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
+    content.vb: Public Function TryGetProperty(propertyName As String, value As JsonElement) As Boolean
+  overload: System.Text.Json.JsonElement.TryGetProperty*
+  exceptions:
+  - type: System.InvalidOperationException
+    commentId: T:System.InvalidOperationException
+    description: This value's <xref href="System.Text.Json.JsonElement.ValueKind" data-throw-if-not-resolved="false"></xref> is not <xref href="System.Text.Json.JsonValueKind.Object" data-throw-if-not-resolved="false"></xref>.
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: <code class="paramref">propertyName</code> is <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: The parent <xref href="System.Text.Json.JsonDocument" data-throw-if-not-resolved="false"></xref> has been disposed.
+  nameWithType.vb: JsonElement.TryGetProperty(String, JsonElement)
+  fullName.vb: System.Text.Json.JsonElement.TryGetProperty(String, System.Text.Json.JsonElement)
+  name.vb: TryGetProperty(String, JsonElement)
+- uid: System.Text.Json.JsonElement.TryGetProperty(System.ReadOnlySpan{System.Char},System.Text.Json.JsonElement@)
+  commentId: M:System.Text.Json.JsonElement.TryGetProperty(System.ReadOnlySpan{System.Char},System.Text.Json.JsonElement@)
+  id: TryGetProperty(System.ReadOnlySpan{System.Char},System.Text.Json.JsonElement@)
+  parent: System.Text.Json.JsonElement
+  langs:
+  - csharp
+  - vb
+  name: TryGetProperty(ReadOnlySpan<char>, out JsonElement)
+  nameWithType: JsonElement.TryGetProperty(ReadOnlySpan<char>, out JsonElement)
+  fullName: System.Text.Json.JsonElement.TryGetProperty(System.ReadOnlySpan<char>, out System.Text.Json.JsonElement)
+  type: Method
+  assemblies:
+  - System.Text.Json
+  namespace: System.Text.Json
+  summary: Looks for a property named <code class="paramref">propertyName</code> in the current object, returning a value that indicates whether or not such a property exists. When the property exists, the method assigns its value to the <code class="paramref">value</code> argument.
+  example: []
+  syntax:
+    content: public bool TryGetProperty(ReadOnlySpan<char> propertyName, out JsonElement value)
+    parameters:
+    - id: propertyName
+      type: System.ReadOnlySpan{System.Char}
+      description: The name of the property to find.
+    - id: value
+      type: System.Text.Json.JsonElement
+      description: When this method returns, contains the value of the specified property.
+    return:
+      type: System.Boolean
+      description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the property was found; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
+    content.vb: Public Function TryGetProperty(propertyName As ReadOnlySpan(Of Char), value As JsonElement) As Boolean
+  overload: System.Text.Json.JsonElement.TryGetProperty*
+  exceptions:
+  - type: System.InvalidOperationException
+    commentId: T:System.InvalidOperationException
+    description: This value's <xref href="System.Text.Json.JsonElement.ValueKind" data-throw-if-not-resolved="false"></xref> is not <xref href="System.Text.Json.JsonValueKind.Object" data-throw-if-not-resolved="false"></xref>.
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: The parent <xref href="System.Text.Json.JsonDocument" data-throw-if-not-resolved="false"></xref> has been disposed.
+  nameWithType.vb: JsonElement.TryGetProperty(ReadOnlySpan(Of Char), JsonElement)
+  fullName.vb: System.Text.Json.JsonElement.TryGetProperty(System.ReadOnlySpan(Of Char), System.Text.Json.JsonElement)
+  name.vb: TryGetProperty(ReadOnlySpan(Of Char), JsonElement)
+- uid: System.Text.Json.JsonElement.TryGetProperty(System.ReadOnlySpan{System.Byte},System.Text.Json.JsonElement@)
+  commentId: M:System.Text.Json.JsonElement.TryGetProperty(System.ReadOnlySpan{System.Byte},System.Text.Json.JsonElement@)
+  id: TryGetProperty(System.ReadOnlySpan{System.Byte},System.Text.Json.JsonElement@)
+  parent: System.Text.Json.JsonElement
+  langs:
+  - csharp
+  - vb
+  name: TryGetProperty(ReadOnlySpan<byte>, out JsonElement)
+  nameWithType: JsonElement.TryGetProperty(ReadOnlySpan<byte>, out JsonElement)
+  fullName: System.Text.Json.JsonElement.TryGetProperty(System.ReadOnlySpan<byte>, out System.Text.Json.JsonElement)
+  type: Method
+  assemblies:
+  - System.Text.Json
+  namespace: System.Text.Json
+  summary: Looks for a property named <code class="paramref">utf8PropertyName</code> in the current object, returning a value that indicates whether or not such a property exists. When the property exists, the method assigns its value to the <code class="paramref">value</code> argument.
+  example: []
+  syntax:
+    content: public bool TryGetProperty(ReadOnlySpan<byte> utf8PropertyName, out JsonElement value)
+    parameters:
+    - id: utf8PropertyName
+      type: System.ReadOnlySpan{System.Byte}
+      description: The UTF-8 (with no Byte-Order-Mark (BOM)) representation of the name of the property to return.
+    - id: value
+      type: System.Text.Json.JsonElement
+      description: Receives the value of the located property.
+    return:
+      type: System.Boolean
+      description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the property was found; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
+    content.vb: Public Function TryGetProperty(utf8PropertyName As ReadOnlySpan(Of Byte), value As JsonElement) As Boolean
+  overload: System.Text.Json.JsonElement.TryGetProperty*
+  exceptions:
+  - type: System.InvalidOperationException
+    commentId: T:System.InvalidOperationException
+    description: This value's <xref href="System.Text.Json.JsonElement.ValueKind" data-throw-if-not-resolved="false"></xref> is not <xref href="System.Text.Json.JsonValueKind.Object" data-throw-if-not-resolved="false"></xref>.
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: The parent <xref href="System.Text.Json.JsonDocument" data-throw-if-not-resolved="false"></xref> has been disposed.
+  nameWithType.vb: JsonElement.TryGetProperty(ReadOnlySpan(Of Byte), JsonElement)
+  fullName.vb: System.Text.Json.JsonElement.TryGetProperty(System.ReadOnlySpan(Of Byte), System.Text.Json.JsonElement)
+  name.vb: TryGetProperty(ReadOnlySpan(Of Byte), JsonElement)
+- uid: System.Text.Json.JsonElement.GetBoolean
+  commentId: M:System.Text.Json.JsonElement.GetBoolean
+  id: GetBoolean
+  parent: System.Text.Json.JsonElement
+  langs:
+  - csharp
+  - vb
+  name: GetBoolean()
+  nameWithType: JsonElement.GetBoolean()
+  fullName: System.Text.Json.JsonElement.GetBoolean()
+  type: Method
+  assemblies:
+  - System.Text.Json
+  namespace: System.Text.Json
+  summary: Gets the value of the element as a <xref href="System.Boolean" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public bool GetBoolean()
+    return:
+      type: System.Boolean
+      description: The value of the element as a <xref href="System.Boolean" data-throw-if-not-resolved="false"></xref>.
+    content.vb: Public Function GetBoolean() As Boolean
+  overload: System.Text.Json.JsonElement.GetBoolean*
+  exceptions:
+  - type: System.InvalidOperationException
+    commentId: T:System.InvalidOperationException
+    description: This value's <xref href="System.Text.Json.JsonElement.ValueKind" data-throw-if-not-resolved="false"></xref> is neither <xref href="System.Text.Json.JsonValueKind.True" data-throw-if-not-resolved="false"></xref> nor <xref href="System.Text.Json.JsonValueKind.False" data-throw-if-not-resolved="false"></xref>.
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: The parent <xref href="System.Text.Json.JsonDocument" data-throw-if-not-resolved="false"></xref> has been disposed.
+- uid: System.Text.Json.JsonElement.GetString
+  commentId: M:System.Text.Json.JsonElement.GetString
+  id: GetString
+  parent: System.Text.Json.JsonElement
+  langs:
+  - csharp
+  - vb
+  name: GetString()
+  nameWithType: JsonElement.GetString()
+  fullName: System.Text.Json.JsonElement.GetString()
+  type: Method
+  assemblies:
+  - System.Text.Json
+  namespace: System.Text.Json
+  summary: Gets the value of the element as a <xref href="System.String" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public string? GetString()
+    return:
+      type: System.String
+      description: The value of the element as a <xref href="System.String" data-throw-if-not-resolved="false"></xref>.
+    content.vb: Public Function GetString() As String
+  overload: System.Text.Json.JsonElement.GetString*
+  exceptions:
+  - type: System.InvalidOperationException
+    commentId: T:System.InvalidOperationException
+    description: This value's <xref href="System.Text.Json.JsonElement.ValueKind" data-throw-if-not-resolved="false"></xref> is neither <xref href="System.Text.Json.JsonValueKind.String" data-throw-if-not-resolved="false"></xref> nor <xref href="System.Text.Json.JsonValueKind.Null" data-throw-if-not-resolved="false"></xref>.
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: The parent <xref href="System.Text.Json.JsonDocument" data-throw-if-not-resolved="false"></xref> has been disposed.
+- uid: System.Text.Json.JsonElement.TryGetBytesFromBase64(System.Byte[]@)
+  commentId: M:System.Text.Json.JsonElement.TryGetBytesFromBase64(System.Byte[]@)
+  id: TryGetBytesFromBase64(System.Byte[]@)
+  parent: System.Text.Json.JsonElement
+  langs:
+  - csharp
+  - vb
+  name: TryGetBytesFromBase64(out byte[]?)
+  nameWithType: JsonElement.TryGetBytesFromBase64(out byte[]?)
+  fullName: System.Text.Json.JsonElement.TryGetBytesFromBase64(out byte[]?)
+  type: Method
+  assemblies:
+  - System.Text.Json
+  namespace: System.Text.Json
+  summary: Attempts to represent the current JSON string as a byte array, assuming that it is Base64 encoded.
+  example: []
+  syntax:
+    content: public bool TryGetBytesFromBase64(out byte[]? value)
+    parameters:
+    - id: value
+      type: System.Byte[]
+      description: If the method succeeds, contains the decoded binary representation of the Base64 text.
+    return:
+      type: System.Boolean
+      description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the entire token value is encoded as valid Base64 text and can be successfully decoded to bytes; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
+    content.vb: Public Function TryGetBytesFromBase64(value As Byte()) As Boolean
+  overload: System.Text.Json.JsonElement.TryGetBytesFromBase64*
+  exceptions:
+  - type: System.InvalidOperationException
+    commentId: T:System.InvalidOperationException
+    description: This value's <xref href="System.Text.Json.JsonElement.ValueKind" data-throw-if-not-resolved="false"></xref> is not <xref href="System.Text.Json.JsonValueKind.String" data-throw-if-not-resolved="false"></xref>.
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: The parent <xref href="System.Text.Json.JsonDocument" data-throw-if-not-resolved="false"></xref> has been disposed.
+  nameWithType.vb: JsonElement.TryGetBytesFromBase64(Byte())
+  fullName.vb: System.Text.Json.JsonElement.TryGetBytesFromBase64(Byte())
+  name.vb: TryGetBytesFromBase64(Byte())
+- uid: System.Text.Json.JsonElement.GetBytesFromBase64
+  commentId: M:System.Text.Json.JsonElement.GetBytesFromBase64
+  id: GetBytesFromBase64
+  parent: System.Text.Json.JsonElement
+  langs:
+  - csharp
+  - vb
+  name: GetBytesFromBase64()
+  nameWithType: JsonElement.GetBytesFromBase64()
+  fullName: System.Text.Json.JsonElement.GetBytesFromBase64()
+  type: Method
+  assemblies:
+  - System.Text.Json
+  namespace: System.Text.Json
+  summary: Gets the value of the element as a byte array.
+  example: []
+  syntax:
+    content: public byte[] GetBytesFromBase64()
+    return:
+      type: System.Byte[]
+      description: The value decoded as a byte array.
+    content.vb: Public Function GetBytesFromBase64() As Byte()
+  overload: System.Text.Json.JsonElement.GetBytesFromBase64*
+  exceptions:
+  - type: System.InvalidOperationException
+    commentId: T:System.InvalidOperationException
+    description: This value's <xref href="System.Text.Json.JsonElement.ValueKind" data-throw-if-not-resolved="false"></xref> is not <xref href="System.Text.Json.JsonValueKind.String" data-throw-if-not-resolved="false"></xref>.
+  - type: System.FormatException
+    commentId: T:System.FormatException
+    description: The value is not encoded as Base64 text and hence cannot be decoded to bytes.
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: The parent <xref href="System.Text.Json.JsonDocument" data-throw-if-not-resolved="false"></xref> has been disposed.
+- uid: System.Text.Json.JsonElement.TryGetSByte(System.SByte@)
+  commentId: M:System.Text.Json.JsonElement.TryGetSByte(System.SByte@)
+  id: TryGetSByte(System.SByte@)
+  parent: System.Text.Json.JsonElement
+  langs:
+  - csharp
+  - vb
+  name: TryGetSByte(out sbyte)
+  nameWithType: JsonElement.TryGetSByte(out sbyte)
+  fullName: System.Text.Json.JsonElement.TryGetSByte(out sbyte)
+  type: Method
+  assemblies:
+  - System.Text.Json
+  namespace: System.Text.Json
+  summary: Attempts to represent the current JSON number as an <xref href="System.SByte" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: >-
+      [CLSCompliant(false)]
+
+      public bool TryGetSByte(out sbyte value)
+    parameters:
+    - id: value
+      type: System.SByte
+      description: When the method returns, contains the signed byte equivalent of the current JSON number if the conversion succeeded.
+    return:
+      type: System.Boolean
+      description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the number can be represented as an <xref href="System.SByte" data-throw-if-not-resolved="false"></xref>; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
+    content.vb: >-
+      <CLSCompliant(False)>
+
+      Public Function TryGetSByte(value As SByte) As Boolean
+  overload: System.Text.Json.JsonElement.TryGetSByte*
+  exceptions:
+  - type: System.InvalidOperationException
+    commentId: T:System.InvalidOperationException
+    description: This value's <xref href="System.Text.Json.JsonElement.ValueKind" data-throw-if-not-resolved="false"></xref> is not <xref href="System.Text.Json.JsonValueKind.Number" data-throw-if-not-resolved="false"></xref>.
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: The parent <xref href="System.Text.Json.JsonDocument" data-throw-if-not-resolved="false"></xref> has been disposed.
+  attributes:
+  - type: System.CLSCompliantAttribute
+    ctor: System.CLSCompliantAttribute.#ctor(System.Boolean)
+    arguments:
+    - type: System.Boolean
+      value: false
+  nameWithType.vb: JsonElement.TryGetSByte(SByte)
+  fullName.vb: System.Text.Json.JsonElement.TryGetSByte(SByte)
+  name.vb: TryGetSByte(SByte)
+- uid: System.Text.Json.JsonElement.GetSByte
+  commentId: M:System.Text.Json.JsonElement.GetSByte
+  id: GetSByte
+  parent: System.Text.Json.JsonElement
+  langs:
+  - csharp
+  - vb
+  name: GetSByte()
+  nameWithType: JsonElement.GetSByte()
+  fullName: System.Text.Json.JsonElement.GetSByte()
+  type: Method
+  assemblies:
+  - System.Text.Json
+  namespace: System.Text.Json
+  summary: Gets the current JSON number as an <xref href="System.SByte" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: >-
+      [CLSCompliant(false)]
+
+      public sbyte GetSByte()
+    return:
+      type: System.SByte
+      description: The current JSON number as an <xref href="System.SByte" data-throw-if-not-resolved="false"></xref>.
+    content.vb: >-
+      <CLSCompliant(False)>
+
+      Public Function GetSByte() As SByte
+  overload: System.Text.Json.JsonElement.GetSByte*
+  exceptions:
+  - type: System.InvalidOperationException
+    commentId: T:System.InvalidOperationException
+    description: This value's <xref href="System.Text.Json.JsonElement.ValueKind" data-throw-if-not-resolved="false"></xref> is not <xref href="System.Text.Json.JsonValueKind.Number" data-throw-if-not-resolved="false"></xref>.
+  - type: System.FormatException
+    commentId: T:System.FormatException
+    description: The value cannot be represented as an <xref href="System.SByte" data-throw-if-not-resolved="false"></xref>.
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: The parent <xref href="System.Text.Json.JsonDocument" data-throw-if-not-resolved="false"></xref> has been disposed.
+  attributes:
+  - type: System.CLSCompliantAttribute
+    ctor: System.CLSCompliantAttribute.#ctor(System.Boolean)
+    arguments:
+    - type: System.Boolean
+      value: false
+- uid: System.Text.Json.JsonElement.TryGetByte(System.Byte@)
+  commentId: M:System.Text.Json.JsonElement.TryGetByte(System.Byte@)
+  id: TryGetByte(System.Byte@)
+  parent: System.Text.Json.JsonElement
+  langs:
+  - csharp
+  - vb
+  name: TryGetByte(out byte)
+  nameWithType: JsonElement.TryGetByte(out byte)
+  fullName: System.Text.Json.JsonElement.TryGetByte(out byte)
+  type: Method
+  assemblies:
+  - System.Text.Json
+  namespace: System.Text.Json
+  summary: Attempts to represent the current JSON number as a <xref href="System.Byte" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public bool TryGetByte(out byte value)
+    parameters:
+    - id: value
+      type: System.Byte
+      description: When the method returns, contains the byte equivalent of the current JSON number if the conversion succeeded.
+    return:
+      type: System.Boolean
+      description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the number can be represented as a <xref href="System.Byte" data-throw-if-not-resolved="false"></xref>; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
+    content.vb: Public Function TryGetByte(value As Byte) As Boolean
+  overload: System.Text.Json.JsonElement.TryGetByte*
+  exceptions:
+  - type: System.InvalidOperationException
+    commentId: T:System.InvalidOperationException
+    description: This value's <xref href="System.Text.Json.JsonElement.ValueKind" data-throw-if-not-resolved="false"></xref> is not <xref href="System.Text.Json.JsonValueKind.Number" data-throw-if-not-resolved="false"></xref>.
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: The parent <xref href="System.Text.Json.JsonDocument" data-throw-if-not-resolved="false"></xref> has been disposed.
+  nameWithType.vb: JsonElement.TryGetByte(Byte)
+  fullName.vb: System.Text.Json.JsonElement.TryGetByte(Byte)
+  name.vb: TryGetByte(Byte)
+- uid: System.Text.Json.JsonElement.GetByte
+  commentId: M:System.Text.Json.JsonElement.GetByte
+  id: GetByte
+  parent: System.Text.Json.JsonElement
+  langs:
+  - csharp
+  - vb
+  name: GetByte()
+  nameWithType: JsonElement.GetByte()
+  fullName: System.Text.Json.JsonElement.GetByte()
+  type: Method
+  assemblies:
+  - System.Text.Json
+  namespace: System.Text.Json
+  summary: Gets the current JSON number as a <xref href="System.Byte" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public byte GetByte()
+    return:
+      type: System.Byte
+      description: The current JSON number as a <xref href="System.Byte" data-throw-if-not-resolved="false"></xref>.
+    content.vb: Public Function GetByte() As Byte
+  overload: System.Text.Json.JsonElement.GetByte*
+  exceptions:
+  - type: System.InvalidOperationException
+    commentId: T:System.InvalidOperationException
+    description: This value's <xref href="System.Text.Json.JsonElement.ValueKind" data-throw-if-not-resolved="false"></xref> is not <xref href="System.Text.Json.JsonValueKind.Number" data-throw-if-not-resolved="false"></xref>.
+  - type: System.FormatException
+    commentId: T:System.FormatException
+    description: The value cannot be represented as a <xref href="System.Byte" data-throw-if-not-resolved="false"></xref>.
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: The parent <xref href="System.Text.Json.JsonDocument" data-throw-if-not-resolved="false"></xref> has been disposed.
+- uid: System.Text.Json.JsonElement.TryGetInt16(System.Int16@)
+  commentId: M:System.Text.Json.JsonElement.TryGetInt16(System.Int16@)
+  id: TryGetInt16(System.Int16@)
+  parent: System.Text.Json.JsonElement
+  langs:
+  - csharp
+  - vb
+  name: TryGetInt16(out short)
+  nameWithType: JsonElement.TryGetInt16(out short)
+  fullName: System.Text.Json.JsonElement.TryGetInt16(out short)
+  type: Method
+  assemblies:
+  - System.Text.Json
+  namespace: System.Text.Json
+  summary: Attempts to represent the current JSON number as an <xref href="System.Int16" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public bool TryGetInt16(out short value)
+    parameters:
+    - id: value
+      type: System.Int16
+      description: When the method returns, contains the 16-bit integer equivalent of the current JSON number if the conversion succeeded.
+    return:
+      type: System.Boolean
+      description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the number can be represented as an <xref href="System.Int16" data-throw-if-not-resolved="false"></xref>; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
+    content.vb: Public Function TryGetInt16(value As Short) As Boolean
+  overload: System.Text.Json.JsonElement.TryGetInt16*
+  exceptions:
+  - type: System.InvalidOperationException
+    commentId: T:System.InvalidOperationException
+    description: This value's <xref href="System.Text.Json.JsonElement.ValueKind" data-throw-if-not-resolved="false"></xref> is not <xref href="System.Text.Json.JsonValueKind.Number" data-throw-if-not-resolved="false"></xref>.
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: The parent <xref href="System.Text.Json.JsonDocument" data-throw-if-not-resolved="false"></xref> has been disposed.
+  nameWithType.vb: JsonElement.TryGetInt16(Short)
+  fullName.vb: System.Text.Json.JsonElement.TryGetInt16(Short)
+  name.vb: TryGetInt16(Short)
+- uid: System.Text.Json.JsonElement.GetInt16
+  commentId: M:System.Text.Json.JsonElement.GetInt16
+  id: GetInt16
+  parent: System.Text.Json.JsonElement
+  langs:
+  - csharp
+  - vb
+  name: GetInt16()
+  nameWithType: JsonElement.GetInt16()
+  fullName: System.Text.Json.JsonElement.GetInt16()
+  type: Method
+  assemblies:
+  - System.Text.Json
+  namespace: System.Text.Json
+  summary: Gets the current JSON number as an <xref href="System.Int16" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public short GetInt16()
+    return:
+      type: System.Int16
+      description: The current JSON number as an <xref href="System.Int16" data-throw-if-not-resolved="false"></xref>.
+    content.vb: Public Function GetInt16() As Short
+  overload: System.Text.Json.JsonElement.GetInt16*
+  exceptions:
+  - type: System.InvalidOperationException
+    commentId: T:System.InvalidOperationException
+    description: This value's <xref href="System.Text.Json.JsonElement.ValueKind" data-throw-if-not-resolved="false"></xref> is not <xref href="System.Text.Json.JsonValueKind.Number" data-throw-if-not-resolved="false"></xref>.
+  - type: System.FormatException
+    commentId: T:System.FormatException
+    description: The value cannot be represented as an <xref href="System.Int16" data-throw-if-not-resolved="false"></xref>.
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: The parent <xref href="System.Text.Json.JsonDocument" data-throw-if-not-resolved="false"></xref> has been disposed.
+- uid: System.Text.Json.JsonElement.TryGetUInt16(System.UInt16@)
+  commentId: M:System.Text.Json.JsonElement.TryGetUInt16(System.UInt16@)
+  id: TryGetUInt16(System.UInt16@)
+  parent: System.Text.Json.JsonElement
+  langs:
+  - csharp
+  - vb
+  name: TryGetUInt16(out ushort)
+  nameWithType: JsonElement.TryGetUInt16(out ushort)
+  fullName: System.Text.Json.JsonElement.TryGetUInt16(out ushort)
+  type: Method
+  assemblies:
+  - System.Text.Json
+  namespace: System.Text.Json
+  summary: Attempts to represent the current JSON number as a <xref href="System.UInt16" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: >-
+      [CLSCompliant(false)]
+
+      public bool TryGetUInt16(out ushort value)
+    parameters:
+    - id: value
+      type: System.UInt16
+      description: When the method returns, contains the unsigned 16-bit integer equivalent of the current JSON number if the conversion succeeded.
+    return:
+      type: System.Boolean
+      description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the number can be represented as a <xref href="System.UInt16" data-throw-if-not-resolved="false"></xref>; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
+    content.vb: >-
+      <CLSCompliant(False)>
+
+      Public Function TryGetUInt16(value As UShort) As Boolean
+  overload: System.Text.Json.JsonElement.TryGetUInt16*
+  exceptions:
+  - type: System.InvalidOperationException
+    commentId: T:System.InvalidOperationException
+    description: This value's <xref href="System.Text.Json.JsonElement.ValueKind" data-throw-if-not-resolved="false"></xref> is not <xref href="System.Text.Json.JsonValueKind.Number" data-throw-if-not-resolved="false"></xref>.
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: The parent <xref href="System.Text.Json.JsonDocument" data-throw-if-not-resolved="false"></xref> has been disposed.
+  attributes:
+  - type: System.CLSCompliantAttribute
+    ctor: System.CLSCompliantAttribute.#ctor(System.Boolean)
+    arguments:
+    - type: System.Boolean
+      value: false
+  nameWithType.vb: JsonElement.TryGetUInt16(UShort)
+  fullName.vb: System.Text.Json.JsonElement.TryGetUInt16(UShort)
+  name.vb: TryGetUInt16(UShort)
+- uid: System.Text.Json.JsonElement.GetUInt16
+  commentId: M:System.Text.Json.JsonElement.GetUInt16
+  id: GetUInt16
+  parent: System.Text.Json.JsonElement
+  langs:
+  - csharp
+  - vb
+  name: GetUInt16()
+  nameWithType: JsonElement.GetUInt16()
+  fullName: System.Text.Json.JsonElement.GetUInt16()
+  type: Method
+  assemblies:
+  - System.Text.Json
+  namespace: System.Text.Json
+  summary: Gets the current JSON number as a <xref href="System.UInt16" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: >-
+      [CLSCompliant(false)]
+
+      public ushort GetUInt16()
+    return:
+      type: System.UInt16
+      description: The current JSON number as a <xref href="System.UInt16" data-throw-if-not-resolved="false"></xref>.
+    content.vb: >-
+      <CLSCompliant(False)>
+
+      Public Function GetUInt16() As UShort
+  overload: System.Text.Json.JsonElement.GetUInt16*
+  exceptions:
+  - type: System.InvalidOperationException
+    commentId: T:System.InvalidOperationException
+    description: This value's <xref href="System.Text.Json.JsonElement.ValueKind" data-throw-if-not-resolved="false"></xref> is not <xref href="System.Text.Json.JsonValueKind.Number" data-throw-if-not-resolved="false"></xref>.
+  - type: System.FormatException
+    commentId: T:System.FormatException
+    description: The value cannot be represented as a <xref href="System.UInt16" data-throw-if-not-resolved="false"></xref>.
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: The parent <xref href="System.Text.Json.JsonDocument" data-throw-if-not-resolved="false"></xref> has been disposed.
+  attributes:
+  - type: System.CLSCompliantAttribute
+    ctor: System.CLSCompliantAttribute.#ctor(System.Boolean)
+    arguments:
+    - type: System.Boolean
+      value: false
+- uid: System.Text.Json.JsonElement.TryGetInt32(System.Int32@)
+  commentId: M:System.Text.Json.JsonElement.TryGetInt32(System.Int32@)
+  id: TryGetInt32(System.Int32@)
+  parent: System.Text.Json.JsonElement
+  langs:
+  - csharp
+  - vb
+  name: TryGetInt32(out int)
+  nameWithType: JsonElement.TryGetInt32(out int)
+  fullName: System.Text.Json.JsonElement.TryGetInt32(out int)
+  type: Method
+  assemblies:
+  - System.Text.Json
+  namespace: System.Text.Json
+  summary: Attempts to represent the current JSON number as an <xref href="System.Int32" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public bool TryGetInt32(out int value)
+    parameters:
+    - id: value
+      type: System.Int32
+      description: When this method returns, contains the 32-bit integer value equivalent to the current JSON number.
+    return:
+      type: System.Boolean
+      description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the number can be represented as an <xref href="System.Int32" data-throw-if-not-resolved="false"></xref>; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
+    content.vb: Public Function TryGetInt32(value As Integer) As Boolean
+  overload: System.Text.Json.JsonElement.TryGetInt32*
+  exceptions:
+  - type: System.InvalidOperationException
+    commentId: T:System.InvalidOperationException
+    description: This value's <xref href="System.Text.Json.JsonElement.ValueKind" data-throw-if-not-resolved="false"></xref> is not <xref href="System.Text.Json.JsonValueKind.Number" data-throw-if-not-resolved="false"></xref>.
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: The parent <xref href="System.Text.Json.JsonDocument" data-throw-if-not-resolved="false"></xref> has been disposed.
+  nameWithType.vb: JsonElement.TryGetInt32(Integer)
+  fullName.vb: System.Text.Json.JsonElement.TryGetInt32(Integer)
+  name.vb: TryGetInt32(Integer)
+- uid: System.Text.Json.JsonElement.GetInt32
+  commentId: M:System.Text.Json.JsonElement.GetInt32
+  id: GetInt32
+  parent: System.Text.Json.JsonElement
+  langs:
+  - csharp
+  - vb
+  name: GetInt32()
+  nameWithType: JsonElement.GetInt32()
+  fullName: System.Text.Json.JsonElement.GetInt32()
+  type: Method
+  assemblies:
+  - System.Text.Json
+  namespace: System.Text.Json
+  summary: Gets the current JSON number as an <xref href="System.Int32" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public int GetInt32()
+    return:
+      type: System.Int32
+      description: The current JSON number as an <xref href="System.Int32" data-throw-if-not-resolved="false"></xref>.
+    content.vb: Public Function GetInt32() As Integer
+  overload: System.Text.Json.JsonElement.GetInt32*
+  exceptions:
+  - type: System.InvalidOperationException
+    commentId: T:System.InvalidOperationException
+    description: This value's <xref href="System.Text.Json.JsonElement.ValueKind" data-throw-if-not-resolved="false"></xref> is not <xref href="System.Text.Json.JsonValueKind.Number" data-throw-if-not-resolved="false"></xref>.
+  - type: System.FormatException
+    commentId: T:System.FormatException
+    description: The value cannot be represented as an <xref href="System.Int32" data-throw-if-not-resolved="false"></xref>.
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: The parent <xref href="System.Text.Json.JsonDocument" data-throw-if-not-resolved="false"></xref> has been disposed.
+- uid: System.Text.Json.JsonElement.TryGetUInt32(System.UInt32@)
+  commentId: M:System.Text.Json.JsonElement.TryGetUInt32(System.UInt32@)
+  id: TryGetUInt32(System.UInt32@)
+  parent: System.Text.Json.JsonElement
+  langs:
+  - csharp
+  - vb
+  name: TryGetUInt32(out uint)
+  nameWithType: JsonElement.TryGetUInt32(out uint)
+  fullName: System.Text.Json.JsonElement.TryGetUInt32(out uint)
+  type: Method
+  assemblies:
+  - System.Text.Json
+  namespace: System.Text.Json
+  summary: Attempts to represent the current JSON number as a <xref href="System.UInt32" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: >-
+      [CLSCompliant(false)]
+
+      public bool TryGetUInt32(out uint value)
+    parameters:
+    - id: value
+      type: System.UInt32
+      description: When this method returns, contains unsigned 32-bit integer value equivalent to the current JSON number.
+    return:
+      type: System.Boolean
+      description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the number can be represented as a <xref href="System.UInt32" data-throw-if-not-resolved="false"></xref>; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
+    content.vb: >-
+      <CLSCompliant(False)>
+
+      Public Function TryGetUInt32(value As UInteger) As Boolean
+  overload: System.Text.Json.JsonElement.TryGetUInt32*
+  exceptions:
+  - type: System.InvalidOperationException
+    commentId: T:System.InvalidOperationException
+    description: This value's <xref href="System.Text.Json.JsonElement.ValueKind" data-throw-if-not-resolved="false"></xref> is not <xref href="System.Text.Json.JsonValueKind.Number" data-throw-if-not-resolved="false"></xref>.
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: The parent <xref href="System.Text.Json.JsonDocument" data-throw-if-not-resolved="false"></xref> has been disposed.
+  attributes:
+  - type: System.CLSCompliantAttribute
+    ctor: System.CLSCompliantAttribute.#ctor(System.Boolean)
+    arguments:
+    - type: System.Boolean
+      value: false
+  nameWithType.vb: JsonElement.TryGetUInt32(UInteger)
+  fullName.vb: System.Text.Json.JsonElement.TryGetUInt32(UInteger)
+  name.vb: TryGetUInt32(UInteger)
+- uid: System.Text.Json.JsonElement.GetUInt32
+  commentId: M:System.Text.Json.JsonElement.GetUInt32
+  id: GetUInt32
+  parent: System.Text.Json.JsonElement
+  langs:
+  - csharp
+  - vb
+  name: GetUInt32()
+  nameWithType: JsonElement.GetUInt32()
+  fullName: System.Text.Json.JsonElement.GetUInt32()
+  type: Method
+  assemblies:
+  - System.Text.Json
+  namespace: System.Text.Json
+  summary: Gets the current JSON number as a <xref href="System.UInt32" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: >-
+      [CLSCompliant(false)]
+
+      public uint GetUInt32()
+    return:
+      type: System.UInt32
+      description: The current JSON number as a <xref href="System.UInt32" data-throw-if-not-resolved="false"></xref>.
+    content.vb: >-
+      <CLSCompliant(False)>
+
+      Public Function GetUInt32() As UInteger
+  overload: System.Text.Json.JsonElement.GetUInt32*
+  exceptions:
+  - type: System.InvalidOperationException
+    commentId: T:System.InvalidOperationException
+    description: This value's <xref href="System.Text.Json.JsonElement.ValueKind" data-throw-if-not-resolved="false"></xref> is not <xref href="System.Text.Json.JsonValueKind.Number" data-throw-if-not-resolved="false"></xref>.
+  - type: System.FormatException
+    commentId: T:System.FormatException
+    description: The value cannot be represented as a <xref href="System.UInt32" data-throw-if-not-resolved="false"></xref>.
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: The parent <xref href="System.Text.Json.JsonDocument" data-throw-if-not-resolved="false"></xref> has been disposed.
+  attributes:
+  - type: System.CLSCompliantAttribute
+    ctor: System.CLSCompliantAttribute.#ctor(System.Boolean)
+    arguments:
+    - type: System.Boolean
+      value: false
+- uid: System.Text.Json.JsonElement.TryGetInt64(System.Int64@)
+  commentId: M:System.Text.Json.JsonElement.TryGetInt64(System.Int64@)
+  id: TryGetInt64(System.Int64@)
+  parent: System.Text.Json.JsonElement
+  langs:
+  - csharp
+  - vb
+  name: TryGetInt64(out long)
+  nameWithType: JsonElement.TryGetInt64(out long)
+  fullName: System.Text.Json.JsonElement.TryGetInt64(out long)
+  type: Method
+  assemblies:
+  - System.Text.Json
+  namespace: System.Text.Json
+  summary: Attempts to represent the current JSON number as a <xref href="System.Int64" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public bool TryGetInt64(out long value)
+    parameters:
+    - id: value
+      type: System.Int64
+      description: When this method returns, contains the 64-bit integer value equivalent to the current JSON number.
+    return:
+      type: System.Boolean
+      description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the number can be represented as a <xref href="System.Int64" data-throw-if-not-resolved="false"></xref>; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
+    content.vb: Public Function TryGetInt64(value As Long) As Boolean
+  overload: System.Text.Json.JsonElement.TryGetInt64*
+  exceptions:
+  - type: System.InvalidOperationException
+    commentId: T:System.InvalidOperationException
+    description: This value's <xref href="System.Text.Json.JsonElement.ValueKind" data-throw-if-not-resolved="false"></xref> is not <xref href="System.Text.Json.JsonValueKind.Number" data-throw-if-not-resolved="false"></xref>.
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: The parent <xref href="System.Text.Json.JsonDocument" data-throw-if-not-resolved="false"></xref> has been disposed.
+  nameWithType.vb: JsonElement.TryGetInt64(Long)
+  fullName.vb: System.Text.Json.JsonElement.TryGetInt64(Long)
+  name.vb: TryGetInt64(Long)
+- uid: System.Text.Json.JsonElement.GetInt64
+  commentId: M:System.Text.Json.JsonElement.GetInt64
+  id: GetInt64
+  parent: System.Text.Json.JsonElement
+  langs:
+  - csharp
+  - vb
+  name: GetInt64()
+  nameWithType: JsonElement.GetInt64()
+  fullName: System.Text.Json.JsonElement.GetInt64()
+  type: Method
+  assemblies:
+  - System.Text.Json
+  namespace: System.Text.Json
+  summary: Gets the current JSON number as an <xref href="System.Int64" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public long GetInt64()
+    return:
+      type: System.Int64
+      description: The current JSON number as an <xref href="System.Int64" data-throw-if-not-resolved="false"></xref>.
+    content.vb: Public Function GetInt64() As Long
+  overload: System.Text.Json.JsonElement.GetInt64*
+  exceptions:
+  - type: System.InvalidOperationException
+    commentId: T:System.InvalidOperationException
+    description: This value's <xref href="System.Text.Json.JsonElement.ValueKind" data-throw-if-not-resolved="false"></xref> is not <xref href="System.Text.Json.JsonValueKind.Number" data-throw-if-not-resolved="false"></xref>.
+  - type: System.FormatException
+    commentId: T:System.FormatException
+    description: The value cannot be represented as a <xref href="System.Int64" data-throw-if-not-resolved="false"></xref>.
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: The parent <xref href="System.Text.Json.JsonDocument" data-throw-if-not-resolved="false"></xref> has been disposed.
+- uid: System.Text.Json.JsonElement.TryGetUInt64(System.UInt64@)
+  commentId: M:System.Text.Json.JsonElement.TryGetUInt64(System.UInt64@)
+  id: TryGetUInt64(System.UInt64@)
+  parent: System.Text.Json.JsonElement
+  langs:
+  - csharp
+  - vb
+  name: TryGetUInt64(out ulong)
+  nameWithType: JsonElement.TryGetUInt64(out ulong)
+  fullName: System.Text.Json.JsonElement.TryGetUInt64(out ulong)
+  type: Method
+  assemblies:
+  - System.Text.Json
+  namespace: System.Text.Json
+  summary: Attempts to represent the current JSON number as a <xref href="System.UInt64" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: >-
+      [CLSCompliant(false)]
+
+      public bool TryGetUInt64(out ulong value)
+    parameters:
+    - id: value
+      type: System.UInt64
+      description: When this method returns, contains unsigned 64-bit integer value equivalent to the current JSON number.
+    return:
+      type: System.Boolean
+      description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the number can be represented as a <xref href="System.UInt64" data-throw-if-not-resolved="false"></xref>; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
+    content.vb: >-
+      <CLSCompliant(False)>
+
+      Public Function TryGetUInt64(value As ULong) As Boolean
+  overload: System.Text.Json.JsonElement.TryGetUInt64*
+  exceptions:
+  - type: System.InvalidOperationException
+    commentId: T:System.InvalidOperationException
+    description: This value's <xref href="System.Text.Json.JsonElement.ValueKind" data-throw-if-not-resolved="false"></xref> is not <xref href="System.Text.Json.JsonValueKind.Number" data-throw-if-not-resolved="false"></xref>.
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: The parent <xref href="System.Text.Json.JsonDocument" data-throw-if-not-resolved="false"></xref> has been disposed.
+  attributes:
+  - type: System.CLSCompliantAttribute
+    ctor: System.CLSCompliantAttribute.#ctor(System.Boolean)
+    arguments:
+    - type: System.Boolean
+      value: false
+  nameWithType.vb: JsonElement.TryGetUInt64(ULong)
+  fullName.vb: System.Text.Json.JsonElement.TryGetUInt64(ULong)
+  name.vb: TryGetUInt64(ULong)
+- uid: System.Text.Json.JsonElement.GetUInt64
+  commentId: M:System.Text.Json.JsonElement.GetUInt64
+  id: GetUInt64
+  parent: System.Text.Json.JsonElement
+  langs:
+  - csharp
+  - vb
+  name: GetUInt64()
+  nameWithType: JsonElement.GetUInt64()
+  fullName: System.Text.Json.JsonElement.GetUInt64()
+  type: Method
+  assemblies:
+  - System.Text.Json
+  namespace: System.Text.Json
+  summary: Gets the current JSON number as a <xref href="System.UInt64" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: >-
+      [CLSCompliant(false)]
+
+      public ulong GetUInt64()
+    return:
+      type: System.UInt64
+      description: The current JSON number as a <xref href="System.UInt64" data-throw-if-not-resolved="false"></xref>.
+    content.vb: >-
+      <CLSCompliant(False)>
+
+      Public Function GetUInt64() As ULong
+  overload: System.Text.Json.JsonElement.GetUInt64*
+  exceptions:
+  - type: System.InvalidOperationException
+    commentId: T:System.InvalidOperationException
+    description: This value's <xref href="System.Text.Json.JsonElement.ValueKind" data-throw-if-not-resolved="false"></xref> is not <xref href="System.Text.Json.JsonValueKind.Number" data-throw-if-not-resolved="false"></xref>.
+  - type: System.FormatException
+    commentId: T:System.FormatException
+    description: The value cannot be represented as a <xref href="System.UInt64" data-throw-if-not-resolved="false"></xref>.
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: The parent <xref href="System.Text.Json.JsonDocument" data-throw-if-not-resolved="false"></xref> has been disposed.
+  attributes:
+  - type: System.CLSCompliantAttribute
+    ctor: System.CLSCompliantAttribute.#ctor(System.Boolean)
+    arguments:
+    - type: System.Boolean
+      value: false
+- uid: System.Text.Json.JsonElement.TryGetDouble(System.Double@)
+  commentId: M:System.Text.Json.JsonElement.TryGetDouble(System.Double@)
+  id: TryGetDouble(System.Double@)
+  parent: System.Text.Json.JsonElement
+  langs:
+  - csharp
+  - vb
+  name: TryGetDouble(out double)
+  nameWithType: JsonElement.TryGetDouble(out double)
+  fullName: System.Text.Json.JsonElement.TryGetDouble(out double)
+  type: Method
+  assemblies:
+  - System.Text.Json
+  namespace: System.Text.Json
+  summary: Attempts to represent the current JSON number as a <xref href="System.Double" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public bool TryGetDouble(out double value)
+    parameters:
+    - id: value
+      type: System.Double
+      description: When this method returns, contains a double-precision floating point value equivalent to the current JSON number.
+    return:
+      type: System.Boolean
+      description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the number can be represented as a <xref href="System.Double" data-throw-if-not-resolved="false"></xref>; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
+    content.vb: Public Function TryGetDouble(value As Double) As Boolean
+  overload: System.Text.Json.JsonElement.TryGetDouble*
+  exceptions:
+  - type: System.InvalidOperationException
+    commentId: T:System.InvalidOperationException
+    description: This value's <xref href="System.Text.Json.JsonElement.ValueKind" data-throw-if-not-resolved="false"></xref> is not <xref href="System.Text.Json.JsonValueKind.Number" data-throw-if-not-resolved="false"></xref>.
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: The parent <xref href="System.Text.Json.JsonDocument" data-throw-if-not-resolved="false"></xref> has been disposed.
+  nameWithType.vb: JsonElement.TryGetDouble(Double)
+  fullName.vb: System.Text.Json.JsonElement.TryGetDouble(Double)
+  name.vb: TryGetDouble(Double)
+- uid: System.Text.Json.JsonElement.GetDouble
+  commentId: M:System.Text.Json.JsonElement.GetDouble
+  id: GetDouble
+  parent: System.Text.Json.JsonElement
+  langs:
+  - csharp
+  - vb
+  name: GetDouble()
+  nameWithType: JsonElement.GetDouble()
+  fullName: System.Text.Json.JsonElement.GetDouble()
+  type: Method
+  assemblies:
+  - System.Text.Json
+  namespace: System.Text.Json
+  summary: Gets the current JSON number as a <xref href="System.Double" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public double GetDouble()
+    return:
+      type: System.Double
+      description: The current JSON number as a <xref href="System.Double" data-throw-if-not-resolved="false"></xref>.
+    content.vb: Public Function GetDouble() As Double
+  overload: System.Text.Json.JsonElement.GetDouble*
+  exceptions:
+  - type: System.InvalidOperationException
+    commentId: T:System.InvalidOperationException
+    description: This value's <xref href="System.Text.Json.JsonElement.ValueKind" data-throw-if-not-resolved="false"></xref> is not <xref href="System.Text.Json.JsonValueKind.Number" data-throw-if-not-resolved="false"></xref>.
+  - type: System.FormatException
+    commentId: T:System.FormatException
+    description: The value cannot be represented as a <xref href="System.Double" data-throw-if-not-resolved="false"></xref>.
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: The parent <xref href="System.Text.Json.JsonDocument" data-throw-if-not-resolved="false"></xref> has been disposed.
+- uid: System.Text.Json.JsonElement.TryGetSingle(System.Single@)
+  commentId: M:System.Text.Json.JsonElement.TryGetSingle(System.Single@)
+  id: TryGetSingle(System.Single@)
+  parent: System.Text.Json.JsonElement
+  langs:
+  - csharp
+  - vb
+  name: TryGetSingle(out float)
+  nameWithType: JsonElement.TryGetSingle(out float)
+  fullName: System.Text.Json.JsonElement.TryGetSingle(out float)
+  type: Method
+  assemblies:
+  - System.Text.Json
+  namespace: System.Text.Json
+  summary: Attempts to represent the current JSON number as a <xref href="System.Single" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public bool TryGetSingle(out float value)
+    parameters:
+    - id: value
+      type: System.Single
+      description: When this method returns, contains the single-precision floating point value equivalent to the current JSON number.
+    return:
+      type: System.Boolean
+      description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the number can be represented as a <xref href="System.Single" data-throw-if-not-resolved="false"></xref>; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
+    content.vb: Public Function TryGetSingle(value As Single) As Boolean
+  overload: System.Text.Json.JsonElement.TryGetSingle*
+  exceptions:
+  - type: System.InvalidOperationException
+    commentId: T:System.InvalidOperationException
+    description: This value's <xref href="System.Text.Json.JsonElement.ValueKind" data-throw-if-not-resolved="false"></xref> is not <xref href="System.Text.Json.JsonValueKind.Number" data-throw-if-not-resolved="false"></xref>.
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: The parent <xref href="System.Text.Json.JsonDocument" data-throw-if-not-resolved="false"></xref> has been disposed.
+  nameWithType.vb: JsonElement.TryGetSingle(Single)
+  fullName.vb: System.Text.Json.JsonElement.TryGetSingle(Single)
+  name.vb: TryGetSingle(Single)
+- uid: System.Text.Json.JsonElement.GetSingle
+  commentId: M:System.Text.Json.JsonElement.GetSingle
+  id: GetSingle
+  parent: System.Text.Json.JsonElement
+  langs:
+  - csharp
+  - vb
+  name: GetSingle()
+  nameWithType: JsonElement.GetSingle()
+  fullName: System.Text.Json.JsonElement.GetSingle()
+  type: Method
+  assemblies:
+  - System.Text.Json
+  namespace: System.Text.Json
+  summary: Gets the current JSON number as a <xref href="System.Single" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public float GetSingle()
+    return:
+      type: System.Single
+      description: The current JSON number as a <xref href="System.Single" data-throw-if-not-resolved="false"></xref>.
+    content.vb: Public Function GetSingle() As Single
+  overload: System.Text.Json.JsonElement.GetSingle*
+  exceptions:
+  - type: System.InvalidOperationException
+    commentId: T:System.InvalidOperationException
+    description: This value's <xref href="System.Text.Json.JsonElement.ValueKind" data-throw-if-not-resolved="false"></xref> is not <xref href="System.Text.Json.JsonValueKind.Number" data-throw-if-not-resolved="false"></xref>.
+  - type: System.FormatException
+    commentId: T:System.FormatException
+    description: The value cannot be represented as a <xref href="System.Single" data-throw-if-not-resolved="false"></xref>.
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: The parent <xref href="System.Text.Json.JsonDocument" data-throw-if-not-resolved="false"></xref> has been disposed.
+- uid: System.Text.Json.JsonElement.TryGetDecimal(System.Decimal@)
+  commentId: M:System.Text.Json.JsonElement.TryGetDecimal(System.Decimal@)
+  id: TryGetDecimal(System.Decimal@)
+  parent: System.Text.Json.JsonElement
+  langs:
+  - csharp
+  - vb
+  name: TryGetDecimal(out decimal)
+  nameWithType: JsonElement.TryGetDecimal(out decimal)
+  fullName: System.Text.Json.JsonElement.TryGetDecimal(out decimal)
+  type: Method
+  assemblies:
+  - System.Text.Json
+  namespace: System.Text.Json
+  summary: Attempts to represent the current JSON number as a <xref href="System.Decimal" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public bool TryGetDecimal(out decimal value)
+    parameters:
+    - id: value
+      type: System.Decimal
+      description: When this method returns, contains the decimal equivalent of the current JSON number.
+    return:
+      type: System.Boolean
+      description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the number can be represented as a <xref href="System.Decimal" data-throw-if-not-resolved="false"></xref>; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
+    content.vb: Public Function TryGetDecimal(value As Decimal) As Boolean
+  overload: System.Text.Json.JsonElement.TryGetDecimal*
+  exceptions:
+  - type: System.InvalidOperationException
+    commentId: T:System.InvalidOperationException
+    description: This value's <xref href="System.Text.Json.JsonElement.ValueKind" data-throw-if-not-resolved="false"></xref> is not <xref href="System.Text.Json.JsonValueKind.Number" data-throw-if-not-resolved="false"></xref>.
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: The parent <xref href="System.Text.Json.JsonDocument" data-throw-if-not-resolved="false"></xref> has been disposed.
+  nameWithType.vb: JsonElement.TryGetDecimal(Decimal)
+  fullName.vb: System.Text.Json.JsonElement.TryGetDecimal(Decimal)
+  name.vb: TryGetDecimal(Decimal)
+- uid: System.Text.Json.JsonElement.GetDecimal
+  commentId: M:System.Text.Json.JsonElement.GetDecimal
+  id: GetDecimal
+  parent: System.Text.Json.JsonElement
+  langs:
+  - csharp
+  - vb
+  name: GetDecimal()
+  nameWithType: JsonElement.GetDecimal()
+  fullName: System.Text.Json.JsonElement.GetDecimal()
+  type: Method
+  assemblies:
+  - System.Text.Json
+  namespace: System.Text.Json
+  summary: Gets the current JSON number as a <xref href="System.Decimal" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public decimal GetDecimal()
+    return:
+      type: System.Decimal
+      description: The current JSON number as a <xref href="System.Decimal" data-throw-if-not-resolved="false"></xref>.
+    content.vb: Public Function GetDecimal() As Decimal
+  overload: System.Text.Json.JsonElement.GetDecimal*
+  exceptions:
+  - type: System.InvalidOperationException
+    commentId: T:System.InvalidOperationException
+    description: This value's <xref href="System.Text.Json.JsonElement.ValueKind" data-throw-if-not-resolved="false"></xref> is not <xref href="System.Text.Json.JsonValueKind.Number" data-throw-if-not-resolved="false"></xref>.
+  - type: System.FormatException
+    commentId: T:System.FormatException
+    description: The value cannot be represented as a <xref href="System.Decimal" data-throw-if-not-resolved="false"></xref>.
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: The parent <xref href="System.Text.Json.JsonDocument" data-throw-if-not-resolved="false"></xref> has been disposed.
+- uid: System.Text.Json.JsonElement.TryGetDateTime(System.DateTime@)
+  commentId: M:System.Text.Json.JsonElement.TryGetDateTime(System.DateTime@)
+  id: TryGetDateTime(System.DateTime@)
+  parent: System.Text.Json.JsonElement
+  langs:
+  - csharp
+  - vb
+  name: TryGetDateTime(out DateTime)
+  nameWithType: JsonElement.TryGetDateTime(out DateTime)
+  fullName: System.Text.Json.JsonElement.TryGetDateTime(out System.DateTime)
+  type: Method
+  assemblies:
+  - System.Text.Json
+  namespace: System.Text.Json
+  summary: Attempts to represent the current JSON string as a <xref href="System.DateTime" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public bool TryGetDateTime(out DateTime value)
+    parameters:
+    - id: value
+      type: System.DateTime
+      description: When this method returns, contains the date and time value equivalent to the current JSON string.
+    return:
+      type: System.Boolean
+      description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the string can be represented as a <xref href="System.DateTime" data-throw-if-not-resolved="false"></xref>; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
+    content.vb: Public Function TryGetDateTime(value As Date) As Boolean
+  overload: System.Text.Json.JsonElement.TryGetDateTime*
+  exceptions:
+  - type: System.InvalidOperationException
+    commentId: T:System.InvalidOperationException
+    description: This value's <xref href="System.Text.Json.JsonElement.ValueKind" data-throw-if-not-resolved="false"></xref> is not <xref href="System.Text.Json.JsonValueKind.String" data-throw-if-not-resolved="false"></xref>.
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: The parent <xref href="System.Text.Json.JsonDocument" data-throw-if-not-resolved="false"></xref> has been disposed.
+  nameWithType.vb: JsonElement.TryGetDateTime(Date)
+  fullName.vb: System.Text.Json.JsonElement.TryGetDateTime(Date)
+  name.vb: TryGetDateTime(Date)
+- uid: System.Text.Json.JsonElement.GetDateTime
+  commentId: M:System.Text.Json.JsonElement.GetDateTime
+  id: GetDateTime
+  parent: System.Text.Json.JsonElement
+  langs:
+  - csharp
+  - vb
+  name: GetDateTime()
+  nameWithType: JsonElement.GetDateTime()
+  fullName: System.Text.Json.JsonElement.GetDateTime()
+  type: Method
+  assemblies:
+  - System.Text.Json
+  namespace: System.Text.Json
+  summary: Gets the value of the element as a <xref href="System.DateTime" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public DateTime GetDateTime()
+    return:
+      type: System.DateTime
+      description: The value of the element as a <xref href="System.DateTime" data-throw-if-not-resolved="false"></xref>.
+    content.vb: Public Function GetDateTime() As Date
+  overload: System.Text.Json.JsonElement.GetDateTime*
+  exceptions:
+  - type: System.InvalidOperationException
+    commentId: T:System.InvalidOperationException
+    description: This value's <xref href="System.Text.Json.JsonElement.ValueKind" data-throw-if-not-resolved="false"></xref> is not <xref href="System.Text.Json.JsonValueKind.String" data-throw-if-not-resolved="false"></xref>.
+  - type: System.FormatException
+    commentId: T:System.FormatException
+    description: The value cannot be read as a <xref href="System.DateTime" data-throw-if-not-resolved="false"></xref>.
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: The parent <xref href="System.Text.Json.JsonDocument" data-throw-if-not-resolved="false"></xref> has been disposed.
+- uid: System.Text.Json.JsonElement.TryGetDateTimeOffset(System.DateTimeOffset@)
+  commentId: M:System.Text.Json.JsonElement.TryGetDateTimeOffset(System.DateTimeOffset@)
+  id: TryGetDateTimeOffset(System.DateTimeOffset@)
+  parent: System.Text.Json.JsonElement
+  langs:
+  - csharp
+  - vb
+  name: TryGetDateTimeOffset(out DateTimeOffset)
+  nameWithType: JsonElement.TryGetDateTimeOffset(out DateTimeOffset)
+  fullName: System.Text.Json.JsonElement.TryGetDateTimeOffset(out System.DateTimeOffset)
+  type: Method
+  assemblies:
+  - System.Text.Json
+  namespace: System.Text.Json
+  summary: Attempts to represent the current JSON string as a <xref href="System.DateTimeOffset" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public bool TryGetDateTimeOffset(out DateTimeOffset value)
+    parameters:
+    - id: value
+      type: System.DateTimeOffset
+      description: When this method returns, contains the date and time equivalent to the current JSON string.
+    return:
+      type: System.Boolean
+      description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the string can be represented as a <xref href="System.DateTimeOffset" data-throw-if-not-resolved="false"></xref>; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
+    content.vb: Public Function TryGetDateTimeOffset(value As DateTimeOffset) As Boolean
+  overload: System.Text.Json.JsonElement.TryGetDateTimeOffset*
+  exceptions:
+  - type: System.InvalidOperationException
+    commentId: T:System.InvalidOperationException
+    description: This value's <xref href="System.Text.Json.JsonElement.ValueKind" data-throw-if-not-resolved="false"></xref> is not <xref href="System.Text.Json.JsonValueKind.String" data-throw-if-not-resolved="false"></xref>.
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: The parent <xref href="System.Text.Json.JsonDocument" data-throw-if-not-resolved="false"></xref> has been disposed.
+  nameWithType.vb: JsonElement.TryGetDateTimeOffset(DateTimeOffset)
+  fullName.vb: System.Text.Json.JsonElement.TryGetDateTimeOffset(System.DateTimeOffset)
+  name.vb: TryGetDateTimeOffset(DateTimeOffset)
+- uid: System.Text.Json.JsonElement.GetDateTimeOffset
+  commentId: M:System.Text.Json.JsonElement.GetDateTimeOffset
+  id: GetDateTimeOffset
+  parent: System.Text.Json.JsonElement
+  langs:
+  - csharp
+  - vb
+  name: GetDateTimeOffset()
+  nameWithType: JsonElement.GetDateTimeOffset()
+  fullName: System.Text.Json.JsonElement.GetDateTimeOffset()
+  type: Method
+  assemblies:
+  - System.Text.Json
+  namespace: System.Text.Json
+  summary: Gets the value of the element as a <xref href="System.DateTimeOffset" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public DateTimeOffset GetDateTimeOffset()
+    return:
+      type: System.DateTimeOffset
+      description: The value of the element as a <xref href="System.DateTimeOffset" data-throw-if-not-resolved="false"></xref>.
+    content.vb: Public Function GetDateTimeOffset() As DateTimeOffset
+  overload: System.Text.Json.JsonElement.GetDateTimeOffset*
+  exceptions:
+  - type: System.InvalidOperationException
+    commentId: T:System.InvalidOperationException
+    description: This value's <xref href="System.Text.Json.JsonElement.ValueKind" data-throw-if-not-resolved="false"></xref> is not <xref href="System.Text.Json.JsonValueKind.String" data-throw-if-not-resolved="false"></xref>.
+  - type: System.FormatException
+    commentId: T:System.FormatException
+    description: The value cannot be read as a <xref href="System.DateTimeOffset" data-throw-if-not-resolved="false"></xref>.
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: The parent <xref href="System.Text.Json.JsonDocument" data-throw-if-not-resolved="false"></xref> has been disposed.
+- uid: System.Text.Json.JsonElement.TryGetGuid(System.Guid@)
+  commentId: M:System.Text.Json.JsonElement.TryGetGuid(System.Guid@)
+  id: TryGetGuid(System.Guid@)
+  parent: System.Text.Json.JsonElement
+  langs:
+  - csharp
+  - vb
+  name: TryGetGuid(out Guid)
+  nameWithType: JsonElement.TryGetGuid(out Guid)
+  fullName: System.Text.Json.JsonElement.TryGetGuid(out System.Guid)
+  type: Method
+  assemblies:
+  - System.Text.Json
+  namespace: System.Text.Json
+  summary: Attempts to represent the current JSON string as a <xref href="System.Guid" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public bool TryGetGuid(out Guid value)
+    parameters:
+    - id: value
+      type: System.Guid
+      description: When this method returns, contains the GUID equivalent to the current JSON string.
+    return:
+      type: System.Boolean
+      description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the string can be represented as a <xref href="System.Guid" data-throw-if-not-resolved="false"></xref>; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
+    content.vb: Public Function TryGetGuid(value As Guid) As Boolean
+  overload: System.Text.Json.JsonElement.TryGetGuid*
+  exceptions:
+  - type: System.InvalidOperationException
+    commentId: T:System.InvalidOperationException
+    description: This value's <xref href="System.Text.Json.JsonElement.ValueKind" data-throw-if-not-resolved="false"></xref> is not <xref href="System.Text.Json.JsonValueKind.String" data-throw-if-not-resolved="false"></xref>.
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: The parent <xref href="System.Text.Json.JsonDocument" data-throw-if-not-resolved="false"></xref> has been disposed.
+  nameWithType.vb: JsonElement.TryGetGuid(Guid)
+  fullName.vb: System.Text.Json.JsonElement.TryGetGuid(System.Guid)
+  name.vb: TryGetGuid(Guid)
+- uid: System.Text.Json.JsonElement.GetGuid
+  commentId: M:System.Text.Json.JsonElement.GetGuid
+  id: GetGuid
+  parent: System.Text.Json.JsonElement
+  langs:
+  - csharp
+  - vb
+  name: GetGuid()
+  nameWithType: JsonElement.GetGuid()
+  fullName: System.Text.Json.JsonElement.GetGuid()
+  type: Method
+  assemblies:
+  - System.Text.Json
+  namespace: System.Text.Json
+  summary: Gets the value of the element as a <xref href="System.Guid" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public Guid GetGuid()
+    return:
+      type: System.Guid
+      description: The value of the element as a <xref href="System.Guid" data-throw-if-not-resolved="false"></xref>.
+    content.vb: Public Function GetGuid() As Guid
+  overload: System.Text.Json.JsonElement.GetGuid*
+  exceptions:
+  - type: System.InvalidOperationException
+    commentId: T:System.InvalidOperationException
+    description: This value's <xref href="System.Text.Json.JsonElement.ValueKind" data-throw-if-not-resolved="false"></xref> is not <xref href="System.Text.Json.JsonValueKind.String" data-throw-if-not-resolved="false"></xref>.
+  - type: System.FormatException
+    commentId: T:System.FormatException
+    description: The value cannot be represented as a <xref href="System.Guid" data-throw-if-not-resolved="false"></xref>.
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: The parent <xref href="System.Text.Json.JsonDocument" data-throw-if-not-resolved="false"></xref> has been disposed.
+- uid: System.Text.Json.JsonElement.GetRawText
+  commentId: M:System.Text.Json.JsonElement.GetRawText
+  id: GetRawText
+  parent: System.Text.Json.JsonElement
+  langs:
+  - csharp
+  - vb
+  name: GetRawText()
+  nameWithType: JsonElement.GetRawText()
+  fullName: System.Text.Json.JsonElement.GetRawText()
+  type: Method
+  assemblies:
+  - System.Text.Json
+  namespace: System.Text.Json
+  summary: Gets a string that represents the original input data backing this value.
+  example: []
+  syntax:
+    content: public string GetRawText()
+    return:
+      type: System.String
+      description: The original input data backing this value.
+    content.vb: Public Function GetRawText() As String
+  overload: System.Text.Json.JsonElement.GetRawText*
+  exceptions:
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: The parent <xref href="System.Text.Json.JsonDocument" data-throw-if-not-resolved="false"></xref> has been disposed.
+- uid: System.Text.Json.JsonElement.ValueEquals(System.String)
+  commentId: M:System.Text.Json.JsonElement.ValueEquals(System.String)
+  id: ValueEquals(System.String)
+  parent: System.Text.Json.JsonElement
+  langs:
+  - csharp
+  - vb
+  name: ValueEquals(string?)
+  nameWithType: JsonElement.ValueEquals(string?)
+  fullName: System.Text.Json.JsonElement.ValueEquals(string?)
+  type: Method
+  assemblies:
+  - System.Text.Json
+  namespace: System.Text.Json
+  summary: Compares a specified string to the string value of this element.
+  example: []
+  syntax:
+    content: public bool ValueEquals(string? text)
+    parameters:
+    - id: text
+      type: System.String
+      description: The text to compare against.
+    return:
+      type: System.Boolean
+      description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the string value of this element matches <code class="paramref">text</code>; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
+    content.vb: Public Function ValueEquals(text As String) As Boolean
+  overload: System.Text.Json.JsonElement.ValueEquals*
+  exceptions:
+  - type: System.InvalidOperationException
+    commentId: T:System.InvalidOperationException
+    description: This value's <xref href="System.Text.Json.JsonElement.ValueKind" data-throw-if-not-resolved="false"></xref> is not <xref href="System.Text.Json.JsonValueKind.String" data-throw-if-not-resolved="false"></xref>.
+  nameWithType.vb: JsonElement.ValueEquals(String)
+  fullName.vb: System.Text.Json.JsonElement.ValueEquals(String)
+  name.vb: ValueEquals(String)
+- uid: System.Text.Json.JsonElement.ValueEquals(System.ReadOnlySpan{System.Byte})
+  commentId: M:System.Text.Json.JsonElement.ValueEquals(System.ReadOnlySpan{System.Byte})
+  id: ValueEquals(System.ReadOnlySpan{System.Byte})
+  parent: System.Text.Json.JsonElement
+  langs:
+  - csharp
+  - vb
+  name: ValueEquals(ReadOnlySpan<byte>)
+  nameWithType: JsonElement.ValueEquals(ReadOnlySpan<byte>)
+  fullName: System.Text.Json.JsonElement.ValueEquals(System.ReadOnlySpan<byte>)
+  type: Method
+  assemblies:
+  - System.Text.Json
+  namespace: System.Text.Json
+  summary: Compares the text represented by a UTF8-encoded byte span to the string value of this element.
+  example: []
+  syntax:
+    content: public bool ValueEquals(ReadOnlySpan<byte> utf8Text)
+    parameters:
+    - id: utf8Text
+      type: System.ReadOnlySpan{System.Byte}
+      description: The UTF-8 encoded text to compare against.
+    return:
+      type: System.Boolean
+      description: >-
+        <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the string value of this element has the same UTF-8 encoding as
+                  <code class="paramref">utf8Text</code>; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
+    content.vb: Public Function ValueEquals(utf8Text As ReadOnlySpan(Of Byte)) As Boolean
+  overload: System.Text.Json.JsonElement.ValueEquals*
+  exceptions:
+  - type: System.InvalidOperationException
+    commentId: T:System.InvalidOperationException
+    description: This value's <xref href="System.Text.Json.JsonElement.ValueKind" data-throw-if-not-resolved="false"></xref> is not <xref href="System.Text.Json.JsonValueKind.String" data-throw-if-not-resolved="false"></xref>.
+  nameWithType.vb: JsonElement.ValueEquals(ReadOnlySpan(Of Byte))
+  fullName.vb: System.Text.Json.JsonElement.ValueEquals(System.ReadOnlySpan(Of Byte))
+  name.vb: ValueEquals(ReadOnlySpan(Of Byte))
+- uid: System.Text.Json.JsonElement.ValueEquals(System.ReadOnlySpan{System.Char})
+  commentId: M:System.Text.Json.JsonElement.ValueEquals(System.ReadOnlySpan{System.Char})
+  id: ValueEquals(System.ReadOnlySpan{System.Char})
+  parent: System.Text.Json.JsonElement
+  langs:
+  - csharp
+  - vb
+  name: ValueEquals(ReadOnlySpan<char>)
+  nameWithType: JsonElement.ValueEquals(ReadOnlySpan<char>)
+  fullName: System.Text.Json.JsonElement.ValueEquals(System.ReadOnlySpan<char>)
+  type: Method
+  assemblies:
+  - System.Text.Json
+  namespace: System.Text.Json
+  summary: Compares a specified read-only character span to the string value of this element.
+  example: []
+  syntax:
+    content: public bool ValueEquals(ReadOnlySpan<char> text)
+    parameters:
+    - id: text
+      type: System.ReadOnlySpan{System.Char}
+      description: The text to compare against.
+    return:
+      type: System.Boolean
+      description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the string value of this element matches <code class="paramref">text</code>; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
+    content.vb: Public Function ValueEquals(text As ReadOnlySpan(Of Char)) As Boolean
+  overload: System.Text.Json.JsonElement.ValueEquals*
+  exceptions:
+  - type: System.InvalidOperationException
+    commentId: T:System.InvalidOperationException
+    description: This value's <xref href="System.Text.Json.JsonElement.ValueKind" data-throw-if-not-resolved="false"></xref> is not <xref href="System.Text.Json.JsonValueKind.String" data-throw-if-not-resolved="false"></xref>.
+  nameWithType.vb: JsonElement.ValueEquals(ReadOnlySpan(Of Char))
+  fullName.vb: System.Text.Json.JsonElement.ValueEquals(System.ReadOnlySpan(Of Char))
+  name.vb: ValueEquals(ReadOnlySpan(Of Char))
+- uid: System.Text.Json.JsonElement.WriteTo(System.Text.Json.Utf8JsonWriter)
+  commentId: M:System.Text.Json.JsonElement.WriteTo(System.Text.Json.Utf8JsonWriter)
+  id: WriteTo(System.Text.Json.Utf8JsonWriter)
+  parent: System.Text.Json.JsonElement
+  langs:
+  - csharp
+  - vb
+  name: WriteTo(Utf8JsonWriter)
+  nameWithType: JsonElement.WriteTo(Utf8JsonWriter)
+  fullName: System.Text.Json.JsonElement.WriteTo(System.Text.Json.Utf8JsonWriter)
+  type: Method
+  assemblies:
+  - System.Text.Json
+  namespace: System.Text.Json
+  summary: Writes the element to the specified writer as a JSON value.
+  example: []
+  syntax:
+    content: public void WriteTo(Utf8JsonWriter writer)
+    parameters:
+    - id: writer
+      type: System.Text.Json.Utf8JsonWriter
+      description: The writer to which to write the element.
+    content.vb: Public Sub WriteTo(writer As Utf8JsonWriter)
+  overload: System.Text.Json.JsonElement.WriteTo*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: The <code class="paramref">writer</code> parameter is <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.
+  - type: System.InvalidOperationException
+    commentId: T:System.InvalidOperationException
+    description: The <xref href="System.Text.Json.JsonElement.ValueKind" data-throw-if-not-resolved="false"></xref> of this value is <xref href="System.Text.Json.JsonValueKind.Undefined" data-throw-if-not-resolved="false"></xref>.
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: The parent <xref href="System.Text.Json.JsonDocument" data-throw-if-not-resolved="false"></xref> has been disposed.
+- uid: System.Text.Json.JsonElement.EnumerateArray
+  commentId: M:System.Text.Json.JsonElement.EnumerateArray
+  id: EnumerateArray
+  parent: System.Text.Json.JsonElement
+  langs:
+  - csharp
+  - vb
+  name: EnumerateArray()
+  nameWithType: JsonElement.EnumerateArray()
+  fullName: System.Text.Json.JsonElement.EnumerateArray()
+  type: Method
+  assemblies:
+  - System.Text.Json
+  namespace: System.Text.Json
+  summary: Gets an enumerator to enumerate the values in the JSON array represented by this JsonElement.
+  example: []
+  syntax:
+    content: public JsonElement.ArrayEnumerator EnumerateArray()
+    return:
+      type: System.Text.Json.JsonElement.ArrayEnumerator
+      description: An enumerator to enumerate the values in the JSON array represented by this JsonElement.
+    content.vb: Public Function EnumerateArray() As JsonElement.ArrayEnumerator
+  overload: System.Text.Json.JsonElement.EnumerateArray*
+  exceptions:
+  - type: System.InvalidOperationException
+    commentId: T:System.InvalidOperationException
+    description: This value's <xref href="System.Text.Json.JsonElement.ValueKind" data-throw-if-not-resolved="false"></xref> is not <xref href="System.Text.Json.JsonValueKind.Array" data-throw-if-not-resolved="false"></xref>.
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: The parent <xref href="System.Text.Json.JsonDocument" data-throw-if-not-resolved="false"></xref> has been disposed.
+- uid: System.Text.Json.JsonElement.EnumerateObject
+  commentId: M:System.Text.Json.JsonElement.EnumerateObject
+  id: EnumerateObject
+  parent: System.Text.Json.JsonElement
+  langs:
+  - csharp
+  - vb
+  name: EnumerateObject()
+  nameWithType: JsonElement.EnumerateObject()
+  fullName: System.Text.Json.JsonElement.EnumerateObject()
+  type: Method
+  assemblies:
+  - System.Text.Json
+  namespace: System.Text.Json
+  summary: Gets an enumerator to enumerate the properties in the JSON object represented by this JsonElement.
+  example: []
+  syntax:
+    content: public JsonElement.ObjectEnumerator EnumerateObject()
+    return:
+      type: System.Text.Json.JsonElement.ObjectEnumerator
+      description: An enumerator to enumerate the properties in the JSON object represented by this JsonElement.
+    content.vb: Public Function EnumerateObject() As JsonElement.ObjectEnumerator
+  overload: System.Text.Json.JsonElement.EnumerateObject*
+  exceptions:
+  - type: System.InvalidOperationException
+    commentId: T:System.InvalidOperationException
+    description: This value's <xref href="System.Text.Json.JsonElement.ValueKind" data-throw-if-not-resolved="false"></xref> is not <xref href="System.Text.Json.JsonValueKind.Object" data-throw-if-not-resolved="false"></xref>.
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: The parent <xref href="System.Text.Json.JsonDocument" data-throw-if-not-resolved="false"></xref> has been disposed.
+- uid: System.Text.Json.JsonElement.ToString
+  commentId: M:System.Text.Json.JsonElement.ToString
+  id: ToString
+  parent: System.Text.Json.JsonElement
+  langs:
+  - csharp
+  - vb
+  name: ToString()
+  nameWithType: JsonElement.ToString()
+  fullName: System.Text.Json.JsonElement.ToString()
+  type: Method
+  assemblies:
+  - System.Text.Json
+  namespace: System.Text.Json
+  summary: Gets a string representation for the current value appropriate to the value type.
+  example: []
+  syntax:
+    content: public override string ToString()
+    return:
+      type: System.String
+      description: A string representation for the current value appropriate to the value type.
+    content.vb: Public Overrides Function ToString() As String
+  overridden: System.ValueType.ToString
+  overload: System.Text.Json.JsonElement.ToString*
+  exceptions:
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: The parent <xref href="System.Text.Json.JsonDocument" data-throw-if-not-resolved="false"></xref> has been disposed.
+- uid: System.Text.Json.JsonElement.Clone
+  commentId: M:System.Text.Json.JsonElement.Clone
+  id: Clone
+  parent: System.Text.Json.JsonElement
+  langs:
+  - csharp
+  - vb
+  name: Clone()
+  nameWithType: JsonElement.Clone()
+  fullName: System.Text.Json.JsonElement.Clone()
+  type: Method
+  assemblies:
+  - System.Text.Json
+  namespace: System.Text.Json
+  summary: Gets a JsonElement that can be safely stored beyond the lifetime of the original <xref href="System.Text.Json.JsonDocument" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public JsonElement Clone()
+    return:
+      type: System.Text.Json.JsonElement
+      description: A JsonElement that can be safely stored beyond the lifetime of the original <xref href="System.Text.Json.JsonDocument" data-throw-if-not-resolved="false"></xref>.
+    content.vb: Public Function Clone() As JsonElement
+  overload: System.Text.Json.JsonElement.Clone*
+- uid: System.Text.Json.JsonElement.ParseValue(System.Text.Json.Utf8JsonReader@)
+  commentId: M:System.Text.Json.JsonElement.ParseValue(System.Text.Json.Utf8JsonReader@)
+  id: ParseValue(System.Text.Json.Utf8JsonReader@)
+  parent: System.Text.Json.JsonElement
+  langs:
+  - csharp
+  - vb
+  name: ParseValue(ref Utf8JsonReader)
+  nameWithType: JsonElement.ParseValue(ref Utf8JsonReader)
+  fullName: System.Text.Json.JsonElement.ParseValue(ref System.Text.Json.Utf8JsonReader)
+  type: Method
+  assemblies:
+  - System.Text.Json
+  namespace: System.Text.Json
+  summary: Parses one JSON value (including objects or arrays) from the provided reader.
+  example: []
+  syntax:
+    content: public static JsonElement ParseValue(ref Utf8JsonReader reader)
+    parameters:
+    - id: reader
+      type: System.Text.Json.Utf8JsonReader
+      description: The reader to read.
+    return:
+      type: System.Text.Json.JsonElement
+      description: A JsonElement representing the value (and nested values) read from the reader.
+    content.vb: Public Shared Function ParseValue(reader As Utf8JsonReader) As JsonElement
+  overload: System.Text.Json.JsonElement.ParseValue*
+  exceptions:
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: <code class="paramref">reader</code> is using unsupported options.
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: The current <code class="paramref">reader</code> token does not start or represent a value.
+  - type: System.Text.Json.JsonException
+    commentId: T:System.Text.Json.JsonException
+    description: A value could not be read from the reader.
+  nameWithType.vb: JsonElement.ParseValue(Utf8JsonReader)
+  fullName.vb: System.Text.Json.JsonElement.ParseValue(System.Text.Json.Utf8JsonReader)
+  name.vb: ParseValue(Utf8JsonReader)
+- uid: System.Text.Json.JsonElement.TryParseValue(System.Text.Json.Utf8JsonReader@,System.Nullable{System.Text.Json.JsonElement}@)
+  commentId: M:System.Text.Json.JsonElement.TryParseValue(System.Text.Json.Utf8JsonReader@,System.Nullable{System.Text.Json.JsonElement}@)
+  id: TryParseValue(System.Text.Json.Utf8JsonReader@,System.Nullable{System.Text.Json.JsonElement}@)
+  parent: System.Text.Json.JsonElement
+  langs:
+  - csharp
+  - vb
+  name: TryParseValue(ref Utf8JsonReader, out JsonElement?)
+  nameWithType: JsonElement.TryParseValue(ref Utf8JsonReader, out JsonElement?)
+  fullName: System.Text.Json.JsonElement.TryParseValue(ref System.Text.Json.Utf8JsonReader, out System.Text.Json.JsonElement?)
+  type: Method
+  assemblies:
+  - System.Text.Json
+  namespace: System.Text.Json
+  summary: Attempts to parse one JSON value (including objects or arrays) from the provided reader.
+  example: []
+  syntax:
+    content: public static bool TryParseValue(ref Utf8JsonReader reader, out JsonElement? element)
+    parameters:
+    - id: reader
+      type: System.Text.Json.Utf8JsonReader
+      description: The reader to read.
+    - id: element
+      type: System.Nullable{System.Text.Json.JsonElement}
+      description: Receives the parsed element.
+    return:
+      type: System.Boolean
+      description: >-
+        <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if a value was read and parsed into a JsonElement; <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a> if the reader ran out of data while parsing.
+                   All other situations result in an exception being thrown.
+    content.vb: Public Shared Function TryParseValue(reader As Utf8JsonReader, element As JsonElement?) As Boolean
+  overload: System.Text.Json.JsonElement.TryParseValue*
+  exceptions:
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: <code class="paramref">reader</code> is using unsupported options.
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: The current <code class="paramref">reader</code> token does not start or represent a value.
+  - type: System.Text.Json.JsonException
+    commentId: T:System.Text.Json.JsonException
+    description: A value could not be read from the reader.
+  nameWithType.vb: JsonElement.TryParseValue(Utf8JsonReader, JsonElement?)
+  fullName.vb: System.Text.Json.JsonElement.TryParseValue(System.Text.Json.Utf8JsonReader, System.Text.Json.JsonElement?)
+  name.vb: TryParseValue(Utf8JsonReader, JsonElement?)
+- uid: System.Text.Json.JsonElement.ValueKind
+  commentId: P:System.Text.Json.JsonElement.ValueKind
+  id: ValueKind
+  parent: System.Text.Json.JsonElement
+  langs:
+  - csharp
+  - vb
+  name: ValueKind
+  nameWithType: JsonElement.ValueKind
+  fullName: System.Text.Json.JsonElement.ValueKind
+  type: Property
+  assemblies:
+  - System.Text.Json
+  namespace: System.Text.Json
+  summary: Gets the type of the current JSON value.
+  example: []
+  syntax:
+    content: public JsonValueKind ValueKind { get; }
+    parameters: []
+    return:
+      type: System.Text.Json.JsonValueKind
+      description: The type of the current JSON value.
+    content.vb: Public ReadOnly Property ValueKind As JsonValueKind
+  overload: System.Text.Json.JsonElement.ValueKind*
+  exceptions:
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: The parent <xref href="System.Text.Json.JsonDocument" data-throw-if-not-resolved="false"></xref> has been disposed.
+- uid: System.Text.Json.JsonElement.Item(System.Int32)
+  commentId: P:System.Text.Json.JsonElement.Item(System.Int32)
+  id: Item(System.Int32)
+  parent: System.Text.Json.JsonElement
+  langs:
+  - csharp
+  - vb
+  name: this[int]
+  nameWithType: JsonElement.this[int]
+  fullName: System.Text.Json.JsonElement.this[int]
+  type: Property
+  assemblies:
+  - System.Text.Json
+  namespace: System.Text.Json
+  summary: Gets the value at the specified index if the current value is an <xref href="System.Text.Json.JsonValueKind.Array" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public JsonElement this[int index] { get; }
+    parameters:
+    - id: index
+      type: System.Int32
+      description: The item index.
+    return:
+      type: System.Text.Json.JsonElement
+      description: The value at the specified index.
+    content.vb: Public ReadOnly Default Property this[](index As Integer) As JsonElement
+  overload: System.Text.Json.JsonElement.Item*
+  exceptions:
+  - type: System.InvalidOperationException
+    commentId: T:System.InvalidOperationException
+    description: This value's <xref href="System.Text.Json.JsonElement.ValueKind" data-throw-if-not-resolved="false"></xref> is not <xref href="System.Text.Json.JsonValueKind.Array" data-throw-if-not-resolved="false"></xref>.
+  - type: System.IndexOutOfRangeException
+    commentId: T:System.IndexOutOfRangeException
+    description: <code class="paramref">index</code> is not in the range [0, <xref href="System.Text.Json.JsonElement.GetArrayLength" data-throw-if-not-resolved="false"></xref>()).
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: The parent <xref href="System.Text.Json.JsonDocument" data-throw-if-not-resolved="false"></xref> has been disposed.
+  nameWithType.vb: JsonElement.this[](Integer)
+  fullName.vb: System.Text.Json.JsonElement.this[](Integer)
+  name.vb: this[](Integer)
+references:
+- uid: System.Text.Json.JsonDocument
+  commentId: T:System.Text.Json.JsonDocument
+  parent: System.Text.Json
+  isExternal: true
+  href: System.Text.Json.JsonDocument.html
+  name: JsonDocument
+  nameWithType: JsonDocument
+  fullName: System.Text.Json.JsonDocument
+- uid: System.Text.Json
+  commentId: N:System.Text.Json
+  isExternal: true
+  href: System.html
+  name: System.Text.Json
+  nameWithType: System.Text.Json
+  fullName: System.Text.Json
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: System.html
+  - name: .
+  - uid: System.Text
+    name: Text
+    isExternal: true
+    href: System.Text.html
+  - name: .
+  - uid: System.Text.Json
+    name: Json
+    isExternal: true
+    href: System.Text.Json.html
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: System.html
+  - name: .
+  - uid: System.Text
+    name: Text
+    isExternal: true
+    href: System.Text.html
+  - name: .
+  - uid: System.Text.Json
+    name: Json
+    isExternal: true
+    href: System.Text.Json.html
+- uid: System.ValueType.Equals(System.Object)
+  commentId: M:System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  name: Equals(object)
+  nameWithType: ValueType.Equals(object)
+  fullName: System.ValueType.Equals(object)
+  nameWithType.vb: ValueType.Equals(Object)
+  fullName.vb: System.ValueType.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType.GetHashCode
+  commentId: M:System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  name: GetHashCode()
+  nameWithType: ValueType.GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Text.Json.JsonElement.System.Text.Json.JsonSerializer.Deserialize(System.Type,System.Text.Json.JsonSerializerOptions)
+  commentId: M:System.Text.Json.JsonSerializer.Deserialize(System.Text.Json.JsonElement,System.Type,System.Text.Json.JsonSerializerOptions)
+  parent: System.Text.Json.JsonSerializer
+  definition: System.Text.Json.JsonSerializer.Deserialize(System.Text.Json.JsonElement,System.Type,System.Text.Json.JsonSerializerOptions)
+  href: System.Text.Json.JsonSerializer.html#System_Text_Json_JsonSerializer_Deserialize_System_Text_Json_JsonElement_System_Type_System_Text_Json_JsonSerializerOptions_
+  name: Deserialize(JsonElement, Type, JsonSerializerOptions)
+  nameWithType: JsonSerializer.Deserialize(JsonElement, Type, JsonSerializerOptions)
+  fullName: System.Text.Json.JsonSerializer.Deserialize(System.Text.Json.JsonElement, System.Type, System.Text.Json.JsonSerializerOptions)
+  spec.csharp:
+  - uid: System.Text.Json.JsonSerializer.Deserialize(System.Text.Json.JsonElement,System.Type,System.Text.Json.JsonSerializerOptions)
+    name: Deserialize
+    isExternal: true
+    href: System.Text.Json.JsonSerializer.html#System_Text_Json_JsonSerializer_Deserialize_System_Text_Json_JsonElement_System_Type_System_Text_Json_JsonSerializerOptions_
+  - name: (
+  - uid: System.Text.Json.JsonElement
+    name: JsonElement
+    isExternal: true
+    href: System.Text.Json.JsonElement.html
+  - name: ','
+  - name: " "
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: ','
+  - name: " "
+  - uid: System.Text.Json.JsonSerializerOptions
+    name: JsonSerializerOptions
+    isExternal: true
+    href: System.Text.Json.JsonSerializerOptions.html
+  - name: )
+  spec.vb:
+  - uid: System.Text.Json.JsonSerializer.Deserialize(System.Text.Json.JsonElement,System.Type,System.Text.Json.JsonSerializerOptions)
+    name: Deserialize
+    isExternal: true
+    href: System.Text.Json.JsonSerializer.html#System_Text_Json_JsonSerializer_Deserialize_System_Text_Json_JsonElement_System_Type_System_Text_Json_JsonSerializerOptions_
+  - name: (
+  - uid: System.Text.Json.JsonElement
+    name: JsonElement
+    isExternal: true
+    href: System.Text.Json.JsonElement.html
+  - name: ','
+  - name: " "
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: ','
+  - name: " "
+  - uid: System.Text.Json.JsonSerializerOptions
+    name: JsonSerializerOptions
+    isExternal: true
+    href: System.Text.Json.JsonSerializerOptions.html
+  - name: )
+- uid: System.Text.Json.JsonElement.System.Text.Json.JsonSerializer.Deserialize(System.Type,System.Text.Json.Serialization.JsonSerializerContext)
+  commentId: M:System.Text.Json.JsonSerializer.Deserialize(System.Text.Json.JsonElement,System.Type,System.Text.Json.Serialization.JsonSerializerContext)
+  parent: System.Text.Json.JsonSerializer
+  definition: System.Text.Json.JsonSerializer.Deserialize(System.Text.Json.JsonElement,System.Type,System.Text.Json.Serialization.JsonSerializerContext)
+  href: System.Text.Json.JsonSerializer.html#System_Text_Json_JsonSerializer_Deserialize_System_Text_Json_JsonElement_System_Type_System_Text_Json_Serialization_JsonSerializerContext_
+  name: Deserialize(JsonElement, Type, JsonSerializerContext)
+  nameWithType: JsonSerializer.Deserialize(JsonElement, Type, JsonSerializerContext)
+  fullName: System.Text.Json.JsonSerializer.Deserialize(System.Text.Json.JsonElement, System.Type, System.Text.Json.Serialization.JsonSerializerContext)
+  spec.csharp:
+  - uid: System.Text.Json.JsonSerializer.Deserialize(System.Text.Json.JsonElement,System.Type,System.Text.Json.Serialization.JsonSerializerContext)
+    name: Deserialize
+    isExternal: true
+    href: System.Text.Json.JsonSerializer.html#System_Text_Json_JsonSerializer_Deserialize_System_Text_Json_JsonElement_System_Type_System_Text_Json_Serialization_JsonSerializerContext_
+  - name: (
+  - uid: System.Text.Json.JsonElement
+    name: JsonElement
+    isExternal: true
+    href: System.Text.Json.JsonElement.html
+  - name: ','
+  - name: " "
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: ','
+  - name: " "
+  - uid: System.Text.Json.Serialization.JsonSerializerContext
+    name: JsonSerializerContext
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: System.Text.Json.JsonSerializer.Deserialize(System.Text.Json.JsonElement,System.Type,System.Text.Json.Serialization.JsonSerializerContext)
+    name: Deserialize
+    isExternal: true
+    href: System.Text.Json.JsonSerializer.html#System_Text_Json_JsonSerializer_Deserialize_System_Text_Json_JsonElement_System_Type_System_Text_Json_Serialization_JsonSerializerContext_
+  - name: (
+  - uid: System.Text.Json.JsonElement
+    name: JsonElement
+    isExternal: true
+    href: System.Text.Json.JsonElement.html
+  - name: ','
+  - name: " "
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: ','
+  - name: " "
+  - uid: System.Text.Json.Serialization.JsonSerializerContext
+    name: JsonSerializerContext
+    isExternal: true
+  - name: )
+- uid: System.Text.Json.JsonElement.System.Text.Json.JsonSerializer.Deserialize``1(System.Text.Json.JsonSerializerOptions)
+  commentId: M:System.Text.Json.JsonSerializer.Deserialize``1(System.Text.Json.JsonElement,System.Text.Json.JsonSerializerOptions)
+  parent: System.Text.Json.JsonSerializer
+  definition: System.Text.Json.JsonSerializer.Deserialize``1(System.Text.Json.JsonElement,System.Text.Json.JsonSerializerOptions)
+  href: System.Text.Json.JsonSerializer.html#System_Text_Json_JsonSerializer_Deserialize__1_System_Text_Json_JsonElement_System_Text_Json_JsonSerializerOptions_
+  name: Deserialize<TValue>(JsonElement, JsonSerializerOptions)
+  nameWithType: JsonSerializer.Deserialize<TValue>(JsonElement, JsonSerializerOptions)
+  fullName: System.Text.Json.JsonSerializer.Deserialize<TValue>(System.Text.Json.JsonElement, System.Text.Json.JsonSerializerOptions)
+  nameWithType.vb: JsonSerializer.Deserialize(Of TValue)(JsonElement, JsonSerializerOptions)
+  fullName.vb: System.Text.Json.JsonSerializer.Deserialize(Of TValue)(System.Text.Json.JsonElement, System.Text.Json.JsonSerializerOptions)
+  name.vb: Deserialize(Of TValue)(JsonElement, JsonSerializerOptions)
+  spec.csharp:
+  - uid: System.Text.Json.JsonSerializer.Deserialize``1(System.Text.Json.JsonElement,System.Text.Json.JsonSerializerOptions)
+    name: Deserialize
+    isExternal: true
+    href: System.Text.Json.JsonSerializer.html#System_Text_Json_JsonSerializer_Deserialize__1_System_Text_Json_JsonElement_System_Text_Json_JsonSerializerOptions_
+  - name: <
+  - name: TValue
+  - name: '>'
+  - name: (
+  - uid: System.Text.Json.JsonElement
+    name: JsonElement
+    isExternal: true
+    href: System.Text.Json.JsonElement.html
+  - name: ','
+  - name: " "
+  - uid: System.Text.Json.JsonSerializerOptions
+    name: JsonSerializerOptions
+    isExternal: true
+    href: System.Text.Json.JsonSerializerOptions.html
+  - name: )
+  spec.vb:
+  - uid: System.Text.Json.JsonSerializer.Deserialize``1(System.Text.Json.JsonElement,System.Text.Json.JsonSerializerOptions)
+    name: Deserialize
+    isExternal: true
+    href: System.Text.Json.JsonSerializer.html#System_Text_Json_JsonSerializer_Deserialize__1_System_Text_Json_JsonElement_System_Text_Json_JsonSerializerOptions_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TValue
+  - name: )
+  - name: (
+  - uid: System.Text.Json.JsonElement
+    name: JsonElement
+    isExternal: true
+    href: System.Text.Json.JsonElement.html
+  - name: ','
+  - name: " "
+  - uid: System.Text.Json.JsonSerializerOptions
+    name: JsonSerializerOptions
+    isExternal: true
+    href: System.Text.Json.JsonSerializerOptions.html
+  - name: )
+- uid: System.Text.Json.JsonElement.System.Text.Json.JsonSerializer.Deserialize``1(System.Text.Json.Serialization.Metadata.JsonTypeInfo{{TValue}})
+  commentId: M:System.Text.Json.JsonSerializer.Deserialize``1(System.Text.Json.JsonElement,System.Text.Json.Serialization.Metadata.JsonTypeInfo{``0})
+  parent: System.Text.Json.JsonSerializer
+  definition: System.Text.Json.JsonSerializer.Deserialize``1(System.Text.Json.JsonElement,System.Text.Json.Serialization.Metadata.JsonTypeInfo{``0})
+  href: System.Text.Json.JsonSerializer.html#System_Text_Json_JsonSerializer_Deserialize__1_System_Text_Json_JsonElement_System_Text_Json_Serialization_Metadata_JsonTypeInfo___0__
+  name: Deserialize<TValue>(JsonElement, JsonTypeInfo<TValue>)
+  nameWithType: JsonSerializer.Deserialize<TValue>(JsonElement, JsonTypeInfo<TValue>)
+  fullName: System.Text.Json.JsonSerializer.Deserialize<TValue>(System.Text.Json.JsonElement, System.Text.Json.Serialization.Metadata.JsonTypeInfo<TValue>)
+  nameWithType.vb: JsonSerializer.Deserialize(Of TValue)(JsonElement, JsonTypeInfo(Of TValue))
+  fullName.vb: System.Text.Json.JsonSerializer.Deserialize(Of TValue)(System.Text.Json.JsonElement, System.Text.Json.Serialization.Metadata.JsonTypeInfo(Of TValue))
+  name.vb: Deserialize(Of TValue)(JsonElement, JsonTypeInfo(Of TValue))
+  spec.csharp:
+  - uid: System.Text.Json.JsonSerializer.Deserialize``1(System.Text.Json.JsonElement,System.Text.Json.Serialization.Metadata.JsonTypeInfo{``0})
+    name: Deserialize
+    isExternal: true
+    href: System.Text.Json.JsonSerializer.html#System_Text_Json_JsonSerializer_Deserialize__1_System_Text_Json_JsonElement_System_Text_Json_Serialization_Metadata_JsonTypeInfo___0__
+  - name: <
+  - name: TValue
+  - name: '>'
+  - name: (
+  - uid: System.Text.Json.JsonElement
+    name: JsonElement
+    isExternal: true
+    href: System.Text.Json.JsonElement.html
+  - name: ','
+  - name: " "
+  - uid: System.Text.Json.Serialization.Metadata.JsonTypeInfo`1
+    name: JsonTypeInfo
+    isExternal: true
+  - name: <
+  - name: TValue
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: System.Text.Json.JsonSerializer.Deserialize``1(System.Text.Json.JsonElement,System.Text.Json.Serialization.Metadata.JsonTypeInfo{``0})
+    name: Deserialize
+    isExternal: true
+    href: System.Text.Json.JsonSerializer.html#System_Text_Json_JsonSerializer_Deserialize__1_System_Text_Json_JsonElement_System_Text_Json_Serialization_Metadata_JsonTypeInfo___0__
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TValue
+  - name: )
+  - name: (
+  - uid: System.Text.Json.JsonElement
+    name: JsonElement
+    isExternal: true
+    href: System.Text.Json.JsonElement.html
+  - name: ','
+  - name: " "
+  - uid: System.Text.Json.Serialization.Metadata.JsonTypeInfo`1
+    name: JsonTypeInfo
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TValue
+  - name: )
+  - name: )
+- uid: System.ValueType
+  commentId: T:System.ValueType
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype
+  name: ValueType
+  nameWithType: ValueType
+  fullName: System.ValueType
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Text.Json.JsonSerializer.Deserialize(System.Text.Json.JsonElement,System.Type,System.Text.Json.JsonSerializerOptions)
+  commentId: M:System.Text.Json.JsonSerializer.Deserialize(System.Text.Json.JsonElement,System.Type,System.Text.Json.JsonSerializerOptions)
+  isExternal: true
+  href: System.Text.Json.JsonSerializer.html#System_Text_Json_JsonSerializer_Deserialize_System_Text_Json_JsonElement_System_Type_System_Text_Json_JsonSerializerOptions_
+  name: Deserialize(JsonElement, Type, JsonSerializerOptions)
+  nameWithType: JsonSerializer.Deserialize(JsonElement, Type, JsonSerializerOptions)
+  fullName: System.Text.Json.JsonSerializer.Deserialize(System.Text.Json.JsonElement, System.Type, System.Text.Json.JsonSerializerOptions)
+  spec.csharp:
+  - uid: System.Text.Json.JsonSerializer.Deserialize(System.Text.Json.JsonElement,System.Type,System.Text.Json.JsonSerializerOptions)
+    name: Deserialize
+    isExternal: true
+    href: System.Text.Json.JsonSerializer.html#System_Text_Json_JsonSerializer_Deserialize_System_Text_Json_JsonElement_System_Type_System_Text_Json_JsonSerializerOptions_
+  - name: (
+  - uid: System.Text.Json.JsonElement
+    name: JsonElement
+    isExternal: true
+    href: System.Text.Json.JsonElement.html
+  - name: ','
+  - name: " "
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: ','
+  - name: " "
+  - uid: System.Text.Json.JsonSerializerOptions
+    name: JsonSerializerOptions
+    isExternal: true
+    href: System.Text.Json.JsonSerializerOptions.html
+  - name: )
+  spec.vb:
+  - uid: System.Text.Json.JsonSerializer.Deserialize(System.Text.Json.JsonElement,System.Type,System.Text.Json.JsonSerializerOptions)
+    name: Deserialize
+    isExternal: true
+    href: System.Text.Json.JsonSerializer.html#System_Text_Json_JsonSerializer_Deserialize_System_Text_Json_JsonElement_System_Type_System_Text_Json_JsonSerializerOptions_
+  - name: (
+  - uid: System.Text.Json.JsonElement
+    name: JsonElement
+    isExternal: true
+    href: System.Text.Json.JsonElement.html
+  - name: ','
+  - name: " "
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: ','
+  - name: " "
+  - uid: System.Text.Json.JsonSerializerOptions
+    name: JsonSerializerOptions
+    isExternal: true
+    href: System.Text.Json.JsonSerializerOptions.html
+  - name: )
+- uid: System.Text.Json.JsonSerializer
+  commentId: T:System.Text.Json.JsonSerializer
+  parent: System.Text.Json
+  isExternal: true
+  href: System.Text.Json.JsonSerializer.html
+  name: JsonSerializer
+  nameWithType: JsonSerializer
+  fullName: System.Text.Json.JsonSerializer
+- uid: System.Text.Json.JsonSerializer.Deserialize(System.Text.Json.JsonElement,System.Type,System.Text.Json.Serialization.JsonSerializerContext)
+  commentId: M:System.Text.Json.JsonSerializer.Deserialize(System.Text.Json.JsonElement,System.Type,System.Text.Json.Serialization.JsonSerializerContext)
+  isExternal: true
+  href: System.Text.Json.JsonSerializer.html#System_Text_Json_JsonSerializer_Deserialize_System_Text_Json_JsonElement_System_Type_System_Text_Json_Serialization_JsonSerializerContext_
+  name: Deserialize(JsonElement, Type, JsonSerializerContext)
+  nameWithType: JsonSerializer.Deserialize(JsonElement, Type, JsonSerializerContext)
+  fullName: System.Text.Json.JsonSerializer.Deserialize(System.Text.Json.JsonElement, System.Type, System.Text.Json.Serialization.JsonSerializerContext)
+  spec.csharp:
+  - uid: System.Text.Json.JsonSerializer.Deserialize(System.Text.Json.JsonElement,System.Type,System.Text.Json.Serialization.JsonSerializerContext)
+    name: Deserialize
+    isExternal: true
+    href: System.Text.Json.JsonSerializer.html#System_Text_Json_JsonSerializer_Deserialize_System_Text_Json_JsonElement_System_Type_System_Text_Json_Serialization_JsonSerializerContext_
+  - name: (
+  - uid: System.Text.Json.JsonElement
+    name: JsonElement
+    isExternal: true
+    href: System.Text.Json.JsonElement.html
+  - name: ','
+  - name: " "
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: ','
+  - name: " "
+  - uid: System.Text.Json.Serialization.JsonSerializerContext
+    name: JsonSerializerContext
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: System.Text.Json.JsonSerializer.Deserialize(System.Text.Json.JsonElement,System.Type,System.Text.Json.Serialization.JsonSerializerContext)
+    name: Deserialize
+    isExternal: true
+    href: System.Text.Json.JsonSerializer.html#System_Text_Json_JsonSerializer_Deserialize_System_Text_Json_JsonElement_System_Type_System_Text_Json_Serialization_JsonSerializerContext_
+  - name: (
+  - uid: System.Text.Json.JsonElement
+    name: JsonElement
+    isExternal: true
+    href: System.Text.Json.JsonElement.html
+  - name: ','
+  - name: " "
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: ','
+  - name: " "
+  - uid: System.Text.Json.Serialization.JsonSerializerContext
+    name: JsonSerializerContext
+    isExternal: true
+  - name: )
+- uid: System.Text.Json.JsonSerializer.Deserialize``1(System.Text.Json.JsonElement,System.Text.Json.JsonSerializerOptions)
+  commentId: M:System.Text.Json.JsonSerializer.Deserialize``1(System.Text.Json.JsonElement,System.Text.Json.JsonSerializerOptions)
+  isExternal: true
+  href: System.Text.Json.JsonSerializer.html#System_Text_Json_JsonSerializer_Deserialize__1_System_Text_Json_JsonElement_System_Text_Json_JsonSerializerOptions_
+  name: Deserialize<TValue>(JsonElement, JsonSerializerOptions)
+  nameWithType: JsonSerializer.Deserialize<TValue>(JsonElement, JsonSerializerOptions)
+  fullName: System.Text.Json.JsonSerializer.Deserialize<TValue>(System.Text.Json.JsonElement, System.Text.Json.JsonSerializerOptions)
+  nameWithType.vb: JsonSerializer.Deserialize(Of TValue)(JsonElement, JsonSerializerOptions)
+  fullName.vb: System.Text.Json.JsonSerializer.Deserialize(Of TValue)(System.Text.Json.JsonElement, System.Text.Json.JsonSerializerOptions)
+  name.vb: Deserialize(Of TValue)(JsonElement, JsonSerializerOptions)
+  spec.csharp:
+  - uid: System.Text.Json.JsonSerializer.Deserialize``1(System.Text.Json.JsonElement,System.Text.Json.JsonSerializerOptions)
+    name: Deserialize
+    isExternal: true
+    href: System.Text.Json.JsonSerializer.html#System_Text_Json_JsonSerializer_Deserialize__1_System_Text_Json_JsonElement_System_Text_Json_JsonSerializerOptions_
+  - name: <
+  - name: TValue
+  - name: '>'
+  - name: (
+  - uid: System.Text.Json.JsonElement
+    name: JsonElement
+    isExternal: true
+    href: System.Text.Json.JsonElement.html
+  - name: ','
+  - name: " "
+  - uid: System.Text.Json.JsonSerializerOptions
+    name: JsonSerializerOptions
+    isExternal: true
+    href: System.Text.Json.JsonSerializerOptions.html
+  - name: )
+  spec.vb:
+  - uid: System.Text.Json.JsonSerializer.Deserialize``1(System.Text.Json.JsonElement,System.Text.Json.JsonSerializerOptions)
+    name: Deserialize
+    isExternal: true
+    href: System.Text.Json.JsonSerializer.html#System_Text_Json_JsonSerializer_Deserialize__1_System_Text_Json_JsonElement_System_Text_Json_JsonSerializerOptions_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TValue
+  - name: )
+  - name: (
+  - uid: System.Text.Json.JsonElement
+    name: JsonElement
+    isExternal: true
+    href: System.Text.Json.JsonElement.html
+  - name: ','
+  - name: " "
+  - uid: System.Text.Json.JsonSerializerOptions
+    name: JsonSerializerOptions
+    isExternal: true
+    href: System.Text.Json.JsonSerializerOptions.html
+  - name: )
+- uid: System.Text.Json.JsonSerializer.Deserialize``1(System.Text.Json.JsonElement,System.Text.Json.Serialization.Metadata.JsonTypeInfo{``0})
+  commentId: M:System.Text.Json.JsonSerializer.Deserialize``1(System.Text.Json.JsonElement,System.Text.Json.Serialization.Metadata.JsonTypeInfo{``0})
+  isExternal: true
+  href: System.Text.Json.JsonSerializer.html#System_Text_Json_JsonSerializer_Deserialize__1_System_Text_Json_JsonElement_System_Text_Json_Serialization_Metadata_JsonTypeInfo___0__
+  name: Deserialize<TValue>(JsonElement, JsonTypeInfo<TValue>)
+  nameWithType: JsonSerializer.Deserialize<TValue>(JsonElement, JsonTypeInfo<TValue>)
+  fullName: System.Text.Json.JsonSerializer.Deserialize<TValue>(System.Text.Json.JsonElement, System.Text.Json.Serialization.Metadata.JsonTypeInfo<TValue>)
+  nameWithType.vb: JsonSerializer.Deserialize(Of TValue)(JsonElement, JsonTypeInfo(Of TValue))
+  fullName.vb: System.Text.Json.JsonSerializer.Deserialize(Of TValue)(System.Text.Json.JsonElement, System.Text.Json.Serialization.Metadata.JsonTypeInfo(Of TValue))
+  name.vb: Deserialize(Of TValue)(JsonElement, JsonTypeInfo(Of TValue))
+  spec.csharp:
+  - uid: System.Text.Json.JsonSerializer.Deserialize``1(System.Text.Json.JsonElement,System.Text.Json.Serialization.Metadata.JsonTypeInfo{``0})
+    name: Deserialize
+    isExternal: true
+    href: System.Text.Json.JsonSerializer.html#System_Text_Json_JsonSerializer_Deserialize__1_System_Text_Json_JsonElement_System_Text_Json_Serialization_Metadata_JsonTypeInfo___0__
+  - name: <
+  - name: TValue
+  - name: '>'
+  - name: (
+  - uid: System.Text.Json.JsonElement
+    name: JsonElement
+    isExternal: true
+    href: System.Text.Json.JsonElement.html
+  - name: ','
+  - name: " "
+  - uid: System.Text.Json.Serialization.Metadata.JsonTypeInfo`1
+    name: JsonTypeInfo
+    isExternal: true
+  - name: <
+  - name: TValue
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: System.Text.Json.JsonSerializer.Deserialize``1(System.Text.Json.JsonElement,System.Text.Json.Serialization.Metadata.JsonTypeInfo{``0})
+    name: Deserialize
+    isExternal: true
+    href: System.Text.Json.JsonSerializer.html#System_Text_Json_JsonSerializer_Deserialize__1_System_Text_Json_JsonElement_System_Text_Json_Serialization_Metadata_JsonTypeInfo___0__
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TValue
+  - name: )
+  - name: (
+  - uid: System.Text.Json.JsonElement
+    name: JsonElement
+    isExternal: true
+    href: System.Text.Json.JsonElement.html
+  - name: ','
+  - name: " "
+  - uid: System.Text.Json.Serialization.Metadata.JsonTypeInfo`1
+    name: JsonTypeInfo
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TValue
+  - name: )
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Text.Json.JsonElement.ValueKind
+  commentId: P:System.Text.Json.JsonElement.ValueKind
+  isExternal: true
+  href: System.Text.Json.JsonElement.html#System_Text_Json_JsonElement_ValueKind
+  name: ValueKind
+  nameWithType: JsonElement.ValueKind
+  fullName: System.Text.Json.JsonElement.ValueKind
+- uid: System.Text.Json.JsonValueKind.Array
+  commentId: F:System.Text.Json.JsonValueKind.Array
+  isExternal: true
+  href: System.Text.Json.JsonValueKind.html#System_Text_Json_JsonValueKind_Array
+  name: Array
+  nameWithType: JsonValueKind.Array
+  fullName: System.Text.Json.JsonValueKind.Array
+- uid: System.InvalidOperationException
+  commentId: T:System.InvalidOperationException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.invalidoperationexception
+  name: InvalidOperationException
+  nameWithType: InvalidOperationException
+  fullName: System.InvalidOperationException
+- uid: System.ObjectDisposedException
+  commentId: T:System.ObjectDisposedException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.objectdisposedexception
+  name: ObjectDisposedException
+  nameWithType: ObjectDisposedException
+  fullName: System.ObjectDisposedException
+- uid: System.Text.Json.JsonElement.GetArrayLength*
+  commentId: Overload:System.Text.Json.JsonElement.GetArrayLength
+  isExternal: true
+  href: System.Text.Json.JsonElement.html#System_Text_Json_JsonElement_GetArrayLength
+  name: GetArrayLength
+  nameWithType: JsonElement.GetArrayLength
+  fullName: System.Text.Json.JsonElement.GetArrayLength
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.Text.Json.JsonElement
+  commentId: T:System.Text.Json.JsonElement
+  parent: System.Text.Json
+  isExternal: true
+  href: System.Text.Json.JsonElement.html
+  name: JsonElement
+  nameWithType: JsonElement
+  fullName: System.Text.Json.JsonElement
+- uid: System.Text.Json.JsonValueKind.Object
+  commentId: F:System.Text.Json.JsonValueKind.Object
+  isExternal: true
+  href: System.Text.Json.JsonValueKind.html#System_Text_Json_JsonValueKind_Object
+  name: Object
+  nameWithType: JsonValueKind.Object
+  fullName: System.Text.Json.JsonValueKind.Object
+- uid: System.Collections.Generic.KeyNotFoundException
+  commentId: T:System.Collections.Generic.KeyNotFoundException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.keynotfoundexception
+  name: KeyNotFoundException
+  nameWithType: KeyNotFoundException
+  fullName: System.Collections.Generic.KeyNotFoundException
+- uid: System.ArgumentNullException
+  commentId: T:System.ArgumentNullException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.argumentnullexception
+  name: ArgumentNullException
+  nameWithType: ArgumentNullException
+  fullName: System.ArgumentNullException
+- uid: System.Text.Json.JsonElement.GetProperty*
+  commentId: Overload:System.Text.Json.JsonElement.GetProperty
+  isExternal: true
+  href: System.Text.Json.JsonElement.html#System_Text_Json_JsonElement_GetProperty_System_String_
+  name: GetProperty
+  nameWithType: JsonElement.GetProperty
+  fullName: System.Text.Json.JsonElement.GetProperty
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.ReadOnlySpan{System.Char}
+  commentId: T:System.ReadOnlySpan{System.Char}
+  parent: System
+  definition: System.ReadOnlySpan`1
+  href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  name: ReadOnlySpan<char>
+  nameWithType: ReadOnlySpan<char>
+  fullName: System.ReadOnlySpan<char>
+  nameWithType.vb: ReadOnlySpan(Of Char)
+  fullName.vb: System.ReadOnlySpan(Of Char)
+  name.vb: ReadOnlySpan(Of Char)
+  spec.csharp:
+  - uid: System.ReadOnlySpan`1
+    name: ReadOnlySpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  - name: <
+  - uid: System.Char
+    name: char
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.char
+  - name: '>'
+  spec.vb:
+  - uid: System.ReadOnlySpan`1
+    name: ReadOnlySpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Char
+    name: Char
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.char
+  - name: )
+- uid: System.ReadOnlySpan`1
+  commentId: T:System.ReadOnlySpan`1
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  name: ReadOnlySpan<T>
+  nameWithType: ReadOnlySpan<T>
+  fullName: System.ReadOnlySpan<T>
+  nameWithType.vb: ReadOnlySpan(Of T)
+  fullName.vb: System.ReadOnlySpan(Of T)
+  name.vb: ReadOnlySpan(Of T)
+  spec.csharp:
+  - uid: System.ReadOnlySpan`1
+    name: ReadOnlySpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.ReadOnlySpan`1
+    name: ReadOnlySpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.ReadOnlySpan{System.Byte}
+  commentId: T:System.ReadOnlySpan{System.Byte}
+  parent: System
+  definition: System.ReadOnlySpan`1
+  href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  name: ReadOnlySpan<byte>
+  nameWithType: ReadOnlySpan<byte>
+  fullName: System.ReadOnlySpan<byte>
+  nameWithType.vb: ReadOnlySpan(Of Byte)
+  fullName.vb: System.ReadOnlySpan(Of Byte)
+  name.vb: ReadOnlySpan(Of Byte)
+  spec.csharp:
+  - uid: System.ReadOnlySpan`1
+    name: ReadOnlySpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  - name: <
+  - uid: System.Byte
+    name: byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: '>'
+  spec.vb:
+  - uid: System.ReadOnlySpan`1
+    name: ReadOnlySpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Byte
+    name: Byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: )
+- uid: System.Text.Json.JsonElement.TryGetProperty*
+  commentId: Overload:System.Text.Json.JsonElement.TryGetProperty
+  isExternal: true
+  href: System.Text.Json.JsonElement.html#System_Text_Json_JsonElement_TryGetProperty_System_String_System_Text_Json_JsonElement__
+  name: TryGetProperty
+  nameWithType: JsonElement.TryGetProperty
+  fullName: System.Text.Json.JsonElement.TryGetProperty
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System.Text.Json.JsonValueKind.True
+  commentId: F:System.Text.Json.JsonValueKind.True
+  isExternal: true
+  href: System.Text.Json.JsonValueKind.html#System_Text_Json_JsonValueKind_True
+  name: "True"
+  nameWithType: JsonValueKind.True
+  fullName: System.Text.Json.JsonValueKind.True
+- uid: System.Text.Json.JsonValueKind.False
+  commentId: F:System.Text.Json.JsonValueKind.False
+  isExternal: true
+  href: System.Text.Json.JsonValueKind.html#System_Text_Json_JsonValueKind_False
+  name: "False"
+  nameWithType: JsonValueKind.False
+  fullName: System.Text.Json.JsonValueKind.False
+- uid: System.Text.Json.JsonElement.GetBoolean*
+  commentId: Overload:System.Text.Json.JsonElement.GetBoolean
+  isExternal: true
+  href: System.Text.Json.JsonElement.html#System_Text_Json_JsonElement_GetBoolean
+  name: GetBoolean
+  nameWithType: JsonElement.GetBoolean
+  fullName: System.Text.Json.JsonElement.GetBoolean
+- uid: System.Text.Json.JsonValueKind.String
+  commentId: F:System.Text.Json.JsonValueKind.String
+  isExternal: true
+  href: System.Text.Json.JsonValueKind.html#System_Text_Json_JsonValueKind_String
+  name: String
+  nameWithType: JsonValueKind.String
+  fullName: System.Text.Json.JsonValueKind.String
+- uid: System.Text.Json.JsonValueKind.Null
+  commentId: F:System.Text.Json.JsonValueKind.Null
+  isExternal: true
+  href: System.Text.Json.JsonValueKind.html#System_Text_Json_JsonValueKind_Null
+  name: "Null"
+  nameWithType: JsonValueKind.Null
+  fullName: System.Text.Json.JsonValueKind.Null
+- uid: System.Text.Json.JsonElement.GetString*
+  commentId: Overload:System.Text.Json.JsonElement.GetString
+  isExternal: true
+  href: System.Text.Json.JsonElement.html#System_Text_Json_JsonElement_GetString
+  name: GetString
+  nameWithType: JsonElement.GetString
+  fullName: System.Text.Json.JsonElement.GetString
+- uid: System.Text.Json.JsonElement.TryGetBytesFromBase64*
+  commentId: Overload:System.Text.Json.JsonElement.TryGetBytesFromBase64
+  isExternal: true
+  href: System.Text.Json.JsonElement.html#System_Text_Json_JsonElement_TryGetBytesFromBase64_System_Byte____
+  name: TryGetBytesFromBase64
+  nameWithType: JsonElement.TryGetBytesFromBase64
+  fullName: System.Text.Json.JsonElement.TryGetBytesFromBase64
+- uid: System.Byte[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.byte
+  name: byte[]
+  nameWithType: byte[]
+  fullName: byte[]
+  nameWithType.vb: Byte()
+  fullName.vb: Byte()
+  name.vb: Byte()
+  spec.csharp:
+  - uid: System.Byte
+    name: byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.Byte
+    name: Byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: (
+  - name: )
+- uid: System.FormatException
+  commentId: T:System.FormatException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.formatexception
+  name: FormatException
+  nameWithType: FormatException
+  fullName: System.FormatException
+- uid: System.Text.Json.JsonElement.GetBytesFromBase64*
+  commentId: Overload:System.Text.Json.JsonElement.GetBytesFromBase64
+  isExternal: true
+  href: System.Text.Json.JsonElement.html#System_Text_Json_JsonElement_GetBytesFromBase64
+  name: GetBytesFromBase64
+  nameWithType: JsonElement.GetBytesFromBase64
+  fullName: System.Text.Json.JsonElement.GetBytesFromBase64
+- uid: System.SByte
+  commentId: T:System.SByte
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.sbyte
+  name: sbyte
+  nameWithType: sbyte
+  fullName: sbyte
+  nameWithType.vb: SByte
+  fullName.vb: SByte
+  name.vb: SByte
+- uid: System.Text.Json.JsonValueKind.Number
+  commentId: F:System.Text.Json.JsonValueKind.Number
+  isExternal: true
+  href: System.Text.Json.JsonValueKind.html#System_Text_Json_JsonValueKind_Number
+  name: Number
+  nameWithType: JsonValueKind.Number
+  fullName: System.Text.Json.JsonValueKind.Number
+- uid: System.Text.Json.JsonElement.TryGetSByte*
+  commentId: Overload:System.Text.Json.JsonElement.TryGetSByte
+  isExternal: true
+  href: System.Text.Json.JsonElement.html#System_Text_Json_JsonElement_TryGetSByte_System_SByte__
+  name: TryGetSByte
+  nameWithType: JsonElement.TryGetSByte
+  fullName: System.Text.Json.JsonElement.TryGetSByte
+- uid: System.Text.Json.JsonElement.GetSByte*
+  commentId: Overload:System.Text.Json.JsonElement.GetSByte
+  isExternal: true
+  href: System.Text.Json.JsonElement.html#System_Text_Json_JsonElement_GetSByte
+  name: GetSByte
+  nameWithType: JsonElement.GetSByte
+  fullName: System.Text.Json.JsonElement.GetSByte
+- uid: System.Byte
+  commentId: T:System.Byte
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.byte
+  name: byte
+  nameWithType: byte
+  fullName: byte
+  nameWithType.vb: Byte
+  fullName.vb: Byte
+  name.vb: Byte
+- uid: System.Text.Json.JsonElement.TryGetByte*
+  commentId: Overload:System.Text.Json.JsonElement.TryGetByte
+  isExternal: true
+  href: System.Text.Json.JsonElement.html#System_Text_Json_JsonElement_TryGetByte_System_Byte__
+  name: TryGetByte
+  nameWithType: JsonElement.TryGetByte
+  fullName: System.Text.Json.JsonElement.TryGetByte
+- uid: System.Text.Json.JsonElement.GetByte*
+  commentId: Overload:System.Text.Json.JsonElement.GetByte
+  isExternal: true
+  href: System.Text.Json.JsonElement.html#System_Text_Json_JsonElement_GetByte
+  name: GetByte
+  nameWithType: JsonElement.GetByte
+  fullName: System.Text.Json.JsonElement.GetByte
+- uid: System.Int16
+  commentId: T:System.Int16
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int16
+  name: short
+  nameWithType: short
+  fullName: short
+  nameWithType.vb: Short
+  fullName.vb: Short
+  name.vb: Short
+- uid: System.Text.Json.JsonElement.TryGetInt16*
+  commentId: Overload:System.Text.Json.JsonElement.TryGetInt16
+  isExternal: true
+  href: System.Text.Json.JsonElement.html#System_Text_Json_JsonElement_TryGetInt16_System_Int16__
+  name: TryGetInt16
+  nameWithType: JsonElement.TryGetInt16
+  fullName: System.Text.Json.JsonElement.TryGetInt16
+- uid: System.Text.Json.JsonElement.GetInt16*
+  commentId: Overload:System.Text.Json.JsonElement.GetInt16
+  isExternal: true
+  href: System.Text.Json.JsonElement.html#System_Text_Json_JsonElement_GetInt16
+  name: GetInt16
+  nameWithType: JsonElement.GetInt16
+  fullName: System.Text.Json.JsonElement.GetInt16
+- uid: System.UInt16
+  commentId: T:System.UInt16
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.uint16
+  name: ushort
+  nameWithType: ushort
+  fullName: ushort
+  nameWithType.vb: UShort
+  fullName.vb: UShort
+  name.vb: UShort
+- uid: System.Text.Json.JsonElement.TryGetUInt16*
+  commentId: Overload:System.Text.Json.JsonElement.TryGetUInt16
+  isExternal: true
+  href: System.Text.Json.JsonElement.html#System_Text_Json_JsonElement_TryGetUInt16_System_UInt16__
+  name: TryGetUInt16
+  nameWithType: JsonElement.TryGetUInt16
+  fullName: System.Text.Json.JsonElement.TryGetUInt16
+- uid: System.Text.Json.JsonElement.GetUInt16*
+  commentId: Overload:System.Text.Json.JsonElement.GetUInt16
+  isExternal: true
+  href: System.Text.Json.JsonElement.html#System_Text_Json_JsonElement_GetUInt16
+  name: GetUInt16
+  nameWithType: JsonElement.GetUInt16
+  fullName: System.Text.Json.JsonElement.GetUInt16
+- uid: System.Text.Json.JsonElement.TryGetInt32*
+  commentId: Overload:System.Text.Json.JsonElement.TryGetInt32
+  isExternal: true
+  href: System.Text.Json.JsonElement.html#System_Text_Json_JsonElement_TryGetInt32_System_Int32__
+  name: TryGetInt32
+  nameWithType: JsonElement.TryGetInt32
+  fullName: System.Text.Json.JsonElement.TryGetInt32
+- uid: System.Text.Json.JsonElement.GetInt32*
+  commentId: Overload:System.Text.Json.JsonElement.GetInt32
+  isExternal: true
+  href: System.Text.Json.JsonElement.html#System_Text_Json_JsonElement_GetInt32
+  name: GetInt32
+  nameWithType: JsonElement.GetInt32
+  fullName: System.Text.Json.JsonElement.GetInt32
+- uid: System.UInt32
+  commentId: T:System.UInt32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.uint32
+  name: uint
+  nameWithType: uint
+  fullName: uint
+  nameWithType.vb: UInteger
+  fullName.vb: UInteger
+  name.vb: UInteger
+- uid: System.Text.Json.JsonElement.TryGetUInt32*
+  commentId: Overload:System.Text.Json.JsonElement.TryGetUInt32
+  isExternal: true
+  href: System.Text.Json.JsonElement.html#System_Text_Json_JsonElement_TryGetUInt32_System_UInt32__
+  name: TryGetUInt32
+  nameWithType: JsonElement.TryGetUInt32
+  fullName: System.Text.Json.JsonElement.TryGetUInt32
+- uid: System.Text.Json.JsonElement.GetUInt32*
+  commentId: Overload:System.Text.Json.JsonElement.GetUInt32
+  isExternal: true
+  href: System.Text.Json.JsonElement.html#System_Text_Json_JsonElement_GetUInt32
+  name: GetUInt32
+  nameWithType: JsonElement.GetUInt32
+  fullName: System.Text.Json.JsonElement.GetUInt32
+- uid: System.Int64
+  commentId: T:System.Int64
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int64
+  name: long
+  nameWithType: long
+  fullName: long
+  nameWithType.vb: Long
+  fullName.vb: Long
+  name.vb: Long
+- uid: System.Text.Json.JsonElement.TryGetInt64*
+  commentId: Overload:System.Text.Json.JsonElement.TryGetInt64
+  isExternal: true
+  href: System.Text.Json.JsonElement.html#System_Text_Json_JsonElement_TryGetInt64_System_Int64__
+  name: TryGetInt64
+  nameWithType: JsonElement.TryGetInt64
+  fullName: System.Text.Json.JsonElement.TryGetInt64
+- uid: System.Text.Json.JsonElement.GetInt64*
+  commentId: Overload:System.Text.Json.JsonElement.GetInt64
+  isExternal: true
+  href: System.Text.Json.JsonElement.html#System_Text_Json_JsonElement_GetInt64
+  name: GetInt64
+  nameWithType: JsonElement.GetInt64
+  fullName: System.Text.Json.JsonElement.GetInt64
+- uid: System.UInt64
+  commentId: T:System.UInt64
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.uint64
+  name: ulong
+  nameWithType: ulong
+  fullName: ulong
+  nameWithType.vb: ULong
+  fullName.vb: ULong
+  name.vb: ULong
+- uid: System.Text.Json.JsonElement.TryGetUInt64*
+  commentId: Overload:System.Text.Json.JsonElement.TryGetUInt64
+  isExternal: true
+  href: System.Text.Json.JsonElement.html#System_Text_Json_JsonElement_TryGetUInt64_System_UInt64__
+  name: TryGetUInt64
+  nameWithType: JsonElement.TryGetUInt64
+  fullName: System.Text.Json.JsonElement.TryGetUInt64
+- uid: System.Text.Json.JsonElement.GetUInt64*
+  commentId: Overload:System.Text.Json.JsonElement.GetUInt64
+  isExternal: true
+  href: System.Text.Json.JsonElement.html#System_Text_Json_JsonElement_GetUInt64
+  name: GetUInt64
+  nameWithType: JsonElement.GetUInt64
+  fullName: System.Text.Json.JsonElement.GetUInt64
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: System.Text.Json.JsonElement.TryGetDouble*
+  commentId: Overload:System.Text.Json.JsonElement.TryGetDouble
+  isExternal: true
+  href: System.Text.Json.JsonElement.html#System_Text_Json_JsonElement_TryGetDouble_System_Double__
+  name: TryGetDouble
+  nameWithType: JsonElement.TryGetDouble
+  fullName: System.Text.Json.JsonElement.TryGetDouble
+- uid: System.Text.Json.JsonElement.GetDouble*
+  commentId: Overload:System.Text.Json.JsonElement.GetDouble
+  isExternal: true
+  href: System.Text.Json.JsonElement.html#System_Text_Json_JsonElement_GetDouble
+  name: GetDouble
+  nameWithType: JsonElement.GetDouble
+  fullName: System.Text.Json.JsonElement.GetDouble
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: System.Text.Json.JsonElement.TryGetSingle*
+  commentId: Overload:System.Text.Json.JsonElement.TryGetSingle
+  isExternal: true
+  href: System.Text.Json.JsonElement.html#System_Text_Json_JsonElement_TryGetSingle_System_Single__
+  name: TryGetSingle
+  nameWithType: JsonElement.TryGetSingle
+  fullName: System.Text.Json.JsonElement.TryGetSingle
+- uid: System.Text.Json.JsonElement.GetSingle*
+  commentId: Overload:System.Text.Json.JsonElement.GetSingle
+  isExternal: true
+  href: System.Text.Json.JsonElement.html#System_Text_Json_JsonElement_GetSingle
+  name: GetSingle
+  nameWithType: JsonElement.GetSingle
+  fullName: System.Text.Json.JsonElement.GetSingle
+- uid: System.Decimal
+  commentId: T:System.Decimal
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.decimal
+  name: decimal
+  nameWithType: decimal
+  fullName: decimal
+  nameWithType.vb: Decimal
+  fullName.vb: Decimal
+  name.vb: Decimal
+- uid: System.Text.Json.JsonElement.TryGetDecimal*
+  commentId: Overload:System.Text.Json.JsonElement.TryGetDecimal
+  isExternal: true
+  href: System.Text.Json.JsonElement.html#System_Text_Json_JsonElement_TryGetDecimal_System_Decimal__
+  name: TryGetDecimal
+  nameWithType: JsonElement.TryGetDecimal
+  fullName: System.Text.Json.JsonElement.TryGetDecimal
+- uid: System.Text.Json.JsonElement.GetDecimal*
+  commentId: Overload:System.Text.Json.JsonElement.GetDecimal
+  isExternal: true
+  href: System.Text.Json.JsonElement.html#System_Text_Json_JsonElement_GetDecimal
+  name: GetDecimal
+  nameWithType: JsonElement.GetDecimal
+  fullName: System.Text.Json.JsonElement.GetDecimal
+- uid: System.DateTime
+  commentId: T:System.DateTime
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.datetime
+  name: DateTime
+  nameWithType: DateTime
+  fullName: System.DateTime
+  nameWithType.vb: Date
+  fullName.vb: Date
+  name.vb: Date
+- uid: System.Text.Json.JsonElement.TryGetDateTime*
+  commentId: Overload:System.Text.Json.JsonElement.TryGetDateTime
+  isExternal: true
+  href: System.Text.Json.JsonElement.html#System_Text_Json_JsonElement_TryGetDateTime_System_DateTime__
+  name: TryGetDateTime
+  nameWithType: JsonElement.TryGetDateTime
+  fullName: System.Text.Json.JsonElement.TryGetDateTime
+- uid: System.Text.Json.JsonElement.GetDateTime*
+  commentId: Overload:System.Text.Json.JsonElement.GetDateTime
+  isExternal: true
+  href: System.Text.Json.JsonElement.html#System_Text_Json_JsonElement_GetDateTime
+  name: GetDateTime
+  nameWithType: JsonElement.GetDateTime
+  fullName: System.Text.Json.JsonElement.GetDateTime
+- uid: System.DateTimeOffset
+  commentId: T:System.DateTimeOffset
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.datetimeoffset
+  name: DateTimeOffset
+  nameWithType: DateTimeOffset
+  fullName: System.DateTimeOffset
+- uid: System.Text.Json.JsonElement.TryGetDateTimeOffset*
+  commentId: Overload:System.Text.Json.JsonElement.TryGetDateTimeOffset
+  isExternal: true
+  href: System.Text.Json.JsonElement.html#System_Text_Json_JsonElement_TryGetDateTimeOffset_System_DateTimeOffset__
+  name: TryGetDateTimeOffset
+  nameWithType: JsonElement.TryGetDateTimeOffset
+  fullName: System.Text.Json.JsonElement.TryGetDateTimeOffset
+- uid: System.Text.Json.JsonElement.GetDateTimeOffset*
+  commentId: Overload:System.Text.Json.JsonElement.GetDateTimeOffset
+  isExternal: true
+  href: System.Text.Json.JsonElement.html#System_Text_Json_JsonElement_GetDateTimeOffset
+  name: GetDateTimeOffset
+  nameWithType: JsonElement.GetDateTimeOffset
+  fullName: System.Text.Json.JsonElement.GetDateTimeOffset
+- uid: System.Guid
+  commentId: T:System.Guid
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.guid
+  name: Guid
+  nameWithType: Guid
+  fullName: System.Guid
+- uid: System.Text.Json.JsonElement.TryGetGuid*
+  commentId: Overload:System.Text.Json.JsonElement.TryGetGuid
+  isExternal: true
+  href: System.Text.Json.JsonElement.html#System_Text_Json_JsonElement_TryGetGuid_System_Guid__
+  name: TryGetGuid
+  nameWithType: JsonElement.TryGetGuid
+  fullName: System.Text.Json.JsonElement.TryGetGuid
+- uid: System.Text.Json.JsonElement.GetGuid*
+  commentId: Overload:System.Text.Json.JsonElement.GetGuid
+  isExternal: true
+  href: System.Text.Json.JsonElement.html#System_Text_Json_JsonElement_GetGuid
+  name: GetGuid
+  nameWithType: JsonElement.GetGuid
+  fullName: System.Text.Json.JsonElement.GetGuid
+- uid: System.Text.Json.JsonElement.GetRawText*
+  commentId: Overload:System.Text.Json.JsonElement.GetRawText
+  isExternal: true
+  href: System.Text.Json.JsonElement.html#System_Text_Json_JsonElement_GetRawText
+  name: GetRawText
+  nameWithType: JsonElement.GetRawText
+  fullName: System.Text.Json.JsonElement.GetRawText
+- uid: System.Text.Json.JsonElement.ValueEquals*
+  commentId: Overload:System.Text.Json.JsonElement.ValueEquals
+  isExternal: true
+  href: System.Text.Json.JsonElement.html#System_Text_Json_JsonElement_ValueEquals_System_String_
+  name: ValueEquals
+  nameWithType: JsonElement.ValueEquals
+  fullName: System.Text.Json.JsonElement.ValueEquals
+- uid: System.Text.Json.JsonValueKind.Undefined
+  commentId: F:System.Text.Json.JsonValueKind.Undefined
+  isExternal: true
+  href: System.Text.Json.JsonValueKind.html#System_Text_Json_JsonValueKind_Undefined
+  name: Undefined
+  nameWithType: JsonValueKind.Undefined
+  fullName: System.Text.Json.JsonValueKind.Undefined
+- uid: System.Text.Json.JsonElement.WriteTo*
+  commentId: Overload:System.Text.Json.JsonElement.WriteTo
+  isExternal: true
+  href: System.Text.Json.JsonElement.html#System_Text_Json_JsonElement_WriteTo_System_Text_Json_Utf8JsonWriter_
+  name: WriteTo
+  nameWithType: JsonElement.WriteTo
+  fullName: System.Text.Json.JsonElement.WriteTo
+- uid: System.Text.Json.Utf8JsonWriter
+  commentId: T:System.Text.Json.Utf8JsonWriter
+  parent: System.Text.Json
+  isExternal: true
+  href: System.Text.Json.Utf8JsonWriter.html
+  name: Utf8JsonWriter
+  nameWithType: Utf8JsonWriter
+  fullName: System.Text.Json.Utf8JsonWriter
+- uid: System.Text.Json.JsonElement.EnumerateArray*
+  commentId: Overload:System.Text.Json.JsonElement.EnumerateArray
+  isExternal: true
+  href: System.Text.Json.JsonElement.html#System_Text_Json_JsonElement_EnumerateArray
+  name: EnumerateArray
+  nameWithType: JsonElement.EnumerateArray
+  fullName: System.Text.Json.JsonElement.EnumerateArray
+- uid: System.Text.Json.JsonElement.ArrayEnumerator
+  commentId: T:System.Text.Json.JsonElement.ArrayEnumerator
+  parent: System.Text.Json
+  isExternal: true
+  href: System.Text.Json.JsonElement.html
+  name: JsonElement.ArrayEnumerator
+  nameWithType: JsonElement.ArrayEnumerator
+  fullName: System.Text.Json.JsonElement.ArrayEnumerator
+  spec.csharp:
+  - uid: System.Text.Json.JsonElement
+    name: JsonElement
+    isExternal: true
+    href: System.Text.Json.JsonElement.html
+  - name: .
+  - uid: System.Text.Json.JsonElement.ArrayEnumerator
+    name: ArrayEnumerator
+    isExternal: true
+    href: System.Text.Json.JsonElement.ArrayEnumerator.html
+  spec.vb:
+  - uid: System.Text.Json.JsonElement
+    name: JsonElement
+    isExternal: true
+    href: System.Text.Json.JsonElement.html
+  - name: .
+  - uid: System.Text.Json.JsonElement.ArrayEnumerator
+    name: ArrayEnumerator
+    isExternal: true
+    href: System.Text.Json.JsonElement.ArrayEnumerator.html
+- uid: System.Text.Json.JsonElement.EnumerateObject*
+  commentId: Overload:System.Text.Json.JsonElement.EnumerateObject
+  isExternal: true
+  href: System.Text.Json.JsonElement.html#System_Text_Json_JsonElement_EnumerateObject
+  name: EnumerateObject
+  nameWithType: JsonElement.EnumerateObject
+  fullName: System.Text.Json.JsonElement.EnumerateObject
+- uid: System.Text.Json.JsonElement.ObjectEnumerator
+  commentId: T:System.Text.Json.JsonElement.ObjectEnumerator
+  parent: System.Text.Json
+  isExternal: true
+  href: System.Text.Json.JsonElement.html
+  name: JsonElement.ObjectEnumerator
+  nameWithType: JsonElement.ObjectEnumerator
+  fullName: System.Text.Json.JsonElement.ObjectEnumerator
+  spec.csharp:
+  - uid: System.Text.Json.JsonElement
+    name: JsonElement
+    isExternal: true
+    href: System.Text.Json.JsonElement.html
+  - name: .
+  - uid: System.Text.Json.JsonElement.ObjectEnumerator
+    name: ObjectEnumerator
+    isExternal: true
+    href: System.Text.Json.JsonElement.ObjectEnumerator.html
+  spec.vb:
+  - uid: System.Text.Json.JsonElement
+    name: JsonElement
+    isExternal: true
+    href: System.Text.Json.JsonElement.html
+  - name: .
+  - uid: System.Text.Json.JsonElement.ObjectEnumerator
+    name: ObjectEnumerator
+    isExternal: true
+    href: System.Text.Json.JsonElement.ObjectEnumerator.html
+- uid: System.ValueType.ToString
+  commentId: M:System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  name: ToString()
+  nameWithType: ValueType.ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+- uid: System.Text.Json.JsonElement.ToString*
+  commentId: Overload:System.Text.Json.JsonElement.ToString
+  isExternal: true
+  href: System.Text.Json.JsonElement.html#System_Text_Json_JsonElement_ToString
+  name: ToString
+  nameWithType: JsonElement.ToString
+  fullName: System.Text.Json.JsonElement.ToString
+- uid: System.Text.Json.JsonElement.Clone*
+  commentId: Overload:System.Text.Json.JsonElement.Clone
+  isExternal: true
+  href: System.Text.Json.JsonElement.html#System_Text_Json_JsonElement_Clone
+  name: Clone
+  nameWithType: JsonElement.Clone
+  fullName: System.Text.Json.JsonElement.Clone
+- uid: System.ArgumentException
+  commentId: T:System.ArgumentException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.argumentexception
+  name: ArgumentException
+  nameWithType: ArgumentException
+  fullName: System.ArgumentException
+- uid: System.Text.Json.JsonException
+  commentId: T:System.Text.Json.JsonException
+  isExternal: true
+  href: System.Text.Json.JsonException.html
+  name: JsonException
+  nameWithType: JsonException
+  fullName: System.Text.Json.JsonException
+- uid: System.Text.Json.JsonElement.ParseValue*
+  commentId: Overload:System.Text.Json.JsonElement.ParseValue
+  isExternal: true
+  href: System.Text.Json.JsonElement.html#System_Text_Json_JsonElement_ParseValue_System_Text_Json_Utf8JsonReader__
+  name: ParseValue
+  nameWithType: JsonElement.ParseValue
+  fullName: System.Text.Json.JsonElement.ParseValue
+- uid: System.Text.Json.Utf8JsonReader
+  commentId: T:System.Text.Json.Utf8JsonReader
+  parent: System.Text.Json
+  isExternal: true
+  href: System.Text.Json.Utf8JsonReader.html
+  name: Utf8JsonReader
+  nameWithType: Utf8JsonReader
+  fullName: System.Text.Json.Utf8JsonReader
+- uid: System.Text.Json.JsonElement.TryParseValue*
+  commentId: Overload:System.Text.Json.JsonElement.TryParseValue
+  isExternal: true
+  href: System.Text.Json.JsonElement.html#System_Text_Json_JsonElement_TryParseValue_System_Text_Json_Utf8JsonReader__System_Nullable_System_Text_Json_JsonElement___
+  name: TryParseValue
+  nameWithType: JsonElement.TryParseValue
+  fullName: System.Text.Json.JsonElement.TryParseValue
+- uid: System.Nullable{System.Text.Json.JsonElement}
+  commentId: T:System.Nullable{System.Text.Json.JsonElement}
+  parent: System
+  definition: System.Nullable`1
+  href: System.Text.Json.JsonElement.html
+  name: JsonElement?
+  nameWithType: JsonElement?
+  fullName: System.Text.Json.JsonElement?
+  spec.csharp:
+  - uid: System.Text.Json.JsonElement
+    name: JsonElement
+    isExternal: true
+    href: System.Text.Json.JsonElement.html
+  - name: '?'
+  spec.vb:
+  - uid: System.Text.Json.JsonElement
+    name: JsonElement
+    isExternal: true
+    href: System.Text.Json.JsonElement.html
+  - name: '?'
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Text.Json.JsonElement.ValueKind*
+  commentId: Overload:System.Text.Json.JsonElement.ValueKind
+  isExternal: true
+  href: System.Text.Json.JsonElement.html#System_Text_Json_JsonElement_ValueKind
+  name: ValueKind
+  nameWithType: JsonElement.ValueKind
+  fullName: System.Text.Json.JsonElement.ValueKind
+- uid: System.Text.Json.JsonValueKind
+  commentId: T:System.Text.Json.JsonValueKind
+  parent: System.Text.Json
+  isExternal: true
+  href: System.Text.Json.JsonValueKind.html
+  name: JsonValueKind
+  nameWithType: JsonValueKind
+  fullName: System.Text.Json.JsonValueKind
+- uid: System.Text.Json.JsonElement.GetArrayLength
+  commentId: M:System.Text.Json.JsonElement.GetArrayLength
+  isExternal: true
+  href: System.Text.Json.JsonElement.html#System_Text_Json_JsonElement_GetArrayLength
+  name: GetArrayLength()
+  nameWithType: JsonElement.GetArrayLength()
+  fullName: System.Text.Json.JsonElement.GetArrayLength()
+  spec.csharp:
+  - uid: System.Text.Json.JsonElement.GetArrayLength
+    name: GetArrayLength
+    isExternal: true
+    href: System.Text.Json.JsonElement.html#System_Text_Json_JsonElement_GetArrayLength
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Text.Json.JsonElement.GetArrayLength
+    name: GetArrayLength
+    isExternal: true
+    href: System.Text.Json.JsonElement.html#System_Text_Json_JsonElement_GetArrayLength
+  - name: (
+  - name: )
+- uid: System.IndexOutOfRangeException
+  commentId: T:System.IndexOutOfRangeException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.indexoutofrangeexception
+  name: IndexOutOfRangeException
+  nameWithType: IndexOutOfRangeException
+  fullName: System.IndexOutOfRangeException
+- uid: System.Text.Json.JsonElement.Item*
+  commentId: Overload:System.Text.Json.JsonElement.Item
+  isExternal: true
+  href: System.Text.Json.JsonElement.html#System_Text_Json_JsonElement_Item_System_Int32_
+  name: this
+  nameWithType: JsonElement.this
+  fullName: System.Text.Json.JsonElement.this
+  nameWithType.vb: JsonElement.this[]
+  fullName.vb: System.Text.Json.JsonElement.this[]
+  name.vb: this[]

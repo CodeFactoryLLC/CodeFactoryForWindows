@@ -1,0 +1,1093 @@
+### YamlMime:ManagedReference
+items:
+- uid: System.Memory`1
+  commentId: T:System.Memory`1
+  id: Memory`1
+  parent: System
+  children:
+  - System.Memory`1.#ctor(`0[])
+  - System.Memory`1.#ctor(`0[],System.Int32,System.Int32)
+  - System.Memory`1.CopyTo(System.Memory{`0})
+  - System.Memory`1.Empty
+  - System.Memory`1.Equals(System.Memory{`0})
+  - System.Memory`1.IsEmpty
+  - System.Memory`1.Length
+  - System.Memory`1.Pin
+  - System.Memory`1.Slice(System.Int32)
+  - System.Memory`1.Slice(System.Int32,System.Int32)
+  - System.Memory`1.Span
+  - System.Memory`1.ToArray
+  - System.Memory`1.ToString
+  - System.Memory`1.TryCopyTo(System.Memory{`0})
+  - System.Memory`1.op_Implicit(System.ArraySegment{`0})~System.Memory{`0}
+  - System.Memory`1.op_Implicit(System.Memory{`0})~System.ReadOnlyMemory{`0}
+  - System.Memory`1.op_Implicit(`0[])~System.Memory{`0}
+  langs:
+  - csharp
+  - vb
+  name: Memory<T>
+  nameWithType: Memory<T>
+  fullName: System.Memory<T>
+  type: Struct
+  assemblies:
+  - System.Memory
+  namespace: System
+  syntax:
+    content: public readonly struct Memory<T>
+    typeParameters:
+    - id: T
+    content.vb: Public Structure Memory(Of T)
+  inheritedMembers:
+  - System.ValueType.Equals(System.Object)
+  - System.ValueType.GetHashCode
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetType
+  nameWithType.vb: Memory(Of T)
+  fullName.vb: System.Memory(Of T)
+  name.vb: Memory(Of T)
+- uid: System.Memory`1.#ctor(`0[])
+  commentId: M:System.Memory`1.#ctor(`0[])
+  id: '#ctor(`0[])'
+  parent: System.Memory`1
+  langs:
+  - csharp
+  - vb
+  name: Memory(T[])
+  nameWithType: Memory<T>.Memory(T[])
+  fullName: System.Memory<T>.Memory(T[])
+  type: Constructor
+  assemblies:
+  - System.Memory
+  namespace: System
+  syntax:
+    content: public Memory(T[] array)
+    parameters:
+    - id: array
+      type: '{T}[]'
+    content.vb: Public Sub New(array As T())
+  overload: System.Memory`1.#ctor*
+  nameWithType.vb: Memory(Of T).New(T())
+  fullName.vb: System.Memory(Of T).New(T())
+  name.vb: New(T())
+- uid: System.Memory`1.#ctor(`0[],System.Int32,System.Int32)
+  commentId: M:System.Memory`1.#ctor(`0[],System.Int32,System.Int32)
+  id: '#ctor(`0[],System.Int32,System.Int32)'
+  parent: System.Memory`1
+  langs:
+  - csharp
+  - vb
+  name: Memory(T[], int, int)
+  nameWithType: Memory<T>.Memory(T[], int, int)
+  fullName: System.Memory<T>.Memory(T[], int, int)
+  type: Constructor
+  assemblies:
+  - System.Memory
+  namespace: System
+  syntax:
+    content: public Memory(T[] array, int start, int length)
+    parameters:
+    - id: array
+      type: '{T}[]'
+    - id: start
+      type: System.Int32
+    - id: length
+      type: System.Int32
+    content.vb: Public Sub New(array As T(), start As Integer, length As Integer)
+  overload: System.Memory`1.#ctor*
+  nameWithType.vb: Memory(Of T).New(T(), Integer, Integer)
+  fullName.vb: System.Memory(Of T).New(T(), Integer, Integer)
+  name.vb: New(T(), Integer, Integer)
+- uid: System.Memory`1.op_Implicit(`0[])~System.Memory{`0}
+  commentId: M:System.Memory`1.op_Implicit(`0[])~System.Memory{`0}
+  id: op_Implicit(`0[])~System.Memory{`0}
+  parent: System.Memory`1
+  langs:
+  - csharp
+  - vb
+  name: implicit operator Memory<T>(T[])
+  nameWithType: Memory<T>.implicit operator Memory<T>(T[])
+  fullName: System.Memory<T>.implicit operator System.Memory<T>(T[])
+  type: Operator
+  assemblies:
+  - System.Memory
+  namespace: System
+  syntax:
+    content: public static implicit operator Memory<T>(T[] array)
+    parameters:
+    - id: array
+      type: '{T}[]'
+    return:
+      type: System.Memory`1
+    content.vb: Public Shared Widening Operator CType(array As T()) As Memory(Of T)
+  overload: System.Memory`1.op_Implicit*
+  nameWithType.vb: Memory(Of T).CType(T())
+  fullName.vb: System.Memory(Of T).CType(T())
+  name.vb: CType(T())
+- uid: System.Memory`1.op_Implicit(System.ArraySegment{`0})~System.Memory{`0}
+  commentId: M:System.Memory`1.op_Implicit(System.ArraySegment{`0})~System.Memory{`0}
+  id: op_Implicit(System.ArraySegment{`0})~System.Memory{`0}
+  parent: System.Memory`1
+  langs:
+  - csharp
+  - vb
+  name: implicit operator Memory<T>(ArraySegment<T>)
+  nameWithType: Memory<T>.implicit operator Memory<T>(ArraySegment<T>)
+  fullName: System.Memory<T>.implicit operator System.Memory<T>(System.ArraySegment<T>)
+  type: Operator
+  assemblies:
+  - System.Memory
+  namespace: System
+  syntax:
+    content: public static implicit operator Memory<T>(ArraySegment<T> segment)
+    parameters:
+    - id: segment
+      type: System.ArraySegment{{T}}
+    return:
+      type: System.Memory`1
+    content.vb: Public Shared Widening Operator CType(segment As ArraySegment(Of T)) As Memory(Of T)
+  overload: System.Memory`1.op_Implicit*
+  nameWithType.vb: Memory(Of T).CType(ArraySegment(Of T))
+  fullName.vb: System.Memory(Of T).CType(System.ArraySegment(Of T))
+  name.vb: CType(ArraySegment(Of T))
+- uid: System.Memory`1.op_Implicit(System.Memory{`0})~System.ReadOnlyMemory{`0}
+  commentId: M:System.Memory`1.op_Implicit(System.Memory{`0})~System.ReadOnlyMemory{`0}
+  id: op_Implicit(System.Memory{`0})~System.ReadOnlyMemory{`0}
+  parent: System.Memory`1
+  langs:
+  - csharp
+  - vb
+  name: implicit operator ReadOnlyMemory<T>(Memory<T>)
+  nameWithType: Memory<T>.implicit operator ReadOnlyMemory<T>(Memory<T>)
+  fullName: System.Memory<T>.implicit operator System.ReadOnlyMemory<T>(System.Memory<T>)
+  type: Operator
+  assemblies:
+  - System.Memory
+  namespace: System
+  syntax:
+    content: public static implicit operator ReadOnlyMemory<T>(Memory<T> memory)
+    parameters:
+    - id: memory
+      type: System.Memory`1
+    return:
+      type: System.ReadOnlyMemory{{T}}
+    content.vb: Public Shared Widening Operator CType(memory As Memory(Of T)) As ReadOnlyMemory(Of T)
+  overload: System.Memory`1.op_Implicit*
+  nameWithType.vb: Memory(Of T).CType(Memory(Of T))
+  fullName.vb: System.Memory(Of T).CType(System.Memory(Of T))
+  name.vb: CType(Memory(Of T))
+- uid: System.Memory`1.ToString
+  commentId: M:System.Memory`1.ToString
+  id: ToString
+  parent: System.Memory`1
+  langs:
+  - csharp
+  - vb
+  name: ToString()
+  nameWithType: Memory<T>.ToString()
+  fullName: System.Memory<T>.ToString()
+  type: Method
+  assemblies:
+  - System.Memory
+  namespace: System
+  example: []
+  syntax:
+    content: public override string ToString()
+    return:
+      type: System.String
+    content.vb: Public Overrides Function ToString() As String
+  overridden: System.ValueType.ToString
+  overload: System.Memory`1.ToString*
+  nameWithType.vb: Memory(Of T).ToString()
+  fullName.vb: System.Memory(Of T).ToString()
+- uid: System.Memory`1.Slice(System.Int32)
+  commentId: M:System.Memory`1.Slice(System.Int32)
+  id: Slice(System.Int32)
+  parent: System.Memory`1
+  langs:
+  - csharp
+  - vb
+  name: Slice(int)
+  nameWithType: Memory<T>.Slice(int)
+  fullName: System.Memory<T>.Slice(int)
+  type: Method
+  assemblies:
+  - System.Memory
+  namespace: System
+  syntax:
+    content: public Memory<T> Slice(int start)
+    parameters:
+    - id: start
+      type: System.Int32
+    return:
+      type: System.Memory`1
+    content.vb: Public Function Slice(start As Integer) As Memory(Of T)
+  overload: System.Memory`1.Slice*
+  nameWithType.vb: Memory(Of T).Slice(Integer)
+  fullName.vb: System.Memory(Of T).Slice(Integer)
+  name.vb: Slice(Integer)
+- uid: System.Memory`1.Slice(System.Int32,System.Int32)
+  commentId: M:System.Memory`1.Slice(System.Int32,System.Int32)
+  id: Slice(System.Int32,System.Int32)
+  parent: System.Memory`1
+  langs:
+  - csharp
+  - vb
+  name: Slice(int, int)
+  nameWithType: Memory<T>.Slice(int, int)
+  fullName: System.Memory<T>.Slice(int, int)
+  type: Method
+  assemblies:
+  - System.Memory
+  namespace: System
+  syntax:
+    content: public Memory<T> Slice(int start, int length)
+    parameters:
+    - id: start
+      type: System.Int32
+    - id: length
+      type: System.Int32
+    return:
+      type: System.Memory`1
+    content.vb: Public Function Slice(start As Integer, length As Integer) As Memory(Of T)
+  overload: System.Memory`1.Slice*
+  nameWithType.vb: Memory(Of T).Slice(Integer, Integer)
+  fullName.vb: System.Memory(Of T).Slice(Integer, Integer)
+  name.vb: Slice(Integer, Integer)
+- uid: System.Memory`1.CopyTo(System.Memory{`0})
+  commentId: M:System.Memory`1.CopyTo(System.Memory{`0})
+  id: CopyTo(System.Memory{`0})
+  parent: System.Memory`1
+  langs:
+  - csharp
+  - vb
+  name: CopyTo(Memory<T>)
+  nameWithType: Memory<T>.CopyTo(Memory<T>)
+  fullName: System.Memory<T>.CopyTo(System.Memory<T>)
+  type: Method
+  assemblies:
+  - System.Memory
+  namespace: System
+  syntax:
+    content: public void CopyTo(Memory<T> destination)
+    parameters:
+    - id: destination
+      type: System.Memory`1
+    content.vb: Public Sub CopyTo(destination As Memory(Of T))
+  overload: System.Memory`1.CopyTo*
+  nameWithType.vb: Memory(Of T).CopyTo(Memory(Of T))
+  fullName.vb: System.Memory(Of T).CopyTo(System.Memory(Of T))
+  name.vb: CopyTo(Memory(Of T))
+- uid: System.Memory`1.TryCopyTo(System.Memory{`0})
+  commentId: M:System.Memory`1.TryCopyTo(System.Memory{`0})
+  id: TryCopyTo(System.Memory{`0})
+  parent: System.Memory`1
+  langs:
+  - csharp
+  - vb
+  name: TryCopyTo(Memory<T>)
+  nameWithType: Memory<T>.TryCopyTo(Memory<T>)
+  fullName: System.Memory<T>.TryCopyTo(System.Memory<T>)
+  type: Method
+  assemblies:
+  - System.Memory
+  namespace: System
+  syntax:
+    content: public bool TryCopyTo(Memory<T> destination)
+    parameters:
+    - id: destination
+      type: System.Memory`1
+    return:
+      type: System.Boolean
+    content.vb: Public Function TryCopyTo(destination As Memory(Of T)) As Boolean
+  overload: System.Memory`1.TryCopyTo*
+  nameWithType.vb: Memory(Of T).TryCopyTo(Memory(Of T))
+  fullName.vb: System.Memory(Of T).TryCopyTo(System.Memory(Of T))
+  name.vb: TryCopyTo(Memory(Of T))
+- uid: System.Memory`1.Pin
+  commentId: M:System.Memory`1.Pin
+  id: Pin
+  parent: System.Memory`1
+  langs:
+  - csharp
+  - vb
+  name: Pin()
+  nameWithType: Memory<T>.Pin()
+  fullName: System.Memory<T>.Pin()
+  type: Method
+  assemblies:
+  - System.Memory
+  namespace: System
+  syntax:
+    content: public MemoryHandle Pin()
+    return:
+      type: System.Buffers.MemoryHandle
+    content.vb: Public Function Pin() As MemoryHandle
+  overload: System.Memory`1.Pin*
+  nameWithType.vb: Memory(Of T).Pin()
+  fullName.vb: System.Memory(Of T).Pin()
+- uid: System.Memory`1.ToArray
+  commentId: M:System.Memory`1.ToArray
+  id: ToArray
+  parent: System.Memory`1
+  langs:
+  - csharp
+  - vb
+  name: ToArray()
+  nameWithType: Memory<T>.ToArray()
+  fullName: System.Memory<T>.ToArray()
+  type: Method
+  assemblies:
+  - System.Memory
+  namespace: System
+  syntax:
+    content: public T[] ToArray()
+    return:
+      type: '{T}[]'
+    content.vb: Public Function ToArray() As T()
+  overload: System.Memory`1.ToArray*
+  nameWithType.vb: Memory(Of T).ToArray()
+  fullName.vb: System.Memory(Of T).ToArray()
+- uid: System.Memory`1.Equals(System.Memory{`0})
+  commentId: M:System.Memory`1.Equals(System.Memory{`0})
+  id: Equals(System.Memory{`0})
+  parent: System.Memory`1
+  langs:
+  - csharp
+  - vb
+  name: Equals(Memory<T>)
+  nameWithType: Memory<T>.Equals(Memory<T>)
+  fullName: System.Memory<T>.Equals(System.Memory<T>)
+  type: Method
+  assemblies:
+  - System.Memory
+  namespace: System
+  syntax:
+    content: public bool Equals(Memory<T> other)
+    parameters:
+    - id: other
+      type: System.Memory`1
+    return:
+      type: System.Boolean
+    content.vb: Public Function Equals(other As Memory(Of T)) As Boolean
+  overload: System.Memory`1.Equals*
+  nameWithType.vb: Memory(Of T).Equals(Memory(Of T))
+  fullName.vb: System.Memory(Of T).Equals(System.Memory(Of T))
+  name.vb: Equals(Memory(Of T))
+- uid: System.Memory`1.Empty
+  commentId: P:System.Memory`1.Empty
+  id: Empty
+  parent: System.Memory`1
+  langs:
+  - csharp
+  - vb
+  name: Empty
+  nameWithType: Memory<T>.Empty
+  fullName: System.Memory<T>.Empty
+  type: Property
+  assemblies:
+  - System.Memory
+  namespace: System
+  syntax:
+    content: public static Memory<T> Empty { get; }
+    parameters: []
+    return:
+      type: System.Memory`1
+    content.vb: Public Shared ReadOnly Property Empty As Memory(Of T)
+  overload: System.Memory`1.Empty*
+  nameWithType.vb: Memory(Of T).Empty
+  fullName.vb: System.Memory(Of T).Empty
+- uid: System.Memory`1.Length
+  commentId: P:System.Memory`1.Length
+  id: Length
+  parent: System.Memory`1
+  langs:
+  - csharp
+  - vb
+  name: Length
+  nameWithType: Memory<T>.Length
+  fullName: System.Memory<T>.Length
+  type: Property
+  assemblies:
+  - System.Memory
+  namespace: System
+  syntax:
+    content: public int Length { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Property Length As Integer
+  overload: System.Memory`1.Length*
+  nameWithType.vb: Memory(Of T).Length
+  fullName.vb: System.Memory(Of T).Length
+- uid: System.Memory`1.IsEmpty
+  commentId: P:System.Memory`1.IsEmpty
+  id: IsEmpty
+  parent: System.Memory`1
+  langs:
+  - csharp
+  - vb
+  name: IsEmpty
+  nameWithType: Memory<T>.IsEmpty
+  fullName: System.Memory<T>.IsEmpty
+  type: Property
+  assemblies:
+  - System.Memory
+  namespace: System
+  syntax:
+    content: public bool IsEmpty { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property IsEmpty As Boolean
+  overload: System.Memory`1.IsEmpty*
+  nameWithType.vb: Memory(Of T).IsEmpty
+  fullName.vb: System.Memory(Of T).IsEmpty
+- uid: System.Memory`1.Span
+  commentId: P:System.Memory`1.Span
+  id: Span
+  parent: System.Memory`1
+  langs:
+  - csharp
+  - vb
+  name: Span
+  nameWithType: Memory<T>.Span
+  fullName: System.Memory<T>.Span
+  type: Property
+  assemblies:
+  - System.Memory
+  namespace: System
+  syntax:
+    content: public Span<T> Span { get; }
+    parameters: []
+    return:
+      type: System.Span{{T}}
+    content.vb: Public ReadOnly Property Span As Span(Of T)
+  overload: System.Memory`1.Span*
+  nameWithType.vb: Memory(Of T).Span
+  fullName.vb: System.Memory(Of T).Span
+references:
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.ValueType.Equals(System.Object)
+  commentId: M:System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  name: Equals(object)
+  nameWithType: ValueType.Equals(object)
+  fullName: System.ValueType.Equals(object)
+  nameWithType.vb: ValueType.Equals(Object)
+  fullName.vb: System.ValueType.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType.GetHashCode
+  commentId: M:System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  name: GetHashCode()
+  nameWithType: ValueType.GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.ValueType
+  commentId: T:System.ValueType
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype
+  name: ValueType
+  nameWithType: ValueType
+  fullName: System.ValueType
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Memory`1.#ctor*
+  commentId: Overload:System.Memory`1.#ctor
+  isExternal: true
+  href: System.Memory-1.html#System_Memory_1__ctor__0___
+  name: Memory
+  nameWithType: Memory<T>.Memory
+  fullName: System.Memory<T>.Memory
+  nameWithType.vb: Memory(Of T).New
+  fullName.vb: System.Memory(Of T).New
+  name.vb: New
+- uid: '{T}[]'
+  isExternal: true
+  name: T[]
+  nameWithType: T[]
+  fullName: T[]
+  nameWithType.vb: T()
+  fullName.vb: T()
+  name.vb: T()
+  spec.csharp:
+  - name: T
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - name: T
+  - name: (
+  - name: )
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.Memory`1.op_Implicit*
+  commentId: Overload:System.Memory`1.op_Implicit
+  name: implicit operator
+  nameWithType: Memory<T>.implicit operator
+  fullName: System.Memory<T>.implicit operator
+  nameWithType.vb: Memory(Of T).CType
+  fullName.vb: System.Memory(Of T).CType
+  name.vb: CType
+  spec.csharp:
+  - name: implicit
+  - name: " "
+  - name: operator
+- uid: System.Memory`1
+  commentId: T:System.Memory`1
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.memory-1
+  name: Memory<T>
+  nameWithType: Memory<T>
+  fullName: System.Memory<T>
+  nameWithType.vb: Memory(Of T)
+  fullName.vb: System.Memory(Of T)
+  name.vb: Memory(Of T)
+  spec.csharp:
+  - uid: System.Memory`1
+    name: Memory
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.memory-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Memory`1
+    name: Memory
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.memory-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.ArraySegment{{T}}
+  commentId: T:System.ArraySegment{`0}
+  parent: System
+  definition: System.ArraySegment`1
+  href: https://learn.microsoft.com/dotnet/api/system.arraysegment-1
+  name: ArraySegment<T>
+  nameWithType: ArraySegment<T>
+  fullName: System.ArraySegment<T>
+  nameWithType.vb: ArraySegment(Of T)
+  fullName.vb: System.ArraySegment(Of T)
+  name.vb: ArraySegment(Of T)
+  spec.csharp:
+  - uid: System.ArraySegment`1
+    name: ArraySegment
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.arraysegment-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.ArraySegment`1
+    name: ArraySegment
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.arraysegment-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.ArraySegment`1
+  commentId: T:System.ArraySegment`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.arraysegment-1
+  name: ArraySegment<T>
+  nameWithType: ArraySegment<T>
+  fullName: System.ArraySegment<T>
+  nameWithType.vb: ArraySegment(Of T)
+  fullName.vb: System.ArraySegment(Of T)
+  name.vb: ArraySegment(Of T)
+  spec.csharp:
+  - uid: System.ArraySegment`1
+    name: ArraySegment
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.arraysegment-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.ArraySegment`1
+    name: ArraySegment
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.arraysegment-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.ReadOnlyMemory{{T}}
+  commentId: T:System.ReadOnlyMemory{`0}
+  parent: System
+  definition: System.ReadOnlyMemory`1
+  href: https://learn.microsoft.com/dotnet/api/system.readonlymemory-1
+  name: ReadOnlyMemory<T>
+  nameWithType: ReadOnlyMemory<T>
+  fullName: System.ReadOnlyMemory<T>
+  nameWithType.vb: ReadOnlyMemory(Of T)
+  fullName.vb: System.ReadOnlyMemory(Of T)
+  name.vb: ReadOnlyMemory(Of T)
+  spec.csharp:
+  - uid: System.ReadOnlyMemory`1
+    name: ReadOnlyMemory
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlymemory-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.ReadOnlyMemory`1
+    name: ReadOnlyMemory
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlymemory-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.ReadOnlyMemory`1
+  commentId: T:System.ReadOnlyMemory`1
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.readonlymemory-1
+  name: ReadOnlyMemory<T>
+  nameWithType: ReadOnlyMemory<T>
+  fullName: System.ReadOnlyMemory<T>
+  nameWithType.vb: ReadOnlyMemory(Of T)
+  fullName.vb: System.ReadOnlyMemory(Of T)
+  name.vb: ReadOnlyMemory(Of T)
+  spec.csharp:
+  - uid: System.ReadOnlyMemory`1
+    name: ReadOnlyMemory
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlymemory-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.ReadOnlyMemory`1
+    name: ReadOnlyMemory
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlymemory-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.ValueType.ToString
+  commentId: M:System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  name: ToString()
+  nameWithType: ValueType.ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+- uid: System.Memory`1.ToString*
+  commentId: Overload:System.Memory`1.ToString
+  isExternal: true
+  href: System.Memory-1.html#System_Memory_1_ToString
+  name: ToString
+  nameWithType: Memory<T>.ToString
+  fullName: System.Memory<T>.ToString
+  nameWithType.vb: Memory(Of T).ToString
+  fullName.vb: System.Memory(Of T).ToString
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Memory`1.Slice*
+  commentId: Overload:System.Memory`1.Slice
+  isExternal: true
+  href: System.Memory-1.html#System_Memory_1_Slice_System_Int32_
+  name: Slice
+  nameWithType: Memory<T>.Slice
+  fullName: System.Memory<T>.Slice
+  nameWithType.vb: Memory(Of T).Slice
+  fullName.vb: System.Memory(Of T).Slice
+- uid: System.Memory`1.CopyTo*
+  commentId: Overload:System.Memory`1.CopyTo
+  isExternal: true
+  href: System.Memory-1.html#System_Memory_1_CopyTo_System_Memory__0__
+  name: CopyTo
+  nameWithType: Memory<T>.CopyTo
+  fullName: System.Memory<T>.CopyTo
+  nameWithType.vb: Memory(Of T).CopyTo
+  fullName.vb: System.Memory(Of T).CopyTo
+- uid: System.Memory`1.TryCopyTo*
+  commentId: Overload:System.Memory`1.TryCopyTo
+  isExternal: true
+  href: System.Memory-1.html#System_Memory_1_TryCopyTo_System_Memory__0__
+  name: TryCopyTo
+  nameWithType: Memory<T>.TryCopyTo
+  fullName: System.Memory<T>.TryCopyTo
+  nameWithType.vb: Memory(Of T).TryCopyTo
+  fullName.vb: System.Memory(Of T).TryCopyTo
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System.Memory`1.Pin*
+  commentId: Overload:System.Memory`1.Pin
+  isExternal: true
+  href: System.Memory-1.html#System_Memory_1_Pin
+  name: Pin
+  nameWithType: Memory<T>.Pin
+  fullName: System.Memory<T>.Pin
+  nameWithType.vb: Memory(Of T).Pin
+  fullName.vb: System.Memory(Of T).Pin
+- uid: System.Buffers.MemoryHandle
+  commentId: T:System.Buffers.MemoryHandle
+  parent: System.Buffers
+  isExternal: true
+  href: System.Buffers.MemoryHandle.html
+  name: MemoryHandle
+  nameWithType: MemoryHandle
+  fullName: System.Buffers.MemoryHandle
+- uid: System.Buffers
+  commentId: N:System.Buffers
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Buffers
+  nameWithType: System.Buffers
+  fullName: System.Buffers
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Buffers
+    name: Buffers
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.buffers
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Buffers
+    name: Buffers
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.buffers
+- uid: System.Memory`1.ToArray*
+  commentId: Overload:System.Memory`1.ToArray
+  isExternal: true
+  href: System.Memory-1.html#System_Memory_1_ToArray
+  name: ToArray
+  nameWithType: Memory<T>.ToArray
+  fullName: System.Memory<T>.ToArray
+  nameWithType.vb: Memory(Of T).ToArray
+  fullName.vb: System.Memory(Of T).ToArray
+- uid: System.Memory`1.Equals*
+  commentId: Overload:System.Memory`1.Equals
+  isExternal: true
+  href: System.Memory-1.html#System_Memory_1_Equals_System_Memory__0__
+  name: Equals
+  nameWithType: Memory<T>.Equals
+  fullName: System.Memory<T>.Equals
+  nameWithType.vb: Memory(Of T).Equals
+  fullName.vb: System.Memory(Of T).Equals
+- uid: System.Memory`1.Empty*
+  commentId: Overload:System.Memory`1.Empty
+  isExternal: true
+  href: System.Memory-1.html#System_Memory_1_Empty
+  name: Empty
+  nameWithType: Memory<T>.Empty
+  fullName: System.Memory<T>.Empty
+  nameWithType.vb: Memory(Of T).Empty
+  fullName.vb: System.Memory(Of T).Empty
+- uid: System.Memory`1.Length*
+  commentId: Overload:System.Memory`1.Length
+  isExternal: true
+  href: System.Memory-1.html#System_Memory_1_Length
+  name: Length
+  nameWithType: Memory<T>.Length
+  fullName: System.Memory<T>.Length
+  nameWithType.vb: Memory(Of T).Length
+  fullName.vb: System.Memory(Of T).Length
+- uid: System.Memory`1.IsEmpty*
+  commentId: Overload:System.Memory`1.IsEmpty
+  isExternal: true
+  href: System.Memory-1.html#System_Memory_1_IsEmpty
+  name: IsEmpty
+  nameWithType: Memory<T>.IsEmpty
+  fullName: System.Memory<T>.IsEmpty
+  nameWithType.vb: Memory(Of T).IsEmpty
+  fullName.vb: System.Memory(Of T).IsEmpty
+- uid: System.Memory`1.Span*
+  commentId: Overload:System.Memory`1.Span
+  isExternal: true
+  href: System.Memory-1.html#System_Memory_1_Span
+  name: Span
+  nameWithType: Memory<T>.Span
+  fullName: System.Memory<T>.Span
+  nameWithType.vb: Memory(Of T).Span
+  fullName.vb: System.Memory(Of T).Span
+- uid: System.Span{{T}}
+  commentId: T:System.Span{`0}
+  parent: System
+  definition: System.Span`1
+  href: System.Span-1.html
+  name: Span<T>
+  nameWithType: Span<T>
+  fullName: System.Span<T>
+  nameWithType.vb: Span(Of T)
+  fullName.vb: System.Span(Of T)
+  name.vb: Span(Of T)
+  spec.csharp:
+  - uid: System.Span`1
+    name: Span
+    isExternal: true
+    href: System.Span-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Span`1
+    name: Span
+    isExternal: true
+    href: System.Span-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Span`1
+  commentId: T:System.Span`1
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.span-1
+  name: Span<T>
+  nameWithType: Span<T>
+  fullName: System.Span<T>
+  nameWithType.vb: Span(Of T)
+  fullName.vb: System.Span(Of T)
+  name.vb: Span(Of T)
+  spec.csharp:
+  - uid: System.Span`1
+    name: Span
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.span-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Span`1
+    name: Span
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.span-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )

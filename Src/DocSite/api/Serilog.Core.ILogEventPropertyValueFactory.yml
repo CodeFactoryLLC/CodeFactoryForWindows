@@ -1,0 +1,164 @@
+### YamlMime:ManagedReference
+items:
+- uid: Serilog.Core.ILogEventPropertyValueFactory
+  commentId: T:Serilog.Core.ILogEventPropertyValueFactory
+  id: ILogEventPropertyValueFactory
+  parent: Serilog.Core
+  children:
+  - Serilog.Core.ILogEventPropertyValueFactory.CreatePropertyValue(System.Object,System.Boolean)
+  langs:
+  - csharp
+  - vb
+  name: ILogEventPropertyValueFactory
+  nameWithType: ILogEventPropertyValueFactory
+  fullName: Serilog.Core.ILogEventPropertyValueFactory
+  type: Interface
+  assemblies:
+  - Serilog
+  namespace: Serilog.Core
+  summary: >-
+    Supports the policy-driven construction of <xref href="Serilog.Events.LogEventPropertyValue" data-throw-if-not-resolved="false"></xref>s given
+
+    regular .NET objects.
+  example: []
+  syntax:
+    content: public interface ILogEventPropertyValueFactory
+    content.vb: Public Interface ILogEventPropertyValueFactory
+- uid: Serilog.Core.ILogEventPropertyValueFactory.CreatePropertyValue(System.Object,System.Boolean)
+  commentId: M:Serilog.Core.ILogEventPropertyValueFactory.CreatePropertyValue(System.Object,System.Boolean)
+  id: CreatePropertyValue(System.Object,System.Boolean)
+  parent: Serilog.Core.ILogEventPropertyValueFactory
+  langs:
+  - csharp
+  - vb
+  name: CreatePropertyValue(object, bool)
+  nameWithType: ILogEventPropertyValueFactory.CreatePropertyValue(object, bool)
+  fullName: Serilog.Core.ILogEventPropertyValueFactory.CreatePropertyValue(object, bool)
+  type: Method
+  assemblies:
+  - Serilog
+  namespace: Serilog.Core
+  summary: >-
+    Create a <xref href="Serilog.Events.LogEventPropertyValue" data-throw-if-not-resolved="false"></xref> given a .NET object and destructuring
+
+    strategy.
+  example: []
+  syntax:
+    content: LogEventPropertyValue CreatePropertyValue(object value, bool destructureObjects = false)
+    parameters:
+    - id: value
+      type: System.Object
+      description: The value of the property.
+    - id: destructureObjects
+      type: System.Boolean
+      description: >-
+        If true, and the value is a non-primitive, non-array type,
+                    then the value will be converted to a structure; otherwise, unknown types will
+                    be converted to scalars, which are generally stored as strings.
+    return:
+      type: Serilog.Events.LogEventPropertyValue
+      description: The value.
+    content.vb: Function CreatePropertyValue(value As Object, destructureObjects As Boolean = False) As LogEventPropertyValue
+  overload: Serilog.Core.ILogEventPropertyValueFactory.CreatePropertyValue*
+  nameWithType.vb: ILogEventPropertyValueFactory.CreatePropertyValue(Object, Boolean)
+  fullName.vb: Serilog.Core.ILogEventPropertyValueFactory.CreatePropertyValue(Object, Boolean)
+  name.vb: CreatePropertyValue(Object, Boolean)
+references:
+- uid: Serilog.Events.LogEventPropertyValue
+  commentId: T:Serilog.Events.LogEventPropertyValue
+  parent: Serilog.Events
+  isExternal: true
+  href: Serilog.Events.LogEventPropertyValue.html
+  name: LogEventPropertyValue
+  nameWithType: LogEventPropertyValue
+  fullName: Serilog.Events.LogEventPropertyValue
+- uid: Serilog.Core
+  commentId: N:Serilog.Core
+  isExternal: true
+  href: Serilog.html
+  name: Serilog.Core
+  nameWithType: Serilog.Core
+  fullName: Serilog.Core
+  spec.csharp:
+  - uid: Serilog
+    name: Serilog
+    isExternal: true
+    href: Serilog.html
+  - name: .
+  - uid: Serilog.Core
+    name: Core
+    isExternal: true
+    href: Serilog.Core.html
+  spec.vb:
+  - uid: Serilog
+    name: Serilog
+    isExternal: true
+    href: Serilog.html
+  - name: .
+  - uid: Serilog.Core
+    name: Core
+    isExternal: true
+    href: Serilog.Core.html
+- uid: Serilog.Events
+  commentId: N:Serilog.Events
+  isExternal: true
+  href: Serilog.html
+  name: Serilog.Events
+  nameWithType: Serilog.Events
+  fullName: Serilog.Events
+  spec.csharp:
+  - uid: Serilog
+    name: Serilog
+    isExternal: true
+    href: Serilog.html
+  - name: .
+  - uid: Serilog.Events
+    name: Events
+    isExternal: true
+    href: Serilog.Events.html
+  spec.vb:
+  - uid: Serilog
+    name: Serilog
+    isExternal: true
+    href: Serilog.html
+  - name: .
+  - uid: Serilog.Events
+    name: Events
+    isExternal: true
+    href: Serilog.Events.html
+- uid: Serilog.Core.ILogEventPropertyValueFactory.CreatePropertyValue*
+  commentId: Overload:Serilog.Core.ILogEventPropertyValueFactory.CreatePropertyValue
+  isExternal: true
+  href: Serilog.Core.ILogEventPropertyValueFactory.html#Serilog_Core_ILogEventPropertyValueFactory_CreatePropertyValue_System_Object_System_Boolean_
+  name: CreatePropertyValue
+  nameWithType: ILogEventPropertyValueFactory.CreatePropertyValue
+  fullName: Serilog.Core.ILogEventPropertyValueFactory.CreatePropertyValue
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System

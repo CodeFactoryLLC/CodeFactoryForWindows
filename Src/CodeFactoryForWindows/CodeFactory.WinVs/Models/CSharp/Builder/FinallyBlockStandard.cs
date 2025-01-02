@@ -23,6 +23,7 @@ namespace CodeFactory.WinVs.Models.CSharp.Builder
         /// </summary>
         /// <param name="syntax">Syntax to be injected into the finally block, optional parameter.</param>
         /// <param name="multipleSyntax">Multiple syntax statements has been provided to be used by the finally block,optional parameter.</param>
+        /// <param name="memberName">Optional parameter that provides the name of the member to be used in the finally block logic. </param>
         /// <returns>Returns the generated finally block</returns>
         protected override string BuildFinallyBlock(string syntax = null, IEnumerable<NamedSyntax> multipleSyntax = null, string memberName = null)
         {

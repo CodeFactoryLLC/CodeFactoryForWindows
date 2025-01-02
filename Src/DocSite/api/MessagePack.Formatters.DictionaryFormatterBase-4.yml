@@ -1,0 +1,1222 @@
+### YamlMime:ManagedReference
+items:
+- uid: MessagePack.Formatters.DictionaryFormatterBase`4
+  commentId: T:MessagePack.Formatters.DictionaryFormatterBase`4
+  id: DictionaryFormatterBase`4
+  parent: MessagePack.Formatters
+  children:
+  - MessagePack.Formatters.DictionaryFormatterBase`4.#ctor
+  - MessagePack.Formatters.DictionaryFormatterBase`4.GetSourceEnumerator(`3)
+  langs:
+  - csharp
+  - vb
+  name: DictionaryFormatterBase<TKey, TValue, TIntermediate, TDictionary>
+  nameWithType: DictionaryFormatterBase<TKey, TValue, TIntermediate, TDictionary>
+  fullName: MessagePack.Formatters.DictionaryFormatterBase<TKey, TValue, TIntermediate, TDictionary>
+  type: Class
+  assemblies:
+  - MessagePack
+  namespace: MessagePack.Formatters
+  syntax:
+    content: 'public abstract class DictionaryFormatterBase<TKey, TValue, TIntermediate, TDictionary> : DictionaryFormatterBase<TKey, TValue, TIntermediate, IEnumerator<KeyValuePair<TKey, TValue>>, TDictionary>, IMessagePackFormatter<TDictionary?> where TDictionary : class?, IEnumerable<KeyValuePair<TKey, TValue>>'
+    typeParameters:
+    - id: TKey
+    - id: TValue
+    - id: TIntermediate
+    - id: TDictionary
+    content.vb: Public MustInherit Class DictionaryFormatterBase(Of TKey, TValue, TIntermediate, TDictionary As {Class, IEnumerable(Of KeyValuePair(Of TKey, TValue))}) Inherits DictionaryFormatterBase(Of TKey, TValue, TIntermediate, IEnumerator(Of KeyValuePair(Of TKey, TValue)), TDictionary) Implements IMessagePackFormatter(Of TDictionary)
+  inheritance:
+  - System.Object
+  - MessagePack.Formatters.DictionaryFormatterBase{{TKey},{TValue},{TIntermediate},System.Collections.Generic.IEnumerator{System.Collections.Generic.KeyValuePair{{TKey},{TValue}}},{TDictionary}}
+  derivedClasses:
+  - MessagePack.Formatters.DictionaryFormatterBase`3
+  - MessagePack.Formatters.GenericReadOnlyDictionaryFormatter`3
+  - MessagePack.Formatters.InterfaceDictionaryFormatter`2
+  - MessagePack.Formatters.InterfaceReadOnlyDictionaryFormatter`2
+  - MessagePack.Formatters.ReadOnlyDictionaryFormatter`2
+  - MessagePack.ImmutableCollection.InterfaceImmutableDictionaryFormatter`2
+  implements:
+  - MessagePack.Formatters.IMessagePackFormatter{{TDictionary}}
+  inheritedMembers:
+  - MessagePack.Formatters.DictionaryFormatterBase{{TKey},{TValue},{TIntermediate},System.Collections.Generic.IEnumerator{System.Collections.Generic.KeyValuePair{{TKey},{TValue}}},{TDictionary}}.Serialize(MessagePack.MessagePackWriter@,{TDictionary},MessagePack.MessagePackSerializerOptions)
+  - MessagePack.Formatters.DictionaryFormatterBase{{TKey},{TValue},{TIntermediate},System.Collections.Generic.IEnumerator{System.Collections.Generic.KeyValuePair{{TKey},{TValue}}},{TDictionary}}.Deserialize(MessagePack.MessagePackReader@,MessagePack.MessagePackSerializerOptions)
+  - MessagePack.Formatters.DictionaryFormatterBase{{TKey},{TValue},{TIntermediate},System.Collections.Generic.IEnumerator{System.Collections.Generic.KeyValuePair{{TKey},{TValue}}},{TDictionary}}.GetSourceEnumerator({TDictionary})
+  - MessagePack.Formatters.DictionaryFormatterBase{{TKey},{TValue},{TIntermediate},System.Collections.Generic.IEnumerator{System.Collections.Generic.KeyValuePair{{TKey},{TValue}}},{TDictionary}}.Create(System.Int32,MessagePack.MessagePackSerializerOptions)
+  - MessagePack.Formatters.DictionaryFormatterBase{{TKey},{TValue},{TIntermediate},System.Collections.Generic.IEnumerator{System.Collections.Generic.KeyValuePair{{TKey},{TValue}}},{TDictionary}}.Add({TIntermediate},System.Int32,{TKey},{TValue},MessagePack.MessagePackSerializerOptions)
+  - MessagePack.Formatters.DictionaryFormatterBase{{TKey},{TValue},{TIntermediate},System.Collections.Generic.IEnumerator{System.Collections.Generic.KeyValuePair{{TKey},{TValue}}},{TDictionary}}.Complete({TIntermediate})
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  nameWithType.vb: DictionaryFormatterBase(Of TKey, TValue, TIntermediate, TDictionary)
+  fullName.vb: MessagePack.Formatters.DictionaryFormatterBase(Of TKey, TValue, TIntermediate, TDictionary)
+  name.vb: DictionaryFormatterBase(Of TKey, TValue, TIntermediate, TDictionary)
+- uid: MessagePack.Formatters.DictionaryFormatterBase`4.GetSourceEnumerator(`3)
+  commentId: M:MessagePack.Formatters.DictionaryFormatterBase`4.GetSourceEnumerator(`3)
+  id: GetSourceEnumerator(`3)
+  parent: MessagePack.Formatters.DictionaryFormatterBase`4
+  langs:
+  - csharp
+  - vb
+  name: GetSourceEnumerator(TDictionary)
+  nameWithType: DictionaryFormatterBase<TKey, TValue, TIntermediate, TDictionary>.GetSourceEnumerator(TDictionary)
+  fullName: MessagePack.Formatters.DictionaryFormatterBase<TKey, TValue, TIntermediate, TDictionary>.GetSourceEnumerator(TDictionary)
+  type: Method
+  assemblies:
+  - MessagePack
+  namespace: MessagePack.Formatters
+  example: []
+  syntax:
+    content: protected override IEnumerator<KeyValuePair<TKey, TValue>> GetSourceEnumerator(TDictionary source)
+    parameters:
+    - id: source
+      type: '{TDictionary}'
+    return:
+      type: System.Collections.Generic.IEnumerator{System.Collections.Generic.KeyValuePair{{TKey},{TValue}}}
+    content.vb: Protected Overrides Function GetSourceEnumerator(source As TDictionary) As IEnumerator(Of KeyValuePair(Of TKey, TValue))
+  overridden: MessagePack.Formatters.DictionaryFormatterBase{{TKey},{TValue},{TIntermediate},System.Collections.Generic.IEnumerator{System.Collections.Generic.KeyValuePair{{TKey},{TValue}}},{TDictionary}}.GetSourceEnumerator({TDictionary})
+  overload: MessagePack.Formatters.DictionaryFormatterBase`4.GetSourceEnumerator*
+  nameWithType.vb: DictionaryFormatterBase(Of TKey, TValue, TIntermediate, TDictionary).GetSourceEnumerator(TDictionary)
+  fullName.vb: MessagePack.Formatters.DictionaryFormatterBase(Of TKey, TValue, TIntermediate, TDictionary).GetSourceEnumerator(TDictionary)
+- uid: MessagePack.Formatters.DictionaryFormatterBase`4.#ctor
+  commentId: M:MessagePack.Formatters.DictionaryFormatterBase`4.#ctor
+  id: '#ctor'
+  parent: MessagePack.Formatters.DictionaryFormatterBase`4
+  langs:
+  - csharp
+  - vb
+  name: DictionaryFormatterBase()
+  nameWithType: DictionaryFormatterBase<TKey, TValue, TIntermediate, TDictionary>.DictionaryFormatterBase()
+  fullName: MessagePack.Formatters.DictionaryFormatterBase<TKey, TValue, TIntermediate, TDictionary>.DictionaryFormatterBase()
+  type: Constructor
+  assemblies:
+  - MessagePack
+  namespace: MessagePack.Formatters
+  syntax:
+    content: protected DictionaryFormatterBase()
+    content.vb: Protected Sub New()
+  overload: MessagePack.Formatters.DictionaryFormatterBase`4.#ctor*
+  nameWithType.vb: DictionaryFormatterBase(Of TKey, TValue, TIntermediate, TDictionary).New()
+  fullName.vb: MessagePack.Formatters.DictionaryFormatterBase(Of TKey, TValue, TIntermediate, TDictionary).New()
+  name.vb: New()
+references:
+- uid: MessagePack.Formatters
+  commentId: N:MessagePack.Formatters
+  isExternal: true
+  href: MessagePack.html
+  name: MessagePack.Formatters
+  nameWithType: MessagePack.Formatters
+  fullName: MessagePack.Formatters
+  spec.csharp:
+  - uid: MessagePack
+    name: MessagePack
+    isExternal: true
+    href: MessagePack.html
+  - name: .
+  - uid: MessagePack.Formatters
+    name: Formatters
+    isExternal: true
+    href: MessagePack.Formatters.html
+  spec.vb:
+  - uid: MessagePack
+    name: MessagePack
+    isExternal: true
+    href: MessagePack.html
+  - name: .
+  - uid: MessagePack.Formatters
+    name: Formatters
+    isExternal: true
+    href: MessagePack.Formatters.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: MessagePack.Formatters.DictionaryFormatterBase{{TKey},{TValue},{TIntermediate},System.Collections.Generic.IEnumerator{System.Collections.Generic.KeyValuePair{{TKey},{TValue}}},{TDictionary}}
+  commentId: T:MessagePack.Formatters.DictionaryFormatterBase{`0,`1,`2,System.Collections.Generic.IEnumerator{System.Collections.Generic.KeyValuePair{`0,`1}},`3}
+  parent: MessagePack.Formatters
+  definition: MessagePack.Formatters.DictionaryFormatterBase`5
+  href: MessagePack.Formatters.DictionaryFormatterBase-5.html
+  name: DictionaryFormatterBase<TKey, TValue, TIntermediate, IEnumerator<KeyValuePair<TKey, TValue>>, TDictionary>
+  nameWithType: DictionaryFormatterBase<TKey, TValue, TIntermediate, IEnumerator<KeyValuePair<TKey, TValue>>, TDictionary>
+  fullName: MessagePack.Formatters.DictionaryFormatterBase<TKey, TValue, TIntermediate, System.Collections.Generic.IEnumerator<System.Collections.Generic.KeyValuePair<TKey, TValue>>, TDictionary>
+  nameWithType.vb: DictionaryFormatterBase(Of TKey, TValue, TIntermediate, IEnumerator(Of KeyValuePair(Of TKey, TValue)), TDictionary)
+  fullName.vb: MessagePack.Formatters.DictionaryFormatterBase(Of TKey, TValue, TIntermediate, System.Collections.Generic.IEnumerator(Of System.Collections.Generic.KeyValuePair(Of TKey, TValue)), TDictionary)
+  name.vb: DictionaryFormatterBase(Of TKey, TValue, TIntermediate, IEnumerator(Of KeyValuePair(Of TKey, TValue)), TDictionary)
+  spec.csharp:
+  - uid: MessagePack.Formatters.DictionaryFormatterBase`5
+    name: DictionaryFormatterBase
+    isExternal: true
+    href: MessagePack.Formatters.DictionaryFormatterBase-5.html
+  - name: <
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: ','
+  - name: " "
+  - name: TIntermediate
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.IEnumerator`1
+    name: IEnumerator
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerator-1
+  - name: <
+  - uid: System.Collections.Generic.KeyValuePair`2
+    name: KeyValuePair
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.keyvaluepair-2
+  - name: <
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: '>'
+  - name: '>'
+  - name: ','
+  - name: " "
+  - name: TDictionary
+  - name: '>'
+  spec.vb:
+  - uid: MessagePack.Formatters.DictionaryFormatterBase`5
+    name: DictionaryFormatterBase
+    isExternal: true
+    href: MessagePack.Formatters.DictionaryFormatterBase-5.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: ','
+  - name: " "
+  - name: TIntermediate
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.IEnumerator`1
+    name: IEnumerator
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerator-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Collections.Generic.KeyValuePair`2
+    name: KeyValuePair
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.keyvaluepair-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: )
+  - name: )
+  - name: ','
+  - name: " "
+  - name: TDictionary
+  - name: )
+- uid: MessagePack.Formatters.IMessagePackFormatter{{TDictionary}}
+  commentId: T:MessagePack.Formatters.IMessagePackFormatter{`4}
+  parent: MessagePack.Formatters
+  definition: MessagePack.Formatters.IMessagePackFormatter`1
+  href: MessagePack.Formatters.IMessagePackFormatter-1.html
+  name: IMessagePackFormatter<TDictionary>
+  nameWithType: IMessagePackFormatter<TDictionary>
+  fullName: MessagePack.Formatters.IMessagePackFormatter<TDictionary>
+  nameWithType.vb: IMessagePackFormatter(Of TDictionary)
+  fullName.vb: MessagePack.Formatters.IMessagePackFormatter(Of TDictionary)
+  name.vb: IMessagePackFormatter(Of TDictionary)
+  spec.csharp:
+  - uid: MessagePack.Formatters.IMessagePackFormatter`1
+    name: IMessagePackFormatter
+    isExternal: true
+    href: MessagePack.Formatters.IMessagePackFormatter-1.html
+  - name: <
+  - name: TDictionary
+  - name: '>'
+  spec.vb:
+  - uid: MessagePack.Formatters.IMessagePackFormatter`1
+    name: IMessagePackFormatter
+    isExternal: true
+    href: MessagePack.Formatters.IMessagePackFormatter-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TDictionary
+  - name: )
+- uid: MessagePack.Formatters.DictionaryFormatterBase{{TKey},{TValue},{TIntermediate},System.Collections.Generic.IEnumerator{System.Collections.Generic.KeyValuePair{{TKey},{TValue}}},{TDictionary}}.Serialize(MessagePack.MessagePackWriter@,{TDictionary},MessagePack.MessagePackSerializerOptions)
+  commentId: M:MessagePack.Formatters.DictionaryFormatterBase{`0,`1,`2,System.Collections.Generic.IEnumerator{System.Collections.Generic.KeyValuePair{`0,`1}},`3}.Serialize(MessagePack.MessagePackWriter@,`3,MessagePack.MessagePackSerializerOptions)
+  parent: MessagePack.Formatters.DictionaryFormatterBase{{TKey},{TValue},{TIntermediate},System.Collections.Generic.IEnumerator{System.Collections.Generic.KeyValuePair{{TKey},{TValue}}},{TDictionary}}
+  definition: MessagePack.Formatters.DictionaryFormatterBase`5.Serialize(MessagePack.MessagePackWriter@,`4,MessagePack.MessagePackSerializerOptions)
+  href: MessagePack.Formatters.DictionaryFormatterBase-5.html#MessagePack_Formatters_DictionaryFormatterBase_5_Serialize_MessagePack_MessagePackWriter___4_MessagePack_MessagePackSerializerOptions_
+  name: Serialize(ref MessagePackWriter, TDictionary, MessagePackSerializerOptions)
+  nameWithType: DictionaryFormatterBase<TKey, TValue, TIntermediate, IEnumerator<KeyValuePair<TKey, TValue>>, TDictionary>.Serialize(ref MessagePackWriter, TDictionary, MessagePackSerializerOptions)
+  fullName: MessagePack.Formatters.DictionaryFormatterBase<TKey, TValue, TIntermediate, System.Collections.Generic.IEnumerator<System.Collections.Generic.KeyValuePair<TKey, TValue>>, TDictionary>.Serialize(ref MessagePack.MessagePackWriter, TDictionary, MessagePack.MessagePackSerializerOptions)
+  nameWithType.vb: DictionaryFormatterBase(Of TKey, TValue, TIntermediate, IEnumerator(Of KeyValuePair(Of TKey, TValue)), TDictionary).Serialize(MessagePackWriter, TDictionary, MessagePackSerializerOptions)
+  fullName.vb: MessagePack.Formatters.DictionaryFormatterBase(Of TKey, TValue, TIntermediate, System.Collections.Generic.IEnumerator(Of System.Collections.Generic.KeyValuePair(Of TKey, TValue)), TDictionary).Serialize(MessagePack.MessagePackWriter, TDictionary, MessagePack.MessagePackSerializerOptions)
+  name.vb: Serialize(MessagePackWriter, TDictionary, MessagePackSerializerOptions)
+  spec.csharp:
+  - uid: MessagePack.Formatters.DictionaryFormatterBase{`0,`1,`2,System.Collections.Generic.IEnumerator{System.Collections.Generic.KeyValuePair{`0,`1}},`3}.Serialize(MessagePack.MessagePackWriter@,`3,MessagePack.MessagePackSerializerOptions)
+    name: Serialize
+    isExternal: true
+    href: MessagePack.Formatters.DictionaryFormatterBase-5.html#MessagePack_Formatters_DictionaryFormatterBase_5_Serialize_MessagePack_MessagePackWriter___4_MessagePack_MessagePackSerializerOptions_
+  - name: (
+  - name: ref
+  - name: " "
+  - uid: MessagePack.MessagePackWriter
+    name: MessagePackWriter
+    isExternal: true
+    href: MessagePack.MessagePackWriter.html
+  - name: ','
+  - name: " "
+  - name: TDictionary
+  - name: ','
+  - name: " "
+  - uid: MessagePack.MessagePackSerializerOptions
+    name: MessagePackSerializerOptions
+    isExternal: true
+    href: MessagePack.MessagePackSerializerOptions.html
+  - name: )
+  spec.vb:
+  - uid: MessagePack.Formatters.DictionaryFormatterBase{`0,`1,`2,System.Collections.Generic.IEnumerator{System.Collections.Generic.KeyValuePair{`0,`1}},`3}.Serialize(MessagePack.MessagePackWriter@,`3,MessagePack.MessagePackSerializerOptions)
+    name: Serialize
+    isExternal: true
+    href: MessagePack.Formatters.DictionaryFormatterBase-5.html#MessagePack_Formatters_DictionaryFormatterBase_5_Serialize_MessagePack_MessagePackWriter___4_MessagePack_MessagePackSerializerOptions_
+  - name: (
+  - uid: MessagePack.MessagePackWriter
+    name: MessagePackWriter
+    isExternal: true
+    href: MessagePack.MessagePackWriter.html
+  - name: ','
+  - name: " "
+  - name: TDictionary
+  - name: ','
+  - name: " "
+  - uid: MessagePack.MessagePackSerializerOptions
+    name: MessagePackSerializerOptions
+    isExternal: true
+    href: MessagePack.MessagePackSerializerOptions.html
+  - name: )
+- uid: MessagePack.Formatters.DictionaryFormatterBase{{TKey},{TValue},{TIntermediate},System.Collections.Generic.IEnumerator{System.Collections.Generic.KeyValuePair{{TKey},{TValue}}},{TDictionary}}.Deserialize(MessagePack.MessagePackReader@,MessagePack.MessagePackSerializerOptions)
+  commentId: M:MessagePack.Formatters.DictionaryFormatterBase{`0,`1,`2,System.Collections.Generic.IEnumerator{System.Collections.Generic.KeyValuePair{`0,`1}},`3}.Deserialize(MessagePack.MessagePackReader@,MessagePack.MessagePackSerializerOptions)
+  parent: MessagePack.Formatters.DictionaryFormatterBase{{TKey},{TValue},{TIntermediate},System.Collections.Generic.IEnumerator{System.Collections.Generic.KeyValuePair{{TKey},{TValue}}},{TDictionary}}
+  definition: MessagePack.Formatters.DictionaryFormatterBase`5.Deserialize(MessagePack.MessagePackReader@,MessagePack.MessagePackSerializerOptions)
+  href: MessagePack.Formatters.DictionaryFormatterBase-5.html#MessagePack_Formatters_DictionaryFormatterBase_5_Deserialize_MessagePack_MessagePackReader__MessagePack_MessagePackSerializerOptions_
+  name: Deserialize(ref MessagePackReader, MessagePackSerializerOptions)
+  nameWithType: DictionaryFormatterBase<TKey, TValue, TIntermediate, IEnumerator<KeyValuePair<TKey, TValue>>, TDictionary>.Deserialize(ref MessagePackReader, MessagePackSerializerOptions)
+  fullName: MessagePack.Formatters.DictionaryFormatterBase<TKey, TValue, TIntermediate, System.Collections.Generic.IEnumerator<System.Collections.Generic.KeyValuePair<TKey, TValue>>, TDictionary>.Deserialize(ref MessagePack.MessagePackReader, MessagePack.MessagePackSerializerOptions)
+  nameWithType.vb: DictionaryFormatterBase(Of TKey, TValue, TIntermediate, IEnumerator(Of KeyValuePair(Of TKey, TValue)), TDictionary).Deserialize(MessagePackReader, MessagePackSerializerOptions)
+  fullName.vb: MessagePack.Formatters.DictionaryFormatterBase(Of TKey, TValue, TIntermediate, System.Collections.Generic.IEnumerator(Of System.Collections.Generic.KeyValuePair(Of TKey, TValue)), TDictionary).Deserialize(MessagePack.MessagePackReader, MessagePack.MessagePackSerializerOptions)
+  name.vb: Deserialize(MessagePackReader, MessagePackSerializerOptions)
+  spec.csharp:
+  - uid: MessagePack.Formatters.DictionaryFormatterBase{`0,`1,`2,System.Collections.Generic.IEnumerator{System.Collections.Generic.KeyValuePair{`0,`1}},`3}.Deserialize(MessagePack.MessagePackReader@,MessagePack.MessagePackSerializerOptions)
+    name: Deserialize
+    isExternal: true
+    href: MessagePack.Formatters.DictionaryFormatterBase-5.html#MessagePack_Formatters_DictionaryFormatterBase_5_Deserialize_MessagePack_MessagePackReader__MessagePack_MessagePackSerializerOptions_
+  - name: (
+  - name: ref
+  - name: " "
+  - uid: MessagePack.MessagePackReader
+    name: MessagePackReader
+    isExternal: true
+    href: MessagePack.MessagePackReader.html
+  - name: ','
+  - name: " "
+  - uid: MessagePack.MessagePackSerializerOptions
+    name: MessagePackSerializerOptions
+    isExternal: true
+    href: MessagePack.MessagePackSerializerOptions.html
+  - name: )
+  spec.vb:
+  - uid: MessagePack.Formatters.DictionaryFormatterBase{`0,`1,`2,System.Collections.Generic.IEnumerator{System.Collections.Generic.KeyValuePair{`0,`1}},`3}.Deserialize(MessagePack.MessagePackReader@,MessagePack.MessagePackSerializerOptions)
+    name: Deserialize
+    isExternal: true
+    href: MessagePack.Formatters.DictionaryFormatterBase-5.html#MessagePack_Formatters_DictionaryFormatterBase_5_Deserialize_MessagePack_MessagePackReader__MessagePack_MessagePackSerializerOptions_
+  - name: (
+  - uid: MessagePack.MessagePackReader
+    name: MessagePackReader
+    isExternal: true
+    href: MessagePack.MessagePackReader.html
+  - name: ','
+  - name: " "
+  - uid: MessagePack.MessagePackSerializerOptions
+    name: MessagePackSerializerOptions
+    isExternal: true
+    href: MessagePack.MessagePackSerializerOptions.html
+  - name: )
+- uid: MessagePack.Formatters.DictionaryFormatterBase{{TKey},{TValue},{TIntermediate},System.Collections.Generic.IEnumerator{System.Collections.Generic.KeyValuePair{{TKey},{TValue}}},{TDictionary}}.GetSourceEnumerator({TDictionary})
+  commentId: M:MessagePack.Formatters.DictionaryFormatterBase{`0,`1,`2,System.Collections.Generic.IEnumerator{System.Collections.Generic.KeyValuePair{`0,`1}},`3}.GetSourceEnumerator(`3)
+  parent: MessagePack.Formatters.DictionaryFormatterBase{{TKey},{TValue},{TIntermediate},System.Collections.Generic.IEnumerator{System.Collections.Generic.KeyValuePair{{TKey},{TValue}}},{TDictionary}}
+  definition: MessagePack.Formatters.DictionaryFormatterBase`5.GetSourceEnumerator(`4)
+  href: MessagePack.Formatters.DictionaryFormatterBase-5.html#MessagePack_Formatters_DictionaryFormatterBase_5_GetSourceEnumerator__4_
+  name: GetSourceEnumerator(TDictionary)
+  nameWithType: DictionaryFormatterBase<TKey, TValue, TIntermediate, IEnumerator<KeyValuePair<TKey, TValue>>, TDictionary>.GetSourceEnumerator(TDictionary)
+  fullName: MessagePack.Formatters.DictionaryFormatterBase<TKey, TValue, TIntermediate, System.Collections.Generic.IEnumerator<System.Collections.Generic.KeyValuePair<TKey, TValue>>, TDictionary>.GetSourceEnumerator(TDictionary)
+  nameWithType.vb: DictionaryFormatterBase(Of TKey, TValue, TIntermediate, IEnumerator(Of KeyValuePair(Of TKey, TValue)), TDictionary).GetSourceEnumerator(TDictionary)
+  fullName.vb: MessagePack.Formatters.DictionaryFormatterBase(Of TKey, TValue, TIntermediate, System.Collections.Generic.IEnumerator(Of System.Collections.Generic.KeyValuePair(Of TKey, TValue)), TDictionary).GetSourceEnumerator(TDictionary)
+  spec.csharp:
+  - uid: MessagePack.Formatters.DictionaryFormatterBase{`0,`1,`2,System.Collections.Generic.IEnumerator{System.Collections.Generic.KeyValuePair{`0,`1}},`3}.GetSourceEnumerator(`3)
+    name: GetSourceEnumerator
+    isExternal: true
+    href: MessagePack.Formatters.DictionaryFormatterBase-5.html#MessagePack_Formatters_DictionaryFormatterBase_5_GetSourceEnumerator__4_
+  - name: (
+  - name: TDictionary
+  - name: )
+  spec.vb:
+  - uid: MessagePack.Formatters.DictionaryFormatterBase{`0,`1,`2,System.Collections.Generic.IEnumerator{System.Collections.Generic.KeyValuePair{`0,`1}},`3}.GetSourceEnumerator(`3)
+    name: GetSourceEnumerator
+    isExternal: true
+    href: MessagePack.Formatters.DictionaryFormatterBase-5.html#MessagePack_Formatters_DictionaryFormatterBase_5_GetSourceEnumerator__4_
+  - name: (
+  - name: TDictionary
+  - name: )
+- uid: MessagePack.Formatters.DictionaryFormatterBase{{TKey},{TValue},{TIntermediate},System.Collections.Generic.IEnumerator{System.Collections.Generic.KeyValuePair{{TKey},{TValue}}},{TDictionary}}.Create(System.Int32,MessagePack.MessagePackSerializerOptions)
+  commentId: M:MessagePack.Formatters.DictionaryFormatterBase{`0,`1,`2,System.Collections.Generic.IEnumerator{System.Collections.Generic.KeyValuePair{`0,`1}},`3}.Create(System.Int32,MessagePack.MessagePackSerializerOptions)
+  parent: MessagePack.Formatters.DictionaryFormatterBase{{TKey},{TValue},{TIntermediate},System.Collections.Generic.IEnumerator{System.Collections.Generic.KeyValuePair{{TKey},{TValue}}},{TDictionary}}
+  definition: MessagePack.Formatters.DictionaryFormatterBase`5.Create(System.Int32,MessagePack.MessagePackSerializerOptions)
+  href: MessagePack.Formatters.DictionaryFormatterBase-5.html#MessagePack_Formatters_DictionaryFormatterBase_5_Create_System_Int32_MessagePack_MessagePackSerializerOptions_
+  name: Create(int, MessagePackSerializerOptions)
+  nameWithType: DictionaryFormatterBase<TKey, TValue, TIntermediate, IEnumerator<KeyValuePair<TKey, TValue>>, TDictionary>.Create(int, MessagePackSerializerOptions)
+  fullName: MessagePack.Formatters.DictionaryFormatterBase<TKey, TValue, TIntermediate, System.Collections.Generic.IEnumerator<System.Collections.Generic.KeyValuePair<TKey, TValue>>, TDictionary>.Create(int, MessagePack.MessagePackSerializerOptions)
+  nameWithType.vb: DictionaryFormatterBase(Of TKey, TValue, TIntermediate, IEnumerator(Of KeyValuePair(Of TKey, TValue)), TDictionary).Create(Integer, MessagePackSerializerOptions)
+  fullName.vb: MessagePack.Formatters.DictionaryFormatterBase(Of TKey, TValue, TIntermediate, System.Collections.Generic.IEnumerator(Of System.Collections.Generic.KeyValuePair(Of TKey, TValue)), TDictionary).Create(Integer, MessagePack.MessagePackSerializerOptions)
+  name.vb: Create(Integer, MessagePackSerializerOptions)
+  spec.csharp:
+  - uid: MessagePack.Formatters.DictionaryFormatterBase{`0,`1,`2,System.Collections.Generic.IEnumerator{System.Collections.Generic.KeyValuePair{`0,`1}},`3}.Create(System.Int32,MessagePack.MessagePackSerializerOptions)
+    name: Create
+    isExternal: true
+    href: MessagePack.Formatters.DictionaryFormatterBase-5.html#MessagePack_Formatters_DictionaryFormatterBase_5_Create_System_Int32_MessagePack_MessagePackSerializerOptions_
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: MessagePack.MessagePackSerializerOptions
+    name: MessagePackSerializerOptions
+    isExternal: true
+    href: MessagePack.MessagePackSerializerOptions.html
+  - name: )
+  spec.vb:
+  - uid: MessagePack.Formatters.DictionaryFormatterBase{`0,`1,`2,System.Collections.Generic.IEnumerator{System.Collections.Generic.KeyValuePair{`0,`1}},`3}.Create(System.Int32,MessagePack.MessagePackSerializerOptions)
+    name: Create
+    isExternal: true
+    href: MessagePack.Formatters.DictionaryFormatterBase-5.html#MessagePack_Formatters_DictionaryFormatterBase_5_Create_System_Int32_MessagePack_MessagePackSerializerOptions_
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: MessagePack.MessagePackSerializerOptions
+    name: MessagePackSerializerOptions
+    isExternal: true
+    href: MessagePack.MessagePackSerializerOptions.html
+  - name: )
+- uid: MessagePack.Formatters.DictionaryFormatterBase{{TKey},{TValue},{TIntermediate},System.Collections.Generic.IEnumerator{System.Collections.Generic.KeyValuePair{{TKey},{TValue}}},{TDictionary}}.Add({TIntermediate},System.Int32,{TKey},{TValue},MessagePack.MessagePackSerializerOptions)
+  commentId: M:MessagePack.Formatters.DictionaryFormatterBase{`0,`1,`2,System.Collections.Generic.IEnumerator{System.Collections.Generic.KeyValuePair{`0,`1}},`3}.Add(`2,System.Int32,`0,`1,MessagePack.MessagePackSerializerOptions)
+  parent: MessagePack.Formatters.DictionaryFormatterBase{{TKey},{TValue},{TIntermediate},System.Collections.Generic.IEnumerator{System.Collections.Generic.KeyValuePair{{TKey},{TValue}}},{TDictionary}}
+  definition: MessagePack.Formatters.DictionaryFormatterBase`5.Add(`2,System.Int32,`0,`1,MessagePack.MessagePackSerializerOptions)
+  href: MessagePack.Formatters.DictionaryFormatterBase-5.html#MessagePack_Formatters_DictionaryFormatterBase_5_Add__2_System_Int32__0__1_MessagePack_MessagePackSerializerOptions_
+  name: Add(TIntermediate, int, TKey, TValue, MessagePackSerializerOptions)
+  nameWithType: DictionaryFormatterBase<TKey, TValue, TIntermediate, IEnumerator<KeyValuePair<TKey, TValue>>, TDictionary>.Add(TIntermediate, int, TKey, TValue, MessagePackSerializerOptions)
+  fullName: MessagePack.Formatters.DictionaryFormatterBase<TKey, TValue, TIntermediate, System.Collections.Generic.IEnumerator<System.Collections.Generic.KeyValuePair<TKey, TValue>>, TDictionary>.Add(TIntermediate, int, TKey, TValue, MessagePack.MessagePackSerializerOptions)
+  nameWithType.vb: DictionaryFormatterBase(Of TKey, TValue, TIntermediate, IEnumerator(Of KeyValuePair(Of TKey, TValue)), TDictionary).Add(TIntermediate, Integer, TKey, TValue, MessagePackSerializerOptions)
+  fullName.vb: MessagePack.Formatters.DictionaryFormatterBase(Of TKey, TValue, TIntermediate, System.Collections.Generic.IEnumerator(Of System.Collections.Generic.KeyValuePair(Of TKey, TValue)), TDictionary).Add(TIntermediate, Integer, TKey, TValue, MessagePack.MessagePackSerializerOptions)
+  name.vb: Add(TIntermediate, Integer, TKey, TValue, MessagePackSerializerOptions)
+  spec.csharp:
+  - uid: MessagePack.Formatters.DictionaryFormatterBase{`0,`1,`2,System.Collections.Generic.IEnumerator{System.Collections.Generic.KeyValuePair{`0,`1}},`3}.Add(`2,System.Int32,`0,`1,MessagePack.MessagePackSerializerOptions)
+    name: Add
+    isExternal: true
+    href: MessagePack.Formatters.DictionaryFormatterBase-5.html#MessagePack_Formatters_DictionaryFormatterBase_5_Add__2_System_Int32__0__1_MessagePack_MessagePackSerializerOptions_
+  - name: (
+  - name: TIntermediate
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: ','
+  - name: " "
+  - uid: MessagePack.MessagePackSerializerOptions
+    name: MessagePackSerializerOptions
+    isExternal: true
+    href: MessagePack.MessagePackSerializerOptions.html
+  - name: )
+  spec.vb:
+  - uid: MessagePack.Formatters.DictionaryFormatterBase{`0,`1,`2,System.Collections.Generic.IEnumerator{System.Collections.Generic.KeyValuePair{`0,`1}},`3}.Add(`2,System.Int32,`0,`1,MessagePack.MessagePackSerializerOptions)
+    name: Add
+    isExternal: true
+    href: MessagePack.Formatters.DictionaryFormatterBase-5.html#MessagePack_Formatters_DictionaryFormatterBase_5_Add__2_System_Int32__0__1_MessagePack_MessagePackSerializerOptions_
+  - name: (
+  - name: TIntermediate
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: ','
+  - name: " "
+  - uid: MessagePack.MessagePackSerializerOptions
+    name: MessagePackSerializerOptions
+    isExternal: true
+    href: MessagePack.MessagePackSerializerOptions.html
+  - name: )
+- uid: MessagePack.Formatters.DictionaryFormatterBase{{TKey},{TValue},{TIntermediate},System.Collections.Generic.IEnumerator{System.Collections.Generic.KeyValuePair{{TKey},{TValue}}},{TDictionary}}.Complete({TIntermediate})
+  commentId: M:MessagePack.Formatters.DictionaryFormatterBase{`0,`1,`2,System.Collections.Generic.IEnumerator{System.Collections.Generic.KeyValuePair{`0,`1}},`3}.Complete(`2)
+  parent: MessagePack.Formatters.DictionaryFormatterBase{{TKey},{TValue},{TIntermediate},System.Collections.Generic.IEnumerator{System.Collections.Generic.KeyValuePair{{TKey},{TValue}}},{TDictionary}}
+  definition: MessagePack.Formatters.DictionaryFormatterBase`5.Complete(`2)
+  href: MessagePack.Formatters.DictionaryFormatterBase-5.html#MessagePack_Formatters_DictionaryFormatterBase_5_Complete__2_
+  name: Complete(TIntermediate)
+  nameWithType: DictionaryFormatterBase<TKey, TValue, TIntermediate, IEnumerator<KeyValuePair<TKey, TValue>>, TDictionary>.Complete(TIntermediate)
+  fullName: MessagePack.Formatters.DictionaryFormatterBase<TKey, TValue, TIntermediate, System.Collections.Generic.IEnumerator<System.Collections.Generic.KeyValuePair<TKey, TValue>>, TDictionary>.Complete(TIntermediate)
+  nameWithType.vb: DictionaryFormatterBase(Of TKey, TValue, TIntermediate, IEnumerator(Of KeyValuePair(Of TKey, TValue)), TDictionary).Complete(TIntermediate)
+  fullName.vb: MessagePack.Formatters.DictionaryFormatterBase(Of TKey, TValue, TIntermediate, System.Collections.Generic.IEnumerator(Of System.Collections.Generic.KeyValuePair(Of TKey, TValue)), TDictionary).Complete(TIntermediate)
+  spec.csharp:
+  - uid: MessagePack.Formatters.DictionaryFormatterBase{`0,`1,`2,System.Collections.Generic.IEnumerator{System.Collections.Generic.KeyValuePair{`0,`1}},`3}.Complete(`2)
+    name: Complete
+    isExternal: true
+    href: MessagePack.Formatters.DictionaryFormatterBase-5.html#MessagePack_Formatters_DictionaryFormatterBase_5_Complete__2_
+  - name: (
+  - name: TIntermediate
+  - name: )
+  spec.vb:
+  - uid: MessagePack.Formatters.DictionaryFormatterBase{`0,`1,`2,System.Collections.Generic.IEnumerator{System.Collections.Generic.KeyValuePair{`0,`1}},`3}.Complete(`2)
+    name: Complete
+    isExternal: true
+    href: MessagePack.Formatters.DictionaryFormatterBase-5.html#MessagePack_Formatters_DictionaryFormatterBase_5_Complete__2_
+  - name: (
+  - name: TIntermediate
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: MessagePack.Formatters.DictionaryFormatterBase`5
+  commentId: T:MessagePack.Formatters.DictionaryFormatterBase`5
+  isExternal: true
+  href: MessagePack.Formatters.DictionaryFormatterBase-5.html
+  name: DictionaryFormatterBase<TKey, TValue, TIntermediate, TEnumerator, TDictionary>
+  nameWithType: DictionaryFormatterBase<TKey, TValue, TIntermediate, TEnumerator, TDictionary>
+  fullName: MessagePack.Formatters.DictionaryFormatterBase<TKey, TValue, TIntermediate, TEnumerator, TDictionary>
+  nameWithType.vb: DictionaryFormatterBase(Of TKey, TValue, TIntermediate, TEnumerator, TDictionary)
+  fullName.vb: MessagePack.Formatters.DictionaryFormatterBase(Of TKey, TValue, TIntermediate, TEnumerator, TDictionary)
+  name.vb: DictionaryFormatterBase(Of TKey, TValue, TIntermediate, TEnumerator, TDictionary)
+  spec.csharp:
+  - uid: MessagePack.Formatters.DictionaryFormatterBase`5
+    name: DictionaryFormatterBase
+    isExternal: true
+    href: MessagePack.Formatters.DictionaryFormatterBase-5.html
+  - name: <
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: ','
+  - name: " "
+  - name: TIntermediate
+  - name: ','
+  - name: " "
+  - name: TEnumerator
+  - name: ','
+  - name: " "
+  - name: TDictionary
+  - name: '>'
+  spec.vb:
+  - uid: MessagePack.Formatters.DictionaryFormatterBase`5
+    name: DictionaryFormatterBase
+    isExternal: true
+    href: MessagePack.Formatters.DictionaryFormatterBase-5.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: ','
+  - name: " "
+  - name: TIntermediate
+  - name: ','
+  - name: " "
+  - name: TEnumerator
+  - name: ','
+  - name: " "
+  - name: TDictionary
+  - name: )
+- uid: MessagePack.Formatters.IMessagePackFormatter`1
+  commentId: T:MessagePack.Formatters.IMessagePackFormatter`1
+  isExternal: true
+  href: MessagePack.Formatters.IMessagePackFormatter-1.html
+  name: IMessagePackFormatter<T>
+  nameWithType: IMessagePackFormatter<T>
+  fullName: MessagePack.Formatters.IMessagePackFormatter<T>
+  nameWithType.vb: IMessagePackFormatter(Of T)
+  fullName.vb: MessagePack.Formatters.IMessagePackFormatter(Of T)
+  name.vb: IMessagePackFormatter(Of T)
+  spec.csharp:
+  - uid: MessagePack.Formatters.IMessagePackFormatter`1
+    name: IMessagePackFormatter
+    isExternal: true
+    href: MessagePack.Formatters.IMessagePackFormatter-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: MessagePack.Formatters.IMessagePackFormatter`1
+    name: IMessagePackFormatter
+    isExternal: true
+    href: MessagePack.Formatters.IMessagePackFormatter-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: MessagePack.Formatters.DictionaryFormatterBase`5.Serialize(MessagePack.MessagePackWriter@,`4,MessagePack.MessagePackSerializerOptions)
+  commentId: M:MessagePack.Formatters.DictionaryFormatterBase`5.Serialize(MessagePack.MessagePackWriter@,`4,MessagePack.MessagePackSerializerOptions)
+  isExternal: true
+  href: MessagePack.Formatters.DictionaryFormatterBase-5.html#MessagePack_Formatters_DictionaryFormatterBase_5_Serialize_MessagePack_MessagePackWriter___4_MessagePack_MessagePackSerializerOptions_
+  name: Serialize(ref MessagePackWriter, TDictionary, MessagePackSerializerOptions)
+  nameWithType: DictionaryFormatterBase<TKey, TValue, TIntermediate, TEnumerator, TDictionary>.Serialize(ref MessagePackWriter, TDictionary, MessagePackSerializerOptions)
+  fullName: MessagePack.Formatters.DictionaryFormatterBase<TKey, TValue, TIntermediate, TEnumerator, TDictionary>.Serialize(ref MessagePack.MessagePackWriter, TDictionary, MessagePack.MessagePackSerializerOptions)
+  nameWithType.vb: DictionaryFormatterBase(Of TKey, TValue, TIntermediate, TEnumerator, TDictionary).Serialize(MessagePackWriter, TDictionary, MessagePackSerializerOptions)
+  fullName.vb: MessagePack.Formatters.DictionaryFormatterBase(Of TKey, TValue, TIntermediate, TEnumerator, TDictionary).Serialize(MessagePack.MessagePackWriter, TDictionary, MessagePack.MessagePackSerializerOptions)
+  name.vb: Serialize(MessagePackWriter, TDictionary, MessagePackSerializerOptions)
+  spec.csharp:
+  - uid: MessagePack.Formatters.DictionaryFormatterBase`5.Serialize(MessagePack.MessagePackWriter@,`4,MessagePack.MessagePackSerializerOptions)
+    name: Serialize
+    isExternal: true
+    href: MessagePack.Formatters.DictionaryFormatterBase-5.html#MessagePack_Formatters_DictionaryFormatterBase_5_Serialize_MessagePack_MessagePackWriter___4_MessagePack_MessagePackSerializerOptions_
+  - name: (
+  - name: ref
+  - name: " "
+  - uid: MessagePack.MessagePackWriter
+    name: MessagePackWriter
+    isExternal: true
+    href: MessagePack.MessagePackWriter.html
+  - name: ','
+  - name: " "
+  - name: TDictionary
+  - name: ','
+  - name: " "
+  - uid: MessagePack.MessagePackSerializerOptions
+    name: MessagePackSerializerOptions
+    isExternal: true
+    href: MessagePack.MessagePackSerializerOptions.html
+  - name: )
+  spec.vb:
+  - uid: MessagePack.Formatters.DictionaryFormatterBase`5.Serialize(MessagePack.MessagePackWriter@,`4,MessagePack.MessagePackSerializerOptions)
+    name: Serialize
+    isExternal: true
+    href: MessagePack.Formatters.DictionaryFormatterBase-5.html#MessagePack_Formatters_DictionaryFormatterBase_5_Serialize_MessagePack_MessagePackWriter___4_MessagePack_MessagePackSerializerOptions_
+  - name: (
+  - uid: MessagePack.MessagePackWriter
+    name: MessagePackWriter
+    isExternal: true
+    href: MessagePack.MessagePackWriter.html
+  - name: ','
+  - name: " "
+  - name: TDictionary
+  - name: ','
+  - name: " "
+  - uid: MessagePack.MessagePackSerializerOptions
+    name: MessagePackSerializerOptions
+    isExternal: true
+    href: MessagePack.MessagePackSerializerOptions.html
+  - name: )
+- uid: MessagePack.Formatters.DictionaryFormatterBase`5.Deserialize(MessagePack.MessagePackReader@,MessagePack.MessagePackSerializerOptions)
+  commentId: M:MessagePack.Formatters.DictionaryFormatterBase`5.Deserialize(MessagePack.MessagePackReader@,MessagePack.MessagePackSerializerOptions)
+  isExternal: true
+  href: MessagePack.Formatters.DictionaryFormatterBase-5.html#MessagePack_Formatters_DictionaryFormatterBase_5_Deserialize_MessagePack_MessagePackReader__MessagePack_MessagePackSerializerOptions_
+  name: Deserialize(ref MessagePackReader, MessagePackSerializerOptions)
+  nameWithType: DictionaryFormatterBase<TKey, TValue, TIntermediate, TEnumerator, TDictionary>.Deserialize(ref MessagePackReader, MessagePackSerializerOptions)
+  fullName: MessagePack.Formatters.DictionaryFormatterBase<TKey, TValue, TIntermediate, TEnumerator, TDictionary>.Deserialize(ref MessagePack.MessagePackReader, MessagePack.MessagePackSerializerOptions)
+  nameWithType.vb: DictionaryFormatterBase(Of TKey, TValue, TIntermediate, TEnumerator, TDictionary).Deserialize(MessagePackReader, MessagePackSerializerOptions)
+  fullName.vb: MessagePack.Formatters.DictionaryFormatterBase(Of TKey, TValue, TIntermediate, TEnumerator, TDictionary).Deserialize(MessagePack.MessagePackReader, MessagePack.MessagePackSerializerOptions)
+  name.vb: Deserialize(MessagePackReader, MessagePackSerializerOptions)
+  spec.csharp:
+  - uid: MessagePack.Formatters.DictionaryFormatterBase`5.Deserialize(MessagePack.MessagePackReader@,MessagePack.MessagePackSerializerOptions)
+    name: Deserialize
+    isExternal: true
+    href: MessagePack.Formatters.DictionaryFormatterBase-5.html#MessagePack_Formatters_DictionaryFormatterBase_5_Deserialize_MessagePack_MessagePackReader__MessagePack_MessagePackSerializerOptions_
+  - name: (
+  - name: ref
+  - name: " "
+  - uid: MessagePack.MessagePackReader
+    name: MessagePackReader
+    isExternal: true
+    href: MessagePack.MessagePackReader.html
+  - name: ','
+  - name: " "
+  - uid: MessagePack.MessagePackSerializerOptions
+    name: MessagePackSerializerOptions
+    isExternal: true
+    href: MessagePack.MessagePackSerializerOptions.html
+  - name: )
+  spec.vb:
+  - uid: MessagePack.Formatters.DictionaryFormatterBase`5.Deserialize(MessagePack.MessagePackReader@,MessagePack.MessagePackSerializerOptions)
+    name: Deserialize
+    isExternal: true
+    href: MessagePack.Formatters.DictionaryFormatterBase-5.html#MessagePack_Formatters_DictionaryFormatterBase_5_Deserialize_MessagePack_MessagePackReader__MessagePack_MessagePackSerializerOptions_
+  - name: (
+  - uid: MessagePack.MessagePackReader
+    name: MessagePackReader
+    isExternal: true
+    href: MessagePack.MessagePackReader.html
+  - name: ','
+  - name: " "
+  - uid: MessagePack.MessagePackSerializerOptions
+    name: MessagePackSerializerOptions
+    isExternal: true
+    href: MessagePack.MessagePackSerializerOptions.html
+  - name: )
+- uid: MessagePack.Formatters.DictionaryFormatterBase`5.GetSourceEnumerator(`4)
+  commentId: M:MessagePack.Formatters.DictionaryFormatterBase`5.GetSourceEnumerator(`4)
+  isExternal: true
+  href: MessagePack.Formatters.DictionaryFormatterBase-5.html#MessagePack_Formatters_DictionaryFormatterBase_5_GetSourceEnumerator__4_
+  name: GetSourceEnumerator(TDictionary)
+  nameWithType: DictionaryFormatterBase<TKey, TValue, TIntermediate, TEnumerator, TDictionary>.GetSourceEnumerator(TDictionary)
+  fullName: MessagePack.Formatters.DictionaryFormatterBase<TKey, TValue, TIntermediate, TEnumerator, TDictionary>.GetSourceEnumerator(TDictionary)
+  nameWithType.vb: DictionaryFormatterBase(Of TKey, TValue, TIntermediate, TEnumerator, TDictionary).GetSourceEnumerator(TDictionary)
+  fullName.vb: MessagePack.Formatters.DictionaryFormatterBase(Of TKey, TValue, TIntermediate, TEnumerator, TDictionary).GetSourceEnumerator(TDictionary)
+  spec.csharp:
+  - uid: MessagePack.Formatters.DictionaryFormatterBase`5.GetSourceEnumerator(`4)
+    name: GetSourceEnumerator
+    isExternal: true
+    href: MessagePack.Formatters.DictionaryFormatterBase-5.html#MessagePack_Formatters_DictionaryFormatterBase_5_GetSourceEnumerator__4_
+  - name: (
+  - name: TDictionary
+  - name: )
+  spec.vb:
+  - uid: MessagePack.Formatters.DictionaryFormatterBase`5.GetSourceEnumerator(`4)
+    name: GetSourceEnumerator
+    isExternal: true
+    href: MessagePack.Formatters.DictionaryFormatterBase-5.html#MessagePack_Formatters_DictionaryFormatterBase_5_GetSourceEnumerator__4_
+  - name: (
+  - name: TDictionary
+  - name: )
+- uid: MessagePack.Formatters.DictionaryFormatterBase`5.Create(System.Int32,MessagePack.MessagePackSerializerOptions)
+  commentId: M:MessagePack.Formatters.DictionaryFormatterBase`5.Create(System.Int32,MessagePack.MessagePackSerializerOptions)
+  isExternal: true
+  href: MessagePack.Formatters.DictionaryFormatterBase-5.html#MessagePack_Formatters_DictionaryFormatterBase_5_Create_System_Int32_MessagePack_MessagePackSerializerOptions_
+  name: Create(int, MessagePackSerializerOptions)
+  nameWithType: DictionaryFormatterBase<TKey, TValue, TIntermediate, TEnumerator, TDictionary>.Create(int, MessagePackSerializerOptions)
+  fullName: MessagePack.Formatters.DictionaryFormatterBase<TKey, TValue, TIntermediate, TEnumerator, TDictionary>.Create(int, MessagePack.MessagePackSerializerOptions)
+  nameWithType.vb: DictionaryFormatterBase(Of TKey, TValue, TIntermediate, TEnumerator, TDictionary).Create(Integer, MessagePackSerializerOptions)
+  fullName.vb: MessagePack.Formatters.DictionaryFormatterBase(Of TKey, TValue, TIntermediate, TEnumerator, TDictionary).Create(Integer, MessagePack.MessagePackSerializerOptions)
+  name.vb: Create(Integer, MessagePackSerializerOptions)
+  spec.csharp:
+  - uid: MessagePack.Formatters.DictionaryFormatterBase`5.Create(System.Int32,MessagePack.MessagePackSerializerOptions)
+    name: Create
+    isExternal: true
+    href: MessagePack.Formatters.DictionaryFormatterBase-5.html#MessagePack_Formatters_DictionaryFormatterBase_5_Create_System_Int32_MessagePack_MessagePackSerializerOptions_
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: MessagePack.MessagePackSerializerOptions
+    name: MessagePackSerializerOptions
+    isExternal: true
+    href: MessagePack.MessagePackSerializerOptions.html
+  - name: )
+  spec.vb:
+  - uid: MessagePack.Formatters.DictionaryFormatterBase`5.Create(System.Int32,MessagePack.MessagePackSerializerOptions)
+    name: Create
+    isExternal: true
+    href: MessagePack.Formatters.DictionaryFormatterBase-5.html#MessagePack_Formatters_DictionaryFormatterBase_5_Create_System_Int32_MessagePack_MessagePackSerializerOptions_
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: MessagePack.MessagePackSerializerOptions
+    name: MessagePackSerializerOptions
+    isExternal: true
+    href: MessagePack.MessagePackSerializerOptions.html
+  - name: )
+- uid: MessagePack.Formatters.DictionaryFormatterBase`5.Add(`2,System.Int32,`0,`1,MessagePack.MessagePackSerializerOptions)
+  commentId: M:MessagePack.Formatters.DictionaryFormatterBase`5.Add(`2,System.Int32,`0,`1,MessagePack.MessagePackSerializerOptions)
+  isExternal: true
+  href: MessagePack.Formatters.DictionaryFormatterBase-5.html#MessagePack_Formatters_DictionaryFormatterBase_5_Add__2_System_Int32__0__1_MessagePack_MessagePackSerializerOptions_
+  name: Add(TIntermediate, int, TKey, TValue, MessagePackSerializerOptions)
+  nameWithType: DictionaryFormatterBase<TKey, TValue, TIntermediate, TEnumerator, TDictionary>.Add(TIntermediate, int, TKey, TValue, MessagePackSerializerOptions)
+  fullName: MessagePack.Formatters.DictionaryFormatterBase<TKey, TValue, TIntermediate, TEnumerator, TDictionary>.Add(TIntermediate, int, TKey, TValue, MessagePack.MessagePackSerializerOptions)
+  nameWithType.vb: DictionaryFormatterBase(Of TKey, TValue, TIntermediate, TEnumerator, TDictionary).Add(TIntermediate, Integer, TKey, TValue, MessagePackSerializerOptions)
+  fullName.vb: MessagePack.Formatters.DictionaryFormatterBase(Of TKey, TValue, TIntermediate, TEnumerator, TDictionary).Add(TIntermediate, Integer, TKey, TValue, MessagePack.MessagePackSerializerOptions)
+  name.vb: Add(TIntermediate, Integer, TKey, TValue, MessagePackSerializerOptions)
+  spec.csharp:
+  - uid: MessagePack.Formatters.DictionaryFormatterBase`5.Add(`2,System.Int32,`0,`1,MessagePack.MessagePackSerializerOptions)
+    name: Add
+    isExternal: true
+    href: MessagePack.Formatters.DictionaryFormatterBase-5.html#MessagePack_Formatters_DictionaryFormatterBase_5_Add__2_System_Int32__0__1_MessagePack_MessagePackSerializerOptions_
+  - name: (
+  - name: TIntermediate
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: ','
+  - name: " "
+  - uid: MessagePack.MessagePackSerializerOptions
+    name: MessagePackSerializerOptions
+    isExternal: true
+    href: MessagePack.MessagePackSerializerOptions.html
+  - name: )
+  spec.vb:
+  - uid: MessagePack.Formatters.DictionaryFormatterBase`5.Add(`2,System.Int32,`0,`1,MessagePack.MessagePackSerializerOptions)
+    name: Add
+    isExternal: true
+    href: MessagePack.Formatters.DictionaryFormatterBase-5.html#MessagePack_Formatters_DictionaryFormatterBase_5_Add__2_System_Int32__0__1_MessagePack_MessagePackSerializerOptions_
+  - name: (
+  - name: TIntermediate
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: ','
+  - name: " "
+  - uid: MessagePack.MessagePackSerializerOptions
+    name: MessagePackSerializerOptions
+    isExternal: true
+    href: MessagePack.MessagePackSerializerOptions.html
+  - name: )
+- uid: MessagePack.Formatters.DictionaryFormatterBase`5.Complete(`2)
+  commentId: M:MessagePack.Formatters.DictionaryFormatterBase`5.Complete(`2)
+  isExternal: true
+  href: MessagePack.Formatters.DictionaryFormatterBase-5.html#MessagePack_Formatters_DictionaryFormatterBase_5_Complete__2_
+  name: Complete(TIntermediate)
+  nameWithType: DictionaryFormatterBase<TKey, TValue, TIntermediate, TEnumerator, TDictionary>.Complete(TIntermediate)
+  fullName: MessagePack.Formatters.DictionaryFormatterBase<TKey, TValue, TIntermediate, TEnumerator, TDictionary>.Complete(TIntermediate)
+  nameWithType.vb: DictionaryFormatterBase(Of TKey, TValue, TIntermediate, TEnumerator, TDictionary).Complete(TIntermediate)
+  fullName.vb: MessagePack.Formatters.DictionaryFormatterBase(Of TKey, TValue, TIntermediate, TEnumerator, TDictionary).Complete(TIntermediate)
+  spec.csharp:
+  - uid: MessagePack.Formatters.DictionaryFormatterBase`5.Complete(`2)
+    name: Complete
+    isExternal: true
+    href: MessagePack.Formatters.DictionaryFormatterBase-5.html#MessagePack_Formatters_DictionaryFormatterBase_5_Complete__2_
+  - name: (
+  - name: TIntermediate
+  - name: )
+  spec.vb:
+  - uid: MessagePack.Formatters.DictionaryFormatterBase`5.Complete(`2)
+    name: Complete
+    isExternal: true
+    href: MessagePack.Formatters.DictionaryFormatterBase-5.html#MessagePack_Formatters_DictionaryFormatterBase_5_Complete__2_
+  - name: (
+  - name: TIntermediate
+  - name: )
+- uid: MessagePack.Formatters.DictionaryFormatterBase`4.GetSourceEnumerator*
+  commentId: Overload:MessagePack.Formatters.DictionaryFormatterBase`4.GetSourceEnumerator
+  isExternal: true
+  href: MessagePack.Formatters.DictionaryFormatterBase-4.html#MessagePack_Formatters_DictionaryFormatterBase_4_GetSourceEnumerator__3_
+  name: GetSourceEnumerator
+  nameWithType: DictionaryFormatterBase<TKey, TValue, TIntermediate, TDictionary>.GetSourceEnumerator
+  fullName: MessagePack.Formatters.DictionaryFormatterBase<TKey, TValue, TIntermediate, TDictionary>.GetSourceEnumerator
+  nameWithType.vb: DictionaryFormatterBase(Of TKey, TValue, TIntermediate, TDictionary).GetSourceEnumerator
+  fullName.vb: MessagePack.Formatters.DictionaryFormatterBase(Of TKey, TValue, TIntermediate, TDictionary).GetSourceEnumerator
+- uid: '{TDictionary}'
+  commentId: '!:TDictionary'
+  definition: TDictionary
+  name: TDictionary
+  nameWithType: TDictionary
+  fullName: TDictionary
+- uid: System.Collections.Generic.IEnumerator{System.Collections.Generic.KeyValuePair{{TKey},{TValue}}}
+  commentId: T:System.Collections.Generic.IEnumerator{System.Collections.Generic.KeyValuePair{`0,`1}}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerator`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerator-1
+  name: IEnumerator<KeyValuePair<TKey, TValue>>
+  nameWithType: IEnumerator<KeyValuePair<TKey, TValue>>
+  fullName: System.Collections.Generic.IEnumerator<System.Collections.Generic.KeyValuePair<TKey, TValue>>
+  nameWithType.vb: IEnumerator(Of KeyValuePair(Of TKey, TValue))
+  fullName.vb: System.Collections.Generic.IEnumerator(Of System.Collections.Generic.KeyValuePair(Of TKey, TValue))
+  name.vb: IEnumerator(Of KeyValuePair(Of TKey, TValue))
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerator`1
+    name: IEnumerator
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerator-1
+  - name: <
+  - uid: System.Collections.Generic.KeyValuePair`2
+    name: KeyValuePair
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.keyvaluepair-2
+  - name: <
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerator`1
+    name: IEnumerator
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerator-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Collections.Generic.KeyValuePair`2
+    name: KeyValuePair
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.keyvaluepair-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: )
+  - name: )
+- uid: TDictionary
+  name: TDictionary
+  nameWithType: TDictionary
+  fullName: TDictionary
+- uid: System.Collections.Generic.IEnumerator`1
+  commentId: T:System.Collections.Generic.IEnumerator`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerator-1
+  name: IEnumerator<T>
+  nameWithType: IEnumerator<T>
+  fullName: System.Collections.Generic.IEnumerator<T>
+  nameWithType.vb: IEnumerator(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerator(Of T)
+  name.vb: IEnumerator(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerator`1
+    name: IEnumerator
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerator-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerator`1
+    name: IEnumerator
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerator-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: MessagePack.Formatters.DictionaryFormatterBase`4.#ctor*
+  commentId: Overload:MessagePack.Formatters.DictionaryFormatterBase`4.#ctor
+  isExternal: true
+  href: MessagePack.Formatters.DictionaryFormatterBase-4.html#MessagePack_Formatters_DictionaryFormatterBase_4__ctor
+  name: DictionaryFormatterBase
+  nameWithType: DictionaryFormatterBase<TKey, TValue, TIntermediate, TDictionary>.DictionaryFormatterBase
+  fullName: MessagePack.Formatters.DictionaryFormatterBase<TKey, TValue, TIntermediate, TDictionary>.DictionaryFormatterBase
+  nameWithType.vb: DictionaryFormatterBase(Of TKey, TValue, TIntermediate, TDictionary).New
+  fullName.vb: MessagePack.Formatters.DictionaryFormatterBase(Of TKey, TValue, TIntermediate, TDictionary).New
+  name.vb: New

@@ -1,0 +1,2922 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+    <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Struct ImmutableArray&lt;T&gt; | CodeFactory for Windows </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Struct ImmutableArray&lt;T&gt; | CodeFactory for Windows ">
+      <meta name="generator" content="docfx ">
+  
+      <link rel="shortcut icon" href="../images/cfLogo70White.png">
+      <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/night-owl.min.css">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" integrity="sha384-EvBWSlnoFgZlXJvpzS+MAUEjvN7+gcCwH+qh7GRFOGgZO0PuwOFro7qPOJnLfe7l" crossorigin="anonymous">
+      <link rel="stylesheet" href="../styles/config.css">
+      <link rel="stylesheet" href="../styles/singulink.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+  
+  <meta property="docfx:rel" content="../">
+  <meta property="docfx:newtab" content="true">
+    </head>
+    <body>
+        <!-- Header required for docfx anchor scroll to work -->
+        <header id="head"></header>
+        <div class="top-navbar">
+            <a class="burger-icon" onclick="toggleMenu()">
+                <svg name="Hamburger" style="vertical-align: middle;" width="34" height="34" viewbox="0 0 24 24"><path fill="currentColor" fill-rule="evenodd" clip-rule="evenodd" d="M20 6H4V9H20V6ZM4 10.999H20V13.999H4V10.999ZM4 15.999H20V18.999H4V15.999Z"></path></svg>
+            </a>
+
+
+            <a class="brand" href="../index.html">
+              <img src="../images/cfLogo70White.png" alt="CodeFactory for Windows" class="logomark">
+              <span class="brand-title">CodeFactory for Windows</span>
+            </a>        </div>
+
+        <div class="body-content">
+            <div id="blackout" class="blackout" onclick="toggleMenu()"></div>
+
+            <nav id="sidebar" role="navigation">
+                <div class="sidebar">
+
+                    <div>
+                      <div class="mobile-hide">
+
+                        <a class="brand" href="../index.html">
+                          <img src="../images/cfLogo70White.png" alt="CodeFactory for Windows" class="logomark">
+                          <span class="brand-title">CodeFactory for Windows</span>
+                        </a>                      </div>
+
+                      <div class="sidesearch">
+                        <form id="search" role="search" class="search">
+                            <i class="bi bi-search search-icon"></i>
+                            <input type="text" id="search-query" placeholder="Search" autocomplete="off">
+                        </form>
+                      </div>
+
+                      <div id="navbar">
+                      </div>
+                    </div>                    <div class="sidebar-item-separator"></div>
+
+                        <div id="sidetoggle">
+                          <div id="sidetoc"></div>
+                        </div>
+                </div>
+                <div class="footer">
+  CodeFactory for Windows SDK
+  
+                </div>            </nav>
+
+            <main class="main-panel">
+
+                <div id="search-results" style="display: none;">
+                  <h1 class="search-list">Search Results for <span></span></h1>
+                  <div class="sr-items">
+                    <p><i class="bi bi-hourglass-split index-loading"></i></p>
+                  </div>
+                  <ul id="pagination" data-first=First data-prev=Previous data-next=Next data-last=Last></ul>
+                </div>
+ 
+
+                <div role="main" class="hide-when-search">
+
+                        <div class="subnav navbar navbar-default">
+                          <div class="container hide-when-search" id="breadcrumb">
+                            <ul class="breadcrumb">
+                              <li></li>
+                            </ul>
+                          </div>
+                        </div>
+
+
+                    <article class="content wrap" id="_content" data-uid="System.Collections.Immutable.ImmutableArray`1">
+
+
+
+  <h1 id="System_Collections_Immutable_ImmutableArray_1" data-uid="System.Collections.Immutable.ImmutableArray`1" class="text-break">Struct ImmutableArray&lt;T&gt;</h1>
+  <div class="markdown level0 summary"><p>Represents an array that is immutable; meaning it cannot be changed once it is created.</p>
+<p>NuGet package: System.Collections.Immutable (about immutable collections and how to install)</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;T&gt;</div>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1">ICollection</a>&lt;T&gt;</div>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="System.Collections.Immutable.ImmutableArray-1.html">ImmutableArray</a>&lt;T&gt;&gt;</div>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.ilist">IList</a></div>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.icollection">ICollection</a></div>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.istructuralcomparable">IStructuralComparable</a></div>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.istructuralequatable">IStructuralEquatable</a></div>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.immutable.iimmutablelist-1">IImmutableList</a>&lt;T&gt;</div>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1">IReadOnlyList</a>&lt;T&gt;</div>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1">IReadOnlyCollection</a>&lt;T&gt;</div>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;T&gt;</div>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.ienumerable">IEnumerable</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetype.tostring">ValueType.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="https://learn.microsoft.com/dotnet/api/system">System</a>.<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections">Collections</a>.<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.immutable">Immutable</a></h6>
+  <h6><strong>Assembly</strong>: System.Collections.Immutable.dll</h6>
+  <h5 id="System_Collections_Immutable_ImmutableArray_1_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly struct ImmutableArray&lt;T&gt; : IList&lt;T&gt;, ICollection&lt;T&gt;, IEquatable&lt;ImmutableArray&lt;T&gt;&gt;, IList, ICollection, IStructuralComparable, IStructuralEquatable, IImmutableList&lt;T&gt;, IReadOnlyList&lt;T&gt;, IReadOnlyCollection&lt;T&gt;, IEnumerable&lt;T&gt;, IEnumerable</code></pre>
+  </div>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>The type of element stored by the array.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="fields">Fields
+</h3>
+  <h4 id="System_Collections_Immutable_ImmutableArray_1_Empty" data-uid="System.Collections.Immutable.ImmutableArray`1.Empty">Empty</h4>
+  <div class="markdown level1 summary"><p>Gets an empty immutable array.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly ImmutableArray&lt;T&gt; Empty</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.immutable.immutablearray-1">ImmutableArray</a>&lt;T&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+</h3>
+  <a id="System_Collections_Immutable_ImmutableArray_1_IsDefault_" data-uid="System.Collections.Immutable.ImmutableArray`1.IsDefault*"></a>
+  <h4 id="System_Collections_Immutable_ImmutableArray_1_IsDefault" data-uid="System.Collections.Immutable.ImmutableArray`1.IsDefault">IsDefault</h4>
+  <div class="markdown level1 summary"><p>Gets a value indicating whether this array was declared but not initialized.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsDefault { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the <a class="xref" href="System.Collections.Immutable.ImmutableArray-1.html">ImmutableArray&lt;T&gt;</a> is <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="System_Collections_Immutable_ImmutableArray_1_IsDefaultOrEmpty_" data-uid="System.Collections.Immutable.ImmutableArray`1.IsDefaultOrEmpty*"></a>
+  <h4 id="System_Collections_Immutable_ImmutableArray_1_IsDefaultOrEmpty" data-uid="System.Collections.Immutable.ImmutableArray`1.IsDefaultOrEmpty">IsDefaultOrEmpty</h4>
+  <div class="markdown level1 summary"><p>Gets a value indicating whether this <a class="xref" href="System.Collections.Immutable.ImmutableArray-1.html">ImmutableArray&lt;T&gt;</a> is empty or is not initialized.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsDefaultOrEmpty { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the <a class="xref" href="System.Collections.Immutable.ImmutableArray-1.html">ImmutableArray&lt;T&gt;</a> is <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> or <a class="xref" href="System.Collections.Immutable.ImmutableArray-1.html#System_Collections_Immutable_ImmutableArray_1_Empty">Empty</a>; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="System_Collections_Immutable_ImmutableArray_1_IsEmpty_" data-uid="System.Collections.Immutable.ImmutableArray`1.IsEmpty*"></a>
+  <h4 id="System_Collections_Immutable_ImmutableArray_1_IsEmpty" data-uid="System.Collections.Immutable.ImmutableArray`1.IsEmpty">IsEmpty</h4>
+  <div class="markdown level1 summary"><p>Gets a value indicating whether this <a class="xref" href="System.Collections.Immutable.ImmutableArray-1.html">ImmutableArray&lt;T&gt;</a> is empty.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsEmpty { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the <a class="xref" href="System.Collections.Immutable.ImmutableArray-1.html">ImmutableArray&lt;T&gt;</a> is empty; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="System_Collections_Immutable_ImmutableArray_1_Item_" data-uid="System.Collections.Immutable.ImmutableArray`1.Item*"></a>
+  <h4 id="System_Collections_Immutable_ImmutableArray_1_Item_System_Int32_" data-uid="System.Collections.Immutable.ImmutableArray`1.Item(System.Int32)">this[int]</h4>
+  <div class="markdown level1 summary"><p>Gets the element at the specified index in the immutable array.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public T this[int index] { get; }</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">index</span></td>
+        <td><p>The zero-based index of the element to get.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><p>The element at the specified index in the immutable array.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="System_Collections_Immutable_ImmutableArray_1_Length_" data-uid="System.Collections.Immutable.ImmutableArray`1.Length*"></a>
+  <h4 id="System_Collections_Immutable_ImmutableArray_1_Length" data-uid="System.Collections.Immutable.ImmutableArray`1.Length">Length</h4>
+  <div class="markdown level1 summary"><p>Gets the number of elements in the array.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Length { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><p>The number of elements in the array.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+</h3>
+  <a id="System_Collections_Immutable_ImmutableArray_1_Add_" data-uid="System.Collections.Immutable.ImmutableArray`1.Add*"></a>
+  <h4 id="System_Collections_Immutable_ImmutableArray_1_Add__0_" data-uid="System.Collections.Immutable.ImmutableArray`1.Add(`0)">Add(T)</h4>
+  <div class="markdown level1 summary"><p>Returns a copy of the original array with the specified item added to the end.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ImmutableArray&lt;T&gt; Add(T item)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">item</span></td>
+        <td><p>The item to be added to the end of the array.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.immutable.immutablearray-1">ImmutableArray</a>&lt;T&gt;</td>
+        <td><p>A new array with the specified item added to the end.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="System_Collections_Immutable_ImmutableArray_1_AddRange_" data-uid="System.Collections.Immutable.ImmutableArray`1.AddRange*"></a>
+  <h4 id="System_Collections_Immutable_ImmutableArray_1_AddRange_System_Collections_Generic_IEnumerable__0__" data-uid="System.Collections.Immutable.ImmutableArray`1.AddRange(System.Collections.Generic.IEnumerable{`0})">AddRange(IEnumerable&lt;T&gt;)</h4>
+  <div class="markdown level1 summary"><p>Returns a copy of the original array with the specified elements added to the end of the array.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ImmutableArray&lt;T&gt; AddRange(IEnumerable&lt;T&gt; items)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;T&gt;</td>
+        <td><span class="parametername">items</span></td>
+        <td><p>The elements to add to the array.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.immutable.immutablearray-1">ImmutableArray</a>&lt;T&gt;</td>
+        <td><p>A new array with the elements added.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="System_Collections_Immutable_ImmutableArray_1_AddRange_" data-uid="System.Collections.Immutable.ImmutableArray`1.AddRange*"></a>
+  <h4 id="System_Collections_Immutable_ImmutableArray_1_AddRange_System_Collections_Immutable_ImmutableArray__0__" data-uid="System.Collections.Immutable.ImmutableArray`1.AddRange(System.Collections.Immutable.ImmutableArray{`0})">AddRange(ImmutableArray&lt;T&gt;)</h4>
+  <div class="markdown level1 summary"><p>Returns a copy of the original array with the specified elements added to the end of the array.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ImmutableArray&lt;T&gt; AddRange(ImmutableArray&lt;T&gt; items)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.immutable.immutablearray-1">ImmutableArray</a>&lt;T&gt;</td>
+        <td><span class="parametername">items</span></td>
+        <td><p>The elements to add to the array.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.immutable.immutablearray-1">ImmutableArray</a>&lt;T&gt;</td>
+        <td><p>A new array with the elements added.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="System_Collections_Immutable_ImmutableArray_1_AsMemory_" data-uid="System.Collections.Immutable.ImmutableArray`1.AsMemory*"></a>
+  <h4 id="System_Collections_Immutable_ImmutableArray_1_AsMemory" data-uid="System.Collections.Immutable.ImmutableArray`1.AsMemory">AsMemory()</h4>
+  <div class="markdown level1 summary"><p>Creates a new read-only memory region over this immutable array.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ReadOnlyMemory&lt;T&gt; AsMemory()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlymemory-1">ReadOnlyMemory</a>&lt;T&gt;</td>
+        <td><p>The read-only memory representation of this immutable array.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="System_Collections_Immutable_ImmutableArray_1_AsSpan_" data-uid="System.Collections.Immutable.ImmutableArray`1.AsSpan*"></a>
+  <h4 id="System_Collections_Immutable_ImmutableArray_1_AsSpan" data-uid="System.Collections.Immutable.ImmutableArray`1.AsSpan">AsSpan()</h4>
+  <div class="markdown level1 summary"><p>Creates a new read-only span over this immutable array.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ReadOnlySpan&lt;T&gt; AsSpan()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;T&gt;</td>
+        <td><p>The read-only span representation of this immutable array.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="System_Collections_Immutable_ImmutableArray_1_As_" data-uid="System.Collections.Immutable.ImmutableArray`1.As*"></a>
+  <h4 id="System_Collections_Immutable_ImmutableArray_1_As__1" data-uid="System.Collections.Immutable.ImmutableArray`1.As``1">As&lt;TOther&gt;()</h4>
+  <div class="markdown level1 summary"><p>Returns a new immutable array that contains the elements of this array cast to a different type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ImmutableArray&lt;TOther&gt; As&lt;TOther&gt;() where TOther : class?</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="System.Collections.Immutable.ImmutableArray-1.html">ImmutableArray</a>&lt;TOther&gt;</td>
+        <td><p>An immutable array that contains the elements of this array, cast to a different type. If the cast fails, returns an array whose <a class="xref" href="System.Collections.Immutable.ImmutableArray-1.html#System_Collections_Immutable_ImmutableArray_1_IsDefault">IsDefault</a> property returns <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TOther</span></td>
+        <td><p>The type of array element to return.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="System_Collections_Immutable_ImmutableArray_1_CastArray_" data-uid="System.Collections.Immutable.ImmutableArray`1.CastArray*"></a>
+  <h4 id="System_Collections_Immutable_ImmutableArray_1_CastArray__1" data-uid="System.Collections.Immutable.ImmutableArray`1.CastArray``1">CastArray&lt;TOther&gt;()</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="System.Collections.Immutable.ImmutableArray-1.html">ImmutableArray&lt;T&gt;</a> struct by casting the underlying array to an array of type <code class="typeparamref">TOther</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ImmutableArray&lt;TOther&gt; CastArray&lt;TOther&gt;() where TOther : class?</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="System.Collections.Immutable.ImmutableArray-1.html">ImmutableArray</a>&lt;TOther&gt;</td>
+        <td><p>An immutable array instance with elements cast to the new type.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TOther</span></td>
+        <td><p>The type of array element to return.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.invalidcastexception">InvalidCastException</a></td>
+        <td><p>Thrown if the cast is illegal.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="System_Collections_Immutable_ImmutableArray_1_CastUp_" data-uid="System.Collections.Immutable.ImmutableArray`1.CastUp*"></a>
+  <h4 id="System_Collections_Immutable_ImmutableArray_1_CastUp__1_System_Collections_Immutable_ImmutableArray___0__" data-uid="System.Collections.Immutable.ImmutableArray`1.CastUp``1(System.Collections.Immutable.ImmutableArray{``0})">CastUp&lt;TDerived&gt;(ImmutableArray&lt;TDerived&gt;)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="System.Collections.Immutable.ImmutableArray-1.html">ImmutableArray&lt;T&gt;</a> struct based on the contents of an existing instance, allowing a covariant static cast to efficiently reuse the existing array.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ImmutableArray&lt;T&gt; CastUp&lt;TDerived&gt;(ImmutableArray&lt;TDerived&gt; items) where TDerived : class?, T</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="System.Collections.Immutable.ImmutableArray-1.html">ImmutableArray</a>&lt;TDerived&gt;</td>
+        <td><span class="parametername">items</span></td>
+        <td><p>The array to initialize the array with. No copy is made.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.immutable.immutablearray-1">ImmutableArray</a>&lt;T&gt;</td>
+        <td><p>An immutable array instance with elements cast to the new type.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TDerived</span></td>
+        <td><p>The type of array element to return.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="System_Collections_Immutable_ImmutableArray_1_Clear_" data-uid="System.Collections.Immutable.ImmutableArray`1.Clear*"></a>
+  <h4 id="System_Collections_Immutable_ImmutableArray_1_Clear" data-uid="System.Collections.Immutable.ImmutableArray`1.Clear">Clear()</h4>
+  <div class="markdown level1 summary"><p>Returns an array with all the elements removed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ImmutableArray&lt;T&gt; Clear()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.immutable.immutablearray-1">ImmutableArray</a>&lt;T&gt;</td>
+        <td><p>An array with all of the elements removed.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="System_Collections_Immutable_ImmutableArray_1_Contains_" data-uid="System.Collections.Immutable.ImmutableArray`1.Contains*"></a>
+  <h4 id="System_Collections_Immutable_ImmutableArray_1_Contains__0_" data-uid="System.Collections.Immutable.ImmutableArray`1.Contains(`0)">Contains(T)</h4>
+  <div class="markdown level1 summary"><p>Determines whether the specified item exists in the array.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Contains(T item)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">item</span></td>
+        <td><p>The item to search for.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the specified item was found in the array; otherwise <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="System_Collections_Immutable_ImmutableArray_1_CopyTo_" data-uid="System.Collections.Immutable.ImmutableArray`1.CopyTo*"></a>
+  <h4 id="System_Collections_Immutable_ImmutableArray_1_CopyTo_System_Int32__0___System_Int32_System_Int32_" data-uid="System.Collections.Immutable.ImmutableArray`1.CopyTo(System.Int32,`0[],System.Int32,System.Int32)">CopyTo(int, T[], int, int)</h4>
+  <div class="markdown level1 summary"><p>Copies the specified items in this array to the specified array at the specified starting index.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CopyTo(int sourceIndex, T[] destination, int destinationIndex, int length)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">sourceIndex</span></td>
+        <td><p>The index of this array where copying begins.</p>
+</td>
+      </tr>
+      <tr>
+        <td>T[]</td>
+        <td><span class="parametername">destination</span></td>
+        <td><p>The array to copy to.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">destinationIndex</span></td>
+        <td><p>The index in <code class="paramref">array</code> where copying begins.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">length</span></td>
+        <td><p>The number of elements to copy from this array.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="System_Collections_Immutable_ImmutableArray_1_CopyTo_" data-uid="System.Collections.Immutable.ImmutableArray`1.CopyTo*"></a>
+  <h4 id="System_Collections_Immutable_ImmutableArray_1_CopyTo__0___" data-uid="System.Collections.Immutable.ImmutableArray`1.CopyTo(`0[])">CopyTo(T[])</h4>
+  <div class="markdown level1 summary"><p>Copies the contents of this array to the specified array.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CopyTo(T[] destination)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>T[]</td>
+        <td><span class="parametername">destination</span></td>
+        <td><p>The array to copy to.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="System_Collections_Immutable_ImmutableArray_1_CopyTo_" data-uid="System.Collections.Immutable.ImmutableArray`1.CopyTo*"></a>
+  <h4 id="System_Collections_Immutable_ImmutableArray_1_CopyTo__0___System_Int32_" data-uid="System.Collections.Immutable.ImmutableArray`1.CopyTo(`0[],System.Int32)">CopyTo(T[], int)</h4>
+  <div class="markdown level1 summary"><p>Copies the contents of this array to the specified array starting at the specified destination index.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CopyTo(T[] destination, int destinationIndex)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>T[]</td>
+        <td><span class="parametername">destination</span></td>
+        <td><p>The array to copy to.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">destinationIndex</span></td>
+        <td><p>The index in <code class="paramref">array</code> where copying begins.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="System_Collections_Immutable_ImmutableArray_1_Equals_" data-uid="System.Collections.Immutable.ImmutableArray`1.Equals*"></a>
+  <h4 id="System_Collections_Immutable_ImmutableArray_1_Equals_System_Collections_Immutable_ImmutableArray__0__" data-uid="System.Collections.Immutable.ImmutableArray`1.Equals(System.Collections.Immutable.ImmutableArray{`0})">Equals(ImmutableArray&lt;T&gt;)</h4>
+  <div class="markdown level1 summary"><p>Indicates whether specified array is equal to this array.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Equals(ImmutableArray&lt;T&gt; other)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.immutable.immutablearray-1">ImmutableArray</a>&lt;T&gt;</td>
+        <td><span class="parametername">other</span></td>
+        <td><p>An object to compare with this object.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if <code class="paramref">other</code> is equal to this array; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="System_Collections_Immutable_ImmutableArray_1_Equals_" data-uid="System.Collections.Immutable.ImmutableArray`1.Equals*"></a>
+  <h4 id="System_Collections_Immutable_ImmutableArray_1_Equals_System_Object_" data-uid="System.Collections.Immutable.ImmutableArray`1.Equals(System.Object)">Equals(object?)</h4>
+  <div class="markdown level1 summary"><p>Determines if this array is equal to the specified object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool Equals(object? obj)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></td>
+        <td><span class="parametername">obj</span></td>
+        <td><p>The <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a> to compare with this array.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if this array is equal to <code class="paramref">obj</code>; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetype.equals">ValueType.Equals(object)</a></div>
+  <a id="System_Collections_Immutable_ImmutableArray_1_GetEnumerator_" data-uid="System.Collections.Immutable.ImmutableArray`1.GetEnumerator*"></a>
+  <h4 id="System_Collections_Immutable_ImmutableArray_1_GetEnumerator" data-uid="System.Collections.Immutable.ImmutableArray`1.GetEnumerator">GetEnumerator()</h4>
+  <div class="markdown level1 summary"><p>Returns an enumerator that iterates through the contents of the array.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ImmutableArray&lt;T&gt;.Enumerator GetEnumerator()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="System.Collections.Immutable.ImmutableArray-1.html">ImmutableArray</a>&lt;T&gt;.<a class="xref" href="System.Collections.Immutable.ImmutableArray-1.Enumerator.html">Enumerator</a></td>
+        <td><p>An enumerator.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="System_Collections_Immutable_ImmutableArray_1_GetHashCode_" data-uid="System.Collections.Immutable.ImmutableArray`1.GetHashCode*"></a>
+  <h4 id="System_Collections_Immutable_ImmutableArray_1_GetHashCode" data-uid="System.Collections.Immutable.ImmutableArray`1.GetHashCode">GetHashCode()</h4>
+  <div class="markdown level1 summary"><p>Returns a hash code for this instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int GetHashCode()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><p>A hash code for this instance, suitable for use in hashing algorithms and data structures like a hash table.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode">ValueType.GetHashCode()</a></div>
+  <a id="System_Collections_Immutable_ImmutableArray_1_IndexOf_" data-uid="System.Collections.Immutable.ImmutableArray`1.IndexOf*"></a>
+  <h4 id="System_Collections_Immutable_ImmutableArray_1_IndexOf__0_" data-uid="System.Collections.Immutable.ImmutableArray`1.IndexOf(`0)">IndexOf(T)</h4>
+  <div class="markdown level1 summary"><p>Searches the array for the specified item.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int IndexOf(T item)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">item</span></td>
+        <td><p>The item to search for.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><p>The zero-based index position of the item if it is found, or -1 if it is not.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="System_Collections_Immutable_ImmutableArray_1_IndexOf_" data-uid="System.Collections.Immutable.ImmutableArray`1.IndexOf*"></a>
+  <h4 id="System_Collections_Immutable_ImmutableArray_1_IndexOf__0_System_Int32_" data-uid="System.Collections.Immutable.ImmutableArray`1.IndexOf(`0,System.Int32)">IndexOf(T, int)</h4>
+  <div class="markdown level1 summary"><p>Searches the array for the specified item.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int IndexOf(T item, int startIndex)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">item</span></td>
+        <td><p>The item to search for.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">startIndex</span></td>
+        <td><p>The index at which to begin the search.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><p>The zero-based index position of the item if it is found, or -1 if it is not.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="System_Collections_Immutable_ImmutableArray_1_IndexOf_" data-uid="System.Collections.Immutable.ImmutableArray`1.IndexOf*"></a>
+  <h4 id="System_Collections_Immutable_ImmutableArray_1_IndexOf__0_System_Int32_System_Collections_Generic_IEqualityComparer__0__" data-uid="System.Collections.Immutable.ImmutableArray`1.IndexOf(`0,System.Int32,System.Collections.Generic.IEqualityComparer{`0})">IndexOf(T, int, IEqualityComparer&lt;T&gt;?)</h4>
+  <div class="markdown level1 summary"><p>Searches the array for the specified item.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int IndexOf(T item, int startIndex, IEqualityComparer&lt;T&gt;? equalityComparer)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">item</span></td>
+        <td><p>The item to search for.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">startIndex</span></td>
+        <td><p>The index at which to begin the search.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.iequalitycomparer-1">IEqualityComparer</a>&lt;T&gt;</td>
+        <td><span class="parametername">equalityComparer</span></td>
+        <td><p>The equality comparer to use in the search.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><p>The zero-based index position of the item if it is found, or -1 if it is not.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="System_Collections_Immutable_ImmutableArray_1_IndexOf_" data-uid="System.Collections.Immutable.ImmutableArray`1.IndexOf*"></a>
+  <h4 id="System_Collections_Immutable_ImmutableArray_1_IndexOf__0_System_Int32_System_Int32_" data-uid="System.Collections.Immutable.ImmutableArray`1.IndexOf(`0,System.Int32,System.Int32)">IndexOf(T, int, int)</h4>
+  <div class="markdown level1 summary"><p>Searches the array for the specified item.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int IndexOf(T item, int startIndex, int count)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">item</span></td>
+        <td><p>The item to search for.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">startIndex</span></td>
+        <td><p>The index at which to begin the search.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">count</span></td>
+        <td><p>The number of elements to search.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><p>The zero-based index position of the item if it is found, or -1 if it is not.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="System_Collections_Immutable_ImmutableArray_1_IndexOf_" data-uid="System.Collections.Immutable.ImmutableArray`1.IndexOf*"></a>
+  <h4 id="System_Collections_Immutable_ImmutableArray_1_IndexOf__0_System_Int32_System_Int32_System_Collections_Generic_IEqualityComparer__0__" data-uid="System.Collections.Immutable.ImmutableArray`1.IndexOf(`0,System.Int32,System.Int32,System.Collections.Generic.IEqualityComparer{`0})">IndexOf(T, int, int, IEqualityComparer&lt;T&gt;?)</h4>
+  <div class="markdown level1 summary"><p>Searches the array for the specified item.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int IndexOf(T item, int startIndex, int count, IEqualityComparer&lt;T&gt;? equalityComparer)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">item</span></td>
+        <td><p>The item to search for.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">startIndex</span></td>
+        <td><p>The index at which to begin the search.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">count</span></td>
+        <td><p>The number of elements to search.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.iequalitycomparer-1">IEqualityComparer</a>&lt;T&gt;</td>
+        <td><span class="parametername">equalityComparer</span></td>
+        <td><p>The equality comparer to use in the search.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><p>The zero-based index position of the item if it is found, or -1 if it is not.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="System_Collections_Immutable_ImmutableArray_1_Insert_" data-uid="System.Collections.Immutable.ImmutableArray`1.Insert*"></a>
+  <h4 id="System_Collections_Immutable_ImmutableArray_1_Insert_System_Int32__0_" data-uid="System.Collections.Immutable.ImmutableArray`1.Insert(System.Int32,`0)">Insert(int, T)</h4>
+  <div class="markdown level1 summary"><p>Returns a new array with the specified value inserted at the specified position.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ImmutableArray&lt;T&gt; Insert(int index, T item)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">index</span></td>
+        <td><p>The 0-based index into the array at which the new item should be added.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">item</span></td>
+        <td><p>The item to insert at the start of the array.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.immutable.immutablearray-1">ImmutableArray</a>&lt;T&gt;</td>
+        <td><p>A new array with the item inserted at the specified index.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="System_Collections_Immutable_ImmutableArray_1_InsertRange_" data-uid="System.Collections.Immutable.ImmutableArray`1.InsertRange*"></a>
+  <h4 id="System_Collections_Immutable_ImmutableArray_1_InsertRange_System_Int32_System_Collections_Generic_IEnumerable__0__" data-uid="System.Collections.Immutable.ImmutableArray`1.InsertRange(System.Int32,System.Collections.Generic.IEnumerable{`0})">InsertRange(int, IEnumerable&lt;T&gt;)</h4>
+  <div class="markdown level1 summary"><p>Inserts the specified values at the specified index.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ImmutableArray&lt;T&gt; InsertRange(int index, IEnumerable&lt;T&gt; items)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">index</span></td>
+        <td><p>The index at which to insert the value.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;T&gt;</td>
+        <td><span class="parametername">items</span></td>
+        <td><p>The elements to insert.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.immutable.immutablearray-1">ImmutableArray</a>&lt;T&gt;</td>
+        <td><p>A new immutable array with the items inserted at the specified index.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="System_Collections_Immutable_ImmutableArray_1_InsertRange_" data-uid="System.Collections.Immutable.ImmutableArray`1.InsertRange*"></a>
+  <h4 id="System_Collections_Immutable_ImmutableArray_1_InsertRange_System_Int32_System_Collections_Immutable_ImmutableArray__0__" data-uid="System.Collections.Immutable.ImmutableArray`1.InsertRange(System.Int32,System.Collections.Immutable.ImmutableArray{`0})">InsertRange(int, ImmutableArray&lt;T&gt;)</h4>
+  <div class="markdown level1 summary"><p>Inserts the specified values at the specified index.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ImmutableArray&lt;T&gt; InsertRange(int index, ImmutableArray&lt;T&gt; items)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">index</span></td>
+        <td><p>The index at which to insert the value.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.immutable.immutablearray-1">ImmutableArray</a>&lt;T&gt;</td>
+        <td><span class="parametername">items</span></td>
+        <td><p>The elements to insert.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.immutable.immutablearray-1">ImmutableArray</a>&lt;T&gt;</td>
+        <td><p>A new immutable array with the items inserted at the specified index.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="System_Collections_Immutable_ImmutableArray_1_ItemRef_" data-uid="System.Collections.Immutable.ImmutableArray`1.ItemRef*"></a>
+  <h4 id="System_Collections_Immutable_ImmutableArray_1_ItemRef_System_Int32_" data-uid="System.Collections.Immutable.ImmutableArray`1.ItemRef(System.Int32)">ItemRef(int)</h4>
+  <div class="markdown level1 summary"><p>Gets a read-only reference to the element at the specified <code class="paramref">index</code> in the read-only list.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ref readonly T ItemRef(int index)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">index</span></td>
+        <td><p>The zero-based index of the element to get a reference to.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><p>A read-only reference to the element at the specified <code class="paramref">index</code> in the read-only list.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="System_Collections_Immutable_ImmutableArray_1_LastIndexOf_" data-uid="System.Collections.Immutable.ImmutableArray`1.LastIndexOf*"></a>
+  <h4 id="System_Collections_Immutable_ImmutableArray_1_LastIndexOf__0_" data-uid="System.Collections.Immutable.ImmutableArray`1.LastIndexOf(`0)">LastIndexOf(T)</h4>
+  <div class="markdown level1 summary"><p>Searches the array for the specified item; starting at the end of the array.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int LastIndexOf(T item)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">item</span></td>
+        <td><p>The item to search for.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><p>The 0-based index into the array where the item was found; or -1 if it could not be found.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="System_Collections_Immutable_ImmutableArray_1_LastIndexOf_" data-uid="System.Collections.Immutable.ImmutableArray`1.LastIndexOf*"></a>
+  <h4 id="System_Collections_Immutable_ImmutableArray_1_LastIndexOf__0_System_Int32_" data-uid="System.Collections.Immutable.ImmutableArray`1.LastIndexOf(`0,System.Int32)">LastIndexOf(T, int)</h4>
+  <div class="markdown level1 summary"><p>Searches the array for the specified item; starting at the end of the array.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int LastIndexOf(T item, int startIndex)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">item</span></td>
+        <td><p>The item to search for.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">startIndex</span></td>
+        <td><p>The index at which to begin the search.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><p>The 0-based index into the array where the item was found; or -1 if it could not be found.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="System_Collections_Immutable_ImmutableArray_1_LastIndexOf_" data-uid="System.Collections.Immutable.ImmutableArray`1.LastIndexOf*"></a>
+  <h4 id="System_Collections_Immutable_ImmutableArray_1_LastIndexOf__0_System_Int32_System_Int32_" data-uid="System.Collections.Immutable.ImmutableArray`1.LastIndexOf(`0,System.Int32,System.Int32)">LastIndexOf(T, int, int)</h4>
+  <div class="markdown level1 summary"><p>Searches the array for the specified item; starting at the end of the array.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int LastIndexOf(T item, int startIndex, int count)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">item</span></td>
+        <td><p>The item to search for.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">startIndex</span></td>
+        <td><p>The index at which to begin the search.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">count</span></td>
+        <td><p>The number of elements to search.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><p>The 0-based index into the array where the item was found; or -1 if it could not be found.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="System_Collections_Immutable_ImmutableArray_1_LastIndexOf_" data-uid="System.Collections.Immutable.ImmutableArray`1.LastIndexOf*"></a>
+  <h4 id="System_Collections_Immutable_ImmutableArray_1_LastIndexOf__0_System_Int32_System_Int32_System_Collections_Generic_IEqualityComparer__0__" data-uid="System.Collections.Immutable.ImmutableArray`1.LastIndexOf(`0,System.Int32,System.Int32,System.Collections.Generic.IEqualityComparer{`0})">LastIndexOf(T, int, int, IEqualityComparer&lt;T&gt;?)</h4>
+  <div class="markdown level1 summary"><p>Searches the array for the specified item; starting at the end of the array.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int LastIndexOf(T item, int startIndex, int count, IEqualityComparer&lt;T&gt;? equalityComparer)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">item</span></td>
+        <td><p>The item to search for.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">startIndex</span></td>
+        <td><p>The index at which to begin the search.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">count</span></td>
+        <td><p>The number of elements to search.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.iequalitycomparer-1">IEqualityComparer</a>&lt;T&gt;</td>
+        <td><span class="parametername">equalityComparer</span></td>
+        <td><p>The equality comparer to use in the search.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><p>The 0-based index into the array where the item was found; or -1 if it could not be found.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="System_Collections_Immutable_ImmutableArray_1_OfType_" data-uid="System.Collections.Immutable.ImmutableArray`1.OfType*"></a>
+  <h4 id="System_Collections_Immutable_ImmutableArray_1_OfType__1" data-uid="System.Collections.Immutable.ImmutableArray`1.OfType``1">OfType&lt;TResult&gt;()</h4>
+  <div class="markdown level1 summary"><p>Filters the elements of this array to those assignable to the specified type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;TResult&gt; OfType&lt;TResult&gt;()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;TResult&gt;</td>
+        <td><p>An <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.ienumerable">IEnumerable</a> that contains elements from the input sequence of type of <code class="paramref">TResult</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TResult</span></td>
+        <td><p>The type to filter the elements of the sequence on.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="System_Collections_Immutable_ImmutableArray_1_Remove_" data-uid="System.Collections.Immutable.ImmutableArray`1.Remove*"></a>
+  <h4 id="System_Collections_Immutable_ImmutableArray_1_Remove__0_" data-uid="System.Collections.Immutable.ImmutableArray`1.Remove(`0)">Remove(T)</h4>
+  <div class="markdown level1 summary"><p>Returns an array with the first occurrence of the specified element removed from the array. If no match is found, the current array is returned.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ImmutableArray&lt;T&gt; Remove(T item)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">item</span></td>
+        <td><p>The item to remove.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.immutable.immutablearray-1">ImmutableArray</a>&lt;T&gt;</td>
+        <td><p>A new array with the item removed.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="System_Collections_Immutable_ImmutableArray_1_Remove_" data-uid="System.Collections.Immutable.ImmutableArray`1.Remove*"></a>
+  <h4 id="System_Collections_Immutable_ImmutableArray_1_Remove__0_System_Collections_Generic_IEqualityComparer__0__" data-uid="System.Collections.Immutable.ImmutableArray`1.Remove(`0,System.Collections.Generic.IEqualityComparer{`0})">Remove(T, IEqualityComparer&lt;T&gt;?)</h4>
+  <div class="markdown level1 summary"><p>Returns an array with the first occurrence of the specified element removed from the array.</p>
+<p>If no match is found, the current array is returned.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ImmutableArray&lt;T&gt; Remove(T item, IEqualityComparer&lt;T&gt;? equalityComparer)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">item</span></td>
+        <td><p>The item to remove.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.iequalitycomparer-1">IEqualityComparer</a>&lt;T&gt;</td>
+        <td><span class="parametername">equalityComparer</span></td>
+        <td><p>The equality comparer to use in the search.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.immutable.immutablearray-1">ImmutableArray</a>&lt;T&gt;</td>
+        <td><p>A new array with the specified item removed.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="System_Collections_Immutable_ImmutableArray_1_RemoveAll_" data-uid="System.Collections.Immutable.ImmutableArray`1.RemoveAll*"></a>
+  <h4 id="System_Collections_Immutable_ImmutableArray_1_RemoveAll_System_Predicate__0__" data-uid="System.Collections.Immutable.ImmutableArray`1.RemoveAll(System.Predicate{`0})">RemoveAll(Predicate&lt;T&gt;)</h4>
+  <div class="markdown level1 summary"><p>Removes all the items from the array that meet the specified condition.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ImmutableArray&lt;T&gt; RemoveAll(Predicate&lt;T&gt; match)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.predicate-1">Predicate</a>&lt;T&gt;</td>
+        <td><span class="parametername">match</span></td>
+        <td><p>The delegate that defines the conditions of the elements to remove.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.immutable.immutablearray-1">ImmutableArray</a>&lt;T&gt;</td>
+        <td><p>A new array with items that meet the specified condition removed.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="System_Collections_Immutable_ImmutableArray_1_RemoveAt_" data-uid="System.Collections.Immutable.ImmutableArray`1.RemoveAt*"></a>
+  <h4 id="System_Collections_Immutable_ImmutableArray_1_RemoveAt_System_Int32_" data-uid="System.Collections.Immutable.ImmutableArray`1.RemoveAt(System.Int32)">RemoveAt(int)</h4>
+  <div class="markdown level1 summary"><p>Returns an array with the element at the specified position removed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ImmutableArray&lt;T&gt; RemoveAt(int index)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">index</span></td>
+        <td><p>The 0-based index of the element to remove from the returned array.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.immutable.immutablearray-1">ImmutableArray</a>&lt;T&gt;</td>
+        <td><p>A new array with the item at the specified index removed.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="System_Collections_Immutable_ImmutableArray_1_RemoveRange_" data-uid="System.Collections.Immutable.ImmutableArray`1.RemoveRange*"></a>
+  <h4 id="System_Collections_Immutable_ImmutableArray_1_RemoveRange_System_Collections_Generic_IEnumerable__0__" data-uid="System.Collections.Immutable.ImmutableArray`1.RemoveRange(System.Collections.Generic.IEnumerable{`0})">RemoveRange(IEnumerable&lt;T&gt;)</h4>
+  <div class="markdown level1 summary"><p>Removes the specified items from this array.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ImmutableArray&lt;T&gt; RemoveRange(IEnumerable&lt;T&gt; items)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;T&gt;</td>
+        <td><span class="parametername">items</span></td>
+        <td><p>The items to remove if matches are found in this list.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.immutable.immutablearray-1">ImmutableArray</a>&lt;T&gt;</td>
+        <td><p>A new array with the elements removed.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="System_Collections_Immutable_ImmutableArray_1_RemoveRange_" data-uid="System.Collections.Immutable.ImmutableArray`1.RemoveRange*"></a>
+  <h4 id="System_Collections_Immutable_ImmutableArray_1_RemoveRange_System_Collections_Generic_IEnumerable__0__System_Collections_Generic_IEqualityComparer__0__" data-uid="System.Collections.Immutable.ImmutableArray`1.RemoveRange(System.Collections.Generic.IEnumerable{`0},System.Collections.Generic.IEqualityComparer{`0})">RemoveRange(IEnumerable&lt;T&gt;, IEqualityComparer&lt;T&gt;?)</h4>
+  <div class="markdown level1 summary"><p>Removes the specified items from this array.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ImmutableArray&lt;T&gt; RemoveRange(IEnumerable&lt;T&gt; items, IEqualityComparer&lt;T&gt;? equalityComparer)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;T&gt;</td>
+        <td><span class="parametername">items</span></td>
+        <td><p>The items to remove if matches are found in this list.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.iequalitycomparer-1">IEqualityComparer</a>&lt;T&gt;</td>
+        <td><span class="parametername">equalityComparer</span></td>
+        <td><p>The equality comparer to use in the search.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.immutable.immutablearray-1">ImmutableArray</a>&lt;T&gt;</td>
+        <td><p>A new array with the elements removed.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="System_Collections_Immutable_ImmutableArray_1_RemoveRange_" data-uid="System.Collections.Immutable.ImmutableArray`1.RemoveRange*"></a>
+  <h4 id="System_Collections_Immutable_ImmutableArray_1_RemoveRange_System_Collections_Immutable_ImmutableArray__0__" data-uid="System.Collections.Immutable.ImmutableArray`1.RemoveRange(System.Collections.Immutable.ImmutableArray{`0})">RemoveRange(ImmutableArray&lt;T&gt;)</h4>
+  <div class="markdown level1 summary"><p>Removes the specified values from this list.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ImmutableArray&lt;T&gt; RemoveRange(ImmutableArray&lt;T&gt; items)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.immutable.immutablearray-1">ImmutableArray</a>&lt;T&gt;</td>
+        <td><span class="parametername">items</span></td>
+        <td><p>The items to remove if matches are found in this list.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.immutable.immutablearray-1">ImmutableArray</a>&lt;T&gt;</td>
+        <td><p>A new list with the elements removed.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="System_Collections_Immutable_ImmutableArray_1_RemoveRange_" data-uid="System.Collections.Immutable.ImmutableArray`1.RemoveRange*"></a>
+  <h4 id="System_Collections_Immutable_ImmutableArray_1_RemoveRange_System_Collections_Immutable_ImmutableArray__0__System_Collections_Generic_IEqualityComparer__0__" data-uid="System.Collections.Immutable.ImmutableArray`1.RemoveRange(System.Collections.Immutable.ImmutableArray{`0},System.Collections.Generic.IEqualityComparer{`0})">RemoveRange(ImmutableArray&lt;T&gt;, IEqualityComparer&lt;T&gt;?)</h4>
+  <div class="markdown level1 summary"><p>Removes the specified items from this list.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ImmutableArray&lt;T&gt; RemoveRange(ImmutableArray&lt;T&gt; items, IEqualityComparer&lt;T&gt;? equalityComparer)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.immutable.immutablearray-1">ImmutableArray</a>&lt;T&gt;</td>
+        <td><span class="parametername">items</span></td>
+        <td><p>The items to remove if matches are found in this list.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.iequalitycomparer-1">IEqualityComparer</a>&lt;T&gt;</td>
+        <td><span class="parametername">equalityComparer</span></td>
+        <td><p>The equality comparer to use in the search.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.immutable.immutablearray-1">ImmutableArray</a>&lt;T&gt;</td>
+        <td><p>A new array with the elements removed.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="System_Collections_Immutable_ImmutableArray_1_RemoveRange_" data-uid="System.Collections.Immutable.ImmutableArray`1.RemoveRange*"></a>
+  <h4 id="System_Collections_Immutable_ImmutableArray_1_RemoveRange_System_Int32_System_Int32_" data-uid="System.Collections.Immutable.ImmutableArray`1.RemoveRange(System.Int32,System.Int32)">RemoveRange(int, int)</h4>
+  <div class="markdown level1 summary"><p>Returns an array with the elements at the specified position removed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ImmutableArray&lt;T&gt; RemoveRange(int index, int length)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">index</span></td>
+        <td><p>The 0-based index of the starting element to remove from the array.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">length</span></td>
+        <td><p>The number of elements to remove from the array.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.immutable.immutablearray-1">ImmutableArray</a>&lt;T&gt;</td>
+        <td><p>The new array with the specified elements removed.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="System_Collections_Immutable_ImmutableArray_1_Replace_" data-uid="System.Collections.Immutable.ImmutableArray`1.Replace*"></a>
+  <h4 id="System_Collections_Immutable_ImmutableArray_1_Replace__0__0_" data-uid="System.Collections.Immutable.ImmutableArray`1.Replace(`0,`0)">Replace(T, T)</h4>
+  <div class="markdown level1 summary"><p>Finds the first element in the array equal to the specified value and replaces the value with the specified new value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ImmutableArray&lt;T&gt; Replace(T oldValue, T newValue)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">oldValue</span></td>
+        <td><p>The value to find and replace in the array.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">newValue</span></td>
+        <td><p>The value to replace the <code>oldvalue</code> with.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.immutable.immutablearray-1">ImmutableArray</a>&lt;T&gt;</td>
+        <td><p>A new array that contains <code class="paramref">newValue</code> even if the new and old values are the same.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentexception">ArgumentException</a></td>
+        <td><p><code class="paramref">oldValue</code> is not found in the array.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="System_Collections_Immutable_ImmutableArray_1_Replace_" data-uid="System.Collections.Immutable.ImmutableArray`1.Replace*"></a>
+  <h4 id="System_Collections_Immutable_ImmutableArray_1_Replace__0__0_System_Collections_Generic_IEqualityComparer__0__" data-uid="System.Collections.Immutable.ImmutableArray`1.Replace(`0,`0,System.Collections.Generic.IEqualityComparer{`0})">Replace(T, T, IEqualityComparer&lt;T&gt;?)</h4>
+  <div class="markdown level1 summary"><p>Finds the first element in the array equal to the specified value and replaces the value with the specified new value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ImmutableArray&lt;T&gt; Replace(T oldValue, T newValue, IEqualityComparer&lt;T&gt;? equalityComparer)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">oldValue</span></td>
+        <td><p>The value to find and replace in the array.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">newValue</span></td>
+        <td><p>The value to replace the <code>oldvalue</code> with.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.iequalitycomparer-1">IEqualityComparer</a>&lt;T&gt;</td>
+        <td><span class="parametername">equalityComparer</span></td>
+        <td><p>The equality comparer to use to compare values.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.immutable.immutablearray-1">ImmutableArray</a>&lt;T&gt;</td>
+        <td><p>A new array that contains <code class="paramref">newValue</code> even if the new and old values are the same.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentexception">ArgumentException</a></td>
+        <td><p><code class="paramref">oldValue</code> is not found in the array.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="System_Collections_Immutable_ImmutableArray_1_SetItem_" data-uid="System.Collections.Immutable.ImmutableArray`1.SetItem*"></a>
+  <h4 id="System_Collections_Immutable_ImmutableArray_1_SetItem_System_Int32__0_" data-uid="System.Collections.Immutable.ImmutableArray`1.SetItem(System.Int32,`0)">SetItem(int, T)</h4>
+  <div class="markdown level1 summary"><p>Replaces the item at the specified index with the specified item.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ImmutableArray&lt;T&gt; SetItem(int index, T item)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">index</span></td>
+        <td><p>The index of the item to replace.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">item</span></td>
+        <td><p>The item to add to the list.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.immutable.immutablearray-1">ImmutableArray</a>&lt;T&gt;</td>
+        <td><p>The new array that contains <code class="paramref">item</code> at the specified index.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="System_Collections_Immutable_ImmutableArray_1_Sort_" data-uid="System.Collections.Immutable.ImmutableArray`1.Sort*"></a>
+  <h4 id="System_Collections_Immutable_ImmutableArray_1_Sort" data-uid="System.Collections.Immutable.ImmutableArray`1.Sort">Sort()</h4>
+  <div class="markdown level1 summary"><p>Sorts the elements in the immutable array using the default comparer.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ImmutableArray&lt;T&gt; Sort()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.immutable.immutablearray-1">ImmutableArray</a>&lt;T&gt;</td>
+        <td><p>A new immutable array that contains the items in this array, in sorted order.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="System_Collections_Immutable_ImmutableArray_1_Sort_" data-uid="System.Collections.Immutable.ImmutableArray`1.Sort*"></a>
+  <h4 id="System_Collections_Immutable_ImmutableArray_1_Sort_System_Collections_Generic_IComparer__0__" data-uid="System.Collections.Immutable.ImmutableArray`1.Sort(System.Collections.Generic.IComparer{`0})">Sort(IComparer&lt;T&gt;?)</h4>
+  <div class="markdown level1 summary"><p>Sorts the elements in the immutable array using the specified comparer.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ImmutableArray&lt;T&gt; Sort(IComparer&lt;T&gt;? comparer)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.icomparer-1">IComparer</a>&lt;T&gt;</td>
+        <td><span class="parametername">comparer</span></td>
+        <td><p>The implementation to use when comparing elements, or <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> to use the default comparer.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.immutable.immutablearray-1">ImmutableArray</a>&lt;T&gt;</td>
+        <td><p>A new immutable array that contains the items in this array, in sorted order.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="System_Collections_Immutable_ImmutableArray_1_Sort_" data-uid="System.Collections.Immutable.ImmutableArray`1.Sort*"></a>
+  <h4 id="System_Collections_Immutable_ImmutableArray_1_Sort_System_Comparison__0__" data-uid="System.Collections.Immutable.ImmutableArray`1.Sort(System.Comparison{`0})">Sort(Comparison&lt;T&gt;)</h4>
+  <div class="markdown level1 summary"><p>Sorts the elements in the entire <a class="xref" href="System.Collections.Immutable.ImmutableArray-1.html">ImmutableArray&lt;T&gt;</a> using             the specified <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.comparison-1">Comparison&lt;T&gt;</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ImmutableArray&lt;T&gt; Sort(Comparison&lt;T&gt; comparison)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.comparison-1">Comparison</a>&lt;T&gt;</td>
+        <td><span class="parametername">comparison</span></td>
+        <td><p>The <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.comparison-1">Comparison&lt;T&gt;</a> to use when comparing elements.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.immutable.immutablearray-1">ImmutableArray</a>&lt;T&gt;</td>
+        <td><p>The sorted list.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></td>
+        <td><p><code class="paramref">comparison</code> is null.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="System_Collections_Immutable_ImmutableArray_1_Sort_" data-uid="System.Collections.Immutable.ImmutableArray`1.Sort*"></a>
+  <h4 id="System_Collections_Immutable_ImmutableArray_1_Sort_System_Int32_System_Int32_System_Collections_Generic_IComparer__0__" data-uid="System.Collections.Immutable.ImmutableArray`1.Sort(System.Int32,System.Int32,System.Collections.Generic.IComparer{`0})">Sort(int, int, IComparer&lt;T&gt;?)</h4>
+  <div class="markdown level1 summary"><p>Sorts the specified elements in the immutable array using the specified comparer.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ImmutableArray&lt;T&gt; Sort(int index, int count, IComparer&lt;T&gt;? comparer)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">index</span></td>
+        <td><p>The index of the first element to sort.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">count</span></td>
+        <td><p>The number of elements to include in the sort.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.icomparer-1">IComparer</a>&lt;T&gt;</td>
+        <td><span class="parametername">comparer</span></td>
+        <td><p>The implementation to use when comparing elements, or <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> to use the default comparer.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.immutable.immutablearray-1">ImmutableArray</a>&lt;T&gt;</td>
+        <td><p>A new immutable array that contains the items in this array, in sorted order.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="System_Collections_Immutable_ImmutableArray_1_ToBuilder_" data-uid="System.Collections.Immutable.ImmutableArray`1.ToBuilder*"></a>
+  <h4 id="System_Collections_Immutable_ImmutableArray_1_ToBuilder" data-uid="System.Collections.Immutable.ImmutableArray`1.ToBuilder">ToBuilder()</h4>
+  <div class="markdown level1 summary"><p>Creates a mutable array that has the same contents as this array and can be efficiently mutated across multiple operations using standard mutable interfaces.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ImmutableArray&lt;T&gt;.Builder ToBuilder()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="System.Collections.Immutable.ImmutableArray-1.html">ImmutableArray</a>&lt;T&gt;.<a class="xref" href="System.Collections.Immutable.ImmutableArray-1.Builder.html">Builder</a></td>
+        <td><p>The new builder with the same contents as this array.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="operators">Operators
+</h3>
+  <a id="System_Collections_Immutable_ImmutableArray_1_op_Equality_" data-uid="System.Collections.Immutable.ImmutableArray`1.op_Equality*"></a>
+  <h4 id="System_Collections_Immutable_ImmutableArray_1_op_Equality_System_Collections_Immutable_ImmutableArray__0__System_Collections_Immutable_ImmutableArray__0__" data-uid="System.Collections.Immutable.ImmutableArray`1.op_Equality(System.Collections.Immutable.ImmutableArray{`0},System.Collections.Immutable.ImmutableArray{`0})">operator ==(ImmutableArray&lt;T&gt;, ImmutableArray&lt;T&gt;)</h4>
+  <div class="markdown level1 summary"><p>Returns a value that indicates if two arrays are equal.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator ==(ImmutableArray&lt;T&gt; left, ImmutableArray&lt;T&gt; right)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.immutable.immutablearray-1">ImmutableArray</a>&lt;T&gt;</td>
+        <td><span class="parametername">left</span></td>
+        <td><p>The array to the left of the operator.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.immutable.immutablearray-1">ImmutableArray</a>&lt;T&gt;</td>
+        <td><span class="parametername">right</span></td>
+        <td><p>The array to the right of the operator.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the arrays are equal; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="System_Collections_Immutable_ImmutableArray_1_op_Equality_" data-uid="System.Collections.Immutable.ImmutableArray`1.op_Equality*"></a>
+  <h4 id="System_Collections_Immutable_ImmutableArray_1_op_Equality_System_Nullable_System_Collections_Immutable_ImmutableArray__0___System_Nullable_System_Collections_Immutable_ImmutableArray__0___" data-uid="System.Collections.Immutable.ImmutableArray`1.op_Equality(System.Nullable{System.Collections.Immutable.ImmutableArray{`0}},System.Nullable{System.Collections.Immutable.ImmutableArray{`0}})">operator ==(ImmutableArray&lt;T&gt;?, ImmutableArray&lt;T&gt;?)</h4>
+  <div class="markdown level1 summary"><p>Returns a value that indicates if two arrays are equal.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator ==(ImmutableArray&lt;T&gt;? left, ImmutableArray&lt;T&gt;? right)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="System.Collections.Immutable.ImmutableArray-1.html">ImmutableArray</a>&lt;T&gt;?</td>
+        <td><span class="parametername">left</span></td>
+        <td><p>The array to the left of the operator.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="System.Collections.Immutable.ImmutableArray-1.html">ImmutableArray</a>&lt;T&gt;?</td>
+        <td><span class="parametername">right</span></td>
+        <td><p>The array to the right of the operator.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the arrays are equal; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="System_Collections_Immutable_ImmutableArray_1_op_Inequality_" data-uid="System.Collections.Immutable.ImmutableArray`1.op_Inequality*"></a>
+  <h4 id="System_Collections_Immutable_ImmutableArray_1_op_Inequality_System_Collections_Immutable_ImmutableArray__0__System_Collections_Immutable_ImmutableArray__0__" data-uid="System.Collections.Immutable.ImmutableArray`1.op_Inequality(System.Collections.Immutable.ImmutableArray{`0},System.Collections.Immutable.ImmutableArray{`0})">operator !=(ImmutableArray&lt;T&gt;, ImmutableArray&lt;T&gt;)</h4>
+  <div class="markdown level1 summary"><p>Returns a value that indicates whether two arrays are not equal.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator !=(ImmutableArray&lt;T&gt; left, ImmutableArray&lt;T&gt; right)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.immutable.immutablearray-1">ImmutableArray</a>&lt;T&gt;</td>
+        <td><span class="parametername">left</span></td>
+        <td><p>The array to the left of the operator.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.immutable.immutablearray-1">ImmutableArray</a>&lt;T&gt;</td>
+        <td><span class="parametername">right</span></td>
+        <td><p>The array to the right of the operator.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the arrays are not equal; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="System_Collections_Immutable_ImmutableArray_1_op_Inequality_" data-uid="System.Collections.Immutable.ImmutableArray`1.op_Inequality*"></a>
+  <h4 id="System_Collections_Immutable_ImmutableArray_1_op_Inequality_System_Nullable_System_Collections_Immutable_ImmutableArray__0___System_Nullable_System_Collections_Immutable_ImmutableArray__0___" data-uid="System.Collections.Immutable.ImmutableArray`1.op_Inequality(System.Nullable{System.Collections.Immutable.ImmutableArray{`0}},System.Nullable{System.Collections.Immutable.ImmutableArray{`0}})">operator !=(ImmutableArray&lt;T&gt;?, ImmutableArray&lt;T&gt;?)</h4>
+  <div class="markdown level1 summary"><p>Checks for inequality between two array.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator !=(ImmutableArray&lt;T&gt;? left, ImmutableArray&lt;T&gt;? right)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="System.Collections.Immutable.ImmutableArray-1.html">ImmutableArray</a>&lt;T&gt;?</td>
+        <td><span class="parametername">left</span></td>
+        <td><p>The object to the left of the operator.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="System.Collections.Immutable.ImmutableArray-1.html">ImmutableArray</a>&lt;T&gt;?</td>
+        <td><span class="parametername">right</span></td>
+        <td><p>The object to the right of the operator.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the two arrays are not equal; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList&lt;T&gt;</a>
+  </div>
+  <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1">ICollection&lt;T&gt;</a>
+  </div>
+  <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable&lt;T&gt;</a>
+  </div>
+  <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.ilist">IList</a>
+  </div>
+  <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.icollection">ICollection</a>
+  </div>
+  <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.istructuralcomparable">IStructuralComparable</a>
+  </div>
+  <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.istructuralequatable">IStructuralEquatable</a>
+  </div>
+  <div>
+      <a class="xref" href="System.Collections.Immutable.IImmutableList-1.html">IImmutableList&lt;T&gt;</a>
+  </div>
+  <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1">IReadOnlyList&lt;T&gt;</a>
+  </div>
+  <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1">IReadOnlyCollection&lt;T&gt;</a>
+  </div>
+  <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable&lt;T&gt;</a>
+  </div>
+  <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.ienumerable">IEnumerable</a>
+  </div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="System.Collections.Immutable.ImmutableArray.html#System_Collections_Immutable_ImmutableArray_ToImmutableArray__1_System_Collections_Generic_IEnumerable___0__">ImmutableArray.ToImmutableArray&lt;TSource&gt;(IEnumerable&lt;TSource&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="System.Collections.Immutable.ImmutableDictionary.html#System_Collections_Immutable_ImmutableDictionary_ToImmutableDictionary__2_System_Collections_Generic_IEnumerable___0__System_Func___0___1__">ImmutableDictionary.ToImmutableDictionary&lt;TSource, TKey&gt;(IEnumerable&lt;TSource&gt;, Func&lt;TSource, TKey&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="System.Collections.Immutable.ImmutableDictionary.html#System_Collections_Immutable_ImmutableDictionary_ToImmutableDictionary__2_System_Collections_Generic_IEnumerable___0__System_Func___0___1__System_Collections_Generic_IEqualityComparer___1__">ImmutableDictionary.ToImmutableDictionary&lt;TSource, TKey&gt;(IEnumerable&lt;TSource&gt;, Func&lt;TSource, TKey&gt;, IEqualityComparer&lt;TKey&gt;?)</a>
+  </div>
+  <div>
+      <a class="xref" href="System.Collections.Immutable.ImmutableDictionary.html#System_Collections_Immutable_ImmutableDictionary_ToImmutableDictionary__3_System_Collections_Generic_IEnumerable___0__System_Func___0___1__System_Func___0___2__">ImmutableDictionary.ToImmutableDictionary&lt;TSource, TKey, TValue&gt;(IEnumerable&lt;TSource&gt;, Func&lt;TSource, TKey&gt;, Func&lt;TSource, TValue&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="System.Collections.Immutable.ImmutableDictionary.html#System_Collections_Immutable_ImmutableDictionary_ToImmutableDictionary__3_System_Collections_Generic_IEnumerable___0__System_Func___0___1__System_Func___0___2__System_Collections_Generic_IEqualityComparer___1__">ImmutableDictionary.ToImmutableDictionary&lt;TSource, TKey, TValue&gt;(IEnumerable&lt;TSource&gt;, Func&lt;TSource, TKey&gt;, Func&lt;TSource, TValue&gt;, IEqualityComparer&lt;TKey&gt;?)</a>
+  </div>
+  <div>
+      <a class="xref" href="System.Collections.Immutable.ImmutableDictionary.html#System_Collections_Immutable_ImmutableDictionary_ToImmutableDictionary__3_System_Collections_Generic_IEnumerable___0__System_Func___0___1__System_Func___0___2__System_Collections_Generic_IEqualityComparer___1__System_Collections_Generic_IEqualityComparer___2__">ImmutableDictionary.ToImmutableDictionary&lt;TSource, TKey, TValue&gt;(IEnumerable&lt;TSource&gt;, Func&lt;TSource, TKey&gt;, Func&lt;TSource, TValue&gt;, IEqualityComparer&lt;TKey&gt;?, IEqualityComparer&lt;TValue&gt;?)</a>
+  </div>
+  <div>
+      <a class="xref" href="System.Collections.Immutable.ImmutableHashSet.html#System_Collections_Immutable_ImmutableHashSet_ToImmutableHashSet__1_System_Collections_Generic_IEnumerable___0__">ImmutableHashSet.ToImmutableHashSet&lt;TSource&gt;(IEnumerable&lt;TSource&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="System.Collections.Immutable.ImmutableHashSet.html#System_Collections_Immutable_ImmutableHashSet_ToImmutableHashSet__1_System_Collections_Generic_IEnumerable___0__System_Collections_Generic_IEqualityComparer___0__">ImmutableHashSet.ToImmutableHashSet&lt;TSource&gt;(IEnumerable&lt;TSource&gt;, IEqualityComparer&lt;TSource&gt;?)</a>
+  </div>
+  <div>
+      <a class="xref" href="System.Collections.Immutable.ImmutableList.html#System_Collections_Immutable_ImmutableList_ToImmutableList__1_System_Collections_Generic_IEnumerable___0__">ImmutableList.ToImmutableList&lt;TSource&gt;(IEnumerable&lt;TSource&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="System.Collections.Immutable.ImmutableSortedDictionary.html#System_Collections_Immutable_ImmutableSortedDictionary_ToImmutableSortedDictionary__3_System_Collections_Generic_IEnumerable___0__System_Func___0___1__System_Func___0___2__">ImmutableSortedDictionary.ToImmutableSortedDictionary&lt;TSource, TKey, TValue&gt;(IEnumerable&lt;TSource&gt;, Func&lt;TSource, TKey&gt;, Func&lt;TSource, TValue&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="System.Collections.Immutable.ImmutableSortedDictionary.html#System_Collections_Immutable_ImmutableSortedDictionary_ToImmutableSortedDictionary__3_System_Collections_Generic_IEnumerable___0__System_Func___0___1__System_Func___0___2__System_Collections_Generic_IComparer___1__">ImmutableSortedDictionary.ToImmutableSortedDictionary&lt;TSource, TKey, TValue&gt;(IEnumerable&lt;TSource&gt;, Func&lt;TSource, TKey&gt;, Func&lt;TSource, TValue&gt;, IComparer&lt;TKey&gt;?)</a>
+  </div>
+  <div>
+      <a class="xref" href="System.Collections.Immutable.ImmutableSortedDictionary.html#System_Collections_Immutable_ImmutableSortedDictionary_ToImmutableSortedDictionary__3_System_Collections_Generic_IEnumerable___0__System_Func___0___1__System_Func___0___2__System_Collections_Generic_IComparer___1__System_Collections_Generic_IEqualityComparer___2__">ImmutableSortedDictionary.ToImmutableSortedDictionary&lt;TSource, TKey, TValue&gt;(IEnumerable&lt;TSource&gt;, Func&lt;TSource, TKey&gt;, Func&lt;TSource, TValue&gt;, IComparer&lt;TKey&gt;?, IEqualityComparer&lt;TValue&gt;?)</a>
+  </div>
+  <div>
+      <a class="xref" href="System.Collections.Immutable.ImmutableSortedSet.html#System_Collections_Immutable_ImmutableSortedSet_ToImmutableSortedSet__1_System_Collections_Generic_IEnumerable___0__">ImmutableSortedSet.ToImmutableSortedSet&lt;TSource&gt;(IEnumerable&lt;TSource&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="System.Collections.Immutable.ImmutableSortedSet.html#System_Collections_Immutable_ImmutableSortedSet_ToImmutableSortedSet__1_System_Collections_Generic_IEnumerable___0__System_Collections_Generic_IComparer___0__">ImmutableSortedSet.ToImmutableSortedSet&lt;TSource&gt;(IEnumerable&lt;TSource&gt;, IComparer&lt;TSource&gt;?)</a>
+  </div>
+  <div>
+      <a class="xref" href="System.Collections.Immutable.ImmutableList.html#System_Collections_Immutable_ImmutableList_IndexOf__1_System_Collections_Immutable_IImmutableList___0____0_">ImmutableList.IndexOf&lt;T&gt;(IImmutableList&lt;T&gt;, T)</a>
+  </div>
+  <div>
+      <a class="xref" href="System.Collections.Immutable.ImmutableList.html#System_Collections_Immutable_ImmutableList_IndexOf__1_System_Collections_Immutable_IImmutableList___0____0_System_Collections_Generic_IEqualityComparer___0__">ImmutableList.IndexOf&lt;T&gt;(IImmutableList&lt;T&gt;, T, IEqualityComparer&lt;T&gt;?)</a>
+  </div>
+  <div>
+      <a class="xref" href="System.Collections.Immutable.ImmutableList.html#System_Collections_Immutable_ImmutableList_IndexOf__1_System_Collections_Immutable_IImmutableList___0____0_System_Int32_">ImmutableList.IndexOf&lt;T&gt;(IImmutableList&lt;T&gt;, T, int)</a>
+  </div>
+  <div>
+      <a class="xref" href="System.Collections.Immutable.ImmutableList.html#System_Collections_Immutable_ImmutableList_IndexOf__1_System_Collections_Immutable_IImmutableList___0____0_System_Int32_System_Int32_">ImmutableList.IndexOf&lt;T&gt;(IImmutableList&lt;T&gt;, T, int, int)</a>
+  </div>
+  <div>
+      <a class="xref" href="System.Collections.Immutable.ImmutableList.html#System_Collections_Immutable_ImmutableList_LastIndexOf__1_System_Collections_Immutable_IImmutableList___0____0_">ImmutableList.LastIndexOf&lt;T&gt;(IImmutableList&lt;T&gt;, T)</a>
+  </div>
+  <div>
+      <a class="xref" href="System.Collections.Immutable.ImmutableList.html#System_Collections_Immutable_ImmutableList_LastIndexOf__1_System_Collections_Immutable_IImmutableList___0____0_System_Collections_Generic_IEqualityComparer___0__">ImmutableList.LastIndexOf&lt;T&gt;(IImmutableList&lt;T&gt;, T, IEqualityComparer&lt;T&gt;?)</a>
+  </div>
+  <div>
+      <a class="xref" href="System.Collections.Immutable.ImmutableList.html#System_Collections_Immutable_ImmutableList_LastIndexOf__1_System_Collections_Immutable_IImmutableList___0____0_System_Int32_">ImmutableList.LastIndexOf&lt;T&gt;(IImmutableList&lt;T&gt;, T, int)</a>
+  </div>
+  <div>
+      <a class="xref" href="System.Collections.Immutable.ImmutableList.html#System_Collections_Immutable_ImmutableList_LastIndexOf__1_System_Collections_Immutable_IImmutableList___0____0_System_Int32_System_Int32_">ImmutableList.LastIndexOf&lt;T&gt;(IImmutableList&lt;T&gt;, T, int, int)</a>
+  </div>
+  <div>
+      <a class="xref" href="System.Collections.Immutable.ImmutableList.html#System_Collections_Immutable_ImmutableList_RemoveRange__1_System_Collections_Immutable_IImmutableList___0__System_Collections_Generic_IEnumerable___0__">ImmutableList.RemoveRange&lt;T&gt;(IImmutableList&lt;T&gt;, IEnumerable&lt;T&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="System.Collections.Immutable.ImmutableList.html#System_Collections_Immutable_ImmutableList_Remove__1_System_Collections_Immutable_IImmutableList___0____0_">ImmutableList.Remove&lt;T&gt;(IImmutableList&lt;T&gt;, T)</a>
+  </div>
+  <div>
+      <a class="xref" href="System.Collections.Immutable.ImmutableList.html#System_Collections_Immutable_ImmutableList_Replace__1_System_Collections_Immutable_IImmutableList___0____0___0_">ImmutableList.Replace&lt;T&gt;(IImmutableList&lt;T&gt;, T, T)</a>
+  </div>
+  <div>
+      <a class="xref" href="System.Collections.Immutable.ImmutableArray.html#System_Collections_Immutable_ImmutableArray_BinarySearch__1_System_Collections_Immutable_ImmutableArray___0__System_Int32_System_Int32___0_">ImmutableArray.BinarySearch&lt;T&gt;(ImmutableArray&lt;T&gt;, int, int, T)</a>
+  </div>
+  <div>
+      <a class="xref" href="System.Collections.Immutable.ImmutableArray.html#System_Collections_Immutable_ImmutableArray_BinarySearch__1_System_Collections_Immutable_ImmutableArray___0__System_Int32_System_Int32___0_System_Collections_Generic_IComparer___0__">ImmutableArray.BinarySearch&lt;T&gt;(ImmutableArray&lt;T&gt;, int, int, T, IComparer&lt;T&gt;?)</a>
+  </div>
+  <div>
+      <a class="xref" href="System.Collections.Immutable.ImmutableArray.html#System_Collections_Immutable_ImmutableArray_BinarySearch__1_System_Collections_Immutable_ImmutableArray___0____0_">ImmutableArray.BinarySearch&lt;T&gt;(ImmutableArray&lt;T&gt;, T)</a>
+  </div>
+  <div>
+      <a class="xref" href="System.Collections.Immutable.ImmutableArray.html#System_Collections_Immutable_ImmutableArray_BinarySearch__1_System_Collections_Immutable_ImmutableArray___0____0_System_Collections_Generic_IComparer___0__">ImmutableArray.BinarySearch&lt;T&gt;(ImmutableArray&lt;T&gt;, T, IComparer&lt;T&gt;?)</a>
+  </div>
+  <div>
+      <a class="xref" href="System.Linq.ImmutableArrayExtensions.html#System_Linq_ImmutableArrayExtensions_Aggregate__1_System_Collections_Immutable_ImmutableArray___0__System_Func___0___0___0__">ImmutableArrayExtensions.Aggregate&lt;T&gt;(ImmutableArray&lt;T&gt;, Func&lt;T, T, T&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="System.Linq.ImmutableArrayExtensions.html#System_Linq_ImmutableArrayExtensions_Aggregate__2_System_Collections_Immutable_ImmutableArray___1____0_System_Func___0___1___0__">ImmutableArrayExtensions.Aggregate&lt;TAccumulate, T&gt;(ImmutableArray&lt;T&gt;, TAccumulate, Func&lt;TAccumulate, T, TAccumulate&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="System.Linq.ImmutableArrayExtensions.html#System_Linq_ImmutableArrayExtensions_Aggregate__3_System_Collections_Immutable_ImmutableArray___2____0_System_Func___0___2___0__System_Func___0___1__">ImmutableArrayExtensions.Aggregate&lt;TAccumulate, TResult, T&gt;(ImmutableArray&lt;T&gt;, TAccumulate, Func&lt;TAccumulate, T, TAccumulate&gt;, Func&lt;TAccumulate, TResult&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="System.Linq.ImmutableArrayExtensions.html#System_Linq_ImmutableArrayExtensions_All__1_System_Collections_Immutable_ImmutableArray___0__System_Func___0_System_Boolean__">ImmutableArrayExtensions.All&lt;T&gt;(ImmutableArray&lt;T&gt;, Func&lt;T, bool&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="System.Linq.ImmutableArrayExtensions.html#System_Linq_ImmutableArrayExtensions_Any__1_System_Collections_Immutable_ImmutableArray___0__">ImmutableArrayExtensions.Any&lt;T&gt;(ImmutableArray&lt;T&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="System.Linq.ImmutableArrayExtensions.html#System_Linq_ImmutableArrayExtensions_Any__1_System_Collections_Immutable_ImmutableArray___0__System_Func___0_System_Boolean__">ImmutableArrayExtensions.Any&lt;T&gt;(ImmutableArray&lt;T&gt;, Func&lt;T, bool&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="System.Linq.ImmutableArrayExtensions.html#System_Linq_ImmutableArrayExtensions_ElementAtOrDefault__1_System_Collections_Immutable_ImmutableArray___0__System_Int32_">ImmutableArrayExtensions.ElementAtOrDefault&lt;T&gt;(ImmutableArray&lt;T&gt;, int)</a>
+  </div>
+  <div>
+      <a class="xref" href="System.Linq.ImmutableArrayExtensions.html#System_Linq_ImmutableArrayExtensions_ElementAt__1_System_Collections_Immutable_ImmutableArray___0__System_Int32_">ImmutableArrayExtensions.ElementAt&lt;T&gt;(ImmutableArray&lt;T&gt;, int)</a>
+  </div>
+  <div>
+      <a class="xref" href="System.Linq.ImmutableArrayExtensions.html#System_Linq_ImmutableArrayExtensions_FirstOrDefault__1_System_Collections_Immutable_ImmutableArray___0__">ImmutableArrayExtensions.FirstOrDefault&lt;T&gt;(ImmutableArray&lt;T&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="System.Linq.ImmutableArrayExtensions.html#System_Linq_ImmutableArrayExtensions_FirstOrDefault__1_System_Collections_Immutable_ImmutableArray___0__System_Func___0_System_Boolean__">ImmutableArrayExtensions.FirstOrDefault&lt;T&gt;(ImmutableArray&lt;T&gt;, Func&lt;T, bool&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="System.Linq.ImmutableArrayExtensions.html#System_Linq_ImmutableArrayExtensions_First__1_System_Collections_Immutable_ImmutableArray___0__">ImmutableArrayExtensions.First&lt;T&gt;(ImmutableArray&lt;T&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="System.Linq.ImmutableArrayExtensions.html#System_Linq_ImmutableArrayExtensions_First__1_System_Collections_Immutable_ImmutableArray___0__System_Func___0_System_Boolean__">ImmutableArrayExtensions.First&lt;T&gt;(ImmutableArray&lt;T&gt;, Func&lt;T, bool&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="System.Linq.ImmutableArrayExtensions.html#System_Linq_ImmutableArrayExtensions_LastOrDefault__1_System_Collections_Immutable_ImmutableArray___0__">ImmutableArrayExtensions.LastOrDefault&lt;T&gt;(ImmutableArray&lt;T&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="System.Linq.ImmutableArrayExtensions.html#System_Linq_ImmutableArrayExtensions_LastOrDefault__1_System_Collections_Immutable_ImmutableArray___0__System_Func___0_System_Boolean__">ImmutableArrayExtensions.LastOrDefault&lt;T&gt;(ImmutableArray&lt;T&gt;, Func&lt;T, bool&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="System.Linq.ImmutableArrayExtensions.html#System_Linq_ImmutableArrayExtensions_Last__1_System_Collections_Immutable_ImmutableArray___0__">ImmutableArrayExtensions.Last&lt;T&gt;(ImmutableArray&lt;T&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="System.Linq.ImmutableArrayExtensions.html#System_Linq_ImmutableArrayExtensions_Last__1_System_Collections_Immutable_ImmutableArray___0__System_Func___0_System_Boolean__">ImmutableArrayExtensions.Last&lt;T&gt;(ImmutableArray&lt;T&gt;, Func&lt;T, bool&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="System.Linq.ImmutableArrayExtensions.html#System_Linq_ImmutableArrayExtensions_SelectMany__3_System_Collections_Immutable_ImmutableArray___0__System_Func___0_System_Collections_Generic_IEnumerable___1___System_Func___0___1___2__">ImmutableArrayExtensions.SelectMany&lt;TSource, TCollection, TResult&gt;(ImmutableArray&lt;TSource&gt;, Func&lt;TSource, IEnumerable&lt;TCollection&gt;&gt;, Func&lt;TSource, TCollection, TResult&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="System.Linq.ImmutableArrayExtensions.html#System_Linq_ImmutableArrayExtensions_Select__2_System_Collections_Immutable_ImmutableArray___0__System_Func___0___1__">ImmutableArrayExtensions.Select&lt;T, TResult&gt;(ImmutableArray&lt;T&gt;, Func&lt;T, TResult&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="System.Linq.ImmutableArrayExtensions.html#System_Linq_ImmutableArrayExtensions_SequenceEqual__2_System_Collections_Immutable_ImmutableArray___1__System_Collections_Generic_IEnumerable___0__System_Collections_Generic_IEqualityComparer___1__">ImmutableArrayExtensions.SequenceEqual&lt;TDerived, TBase&gt;(ImmutableArray&lt;TBase&gt;, IEnumerable&lt;TDerived&gt;, IEqualityComparer&lt;TBase&gt;?)</a>
+  </div>
+  <div>
+      <a class="xref" href="System.Linq.ImmutableArrayExtensions.html#System_Linq_ImmutableArrayExtensions_SequenceEqual__2_System_Collections_Immutable_ImmutableArray___1__System_Collections_Immutable_ImmutableArray___0__System_Collections_Generic_IEqualityComparer___1__">ImmutableArrayExtensions.SequenceEqual&lt;TDerived, TBase&gt;(ImmutableArray&lt;TBase&gt;, ImmutableArray&lt;TDerived&gt;, IEqualityComparer&lt;TBase&gt;?)</a>
+  </div>
+  <div>
+      <a class="xref" href="System.Linq.ImmutableArrayExtensions.html#System_Linq_ImmutableArrayExtensions_SequenceEqual__2_System_Collections_Immutable_ImmutableArray___1__System_Collections_Immutable_ImmutableArray___0__System_Func___1___1_System_Boolean__">ImmutableArrayExtensions.SequenceEqual&lt;TDerived, TBase&gt;(ImmutableArray&lt;TBase&gt;, ImmutableArray&lt;TDerived&gt;, Func&lt;TBase, TBase, bool&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="System.Linq.ImmutableArrayExtensions.html#System_Linq_ImmutableArrayExtensions_SingleOrDefault__1_System_Collections_Immutable_ImmutableArray___0__">ImmutableArrayExtensions.SingleOrDefault&lt;T&gt;(ImmutableArray&lt;T&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="System.Linq.ImmutableArrayExtensions.html#System_Linq_ImmutableArrayExtensions_SingleOrDefault__1_System_Collections_Immutable_ImmutableArray___0__System_Func___0_System_Boolean__">ImmutableArrayExtensions.SingleOrDefault&lt;T&gt;(ImmutableArray&lt;T&gt;, Func&lt;T, bool&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="System.Linq.ImmutableArrayExtensions.html#System_Linq_ImmutableArrayExtensions_Single__1_System_Collections_Immutable_ImmutableArray___0__">ImmutableArrayExtensions.Single&lt;T&gt;(ImmutableArray&lt;T&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="System.Linq.ImmutableArrayExtensions.html#System_Linq_ImmutableArrayExtensions_Single__1_System_Collections_Immutable_ImmutableArray___0__System_Func___0_System_Boolean__">ImmutableArrayExtensions.Single&lt;T&gt;(ImmutableArray&lt;T&gt;, Func&lt;T, bool&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="System.Linq.ImmutableArrayExtensions.html#System_Linq_ImmutableArrayExtensions_ToArray__1_System_Collections_Immutable_ImmutableArray___0__">ImmutableArrayExtensions.ToArray&lt;T&gt;(ImmutableArray&lt;T&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="System.Linq.ImmutableArrayExtensions.html#System_Linq_ImmutableArrayExtensions_ToDictionary__2_System_Collections_Immutable_ImmutableArray___1__System_Func___1___0__">ImmutableArrayExtensions.ToDictionary&lt;TKey, T&gt;(ImmutableArray&lt;T&gt;, Func&lt;T, TKey&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="System.Linq.ImmutableArrayExtensions.html#System_Linq_ImmutableArrayExtensions_ToDictionary__2_System_Collections_Immutable_ImmutableArray___1__System_Func___1___0__System_Collections_Generic_IEqualityComparer___0__">ImmutableArrayExtensions.ToDictionary&lt;TKey, T&gt;(ImmutableArray&lt;T&gt;, Func&lt;T, TKey&gt;, IEqualityComparer&lt;TKey&gt;?)</a>
+  </div>
+  <div>
+      <a class="xref" href="System.Linq.ImmutableArrayExtensions.html#System_Linq_ImmutableArrayExtensions_ToDictionary__3_System_Collections_Immutable_ImmutableArray___2__System_Func___2___0__System_Func___2___1__">ImmutableArrayExtensions.ToDictionary&lt;TKey, TElement, T&gt;(ImmutableArray&lt;T&gt;, Func&lt;T, TKey&gt;, Func&lt;T, TElement&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="System.Linq.ImmutableArrayExtensions.html#System_Linq_ImmutableArrayExtensions_ToDictionary__3_System_Collections_Immutable_ImmutableArray___2__System_Func___2___0__System_Func___2___1__System_Collections_Generic_IEqualityComparer___0__">ImmutableArrayExtensions.ToDictionary&lt;TKey, TElement, T&gt;(ImmutableArray&lt;T&gt;, Func&lt;T, TKey&gt;, Func&lt;T, TElement&gt;, IEqualityComparer&lt;TKey&gt;?)</a>
+  </div>
+  <div>
+      <a class="xref" href="System.Linq.ImmutableArrayExtensions.html#System_Linq_ImmutableArrayExtensions_Where__1_System_Collections_Immutable_ImmutableArray___0__System_Func___0_System_Boolean__">ImmutableArrayExtensions.Where&lt;T&gt;(ImmutableArray&lt;T&gt;, Func&lt;T, bool&gt;)</a>
+  </div>
+
+</article>
+                </div>
+
+                <div class="copyright-footer">
+                    <span>&#169; CodeFactory, LLC. All rights reserved.</span>
+                </div>
+            </main>
+        </div>
+
+
+        <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+        <script type="text/javascript" src="../styles/jquery.twbsPagination.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/mark.js@8.11.1/dist/jquery.mark.min.js"></script>
+        <script type="text/javascript" src="../styles/url.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/anchor-js@5.0.0/anchor.min.js"></script>
+        <script type="text/javascript" src="../styles/docfx.js"></script>
+        <script type="text/javascript" src="../styles/main.js"></script>
+        <script type="text/javascript" src="../styles/singulink.js"></script>    </body>
+</html>

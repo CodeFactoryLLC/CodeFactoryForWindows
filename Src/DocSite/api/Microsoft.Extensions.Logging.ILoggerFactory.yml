@@ -1,0 +1,374 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Extensions.Logging.ILoggerFactory
+  commentId: T:Microsoft.Extensions.Logging.ILoggerFactory
+  id: ILoggerFactory
+  parent: Microsoft.Extensions.Logging
+  children:
+  - Microsoft.Extensions.Logging.ILoggerFactory.AddProvider(Microsoft.Extensions.Logging.ILoggerProvider)
+  - Microsoft.Extensions.Logging.ILoggerFactory.CreateLogger(System.String)
+  langs:
+  - csharp
+  - vb
+  name: ILoggerFactory
+  nameWithType: ILoggerFactory
+  fullName: Microsoft.Extensions.Logging.ILoggerFactory
+  type: Interface
+  assemblies:
+  - Microsoft.Extensions.Logging.Abstractions
+  namespace: Microsoft.Extensions.Logging
+  summary: >-
+    Represents a type used to configure the logging system and create instances of <xref href="Microsoft.Extensions.Logging.ILogger" data-throw-if-not-resolved="false"></xref> from
+
+    the registered <xref href="Microsoft.Extensions.Logging.ILoggerProvider" data-throw-if-not-resolved="false"></xref>s.
+  example: []
+  syntax:
+    content: 'public interface ILoggerFactory : IDisposable'
+    content.vb: Public Interface ILoggerFactory Inherits IDisposable
+  inheritedMembers:
+  - System.IDisposable.Dispose
+  extensionMethods:
+  - Microsoft.Extensions.Logging.ILoggerFactory.Microsoft.Extensions.Logging.LoggerFactoryExtensions.CreateLogger(System.Type)
+  - Microsoft.Extensions.Logging.ILoggerFactory.Microsoft.Extensions.Logging.LoggerFactoryExtensions.CreateLogger``1
+- uid: Microsoft.Extensions.Logging.ILoggerFactory.CreateLogger(System.String)
+  commentId: M:Microsoft.Extensions.Logging.ILoggerFactory.CreateLogger(System.String)
+  id: CreateLogger(System.String)
+  parent: Microsoft.Extensions.Logging.ILoggerFactory
+  langs:
+  - csharp
+  - vb
+  name: CreateLogger(string)
+  nameWithType: ILoggerFactory.CreateLogger(string)
+  fullName: Microsoft.Extensions.Logging.ILoggerFactory.CreateLogger(string)
+  type: Method
+  assemblies:
+  - Microsoft.Extensions.Logging.Abstractions
+  namespace: Microsoft.Extensions.Logging
+  summary: Creates a new <xref href="Microsoft.Extensions.Logging.ILogger" data-throw-if-not-resolved="false"></xref> instance.
+  example: []
+  syntax:
+    content: ILogger CreateLogger(string categoryName)
+    parameters:
+    - id: categoryName
+      type: System.String
+      description: The category name for messages produced by the logger.
+    return:
+      type: Microsoft.Extensions.Logging.ILogger
+      description: The <xref href="Microsoft.Extensions.Logging.ILogger" data-throw-if-not-resolved="false"></xref>.
+    content.vb: Function CreateLogger(categoryName As String) As ILogger
+  overload: Microsoft.Extensions.Logging.ILoggerFactory.CreateLogger*
+  nameWithType.vb: ILoggerFactory.CreateLogger(String)
+  fullName.vb: Microsoft.Extensions.Logging.ILoggerFactory.CreateLogger(String)
+  name.vb: CreateLogger(String)
+- uid: Microsoft.Extensions.Logging.ILoggerFactory.AddProvider(Microsoft.Extensions.Logging.ILoggerProvider)
+  commentId: M:Microsoft.Extensions.Logging.ILoggerFactory.AddProvider(Microsoft.Extensions.Logging.ILoggerProvider)
+  id: AddProvider(Microsoft.Extensions.Logging.ILoggerProvider)
+  parent: Microsoft.Extensions.Logging.ILoggerFactory
+  langs:
+  - csharp
+  - vb
+  name: AddProvider(ILoggerProvider)
+  nameWithType: ILoggerFactory.AddProvider(ILoggerProvider)
+  fullName: Microsoft.Extensions.Logging.ILoggerFactory.AddProvider(Microsoft.Extensions.Logging.ILoggerProvider)
+  type: Method
+  assemblies:
+  - Microsoft.Extensions.Logging.Abstractions
+  namespace: Microsoft.Extensions.Logging
+  summary: Adds an <xref href="Microsoft.Extensions.Logging.ILoggerProvider" data-throw-if-not-resolved="false"></xref> to the logging system.
+  example: []
+  syntax:
+    content: void AddProvider(ILoggerProvider provider)
+    parameters:
+    - id: provider
+      type: Microsoft.Extensions.Logging.ILoggerProvider
+      description: The <xref href="Microsoft.Extensions.Logging.ILoggerProvider" data-throw-if-not-resolved="false"></xref>.
+    content.vb: Sub AddProvider(provider As ILoggerProvider)
+  overload: Microsoft.Extensions.Logging.ILoggerFactory.AddProvider*
+references:
+- uid: Microsoft.Extensions.Logging.ILogger
+  commentId: T:Microsoft.Extensions.Logging.ILogger
+  parent: Microsoft.Extensions.Logging
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger
+  name: ILogger
+  nameWithType: ILogger
+  fullName: Microsoft.Extensions.Logging.ILogger
+- uid: Microsoft.Extensions.Logging.ILoggerProvider
+  commentId: T:Microsoft.Extensions.Logging.ILoggerProvider
+  parent: Microsoft.Extensions.Logging
+  isExternal: true
+  href: Microsoft.Extensions.Logging.ILoggerProvider.html
+  name: ILoggerProvider
+  nameWithType: ILoggerProvider
+  fullName: Microsoft.Extensions.Logging.ILoggerProvider
+- uid: Microsoft.Extensions.Logging
+  commentId: N:Microsoft.Extensions.Logging
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft
+  name: Microsoft.Extensions.Logging
+  nameWithType: Microsoft.Extensions.Logging
+  fullName: Microsoft.Extensions.Logging
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.Extensions
+    name: Extensions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions
+  - name: .
+  - uid: Microsoft.Extensions.Logging
+    name: Logging
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.Extensions
+    name: Extensions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions
+  - name: .
+  - uid: Microsoft.Extensions.Logging
+    name: Logging
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging
+- uid: System.IDisposable.Dispose
+  commentId: M:System.IDisposable.Dispose
+  parent: System.IDisposable
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  name: Dispose()
+  nameWithType: IDisposable.Dispose()
+  fullName: System.IDisposable.Dispose()
+  spec.csharp:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  - name: (
+  - name: )
+- uid: Microsoft.Extensions.Logging.ILoggerFactory.Microsoft.Extensions.Logging.LoggerFactoryExtensions.CreateLogger(System.Type)
+  commentId: M:Microsoft.Extensions.Logging.LoggerFactoryExtensions.CreateLogger(Microsoft.Extensions.Logging.ILoggerFactory,System.Type)
+  parent: Microsoft.Extensions.Logging.LoggerFactoryExtensions
+  definition: Microsoft.Extensions.Logging.LoggerFactoryExtensions.CreateLogger(Microsoft.Extensions.Logging.ILoggerFactory,System.Type)
+  href: Microsoft.Extensions.Logging.LoggerFactoryExtensions.html#Microsoft_Extensions_Logging_LoggerFactoryExtensions_CreateLogger_Microsoft_Extensions_Logging_ILoggerFactory_System_Type_
+  name: CreateLogger(ILoggerFactory, Type)
+  nameWithType: LoggerFactoryExtensions.CreateLogger(ILoggerFactory, Type)
+  fullName: Microsoft.Extensions.Logging.LoggerFactoryExtensions.CreateLogger(Microsoft.Extensions.Logging.ILoggerFactory, System.Type)
+  spec.csharp:
+  - uid: Microsoft.Extensions.Logging.LoggerFactoryExtensions.CreateLogger(Microsoft.Extensions.Logging.ILoggerFactory,System.Type)
+    name: CreateLogger
+    isExternal: true
+    href: Microsoft.Extensions.Logging.LoggerFactoryExtensions.html#Microsoft_Extensions_Logging_LoggerFactoryExtensions_CreateLogger_Microsoft_Extensions_Logging_ILoggerFactory_System_Type_
+  - name: (
+  - uid: Microsoft.Extensions.Logging.ILoggerFactory
+    name: ILoggerFactory
+    isExternal: true
+    href: Microsoft.Extensions.Logging.ILoggerFactory.html
+  - name: ','
+  - name: " "
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: )
+  spec.vb:
+  - uid: Microsoft.Extensions.Logging.LoggerFactoryExtensions.CreateLogger(Microsoft.Extensions.Logging.ILoggerFactory,System.Type)
+    name: CreateLogger
+    isExternal: true
+    href: Microsoft.Extensions.Logging.LoggerFactoryExtensions.html#Microsoft_Extensions_Logging_LoggerFactoryExtensions_CreateLogger_Microsoft_Extensions_Logging_ILoggerFactory_System_Type_
+  - name: (
+  - uid: Microsoft.Extensions.Logging.ILoggerFactory
+    name: ILoggerFactory
+    isExternal: true
+    href: Microsoft.Extensions.Logging.ILoggerFactory.html
+  - name: ','
+  - name: " "
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: )
+- uid: Microsoft.Extensions.Logging.ILoggerFactory.Microsoft.Extensions.Logging.LoggerFactoryExtensions.CreateLogger``1
+  commentId: M:Microsoft.Extensions.Logging.LoggerFactoryExtensions.CreateLogger``1(Microsoft.Extensions.Logging.ILoggerFactory)
+  parent: Microsoft.Extensions.Logging.LoggerFactoryExtensions
+  definition: Microsoft.Extensions.Logging.LoggerFactoryExtensions.CreateLogger``1(Microsoft.Extensions.Logging.ILoggerFactory)
+  href: Microsoft.Extensions.Logging.LoggerFactoryExtensions.html#Microsoft_Extensions_Logging_LoggerFactoryExtensions_CreateLogger__1_Microsoft_Extensions_Logging_ILoggerFactory_
+  name: CreateLogger<T>(ILoggerFactory)
+  nameWithType: LoggerFactoryExtensions.CreateLogger<T>(ILoggerFactory)
+  fullName: Microsoft.Extensions.Logging.LoggerFactoryExtensions.CreateLogger<T>(Microsoft.Extensions.Logging.ILoggerFactory)
+  nameWithType.vb: LoggerFactoryExtensions.CreateLogger(Of T)(ILoggerFactory)
+  fullName.vb: Microsoft.Extensions.Logging.LoggerFactoryExtensions.CreateLogger(Of T)(Microsoft.Extensions.Logging.ILoggerFactory)
+  name.vb: CreateLogger(Of T)(ILoggerFactory)
+  spec.csharp:
+  - uid: Microsoft.Extensions.Logging.LoggerFactoryExtensions.CreateLogger``1(Microsoft.Extensions.Logging.ILoggerFactory)
+    name: CreateLogger
+    isExternal: true
+    href: Microsoft.Extensions.Logging.LoggerFactoryExtensions.html#Microsoft_Extensions_Logging_LoggerFactoryExtensions_CreateLogger__1_Microsoft_Extensions_Logging_ILoggerFactory_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: Microsoft.Extensions.Logging.ILoggerFactory
+    name: ILoggerFactory
+    isExternal: true
+    href: Microsoft.Extensions.Logging.ILoggerFactory.html
+  - name: )
+  spec.vb:
+  - uid: Microsoft.Extensions.Logging.LoggerFactoryExtensions.CreateLogger``1(Microsoft.Extensions.Logging.ILoggerFactory)
+    name: CreateLogger
+    isExternal: true
+    href: Microsoft.Extensions.Logging.LoggerFactoryExtensions.html#Microsoft_Extensions_Logging_LoggerFactoryExtensions_CreateLogger__1_Microsoft_Extensions_Logging_ILoggerFactory_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: Microsoft.Extensions.Logging.ILoggerFactory
+    name: ILoggerFactory
+    isExternal: true
+    href: Microsoft.Extensions.Logging.ILoggerFactory.html
+  - name: )
+- uid: System.IDisposable
+  commentId: T:System.IDisposable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable
+- uid: Microsoft.Extensions.Logging.LoggerFactoryExtensions.CreateLogger(Microsoft.Extensions.Logging.ILoggerFactory,System.Type)
+  commentId: M:Microsoft.Extensions.Logging.LoggerFactoryExtensions.CreateLogger(Microsoft.Extensions.Logging.ILoggerFactory,System.Type)
+  isExternal: true
+  href: Microsoft.Extensions.Logging.LoggerFactoryExtensions.html#Microsoft_Extensions_Logging_LoggerFactoryExtensions_CreateLogger_Microsoft_Extensions_Logging_ILoggerFactory_System_Type_
+  name: CreateLogger(ILoggerFactory, Type)
+  nameWithType: LoggerFactoryExtensions.CreateLogger(ILoggerFactory, Type)
+  fullName: Microsoft.Extensions.Logging.LoggerFactoryExtensions.CreateLogger(Microsoft.Extensions.Logging.ILoggerFactory, System.Type)
+  spec.csharp:
+  - uid: Microsoft.Extensions.Logging.LoggerFactoryExtensions.CreateLogger(Microsoft.Extensions.Logging.ILoggerFactory,System.Type)
+    name: CreateLogger
+    isExternal: true
+    href: Microsoft.Extensions.Logging.LoggerFactoryExtensions.html#Microsoft_Extensions_Logging_LoggerFactoryExtensions_CreateLogger_Microsoft_Extensions_Logging_ILoggerFactory_System_Type_
+  - name: (
+  - uid: Microsoft.Extensions.Logging.ILoggerFactory
+    name: ILoggerFactory
+    isExternal: true
+    href: Microsoft.Extensions.Logging.ILoggerFactory.html
+  - name: ','
+  - name: " "
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: )
+  spec.vb:
+  - uid: Microsoft.Extensions.Logging.LoggerFactoryExtensions.CreateLogger(Microsoft.Extensions.Logging.ILoggerFactory,System.Type)
+    name: CreateLogger
+    isExternal: true
+    href: Microsoft.Extensions.Logging.LoggerFactoryExtensions.html#Microsoft_Extensions_Logging_LoggerFactoryExtensions_CreateLogger_Microsoft_Extensions_Logging_ILoggerFactory_System_Type_
+  - name: (
+  - uid: Microsoft.Extensions.Logging.ILoggerFactory
+    name: ILoggerFactory
+    isExternal: true
+    href: Microsoft.Extensions.Logging.ILoggerFactory.html
+  - name: ','
+  - name: " "
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: )
+- uid: Microsoft.Extensions.Logging.LoggerFactoryExtensions
+  commentId: T:Microsoft.Extensions.Logging.LoggerFactoryExtensions
+  parent: Microsoft.Extensions.Logging
+  isExternal: true
+  href: Microsoft.Extensions.Logging.LoggerFactoryExtensions.html
+  name: LoggerFactoryExtensions
+  nameWithType: LoggerFactoryExtensions
+  fullName: Microsoft.Extensions.Logging.LoggerFactoryExtensions
+- uid: Microsoft.Extensions.Logging.LoggerFactoryExtensions.CreateLogger``1(Microsoft.Extensions.Logging.ILoggerFactory)
+  commentId: M:Microsoft.Extensions.Logging.LoggerFactoryExtensions.CreateLogger``1(Microsoft.Extensions.Logging.ILoggerFactory)
+  isExternal: true
+  href: Microsoft.Extensions.Logging.LoggerFactoryExtensions.html#Microsoft_Extensions_Logging_LoggerFactoryExtensions_CreateLogger__1_Microsoft_Extensions_Logging_ILoggerFactory_
+  name: CreateLogger<T>(ILoggerFactory)
+  nameWithType: LoggerFactoryExtensions.CreateLogger<T>(ILoggerFactory)
+  fullName: Microsoft.Extensions.Logging.LoggerFactoryExtensions.CreateLogger<T>(Microsoft.Extensions.Logging.ILoggerFactory)
+  nameWithType.vb: LoggerFactoryExtensions.CreateLogger(Of T)(ILoggerFactory)
+  fullName.vb: Microsoft.Extensions.Logging.LoggerFactoryExtensions.CreateLogger(Of T)(Microsoft.Extensions.Logging.ILoggerFactory)
+  name.vb: CreateLogger(Of T)(ILoggerFactory)
+  spec.csharp:
+  - uid: Microsoft.Extensions.Logging.LoggerFactoryExtensions.CreateLogger``1(Microsoft.Extensions.Logging.ILoggerFactory)
+    name: CreateLogger
+    isExternal: true
+    href: Microsoft.Extensions.Logging.LoggerFactoryExtensions.html#Microsoft_Extensions_Logging_LoggerFactoryExtensions_CreateLogger__1_Microsoft_Extensions_Logging_ILoggerFactory_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: Microsoft.Extensions.Logging.ILoggerFactory
+    name: ILoggerFactory
+    isExternal: true
+    href: Microsoft.Extensions.Logging.ILoggerFactory.html
+  - name: )
+  spec.vb:
+  - uid: Microsoft.Extensions.Logging.LoggerFactoryExtensions.CreateLogger``1(Microsoft.Extensions.Logging.ILoggerFactory)
+    name: CreateLogger
+    isExternal: true
+    href: Microsoft.Extensions.Logging.LoggerFactoryExtensions.html#Microsoft_Extensions_Logging_LoggerFactoryExtensions_CreateLogger__1_Microsoft_Extensions_Logging_ILoggerFactory_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: Microsoft.Extensions.Logging.ILoggerFactory
+    name: ILoggerFactory
+    isExternal: true
+    href: Microsoft.Extensions.Logging.ILoggerFactory.html
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Microsoft.Extensions.Logging.ILoggerFactory.CreateLogger*
+  commentId: Overload:Microsoft.Extensions.Logging.ILoggerFactory.CreateLogger
+  isExternal: true
+  href: Microsoft.Extensions.Logging.ILoggerFactory.html#Microsoft_Extensions_Logging_ILoggerFactory_CreateLogger_System_String_
+  name: CreateLogger
+  nameWithType: ILoggerFactory.CreateLogger
+  fullName: Microsoft.Extensions.Logging.ILoggerFactory.CreateLogger
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Microsoft.Extensions.Logging.ILoggerFactory.AddProvider*
+  commentId: Overload:Microsoft.Extensions.Logging.ILoggerFactory.AddProvider
+  isExternal: true
+  href: Microsoft.Extensions.Logging.ILoggerFactory.html#Microsoft_Extensions_Logging_ILoggerFactory_AddProvider_Microsoft_Extensions_Logging_ILoggerProvider_
+  name: AddProvider
+  nameWithType: ILoggerFactory.AddProvider
+  fullName: Microsoft.Extensions.Logging.ILoggerFactory.AddProvider

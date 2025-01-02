@@ -12,6 +12,9 @@ using CodeFactory.WinVs.Logging;
 
 namespace CodeFactory.WinVs.Loader
 {
+    /// <summary>
+    /// Central implementation class that manages the loading of automation libraries.
+    /// </summary>
     public static class LibraryManager
     {
         /// <summary>

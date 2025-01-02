@@ -1,0 +1,2467 @@
+### YamlMime:ManagedReference
+items:
+- uid: System.Numerics.Vector`1
+  commentId: T:System.Numerics.Vector`1
+  id: Vector`1
+  parent: System.Numerics
+  children:
+  - System.Numerics.Vector`1.#ctor(`0)
+  - System.Numerics.Vector`1.#ctor(`0[])
+  - System.Numerics.Vector`1.#ctor(`0[],System.Int32)
+  - System.Numerics.Vector`1.CopyTo(`0[])
+  - System.Numerics.Vector`1.CopyTo(`0[],System.Int32)
+  - System.Numerics.Vector`1.Count
+  - System.Numerics.Vector`1.Equals(System.Numerics.Vector{`0})
+  - System.Numerics.Vector`1.Equals(System.Object)
+  - System.Numerics.Vector`1.GetHashCode
+  - System.Numerics.Vector`1.Item(System.Int32)
+  - System.Numerics.Vector`1.One
+  - System.Numerics.Vector`1.ToString
+  - System.Numerics.Vector`1.ToString(System.String)
+  - System.Numerics.Vector`1.ToString(System.String,System.IFormatProvider)
+  - System.Numerics.Vector`1.Zero
+  - System.Numerics.Vector`1.op_Addition(System.Numerics.Vector{`0},System.Numerics.Vector{`0})
+  - System.Numerics.Vector`1.op_BitwiseAnd(System.Numerics.Vector{`0},System.Numerics.Vector{`0})
+  - System.Numerics.Vector`1.op_BitwiseOr(System.Numerics.Vector{`0},System.Numerics.Vector{`0})
+  - System.Numerics.Vector`1.op_Division(System.Numerics.Vector{`0},System.Numerics.Vector{`0})
+  - System.Numerics.Vector`1.op_Equality(System.Numerics.Vector{`0},System.Numerics.Vector{`0})
+  - System.Numerics.Vector`1.op_ExclusiveOr(System.Numerics.Vector{`0},System.Numerics.Vector{`0})
+  - System.Numerics.Vector`1.op_Explicit(System.Numerics.Vector{`0})~System.Numerics.Vector{System.Byte}
+  - System.Numerics.Vector`1.op_Explicit(System.Numerics.Vector{`0})~System.Numerics.Vector{System.Double}
+  - System.Numerics.Vector`1.op_Explicit(System.Numerics.Vector{`0})~System.Numerics.Vector{System.Int16}
+  - System.Numerics.Vector`1.op_Explicit(System.Numerics.Vector{`0})~System.Numerics.Vector{System.Int32}
+  - System.Numerics.Vector`1.op_Explicit(System.Numerics.Vector{`0})~System.Numerics.Vector{System.Int64}
+  - System.Numerics.Vector`1.op_Explicit(System.Numerics.Vector{`0})~System.Numerics.Vector{System.SByte}
+  - System.Numerics.Vector`1.op_Explicit(System.Numerics.Vector{`0})~System.Numerics.Vector{System.Single}
+  - System.Numerics.Vector`1.op_Explicit(System.Numerics.Vector{`0})~System.Numerics.Vector{System.UInt16}
+  - System.Numerics.Vector`1.op_Explicit(System.Numerics.Vector{`0})~System.Numerics.Vector{System.UInt32}
+  - System.Numerics.Vector`1.op_Explicit(System.Numerics.Vector{`0})~System.Numerics.Vector{System.UInt64}
+  - System.Numerics.Vector`1.op_Inequality(System.Numerics.Vector{`0},System.Numerics.Vector{`0})
+  - System.Numerics.Vector`1.op_Multiply(System.Numerics.Vector{`0},System.Numerics.Vector{`0})
+  - System.Numerics.Vector`1.op_Multiply(System.Numerics.Vector{`0},`0)
+  - System.Numerics.Vector`1.op_Multiply(`0,System.Numerics.Vector{`0})
+  - System.Numerics.Vector`1.op_OnesComplement(System.Numerics.Vector{`0})
+  - System.Numerics.Vector`1.op_Subtraction(System.Numerics.Vector{`0},System.Numerics.Vector{`0})
+  - System.Numerics.Vector`1.op_UnaryNegation(System.Numerics.Vector{`0})
+  langs:
+  - csharp
+  - vb
+  name: Vector<T>
+  nameWithType: Vector<T>
+  fullName: System.Numerics.Vector<T>
+  type: Struct
+  assemblies:
+  - System.Numerics.Vectors
+  namespace: System.Numerics
+  summary: Represents a single vector of a specified numeric type that is suitable for low-level optimization of parallel algorithms.
+  example: []
+  syntax:
+    content: 'public struct Vector<T> : IEquatable<Vector<T>>, IFormattable where T : struct'
+    typeParameters:
+    - id: T
+      description: The vector type. T can be any primitive numeric type.
+    content.vb: Public Structure Vector(Of T As Structure) Implements IEquatable(Of Vector(Of T)), IFormattable
+  implements:
+  - System.IEquatable{System.Numerics.Vector`1}
+  - System.IFormattable
+  inheritedMembers:
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetType
+  nameWithType.vb: Vector(Of T)
+  fullName.vb: System.Numerics.Vector(Of T)
+  name.vb: Vector(Of T)
+- uid: System.Numerics.Vector`1.#ctor(`0)
+  commentId: M:System.Numerics.Vector`1.#ctor(`0)
+  id: '#ctor(`0)'
+  parent: System.Numerics.Vector`1
+  langs:
+  - csharp
+  - vb
+  name: Vector(T)
+  nameWithType: Vector<T>.Vector(T)
+  fullName: System.Numerics.Vector<T>.Vector(T)
+  type: Constructor
+  assemblies:
+  - System.Numerics.Vectors
+  namespace: System.Numerics
+  summary: Creates a vector whose components are of a specified type.
+  example: []
+  syntax:
+    content: public Vector(T value)
+    parameters:
+    - id: value
+      type: '{T}'
+      description: The numeric type that defines the type of the components in the vector.
+    content.vb: Public Sub New(value As T)
+  overload: System.Numerics.Vector`1.#ctor*
+  nameWithType.vb: Vector(Of T).New(T)
+  fullName.vb: System.Numerics.Vector(Of T).New(T)
+  name.vb: New(T)
+- uid: System.Numerics.Vector`1.#ctor(`0[])
+  commentId: M:System.Numerics.Vector`1.#ctor(`0[])
+  id: '#ctor(`0[])'
+  parent: System.Numerics.Vector`1
+  langs:
+  - csharp
+  - vb
+  name: Vector(T[])
+  nameWithType: Vector<T>.Vector(T[])
+  fullName: System.Numerics.Vector<T>.Vector(T[])
+  type: Constructor
+  assemblies:
+  - System.Numerics.Vectors
+  namespace: System.Numerics
+  summary: Creates a vector from a specified array.
+  example: []
+  syntax:
+    content: public Vector(T[] values)
+    parameters:
+    - id: values
+      type: '{T}[]'
+      description: A numeric array.
+    content.vb: Public Sub New(values As T())
+  overload: System.Numerics.Vector`1.#ctor*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: <code class="paramref">values</code> is null.
+  nameWithType.vb: Vector(Of T).New(T())
+  fullName.vb: System.Numerics.Vector(Of T).New(T())
+  name.vb: New(T())
+- uid: System.Numerics.Vector`1.#ctor(`0[],System.Int32)
+  commentId: M:System.Numerics.Vector`1.#ctor(`0[],System.Int32)
+  id: '#ctor(`0[],System.Int32)'
+  parent: System.Numerics.Vector`1
+  langs:
+  - csharp
+  - vb
+  name: Vector(T[], int)
+  nameWithType: Vector<T>.Vector(T[], int)
+  fullName: System.Numerics.Vector<T>.Vector(T[], int)
+  type: Constructor
+  assemblies:
+  - System.Numerics.Vectors
+  namespace: System.Numerics
+  summary: Creates a vector from a specified array starting at a specified index position.
+  example: []
+  syntax:
+    content: public Vector(T[] values, int index)
+    parameters:
+    - id: values
+      type: '{T}[]'
+      description: A numeric array.
+    - id: index
+      type: System.Int32
+      description: The starting index position from which to create the vector.
+    content.vb: Public Sub New(values As T(), index As Integer)
+  overload: System.Numerics.Vector`1.#ctor*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: <code class="paramref">values</code> is null.
+  - type: System.IndexOutOfRangeException
+    commentId: T:System.IndexOutOfRangeException
+    description: "   <code class=\"paramref\">index</code> is less than zero.  \r\n-or-  \r\nThe length of <code class=\"paramref\">values</code> minus <code class=\"paramref\">index</code> is less than <see cref=\"System.Numerics.Vector`1.Count\"></see>."
+  nameWithType.vb: Vector(Of T).New(T(), Integer)
+  fullName.vb: System.Numerics.Vector(Of T).New(T(), Integer)
+  name.vb: New(T(), Integer)
+- uid: System.Numerics.Vector`1.CopyTo(`0[])
+  commentId: M:System.Numerics.Vector`1.CopyTo(`0[])
+  id: CopyTo(`0[])
+  parent: System.Numerics.Vector`1
+  langs:
+  - csharp
+  - vb
+  name: CopyTo(T[])
+  nameWithType: Vector<T>.CopyTo(T[])
+  fullName: System.Numerics.Vector<T>.CopyTo(T[])
+  type: Method
+  assemblies:
+  - System.Numerics.Vectors
+  namespace: System.Numerics
+  summary: Copies the vector instance to a specified destination array.
+  example: []
+  syntax:
+    content: public void CopyTo(T[] destination)
+    parameters:
+    - id: destination
+      type: '{T}[]'
+      description: The array to receive a copy of the vector values.
+    content.vb: Public Sub CopyTo(destination As T())
+  overload: System.Numerics.Vector`1.CopyTo*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: <code class="paramref">destination</code> is null.
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: The number of elements in the current vector is greater than the number of elements available in the <code class="paramref">destination</code> array.
+  nameWithType.vb: Vector(Of T).CopyTo(T())
+  fullName.vb: System.Numerics.Vector(Of T).CopyTo(T())
+  name.vb: CopyTo(T())
+- uid: System.Numerics.Vector`1.CopyTo(`0[],System.Int32)
+  commentId: M:System.Numerics.Vector`1.CopyTo(`0[],System.Int32)
+  id: CopyTo(`0[],System.Int32)
+  parent: System.Numerics.Vector`1
+  langs:
+  - csharp
+  - vb
+  name: CopyTo(T[], int)
+  nameWithType: Vector<T>.CopyTo(T[], int)
+  fullName: System.Numerics.Vector<T>.CopyTo(T[], int)
+  type: Method
+  assemblies:
+  - System.Numerics.Vectors
+  namespace: System.Numerics
+  summary: Copies the vector instance to a specified destination array starting at a specified index position.
+  example: []
+  syntax:
+    content: public void CopyTo(T[] destination, int startIndex)
+    parameters:
+    - id: destination
+      type: '{T}[]'
+      description: The array to receive a copy of the vector values.
+    - id: startIndex
+      type: System.Int32
+      description: The starting index in destination at which to begin the copy operation.
+    content.vb: Public Sub CopyTo(destination As T(), startIndex As Integer)
+  overload: System.Numerics.Vector`1.CopyTo*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: <code class="paramref">destination</code> is null.
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: The number of elements in the current instance is greater than the number of elements available from <code class="paramref">startIndex</code> to the end of the <code class="paramref">destination</code> array.
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: <code class="paramref">index</code> is less than zero or greater than the last index in <code class="paramref">destination</code>.
+  nameWithType.vb: Vector(Of T).CopyTo(T(), Integer)
+  fullName.vb: System.Numerics.Vector(Of T).CopyTo(T(), Integer)
+  name.vb: CopyTo(T(), Integer)
+- uid: System.Numerics.Vector`1.Equals(System.Object)
+  commentId: M:System.Numerics.Vector`1.Equals(System.Object)
+  id: Equals(System.Object)
+  parent: System.Numerics.Vector`1
+  langs:
+  - csharp
+  - vb
+  name: Equals(object)
+  nameWithType: Vector<T>.Equals(object)
+  fullName: System.Numerics.Vector<T>.Equals(object)
+  type: Method
+  assemblies:
+  - System.Numerics.Vectors
+  namespace: System.Numerics
+  summary: Returns a value that indicates whether this instance is equal to a specified object.
+  example: []
+  syntax:
+    content: public override bool Equals(object obj)
+    parameters:
+    - id: obj
+      type: System.Object
+      description: The object to compare with this instance.
+    return:
+      type: System.Boolean
+      description: true if the current instance and <code class="paramref">obj</code> are equal; otherwise, false. The method returns false if <code class="paramref">obj</code> is null, or if <code class="paramref">obj</code> is a vector of a different type than the current instance.
+    content.vb: Public Overrides Function Equals(obj As Object) As Boolean
+  overridden: System.ValueType.Equals(System.Object)
+  overload: System.Numerics.Vector`1.Equals*
+  nameWithType.vb: Vector(Of T).Equals(Object)
+  fullName.vb: System.Numerics.Vector(Of T).Equals(Object)
+  name.vb: Equals(Object)
+- uid: System.Numerics.Vector`1.Equals(System.Numerics.Vector{`0})
+  commentId: M:System.Numerics.Vector`1.Equals(System.Numerics.Vector{`0})
+  id: Equals(System.Numerics.Vector{`0})
+  parent: System.Numerics.Vector`1
+  langs:
+  - csharp
+  - vb
+  name: Equals(Vector<T>)
+  nameWithType: Vector<T>.Equals(Vector<T>)
+  fullName: System.Numerics.Vector<T>.Equals(System.Numerics.Vector<T>)
+  type: Method
+  assemblies:
+  - System.Numerics.Vectors
+  namespace: System.Numerics
+  summary: Returns a value that indicates whether this instance is equal to a specified vector.
+  example: []
+  syntax:
+    content: public bool Equals(Vector<T> other)
+    parameters:
+    - id: other
+      type: System.Numerics.Vector`1
+      description: The vector to compare with this instance.
+    return:
+      type: System.Boolean
+      description: true if the current instance and <code class="paramref">other</code> are equal; otherwise, false.
+    content.vb: Public Function Equals(other As Vector(Of T)) As Boolean
+  overload: System.Numerics.Vector`1.Equals*
+  implements:
+  - System.IEquatable{System.Numerics.Vector`1}.Equals(System.Numerics.Vector{{T}})
+  nameWithType.vb: Vector(Of T).Equals(Vector(Of T))
+  fullName.vb: System.Numerics.Vector(Of T).Equals(System.Numerics.Vector(Of T))
+  name.vb: Equals(Vector(Of T))
+- uid: System.Numerics.Vector`1.GetHashCode
+  commentId: M:System.Numerics.Vector`1.GetHashCode
+  id: GetHashCode
+  parent: System.Numerics.Vector`1
+  langs:
+  - csharp
+  - vb
+  name: GetHashCode()
+  nameWithType: Vector<T>.GetHashCode()
+  fullName: System.Numerics.Vector<T>.GetHashCode()
+  type: Method
+  assemblies:
+  - System.Numerics.Vectors
+  namespace: System.Numerics
+  summary: Returns the hash code for this instance.
+  example: []
+  syntax:
+    content: public override int GetHashCode()
+    return:
+      type: System.Int32
+      description: The hash code.
+    content.vb: Public Overrides Function GetHashCode() As Integer
+  overridden: System.ValueType.GetHashCode
+  overload: System.Numerics.Vector`1.GetHashCode*
+  nameWithType.vb: Vector(Of T).GetHashCode()
+  fullName.vb: System.Numerics.Vector(Of T).GetHashCode()
+- uid: System.Numerics.Vector`1.ToString
+  commentId: M:System.Numerics.Vector`1.ToString
+  id: ToString
+  parent: System.Numerics.Vector`1
+  langs:
+  - csharp
+  - vb
+  name: ToString()
+  nameWithType: Vector<T>.ToString()
+  fullName: System.Numerics.Vector<T>.ToString()
+  type: Method
+  assemblies:
+  - System.Numerics.Vectors
+  namespace: System.Numerics
+  summary: Returns the string representation of this vector using default formatting.
+  example: []
+  syntax:
+    content: public override string ToString()
+    return:
+      type: System.String
+      description: The string representation of this vector.
+    content.vb: Public Overrides Function ToString() As String
+  overridden: System.ValueType.ToString
+  overload: System.Numerics.Vector`1.ToString*
+  nameWithType.vb: Vector(Of T).ToString()
+  fullName.vb: System.Numerics.Vector(Of T).ToString()
+- uid: System.Numerics.Vector`1.ToString(System.String)
+  commentId: M:System.Numerics.Vector`1.ToString(System.String)
+  id: ToString(System.String)
+  parent: System.Numerics.Vector`1
+  langs:
+  - csharp
+  - vb
+  name: ToString(string)
+  nameWithType: Vector<T>.ToString(string)
+  fullName: System.Numerics.Vector<T>.ToString(string)
+  type: Method
+  assemblies:
+  - System.Numerics.Vectors
+  namespace: System.Numerics
+  summary: Returns the string representation of this vector using the specified format string to format individual elements.
+  example: []
+  syntax:
+    content: public string ToString(string format)
+    parameters:
+    - id: format
+      type: System.String
+      description: A  or  that defines the format of individual elements.
+    return:
+      type: System.String
+      description: The string representation of the current instance.
+    content.vb: Public Function ToString(format As String) As String
+  overload: System.Numerics.Vector`1.ToString*
+  nameWithType.vb: Vector(Of T).ToString(String)
+  fullName.vb: System.Numerics.Vector(Of T).ToString(String)
+  name.vb: ToString(String)
+- uid: System.Numerics.Vector`1.ToString(System.String,System.IFormatProvider)
+  commentId: M:System.Numerics.Vector`1.ToString(System.String,System.IFormatProvider)
+  id: ToString(System.String,System.IFormatProvider)
+  parent: System.Numerics.Vector`1
+  langs:
+  - csharp
+  - vb
+  name: ToString(string, IFormatProvider)
+  nameWithType: Vector<T>.ToString(string, IFormatProvider)
+  fullName: System.Numerics.Vector<T>.ToString(string, System.IFormatProvider)
+  type: Method
+  assemblies:
+  - System.Numerics.Vectors
+  namespace: System.Numerics
+  summary: Returns the string representation of this vector using the specified format string to format individual elements and the specified format provider to define culture-specific formatting.
+  example: []
+  syntax:
+    content: public string ToString(string format, IFormatProvider formatProvider)
+    parameters:
+    - id: format
+      type: System.String
+      description: A  or  that defines the format of individual elements.
+    - id: formatProvider
+      type: System.IFormatProvider
+      description: A format provider that supplies culture-specific formatting information.
+    return:
+      type: System.String
+      description: The string representation of the current instance.
+    content.vb: Public Function ToString(format As String, formatProvider As IFormatProvider) As String
+  overload: System.Numerics.Vector`1.ToString*
+  implements:
+  - System.IFormattable.ToString(System.String,System.IFormatProvider)
+  nameWithType.vb: Vector(Of T).ToString(String, IFormatProvider)
+  fullName.vb: System.Numerics.Vector(Of T).ToString(String, System.IFormatProvider)
+  name.vb: ToString(String, IFormatProvider)
+- uid: System.Numerics.Vector`1.op_Addition(System.Numerics.Vector{`0},System.Numerics.Vector{`0})
+  commentId: M:System.Numerics.Vector`1.op_Addition(System.Numerics.Vector{`0},System.Numerics.Vector{`0})
+  id: op_Addition(System.Numerics.Vector{`0},System.Numerics.Vector{`0})
+  parent: System.Numerics.Vector`1
+  langs:
+  - csharp
+  - vb
+  name: operator +(Vector<T>, Vector<T>)
+  nameWithType: Vector<T>.operator +(Vector<T>, Vector<T>)
+  fullName: System.Numerics.Vector<T>.operator +(System.Numerics.Vector<T>, System.Numerics.Vector<T>)
+  type: Operator
+  assemblies:
+  - System.Numerics.Vectors
+  namespace: System.Numerics
+  summary: Adds two vectors together.
+  example: []
+  syntax:
+    content: public static Vector<T> operator +(Vector<T> left, Vector<T> right)
+    parameters:
+    - id: left
+      type: System.Numerics.Vector`1
+      description: The first vector to add.
+    - id: right
+      type: System.Numerics.Vector`1
+      description: The second vector to add.
+    return:
+      type: System.Numerics.Vector`1
+      description: The summed vector.
+    content.vb: Public Shared Operator +(left As Vector(Of T), right As Vector(Of T)) As Vector(Of T)
+  overload: System.Numerics.Vector`1.op_Addition*
+  nameWithType.vb: Vector(Of T).+(Vector(Of T), Vector(Of T))
+  fullName.vb: System.Numerics.Vector(Of T).+(System.Numerics.Vector(Of T), System.Numerics.Vector(Of T))
+  name.vb: +(Vector(Of T), Vector(Of T))
+- uid: System.Numerics.Vector`1.op_Subtraction(System.Numerics.Vector{`0},System.Numerics.Vector{`0})
+  commentId: M:System.Numerics.Vector`1.op_Subtraction(System.Numerics.Vector{`0},System.Numerics.Vector{`0})
+  id: op_Subtraction(System.Numerics.Vector{`0},System.Numerics.Vector{`0})
+  parent: System.Numerics.Vector`1
+  langs:
+  - csharp
+  - vb
+  name: operator -(Vector<T>, Vector<T>)
+  nameWithType: Vector<T>.operator -(Vector<T>, Vector<T>)
+  fullName: System.Numerics.Vector<T>.operator -(System.Numerics.Vector<T>, System.Numerics.Vector<T>)
+  type: Operator
+  assemblies:
+  - System.Numerics.Vectors
+  namespace: System.Numerics
+  summary: Subtracts the second vector from the first.
+  example: []
+  syntax:
+    content: public static Vector<T> operator -(Vector<T> left, Vector<T> right)
+    parameters:
+    - id: left
+      type: System.Numerics.Vector`1
+      description: The first vector.
+    - id: right
+      type: System.Numerics.Vector`1
+      description: The second vector.
+    return:
+      type: System.Numerics.Vector`1
+      description: The vector that results from subtracting <code class="paramref">right</code> from <code class="paramref">left</code>.
+    content.vb: Public Shared Operator -(left As Vector(Of T), right As Vector(Of T)) As Vector(Of T)
+  overload: System.Numerics.Vector`1.op_Subtraction*
+  nameWithType.vb: Vector(Of T).-(Vector(Of T), Vector(Of T))
+  fullName.vb: System.Numerics.Vector(Of T).-(System.Numerics.Vector(Of T), System.Numerics.Vector(Of T))
+  name.vb: -(Vector(Of T), Vector(Of T))
+- uid: System.Numerics.Vector`1.op_Multiply(System.Numerics.Vector{`0},System.Numerics.Vector{`0})
+  commentId: M:System.Numerics.Vector`1.op_Multiply(System.Numerics.Vector{`0},System.Numerics.Vector{`0})
+  id: op_Multiply(System.Numerics.Vector{`0},System.Numerics.Vector{`0})
+  parent: System.Numerics.Vector`1
+  langs:
+  - csharp
+  - vb
+  name: operator *(Vector<T>, Vector<T>)
+  nameWithType: Vector<T>.operator *(Vector<T>, Vector<T>)
+  fullName: System.Numerics.Vector<T>.operator *(System.Numerics.Vector<T>, System.Numerics.Vector<T>)
+  type: Operator
+  assemblies:
+  - System.Numerics.Vectors
+  namespace: System.Numerics
+  summary: Multiplies two vectors together.
+  example: []
+  syntax:
+    content: public static Vector<T> operator *(Vector<T> left, Vector<T> right)
+    parameters:
+    - id: left
+      type: System.Numerics.Vector`1
+      description: The first vector.
+    - id: right
+      type: System.Numerics.Vector`1
+      description: The second vector.
+    return:
+      type: System.Numerics.Vector`1
+      description: The product vector.
+    content.vb: Public Shared Operator *(left As Vector(Of T), right As Vector(Of T)) As Vector(Of T)
+  overload: System.Numerics.Vector`1.op_Multiply*
+  nameWithType.vb: Vector(Of T).*(Vector(Of T), Vector(Of T))
+  fullName.vb: System.Numerics.Vector(Of T).*(System.Numerics.Vector(Of T), System.Numerics.Vector(Of T))
+  name.vb: '*(Vector(Of T), Vector(Of T))'
+- uid: System.Numerics.Vector`1.op_Multiply(System.Numerics.Vector{`0},`0)
+  commentId: M:System.Numerics.Vector`1.op_Multiply(System.Numerics.Vector{`0},`0)
+  id: op_Multiply(System.Numerics.Vector{`0},`0)
+  parent: System.Numerics.Vector`1
+  langs:
+  - csharp
+  - vb
+  name: operator *(Vector<T>, T)
+  nameWithType: Vector<T>.operator *(Vector<T>, T)
+  fullName: System.Numerics.Vector<T>.operator *(System.Numerics.Vector<T>, T)
+  type: Operator
+  assemblies:
+  - System.Numerics.Vectors
+  namespace: System.Numerics
+  summary: Multiplies a vector by a specified scalar value.
+  example: []
+  syntax:
+    content: public static Vector<T> operator *(Vector<T> value, T factor)
+    parameters:
+    - id: value
+      type: System.Numerics.Vector`1
+      description: The source vector.
+    - id: factor
+      type: '{T}'
+      description: A scalar value.
+    return:
+      type: System.Numerics.Vector`1
+      description: The scaled vector.
+    content.vb: Public Shared Operator *(value As Vector(Of T), factor As T) As Vector(Of T)
+  overload: System.Numerics.Vector`1.op_Multiply*
+  nameWithType.vb: Vector(Of T).*(Vector(Of T), T)
+  fullName.vb: System.Numerics.Vector(Of T).*(System.Numerics.Vector(Of T), T)
+  name.vb: '*(Vector(Of T), T)'
+- uid: System.Numerics.Vector`1.op_Multiply(`0,System.Numerics.Vector{`0})
+  commentId: M:System.Numerics.Vector`1.op_Multiply(`0,System.Numerics.Vector{`0})
+  id: op_Multiply(`0,System.Numerics.Vector{`0})
+  parent: System.Numerics.Vector`1
+  langs:
+  - csharp
+  - vb
+  name: operator *(T, Vector<T>)
+  nameWithType: Vector<T>.operator *(T, Vector<T>)
+  fullName: System.Numerics.Vector<T>.operator *(T, System.Numerics.Vector<T>)
+  type: Operator
+  assemblies:
+  - System.Numerics.Vectors
+  namespace: System.Numerics
+  summary: Multiplies a vector by the given scalar.
+  example: []
+  syntax:
+    content: public static Vector<T> operator *(T factor, Vector<T> value)
+    parameters:
+    - id: factor
+      type: '{T}'
+      description: The scalar value.
+    - id: value
+      type: System.Numerics.Vector`1
+      description: The source vector.
+    return:
+      type: System.Numerics.Vector`1
+      description: The scaled vector.
+    content.vb: Public Shared Operator *(factor As T, value As Vector(Of T)) As Vector(Of T)
+  overload: System.Numerics.Vector`1.op_Multiply*
+  nameWithType.vb: Vector(Of T).*(T, Vector(Of T))
+  fullName.vb: System.Numerics.Vector(Of T).*(T, System.Numerics.Vector(Of T))
+  name.vb: '*(T, Vector(Of T))'
+- uid: System.Numerics.Vector`1.op_Division(System.Numerics.Vector{`0},System.Numerics.Vector{`0})
+  commentId: M:System.Numerics.Vector`1.op_Division(System.Numerics.Vector{`0},System.Numerics.Vector{`0})
+  id: op_Division(System.Numerics.Vector{`0},System.Numerics.Vector{`0})
+  parent: System.Numerics.Vector`1
+  langs:
+  - csharp
+  - vb
+  name: operator /(Vector<T>, Vector<T>)
+  nameWithType: Vector<T>.operator /(Vector<T>, Vector<T>)
+  fullName: System.Numerics.Vector<T>.operator /(System.Numerics.Vector<T>, System.Numerics.Vector<T>)
+  type: Operator
+  assemblies:
+  - System.Numerics.Vectors
+  namespace: System.Numerics
+  summary: Divides the first vector by the second.
+  example: []
+  syntax:
+    content: public static Vector<T> operator /(Vector<T> left, Vector<T> right)
+    parameters:
+    - id: left
+      type: System.Numerics.Vector`1
+      description: The first vector.
+    - id: right
+      type: System.Numerics.Vector`1
+      description: The second vector.
+    return:
+      type: System.Numerics.Vector`1
+      description: The vector that results from dividing <code class="paramref">left</code> by <code class="paramref">right</code>.
+    content.vb: Public Shared Operator /(left As Vector(Of T), right As Vector(Of T)) As Vector(Of T)
+  overload: System.Numerics.Vector`1.op_Division*
+  nameWithType.vb: Vector(Of T)./(Vector(Of T), Vector(Of T))
+  fullName.vb: System.Numerics.Vector(Of T)./(System.Numerics.Vector(Of T), System.Numerics.Vector(Of T))
+  name.vb: /(Vector(Of T), Vector(Of T))
+- uid: System.Numerics.Vector`1.op_UnaryNegation(System.Numerics.Vector{`0})
+  commentId: M:System.Numerics.Vector`1.op_UnaryNegation(System.Numerics.Vector{`0})
+  id: op_UnaryNegation(System.Numerics.Vector{`0})
+  parent: System.Numerics.Vector`1
+  langs:
+  - csharp
+  - vb
+  name: operator -(Vector<T>)
+  nameWithType: Vector<T>.operator -(Vector<T>)
+  fullName: System.Numerics.Vector<T>.operator -(System.Numerics.Vector<T>)
+  type: Operator
+  assemblies:
+  - System.Numerics.Vectors
+  namespace: System.Numerics
+  summary: Negates a given vector.
+  example: []
+  syntax:
+    content: public static Vector<T> operator -(Vector<T> value)
+    parameters:
+    - id: value
+      type: System.Numerics.Vector`1
+      description: The vector to negate.
+    return:
+      type: System.Numerics.Vector`1
+      description: The negated vector.
+    content.vb: Public Shared Operator -(value As Vector(Of T)) As Vector(Of T)
+  overload: System.Numerics.Vector`1.op_UnaryNegation*
+  nameWithType.vb: Vector(Of T).-(Vector(Of T))
+  fullName.vb: System.Numerics.Vector(Of T).-(System.Numerics.Vector(Of T))
+  name.vb: -(Vector(Of T))
+- uid: System.Numerics.Vector`1.op_BitwiseAnd(System.Numerics.Vector{`0},System.Numerics.Vector{`0})
+  commentId: M:System.Numerics.Vector`1.op_BitwiseAnd(System.Numerics.Vector{`0},System.Numerics.Vector{`0})
+  id: op_BitwiseAnd(System.Numerics.Vector{`0},System.Numerics.Vector{`0})
+  parent: System.Numerics.Vector`1
+  langs:
+  - csharp
+  - vb
+  name: operator &(Vector<T>, Vector<T>)
+  nameWithType: Vector<T>.operator &(Vector<T>, Vector<T>)
+  fullName: System.Numerics.Vector<T>.operator &(System.Numerics.Vector<T>, System.Numerics.Vector<T>)
+  type: Operator
+  assemblies:
+  - System.Numerics.Vectors
+  namespace: System.Numerics
+  summary: Returns a new vector by performing a bitwise And operation on each of the elements in two vectors.
+  example: []
+  syntax:
+    content: public static Vector<T> operator &(Vector<T> left, Vector<T> right)
+    parameters:
+    - id: left
+      type: System.Numerics.Vector`1
+      description: The first vector.
+    - id: right
+      type: System.Numerics.Vector`1
+      description: The second vector.
+    return:
+      type: System.Numerics.Vector`1
+      description: The vector that results from the bitwise And of <code class="paramref">left</code> and <code class="paramref">right</code>.
+    content.vb: Public Shared Operator And(left As Vector(Of T), right As Vector(Of T)) As Vector(Of T)
+  overload: System.Numerics.Vector`1.op_BitwiseAnd*
+  nameWithType.vb: Vector(Of T).And(Vector(Of T), Vector(Of T))
+  fullName.vb: System.Numerics.Vector(Of T).And(System.Numerics.Vector(Of T), System.Numerics.Vector(Of T))
+  name.vb: And(Vector(Of T), Vector(Of T))
+- uid: System.Numerics.Vector`1.op_BitwiseOr(System.Numerics.Vector{`0},System.Numerics.Vector{`0})
+  commentId: M:System.Numerics.Vector`1.op_BitwiseOr(System.Numerics.Vector{`0},System.Numerics.Vector{`0})
+  id: op_BitwiseOr(System.Numerics.Vector{`0},System.Numerics.Vector{`0})
+  parent: System.Numerics.Vector`1
+  langs:
+  - csharp
+  - vb
+  name: operator |(Vector<T>, Vector<T>)
+  nameWithType: Vector<T>.operator |(Vector<T>, Vector<T>)
+  fullName: System.Numerics.Vector<T>.operator |(System.Numerics.Vector<T>, System.Numerics.Vector<T>)
+  type: Operator
+  assemblies:
+  - System.Numerics.Vectors
+  namespace: System.Numerics
+  summary: Returns a new vector by performing a bitwise Or operation on each of the elements in two vectors.
+  example: []
+  syntax:
+    content: public static Vector<T> operator |(Vector<T> left, Vector<T> right)
+    parameters:
+    - id: left
+      type: System.Numerics.Vector`1
+      description: The first vector.
+    - id: right
+      type: System.Numerics.Vector`1
+      description: The second vector.
+    return:
+      type: System.Numerics.Vector`1
+      description: The vector that results from the bitwise Or of the elements in <code class="paramref">left</code> and <code class="paramref">right</code>.
+    content.vb: Public Shared Operator Or(left As Vector(Of T), right As Vector(Of T)) As Vector(Of T)
+  overload: System.Numerics.Vector`1.op_BitwiseOr*
+  nameWithType.vb: Vector(Of T).Or(Vector(Of T), Vector(Of T))
+  fullName.vb: System.Numerics.Vector(Of T).Or(System.Numerics.Vector(Of T), System.Numerics.Vector(Of T))
+  name.vb: Or(Vector(Of T), Vector(Of T))
+- uid: System.Numerics.Vector`1.op_ExclusiveOr(System.Numerics.Vector{`0},System.Numerics.Vector{`0})
+  commentId: M:System.Numerics.Vector`1.op_ExclusiveOr(System.Numerics.Vector{`0},System.Numerics.Vector{`0})
+  id: op_ExclusiveOr(System.Numerics.Vector{`0},System.Numerics.Vector{`0})
+  parent: System.Numerics.Vector`1
+  langs:
+  - csharp
+  - vb
+  name: operator ^(Vector<T>, Vector<T>)
+  nameWithType: Vector<T>.operator ^(Vector<T>, Vector<T>)
+  fullName: System.Numerics.Vector<T>.operator ^(System.Numerics.Vector<T>, System.Numerics.Vector<T>)
+  type: Operator
+  assemblies:
+  - System.Numerics.Vectors
+  namespace: System.Numerics
+  summary: Returns a new vector by performing a bitwise XOr operation on each of the elements in two vectors.
+  example: []
+  syntax:
+    content: public static Vector<T> operator ^(Vector<T> left, Vector<T> right)
+    parameters:
+    - id: left
+      type: System.Numerics.Vector`1
+      description: The first vector.
+    - id: right
+      type: System.Numerics.Vector`1
+      description: The second vector.
+    return:
+      type: System.Numerics.Vector`1
+      description: The vector that results from the bitwise XOr of the elements in <code class="paramref">left</code> and <code class="paramref">right</code>.
+    content.vb: Public Shared Operator Xor(left As Vector(Of T), right As Vector(Of T)) As Vector(Of T)
+  overload: System.Numerics.Vector`1.op_ExclusiveOr*
+  nameWithType.vb: Vector(Of T).Xor(Vector(Of T), Vector(Of T))
+  fullName.vb: System.Numerics.Vector(Of T).Xor(System.Numerics.Vector(Of T), System.Numerics.Vector(Of T))
+  name.vb: Xor(Vector(Of T), Vector(Of T))
+- uid: System.Numerics.Vector`1.op_OnesComplement(System.Numerics.Vector{`0})
+  commentId: M:System.Numerics.Vector`1.op_OnesComplement(System.Numerics.Vector{`0})
+  id: op_OnesComplement(System.Numerics.Vector{`0})
+  parent: System.Numerics.Vector`1
+  langs:
+  - csharp
+  - vb
+  name: operator ~(Vector<T>)
+  nameWithType: Vector<T>.operator ~(Vector<T>)
+  fullName: System.Numerics.Vector<T>.operator ~(System.Numerics.Vector<T>)
+  type: Operator
+  assemblies:
+  - System.Numerics.Vectors
+  namespace: System.Numerics
+  summary: Returns a new vector whose elements are obtained by taking the one&amp;#39;s complement of a specified vector&amp;#39;s elements.
+  example: []
+  syntax:
+    content: public static Vector<T> operator ~(Vector<T> value)
+    parameters:
+    - id: value
+      type: System.Numerics.Vector`1
+      description: The source vector.
+    return:
+      type: System.Numerics.Vector`1
+      description: The one&amp;#39;s complement vector.
+    content.vb: Public Shared Operator Not(value As Vector(Of T)) As Vector(Of T)
+  overload: System.Numerics.Vector`1.op_OnesComplement*
+  nameWithType.vb: Vector(Of T).Not(Vector(Of T))
+  fullName.vb: System.Numerics.Vector(Of T).Not(System.Numerics.Vector(Of T))
+  name.vb: Not(Vector(Of T))
+- uid: System.Numerics.Vector`1.op_Equality(System.Numerics.Vector{`0},System.Numerics.Vector{`0})
+  commentId: M:System.Numerics.Vector`1.op_Equality(System.Numerics.Vector{`0},System.Numerics.Vector{`0})
+  id: op_Equality(System.Numerics.Vector{`0},System.Numerics.Vector{`0})
+  parent: System.Numerics.Vector`1
+  langs:
+  - csharp
+  - vb
+  name: operator ==(Vector<T>, Vector<T>)
+  nameWithType: Vector<T>.operator ==(Vector<T>, Vector<T>)
+  fullName: System.Numerics.Vector<T>.operator ==(System.Numerics.Vector<T>, System.Numerics.Vector<T>)
+  type: Operator
+  assemblies:
+  - System.Numerics.Vectors
+  namespace: System.Numerics
+  summary: Returns a value that indicates whether each pair of elements in two specified vectors are equal.
+  example: []
+  syntax:
+    content: public static bool operator ==(Vector<T> left, Vector<T> right)
+    parameters:
+    - id: left
+      type: System.Numerics.Vector`1
+      description: The first vector to compare.
+    - id: right
+      type: System.Numerics.Vector`1
+      description: The second vector to compare.
+    return:
+      type: System.Boolean
+      description: true if <code class="paramref">left</code> and <code class="paramref">right</code> are equal; otherwise, false.
+    content.vb: Public Shared Operator =(left As Vector(Of T), right As Vector(Of T)) As Boolean
+  overload: System.Numerics.Vector`1.op_Equality*
+  nameWithType.vb: Vector(Of T).=(Vector(Of T), Vector(Of T))
+  fullName.vb: System.Numerics.Vector(Of T).=(System.Numerics.Vector(Of T), System.Numerics.Vector(Of T))
+  name.vb: =(Vector(Of T), Vector(Of T))
+- uid: System.Numerics.Vector`1.op_Inequality(System.Numerics.Vector{`0},System.Numerics.Vector{`0})
+  commentId: M:System.Numerics.Vector`1.op_Inequality(System.Numerics.Vector{`0},System.Numerics.Vector{`0})
+  id: op_Inequality(System.Numerics.Vector{`0},System.Numerics.Vector{`0})
+  parent: System.Numerics.Vector`1
+  langs:
+  - csharp
+  - vb
+  name: operator !=(Vector<T>, Vector<T>)
+  nameWithType: Vector<T>.operator !=(Vector<T>, Vector<T>)
+  fullName: System.Numerics.Vector<T>.operator !=(System.Numerics.Vector<T>, System.Numerics.Vector<T>)
+  type: Operator
+  assemblies:
+  - System.Numerics.Vectors
+  namespace: System.Numerics
+  summary: Returns a value that indicates whether any single pair of elements in the specified vectors is equal.
+  example: []
+  syntax:
+    content: public static bool operator !=(Vector<T> left, Vector<T> right)
+    parameters:
+    - id: left
+      type: System.Numerics.Vector`1
+      description: The first vector to compare.
+    - id: right
+      type: System.Numerics.Vector`1
+      description: The second vector to compare.
+    return:
+      type: System.Boolean
+      description: true if any element pairs in left and right are equal. false if no element pairs are equal.
+    content.vb: Public Shared Operator <>(left As Vector(Of T), right As Vector(Of T)) As Boolean
+  overload: System.Numerics.Vector`1.op_Inequality*
+  nameWithType.vb: Vector(Of T).<>(Vector(Of T), Vector(Of T))
+  fullName.vb: System.Numerics.Vector(Of T).<>(System.Numerics.Vector(Of T), System.Numerics.Vector(Of T))
+  name.vb: <>(Vector(Of T), Vector(Of T))
+- uid: System.Numerics.Vector`1.op_Explicit(System.Numerics.Vector{`0})~System.Numerics.Vector{System.Byte}
+  commentId: M:System.Numerics.Vector`1.op_Explicit(System.Numerics.Vector{`0})~System.Numerics.Vector{System.Byte}
+  id: op_Explicit(System.Numerics.Vector{`0})~System.Numerics.Vector{System.Byte}
+  parent: System.Numerics.Vector`1
+  langs:
+  - csharp
+  - vb
+  name: explicit operator Vector<byte>(Vector<T>)
+  nameWithType: Vector<T>.explicit operator Vector<byte>(Vector<T>)
+  fullName: System.Numerics.Vector<T>.explicit operator System.Numerics.Vector<byte>(System.Numerics.Vector<T>)
+  type: Operator
+  assemblies:
+  - System.Numerics.Vectors
+  namespace: System.Numerics
+  syntax:
+    content: public static explicit operator Vector<byte>(Vector<T> value)
+    parameters:
+    - id: value
+      type: System.Numerics.Vector`1
+    return:
+      type: System.Numerics.Vector{System.Byte}
+    content.vb: Public Shared Narrowing Operator CType(value As Vector(Of T)) As Vector(Of Byte)
+  overload: System.Numerics.Vector`1.op_Explicit*
+  nameWithType.vb: Vector(Of T).CType(Vector(Of T))
+  fullName.vb: System.Numerics.Vector(Of T).CType(System.Numerics.Vector(Of T))
+  name.vb: CType(Vector(Of T))
+- uid: System.Numerics.Vector`1.op_Explicit(System.Numerics.Vector{`0})~System.Numerics.Vector{System.SByte}
+  commentId: M:System.Numerics.Vector`1.op_Explicit(System.Numerics.Vector{`0})~System.Numerics.Vector{System.SByte}
+  id: op_Explicit(System.Numerics.Vector{`0})~System.Numerics.Vector{System.SByte}
+  parent: System.Numerics.Vector`1
+  langs:
+  - csharp
+  - vb
+  name: explicit operator Vector<sbyte>(Vector<T>)
+  nameWithType: Vector<T>.explicit operator Vector<sbyte>(Vector<T>)
+  fullName: System.Numerics.Vector<T>.explicit operator System.Numerics.Vector<sbyte>(System.Numerics.Vector<T>)
+  type: Operator
+  assemblies:
+  - System.Numerics.Vectors
+  namespace: System.Numerics
+  syntax:
+    content: >-
+      [CLSCompliant(false)]
+
+      public static explicit operator Vector<sbyte>(Vector<T> value)
+    parameters:
+    - id: value
+      type: System.Numerics.Vector`1
+    return:
+      type: System.Numerics.Vector{System.SByte}
+    content.vb: >-
+      <CLSCompliant(False)>
+
+      Public Shared Narrowing Operator CType(value As Vector(Of T)) As Vector(Of SByte)
+  overload: System.Numerics.Vector`1.op_Explicit*
+  attributes:
+  - type: System.CLSCompliantAttribute
+    ctor: System.CLSCompliantAttribute.#ctor(System.Boolean)
+    arguments:
+    - type: System.Boolean
+      value: false
+  nameWithType.vb: Vector(Of T).CType(Vector(Of T))
+  fullName.vb: System.Numerics.Vector(Of T).CType(System.Numerics.Vector(Of T))
+  name.vb: CType(Vector(Of T))
+- uid: System.Numerics.Vector`1.op_Explicit(System.Numerics.Vector{`0})~System.Numerics.Vector{System.UInt16}
+  commentId: M:System.Numerics.Vector`1.op_Explicit(System.Numerics.Vector{`0})~System.Numerics.Vector{System.UInt16}
+  id: op_Explicit(System.Numerics.Vector{`0})~System.Numerics.Vector{System.UInt16}
+  parent: System.Numerics.Vector`1
+  langs:
+  - csharp
+  - vb
+  name: explicit operator Vector<ushort>(Vector<T>)
+  nameWithType: Vector<T>.explicit operator Vector<ushort>(Vector<T>)
+  fullName: System.Numerics.Vector<T>.explicit operator System.Numerics.Vector<ushort>(System.Numerics.Vector<T>)
+  type: Operator
+  assemblies:
+  - System.Numerics.Vectors
+  namespace: System.Numerics
+  syntax:
+    content: >-
+      [CLSCompliant(false)]
+
+      public static explicit operator Vector<ushort>(Vector<T> value)
+    parameters:
+    - id: value
+      type: System.Numerics.Vector`1
+    return:
+      type: System.Numerics.Vector{System.UInt16}
+    content.vb: >-
+      <CLSCompliant(False)>
+
+      Public Shared Narrowing Operator CType(value As Vector(Of T)) As Vector(Of UShort)
+  overload: System.Numerics.Vector`1.op_Explicit*
+  attributes:
+  - type: System.CLSCompliantAttribute
+    ctor: System.CLSCompliantAttribute.#ctor(System.Boolean)
+    arguments:
+    - type: System.Boolean
+      value: false
+  nameWithType.vb: Vector(Of T).CType(Vector(Of T))
+  fullName.vb: System.Numerics.Vector(Of T).CType(System.Numerics.Vector(Of T))
+  name.vb: CType(Vector(Of T))
+- uid: System.Numerics.Vector`1.op_Explicit(System.Numerics.Vector{`0})~System.Numerics.Vector{System.Int16}
+  commentId: M:System.Numerics.Vector`1.op_Explicit(System.Numerics.Vector{`0})~System.Numerics.Vector{System.Int16}
+  id: op_Explicit(System.Numerics.Vector{`0})~System.Numerics.Vector{System.Int16}
+  parent: System.Numerics.Vector`1
+  langs:
+  - csharp
+  - vb
+  name: explicit operator Vector<short>(Vector<T>)
+  nameWithType: Vector<T>.explicit operator Vector<short>(Vector<T>)
+  fullName: System.Numerics.Vector<T>.explicit operator System.Numerics.Vector<short>(System.Numerics.Vector<T>)
+  type: Operator
+  assemblies:
+  - System.Numerics.Vectors
+  namespace: System.Numerics
+  syntax:
+    content: public static explicit operator Vector<short>(Vector<T> value)
+    parameters:
+    - id: value
+      type: System.Numerics.Vector`1
+    return:
+      type: System.Numerics.Vector{System.Int16}
+    content.vb: Public Shared Narrowing Operator CType(value As Vector(Of T)) As Vector(Of Short)
+  overload: System.Numerics.Vector`1.op_Explicit*
+  nameWithType.vb: Vector(Of T).CType(Vector(Of T))
+  fullName.vb: System.Numerics.Vector(Of T).CType(System.Numerics.Vector(Of T))
+  name.vb: CType(Vector(Of T))
+- uid: System.Numerics.Vector`1.op_Explicit(System.Numerics.Vector{`0})~System.Numerics.Vector{System.UInt32}
+  commentId: M:System.Numerics.Vector`1.op_Explicit(System.Numerics.Vector{`0})~System.Numerics.Vector{System.UInt32}
+  id: op_Explicit(System.Numerics.Vector{`0})~System.Numerics.Vector{System.UInt32}
+  parent: System.Numerics.Vector`1
+  langs:
+  - csharp
+  - vb
+  name: explicit operator Vector<uint>(Vector<T>)
+  nameWithType: Vector<T>.explicit operator Vector<uint>(Vector<T>)
+  fullName: System.Numerics.Vector<T>.explicit operator System.Numerics.Vector<uint>(System.Numerics.Vector<T>)
+  type: Operator
+  assemblies:
+  - System.Numerics.Vectors
+  namespace: System.Numerics
+  syntax:
+    content: >-
+      [CLSCompliant(false)]
+
+      public static explicit operator Vector<uint>(Vector<T> value)
+    parameters:
+    - id: value
+      type: System.Numerics.Vector`1
+    return:
+      type: System.Numerics.Vector{System.UInt32}
+    content.vb: >-
+      <CLSCompliant(False)>
+
+      Public Shared Narrowing Operator CType(value As Vector(Of T)) As Vector(Of UInteger)
+  overload: System.Numerics.Vector`1.op_Explicit*
+  attributes:
+  - type: System.CLSCompliantAttribute
+    ctor: System.CLSCompliantAttribute.#ctor(System.Boolean)
+    arguments:
+    - type: System.Boolean
+      value: false
+  nameWithType.vb: Vector(Of T).CType(Vector(Of T))
+  fullName.vb: System.Numerics.Vector(Of T).CType(System.Numerics.Vector(Of T))
+  name.vb: CType(Vector(Of T))
+- uid: System.Numerics.Vector`1.op_Explicit(System.Numerics.Vector{`0})~System.Numerics.Vector{System.Int32}
+  commentId: M:System.Numerics.Vector`1.op_Explicit(System.Numerics.Vector{`0})~System.Numerics.Vector{System.Int32}
+  id: op_Explicit(System.Numerics.Vector{`0})~System.Numerics.Vector{System.Int32}
+  parent: System.Numerics.Vector`1
+  langs:
+  - csharp
+  - vb
+  name: explicit operator Vector<int>(Vector<T>)
+  nameWithType: Vector<T>.explicit operator Vector<int>(Vector<T>)
+  fullName: System.Numerics.Vector<T>.explicit operator System.Numerics.Vector<int>(System.Numerics.Vector<T>)
+  type: Operator
+  assemblies:
+  - System.Numerics.Vectors
+  namespace: System.Numerics
+  syntax:
+    content: public static explicit operator Vector<int>(Vector<T> value)
+    parameters:
+    - id: value
+      type: System.Numerics.Vector`1
+    return:
+      type: System.Numerics.Vector{System.Int32}
+    content.vb: Public Shared Narrowing Operator CType(value As Vector(Of T)) As Vector(Of Integer)
+  overload: System.Numerics.Vector`1.op_Explicit*
+  nameWithType.vb: Vector(Of T).CType(Vector(Of T))
+  fullName.vb: System.Numerics.Vector(Of T).CType(System.Numerics.Vector(Of T))
+  name.vb: CType(Vector(Of T))
+- uid: System.Numerics.Vector`1.op_Explicit(System.Numerics.Vector{`0})~System.Numerics.Vector{System.UInt64}
+  commentId: M:System.Numerics.Vector`1.op_Explicit(System.Numerics.Vector{`0})~System.Numerics.Vector{System.UInt64}
+  id: op_Explicit(System.Numerics.Vector{`0})~System.Numerics.Vector{System.UInt64}
+  parent: System.Numerics.Vector`1
+  langs:
+  - csharp
+  - vb
+  name: explicit operator Vector<ulong>(Vector<T>)
+  nameWithType: Vector<T>.explicit operator Vector<ulong>(Vector<T>)
+  fullName: System.Numerics.Vector<T>.explicit operator System.Numerics.Vector<ulong>(System.Numerics.Vector<T>)
+  type: Operator
+  assemblies:
+  - System.Numerics.Vectors
+  namespace: System.Numerics
+  syntax:
+    content: >-
+      [CLSCompliant(false)]
+
+      public static explicit operator Vector<ulong>(Vector<T> value)
+    parameters:
+    - id: value
+      type: System.Numerics.Vector`1
+    return:
+      type: System.Numerics.Vector{System.UInt64}
+    content.vb: >-
+      <CLSCompliant(False)>
+
+      Public Shared Narrowing Operator CType(value As Vector(Of T)) As Vector(Of ULong)
+  overload: System.Numerics.Vector`1.op_Explicit*
+  attributes:
+  - type: System.CLSCompliantAttribute
+    ctor: System.CLSCompliantAttribute.#ctor(System.Boolean)
+    arguments:
+    - type: System.Boolean
+      value: false
+  nameWithType.vb: Vector(Of T).CType(Vector(Of T))
+  fullName.vb: System.Numerics.Vector(Of T).CType(System.Numerics.Vector(Of T))
+  name.vb: CType(Vector(Of T))
+- uid: System.Numerics.Vector`1.op_Explicit(System.Numerics.Vector{`0})~System.Numerics.Vector{System.Int64}
+  commentId: M:System.Numerics.Vector`1.op_Explicit(System.Numerics.Vector{`0})~System.Numerics.Vector{System.Int64}
+  id: op_Explicit(System.Numerics.Vector{`0})~System.Numerics.Vector{System.Int64}
+  parent: System.Numerics.Vector`1
+  langs:
+  - csharp
+  - vb
+  name: explicit operator Vector<long>(Vector<T>)
+  nameWithType: Vector<T>.explicit operator Vector<long>(Vector<T>)
+  fullName: System.Numerics.Vector<T>.explicit operator System.Numerics.Vector<long>(System.Numerics.Vector<T>)
+  type: Operator
+  assemblies:
+  - System.Numerics.Vectors
+  namespace: System.Numerics
+  syntax:
+    content: public static explicit operator Vector<long>(Vector<T> value)
+    parameters:
+    - id: value
+      type: System.Numerics.Vector`1
+    return:
+      type: System.Numerics.Vector{System.Int64}
+    content.vb: Public Shared Narrowing Operator CType(value As Vector(Of T)) As Vector(Of Long)
+  overload: System.Numerics.Vector`1.op_Explicit*
+  nameWithType.vb: Vector(Of T).CType(Vector(Of T))
+  fullName.vb: System.Numerics.Vector(Of T).CType(System.Numerics.Vector(Of T))
+  name.vb: CType(Vector(Of T))
+- uid: System.Numerics.Vector`1.op_Explicit(System.Numerics.Vector{`0})~System.Numerics.Vector{System.Single}
+  commentId: M:System.Numerics.Vector`1.op_Explicit(System.Numerics.Vector{`0})~System.Numerics.Vector{System.Single}
+  id: op_Explicit(System.Numerics.Vector{`0})~System.Numerics.Vector{System.Single}
+  parent: System.Numerics.Vector`1
+  langs:
+  - csharp
+  - vb
+  name: explicit operator Vector<float>(Vector<T>)
+  nameWithType: Vector<T>.explicit operator Vector<float>(Vector<T>)
+  fullName: System.Numerics.Vector<T>.explicit operator System.Numerics.Vector<float>(System.Numerics.Vector<T>)
+  type: Operator
+  assemblies:
+  - System.Numerics.Vectors
+  namespace: System.Numerics
+  syntax:
+    content: public static explicit operator Vector<float>(Vector<T> value)
+    parameters:
+    - id: value
+      type: System.Numerics.Vector`1
+    return:
+      type: System.Numerics.Vector{System.Single}
+    content.vb: Public Shared Narrowing Operator CType(value As Vector(Of T)) As Vector(Of Single)
+  overload: System.Numerics.Vector`1.op_Explicit*
+  nameWithType.vb: Vector(Of T).CType(Vector(Of T))
+  fullName.vb: System.Numerics.Vector(Of T).CType(System.Numerics.Vector(Of T))
+  name.vb: CType(Vector(Of T))
+- uid: System.Numerics.Vector`1.op_Explicit(System.Numerics.Vector{`0})~System.Numerics.Vector{System.Double}
+  commentId: M:System.Numerics.Vector`1.op_Explicit(System.Numerics.Vector{`0})~System.Numerics.Vector{System.Double}
+  id: op_Explicit(System.Numerics.Vector{`0})~System.Numerics.Vector{System.Double}
+  parent: System.Numerics.Vector`1
+  langs:
+  - csharp
+  - vb
+  name: explicit operator Vector<double>(Vector<T>)
+  nameWithType: Vector<T>.explicit operator Vector<double>(Vector<T>)
+  fullName: System.Numerics.Vector<T>.explicit operator System.Numerics.Vector<double>(System.Numerics.Vector<T>)
+  type: Operator
+  assemblies:
+  - System.Numerics.Vectors
+  namespace: System.Numerics
+  syntax:
+    content: public static explicit operator Vector<double>(Vector<T> value)
+    parameters:
+    - id: value
+      type: System.Numerics.Vector`1
+    return:
+      type: System.Numerics.Vector{System.Double}
+    content.vb: Public Shared Narrowing Operator CType(value As Vector(Of T)) As Vector(Of Double)
+  overload: System.Numerics.Vector`1.op_Explicit*
+  nameWithType.vb: Vector(Of T).CType(Vector(Of T))
+  fullName.vb: System.Numerics.Vector(Of T).CType(System.Numerics.Vector(Of T))
+  name.vb: CType(Vector(Of T))
+- uid: System.Numerics.Vector`1.Count
+  commentId: P:System.Numerics.Vector`1.Count
+  id: Count
+  parent: System.Numerics.Vector`1
+  langs:
+  - csharp
+  - vb
+  name: Count
+  nameWithType: Vector<T>.Count
+  fullName: System.Numerics.Vector<T>.Count
+  type: Property
+  assemblies:
+  - System.Numerics.Vectors
+  namespace: System.Numerics
+  summary: Returns the number of elements stored in the vector.
+  example: []
+  syntax:
+    content: public static int Count { get; }
+    parameters: []
+    return:
+      type: System.Int32
+      description: The number of elements stored in the vector.
+    content.vb: Public Shared ReadOnly Property Count As Integer
+  overload: System.Numerics.Vector`1.Count*
+  exceptions:
+  - type: System.NotSupportedException
+    commentId: T:System.NotSupportedException
+    description: Access to the property getter via reflection is not supported.
+  nameWithType.vb: Vector(Of T).Count
+  fullName.vb: System.Numerics.Vector(Of T).Count
+- uid: System.Numerics.Vector`1.Zero
+  commentId: P:System.Numerics.Vector`1.Zero
+  id: Zero
+  parent: System.Numerics.Vector`1
+  langs:
+  - csharp
+  - vb
+  name: Zero
+  nameWithType: Vector<T>.Zero
+  fullName: System.Numerics.Vector<T>.Zero
+  type: Property
+  assemblies:
+  - System.Numerics.Vectors
+  namespace: System.Numerics
+  summary: Returns a vector containing all zeroes.
+  example: []
+  syntax:
+    content: public static Vector<T> Zero { get; }
+    parameters: []
+    return:
+      type: System.Numerics.Vector`1
+      description: A vector containing all zeroes.
+    content.vb: Public Shared ReadOnly Property Zero As Vector(Of T)
+  overload: System.Numerics.Vector`1.Zero*
+  nameWithType.vb: Vector(Of T).Zero
+  fullName.vb: System.Numerics.Vector(Of T).Zero
+- uid: System.Numerics.Vector`1.One
+  commentId: P:System.Numerics.Vector`1.One
+  id: One
+  parent: System.Numerics.Vector`1
+  langs:
+  - csharp
+  - vb
+  name: One
+  nameWithType: Vector<T>.One
+  fullName: System.Numerics.Vector<T>.One
+  type: Property
+  assemblies:
+  - System.Numerics.Vectors
+  namespace: System.Numerics
+  summary: Returns a vector containing all ones.
+  example: []
+  syntax:
+    content: public static Vector<T> One { get; }
+    parameters: []
+    return:
+      type: System.Numerics.Vector`1
+      description: A vector containing all ones.
+    content.vb: Public Shared ReadOnly Property One As Vector(Of T)
+  overload: System.Numerics.Vector`1.One*
+  nameWithType.vb: Vector(Of T).One
+  fullName.vb: System.Numerics.Vector(Of T).One
+- uid: System.Numerics.Vector`1.Item(System.Int32)
+  commentId: P:System.Numerics.Vector`1.Item(System.Int32)
+  id: Item(System.Int32)
+  parent: System.Numerics.Vector`1
+  langs:
+  - csharp
+  - vb
+  name: this[int]
+  nameWithType: Vector<T>.this[int]
+  fullName: System.Numerics.Vector<T>.this[int]
+  type: Property
+  assemblies:
+  - System.Numerics.Vectors
+  namespace: System.Numerics
+  summary: Gets the element at a specified index.
+  example: []
+  syntax:
+    content: public T this[int index] { get; }
+    parameters:
+    - id: index
+      type: System.Int32
+      description: The index of the element to return.
+    return:
+      type: '{T}'
+      description: The element at index <code class="paramref">index</code>.
+    content.vb: Public ReadOnly Default Property this[](index As Integer) As T
+  overload: System.Numerics.Vector`1.Item*
+  exceptions:
+  - type: System.IndexOutOfRangeException
+    commentId: T:System.IndexOutOfRangeException
+    description: "   <code class=\"paramref\">index</code> is less than zero.  \r\n-or-  \r\n<code class=\"paramref\">index</code> is greater than or equal to <see cref=\"System.Numerics.Vector`1.Count\"></see>."
+  nameWithType.vb: Vector(Of T).this[](Integer)
+  fullName.vb: System.Numerics.Vector(Of T).this[](Integer)
+  name.vb: this[](Integer)
+references:
+- uid: System.Numerics
+  commentId: N:System.Numerics
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Numerics
+  nameWithType: System.Numerics
+  fullName: System.Numerics
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Numerics
+    name: Numerics
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.numerics
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Numerics
+    name: Numerics
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.numerics
+- uid: System.IEquatable{System.Numerics.Vector`1}
+  commentId: T:System.IEquatable{System.Numerics.Vector`1}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<Vector<T>>
+  nameWithType: IEquatable<Vector<T>>
+  fullName: System.IEquatable<System.Numerics.Vector<T>>
+  nameWithType.vb: IEquatable(Of Vector(Of T))
+  fullName.vb: System.IEquatable(Of System.Numerics.Vector(Of T))
+  name.vb: IEquatable(Of Vector(Of T))
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: System.Numerics.Vector`1
+    name: Vector
+    isExternal: true
+    href: System.Numerics.Vector-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Numerics.Vector`1
+    name: Vector
+    isExternal: true
+    href: System.Numerics.Vector-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: )
+- uid: System.IFormattable
+  commentId: T:System.IFormattable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iformattable
+  name: IFormattable
+  nameWithType: IFormattable
+  fullName: System.IFormattable
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.IEquatable`1
+  commentId: T:System.IEquatable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<T>
+  nameWithType: IEquatable<T>
+  fullName: System.IEquatable<T>
+  nameWithType.vb: IEquatable(Of T)
+  fullName.vb: System.IEquatable(Of T)
+  name.vb: IEquatable(Of T)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Numerics.Vector`1.#ctor*
+  commentId: Overload:System.Numerics.Vector`1.#ctor
+  isExternal: true
+  href: System.Numerics.Vector-1.html#System_Numerics_Vector_1__ctor__0_
+  name: Vector
+  nameWithType: Vector<T>.Vector
+  fullName: System.Numerics.Vector<T>.Vector
+  nameWithType.vb: Vector(Of T).New
+  fullName.vb: System.Numerics.Vector(Of T).New
+  name.vb: New
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: System.ArgumentNullException
+  commentId: T:System.ArgumentNullException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.argumentnullexception
+  name: ArgumentNullException
+  nameWithType: ArgumentNullException
+  fullName: System.ArgumentNullException
+- uid: '{T}[]'
+  isExternal: true
+  name: T[]
+  nameWithType: T[]
+  fullName: T[]
+  nameWithType.vb: T()
+  fullName.vb: T()
+  name.vb: T()
+  spec.csharp:
+  - name: T
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - name: T
+  - name: (
+  - name: )
+- uid: System.IndexOutOfRangeException
+  commentId: T:System.IndexOutOfRangeException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.indexoutofrangeexception
+  name: IndexOutOfRangeException
+  nameWithType: IndexOutOfRangeException
+  fullName: System.IndexOutOfRangeException
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.ArgumentException
+  commentId: T:System.ArgumentException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.argumentexception
+  name: ArgumentException
+  nameWithType: ArgumentException
+  fullName: System.ArgumentException
+- uid: System.Numerics.Vector`1.CopyTo*
+  commentId: Overload:System.Numerics.Vector`1.CopyTo
+  isExternal: true
+  href: System.Numerics.Vector-1.html#System_Numerics_Vector_1_CopyTo__0___
+  name: CopyTo
+  nameWithType: Vector<T>.CopyTo
+  fullName: System.Numerics.Vector<T>.CopyTo
+  nameWithType.vb: Vector(Of T).CopyTo
+  fullName.vb: System.Numerics.Vector(Of T).CopyTo
+- uid: System.ArgumentOutOfRangeException
+  commentId: T:System.ArgumentOutOfRangeException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.argumentoutofrangeexception
+  name: ArgumentOutOfRangeException
+  nameWithType: ArgumentOutOfRangeException
+  fullName: System.ArgumentOutOfRangeException
+- uid: System.ValueType.Equals(System.Object)
+  commentId: M:System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  name: Equals(object)
+  nameWithType: ValueType.Equals(object)
+  fullName: System.ValueType.Equals(object)
+  nameWithType.vb: ValueType.Equals(Object)
+  fullName.vb: System.ValueType.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Numerics.Vector`1.Equals*
+  commentId: Overload:System.Numerics.Vector`1.Equals
+  isExternal: true
+  href: System.Numerics.Vector-1.html#System_Numerics_Vector_1_Equals_System_Object_
+  name: Equals
+  nameWithType: Vector<T>.Equals
+  fullName: System.Numerics.Vector<T>.Equals
+  nameWithType.vb: Vector(Of T).Equals
+  fullName.vb: System.Numerics.Vector(Of T).Equals
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System.ValueType
+  commentId: T:System.ValueType
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype
+  name: ValueType
+  nameWithType: ValueType
+  fullName: System.ValueType
+- uid: System.IEquatable{System.Numerics.Vector`1}.Equals(System.Numerics.Vector{{T}})
+  commentId: M:System.IEquatable{System.Numerics.Vector`1}.Equals(System.Numerics.Vector{`0})
+  parent: System.IEquatable{System.Numerics.Vector`1}
+  definition: System.IEquatable`1.Equals(`0)
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  name: Equals(Vector<T>)
+  nameWithType: IEquatable<Vector<T>>.Equals(Vector<T>)
+  fullName: System.IEquatable<System.Numerics.Vector<T>>.Equals(System.Numerics.Vector<T>)
+  nameWithType.vb: IEquatable(Of Vector(Of T)).Equals(Vector(Of T))
+  fullName.vb: System.IEquatable(Of System.Numerics.Vector(Of T)).Equals(System.Numerics.Vector(Of T))
+  name.vb: Equals(Vector(Of T))
+  spec.csharp:
+  - uid: System.IEquatable{System.Numerics.Vector`1}.Equals(System.Numerics.Vector{`0})
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - uid: System.Numerics.Vector`1
+    name: Vector
+    isExternal: true
+    href: System.Numerics.Vector-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: System.IEquatable{System.Numerics.Vector`1}.Equals(System.Numerics.Vector{`0})
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - uid: System.Numerics.Vector`1
+    name: Vector
+    isExternal: true
+    href: System.Numerics.Vector-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: )
+- uid: System.Numerics.Vector`1
+  commentId: T:System.Numerics.Vector`1
+  parent: System.Numerics
+  isExternal: true
+  href: System.Numerics.Vector-1.html
+  name: Vector<T>
+  nameWithType: Vector<T>
+  fullName: System.Numerics.Vector<T>
+  nameWithType.vb: Vector(Of T)
+  fullName.vb: System.Numerics.Vector(Of T)
+  name.vb: Vector(Of T)
+  spec.csharp:
+  - uid: System.Numerics.Vector`1
+    name: Vector
+    isExternal: true
+    href: System.Numerics.Vector-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Numerics.Vector`1
+    name: Vector
+    isExternal: true
+    href: System.Numerics.Vector-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.IEquatable`1.Equals(`0)
+  commentId: M:System.IEquatable`1.Equals(`0)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  name: Equals(T)
+  nameWithType: IEquatable<T>.Equals(T)
+  fullName: System.IEquatable<T>.Equals(T)
+  nameWithType.vb: IEquatable(Of T).Equals(T)
+  fullName.vb: System.IEquatable(Of T).Equals(T)
+  spec.csharp:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - name: T
+  - name: )
+- uid: System.ValueType.GetHashCode
+  commentId: M:System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  name: GetHashCode()
+  nameWithType: ValueType.GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+- uid: System.Numerics.Vector`1.GetHashCode*
+  commentId: Overload:System.Numerics.Vector`1.GetHashCode
+  isExternal: true
+  href: System.Numerics.Vector-1.html#System_Numerics_Vector_1_GetHashCode
+  name: GetHashCode
+  nameWithType: Vector<T>.GetHashCode
+  fullName: System.Numerics.Vector<T>.GetHashCode
+  nameWithType.vb: Vector(Of T).GetHashCode
+  fullName.vb: System.Numerics.Vector(Of T).GetHashCode
+- uid: System.ValueType.ToString
+  commentId: M:System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  name: ToString()
+  nameWithType: ValueType.ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+- uid: System.Numerics.Vector`1.ToString*
+  commentId: Overload:System.Numerics.Vector`1.ToString
+  isExternal: true
+  href: System.Numerics.Vector-1.html#System_Numerics_Vector_1_ToString
+  name: ToString
+  nameWithType: Vector<T>.ToString
+  fullName: System.Numerics.Vector<T>.ToString
+  nameWithType.vb: Vector(Of T).ToString
+  fullName.vb: System.Numerics.Vector(Of T).ToString
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.IFormattable.ToString(System.String,System.IFormatProvider)
+  commentId: M:System.IFormattable.ToString(System.String,System.IFormatProvider)
+  parent: System.IFormattable
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iformattable.tostring
+  name: ToString(string, IFormatProvider)
+  nameWithType: IFormattable.ToString(string, IFormatProvider)
+  fullName: System.IFormattable.ToString(string, System.IFormatProvider)
+  nameWithType.vb: IFormattable.ToString(String, IFormatProvider)
+  fullName.vb: System.IFormattable.ToString(String, System.IFormatProvider)
+  name.vb: ToString(String, IFormatProvider)
+  spec.csharp:
+  - uid: System.IFormattable.ToString(System.String,System.IFormatProvider)
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iformattable.tostring
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.IFormatProvider
+    name: IFormatProvider
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iformatprovider
+  - name: )
+  spec.vb:
+  - uid: System.IFormattable.ToString(System.String,System.IFormatProvider)
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iformattable.tostring
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.IFormatProvider
+    name: IFormatProvider
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iformatprovider
+  - name: )
+- uid: System.IFormatProvider
+  commentId: T:System.IFormatProvider
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iformatprovider
+  name: IFormatProvider
+  nameWithType: IFormatProvider
+  fullName: System.IFormatProvider
+- uid: System.Numerics.Vector`1.op_Addition*
+  commentId: Overload:System.Numerics.Vector`1.op_Addition
+  isExternal: true
+  href: System.Numerics.Vector-1.html#System_Numerics_Vector_1_op_Addition_System_Numerics_Vector__0__System_Numerics_Vector__0__
+  name: operator +
+  nameWithType: Vector<T>.operator +
+  fullName: System.Numerics.Vector<T>.operator +
+  nameWithType.vb: Vector(Of T).+
+  fullName.vb: System.Numerics.Vector(Of T).+
+  name.vb: +
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: System.Numerics.Vector`1.op_Addition*
+    name: +
+    isExternal: true
+    href: System.Numerics.Vector-1.html#System_Numerics_Vector_1_op_Addition_System_Numerics_Vector__0__System_Numerics_Vector__0__
+- uid: System.Numerics.Vector`1.op_Subtraction*
+  commentId: Overload:System.Numerics.Vector`1.op_Subtraction
+  isExternal: true
+  href: System.Numerics.Vector-1.html#System_Numerics_Vector_1_op_Subtraction_System_Numerics_Vector__0__System_Numerics_Vector__0__
+  name: operator -
+  nameWithType: Vector<T>.operator -
+  fullName: System.Numerics.Vector<T>.operator -
+  nameWithType.vb: Vector(Of T).-
+  fullName.vb: System.Numerics.Vector(Of T).-
+  name.vb: '-'
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: System.Numerics.Vector`1.op_Subtraction*
+    name: '-'
+    isExternal: true
+    href: System.Numerics.Vector-1.html#System_Numerics_Vector_1_op_Subtraction_System_Numerics_Vector__0__System_Numerics_Vector__0__
+- uid: System.Numerics.Vector`1.op_Multiply*
+  commentId: Overload:System.Numerics.Vector`1.op_Multiply
+  isExternal: true
+  href: System.Numerics.Vector-1.html#System_Numerics_Vector_1_op_Multiply_System_Numerics_Vector__0__System_Numerics_Vector__0__
+  name: operator *
+  nameWithType: Vector<T>.operator *
+  fullName: System.Numerics.Vector<T>.operator *
+  nameWithType.vb: Vector(Of T).*
+  fullName.vb: System.Numerics.Vector(Of T).*
+  name.vb: '*'
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: System.Numerics.Vector`1.op_Multiply*
+    name: '*'
+    isExternal: true
+    href: System.Numerics.Vector-1.html#System_Numerics_Vector_1_op_Multiply_System_Numerics_Vector__0__System_Numerics_Vector__0__
+- uid: System.Numerics.Vector`1.op_Division*
+  commentId: Overload:System.Numerics.Vector`1.op_Division
+  isExternal: true
+  href: System.Numerics.Vector-1.html#System_Numerics_Vector_1_op_Division_System_Numerics_Vector__0__System_Numerics_Vector__0__
+  name: operator /
+  nameWithType: Vector<T>.operator /
+  fullName: System.Numerics.Vector<T>.operator /
+  nameWithType.vb: Vector(Of T)./
+  fullName.vb: System.Numerics.Vector(Of T)./
+  name.vb: /
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: System.Numerics.Vector`1.op_Division*
+    name: /
+    isExternal: true
+    href: System.Numerics.Vector-1.html#System_Numerics_Vector_1_op_Division_System_Numerics_Vector__0__System_Numerics_Vector__0__
+- uid: System.Numerics.Vector`1.op_UnaryNegation*
+  commentId: Overload:System.Numerics.Vector`1.op_UnaryNegation
+  isExternal: true
+  href: System.Numerics.Vector-1.html#System_Numerics_Vector_1_op_UnaryNegation_System_Numerics_Vector__0__
+  name: operator -
+  nameWithType: Vector<T>.operator -
+  fullName: System.Numerics.Vector<T>.operator -
+  nameWithType.vb: Vector(Of T).-
+  fullName.vb: System.Numerics.Vector(Of T).-
+  name.vb: '-'
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: System.Numerics.Vector`1.op_UnaryNegation*
+    name: '-'
+    isExternal: true
+    href: System.Numerics.Vector-1.html#System_Numerics_Vector_1_op_UnaryNegation_System_Numerics_Vector__0__
+- uid: System.Numerics.Vector`1.op_BitwiseAnd*
+  commentId: Overload:System.Numerics.Vector`1.op_BitwiseAnd
+  isExternal: true
+  href: System.Numerics.Vector-1.html#System_Numerics_Vector_1_op_BitwiseAnd_System_Numerics_Vector__0__System_Numerics_Vector__0__
+  name: operator &
+  nameWithType: Vector<T>.operator &
+  fullName: System.Numerics.Vector<T>.operator &
+  nameWithType.vb: Vector(Of T).And
+  fullName.vb: System.Numerics.Vector(Of T).And
+  name.vb: And
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: System.Numerics.Vector`1.op_BitwiseAnd*
+    name: '&'
+    isExternal: true
+    href: System.Numerics.Vector-1.html#System_Numerics_Vector_1_op_BitwiseAnd_System_Numerics_Vector__0__System_Numerics_Vector__0__
+- uid: System.Numerics.Vector`1.op_BitwiseOr*
+  commentId: Overload:System.Numerics.Vector`1.op_BitwiseOr
+  isExternal: true
+  href: System.Numerics.Vector-1.html#System_Numerics_Vector_1_op_BitwiseOr_System_Numerics_Vector__0__System_Numerics_Vector__0__
+  name: operator |
+  nameWithType: Vector<T>.operator |
+  fullName: System.Numerics.Vector<T>.operator |
+  nameWithType.vb: Vector(Of T).Or
+  fullName.vb: System.Numerics.Vector(Of T).Or
+  name.vb: Or
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: System.Numerics.Vector`1.op_BitwiseOr*
+    name: '|'
+    isExternal: true
+    href: System.Numerics.Vector-1.html#System_Numerics_Vector_1_op_BitwiseOr_System_Numerics_Vector__0__System_Numerics_Vector__0__
+- uid: System.Numerics.Vector`1.op_ExclusiveOr*
+  commentId: Overload:System.Numerics.Vector`1.op_ExclusiveOr
+  isExternal: true
+  href: System.Numerics.Vector-1.html#System_Numerics_Vector_1_op_ExclusiveOr_System_Numerics_Vector__0__System_Numerics_Vector__0__
+  name: operator ^
+  nameWithType: Vector<T>.operator ^
+  fullName: System.Numerics.Vector<T>.operator ^
+  nameWithType.vb: Vector(Of T).Xor
+  fullName.vb: System.Numerics.Vector(Of T).Xor
+  name.vb: Xor
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: System.Numerics.Vector`1.op_ExclusiveOr*
+    name: ^
+    isExternal: true
+    href: System.Numerics.Vector-1.html#System_Numerics_Vector_1_op_ExclusiveOr_System_Numerics_Vector__0__System_Numerics_Vector__0__
+- uid: System.Numerics.Vector`1.op_OnesComplement*
+  commentId: Overload:System.Numerics.Vector`1.op_OnesComplement
+  isExternal: true
+  href: System.Numerics.Vector-1.html#System_Numerics_Vector_1_op_OnesComplement_System_Numerics_Vector__0__
+  name: operator ~
+  nameWithType: Vector<T>.operator ~
+  fullName: System.Numerics.Vector<T>.operator ~
+  nameWithType.vb: Vector(Of T).Not
+  fullName.vb: System.Numerics.Vector(Of T).Not
+  name.vb: Not
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: System.Numerics.Vector`1.op_OnesComplement*
+    name: "~"
+    isExternal: true
+    href: System.Numerics.Vector-1.html#System_Numerics_Vector_1_op_OnesComplement_System_Numerics_Vector__0__
+- uid: System.Numerics.Vector`1.op_Equality*
+  commentId: Overload:System.Numerics.Vector`1.op_Equality
+  isExternal: true
+  href: System.Numerics.Vector-1.html#System_Numerics_Vector_1_op_Equality_System_Numerics_Vector__0__System_Numerics_Vector__0__
+  name: operator ==
+  nameWithType: Vector<T>.operator ==
+  fullName: System.Numerics.Vector<T>.operator ==
+  nameWithType.vb: Vector(Of T).=
+  fullName.vb: System.Numerics.Vector(Of T).=
+  name.vb: =
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: System.Numerics.Vector`1.op_Equality*
+    name: ==
+    isExternal: true
+    href: System.Numerics.Vector-1.html#System_Numerics_Vector_1_op_Equality_System_Numerics_Vector__0__System_Numerics_Vector__0__
+- uid: System.Numerics.Vector`1.op_Inequality*
+  commentId: Overload:System.Numerics.Vector`1.op_Inequality
+  isExternal: true
+  href: System.Numerics.Vector-1.html#System_Numerics_Vector_1_op_Inequality_System_Numerics_Vector__0__System_Numerics_Vector__0__
+  name: operator !=
+  nameWithType: Vector<T>.operator !=
+  fullName: System.Numerics.Vector<T>.operator !=
+  nameWithType.vb: Vector(Of T).<>
+  fullName.vb: System.Numerics.Vector(Of T).<>
+  name.vb: <>
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: System.Numerics.Vector`1.op_Inequality*
+    name: '!='
+    isExternal: true
+    href: System.Numerics.Vector-1.html#System_Numerics_Vector_1_op_Inequality_System_Numerics_Vector__0__System_Numerics_Vector__0__
+- uid: System.Numerics.Vector`1.op_Explicit*
+  commentId: Overload:System.Numerics.Vector`1.op_Explicit
+  name: explicit operator
+  nameWithType: Vector<T>.explicit operator
+  fullName: System.Numerics.Vector<T>.explicit operator
+  nameWithType.vb: Vector(Of T).CType
+  fullName.vb: System.Numerics.Vector(Of T).CType
+  name.vb: CType
+  spec.csharp:
+  - name: explicit
+  - name: " "
+  - name: operator
+- uid: System.Numerics.Vector{System.Byte}
+  commentId: T:System.Numerics.Vector{System.Byte}
+  parent: System.Numerics
+  definition: System.Numerics.Vector`1
+  href: System.Numerics.Vector-1.html
+  name: Vector<byte>
+  nameWithType: Vector<byte>
+  fullName: System.Numerics.Vector<byte>
+  nameWithType.vb: Vector(Of Byte)
+  fullName.vb: System.Numerics.Vector(Of Byte)
+  name.vb: Vector(Of Byte)
+  spec.csharp:
+  - uid: System.Numerics.Vector`1
+    name: Vector
+    isExternal: true
+    href: System.Numerics.Vector-1.html
+  - name: <
+  - uid: System.Byte
+    name: byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: '>'
+  spec.vb:
+  - uid: System.Numerics.Vector`1
+    name: Vector
+    isExternal: true
+    href: System.Numerics.Vector-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Byte
+    name: Byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: )
+- uid: System.Numerics.Vector{System.SByte}
+  commentId: T:System.Numerics.Vector{System.SByte}
+  parent: System.Numerics
+  definition: System.Numerics.Vector`1
+  href: System.Numerics.Vector-1.html
+  name: Vector<sbyte>
+  nameWithType: Vector<sbyte>
+  fullName: System.Numerics.Vector<sbyte>
+  nameWithType.vb: Vector(Of SByte)
+  fullName.vb: System.Numerics.Vector(Of SByte)
+  name.vb: Vector(Of SByte)
+  spec.csharp:
+  - uid: System.Numerics.Vector`1
+    name: Vector
+    isExternal: true
+    href: System.Numerics.Vector-1.html
+  - name: <
+  - uid: System.SByte
+    name: sbyte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.sbyte
+  - name: '>'
+  spec.vb:
+  - uid: System.Numerics.Vector`1
+    name: Vector
+    isExternal: true
+    href: System.Numerics.Vector-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.SByte
+    name: SByte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.sbyte
+  - name: )
+- uid: System.Numerics.Vector{System.UInt16}
+  commentId: T:System.Numerics.Vector{System.UInt16}
+  parent: System.Numerics
+  definition: System.Numerics.Vector`1
+  href: System.Numerics.Vector-1.html
+  name: Vector<ushort>
+  nameWithType: Vector<ushort>
+  fullName: System.Numerics.Vector<ushort>
+  nameWithType.vb: Vector(Of UShort)
+  fullName.vb: System.Numerics.Vector(Of UShort)
+  name.vb: Vector(Of UShort)
+  spec.csharp:
+  - uid: System.Numerics.Vector`1
+    name: Vector
+    isExternal: true
+    href: System.Numerics.Vector-1.html
+  - name: <
+  - uid: System.UInt16
+    name: ushort
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.uint16
+  - name: '>'
+  spec.vb:
+  - uid: System.Numerics.Vector`1
+    name: Vector
+    isExternal: true
+    href: System.Numerics.Vector-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.UInt16
+    name: UShort
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.uint16
+  - name: )
+- uid: System.Numerics.Vector{System.Int16}
+  commentId: T:System.Numerics.Vector{System.Int16}
+  parent: System.Numerics
+  definition: System.Numerics.Vector`1
+  href: System.Numerics.Vector-1.html
+  name: Vector<short>
+  nameWithType: Vector<short>
+  fullName: System.Numerics.Vector<short>
+  nameWithType.vb: Vector(Of Short)
+  fullName.vb: System.Numerics.Vector(Of Short)
+  name.vb: Vector(Of Short)
+  spec.csharp:
+  - uid: System.Numerics.Vector`1
+    name: Vector
+    isExternal: true
+    href: System.Numerics.Vector-1.html
+  - name: <
+  - uid: System.Int16
+    name: short
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int16
+  - name: '>'
+  spec.vb:
+  - uid: System.Numerics.Vector`1
+    name: Vector
+    isExternal: true
+    href: System.Numerics.Vector-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Int16
+    name: Short
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int16
+  - name: )
+- uid: System.Numerics.Vector{System.UInt32}
+  commentId: T:System.Numerics.Vector{System.UInt32}
+  parent: System.Numerics
+  definition: System.Numerics.Vector`1
+  href: System.Numerics.Vector-1.html
+  name: Vector<uint>
+  nameWithType: Vector<uint>
+  fullName: System.Numerics.Vector<uint>
+  nameWithType.vb: Vector(Of UInteger)
+  fullName.vb: System.Numerics.Vector(Of UInteger)
+  name.vb: Vector(Of UInteger)
+  spec.csharp:
+  - uid: System.Numerics.Vector`1
+    name: Vector
+    isExternal: true
+    href: System.Numerics.Vector-1.html
+  - name: <
+  - uid: System.UInt32
+    name: uint
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.uint32
+  - name: '>'
+  spec.vb:
+  - uid: System.Numerics.Vector`1
+    name: Vector
+    isExternal: true
+    href: System.Numerics.Vector-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.UInt32
+    name: UInteger
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.uint32
+  - name: )
+- uid: System.Numerics.Vector{System.Int32}
+  commentId: T:System.Numerics.Vector{System.Int32}
+  parent: System.Numerics
+  definition: System.Numerics.Vector`1
+  href: System.Numerics.Vector-1.html
+  name: Vector<int>
+  nameWithType: Vector<int>
+  fullName: System.Numerics.Vector<int>
+  nameWithType.vb: Vector(Of Integer)
+  fullName.vb: System.Numerics.Vector(Of Integer)
+  name.vb: Vector(Of Integer)
+  spec.csharp:
+  - uid: System.Numerics.Vector`1
+    name: Vector
+    isExternal: true
+    href: System.Numerics.Vector-1.html
+  - name: <
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: '>'
+  spec.vb:
+  - uid: System.Numerics.Vector`1
+    name: Vector
+    isExternal: true
+    href: System.Numerics.Vector-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: System.Numerics.Vector{System.UInt64}
+  commentId: T:System.Numerics.Vector{System.UInt64}
+  parent: System.Numerics
+  definition: System.Numerics.Vector`1
+  href: System.Numerics.Vector-1.html
+  name: Vector<ulong>
+  nameWithType: Vector<ulong>
+  fullName: System.Numerics.Vector<ulong>
+  nameWithType.vb: Vector(Of ULong)
+  fullName.vb: System.Numerics.Vector(Of ULong)
+  name.vb: Vector(Of ULong)
+  spec.csharp:
+  - uid: System.Numerics.Vector`1
+    name: Vector
+    isExternal: true
+    href: System.Numerics.Vector-1.html
+  - name: <
+  - uid: System.UInt64
+    name: ulong
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.uint64
+  - name: '>'
+  spec.vb:
+  - uid: System.Numerics.Vector`1
+    name: Vector
+    isExternal: true
+    href: System.Numerics.Vector-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.UInt64
+    name: ULong
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.uint64
+  - name: )
+- uid: System.Numerics.Vector{System.Int64}
+  commentId: T:System.Numerics.Vector{System.Int64}
+  parent: System.Numerics
+  definition: System.Numerics.Vector`1
+  href: System.Numerics.Vector-1.html
+  name: Vector<long>
+  nameWithType: Vector<long>
+  fullName: System.Numerics.Vector<long>
+  nameWithType.vb: Vector(Of Long)
+  fullName.vb: System.Numerics.Vector(Of Long)
+  name.vb: Vector(Of Long)
+  spec.csharp:
+  - uid: System.Numerics.Vector`1
+    name: Vector
+    isExternal: true
+    href: System.Numerics.Vector-1.html
+  - name: <
+  - uid: System.Int64
+    name: long
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int64
+  - name: '>'
+  spec.vb:
+  - uid: System.Numerics.Vector`1
+    name: Vector
+    isExternal: true
+    href: System.Numerics.Vector-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Int64
+    name: Long
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int64
+  - name: )
+- uid: System.Numerics.Vector{System.Single}
+  commentId: T:System.Numerics.Vector{System.Single}
+  parent: System.Numerics
+  definition: System.Numerics.Vector`1
+  href: System.Numerics.Vector-1.html
+  name: Vector<float>
+  nameWithType: Vector<float>
+  fullName: System.Numerics.Vector<float>
+  nameWithType.vb: Vector(Of Single)
+  fullName.vb: System.Numerics.Vector(Of Single)
+  name.vb: Vector(Of Single)
+  spec.csharp:
+  - uid: System.Numerics.Vector`1
+    name: Vector
+    isExternal: true
+    href: System.Numerics.Vector-1.html
+  - name: <
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: '>'
+  spec.vb:
+  - uid: System.Numerics.Vector`1
+    name: Vector
+    isExternal: true
+    href: System.Numerics.Vector-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+- uid: System.Numerics.Vector{System.Double}
+  commentId: T:System.Numerics.Vector{System.Double}
+  parent: System.Numerics
+  definition: System.Numerics.Vector`1
+  href: System.Numerics.Vector-1.html
+  name: Vector<double>
+  nameWithType: Vector<double>
+  fullName: System.Numerics.Vector<double>
+  nameWithType.vb: Vector(Of Double)
+  fullName.vb: System.Numerics.Vector(Of Double)
+  name.vb: Vector(Of Double)
+  spec.csharp:
+  - uid: System.Numerics.Vector`1
+    name: Vector
+    isExternal: true
+    href: System.Numerics.Vector-1.html
+  - name: <
+  - uid: System.Double
+    name: double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: '>'
+  spec.vb:
+  - uid: System.Numerics.Vector`1
+    name: Vector
+    isExternal: true
+    href: System.Numerics.Vector-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Double
+    name: Double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: )
+- uid: System.NotSupportedException
+  commentId: T:System.NotSupportedException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.notsupportedexception
+  name: NotSupportedException
+  nameWithType: NotSupportedException
+  fullName: System.NotSupportedException
+- uid: System.Numerics.Vector`1.Count*
+  commentId: Overload:System.Numerics.Vector`1.Count
+  isExternal: true
+  href: System.Numerics.Vector-1.html#System_Numerics_Vector_1_Count
+  name: Count
+  nameWithType: Vector<T>.Count
+  fullName: System.Numerics.Vector<T>.Count
+  nameWithType.vb: Vector(Of T).Count
+  fullName.vb: System.Numerics.Vector(Of T).Count
+- uid: System.Numerics.Vector`1.Zero*
+  commentId: Overload:System.Numerics.Vector`1.Zero
+  isExternal: true
+  href: System.Numerics.Vector-1.html#System_Numerics_Vector_1_Zero
+  name: Zero
+  nameWithType: Vector<T>.Zero
+  fullName: System.Numerics.Vector<T>.Zero
+  nameWithType.vb: Vector(Of T).Zero
+  fullName.vb: System.Numerics.Vector(Of T).Zero
+- uid: System.Numerics.Vector`1.One*
+  commentId: Overload:System.Numerics.Vector`1.One
+  isExternal: true
+  href: System.Numerics.Vector-1.html#System_Numerics_Vector_1_One
+  name: One
+  nameWithType: Vector<T>.One
+  fullName: System.Numerics.Vector<T>.One
+  nameWithType.vb: Vector(Of T).One
+  fullName.vb: System.Numerics.Vector(Of T).One
+- uid: System.Numerics.Vector`1.Item*
+  commentId: Overload:System.Numerics.Vector`1.Item
+  isExternal: true
+  href: System.Numerics.Vector-1.html#System_Numerics_Vector_1_Item_System_Int32_
+  name: this
+  nameWithType: Vector<T>.this
+  fullName: System.Numerics.Vector<T>.this
+  nameWithType.vb: Vector(Of T).this[]
+  fullName.vb: System.Numerics.Vector(Of T).this[]
+  name.vb: this[]

@@ -1,0 +1,910 @@
+### YamlMime:ManagedReference
+items:
+- uid: System.Text.Json.Serialization.Metadata.JsonObjectInfoValues`1
+  commentId: T:System.Text.Json.Serialization.Metadata.JsonObjectInfoValues`1
+  id: JsonObjectInfoValues`1
+  parent: System.Text.Json.Serialization.Metadata
+  children:
+  - System.Text.Json.Serialization.Metadata.JsonObjectInfoValues`1.#ctor
+  - System.Text.Json.Serialization.Metadata.JsonObjectInfoValues`1.ConstructorParameterMetadataInitializer
+  - System.Text.Json.Serialization.Metadata.JsonObjectInfoValues`1.NumberHandling
+  - System.Text.Json.Serialization.Metadata.JsonObjectInfoValues`1.ObjectCreator
+  - System.Text.Json.Serialization.Metadata.JsonObjectInfoValues`1.ObjectWithParameterizedConstructorCreator
+  - System.Text.Json.Serialization.Metadata.JsonObjectInfoValues`1.PropertyMetadataInitializer
+  - System.Text.Json.Serialization.Metadata.JsonObjectInfoValues`1.SerializeHandler
+  langs:
+  - csharp
+  - vb
+  name: JsonObjectInfoValues<T>
+  nameWithType: JsonObjectInfoValues<T>
+  fullName: System.Text.Json.Serialization.Metadata.JsonObjectInfoValues<T>
+  type: Class
+  assemblies:
+  - System.Text.Json
+  namespace: System.Text.Json.Serialization.Metadata
+  summary: Provides serialization metadata about an object type with constructors, properties, and fields.
+  example: []
+  syntax:
+    content: public sealed class JsonObjectInfoValues<T>
+    typeParameters:
+    - id: T
+      description: The object type to serialize or deserialize.
+    content.vb: Public NotInheritable Class JsonObjectInfoValues(Of T)
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  nameWithType.vb: JsonObjectInfoValues(Of T)
+  fullName.vb: System.Text.Json.Serialization.Metadata.JsonObjectInfoValues(Of T)
+  name.vb: JsonObjectInfoValues(Of T)
+- uid: System.Text.Json.Serialization.Metadata.JsonObjectInfoValues`1.#ctor
+  commentId: M:System.Text.Json.Serialization.Metadata.JsonObjectInfoValues`1.#ctor
+  id: '#ctor'
+  parent: System.Text.Json.Serialization.Metadata.JsonObjectInfoValues`1
+  langs:
+  - csharp
+  - vb
+  name: JsonObjectInfoValues()
+  nameWithType: JsonObjectInfoValues<T>.JsonObjectInfoValues()
+  fullName: System.Text.Json.Serialization.Metadata.JsonObjectInfoValues<T>.JsonObjectInfoValues()
+  type: Constructor
+  assemblies:
+  - System.Text.Json
+  namespace: System.Text.Json.Serialization.Metadata
+  example: []
+  syntax:
+    content: public JsonObjectInfoValues()
+    content.vb: Public Sub New()
+  overload: System.Text.Json.Serialization.Metadata.JsonObjectInfoValues`1.#ctor*
+  nameWithType.vb: JsonObjectInfoValues(Of T).New()
+  fullName.vb: System.Text.Json.Serialization.Metadata.JsonObjectInfoValues(Of T).New()
+  name.vb: New()
+- uid: System.Text.Json.Serialization.Metadata.JsonObjectInfoValues`1.ObjectCreator
+  commentId: P:System.Text.Json.Serialization.Metadata.JsonObjectInfoValues`1.ObjectCreator
+  id: ObjectCreator
+  parent: System.Text.Json.Serialization.Metadata.JsonObjectInfoValues`1
+  langs:
+  - csharp
+  - vb
+  name: ObjectCreator
+  nameWithType: JsonObjectInfoValues<T>.ObjectCreator
+  fullName: System.Text.Json.Serialization.Metadata.JsonObjectInfoValues<T>.ObjectCreator
+  type: Property
+  assemblies:
+  - System.Text.Json
+  namespace: System.Text.Json.Serialization.Metadata
+  summary: Gets or sets a mechanism to create an instance of the class or struct using a parameterless constructor during deserialization.
+  example: []
+  syntax:
+    content: public Func<T>? ObjectCreator { get; init; }
+    parameters: []
+    return:
+      type: System.Func{{T}}
+    content.vb: Public Property ObjectCreator As Func(Of T)
+  overload: System.Text.Json.Serialization.Metadata.JsonObjectInfoValues`1.ObjectCreator*
+  nameWithType.vb: JsonObjectInfoValues(Of T).ObjectCreator
+  fullName.vb: System.Text.Json.Serialization.Metadata.JsonObjectInfoValues(Of T).ObjectCreator
+- uid: System.Text.Json.Serialization.Metadata.JsonObjectInfoValues`1.ObjectWithParameterizedConstructorCreator
+  commentId: P:System.Text.Json.Serialization.Metadata.JsonObjectInfoValues`1.ObjectWithParameterizedConstructorCreator
+  id: ObjectWithParameterizedConstructorCreator
+  parent: System.Text.Json.Serialization.Metadata.JsonObjectInfoValues`1
+  langs:
+  - csharp
+  - vb
+  name: ObjectWithParameterizedConstructorCreator
+  nameWithType: JsonObjectInfoValues<T>.ObjectWithParameterizedConstructorCreator
+  fullName: System.Text.Json.Serialization.Metadata.JsonObjectInfoValues<T>.ObjectWithParameterizedConstructorCreator
+  type: Property
+  assemblies:
+  - System.Text.Json
+  namespace: System.Text.Json.Serialization.Metadata
+  summary: Gets or sets a mechanism to create an instance of the class or struct using a parameterized constructor during deserialization.
+  example: []
+  syntax:
+    content: public Func<object[], T>? ObjectWithParameterizedConstructorCreator { get; init; }
+    parameters: []
+    return:
+      type: System.Func{System.Object[],{T}}
+    content.vb: Public Property ObjectWithParameterizedConstructorCreator As Func(Of Object(), T)
+  overload: System.Text.Json.Serialization.Metadata.JsonObjectInfoValues`1.ObjectWithParameterizedConstructorCreator*
+  nameWithType.vb: JsonObjectInfoValues(Of T).ObjectWithParameterizedConstructorCreator
+  fullName.vb: System.Text.Json.Serialization.Metadata.JsonObjectInfoValues(Of T).ObjectWithParameterizedConstructorCreator
+- uid: System.Text.Json.Serialization.Metadata.JsonObjectInfoValues`1.PropertyMetadataInitializer
+  commentId: P:System.Text.Json.Serialization.Metadata.JsonObjectInfoValues`1.PropertyMetadataInitializer
+  id: PropertyMetadataInitializer
+  parent: System.Text.Json.Serialization.Metadata.JsonObjectInfoValues`1
+  langs:
+  - csharp
+  - vb
+  name: PropertyMetadataInitializer
+  nameWithType: JsonObjectInfoValues<T>.PropertyMetadataInitializer
+  fullName: System.Text.Json.Serialization.Metadata.JsonObjectInfoValues<T>.PropertyMetadataInitializer
+  type: Property
+  assemblies:
+  - System.Text.Json
+  namespace: System.Text.Json.Serialization.Metadata
+  summary: Gets or sets a mechanism to initialize metadata for properties and fields of the class or struct.
+  example: []
+  syntax:
+    content: public Func<JsonSerializerContext, JsonPropertyInfo[]>? PropertyMetadataInitializer { get; init; }
+    parameters: []
+    return:
+      type: System.Func{System.Text.Json.Serialization.JsonSerializerContext,System.Text.Json.Serialization.Metadata.JsonPropertyInfo[]}
+    content.vb: Public Property PropertyMetadataInitializer As Func(Of JsonSerializerContext, JsonPropertyInfo())
+  overload: System.Text.Json.Serialization.Metadata.JsonObjectInfoValues`1.PropertyMetadataInitializer*
+  nameWithType.vb: JsonObjectInfoValues(Of T).PropertyMetadataInitializer
+  fullName.vb: System.Text.Json.Serialization.Metadata.JsonObjectInfoValues(Of T).PropertyMetadataInitializer
+- uid: System.Text.Json.Serialization.Metadata.JsonObjectInfoValues`1.ConstructorParameterMetadataInitializer
+  commentId: P:System.Text.Json.Serialization.Metadata.JsonObjectInfoValues`1.ConstructorParameterMetadataInitializer
+  id: ConstructorParameterMetadataInitializer
+  parent: System.Text.Json.Serialization.Metadata.JsonObjectInfoValues`1
+  langs:
+  - csharp
+  - vb
+  name: ConstructorParameterMetadataInitializer
+  nameWithType: JsonObjectInfoValues<T>.ConstructorParameterMetadataInitializer
+  fullName: System.Text.Json.Serialization.Metadata.JsonObjectInfoValues<T>.ConstructorParameterMetadataInitializer
+  type: Property
+  assemblies:
+  - System.Text.Json
+  namespace: System.Text.Json.Serialization.Metadata
+  summary: Provides a mechanism to initialize metadata for a parameterized constructor of the class or struct to be used when deserializing.
+  example: []
+  syntax:
+    content: public Func<JsonParameterInfoValues[]>? ConstructorParameterMetadataInitializer { get; init; }
+    parameters: []
+    return:
+      type: System.Func{System.Text.Json.Serialization.Metadata.JsonParameterInfoValues[]}
+    content.vb: Public Property ConstructorParameterMetadataInitializer As Func(Of JsonParameterInfoValues())
+  overload: System.Text.Json.Serialization.Metadata.JsonObjectInfoValues`1.ConstructorParameterMetadataInitializer*
+  nameWithType.vb: JsonObjectInfoValues(Of T).ConstructorParameterMetadataInitializer
+  fullName.vb: System.Text.Json.Serialization.Metadata.JsonObjectInfoValues(Of T).ConstructorParameterMetadataInitializer
+- uid: System.Text.Json.Serialization.Metadata.JsonObjectInfoValues`1.NumberHandling
+  commentId: P:System.Text.Json.Serialization.Metadata.JsonObjectInfoValues`1.NumberHandling
+  id: NumberHandling
+  parent: System.Text.Json.Serialization.Metadata.JsonObjectInfoValues`1
+  langs:
+  - csharp
+  - vb
+  name: NumberHandling
+  nameWithType: JsonObjectInfoValues<T>.NumberHandling
+  fullName: System.Text.Json.Serialization.Metadata.JsonObjectInfoValues<T>.NumberHandling
+  type: Property
+  assemblies:
+  - System.Text.Json
+  namespace: System.Text.Json.Serialization.Metadata
+  summary: Gets or sets an object that specifies how number properties and fields should be processed when serializing and deserializing.
+  example: []
+  syntax:
+    content: public JsonNumberHandling NumberHandling { get; init; }
+    parameters: []
+    return:
+      type: System.Text.Json.Serialization.JsonNumberHandling
+    content.vb: Public Property NumberHandling As JsonNumberHandling
+  overload: System.Text.Json.Serialization.Metadata.JsonObjectInfoValues`1.NumberHandling*
+  nameWithType.vb: JsonObjectInfoValues(Of T).NumberHandling
+  fullName.vb: System.Text.Json.Serialization.Metadata.JsonObjectInfoValues(Of T).NumberHandling
+- uid: System.Text.Json.Serialization.Metadata.JsonObjectInfoValues`1.SerializeHandler
+  commentId: P:System.Text.Json.Serialization.Metadata.JsonObjectInfoValues`1.SerializeHandler
+  id: SerializeHandler
+  parent: System.Text.Json.Serialization.Metadata.JsonObjectInfoValues`1
+  langs:
+  - csharp
+  - vb
+  name: SerializeHandler
+  nameWithType: JsonObjectInfoValues<T>.SerializeHandler
+  fullName: System.Text.Json.Serialization.Metadata.JsonObjectInfoValues<T>.SerializeHandler
+  type: Property
+  assemblies:
+  - System.Text.Json
+  namespace: System.Text.Json.Serialization.Metadata
+  summary: Gets or sets a serialization implementation for instances of the class or struct that assumes options specified by <xref href="System.Text.Json.Serialization.JsonSourceGenerationOptionsAttribute" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public Action<Utf8JsonWriter, T>? SerializeHandler { get; init; }
+    parameters: []
+    return:
+      type: System.Action{System.Text.Json.Utf8JsonWriter,{T}}
+    content.vb: Public Property SerializeHandler As Action(Of Utf8JsonWriter, T)
+  overload: System.Text.Json.Serialization.Metadata.JsonObjectInfoValues`1.SerializeHandler*
+  nameWithType.vb: JsonObjectInfoValues(Of T).SerializeHandler
+  fullName.vb: System.Text.Json.Serialization.Metadata.JsonObjectInfoValues(Of T).SerializeHandler
+references:
+- uid: System.Text.Json.Serialization.Metadata
+  commentId: N:System.Text.Json.Serialization.Metadata
+  isExternal: true
+  href: System.html
+  name: System.Text.Json.Serialization.Metadata
+  nameWithType: System.Text.Json.Serialization.Metadata
+  fullName: System.Text.Json.Serialization.Metadata
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: System.html
+  - name: .
+  - uid: System.Text
+    name: Text
+    isExternal: true
+    href: System.Text.html
+  - name: .
+  - uid: System.Text.Json
+    name: Json
+    isExternal: true
+    href: System.Text.Json.html
+  - name: .
+  - uid: System.Text.Json.Serialization
+    name: Serialization
+    isExternal: true
+    href: System.Text.Json.Serialization.html
+  - name: .
+  - uid: System.Text.Json.Serialization.Metadata
+    name: Metadata
+    isExternal: true
+    href: System.Text.Json.Serialization.Metadata.html
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: System.html
+  - name: .
+  - uid: System.Text
+    name: Text
+    isExternal: true
+    href: System.Text.html
+  - name: .
+  - uid: System.Text.Json
+    name: Json
+    isExternal: true
+    href: System.Text.Json.html
+  - name: .
+  - uid: System.Text.Json.Serialization
+    name: Serialization
+    isExternal: true
+    href: System.Text.Json.Serialization.html
+  - name: .
+  - uid: System.Text.Json.Serialization.Metadata
+    name: Metadata
+    isExternal: true
+    href: System.Text.Json.Serialization.Metadata.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Text.Json.Serialization.Metadata.JsonObjectInfoValues`1.#ctor*
+  commentId: Overload:System.Text.Json.Serialization.Metadata.JsonObjectInfoValues`1.#ctor
+  isExternal: true
+  href: System.Text.Json.Serialization.Metadata.JsonObjectInfoValues-1.html#System_Text_Json_Serialization_Metadata_JsonObjectInfoValues_1__ctor
+  name: JsonObjectInfoValues
+  nameWithType: JsonObjectInfoValues<T>.JsonObjectInfoValues
+  fullName: System.Text.Json.Serialization.Metadata.JsonObjectInfoValues<T>.JsonObjectInfoValues
+  nameWithType.vb: JsonObjectInfoValues(Of T).New
+  fullName.vb: System.Text.Json.Serialization.Metadata.JsonObjectInfoValues(Of T).New
+  name.vb: New
+- uid: System.Text.Json.Serialization.Metadata.JsonObjectInfoValues`1.ObjectCreator*
+  commentId: Overload:System.Text.Json.Serialization.Metadata.JsonObjectInfoValues`1.ObjectCreator
+  isExternal: true
+  href: System.Text.Json.Serialization.Metadata.JsonObjectInfoValues-1.html#System_Text_Json_Serialization_Metadata_JsonObjectInfoValues_1_ObjectCreator
+  name: ObjectCreator
+  nameWithType: JsonObjectInfoValues<T>.ObjectCreator
+  fullName: System.Text.Json.Serialization.Metadata.JsonObjectInfoValues<T>.ObjectCreator
+  nameWithType.vb: JsonObjectInfoValues(Of T).ObjectCreator
+  fullName.vb: System.Text.Json.Serialization.Metadata.JsonObjectInfoValues(Of T).ObjectCreator
+- uid: System.Func{{T}}
+  commentId: T:System.Func{`0}
+  parent: System
+  definition: System.Func`1
+  href: https://learn.microsoft.com/dotnet/api/system.func-1
+  name: Func<T>
+  nameWithType: Func<T>
+  fullName: System.Func<T>
+  nameWithType.vb: Func(Of T)
+  fullName.vb: System.Func(Of T)
+  name.vb: Func(Of T)
+  spec.csharp:
+  - uid: System.Func`1
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`1
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Func`1
+  commentId: T:System.Func`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.func-1
+  name: Func<TResult>
+  nameWithType: Func<TResult>
+  fullName: System.Func<TResult>
+  nameWithType.vb: Func(Of TResult)
+  fullName.vb: System.Func(Of TResult)
+  name.vb: Func(Of TResult)
+  spec.csharp:
+  - uid: System.Func`1
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`1
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Text.Json.Serialization.Metadata.JsonObjectInfoValues`1.ObjectWithParameterizedConstructorCreator*
+  commentId: Overload:System.Text.Json.Serialization.Metadata.JsonObjectInfoValues`1.ObjectWithParameterizedConstructorCreator
+  isExternal: true
+  href: System.Text.Json.Serialization.Metadata.JsonObjectInfoValues-1.html#System_Text_Json_Serialization_Metadata_JsonObjectInfoValues_1_ObjectWithParameterizedConstructorCreator
+  name: ObjectWithParameterizedConstructorCreator
+  nameWithType: JsonObjectInfoValues<T>.ObjectWithParameterizedConstructorCreator
+  fullName: System.Text.Json.Serialization.Metadata.JsonObjectInfoValues<T>.ObjectWithParameterizedConstructorCreator
+  nameWithType.vb: JsonObjectInfoValues(Of T).ObjectWithParameterizedConstructorCreator
+  fullName.vb: System.Text.Json.Serialization.Metadata.JsonObjectInfoValues(Of T).ObjectWithParameterizedConstructorCreator
+- uid: System.Func{System.Object[],{T}}
+  commentId: T:System.Func{System.Object[],`0}
+  parent: System
+  definition: System.Func`2
+  href: https://learn.microsoft.com/dotnet/api/system.func-2
+  name: Func<object[], T>
+  nameWithType: Func<object[], T>
+  fullName: System.Func<object[], T>
+  nameWithType.vb: Func(Of Object(), T)
+  fullName.vb: System.Func(Of Object(), T)
+  name.vb: Func(Of Object(), T)
+  spec.csharp:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: '['
+  - name: ']'
+  - name: ','
+  - name: " "
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: (
+  - name: )
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Func`2
+  commentId: T:System.Func`2
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.func-2
+  name: Func<T, TResult>
+  nameWithType: Func<T, TResult>
+  fullName: System.Func<T, TResult>
+  nameWithType.vb: Func(Of T, TResult)
+  fullName.vb: System.Func(Of T, TResult)
+  name.vb: Func(Of T, TResult)
+  spec.csharp:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Text.Json.Serialization.Metadata.JsonObjectInfoValues`1.PropertyMetadataInitializer*
+  commentId: Overload:System.Text.Json.Serialization.Metadata.JsonObjectInfoValues`1.PropertyMetadataInitializer
+  isExternal: true
+  href: System.Text.Json.Serialization.Metadata.JsonObjectInfoValues-1.html#System_Text_Json_Serialization_Metadata_JsonObjectInfoValues_1_PropertyMetadataInitializer
+  name: PropertyMetadataInitializer
+  nameWithType: JsonObjectInfoValues<T>.PropertyMetadataInitializer
+  fullName: System.Text.Json.Serialization.Metadata.JsonObjectInfoValues<T>.PropertyMetadataInitializer
+  nameWithType.vb: JsonObjectInfoValues(Of T).PropertyMetadataInitializer
+  fullName.vb: System.Text.Json.Serialization.Metadata.JsonObjectInfoValues(Of T).PropertyMetadataInitializer
+- uid: System.Func{System.Text.Json.Serialization.JsonSerializerContext,System.Text.Json.Serialization.Metadata.JsonPropertyInfo[]}
+  commentId: T:System.Func{System.Text.Json.Serialization.JsonSerializerContext,System.Text.Json.Serialization.Metadata.JsonPropertyInfo[]}
+  parent: System
+  definition: System.Func`2
+  href: https://learn.microsoft.com/dotnet/api/system.func-2
+  name: Func<JsonSerializerContext, JsonPropertyInfo[]>
+  nameWithType: Func<JsonSerializerContext, JsonPropertyInfo[]>
+  fullName: System.Func<System.Text.Json.Serialization.JsonSerializerContext, System.Text.Json.Serialization.Metadata.JsonPropertyInfo[]>
+  nameWithType.vb: Func(Of JsonSerializerContext, JsonPropertyInfo())
+  fullName.vb: System.Func(Of System.Text.Json.Serialization.JsonSerializerContext, System.Text.Json.Serialization.Metadata.JsonPropertyInfo())
+  name.vb: Func(Of JsonSerializerContext, JsonPropertyInfo())
+  spec.csharp:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - uid: System.Text.Json.Serialization.JsonSerializerContext
+    name: JsonSerializerContext
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Text.Json.Serialization.Metadata.JsonPropertyInfo
+    name: JsonPropertyInfo
+    isExternal: true
+  - name: '['
+  - name: ']'
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Text.Json.Serialization.JsonSerializerContext
+    name: JsonSerializerContext
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Text.Json.Serialization.Metadata.JsonPropertyInfo
+    name: JsonPropertyInfo
+    isExternal: true
+  - name: (
+  - name: )
+  - name: )
+- uid: System.Text.Json.Serialization.Metadata.JsonObjectInfoValues`1.ConstructorParameterMetadataInitializer*
+  commentId: Overload:System.Text.Json.Serialization.Metadata.JsonObjectInfoValues`1.ConstructorParameterMetadataInitializer
+  isExternal: true
+  href: System.Text.Json.Serialization.Metadata.JsonObjectInfoValues-1.html#System_Text_Json_Serialization_Metadata_JsonObjectInfoValues_1_ConstructorParameterMetadataInitializer
+  name: ConstructorParameterMetadataInitializer
+  nameWithType: JsonObjectInfoValues<T>.ConstructorParameterMetadataInitializer
+  fullName: System.Text.Json.Serialization.Metadata.JsonObjectInfoValues<T>.ConstructorParameterMetadataInitializer
+  nameWithType.vb: JsonObjectInfoValues(Of T).ConstructorParameterMetadataInitializer
+  fullName.vb: System.Text.Json.Serialization.Metadata.JsonObjectInfoValues(Of T).ConstructorParameterMetadataInitializer
+- uid: System.Func{System.Text.Json.Serialization.Metadata.JsonParameterInfoValues[]}
+  commentId: T:System.Func{System.Text.Json.Serialization.Metadata.JsonParameterInfoValues[]}
+  parent: System
+  definition: System.Func`1
+  href: https://learn.microsoft.com/dotnet/api/system.func-1
+  name: Func<JsonParameterInfoValues[]>
+  nameWithType: Func<JsonParameterInfoValues[]>
+  fullName: System.Func<System.Text.Json.Serialization.Metadata.JsonParameterInfoValues[]>
+  nameWithType.vb: Func(Of JsonParameterInfoValues())
+  fullName.vb: System.Func(Of System.Text.Json.Serialization.Metadata.JsonParameterInfoValues())
+  name.vb: Func(Of JsonParameterInfoValues())
+  spec.csharp:
+  - uid: System.Func`1
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-1
+  - name: <
+  - uid: System.Text.Json.Serialization.Metadata.JsonParameterInfoValues
+    name: JsonParameterInfoValues
+    isExternal: true
+    href: System.Text.Json.Serialization.Metadata.JsonParameterInfoValues.html
+  - name: '['
+  - name: ']'
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`1
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Text.Json.Serialization.Metadata.JsonParameterInfoValues
+    name: JsonParameterInfoValues
+    isExternal: true
+    href: System.Text.Json.Serialization.Metadata.JsonParameterInfoValues.html
+  - name: (
+  - name: )
+  - name: )
+- uid: System.Text.Json.Serialization.Metadata.JsonObjectInfoValues`1.NumberHandling*
+  commentId: Overload:System.Text.Json.Serialization.Metadata.JsonObjectInfoValues`1.NumberHandling
+  isExternal: true
+  href: System.Text.Json.Serialization.Metadata.JsonObjectInfoValues-1.html#System_Text_Json_Serialization_Metadata_JsonObjectInfoValues_1_NumberHandling
+  name: NumberHandling
+  nameWithType: JsonObjectInfoValues<T>.NumberHandling
+  fullName: System.Text.Json.Serialization.Metadata.JsonObjectInfoValues<T>.NumberHandling
+  nameWithType.vb: JsonObjectInfoValues(Of T).NumberHandling
+  fullName.vb: System.Text.Json.Serialization.Metadata.JsonObjectInfoValues(Of T).NumberHandling
+- uid: System.Text.Json.Serialization.JsonNumberHandling
+  commentId: T:System.Text.Json.Serialization.JsonNumberHandling
+  parent: System.Text.Json.Serialization
+  isExternal: true
+  href: System.Text.Json.Serialization.JsonNumberHandling.html
+  name: JsonNumberHandling
+  nameWithType: JsonNumberHandling
+  fullName: System.Text.Json.Serialization.JsonNumberHandling
+- uid: System.Text.Json.Serialization
+  commentId: N:System.Text.Json.Serialization
+  isExternal: true
+  href: System.html
+  name: System.Text.Json.Serialization
+  nameWithType: System.Text.Json.Serialization
+  fullName: System.Text.Json.Serialization
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: System.html
+  - name: .
+  - uid: System.Text
+    name: Text
+    isExternal: true
+    href: System.Text.html
+  - name: .
+  - uid: System.Text.Json
+    name: Json
+    isExternal: true
+    href: System.Text.Json.html
+  - name: .
+  - uid: System.Text.Json.Serialization
+    name: Serialization
+    isExternal: true
+    href: System.Text.Json.Serialization.html
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: System.html
+  - name: .
+  - uid: System.Text
+    name: Text
+    isExternal: true
+    href: System.Text.html
+  - name: .
+  - uid: System.Text.Json
+    name: Json
+    isExternal: true
+    href: System.Text.Json.html
+  - name: .
+  - uid: System.Text.Json.Serialization
+    name: Serialization
+    isExternal: true
+    href: System.Text.Json.Serialization.html
+- uid: System.Text.Json.Serialization.JsonSourceGenerationOptionsAttribute
+  commentId: T:System.Text.Json.Serialization.JsonSourceGenerationOptionsAttribute
+  isExternal: true
+  href: System.Text.Json.Serialization.JsonSourceGenerationOptionsAttribute.html
+  name: JsonSourceGenerationOptionsAttribute
+  nameWithType: JsonSourceGenerationOptionsAttribute
+  fullName: System.Text.Json.Serialization.JsonSourceGenerationOptionsAttribute
+- uid: System.Text.Json.Serialization.Metadata.JsonObjectInfoValues`1.SerializeHandler*
+  commentId: Overload:System.Text.Json.Serialization.Metadata.JsonObjectInfoValues`1.SerializeHandler
+  isExternal: true
+  href: System.Text.Json.Serialization.Metadata.JsonObjectInfoValues-1.html#System_Text_Json_Serialization_Metadata_JsonObjectInfoValues_1_SerializeHandler
+  name: SerializeHandler
+  nameWithType: JsonObjectInfoValues<T>.SerializeHandler
+  fullName: System.Text.Json.Serialization.Metadata.JsonObjectInfoValues<T>.SerializeHandler
+  nameWithType.vb: JsonObjectInfoValues(Of T).SerializeHandler
+  fullName.vb: System.Text.Json.Serialization.Metadata.JsonObjectInfoValues(Of T).SerializeHandler
+- uid: System.Action{System.Text.Json.Utf8JsonWriter,{T}}
+  commentId: T:System.Action{System.Text.Json.Utf8JsonWriter,`0}
+  parent: System
+  definition: System.Action`2
+  href: https://learn.microsoft.com/dotnet/api/system.action-2
+  name: Action<Utf8JsonWriter, T>
+  nameWithType: Action<Utf8JsonWriter, T>
+  fullName: System.Action<System.Text.Json.Utf8JsonWriter, T>
+  nameWithType.vb: Action(Of Utf8JsonWriter, T)
+  fullName.vb: System.Action(Of System.Text.Json.Utf8JsonWriter, T)
+  name.vb: Action(Of Utf8JsonWriter, T)
+  spec.csharp:
+  - uid: System.Action`2
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-2
+  - name: <
+  - uid: System.Text.Json.Utf8JsonWriter
+    name: Utf8JsonWriter
+    isExternal: true
+    href: System.Text.Json.Utf8JsonWriter.html
+  - name: ','
+  - name: " "
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`2
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Text.Json.Utf8JsonWriter
+    name: Utf8JsonWriter
+    isExternal: true
+    href: System.Text.Json.Utf8JsonWriter.html
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Action`2
+  commentId: T:System.Action`2
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.action-2
+  name: Action<T1, T2>
+  nameWithType: Action<T1, T2>
+  fullName: System.Action<T1, T2>
+  nameWithType.vb: Action(Of T1, T2)
+  fullName.vb: System.Action(Of T1, T2)
+  name.vb: Action(Of T1, T2)
+  spec.csharp:
+  - uid: System.Action`2
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-2
+  - name: <
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`2
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: )

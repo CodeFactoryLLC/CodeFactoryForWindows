@@ -1,0 +1,1539 @@
+### YamlMime:ManagedReference
+items:
+- uid: CodeFactory.WinVs.IVsActions
+  commentId: T:CodeFactory.WinVs.IVsActions
+  id: IVsActions
+  parent: CodeFactory.WinVs
+  children:
+  - CodeFactory.WinVs.IVsActions.DocumentActions
+  - CodeFactory.WinVs.IVsActions.EnvironmentActions
+  - CodeFactory.WinVs.IVsActions.GetCSharpProjectFileFromSourceAsync(CodeFactory.WinVs.Models.CSharp.CsSource)
+  - CodeFactory.WinVs.IVsActions.GetCSharpSourceAsync(System.String)
+  - CodeFactory.WinVs.IVsActions.GetProjectFileFromSourceAsync(CodeFactory.WinVs.Models.CSharp.CsSource)
+  - CodeFactory.WinVs.IVsActions.GetProjectFromSourceAsync(CodeFactory.WinVs.Models.CSharp.CsSource)
+  - CodeFactory.WinVs.IVsActions.GetSolutionAsync
+  - CodeFactory.WinVs.IVsActions.ProjectActions
+  - CodeFactory.WinVs.IVsActions.ProjectFolderActions
+  - CodeFactory.WinVs.IVsActions.ProjectReferenceActions
+  - CodeFactory.WinVs.IVsActions.SolutionActions
+  - CodeFactory.WinVs.IVsActions.SolutionFolderActions
+  - CodeFactory.WinVs.IVsActions.SourceActions
+  - CodeFactory.WinVs.IVsActions.UserInterfaceActions
+  langs:
+  - csharp
+  - vb
+  name: IVsActions
+  nameWithType: IVsActions
+  fullName: CodeFactory.WinVs.IVsActions
+  type: Interface
+  source:
+    href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/e63c05962945f61f2329e19d324f24a768806f18/Src/CodeFactoryForWindows/CodeFactory.WinVs/IVsActions.cs
+  assemblies:
+  - CodeFactory.WinVs
+  namespace: CodeFactory.WinVs
+  summary: Code factory commands that are globally used in Visual Studio.
+  example: []
+  syntax:
+    content: public interface IVsActions
+    content.vb: Public Interface IVsActions
+  extensionMethods:
+  - CodeFactory.WinVs.IVsActions.CodeFactory.WinVs.VsActionsExtensions.GetCSharpSourceAsync(CodeFactory.WinVs.Models.CSharp.CsContainer)
+  - CodeFactory.WinVs.IVsActions.CodeFactory.WinVs.VsActionsExtensions.GetCSharpSourceAsync(CodeFactory.WinVs.Models.CSharp.CsMember)
+  - CodeFactory.WinVs.IVsActions.CodeFactory.WinVs.VsActionsExtensions.GetProjectFolderFromConfigAsync(CodeFactory.WinVs.Commands.ConfigProject,System.String,System.Boolean)
+  - CodeFactory.WinVs.IVsActions.CodeFactory.WinVs.VsActionsExtensions.GetProjectFromConfigAsync(CodeFactory.WinVs.Commands.ConfigProject)
+  - CodeFactory.WinVs.IVsActions.CodeFactory.WinVs.VsActionsExtensions.GetTargetProjectAsync(System.String)
+- uid: CodeFactory.WinVs.IVsActions.GetSolutionAsync
+  commentId: M:CodeFactory.WinVs.IVsActions.GetSolutionAsync
+  id: GetSolutionAsync
+  parent: CodeFactory.WinVs.IVsActions
+  langs:
+  - csharp
+  - vb
+  name: GetSolutionAsync()
+  nameWithType: IVsActions.GetSolutionAsync()
+  fullName: CodeFactory.WinVs.IVsActions.GetSolutionAsync()
+  type: Method
+  source:
+    href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/e63c05962945f61f2329e19d324f24a768806f18/Src/CodeFactoryForWindows/CodeFactory.WinVs/IVsActions.cs
+  assemblies:
+  - CodeFactory.WinVs
+  namespace: CodeFactory.WinVs
+  summary: Gets the most current model of the solution.
+  example: []
+  syntax:
+    content: Task<VsSolution> GetSolutionAsync()
+    return:
+      type: System.Threading.Tasks.Task{CodeFactory.WinVs.Models.ProjectSystem.VsSolution}
+      description: The solution model.
+    content.vb: Function GetSolutionAsync() As Task(Of VsSolution)
+  overload: CodeFactory.WinVs.IVsActions.GetSolutionAsync*
+- uid: CodeFactory.WinVs.IVsActions.GetProjectFromSourceAsync(CodeFactory.WinVs.Models.CSharp.CsSource)
+  commentId: M:CodeFactory.WinVs.IVsActions.GetProjectFromSourceAsync(CodeFactory.WinVs.Models.CSharp.CsSource)
+  id: GetProjectFromSourceAsync(CodeFactory.WinVs.Models.CSharp.CsSource)
+  parent: CodeFactory.WinVs.IVsActions
+  langs:
+  - csharp
+  - vb
+  name: GetProjectFromSourceAsync(CsSource)
+  nameWithType: IVsActions.GetProjectFromSourceAsync(CsSource)
+  fullName: CodeFactory.WinVs.IVsActions.GetProjectFromSourceAsync(CodeFactory.WinVs.Models.CSharp.CsSource)
+  type: Method
+  source:
+    href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/e63c05962945f61f2329e19d324f24a768806f18/Src/CodeFactoryForWindows/CodeFactory.WinVs/IVsActions.cs
+  assemblies:
+  - CodeFactory.WinVs
+  namespace: CodeFactory.WinVs
+  summary: Gets the hosting project for the <xref href="CodeFactory.WinVs.Models.CSharp.CsSource" data-throw-if-not-resolved="false"></xref> model.
+  example: []
+  syntax:
+    content: Task<VsProject> GetProjectFromSourceAsync(CsSource sourceCode)
+    parameters:
+    - id: sourceCode
+      type: CodeFactory.WinVs.Models.CSharp.CsSource
+      description: The source code to get the project from.
+    return:
+      type: System.Threading.Tasks.Task{CodeFactory.WinVs.Models.ProjectSystem.VsProject}
+      description: The target project or null if the project is not defined for the source code.
+    content.vb: Function GetProjectFromSourceAsync(sourceCode As CsSource) As Task(Of VsProject)
+  overload: CodeFactory.WinVs.IVsActions.GetProjectFromSourceAsync*
+- uid: CodeFactory.WinVs.IVsActions.GetCSharpProjectFileFromSourceAsync(CodeFactory.WinVs.Models.CSharp.CsSource)
+  commentId: M:CodeFactory.WinVs.IVsActions.GetCSharpProjectFileFromSourceAsync(CodeFactory.WinVs.Models.CSharp.CsSource)
+  id: GetCSharpProjectFileFromSourceAsync(CodeFactory.WinVs.Models.CSharp.CsSource)
+  parent: CodeFactory.WinVs.IVsActions
+  langs:
+  - csharp
+  - vb
+  name: GetCSharpProjectFileFromSourceAsync(CsSource)
+  nameWithType: IVsActions.GetCSharpProjectFileFromSourceAsync(CsSource)
+  fullName: CodeFactory.WinVs.IVsActions.GetCSharpProjectFileFromSourceAsync(CodeFactory.WinVs.Models.CSharp.CsSource)
+  type: Method
+  source:
+    href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/e63c05962945f61f2329e19d324f24a768806f18/Src/CodeFactoryForWindows/CodeFactory.WinVs/IVsActions.cs
+  assemblies:
+  - CodeFactory.WinVs
+  namespace: CodeFactory.WinVs
+  summary: Gets the hosting C# source project file from for the <xref href="CodeFactory.WinVs.Models.CSharp.CsSource" data-throw-if-not-resolved="false"></xref> model.
+  example: []
+  syntax:
+    content: Task<VsCSharpSource> GetCSharpProjectFileFromSourceAsync(CsSource sourceCode)
+    parameters:
+    - id: sourceCode
+      type: CodeFactory.WinVs.Models.CSharp.CsSource
+      description: The source code to get the C# source from.
+    return:
+      type: System.Threading.Tasks.Task{CodeFactory.WinVs.Models.ProjectSystem.VsCSharpSource}
+      description: The target c# source project file or null if the project is not defined for the source code.
+    content.vb: Function GetCSharpProjectFileFromSourceAsync(sourceCode As CsSource) As Task(Of VsCSharpSource)
+  overload: CodeFactory.WinVs.IVsActions.GetCSharpProjectFileFromSourceAsync*
+- uid: CodeFactory.WinVs.IVsActions.GetProjectFileFromSourceAsync(CodeFactory.WinVs.Models.CSharp.CsSource)
+  commentId: M:CodeFactory.WinVs.IVsActions.GetProjectFileFromSourceAsync(CodeFactory.WinVs.Models.CSharp.CsSource)
+  id: GetProjectFileFromSourceAsync(CodeFactory.WinVs.Models.CSharp.CsSource)
+  parent: CodeFactory.WinVs.IVsActions
+  langs:
+  - csharp
+  - vb
+  name: GetProjectFileFromSourceAsync(CsSource)
+  nameWithType: IVsActions.GetProjectFileFromSourceAsync(CsSource)
+  fullName: CodeFactory.WinVs.IVsActions.GetProjectFileFromSourceAsync(CodeFactory.WinVs.Models.CSharp.CsSource)
+  type: Method
+  source:
+    href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/e63c05962945f61f2329e19d324f24a768806f18/Src/CodeFactoryForWindows/CodeFactory.WinVs/IVsActions.cs
+  assemblies:
+  - CodeFactory.WinVs
+  namespace: CodeFactory.WinVs
+  summary: Gets the hosting C# source project file from for the <xref href="CodeFactory.WinVs.Models.CSharp.CsSource" data-throw-if-not-resolved="false"></xref> model.
+  example: []
+  syntax:
+    content: Task<VsDocument> GetProjectFileFromSourceAsync(CsSource sourceCode)
+    parameters:
+    - id: sourceCode
+      type: CodeFactory.WinVs.Models.CSharp.CsSource
+      description: The source code to get the C# source from.
+    return:
+      type: System.Threading.Tasks.Task{CodeFactory.WinVs.Models.ProjectSystem.VsDocument}
+      description: The target project file or null if the project is not defined for the source code.
+    content.vb: Function GetProjectFileFromSourceAsync(sourceCode As CsSource) As Task(Of VsDocument)
+  overload: CodeFactory.WinVs.IVsActions.GetProjectFileFromSourceAsync*
+- uid: CodeFactory.WinVs.IVsActions.GetCSharpSourceAsync(System.String)
+  commentId: M:CodeFactory.WinVs.IVsActions.GetCSharpSourceAsync(System.String)
+  id: GetCSharpSourceAsync(System.String)
+  parent: CodeFactory.WinVs.IVsActions
+  langs:
+  - csharp
+  - vb
+  name: GetCSharpSourceAsync(string)
+  nameWithType: IVsActions.GetCSharpSourceAsync(string)
+  fullName: CodeFactory.WinVs.IVsActions.GetCSharpSourceAsync(string)
+  type: Method
+  source:
+    href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/e63c05962945f61f2329e19d324f24a768806f18/Src/CodeFactoryForWindows/CodeFactory.WinVs/IVsActions.cs
+  assemblies:
+  - CodeFactory.WinVs
+  namespace: CodeFactory.WinVs
+  summary: Loads the <xref href="CodeFactory.WinVs.Models.CSharp.CsSource" data-throw-if-not-resolved="false"></xref> from the target code file provided.
+  example: []
+  syntax:
+    content: Task<CsSource> GetCSharpSourceAsync(string filePath)
+    parameters:
+    - id: filePath
+      type: System.String
+      description: Fully qualified path to the c# code file to load.
+    return:
+      type: System.Threading.Tasks.Task{CodeFactory.WinVs.Models.CSharp.CsSource}
+      description: The C# source model or null if the model could not be loaded.
+    content.vb: Function GetCSharpSourceAsync(filePath As String) As Task(Of CsSource)
+  overload: CodeFactory.WinVs.IVsActions.GetCSharpSourceAsync*
+  nameWithType.vb: IVsActions.GetCSharpSourceAsync(String)
+  fullName.vb: CodeFactory.WinVs.IVsActions.GetCSharpSourceAsync(String)
+  name.vb: GetCSharpSourceAsync(String)
+- uid: CodeFactory.WinVs.IVsActions.EnvironmentActions
+  commentId: P:CodeFactory.WinVs.IVsActions.EnvironmentActions
+  id: EnvironmentActions
+  parent: CodeFactory.WinVs.IVsActions
+  langs:
+  - csharp
+  - vb
+  name: EnvironmentActions
+  nameWithType: IVsActions.EnvironmentActions
+  fullName: CodeFactory.WinVs.IVsActions.EnvironmentActions
+  type: Property
+  source:
+    href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/e63c05962945f61f2329e19d324f24a768806f18/Src/CodeFactoryForWindows/CodeFactory.WinVs/IVsActions.cs
+  assemblies:
+  - CodeFactory.WinVs
+  namespace: CodeFactory.WinVs
+  summary: Visual Studio actions that directly interact with Visual Studio itself.
+  example: []
+  syntax:
+    content: IVsEnvironmentActions EnvironmentActions { get; }
+    parameters: []
+    return:
+      type: CodeFactory.WinVs.IVsEnvironmentActions
+    content.vb: ReadOnly Property EnvironmentActions As IVsEnvironmentActions
+  overload: CodeFactory.WinVs.IVsActions.EnvironmentActions*
+- uid: CodeFactory.WinVs.IVsActions.SolutionActions
+  commentId: P:CodeFactory.WinVs.IVsActions.SolutionActions
+  id: SolutionActions
+  parent: CodeFactory.WinVs.IVsActions
+  langs:
+  - csharp
+  - vb
+  name: SolutionActions
+  nameWithType: IVsActions.SolutionActions
+  fullName: CodeFactory.WinVs.IVsActions.SolutionActions
+  type: Property
+  source:
+    href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/e63c05962945f61f2329e19d324f24a768806f18/Src/CodeFactoryForWindows/CodeFactory.WinVs/IVsActions.cs
+  assemblies:
+  - CodeFactory.WinVs
+  namespace: CodeFactory.WinVs
+  summary: Visual Studio actions that work with the <xref href="CodeFactory.WinVs.Models.ProjectSystem.IVsSolution" data-throw-if-not-resolved="false"></xref> model.
+  example: []
+  syntax:
+    content: IVsSolutionActions SolutionActions { get; }
+    parameters: []
+    return:
+      type: CodeFactory.WinVs.Models.ProjectSystem.IVsSolutionActions
+    content.vb: ReadOnly Property SolutionActions As IVsSolutionActions
+  overload: CodeFactory.WinVs.IVsActions.SolutionActions*
+- uid: CodeFactory.WinVs.IVsActions.SolutionFolderActions
+  commentId: P:CodeFactory.WinVs.IVsActions.SolutionFolderActions
+  id: SolutionFolderActions
+  parent: CodeFactory.WinVs.IVsActions
+  langs:
+  - csharp
+  - vb
+  name: SolutionFolderActions
+  nameWithType: IVsActions.SolutionFolderActions
+  fullName: CodeFactory.WinVs.IVsActions.SolutionFolderActions
+  type: Property
+  source:
+    href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/e63c05962945f61f2329e19d324f24a768806f18/Src/CodeFactoryForWindows/CodeFactory.WinVs/IVsActions.cs
+  assemblies:
+  - CodeFactory.WinVs
+  namespace: CodeFactory.WinVs
+  summary: Visual Studio actions that work with the <xref href="CodeFactory.WinVs.Models.ProjectSystem.IVsSolutionFolder" data-throw-if-not-resolved="false"></xref> model.
+  example: []
+  syntax:
+    content: IVsSolutionFolderActions SolutionFolderActions { get; }
+    parameters: []
+    return:
+      type: CodeFactory.WinVs.Models.ProjectSystem.IVsSolutionFolderActions
+    content.vb: ReadOnly Property SolutionFolderActions As IVsSolutionFolderActions
+  overload: CodeFactory.WinVs.IVsActions.SolutionFolderActions*
+- uid: CodeFactory.WinVs.IVsActions.ProjectActions
+  commentId: P:CodeFactory.WinVs.IVsActions.ProjectActions
+  id: ProjectActions
+  parent: CodeFactory.WinVs.IVsActions
+  langs:
+  - csharp
+  - vb
+  name: ProjectActions
+  nameWithType: IVsActions.ProjectActions
+  fullName: CodeFactory.WinVs.IVsActions.ProjectActions
+  type: Property
+  source:
+    href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/e63c05962945f61f2329e19d324f24a768806f18/Src/CodeFactoryForWindows/CodeFactory.WinVs/IVsActions.cs
+  assemblies:
+  - CodeFactory.WinVs
+  namespace: CodeFactory.WinVs
+  summary: Visual Studio actions that work with the <xref href="CodeFactory.WinVs.Models.ProjectSystem.IVsProject" data-throw-if-not-resolved="false"></xref> model.
+  example: []
+  syntax:
+    content: IVsProjectActions ProjectActions { get; }
+    parameters: []
+    return:
+      type: CodeFactory.WinVs.Models.ProjectSystem.IVsProjectActions
+    content.vb: ReadOnly Property ProjectActions As IVsProjectActions
+  overload: CodeFactory.WinVs.IVsActions.ProjectActions*
+- uid: CodeFactory.WinVs.IVsActions.ProjectReferenceActions
+  commentId: P:CodeFactory.WinVs.IVsActions.ProjectReferenceActions
+  id: ProjectReferenceActions
+  parent: CodeFactory.WinVs.IVsActions
+  langs:
+  - csharp
+  - vb
+  name: ProjectReferenceActions
+  nameWithType: IVsActions.ProjectReferenceActions
+  fullName: CodeFactory.WinVs.IVsActions.ProjectReferenceActions
+  type: Property
+  source:
+    href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/e63c05962945f61f2329e19d324f24a768806f18/Src/CodeFactoryForWindows/CodeFactory.WinVs/IVsActions.cs
+  assemblies:
+  - CodeFactory.WinVs
+  namespace: CodeFactory.WinVs
+  summary: Visual Studio actions that work with the <xref href="CodeFactory.WinVs.Models.ProjectSystem.IVsReference" data-throw-if-not-resolved="false"></xref> model.
+  example: []
+  syntax:
+    content: IVsReferenceActions ProjectReferenceActions { get; }
+    parameters: []
+    return:
+      type: CodeFactory.WinVs.Models.ProjectSystem.IVsReferenceActions
+    content.vb: ReadOnly Property ProjectReferenceActions As IVsReferenceActions
+  overload: CodeFactory.WinVs.IVsActions.ProjectReferenceActions*
+- uid: CodeFactory.WinVs.IVsActions.ProjectFolderActions
+  commentId: P:CodeFactory.WinVs.IVsActions.ProjectFolderActions
+  id: ProjectFolderActions
+  parent: CodeFactory.WinVs.IVsActions
+  langs:
+  - csharp
+  - vb
+  name: ProjectFolderActions
+  nameWithType: IVsActions.ProjectFolderActions
+  fullName: CodeFactory.WinVs.IVsActions.ProjectFolderActions
+  type: Property
+  source:
+    href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/e63c05962945f61f2329e19d324f24a768806f18/Src/CodeFactoryForWindows/CodeFactory.WinVs/IVsActions.cs
+  assemblies:
+  - CodeFactory.WinVs
+  namespace: CodeFactory.WinVs
+  summary: Visual Studio actions that work with the <xref href="CodeFactory.WinVs.Models.ProjectSystem.IVsProjectFolder" data-throw-if-not-resolved="false"></xref> model.
+  example: []
+  syntax:
+    content: IVsProjectFolderActions ProjectFolderActions { get; }
+    parameters: []
+    return:
+      type: CodeFactory.WinVs.Models.ProjectSystem.IVsProjectFolderActions
+    content.vb: ReadOnly Property ProjectFolderActions As IVsProjectFolderActions
+  overload: CodeFactory.WinVs.IVsActions.ProjectFolderActions*
+- uid: CodeFactory.WinVs.IVsActions.DocumentActions
+  commentId: P:CodeFactory.WinVs.IVsActions.DocumentActions
+  id: DocumentActions
+  parent: CodeFactory.WinVs.IVsActions
+  langs:
+  - csharp
+  - vb
+  name: DocumentActions
+  nameWithType: IVsActions.DocumentActions
+  fullName: CodeFactory.WinVs.IVsActions.DocumentActions
+  type: Property
+  source:
+    href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/e63c05962945f61f2329e19d324f24a768806f18/Src/CodeFactoryForWindows/CodeFactory.WinVs/IVsActions.cs
+  assemblies:
+  - CodeFactory.WinVs
+  namespace: CodeFactory.WinVs
+  summary: Visual Studio actions that work with the <xref href="CodeFactory.WinVs.Models.ProjectSystem.IVsDocument" data-throw-if-not-resolved="false"></xref> model.
+  example: []
+  syntax:
+    content: IVsDocumentActions DocumentActions { get; }
+    parameters: []
+    return:
+      type: CodeFactory.WinVs.Models.ProjectSystem.IVsDocumentActions
+    content.vb: ReadOnly Property DocumentActions As IVsDocumentActions
+  overload: CodeFactory.WinVs.IVsActions.DocumentActions*
+- uid: CodeFactory.WinVs.IVsActions.UserInterfaceActions
+  commentId: P:CodeFactory.WinVs.IVsActions.UserInterfaceActions
+  id: UserInterfaceActions
+  parent: CodeFactory.WinVs.IVsActions
+  langs:
+  - csharp
+  - vb
+  name: UserInterfaceActions
+  nameWithType: IVsActions.UserInterfaceActions
+  fullName: CodeFactory.WinVs.IVsActions.UserInterfaceActions
+  type: Property
+  source:
+    href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/e63c05962945f61f2329e19d324f24a768806f18/Src/CodeFactoryForWindows/CodeFactory.WinVs/IVsActions.cs
+  assemblies:
+  - CodeFactory.WinVs
+  namespace: CodeFactory.WinVs
+  summary: Visual Studio actions that work the the Visual Studio user interface.
+  example: []
+  syntax:
+    content: IVsUIActions UserInterfaceActions { get; }
+    parameters: []
+    return:
+      type: CodeFactory.WinVs.UI.IVsUIActions
+    content.vb: ReadOnly Property UserInterfaceActions As IVsUIActions
+  overload: CodeFactory.WinVs.IVsActions.UserInterfaceActions*
+- uid: CodeFactory.WinVs.IVsActions.SourceActions
+  commentId: P:CodeFactory.WinVs.IVsActions.SourceActions
+  id: SourceActions
+  parent: CodeFactory.WinVs.IVsActions
+  langs:
+  - csharp
+  - vb
+  name: SourceActions
+  nameWithType: IVsActions.SourceActions
+  fullName: CodeFactory.WinVs.IVsActions.SourceActions
+  type: Property
+  source:
+    href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/e63c05962945f61f2329e19d324f24a768806f18/Src/CodeFactoryForWindows/CodeFactory.WinVs/IVsActions.cs
+  assemblies:
+  - CodeFactory.WinVs
+  namespace: CodeFactory.WinVs
+  summary: Visual Studio actions that work with source models.
+  example: []
+  syntax:
+    content: IVsSourceActions SourceActions { get; }
+    parameters: []
+    return:
+      type: CodeFactory.WinVs.Models.ProjectSystem.IVsSourceActions
+    content.vb: ReadOnly Property SourceActions As IVsSourceActions
+  overload: CodeFactory.WinVs.IVsActions.SourceActions*
+references:
+- uid: CodeFactory.WinVs
+  commentId: N:CodeFactory.WinVs
+  isExternal: true
+  href: CodeFactory.html
+  name: CodeFactory.WinVs
+  nameWithType: CodeFactory.WinVs
+  fullName: CodeFactory.WinVs
+  spec.csharp:
+  - uid: CodeFactory
+    name: CodeFactory
+    isExternal: true
+    href: CodeFactory.html
+  - name: .
+  - uid: CodeFactory.WinVs
+    name: WinVs
+    isExternal: true
+    href: CodeFactory.WinVs.html
+  spec.vb:
+  - uid: CodeFactory
+    name: CodeFactory
+    isExternal: true
+    href: CodeFactory.html
+  - name: .
+  - uid: CodeFactory.WinVs
+    name: WinVs
+    isExternal: true
+    href: CodeFactory.WinVs.html
+- uid: CodeFactory.WinVs.IVsActions.CodeFactory.WinVs.VsActionsExtensions.GetCSharpSourceAsync(CodeFactory.WinVs.Models.CSharp.CsContainer)
+  commentId: M:CodeFactory.WinVs.VsActionsExtensions.GetCSharpSourceAsync(CodeFactory.WinVs.IVsActions,CodeFactory.WinVs.Models.CSharp.CsContainer)
+  parent: CodeFactory.WinVs.VsActionsExtensions
+  definition: CodeFactory.WinVs.VsActionsExtensions.GetCSharpSourceAsync(CodeFactory.WinVs.IVsActions,CodeFactory.WinVs.Models.CSharp.CsContainer)
+  href: CodeFactory.WinVs.VsActionsExtensions.html#CodeFactory_WinVs_VsActionsExtensions_GetCSharpSourceAsync_CodeFactory_WinVs_IVsActions_CodeFactory_WinVs_Models_CSharp_CsContainer_
+  name: GetCSharpSourceAsync(IVsActions, CsContainer)
+  nameWithType: VsActionsExtensions.GetCSharpSourceAsync(IVsActions, CsContainer)
+  fullName: CodeFactory.WinVs.VsActionsExtensions.GetCSharpSourceAsync(CodeFactory.WinVs.IVsActions, CodeFactory.WinVs.Models.CSharp.CsContainer)
+  spec.csharp:
+  - uid: CodeFactory.WinVs.VsActionsExtensions.GetCSharpSourceAsync(CodeFactory.WinVs.IVsActions,CodeFactory.WinVs.Models.CSharp.CsContainer)
+    name: GetCSharpSourceAsync
+    isExternal: true
+    href: CodeFactory.WinVs.VsActionsExtensions.html#CodeFactory_WinVs_VsActionsExtensions_GetCSharpSourceAsync_CodeFactory_WinVs_IVsActions_CodeFactory_WinVs_Models_CSharp_CsContainer_
+  - name: (
+  - uid: CodeFactory.WinVs.IVsActions
+    name: IVsActions
+    isExternal: true
+    href: CodeFactory.WinVs.IVsActions.html
+  - name: ','
+  - name: " "
+  - uid: CodeFactory.WinVs.Models.CSharp.CsContainer
+    name: CsContainer
+    isExternal: true
+    href: CodeFactory.WinVs.Models.CSharp.CsContainer.html
+  - name: )
+  spec.vb:
+  - uid: CodeFactory.WinVs.VsActionsExtensions.GetCSharpSourceAsync(CodeFactory.WinVs.IVsActions,CodeFactory.WinVs.Models.CSharp.CsContainer)
+    name: GetCSharpSourceAsync
+    isExternal: true
+    href: CodeFactory.WinVs.VsActionsExtensions.html#CodeFactory_WinVs_VsActionsExtensions_GetCSharpSourceAsync_CodeFactory_WinVs_IVsActions_CodeFactory_WinVs_Models_CSharp_CsContainer_
+  - name: (
+  - uid: CodeFactory.WinVs.IVsActions
+    name: IVsActions
+    isExternal: true
+    href: CodeFactory.WinVs.IVsActions.html
+  - name: ','
+  - name: " "
+  - uid: CodeFactory.WinVs.Models.CSharp.CsContainer
+    name: CsContainer
+    isExternal: true
+    href: CodeFactory.WinVs.Models.CSharp.CsContainer.html
+  - name: )
+- uid: CodeFactory.WinVs.IVsActions.CodeFactory.WinVs.VsActionsExtensions.GetCSharpSourceAsync(CodeFactory.WinVs.Models.CSharp.CsMember)
+  commentId: M:CodeFactory.WinVs.VsActionsExtensions.GetCSharpSourceAsync(CodeFactory.WinVs.IVsActions,CodeFactory.WinVs.Models.CSharp.CsMember)
+  parent: CodeFactory.WinVs.VsActionsExtensions
+  definition: CodeFactory.WinVs.VsActionsExtensions.GetCSharpSourceAsync(CodeFactory.WinVs.IVsActions,CodeFactory.WinVs.Models.CSharp.CsMember)
+  href: CodeFactory.WinVs.VsActionsExtensions.html#CodeFactory_WinVs_VsActionsExtensions_GetCSharpSourceAsync_CodeFactory_WinVs_IVsActions_CodeFactory_WinVs_Models_CSharp_CsMember_
+  name: GetCSharpSourceAsync(IVsActions, CsMember)
+  nameWithType: VsActionsExtensions.GetCSharpSourceAsync(IVsActions, CsMember)
+  fullName: CodeFactory.WinVs.VsActionsExtensions.GetCSharpSourceAsync(CodeFactory.WinVs.IVsActions, CodeFactory.WinVs.Models.CSharp.CsMember)
+  spec.csharp:
+  - uid: CodeFactory.WinVs.VsActionsExtensions.GetCSharpSourceAsync(CodeFactory.WinVs.IVsActions,CodeFactory.WinVs.Models.CSharp.CsMember)
+    name: GetCSharpSourceAsync
+    isExternal: true
+    href: CodeFactory.WinVs.VsActionsExtensions.html#CodeFactory_WinVs_VsActionsExtensions_GetCSharpSourceAsync_CodeFactory_WinVs_IVsActions_CodeFactory_WinVs_Models_CSharp_CsMember_
+  - name: (
+  - uid: CodeFactory.WinVs.IVsActions
+    name: IVsActions
+    isExternal: true
+    href: CodeFactory.WinVs.IVsActions.html
+  - name: ','
+  - name: " "
+  - uid: CodeFactory.WinVs.Models.CSharp.CsMember
+    name: CsMember
+    isExternal: true
+    href: CodeFactory.WinVs.Models.CSharp.CsMember.html
+  - name: )
+  spec.vb:
+  - uid: CodeFactory.WinVs.VsActionsExtensions.GetCSharpSourceAsync(CodeFactory.WinVs.IVsActions,CodeFactory.WinVs.Models.CSharp.CsMember)
+    name: GetCSharpSourceAsync
+    isExternal: true
+    href: CodeFactory.WinVs.VsActionsExtensions.html#CodeFactory_WinVs_VsActionsExtensions_GetCSharpSourceAsync_CodeFactory_WinVs_IVsActions_CodeFactory_WinVs_Models_CSharp_CsMember_
+  - name: (
+  - uid: CodeFactory.WinVs.IVsActions
+    name: IVsActions
+    isExternal: true
+    href: CodeFactory.WinVs.IVsActions.html
+  - name: ','
+  - name: " "
+  - uid: CodeFactory.WinVs.Models.CSharp.CsMember
+    name: CsMember
+    isExternal: true
+    href: CodeFactory.WinVs.Models.CSharp.CsMember.html
+  - name: )
+- uid: CodeFactory.WinVs.IVsActions.CodeFactory.WinVs.VsActionsExtensions.GetProjectFolderFromConfigAsync(CodeFactory.WinVs.Commands.ConfigProject,System.String,System.Boolean)
+  commentId: M:CodeFactory.WinVs.VsActionsExtensions.GetProjectFolderFromConfigAsync(CodeFactory.WinVs.IVsActions,CodeFactory.WinVs.Commands.ConfigProject,System.String,System.Boolean)
+  parent: CodeFactory.WinVs.VsActionsExtensions
+  definition: CodeFactory.WinVs.VsActionsExtensions.GetProjectFolderFromConfigAsync(CodeFactory.WinVs.IVsActions,CodeFactory.WinVs.Commands.ConfigProject,System.String,System.Boolean)
+  href: CodeFactory.WinVs.VsActionsExtensions.html#CodeFactory_WinVs_VsActionsExtensions_GetProjectFolderFromConfigAsync_CodeFactory_WinVs_IVsActions_CodeFactory_WinVs_Commands_ConfigProject_System_String_System_Boolean_
+  name: GetProjectFolderFromConfigAsync(IVsActions, ConfigProject, string, bool)
+  nameWithType: VsActionsExtensions.GetProjectFolderFromConfigAsync(IVsActions, ConfigProject, string, bool)
+  fullName: CodeFactory.WinVs.VsActionsExtensions.GetProjectFolderFromConfigAsync(CodeFactory.WinVs.IVsActions, CodeFactory.WinVs.Commands.ConfigProject, string, bool)
+  nameWithType.vb: VsActionsExtensions.GetProjectFolderFromConfigAsync(IVsActions, ConfigProject, String, Boolean)
+  fullName.vb: CodeFactory.WinVs.VsActionsExtensions.GetProjectFolderFromConfigAsync(CodeFactory.WinVs.IVsActions, CodeFactory.WinVs.Commands.ConfigProject, String, Boolean)
+  name.vb: GetProjectFolderFromConfigAsync(IVsActions, ConfigProject, String, Boolean)
+  spec.csharp:
+  - uid: CodeFactory.WinVs.VsActionsExtensions.GetProjectFolderFromConfigAsync(CodeFactory.WinVs.IVsActions,CodeFactory.WinVs.Commands.ConfigProject,System.String,System.Boolean)
+    name: GetProjectFolderFromConfigAsync
+    isExternal: true
+    href: CodeFactory.WinVs.VsActionsExtensions.html#CodeFactory_WinVs_VsActionsExtensions_GetProjectFolderFromConfigAsync_CodeFactory_WinVs_IVsActions_CodeFactory_WinVs_Commands_ConfigProject_System_String_System_Boolean_
+  - name: (
+  - uid: CodeFactory.WinVs.IVsActions
+    name: IVsActions
+    isExternal: true
+    href: CodeFactory.WinVs.IVsActions.html
+  - name: ','
+  - name: " "
+  - uid: CodeFactory.WinVs.Commands.ConfigProject
+    name: ConfigProject
+    isExternal: true
+    href: CodeFactory.WinVs.Commands.ConfigProject.html
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  spec.vb:
+  - uid: CodeFactory.WinVs.VsActionsExtensions.GetProjectFolderFromConfigAsync(CodeFactory.WinVs.IVsActions,CodeFactory.WinVs.Commands.ConfigProject,System.String,System.Boolean)
+    name: GetProjectFolderFromConfigAsync
+    isExternal: true
+    href: CodeFactory.WinVs.VsActionsExtensions.html#CodeFactory_WinVs_VsActionsExtensions_GetProjectFolderFromConfigAsync_CodeFactory_WinVs_IVsActions_CodeFactory_WinVs_Commands_ConfigProject_System_String_System_Boolean_
+  - name: (
+  - uid: CodeFactory.WinVs.IVsActions
+    name: IVsActions
+    isExternal: true
+    href: CodeFactory.WinVs.IVsActions.html
+  - name: ','
+  - name: " "
+  - uid: CodeFactory.WinVs.Commands.ConfigProject
+    name: ConfigProject
+    isExternal: true
+    href: CodeFactory.WinVs.Commands.ConfigProject.html
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: CodeFactory.WinVs.IVsActions.CodeFactory.WinVs.VsActionsExtensions.GetProjectFromConfigAsync(CodeFactory.WinVs.Commands.ConfigProject)
+  commentId: M:CodeFactory.WinVs.VsActionsExtensions.GetProjectFromConfigAsync(CodeFactory.WinVs.IVsActions,CodeFactory.WinVs.Commands.ConfigProject)
+  parent: CodeFactory.WinVs.VsActionsExtensions
+  definition: CodeFactory.WinVs.VsActionsExtensions.GetProjectFromConfigAsync(CodeFactory.WinVs.IVsActions,CodeFactory.WinVs.Commands.ConfigProject)
+  href: CodeFactory.WinVs.VsActionsExtensions.html#CodeFactory_WinVs_VsActionsExtensions_GetProjectFromConfigAsync_CodeFactory_WinVs_IVsActions_CodeFactory_WinVs_Commands_ConfigProject_
+  name: GetProjectFromConfigAsync(IVsActions, ConfigProject)
+  nameWithType: VsActionsExtensions.GetProjectFromConfigAsync(IVsActions, ConfigProject)
+  fullName: CodeFactory.WinVs.VsActionsExtensions.GetProjectFromConfigAsync(CodeFactory.WinVs.IVsActions, CodeFactory.WinVs.Commands.ConfigProject)
+  spec.csharp:
+  - uid: CodeFactory.WinVs.VsActionsExtensions.GetProjectFromConfigAsync(CodeFactory.WinVs.IVsActions,CodeFactory.WinVs.Commands.ConfigProject)
+    name: GetProjectFromConfigAsync
+    isExternal: true
+    href: CodeFactory.WinVs.VsActionsExtensions.html#CodeFactory_WinVs_VsActionsExtensions_GetProjectFromConfigAsync_CodeFactory_WinVs_IVsActions_CodeFactory_WinVs_Commands_ConfigProject_
+  - name: (
+  - uid: CodeFactory.WinVs.IVsActions
+    name: IVsActions
+    isExternal: true
+    href: CodeFactory.WinVs.IVsActions.html
+  - name: ','
+  - name: " "
+  - uid: CodeFactory.WinVs.Commands.ConfigProject
+    name: ConfigProject
+    isExternal: true
+    href: CodeFactory.WinVs.Commands.ConfigProject.html
+  - name: )
+  spec.vb:
+  - uid: CodeFactory.WinVs.VsActionsExtensions.GetProjectFromConfigAsync(CodeFactory.WinVs.IVsActions,CodeFactory.WinVs.Commands.ConfigProject)
+    name: GetProjectFromConfigAsync
+    isExternal: true
+    href: CodeFactory.WinVs.VsActionsExtensions.html#CodeFactory_WinVs_VsActionsExtensions_GetProjectFromConfigAsync_CodeFactory_WinVs_IVsActions_CodeFactory_WinVs_Commands_ConfigProject_
+  - name: (
+  - uid: CodeFactory.WinVs.IVsActions
+    name: IVsActions
+    isExternal: true
+    href: CodeFactory.WinVs.IVsActions.html
+  - name: ','
+  - name: " "
+  - uid: CodeFactory.WinVs.Commands.ConfigProject
+    name: ConfigProject
+    isExternal: true
+    href: CodeFactory.WinVs.Commands.ConfigProject.html
+  - name: )
+- uid: CodeFactory.WinVs.IVsActions.CodeFactory.WinVs.VsActionsExtensions.GetTargetProjectAsync(System.String)
+  commentId: M:CodeFactory.WinVs.VsActionsExtensions.GetTargetProjectAsync(CodeFactory.WinVs.IVsActions,System.String)
+  parent: CodeFactory.WinVs.VsActionsExtensions
+  definition: CodeFactory.WinVs.VsActionsExtensions.GetTargetProjectAsync(CodeFactory.WinVs.IVsActions,System.String)
+  href: CodeFactory.WinVs.VsActionsExtensions.html#CodeFactory_WinVs_VsActionsExtensions_GetTargetProjectAsync_CodeFactory_WinVs_IVsActions_System_String_
+  name: GetTargetProjectAsync(IVsActions, string)
+  nameWithType: VsActionsExtensions.GetTargetProjectAsync(IVsActions, string)
+  fullName: CodeFactory.WinVs.VsActionsExtensions.GetTargetProjectAsync(CodeFactory.WinVs.IVsActions, string)
+  nameWithType.vb: VsActionsExtensions.GetTargetProjectAsync(IVsActions, String)
+  fullName.vb: CodeFactory.WinVs.VsActionsExtensions.GetTargetProjectAsync(CodeFactory.WinVs.IVsActions, String)
+  name.vb: GetTargetProjectAsync(IVsActions, String)
+  spec.csharp:
+  - uid: CodeFactory.WinVs.VsActionsExtensions.GetTargetProjectAsync(CodeFactory.WinVs.IVsActions,System.String)
+    name: GetTargetProjectAsync
+    isExternal: true
+    href: CodeFactory.WinVs.VsActionsExtensions.html#CodeFactory_WinVs_VsActionsExtensions_GetTargetProjectAsync_CodeFactory_WinVs_IVsActions_System_String_
+  - name: (
+  - uid: CodeFactory.WinVs.IVsActions
+    name: IVsActions
+    isExternal: true
+    href: CodeFactory.WinVs.IVsActions.html
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: CodeFactory.WinVs.VsActionsExtensions.GetTargetProjectAsync(CodeFactory.WinVs.IVsActions,System.String)
+    name: GetTargetProjectAsync
+    isExternal: true
+    href: CodeFactory.WinVs.VsActionsExtensions.html#CodeFactory_WinVs_VsActionsExtensions_GetTargetProjectAsync_CodeFactory_WinVs_IVsActions_System_String_
+  - name: (
+  - uid: CodeFactory.WinVs.IVsActions
+    name: IVsActions
+    isExternal: true
+    href: CodeFactory.WinVs.IVsActions.html
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: CodeFactory.WinVs.VsActionsExtensions.GetCSharpSourceAsync(CodeFactory.WinVs.IVsActions,CodeFactory.WinVs.Models.CSharp.CsContainer)
+  commentId: M:CodeFactory.WinVs.VsActionsExtensions.GetCSharpSourceAsync(CodeFactory.WinVs.IVsActions,CodeFactory.WinVs.Models.CSharp.CsContainer)
+  isExternal: true
+  href: CodeFactory.WinVs.VsActionsExtensions.html#CodeFactory_WinVs_VsActionsExtensions_GetCSharpSourceAsync_CodeFactory_WinVs_IVsActions_CodeFactory_WinVs_Models_CSharp_CsContainer_
+  name: GetCSharpSourceAsync(IVsActions, CsContainer)
+  nameWithType: VsActionsExtensions.GetCSharpSourceAsync(IVsActions, CsContainer)
+  fullName: CodeFactory.WinVs.VsActionsExtensions.GetCSharpSourceAsync(CodeFactory.WinVs.IVsActions, CodeFactory.WinVs.Models.CSharp.CsContainer)
+  spec.csharp:
+  - uid: CodeFactory.WinVs.VsActionsExtensions.GetCSharpSourceAsync(CodeFactory.WinVs.IVsActions,CodeFactory.WinVs.Models.CSharp.CsContainer)
+    name: GetCSharpSourceAsync
+    isExternal: true
+    href: CodeFactory.WinVs.VsActionsExtensions.html#CodeFactory_WinVs_VsActionsExtensions_GetCSharpSourceAsync_CodeFactory_WinVs_IVsActions_CodeFactory_WinVs_Models_CSharp_CsContainer_
+  - name: (
+  - uid: CodeFactory.WinVs.IVsActions
+    name: IVsActions
+    isExternal: true
+    href: CodeFactory.WinVs.IVsActions.html
+  - name: ','
+  - name: " "
+  - uid: CodeFactory.WinVs.Models.CSharp.CsContainer
+    name: CsContainer
+    isExternal: true
+    href: CodeFactory.WinVs.Models.CSharp.CsContainer.html
+  - name: )
+  spec.vb:
+  - uid: CodeFactory.WinVs.VsActionsExtensions.GetCSharpSourceAsync(CodeFactory.WinVs.IVsActions,CodeFactory.WinVs.Models.CSharp.CsContainer)
+    name: GetCSharpSourceAsync
+    isExternal: true
+    href: CodeFactory.WinVs.VsActionsExtensions.html#CodeFactory_WinVs_VsActionsExtensions_GetCSharpSourceAsync_CodeFactory_WinVs_IVsActions_CodeFactory_WinVs_Models_CSharp_CsContainer_
+  - name: (
+  - uid: CodeFactory.WinVs.IVsActions
+    name: IVsActions
+    isExternal: true
+    href: CodeFactory.WinVs.IVsActions.html
+  - name: ','
+  - name: " "
+  - uid: CodeFactory.WinVs.Models.CSharp.CsContainer
+    name: CsContainer
+    isExternal: true
+    href: CodeFactory.WinVs.Models.CSharp.CsContainer.html
+  - name: )
+- uid: CodeFactory.WinVs.VsActionsExtensions
+  commentId: T:CodeFactory.WinVs.VsActionsExtensions
+  parent: CodeFactory.WinVs
+  isExternal: true
+  href: CodeFactory.WinVs.VsActionsExtensions.html
+  name: VsActionsExtensions
+  nameWithType: VsActionsExtensions
+  fullName: CodeFactory.WinVs.VsActionsExtensions
+- uid: CodeFactory.WinVs.VsActionsExtensions.GetCSharpSourceAsync(CodeFactory.WinVs.IVsActions,CodeFactory.WinVs.Models.CSharp.CsMember)
+  commentId: M:CodeFactory.WinVs.VsActionsExtensions.GetCSharpSourceAsync(CodeFactory.WinVs.IVsActions,CodeFactory.WinVs.Models.CSharp.CsMember)
+  isExternal: true
+  href: CodeFactory.WinVs.VsActionsExtensions.html#CodeFactory_WinVs_VsActionsExtensions_GetCSharpSourceAsync_CodeFactory_WinVs_IVsActions_CodeFactory_WinVs_Models_CSharp_CsMember_
+  name: GetCSharpSourceAsync(IVsActions, CsMember)
+  nameWithType: VsActionsExtensions.GetCSharpSourceAsync(IVsActions, CsMember)
+  fullName: CodeFactory.WinVs.VsActionsExtensions.GetCSharpSourceAsync(CodeFactory.WinVs.IVsActions, CodeFactory.WinVs.Models.CSharp.CsMember)
+  spec.csharp:
+  - uid: CodeFactory.WinVs.VsActionsExtensions.GetCSharpSourceAsync(CodeFactory.WinVs.IVsActions,CodeFactory.WinVs.Models.CSharp.CsMember)
+    name: GetCSharpSourceAsync
+    isExternal: true
+    href: CodeFactory.WinVs.VsActionsExtensions.html#CodeFactory_WinVs_VsActionsExtensions_GetCSharpSourceAsync_CodeFactory_WinVs_IVsActions_CodeFactory_WinVs_Models_CSharp_CsMember_
+  - name: (
+  - uid: CodeFactory.WinVs.IVsActions
+    name: IVsActions
+    isExternal: true
+    href: CodeFactory.WinVs.IVsActions.html
+  - name: ','
+  - name: " "
+  - uid: CodeFactory.WinVs.Models.CSharp.CsMember
+    name: CsMember
+    isExternal: true
+    href: CodeFactory.WinVs.Models.CSharp.CsMember.html
+  - name: )
+  spec.vb:
+  - uid: CodeFactory.WinVs.VsActionsExtensions.GetCSharpSourceAsync(CodeFactory.WinVs.IVsActions,CodeFactory.WinVs.Models.CSharp.CsMember)
+    name: GetCSharpSourceAsync
+    isExternal: true
+    href: CodeFactory.WinVs.VsActionsExtensions.html#CodeFactory_WinVs_VsActionsExtensions_GetCSharpSourceAsync_CodeFactory_WinVs_IVsActions_CodeFactory_WinVs_Models_CSharp_CsMember_
+  - name: (
+  - uid: CodeFactory.WinVs.IVsActions
+    name: IVsActions
+    isExternal: true
+    href: CodeFactory.WinVs.IVsActions.html
+  - name: ','
+  - name: " "
+  - uid: CodeFactory.WinVs.Models.CSharp.CsMember
+    name: CsMember
+    isExternal: true
+    href: CodeFactory.WinVs.Models.CSharp.CsMember.html
+  - name: )
+- uid: CodeFactory.WinVs.VsActionsExtensions.GetProjectFolderFromConfigAsync(CodeFactory.WinVs.IVsActions,CodeFactory.WinVs.Commands.ConfigProject,System.String,System.Boolean)
+  commentId: M:CodeFactory.WinVs.VsActionsExtensions.GetProjectFolderFromConfigAsync(CodeFactory.WinVs.IVsActions,CodeFactory.WinVs.Commands.ConfigProject,System.String,System.Boolean)
+  isExternal: true
+  href: CodeFactory.WinVs.VsActionsExtensions.html#CodeFactory_WinVs_VsActionsExtensions_GetProjectFolderFromConfigAsync_CodeFactory_WinVs_IVsActions_CodeFactory_WinVs_Commands_ConfigProject_System_String_System_Boolean_
+  name: GetProjectFolderFromConfigAsync(IVsActions, ConfigProject, string, bool)
+  nameWithType: VsActionsExtensions.GetProjectFolderFromConfigAsync(IVsActions, ConfigProject, string, bool)
+  fullName: CodeFactory.WinVs.VsActionsExtensions.GetProjectFolderFromConfigAsync(CodeFactory.WinVs.IVsActions, CodeFactory.WinVs.Commands.ConfigProject, string, bool)
+  nameWithType.vb: VsActionsExtensions.GetProjectFolderFromConfigAsync(IVsActions, ConfigProject, String, Boolean)
+  fullName.vb: CodeFactory.WinVs.VsActionsExtensions.GetProjectFolderFromConfigAsync(CodeFactory.WinVs.IVsActions, CodeFactory.WinVs.Commands.ConfigProject, String, Boolean)
+  name.vb: GetProjectFolderFromConfigAsync(IVsActions, ConfigProject, String, Boolean)
+  spec.csharp:
+  - uid: CodeFactory.WinVs.VsActionsExtensions.GetProjectFolderFromConfigAsync(CodeFactory.WinVs.IVsActions,CodeFactory.WinVs.Commands.ConfigProject,System.String,System.Boolean)
+    name: GetProjectFolderFromConfigAsync
+    isExternal: true
+    href: CodeFactory.WinVs.VsActionsExtensions.html#CodeFactory_WinVs_VsActionsExtensions_GetProjectFolderFromConfigAsync_CodeFactory_WinVs_IVsActions_CodeFactory_WinVs_Commands_ConfigProject_System_String_System_Boolean_
+  - name: (
+  - uid: CodeFactory.WinVs.IVsActions
+    name: IVsActions
+    isExternal: true
+    href: CodeFactory.WinVs.IVsActions.html
+  - name: ','
+  - name: " "
+  - uid: CodeFactory.WinVs.Commands.ConfigProject
+    name: ConfigProject
+    isExternal: true
+    href: CodeFactory.WinVs.Commands.ConfigProject.html
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  spec.vb:
+  - uid: CodeFactory.WinVs.VsActionsExtensions.GetProjectFolderFromConfigAsync(CodeFactory.WinVs.IVsActions,CodeFactory.WinVs.Commands.ConfigProject,System.String,System.Boolean)
+    name: GetProjectFolderFromConfigAsync
+    isExternal: true
+    href: CodeFactory.WinVs.VsActionsExtensions.html#CodeFactory_WinVs_VsActionsExtensions_GetProjectFolderFromConfigAsync_CodeFactory_WinVs_IVsActions_CodeFactory_WinVs_Commands_ConfigProject_System_String_System_Boolean_
+  - name: (
+  - uid: CodeFactory.WinVs.IVsActions
+    name: IVsActions
+    isExternal: true
+    href: CodeFactory.WinVs.IVsActions.html
+  - name: ','
+  - name: " "
+  - uid: CodeFactory.WinVs.Commands.ConfigProject
+    name: ConfigProject
+    isExternal: true
+    href: CodeFactory.WinVs.Commands.ConfigProject.html
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: CodeFactory.WinVs.VsActionsExtensions.GetProjectFromConfigAsync(CodeFactory.WinVs.IVsActions,CodeFactory.WinVs.Commands.ConfigProject)
+  commentId: M:CodeFactory.WinVs.VsActionsExtensions.GetProjectFromConfigAsync(CodeFactory.WinVs.IVsActions,CodeFactory.WinVs.Commands.ConfigProject)
+  isExternal: true
+  href: CodeFactory.WinVs.VsActionsExtensions.html#CodeFactory_WinVs_VsActionsExtensions_GetProjectFromConfigAsync_CodeFactory_WinVs_IVsActions_CodeFactory_WinVs_Commands_ConfigProject_
+  name: GetProjectFromConfigAsync(IVsActions, ConfigProject)
+  nameWithType: VsActionsExtensions.GetProjectFromConfigAsync(IVsActions, ConfigProject)
+  fullName: CodeFactory.WinVs.VsActionsExtensions.GetProjectFromConfigAsync(CodeFactory.WinVs.IVsActions, CodeFactory.WinVs.Commands.ConfigProject)
+  spec.csharp:
+  - uid: CodeFactory.WinVs.VsActionsExtensions.GetProjectFromConfigAsync(CodeFactory.WinVs.IVsActions,CodeFactory.WinVs.Commands.ConfigProject)
+    name: GetProjectFromConfigAsync
+    isExternal: true
+    href: CodeFactory.WinVs.VsActionsExtensions.html#CodeFactory_WinVs_VsActionsExtensions_GetProjectFromConfigAsync_CodeFactory_WinVs_IVsActions_CodeFactory_WinVs_Commands_ConfigProject_
+  - name: (
+  - uid: CodeFactory.WinVs.IVsActions
+    name: IVsActions
+    isExternal: true
+    href: CodeFactory.WinVs.IVsActions.html
+  - name: ','
+  - name: " "
+  - uid: CodeFactory.WinVs.Commands.ConfigProject
+    name: ConfigProject
+    isExternal: true
+    href: CodeFactory.WinVs.Commands.ConfigProject.html
+  - name: )
+  spec.vb:
+  - uid: CodeFactory.WinVs.VsActionsExtensions.GetProjectFromConfigAsync(CodeFactory.WinVs.IVsActions,CodeFactory.WinVs.Commands.ConfigProject)
+    name: GetProjectFromConfigAsync
+    isExternal: true
+    href: CodeFactory.WinVs.VsActionsExtensions.html#CodeFactory_WinVs_VsActionsExtensions_GetProjectFromConfigAsync_CodeFactory_WinVs_IVsActions_CodeFactory_WinVs_Commands_ConfigProject_
+  - name: (
+  - uid: CodeFactory.WinVs.IVsActions
+    name: IVsActions
+    isExternal: true
+    href: CodeFactory.WinVs.IVsActions.html
+  - name: ','
+  - name: " "
+  - uid: CodeFactory.WinVs.Commands.ConfigProject
+    name: ConfigProject
+    isExternal: true
+    href: CodeFactory.WinVs.Commands.ConfigProject.html
+  - name: )
+- uid: CodeFactory.WinVs.VsActionsExtensions.GetTargetProjectAsync(CodeFactory.WinVs.IVsActions,System.String)
+  commentId: M:CodeFactory.WinVs.VsActionsExtensions.GetTargetProjectAsync(CodeFactory.WinVs.IVsActions,System.String)
+  isExternal: true
+  href: CodeFactory.WinVs.VsActionsExtensions.html#CodeFactory_WinVs_VsActionsExtensions_GetTargetProjectAsync_CodeFactory_WinVs_IVsActions_System_String_
+  name: GetTargetProjectAsync(IVsActions, string)
+  nameWithType: VsActionsExtensions.GetTargetProjectAsync(IVsActions, string)
+  fullName: CodeFactory.WinVs.VsActionsExtensions.GetTargetProjectAsync(CodeFactory.WinVs.IVsActions, string)
+  nameWithType.vb: VsActionsExtensions.GetTargetProjectAsync(IVsActions, String)
+  fullName.vb: CodeFactory.WinVs.VsActionsExtensions.GetTargetProjectAsync(CodeFactory.WinVs.IVsActions, String)
+  name.vb: GetTargetProjectAsync(IVsActions, String)
+  spec.csharp:
+  - uid: CodeFactory.WinVs.VsActionsExtensions.GetTargetProjectAsync(CodeFactory.WinVs.IVsActions,System.String)
+    name: GetTargetProjectAsync
+    isExternal: true
+    href: CodeFactory.WinVs.VsActionsExtensions.html#CodeFactory_WinVs_VsActionsExtensions_GetTargetProjectAsync_CodeFactory_WinVs_IVsActions_System_String_
+  - name: (
+  - uid: CodeFactory.WinVs.IVsActions
+    name: IVsActions
+    isExternal: true
+    href: CodeFactory.WinVs.IVsActions.html
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: CodeFactory.WinVs.VsActionsExtensions.GetTargetProjectAsync(CodeFactory.WinVs.IVsActions,System.String)
+    name: GetTargetProjectAsync
+    isExternal: true
+    href: CodeFactory.WinVs.VsActionsExtensions.html#CodeFactory_WinVs_VsActionsExtensions_GetTargetProjectAsync_CodeFactory_WinVs_IVsActions_System_String_
+  - name: (
+  - uid: CodeFactory.WinVs.IVsActions
+    name: IVsActions
+    isExternal: true
+    href: CodeFactory.WinVs.IVsActions.html
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: CodeFactory.WinVs.IVsActions.GetSolutionAsync*
+  commentId: Overload:CodeFactory.WinVs.IVsActions.GetSolutionAsync
+  isExternal: true
+  href: CodeFactory.WinVs.IVsActions.html#CodeFactory_WinVs_IVsActions_GetSolutionAsync
+  name: GetSolutionAsync
+  nameWithType: IVsActions.GetSolutionAsync
+  fullName: CodeFactory.WinVs.IVsActions.GetSolutionAsync
+- uid: System.Threading.Tasks.Task{CodeFactory.WinVs.Models.ProjectSystem.VsSolution}
+  commentId: T:System.Threading.Tasks.Task{CodeFactory.WinVs.Models.ProjectSystem.VsSolution}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<VsSolution>
+  nameWithType: Task<VsSolution>
+  fullName: System.Threading.Tasks.Task<CodeFactory.WinVs.Models.ProjectSystem.VsSolution>
+  nameWithType.vb: Task(Of VsSolution)
+  fullName.vb: System.Threading.Tasks.Task(Of CodeFactory.WinVs.Models.ProjectSystem.VsSolution)
+  name.vb: Task(Of VsSolution)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: CodeFactory.WinVs.Models.ProjectSystem.VsSolution
+    name: VsSolution
+    isExternal: true
+    href: CodeFactory.WinVs.Models.ProjectSystem.VsSolution.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: CodeFactory.WinVs.Models.ProjectSystem.VsSolution
+    name: VsSolution
+    isExternal: true
+    href: CodeFactory.WinVs.Models.ProjectSystem.VsSolution.html
+  - name: )
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: CodeFactory.WinVs.Models.CSharp.CsSource
+  commentId: T:CodeFactory.WinVs.Models.CSharp.CsSource
+  parent: CodeFactory.WinVs.Models.CSharp
+  isExternal: true
+  href: CodeFactory.WinVs.Models.CSharp.CsSource.html
+  name: CsSource
+  nameWithType: CsSource
+  fullName: CodeFactory.WinVs.Models.CSharp.CsSource
+- uid: CodeFactory.WinVs.IVsActions.GetProjectFromSourceAsync*
+  commentId: Overload:CodeFactory.WinVs.IVsActions.GetProjectFromSourceAsync
+  isExternal: true
+  href: CodeFactory.WinVs.IVsActions.html#CodeFactory_WinVs_IVsActions_GetProjectFromSourceAsync_CodeFactory_WinVs_Models_CSharp_CsSource_
+  name: GetProjectFromSourceAsync
+  nameWithType: IVsActions.GetProjectFromSourceAsync
+  fullName: CodeFactory.WinVs.IVsActions.GetProjectFromSourceAsync
+- uid: System.Threading.Tasks.Task{CodeFactory.WinVs.Models.ProjectSystem.VsProject}
+  commentId: T:System.Threading.Tasks.Task{CodeFactory.WinVs.Models.ProjectSystem.VsProject}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<VsProject>
+  nameWithType: Task<VsProject>
+  fullName: System.Threading.Tasks.Task<CodeFactory.WinVs.Models.ProjectSystem.VsProject>
+  nameWithType.vb: Task(Of VsProject)
+  fullName.vb: System.Threading.Tasks.Task(Of CodeFactory.WinVs.Models.ProjectSystem.VsProject)
+  name.vb: Task(Of VsProject)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: CodeFactory.WinVs.Models.ProjectSystem.VsProject
+    name: VsProject
+    isExternal: true
+    href: CodeFactory.WinVs.Models.ProjectSystem.VsProject.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: CodeFactory.WinVs.Models.ProjectSystem.VsProject
+    name: VsProject
+    isExternal: true
+    href: CodeFactory.WinVs.Models.ProjectSystem.VsProject.html
+  - name: )
+- uid: CodeFactory.WinVs.Models.CSharp
+  commentId: N:CodeFactory.WinVs.Models.CSharp
+  isExternal: true
+  href: CodeFactory.html
+  name: CodeFactory.WinVs.Models.CSharp
+  nameWithType: CodeFactory.WinVs.Models.CSharp
+  fullName: CodeFactory.WinVs.Models.CSharp
+  spec.csharp:
+  - uid: CodeFactory
+    name: CodeFactory
+    isExternal: true
+    href: CodeFactory.html
+  - name: .
+  - uid: CodeFactory.WinVs
+    name: WinVs
+    isExternal: true
+    href: CodeFactory.WinVs.html
+  - name: .
+  - uid: CodeFactory.WinVs.Models
+    name: Models
+    isExternal: true
+    href: CodeFactory.WinVs.Models.html
+  - name: .
+  - uid: CodeFactory.WinVs.Models.CSharp
+    name: CSharp
+    isExternal: true
+    href: CodeFactory.WinVs.Models.CSharp.html
+  spec.vb:
+  - uid: CodeFactory
+    name: CodeFactory
+    isExternal: true
+    href: CodeFactory.html
+  - name: .
+  - uid: CodeFactory.WinVs
+    name: WinVs
+    isExternal: true
+    href: CodeFactory.WinVs.html
+  - name: .
+  - uid: CodeFactory.WinVs.Models
+    name: Models
+    isExternal: true
+    href: CodeFactory.WinVs.Models.html
+  - name: .
+  - uid: CodeFactory.WinVs.Models.CSharp
+    name: CSharp
+    isExternal: true
+    href: CodeFactory.WinVs.Models.CSharp.html
+- uid: CodeFactory.WinVs.IVsActions.GetCSharpProjectFileFromSourceAsync*
+  commentId: Overload:CodeFactory.WinVs.IVsActions.GetCSharpProjectFileFromSourceAsync
+  isExternal: true
+  href: CodeFactory.WinVs.IVsActions.html#CodeFactory_WinVs_IVsActions_GetCSharpProjectFileFromSourceAsync_CodeFactory_WinVs_Models_CSharp_CsSource_
+  name: GetCSharpProjectFileFromSourceAsync
+  nameWithType: IVsActions.GetCSharpProjectFileFromSourceAsync
+  fullName: CodeFactory.WinVs.IVsActions.GetCSharpProjectFileFromSourceAsync
+- uid: System.Threading.Tasks.Task{CodeFactory.WinVs.Models.ProjectSystem.VsCSharpSource}
+  commentId: T:System.Threading.Tasks.Task{CodeFactory.WinVs.Models.ProjectSystem.VsCSharpSource}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<VsCSharpSource>
+  nameWithType: Task<VsCSharpSource>
+  fullName: System.Threading.Tasks.Task<CodeFactory.WinVs.Models.ProjectSystem.VsCSharpSource>
+  nameWithType.vb: Task(Of VsCSharpSource)
+  fullName.vb: System.Threading.Tasks.Task(Of CodeFactory.WinVs.Models.ProjectSystem.VsCSharpSource)
+  name.vb: Task(Of VsCSharpSource)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: CodeFactory.WinVs.Models.ProjectSystem.VsCSharpSource
+    name: VsCSharpSource
+    isExternal: true
+    href: CodeFactory.WinVs.Models.ProjectSystem.VsCSharpSource.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: CodeFactory.WinVs.Models.ProjectSystem.VsCSharpSource
+    name: VsCSharpSource
+    isExternal: true
+    href: CodeFactory.WinVs.Models.ProjectSystem.VsCSharpSource.html
+  - name: )
+- uid: CodeFactory.WinVs.IVsActions.GetProjectFileFromSourceAsync*
+  commentId: Overload:CodeFactory.WinVs.IVsActions.GetProjectFileFromSourceAsync
+  isExternal: true
+  href: CodeFactory.WinVs.IVsActions.html#CodeFactory_WinVs_IVsActions_GetProjectFileFromSourceAsync_CodeFactory_WinVs_Models_CSharp_CsSource_
+  name: GetProjectFileFromSourceAsync
+  nameWithType: IVsActions.GetProjectFileFromSourceAsync
+  fullName: CodeFactory.WinVs.IVsActions.GetProjectFileFromSourceAsync
+- uid: System.Threading.Tasks.Task{CodeFactory.WinVs.Models.ProjectSystem.VsDocument}
+  commentId: T:System.Threading.Tasks.Task{CodeFactory.WinVs.Models.ProjectSystem.VsDocument}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<VsDocument>
+  nameWithType: Task<VsDocument>
+  fullName: System.Threading.Tasks.Task<CodeFactory.WinVs.Models.ProjectSystem.VsDocument>
+  nameWithType.vb: Task(Of VsDocument)
+  fullName.vb: System.Threading.Tasks.Task(Of CodeFactory.WinVs.Models.ProjectSystem.VsDocument)
+  name.vb: Task(Of VsDocument)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: CodeFactory.WinVs.Models.ProjectSystem.VsDocument
+    name: VsDocument
+    isExternal: true
+    href: CodeFactory.WinVs.Models.ProjectSystem.VsDocument.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: CodeFactory.WinVs.Models.ProjectSystem.VsDocument
+    name: VsDocument
+    isExternal: true
+    href: CodeFactory.WinVs.Models.ProjectSystem.VsDocument.html
+  - name: )
+- uid: CodeFactory.WinVs.IVsActions.GetCSharpSourceAsync*
+  commentId: Overload:CodeFactory.WinVs.IVsActions.GetCSharpSourceAsync
+  isExternal: true
+  href: CodeFactory.WinVs.IVsActions.html#CodeFactory_WinVs_IVsActions_GetCSharpSourceAsync_System_String_
+  name: GetCSharpSourceAsync
+  nameWithType: IVsActions.GetCSharpSourceAsync
+  fullName: CodeFactory.WinVs.IVsActions.GetCSharpSourceAsync
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Threading.Tasks.Task{CodeFactory.WinVs.Models.CSharp.CsSource}
+  commentId: T:System.Threading.Tasks.Task{CodeFactory.WinVs.Models.CSharp.CsSource}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<CsSource>
+  nameWithType: Task<CsSource>
+  fullName: System.Threading.Tasks.Task<CodeFactory.WinVs.Models.CSharp.CsSource>
+  nameWithType.vb: Task(Of CsSource)
+  fullName.vb: System.Threading.Tasks.Task(Of CodeFactory.WinVs.Models.CSharp.CsSource)
+  name.vb: Task(Of CsSource)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: CodeFactory.WinVs.Models.CSharp.CsSource
+    name: CsSource
+    isExternal: true
+    href: CodeFactory.WinVs.Models.CSharp.CsSource.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: CodeFactory.WinVs.Models.CSharp.CsSource
+    name: CsSource
+    isExternal: true
+    href: CodeFactory.WinVs.Models.CSharp.CsSource.html
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: CodeFactory.WinVs.IVsActions.EnvironmentActions*
+  commentId: Overload:CodeFactory.WinVs.IVsActions.EnvironmentActions
+  isExternal: true
+  href: CodeFactory.WinVs.IVsActions.html#CodeFactory_WinVs_IVsActions_EnvironmentActions
+  name: EnvironmentActions
+  nameWithType: IVsActions.EnvironmentActions
+  fullName: CodeFactory.WinVs.IVsActions.EnvironmentActions
+- uid: CodeFactory.WinVs.IVsEnvironmentActions
+  commentId: T:CodeFactory.WinVs.IVsEnvironmentActions
+  parent: CodeFactory.WinVs
+  isExternal: true
+  href: CodeFactory.WinVs.IVsEnvironmentActions.html
+  name: IVsEnvironmentActions
+  nameWithType: IVsEnvironmentActions
+  fullName: CodeFactory.WinVs.IVsEnvironmentActions
+- uid: CodeFactory.WinVs.Models.ProjectSystem.IVsSolution
+  commentId: T:CodeFactory.WinVs.Models.ProjectSystem.IVsSolution
+  parent: CodeFactory.WinVs.Models.ProjectSystem
+  isExternal: true
+  href: CodeFactory.WinVs.Models.ProjectSystem.IVsSolution.html
+  name: IVsSolution
+  nameWithType: IVsSolution
+  fullName: CodeFactory.WinVs.Models.ProjectSystem.IVsSolution
+- uid: CodeFactory.WinVs.IVsActions.SolutionActions*
+  commentId: Overload:CodeFactory.WinVs.IVsActions.SolutionActions
+  isExternal: true
+  href: CodeFactory.WinVs.IVsActions.html#CodeFactory_WinVs_IVsActions_SolutionActions
+  name: SolutionActions
+  nameWithType: IVsActions.SolutionActions
+  fullName: CodeFactory.WinVs.IVsActions.SolutionActions
+- uid: CodeFactory.WinVs.Models.ProjectSystem.IVsSolutionActions
+  commentId: T:CodeFactory.WinVs.Models.ProjectSystem.IVsSolutionActions
+  parent: CodeFactory.WinVs.Models.ProjectSystem
+  isExternal: true
+  href: CodeFactory.WinVs.Models.ProjectSystem.IVsSolutionActions.html
+  name: IVsSolutionActions
+  nameWithType: IVsSolutionActions
+  fullName: CodeFactory.WinVs.Models.ProjectSystem.IVsSolutionActions
+- uid: CodeFactory.WinVs.Models.ProjectSystem
+  commentId: N:CodeFactory.WinVs.Models.ProjectSystem
+  isExternal: true
+  href: CodeFactory.html
+  name: CodeFactory.WinVs.Models.ProjectSystem
+  nameWithType: CodeFactory.WinVs.Models.ProjectSystem
+  fullName: CodeFactory.WinVs.Models.ProjectSystem
+  spec.csharp:
+  - uid: CodeFactory
+    name: CodeFactory
+    isExternal: true
+    href: CodeFactory.html
+  - name: .
+  - uid: CodeFactory.WinVs
+    name: WinVs
+    isExternal: true
+    href: CodeFactory.WinVs.html
+  - name: .
+  - uid: CodeFactory.WinVs.Models
+    name: Models
+    isExternal: true
+    href: CodeFactory.WinVs.Models.html
+  - name: .
+  - uid: CodeFactory.WinVs.Models.ProjectSystem
+    name: ProjectSystem
+    isExternal: true
+    href: CodeFactory.WinVs.Models.ProjectSystem.html
+  spec.vb:
+  - uid: CodeFactory
+    name: CodeFactory
+    isExternal: true
+    href: CodeFactory.html
+  - name: .
+  - uid: CodeFactory.WinVs
+    name: WinVs
+    isExternal: true
+    href: CodeFactory.WinVs.html
+  - name: .
+  - uid: CodeFactory.WinVs.Models
+    name: Models
+    isExternal: true
+    href: CodeFactory.WinVs.Models.html
+  - name: .
+  - uid: CodeFactory.WinVs.Models.ProjectSystem
+    name: ProjectSystem
+    isExternal: true
+    href: CodeFactory.WinVs.Models.ProjectSystem.html
+- uid: CodeFactory.WinVs.Models.ProjectSystem.IVsSolutionFolder
+  commentId: T:CodeFactory.WinVs.Models.ProjectSystem.IVsSolutionFolder
+  parent: CodeFactory.WinVs.Models.ProjectSystem
+  isExternal: true
+  href: CodeFactory.WinVs.Models.ProjectSystem.IVsSolutionFolder.html
+  name: IVsSolutionFolder
+  nameWithType: IVsSolutionFolder
+  fullName: CodeFactory.WinVs.Models.ProjectSystem.IVsSolutionFolder
+- uid: CodeFactory.WinVs.IVsActions.SolutionFolderActions*
+  commentId: Overload:CodeFactory.WinVs.IVsActions.SolutionFolderActions
+  isExternal: true
+  href: CodeFactory.WinVs.IVsActions.html#CodeFactory_WinVs_IVsActions_SolutionFolderActions
+  name: SolutionFolderActions
+  nameWithType: IVsActions.SolutionFolderActions
+  fullName: CodeFactory.WinVs.IVsActions.SolutionFolderActions
+- uid: CodeFactory.WinVs.Models.ProjectSystem.IVsSolutionFolderActions
+  commentId: T:CodeFactory.WinVs.Models.ProjectSystem.IVsSolutionFolderActions
+  parent: CodeFactory.WinVs.Models.ProjectSystem
+  isExternal: true
+  href: CodeFactory.WinVs.Models.ProjectSystem.IVsSolutionFolderActions.html
+  name: IVsSolutionFolderActions
+  nameWithType: IVsSolutionFolderActions
+  fullName: CodeFactory.WinVs.Models.ProjectSystem.IVsSolutionFolderActions
+- uid: CodeFactory.WinVs.Models.ProjectSystem.IVsProject
+  commentId: T:CodeFactory.WinVs.Models.ProjectSystem.IVsProject
+  parent: CodeFactory.WinVs.Models.ProjectSystem
+  isExternal: true
+  href: CodeFactory.WinVs.Models.ProjectSystem.IVsProject.html
+  name: IVsProject
+  nameWithType: IVsProject
+  fullName: CodeFactory.WinVs.Models.ProjectSystem.IVsProject
+- uid: CodeFactory.WinVs.IVsActions.ProjectActions*
+  commentId: Overload:CodeFactory.WinVs.IVsActions.ProjectActions
+  isExternal: true
+  href: CodeFactory.WinVs.IVsActions.html#CodeFactory_WinVs_IVsActions_ProjectActions
+  name: ProjectActions
+  nameWithType: IVsActions.ProjectActions
+  fullName: CodeFactory.WinVs.IVsActions.ProjectActions
+- uid: CodeFactory.WinVs.Models.ProjectSystem.IVsProjectActions
+  commentId: T:CodeFactory.WinVs.Models.ProjectSystem.IVsProjectActions
+  parent: CodeFactory.WinVs.Models.ProjectSystem
+  isExternal: true
+  href: CodeFactory.WinVs.Models.ProjectSystem.IVsProjectActions.html
+  name: IVsProjectActions
+  nameWithType: IVsProjectActions
+  fullName: CodeFactory.WinVs.Models.ProjectSystem.IVsProjectActions
+- uid: CodeFactory.WinVs.Models.ProjectSystem.IVsReference
+  commentId: T:CodeFactory.WinVs.Models.ProjectSystem.IVsReference
+  parent: CodeFactory.WinVs.Models.ProjectSystem
+  isExternal: true
+  href: CodeFactory.WinVs.Models.ProjectSystem.IVsReference.html
+  name: IVsReference
+  nameWithType: IVsReference
+  fullName: CodeFactory.WinVs.Models.ProjectSystem.IVsReference
+- uid: CodeFactory.WinVs.IVsActions.ProjectReferenceActions*
+  commentId: Overload:CodeFactory.WinVs.IVsActions.ProjectReferenceActions
+  isExternal: true
+  href: CodeFactory.WinVs.IVsActions.html#CodeFactory_WinVs_IVsActions_ProjectReferenceActions
+  name: ProjectReferenceActions
+  nameWithType: IVsActions.ProjectReferenceActions
+  fullName: CodeFactory.WinVs.IVsActions.ProjectReferenceActions
+- uid: CodeFactory.WinVs.Models.ProjectSystem.IVsReferenceActions
+  commentId: T:CodeFactory.WinVs.Models.ProjectSystem.IVsReferenceActions
+  parent: CodeFactory.WinVs.Models.ProjectSystem
+  isExternal: true
+  href: CodeFactory.WinVs.Models.ProjectSystem.IVsReferenceActions.html
+  name: IVsReferenceActions
+  nameWithType: IVsReferenceActions
+  fullName: CodeFactory.WinVs.Models.ProjectSystem.IVsReferenceActions
+- uid: CodeFactory.WinVs.Models.ProjectSystem.IVsProjectFolder
+  commentId: T:CodeFactory.WinVs.Models.ProjectSystem.IVsProjectFolder
+  parent: CodeFactory.WinVs.Models.ProjectSystem
+  isExternal: true
+  href: CodeFactory.WinVs.Models.ProjectSystem.IVsProjectFolder.html
+  name: IVsProjectFolder
+  nameWithType: IVsProjectFolder
+  fullName: CodeFactory.WinVs.Models.ProjectSystem.IVsProjectFolder
+- uid: CodeFactory.WinVs.IVsActions.ProjectFolderActions*
+  commentId: Overload:CodeFactory.WinVs.IVsActions.ProjectFolderActions
+  isExternal: true
+  href: CodeFactory.WinVs.IVsActions.html#CodeFactory_WinVs_IVsActions_ProjectFolderActions
+  name: ProjectFolderActions
+  nameWithType: IVsActions.ProjectFolderActions
+  fullName: CodeFactory.WinVs.IVsActions.ProjectFolderActions
+- uid: CodeFactory.WinVs.Models.ProjectSystem.IVsProjectFolderActions
+  commentId: T:CodeFactory.WinVs.Models.ProjectSystem.IVsProjectFolderActions
+  parent: CodeFactory.WinVs.Models.ProjectSystem
+  isExternal: true
+  href: CodeFactory.WinVs.Models.ProjectSystem.IVsProjectFolderActions.html
+  name: IVsProjectFolderActions
+  nameWithType: IVsProjectFolderActions
+  fullName: CodeFactory.WinVs.Models.ProjectSystem.IVsProjectFolderActions
+- uid: CodeFactory.WinVs.Models.ProjectSystem.IVsDocument
+  commentId: T:CodeFactory.WinVs.Models.ProjectSystem.IVsDocument
+  parent: CodeFactory.WinVs.Models.ProjectSystem
+  isExternal: true
+  href: CodeFactory.WinVs.Models.ProjectSystem.IVsDocument.html
+  name: IVsDocument
+  nameWithType: IVsDocument
+  fullName: CodeFactory.WinVs.Models.ProjectSystem.IVsDocument
+- uid: CodeFactory.WinVs.IVsActions.DocumentActions*
+  commentId: Overload:CodeFactory.WinVs.IVsActions.DocumentActions
+  isExternal: true
+  href: CodeFactory.WinVs.IVsActions.html#CodeFactory_WinVs_IVsActions_DocumentActions
+  name: DocumentActions
+  nameWithType: IVsActions.DocumentActions
+  fullName: CodeFactory.WinVs.IVsActions.DocumentActions
+- uid: CodeFactory.WinVs.Models.ProjectSystem.IVsDocumentActions
+  commentId: T:CodeFactory.WinVs.Models.ProjectSystem.IVsDocumentActions
+  parent: CodeFactory.WinVs.Models.ProjectSystem
+  isExternal: true
+  href: CodeFactory.WinVs.Models.ProjectSystem.IVsDocumentActions.html
+  name: IVsDocumentActions
+  nameWithType: IVsDocumentActions
+  fullName: CodeFactory.WinVs.Models.ProjectSystem.IVsDocumentActions
+- uid: CodeFactory.WinVs.IVsActions.UserInterfaceActions*
+  commentId: Overload:CodeFactory.WinVs.IVsActions.UserInterfaceActions
+  isExternal: true
+  href: CodeFactory.WinVs.IVsActions.html#CodeFactory_WinVs_IVsActions_UserInterfaceActions
+  name: UserInterfaceActions
+  nameWithType: IVsActions.UserInterfaceActions
+  fullName: CodeFactory.WinVs.IVsActions.UserInterfaceActions
+- uid: CodeFactory.WinVs.UI.IVsUIActions
+  commentId: T:CodeFactory.WinVs.UI.IVsUIActions
+  parent: CodeFactory.WinVs.UI
+  isExternal: true
+  href: CodeFactory.WinVs.UI.IVsUIActions.html
+  name: IVsUIActions
+  nameWithType: IVsUIActions
+  fullName: CodeFactory.WinVs.UI.IVsUIActions
+- uid: CodeFactory.WinVs.UI
+  commentId: N:CodeFactory.WinVs.UI
+  isExternal: true
+  href: CodeFactory.html
+  name: CodeFactory.WinVs.UI
+  nameWithType: CodeFactory.WinVs.UI
+  fullName: CodeFactory.WinVs.UI
+  spec.csharp:
+  - uid: CodeFactory
+    name: CodeFactory
+    isExternal: true
+    href: CodeFactory.html
+  - name: .
+  - uid: CodeFactory.WinVs
+    name: WinVs
+    isExternal: true
+    href: CodeFactory.WinVs.html
+  - name: .
+  - uid: CodeFactory.WinVs.UI
+    name: UI
+    isExternal: true
+    href: CodeFactory.WinVs.UI.html
+  spec.vb:
+  - uid: CodeFactory
+    name: CodeFactory
+    isExternal: true
+    href: CodeFactory.html
+  - name: .
+  - uid: CodeFactory.WinVs
+    name: WinVs
+    isExternal: true
+    href: CodeFactory.WinVs.html
+  - name: .
+  - uid: CodeFactory.WinVs.UI
+    name: UI
+    isExternal: true
+    href: CodeFactory.WinVs.UI.html
+- uid: CodeFactory.WinVs.IVsActions.SourceActions*
+  commentId: Overload:CodeFactory.WinVs.IVsActions.SourceActions
+  isExternal: true
+  href: CodeFactory.WinVs.IVsActions.html#CodeFactory_WinVs_IVsActions_SourceActions
+  name: SourceActions
+  nameWithType: IVsActions.SourceActions
+  fullName: CodeFactory.WinVs.IVsActions.SourceActions
+- uid: CodeFactory.WinVs.Models.ProjectSystem.IVsSourceActions
+  commentId: T:CodeFactory.WinVs.Models.ProjectSystem.IVsSourceActions
+  parent: CodeFactory.WinVs.Models.ProjectSystem
+  isExternal: true
+  href: CodeFactory.WinVs.Models.ProjectSystem.IVsSourceActions.html
+  name: IVsSourceActions
+  nameWithType: IVsSourceActions
+  fullName: CodeFactory.WinVs.Models.ProjectSystem.IVsSourceActions

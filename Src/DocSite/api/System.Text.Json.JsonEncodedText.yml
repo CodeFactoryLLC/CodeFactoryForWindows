@@ -1,0 +1,901 @@
+### YamlMime:ManagedReference
+items:
+- uid: System.Text.Json.JsonEncodedText
+  commentId: T:System.Text.Json.JsonEncodedText
+  id: JsonEncodedText
+  parent: System.Text.Json
+  children:
+  - System.Text.Json.JsonEncodedText.Encode(System.ReadOnlySpan{System.Byte},System.Text.Encodings.Web.JavaScriptEncoder)
+  - System.Text.Json.JsonEncodedText.Encode(System.ReadOnlySpan{System.Char},System.Text.Encodings.Web.JavaScriptEncoder)
+  - System.Text.Json.JsonEncodedText.Encode(System.String,System.Text.Encodings.Web.JavaScriptEncoder)
+  - System.Text.Json.JsonEncodedText.EncodedUtf8Bytes
+  - System.Text.Json.JsonEncodedText.Equals(System.Object)
+  - System.Text.Json.JsonEncodedText.Equals(System.Text.Json.JsonEncodedText)
+  - System.Text.Json.JsonEncodedText.GetHashCode
+  - System.Text.Json.JsonEncodedText.ToString
+  langs:
+  - csharp
+  - vb
+  name: JsonEncodedText
+  nameWithType: JsonEncodedText
+  fullName: System.Text.Json.JsonEncodedText
+  type: Struct
+  assemblies:
+  - System.Text.Json
+  namespace: System.Text.Json
+  summary: Provides methods to transform UTF-8 or UTF-16 encoded text into a form that is suitable for JSON.
+  example: []
+  syntax:
+    content: 'public readonly struct JsonEncodedText : IEquatable<JsonEncodedText>'
+    content.vb: Public Structure JsonEncodedText Implements IEquatable(Of JsonEncodedText)
+  implements:
+  - System.IEquatable{System.Text.Json.JsonEncodedText}
+  inheritedMembers:
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetType
+- uid: System.Text.Json.JsonEncodedText.Encode(System.String,System.Text.Encodings.Web.JavaScriptEncoder)
+  commentId: M:System.Text.Json.JsonEncodedText.Encode(System.String,System.Text.Encodings.Web.JavaScriptEncoder)
+  id: Encode(System.String,System.Text.Encodings.Web.JavaScriptEncoder)
+  parent: System.Text.Json.JsonEncodedText
+  langs:
+  - csharp
+  - vb
+  name: Encode(string, JavaScriptEncoder?)
+  nameWithType: JsonEncodedText.Encode(string, JavaScriptEncoder?)
+  fullName: System.Text.Json.JsonEncodedText.Encode(string, System.Text.Encodings.Web.JavaScriptEncoder?)
+  type: Method
+  assemblies:
+  - System.Text.Json
+  namespace: System.Text.Json
+  summary: Encodes the string text value as a JSON string.
+  example: []
+  syntax:
+    content: public static JsonEncodedText Encode(string value, JavaScriptEncoder? encoder = null)
+    parameters:
+    - id: value
+      type: System.String
+      description: The value to convert to JSON encoded text.
+    - id: encoder
+      type: System.Text.Encodings.Web.JavaScriptEncoder
+      description: The encoder to use when escaping the string, or <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> to use the default encoder.
+    return:
+      type: System.Text.Json.JsonEncodedText
+      description: The encoded JSON text.
+    content.vb: Public Shared Function Encode(value As String, encoder As JavaScriptEncoder = Nothing) As JsonEncodedText
+  overload: System.Text.Json.JsonEncodedText.Encode*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: <code class="paramref">value</code> is <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: "    <code class=\"paramref\">value</code> is too large.\r\n\r\n-or-\r\n\r\n<code class=\"paramref\">value</code> contains invalid UTF-16 characters."
+  nameWithType.vb: JsonEncodedText.Encode(String, JavaScriptEncoder)
+  fullName.vb: System.Text.Json.JsonEncodedText.Encode(String, System.Text.Encodings.Web.JavaScriptEncoder)
+  name.vb: Encode(String, JavaScriptEncoder)
+- uid: System.Text.Json.JsonEncodedText.Encode(System.ReadOnlySpan{System.Char},System.Text.Encodings.Web.JavaScriptEncoder)
+  commentId: M:System.Text.Json.JsonEncodedText.Encode(System.ReadOnlySpan{System.Char},System.Text.Encodings.Web.JavaScriptEncoder)
+  id: Encode(System.ReadOnlySpan{System.Char},System.Text.Encodings.Web.JavaScriptEncoder)
+  parent: System.Text.Json.JsonEncodedText
+  langs:
+  - csharp
+  - vb
+  name: Encode(ReadOnlySpan<char>, JavaScriptEncoder?)
+  nameWithType: JsonEncodedText.Encode(ReadOnlySpan<char>, JavaScriptEncoder?)
+  fullName: System.Text.Json.JsonEncodedText.Encode(System.ReadOnlySpan<char>, System.Text.Encodings.Web.JavaScriptEncoder?)
+  type: Method
+  assemblies:
+  - System.Text.Json
+  namespace: System.Text.Json
+  summary: Encodes a specified text value as a JSON string.
+  example: []
+  syntax:
+    content: public static JsonEncodedText Encode(ReadOnlySpan<char> value, JavaScriptEncoder? encoder = null)
+    parameters:
+    - id: value
+      type: System.ReadOnlySpan{System.Char}
+      description: The value to convert to JSON encoded text.
+    - id: encoder
+      type: System.Text.Encodings.Web.JavaScriptEncoder
+      description: The encoder to use when escaping the string, or <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> to use the default encoder.
+    return:
+      type: System.Text.Json.JsonEncodedText
+      description: The encoded JSON text.
+    content.vb: Public Shared Function Encode(value As ReadOnlySpan(Of Char), encoder As JavaScriptEncoder = Nothing) As JsonEncodedText
+  overload: System.Text.Json.JsonEncodedText.Encode*
+  exceptions:
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: "    <code class=\"paramref\">value</code> is too large.\r\n\r\n-or-\r\n\r\n<code class=\"paramref\">value</code> contains invalid UTF-16 characters."
+  nameWithType.vb: JsonEncodedText.Encode(ReadOnlySpan(Of Char), JavaScriptEncoder)
+  fullName.vb: System.Text.Json.JsonEncodedText.Encode(System.ReadOnlySpan(Of Char), System.Text.Encodings.Web.JavaScriptEncoder)
+  name.vb: Encode(ReadOnlySpan(Of Char), JavaScriptEncoder)
+- uid: System.Text.Json.JsonEncodedText.Encode(System.ReadOnlySpan{System.Byte},System.Text.Encodings.Web.JavaScriptEncoder)
+  commentId: M:System.Text.Json.JsonEncodedText.Encode(System.ReadOnlySpan{System.Byte},System.Text.Encodings.Web.JavaScriptEncoder)
+  id: Encode(System.ReadOnlySpan{System.Byte},System.Text.Encodings.Web.JavaScriptEncoder)
+  parent: System.Text.Json.JsonEncodedText
+  langs:
+  - csharp
+  - vb
+  name: Encode(ReadOnlySpan<byte>, JavaScriptEncoder?)
+  nameWithType: JsonEncodedText.Encode(ReadOnlySpan<byte>, JavaScriptEncoder?)
+  fullName: System.Text.Json.JsonEncodedText.Encode(System.ReadOnlySpan<byte>, System.Text.Encodings.Web.JavaScriptEncoder?)
+  type: Method
+  assemblies:
+  - System.Text.Json
+  namespace: System.Text.Json
+  summary: Encodes a UTF-8 text value as a JSON string.
+  example: []
+  syntax:
+    content: public static JsonEncodedText Encode(ReadOnlySpan<byte> utf8Value, JavaScriptEncoder? encoder = null)
+    parameters:
+    - id: utf8Value
+      type: System.ReadOnlySpan{System.Byte}
+      description: The UTF-8 encoded text to convert to JSON encoded text.
+    - id: encoder
+      type: System.Text.Encodings.Web.JavaScriptEncoder
+      description: The encoder to use when escaping the string, or <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> to use the default encoder.
+    return:
+      type: System.Text.Json.JsonEncodedText
+      description: The encoded JSON text.
+    content.vb: Public Shared Function Encode(utf8Value As ReadOnlySpan(Of Byte), encoder As JavaScriptEncoder = Nothing) As JsonEncodedText
+  overload: System.Text.Json.JsonEncodedText.Encode*
+  exceptions:
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: "    <code class=\"paramref\">utf8Value</code> is too large.\r\n\r\n-or-\r\n\r\n<code class=\"paramref\">utf8Value</code> contains invalid UTF-8 bytes."
+  nameWithType.vb: JsonEncodedText.Encode(ReadOnlySpan(Of Byte), JavaScriptEncoder)
+  fullName.vb: System.Text.Json.JsonEncodedText.Encode(System.ReadOnlySpan(Of Byte), System.Text.Encodings.Web.JavaScriptEncoder)
+  name.vb: Encode(ReadOnlySpan(Of Byte), JavaScriptEncoder)
+- uid: System.Text.Json.JsonEncodedText.Equals(System.Text.Json.JsonEncodedText)
+  commentId: M:System.Text.Json.JsonEncodedText.Equals(System.Text.Json.JsonEncodedText)
+  id: Equals(System.Text.Json.JsonEncodedText)
+  parent: System.Text.Json.JsonEncodedText
+  langs:
+  - csharp
+  - vb
+  name: Equals(JsonEncodedText)
+  nameWithType: JsonEncodedText.Equals(JsonEncodedText)
+  fullName: System.Text.Json.JsonEncodedText.Equals(System.Text.Json.JsonEncodedText)
+  type: Method
+  assemblies:
+  - System.Text.Json
+  namespace: System.Text.Json
+  summary: Determines whether this instance and another specified <xref href="System.Text.Json.JsonEncodedText" data-throw-if-not-resolved="false"></xref> instance have the same value.
+  example: []
+  syntax:
+    content: public bool Equals(JsonEncodedText other)
+    parameters:
+    - id: other
+      type: System.Text.Json.JsonEncodedText
+      description: The object to compare to this instance.
+    return:
+      type: System.Boolean
+      description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if this instance and <code class="paramref">other</code> have the same value; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
+    content.vb: Public Function Equals(other As JsonEncodedText) As Boolean
+  overload: System.Text.Json.JsonEncodedText.Equals*
+  implements:
+  - System.IEquatable{System.Text.Json.JsonEncodedText}.Equals(System.Text.Json.JsonEncodedText)
+- uid: System.Text.Json.JsonEncodedText.Equals(System.Object)
+  commentId: M:System.Text.Json.JsonEncodedText.Equals(System.Object)
+  id: Equals(System.Object)
+  parent: System.Text.Json.JsonEncodedText
+  langs:
+  - csharp
+  - vb
+  name: Equals(object?)
+  nameWithType: JsonEncodedText.Equals(object?)
+  fullName: System.Text.Json.JsonEncodedText.Equals(object?)
+  type: Method
+  assemblies:
+  - System.Text.Json
+  namespace: System.Text.Json
+  summary: Determines whether this instance and a specified object, which must also be a <xref href="System.Text.Json.JsonEncodedText" data-throw-if-not-resolved="false"></xref> instance, have the same value.
+  example: []
+  syntax:
+    content: public override bool Equals(object? obj)
+    parameters:
+    - id: obj
+      type: System.Object
+      description: The object to compare to this instance.
+    return:
+      type: System.Boolean
+      description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the current instance and <code class="paramref">obj</code> are equal; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
+    content.vb: Public Overrides Function Equals(obj As Object) As Boolean
+  overridden: System.ValueType.Equals(System.Object)
+  overload: System.Text.Json.JsonEncodedText.Equals*
+  nameWithType.vb: JsonEncodedText.Equals(Object)
+  fullName.vb: System.Text.Json.JsonEncodedText.Equals(Object)
+  name.vb: Equals(Object)
+- uid: System.Text.Json.JsonEncodedText.ToString
+  commentId: M:System.Text.Json.JsonEncodedText.ToString
+  id: ToString
+  parent: System.Text.Json.JsonEncodedText
+  langs:
+  - csharp
+  - vb
+  name: ToString()
+  nameWithType: JsonEncodedText.ToString()
+  fullName: System.Text.Json.JsonEncodedText.ToString()
+  type: Method
+  assemblies:
+  - System.Text.Json
+  namespace: System.Text.Json
+  summary: Converts the value of this instance to a <xref href="System.String" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public override string ToString()
+    return:
+      type: System.String
+      description: The underlying UTF-16 encoded string.
+    content.vb: Public Overrides Function ToString() As String
+  overridden: System.ValueType.ToString
+  overload: System.Text.Json.JsonEncodedText.ToString*
+- uid: System.Text.Json.JsonEncodedText.GetHashCode
+  commentId: M:System.Text.Json.JsonEncodedText.GetHashCode
+  id: GetHashCode
+  parent: System.Text.Json.JsonEncodedText
+  langs:
+  - csharp
+  - vb
+  name: GetHashCode()
+  nameWithType: JsonEncodedText.GetHashCode()
+  fullName: System.Text.Json.JsonEncodedText.GetHashCode()
+  type: Method
+  assemblies:
+  - System.Text.Json
+  namespace: System.Text.Json
+  summary: Returns the hash code for this <xref href="System.Text.Json.JsonEncodedText" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public override int GetHashCode()
+    return:
+      type: System.Int32
+      description: The hash code for this instance.
+    content.vb: Public Overrides Function GetHashCode() As Integer
+  overridden: System.ValueType.GetHashCode
+  overload: System.Text.Json.JsonEncodedText.GetHashCode*
+- uid: System.Text.Json.JsonEncodedText.EncodedUtf8Bytes
+  commentId: P:System.Text.Json.JsonEncodedText.EncodedUtf8Bytes
+  id: EncodedUtf8Bytes
+  parent: System.Text.Json.JsonEncodedText
+  langs:
+  - csharp
+  - vb
+  name: EncodedUtf8Bytes
+  nameWithType: JsonEncodedText.EncodedUtf8Bytes
+  fullName: System.Text.Json.JsonEncodedText.EncodedUtf8Bytes
+  type: Property
+  assemblies:
+  - System.Text.Json
+  namespace: System.Text.Json
+  summary: Gets the UTF-8 encoded representation of the pre-encoded JSON text.
+  example: []
+  syntax:
+    content: public ReadOnlySpan<byte> EncodedUtf8Bytes { get; }
+    parameters: []
+    return:
+      type: System.ReadOnlySpan{System.Byte}
+      description: The UTF-8 encoded representation of the pre-encoded JSON text.
+    content.vb: Public ReadOnly Property EncodedUtf8Bytes As ReadOnlySpan(Of Byte)
+  overload: System.Text.Json.JsonEncodedText.EncodedUtf8Bytes*
+references:
+- uid: System.Text.Json
+  commentId: N:System.Text.Json
+  isExternal: true
+  href: System.html
+  name: System.Text.Json
+  nameWithType: System.Text.Json
+  fullName: System.Text.Json
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: System.html
+  - name: .
+  - uid: System.Text
+    name: Text
+    isExternal: true
+    href: System.Text.html
+  - name: .
+  - uid: System.Text.Json
+    name: Json
+    isExternal: true
+    href: System.Text.Json.html
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: System.html
+  - name: .
+  - uid: System.Text
+    name: Text
+    isExternal: true
+    href: System.Text.html
+  - name: .
+  - uid: System.Text.Json
+    name: Json
+    isExternal: true
+    href: System.Text.Json.html
+- uid: System.IEquatable{System.Text.Json.JsonEncodedText}
+  commentId: T:System.IEquatable{System.Text.Json.JsonEncodedText}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<JsonEncodedText>
+  nameWithType: IEquatable<JsonEncodedText>
+  fullName: System.IEquatable<System.Text.Json.JsonEncodedText>
+  nameWithType.vb: IEquatable(Of JsonEncodedText)
+  fullName.vb: System.IEquatable(Of System.Text.Json.JsonEncodedText)
+  name.vb: IEquatable(Of JsonEncodedText)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: System.Text.Json.JsonEncodedText
+    name: JsonEncodedText
+    isExternal: true
+    href: System.Text.Json.JsonEncodedText.html
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Text.Json.JsonEncodedText
+    name: JsonEncodedText
+    isExternal: true
+    href: System.Text.Json.JsonEncodedText.html
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.IEquatable`1
+  commentId: T:System.IEquatable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<T>
+  nameWithType: IEquatable<T>
+  fullName: System.IEquatable<T>
+  nameWithType.vb: IEquatable(Of T)
+  fullName.vb: System.IEquatable(Of T)
+  name.vb: IEquatable(Of T)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.ArgumentNullException
+  commentId: T:System.ArgumentNullException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.argumentnullexception
+  name: ArgumentNullException
+  nameWithType: ArgumentNullException
+  fullName: System.ArgumentNullException
+- uid: System.ArgumentException
+  commentId: T:System.ArgumentException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.argumentexception
+  name: ArgumentException
+  nameWithType: ArgumentException
+  fullName: System.ArgumentException
+- uid: System.Text.Json.JsonEncodedText.Encode*
+  commentId: Overload:System.Text.Json.JsonEncodedText.Encode
+  isExternal: true
+  href: System.Text.Json.JsonEncodedText.html#System_Text_Json_JsonEncodedText_Encode_System_String_System_Text_Encodings_Web_JavaScriptEncoder_
+  name: Encode
+  nameWithType: JsonEncodedText.Encode
+  fullName: System.Text.Json.JsonEncodedText.Encode
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Text.Encodings.Web.JavaScriptEncoder
+  commentId: T:System.Text.Encodings.Web.JavaScriptEncoder
+  parent: System.Text.Encodings.Web
+  isExternal: true
+  href: System.Text.Encodings.Web.JavaScriptEncoder.html
+  name: JavaScriptEncoder
+  nameWithType: JavaScriptEncoder
+  fullName: System.Text.Encodings.Web.JavaScriptEncoder
+- uid: System.Text.Json.JsonEncodedText
+  commentId: T:System.Text.Json.JsonEncodedText
+  parent: System.Text.Json
+  isExternal: true
+  href: System.Text.Json.JsonEncodedText.html
+  name: JsonEncodedText
+  nameWithType: JsonEncodedText
+  fullName: System.Text.Json.JsonEncodedText
+- uid: System.Text.Encodings.Web
+  commentId: N:System.Text.Encodings.Web
+  isExternal: true
+  href: System.html
+  name: System.Text.Encodings.Web
+  nameWithType: System.Text.Encodings.Web
+  fullName: System.Text.Encodings.Web
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: System.html
+  - name: .
+  - uid: System.Text
+    name: Text
+    isExternal: true
+    href: System.Text.html
+  - name: .
+  - uid: System.Text.Encodings
+    name: Encodings
+    isExternal: true
+    href: System.Text.Encodings.html
+  - name: .
+  - uid: System.Text.Encodings.Web
+    name: Web
+    isExternal: true
+    href: System.Text.Encodings.Web.html
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: System.html
+  - name: .
+  - uid: System.Text
+    name: Text
+    isExternal: true
+    href: System.Text.html
+  - name: .
+  - uid: System.Text.Encodings
+    name: Encodings
+    isExternal: true
+    href: System.Text.Encodings.html
+  - name: .
+  - uid: System.Text.Encodings.Web
+    name: Web
+    isExternal: true
+    href: System.Text.Encodings.Web.html
+- uid: System.ReadOnlySpan{System.Char}
+  commentId: T:System.ReadOnlySpan{System.Char}
+  parent: System
+  definition: System.ReadOnlySpan`1
+  href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  name: ReadOnlySpan<char>
+  nameWithType: ReadOnlySpan<char>
+  fullName: System.ReadOnlySpan<char>
+  nameWithType.vb: ReadOnlySpan(Of Char)
+  fullName.vb: System.ReadOnlySpan(Of Char)
+  name.vb: ReadOnlySpan(Of Char)
+  spec.csharp:
+  - uid: System.ReadOnlySpan`1
+    name: ReadOnlySpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  - name: <
+  - uid: System.Char
+    name: char
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.char
+  - name: '>'
+  spec.vb:
+  - uid: System.ReadOnlySpan`1
+    name: ReadOnlySpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Char
+    name: Char
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.char
+  - name: )
+- uid: System.ReadOnlySpan`1
+  commentId: T:System.ReadOnlySpan`1
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  name: ReadOnlySpan<T>
+  nameWithType: ReadOnlySpan<T>
+  fullName: System.ReadOnlySpan<T>
+  nameWithType.vb: ReadOnlySpan(Of T)
+  fullName.vb: System.ReadOnlySpan(Of T)
+  name.vb: ReadOnlySpan(Of T)
+  spec.csharp:
+  - uid: System.ReadOnlySpan`1
+    name: ReadOnlySpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.ReadOnlySpan`1
+    name: ReadOnlySpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.ReadOnlySpan{System.Byte}
+  commentId: T:System.ReadOnlySpan{System.Byte}
+  parent: System
+  definition: System.ReadOnlySpan`1
+  href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  name: ReadOnlySpan<byte>
+  nameWithType: ReadOnlySpan<byte>
+  fullName: System.ReadOnlySpan<byte>
+  nameWithType.vb: ReadOnlySpan(Of Byte)
+  fullName.vb: System.ReadOnlySpan(Of Byte)
+  name.vb: ReadOnlySpan(Of Byte)
+  spec.csharp:
+  - uid: System.ReadOnlySpan`1
+    name: ReadOnlySpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  - name: <
+  - uid: System.Byte
+    name: byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: '>'
+  spec.vb:
+  - uid: System.ReadOnlySpan`1
+    name: ReadOnlySpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Byte
+    name: Byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: )
+- uid: System.Text.Json.JsonEncodedText.Equals*
+  commentId: Overload:System.Text.Json.JsonEncodedText.Equals
+  isExternal: true
+  href: System.Text.Json.JsonEncodedText.html#System_Text_Json_JsonEncodedText_Equals_System_Text_Json_JsonEncodedText_
+  name: Equals
+  nameWithType: JsonEncodedText.Equals
+  fullName: System.Text.Json.JsonEncodedText.Equals
+- uid: System.IEquatable{System.Text.Json.JsonEncodedText}.Equals(System.Text.Json.JsonEncodedText)
+  commentId: M:System.IEquatable{System.Text.Json.JsonEncodedText}.Equals(System.Text.Json.JsonEncodedText)
+  parent: System.IEquatable{System.Text.Json.JsonEncodedText}
+  definition: System.IEquatable`1.Equals(`0)
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  name: Equals(JsonEncodedText)
+  nameWithType: IEquatable<JsonEncodedText>.Equals(JsonEncodedText)
+  fullName: System.IEquatable<System.Text.Json.JsonEncodedText>.Equals(System.Text.Json.JsonEncodedText)
+  nameWithType.vb: IEquatable(Of JsonEncodedText).Equals(JsonEncodedText)
+  fullName.vb: System.IEquatable(Of System.Text.Json.JsonEncodedText).Equals(System.Text.Json.JsonEncodedText)
+  spec.csharp:
+  - uid: System.IEquatable{System.Text.Json.JsonEncodedText}.Equals(System.Text.Json.JsonEncodedText)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - uid: System.Text.Json.JsonEncodedText
+    name: JsonEncodedText
+    isExternal: true
+    href: System.Text.Json.JsonEncodedText.html
+  - name: )
+  spec.vb:
+  - uid: System.IEquatable{System.Text.Json.JsonEncodedText}.Equals(System.Text.Json.JsonEncodedText)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - uid: System.Text.Json.JsonEncodedText
+    name: JsonEncodedText
+    isExternal: true
+    href: System.Text.Json.JsonEncodedText.html
+  - name: )
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System.IEquatable`1.Equals(`0)
+  commentId: M:System.IEquatable`1.Equals(`0)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  name: Equals(T)
+  nameWithType: IEquatable<T>.Equals(T)
+  fullName: System.IEquatable<T>.Equals(T)
+  nameWithType.vb: IEquatable(Of T).Equals(T)
+  fullName.vb: System.IEquatable(Of T).Equals(T)
+  spec.csharp:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - name: T
+  - name: )
+- uid: System.ValueType.Equals(System.Object)
+  commentId: M:System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  name: Equals(object)
+  nameWithType: ValueType.Equals(object)
+  fullName: System.ValueType.Equals(object)
+  nameWithType.vb: ValueType.Equals(Object)
+  fullName.vb: System.ValueType.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType
+  commentId: T:System.ValueType
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype
+  name: ValueType
+  nameWithType: ValueType
+  fullName: System.ValueType
+- uid: System.ValueType.ToString
+  commentId: M:System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  name: ToString()
+  nameWithType: ValueType.ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+- uid: System.Text.Json.JsonEncodedText.ToString*
+  commentId: Overload:System.Text.Json.JsonEncodedText.ToString
+  isExternal: true
+  href: System.Text.Json.JsonEncodedText.html#System_Text_Json_JsonEncodedText_ToString
+  name: ToString
+  nameWithType: JsonEncodedText.ToString
+  fullName: System.Text.Json.JsonEncodedText.ToString
+- uid: System.ValueType.GetHashCode
+  commentId: M:System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  name: GetHashCode()
+  nameWithType: ValueType.GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+- uid: System.Text.Json.JsonEncodedText.GetHashCode*
+  commentId: Overload:System.Text.Json.JsonEncodedText.GetHashCode
+  isExternal: true
+  href: System.Text.Json.JsonEncodedText.html#System_Text_Json_JsonEncodedText_GetHashCode
+  name: GetHashCode
+  nameWithType: JsonEncodedText.GetHashCode
+  fullName: System.Text.Json.JsonEncodedText.GetHashCode
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.Text.Json.JsonEncodedText.EncodedUtf8Bytes*
+  commentId: Overload:System.Text.Json.JsonEncodedText.EncodedUtf8Bytes
+  isExternal: true
+  href: System.Text.Json.JsonEncodedText.html#System_Text_Json_JsonEncodedText_EncodedUtf8Bytes
+  name: EncodedUtf8Bytes
+  nameWithType: JsonEncodedText.EncodedUtf8Bytes
+  fullName: System.Text.Json.JsonEncodedText.EncodedUtf8Bytes

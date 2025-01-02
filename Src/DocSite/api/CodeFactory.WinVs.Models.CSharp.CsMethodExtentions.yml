@@ -1,0 +1,528 @@
+### YamlMime:ManagedReference
+items:
+- uid: CodeFactory.WinVs.Models.CSharp.CsMethodExtentions
+  commentId: T:CodeFactory.WinVs.Models.CSharp.CsMethodExtentions
+  id: CsMethodExtentions
+  parent: CodeFactory.WinVs.Models.CSharp
+  children:
+  - CodeFactory.WinVs.Models.CSharp.CsMethodExtentions.GetComparisonHashCode(CodeFactory.WinVs.Models.CSharp.CsMethod,System.Boolean,System.Boolean,System.Boolean,System.Collections.Generic.List{CodeFactory.WinVs.Models.CSharp.MapNamespace},System.Boolean,System.String,System.String,System.String,System.String)
+  langs:
+  - csharp
+  - vb
+  name: CsMethodExtentions
+  nameWithType: CsMethodExtentions
+  fullName: CodeFactory.WinVs.Models.CSharp.CsMethodExtentions
+  type: Class
+  source:
+    href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/e63c05962945f61f2329e19d324f24a768806f18/Src/CodeFactoryForWindows/CodeFactory.WinVs/Models/CSharp/CsMethodExtentions.cs
+  assemblies:
+  - CodeFactory.WinVs
+  namespace: CodeFactory.WinVs.Models.CSharp
+  summary: Extension methods that support the <xref href="CodeFactory.WinVs.Models.CSharp.CsMethod" data-throw-if-not-resolved="false"></xref> model.
+  example: []
+  syntax:
+    content: public static class CsMethodExtentions
+    content.vb: Public Module CsMethodExtentions
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+- uid: CodeFactory.WinVs.Models.CSharp.CsMethodExtentions.GetComparisonHashCode(CodeFactory.WinVs.Models.CSharp.CsMethod,System.Boolean,System.Boolean,System.Boolean,System.Collections.Generic.List{CodeFactory.WinVs.Models.CSharp.MapNamespace},System.Boolean,System.String,System.String,System.String,System.String)
+  commentId: M:CodeFactory.WinVs.Models.CSharp.CsMethodExtentions.GetComparisonHashCode(CodeFactory.WinVs.Models.CSharp.CsMethod,System.Boolean,System.Boolean,System.Boolean,System.Collections.Generic.List{CodeFactory.WinVs.Models.CSharp.MapNamespace},System.Boolean,System.String,System.String,System.String,System.String)
+  id: GetComparisonHashCode(CodeFactory.WinVs.Models.CSharp.CsMethod,System.Boolean,System.Boolean,System.Boolean,System.Collections.Generic.List{CodeFactory.WinVs.Models.CSharp.MapNamespace},System.Boolean,System.String,System.String,System.String,System.String)
+  isExtensionMethod: true
+  parent: CodeFactory.WinVs.Models.CSharp.CsMethodExtentions
+  langs:
+  - csharp
+  - vb
+  name: GetComparisonHashCode(CsMethod, bool, bool, bool, List<MapNamespace>, bool, string, string, string, string)
+  nameWithType: CsMethodExtentions.GetComparisonHashCode(CsMethod, bool, bool, bool, List<MapNamespace>, bool, string, string, string, string)
+  fullName: CodeFactory.WinVs.Models.CSharp.CsMethodExtentions.GetComparisonHashCode(CodeFactory.WinVs.Models.CSharp.CsMethod, bool, bool, bool, System.Collections.Generic.List<CodeFactory.WinVs.Models.CSharp.MapNamespace>, bool, string, string, string, string)
+  type: Method
+  source:
+    href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/e63c05962945f61f2329e19d324f24a768806f18/Src/CodeFactoryForWindows/CodeFactory.WinVs/Models/CSharp/CsMethodExtentions.cs
+  assemblies:
+  - CodeFactory.WinVs
+  namespace: CodeFactory.WinVs.Models.CSharp
+  summary: Creates a comparision hashcode from a <xref href="CodeFactory.WinVs.Models.CSharp.CsMethod" data-throw-if-not-resolved="false"></xref> model.
+  example: []
+  syntax:
+    content: public static int GetComparisonHashCode(this CsMethod source, bool includeSecurity = true, bool includeKeywords = true, bool includeAbstractKeyword = false, List<MapNamespace> mappedNamespaces = null, bool forceAsyncDefinition = false, string asyncPrefix = null, string asyncSuffix = null, string namePrefix = null, string nameSuffix = null)
+    parameters:
+    - id: source
+      type: CodeFactory.WinVs.Models.CSharp.CsMethod
+      description: Source model to use to build the hash.
+    - id: includeSecurity
+      type: System.Boolean
+      description: Optional parameter that includes security in the comparision hash, default value is true.
+    - id: includeKeywords
+      type: System.Boolean
+      description: Optional parameter that includes keywords in the comparision hash, default value is true.
+    - id: includeAbstractKeyword
+      type: System.Boolean
+      description: Optional parameter that includes abstract keyword in the comparision hash, default value is false.
+    - id: mappedNamespaces
+      type: System.Collections.Generic.List{CodeFactory.WinVs.Models.CSharp.MapNamespace}
+      description: Optional parameter that provides namespaces to be mapped to.
+    - id: forceAsyncDefinition
+      type: System.Boolean
+      description: Optional parameter that forces the method to confirm to an async signature, default value is false.
+    - id: asyncPrefix
+      type: System.String
+      description: Optional parameter that is used with forceAsyncDefinition that includes an expected prefix on the method name, default value is null.
+    - id: asyncSuffix
+      type: System.String
+      description: Optional parameter that is used with forceAsyncDefinition that includes an expected suffix on the method name, default value is Async.
+    - id: namePrefix
+      type: System.String
+      description: Optional prameter that determines if the name will have a prefix assigned to it, default is null.
+    - id: nameSuffix
+      type: System.String
+      description: Optional parameter that determines if the name will have a prefix assigned to it, default is null.
+    return:
+      type: System.Int32
+      description: Computed hash value for the method signature.
+    content.vb: Public Shared Function GetComparisonHashCode(source As CsMethod, includeSecurity As Boolean = True, includeKeywords As Boolean = True, includeAbstractKeyword As Boolean = False, mappedNamespaces As List(Of MapNamespace) = Nothing, forceAsyncDefinition As Boolean = False, asyncPrefix As String = Nothing, asyncSuffix As String = Nothing, namePrefix As String = Nothing, nameSuffix As String = Nothing) As Integer
+  overload: CodeFactory.WinVs.Models.CSharp.CsMethodExtentions.GetComparisonHashCode*
+  nameWithType.vb: CsMethodExtentions.GetComparisonHashCode(CsMethod, Boolean, Boolean, Boolean, List(Of MapNamespace), Boolean, String, String, String, String)
+  fullName.vb: CodeFactory.WinVs.Models.CSharp.CsMethodExtentions.GetComparisonHashCode(CodeFactory.WinVs.Models.CSharp.CsMethod, Boolean, Boolean, Boolean, System.Collections.Generic.List(Of CodeFactory.WinVs.Models.CSharp.MapNamespace), Boolean, String, String, String, String)
+  name.vb: GetComparisonHashCode(CsMethod, Boolean, Boolean, Boolean, List(Of MapNamespace), Boolean, String, String, String, String)
+references:
+- uid: CodeFactory.WinVs.Models.CSharp.CsMethod
+  commentId: T:CodeFactory.WinVs.Models.CSharp.CsMethod
+  parent: CodeFactory.WinVs.Models.CSharp
+  isExternal: true
+  href: CodeFactory.WinVs.Models.CSharp.CsMethod.html
+  name: CsMethod
+  nameWithType: CsMethod
+  fullName: CodeFactory.WinVs.Models.CSharp.CsMethod
+- uid: CodeFactory.WinVs.Models.CSharp
+  commentId: N:CodeFactory.WinVs.Models.CSharp
+  isExternal: true
+  href: CodeFactory.html
+  name: CodeFactory.WinVs.Models.CSharp
+  nameWithType: CodeFactory.WinVs.Models.CSharp
+  fullName: CodeFactory.WinVs.Models.CSharp
+  spec.csharp:
+  - uid: CodeFactory
+    name: CodeFactory
+    isExternal: true
+    href: CodeFactory.html
+  - name: .
+  - uid: CodeFactory.WinVs
+    name: WinVs
+    isExternal: true
+    href: CodeFactory.WinVs.html
+  - name: .
+  - uid: CodeFactory.WinVs.Models
+    name: Models
+    isExternal: true
+    href: CodeFactory.WinVs.Models.html
+  - name: .
+  - uid: CodeFactory.WinVs.Models.CSharp
+    name: CSharp
+    isExternal: true
+    href: CodeFactory.WinVs.Models.CSharp.html
+  spec.vb:
+  - uid: CodeFactory
+    name: CodeFactory
+    isExternal: true
+    href: CodeFactory.html
+  - name: .
+  - uid: CodeFactory.WinVs
+    name: WinVs
+    isExternal: true
+    href: CodeFactory.WinVs.html
+  - name: .
+  - uid: CodeFactory.WinVs.Models
+    name: Models
+    isExternal: true
+    href: CodeFactory.WinVs.Models.html
+  - name: .
+  - uid: CodeFactory.WinVs.Models.CSharp
+    name: CSharp
+    isExternal: true
+    href: CodeFactory.WinVs.Models.CSharp.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: CodeFactory.WinVs.Models.CSharp.CsMethodExtentions.GetComparisonHashCode*
+  commentId: Overload:CodeFactory.WinVs.Models.CSharp.CsMethodExtentions.GetComparisonHashCode
+  isExternal: true
+  href: CodeFactory.WinVs.Models.CSharp.CsMethodExtentions.html#CodeFactory_WinVs_Models_CSharp_CsMethodExtentions_GetComparisonHashCode_CodeFactory_WinVs_Models_CSharp_CsMethod_System_Boolean_System_Boolean_System_Boolean_System_Collections_Generic_List_CodeFactory_WinVs_Models_CSharp_MapNamespace__System_Boolean_System_String_System_String_System_String_System_String_
+  name: GetComparisonHashCode
+  nameWithType: CsMethodExtentions.GetComparisonHashCode
+  fullName: CodeFactory.WinVs.Models.CSharp.CsMethodExtentions.GetComparisonHashCode
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System.Collections.Generic.List{CodeFactory.WinVs.Models.CSharp.MapNamespace}
+  commentId: T:System.Collections.Generic.List{CodeFactory.WinVs.Models.CSharp.MapNamespace}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<MapNamespace>
+  nameWithType: List<MapNamespace>
+  fullName: System.Collections.Generic.List<CodeFactory.WinVs.Models.CSharp.MapNamespace>
+  nameWithType.vb: List(Of MapNamespace)
+  fullName.vb: System.Collections.Generic.List(Of CodeFactory.WinVs.Models.CSharp.MapNamespace)
+  name.vb: List(Of MapNamespace)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: CodeFactory.WinVs.Models.CSharp.MapNamespace
+    name: MapNamespace
+    isExternal: true
+    href: CodeFactory.WinVs.Models.CSharp.MapNamespace.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: CodeFactory.WinVs.Models.CSharp.MapNamespace
+    name: MapNamespace
+    isExternal: true
+    href: CodeFactory.WinVs.Models.CSharp.MapNamespace.html
+  - name: )
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic

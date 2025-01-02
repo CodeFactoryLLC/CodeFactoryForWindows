@@ -1,0 +1,748 @@
+### YamlMime:ManagedReference
+items:
+- uid: CodeFactory.WinVs.Models.ProjectSystem.IVsProjectFolderActions
+  commentId: T:CodeFactory.WinVs.Models.ProjectSystem.IVsProjectFolderActions
+  id: IVsProjectFolderActions
+  parent: CodeFactory.WinVs.Models.ProjectSystem
+  children:
+  - CodeFactory.WinVs.Models.ProjectSystem.IVsProjectFolderActions.AddDocumentAsync(CodeFactory.WinVs.Models.ProjectSystem.VsProjectFolder,System.String,System.String)
+  - CodeFactory.WinVs.Models.ProjectSystem.IVsProjectFolderActions.AddExistingDocumentAsync(CodeFactory.WinVs.Models.ProjectSystem.VsProjectFolder,System.String)
+  - CodeFactory.WinVs.Models.ProjectSystem.IVsProjectFolderActions.AddProjectFolderAsync(CodeFactory.WinVs.Models.ProjectSystem.VsProjectFolder,System.String)
+  - CodeFactory.WinVs.Models.ProjectSystem.IVsProjectFolderActions.DeleteAsync(CodeFactory.WinVs.Models.ProjectSystem.VsProjectFolder)
+  - CodeFactory.WinVs.Models.ProjectSystem.IVsProjectFolderActions.GetCSharpNamespaceAsync(CodeFactory.WinVs.Models.ProjectSystem.VsProjectFolder)
+  - CodeFactory.WinVs.Models.ProjectSystem.IVsProjectFolderActions.GetChildrenAsync(CodeFactory.WinVs.Models.ProjectSystem.VsProjectFolder,System.Boolean,System.Boolean)
+  - CodeFactory.WinVs.Models.ProjectSystem.IVsProjectFolderActions.GetParentAsync(CodeFactory.WinVs.Models.ProjectSystem.VsProjectFolder)
+  - CodeFactory.WinVs.Models.ProjectSystem.IVsProjectFolderActions.RemoveAsync(CodeFactory.WinVs.Models.ProjectSystem.VsProjectFolder)
+  langs:
+  - csharp
+  - vb
+  name: IVsProjectFolderActions
+  nameWithType: IVsProjectFolderActions
+  fullName: CodeFactory.WinVs.Models.ProjectSystem.IVsProjectFolderActions
+  type: Interface
+  source:
+    href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/e63c05962945f61f2329e19d324f24a768806f18/Src/CodeFactoryForWindows/CodeFactory.WinVs/Models/ProjectSystem/IVsProjectFolderActions.cs
+  assemblies:
+  - CodeFactory.WinVs
+  namespace: CodeFactory.WinVs.Models.ProjectSystem
+  summary: Visual studio actions that support the <xref href="CodeFactory.WinVs.Models.ProjectSystem.IVsProjectFolder" data-throw-if-not-resolved="false"></xref> model.
+  example: []
+  syntax:
+    content: public interface IVsProjectFolderActions
+    content.vb: Public Interface IVsProjectFolderActions
+- uid: CodeFactory.WinVs.Models.ProjectSystem.IVsProjectFolderActions.GetParentAsync(CodeFactory.WinVs.Models.ProjectSystem.VsProjectFolder)
+  commentId: M:CodeFactory.WinVs.Models.ProjectSystem.IVsProjectFolderActions.GetParentAsync(CodeFactory.WinVs.Models.ProjectSystem.VsProjectFolder)
+  id: GetParentAsync(CodeFactory.WinVs.Models.ProjectSystem.VsProjectFolder)
+  parent: CodeFactory.WinVs.Models.ProjectSystem.IVsProjectFolderActions
+  langs:
+  - csharp
+  - vb
+  name: GetParentAsync(VsProjectFolder)
+  nameWithType: IVsProjectFolderActions.GetParentAsync(VsProjectFolder)
+  fullName: CodeFactory.WinVs.Models.ProjectSystem.IVsProjectFolderActions.GetParentAsync(CodeFactory.WinVs.Models.ProjectSystem.VsProjectFolder)
+  type: Method
+  source:
+    href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/e63c05962945f61f2329e19d324f24a768806f18/Src/CodeFactoryForWindows/CodeFactory.WinVs/Models/ProjectSystem/IVsProjectFolderActions.cs
+  assemblies:
+  - CodeFactory.WinVs
+  namespace: CodeFactory.WinVs.Models.ProjectSystem
+  summary: Gets the parent visual studio model that is the parent of this Project folder.
+  example: []
+  syntax:
+    content: Task<VsModel> GetParentAsync(VsProjectFolder source)
+    parameters:
+    - id: source
+      type: CodeFactory.WinVs.Models.ProjectSystem.VsProjectFolder
+      description: The project folder to get the parent.
+    return:
+      type: System.Threading.Tasks.Task{CodeFactory.WinVs.Models.ProjectSystem.VsModel}
+      description: The visual studio model of the parent or null if the project folder does not have a parent.
+    content.vb: Function GetParentAsync(source As VsProjectFolder) As Task(Of VsModel)
+  overload: CodeFactory.WinVs.Models.ProjectSystem.IVsProjectFolderActions.GetParentAsync*
+- uid: CodeFactory.WinVs.Models.ProjectSystem.IVsProjectFolderActions.GetChildrenAsync(CodeFactory.WinVs.Models.ProjectSystem.VsProjectFolder,System.Boolean,System.Boolean)
+  commentId: M:CodeFactory.WinVs.Models.ProjectSystem.IVsProjectFolderActions.GetChildrenAsync(CodeFactory.WinVs.Models.ProjectSystem.VsProjectFolder,System.Boolean,System.Boolean)
+  id: GetChildrenAsync(CodeFactory.WinVs.Models.ProjectSystem.VsProjectFolder,System.Boolean,System.Boolean)
+  parent: CodeFactory.WinVs.Models.ProjectSystem.IVsProjectFolderActions
+  langs:
+  - csharp
+  - vb
+  name: GetChildrenAsync(VsProjectFolder, bool, bool)
+  nameWithType: IVsProjectFolderActions.GetChildrenAsync(VsProjectFolder, bool, bool)
+  fullName: CodeFactory.WinVs.Models.ProjectSystem.IVsProjectFolderActions.GetChildrenAsync(CodeFactory.WinVs.Models.ProjectSystem.VsProjectFolder, bool, bool)
+  type: Method
+  source:
+    href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/e63c05962945f61f2329e19d324f24a768806f18/Src/CodeFactoryForWindows/CodeFactory.WinVs/Models/ProjectSystem/IVsProjectFolderActions.cs
+  assemblies:
+  - CodeFactory.WinVs
+  namespace: CodeFactory.WinVs.Models.ProjectSystem
+  summary: Gets the <xref href="CodeFactory.WinVs.Models.ProjectSystem.IVsModel" data-throw-if-not-resolved="false"></xref> of the items that are direct children of this project folder.
+  example: []
+  syntax:
+    content: Task<IReadOnlyList<VsModel>> GetChildrenAsync(VsProjectFolder source, bool allChildren, bool loadSourceCode = false)
+    parameters:
+    - id: source
+      type: CodeFactory.WinVs.Models.ProjectSystem.VsProjectFolder
+      description: The project folder to get children from.
+    - id: allChildren
+      type: System.Boolean
+      description: Flag that determines if all children not just the first level children of the project folder.
+    - id: loadSourceCode
+      type: System.Boolean
+      description: Flag that determines if code factory managed source code models should be loaded instead of the standard <xref href="CodeFactory.WinVs.Models.ProjectSystem.VsDocument" data-throw-if-not-resolved="false"></xref> model.
+    return:
+      type: System.Threading.Tasks.Task{System.Collections.Generic.IReadOnlyList{CodeFactory.WinVs.Models.ProjectSystem.VsModel}}
+      description: Readonly list of the children that belong to this project folder. If no children are found an empty readonly list will be returned.
+    content.vb: Function GetChildrenAsync(source As VsProjectFolder, allChildren As Boolean, loadSourceCode As Boolean = False) As Task(Of IReadOnlyList(Of VsModel))
+  overload: CodeFactory.WinVs.Models.ProjectSystem.IVsProjectFolderActions.GetChildrenAsync*
+  nameWithType.vb: IVsProjectFolderActions.GetChildrenAsync(VsProjectFolder, Boolean, Boolean)
+  fullName.vb: CodeFactory.WinVs.Models.ProjectSystem.IVsProjectFolderActions.GetChildrenAsync(CodeFactory.WinVs.Models.ProjectSystem.VsProjectFolder, Boolean, Boolean)
+  name.vb: GetChildrenAsync(VsProjectFolder, Boolean, Boolean)
+- uid: CodeFactory.WinVs.Models.ProjectSystem.IVsProjectFolderActions.DeleteAsync(CodeFactory.WinVs.Models.ProjectSystem.VsProjectFolder)
+  commentId: M:CodeFactory.WinVs.Models.ProjectSystem.IVsProjectFolderActions.DeleteAsync(CodeFactory.WinVs.Models.ProjectSystem.VsProjectFolder)
+  id: DeleteAsync(CodeFactory.WinVs.Models.ProjectSystem.VsProjectFolder)
+  parent: CodeFactory.WinVs.Models.ProjectSystem.IVsProjectFolderActions
+  langs:
+  - csharp
+  - vb
+  name: DeleteAsync(VsProjectFolder)
+  nameWithType: IVsProjectFolderActions.DeleteAsync(VsProjectFolder)
+  fullName: CodeFactory.WinVs.Models.ProjectSystem.IVsProjectFolderActions.DeleteAsync(CodeFactory.WinVs.Models.ProjectSystem.VsProjectFolder)
+  type: Method
+  source:
+    href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/e63c05962945f61f2329e19d324f24a768806f18/Src/CodeFactoryForWindows/CodeFactory.WinVs/Models/ProjectSystem/IVsProjectFolderActions.cs
+  assemblies:
+  - CodeFactory.WinVs
+  namespace: CodeFactory.WinVs.Models.ProjectSystem
+  summary: Deletes the project folder.
+  example: []
+  syntax:
+    content: Task<bool> DeleteAsync(VsProjectFolder source)
+    parameters:
+    - id: source
+      type: CodeFactory.WinVs.Models.ProjectSystem.VsProjectFolder
+      description: The project folder to be deleted.
+    return:
+      type: System.Threading.Tasks.Task{System.Boolean}
+      description: Flag determining if the folder was deleted, True for deleted and false if the folder could not be deleted.
+    content.vb: Function DeleteAsync(source As VsProjectFolder) As Task(Of Boolean)
+  overload: CodeFactory.WinVs.Models.ProjectSystem.IVsProjectFolderActions.DeleteAsync*
+- uid: CodeFactory.WinVs.Models.ProjectSystem.IVsProjectFolderActions.RemoveAsync(CodeFactory.WinVs.Models.ProjectSystem.VsProjectFolder)
+  commentId: M:CodeFactory.WinVs.Models.ProjectSystem.IVsProjectFolderActions.RemoveAsync(CodeFactory.WinVs.Models.ProjectSystem.VsProjectFolder)
+  id: RemoveAsync(CodeFactory.WinVs.Models.ProjectSystem.VsProjectFolder)
+  parent: CodeFactory.WinVs.Models.ProjectSystem.IVsProjectFolderActions
+  langs:
+  - csharp
+  - vb
+  name: RemoveAsync(VsProjectFolder)
+  nameWithType: IVsProjectFolderActions.RemoveAsync(VsProjectFolder)
+  fullName: CodeFactory.WinVs.Models.ProjectSystem.IVsProjectFolderActions.RemoveAsync(CodeFactory.WinVs.Models.ProjectSystem.VsProjectFolder)
+  type: Method
+  source:
+    href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/e63c05962945f61f2329e19d324f24a768806f18/Src/CodeFactoryForWindows/CodeFactory.WinVs/Models/ProjectSystem/IVsProjectFolderActions.cs
+  assemblies:
+  - CodeFactory.WinVs
+  namespace: CodeFactory.WinVs.Models.ProjectSystem
+  summary: Removes the project folder from visual studio, but does not delete it from the file system.
+  example: []
+  syntax:
+    content: Task<bool> RemoveAsync(VsProjectFolder source)
+    parameters:
+    - id: source
+      type: CodeFactory.WinVs.Models.ProjectSystem.VsProjectFolder
+      description: The project folder to be removed.
+    return:
+      type: System.Threading.Tasks.Task{System.Boolean}
+      description: Flag determining if the folder was removed, True for removed and false if the folder could not be removed.
+    content.vb: Function RemoveAsync(source As VsProjectFolder) As Task(Of Boolean)
+  overload: CodeFactory.WinVs.Models.ProjectSystem.IVsProjectFolderActions.RemoveAsync*
+- uid: CodeFactory.WinVs.Models.ProjectSystem.IVsProjectFolderActions.AddProjectFolderAsync(CodeFactory.WinVs.Models.ProjectSystem.VsProjectFolder,System.String)
+  commentId: M:CodeFactory.WinVs.Models.ProjectSystem.IVsProjectFolderActions.AddProjectFolderAsync(CodeFactory.WinVs.Models.ProjectSystem.VsProjectFolder,System.String)
+  id: AddProjectFolderAsync(CodeFactory.WinVs.Models.ProjectSystem.VsProjectFolder,System.String)
+  parent: CodeFactory.WinVs.Models.ProjectSystem.IVsProjectFolderActions
+  langs:
+  - csharp
+  - vb
+  name: AddProjectFolderAsync(VsProjectFolder, string)
+  nameWithType: IVsProjectFolderActions.AddProjectFolderAsync(VsProjectFolder, string)
+  fullName: CodeFactory.WinVs.Models.ProjectSystem.IVsProjectFolderActions.AddProjectFolderAsync(CodeFactory.WinVs.Models.ProjectSystem.VsProjectFolder, string)
+  type: Method
+  source:
+    href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/e63c05962945f61f2329e19d324f24a768806f18/Src/CodeFactoryForWindows/CodeFactory.WinVs/Models/ProjectSystem/IVsProjectFolderActions.cs
+  assemblies:
+  - CodeFactory.WinVs
+  namespace: CodeFactory.WinVs.Models.ProjectSystem
+  summary: Adds a new project folder under the current project folder.
+  example: []
+  syntax:
+    content: Task<VsProjectFolder> AddProjectFolderAsync(VsProjectFolder source, string folderName)
+    parameters:
+    - id: source
+      type: CodeFactory.WinVs.Models.ProjectSystem.VsProjectFolder
+      description: The project folder to add to.
+    - id: folderName
+      type: System.String
+      description: The name of the project folder. The project folder name should be the name only no path.
+    return:
+      type: System.Threading.Tasks.Task{CodeFactory.WinVs.Models.ProjectSystem.VsProjectFolder}
+      description: The model for the created project folder.
+    content.vb: Function AddProjectFolderAsync(source As VsProjectFolder, folderName As String) As Task(Of VsProjectFolder)
+  overload: CodeFactory.WinVs.Models.ProjectSystem.IVsProjectFolderActions.AddProjectFolderAsync*
+  nameWithType.vb: IVsProjectFolderActions.AddProjectFolderAsync(VsProjectFolder, String)
+  fullName.vb: CodeFactory.WinVs.Models.ProjectSystem.IVsProjectFolderActions.AddProjectFolderAsync(CodeFactory.WinVs.Models.ProjectSystem.VsProjectFolder, String)
+  name.vb: AddProjectFolderAsync(VsProjectFolder, String)
+- uid: CodeFactory.WinVs.Models.ProjectSystem.IVsProjectFolderActions.AddDocumentAsync(CodeFactory.WinVs.Models.ProjectSystem.VsProjectFolder,System.String,System.String)
+  commentId: M:CodeFactory.WinVs.Models.ProjectSystem.IVsProjectFolderActions.AddDocumentAsync(CodeFactory.WinVs.Models.ProjectSystem.VsProjectFolder,System.String,System.String)
+  id: AddDocumentAsync(CodeFactory.WinVs.Models.ProjectSystem.VsProjectFolder,System.String,System.String)
+  parent: CodeFactory.WinVs.Models.ProjectSystem.IVsProjectFolderActions
+  langs:
+  - csharp
+  - vb
+  name: AddDocumentAsync(VsProjectFolder, string, string)
+  nameWithType: IVsProjectFolderActions.AddDocumentAsync(VsProjectFolder, string, string)
+  fullName: CodeFactory.WinVs.Models.ProjectSystem.IVsProjectFolderActions.AddDocumentAsync(CodeFactory.WinVs.Models.ProjectSystem.VsProjectFolder, string, string)
+  type: Method
+  source:
+    href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/e63c05962945f61f2329e19d324f24a768806f18/Src/CodeFactoryForWindows/CodeFactory.WinVs/Models/ProjectSystem/IVsProjectFolderActions.cs
+  assemblies:
+  - CodeFactory.WinVs
+  namespace: CodeFactory.WinVs.Models.ProjectSystem
+  summary: Adds a document to the project folder.
+  example: []
+  syntax:
+    content: Task<VsDocument> AddDocumentAsync(VsProjectFolder source, string fileName, string content = null)
+    parameters:
+    - id: source
+      type: CodeFactory.WinVs.Models.ProjectSystem.VsProjectFolder
+      description: The project folder to add the document to.
+    - id: fileName
+      type: System.String
+      description: The file name for the document. This should be the file name only with extension.
+    - id: content
+      type: System.String
+      description: The content to be added to the document once its added. Note, this is an optional parameter.
+    return:
+      type: System.Threading.Tasks.Task{CodeFactory.WinVs.Models.ProjectSystem.VsDocument}
+      description: The model of the created project document.
+    content.vb: Function AddDocumentAsync(source As VsProjectFolder, fileName As String, content As String = Nothing) As Task(Of VsDocument)
+  overload: CodeFactory.WinVs.Models.ProjectSystem.IVsProjectFolderActions.AddDocumentAsync*
+  nameWithType.vb: IVsProjectFolderActions.AddDocumentAsync(VsProjectFolder, String, String)
+  fullName.vb: CodeFactory.WinVs.Models.ProjectSystem.IVsProjectFolderActions.AddDocumentAsync(CodeFactory.WinVs.Models.ProjectSystem.VsProjectFolder, String, String)
+  name.vb: AddDocumentAsync(VsProjectFolder, String, String)
+- uid: CodeFactory.WinVs.Models.ProjectSystem.IVsProjectFolderActions.AddExistingDocumentAsync(CodeFactory.WinVs.Models.ProjectSystem.VsProjectFolder,System.String)
+  commentId: M:CodeFactory.WinVs.Models.ProjectSystem.IVsProjectFolderActions.AddExistingDocumentAsync(CodeFactory.WinVs.Models.ProjectSystem.VsProjectFolder,System.String)
+  id: AddExistingDocumentAsync(CodeFactory.WinVs.Models.ProjectSystem.VsProjectFolder,System.String)
+  parent: CodeFactory.WinVs.Models.ProjectSystem.IVsProjectFolderActions
+  langs:
+  - csharp
+  - vb
+  name: AddExistingDocumentAsync(VsProjectFolder, string)
+  nameWithType: IVsProjectFolderActions.AddExistingDocumentAsync(VsProjectFolder, string)
+  fullName: CodeFactory.WinVs.Models.ProjectSystem.IVsProjectFolderActions.AddExistingDocumentAsync(CodeFactory.WinVs.Models.ProjectSystem.VsProjectFolder, string)
+  type: Method
+  source:
+    href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/e63c05962945f61f2329e19d324f24a768806f18/Src/CodeFactoryForWindows/CodeFactory.WinVs/Models/ProjectSystem/IVsProjectFolderActions.cs
+  assemblies:
+  - CodeFactory.WinVs
+  namespace: CodeFactory.WinVs.Models.ProjectSystem
+  summary: Adds an existing document to the project folder.
+  example: []
+  syntax:
+    content: Task<VsDocument> AddExistingDocumentAsync(VsProjectFolder source, string fileName)
+    parameters:
+    - id: source
+      type: CodeFactory.WinVs.Models.ProjectSystem.VsProjectFolder
+      description: The project folder to add the document to.
+    - id: fileName
+      type: System.String
+      description: The file name for the document. This should be the file name only with extension. The file must already be in the project folder.
+    return:
+      type: System.Threading.Tasks.Task{CodeFactory.WinVs.Models.ProjectSystem.VsDocument}
+      description: The model of the created project document.
+    content.vb: Function AddExistingDocumentAsync(source As VsProjectFolder, fileName As String) As Task(Of VsDocument)
+  overload: CodeFactory.WinVs.Models.ProjectSystem.IVsProjectFolderActions.AddExistingDocumentAsync*
+  nameWithType.vb: IVsProjectFolderActions.AddExistingDocumentAsync(VsProjectFolder, String)
+  fullName.vb: CodeFactory.WinVs.Models.ProjectSystem.IVsProjectFolderActions.AddExistingDocumentAsync(CodeFactory.WinVs.Models.ProjectSystem.VsProjectFolder, String)
+  name.vb: AddExistingDocumentAsync(VsProjectFolder, String)
+- uid: CodeFactory.WinVs.Models.ProjectSystem.IVsProjectFolderActions.GetCSharpNamespaceAsync(CodeFactory.WinVs.Models.ProjectSystem.VsProjectFolder)
+  commentId: M:CodeFactory.WinVs.Models.ProjectSystem.IVsProjectFolderActions.GetCSharpNamespaceAsync(CodeFactory.WinVs.Models.ProjectSystem.VsProjectFolder)
+  id: GetCSharpNamespaceAsync(CodeFactory.WinVs.Models.ProjectSystem.VsProjectFolder)
+  parent: CodeFactory.WinVs.Models.ProjectSystem.IVsProjectFolderActions
+  langs:
+  - csharp
+  - vb
+  name: GetCSharpNamespaceAsync(VsProjectFolder)
+  nameWithType: IVsProjectFolderActions.GetCSharpNamespaceAsync(VsProjectFolder)
+  fullName: CodeFactory.WinVs.Models.ProjectSystem.IVsProjectFolderActions.GetCSharpNamespaceAsync(CodeFactory.WinVs.Models.ProjectSystem.VsProjectFolder)
+  type: Method
+  source:
+    href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/e63c05962945f61f2329e19d324f24a768806f18/Src/CodeFactoryForWindows/CodeFactory.WinVs/Models/ProjectSystem/IVsProjectFolderActions.cs
+  assemblies:
+  - CodeFactory.WinVs
+  namespace: CodeFactory.WinVs.Models.ProjectSystem
+  summary: Gets the target namespace for a document that support c# language to be placed in this folder.
+  example: []
+  syntax:
+    content: Task<string> GetCSharpNamespaceAsync(VsProjectFolder source)
+    parameters:
+    - id: source
+      type: CodeFactory.WinVs.Models.ProjectSystem.VsProjectFolder
+      description: The project folder model to get the namespace for.
+    return:
+      type: System.Threading.Tasks.Task{System.String}
+      description: The fully qualified namespace if the project is a c# project that supports this project folder. Otherwise null will be returned.
+    content.vb: Function GetCSharpNamespaceAsync(source As VsProjectFolder) As Task(Of String)
+  overload: CodeFactory.WinVs.Models.ProjectSystem.IVsProjectFolderActions.GetCSharpNamespaceAsync*
+references:
+- uid: CodeFactory.WinVs.Models.ProjectSystem.IVsProjectFolder
+  commentId: T:CodeFactory.WinVs.Models.ProjectSystem.IVsProjectFolder
+  parent: CodeFactory.WinVs.Models.ProjectSystem
+  isExternal: true
+  href: CodeFactory.WinVs.Models.ProjectSystem.IVsProjectFolder.html
+  name: IVsProjectFolder
+  nameWithType: IVsProjectFolder
+  fullName: CodeFactory.WinVs.Models.ProjectSystem.IVsProjectFolder
+- uid: CodeFactory.WinVs.Models.ProjectSystem
+  commentId: N:CodeFactory.WinVs.Models.ProjectSystem
+  isExternal: true
+  href: CodeFactory.html
+  name: CodeFactory.WinVs.Models.ProjectSystem
+  nameWithType: CodeFactory.WinVs.Models.ProjectSystem
+  fullName: CodeFactory.WinVs.Models.ProjectSystem
+  spec.csharp:
+  - uid: CodeFactory
+    name: CodeFactory
+    isExternal: true
+    href: CodeFactory.html
+  - name: .
+  - uid: CodeFactory.WinVs
+    name: WinVs
+    isExternal: true
+    href: CodeFactory.WinVs.html
+  - name: .
+  - uid: CodeFactory.WinVs.Models
+    name: Models
+    isExternal: true
+    href: CodeFactory.WinVs.Models.html
+  - name: .
+  - uid: CodeFactory.WinVs.Models.ProjectSystem
+    name: ProjectSystem
+    isExternal: true
+    href: CodeFactory.WinVs.Models.ProjectSystem.html
+  spec.vb:
+  - uid: CodeFactory
+    name: CodeFactory
+    isExternal: true
+    href: CodeFactory.html
+  - name: .
+  - uid: CodeFactory.WinVs
+    name: WinVs
+    isExternal: true
+    href: CodeFactory.WinVs.html
+  - name: .
+  - uid: CodeFactory.WinVs.Models
+    name: Models
+    isExternal: true
+    href: CodeFactory.WinVs.Models.html
+  - name: .
+  - uid: CodeFactory.WinVs.Models.ProjectSystem
+    name: ProjectSystem
+    isExternal: true
+    href: CodeFactory.WinVs.Models.ProjectSystem.html
+- uid: CodeFactory.WinVs.Models.ProjectSystem.IVsProjectFolderActions.GetParentAsync*
+  commentId: Overload:CodeFactory.WinVs.Models.ProjectSystem.IVsProjectFolderActions.GetParentAsync
+  isExternal: true
+  href: CodeFactory.WinVs.Models.ProjectSystem.IVsProjectFolderActions.html#CodeFactory_WinVs_Models_ProjectSystem_IVsProjectFolderActions_GetParentAsync_CodeFactory_WinVs_Models_ProjectSystem_VsProjectFolder_
+  name: GetParentAsync
+  nameWithType: IVsProjectFolderActions.GetParentAsync
+  fullName: CodeFactory.WinVs.Models.ProjectSystem.IVsProjectFolderActions.GetParentAsync
+- uid: CodeFactory.WinVs.Models.ProjectSystem.VsProjectFolder
+  commentId: T:CodeFactory.WinVs.Models.ProjectSystem.VsProjectFolder
+  parent: CodeFactory.WinVs.Models.ProjectSystem
+  isExternal: true
+  href: CodeFactory.WinVs.Models.ProjectSystem.VsProjectFolder.html
+  name: VsProjectFolder
+  nameWithType: VsProjectFolder
+  fullName: CodeFactory.WinVs.Models.ProjectSystem.VsProjectFolder
+- uid: System.Threading.Tasks.Task{CodeFactory.WinVs.Models.ProjectSystem.VsModel}
+  commentId: T:System.Threading.Tasks.Task{CodeFactory.WinVs.Models.ProjectSystem.VsModel}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<VsModel>
+  nameWithType: Task<VsModel>
+  fullName: System.Threading.Tasks.Task<CodeFactory.WinVs.Models.ProjectSystem.VsModel>
+  nameWithType.vb: Task(Of VsModel)
+  fullName.vb: System.Threading.Tasks.Task(Of CodeFactory.WinVs.Models.ProjectSystem.VsModel)
+  name.vb: Task(Of VsModel)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: CodeFactory.WinVs.Models.ProjectSystem.VsModel
+    name: VsModel
+    isExternal: true
+    href: CodeFactory.WinVs.Models.ProjectSystem.VsModel.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: CodeFactory.WinVs.Models.ProjectSystem.VsModel
+    name: VsModel
+    isExternal: true
+    href: CodeFactory.WinVs.Models.ProjectSystem.VsModel.html
+  - name: )
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: CodeFactory.WinVs.Models.ProjectSystem.IVsModel
+  commentId: T:CodeFactory.WinVs.Models.ProjectSystem.IVsModel
+  parent: CodeFactory.WinVs.Models.ProjectSystem
+  isExternal: true
+  href: CodeFactory.WinVs.Models.ProjectSystem.IVsModel.html
+  name: IVsModel
+  nameWithType: IVsModel
+  fullName: CodeFactory.WinVs.Models.ProjectSystem.IVsModel
+- uid: CodeFactory.WinVs.Models.ProjectSystem.VsDocument
+  commentId: T:CodeFactory.WinVs.Models.ProjectSystem.VsDocument
+  parent: CodeFactory.WinVs.Models.ProjectSystem
+  isExternal: true
+  href: CodeFactory.WinVs.Models.ProjectSystem.VsDocument.html
+  name: VsDocument
+  nameWithType: VsDocument
+  fullName: CodeFactory.WinVs.Models.ProjectSystem.VsDocument
+- uid: CodeFactory.WinVs.Models.ProjectSystem.IVsProjectFolderActions.GetChildrenAsync*
+  commentId: Overload:CodeFactory.WinVs.Models.ProjectSystem.IVsProjectFolderActions.GetChildrenAsync
+  isExternal: true
+  href: CodeFactory.WinVs.Models.ProjectSystem.IVsProjectFolderActions.html#CodeFactory_WinVs_Models_ProjectSystem_IVsProjectFolderActions_GetChildrenAsync_CodeFactory_WinVs_Models_ProjectSystem_VsProjectFolder_System_Boolean_System_Boolean_
+  name: GetChildrenAsync
+  nameWithType: IVsProjectFolderActions.GetChildrenAsync
+  fullName: CodeFactory.WinVs.Models.ProjectSystem.IVsProjectFolderActions.GetChildrenAsync
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System.Threading.Tasks.Task{System.Collections.Generic.IReadOnlyList{CodeFactory.WinVs.Models.ProjectSystem.VsModel}}
+  commentId: T:System.Threading.Tasks.Task{System.Collections.Generic.IReadOnlyList{CodeFactory.WinVs.Models.ProjectSystem.VsModel}}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<IReadOnlyList<VsModel>>
+  nameWithType: Task<IReadOnlyList<VsModel>>
+  fullName: System.Threading.Tasks.Task<System.Collections.Generic.IReadOnlyList<CodeFactory.WinVs.Models.ProjectSystem.VsModel>>
+  nameWithType.vb: Task(Of IReadOnlyList(Of VsModel))
+  fullName.vb: System.Threading.Tasks.Task(Of System.Collections.Generic.IReadOnlyList(Of CodeFactory.WinVs.Models.ProjectSystem.VsModel))
+  name.vb: Task(Of IReadOnlyList(Of VsModel))
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - uid: CodeFactory.WinVs.Models.ProjectSystem.VsModel
+    name: VsModel
+    isExternal: true
+    href: CodeFactory.WinVs.Models.ProjectSystem.VsModel.html
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: CodeFactory.WinVs.Models.ProjectSystem.VsModel
+    name: VsModel
+    isExternal: true
+    href: CodeFactory.WinVs.Models.ProjectSystem.VsModel.html
+  - name: )
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: CodeFactory.WinVs.Models.ProjectSystem.IVsProjectFolderActions.DeleteAsync*
+  commentId: Overload:CodeFactory.WinVs.Models.ProjectSystem.IVsProjectFolderActions.DeleteAsync
+  isExternal: true
+  href: CodeFactory.WinVs.Models.ProjectSystem.IVsProjectFolderActions.html#CodeFactory_WinVs_Models_ProjectSystem_IVsProjectFolderActions_DeleteAsync_CodeFactory_WinVs_Models_ProjectSystem_VsProjectFolder_
+  name: DeleteAsync
+  nameWithType: IVsProjectFolderActions.DeleteAsync
+  fullName: CodeFactory.WinVs.Models.ProjectSystem.IVsProjectFolderActions.DeleteAsync
+- uid: System.Threading.Tasks.Task{System.Boolean}
+  commentId: T:System.Threading.Tasks.Task{System.Boolean}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<bool>
+  nameWithType: Task<bool>
+  fullName: System.Threading.Tasks.Task<bool>
+  nameWithType.vb: Task(Of Boolean)
+  fullName.vb: System.Threading.Tasks.Task(Of Boolean)
+  name.vb: Task(Of Boolean)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: CodeFactory.WinVs.Models.ProjectSystem.IVsProjectFolderActions.RemoveAsync*
+  commentId: Overload:CodeFactory.WinVs.Models.ProjectSystem.IVsProjectFolderActions.RemoveAsync
+  isExternal: true
+  href: CodeFactory.WinVs.Models.ProjectSystem.IVsProjectFolderActions.html#CodeFactory_WinVs_Models_ProjectSystem_IVsProjectFolderActions_RemoveAsync_CodeFactory_WinVs_Models_ProjectSystem_VsProjectFolder_
+  name: RemoveAsync
+  nameWithType: IVsProjectFolderActions.RemoveAsync
+  fullName: CodeFactory.WinVs.Models.ProjectSystem.IVsProjectFolderActions.RemoveAsync
+- uid: CodeFactory.WinVs.Models.ProjectSystem.IVsProjectFolderActions.AddProjectFolderAsync*
+  commentId: Overload:CodeFactory.WinVs.Models.ProjectSystem.IVsProjectFolderActions.AddProjectFolderAsync
+  isExternal: true
+  href: CodeFactory.WinVs.Models.ProjectSystem.IVsProjectFolderActions.html#CodeFactory_WinVs_Models_ProjectSystem_IVsProjectFolderActions_AddProjectFolderAsync_CodeFactory_WinVs_Models_ProjectSystem_VsProjectFolder_System_String_
+  name: AddProjectFolderAsync
+  nameWithType: IVsProjectFolderActions.AddProjectFolderAsync
+  fullName: CodeFactory.WinVs.Models.ProjectSystem.IVsProjectFolderActions.AddProjectFolderAsync
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Threading.Tasks.Task{CodeFactory.WinVs.Models.ProjectSystem.VsProjectFolder}
+  commentId: T:System.Threading.Tasks.Task{CodeFactory.WinVs.Models.ProjectSystem.VsProjectFolder}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<VsProjectFolder>
+  nameWithType: Task<VsProjectFolder>
+  fullName: System.Threading.Tasks.Task<CodeFactory.WinVs.Models.ProjectSystem.VsProjectFolder>
+  nameWithType.vb: Task(Of VsProjectFolder)
+  fullName.vb: System.Threading.Tasks.Task(Of CodeFactory.WinVs.Models.ProjectSystem.VsProjectFolder)
+  name.vb: Task(Of VsProjectFolder)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: CodeFactory.WinVs.Models.ProjectSystem.VsProjectFolder
+    name: VsProjectFolder
+    isExternal: true
+    href: CodeFactory.WinVs.Models.ProjectSystem.VsProjectFolder.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: CodeFactory.WinVs.Models.ProjectSystem.VsProjectFolder
+    name: VsProjectFolder
+    isExternal: true
+    href: CodeFactory.WinVs.Models.ProjectSystem.VsProjectFolder.html
+  - name: )
+- uid: CodeFactory.WinVs.Models.ProjectSystem.IVsProjectFolderActions.AddDocumentAsync*
+  commentId: Overload:CodeFactory.WinVs.Models.ProjectSystem.IVsProjectFolderActions.AddDocumentAsync
+  isExternal: true
+  href: CodeFactory.WinVs.Models.ProjectSystem.IVsProjectFolderActions.html#CodeFactory_WinVs_Models_ProjectSystem_IVsProjectFolderActions_AddDocumentAsync_CodeFactory_WinVs_Models_ProjectSystem_VsProjectFolder_System_String_System_String_
+  name: AddDocumentAsync
+  nameWithType: IVsProjectFolderActions.AddDocumentAsync
+  fullName: CodeFactory.WinVs.Models.ProjectSystem.IVsProjectFolderActions.AddDocumentAsync
+- uid: System.Threading.Tasks.Task{CodeFactory.WinVs.Models.ProjectSystem.VsDocument}
+  commentId: T:System.Threading.Tasks.Task{CodeFactory.WinVs.Models.ProjectSystem.VsDocument}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<VsDocument>
+  nameWithType: Task<VsDocument>
+  fullName: System.Threading.Tasks.Task<CodeFactory.WinVs.Models.ProjectSystem.VsDocument>
+  nameWithType.vb: Task(Of VsDocument)
+  fullName.vb: System.Threading.Tasks.Task(Of CodeFactory.WinVs.Models.ProjectSystem.VsDocument)
+  name.vb: Task(Of VsDocument)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: CodeFactory.WinVs.Models.ProjectSystem.VsDocument
+    name: VsDocument
+    isExternal: true
+    href: CodeFactory.WinVs.Models.ProjectSystem.VsDocument.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: CodeFactory.WinVs.Models.ProjectSystem.VsDocument
+    name: VsDocument
+    isExternal: true
+    href: CodeFactory.WinVs.Models.ProjectSystem.VsDocument.html
+  - name: )
+- uid: CodeFactory.WinVs.Models.ProjectSystem.IVsProjectFolderActions.AddExistingDocumentAsync*
+  commentId: Overload:CodeFactory.WinVs.Models.ProjectSystem.IVsProjectFolderActions.AddExistingDocumentAsync
+  isExternal: true
+  href: CodeFactory.WinVs.Models.ProjectSystem.IVsProjectFolderActions.html#CodeFactory_WinVs_Models_ProjectSystem_IVsProjectFolderActions_AddExistingDocumentAsync_CodeFactory_WinVs_Models_ProjectSystem_VsProjectFolder_System_String_
+  name: AddExistingDocumentAsync
+  nameWithType: IVsProjectFolderActions.AddExistingDocumentAsync
+  fullName: CodeFactory.WinVs.Models.ProjectSystem.IVsProjectFolderActions.AddExistingDocumentAsync
+- uid: CodeFactory.WinVs.Models.ProjectSystem.IVsProjectFolderActions.GetCSharpNamespaceAsync*
+  commentId: Overload:CodeFactory.WinVs.Models.ProjectSystem.IVsProjectFolderActions.GetCSharpNamespaceAsync
+  isExternal: true
+  href: CodeFactory.WinVs.Models.ProjectSystem.IVsProjectFolderActions.html#CodeFactory_WinVs_Models_ProjectSystem_IVsProjectFolderActions_GetCSharpNamespaceAsync_CodeFactory_WinVs_Models_ProjectSystem_VsProjectFolder_
+  name: GetCSharpNamespaceAsync
+  nameWithType: IVsProjectFolderActions.GetCSharpNamespaceAsync
+  fullName: CodeFactory.WinVs.Models.ProjectSystem.IVsProjectFolderActions.GetCSharpNamespaceAsync
+- uid: System.Threading.Tasks.Task{System.String}
+  commentId: T:System.Threading.Tasks.Task{System.String}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<string>
+  nameWithType: Task<string>
+  fullName: System.Threading.Tasks.Task<string>
+  nameWithType.vb: Task(Of String)
+  fullName.vb: System.Threading.Tasks.Task(Of String)
+  name.vb: Task(Of String)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )

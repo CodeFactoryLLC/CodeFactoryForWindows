@@ -1,0 +1,632 @@
+### YamlMime:ManagedReference
+items:
+- uid: System.Buffers.MemoryPool`1
+  commentId: T:System.Buffers.MemoryPool`1
+  id: MemoryPool`1
+  parent: System.Buffers
+  children:
+  - System.Buffers.MemoryPool`1.#ctor
+  - System.Buffers.MemoryPool`1.Dispose
+  - System.Buffers.MemoryPool`1.Dispose(System.Boolean)
+  - System.Buffers.MemoryPool`1.MaxBufferSize
+  - System.Buffers.MemoryPool`1.Rent(System.Int32)
+  - System.Buffers.MemoryPool`1.Shared
+  langs:
+  - csharp
+  - vb
+  name: MemoryPool<T>
+  nameWithType: MemoryPool<T>
+  fullName: System.Buffers.MemoryPool<T>
+  type: Class
+  assemblies:
+  - System.Memory
+  namespace: System.Buffers
+  syntax:
+    content: 'public abstract class MemoryPool<T> : IDisposable'
+    typeParameters:
+    - id: T
+    content.vb: Public MustInherit Class MemoryPool(Of T) Implements IDisposable
+  inheritance:
+  - System.Object
+  implements:
+  - System.IDisposable
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  nameWithType.vb: MemoryPool(Of T)
+  fullName.vb: System.Buffers.MemoryPool(Of T)
+  name.vb: MemoryPool(Of T)
+- uid: System.Buffers.MemoryPool`1.Rent(System.Int32)
+  commentId: M:System.Buffers.MemoryPool`1.Rent(System.Int32)
+  id: Rent(System.Int32)
+  parent: System.Buffers.MemoryPool`1
+  langs:
+  - csharp
+  - vb
+  name: Rent(int)
+  nameWithType: MemoryPool<T>.Rent(int)
+  fullName: System.Buffers.MemoryPool<T>.Rent(int)
+  type: Method
+  assemblies:
+  - System.Memory
+  namespace: System.Buffers
+  syntax:
+    content: public abstract IMemoryOwner<T> Rent(int minBufferSize = -1)
+    parameters:
+    - id: minBufferSize
+      type: System.Int32
+    return:
+      type: System.Buffers.IMemoryOwner{{T}}
+    content.vb: Public MustOverride Function Rent(minBufferSize As Integer = -1) As IMemoryOwner(Of T)
+  overload: System.Buffers.MemoryPool`1.Rent*
+  nameWithType.vb: MemoryPool(Of T).Rent(Integer)
+  fullName.vb: System.Buffers.MemoryPool(Of T).Rent(Integer)
+  name.vb: Rent(Integer)
+- uid: System.Buffers.MemoryPool`1.#ctor
+  commentId: M:System.Buffers.MemoryPool`1.#ctor
+  id: '#ctor'
+  parent: System.Buffers.MemoryPool`1
+  langs:
+  - csharp
+  - vb
+  name: MemoryPool()
+  nameWithType: MemoryPool<T>.MemoryPool()
+  fullName: System.Buffers.MemoryPool<T>.MemoryPool()
+  type: Constructor
+  assemblies:
+  - System.Memory
+  namespace: System.Buffers
+  syntax:
+    content: protected MemoryPool()
+    content.vb: Protected Sub New()
+  overload: System.Buffers.MemoryPool`1.#ctor*
+  nameWithType.vb: MemoryPool(Of T).New()
+  fullName.vb: System.Buffers.MemoryPool(Of T).New()
+  name.vb: New()
+- uid: System.Buffers.MemoryPool`1.Dispose
+  commentId: M:System.Buffers.MemoryPool`1.Dispose
+  id: Dispose
+  parent: System.Buffers.MemoryPool`1
+  langs:
+  - csharp
+  - vb
+  name: Dispose()
+  nameWithType: MemoryPool<T>.Dispose()
+  fullName: System.Buffers.MemoryPool<T>.Dispose()
+  type: Method
+  assemblies:
+  - System.Memory
+  namespace: System.Buffers
+  example: []
+  syntax:
+    content: public void Dispose()
+    content.vb: Public Sub Dispose()
+  overload: System.Buffers.MemoryPool`1.Dispose*
+  implements:
+  - System.IDisposable.Dispose
+  nameWithType.vb: MemoryPool(Of T).Dispose()
+  fullName.vb: System.Buffers.MemoryPool(Of T).Dispose()
+- uid: System.Buffers.MemoryPool`1.Dispose(System.Boolean)
+  commentId: M:System.Buffers.MemoryPool`1.Dispose(System.Boolean)
+  id: Dispose(System.Boolean)
+  parent: System.Buffers.MemoryPool`1
+  langs:
+  - csharp
+  - vb
+  name: Dispose(bool)
+  nameWithType: MemoryPool<T>.Dispose(bool)
+  fullName: System.Buffers.MemoryPool<T>.Dispose(bool)
+  type: Method
+  assemblies:
+  - System.Memory
+  namespace: System.Buffers
+  syntax:
+    content: protected abstract void Dispose(bool disposing)
+    parameters:
+    - id: disposing
+      type: System.Boolean
+    content.vb: Protected MustOverride Sub Dispose(disposing As Boolean)
+  overload: System.Buffers.MemoryPool`1.Dispose*
+  nameWithType.vb: MemoryPool(Of T).Dispose(Boolean)
+  fullName.vb: System.Buffers.MemoryPool(Of T).Dispose(Boolean)
+  name.vb: Dispose(Boolean)
+- uid: System.Buffers.MemoryPool`1.Shared
+  commentId: P:System.Buffers.MemoryPool`1.Shared
+  id: Shared
+  parent: System.Buffers.MemoryPool`1
+  langs:
+  - csharp
+  - vb
+  name: Shared
+  nameWithType: MemoryPool<T>.Shared
+  fullName: System.Buffers.MemoryPool<T>.Shared
+  type: Property
+  assemblies:
+  - System.Memory
+  namespace: System.Buffers
+  syntax:
+    content: public static MemoryPool<T> Shared { get; }
+    parameters: []
+    return:
+      type: System.Buffers.MemoryPool`1
+    content.vb: Public Shared ReadOnly Property [Shared] As MemoryPool(Of T)
+  overload: System.Buffers.MemoryPool`1.Shared*
+  nameWithType.vb: MemoryPool(Of T).Shared
+  fullName.vb: System.Buffers.MemoryPool(Of T).Shared
+- uid: System.Buffers.MemoryPool`1.MaxBufferSize
+  commentId: P:System.Buffers.MemoryPool`1.MaxBufferSize
+  id: MaxBufferSize
+  parent: System.Buffers.MemoryPool`1
+  langs:
+  - csharp
+  - vb
+  name: MaxBufferSize
+  nameWithType: MemoryPool<T>.MaxBufferSize
+  fullName: System.Buffers.MemoryPool<T>.MaxBufferSize
+  type: Property
+  assemblies:
+  - System.Memory
+  namespace: System.Buffers
+  syntax:
+    content: public abstract int MaxBufferSize { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public MustOverride ReadOnly Property MaxBufferSize As Integer
+  overload: System.Buffers.MemoryPool`1.MaxBufferSize*
+  nameWithType.vb: MemoryPool(Of T).MaxBufferSize
+  fullName.vb: System.Buffers.MemoryPool(Of T).MaxBufferSize
+references:
+- uid: System.Buffers
+  commentId: N:System.Buffers
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Buffers
+  nameWithType: System.Buffers
+  fullName: System.Buffers
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Buffers
+    name: Buffers
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.buffers
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Buffers
+    name: Buffers
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.buffers
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.IDisposable
+  commentId: T:System.IDisposable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Buffers.MemoryPool`1.Rent*
+  commentId: Overload:System.Buffers.MemoryPool`1.Rent
+  isExternal: true
+  href: System.Buffers.MemoryPool-1.html#System_Buffers_MemoryPool_1_Rent_System_Int32_
+  name: Rent
+  nameWithType: MemoryPool<T>.Rent
+  fullName: System.Buffers.MemoryPool<T>.Rent
+  nameWithType.vb: MemoryPool(Of T).Rent
+  fullName.vb: System.Buffers.MemoryPool(Of T).Rent
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.Buffers.IMemoryOwner{{T}}
+  commentId: T:System.Buffers.IMemoryOwner{`0}
+  parent: System.Buffers
+  definition: System.Buffers.IMemoryOwner`1
+  href: System.Buffers.IMemoryOwner-1.html
+  name: IMemoryOwner<T>
+  nameWithType: IMemoryOwner<T>
+  fullName: System.Buffers.IMemoryOwner<T>
+  nameWithType.vb: IMemoryOwner(Of T)
+  fullName.vb: System.Buffers.IMemoryOwner(Of T)
+  name.vb: IMemoryOwner(Of T)
+  spec.csharp:
+  - uid: System.Buffers.IMemoryOwner`1
+    name: IMemoryOwner
+    isExternal: true
+    href: System.Buffers.IMemoryOwner-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Buffers.IMemoryOwner`1
+    name: IMemoryOwner
+    isExternal: true
+    href: System.Buffers.IMemoryOwner-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Buffers.IMemoryOwner`1
+  commentId: T:System.Buffers.IMemoryOwner`1
+  isExternal: true
+  href: System.Buffers.IMemoryOwner-1.html
+  name: IMemoryOwner<T>
+  nameWithType: IMemoryOwner<T>
+  fullName: System.Buffers.IMemoryOwner<T>
+  nameWithType.vb: IMemoryOwner(Of T)
+  fullName.vb: System.Buffers.IMemoryOwner(Of T)
+  name.vb: IMemoryOwner(Of T)
+  spec.csharp:
+  - uid: System.Buffers.IMemoryOwner`1
+    name: IMemoryOwner
+    isExternal: true
+    href: System.Buffers.IMemoryOwner-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Buffers.IMemoryOwner`1
+    name: IMemoryOwner
+    isExternal: true
+    href: System.Buffers.IMemoryOwner-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Buffers.MemoryPool`1.#ctor*
+  commentId: Overload:System.Buffers.MemoryPool`1.#ctor
+  isExternal: true
+  href: System.Buffers.MemoryPool-1.html#System_Buffers_MemoryPool_1__ctor
+  name: MemoryPool
+  nameWithType: MemoryPool<T>.MemoryPool
+  fullName: System.Buffers.MemoryPool<T>.MemoryPool
+  nameWithType.vb: MemoryPool(Of T).New
+  fullName.vb: System.Buffers.MemoryPool(Of T).New
+  name.vb: New
+- uid: System.Buffers.MemoryPool`1.Dispose*
+  commentId: Overload:System.Buffers.MemoryPool`1.Dispose
+  isExternal: true
+  href: System.Buffers.MemoryPool-1.html#System_Buffers_MemoryPool_1_Dispose
+  name: Dispose
+  nameWithType: MemoryPool<T>.Dispose
+  fullName: System.Buffers.MemoryPool<T>.Dispose
+  nameWithType.vb: MemoryPool(Of T).Dispose
+  fullName.vb: System.Buffers.MemoryPool(Of T).Dispose
+- uid: System.IDisposable.Dispose
+  commentId: M:System.IDisposable.Dispose
+  parent: System.IDisposable
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  name: Dispose()
+  nameWithType: IDisposable.Dispose()
+  fullName: System.IDisposable.Dispose()
+  spec.csharp:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  - name: (
+  - name: )
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System.Buffers.MemoryPool`1.Shared*
+  commentId: Overload:System.Buffers.MemoryPool`1.Shared
+  isExternal: true
+  href: System.Buffers.MemoryPool-1.html#System_Buffers_MemoryPool_1_Shared
+  name: Shared
+  nameWithType: MemoryPool<T>.Shared
+  fullName: System.Buffers.MemoryPool<T>.Shared
+  nameWithType.vb: MemoryPool(Of T).Shared
+  fullName.vb: System.Buffers.MemoryPool(Of T).Shared
+- uid: System.Buffers.MemoryPool`1
+  commentId: T:System.Buffers.MemoryPool`1
+  parent: System.Buffers
+  isExternal: true
+  href: System.Buffers.MemoryPool-1.html
+  name: MemoryPool<T>
+  nameWithType: MemoryPool<T>
+  fullName: System.Buffers.MemoryPool<T>
+  nameWithType.vb: MemoryPool(Of T)
+  fullName.vb: System.Buffers.MemoryPool(Of T)
+  name.vb: MemoryPool(Of T)
+  spec.csharp:
+  - uid: System.Buffers.MemoryPool`1
+    name: MemoryPool
+    isExternal: true
+    href: System.Buffers.MemoryPool-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Buffers.MemoryPool`1
+    name: MemoryPool
+    isExternal: true
+    href: System.Buffers.MemoryPool-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Buffers.MemoryPool`1.MaxBufferSize*
+  commentId: Overload:System.Buffers.MemoryPool`1.MaxBufferSize
+  isExternal: true
+  href: System.Buffers.MemoryPool-1.html#System_Buffers_MemoryPool_1_MaxBufferSize
+  name: MaxBufferSize
+  nameWithType: MemoryPool<T>.MaxBufferSize
+  fullName: System.Buffers.MemoryPool<T>.MaxBufferSize
+  nameWithType.vb: MemoryPool(Of T).MaxBufferSize
+  fullName.vb: System.Buffers.MemoryPool(Of T).MaxBufferSize

@@ -1,0 +1,973 @@
+### YamlMime:ManagedReference
+items:
+- uid: CodeFactory.WinVs.Models.CSharp.Builder.BaseSyntaxBuilder
+  commentId: T:CodeFactory.WinVs.Models.CSharp.Builder.BaseSyntaxBuilder
+  id: BaseSyntaxBuilder
+  parent: CodeFactory.WinVs.Models.CSharp.Builder
+  children:
+  - CodeFactory.WinVs.Models.CSharp.Builder.BaseSyntaxBuilder.#ctor
+  - CodeFactory.WinVs.Models.CSharp.Builder.BaseSyntaxBuilder.BuildSyntaxAsync(CodeFactory.WinVs.Models.CSharp.CsModel,CodeFactory.WinVs.Models.CSharp.Builder.ISourceManager,System.Int32)
+  - CodeFactory.WinVs.Models.CSharp.Builder.BaseSyntaxBuilder.BuildSyntaxAsync(System.Collections.Generic.IEnumerable{CodeFactory.WinVs.Models.CSharp.Builder.NamedModel},CodeFactory.WinVs.Models.CSharp.Builder.ISourceManager,System.Int32)
+  - CodeFactory.WinVs.Models.CSharp.Builder.BaseSyntaxBuilder.BuilderType
+  - CodeFactory.WinVs.Models.CSharp.Builder.BaseSyntaxBuilder.GenerateBuildSyntaxAsync(CodeFactory.WinVs.Models.CSharp.Builder.ISourceManager,System.Int32,CodeFactory.WinVs.Models.CSharp.CsModel,System.Collections.Generic.IEnumerable{CodeFactory.WinVs.Models.CSharp.Builder.NamedModel})
+  langs:
+  - csharp
+  - vb
+  name: BaseSyntaxBuilder
+  nameWithType: BaseSyntaxBuilder
+  fullName: CodeFactory.WinVs.Models.CSharp.Builder.BaseSyntaxBuilder
+  type: Class
+  source:
+    href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/e63c05962945f61f2329e19d324f24a768806f18/Src/CodeFactoryForWindows/CodeFactory.WinVs/Models/CSharp/Builder/BaseSyntaxBuilder.cs
+  assemblies:
+  - CodeFactory.WinVs
+  namespace: CodeFactory.WinVs.Models.CSharp.Builder
+  summary: Base implementation for syntax builders.
+  example: []
+  syntax:
+    content: 'public abstract class BaseSyntaxBuilder : ISyntaxBuilder, IBuilder'
+    content.vb: Public MustInherit Class BaseSyntaxBuilder Implements ISyntaxBuilder, IBuilder
+  inheritance:
+  - System.Object
+  implements:
+  - CodeFactory.WinVs.Models.CSharp.Builder.ISyntaxBuilder
+  - CodeFactory.WinVs.Models.CSharp.Builder.IBuilder
+  inheritedMembers:
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+- uid: CodeFactory.WinVs.Models.CSharp.Builder.BaseSyntaxBuilder.BuildSyntaxAsync(CodeFactory.WinVs.Models.CSharp.CsModel,CodeFactory.WinVs.Models.CSharp.Builder.ISourceManager,System.Int32)
+  commentId: M:CodeFactory.WinVs.Models.CSharp.Builder.BaseSyntaxBuilder.BuildSyntaxAsync(CodeFactory.WinVs.Models.CSharp.CsModel,CodeFactory.WinVs.Models.CSharp.Builder.ISourceManager,System.Int32)
+  id: BuildSyntaxAsync(CodeFactory.WinVs.Models.CSharp.CsModel,CodeFactory.WinVs.Models.CSharp.Builder.ISourceManager,System.Int32)
+  parent: CodeFactory.WinVs.Models.CSharp.Builder.BaseSyntaxBuilder
+  langs:
+  - csharp
+  - vb
+  name: BuildSyntaxAsync(CsModel, ISourceManager, int)
+  nameWithType: BaseSyntaxBuilder.BuildSyntaxAsync(CsModel, ISourceManager, int)
+  fullName: CodeFactory.WinVs.Models.CSharp.Builder.BaseSyntaxBuilder.BuildSyntaxAsync(CodeFactory.WinVs.Models.CSharp.CsModel, CodeFactory.WinVs.Models.CSharp.Builder.ISourceManager, int)
+  type: Method
+  source:
+    href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/e63c05962945f61f2329e19d324f24a768806f18/Src/CodeFactoryForWindows/CodeFactory.WinVs/Models/CSharp/Builder/BaseSyntaxBuilder.cs
+  assemblies:
+  - CodeFactory.WinVs
+  namespace: CodeFactory.WinVs.Models.CSharp.Builder
+  summary: Generates syntax from the provided model.
+  example: []
+  syntax:
+    content: public Task<string> BuildSyntaxAsync(CsModel sourceModel, ISourceManager manager, int indentLevel)
+    parameters:
+    - id: sourceModel
+      type: CodeFactory.WinVs.Models.CSharp.CsModel
+      description: Source C# model to generate syntax from.
+    - id: manager
+      type: CodeFactory.WinVs.Models.CSharp.Builder.ISourceManager
+      description: Source manager to provide access to namespace manager and namespace mapping information.
+    - id: indentLevel
+      type: System.Int32
+      description: The level to indent when generating the syntax.
+    return:
+      type: System.Threading.Tasks.Task{System.String}
+      description: Generated syntax.
+    content.vb: Public Function BuildSyntaxAsync(sourceModel As CsModel, manager As ISourceManager, indentLevel As Integer) As Task(Of String)
+  overload: CodeFactory.WinVs.Models.CSharp.Builder.BaseSyntaxBuilder.BuildSyntaxAsync*
+  implements:
+  - CodeFactory.WinVs.Models.CSharp.Builder.ISyntaxBuilder.BuildSyntaxAsync(CodeFactory.WinVs.Models.CSharp.CsModel,CodeFactory.WinVs.Models.CSharp.Builder.ISourceManager,System.Int32)
+  nameWithType.vb: BaseSyntaxBuilder.BuildSyntaxAsync(CsModel, ISourceManager, Integer)
+  fullName.vb: CodeFactory.WinVs.Models.CSharp.Builder.BaseSyntaxBuilder.BuildSyntaxAsync(CodeFactory.WinVs.Models.CSharp.CsModel, CodeFactory.WinVs.Models.CSharp.Builder.ISourceManager, Integer)
+  name.vb: BuildSyntaxAsync(CsModel, ISourceManager, Integer)
+- uid: CodeFactory.WinVs.Models.CSharp.Builder.BaseSyntaxBuilder.BuildSyntaxAsync(System.Collections.Generic.IEnumerable{CodeFactory.WinVs.Models.CSharp.Builder.NamedModel},CodeFactory.WinVs.Models.CSharp.Builder.ISourceManager,System.Int32)
+  commentId: M:CodeFactory.WinVs.Models.CSharp.Builder.BaseSyntaxBuilder.BuildSyntaxAsync(System.Collections.Generic.IEnumerable{CodeFactory.WinVs.Models.CSharp.Builder.NamedModel},CodeFactory.WinVs.Models.CSharp.Builder.ISourceManager,System.Int32)
+  id: BuildSyntaxAsync(System.Collections.Generic.IEnumerable{CodeFactory.WinVs.Models.CSharp.Builder.NamedModel},CodeFactory.WinVs.Models.CSharp.Builder.ISourceManager,System.Int32)
+  parent: CodeFactory.WinVs.Models.CSharp.Builder.BaseSyntaxBuilder
+  langs:
+  - csharp
+  - vb
+  name: BuildSyntaxAsync(IEnumerable<NamedModel>, ISourceManager, int)
+  nameWithType: BaseSyntaxBuilder.BuildSyntaxAsync(IEnumerable<NamedModel>, ISourceManager, int)
+  fullName: CodeFactory.WinVs.Models.CSharp.Builder.BaseSyntaxBuilder.BuildSyntaxAsync(System.Collections.Generic.IEnumerable<CodeFactory.WinVs.Models.CSharp.Builder.NamedModel>, CodeFactory.WinVs.Models.CSharp.Builder.ISourceManager, int)
+  type: Method
+  source:
+    href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/e63c05962945f61f2329e19d324f24a768806f18/Src/CodeFactoryForWindows/CodeFactory.WinVs/Models/CSharp/Builder/BaseSyntaxBuilder.cs
+  assemblies:
+  - CodeFactory.WinVs
+  namespace: CodeFactory.WinVs.Models.CSharp.Builder
+  summary: Generates syntax from the provided model.
+  example: []
+  syntax:
+    content: public Task<string> BuildSyntaxAsync(IEnumerable<NamedModel> sourceModels, ISourceManager manager, int indentLevel)
+    parameters:
+    - id: sourceModels
+      type: System.Collections.Generic.IEnumerable{CodeFactory.WinVs.Models.CSharp.Builder.NamedModel}
+      description: Enumeration of named source C# models to generate syntax from.
+    - id: manager
+      type: CodeFactory.WinVs.Models.CSharp.Builder.ISourceManager
+      description: Source manager to provide access to namespace manager and namespace mapping information.
+    - id: indentLevel
+      type: System.Int32
+      description: The level to indent when generating the syntax.
+    return:
+      type: System.Threading.Tasks.Task{System.String}
+      description: Generated syntax.
+    content.vb: Public Function BuildSyntaxAsync(sourceModels As IEnumerable(Of NamedModel), manager As ISourceManager, indentLevel As Integer) As Task(Of String)
+  overload: CodeFactory.WinVs.Models.CSharp.Builder.BaseSyntaxBuilder.BuildSyntaxAsync*
+  implements:
+  - CodeFactory.WinVs.Models.CSharp.Builder.ISyntaxBuilder.BuildSyntaxAsync(System.Collections.Generic.IEnumerable{CodeFactory.WinVs.Models.CSharp.Builder.NamedModel},CodeFactory.WinVs.Models.CSharp.Builder.ISourceManager,System.Int32)
+  nameWithType.vb: BaseSyntaxBuilder.BuildSyntaxAsync(IEnumerable(Of NamedModel), ISourceManager, Integer)
+  fullName.vb: CodeFactory.WinVs.Models.CSharp.Builder.BaseSyntaxBuilder.BuildSyntaxAsync(System.Collections.Generic.IEnumerable(Of CodeFactory.WinVs.Models.CSharp.Builder.NamedModel), CodeFactory.WinVs.Models.CSharp.Builder.ISourceManager, Integer)
+  name.vb: BuildSyntaxAsync(IEnumerable(Of NamedModel), ISourceManager, Integer)
+- uid: CodeFactory.WinVs.Models.CSharp.Builder.BaseSyntaxBuilder.GenerateBuildSyntaxAsync(CodeFactory.WinVs.Models.CSharp.Builder.ISourceManager,System.Int32,CodeFactory.WinVs.Models.CSharp.CsModel,System.Collections.Generic.IEnumerable{CodeFactory.WinVs.Models.CSharp.Builder.NamedModel})
+  commentId: M:CodeFactory.WinVs.Models.CSharp.Builder.BaseSyntaxBuilder.GenerateBuildSyntaxAsync(CodeFactory.WinVs.Models.CSharp.Builder.ISourceManager,System.Int32,CodeFactory.WinVs.Models.CSharp.CsModel,System.Collections.Generic.IEnumerable{CodeFactory.WinVs.Models.CSharp.Builder.NamedModel})
+  id: GenerateBuildSyntaxAsync(CodeFactory.WinVs.Models.CSharp.Builder.ISourceManager,System.Int32,CodeFactory.WinVs.Models.CSharp.CsModel,System.Collections.Generic.IEnumerable{CodeFactory.WinVs.Models.CSharp.Builder.NamedModel})
+  parent: CodeFactory.WinVs.Models.CSharp.Builder.BaseSyntaxBuilder
+  langs:
+  - csharp
+  - vb
+  name: GenerateBuildSyntaxAsync(ISourceManager, int, CsModel, IEnumerable<NamedModel>)
+  nameWithType: BaseSyntaxBuilder.GenerateBuildSyntaxAsync(ISourceManager, int, CsModel, IEnumerable<NamedModel>)
+  fullName: CodeFactory.WinVs.Models.CSharp.Builder.BaseSyntaxBuilder.GenerateBuildSyntaxAsync(CodeFactory.WinVs.Models.CSharp.Builder.ISourceManager, int, CodeFactory.WinVs.Models.CSharp.CsModel, System.Collections.Generic.IEnumerable<CodeFactory.WinVs.Models.CSharp.Builder.NamedModel>)
+  type: Method
+  source:
+    href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/e63c05962945f61f2329e19d324f24a768806f18/Src/CodeFactoryForWindows/CodeFactory.WinVs/Models/CSharp/Builder/BaseSyntaxBuilder.cs
+  assemblies:
+  - CodeFactory.WinVs
+  namespace: CodeFactory.WinVs.Models.CSharp.Builder
+  summary: Generates syntax from the provided model.
+  example: []
+  syntax:
+    content: protected abstract Task<string> GenerateBuildSyntaxAsync(ISourceManager manager, int indentLevel, CsModel sourceModel = null, IEnumerable<NamedModel> sourceModels = null)
+    parameters:
+    - id: manager
+      type: CodeFactory.WinVs.Models.CSharp.Builder.ISourceManager
+      description: Source manager to provide access to namespace manager and namespace mapping information.
+    - id: indentLevel
+      type: System.Int32
+      description: The level to indent when generating the syntax.
+    - id: sourceModel
+      type: CodeFactory.WinVs.Models.CSharp.CsModel
+      description: Optional, source C# model to generate syntax from, default is null.
+    - id: sourceModels
+      type: System.Collections.Generic.IEnumerable{CodeFactory.WinVs.Models.CSharp.Builder.NamedModel}
+      description: Optional, enumeration of named source C# models to generate syntax from, default is null.
+    return:
+      type: System.Threading.Tasks.Task{System.String}
+      description: Generated syntax.
+    content.vb: Protected MustOverride Function GenerateBuildSyntaxAsync(manager As ISourceManager, indentLevel As Integer, sourceModel As CsModel = Nothing, sourceModels As IEnumerable(Of NamedModel) = Nothing) As Task(Of String)
+  overload: CodeFactory.WinVs.Models.CSharp.Builder.BaseSyntaxBuilder.GenerateBuildSyntaxAsync*
+  nameWithType.vb: BaseSyntaxBuilder.GenerateBuildSyntaxAsync(ISourceManager, Integer, CsModel, IEnumerable(Of NamedModel))
+  fullName.vb: CodeFactory.WinVs.Models.CSharp.Builder.BaseSyntaxBuilder.GenerateBuildSyntaxAsync(CodeFactory.WinVs.Models.CSharp.Builder.ISourceManager, Integer, CodeFactory.WinVs.Models.CSharp.CsModel, System.Collections.Generic.IEnumerable(Of CodeFactory.WinVs.Models.CSharp.Builder.NamedModel))
+  name.vb: GenerateBuildSyntaxAsync(ISourceManager, Integer, CsModel, IEnumerable(Of NamedModel))
+- uid: CodeFactory.WinVs.Models.CSharp.Builder.BaseSyntaxBuilder.#ctor
+  commentId: M:CodeFactory.WinVs.Models.CSharp.Builder.BaseSyntaxBuilder.#ctor
+  id: '#ctor'
+  parent: CodeFactory.WinVs.Models.CSharp.Builder.BaseSyntaxBuilder
+  langs:
+  - csharp
+  - vb
+  name: BaseSyntaxBuilder()
+  nameWithType: BaseSyntaxBuilder.BaseSyntaxBuilder()
+  fullName: CodeFactory.WinVs.Models.CSharp.Builder.BaseSyntaxBuilder.BaseSyntaxBuilder()
+  type: Constructor
+  source:
+    href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/e63c05962945f61f2329e19d324f24a768806f18/Src/CodeFactoryForWindows/CodeFactory.WinVs/Models/CSharp/Builder/BaseSyntaxBuilder.cs
+  assemblies:
+  - CodeFactory.WinVs
+  namespace: CodeFactory.WinVs.Models.CSharp.Builder
+  syntax:
+    content: protected BaseSyntaxBuilder()
+    content.vb: Protected Sub New()
+  overload: CodeFactory.WinVs.Models.CSharp.Builder.BaseSyntaxBuilder.#ctor*
+  nameWithType.vb: BaseSyntaxBuilder.New()
+  fullName.vb: CodeFactory.WinVs.Models.CSharp.Builder.BaseSyntaxBuilder.New()
+  name.vb: New()
+- uid: CodeFactory.WinVs.Models.CSharp.Builder.BaseSyntaxBuilder.BuilderType
+  commentId: P:CodeFactory.WinVs.Models.CSharp.Builder.BaseSyntaxBuilder.BuilderType
+  id: BuilderType
+  parent: CodeFactory.WinVs.Models.CSharp.Builder.BaseSyntaxBuilder
+  langs:
+  - csharp
+  - vb
+  name: BuilderType
+  nameWithType: BaseSyntaxBuilder.BuilderType
+  fullName: CodeFactory.WinVs.Models.CSharp.Builder.BaseSyntaxBuilder.BuilderType
+  type: Property
+  source:
+    href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/e63c05962945f61f2329e19d324f24a768806f18/Src/CodeFactoryForWindows/CodeFactory.WinVs/Models/CSharp/Builder/BaseSyntaxBuilder.cs
+  assemblies:
+  - CodeFactory.WinVs
+  namespace: CodeFactory.WinVs.Models.CSharp.Builder
+  summary: The type of builder that has been implemented.
+  example: []
+  syntax:
+    content: public BuilderType BuilderType { get; }
+    parameters: []
+    return:
+      type: CodeFactory.WinVs.Models.CSharp.Builder.BuilderType
+    content.vb: Public ReadOnly Property BuilderType As BuilderType
+  overload: CodeFactory.WinVs.Models.CSharp.Builder.BaseSyntaxBuilder.BuilderType*
+  implements:
+  - CodeFactory.WinVs.Models.CSharp.Builder.IBuilder.BuilderType
+references:
+- uid: CodeFactory.WinVs.Models.CSharp.Builder
+  commentId: N:CodeFactory.WinVs.Models.CSharp.Builder
+  isExternal: true
+  href: CodeFactory.html
+  name: CodeFactory.WinVs.Models.CSharp.Builder
+  nameWithType: CodeFactory.WinVs.Models.CSharp.Builder
+  fullName: CodeFactory.WinVs.Models.CSharp.Builder
+  spec.csharp:
+  - uid: CodeFactory
+    name: CodeFactory
+    isExternal: true
+    href: CodeFactory.html
+  - name: .
+  - uid: CodeFactory.WinVs
+    name: WinVs
+    isExternal: true
+    href: CodeFactory.WinVs.html
+  - name: .
+  - uid: CodeFactory.WinVs.Models
+    name: Models
+    isExternal: true
+    href: CodeFactory.WinVs.Models.html
+  - name: .
+  - uid: CodeFactory.WinVs.Models.CSharp
+    name: CSharp
+    isExternal: true
+    href: CodeFactory.WinVs.Models.CSharp.html
+  - name: .
+  - uid: CodeFactory.WinVs.Models.CSharp.Builder
+    name: Builder
+    isExternal: true
+    href: CodeFactory.WinVs.Models.CSharp.Builder.html
+  spec.vb:
+  - uid: CodeFactory
+    name: CodeFactory
+    isExternal: true
+    href: CodeFactory.html
+  - name: .
+  - uid: CodeFactory.WinVs
+    name: WinVs
+    isExternal: true
+    href: CodeFactory.WinVs.html
+  - name: .
+  - uid: CodeFactory.WinVs.Models
+    name: Models
+    isExternal: true
+    href: CodeFactory.WinVs.Models.html
+  - name: .
+  - uid: CodeFactory.WinVs.Models.CSharp
+    name: CSharp
+    isExternal: true
+    href: CodeFactory.WinVs.Models.CSharp.html
+  - name: .
+  - uid: CodeFactory.WinVs.Models.CSharp.Builder
+    name: Builder
+    isExternal: true
+    href: CodeFactory.WinVs.Models.CSharp.Builder.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: CodeFactory.WinVs.Models.CSharp.Builder.ISyntaxBuilder
+  commentId: T:CodeFactory.WinVs.Models.CSharp.Builder.ISyntaxBuilder
+  parent: CodeFactory.WinVs.Models.CSharp.Builder
+  isExternal: true
+  href: CodeFactory.WinVs.Models.CSharp.Builder.ISyntaxBuilder.html
+  name: ISyntaxBuilder
+  nameWithType: ISyntaxBuilder
+  fullName: CodeFactory.WinVs.Models.CSharp.Builder.ISyntaxBuilder
+- uid: CodeFactory.WinVs.Models.CSharp.Builder.IBuilder
+  commentId: T:CodeFactory.WinVs.Models.CSharp.Builder.IBuilder
+  parent: CodeFactory.WinVs.Models.CSharp.Builder
+  isExternal: true
+  href: CodeFactory.WinVs.Models.CSharp.Builder.IBuilder.html
+  name: IBuilder
+  nameWithType: IBuilder
+  fullName: CodeFactory.WinVs.Models.CSharp.Builder.IBuilder
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: CodeFactory.WinVs.Models.CSharp.Builder.BaseSyntaxBuilder.BuildSyntaxAsync*
+  commentId: Overload:CodeFactory.WinVs.Models.CSharp.Builder.BaseSyntaxBuilder.BuildSyntaxAsync
+  isExternal: true
+  href: CodeFactory.WinVs.Models.CSharp.Builder.BaseSyntaxBuilder.html#CodeFactory_WinVs_Models_CSharp_Builder_BaseSyntaxBuilder_BuildSyntaxAsync_CodeFactory_WinVs_Models_CSharp_CsModel_CodeFactory_WinVs_Models_CSharp_Builder_ISourceManager_System_Int32_
+  name: BuildSyntaxAsync
+  nameWithType: BaseSyntaxBuilder.BuildSyntaxAsync
+  fullName: CodeFactory.WinVs.Models.CSharp.Builder.BaseSyntaxBuilder.BuildSyntaxAsync
+- uid: CodeFactory.WinVs.Models.CSharp.Builder.ISyntaxBuilder.BuildSyntaxAsync(CodeFactory.WinVs.Models.CSharp.CsModel,CodeFactory.WinVs.Models.CSharp.Builder.ISourceManager,System.Int32)
+  commentId: M:CodeFactory.WinVs.Models.CSharp.Builder.ISyntaxBuilder.BuildSyntaxAsync(CodeFactory.WinVs.Models.CSharp.CsModel,CodeFactory.WinVs.Models.CSharp.Builder.ISourceManager,System.Int32)
+  parent: CodeFactory.WinVs.Models.CSharp.Builder.ISyntaxBuilder
+  isExternal: true
+  href: CodeFactory.WinVs.Models.CSharp.Builder.ISyntaxBuilder.html#CodeFactory_WinVs_Models_CSharp_Builder_ISyntaxBuilder_BuildSyntaxAsync_CodeFactory_WinVs_Models_CSharp_CsModel_CodeFactory_WinVs_Models_CSharp_Builder_ISourceManager_System_Int32_
+  name: BuildSyntaxAsync(CsModel, ISourceManager, int)
+  nameWithType: ISyntaxBuilder.BuildSyntaxAsync(CsModel, ISourceManager, int)
+  fullName: CodeFactory.WinVs.Models.CSharp.Builder.ISyntaxBuilder.BuildSyntaxAsync(CodeFactory.WinVs.Models.CSharp.CsModel, CodeFactory.WinVs.Models.CSharp.Builder.ISourceManager, int)
+  nameWithType.vb: ISyntaxBuilder.BuildSyntaxAsync(CsModel, ISourceManager, Integer)
+  fullName.vb: CodeFactory.WinVs.Models.CSharp.Builder.ISyntaxBuilder.BuildSyntaxAsync(CodeFactory.WinVs.Models.CSharp.CsModel, CodeFactory.WinVs.Models.CSharp.Builder.ISourceManager, Integer)
+  name.vb: BuildSyntaxAsync(CsModel, ISourceManager, Integer)
+  spec.csharp:
+  - uid: CodeFactory.WinVs.Models.CSharp.Builder.ISyntaxBuilder.BuildSyntaxAsync(CodeFactory.WinVs.Models.CSharp.CsModel,CodeFactory.WinVs.Models.CSharp.Builder.ISourceManager,System.Int32)
+    name: BuildSyntaxAsync
+    isExternal: true
+    href: CodeFactory.WinVs.Models.CSharp.Builder.ISyntaxBuilder.html#CodeFactory_WinVs_Models_CSharp_Builder_ISyntaxBuilder_BuildSyntaxAsync_CodeFactory_WinVs_Models_CSharp_CsModel_CodeFactory_WinVs_Models_CSharp_Builder_ISourceManager_System_Int32_
+  - name: (
+  - uid: CodeFactory.WinVs.Models.CSharp.CsModel
+    name: CsModel
+    isExternal: true
+    href: CodeFactory.WinVs.Models.CSharp.CsModel.html
+  - name: ','
+  - name: " "
+  - uid: CodeFactory.WinVs.Models.CSharp.Builder.ISourceManager
+    name: ISourceManager
+    isExternal: true
+    href: CodeFactory.WinVs.Models.CSharp.Builder.ISourceManager.html
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: CodeFactory.WinVs.Models.CSharp.Builder.ISyntaxBuilder.BuildSyntaxAsync(CodeFactory.WinVs.Models.CSharp.CsModel,CodeFactory.WinVs.Models.CSharp.Builder.ISourceManager,System.Int32)
+    name: BuildSyntaxAsync
+    isExternal: true
+    href: CodeFactory.WinVs.Models.CSharp.Builder.ISyntaxBuilder.html#CodeFactory_WinVs_Models_CSharp_Builder_ISyntaxBuilder_BuildSyntaxAsync_CodeFactory_WinVs_Models_CSharp_CsModel_CodeFactory_WinVs_Models_CSharp_Builder_ISourceManager_System_Int32_
+  - name: (
+  - uid: CodeFactory.WinVs.Models.CSharp.CsModel
+    name: CsModel
+    isExternal: true
+    href: CodeFactory.WinVs.Models.CSharp.CsModel.html
+  - name: ','
+  - name: " "
+  - uid: CodeFactory.WinVs.Models.CSharp.Builder.ISourceManager
+    name: ISourceManager
+    isExternal: true
+    href: CodeFactory.WinVs.Models.CSharp.Builder.ISourceManager.html
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: CodeFactory.WinVs.Models.CSharp.CsModel
+  commentId: T:CodeFactory.WinVs.Models.CSharp.CsModel
+  parent: CodeFactory.WinVs.Models.CSharp
+  isExternal: true
+  href: CodeFactory.WinVs.Models.CSharp.CsModel.html
+  name: CsModel
+  nameWithType: CsModel
+  fullName: CodeFactory.WinVs.Models.CSharp.CsModel
+- uid: CodeFactory.WinVs.Models.CSharp.Builder.ISourceManager
+  commentId: T:CodeFactory.WinVs.Models.CSharp.Builder.ISourceManager
+  parent: CodeFactory.WinVs.Models.CSharp.Builder
+  isExternal: true
+  href: CodeFactory.WinVs.Models.CSharp.Builder.ISourceManager.html
+  name: ISourceManager
+  nameWithType: ISourceManager
+  fullName: CodeFactory.WinVs.Models.CSharp.Builder.ISourceManager
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.Threading.Tasks.Task{System.String}
+  commentId: T:System.Threading.Tasks.Task{System.String}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<string>
+  nameWithType: Task<string>
+  fullName: System.Threading.Tasks.Task<string>
+  nameWithType.vb: Task(Of String)
+  fullName.vb: System.Threading.Tasks.Task(Of String)
+  name.vb: Task(Of String)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: CodeFactory.WinVs.Models.CSharp
+  commentId: N:CodeFactory.WinVs.Models.CSharp
+  isExternal: true
+  href: CodeFactory.html
+  name: CodeFactory.WinVs.Models.CSharp
+  nameWithType: CodeFactory.WinVs.Models.CSharp
+  fullName: CodeFactory.WinVs.Models.CSharp
+  spec.csharp:
+  - uid: CodeFactory
+    name: CodeFactory
+    isExternal: true
+    href: CodeFactory.html
+  - name: .
+  - uid: CodeFactory.WinVs
+    name: WinVs
+    isExternal: true
+    href: CodeFactory.WinVs.html
+  - name: .
+  - uid: CodeFactory.WinVs.Models
+    name: Models
+    isExternal: true
+    href: CodeFactory.WinVs.Models.html
+  - name: .
+  - uid: CodeFactory.WinVs.Models.CSharp
+    name: CSharp
+    isExternal: true
+    href: CodeFactory.WinVs.Models.CSharp.html
+  spec.vb:
+  - uid: CodeFactory
+    name: CodeFactory
+    isExternal: true
+    href: CodeFactory.html
+  - name: .
+  - uid: CodeFactory.WinVs
+    name: WinVs
+    isExternal: true
+    href: CodeFactory.WinVs.html
+  - name: .
+  - uid: CodeFactory.WinVs.Models
+    name: Models
+    isExternal: true
+    href: CodeFactory.WinVs.Models.html
+  - name: .
+  - uid: CodeFactory.WinVs.Models.CSharp
+    name: CSharp
+    isExternal: true
+    href: CodeFactory.WinVs.Models.CSharp.html
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: CodeFactory.WinVs.Models.CSharp.Builder.ISyntaxBuilder.BuildSyntaxAsync(System.Collections.Generic.IEnumerable{CodeFactory.WinVs.Models.CSharp.Builder.NamedModel},CodeFactory.WinVs.Models.CSharp.Builder.ISourceManager,System.Int32)
+  commentId: M:CodeFactory.WinVs.Models.CSharp.Builder.ISyntaxBuilder.BuildSyntaxAsync(System.Collections.Generic.IEnumerable{CodeFactory.WinVs.Models.CSharp.Builder.NamedModel},CodeFactory.WinVs.Models.CSharp.Builder.ISourceManager,System.Int32)
+  parent: CodeFactory.WinVs.Models.CSharp.Builder.ISyntaxBuilder
+  isExternal: true
+  href: CodeFactory.WinVs.Models.CSharp.Builder.ISyntaxBuilder.html#CodeFactory_WinVs_Models_CSharp_Builder_ISyntaxBuilder_BuildSyntaxAsync_System_Collections_Generic_IEnumerable_CodeFactory_WinVs_Models_CSharp_Builder_NamedModel__CodeFactory_WinVs_Models_CSharp_Builder_ISourceManager_System_Int32_
+  name: BuildSyntaxAsync(IEnumerable<NamedModel>, ISourceManager, int)
+  nameWithType: ISyntaxBuilder.BuildSyntaxAsync(IEnumerable<NamedModel>, ISourceManager, int)
+  fullName: CodeFactory.WinVs.Models.CSharp.Builder.ISyntaxBuilder.BuildSyntaxAsync(System.Collections.Generic.IEnumerable<CodeFactory.WinVs.Models.CSharp.Builder.NamedModel>, CodeFactory.WinVs.Models.CSharp.Builder.ISourceManager, int)
+  nameWithType.vb: ISyntaxBuilder.BuildSyntaxAsync(IEnumerable(Of NamedModel), ISourceManager, Integer)
+  fullName.vb: CodeFactory.WinVs.Models.CSharp.Builder.ISyntaxBuilder.BuildSyntaxAsync(System.Collections.Generic.IEnumerable(Of CodeFactory.WinVs.Models.CSharp.Builder.NamedModel), CodeFactory.WinVs.Models.CSharp.Builder.ISourceManager, Integer)
+  name.vb: BuildSyntaxAsync(IEnumerable(Of NamedModel), ISourceManager, Integer)
+  spec.csharp:
+  - uid: CodeFactory.WinVs.Models.CSharp.Builder.ISyntaxBuilder.BuildSyntaxAsync(System.Collections.Generic.IEnumerable{CodeFactory.WinVs.Models.CSharp.Builder.NamedModel},CodeFactory.WinVs.Models.CSharp.Builder.ISourceManager,System.Int32)
+    name: BuildSyntaxAsync
+    isExternal: true
+    href: CodeFactory.WinVs.Models.CSharp.Builder.ISyntaxBuilder.html#CodeFactory_WinVs_Models_CSharp_Builder_ISyntaxBuilder_BuildSyntaxAsync_System_Collections_Generic_IEnumerable_CodeFactory_WinVs_Models_CSharp_Builder_NamedModel__CodeFactory_WinVs_Models_CSharp_Builder_ISourceManager_System_Int32_
+  - name: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: CodeFactory.WinVs.Models.CSharp.Builder.NamedModel
+    name: NamedModel
+    isExternal: true
+    href: CodeFactory.WinVs.Models.CSharp.Builder.NamedModel.html
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: CodeFactory.WinVs.Models.CSharp.Builder.ISourceManager
+    name: ISourceManager
+    isExternal: true
+    href: CodeFactory.WinVs.Models.CSharp.Builder.ISourceManager.html
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: CodeFactory.WinVs.Models.CSharp.Builder.ISyntaxBuilder.BuildSyntaxAsync(System.Collections.Generic.IEnumerable{CodeFactory.WinVs.Models.CSharp.Builder.NamedModel},CodeFactory.WinVs.Models.CSharp.Builder.ISourceManager,System.Int32)
+    name: BuildSyntaxAsync
+    isExternal: true
+    href: CodeFactory.WinVs.Models.CSharp.Builder.ISyntaxBuilder.html#CodeFactory_WinVs_Models_CSharp_Builder_ISyntaxBuilder_BuildSyntaxAsync_System_Collections_Generic_IEnumerable_CodeFactory_WinVs_Models_CSharp_Builder_NamedModel__CodeFactory_WinVs_Models_CSharp_Builder_ISourceManager_System_Int32_
+  - name: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: CodeFactory.WinVs.Models.CSharp.Builder.NamedModel
+    name: NamedModel
+    isExternal: true
+    href: CodeFactory.WinVs.Models.CSharp.Builder.NamedModel.html
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: CodeFactory.WinVs.Models.CSharp.Builder.ISourceManager
+    name: ISourceManager
+    isExternal: true
+    href: CodeFactory.WinVs.Models.CSharp.Builder.ISourceManager.html
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: System.Collections.Generic.IEnumerable{CodeFactory.WinVs.Models.CSharp.Builder.NamedModel}
+  commentId: T:System.Collections.Generic.IEnumerable{CodeFactory.WinVs.Models.CSharp.Builder.NamedModel}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<NamedModel>
+  nameWithType: IEnumerable<NamedModel>
+  fullName: System.Collections.Generic.IEnumerable<CodeFactory.WinVs.Models.CSharp.Builder.NamedModel>
+  nameWithType.vb: IEnumerable(Of NamedModel)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of CodeFactory.WinVs.Models.CSharp.Builder.NamedModel)
+  name.vb: IEnumerable(Of NamedModel)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: CodeFactory.WinVs.Models.CSharp.Builder.NamedModel
+    name: NamedModel
+    isExternal: true
+    href: CodeFactory.WinVs.Models.CSharp.Builder.NamedModel.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: CodeFactory.WinVs.Models.CSharp.Builder.NamedModel
+    name: NamedModel
+    isExternal: true
+    href: CodeFactory.WinVs.Models.CSharp.Builder.NamedModel.html
+  - name: )
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: CodeFactory.WinVs.Models.CSharp.Builder.BaseSyntaxBuilder.GenerateBuildSyntaxAsync*
+  commentId: Overload:CodeFactory.WinVs.Models.CSharp.Builder.BaseSyntaxBuilder.GenerateBuildSyntaxAsync
+  isExternal: true
+  href: CodeFactory.WinVs.Models.CSharp.Builder.BaseSyntaxBuilder.html#CodeFactory_WinVs_Models_CSharp_Builder_BaseSyntaxBuilder_GenerateBuildSyntaxAsync_CodeFactory_WinVs_Models_CSharp_Builder_ISourceManager_System_Int32_CodeFactory_WinVs_Models_CSharp_CsModel_System_Collections_Generic_IEnumerable_CodeFactory_WinVs_Models_CSharp_Builder_NamedModel__
+  name: GenerateBuildSyntaxAsync
+  nameWithType: BaseSyntaxBuilder.GenerateBuildSyntaxAsync
+  fullName: CodeFactory.WinVs.Models.CSharp.Builder.BaseSyntaxBuilder.GenerateBuildSyntaxAsync
+- uid: CodeFactory.WinVs.Models.CSharp.Builder.BaseSyntaxBuilder.#ctor*
+  commentId: Overload:CodeFactory.WinVs.Models.CSharp.Builder.BaseSyntaxBuilder.#ctor
+  isExternal: true
+  href: CodeFactory.WinVs.Models.CSharp.Builder.BaseSyntaxBuilder.html#CodeFactory_WinVs_Models_CSharp_Builder_BaseSyntaxBuilder__ctor
+  name: BaseSyntaxBuilder
+  nameWithType: BaseSyntaxBuilder.BaseSyntaxBuilder
+  fullName: CodeFactory.WinVs.Models.CSharp.Builder.BaseSyntaxBuilder.BaseSyntaxBuilder
+  nameWithType.vb: BaseSyntaxBuilder.New
+  fullName.vb: CodeFactory.WinVs.Models.CSharp.Builder.BaseSyntaxBuilder.New
+  name.vb: New
+- uid: CodeFactory.WinVs.Models.CSharp.Builder.BaseSyntaxBuilder.BuilderType*
+  commentId: Overload:CodeFactory.WinVs.Models.CSharp.Builder.BaseSyntaxBuilder.BuilderType
+  isExternal: true
+  href: CodeFactory.WinVs.Models.CSharp.Builder.BaseSyntaxBuilder.html#CodeFactory_WinVs_Models_CSharp_Builder_BaseSyntaxBuilder_BuilderType
+  name: BuilderType
+  nameWithType: BaseSyntaxBuilder.BuilderType
+  fullName: CodeFactory.WinVs.Models.CSharp.Builder.BaseSyntaxBuilder.BuilderType
+- uid: CodeFactory.WinVs.Models.CSharp.Builder.IBuilder.BuilderType
+  commentId: P:CodeFactory.WinVs.Models.CSharp.Builder.IBuilder.BuilderType
+  parent: CodeFactory.WinVs.Models.CSharp.Builder.IBuilder
+  isExternal: true
+  href: CodeFactory.WinVs.Models.CSharp.Builder.IBuilder.html#CodeFactory_WinVs_Models_CSharp_Builder_IBuilder_BuilderType
+  name: BuilderType
+  nameWithType: IBuilder.BuilderType
+  fullName: CodeFactory.WinVs.Models.CSharp.Builder.IBuilder.BuilderType
+- uid: CodeFactory.WinVs.Models.CSharp.Builder.BuilderType
+  commentId: T:CodeFactory.WinVs.Models.CSharp.Builder.BuilderType
+  parent: CodeFactory.WinVs.Models.CSharp.Builder
+  isExternal: true
+  href: CodeFactory.WinVs.Models.CSharp.Builder.BuilderType.html
+  name: BuilderType
+  nameWithType: BuilderType
+  fullName: CodeFactory.WinVs.Models.CSharp.Builder.BuilderType

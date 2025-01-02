@@ -1,0 +1,745 @@
+### YamlMime:ManagedReference
+items:
+- uid: System.Text.Json.JsonProperty
+  commentId: T:System.Text.Json.JsonProperty
+  id: JsonProperty
+  parent: System.Text.Json
+  children:
+  - System.Text.Json.JsonProperty.Name
+  - System.Text.Json.JsonProperty.NameEquals(System.ReadOnlySpan{System.Byte})
+  - System.Text.Json.JsonProperty.NameEquals(System.ReadOnlySpan{System.Char})
+  - System.Text.Json.JsonProperty.NameEquals(System.String)
+  - System.Text.Json.JsonProperty.ToString
+  - System.Text.Json.JsonProperty.Value
+  - System.Text.Json.JsonProperty.WriteTo(System.Text.Json.Utf8JsonWriter)
+  langs:
+  - csharp
+  - vb
+  name: JsonProperty
+  nameWithType: JsonProperty
+  fullName: System.Text.Json.JsonProperty
+  type: Struct
+  assemblies:
+  - System.Text.Json
+  namespace: System.Text.Json
+  summary: Represents a single property for a JSON object.
+  example: []
+  syntax:
+    content: public readonly struct JsonProperty
+    content.vb: Public Structure JsonProperty
+  inheritedMembers:
+  - System.ValueType.Equals(System.Object)
+  - System.ValueType.GetHashCode
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetType
+- uid: System.Text.Json.JsonProperty.NameEquals(System.String)
+  commentId: M:System.Text.Json.JsonProperty.NameEquals(System.String)
+  id: NameEquals(System.String)
+  parent: System.Text.Json.JsonProperty
+  langs:
+  - csharp
+  - vb
+  name: NameEquals(string?)
+  nameWithType: JsonProperty.NameEquals(string?)
+  fullName: System.Text.Json.JsonProperty.NameEquals(string?)
+  type: Method
+  assemblies:
+  - System.Text.Json
+  namespace: System.Text.Json
+  summary: Compares the specified string to the name of this property.
+  example: []
+  syntax:
+    content: public bool NameEquals(string? text)
+    parameters:
+    - id: text
+      type: System.String
+      description: The text to compare against.
+    return:
+      type: System.Boolean
+      description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the name of this property matches <code class="paramref">text</code>; otherwise <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
+    content.vb: Public Function NameEquals(text As String) As Boolean
+  overload: System.Text.Json.JsonProperty.NameEquals*
+  exceptions:
+  - type: System.InvalidOperationException
+    commentId: T:System.InvalidOperationException
+    description: This value's <xref href="System.Type" data-throw-if-not-resolved="false"></xref> is not <xref href="System.Text.Json.JsonTokenType.PropertyName" data-throw-if-not-resolved="false"></xref>.
+  nameWithType.vb: JsonProperty.NameEquals(String)
+  fullName.vb: System.Text.Json.JsonProperty.NameEquals(String)
+  name.vb: NameEquals(String)
+- uid: System.Text.Json.JsonProperty.NameEquals(System.ReadOnlySpan{System.Byte})
+  commentId: M:System.Text.Json.JsonProperty.NameEquals(System.ReadOnlySpan{System.Byte})
+  id: NameEquals(System.ReadOnlySpan{System.Byte})
+  parent: System.Text.Json.JsonProperty
+  langs:
+  - csharp
+  - vb
+  name: NameEquals(ReadOnlySpan<byte>)
+  nameWithType: JsonProperty.NameEquals(ReadOnlySpan<byte>)
+  fullName: System.Text.Json.JsonProperty.NameEquals(System.ReadOnlySpan<byte>)
+  type: Method
+  assemblies:
+  - System.Text.Json
+  namespace: System.Text.Json
+  summary: Compares the specified UTF-8 encoded text to the name of this property.
+  example: []
+  syntax:
+    content: public bool NameEquals(ReadOnlySpan<byte> utf8Text)
+    parameters:
+    - id: utf8Text
+      type: System.ReadOnlySpan{System.Byte}
+      description: The UTF-8 encoded text to compare against.
+    return:
+      type: System.Boolean
+      description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the name of this property has the same UTF-8 encoding as <code class="paramref">utf8Text</code>; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
+    content.vb: Public Function NameEquals(utf8Text As ReadOnlySpan(Of Byte)) As Boolean
+  overload: System.Text.Json.JsonProperty.NameEquals*
+  exceptions:
+  - type: System.InvalidOperationException
+    commentId: T:System.InvalidOperationException
+    description: This value's <xref href="System.Type" data-throw-if-not-resolved="false"></xref> is not <xref href="System.Text.Json.JsonTokenType.PropertyName" data-throw-if-not-resolved="false"></xref>.
+  nameWithType.vb: JsonProperty.NameEquals(ReadOnlySpan(Of Byte))
+  fullName.vb: System.Text.Json.JsonProperty.NameEquals(System.ReadOnlySpan(Of Byte))
+  name.vb: NameEquals(ReadOnlySpan(Of Byte))
+- uid: System.Text.Json.JsonProperty.NameEquals(System.ReadOnlySpan{System.Char})
+  commentId: M:System.Text.Json.JsonProperty.NameEquals(System.ReadOnlySpan{System.Char})
+  id: NameEquals(System.ReadOnlySpan{System.Char})
+  parent: System.Text.Json.JsonProperty
+  langs:
+  - csharp
+  - vb
+  name: NameEquals(ReadOnlySpan<char>)
+  nameWithType: JsonProperty.NameEquals(ReadOnlySpan<char>)
+  fullName: System.Text.Json.JsonProperty.NameEquals(System.ReadOnlySpan<char>)
+  type: Method
+  assemblies:
+  - System.Text.Json
+  namespace: System.Text.Json
+  summary: Compares the specified text as a character span to the name of this property.
+  example: []
+  syntax:
+    content: public bool NameEquals(ReadOnlySpan<char> text)
+    parameters:
+    - id: text
+      type: System.ReadOnlySpan{System.Char}
+      description: The text to compare against.
+    return:
+      type: System.Boolean
+      description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the name of this property matches <code class="paramref">text</code>; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
+    content.vb: Public Function NameEquals(text As ReadOnlySpan(Of Char)) As Boolean
+  overload: System.Text.Json.JsonProperty.NameEquals*
+  exceptions:
+  - type: System.InvalidOperationException
+    commentId: T:System.InvalidOperationException
+    description: This value's <xref href="System.Type" data-throw-if-not-resolved="false"></xref> is not <xref href="System.Text.Json.JsonTokenType.PropertyName" data-throw-if-not-resolved="false"></xref>.
+  nameWithType.vb: JsonProperty.NameEquals(ReadOnlySpan(Of Char))
+  fullName.vb: System.Text.Json.JsonProperty.NameEquals(System.ReadOnlySpan(Of Char))
+  name.vb: NameEquals(ReadOnlySpan(Of Char))
+- uid: System.Text.Json.JsonProperty.WriteTo(System.Text.Json.Utf8JsonWriter)
+  commentId: M:System.Text.Json.JsonProperty.WriteTo(System.Text.Json.Utf8JsonWriter)
+  id: WriteTo(System.Text.Json.Utf8JsonWriter)
+  parent: System.Text.Json.JsonProperty
+  langs:
+  - csharp
+  - vb
+  name: WriteTo(Utf8JsonWriter)
+  nameWithType: JsonProperty.WriteTo(Utf8JsonWriter)
+  fullName: System.Text.Json.JsonProperty.WriteTo(System.Text.Json.Utf8JsonWriter)
+  type: Method
+  assemblies:
+  - System.Text.Json
+  namespace: System.Text.Json
+  summary: Writes the property to the provided writer as a named JSON object property.
+  example: []
+  syntax:
+    content: public void WriteTo(Utf8JsonWriter writer)
+    parameters:
+    - id: writer
+      type: System.Text.Json.Utf8JsonWriter
+      description: The writer to which to write the property.
+    content.vb: Public Sub WriteTo(writer As Utf8JsonWriter)
+  overload: System.Text.Json.JsonProperty.WriteTo*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: <code class="paramref">writer</code> is <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: <xref href="System.Text.Json.JsonProperty.Name" data-throw-if-not-resolved="false"></xref> is too large to be a JSON object property.
+  - type: System.InvalidOperationException
+    commentId: T:System.InvalidOperationException
+    description: The <xref href="System.Text.Json.JsonElement.ValueKind" data-throw-if-not-resolved="false"></xref> of this JSON property's <xref href="System.Text.Json.JsonProperty.Value" data-throw-if-not-resolved="false"></xref> would result in invalid JSON.
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: The parent <xref href="System.Text.Json.JsonDocument" data-throw-if-not-resolved="false"></xref> has been disposed.
+- uid: System.Text.Json.JsonProperty.ToString
+  commentId: M:System.Text.Json.JsonProperty.ToString
+  id: ToString
+  parent: System.Text.Json.JsonProperty
+  langs:
+  - csharp
+  - vb
+  name: ToString()
+  nameWithType: JsonProperty.ToString()
+  fullName: System.Text.Json.JsonProperty.ToString()
+  type: Method
+  assemblies:
+  - System.Text.Json
+  namespace: System.Text.Json
+  summary: Provides a string representation of the property for debugging purposes.
+  example: []
+  syntax:
+    content: public override string ToString()
+    return:
+      type: System.String
+      description: A string containing the uninterpreted value of the property, beginning at the declaring open-quote and ending at the last character that is part of the value.
+    content.vb: Public Overrides Function ToString() As String
+  overridden: System.ValueType.ToString
+  overload: System.Text.Json.JsonProperty.ToString*
+- uid: System.Text.Json.JsonProperty.Value
+  commentId: P:System.Text.Json.JsonProperty.Value
+  id: Value
+  parent: System.Text.Json.JsonProperty
+  langs:
+  - csharp
+  - vb
+  name: Value
+  nameWithType: JsonProperty.Value
+  fullName: System.Text.Json.JsonProperty.Value
+  type: Property
+  assemblies:
+  - System.Text.Json
+  namespace: System.Text.Json
+  summary: Gets the value of this property.
+  example: []
+  syntax:
+    content: public JsonElement Value { get; }
+    parameters: []
+    return:
+      type: System.Text.Json.JsonElement
+      description: The value of this property.
+    content.vb: Public ReadOnly Property Value As JsonElement
+  overload: System.Text.Json.JsonProperty.Value*
+- uid: System.Text.Json.JsonProperty.Name
+  commentId: P:System.Text.Json.JsonProperty.Name
+  id: Name
+  parent: System.Text.Json.JsonProperty
+  langs:
+  - csharp
+  - vb
+  name: Name
+  nameWithType: JsonProperty.Name
+  fullName: System.Text.Json.JsonProperty.Name
+  type: Property
+  assemblies:
+  - System.Text.Json
+  namespace: System.Text.Json
+  summary: Gets the name of this property.
+  example: []
+  syntax:
+    content: public string Name { get; }
+    parameters: []
+    return:
+      type: System.String
+      description: The name of this property.
+    content.vb: Public ReadOnly Property Name As String
+  overload: System.Text.Json.JsonProperty.Name*
+references:
+- uid: System.Text.Json
+  commentId: N:System.Text.Json
+  isExternal: true
+  href: System.html
+  name: System.Text.Json
+  nameWithType: System.Text.Json
+  fullName: System.Text.Json
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: System.html
+  - name: .
+  - uid: System.Text
+    name: Text
+    isExternal: true
+    href: System.Text.html
+  - name: .
+  - uid: System.Text.Json
+    name: Json
+    isExternal: true
+    href: System.Text.Json.html
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: System.html
+  - name: .
+  - uid: System.Text
+    name: Text
+    isExternal: true
+    href: System.Text.html
+  - name: .
+  - uid: System.Text.Json
+    name: Json
+    isExternal: true
+    href: System.Text.Json.html
+- uid: System.ValueType.Equals(System.Object)
+  commentId: M:System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  name: Equals(object)
+  nameWithType: ValueType.Equals(object)
+  fullName: System.ValueType.Equals(object)
+  nameWithType.vb: ValueType.Equals(Object)
+  fullName.vb: System.ValueType.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType.GetHashCode
+  commentId: M:System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  name: GetHashCode()
+  nameWithType: ValueType.GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.ValueType
+  commentId: T:System.ValueType
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype
+  name: ValueType
+  nameWithType: ValueType
+  fullName: System.ValueType
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Type
+  commentId: T:System.Type
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.type
+  name: Type
+  nameWithType: Type
+  fullName: System.Type
+- uid: System.Text.Json.JsonTokenType.PropertyName
+  commentId: F:System.Text.Json.JsonTokenType.PropertyName
+  isExternal: true
+  href: System.Text.Json.JsonTokenType.html#System_Text_Json_JsonTokenType_PropertyName
+  name: PropertyName
+  nameWithType: JsonTokenType.PropertyName
+  fullName: System.Text.Json.JsonTokenType.PropertyName
+- uid: System.InvalidOperationException
+  commentId: T:System.InvalidOperationException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.invalidoperationexception
+  name: InvalidOperationException
+  nameWithType: InvalidOperationException
+  fullName: System.InvalidOperationException
+- uid: System.Text.Json.JsonProperty.NameEquals*
+  commentId: Overload:System.Text.Json.JsonProperty.NameEquals
+  isExternal: true
+  href: System.Text.Json.JsonProperty.html#System_Text_Json_JsonProperty_NameEquals_System_String_
+  name: NameEquals
+  nameWithType: JsonProperty.NameEquals
+  fullName: System.Text.Json.JsonProperty.NameEquals
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System.ReadOnlySpan{System.Byte}
+  commentId: T:System.ReadOnlySpan{System.Byte}
+  parent: System
+  definition: System.ReadOnlySpan`1
+  href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  name: ReadOnlySpan<byte>
+  nameWithType: ReadOnlySpan<byte>
+  fullName: System.ReadOnlySpan<byte>
+  nameWithType.vb: ReadOnlySpan(Of Byte)
+  fullName.vb: System.ReadOnlySpan(Of Byte)
+  name.vb: ReadOnlySpan(Of Byte)
+  spec.csharp:
+  - uid: System.ReadOnlySpan`1
+    name: ReadOnlySpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  - name: <
+  - uid: System.Byte
+    name: byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: '>'
+  spec.vb:
+  - uid: System.ReadOnlySpan`1
+    name: ReadOnlySpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Byte
+    name: Byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: )
+- uid: System.ReadOnlySpan`1
+  commentId: T:System.ReadOnlySpan`1
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  name: ReadOnlySpan<T>
+  nameWithType: ReadOnlySpan<T>
+  fullName: System.ReadOnlySpan<T>
+  nameWithType.vb: ReadOnlySpan(Of T)
+  fullName.vb: System.ReadOnlySpan(Of T)
+  name.vb: ReadOnlySpan(Of T)
+  spec.csharp:
+  - uid: System.ReadOnlySpan`1
+    name: ReadOnlySpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.ReadOnlySpan`1
+    name: ReadOnlySpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.ReadOnlySpan{System.Char}
+  commentId: T:System.ReadOnlySpan{System.Char}
+  parent: System
+  definition: System.ReadOnlySpan`1
+  href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  name: ReadOnlySpan<char>
+  nameWithType: ReadOnlySpan<char>
+  fullName: System.ReadOnlySpan<char>
+  nameWithType.vb: ReadOnlySpan(Of Char)
+  fullName.vb: System.ReadOnlySpan(Of Char)
+  name.vb: ReadOnlySpan(Of Char)
+  spec.csharp:
+  - uid: System.ReadOnlySpan`1
+    name: ReadOnlySpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  - name: <
+  - uid: System.Char
+    name: char
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.char
+  - name: '>'
+  spec.vb:
+  - uid: System.ReadOnlySpan`1
+    name: ReadOnlySpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Char
+    name: Char
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.char
+  - name: )
+- uid: System.Text.Json.JsonProperty.Name
+  commentId: P:System.Text.Json.JsonProperty.Name
+  isExternal: true
+  href: System.Text.Json.JsonProperty.html#System_Text_Json_JsonProperty_Name
+  name: Name
+  nameWithType: JsonProperty.Name
+  fullName: System.Text.Json.JsonProperty.Name
+- uid: System.Text.Json.JsonElement.ValueKind
+  commentId: P:System.Text.Json.JsonElement.ValueKind
+  isExternal: true
+  href: System.Text.Json.JsonElement.html#System_Text_Json_JsonElement_ValueKind
+  name: ValueKind
+  nameWithType: JsonElement.ValueKind
+  fullName: System.Text.Json.JsonElement.ValueKind
+- uid: System.Text.Json.JsonProperty.Value
+  commentId: P:System.Text.Json.JsonProperty.Value
+  isExternal: true
+  href: System.Text.Json.JsonProperty.html#System_Text_Json_JsonProperty_Value
+  name: Value
+  nameWithType: JsonProperty.Value
+  fullName: System.Text.Json.JsonProperty.Value
+- uid: System.Text.Json.JsonDocument
+  commentId: T:System.Text.Json.JsonDocument
+  parent: System.Text.Json
+  isExternal: true
+  href: System.Text.Json.JsonDocument.html
+  name: JsonDocument
+  nameWithType: JsonDocument
+  fullName: System.Text.Json.JsonDocument
+- uid: System.ArgumentNullException
+  commentId: T:System.ArgumentNullException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.argumentnullexception
+  name: ArgumentNullException
+  nameWithType: ArgumentNullException
+  fullName: System.ArgumentNullException
+- uid: System.ArgumentException
+  commentId: T:System.ArgumentException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.argumentexception
+  name: ArgumentException
+  nameWithType: ArgumentException
+  fullName: System.ArgumentException
+- uid: System.ObjectDisposedException
+  commentId: T:System.ObjectDisposedException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.objectdisposedexception
+  name: ObjectDisposedException
+  nameWithType: ObjectDisposedException
+  fullName: System.ObjectDisposedException
+- uid: System.Text.Json.JsonProperty.WriteTo*
+  commentId: Overload:System.Text.Json.JsonProperty.WriteTo
+  isExternal: true
+  href: System.Text.Json.JsonProperty.html#System_Text_Json_JsonProperty_WriteTo_System_Text_Json_Utf8JsonWriter_
+  name: WriteTo
+  nameWithType: JsonProperty.WriteTo
+  fullName: System.Text.Json.JsonProperty.WriteTo
+- uid: System.Text.Json.Utf8JsonWriter
+  commentId: T:System.Text.Json.Utf8JsonWriter
+  parent: System.Text.Json
+  isExternal: true
+  href: System.Text.Json.Utf8JsonWriter.html
+  name: Utf8JsonWriter
+  nameWithType: Utf8JsonWriter
+  fullName: System.Text.Json.Utf8JsonWriter
+- uid: System.ValueType.ToString
+  commentId: M:System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  name: ToString()
+  nameWithType: ValueType.ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+- uid: System.Text.Json.JsonProperty.ToString*
+  commentId: Overload:System.Text.Json.JsonProperty.ToString
+  isExternal: true
+  href: System.Text.Json.JsonProperty.html#System_Text_Json_JsonProperty_ToString
+  name: ToString
+  nameWithType: JsonProperty.ToString
+  fullName: System.Text.Json.JsonProperty.ToString
+- uid: System.Text.Json.JsonProperty.Value*
+  commentId: Overload:System.Text.Json.JsonProperty.Value
+  isExternal: true
+  href: System.Text.Json.JsonProperty.html#System_Text_Json_JsonProperty_Value
+  name: Value
+  nameWithType: JsonProperty.Value
+  fullName: System.Text.Json.JsonProperty.Value
+- uid: System.Text.Json.JsonElement
+  commentId: T:System.Text.Json.JsonElement
+  parent: System.Text.Json
+  isExternal: true
+  href: System.Text.Json.JsonElement.html
+  name: JsonElement
+  nameWithType: JsonElement
+  fullName: System.Text.Json.JsonElement
+- uid: System.Text.Json.JsonProperty.Name*
+  commentId: Overload:System.Text.Json.JsonProperty.Name
+  isExternal: true
+  href: System.Text.Json.JsonProperty.html#System_Text_Json_JsonProperty_Name
+  name: Name
+  nameWithType: JsonProperty.Name
+  fullName: System.Text.Json.JsonProperty.Name

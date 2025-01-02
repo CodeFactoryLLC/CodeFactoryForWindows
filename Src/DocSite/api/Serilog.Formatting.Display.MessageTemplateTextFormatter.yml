@@ -1,0 +1,595 @@
+### YamlMime:ManagedReference
+items:
+- uid: Serilog.Formatting.Display.MessageTemplateTextFormatter
+  commentId: T:Serilog.Formatting.Display.MessageTemplateTextFormatter
+  id: MessageTemplateTextFormatter
+  parent: Serilog.Formatting.Display
+  children:
+  - Serilog.Formatting.Display.MessageTemplateTextFormatter.#ctor(System.String,System.IFormatProvider)
+  - Serilog.Formatting.Display.MessageTemplateTextFormatter.Format(Serilog.Events.LogEvent,System.IO.TextWriter)
+  langs:
+  - csharp
+  - vb
+  name: MessageTemplateTextFormatter
+  nameWithType: MessageTemplateTextFormatter
+  fullName: Serilog.Formatting.Display.MessageTemplateTextFormatter
+  type: Class
+  assemblies:
+  - Serilog
+  namespace: Serilog.Formatting.Display
+  summary: >-
+    A <xref href="Serilog.Formatting.ITextFormatter" data-throw-if-not-resolved="false"></xref> that supports the Serilog
+
+    message template format. Formatting log events for display
+
+    has a different set of requirements and expectations from
+
+    rendering the data within them. To meet this, the formatter
+
+    overrides some behavior: First, strings are always output
+
+    as literals (not quoted) unless some other format is applied
+
+    to them. Second, tokens without matching properties are skipped
+
+    rather than being written as raw text.
+  example: []
+  syntax:
+    content: 'public class MessageTemplateTextFormatter : ITextFormatter'
+    content.vb: Public Class MessageTemplateTextFormatter Implements ITextFormatter
+  inheritance:
+  - System.Object
+  implements:
+  - Serilog.Formatting.ITextFormatter
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: Serilog.Formatting.Display.MessageTemplateTextFormatter.#ctor(System.String,System.IFormatProvider)
+  commentId: M:Serilog.Formatting.Display.MessageTemplateTextFormatter.#ctor(System.String,System.IFormatProvider)
+  id: '#ctor(System.String,System.IFormatProvider)'
+  parent: Serilog.Formatting.Display.MessageTemplateTextFormatter
+  langs:
+  - csharp
+  - vb
+  name: MessageTemplateTextFormatter(string, IFormatProvider?)
+  nameWithType: MessageTemplateTextFormatter.MessageTemplateTextFormatter(string, IFormatProvider?)
+  fullName: Serilog.Formatting.Display.MessageTemplateTextFormatter.MessageTemplateTextFormatter(string, System.IFormatProvider?)
+  type: Constructor
+  assemblies:
+  - Serilog
+  namespace: Serilog.Formatting.Display
+  summary: Construct a <xref href="Serilog.Formatting.Display.MessageTemplateTextFormatter" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public MessageTemplateTextFormatter(string outputTemplate, IFormatProvider? formatProvider = null)
+    parameters:
+    - id: outputTemplate
+      type: System.String
+      description: >-
+        A message template describing the
+                    output messages.
+    - id: formatProvider
+      type: System.IFormatProvider
+      description: Supplies culture-specific formatting information, or null.
+    content.vb: Public Sub New(outputTemplate As String, formatProvider As IFormatProvider = Nothing)
+  overload: Serilog.Formatting.Display.MessageTemplateTextFormatter.#ctor*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: When <code class="paramref">outputTemplate</code> is <pre><code class="lang-csharp">null</code></pre>
+  nameWithType.vb: MessageTemplateTextFormatter.New(String, IFormatProvider)
+  fullName.vb: Serilog.Formatting.Display.MessageTemplateTextFormatter.New(String, System.IFormatProvider)
+  name.vb: New(String, IFormatProvider)
+- uid: Serilog.Formatting.Display.MessageTemplateTextFormatter.Format(Serilog.Events.LogEvent,System.IO.TextWriter)
+  commentId: M:Serilog.Formatting.Display.MessageTemplateTextFormatter.Format(Serilog.Events.LogEvent,System.IO.TextWriter)
+  id: Format(Serilog.Events.LogEvent,System.IO.TextWriter)
+  parent: Serilog.Formatting.Display.MessageTemplateTextFormatter
+  langs:
+  - csharp
+  - vb
+  name: Format(LogEvent, TextWriter)
+  nameWithType: MessageTemplateTextFormatter.Format(LogEvent, TextWriter)
+  fullName: Serilog.Formatting.Display.MessageTemplateTextFormatter.Format(Serilog.Events.LogEvent, System.IO.TextWriter)
+  type: Method
+  assemblies:
+  - Serilog
+  namespace: Serilog.Formatting.Display
+  summary: Format the log event into the output.
+  example: []
+  syntax:
+    content: public void Format(LogEvent logEvent, TextWriter output)
+    parameters:
+    - id: logEvent
+      type: Serilog.Events.LogEvent
+      description: The event to format.
+    - id: output
+      type: System.IO.TextWriter
+      description: The output.
+    content.vb: Public Sub Format(logEvent As LogEvent, output As TextWriter)
+  overload: Serilog.Formatting.Display.MessageTemplateTextFormatter.Format*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: When <code class="paramref">logEvent</code> is <pre><code class="lang-csharp">null</code></pre>
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: When <code class="paramref">output</code> is <pre><code class="lang-csharp">null</code></pre>
+  implements:
+  - Serilog.Formatting.ITextFormatter.Format(Serilog.Events.LogEvent,System.IO.TextWriter)
+references:
+- uid: Serilog.Formatting.ITextFormatter
+  commentId: T:Serilog.Formatting.ITextFormatter
+  parent: Serilog.Formatting
+  isExternal: true
+  href: Serilog.Formatting.ITextFormatter.html
+  name: ITextFormatter
+  nameWithType: ITextFormatter
+  fullName: Serilog.Formatting.ITextFormatter
+- uid: Serilog.Formatting.Display
+  commentId: N:Serilog.Formatting.Display
+  isExternal: true
+  href: Serilog.html
+  name: Serilog.Formatting.Display
+  nameWithType: Serilog.Formatting.Display
+  fullName: Serilog.Formatting.Display
+  spec.csharp:
+  - uid: Serilog
+    name: Serilog
+    isExternal: true
+    href: Serilog.html
+  - name: .
+  - uid: Serilog.Formatting
+    name: Formatting
+    isExternal: true
+    href: Serilog.Formatting.html
+  - name: .
+  - uid: Serilog.Formatting.Display
+    name: Display
+    isExternal: true
+    href: Serilog.Formatting.Display.html
+  spec.vb:
+  - uid: Serilog
+    name: Serilog
+    isExternal: true
+    href: Serilog.html
+  - name: .
+  - uid: Serilog.Formatting
+    name: Formatting
+    isExternal: true
+    href: Serilog.Formatting.html
+  - name: .
+  - uid: Serilog.Formatting.Display
+    name: Display
+    isExternal: true
+    href: Serilog.Formatting.Display.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: Serilog.Formatting
+  commentId: N:Serilog.Formatting
+  isExternal: true
+  href: Serilog.html
+  name: Serilog.Formatting
+  nameWithType: Serilog.Formatting
+  fullName: Serilog.Formatting
+  spec.csharp:
+  - uid: Serilog
+    name: Serilog
+    isExternal: true
+    href: Serilog.html
+  - name: .
+  - uid: Serilog.Formatting
+    name: Formatting
+    isExternal: true
+    href: Serilog.Formatting.html
+  spec.vb:
+  - uid: Serilog
+    name: Serilog
+    isExternal: true
+    href: Serilog.html
+  - name: .
+  - uid: Serilog.Formatting
+    name: Formatting
+    isExternal: true
+    href: Serilog.Formatting.html
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Serilog.Formatting.Display.MessageTemplateTextFormatter
+  commentId: T:Serilog.Formatting.Display.MessageTemplateTextFormatter
+  isExternal: true
+  href: Serilog.Formatting.Display.MessageTemplateTextFormatter.html
+  name: MessageTemplateTextFormatter
+  nameWithType: MessageTemplateTextFormatter
+  fullName: Serilog.Formatting.Display.MessageTemplateTextFormatter
+- uid: System.ArgumentNullException
+  commentId: T:System.ArgumentNullException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.argumentnullexception
+  name: ArgumentNullException
+  nameWithType: ArgumentNullException
+  fullName: System.ArgumentNullException
+- uid: Serilog.Formatting.Display.MessageTemplateTextFormatter.#ctor*
+  commentId: Overload:Serilog.Formatting.Display.MessageTemplateTextFormatter.#ctor
+  isExternal: true
+  href: Serilog.Formatting.Display.MessageTemplateTextFormatter.html#Serilog_Formatting_Display_MessageTemplateTextFormatter__ctor_System_String_System_IFormatProvider_
+  name: MessageTemplateTextFormatter
+  nameWithType: MessageTemplateTextFormatter.MessageTemplateTextFormatter
+  fullName: Serilog.Formatting.Display.MessageTemplateTextFormatter.MessageTemplateTextFormatter
+  nameWithType.vb: MessageTemplateTextFormatter.New
+  fullName.vb: Serilog.Formatting.Display.MessageTemplateTextFormatter.New
+  name.vb: New
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.IFormatProvider
+  commentId: T:System.IFormatProvider
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iformatprovider
+  name: IFormatProvider
+  nameWithType: IFormatProvider
+  fullName: System.IFormatProvider
+- uid: Serilog.Formatting.Display.MessageTemplateTextFormatter.Format*
+  commentId: Overload:Serilog.Formatting.Display.MessageTemplateTextFormatter.Format
+  isExternal: true
+  href: Serilog.Formatting.Display.MessageTemplateTextFormatter.html#Serilog_Formatting_Display_MessageTemplateTextFormatter_Format_Serilog_Events_LogEvent_System_IO_TextWriter_
+  name: Format
+  nameWithType: MessageTemplateTextFormatter.Format
+  fullName: Serilog.Formatting.Display.MessageTemplateTextFormatter.Format
+- uid: Serilog.Formatting.ITextFormatter.Format(Serilog.Events.LogEvent,System.IO.TextWriter)
+  commentId: M:Serilog.Formatting.ITextFormatter.Format(Serilog.Events.LogEvent,System.IO.TextWriter)
+  parent: Serilog.Formatting.ITextFormatter
+  isExternal: true
+  href: Serilog.Formatting.ITextFormatter.html#Serilog_Formatting_ITextFormatter_Format_Serilog_Events_LogEvent_System_IO_TextWriter_
+  name: Format(LogEvent, TextWriter)
+  nameWithType: ITextFormatter.Format(LogEvent, TextWriter)
+  fullName: Serilog.Formatting.ITextFormatter.Format(Serilog.Events.LogEvent, System.IO.TextWriter)
+  spec.csharp:
+  - uid: Serilog.Formatting.ITextFormatter.Format(Serilog.Events.LogEvent,System.IO.TextWriter)
+    name: Format
+    isExternal: true
+    href: Serilog.Formatting.ITextFormatter.html#Serilog_Formatting_ITextFormatter_Format_Serilog_Events_LogEvent_System_IO_TextWriter_
+  - name: (
+  - uid: Serilog.Events.LogEvent
+    name: LogEvent
+    isExternal: true
+    href: Serilog.Events.LogEvent.html
+  - name: ','
+  - name: " "
+  - uid: System.IO.TextWriter
+    name: TextWriter
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io.textwriter
+  - name: )
+  spec.vb:
+  - uid: Serilog.Formatting.ITextFormatter.Format(Serilog.Events.LogEvent,System.IO.TextWriter)
+    name: Format
+    isExternal: true
+    href: Serilog.Formatting.ITextFormatter.html#Serilog_Formatting_ITextFormatter_Format_Serilog_Events_LogEvent_System_IO_TextWriter_
+  - name: (
+  - uid: Serilog.Events.LogEvent
+    name: LogEvent
+    isExternal: true
+    href: Serilog.Events.LogEvent.html
+  - name: ','
+  - name: " "
+  - uid: System.IO.TextWriter
+    name: TextWriter
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io.textwriter
+  - name: )
+- uid: Serilog.Events.LogEvent
+  commentId: T:Serilog.Events.LogEvent
+  parent: Serilog.Events
+  isExternal: true
+  href: Serilog.Events.LogEvent.html
+  name: LogEvent
+  nameWithType: LogEvent
+  fullName: Serilog.Events.LogEvent
+- uid: System.IO.TextWriter
+  commentId: T:System.IO.TextWriter
+  parent: System.IO
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.io.textwriter
+  name: TextWriter
+  nameWithType: TextWriter
+  fullName: System.IO.TextWriter
+- uid: Serilog.Events
+  commentId: N:Serilog.Events
+  isExternal: true
+  href: Serilog.html
+  name: Serilog.Events
+  nameWithType: Serilog.Events
+  fullName: Serilog.Events
+  spec.csharp:
+  - uid: Serilog
+    name: Serilog
+    isExternal: true
+    href: Serilog.html
+  - name: .
+  - uid: Serilog.Events
+    name: Events
+    isExternal: true
+    href: Serilog.Events.html
+  spec.vb:
+  - uid: Serilog
+    name: Serilog
+    isExternal: true
+    href: Serilog.html
+  - name: .
+  - uid: Serilog.Events
+    name: Events
+    isExternal: true
+    href: Serilog.Events.html
+- uid: System.IO
+  commentId: N:System.IO
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.IO
+  nameWithType: System.IO
+  fullName: System.IO
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.IO
+    name: IO
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.IO
+    name: IO
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io

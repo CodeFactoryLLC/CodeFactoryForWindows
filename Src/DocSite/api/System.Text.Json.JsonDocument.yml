@@ -1,0 +1,1684 @@
+### YamlMime:ManagedReference
+items:
+- uid: System.Text.Json.JsonDocument
+  commentId: T:System.Text.Json.JsonDocument
+  id: JsonDocument
+  parent: System.Text.Json
+  children:
+  - System.Text.Json.JsonDocument.Dispose
+  - System.Text.Json.JsonDocument.Parse(System.Buffers.ReadOnlySequence{System.Byte},System.Text.Json.JsonDocumentOptions)
+  - System.Text.Json.JsonDocument.Parse(System.IO.Stream,System.Text.Json.JsonDocumentOptions)
+  - System.Text.Json.JsonDocument.Parse(System.ReadOnlyMemory{System.Byte},System.Text.Json.JsonDocumentOptions)
+  - System.Text.Json.JsonDocument.Parse(System.ReadOnlyMemory{System.Char},System.Text.Json.JsonDocumentOptions)
+  - System.Text.Json.JsonDocument.Parse(System.String,System.Text.Json.JsonDocumentOptions)
+  - System.Text.Json.JsonDocument.ParseAsync(System.IO.Stream,System.Text.Json.JsonDocumentOptions,System.Threading.CancellationToken)
+  - System.Text.Json.JsonDocument.ParseValue(System.Text.Json.Utf8JsonReader@)
+  - System.Text.Json.JsonDocument.RootElement
+  - System.Text.Json.JsonDocument.TryParseValue(System.Text.Json.Utf8JsonReader@,System.Text.Json.JsonDocument@)
+  - System.Text.Json.JsonDocument.WriteTo(System.Text.Json.Utf8JsonWriter)
+  langs:
+  - csharp
+  - vb
+  name: JsonDocument
+  nameWithType: JsonDocument
+  fullName: System.Text.Json.JsonDocument
+  type: Class
+  assemblies:
+  - System.Text.Json
+  namespace: System.Text.Json
+  summary: Provides a mechanism for examining the structural content of a JSON value without automatically instantiating data values.
+  example: []
+  syntax:
+    content: 'public sealed class JsonDocument : IDisposable'
+    content.vb: Public NotInheritable Class JsonDocument Implements IDisposable
+  inheritance:
+  - System.Object
+  implements:
+  - System.IDisposable
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  extensionMethods:
+  - System.Text.Json.JsonDocument.System.Text.Json.JsonSerializer.Deserialize(System.Type,System.Text.Json.JsonSerializerOptions)
+  - System.Text.Json.JsonDocument.System.Text.Json.JsonSerializer.Deserialize(System.Type,System.Text.Json.Serialization.JsonSerializerContext)
+  - System.Text.Json.JsonDocument.System.Text.Json.JsonSerializer.Deserialize``1(System.Text.Json.JsonSerializerOptions)
+  - System.Text.Json.JsonDocument.System.Text.Json.JsonSerializer.Deserialize``1(System.Text.Json.Serialization.Metadata.JsonTypeInfo{{TValue}})
+- uid: System.Text.Json.JsonDocument.Dispose
+  commentId: M:System.Text.Json.JsonDocument.Dispose
+  id: Dispose
+  parent: System.Text.Json.JsonDocument
+  langs:
+  - csharp
+  - vb
+  name: Dispose()
+  nameWithType: JsonDocument.Dispose()
+  fullName: System.Text.Json.JsonDocument.Dispose()
+  type: Method
+  assemblies:
+  - System.Text.Json
+  namespace: System.Text.Json
+  summary: Releases the resources used by this <xref href="System.Text.Json.JsonDocument" data-throw-if-not-resolved="false"></xref> instance.
+  example: []
+  syntax:
+    content: public void Dispose()
+    content.vb: Public Sub Dispose()
+  overload: System.Text.Json.JsonDocument.Dispose*
+  implements:
+  - System.IDisposable.Dispose
+- uid: System.Text.Json.JsonDocument.WriteTo(System.Text.Json.Utf8JsonWriter)
+  commentId: M:System.Text.Json.JsonDocument.WriteTo(System.Text.Json.Utf8JsonWriter)
+  id: WriteTo(System.Text.Json.Utf8JsonWriter)
+  parent: System.Text.Json.JsonDocument
+  langs:
+  - csharp
+  - vb
+  name: WriteTo(Utf8JsonWriter)
+  nameWithType: JsonDocument.WriteTo(Utf8JsonWriter)
+  fullName: System.Text.Json.JsonDocument.WriteTo(System.Text.Json.Utf8JsonWriter)
+  type: Method
+  assemblies:
+  - System.Text.Json
+  namespace: System.Text.Json
+  summary: Writes the document to the provided writer as a JSON value.
+  example: []
+  syntax:
+    content: public void WriteTo(Utf8JsonWriter writer)
+    parameters:
+    - id: writer
+      type: System.Text.Json.Utf8JsonWriter
+      description: The writer to which to write the document.
+    content.vb: Public Sub WriteTo(writer As Utf8JsonWriter)
+  overload: System.Text.Json.JsonDocument.WriteTo*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: The <code class="paramref">writer</code> parameter is <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.
+  - type: System.InvalidOperationException
+    commentId: T:System.InvalidOperationException
+    description: The <xref href="System.Text.Json.JsonElement.ValueKind" data-throw-if-not-resolved="false"></xref> of this <xref href="System.Text.Json.JsonDocument.RootElement" data-throw-if-not-resolved="false"></xref> would result in invalid JSON.
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: The parent <xref href="System.Text.Json.JsonDocument" data-throw-if-not-resolved="false"></xref> has been disposed.
+- uid: System.Text.Json.JsonDocument.Parse(System.ReadOnlyMemory{System.Byte},System.Text.Json.JsonDocumentOptions)
+  commentId: M:System.Text.Json.JsonDocument.Parse(System.ReadOnlyMemory{System.Byte},System.Text.Json.JsonDocumentOptions)
+  id: Parse(System.ReadOnlyMemory{System.Byte},System.Text.Json.JsonDocumentOptions)
+  parent: System.Text.Json.JsonDocument
+  langs:
+  - csharp
+  - vb
+  name: Parse(ReadOnlyMemory<byte>, JsonDocumentOptions)
+  nameWithType: JsonDocument.Parse(ReadOnlyMemory<byte>, JsonDocumentOptions)
+  fullName: System.Text.Json.JsonDocument.Parse(System.ReadOnlyMemory<byte>, System.Text.Json.JsonDocumentOptions)
+  type: Method
+  assemblies:
+  - System.Text.Json
+  namespace: System.Text.Json
+  summary: Parses memory as UTF-8-encoded text representing a single JSON byte value into a JsonDocument.
+  example: []
+  syntax:
+    content: public static JsonDocument Parse(ReadOnlyMemory<byte> utf8Json, JsonDocumentOptions options = default)
+    parameters:
+    - id: utf8Json
+      type: System.ReadOnlyMemory{System.Byte}
+      description: The JSON text to parse.
+    - id: options
+      type: System.Text.Json.JsonDocumentOptions
+      description: Options to control the reader behavior during parsing.
+    return:
+      type: System.Text.Json.JsonDocument
+      description: A JsonDocument representation of the JSON value.
+    content.vb: Public Shared Function Parse(utf8Json As ReadOnlyMemory(Of Byte), options As JsonDocumentOptions = Nothing) As JsonDocument
+  overload: System.Text.Json.JsonDocument.Parse*
+  exceptions:
+  - type: System.Text.Json.JsonException
+    commentId: T:System.Text.Json.JsonException
+    description: <code class="paramref">utf8Json</code> does not represent a valid single JSON value.
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: <code class="paramref">options</code> contains unsupported options.
+  nameWithType.vb: JsonDocument.Parse(ReadOnlyMemory(Of Byte), JsonDocumentOptions)
+  fullName.vb: System.Text.Json.JsonDocument.Parse(System.ReadOnlyMemory(Of Byte), System.Text.Json.JsonDocumentOptions)
+  name.vb: Parse(ReadOnlyMemory(Of Byte), JsonDocumentOptions)
+- uid: System.Text.Json.JsonDocument.Parse(System.Buffers.ReadOnlySequence{System.Byte},System.Text.Json.JsonDocumentOptions)
+  commentId: M:System.Text.Json.JsonDocument.Parse(System.Buffers.ReadOnlySequence{System.Byte},System.Text.Json.JsonDocumentOptions)
+  id: Parse(System.Buffers.ReadOnlySequence{System.Byte},System.Text.Json.JsonDocumentOptions)
+  parent: System.Text.Json.JsonDocument
+  langs:
+  - csharp
+  - vb
+  name: Parse(ReadOnlySequence<byte>, JsonDocumentOptions)
+  nameWithType: JsonDocument.Parse(ReadOnlySequence<byte>, JsonDocumentOptions)
+  fullName: System.Text.Json.JsonDocument.Parse(System.Buffers.ReadOnlySequence<byte>, System.Text.Json.JsonDocumentOptions)
+  type: Method
+  assemblies:
+  - System.Text.Json
+  namespace: System.Text.Json
+  summary: Parses a sequence as UTF-8-encoded text representing a single JSON byte value into a JsonDocument.
+  example: []
+  syntax:
+    content: public static JsonDocument Parse(ReadOnlySequence<byte> utf8Json, JsonDocumentOptions options = default)
+    parameters:
+    - id: utf8Json
+      type: System.Buffers.ReadOnlySequence{System.Byte}
+      description: The JSON text to parse.
+    - id: options
+      type: System.Text.Json.JsonDocumentOptions
+      description: Options to control the reader behavior during parsing.
+    return:
+      type: System.Text.Json.JsonDocument
+      description: A JsonDocument representation of the JSON value.
+    content.vb: Public Shared Function Parse(utf8Json As ReadOnlySequence(Of Byte), options As JsonDocumentOptions = Nothing) As JsonDocument
+  overload: System.Text.Json.JsonDocument.Parse*
+  exceptions:
+  - type: System.Text.Json.JsonException
+    commentId: T:System.Text.Json.JsonException
+    description: <code class="paramref">utf8Json</code> does not represent a valid single JSON value.
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: <code class="paramref">options</code> contains unsupported options.
+  nameWithType.vb: JsonDocument.Parse(ReadOnlySequence(Of Byte), JsonDocumentOptions)
+  fullName.vb: System.Text.Json.JsonDocument.Parse(System.Buffers.ReadOnlySequence(Of Byte), System.Text.Json.JsonDocumentOptions)
+  name.vb: Parse(ReadOnlySequence(Of Byte), JsonDocumentOptions)
+- uid: System.Text.Json.JsonDocument.Parse(System.IO.Stream,System.Text.Json.JsonDocumentOptions)
+  commentId: M:System.Text.Json.JsonDocument.Parse(System.IO.Stream,System.Text.Json.JsonDocumentOptions)
+  id: Parse(System.IO.Stream,System.Text.Json.JsonDocumentOptions)
+  parent: System.Text.Json.JsonDocument
+  langs:
+  - csharp
+  - vb
+  name: Parse(Stream, JsonDocumentOptions)
+  nameWithType: JsonDocument.Parse(Stream, JsonDocumentOptions)
+  fullName: System.Text.Json.JsonDocument.Parse(System.IO.Stream, System.Text.Json.JsonDocumentOptions)
+  type: Method
+  assemblies:
+  - System.Text.Json
+  namespace: System.Text.Json
+  summary: Parses a <xref href="System.IO.Stream" data-throw-if-not-resolved="false"></xref> as UTF-8-encoded data representing a single JSON value into a JsonDocument. The stream is read to completion.
+  example: []
+  syntax:
+    content: public static JsonDocument Parse(Stream utf8Json, JsonDocumentOptions options = default)
+    parameters:
+    - id: utf8Json
+      type: System.IO.Stream
+      description: The JSON data to parse.
+    - id: options
+      type: System.Text.Json.JsonDocumentOptions
+      description: Options to control the reader behavior during parsing.
+    return:
+      type: System.Text.Json.JsonDocument
+      description: A JsonDocument representation of the JSON value.
+    content.vb: Public Shared Function Parse(utf8Json As Stream, options As JsonDocumentOptions = Nothing) As JsonDocument
+  overload: System.Text.Json.JsonDocument.Parse*
+  exceptions:
+  - type: System.Text.Json.JsonException
+    commentId: T:System.Text.Json.JsonException
+    description: <code class="paramref">utf8Json</code> does not represent a valid single JSON value.
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: <code class="paramref">options</code> contains unsupported options.
+- uid: System.Text.Json.JsonDocument.ParseAsync(System.IO.Stream,System.Text.Json.JsonDocumentOptions,System.Threading.CancellationToken)
+  commentId: M:System.Text.Json.JsonDocument.ParseAsync(System.IO.Stream,System.Text.Json.JsonDocumentOptions,System.Threading.CancellationToken)
+  id: ParseAsync(System.IO.Stream,System.Text.Json.JsonDocumentOptions,System.Threading.CancellationToken)
+  parent: System.Text.Json.JsonDocument
+  langs:
+  - csharp
+  - vb
+  name: ParseAsync(Stream, JsonDocumentOptions, CancellationToken)
+  nameWithType: JsonDocument.ParseAsync(Stream, JsonDocumentOptions, CancellationToken)
+  fullName: System.Text.Json.JsonDocument.ParseAsync(System.IO.Stream, System.Text.Json.JsonDocumentOptions, System.Threading.CancellationToken)
+  type: Method
+  assemblies:
+  - System.Text.Json
+  namespace: System.Text.Json
+  summary: Parses a <xref href="System.IO.Stream" data-throw-if-not-resolved="false"></xref> as UTF-8-encoded data representing a single JSON value into a JsonDocument. The stream is read to completion.
+  example: []
+  syntax:
+    content: public static Task<JsonDocument> ParseAsync(Stream utf8Json, JsonDocumentOptions options = default, CancellationToken cancellationToken = default)
+    parameters:
+    - id: utf8Json
+      type: System.IO.Stream
+      description: The JSON data to parse.
+    - id: options
+      type: System.Text.Json.JsonDocumentOptions
+      description: Options to control the reader behavior during parsing.
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: The token to monitor for cancellation requests.
+    return:
+      type: System.Threading.Tasks.Task{System.Text.Json.JsonDocument}
+      description: A task to produce a JsonDocument representation of the JSON value.
+    content.vb: Public Shared Function ParseAsync(utf8Json As Stream, options As JsonDocumentOptions = Nothing, cancellationToken As CancellationToken = Nothing) As Task(Of JsonDocument)
+  overload: System.Text.Json.JsonDocument.ParseAsync*
+  exceptions:
+  - type: System.Text.Json.JsonException
+    commentId: T:System.Text.Json.JsonException
+    description: <code class="paramref">utf8Json</code> does not represent a valid single JSON value.
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: <code class="paramref">options</code> contains unsupported options.
+- uid: System.Text.Json.JsonDocument.Parse(System.ReadOnlyMemory{System.Char},System.Text.Json.JsonDocumentOptions)
+  commentId: M:System.Text.Json.JsonDocument.Parse(System.ReadOnlyMemory{System.Char},System.Text.Json.JsonDocumentOptions)
+  id: Parse(System.ReadOnlyMemory{System.Char},System.Text.Json.JsonDocumentOptions)
+  parent: System.Text.Json.JsonDocument
+  langs:
+  - csharp
+  - vb
+  name: Parse(ReadOnlyMemory<char>, JsonDocumentOptions)
+  nameWithType: JsonDocument.Parse(ReadOnlyMemory<char>, JsonDocumentOptions)
+  fullName: System.Text.Json.JsonDocument.Parse(System.ReadOnlyMemory<char>, System.Text.Json.JsonDocumentOptions)
+  type: Method
+  assemblies:
+  - System.Text.Json
+  namespace: System.Text.Json
+  summary: Parses text representing a single JSON value into a JsonDocument.
+  example: []
+  syntax:
+    content: public static JsonDocument Parse(ReadOnlyMemory<char> json, JsonDocumentOptions options = default)
+    parameters:
+    - id: json
+      type: System.ReadOnlyMemory{System.Char}
+      description: The JSON text to parse.
+    - id: options
+      type: System.Text.Json.JsonDocumentOptions
+      description: Options to control the reader behavior during parsing.
+    return:
+      type: System.Text.Json.JsonDocument
+      description: A JsonDocument representation of the JSON value.
+    content.vb: Public Shared Function Parse(json As ReadOnlyMemory(Of Char), options As JsonDocumentOptions = Nothing) As JsonDocument
+  overload: System.Text.Json.JsonDocument.Parse*
+  exceptions:
+  - type: System.Text.Json.JsonException
+    commentId: T:System.Text.Json.JsonException
+    description: <code class="paramref">json</code> does not represent a valid single JSON value.
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: <code class="paramref">options</code> contains unsupported options.
+  nameWithType.vb: JsonDocument.Parse(ReadOnlyMemory(Of Char), JsonDocumentOptions)
+  fullName.vb: System.Text.Json.JsonDocument.Parse(System.ReadOnlyMemory(Of Char), System.Text.Json.JsonDocumentOptions)
+  name.vb: Parse(ReadOnlyMemory(Of Char), JsonDocumentOptions)
+- uid: System.Text.Json.JsonDocument.Parse(System.String,System.Text.Json.JsonDocumentOptions)
+  commentId: M:System.Text.Json.JsonDocument.Parse(System.String,System.Text.Json.JsonDocumentOptions)
+  id: Parse(System.String,System.Text.Json.JsonDocumentOptions)
+  parent: System.Text.Json.JsonDocument
+  langs:
+  - csharp
+  - vb
+  name: Parse(string, JsonDocumentOptions)
+  nameWithType: JsonDocument.Parse(string, JsonDocumentOptions)
+  fullName: System.Text.Json.JsonDocument.Parse(string, System.Text.Json.JsonDocumentOptions)
+  type: Method
+  assemblies:
+  - System.Text.Json
+  namespace: System.Text.Json
+  summary: Parses text representing a single JSON string value into a JsonDocument.
+  example: []
+  syntax:
+    content: public static JsonDocument Parse(string json, JsonDocumentOptions options = default)
+    parameters:
+    - id: json
+      type: System.String
+      description: The JSON text to parse.
+    - id: options
+      type: System.Text.Json.JsonDocumentOptions
+      description: Options to control the reader behavior during parsing.
+    return:
+      type: System.Text.Json.JsonDocument
+      description: A JsonDocument representation of the JSON value.
+    content.vb: Public Shared Function Parse(json As String, options As JsonDocumentOptions = Nothing) As JsonDocument
+  overload: System.Text.Json.JsonDocument.Parse*
+  exceptions:
+  - type: System.Text.Json.JsonException
+    commentId: T:System.Text.Json.JsonException
+    description: <code class="paramref">json</code> does not represent a valid single JSON value.
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: <code class="paramref">options</code> contains unsupported options.
+  nameWithType.vb: JsonDocument.Parse(String, JsonDocumentOptions)
+  fullName.vb: System.Text.Json.JsonDocument.Parse(String, System.Text.Json.JsonDocumentOptions)
+  name.vb: Parse(String, JsonDocumentOptions)
+- uid: System.Text.Json.JsonDocument.TryParseValue(System.Text.Json.Utf8JsonReader@,System.Text.Json.JsonDocument@)
+  commentId: M:System.Text.Json.JsonDocument.TryParseValue(System.Text.Json.Utf8JsonReader@,System.Text.Json.JsonDocument@)
+  id: TryParseValue(System.Text.Json.Utf8JsonReader@,System.Text.Json.JsonDocument@)
+  parent: System.Text.Json.JsonDocument
+  langs:
+  - csharp
+  - vb
+  name: TryParseValue(ref Utf8JsonReader, out JsonDocument?)
+  nameWithType: JsonDocument.TryParseValue(ref Utf8JsonReader, out JsonDocument?)
+  fullName: System.Text.Json.JsonDocument.TryParseValue(ref System.Text.Json.Utf8JsonReader, out System.Text.Json.JsonDocument?)
+  type: Method
+  assemblies:
+  - System.Text.Json
+  namespace: System.Text.Json
+  summary: Attempts to parse one JSON value (including objects or arrays) from the provided reader.
+  example: []
+  syntax:
+    content: public static bool TryParseValue(ref Utf8JsonReader reader, out JsonDocument? document)
+    parameters:
+    - id: reader
+      type: System.Text.Json.Utf8JsonReader
+      description: The reader to read.
+    - id: document
+      type: System.Text.Json.JsonDocument
+      description: When the method returns, contains the parsed document.
+    return:
+      type: System.Boolean
+      description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if a value was read and parsed into a JsonDocument; <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a> if the reader ran out of data while parsing. All other situations result in an exception being thrown.
+    content.vb: Public Shared Function TryParseValue(reader As Utf8JsonReader, document As JsonDocument) As Boolean
+  overload: System.Text.Json.JsonDocument.TryParseValue*
+  exceptions:
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: "    <code class=\"paramref\">reader</code> contains unsupported options.\r\n\r\n-or-\r\n\r\nThe current <code class=\"paramref\">reader</code> token does not start or represent a value."
+  - type: System.Text.Json.JsonException
+    commentId: T:System.Text.Json.JsonException
+    description: A value could not be read from the reader.
+  nameWithType.vb: JsonDocument.TryParseValue(Utf8JsonReader, JsonDocument)
+  fullName.vb: System.Text.Json.JsonDocument.TryParseValue(System.Text.Json.Utf8JsonReader, System.Text.Json.JsonDocument)
+  name.vb: TryParseValue(Utf8JsonReader, JsonDocument)
+- uid: System.Text.Json.JsonDocument.ParseValue(System.Text.Json.Utf8JsonReader@)
+  commentId: M:System.Text.Json.JsonDocument.ParseValue(System.Text.Json.Utf8JsonReader@)
+  id: ParseValue(System.Text.Json.Utf8JsonReader@)
+  parent: System.Text.Json.JsonDocument
+  langs:
+  - csharp
+  - vb
+  name: ParseValue(ref Utf8JsonReader)
+  nameWithType: JsonDocument.ParseValue(ref Utf8JsonReader)
+  fullName: System.Text.Json.JsonDocument.ParseValue(ref System.Text.Json.Utf8JsonReader)
+  type: Method
+  assemblies:
+  - System.Text.Json
+  namespace: System.Text.Json
+  summary: Parses one JSON value (including objects or arrays) from the provided reader.
+  example: []
+  syntax:
+    content: public static JsonDocument ParseValue(ref Utf8JsonReader reader)
+    parameters:
+    - id: reader
+      type: System.Text.Json.Utf8JsonReader
+      description: The reader to read.
+    return:
+      type: System.Text.Json.JsonDocument
+      description: A JsonDocument representing the value (and nested values) read from the reader.
+    content.vb: Public Shared Function ParseValue(reader As Utf8JsonReader) As JsonDocument
+  overload: System.Text.Json.JsonDocument.ParseValue*
+  exceptions:
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: "    <code class=\"paramref\">reader</code> contains unsupported options.\r\n\r\n-or-\r\n\r\nThe current <code class=\"paramref\">reader</code> token does not start or represent a value."
+  - type: System.Text.Json.JsonException
+    commentId: T:System.Text.Json.JsonException
+    description: A value could not be read from the reader.
+  nameWithType.vb: JsonDocument.ParseValue(Utf8JsonReader)
+  fullName.vb: System.Text.Json.JsonDocument.ParseValue(System.Text.Json.Utf8JsonReader)
+  name.vb: ParseValue(Utf8JsonReader)
+- uid: System.Text.Json.JsonDocument.RootElement
+  commentId: P:System.Text.Json.JsonDocument.RootElement
+  id: RootElement
+  parent: System.Text.Json.JsonDocument
+  langs:
+  - csharp
+  - vb
+  name: RootElement
+  nameWithType: JsonDocument.RootElement
+  fullName: System.Text.Json.JsonDocument.RootElement
+  type: Property
+  assemblies:
+  - System.Text.Json
+  namespace: System.Text.Json
+  summary: Gets the root element of this JSON document.
+  example: []
+  syntax:
+    content: public JsonElement RootElement { get; }
+    parameters: []
+    return:
+      type: System.Text.Json.JsonElement
+      description: A <xref href="System.Text.Json.JsonElement" data-throw-if-not-resolved="false"></xref> representing the value of the document.
+    content.vb: Public ReadOnly Property RootElement As JsonElement
+  overload: System.Text.Json.JsonDocument.RootElement*
+references:
+- uid: System.Text.Json
+  commentId: N:System.Text.Json
+  isExternal: true
+  href: System.html
+  name: System.Text.Json
+  nameWithType: System.Text.Json
+  fullName: System.Text.Json
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: System.html
+  - name: .
+  - uid: System.Text
+    name: Text
+    isExternal: true
+    href: System.Text.html
+  - name: .
+  - uid: System.Text.Json
+    name: Json
+    isExternal: true
+    href: System.Text.Json.html
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: System.html
+  - name: .
+  - uid: System.Text
+    name: Text
+    isExternal: true
+    href: System.Text.html
+  - name: .
+  - uid: System.Text.Json
+    name: Json
+    isExternal: true
+    href: System.Text.Json.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.IDisposable
+  commentId: T:System.IDisposable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Text.Json.JsonDocument.System.Text.Json.JsonSerializer.Deserialize(System.Type,System.Text.Json.JsonSerializerOptions)
+  commentId: M:System.Text.Json.JsonSerializer.Deserialize(System.Text.Json.JsonDocument,System.Type,System.Text.Json.JsonSerializerOptions)
+  parent: System.Text.Json.JsonSerializer
+  definition: System.Text.Json.JsonSerializer.Deserialize(System.Text.Json.JsonDocument,System.Type,System.Text.Json.JsonSerializerOptions)
+  href: System.Text.Json.JsonSerializer.html#System_Text_Json_JsonSerializer_Deserialize_System_Text_Json_JsonDocument_System_Type_System_Text_Json_JsonSerializerOptions_
+  name: Deserialize(JsonDocument, Type, JsonSerializerOptions)
+  nameWithType: JsonSerializer.Deserialize(JsonDocument, Type, JsonSerializerOptions)
+  fullName: System.Text.Json.JsonSerializer.Deserialize(System.Text.Json.JsonDocument, System.Type, System.Text.Json.JsonSerializerOptions)
+  spec.csharp:
+  - uid: System.Text.Json.JsonSerializer.Deserialize(System.Text.Json.JsonDocument,System.Type,System.Text.Json.JsonSerializerOptions)
+    name: Deserialize
+    isExternal: true
+    href: System.Text.Json.JsonSerializer.html#System_Text_Json_JsonSerializer_Deserialize_System_Text_Json_JsonDocument_System_Type_System_Text_Json_JsonSerializerOptions_
+  - name: (
+  - uid: System.Text.Json.JsonDocument
+    name: JsonDocument
+    isExternal: true
+    href: System.Text.Json.JsonDocument.html
+  - name: ','
+  - name: " "
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: ','
+  - name: " "
+  - uid: System.Text.Json.JsonSerializerOptions
+    name: JsonSerializerOptions
+    isExternal: true
+    href: System.Text.Json.JsonSerializerOptions.html
+  - name: )
+  spec.vb:
+  - uid: System.Text.Json.JsonSerializer.Deserialize(System.Text.Json.JsonDocument,System.Type,System.Text.Json.JsonSerializerOptions)
+    name: Deserialize
+    isExternal: true
+    href: System.Text.Json.JsonSerializer.html#System_Text_Json_JsonSerializer_Deserialize_System_Text_Json_JsonDocument_System_Type_System_Text_Json_JsonSerializerOptions_
+  - name: (
+  - uid: System.Text.Json.JsonDocument
+    name: JsonDocument
+    isExternal: true
+    href: System.Text.Json.JsonDocument.html
+  - name: ','
+  - name: " "
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: ','
+  - name: " "
+  - uid: System.Text.Json.JsonSerializerOptions
+    name: JsonSerializerOptions
+    isExternal: true
+    href: System.Text.Json.JsonSerializerOptions.html
+  - name: )
+- uid: System.Text.Json.JsonDocument.System.Text.Json.JsonSerializer.Deserialize(System.Type,System.Text.Json.Serialization.JsonSerializerContext)
+  commentId: M:System.Text.Json.JsonSerializer.Deserialize(System.Text.Json.JsonDocument,System.Type,System.Text.Json.Serialization.JsonSerializerContext)
+  parent: System.Text.Json.JsonSerializer
+  definition: System.Text.Json.JsonSerializer.Deserialize(System.Text.Json.JsonDocument,System.Type,System.Text.Json.Serialization.JsonSerializerContext)
+  href: System.Text.Json.JsonSerializer.html#System_Text_Json_JsonSerializer_Deserialize_System_Text_Json_JsonDocument_System_Type_System_Text_Json_Serialization_JsonSerializerContext_
+  name: Deserialize(JsonDocument, Type, JsonSerializerContext)
+  nameWithType: JsonSerializer.Deserialize(JsonDocument, Type, JsonSerializerContext)
+  fullName: System.Text.Json.JsonSerializer.Deserialize(System.Text.Json.JsonDocument, System.Type, System.Text.Json.Serialization.JsonSerializerContext)
+  spec.csharp:
+  - uid: System.Text.Json.JsonSerializer.Deserialize(System.Text.Json.JsonDocument,System.Type,System.Text.Json.Serialization.JsonSerializerContext)
+    name: Deserialize
+    isExternal: true
+    href: System.Text.Json.JsonSerializer.html#System_Text_Json_JsonSerializer_Deserialize_System_Text_Json_JsonDocument_System_Type_System_Text_Json_Serialization_JsonSerializerContext_
+  - name: (
+  - uid: System.Text.Json.JsonDocument
+    name: JsonDocument
+    isExternal: true
+    href: System.Text.Json.JsonDocument.html
+  - name: ','
+  - name: " "
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: ','
+  - name: " "
+  - uid: System.Text.Json.Serialization.JsonSerializerContext
+    name: JsonSerializerContext
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: System.Text.Json.JsonSerializer.Deserialize(System.Text.Json.JsonDocument,System.Type,System.Text.Json.Serialization.JsonSerializerContext)
+    name: Deserialize
+    isExternal: true
+    href: System.Text.Json.JsonSerializer.html#System_Text_Json_JsonSerializer_Deserialize_System_Text_Json_JsonDocument_System_Type_System_Text_Json_Serialization_JsonSerializerContext_
+  - name: (
+  - uid: System.Text.Json.JsonDocument
+    name: JsonDocument
+    isExternal: true
+    href: System.Text.Json.JsonDocument.html
+  - name: ','
+  - name: " "
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: ','
+  - name: " "
+  - uid: System.Text.Json.Serialization.JsonSerializerContext
+    name: JsonSerializerContext
+    isExternal: true
+  - name: )
+- uid: System.Text.Json.JsonDocument.System.Text.Json.JsonSerializer.Deserialize``1(System.Text.Json.JsonSerializerOptions)
+  commentId: M:System.Text.Json.JsonSerializer.Deserialize``1(System.Text.Json.JsonDocument,System.Text.Json.JsonSerializerOptions)
+  parent: System.Text.Json.JsonSerializer
+  definition: System.Text.Json.JsonSerializer.Deserialize``1(System.Text.Json.JsonDocument,System.Text.Json.JsonSerializerOptions)
+  href: System.Text.Json.JsonSerializer.html#System_Text_Json_JsonSerializer_Deserialize__1_System_Text_Json_JsonDocument_System_Text_Json_JsonSerializerOptions_
+  name: Deserialize<TValue>(JsonDocument, JsonSerializerOptions)
+  nameWithType: JsonSerializer.Deserialize<TValue>(JsonDocument, JsonSerializerOptions)
+  fullName: System.Text.Json.JsonSerializer.Deserialize<TValue>(System.Text.Json.JsonDocument, System.Text.Json.JsonSerializerOptions)
+  nameWithType.vb: JsonSerializer.Deserialize(Of TValue)(JsonDocument, JsonSerializerOptions)
+  fullName.vb: System.Text.Json.JsonSerializer.Deserialize(Of TValue)(System.Text.Json.JsonDocument, System.Text.Json.JsonSerializerOptions)
+  name.vb: Deserialize(Of TValue)(JsonDocument, JsonSerializerOptions)
+  spec.csharp:
+  - uid: System.Text.Json.JsonSerializer.Deserialize``1(System.Text.Json.JsonDocument,System.Text.Json.JsonSerializerOptions)
+    name: Deserialize
+    isExternal: true
+    href: System.Text.Json.JsonSerializer.html#System_Text_Json_JsonSerializer_Deserialize__1_System_Text_Json_JsonDocument_System_Text_Json_JsonSerializerOptions_
+  - name: <
+  - name: TValue
+  - name: '>'
+  - name: (
+  - uid: System.Text.Json.JsonDocument
+    name: JsonDocument
+    isExternal: true
+    href: System.Text.Json.JsonDocument.html
+  - name: ','
+  - name: " "
+  - uid: System.Text.Json.JsonSerializerOptions
+    name: JsonSerializerOptions
+    isExternal: true
+    href: System.Text.Json.JsonSerializerOptions.html
+  - name: )
+  spec.vb:
+  - uid: System.Text.Json.JsonSerializer.Deserialize``1(System.Text.Json.JsonDocument,System.Text.Json.JsonSerializerOptions)
+    name: Deserialize
+    isExternal: true
+    href: System.Text.Json.JsonSerializer.html#System_Text_Json_JsonSerializer_Deserialize__1_System_Text_Json_JsonDocument_System_Text_Json_JsonSerializerOptions_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TValue
+  - name: )
+  - name: (
+  - uid: System.Text.Json.JsonDocument
+    name: JsonDocument
+    isExternal: true
+    href: System.Text.Json.JsonDocument.html
+  - name: ','
+  - name: " "
+  - uid: System.Text.Json.JsonSerializerOptions
+    name: JsonSerializerOptions
+    isExternal: true
+    href: System.Text.Json.JsonSerializerOptions.html
+  - name: )
+- uid: System.Text.Json.JsonDocument.System.Text.Json.JsonSerializer.Deserialize``1(System.Text.Json.Serialization.Metadata.JsonTypeInfo{{TValue}})
+  commentId: M:System.Text.Json.JsonSerializer.Deserialize``1(System.Text.Json.JsonDocument,System.Text.Json.Serialization.Metadata.JsonTypeInfo{``0})
+  parent: System.Text.Json.JsonSerializer
+  definition: System.Text.Json.JsonSerializer.Deserialize``1(System.Text.Json.JsonDocument,System.Text.Json.Serialization.Metadata.JsonTypeInfo{``0})
+  href: System.Text.Json.JsonSerializer.html#System_Text_Json_JsonSerializer_Deserialize__1_System_Text_Json_JsonDocument_System_Text_Json_Serialization_Metadata_JsonTypeInfo___0__
+  name: Deserialize<TValue>(JsonDocument, JsonTypeInfo<TValue>)
+  nameWithType: JsonSerializer.Deserialize<TValue>(JsonDocument, JsonTypeInfo<TValue>)
+  fullName: System.Text.Json.JsonSerializer.Deserialize<TValue>(System.Text.Json.JsonDocument, System.Text.Json.Serialization.Metadata.JsonTypeInfo<TValue>)
+  nameWithType.vb: JsonSerializer.Deserialize(Of TValue)(JsonDocument, JsonTypeInfo(Of TValue))
+  fullName.vb: System.Text.Json.JsonSerializer.Deserialize(Of TValue)(System.Text.Json.JsonDocument, System.Text.Json.Serialization.Metadata.JsonTypeInfo(Of TValue))
+  name.vb: Deserialize(Of TValue)(JsonDocument, JsonTypeInfo(Of TValue))
+  spec.csharp:
+  - uid: System.Text.Json.JsonSerializer.Deserialize``1(System.Text.Json.JsonDocument,System.Text.Json.Serialization.Metadata.JsonTypeInfo{``0})
+    name: Deserialize
+    isExternal: true
+    href: System.Text.Json.JsonSerializer.html#System_Text_Json_JsonSerializer_Deserialize__1_System_Text_Json_JsonDocument_System_Text_Json_Serialization_Metadata_JsonTypeInfo___0__
+  - name: <
+  - name: TValue
+  - name: '>'
+  - name: (
+  - uid: System.Text.Json.JsonDocument
+    name: JsonDocument
+    isExternal: true
+    href: System.Text.Json.JsonDocument.html
+  - name: ','
+  - name: " "
+  - uid: System.Text.Json.Serialization.Metadata.JsonTypeInfo`1
+    name: JsonTypeInfo
+    isExternal: true
+  - name: <
+  - name: TValue
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: System.Text.Json.JsonSerializer.Deserialize``1(System.Text.Json.JsonDocument,System.Text.Json.Serialization.Metadata.JsonTypeInfo{``0})
+    name: Deserialize
+    isExternal: true
+    href: System.Text.Json.JsonSerializer.html#System_Text_Json_JsonSerializer_Deserialize__1_System_Text_Json_JsonDocument_System_Text_Json_Serialization_Metadata_JsonTypeInfo___0__
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TValue
+  - name: )
+  - name: (
+  - uid: System.Text.Json.JsonDocument
+    name: JsonDocument
+    isExternal: true
+    href: System.Text.Json.JsonDocument.html
+  - name: ','
+  - name: " "
+  - uid: System.Text.Json.Serialization.Metadata.JsonTypeInfo`1
+    name: JsonTypeInfo
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TValue
+  - name: )
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Text.Json.JsonSerializer.Deserialize(System.Text.Json.JsonDocument,System.Type,System.Text.Json.JsonSerializerOptions)
+  commentId: M:System.Text.Json.JsonSerializer.Deserialize(System.Text.Json.JsonDocument,System.Type,System.Text.Json.JsonSerializerOptions)
+  isExternal: true
+  href: System.Text.Json.JsonSerializer.html#System_Text_Json_JsonSerializer_Deserialize_System_Text_Json_JsonDocument_System_Type_System_Text_Json_JsonSerializerOptions_
+  name: Deserialize(JsonDocument, Type, JsonSerializerOptions)
+  nameWithType: JsonSerializer.Deserialize(JsonDocument, Type, JsonSerializerOptions)
+  fullName: System.Text.Json.JsonSerializer.Deserialize(System.Text.Json.JsonDocument, System.Type, System.Text.Json.JsonSerializerOptions)
+  spec.csharp:
+  - uid: System.Text.Json.JsonSerializer.Deserialize(System.Text.Json.JsonDocument,System.Type,System.Text.Json.JsonSerializerOptions)
+    name: Deserialize
+    isExternal: true
+    href: System.Text.Json.JsonSerializer.html#System_Text_Json_JsonSerializer_Deserialize_System_Text_Json_JsonDocument_System_Type_System_Text_Json_JsonSerializerOptions_
+  - name: (
+  - uid: System.Text.Json.JsonDocument
+    name: JsonDocument
+    isExternal: true
+    href: System.Text.Json.JsonDocument.html
+  - name: ','
+  - name: " "
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: ','
+  - name: " "
+  - uid: System.Text.Json.JsonSerializerOptions
+    name: JsonSerializerOptions
+    isExternal: true
+    href: System.Text.Json.JsonSerializerOptions.html
+  - name: )
+  spec.vb:
+  - uid: System.Text.Json.JsonSerializer.Deserialize(System.Text.Json.JsonDocument,System.Type,System.Text.Json.JsonSerializerOptions)
+    name: Deserialize
+    isExternal: true
+    href: System.Text.Json.JsonSerializer.html#System_Text_Json_JsonSerializer_Deserialize_System_Text_Json_JsonDocument_System_Type_System_Text_Json_JsonSerializerOptions_
+  - name: (
+  - uid: System.Text.Json.JsonDocument
+    name: JsonDocument
+    isExternal: true
+    href: System.Text.Json.JsonDocument.html
+  - name: ','
+  - name: " "
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: ','
+  - name: " "
+  - uid: System.Text.Json.JsonSerializerOptions
+    name: JsonSerializerOptions
+    isExternal: true
+    href: System.Text.Json.JsonSerializerOptions.html
+  - name: )
+- uid: System.Text.Json.JsonSerializer
+  commentId: T:System.Text.Json.JsonSerializer
+  parent: System.Text.Json
+  isExternal: true
+  href: System.Text.Json.JsonSerializer.html
+  name: JsonSerializer
+  nameWithType: JsonSerializer
+  fullName: System.Text.Json.JsonSerializer
+- uid: System.Text.Json.JsonSerializer.Deserialize(System.Text.Json.JsonDocument,System.Type,System.Text.Json.Serialization.JsonSerializerContext)
+  commentId: M:System.Text.Json.JsonSerializer.Deserialize(System.Text.Json.JsonDocument,System.Type,System.Text.Json.Serialization.JsonSerializerContext)
+  isExternal: true
+  href: System.Text.Json.JsonSerializer.html#System_Text_Json_JsonSerializer_Deserialize_System_Text_Json_JsonDocument_System_Type_System_Text_Json_Serialization_JsonSerializerContext_
+  name: Deserialize(JsonDocument, Type, JsonSerializerContext)
+  nameWithType: JsonSerializer.Deserialize(JsonDocument, Type, JsonSerializerContext)
+  fullName: System.Text.Json.JsonSerializer.Deserialize(System.Text.Json.JsonDocument, System.Type, System.Text.Json.Serialization.JsonSerializerContext)
+  spec.csharp:
+  - uid: System.Text.Json.JsonSerializer.Deserialize(System.Text.Json.JsonDocument,System.Type,System.Text.Json.Serialization.JsonSerializerContext)
+    name: Deserialize
+    isExternal: true
+    href: System.Text.Json.JsonSerializer.html#System_Text_Json_JsonSerializer_Deserialize_System_Text_Json_JsonDocument_System_Type_System_Text_Json_Serialization_JsonSerializerContext_
+  - name: (
+  - uid: System.Text.Json.JsonDocument
+    name: JsonDocument
+    isExternal: true
+    href: System.Text.Json.JsonDocument.html
+  - name: ','
+  - name: " "
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: ','
+  - name: " "
+  - uid: System.Text.Json.Serialization.JsonSerializerContext
+    name: JsonSerializerContext
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: System.Text.Json.JsonSerializer.Deserialize(System.Text.Json.JsonDocument,System.Type,System.Text.Json.Serialization.JsonSerializerContext)
+    name: Deserialize
+    isExternal: true
+    href: System.Text.Json.JsonSerializer.html#System_Text_Json_JsonSerializer_Deserialize_System_Text_Json_JsonDocument_System_Type_System_Text_Json_Serialization_JsonSerializerContext_
+  - name: (
+  - uid: System.Text.Json.JsonDocument
+    name: JsonDocument
+    isExternal: true
+    href: System.Text.Json.JsonDocument.html
+  - name: ','
+  - name: " "
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: ','
+  - name: " "
+  - uid: System.Text.Json.Serialization.JsonSerializerContext
+    name: JsonSerializerContext
+    isExternal: true
+  - name: )
+- uid: System.Text.Json.JsonSerializer.Deserialize``1(System.Text.Json.JsonDocument,System.Text.Json.JsonSerializerOptions)
+  commentId: M:System.Text.Json.JsonSerializer.Deserialize``1(System.Text.Json.JsonDocument,System.Text.Json.JsonSerializerOptions)
+  isExternal: true
+  href: System.Text.Json.JsonSerializer.html#System_Text_Json_JsonSerializer_Deserialize__1_System_Text_Json_JsonDocument_System_Text_Json_JsonSerializerOptions_
+  name: Deserialize<TValue>(JsonDocument, JsonSerializerOptions)
+  nameWithType: JsonSerializer.Deserialize<TValue>(JsonDocument, JsonSerializerOptions)
+  fullName: System.Text.Json.JsonSerializer.Deserialize<TValue>(System.Text.Json.JsonDocument, System.Text.Json.JsonSerializerOptions)
+  nameWithType.vb: JsonSerializer.Deserialize(Of TValue)(JsonDocument, JsonSerializerOptions)
+  fullName.vb: System.Text.Json.JsonSerializer.Deserialize(Of TValue)(System.Text.Json.JsonDocument, System.Text.Json.JsonSerializerOptions)
+  name.vb: Deserialize(Of TValue)(JsonDocument, JsonSerializerOptions)
+  spec.csharp:
+  - uid: System.Text.Json.JsonSerializer.Deserialize``1(System.Text.Json.JsonDocument,System.Text.Json.JsonSerializerOptions)
+    name: Deserialize
+    isExternal: true
+    href: System.Text.Json.JsonSerializer.html#System_Text_Json_JsonSerializer_Deserialize__1_System_Text_Json_JsonDocument_System_Text_Json_JsonSerializerOptions_
+  - name: <
+  - name: TValue
+  - name: '>'
+  - name: (
+  - uid: System.Text.Json.JsonDocument
+    name: JsonDocument
+    isExternal: true
+    href: System.Text.Json.JsonDocument.html
+  - name: ','
+  - name: " "
+  - uid: System.Text.Json.JsonSerializerOptions
+    name: JsonSerializerOptions
+    isExternal: true
+    href: System.Text.Json.JsonSerializerOptions.html
+  - name: )
+  spec.vb:
+  - uid: System.Text.Json.JsonSerializer.Deserialize``1(System.Text.Json.JsonDocument,System.Text.Json.JsonSerializerOptions)
+    name: Deserialize
+    isExternal: true
+    href: System.Text.Json.JsonSerializer.html#System_Text_Json_JsonSerializer_Deserialize__1_System_Text_Json_JsonDocument_System_Text_Json_JsonSerializerOptions_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TValue
+  - name: )
+  - name: (
+  - uid: System.Text.Json.JsonDocument
+    name: JsonDocument
+    isExternal: true
+    href: System.Text.Json.JsonDocument.html
+  - name: ','
+  - name: " "
+  - uid: System.Text.Json.JsonSerializerOptions
+    name: JsonSerializerOptions
+    isExternal: true
+    href: System.Text.Json.JsonSerializerOptions.html
+  - name: )
+- uid: System.Text.Json.JsonSerializer.Deserialize``1(System.Text.Json.JsonDocument,System.Text.Json.Serialization.Metadata.JsonTypeInfo{``0})
+  commentId: M:System.Text.Json.JsonSerializer.Deserialize``1(System.Text.Json.JsonDocument,System.Text.Json.Serialization.Metadata.JsonTypeInfo{``0})
+  isExternal: true
+  href: System.Text.Json.JsonSerializer.html#System_Text_Json_JsonSerializer_Deserialize__1_System_Text_Json_JsonDocument_System_Text_Json_Serialization_Metadata_JsonTypeInfo___0__
+  name: Deserialize<TValue>(JsonDocument, JsonTypeInfo<TValue>)
+  nameWithType: JsonSerializer.Deserialize<TValue>(JsonDocument, JsonTypeInfo<TValue>)
+  fullName: System.Text.Json.JsonSerializer.Deserialize<TValue>(System.Text.Json.JsonDocument, System.Text.Json.Serialization.Metadata.JsonTypeInfo<TValue>)
+  nameWithType.vb: JsonSerializer.Deserialize(Of TValue)(JsonDocument, JsonTypeInfo(Of TValue))
+  fullName.vb: System.Text.Json.JsonSerializer.Deserialize(Of TValue)(System.Text.Json.JsonDocument, System.Text.Json.Serialization.Metadata.JsonTypeInfo(Of TValue))
+  name.vb: Deserialize(Of TValue)(JsonDocument, JsonTypeInfo(Of TValue))
+  spec.csharp:
+  - uid: System.Text.Json.JsonSerializer.Deserialize``1(System.Text.Json.JsonDocument,System.Text.Json.Serialization.Metadata.JsonTypeInfo{``0})
+    name: Deserialize
+    isExternal: true
+    href: System.Text.Json.JsonSerializer.html#System_Text_Json_JsonSerializer_Deserialize__1_System_Text_Json_JsonDocument_System_Text_Json_Serialization_Metadata_JsonTypeInfo___0__
+  - name: <
+  - name: TValue
+  - name: '>'
+  - name: (
+  - uid: System.Text.Json.JsonDocument
+    name: JsonDocument
+    isExternal: true
+    href: System.Text.Json.JsonDocument.html
+  - name: ','
+  - name: " "
+  - uid: System.Text.Json.Serialization.Metadata.JsonTypeInfo`1
+    name: JsonTypeInfo
+    isExternal: true
+  - name: <
+  - name: TValue
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: System.Text.Json.JsonSerializer.Deserialize``1(System.Text.Json.JsonDocument,System.Text.Json.Serialization.Metadata.JsonTypeInfo{``0})
+    name: Deserialize
+    isExternal: true
+    href: System.Text.Json.JsonSerializer.html#System_Text_Json_JsonSerializer_Deserialize__1_System_Text_Json_JsonDocument_System_Text_Json_Serialization_Metadata_JsonTypeInfo___0__
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TValue
+  - name: )
+  - name: (
+  - uid: System.Text.Json.JsonDocument
+    name: JsonDocument
+    isExternal: true
+    href: System.Text.Json.JsonDocument.html
+  - name: ','
+  - name: " "
+  - uid: System.Text.Json.Serialization.Metadata.JsonTypeInfo`1
+    name: JsonTypeInfo
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TValue
+  - name: )
+  - name: )
+- uid: System.Text.Json.JsonDocument
+  commentId: T:System.Text.Json.JsonDocument
+  parent: System.Text.Json
+  isExternal: true
+  href: System.Text.Json.JsonDocument.html
+  name: JsonDocument
+  nameWithType: JsonDocument
+  fullName: System.Text.Json.JsonDocument
+- uid: System.Text.Json.JsonDocument.Dispose*
+  commentId: Overload:System.Text.Json.JsonDocument.Dispose
+  isExternal: true
+  href: System.Text.Json.JsonDocument.html#System_Text_Json_JsonDocument_Dispose
+  name: Dispose
+  nameWithType: JsonDocument.Dispose
+  fullName: System.Text.Json.JsonDocument.Dispose
+- uid: System.IDisposable.Dispose
+  commentId: M:System.IDisposable.Dispose
+  parent: System.IDisposable
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  name: Dispose()
+  nameWithType: IDisposable.Dispose()
+  fullName: System.IDisposable.Dispose()
+  spec.csharp:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  - name: (
+  - name: )
+- uid: System.Text.Json.JsonElement.ValueKind
+  commentId: P:System.Text.Json.JsonElement.ValueKind
+  isExternal: true
+  href: System.Text.Json.JsonElement.html#System_Text_Json_JsonElement_ValueKind
+  name: ValueKind
+  nameWithType: JsonElement.ValueKind
+  fullName: System.Text.Json.JsonElement.ValueKind
+- uid: System.Text.Json.JsonDocument.RootElement
+  commentId: P:System.Text.Json.JsonDocument.RootElement
+  isExternal: true
+  href: System.Text.Json.JsonDocument.html#System_Text_Json_JsonDocument_RootElement
+  name: RootElement
+  nameWithType: JsonDocument.RootElement
+  fullName: System.Text.Json.JsonDocument.RootElement
+- uid: System.ArgumentNullException
+  commentId: T:System.ArgumentNullException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.argumentnullexception
+  name: ArgumentNullException
+  nameWithType: ArgumentNullException
+  fullName: System.ArgumentNullException
+- uid: System.InvalidOperationException
+  commentId: T:System.InvalidOperationException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.invalidoperationexception
+  name: InvalidOperationException
+  nameWithType: InvalidOperationException
+  fullName: System.InvalidOperationException
+- uid: System.ObjectDisposedException
+  commentId: T:System.ObjectDisposedException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.objectdisposedexception
+  name: ObjectDisposedException
+  nameWithType: ObjectDisposedException
+  fullName: System.ObjectDisposedException
+- uid: System.Text.Json.JsonDocument.WriteTo*
+  commentId: Overload:System.Text.Json.JsonDocument.WriteTo
+  isExternal: true
+  href: System.Text.Json.JsonDocument.html#System_Text_Json_JsonDocument_WriteTo_System_Text_Json_Utf8JsonWriter_
+  name: WriteTo
+  nameWithType: JsonDocument.WriteTo
+  fullName: System.Text.Json.JsonDocument.WriteTo
+- uid: System.Text.Json.Utf8JsonWriter
+  commentId: T:System.Text.Json.Utf8JsonWriter
+  parent: System.Text.Json
+  isExternal: true
+  href: System.Text.Json.Utf8JsonWriter.html
+  name: Utf8JsonWriter
+  nameWithType: Utf8JsonWriter
+  fullName: System.Text.Json.Utf8JsonWriter
+- uid: System.Text.Json.JsonException
+  commentId: T:System.Text.Json.JsonException
+  isExternal: true
+  href: System.Text.Json.JsonException.html
+  name: JsonException
+  nameWithType: JsonException
+  fullName: System.Text.Json.JsonException
+- uid: System.ArgumentException
+  commentId: T:System.ArgumentException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.argumentexception
+  name: ArgumentException
+  nameWithType: ArgumentException
+  fullName: System.ArgumentException
+- uid: System.Text.Json.JsonDocument.Parse*
+  commentId: Overload:System.Text.Json.JsonDocument.Parse
+  isExternal: true
+  href: System.Text.Json.JsonDocument.html#System_Text_Json_JsonDocument_Parse_System_ReadOnlyMemory_System_Byte__System_Text_Json_JsonDocumentOptions_
+  name: Parse
+  nameWithType: JsonDocument.Parse
+  fullName: System.Text.Json.JsonDocument.Parse
+- uid: System.ReadOnlyMemory{System.Byte}
+  commentId: T:System.ReadOnlyMemory{System.Byte}
+  parent: System
+  definition: System.ReadOnlyMemory`1
+  href: https://learn.microsoft.com/dotnet/api/system.readonlymemory-1
+  name: ReadOnlyMemory<byte>
+  nameWithType: ReadOnlyMemory<byte>
+  fullName: System.ReadOnlyMemory<byte>
+  nameWithType.vb: ReadOnlyMemory(Of Byte)
+  fullName.vb: System.ReadOnlyMemory(Of Byte)
+  name.vb: ReadOnlyMemory(Of Byte)
+  spec.csharp:
+  - uid: System.ReadOnlyMemory`1
+    name: ReadOnlyMemory
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlymemory-1
+  - name: <
+  - uid: System.Byte
+    name: byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: '>'
+  spec.vb:
+  - uid: System.ReadOnlyMemory`1
+    name: ReadOnlyMemory
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlymemory-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Byte
+    name: Byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: )
+- uid: System.Text.Json.JsonDocumentOptions
+  commentId: T:System.Text.Json.JsonDocumentOptions
+  parent: System.Text.Json
+  isExternal: true
+  href: System.Text.Json.JsonDocumentOptions.html
+  name: JsonDocumentOptions
+  nameWithType: JsonDocumentOptions
+  fullName: System.Text.Json.JsonDocumentOptions
+- uid: System.ReadOnlyMemory`1
+  commentId: T:System.ReadOnlyMemory`1
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.readonlymemory-1
+  name: ReadOnlyMemory<T>
+  nameWithType: ReadOnlyMemory<T>
+  fullName: System.ReadOnlyMemory<T>
+  nameWithType.vb: ReadOnlyMemory(Of T)
+  fullName.vb: System.ReadOnlyMemory(Of T)
+  name.vb: ReadOnlyMemory(Of T)
+  spec.csharp:
+  - uid: System.ReadOnlyMemory`1
+    name: ReadOnlyMemory
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlymemory-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.ReadOnlyMemory`1
+    name: ReadOnlyMemory
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlymemory-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Buffers.ReadOnlySequence{System.Byte}
+  commentId: T:System.Buffers.ReadOnlySequence{System.Byte}
+  parent: System.Buffers
+  definition: System.Buffers.ReadOnlySequence`1
+  href: https://learn.microsoft.com/dotnet/api/system.buffers.readonlysequence-1
+  name: ReadOnlySequence<byte>
+  nameWithType: ReadOnlySequence<byte>
+  fullName: System.Buffers.ReadOnlySequence<byte>
+  nameWithType.vb: ReadOnlySequence(Of Byte)
+  fullName.vb: System.Buffers.ReadOnlySequence(Of Byte)
+  name.vb: ReadOnlySequence(Of Byte)
+  spec.csharp:
+  - uid: System.Buffers.ReadOnlySequence`1
+    name: ReadOnlySequence
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.buffers.readonlysequence-1
+  - name: <
+  - uid: System.Byte
+    name: byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: '>'
+  spec.vb:
+  - uid: System.Buffers.ReadOnlySequence`1
+    name: ReadOnlySequence
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.buffers.readonlysequence-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Byte
+    name: Byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: )
+- uid: System.Buffers.ReadOnlySequence`1
+  commentId: T:System.Buffers.ReadOnlySequence`1
+  parent: System.Buffers
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.buffers.readonlysequence-1
+  name: ReadOnlySequence<T>
+  nameWithType: ReadOnlySequence<T>
+  fullName: System.Buffers.ReadOnlySequence<T>
+  nameWithType.vb: ReadOnlySequence(Of T)
+  fullName.vb: System.Buffers.ReadOnlySequence(Of T)
+  name.vb: ReadOnlySequence(Of T)
+  spec.csharp:
+  - uid: System.Buffers.ReadOnlySequence`1
+    name: ReadOnlySequence
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.buffers.readonlysequence-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Buffers.ReadOnlySequence`1
+    name: ReadOnlySequence
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.buffers.readonlysequence-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Buffers
+  commentId: N:System.Buffers
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Buffers
+  nameWithType: System.Buffers
+  fullName: System.Buffers
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Buffers
+    name: Buffers
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.buffers
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Buffers
+    name: Buffers
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.buffers
+- uid: System.IO.Stream
+  commentId: T:System.IO.Stream
+  parent: System.IO
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.io.stream
+  name: Stream
+  nameWithType: Stream
+  fullName: System.IO.Stream
+- uid: System.IO
+  commentId: N:System.IO
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.IO
+  nameWithType: System.IO
+  fullName: System.IO
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.IO
+    name: IO
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.IO
+    name: IO
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io
+- uid: System.Text.Json.JsonDocument.ParseAsync*
+  commentId: Overload:System.Text.Json.JsonDocument.ParseAsync
+  isExternal: true
+  href: System.Text.Json.JsonDocument.html#System_Text_Json_JsonDocument_ParseAsync_System_IO_Stream_System_Text_Json_JsonDocumentOptions_System_Threading_CancellationToken_
+  name: ParseAsync
+  nameWithType: JsonDocument.ParseAsync
+  fullName: System.Text.Json.JsonDocument.ParseAsync
+- uid: System.Threading.CancellationToken
+  commentId: T:System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  name: CancellationToken
+  nameWithType: CancellationToken
+  fullName: System.Threading.CancellationToken
+- uid: System.Threading.Tasks.Task{System.Text.Json.JsonDocument}
+  commentId: T:System.Threading.Tasks.Task{System.Text.Json.JsonDocument}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<JsonDocument>
+  nameWithType: Task<JsonDocument>
+  fullName: System.Threading.Tasks.Task<System.Text.Json.JsonDocument>
+  nameWithType.vb: Task(Of JsonDocument)
+  fullName.vb: System.Threading.Tasks.Task(Of System.Text.Json.JsonDocument)
+  name.vb: Task(Of JsonDocument)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: System.Text.Json.JsonDocument
+    name: JsonDocument
+    isExternal: true
+    href: System.Text.Json.JsonDocument.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Text.Json.JsonDocument
+    name: JsonDocument
+    isExternal: true
+    href: System.Text.Json.JsonDocument.html
+  - name: )
+- uid: System.Threading
+  commentId: N:System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading
+  nameWithType: System.Threading
+  fullName: System.Threading
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: System.ReadOnlyMemory{System.Char}
+  commentId: T:System.ReadOnlyMemory{System.Char}
+  parent: System
+  definition: System.ReadOnlyMemory`1
+  href: https://learn.microsoft.com/dotnet/api/system.readonlymemory-1
+  name: ReadOnlyMemory<char>
+  nameWithType: ReadOnlyMemory<char>
+  fullName: System.ReadOnlyMemory<char>
+  nameWithType.vb: ReadOnlyMemory(Of Char)
+  fullName.vb: System.ReadOnlyMemory(Of Char)
+  name.vb: ReadOnlyMemory(Of Char)
+  spec.csharp:
+  - uid: System.ReadOnlyMemory`1
+    name: ReadOnlyMemory
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlymemory-1
+  - name: <
+  - uid: System.Char
+    name: char
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.char
+  - name: '>'
+  spec.vb:
+  - uid: System.ReadOnlyMemory`1
+    name: ReadOnlyMemory
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlymemory-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Char
+    name: Char
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.char
+  - name: )
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Text.Json.JsonDocument.TryParseValue*
+  commentId: Overload:System.Text.Json.JsonDocument.TryParseValue
+  isExternal: true
+  href: System.Text.Json.JsonDocument.html#System_Text_Json_JsonDocument_TryParseValue_System_Text_Json_Utf8JsonReader__System_Text_Json_JsonDocument__
+  name: TryParseValue
+  nameWithType: JsonDocument.TryParseValue
+  fullName: System.Text.Json.JsonDocument.TryParseValue
+- uid: System.Text.Json.Utf8JsonReader
+  commentId: T:System.Text.Json.Utf8JsonReader
+  parent: System.Text.Json
+  isExternal: true
+  href: System.Text.Json.Utf8JsonReader.html
+  name: Utf8JsonReader
+  nameWithType: Utf8JsonReader
+  fullName: System.Text.Json.Utf8JsonReader
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System.Text.Json.JsonDocument.ParseValue*
+  commentId: Overload:System.Text.Json.JsonDocument.ParseValue
+  isExternal: true
+  href: System.Text.Json.JsonDocument.html#System_Text_Json_JsonDocument_ParseValue_System_Text_Json_Utf8JsonReader__
+  name: ParseValue
+  nameWithType: JsonDocument.ParseValue
+  fullName: System.Text.Json.JsonDocument.ParseValue
+- uid: System.Text.Json.JsonElement
+  commentId: T:System.Text.Json.JsonElement
+  parent: System.Text.Json
+  isExternal: true
+  href: System.Text.Json.JsonElement.html
+  name: JsonElement
+  nameWithType: JsonElement
+  fullName: System.Text.Json.JsonElement
+- uid: System.Text.Json.JsonDocument.RootElement*
+  commentId: Overload:System.Text.Json.JsonDocument.RootElement
+  isExternal: true
+  href: System.Text.Json.JsonDocument.html#System_Text_Json_JsonDocument_RootElement
+  name: RootElement
+  nameWithType: JsonDocument.RootElement
+  fullName: System.Text.Json.JsonDocument.RootElement

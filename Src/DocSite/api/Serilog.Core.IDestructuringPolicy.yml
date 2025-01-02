@@ -1,0 +1,169 @@
+### YamlMime:ManagedReference
+items:
+- uid: Serilog.Core.IDestructuringPolicy
+  commentId: T:Serilog.Core.IDestructuringPolicy
+  id: IDestructuringPolicy
+  parent: Serilog.Core
+  children:
+  - Serilog.Core.IDestructuringPolicy.TryDestructure(System.Object,Serilog.Core.ILogEventPropertyValueFactory,Serilog.Events.LogEventPropertyValue@)
+  langs:
+  - csharp
+  - vb
+  name: IDestructuringPolicy
+  nameWithType: IDestructuringPolicy
+  fullName: Serilog.Core.IDestructuringPolicy
+  type: Interface
+  assemblies:
+  - Serilog
+  namespace: Serilog.Core
+  summary: >-
+    Determine how, when destructuring, a supplied value is represented
+
+    as a complex log event property.
+  example: []
+  syntax:
+    content: public interface IDestructuringPolicy
+    content.vb: Public Interface IDestructuringPolicy
+- uid: Serilog.Core.IDestructuringPolicy.TryDestructure(System.Object,Serilog.Core.ILogEventPropertyValueFactory,Serilog.Events.LogEventPropertyValue@)
+  commentId: M:Serilog.Core.IDestructuringPolicy.TryDestructure(System.Object,Serilog.Core.ILogEventPropertyValueFactory,Serilog.Events.LogEventPropertyValue@)
+  id: TryDestructure(System.Object,Serilog.Core.ILogEventPropertyValueFactory,Serilog.Events.LogEventPropertyValue@)
+  parent: Serilog.Core.IDestructuringPolicy
+  langs:
+  - csharp
+  - vb
+  name: TryDestructure(object, ILogEventPropertyValueFactory, out LogEventPropertyValue?)
+  nameWithType: IDestructuringPolicy.TryDestructure(object, ILogEventPropertyValueFactory, out LogEventPropertyValue?)
+  fullName: Serilog.Core.IDestructuringPolicy.TryDestructure(object, Serilog.Core.ILogEventPropertyValueFactory, out Serilog.Events.LogEventPropertyValue?)
+  type: Method
+  assemblies:
+  - Serilog
+  namespace: Serilog.Core
+  summary: If supported, destructure the provided value.
+  example: []
+  syntax:
+    content: bool TryDestructure(object value, ILogEventPropertyValueFactory propertyValueFactory, out LogEventPropertyValue? result)
+    parameters:
+    - id: value
+      type: System.Object
+      description: The value to destructure.
+    - id: propertyValueFactory
+      type: Serilog.Core.ILogEventPropertyValueFactory
+      description: Recursively apply policies to destructure additional values.
+    - id: result
+      type: Serilog.Events.LogEventPropertyValue
+      description: The destructured value, or null.
+    return:
+      type: System.Boolean
+      description: True if the value could be destructured under this policy.
+    content.vb: Function TryDestructure(value As Object, propertyValueFactory As ILogEventPropertyValueFactory, result As LogEventPropertyValue) As Boolean
+  overload: Serilog.Core.IDestructuringPolicy.TryDestructure*
+  nameWithType.vb: IDestructuringPolicy.TryDestructure(Object, ILogEventPropertyValueFactory, LogEventPropertyValue)
+  fullName.vb: Serilog.Core.IDestructuringPolicy.TryDestructure(Object, Serilog.Core.ILogEventPropertyValueFactory, Serilog.Events.LogEventPropertyValue)
+  name.vb: TryDestructure(Object, ILogEventPropertyValueFactory, LogEventPropertyValue)
+references:
+- uid: Serilog.Core
+  commentId: N:Serilog.Core
+  isExternal: true
+  href: Serilog.html
+  name: Serilog.Core
+  nameWithType: Serilog.Core
+  fullName: Serilog.Core
+  spec.csharp:
+  - uid: Serilog
+    name: Serilog
+    isExternal: true
+    href: Serilog.html
+  - name: .
+  - uid: Serilog.Core
+    name: Core
+    isExternal: true
+    href: Serilog.Core.html
+  spec.vb:
+  - uid: Serilog
+    name: Serilog
+    isExternal: true
+    href: Serilog.html
+  - name: .
+  - uid: Serilog.Core
+    name: Core
+    isExternal: true
+    href: Serilog.Core.html
+- uid: Serilog.Core.IDestructuringPolicy.TryDestructure*
+  commentId: Overload:Serilog.Core.IDestructuringPolicy.TryDestructure
+  isExternal: true
+  href: Serilog.Core.IDestructuringPolicy.html#Serilog_Core_IDestructuringPolicy_TryDestructure_System_Object_Serilog_Core_ILogEventPropertyValueFactory_Serilog_Events_LogEventPropertyValue__
+  name: TryDestructure
+  nameWithType: IDestructuringPolicy.TryDestructure
+  fullName: Serilog.Core.IDestructuringPolicy.TryDestructure
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Serilog.Core.ILogEventPropertyValueFactory
+  commentId: T:Serilog.Core.ILogEventPropertyValueFactory
+  parent: Serilog.Core
+  isExternal: true
+  href: Serilog.Core.ILogEventPropertyValueFactory.html
+  name: ILogEventPropertyValueFactory
+  nameWithType: ILogEventPropertyValueFactory
+  fullName: Serilog.Core.ILogEventPropertyValueFactory
+- uid: Serilog.Events.LogEventPropertyValue
+  commentId: T:Serilog.Events.LogEventPropertyValue
+  parent: Serilog.Events
+  isExternal: true
+  href: Serilog.Events.LogEventPropertyValue.html
+  name: LogEventPropertyValue
+  nameWithType: LogEventPropertyValue
+  fullName: Serilog.Events.LogEventPropertyValue
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Serilog.Events
+  commentId: N:Serilog.Events
+  isExternal: true
+  href: Serilog.html
+  name: Serilog.Events
+  nameWithType: Serilog.Events
+  fullName: Serilog.Events
+  spec.csharp:
+  - uid: Serilog
+    name: Serilog
+    isExternal: true
+    href: Serilog.html
+  - name: .
+  - uid: Serilog.Events
+    name: Events
+    isExternal: true
+    href: Serilog.Events.html
+  spec.vb:
+  - uid: Serilog
+    name: Serilog
+    isExternal: true
+    href: Serilog.html
+  - name: .
+  - uid: Serilog.Events
+    name: Events
+    isExternal: true
+    href: Serilog.Events.html

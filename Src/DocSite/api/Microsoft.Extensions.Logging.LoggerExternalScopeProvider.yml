@@ -1,0 +1,703 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Extensions.Logging.LoggerExternalScopeProvider
+  commentId: T:Microsoft.Extensions.Logging.LoggerExternalScopeProvider
+  id: LoggerExternalScopeProvider
+  parent: Microsoft.Extensions.Logging
+  children:
+  - Microsoft.Extensions.Logging.LoggerExternalScopeProvider.#ctor
+  - Microsoft.Extensions.Logging.LoggerExternalScopeProvider.ForEachScope``1(System.Action{System.Object,``0},``0)
+  - Microsoft.Extensions.Logging.LoggerExternalScopeProvider.Push(System.Object)
+  langs:
+  - csharp
+  - vb
+  name: LoggerExternalScopeProvider
+  nameWithType: LoggerExternalScopeProvider
+  fullName: Microsoft.Extensions.Logging.LoggerExternalScopeProvider
+  type: Class
+  assemblies:
+  - Microsoft.Extensions.Logging.Abstractions
+  namespace: Microsoft.Extensions.Logging
+  summary: Default implementation of <xref href="Microsoft.Extensions.Logging.IExternalScopeProvider" data-throw-if-not-resolved="false"></xref>
+  example: []
+  syntax:
+    content: 'public class LoggerExternalScopeProvider : IExternalScopeProvider'
+    content.vb: Public Class LoggerExternalScopeProvider Implements IExternalScopeProvider
+  inheritance:
+  - System.Object
+  implements:
+  - Microsoft.Extensions.Logging.IExternalScopeProvider
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: Microsoft.Extensions.Logging.LoggerExternalScopeProvider.#ctor
+  commentId: M:Microsoft.Extensions.Logging.LoggerExternalScopeProvider.#ctor
+  id: '#ctor'
+  parent: Microsoft.Extensions.Logging.LoggerExternalScopeProvider
+  langs:
+  - csharp
+  - vb
+  name: LoggerExternalScopeProvider()
+  nameWithType: LoggerExternalScopeProvider.LoggerExternalScopeProvider()
+  fullName: Microsoft.Extensions.Logging.LoggerExternalScopeProvider.LoggerExternalScopeProvider()
+  type: Constructor
+  assemblies:
+  - Microsoft.Extensions.Logging.Abstractions
+  namespace: Microsoft.Extensions.Logging
+  summary: Creates a new <xref href="Microsoft.Extensions.Logging.LoggerExternalScopeProvider" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public LoggerExternalScopeProvider()
+    content.vb: Public Sub New()
+  overload: Microsoft.Extensions.Logging.LoggerExternalScopeProvider.#ctor*
+  nameWithType.vb: LoggerExternalScopeProvider.New()
+  fullName.vb: Microsoft.Extensions.Logging.LoggerExternalScopeProvider.New()
+  name.vb: New()
+- uid: Microsoft.Extensions.Logging.LoggerExternalScopeProvider.ForEachScope``1(System.Action{System.Object,``0},``0)
+  commentId: M:Microsoft.Extensions.Logging.LoggerExternalScopeProvider.ForEachScope``1(System.Action{System.Object,``0},``0)
+  id: ForEachScope``1(System.Action{System.Object,``0},``0)
+  parent: Microsoft.Extensions.Logging.LoggerExternalScopeProvider
+  langs:
+  - csharp
+  - vb
+  name: ForEachScope<TState>(Action<object?, TState>, TState)
+  nameWithType: LoggerExternalScopeProvider.ForEachScope<TState>(Action<object?, TState>, TState)
+  fullName: Microsoft.Extensions.Logging.LoggerExternalScopeProvider.ForEachScope<TState>(System.Action<object?, TState>, TState)
+  type: Method
+  assemblies:
+  - Microsoft.Extensions.Logging.Abstractions
+  namespace: Microsoft.Extensions.Logging
+  summary: >-
+    Executes callback for each currently active scope objects in order of creation.
+
+    All callbacks are guaranteed to be called inline from this method.
+  example: []
+  syntax:
+    content: public void ForEachScope<TState>(Action<object?, TState> callback, TState state)
+    parameters:
+    - id: callback
+      type: System.Action{System.Object,{TState}}
+      description: The callback to be executed for every scope object
+    - id: state
+      type: '{TState}'
+      description: The state object to be passed into the callback
+    typeParameters:
+    - id: TState
+      description: The type of state to accept.
+    content.vb: Public Sub ForEachScope(Of TState)(callback As Action(Of Object, TState), state As TState)
+  overload: Microsoft.Extensions.Logging.LoggerExternalScopeProvider.ForEachScope*
+  implements:
+  - Microsoft.Extensions.Logging.IExternalScopeProvider.ForEachScope``1(System.Action{System.Object,{TState}},{TState})
+  nameWithType.vb: LoggerExternalScopeProvider.ForEachScope(Of TState)(Action(Of Object, TState), TState)
+  fullName.vb: Microsoft.Extensions.Logging.LoggerExternalScopeProvider.ForEachScope(Of TState)(System.Action(Of Object, TState), TState)
+  name.vb: ForEachScope(Of TState)(Action(Of Object, TState), TState)
+- uid: Microsoft.Extensions.Logging.LoggerExternalScopeProvider.Push(System.Object)
+  commentId: M:Microsoft.Extensions.Logging.LoggerExternalScopeProvider.Push(System.Object)
+  id: Push(System.Object)
+  parent: Microsoft.Extensions.Logging.LoggerExternalScopeProvider
+  langs:
+  - csharp
+  - vb
+  name: Push(object?)
+  nameWithType: LoggerExternalScopeProvider.Push(object?)
+  fullName: Microsoft.Extensions.Logging.LoggerExternalScopeProvider.Push(object?)
+  type: Method
+  assemblies:
+  - Microsoft.Extensions.Logging.Abstractions
+  namespace: Microsoft.Extensions.Logging
+  summary: Adds scope object to the list
+  example: []
+  syntax:
+    content: public IDisposable Push(object? state)
+    parameters:
+    - id: state
+      type: System.Object
+      description: The scope object
+    return:
+      type: System.IDisposable
+      description: The <xref href="System.IDisposable" data-throw-if-not-resolved="false"></xref> token that removes scope on dispose.
+    content.vb: Public Function Push(state As Object) As IDisposable
+  overload: Microsoft.Extensions.Logging.LoggerExternalScopeProvider.Push*
+  implements:
+  - Microsoft.Extensions.Logging.IExternalScopeProvider.Push(System.Object)
+  nameWithType.vb: LoggerExternalScopeProvider.Push(Object)
+  fullName.vb: Microsoft.Extensions.Logging.LoggerExternalScopeProvider.Push(Object)
+  name.vb: Push(Object)
+references:
+- uid: Microsoft.Extensions.Logging.IExternalScopeProvider
+  commentId: T:Microsoft.Extensions.Logging.IExternalScopeProvider
+  parent: Microsoft.Extensions.Logging
+  isExternal: true
+  href: Microsoft.Extensions.Logging.IExternalScopeProvider.html
+  name: IExternalScopeProvider
+  nameWithType: IExternalScopeProvider
+  fullName: Microsoft.Extensions.Logging.IExternalScopeProvider
+- uid: Microsoft.Extensions.Logging
+  commentId: N:Microsoft.Extensions.Logging
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft
+  name: Microsoft.Extensions.Logging
+  nameWithType: Microsoft.Extensions.Logging
+  fullName: Microsoft.Extensions.Logging
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.Extensions
+    name: Extensions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions
+  - name: .
+  - uid: Microsoft.Extensions.Logging
+    name: Logging
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.Extensions
+    name: Extensions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions
+  - name: .
+  - uid: Microsoft.Extensions.Logging
+    name: Logging
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Microsoft.Extensions.Logging.LoggerExternalScopeProvider
+  commentId: T:Microsoft.Extensions.Logging.LoggerExternalScopeProvider
+  isExternal: true
+  href: Microsoft.Extensions.Logging.LoggerExternalScopeProvider.html
+  name: LoggerExternalScopeProvider
+  nameWithType: LoggerExternalScopeProvider
+  fullName: Microsoft.Extensions.Logging.LoggerExternalScopeProvider
+- uid: Microsoft.Extensions.Logging.LoggerExternalScopeProvider.#ctor*
+  commentId: Overload:Microsoft.Extensions.Logging.LoggerExternalScopeProvider.#ctor
+  isExternal: true
+  href: Microsoft.Extensions.Logging.LoggerExternalScopeProvider.html#Microsoft_Extensions_Logging_LoggerExternalScopeProvider__ctor
+  name: LoggerExternalScopeProvider
+  nameWithType: LoggerExternalScopeProvider.LoggerExternalScopeProvider
+  fullName: Microsoft.Extensions.Logging.LoggerExternalScopeProvider.LoggerExternalScopeProvider
+  nameWithType.vb: LoggerExternalScopeProvider.New
+  fullName.vb: Microsoft.Extensions.Logging.LoggerExternalScopeProvider.New
+  name.vb: New
+- uid: Microsoft.Extensions.Logging.LoggerExternalScopeProvider.ForEachScope*
+  commentId: Overload:Microsoft.Extensions.Logging.LoggerExternalScopeProvider.ForEachScope
+  isExternal: true
+  href: Microsoft.Extensions.Logging.LoggerExternalScopeProvider.html#Microsoft_Extensions_Logging_LoggerExternalScopeProvider_ForEachScope__1_System_Action_System_Object___0____0_
+  name: ForEachScope
+  nameWithType: LoggerExternalScopeProvider.ForEachScope
+  fullName: Microsoft.Extensions.Logging.LoggerExternalScopeProvider.ForEachScope
+- uid: Microsoft.Extensions.Logging.IExternalScopeProvider.ForEachScope``1(System.Action{System.Object,{TState}},{TState})
+  commentId: M:Microsoft.Extensions.Logging.IExternalScopeProvider.ForEachScope``1(System.Action{System.Object,``0},``0)
+  parent: Microsoft.Extensions.Logging.IExternalScopeProvider
+  definition: Microsoft.Extensions.Logging.IExternalScopeProvider.ForEachScope``1(System.Action{System.Object,``0},``0)
+  href: Microsoft.Extensions.Logging.IExternalScopeProvider.html#Microsoft_Extensions_Logging_IExternalScopeProvider_ForEachScope__1_System_Action_System_Object___0____0_
+  name: ForEachScope<TState>(Action<object, TState>, TState)
+  nameWithType: IExternalScopeProvider.ForEachScope<TState>(Action<object, TState>, TState)
+  fullName: Microsoft.Extensions.Logging.IExternalScopeProvider.ForEachScope<TState>(System.Action<object, TState>, TState)
+  nameWithType.vb: IExternalScopeProvider.ForEachScope(Of TState)(Action(Of Object, TState), TState)
+  fullName.vb: Microsoft.Extensions.Logging.IExternalScopeProvider.ForEachScope(Of TState)(System.Action(Of Object, TState), TState)
+  name.vb: ForEachScope(Of TState)(Action(Of Object, TState), TState)
+  spec.csharp:
+  - uid: Microsoft.Extensions.Logging.IExternalScopeProvider.ForEachScope``1(System.Action{System.Object,``0},``0)
+    name: ForEachScope
+    isExternal: true
+    href: Microsoft.Extensions.Logging.IExternalScopeProvider.html#Microsoft_Extensions_Logging_IExternalScopeProvider_ForEachScope__1_System_Action_System_Object___0____0_
+  - name: <
+  - name: TState
+  - name: '>'
+  - name: (
+  - uid: System.Action`2
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-2
+  - name: <
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - name: TState
+  - name: '>'
+  - name: ','
+  - name: " "
+  - name: TState
+  - name: )
+  spec.vb:
+  - uid: Microsoft.Extensions.Logging.IExternalScopeProvider.ForEachScope``1(System.Action{System.Object,``0},``0)
+    name: ForEachScope
+    isExternal: true
+    href: Microsoft.Extensions.Logging.IExternalScopeProvider.html#Microsoft_Extensions_Logging_IExternalScopeProvider_ForEachScope__1_System_Action_System_Object___0____0_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TState
+  - name: )
+  - name: (
+  - uid: System.Action`2
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - name: TState
+  - name: )
+  - name: ','
+  - name: " "
+  - name: TState
+  - name: )
+- uid: System.Action{System.Object,{TState}}
+  commentId: T:System.Action{System.Object,``0}
+  parent: System
+  definition: System.Action`2
+  href: https://learn.microsoft.com/dotnet/api/system.action-2
+  name: Action<object, TState>
+  nameWithType: Action<object, TState>
+  fullName: System.Action<object, TState>
+  nameWithType.vb: Action(Of Object, TState)
+  fullName.vb: System.Action(Of Object, TState)
+  name.vb: Action(Of Object, TState)
+  spec.csharp:
+  - uid: System.Action`2
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-2
+  - name: <
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - name: TState
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`2
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - name: TState
+  - name: )
+- uid: '{TState}'
+  commentId: '!:TState'
+  definition: TState
+  name: TState
+  nameWithType: TState
+  fullName: TState
+- uid: Microsoft.Extensions.Logging.IExternalScopeProvider.ForEachScope``1(System.Action{System.Object,``0},``0)
+  commentId: M:Microsoft.Extensions.Logging.IExternalScopeProvider.ForEachScope``1(System.Action{System.Object,``0},``0)
+  isExternal: true
+  href: Microsoft.Extensions.Logging.IExternalScopeProvider.html#Microsoft_Extensions_Logging_IExternalScopeProvider_ForEachScope__1_System_Action_System_Object___0____0_
+  name: ForEachScope<TState>(Action<object, TState>, TState)
+  nameWithType: IExternalScopeProvider.ForEachScope<TState>(Action<object, TState>, TState)
+  fullName: Microsoft.Extensions.Logging.IExternalScopeProvider.ForEachScope<TState>(System.Action<object, TState>, TState)
+  nameWithType.vb: IExternalScopeProvider.ForEachScope(Of TState)(Action(Of Object, TState), TState)
+  fullName.vb: Microsoft.Extensions.Logging.IExternalScopeProvider.ForEachScope(Of TState)(System.Action(Of Object, TState), TState)
+  name.vb: ForEachScope(Of TState)(Action(Of Object, TState), TState)
+  spec.csharp:
+  - uid: Microsoft.Extensions.Logging.IExternalScopeProvider.ForEachScope``1(System.Action{System.Object,``0},``0)
+    name: ForEachScope
+    isExternal: true
+    href: Microsoft.Extensions.Logging.IExternalScopeProvider.html#Microsoft_Extensions_Logging_IExternalScopeProvider_ForEachScope__1_System_Action_System_Object___0____0_
+  - name: <
+  - name: TState
+  - name: '>'
+  - name: (
+  - uid: System.Action`2
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-2
+  - name: <
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - name: TState
+  - name: '>'
+  - name: ','
+  - name: " "
+  - name: TState
+  - name: )
+  spec.vb:
+  - uid: Microsoft.Extensions.Logging.IExternalScopeProvider.ForEachScope``1(System.Action{System.Object,``0},``0)
+    name: ForEachScope
+    isExternal: true
+    href: Microsoft.Extensions.Logging.IExternalScopeProvider.html#Microsoft_Extensions_Logging_IExternalScopeProvider_ForEachScope__1_System_Action_System_Object___0____0_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TState
+  - name: )
+  - name: (
+  - uid: System.Action`2
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - name: TState
+  - name: )
+  - name: ','
+  - name: " "
+  - name: TState
+  - name: )
+- uid: System.Action`2
+  commentId: T:System.Action`2
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.action-2
+  name: Action<T1, T2>
+  nameWithType: Action<T1, T2>
+  fullName: System.Action<T1, T2>
+  nameWithType.vb: Action(Of T1, T2)
+  fullName.vb: System.Action(Of T1, T2)
+  name.vb: Action(Of T1, T2)
+  spec.csharp:
+  - uid: System.Action`2
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-2
+  - name: <
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`2
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: )
+- uid: TState
+  name: TState
+  nameWithType: TState
+  fullName: TState
+- uid: System.IDisposable
+  commentId: T:System.IDisposable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable
+- uid: Microsoft.Extensions.Logging.LoggerExternalScopeProvider.Push*
+  commentId: Overload:Microsoft.Extensions.Logging.LoggerExternalScopeProvider.Push
+  isExternal: true
+  href: Microsoft.Extensions.Logging.LoggerExternalScopeProvider.html#Microsoft_Extensions_Logging_LoggerExternalScopeProvider_Push_System_Object_
+  name: Push
+  nameWithType: LoggerExternalScopeProvider.Push
+  fullName: Microsoft.Extensions.Logging.LoggerExternalScopeProvider.Push
+- uid: Microsoft.Extensions.Logging.IExternalScopeProvider.Push(System.Object)
+  commentId: M:Microsoft.Extensions.Logging.IExternalScopeProvider.Push(System.Object)
+  parent: Microsoft.Extensions.Logging.IExternalScopeProvider
+  isExternal: true
+  href: Microsoft.Extensions.Logging.IExternalScopeProvider.html#Microsoft_Extensions_Logging_IExternalScopeProvider_Push_System_Object_
+  name: Push(object)
+  nameWithType: IExternalScopeProvider.Push(object)
+  fullName: Microsoft.Extensions.Logging.IExternalScopeProvider.Push(object)
+  nameWithType.vb: IExternalScopeProvider.Push(Object)
+  fullName.vb: Microsoft.Extensions.Logging.IExternalScopeProvider.Push(Object)
+  name.vb: Push(Object)
+  spec.csharp:
+  - uid: Microsoft.Extensions.Logging.IExternalScopeProvider.Push(System.Object)
+    name: Push
+    isExternal: true
+    href: Microsoft.Extensions.Logging.IExternalScopeProvider.html#Microsoft_Extensions_Logging_IExternalScopeProvider_Push_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: Microsoft.Extensions.Logging.IExternalScopeProvider.Push(System.Object)
+    name: Push
+    isExternal: true
+    href: Microsoft.Extensions.Logging.IExternalScopeProvider.html#Microsoft_Extensions_Logging_IExternalScopeProvider_Push_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )

@@ -1,0 +1,977 @@
+### YamlMime:ManagedReference
+items:
+- uid: MessagePack.MessagePackSecurity
+  commentId: T:MessagePack.MessagePackSecurity
+  id: MessagePackSecurity
+  parent: MessagePack
+  children:
+  - MessagePack.MessagePackSecurity.#ctor(MessagePack.MessagePackSecurity)
+  - MessagePack.MessagePackSecurity.Clone
+  - MessagePack.MessagePackSecurity.DepthStep(MessagePack.MessagePackReader@)
+  - MessagePack.MessagePackSecurity.GetEqualityComparer
+  - MessagePack.MessagePackSecurity.GetEqualityComparer``1
+  - MessagePack.MessagePackSecurity.GetHashCollisionResistantEqualityComparer
+  - MessagePack.MessagePackSecurity.GetHashCollisionResistantEqualityComparer``1
+  - MessagePack.MessagePackSecurity.HashCollisionResistant
+  - MessagePack.MessagePackSecurity.MaximumObjectGraphDepth
+  - MessagePack.MessagePackSecurity.TrustedData
+  - MessagePack.MessagePackSecurity.UntrustedData
+  - MessagePack.MessagePackSecurity.WithHashCollisionResistant(System.Boolean)
+  - MessagePack.MessagePackSecurity.WithMaximumObjectGraphDepth(System.Int32)
+  langs:
+  - csharp
+  - vb
+  name: MessagePackSecurity
+  nameWithType: MessagePackSecurity
+  fullName: MessagePack.MessagePackSecurity
+  type: Class
+  assemblies:
+  - MessagePack
+  namespace: MessagePack
+  summary: Settings related to security, particularly relevant when deserializing data from untrusted sources.
+  example: []
+  syntax:
+    content: public class MessagePackSecurity
+    content.vb: Public Class MessagePackSecurity
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+- uid: MessagePack.MessagePackSecurity.TrustedData
+  commentId: F:MessagePack.MessagePackSecurity.TrustedData
+  id: TrustedData
+  parent: MessagePack.MessagePackSecurity
+  langs:
+  - csharp
+  - vb
+  name: TrustedData
+  nameWithType: MessagePackSecurity.TrustedData
+  fullName: MessagePack.MessagePackSecurity.TrustedData
+  type: Field
+  assemblies:
+  - MessagePack
+  namespace: MessagePack
+  summary: Gets an instance preconfigured with settings that omit all protections. Useful for deserializing fully-trusted and valid msgpack sequences.
+  example: []
+  syntax:
+    content: public static readonly MessagePackSecurity TrustedData
+    return:
+      type: MessagePack.MessagePackSecurity
+    content.vb: Public Shared ReadOnly TrustedData As MessagePackSecurity
+- uid: MessagePack.MessagePackSecurity.UntrustedData
+  commentId: F:MessagePack.MessagePackSecurity.UntrustedData
+  id: UntrustedData
+  parent: MessagePack.MessagePackSecurity
+  langs:
+  - csharp
+  - vb
+  name: UntrustedData
+  nameWithType: MessagePackSecurity.UntrustedData
+  fullName: MessagePack.MessagePackSecurity.UntrustedData
+  type: Field
+  assemblies:
+  - MessagePack
+  namespace: MessagePack
+  summary: Gets an instance preconfigured with protections applied with reasonable settings for deserializing untrusted msgpack sequences.
+  example: []
+  syntax:
+    content: public static readonly MessagePackSecurity UntrustedData
+    return:
+      type: MessagePack.MessagePackSecurity
+    content.vb: Public Shared ReadOnly UntrustedData As MessagePackSecurity
+- uid: MessagePack.MessagePackSecurity.#ctor(MessagePack.MessagePackSecurity)
+  commentId: M:MessagePack.MessagePackSecurity.#ctor(MessagePack.MessagePackSecurity)
+  id: '#ctor(MessagePack.MessagePackSecurity)'
+  parent: MessagePack.MessagePackSecurity
+  langs:
+  - csharp
+  - vb
+  name: MessagePackSecurity(MessagePackSecurity)
+  nameWithType: MessagePackSecurity.MessagePackSecurity(MessagePackSecurity)
+  fullName: MessagePack.MessagePackSecurity.MessagePackSecurity(MessagePack.MessagePackSecurity)
+  type: Constructor
+  assemblies:
+  - MessagePack
+  namespace: MessagePack
+  summary: >-
+    Initializes a new instance of the <xref href="MessagePack.MessagePackSecurity" data-throw-if-not-resolved="false"></xref> class
+
+    with properties copied from a provided template.
+  example: []
+  syntax:
+    content: protected MessagePackSecurity(MessagePackSecurity copyFrom)
+    parameters:
+    - id: copyFrom
+      type: MessagePack.MessagePackSecurity
+      description: The template to copy from.
+    content.vb: Protected Sub New(copyFrom As MessagePackSecurity)
+  overload: MessagePack.MessagePackSecurity.#ctor*
+  nameWithType.vb: MessagePackSecurity.New(MessagePackSecurity)
+  fullName.vb: MessagePack.MessagePackSecurity.New(MessagePack.MessagePackSecurity)
+  name.vb: New(MessagePackSecurity)
+- uid: MessagePack.MessagePackSecurity.WithMaximumObjectGraphDepth(System.Int32)
+  commentId: M:MessagePack.MessagePackSecurity.WithMaximumObjectGraphDepth(System.Int32)
+  id: WithMaximumObjectGraphDepth(System.Int32)
+  parent: MessagePack.MessagePackSecurity
+  langs:
+  - csharp
+  - vb
+  name: WithMaximumObjectGraphDepth(int)
+  nameWithType: MessagePackSecurity.WithMaximumObjectGraphDepth(int)
+  fullName: MessagePack.MessagePackSecurity.WithMaximumObjectGraphDepth(int)
+  type: Method
+  assemblies:
+  - MessagePack
+  namespace: MessagePack
+  summary: Gets a copy of these options with the <xref href="MessagePack.MessagePackSecurity.MaximumObjectGraphDepth" data-throw-if-not-resolved="false"></xref> property set to a new value.
+  example: []
+  syntax:
+    content: public MessagePackSecurity WithMaximumObjectGraphDepth(int maximumObjectGraphDepth)
+    parameters:
+    - id: maximumObjectGraphDepth
+      type: System.Int32
+      description: The new value for the <xref href="MessagePack.MessagePackSecurity.MaximumObjectGraphDepth" data-throw-if-not-resolved="false"></xref> property.
+    return:
+      type: MessagePack.MessagePackSecurity
+      description: The new instance; or the original if the value is unchanged.
+    content.vb: Public Function WithMaximumObjectGraphDepth(maximumObjectGraphDepth As Integer) As MessagePackSecurity
+  overload: MessagePack.MessagePackSecurity.WithMaximumObjectGraphDepth*
+  nameWithType.vb: MessagePackSecurity.WithMaximumObjectGraphDepth(Integer)
+  fullName.vb: MessagePack.MessagePackSecurity.WithMaximumObjectGraphDepth(Integer)
+  name.vb: WithMaximumObjectGraphDepth(Integer)
+- uid: MessagePack.MessagePackSecurity.WithHashCollisionResistant(System.Boolean)
+  commentId: M:MessagePack.MessagePackSecurity.WithHashCollisionResistant(System.Boolean)
+  id: WithHashCollisionResistant(System.Boolean)
+  parent: MessagePack.MessagePackSecurity
+  langs:
+  - csharp
+  - vb
+  name: WithHashCollisionResistant(bool)
+  nameWithType: MessagePackSecurity.WithHashCollisionResistant(bool)
+  fullName: MessagePack.MessagePackSecurity.WithHashCollisionResistant(bool)
+  type: Method
+  assemblies:
+  - MessagePack
+  namespace: MessagePack
+  summary: Gets a copy of these options with the <xref href="MessagePack.MessagePackSecurity.HashCollisionResistant" data-throw-if-not-resolved="false"></xref> property set to a new value.
+  example: []
+  syntax:
+    content: public MessagePackSecurity WithHashCollisionResistant(bool hashCollisionResistant)
+    parameters:
+    - id: hashCollisionResistant
+      type: System.Boolean
+      description: The new value for the <xref href="MessagePack.MessagePackSecurity.HashCollisionResistant" data-throw-if-not-resolved="false"></xref> property.
+    return:
+      type: MessagePack.MessagePackSecurity
+      description: The new instance; or the original if the value is unchanged.
+    content.vb: Public Function WithHashCollisionResistant(hashCollisionResistant As Boolean) As MessagePackSecurity
+  overload: MessagePack.MessagePackSecurity.WithHashCollisionResistant*
+  nameWithType.vb: MessagePackSecurity.WithHashCollisionResistant(Boolean)
+  fullName.vb: MessagePack.MessagePackSecurity.WithHashCollisionResistant(Boolean)
+  name.vb: WithHashCollisionResistant(Boolean)
+- uid: MessagePack.MessagePackSecurity.GetEqualityComparer``1
+  commentId: M:MessagePack.MessagePackSecurity.GetEqualityComparer``1
+  id: GetEqualityComparer``1
+  parent: MessagePack.MessagePackSecurity
+  langs:
+  - csharp
+  - vb
+  name: GetEqualityComparer<T>()
+  nameWithType: MessagePackSecurity.GetEqualityComparer<T>()
+  fullName: MessagePack.MessagePackSecurity.GetEqualityComparer<T>()
+  type: Method
+  assemblies:
+  - MessagePack
+  namespace: MessagePack
+  summary: Gets an <xref href="System.Collections.Generic.IEqualityComparer%601" data-throw-if-not-resolved="false"></xref> that is suitable to use with a hash-based collection.
+  remarks: >-
+    When <xref href="MessagePack.MessagePackSecurity.HashCollisionResistant" data-throw-if-not-resolved="false"></xref> is active, this will be a collision resistant instance which may reject certain key types.
+
+    When <xref href="MessagePack.MessagePackSecurity.HashCollisionResistant" data-throw-if-not-resolved="false"></xref> is not active, this will be <xref href="System.Collections.Generic.EqualityComparer%601.Default" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public IEqualityComparer<T> GetEqualityComparer<T>()
+    typeParameters:
+    - id: T
+      description: The type of key that will be hashed in the collection.
+    return:
+      type: System.Collections.Generic.IEqualityComparer{{T}}
+      description: The <xref href="System.Collections.Generic.IEqualityComparer%601" data-throw-if-not-resolved="false"></xref> to use.
+    content.vb: Public Function GetEqualityComparer(Of T)() As IEqualityComparer(Of T)
+  overload: MessagePack.MessagePackSecurity.GetEqualityComparer*
+  nameWithType.vb: MessagePackSecurity.GetEqualityComparer(Of T)()
+  fullName.vb: MessagePack.MessagePackSecurity.GetEqualityComparer(Of T)()
+  name.vb: GetEqualityComparer(Of T)()
+- uid: MessagePack.MessagePackSecurity.GetEqualityComparer
+  commentId: M:MessagePack.MessagePackSecurity.GetEqualityComparer
+  id: GetEqualityComparer
+  parent: MessagePack.MessagePackSecurity
+  langs:
+  - csharp
+  - vb
+  name: GetEqualityComparer()
+  nameWithType: MessagePackSecurity.GetEqualityComparer()
+  fullName: MessagePack.MessagePackSecurity.GetEqualityComparer()
+  type: Method
+  assemblies:
+  - MessagePack
+  namespace: MessagePack
+  summary: Gets an <xref href="System.Collections.IEqualityComparer" data-throw-if-not-resolved="false"></xref> that is suitable to use with a hash-based collection.
+  remarks: >-
+    When <xref href="MessagePack.MessagePackSecurity.HashCollisionResistant" data-throw-if-not-resolved="false"></xref> is active, this will be a collision resistant instance which may reject certain key types.
+
+    When <xref href="MessagePack.MessagePackSecurity.HashCollisionResistant" data-throw-if-not-resolved="false"></xref> is not active, this will be <xref href="System.Collections.Generic.EqualityComparer%601.Default" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public IEqualityComparer GetEqualityComparer()
+    return:
+      type: System.Collections.IEqualityComparer
+      description: The <xref href="System.Collections.IEqualityComparer" data-throw-if-not-resolved="false"></xref> to use.
+    content.vb: Public Function GetEqualityComparer() As IEqualityComparer
+  overload: MessagePack.MessagePackSecurity.GetEqualityComparer*
+- uid: MessagePack.MessagePackSecurity.GetHashCollisionResistantEqualityComparer``1
+  commentId: M:MessagePack.MessagePackSecurity.GetHashCollisionResistantEqualityComparer``1
+  id: GetHashCollisionResistantEqualityComparer``1
+  parent: MessagePack.MessagePackSecurity
+  langs:
+  - csharp
+  - vb
+  name: GetHashCollisionResistantEqualityComparer<T>()
+  nameWithType: MessagePackSecurity.GetHashCollisionResistantEqualityComparer<T>()
+  fullName: MessagePack.MessagePackSecurity.GetHashCollisionResistantEqualityComparer<T>()
+  type: Method
+  assemblies:
+  - MessagePack
+  namespace: MessagePack
+  summary: Returns a hash collision resistant equality comparer.
+  example: []
+  syntax:
+    content: protected virtual IEqualityComparer<T> GetHashCollisionResistantEqualityComparer<T>()
+    typeParameters:
+    - id: T
+      description: The type of key that will be hashed in the collection.
+    return:
+      type: System.Collections.Generic.IEqualityComparer{{T}}
+      description: A hash collision resistant equality comparer.
+    content.vb: Protected Overridable Function GetHashCollisionResistantEqualityComparer(Of T)() As IEqualityComparer(Of T)
+  overload: MessagePack.MessagePackSecurity.GetHashCollisionResistantEqualityComparer*
+  nameWithType.vb: MessagePackSecurity.GetHashCollisionResistantEqualityComparer(Of T)()
+  fullName.vb: MessagePack.MessagePackSecurity.GetHashCollisionResistantEqualityComparer(Of T)()
+  name.vb: GetHashCollisionResistantEqualityComparer(Of T)()
+- uid: MessagePack.MessagePackSecurity.DepthStep(MessagePack.MessagePackReader@)
+  commentId: M:MessagePack.MessagePackSecurity.DepthStep(MessagePack.MessagePackReader@)
+  id: DepthStep(MessagePack.MessagePackReader@)
+  parent: MessagePack.MessagePackSecurity
+  langs:
+  - csharp
+  - vb
+  name: DepthStep(ref MessagePackReader)
+  nameWithType: MessagePackSecurity.DepthStep(ref MessagePackReader)
+  fullName: MessagePack.MessagePackSecurity.DepthStep(ref MessagePack.MessagePackReader)
+  type: Method
+  assemblies:
+  - MessagePack
+  namespace: MessagePack
+  summary: Checks the depth of the deserializing graph and increments it by 1.
+  remarks: Callers should decrement <xref href="MessagePack.MessagePackReader.Depth" data-throw-if-not-resolved="false"></xref> after exiting that edge in the graph.
+  example: []
+  syntax:
+    content: public void DepthStep(ref MessagePackReader reader)
+    parameters:
+    - id: reader
+      type: MessagePack.MessagePackReader
+      description: The reader that is involved in deserialization.
+    content.vb: Public Sub DepthStep(reader As MessagePackReader)
+  overload: MessagePack.MessagePackSecurity.DepthStep*
+  exceptions:
+  - type: System.InsufficientExecutionStackException
+    commentId: T:System.InsufficientExecutionStackException
+    description: Thrown if <xref href="MessagePack.MessagePackReader.Depth" data-throw-if-not-resolved="false"></xref> is already at or exceeds <xref href="MessagePack.MessagePackSecurity.MaximumObjectGraphDepth" data-throw-if-not-resolved="false"></xref>.
+  nameWithType.vb: MessagePackSecurity.DepthStep(MessagePackReader)
+  fullName.vb: MessagePack.MessagePackSecurity.DepthStep(MessagePack.MessagePackReader)
+  name.vb: DepthStep(MessagePackReader)
+- uid: MessagePack.MessagePackSecurity.GetHashCollisionResistantEqualityComparer
+  commentId: M:MessagePack.MessagePackSecurity.GetHashCollisionResistantEqualityComparer
+  id: GetHashCollisionResistantEqualityComparer
+  parent: MessagePack.MessagePackSecurity
+  langs:
+  - csharp
+  - vb
+  name: GetHashCollisionResistantEqualityComparer()
+  nameWithType: MessagePackSecurity.GetHashCollisionResistantEqualityComparer()
+  fullName: MessagePack.MessagePackSecurity.GetHashCollisionResistantEqualityComparer()
+  type: Method
+  assemblies:
+  - MessagePack
+  namespace: MessagePack
+  summary: Returns a hash collision resistant equality comparer.
+  example: []
+  syntax:
+    content: protected virtual IEqualityComparer GetHashCollisionResistantEqualityComparer()
+    return:
+      type: System.Collections.IEqualityComparer
+      description: A hash collision resistant equality comparer.
+    content.vb: Protected Overridable Function GetHashCollisionResistantEqualityComparer() As IEqualityComparer
+  overload: MessagePack.MessagePackSecurity.GetHashCollisionResistantEqualityComparer*
+- uid: MessagePack.MessagePackSecurity.Clone
+  commentId: M:MessagePack.MessagePackSecurity.Clone
+  id: Clone
+  parent: MessagePack.MessagePackSecurity
+  langs:
+  - csharp
+  - vb
+  name: Clone()
+  nameWithType: MessagePackSecurity.Clone()
+  fullName: MessagePack.MessagePackSecurity.Clone()
+  type: Method
+  assemblies:
+  - MessagePack
+  namespace: MessagePack
+  summary: Creates a new instance that is a copy of this one.
+  remarks: Derived types should override this method to instantiate their own derived type.
+  example: []
+  syntax:
+    content: protected virtual MessagePackSecurity Clone()
+    return:
+      type: MessagePack.MessagePackSecurity
+    content.vb: Protected Overridable Function Clone() As MessagePackSecurity
+  overload: MessagePack.MessagePackSecurity.Clone*
+- uid: MessagePack.MessagePackSecurity.HashCollisionResistant
+  commentId: P:MessagePack.MessagePackSecurity.HashCollisionResistant
+  id: HashCollisionResistant
+  parent: MessagePack.MessagePackSecurity
+  langs:
+  - csharp
+  - vb
+  name: HashCollisionResistant
+  nameWithType: MessagePackSecurity.HashCollisionResistant
+  fullName: MessagePack.MessagePackSecurity.HashCollisionResistant
+  type: Property
+  assemblies:
+  - MessagePack
+  namespace: MessagePack
+  summary: >-
+    Gets a value indicating whether data to be deserialized is untrusted and thus should not be allowed to create
+
+    dictionaries or other hash-based collections unless the hashed type has a hash collision resistant implementation available.
+
+    This can mitigate some denial of service attacks when deserializing untrusted code.
+  example: []
+  syntax:
+    content: public bool HashCollisionResistant { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+      description: The value is <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a> for <xref href="MessagePack.MessagePackSecurity.TrustedData" data-throw-if-not-resolved="false"></xref> and <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> for <xref href="MessagePack.MessagePackSecurity.UntrustedData" data-throw-if-not-resolved="false"></xref>.
+    content.vb: Public ReadOnly Property HashCollisionResistant As Boolean
+  overload: MessagePack.MessagePackSecurity.HashCollisionResistant*
+- uid: MessagePack.MessagePackSecurity.MaximumObjectGraphDepth
+  commentId: P:MessagePack.MessagePackSecurity.MaximumObjectGraphDepth
+  id: MaximumObjectGraphDepth
+  parent: MessagePack.MessagePackSecurity
+  langs:
+  - csharp
+  - vb
+  name: MaximumObjectGraphDepth
+  nameWithType: MessagePackSecurity.MaximumObjectGraphDepth
+  fullName: MessagePack.MessagePackSecurity.MaximumObjectGraphDepth
+  type: Property
+  assemblies:
+  - MessagePack
+  namespace: MessagePack
+  summary: Gets the maximum depth of an object graph that may be deserialized.
+  remarks: >-
+    <p>
+            This value can be reduced to avoid a stack overflow that would crash the process when deserializing a msgpack sequence designed to cause deep recursion.
+            A very short callstack on a thread with 1MB of total stack space might deserialize ~2000 nested arrays before crashing due to a stack overflow.
+            Since stack space occupied may vary by the kind of object deserialized, a conservative value for this property to defend against stack overflow attacks might be 500.
+            </p>
+  example: []
+  syntax:
+    content: public int MaximumObjectGraphDepth { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Property MaximumObjectGraphDepth As Integer
+  overload: MessagePack.MessagePackSecurity.MaximumObjectGraphDepth*
+references:
+- uid: MessagePack
+  commentId: N:MessagePack
+  isExternal: true
+  href: MessagePack.html
+  name: MessagePack
+  nameWithType: MessagePack
+  fullName: MessagePack
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: MessagePack.MessagePackSecurity
+  commentId: T:MessagePack.MessagePackSecurity
+  parent: MessagePack
+  isExternal: true
+  href: MessagePack.MessagePackSecurity.html
+  name: MessagePackSecurity
+  nameWithType: MessagePackSecurity
+  fullName: MessagePack.MessagePackSecurity
+- uid: MessagePack.MessagePackSecurity.#ctor*
+  commentId: Overload:MessagePack.MessagePackSecurity.#ctor
+  isExternal: true
+  href: MessagePack.MessagePackSecurity.html#MessagePack_MessagePackSecurity__ctor_MessagePack_MessagePackSecurity_
+  name: MessagePackSecurity
+  nameWithType: MessagePackSecurity.MessagePackSecurity
+  fullName: MessagePack.MessagePackSecurity.MessagePackSecurity
+  nameWithType.vb: MessagePackSecurity.New
+  fullName.vb: MessagePack.MessagePackSecurity.New
+  name.vb: New
+- uid: MessagePack.MessagePackSecurity.MaximumObjectGraphDepth
+  commentId: P:MessagePack.MessagePackSecurity.MaximumObjectGraphDepth
+  isExternal: true
+  href: MessagePack.MessagePackSecurity.html#MessagePack_MessagePackSecurity_MaximumObjectGraphDepth
+  name: MaximumObjectGraphDepth
+  nameWithType: MessagePackSecurity.MaximumObjectGraphDepth
+  fullName: MessagePack.MessagePackSecurity.MaximumObjectGraphDepth
+- uid: MessagePack.MessagePackSecurity.WithMaximumObjectGraphDepth*
+  commentId: Overload:MessagePack.MessagePackSecurity.WithMaximumObjectGraphDepth
+  isExternal: true
+  href: MessagePack.MessagePackSecurity.html#MessagePack_MessagePackSecurity_WithMaximumObjectGraphDepth_System_Int32_
+  name: WithMaximumObjectGraphDepth
+  nameWithType: MessagePackSecurity.WithMaximumObjectGraphDepth
+  fullName: MessagePack.MessagePackSecurity.WithMaximumObjectGraphDepth
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: MessagePack.MessagePackSecurity.HashCollisionResistant
+  commentId: P:MessagePack.MessagePackSecurity.HashCollisionResistant
+  isExternal: true
+  href: MessagePack.MessagePackSecurity.html#MessagePack_MessagePackSecurity_HashCollisionResistant
+  name: HashCollisionResistant
+  nameWithType: MessagePackSecurity.HashCollisionResistant
+  fullName: MessagePack.MessagePackSecurity.HashCollisionResistant
+- uid: MessagePack.MessagePackSecurity.WithHashCollisionResistant*
+  commentId: Overload:MessagePack.MessagePackSecurity.WithHashCollisionResistant
+  isExternal: true
+  href: MessagePack.MessagePackSecurity.html#MessagePack_MessagePackSecurity_WithHashCollisionResistant_System_Boolean_
+  name: WithHashCollisionResistant
+  nameWithType: MessagePackSecurity.WithHashCollisionResistant
+  fullName: MessagePack.MessagePackSecurity.WithHashCollisionResistant
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System.Collections.Generic.IEqualityComparer`1
+  commentId: T:System.Collections.Generic.IEqualityComparer`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.iequalitycomparer-1
+  name: IEqualityComparer<T>
+  nameWithType: IEqualityComparer<T>
+  fullName: System.Collections.Generic.IEqualityComparer<T>
+  nameWithType.vb: IEqualityComparer(Of T)
+  fullName.vb: System.Collections.Generic.IEqualityComparer(Of T)
+  name.vb: IEqualityComparer(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEqualityComparer`1
+    name: IEqualityComparer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.iequalitycomparer-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEqualityComparer`1
+    name: IEqualityComparer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.iequalitycomparer-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic.EqualityComparer`1.Default
+  commentId: P:System.Collections.Generic.EqualityComparer`1.Default
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.equalitycomparer-1.default
+  name: Default
+  nameWithType: EqualityComparer<T>.Default
+  fullName: System.Collections.Generic.EqualityComparer<T>.Default
+  nameWithType.vb: EqualityComparer(Of T).Default
+  fullName.vb: System.Collections.Generic.EqualityComparer(Of T).Default
+- uid: MessagePack.MessagePackSecurity.GetEqualityComparer*
+  commentId: Overload:MessagePack.MessagePackSecurity.GetEqualityComparer
+  isExternal: true
+  href: MessagePack.MessagePackSecurity.html#MessagePack_MessagePackSecurity_GetEqualityComparer__1
+  name: GetEqualityComparer
+  nameWithType: MessagePackSecurity.GetEqualityComparer
+  fullName: MessagePack.MessagePackSecurity.GetEqualityComparer
+- uid: System.Collections.Generic.IEqualityComparer{{T}}
+  commentId: T:System.Collections.Generic.IEqualityComparer{``0}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEqualityComparer`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.iequalitycomparer-1
+  name: IEqualityComparer<T>
+  nameWithType: IEqualityComparer<T>
+  fullName: System.Collections.Generic.IEqualityComparer<T>
+  nameWithType.vb: IEqualityComparer(Of T)
+  fullName.vb: System.Collections.Generic.IEqualityComparer(Of T)
+  name.vb: IEqualityComparer(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEqualityComparer`1
+    name: IEqualityComparer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.iequalitycomparer-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEqualityComparer`1
+    name: IEqualityComparer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.iequalitycomparer-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: System.Collections.IEqualityComparer
+  commentId: T:System.Collections.IEqualityComparer
+  parent: System.Collections
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.iequalitycomparer
+  name: IEqualityComparer
+  nameWithType: IEqualityComparer
+  fullName: System.Collections.IEqualityComparer
+- uid: System.Collections
+  commentId: N:System.Collections
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections
+  nameWithType: System.Collections
+  fullName: System.Collections
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+- uid: MessagePack.MessagePackSecurity.GetHashCollisionResistantEqualityComparer*
+  commentId: Overload:MessagePack.MessagePackSecurity.GetHashCollisionResistantEqualityComparer
+  isExternal: true
+  href: MessagePack.MessagePackSecurity.html#MessagePack_MessagePackSecurity_GetHashCollisionResistantEqualityComparer__1
+  name: GetHashCollisionResistantEqualityComparer
+  nameWithType: MessagePackSecurity.GetHashCollisionResistantEqualityComparer
+  fullName: MessagePack.MessagePackSecurity.GetHashCollisionResistantEqualityComparer
+- uid: MessagePack.MessagePackReader.Depth
+  commentId: P:MessagePack.MessagePackReader.Depth
+  isExternal: true
+  href: MessagePack.MessagePackReader.html#MessagePack_MessagePackReader_Depth
+  name: Depth
+  nameWithType: MessagePackReader.Depth
+  fullName: MessagePack.MessagePackReader.Depth
+- uid: MessagePack.Formatters.IMessagePackFormatter`1.Deserialize(MessagePack.MessagePackReader@,MessagePack.MessagePackSerializerOptions)
+  commentId: M:MessagePack.Formatters.IMessagePackFormatter`1.Deserialize(MessagePack.MessagePackReader@,MessagePack.MessagePackSerializerOptions)
+  isExternal: true
+  href: MessagePack.Formatters.IMessagePackFormatter-1.html#MessagePack_Formatters_IMessagePackFormatter_1_Deserialize_MessagePack_MessagePackReader__MessagePack_MessagePackSerializerOptions_
+  name: Deserialize(ref MessagePackReader, MessagePackSerializerOptions)
+  nameWithType: IMessagePackFormatter<T>.Deserialize(ref MessagePackReader, MessagePackSerializerOptions)
+  fullName: MessagePack.Formatters.IMessagePackFormatter<T>.Deserialize(ref MessagePack.MessagePackReader, MessagePack.MessagePackSerializerOptions)
+  nameWithType.vb: IMessagePackFormatter(Of T).Deserialize(MessagePackReader, MessagePackSerializerOptions)
+  fullName.vb: MessagePack.Formatters.IMessagePackFormatter(Of T).Deserialize(MessagePack.MessagePackReader, MessagePack.MessagePackSerializerOptions)
+  name.vb: Deserialize(MessagePackReader, MessagePackSerializerOptions)
+  spec.csharp:
+  - uid: MessagePack.Formatters.IMessagePackFormatter`1.Deserialize(MessagePack.MessagePackReader@,MessagePack.MessagePackSerializerOptions)
+    name: Deserialize
+    isExternal: true
+    href: MessagePack.Formatters.IMessagePackFormatter-1.html#MessagePack_Formatters_IMessagePackFormatter_1_Deserialize_MessagePack_MessagePackReader__MessagePack_MessagePackSerializerOptions_
+  - name: (
+  - name: ref
+  - name: " "
+  - uid: MessagePack.MessagePackReader
+    name: MessagePackReader
+    isExternal: true
+    href: MessagePack.MessagePackReader.html
+  - name: ','
+  - name: " "
+  - uid: MessagePack.MessagePackSerializerOptions
+    name: MessagePackSerializerOptions
+    isExternal: true
+    href: MessagePack.MessagePackSerializerOptions.html
+  - name: )
+  spec.vb:
+  - uid: MessagePack.Formatters.IMessagePackFormatter`1.Deserialize(MessagePack.MessagePackReader@,MessagePack.MessagePackSerializerOptions)
+    name: Deserialize
+    isExternal: true
+    href: MessagePack.Formatters.IMessagePackFormatter-1.html#MessagePack_Formatters_IMessagePackFormatter_1_Deserialize_MessagePack_MessagePackReader__MessagePack_MessagePackSerializerOptions_
+  - name: (
+  - uid: MessagePack.MessagePackReader
+    name: MessagePackReader
+    isExternal: true
+    href: MessagePack.MessagePackReader.html
+  - name: ','
+  - name: " "
+  - uid: MessagePack.MessagePackSerializerOptions
+    name: MessagePackSerializerOptions
+    isExternal: true
+    href: MessagePack.MessagePackSerializerOptions.html
+  - name: )
+- uid: System.InsufficientExecutionStackException
+  commentId: T:System.InsufficientExecutionStackException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.insufficientexecutionstackexception
+  name: InsufficientExecutionStackException
+  nameWithType: InsufficientExecutionStackException
+  fullName: System.InsufficientExecutionStackException
+- uid: MessagePack.MessagePackSecurity.DepthStep*
+  commentId: Overload:MessagePack.MessagePackSecurity.DepthStep
+  isExternal: true
+  href: MessagePack.MessagePackSecurity.html#MessagePack_MessagePackSecurity_DepthStep_MessagePack_MessagePackReader__
+  name: DepthStep
+  nameWithType: MessagePackSecurity.DepthStep
+  fullName: MessagePack.MessagePackSecurity.DepthStep
+- uid: MessagePack.MessagePackReader
+  commentId: T:MessagePack.MessagePackReader
+  parent: MessagePack
+  isExternal: true
+  href: MessagePack.MessagePackReader.html
+  name: MessagePackReader
+  nameWithType: MessagePackReader
+  fullName: MessagePack.MessagePackReader
+- uid: MessagePack.MessagePackSecurity.Clone*
+  commentId: Overload:MessagePack.MessagePackSecurity.Clone
+  isExternal: true
+  href: MessagePack.MessagePackSecurity.html#MessagePack_MessagePackSecurity_Clone
+  name: Clone
+  nameWithType: MessagePackSecurity.Clone
+  fullName: MessagePack.MessagePackSecurity.Clone
+- uid: MessagePack.MessagePackSecurity.TrustedData
+  commentId: F:MessagePack.MessagePackSecurity.TrustedData
+  isExternal: true
+  href: MessagePack.MessagePackSecurity.html#MessagePack_MessagePackSecurity_TrustedData
+  name: TrustedData
+  nameWithType: MessagePackSecurity.TrustedData
+  fullName: MessagePack.MessagePackSecurity.TrustedData
+- uid: MessagePack.MessagePackSecurity.UntrustedData
+  commentId: F:MessagePack.MessagePackSecurity.UntrustedData
+  isExternal: true
+  href: MessagePack.MessagePackSecurity.html#MessagePack_MessagePackSecurity_UntrustedData
+  name: UntrustedData
+  nameWithType: MessagePackSecurity.UntrustedData
+  fullName: MessagePack.MessagePackSecurity.UntrustedData
+- uid: MessagePack.MessagePackSecurity.HashCollisionResistant*
+  commentId: Overload:MessagePack.MessagePackSecurity.HashCollisionResistant
+  isExternal: true
+  href: MessagePack.MessagePackSecurity.html#MessagePack_MessagePackSecurity_HashCollisionResistant
+  name: HashCollisionResistant
+  nameWithType: MessagePackSecurity.HashCollisionResistant
+  fullName: MessagePack.MessagePackSecurity.HashCollisionResistant
+- uid: MessagePack.MessagePackSecurity.MaximumObjectGraphDepth*
+  commentId: Overload:MessagePack.MessagePackSecurity.MaximumObjectGraphDepth
+  isExternal: true
+  href: MessagePack.MessagePackSecurity.html#MessagePack_MessagePackSecurity_MaximumObjectGraphDepth
+  name: MaximumObjectGraphDepth
+  nameWithType: MessagePackSecurity.MaximumObjectGraphDepth
+  fullName: MessagePack.MessagePackSecurity.MaximumObjectGraphDepth

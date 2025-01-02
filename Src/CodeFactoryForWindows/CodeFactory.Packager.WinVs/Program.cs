@@ -332,7 +332,7 @@ namespace CodeFactory.Packager.WinVs
                 File.WriteAllLines(assemblyPath, formattedAssemblyData);
 
             }
-            catch (Exception unhandledError)
+            catch (Exception)
             {
                 return PackagerData.ExitCodeCannotUpdateAssemblyInfo;
             }
@@ -361,7 +361,7 @@ namespace CodeFactory.Packager.WinVs
 
                 File.WriteAllLines(assemblyPath, assemblyFileContents);
             }
-            catch (Exception unhandledError)
+            catch (Exception)
             {
                 return PackagerData.ExitCodeCannotUpdateAssemblyInfo;
             }

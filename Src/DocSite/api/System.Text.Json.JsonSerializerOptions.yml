@@ -1,0 +1,1463 @@
+### YamlMime:ManagedReference
+items:
+- uid: System.Text.Json.JsonSerializerOptions
+  commentId: T:System.Text.Json.JsonSerializerOptions
+  id: JsonSerializerOptions
+  parent: System.Text.Json
+  children:
+  - System.Text.Json.JsonSerializerOptions.#ctor
+  - System.Text.Json.JsonSerializerOptions.#ctor(System.Text.Json.JsonSerializerDefaults)
+  - System.Text.Json.JsonSerializerOptions.#ctor(System.Text.Json.JsonSerializerOptions)
+  - System.Text.Json.JsonSerializerOptions.AddContext``1
+  - System.Text.Json.JsonSerializerOptions.AllowTrailingCommas
+  - System.Text.Json.JsonSerializerOptions.Converters
+  - System.Text.Json.JsonSerializerOptions.DefaultBufferSize
+  - System.Text.Json.JsonSerializerOptions.DefaultIgnoreCondition
+  - System.Text.Json.JsonSerializerOptions.DictionaryKeyPolicy
+  - System.Text.Json.JsonSerializerOptions.Encoder
+  - System.Text.Json.JsonSerializerOptions.GetConverter(System.Type)
+  - System.Text.Json.JsonSerializerOptions.IgnoreReadOnlyFields
+  - System.Text.Json.JsonSerializerOptions.IgnoreReadOnlyProperties
+  - System.Text.Json.JsonSerializerOptions.IncludeFields
+  - System.Text.Json.JsonSerializerOptions.MaxDepth
+  - System.Text.Json.JsonSerializerOptions.NumberHandling
+  - System.Text.Json.JsonSerializerOptions.PropertyNameCaseInsensitive
+  - System.Text.Json.JsonSerializerOptions.PropertyNamingPolicy
+  - System.Text.Json.JsonSerializerOptions.ReadCommentHandling
+  - System.Text.Json.JsonSerializerOptions.ReferenceHandler
+  - System.Text.Json.JsonSerializerOptions.UnknownTypeHandling
+  - System.Text.Json.JsonSerializerOptions.WriteIndented
+  langs:
+  - csharp
+  - vb
+  name: JsonSerializerOptions
+  nameWithType: JsonSerializerOptions
+  fullName: System.Text.Json.JsonSerializerOptions
+  type: Class
+  assemblies:
+  - System.Text.Json
+  namespace: System.Text.Json
+  summary: Provides options to be used with <xref href="System.Text.Json.JsonSerializer" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public sealed class JsonSerializerOptions
+    content.vb: Public NotInheritable Class JsonSerializerOptions
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+- uid: System.Text.Json.JsonSerializerOptions.GetConverter(System.Type)
+  commentId: M:System.Text.Json.JsonSerializerOptions.GetConverter(System.Type)
+  id: GetConverter(System.Type)
+  parent: System.Text.Json.JsonSerializerOptions
+  langs:
+  - csharp
+  - vb
+  name: GetConverter(Type)
+  nameWithType: JsonSerializerOptions.GetConverter(Type)
+  fullName: System.Text.Json.JsonSerializerOptions.GetConverter(System.Type)
+  type: Method
+  assemblies:
+  - System.Text.Json
+  namespace: System.Text.Json
+  summary: Returns the converter for the specified type.
+  example: []
+  syntax:
+    content: public JsonConverter GetConverter(Type typeToConvert)
+    parameters:
+    - id: typeToConvert
+      type: System.Type
+      description: The type to return a converter for.
+    return:
+      type: System.Text.Json.Serialization.JsonConverter
+      description: The first converter that supports the given type, or <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> if there is no converter.
+    content.vb: Public Function GetConverter(typeToConvert As Type) As JsonConverter
+  overload: System.Text.Json.JsonSerializerOptions.GetConverter*
+  exceptions:
+  - type: System.InvalidOperationException
+    commentId: T:System.InvalidOperationException
+    description: The configured <see cref="System.Text.Json.Serialization.JsonConverter"></see> for <code class="paramref">typeToConvert</code> returned an invalid converter.
+  - type: System.NotSupportedException
+    commentId: T:System.NotSupportedException
+    description: There is no compatible <see cref="System.Text.Json.Serialization.JsonConverter"></see> for <code class="paramref">typeToConvert</code> or its serializable members.
+- uid: System.Text.Json.JsonSerializerOptions.#ctor
+  commentId: M:System.Text.Json.JsonSerializerOptions.#ctor
+  id: '#ctor'
+  parent: System.Text.Json.JsonSerializerOptions
+  langs:
+  - csharp
+  - vb
+  name: JsonSerializerOptions()
+  nameWithType: JsonSerializerOptions.JsonSerializerOptions()
+  fullName: System.Text.Json.JsonSerializerOptions.JsonSerializerOptions()
+  type: Constructor
+  assemblies:
+  - System.Text.Json
+  namespace: System.Text.Json
+  summary: Initializes a new instance of the <xref href="System.Text.Json.JsonSerializerOptions" data-throw-if-not-resolved="false"></xref> class.
+  example: []
+  syntax:
+    content: public JsonSerializerOptions()
+    content.vb: Public Sub New()
+  overload: System.Text.Json.JsonSerializerOptions.#ctor*
+  nameWithType.vb: JsonSerializerOptions.New()
+  fullName.vb: System.Text.Json.JsonSerializerOptions.New()
+  name.vb: New()
+- uid: System.Text.Json.JsonSerializerOptions.#ctor(System.Text.Json.JsonSerializerOptions)
+  commentId: M:System.Text.Json.JsonSerializerOptions.#ctor(System.Text.Json.JsonSerializerOptions)
+  id: '#ctor(System.Text.Json.JsonSerializerOptions)'
+  parent: System.Text.Json.JsonSerializerOptions
+  langs:
+  - csharp
+  - vb
+  name: JsonSerializerOptions(JsonSerializerOptions)
+  nameWithType: JsonSerializerOptions.JsonSerializerOptions(JsonSerializerOptions)
+  fullName: System.Text.Json.JsonSerializerOptions.JsonSerializerOptions(System.Text.Json.JsonSerializerOptions)
+  type: Constructor
+  assemblies:
+  - System.Text.Json
+  namespace: System.Text.Json
+  summary: Copies the options from a <xref href="System.Text.Json.JsonSerializerOptions" data-throw-if-not-resolved="false"></xref> instance to a new instance.
+  example: []
+  syntax:
+    content: public JsonSerializerOptions(JsonSerializerOptions options)
+    parameters:
+    - id: options
+      type: System.Text.Json.JsonSerializerOptions
+      description: The options instance to copy options from.
+    content.vb: Public Sub New(options As JsonSerializerOptions)
+  overload: System.Text.Json.JsonSerializerOptions.#ctor*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: <code class="paramref">options</code> is <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.
+  nameWithType.vb: JsonSerializerOptions.New(JsonSerializerOptions)
+  fullName.vb: System.Text.Json.JsonSerializerOptions.New(System.Text.Json.JsonSerializerOptions)
+  name.vb: New(JsonSerializerOptions)
+- uid: System.Text.Json.JsonSerializerOptions.#ctor(System.Text.Json.JsonSerializerDefaults)
+  commentId: M:System.Text.Json.JsonSerializerOptions.#ctor(System.Text.Json.JsonSerializerDefaults)
+  id: '#ctor(System.Text.Json.JsonSerializerDefaults)'
+  parent: System.Text.Json.JsonSerializerOptions
+  langs:
+  - csharp
+  - vb
+  name: JsonSerializerOptions(JsonSerializerDefaults)
+  nameWithType: JsonSerializerOptions.JsonSerializerOptions(JsonSerializerDefaults)
+  fullName: System.Text.Json.JsonSerializerOptions.JsonSerializerOptions(System.Text.Json.JsonSerializerDefaults)
+  type: Constructor
+  assemblies:
+  - System.Text.Json
+  namespace: System.Text.Json
+  summary: Constructs a new <xref href="System.Text.Json.JsonSerializerOptions" data-throw-if-not-resolved="false"></xref> instance with a predefined set of options determined by the specified <xref href="System.Text.Json.JsonSerializerDefaults" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public JsonSerializerOptions(JsonSerializerDefaults defaults)
+    parameters:
+    - id: defaults
+      type: System.Text.Json.JsonSerializerDefaults
+      description: The <xref href="System.Text.Json.JsonSerializerDefaults" data-throw-if-not-resolved="false"></xref> to reason about.
+    content.vb: Public Sub New(defaults As JsonSerializerDefaults)
+  overload: System.Text.Json.JsonSerializerOptions.#ctor*
+  nameWithType.vb: JsonSerializerOptions.New(JsonSerializerDefaults)
+  fullName.vb: System.Text.Json.JsonSerializerOptions.New(System.Text.Json.JsonSerializerDefaults)
+  name.vb: New(JsonSerializerDefaults)
+- uid: System.Text.Json.JsonSerializerOptions.AddContext``1
+  commentId: M:System.Text.Json.JsonSerializerOptions.AddContext``1
+  id: AddContext``1
+  parent: System.Text.Json.JsonSerializerOptions
+  langs:
+  - csharp
+  - vb
+  name: AddContext<TContext>()
+  nameWithType: JsonSerializerOptions.AddContext<TContext>()
+  fullName: System.Text.Json.JsonSerializerOptions.AddContext<TContext>()
+  type: Method
+  assemblies:
+  - System.Text.Json
+  namespace: System.Text.Json
+  summary: Binds current <xref href="System.Text.Json.JsonSerializerOptions" data-throw-if-not-resolved="false"></xref> instance with a new instance of the specified <xref href="System.Text.Json.Serialization.JsonSerializerContext" data-throw-if-not-resolved="false"></xref> type.
+  example: []
+  syntax:
+    content: 'public void AddContext<TContext>() where TContext : JsonSerializerContext, new()'
+    typeParameters:
+    - id: TContext
+      description: The generic definition of the specified context type.
+    content.vb: Public Sub AddContext(Of TContext As {JsonSerializerContext, New})()
+  overload: System.Text.Json.JsonSerializerOptions.AddContext*
+  nameWithType.vb: JsonSerializerOptions.AddContext(Of TContext)()
+  fullName.vb: System.Text.Json.JsonSerializerOptions.AddContext(Of TContext)()
+  name.vb: AddContext(Of TContext)()
+- uid: System.Text.Json.JsonSerializerOptions.Converters
+  commentId: P:System.Text.Json.JsonSerializerOptions.Converters
+  id: Converters
+  parent: System.Text.Json.JsonSerializerOptions
+  langs:
+  - csharp
+  - vb
+  name: Converters
+  nameWithType: JsonSerializerOptions.Converters
+  fullName: System.Text.Json.JsonSerializerOptions.Converters
+  type: Property
+  assemblies:
+  - System.Text.Json
+  namespace: System.Text.Json
+  summary: Gets the list of user-defined converters that were registered.
+  example: []
+  syntax:
+    content: public IList<JsonConverter> Converters { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.IList{System.Text.Json.Serialization.JsonConverter}
+      description: The list of custom converters.
+    content.vb: Public ReadOnly Property Converters As IList(Of JsonConverter)
+  overload: System.Text.Json.JsonSerializerOptions.Converters*
+- uid: System.Text.Json.JsonSerializerOptions.AllowTrailingCommas
+  commentId: P:System.Text.Json.JsonSerializerOptions.AllowTrailingCommas
+  id: AllowTrailingCommas
+  parent: System.Text.Json.JsonSerializerOptions
+  langs:
+  - csharp
+  - vb
+  name: AllowTrailingCommas
+  nameWithType: JsonSerializerOptions.AllowTrailingCommas
+  fullName: System.Text.Json.JsonSerializerOptions.AllowTrailingCommas
+  type: Property
+  assemblies:
+  - System.Text.Json
+  namespace: System.Text.Json
+  summary: Get or sets a value that indicates whether an extra comma at the end of a list of JSON values in an object or array is allowed (and ignored) within the JSON payload being deserialized.
+  example: []
+  syntax:
+    content: public bool AllowTrailingCommas { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+      description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if an extra comma at the end of a list of JSON values in an object or array is allowed (and ignored); <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a> otherwise.
+    content.vb: Public Property AllowTrailingCommas As Boolean
+  overload: System.Text.Json.JsonSerializerOptions.AllowTrailingCommas*
+  exceptions:
+  - type: System.InvalidOperationException
+    commentId: T:System.InvalidOperationException
+    description: This property was set after serialization or deserialization has occurred.
+- uid: System.Text.Json.JsonSerializerOptions.DefaultBufferSize
+  commentId: P:System.Text.Json.JsonSerializerOptions.DefaultBufferSize
+  id: DefaultBufferSize
+  parent: System.Text.Json.JsonSerializerOptions
+  langs:
+  - csharp
+  - vb
+  name: DefaultBufferSize
+  nameWithType: JsonSerializerOptions.DefaultBufferSize
+  fullName: System.Text.Json.JsonSerializerOptions.DefaultBufferSize
+  type: Property
+  assemblies:
+  - System.Text.Json
+  namespace: System.Text.Json
+  summary: Gets or sets the default buffer size, in bytes, to use when creating temporary buffers.
+  example: []
+  syntax:
+    content: public int DefaultBufferSize { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+      description: The default buffer size in bytes.
+    content.vb: Public Property DefaultBufferSize As Integer
+  overload: System.Text.Json.JsonSerializerOptions.DefaultBufferSize*
+  exceptions:
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: The buffer size is less than 1.
+  - type: System.InvalidOperationException
+    commentId: T:System.InvalidOperationException
+    description: This property was set after serialization or deserialization has occurred.
+- uid: System.Text.Json.JsonSerializerOptions.Encoder
+  commentId: P:System.Text.Json.JsonSerializerOptions.Encoder
+  id: Encoder
+  parent: System.Text.Json.JsonSerializerOptions
+  langs:
+  - csharp
+  - vb
+  name: Encoder
+  nameWithType: JsonSerializerOptions.Encoder
+  fullName: System.Text.Json.JsonSerializerOptions.Encoder
+  type: Property
+  assemblies:
+  - System.Text.Json
+  namespace: System.Text.Json
+  summary: Gets or sets the encoder to use when escaping strings, or <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> to use the default encoder.
+  example: []
+  syntax:
+    content: public JavaScriptEncoder? Encoder { get; set; }
+    parameters: []
+    return:
+      type: System.Text.Encodings.Web.JavaScriptEncoder
+      description: The JavaScript character encoding.
+    content.vb: Public Property Encoder As JavaScriptEncoder
+  overload: System.Text.Json.JsonSerializerOptions.Encoder*
+- uid: System.Text.Json.JsonSerializerOptions.DictionaryKeyPolicy
+  commentId: P:System.Text.Json.JsonSerializerOptions.DictionaryKeyPolicy
+  id: DictionaryKeyPolicy
+  parent: System.Text.Json.JsonSerializerOptions
+  langs:
+  - csharp
+  - vb
+  name: DictionaryKeyPolicy
+  nameWithType: JsonSerializerOptions.DictionaryKeyPolicy
+  fullName: System.Text.Json.JsonSerializerOptions.DictionaryKeyPolicy
+  type: Property
+  assemblies:
+  - System.Text.Json
+  namespace: System.Text.Json
+  summary: Gets or sets the policy used to convert a <xref href="System.Collections.IDictionary" data-throw-if-not-resolved="false"></xref> key's name to another format, such as camel-casing.
+  example: []
+  syntax:
+    content: public JsonNamingPolicy? DictionaryKeyPolicy { get; set; }
+    parameters: []
+    return:
+      type: System.Text.Json.JsonNamingPolicy
+      description: The policy used to convert a <xref href="System.Collections.IDictionary" data-throw-if-not-resolved="false"></xref> key's name to another format.
+    content.vb: Public Property DictionaryKeyPolicy As JsonNamingPolicy
+  overload: System.Text.Json.JsonSerializerOptions.DictionaryKeyPolicy*
+- uid: System.Text.Json.JsonSerializerOptions.DefaultIgnoreCondition
+  commentId: P:System.Text.Json.JsonSerializerOptions.DefaultIgnoreCondition
+  id: DefaultIgnoreCondition
+  parent: System.Text.Json.JsonSerializerOptions
+  langs:
+  - csharp
+  - vb
+  name: DefaultIgnoreCondition
+  nameWithType: JsonSerializerOptions.DefaultIgnoreCondition
+  fullName: System.Text.Json.JsonSerializerOptions.DefaultIgnoreCondition
+  type: Property
+  assemblies:
+  - System.Text.Json
+  namespace: System.Text.Json
+  summary: >-
+    Specifies a condition to determine when properties with default values are ignored during serialization or deserialization.
+     The default value is <xref href="System.Text.Json.Serialization.JsonIgnoreCondition.Never" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public JsonIgnoreCondition DefaultIgnoreCondition { get; set; }
+    parameters: []
+    return:
+      type: System.Text.Json.Serialization.JsonIgnoreCondition
+    content.vb: Public Property DefaultIgnoreCondition As JsonIgnoreCondition
+  overload: System.Text.Json.JsonSerializerOptions.DefaultIgnoreCondition*
+  exceptions:
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: This property is set to <xref href="System.Text.Json.Serialization.JsonIgnoreCondition.Always" data-throw-if-not-resolved="false"></xref>.
+  - type: System.InvalidOperationException
+    commentId: T:System.InvalidOperationException
+    description: >-
+      This property is set after serialization or deserialization has occurred.
+
+
+      -or-
+
+
+      <xref href="System.Text.Json.JsonSerializerOptions.IgnoreNullValues" data-throw-if-not-resolved="false"></xref> has been set to <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a>. These properties cannot be used together.
+- uid: System.Text.Json.JsonSerializerOptions.NumberHandling
+  commentId: P:System.Text.Json.JsonSerializerOptions.NumberHandling
+  id: NumberHandling
+  parent: System.Text.Json.JsonSerializerOptions
+  langs:
+  - csharp
+  - vb
+  name: NumberHandling
+  nameWithType: JsonSerializerOptions.NumberHandling
+  fullName: System.Text.Json.JsonSerializerOptions.NumberHandling
+  type: Property
+  assemblies:
+  - System.Text.Json
+  namespace: System.Text.Json
+  summary: Specifies how number types should be handled when serializing or deserializing.
+  example: []
+  syntax:
+    content: public JsonNumberHandling NumberHandling { get; set; }
+    parameters: []
+    return:
+      type: System.Text.Json.Serialization.JsonNumberHandling
+    content.vb: Public Property NumberHandling As JsonNumberHandling
+  overload: System.Text.Json.JsonSerializerOptions.NumberHandling*
+  exceptions:
+  - type: System.InvalidOperationException
+    commentId: T:System.InvalidOperationException
+    description: This property is set after serialization or deserialization has occurred.
+- uid: System.Text.Json.JsonSerializerOptions.IgnoreReadOnlyProperties
+  commentId: P:System.Text.Json.JsonSerializerOptions.IgnoreReadOnlyProperties
+  id: IgnoreReadOnlyProperties
+  parent: System.Text.Json.JsonSerializerOptions
+  langs:
+  - csharp
+  - vb
+  name: IgnoreReadOnlyProperties
+  nameWithType: JsonSerializerOptions.IgnoreReadOnlyProperties
+  fullName: System.Text.Json.JsonSerializerOptions.IgnoreReadOnlyProperties
+  type: Property
+  assemblies:
+  - System.Text.Json
+  namespace: System.Text.Json
+  summary: Gets a value that determines whether read-only properties are ignored during serialization. The default value is <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
+  example: []
+  syntax:
+    content: public bool IgnoreReadOnlyProperties { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+      description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> to ignore read-only properties during serialization; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
+    content.vb: Public Property IgnoreReadOnlyProperties As Boolean
+  overload: System.Text.Json.JsonSerializerOptions.IgnoreReadOnlyProperties*
+  exceptions:
+  - type: System.InvalidOperationException
+    commentId: T:System.InvalidOperationException
+    description: This property was set after serialization or deserialization has occurred.
+- uid: System.Text.Json.JsonSerializerOptions.IgnoreReadOnlyFields
+  commentId: P:System.Text.Json.JsonSerializerOptions.IgnoreReadOnlyFields
+  id: IgnoreReadOnlyFields
+  parent: System.Text.Json.JsonSerializerOptions
+  langs:
+  - csharp
+  - vb
+  name: IgnoreReadOnlyFields
+  nameWithType: JsonSerializerOptions.IgnoreReadOnlyFields
+  fullName: System.Text.Json.JsonSerializerOptions.IgnoreReadOnlyFields
+  type: Property
+  assemblies:
+  - System.Text.Json
+  namespace: System.Text.Json
+  summary: Determines whether read-only fields are ignored during serialization. A field is read-only if it is marked with the <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/readonly">readonly</a> keyword. The default value is <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
+  example: []
+  syntax:
+    content: public bool IgnoreReadOnlyFields { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+      description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if read-only fields should be ignored during serialization; <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a> otherwise.
+    content.vb: Public Property IgnoreReadOnlyFields As Boolean
+  overload: System.Text.Json.JsonSerializerOptions.IgnoreReadOnlyFields*
+  exceptions:
+  - type: System.InvalidOperationException
+    commentId: T:System.InvalidOperationException
+    description: This property is set after serialization or deserialization has occurred.
+- uid: System.Text.Json.JsonSerializerOptions.IncludeFields
+  commentId: P:System.Text.Json.JsonSerializerOptions.IncludeFields
+  id: IncludeFields
+  parent: System.Text.Json.JsonSerializerOptions
+  langs:
+  - csharp
+  - vb
+  name: IncludeFields
+  nameWithType: JsonSerializerOptions.IncludeFields
+  fullName: System.Text.Json.JsonSerializerOptions.IncludeFields
+  type: Property
+  assemblies:
+  - System.Text.Json
+  namespace: System.Text.Json
+  summary: >-
+    Determines whether fields are handled during serialization and deserialization.
+                The default value is <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
+  example: []
+  syntax:
+    content: public bool IncludeFields { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property IncludeFields As Boolean
+  overload: System.Text.Json.JsonSerializerOptions.IncludeFields*
+  exceptions:
+  - type: System.InvalidOperationException
+    commentId: T:System.InvalidOperationException
+    description: This property is set after serialization or deserialization has occurred.
+- uid: System.Text.Json.JsonSerializerOptions.MaxDepth
+  commentId: P:System.Text.Json.JsonSerializerOptions.MaxDepth
+  id: MaxDepth
+  parent: System.Text.Json.JsonSerializerOptions
+  langs:
+  - csharp
+  - vb
+  name: MaxDepth
+  nameWithType: JsonSerializerOptions.MaxDepth
+  fullName: System.Text.Json.JsonSerializerOptions.MaxDepth
+  type: Property
+  assemblies:
+  - System.Text.Json
+  namespace: System.Text.Json
+  summary: Gets or sets the maximum depth allowed when serializing or deserializing JSON, with the default value of 0 indicating a maximum depth of 64.
+  example: []
+  syntax:
+    content: public int MaxDepth { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+      description: The maximum depth allowed when serializing or deserializing JSON.
+    content.vb: Public Property MaxDepth As Integer
+  overload: System.Text.Json.JsonSerializerOptions.MaxDepth*
+  exceptions:
+  - type: System.InvalidOperationException
+    commentId: T:System.InvalidOperationException
+    description: This property was set after serialization or deserialization has occurred.
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: The max depth is set to a negative value.
+- uid: System.Text.Json.JsonSerializerOptions.PropertyNamingPolicy
+  commentId: P:System.Text.Json.JsonSerializerOptions.PropertyNamingPolicy
+  id: PropertyNamingPolicy
+  parent: System.Text.Json.JsonSerializerOptions
+  langs:
+  - csharp
+  - vb
+  name: PropertyNamingPolicy
+  nameWithType: JsonSerializerOptions.PropertyNamingPolicy
+  fullName: System.Text.Json.JsonSerializerOptions.PropertyNamingPolicy
+  type: Property
+  assemblies:
+  - System.Text.Json
+  namespace: System.Text.Json
+  summary: Gets or sets a value that specifies the policy used to convert a property's name on an object to another format, such as camel-casing, or <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> to leave property names unchanged.
+  example: []
+  syntax:
+    content: public JsonNamingPolicy? PropertyNamingPolicy { get; set; }
+    parameters: []
+    return:
+      type: System.Text.Json.JsonNamingPolicy
+      description: A property naming policy, or <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> to leave property names unchanged.
+    content.vb: Public Property PropertyNamingPolicy As JsonNamingPolicy
+  overload: System.Text.Json.JsonSerializerOptions.PropertyNamingPolicy*
+- uid: System.Text.Json.JsonSerializerOptions.PropertyNameCaseInsensitive
+  commentId: P:System.Text.Json.JsonSerializerOptions.PropertyNameCaseInsensitive
+  id: PropertyNameCaseInsensitive
+  parent: System.Text.Json.JsonSerializerOptions
+  langs:
+  - csharp
+  - vb
+  name: PropertyNameCaseInsensitive
+  nameWithType: JsonSerializerOptions.PropertyNameCaseInsensitive
+  fullName: System.Text.Json.JsonSerializerOptions.PropertyNameCaseInsensitive
+  type: Property
+  assemblies:
+  - System.Text.Json
+  namespace: System.Text.Json
+  summary: Gets or sets a value that determines whether a property's name uses a case-insensitive comparison during deserialization. The default value is <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
+  example: []
+  syntax:
+    content: public bool PropertyNameCaseInsensitive { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+      description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> to compare property names using case-insensitive comparison; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
+    content.vb: Public Property PropertyNameCaseInsensitive As Boolean
+  overload: System.Text.Json.JsonSerializerOptions.PropertyNameCaseInsensitive*
+- uid: System.Text.Json.JsonSerializerOptions.ReadCommentHandling
+  commentId: P:System.Text.Json.JsonSerializerOptions.ReadCommentHandling
+  id: ReadCommentHandling
+  parent: System.Text.Json.JsonSerializerOptions
+  langs:
+  - csharp
+  - vb
+  name: ReadCommentHandling
+  nameWithType: JsonSerializerOptions.ReadCommentHandling
+  fullName: System.Text.Json.JsonSerializerOptions.ReadCommentHandling
+  type: Property
+  assemblies:
+  - System.Text.Json
+  namespace: System.Text.Json
+  summary: Gets or sets a value that defines how comments are handled during deserialization.
+  example: []
+  syntax:
+    content: public JsonCommentHandling ReadCommentHandling { get; set; }
+    parameters: []
+    return:
+      type: System.Text.Json.JsonCommentHandling
+      description: A value that indicates whether comments are allowed, disallowed, or skipped.
+    content.vb: Public Property ReadCommentHandling As JsonCommentHandling
+  overload: System.Text.Json.JsonSerializerOptions.ReadCommentHandling*
+  exceptions:
+  - type: System.InvalidOperationException
+    commentId: T:System.InvalidOperationException
+    description: This property was set after serialization or deserialization has occurred.
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: The comment handling enum is set to a value that is not supported (or not within the <xref href="System.Text.Json.JsonCommentHandling" data-throw-if-not-resolved="false"></xref> enum range).
+- uid: System.Text.Json.JsonSerializerOptions.UnknownTypeHandling
+  commentId: P:System.Text.Json.JsonSerializerOptions.UnknownTypeHandling
+  id: UnknownTypeHandling
+  parent: System.Text.Json.JsonSerializerOptions
+  langs:
+  - csharp
+  - vb
+  name: UnknownTypeHandling
+  nameWithType: JsonSerializerOptions.UnknownTypeHandling
+  fullName: System.Text.Json.JsonSerializerOptions.UnknownTypeHandling
+  type: Property
+  assemblies:
+  - System.Text.Json
+  namespace: System.Text.Json
+  summary: Defines how deserializing a type declared as an <xref href="System.Object" data-throw-if-not-resolved="false"></xref> is handled during deserialization.
+  example: []
+  syntax:
+    content: public JsonUnknownTypeHandling UnknownTypeHandling { get; set; }
+    parameters: []
+    return:
+      type: System.Text.Json.Serialization.JsonUnknownTypeHandling
+    content.vb: Public Property UnknownTypeHandling As JsonUnknownTypeHandling
+  overload: System.Text.Json.JsonSerializerOptions.UnknownTypeHandling*
+- uid: System.Text.Json.JsonSerializerOptions.WriteIndented
+  commentId: P:System.Text.Json.JsonSerializerOptions.WriteIndented
+  id: WriteIndented
+  parent: System.Text.Json.JsonSerializerOptions
+  langs:
+  - csharp
+  - vb
+  name: WriteIndented
+  nameWithType: JsonSerializerOptions.WriteIndented
+  fullName: System.Text.Json.JsonSerializerOptions.WriteIndented
+  type: Property
+  assemblies:
+  - System.Text.Json
+  namespace: System.Text.Json
+  summary: Gets or sets a value that defines whether JSON should use pretty printing. By default, JSON is serialized without any extra white space.
+  example: []
+  syntax:
+    content: public bool WriteIndented { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+      description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if JSON should pretty print on serialization; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>. The default is <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
+    content.vb: Public Property WriteIndented As Boolean
+  overload: System.Text.Json.JsonSerializerOptions.WriteIndented*
+  exceptions:
+  - type: System.InvalidOperationException
+    commentId: T:System.InvalidOperationException
+    description: This property was set after serialization or deserialization has occurred.
+- uid: System.Text.Json.JsonSerializerOptions.ReferenceHandler
+  commentId: P:System.Text.Json.JsonSerializerOptions.ReferenceHandler
+  id: ReferenceHandler
+  parent: System.Text.Json.JsonSerializerOptions
+  langs:
+  - csharp
+  - vb
+  name: ReferenceHandler
+  nameWithType: JsonSerializerOptions.ReferenceHandler
+  fullName: System.Text.Json.JsonSerializerOptions.ReferenceHandler
+  type: Property
+  assemblies:
+  - System.Text.Json
+  namespace: System.Text.Json
+  summary: Configures how object references are handled when reading and writing JSON.
+  example: []
+  syntax:
+    content: public ReferenceHandler? ReferenceHandler { get; set; }
+    parameters: []
+    return:
+      type: System.Text.Json.Serialization.ReferenceHandler
+    content.vb: Public Property ReferenceHandler As ReferenceHandler
+  overload: System.Text.Json.JsonSerializerOptions.ReferenceHandler*
+references:
+- uid: System.Text.Json.JsonSerializer
+  commentId: T:System.Text.Json.JsonSerializer
+  parent: System.Text.Json
+  isExternal: true
+  href: System.Text.Json.JsonSerializer.html
+  name: JsonSerializer
+  nameWithType: JsonSerializer
+  fullName: System.Text.Json.JsonSerializer
+- uid: System.Text.Json
+  commentId: N:System.Text.Json
+  isExternal: true
+  href: System.html
+  name: System.Text.Json
+  nameWithType: System.Text.Json
+  fullName: System.Text.Json
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: System.html
+  - name: .
+  - uid: System.Text
+    name: Text
+    isExternal: true
+    href: System.Text.html
+  - name: .
+  - uid: System.Text.Json
+    name: Json
+    isExternal: true
+    href: System.Text.Json.html
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: System.html
+  - name: .
+  - uid: System.Text
+    name: Text
+    isExternal: true
+    href: System.Text.html
+  - name: .
+  - uid: System.Text.Json
+    name: Json
+    isExternal: true
+    href: System.Text.Json.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.InvalidOperationException
+  commentId: T:System.InvalidOperationException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.invalidoperationexception
+  name: InvalidOperationException
+  nameWithType: InvalidOperationException
+  fullName: System.InvalidOperationException
+- uid: System.NotSupportedException
+  commentId: T:System.NotSupportedException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.notsupportedexception
+  name: NotSupportedException
+  nameWithType: NotSupportedException
+  fullName: System.NotSupportedException
+- uid: System.Text.Json.JsonSerializerOptions.GetConverter*
+  commentId: Overload:System.Text.Json.JsonSerializerOptions.GetConverter
+  isExternal: true
+  href: System.Text.Json.JsonSerializerOptions.html#System_Text_Json_JsonSerializerOptions_GetConverter_System_Type_
+  name: GetConverter
+  nameWithType: JsonSerializerOptions.GetConverter
+  fullName: System.Text.Json.JsonSerializerOptions.GetConverter
+- uid: System.Type
+  commentId: T:System.Type
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.type
+  name: Type
+  nameWithType: Type
+  fullName: System.Type
+- uid: System.Text.Json.Serialization.JsonConverter
+  commentId: T:System.Text.Json.Serialization.JsonConverter
+  parent: System.Text.Json.Serialization
+  isExternal: true
+  href: System.Text.Json.Serialization.JsonConverter.html
+  name: JsonConverter
+  nameWithType: JsonConverter
+  fullName: System.Text.Json.Serialization.JsonConverter
+- uid: System.Text.Json.Serialization
+  commentId: N:System.Text.Json.Serialization
+  isExternal: true
+  href: System.html
+  name: System.Text.Json.Serialization
+  nameWithType: System.Text.Json.Serialization
+  fullName: System.Text.Json.Serialization
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: System.html
+  - name: .
+  - uid: System.Text
+    name: Text
+    isExternal: true
+    href: System.Text.html
+  - name: .
+  - uid: System.Text.Json
+    name: Json
+    isExternal: true
+    href: System.Text.Json.html
+  - name: .
+  - uid: System.Text.Json.Serialization
+    name: Serialization
+    isExternal: true
+    href: System.Text.Json.Serialization.html
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: System.html
+  - name: .
+  - uid: System.Text
+    name: Text
+    isExternal: true
+    href: System.Text.html
+  - name: .
+  - uid: System.Text.Json
+    name: Json
+    isExternal: true
+    href: System.Text.Json.html
+  - name: .
+  - uid: System.Text.Json.Serialization
+    name: Serialization
+    isExternal: true
+    href: System.Text.Json.Serialization.html
+- uid: System.Text.Json.JsonSerializerOptions
+  commentId: T:System.Text.Json.JsonSerializerOptions
+  parent: System.Text.Json
+  isExternal: true
+  href: System.Text.Json.JsonSerializerOptions.html
+  name: JsonSerializerOptions
+  nameWithType: JsonSerializerOptions
+  fullName: System.Text.Json.JsonSerializerOptions
+- uid: System.Text.Json.JsonSerializerOptions.#ctor*
+  commentId: Overload:System.Text.Json.JsonSerializerOptions.#ctor
+  isExternal: true
+  href: System.Text.Json.JsonSerializerOptions.html#System_Text_Json_JsonSerializerOptions__ctor
+  name: JsonSerializerOptions
+  nameWithType: JsonSerializerOptions.JsonSerializerOptions
+  fullName: System.Text.Json.JsonSerializerOptions.JsonSerializerOptions
+  nameWithType.vb: JsonSerializerOptions.New
+  fullName.vb: System.Text.Json.JsonSerializerOptions.New
+  name.vb: New
+- uid: System.ArgumentNullException
+  commentId: T:System.ArgumentNullException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.argumentnullexception
+  name: ArgumentNullException
+  nameWithType: ArgumentNullException
+  fullName: System.ArgumentNullException
+- uid: System.Text.Json.JsonSerializerDefaults
+  commentId: T:System.Text.Json.JsonSerializerDefaults
+  parent: System.Text.Json
+  isExternal: true
+  href: System.Text.Json.JsonSerializerDefaults.html
+  name: JsonSerializerDefaults
+  nameWithType: JsonSerializerDefaults
+  fullName: System.Text.Json.JsonSerializerDefaults
+- uid: System.Text.Json.Serialization.JsonSerializerContext
+  commentId: T:System.Text.Json.Serialization.JsonSerializerContext
+  parent: System.Text.Json.Serialization
+  isExternal: true
+  name: JsonSerializerContext
+  nameWithType: JsonSerializerContext
+  fullName: System.Text.Json.Serialization.JsonSerializerContext
+- uid: System.Text.Json.JsonSerializerOptions.AddContext*
+  commentId: Overload:System.Text.Json.JsonSerializerOptions.AddContext
+  isExternal: true
+  href: System.Text.Json.JsonSerializerOptions.html#System_Text_Json_JsonSerializerOptions_AddContext__1
+  name: AddContext
+  nameWithType: JsonSerializerOptions.AddContext
+  fullName: System.Text.Json.JsonSerializerOptions.AddContext
+- uid: System.Text.Json.JsonSerializerOptions.Converters*
+  commentId: Overload:System.Text.Json.JsonSerializerOptions.Converters
+  isExternal: true
+  href: System.Text.Json.JsonSerializerOptions.html#System_Text_Json_JsonSerializerOptions_Converters
+  name: Converters
+  nameWithType: JsonSerializerOptions.Converters
+  fullName: System.Text.Json.JsonSerializerOptions.Converters
+- uid: System.Collections.Generic.IList{System.Text.Json.Serialization.JsonConverter}
+  commentId: T:System.Collections.Generic.IList{System.Text.Json.Serialization.JsonConverter}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IList`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1
+  name: IList<JsonConverter>
+  nameWithType: IList<JsonConverter>
+  fullName: System.Collections.Generic.IList<System.Text.Json.Serialization.JsonConverter>
+  nameWithType.vb: IList(Of JsonConverter)
+  fullName.vb: System.Collections.Generic.IList(Of System.Text.Json.Serialization.JsonConverter)
+  name.vb: IList(Of JsonConverter)
+  spec.csharp:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1
+  - name: <
+  - uid: System.Text.Json.Serialization.JsonConverter
+    name: JsonConverter
+    isExternal: true
+    href: System.Text.Json.Serialization.JsonConverter.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Text.Json.Serialization.JsonConverter
+    name: JsonConverter
+    isExternal: true
+    href: System.Text.Json.Serialization.JsonConverter.html
+  - name: )
+- uid: System.Collections.Generic.IList`1
+  commentId: T:System.Collections.Generic.IList`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1
+  name: IList<T>
+  nameWithType: IList<T>
+  fullName: System.Collections.Generic.IList<T>
+  nameWithType.vb: IList(Of T)
+  fullName.vb: System.Collections.Generic.IList(Of T)
+  name.vb: IList(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: System.Text.Json.JsonSerializerOptions.AllowTrailingCommas*
+  commentId: Overload:System.Text.Json.JsonSerializerOptions.AllowTrailingCommas
+  isExternal: true
+  href: System.Text.Json.JsonSerializerOptions.html#System_Text_Json_JsonSerializerOptions_AllowTrailingCommas
+  name: AllowTrailingCommas
+  nameWithType: JsonSerializerOptions.AllowTrailingCommas
+  fullName: System.Text.Json.JsonSerializerOptions.AllowTrailingCommas
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System.ArgumentException
+  commentId: T:System.ArgumentException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.argumentexception
+  name: ArgumentException
+  nameWithType: ArgumentException
+  fullName: System.ArgumentException
+- uid: System.Text.Json.JsonSerializerOptions.DefaultBufferSize*
+  commentId: Overload:System.Text.Json.JsonSerializerOptions.DefaultBufferSize
+  isExternal: true
+  href: System.Text.Json.JsonSerializerOptions.html#System_Text_Json_JsonSerializerOptions_DefaultBufferSize
+  name: DefaultBufferSize
+  nameWithType: JsonSerializerOptions.DefaultBufferSize
+  fullName: System.Text.Json.JsonSerializerOptions.DefaultBufferSize
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.Text.Json.JsonSerializerOptions.Encoder*
+  commentId: Overload:System.Text.Json.JsonSerializerOptions.Encoder
+  isExternal: true
+  href: System.Text.Json.JsonSerializerOptions.html#System_Text_Json_JsonSerializerOptions_Encoder
+  name: Encoder
+  nameWithType: JsonSerializerOptions.Encoder
+  fullName: System.Text.Json.JsonSerializerOptions.Encoder
+- uid: System.Text.Encodings.Web.JavaScriptEncoder
+  commentId: T:System.Text.Encodings.Web.JavaScriptEncoder
+  parent: System.Text.Encodings.Web
+  isExternal: true
+  href: System.Text.Encodings.Web.JavaScriptEncoder.html
+  name: JavaScriptEncoder
+  nameWithType: JavaScriptEncoder
+  fullName: System.Text.Encodings.Web.JavaScriptEncoder
+- uid: System.Text.Encodings.Web
+  commentId: N:System.Text.Encodings.Web
+  isExternal: true
+  href: System.html
+  name: System.Text.Encodings.Web
+  nameWithType: System.Text.Encodings.Web
+  fullName: System.Text.Encodings.Web
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: System.html
+  - name: .
+  - uid: System.Text
+    name: Text
+    isExternal: true
+    href: System.Text.html
+  - name: .
+  - uid: System.Text.Encodings
+    name: Encodings
+    isExternal: true
+    href: System.Text.Encodings.html
+  - name: .
+  - uid: System.Text.Encodings.Web
+    name: Web
+    isExternal: true
+    href: System.Text.Encodings.Web.html
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: System.html
+  - name: .
+  - uid: System.Text
+    name: Text
+    isExternal: true
+    href: System.Text.html
+  - name: .
+  - uid: System.Text.Encodings
+    name: Encodings
+    isExternal: true
+    href: System.Text.Encodings.html
+  - name: .
+  - uid: System.Text.Encodings.Web
+    name: Web
+    isExternal: true
+    href: System.Text.Encodings.Web.html
+- uid: System.Collections.IDictionary
+  commentId: T:System.Collections.IDictionary
+  parent: System.Collections
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.idictionary
+  name: IDictionary
+  nameWithType: IDictionary
+  fullName: System.Collections.IDictionary
+- uid: System.Text.Json.JsonSerializerOptions.DictionaryKeyPolicy*
+  commentId: Overload:System.Text.Json.JsonSerializerOptions.DictionaryKeyPolicy
+  isExternal: true
+  href: System.Text.Json.JsonSerializerOptions.html#System_Text_Json_JsonSerializerOptions_DictionaryKeyPolicy
+  name: DictionaryKeyPolicy
+  nameWithType: JsonSerializerOptions.DictionaryKeyPolicy
+  fullName: System.Text.Json.JsonSerializerOptions.DictionaryKeyPolicy
+- uid: System.Text.Json.JsonNamingPolicy
+  commentId: T:System.Text.Json.JsonNamingPolicy
+  parent: System.Text.Json
+  isExternal: true
+  href: System.Text.Json.JsonNamingPolicy.html
+  name: JsonNamingPolicy
+  nameWithType: JsonNamingPolicy
+  fullName: System.Text.Json.JsonNamingPolicy
+- uid: System.Collections
+  commentId: N:System.Collections
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections
+  nameWithType: System.Collections
+  fullName: System.Collections
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+- uid: System.Text.Json.Serialization.JsonIgnoreCondition.Never
+  commentId: F:System.Text.Json.Serialization.JsonIgnoreCondition.Never
+  isExternal: true
+  href: System.Text.Json.Serialization.JsonIgnoreCondition.html#System_Text_Json_Serialization_JsonIgnoreCondition_Never
+  name: Never
+  nameWithType: JsonIgnoreCondition.Never
+  fullName: System.Text.Json.Serialization.JsonIgnoreCondition.Never
+- uid: System.Text.Json.Serialization.JsonIgnoreCondition.Always
+  commentId: F:System.Text.Json.Serialization.JsonIgnoreCondition.Always
+  isExternal: true
+  href: System.Text.Json.Serialization.JsonIgnoreCondition.html#System_Text_Json_Serialization_JsonIgnoreCondition_Always
+  name: Always
+  nameWithType: JsonIgnoreCondition.Always
+  fullName: System.Text.Json.Serialization.JsonIgnoreCondition.Always
+- uid: System.Text.Json.JsonSerializerOptions.IgnoreNullValues
+  commentId: P:System.Text.Json.JsonSerializerOptions.IgnoreNullValues
+  isExternal: true
+  name: IgnoreNullValues
+  nameWithType: JsonSerializerOptions.IgnoreNullValues
+  fullName: System.Text.Json.JsonSerializerOptions.IgnoreNullValues
+- uid: System.Text.Json.JsonSerializerOptions.DefaultIgnoreCondition*
+  commentId: Overload:System.Text.Json.JsonSerializerOptions.DefaultIgnoreCondition
+  isExternal: true
+  href: System.Text.Json.JsonSerializerOptions.html#System_Text_Json_JsonSerializerOptions_DefaultIgnoreCondition
+  name: DefaultIgnoreCondition
+  nameWithType: JsonSerializerOptions.DefaultIgnoreCondition
+  fullName: System.Text.Json.JsonSerializerOptions.DefaultIgnoreCondition
+- uid: System.Text.Json.Serialization.JsonIgnoreCondition
+  commentId: T:System.Text.Json.Serialization.JsonIgnoreCondition
+  parent: System.Text.Json.Serialization
+  isExternal: true
+  href: System.Text.Json.Serialization.JsonIgnoreCondition.html
+  name: JsonIgnoreCondition
+  nameWithType: JsonIgnoreCondition
+  fullName: System.Text.Json.Serialization.JsonIgnoreCondition
+- uid: System.Text.Json.JsonSerializerOptions.NumberHandling*
+  commentId: Overload:System.Text.Json.JsonSerializerOptions.NumberHandling
+  isExternal: true
+  href: System.Text.Json.JsonSerializerOptions.html#System_Text_Json_JsonSerializerOptions_NumberHandling
+  name: NumberHandling
+  nameWithType: JsonSerializerOptions.NumberHandling
+  fullName: System.Text.Json.JsonSerializerOptions.NumberHandling
+- uid: System.Text.Json.Serialization.JsonNumberHandling
+  commentId: T:System.Text.Json.Serialization.JsonNumberHandling
+  parent: System.Text.Json.Serialization
+  isExternal: true
+  href: System.Text.Json.Serialization.JsonNumberHandling.html
+  name: JsonNumberHandling
+  nameWithType: JsonNumberHandling
+  fullName: System.Text.Json.Serialization.JsonNumberHandling
+- uid: System.Text.Json.JsonSerializerOptions.IgnoreReadOnlyProperties*
+  commentId: Overload:System.Text.Json.JsonSerializerOptions.IgnoreReadOnlyProperties
+  isExternal: true
+  href: System.Text.Json.JsonSerializerOptions.html#System_Text_Json_JsonSerializerOptions_IgnoreReadOnlyProperties
+  name: IgnoreReadOnlyProperties
+  nameWithType: JsonSerializerOptions.IgnoreReadOnlyProperties
+  fullName: System.Text.Json.JsonSerializerOptions.IgnoreReadOnlyProperties
+- uid: System.Text.Json.JsonSerializerOptions.IgnoreReadOnlyFields*
+  commentId: Overload:System.Text.Json.JsonSerializerOptions.IgnoreReadOnlyFields
+  isExternal: true
+  href: System.Text.Json.JsonSerializerOptions.html#System_Text_Json_JsonSerializerOptions_IgnoreReadOnlyFields
+  name: IgnoreReadOnlyFields
+  nameWithType: JsonSerializerOptions.IgnoreReadOnlyFields
+  fullName: System.Text.Json.JsonSerializerOptions.IgnoreReadOnlyFields
+- uid: System.Text.Json.JsonSerializerOptions.IncludeFields*
+  commentId: Overload:System.Text.Json.JsonSerializerOptions.IncludeFields
+  isExternal: true
+  href: System.Text.Json.JsonSerializerOptions.html#System_Text_Json_JsonSerializerOptions_IncludeFields
+  name: IncludeFields
+  nameWithType: JsonSerializerOptions.IncludeFields
+  fullName: System.Text.Json.JsonSerializerOptions.IncludeFields
+- uid: System.ArgumentOutOfRangeException
+  commentId: T:System.ArgumentOutOfRangeException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.argumentoutofrangeexception
+  name: ArgumentOutOfRangeException
+  nameWithType: ArgumentOutOfRangeException
+  fullName: System.ArgumentOutOfRangeException
+- uid: System.Text.Json.JsonSerializerOptions.MaxDepth*
+  commentId: Overload:System.Text.Json.JsonSerializerOptions.MaxDepth
+  isExternal: true
+  href: System.Text.Json.JsonSerializerOptions.html#System_Text_Json_JsonSerializerOptions_MaxDepth
+  name: MaxDepth
+  nameWithType: JsonSerializerOptions.MaxDepth
+  fullName: System.Text.Json.JsonSerializerOptions.MaxDepth
+- uid: System.Text.Json.JsonSerializerOptions.PropertyNamingPolicy*
+  commentId: Overload:System.Text.Json.JsonSerializerOptions.PropertyNamingPolicy
+  isExternal: true
+  href: System.Text.Json.JsonSerializerOptions.html#System_Text_Json_JsonSerializerOptions_PropertyNamingPolicy
+  name: PropertyNamingPolicy
+  nameWithType: JsonSerializerOptions.PropertyNamingPolicy
+  fullName: System.Text.Json.JsonSerializerOptions.PropertyNamingPolicy
+- uid: System.Text.Json.JsonSerializerOptions.PropertyNameCaseInsensitive*
+  commentId: Overload:System.Text.Json.JsonSerializerOptions.PropertyNameCaseInsensitive
+  isExternal: true
+  href: System.Text.Json.JsonSerializerOptions.html#System_Text_Json_JsonSerializerOptions_PropertyNameCaseInsensitive
+  name: PropertyNameCaseInsensitive
+  nameWithType: JsonSerializerOptions.PropertyNameCaseInsensitive
+  fullName: System.Text.Json.JsonSerializerOptions.PropertyNameCaseInsensitive
+- uid: System.Text.Json.JsonCommentHandling
+  commentId: T:System.Text.Json.JsonCommentHandling
+  parent: System.Text.Json
+  isExternal: true
+  href: System.Text.Json.JsonCommentHandling.html
+  name: JsonCommentHandling
+  nameWithType: JsonCommentHandling
+  fullName: System.Text.Json.JsonCommentHandling
+- uid: System.Text.Json.JsonSerializerOptions.ReadCommentHandling*
+  commentId: Overload:System.Text.Json.JsonSerializerOptions.ReadCommentHandling
+  isExternal: true
+  href: System.Text.Json.JsonSerializerOptions.html#System_Text_Json_JsonSerializerOptions_ReadCommentHandling
+  name: ReadCommentHandling
+  nameWithType: JsonSerializerOptions.ReadCommentHandling
+  fullName: System.Text.Json.JsonSerializerOptions.ReadCommentHandling
+- uid: System.Text.Json.JsonSerializerOptions.UnknownTypeHandling*
+  commentId: Overload:System.Text.Json.JsonSerializerOptions.UnknownTypeHandling
+  isExternal: true
+  href: System.Text.Json.JsonSerializerOptions.html#System_Text_Json_JsonSerializerOptions_UnknownTypeHandling
+  name: UnknownTypeHandling
+  nameWithType: JsonSerializerOptions.UnknownTypeHandling
+  fullName: System.Text.Json.JsonSerializerOptions.UnknownTypeHandling
+- uid: System.Text.Json.Serialization.JsonUnknownTypeHandling
+  commentId: T:System.Text.Json.Serialization.JsonUnknownTypeHandling
+  parent: System.Text.Json.Serialization
+  isExternal: true
+  href: System.Text.Json.Serialization.JsonUnknownTypeHandling.html
+  name: JsonUnknownTypeHandling
+  nameWithType: JsonUnknownTypeHandling
+  fullName: System.Text.Json.Serialization.JsonUnknownTypeHandling
+- uid: System.Text.Json.JsonSerializerOptions.WriteIndented*
+  commentId: Overload:System.Text.Json.JsonSerializerOptions.WriteIndented
+  isExternal: true
+  href: System.Text.Json.JsonSerializerOptions.html#System_Text_Json_JsonSerializerOptions_WriteIndented
+  name: WriteIndented
+  nameWithType: JsonSerializerOptions.WriteIndented
+  fullName: System.Text.Json.JsonSerializerOptions.WriteIndented
+- uid: System.Text.Json.JsonSerializerOptions.ReferenceHandler*
+  commentId: Overload:System.Text.Json.JsonSerializerOptions.ReferenceHandler
+  isExternal: true
+  href: System.Text.Json.JsonSerializerOptions.html#System_Text_Json_JsonSerializerOptions_ReferenceHandler
+  name: ReferenceHandler
+  nameWithType: JsonSerializerOptions.ReferenceHandler
+  fullName: System.Text.Json.JsonSerializerOptions.ReferenceHandler
+- uid: System.Text.Json.Serialization.ReferenceHandler
+  commentId: T:System.Text.Json.Serialization.ReferenceHandler
+  parent: System.Text.Json.Serialization
+  isExternal: true
+  href: System.Text.Json.Serialization.ReferenceHandler.html
+  name: ReferenceHandler
+  nameWithType: ReferenceHandler
+  fullName: System.Text.Json.Serialization.ReferenceHandler

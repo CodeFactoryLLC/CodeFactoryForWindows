@@ -1,0 +1,648 @@
+### YamlMime:ManagedReference
+items:
+- uid: CodeFactory.WinVs.Models.CSharp.Builder.IEventBuilder
+  commentId: T:CodeFactory.WinVs.Models.CSharp.Builder.IEventBuilder
+  id: IEventBuilder
+  parent: CodeFactory.WinVs.Models.CSharp.Builder
+  children:
+  - CodeFactory.WinVs.Models.CSharp.Builder.IEventBuilder.BuildEventAsync(CodeFactory.WinVs.Models.CSharp.CsEvent,CodeFactory.WinVs.Models.CSharp.Builder.ISourceManager,System.Int32,System.String,CodeFactory.WinVs.Models.CSharp.CsSecurity,System.Boolean,System.Collections.Generic.IEnumerable{System.String},System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.String,System.Collections.Generic.IEnumerable{CodeFactory.WinVs.Models.CSharp.Builder.NamedSyntax},CodeFactory.WinVs.Models.CSharp.Builder.NameFormatting)
+  - CodeFactory.WinVs.Models.CSharp.Builder.IEventBuilder.InjectEventAsync(CodeFactory.WinVs.Models.CSharp.CsEvent,CodeFactory.WinVs.Models.CSharp.Builder.ISourceManager,System.Int32,CodeFactory.WinVs.Models.CSharp.Builder.InjectionLocation,System.String,CodeFactory.WinVs.Models.CSharp.CsSecurity,System.Boolean,System.Collections.Generic.IEnumerable{System.String},System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.String,System.Collections.Generic.IEnumerable{CodeFactory.WinVs.Models.CSharp.Builder.NamedSyntax},CodeFactory.WinVs.Models.CSharp.Builder.NameFormatting)
+  langs:
+  - csharp
+  - vb
+  name: IEventBuilder
+  nameWithType: IEventBuilder
+  fullName: CodeFactory.WinVs.Models.CSharp.Builder.IEventBuilder
+  type: Interface
+  source:
+    href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/e63c05962945f61f2329e19d324f24a768806f18/Src/CodeFactoryForWindows/CodeFactory.WinVs/Models/CSharp/Builder/IEventBuilder.cs
+  assemblies:
+  - CodeFactory.WinVs
+  namespace: CodeFactory.WinVs.Models.CSharp.Builder
+  summary: Base contract all event builders have to implement.
+  example: []
+  syntax:
+    content: 'public interface IEventBuilder : IBuilder'
+    content.vb: Public Interface IEventBuilder Inherits IBuilder
+  inheritedMembers:
+  - CodeFactory.WinVs.Models.CSharp.Builder.IBuilder.BuilderType
+- uid: CodeFactory.WinVs.Models.CSharp.Builder.IEventBuilder.BuildEventAsync(CodeFactory.WinVs.Models.CSharp.CsEvent,CodeFactory.WinVs.Models.CSharp.Builder.ISourceManager,System.Int32,System.String,CodeFactory.WinVs.Models.CSharp.CsSecurity,System.Boolean,System.Collections.Generic.IEnumerable{System.String},System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.String,System.Collections.Generic.IEnumerable{CodeFactory.WinVs.Models.CSharp.Builder.NamedSyntax},CodeFactory.WinVs.Models.CSharp.Builder.NameFormatting)
+  commentId: M:CodeFactory.WinVs.Models.CSharp.Builder.IEventBuilder.BuildEventAsync(CodeFactory.WinVs.Models.CSharp.CsEvent,CodeFactory.WinVs.Models.CSharp.Builder.ISourceManager,System.Int32,System.String,CodeFactory.WinVs.Models.CSharp.CsSecurity,System.Boolean,System.Collections.Generic.IEnumerable{System.String},System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.String,System.Collections.Generic.IEnumerable{CodeFactory.WinVs.Models.CSharp.Builder.NamedSyntax},CodeFactory.WinVs.Models.CSharp.Builder.NameFormatting)
+  id: BuildEventAsync(CodeFactory.WinVs.Models.CSharp.CsEvent,CodeFactory.WinVs.Models.CSharp.Builder.ISourceManager,System.Int32,System.String,CodeFactory.WinVs.Models.CSharp.CsSecurity,System.Boolean,System.Collections.Generic.IEnumerable{System.String},System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.String,System.Collections.Generic.IEnumerable{CodeFactory.WinVs.Models.CSharp.Builder.NamedSyntax},CodeFactory.WinVs.Models.CSharp.Builder.NameFormatting)
+  parent: CodeFactory.WinVs.Models.CSharp.Builder.IEventBuilder
+  langs:
+  - csharp
+  - vb
+  name: BuildEventAsync(CsEvent, ISourceManager, int, string, CsSecurity, bool, IEnumerable<string>, bool, bool, bool, bool, bool, bool, bool, string, IEnumerable<NamedSyntax>, NameFormatting)
+  nameWithType: IEventBuilder.BuildEventAsync(CsEvent, ISourceManager, int, string, CsSecurity, bool, IEnumerable<string>, bool, bool, bool, bool, bool, bool, bool, string, IEnumerable<NamedSyntax>, NameFormatting)
+  fullName: CodeFactory.WinVs.Models.CSharp.Builder.IEventBuilder.BuildEventAsync(CodeFactory.WinVs.Models.CSharp.CsEvent, CodeFactory.WinVs.Models.CSharp.Builder.ISourceManager, int, string, CodeFactory.WinVs.Models.CSharp.CsSecurity, bool, System.Collections.Generic.IEnumerable<string>, bool, bool, bool, bool, bool, bool, bool, string, System.Collections.Generic.IEnumerable<CodeFactory.WinVs.Models.CSharp.Builder.NamedSyntax>, CodeFactory.WinVs.Models.CSharp.Builder.NameFormatting)
+  type: Method
+  source:
+    href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/e63c05962945f61f2329e19d324f24a768806f18/Src/CodeFactoryForWindows/CodeFactory.WinVs/Models/CSharp/Builder/IEventBuilder.cs
+  assemblies:
+  - CodeFactory.WinVs
+  namespace: CodeFactory.WinVs.Models.CSharp.Builder
+  summary: Generates the syntax for the event and returns the defined syntax to the caller.
+  example: []
+  syntax:
+    content: Task<string> BuildEventAsync(CsEvent sourceModel, ISourceManager manager, int indentLevel, string eventName = null, CsSecurity security = CsSecurity.Unknown, bool includeAttributes = false, IEnumerable<string> ignoreAttributeTypes = null, bool includeKeywords = false, bool includeAbstractKeyword = false, bool abstractKeyword = false, bool sealedKeyword = false, bool staticKeyword = false, bool virtualKeyword = false, bool overrideKeyword = false, string syntax = null, IEnumerable<NamedSyntax> multipleSyntax = null, NameFormatting nameFormat = null)
+    parameters:
+    - id: sourceModel
+      type: CodeFactory.WinVs.Models.CSharp.CsEvent
+      description: Target event model to build from.
+    - id: manager
+      type: CodeFactory.WinVs.Models.CSharp.Builder.ISourceManager
+      description: The source manager to use for injection
+    - id: indentLevel
+      type: System.Int32
+      description: The number of indents to prepend to all source code during the build.
+    - id: eventName
+      type: System.String
+      description: Optional, the name to create the event as, default is null.
+    - id: security
+      type: CodeFactory.WinVs.Models.CSharp.CsSecurity
+      description: Optional, the security level to set the event to, default is unknown.
+    - id: includeAttributes
+      type: System.Boolean
+      description: Optional, determines if the event attributes are added, default is false.
+    - id: ignoreAttributeTypes
+      type: System.Collections.Generic.IEnumerable{System.String}
+      description: Optional, list of attributes to not include with the event - will need to use the full name of the attribute, default is null.
+    - id: includeKeywords
+      type: System.Boolean
+      description: Optional,flag that determines if the events original key words will be included in the definition, default is false.
+    - id: includeAbstractKeyword
+      type: System.Boolean
+      description: Optional, flag that determines if the events original keywords are being added if the abstract keyword will also be added if is defined, default is false.
+    - id: abstractKeyword
+      type: System.Boolean
+      description: Optional, defines if the event should be implemented as abstract, default is false.
+    - id: sealedKeyword
+      type: System.Boolean
+      description: Optional, add the sealed keyword to the event definition, default is false.
+    - id: staticKeyword
+      type: System.Boolean
+      description: Optional, set the event to be static, default is false.
+    - id: virtualKeyword
+      type: System.Boolean
+      description: Optional, adds the virtual keyword to the event definition, default is false.
+    - id: overrideKeyword
+      type: System.Boolean
+      description: Optional, flag that determines if the keyword override is added to the event declaration, default is false.
+    - id: syntax
+      type: System.String
+      description: Provided syntax that will be used in generating the event definition.
+    - id: multipleSyntax
+      type: System.Collections.Generic.IEnumerable{CodeFactory.WinVs.Models.CSharp.Builder.NamedSyntax}
+      description: Provides multiple named syntax that can be used in generating the event definition.
+    - id: nameFormat
+      type: CodeFactory.WinVs.Models.CSharp.Builder.NameFormatting
+      description: Optional parameter that determines the name formatting to use with the event.
+    return:
+      type: System.Threading.Tasks.Task{System.String}
+      description: Formatted event definition.
+    content.vb: Function BuildEventAsync(sourceModel As CsEvent, manager As ISourceManager, indentLevel As Integer, eventName As String = Nothing, security As CsSecurity = CsSecurity.Unknown, includeAttributes As Boolean = False, ignoreAttributeTypes As IEnumerable(Of String) = Nothing, includeKeywords As Boolean = False, includeAbstractKeyword As Boolean = False, abstractKeyword As Boolean = False, sealedKeyword As Boolean = False, staticKeyword As Boolean = False, virtualKeyword As Boolean = False, overrideKeyword As Boolean = False, syntax As String = Nothing, multipleSyntax As IEnumerable(Of NamedSyntax) = Nothing, nameFormat As NameFormatting = Nothing) As Task(Of String)
+  overload: CodeFactory.WinVs.Models.CSharp.Builder.IEventBuilder.BuildEventAsync*
+  nameWithType.vb: IEventBuilder.BuildEventAsync(CsEvent, ISourceManager, Integer, String, CsSecurity, Boolean, IEnumerable(Of String), Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, String, IEnumerable(Of NamedSyntax), NameFormatting)
+  fullName.vb: CodeFactory.WinVs.Models.CSharp.Builder.IEventBuilder.BuildEventAsync(CodeFactory.WinVs.Models.CSharp.CsEvent, CodeFactory.WinVs.Models.CSharp.Builder.ISourceManager, Integer, String, CodeFactory.WinVs.Models.CSharp.CsSecurity, Boolean, System.Collections.Generic.IEnumerable(Of String), Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, String, System.Collections.Generic.IEnumerable(Of CodeFactory.WinVs.Models.CSharp.Builder.NamedSyntax), CodeFactory.WinVs.Models.CSharp.Builder.NameFormatting)
+  name.vb: BuildEventAsync(CsEvent, ISourceManager, Integer, String, CsSecurity, Boolean, IEnumerable(Of String), Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, String, IEnumerable(Of NamedSyntax), NameFormatting)
+- uid: CodeFactory.WinVs.Models.CSharp.Builder.IEventBuilder.InjectEventAsync(CodeFactory.WinVs.Models.CSharp.CsEvent,CodeFactory.WinVs.Models.CSharp.Builder.ISourceManager,System.Int32,CodeFactory.WinVs.Models.CSharp.Builder.InjectionLocation,System.String,CodeFactory.WinVs.Models.CSharp.CsSecurity,System.Boolean,System.Collections.Generic.IEnumerable{System.String},System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.String,System.Collections.Generic.IEnumerable{CodeFactory.WinVs.Models.CSharp.Builder.NamedSyntax},CodeFactory.WinVs.Models.CSharp.Builder.NameFormatting)
+  commentId: M:CodeFactory.WinVs.Models.CSharp.Builder.IEventBuilder.InjectEventAsync(CodeFactory.WinVs.Models.CSharp.CsEvent,CodeFactory.WinVs.Models.CSharp.Builder.ISourceManager,System.Int32,CodeFactory.WinVs.Models.CSharp.Builder.InjectionLocation,System.String,CodeFactory.WinVs.Models.CSharp.CsSecurity,System.Boolean,System.Collections.Generic.IEnumerable{System.String},System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.String,System.Collections.Generic.IEnumerable{CodeFactory.WinVs.Models.CSharp.Builder.NamedSyntax},CodeFactory.WinVs.Models.CSharp.Builder.NameFormatting)
+  id: InjectEventAsync(CodeFactory.WinVs.Models.CSharp.CsEvent,CodeFactory.WinVs.Models.CSharp.Builder.ISourceManager,System.Int32,CodeFactory.WinVs.Models.CSharp.Builder.InjectionLocation,System.String,CodeFactory.WinVs.Models.CSharp.CsSecurity,System.Boolean,System.Collections.Generic.IEnumerable{System.String},System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.String,System.Collections.Generic.IEnumerable{CodeFactory.WinVs.Models.CSharp.Builder.NamedSyntax},CodeFactory.WinVs.Models.CSharp.Builder.NameFormatting)
+  parent: CodeFactory.WinVs.Models.CSharp.Builder.IEventBuilder
+  langs:
+  - csharp
+  - vb
+  name: InjectEventAsync(CsEvent, ISourceManager, int, InjectionLocation, string, CsSecurity, bool, IEnumerable<string>, bool, bool, bool, bool, bool, bool, bool, string, IEnumerable<NamedSyntax>, NameFormatting)
+  nameWithType: IEventBuilder.InjectEventAsync(CsEvent, ISourceManager, int, InjectionLocation, string, CsSecurity, bool, IEnumerable<string>, bool, bool, bool, bool, bool, bool, bool, string, IEnumerable<NamedSyntax>, NameFormatting)
+  fullName: CodeFactory.WinVs.Models.CSharp.Builder.IEventBuilder.InjectEventAsync(CodeFactory.WinVs.Models.CSharp.CsEvent, CodeFactory.WinVs.Models.CSharp.Builder.ISourceManager, int, CodeFactory.WinVs.Models.CSharp.Builder.InjectionLocation, string, CodeFactory.WinVs.Models.CSharp.CsSecurity, bool, System.Collections.Generic.IEnumerable<string>, bool, bool, bool, bool, bool, bool, bool, string, System.Collections.Generic.IEnumerable<CodeFactory.WinVs.Models.CSharp.Builder.NamedSyntax>, CodeFactory.WinVs.Models.CSharp.Builder.NameFormatting)
+  type: Method
+  source:
+    href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/e63c05962945f61f2329e19d324f24a768806f18/Src/CodeFactoryForWindows/CodeFactory.WinVs/Models/CSharp/Builder/IEventBuilder.cs
+  assemblies:
+  - CodeFactory.WinVs
+  namespace: CodeFactory.WinVs.Models.CSharp.Builder
+  summary: Generates the syntax for the event and injects into the managed source container.
+  example: []
+  syntax:
+    content: Task InjectEventAsync(CsEvent sourceModel, ISourceManager manager, int indentLevel, InjectionLocation location = InjectionLocation.EventAfter, string eventName = null, CsSecurity security = CsSecurity.Unknown, bool includeAttributes = false, IEnumerable<string> ignoreAttributeTypes = null, bool includeKeywords = false, bool includeAbstractKeyword = false, bool abstractKeyword = false, bool sealedKeyword = false, bool staticKeyword = false, bool virtualKeyword = false, bool overrideKeyword = false, string syntax = null, IEnumerable<NamedSyntax> multipleSyntax = null, NameFormatting nameFormat = null)
+    parameters:
+    - id: sourceModel
+      type: CodeFactory.WinVs.Models.CSharp.CsEvent
+      description: Target event model to build from.
+    - id: manager
+      type: CodeFactory.WinVs.Models.CSharp.Builder.ISourceManager
+      description: The source manager to use for injection
+    - id: indentLevel
+      type: System.Int32
+      description: The number of indents to prepend to all source code during the build.
+    - id: location
+      type: CodeFactory.WinVs.Models.CSharp.Builder.InjectionLocation
+      description: The location the event will be injected, default is after the event definitions
+    - id: eventName
+      type: System.String
+      description: Optional, the name to create the event as, default is null.
+    - id: security
+      type: CodeFactory.WinVs.Models.CSharp.CsSecurity
+      description: Optional, the security level to set the event to, default is unknown.
+    - id: includeAttributes
+      type: System.Boolean
+      description: Optional, determines if the event attributes are added, default is false.
+    - id: ignoreAttributeTypes
+      type: System.Collections.Generic.IEnumerable{System.String}
+      description: Optional, list of attributes to not include with the event - will need to use the full name of the attribute, default is null.
+    - id: includeKeywords
+      type: System.Boolean
+      description: Optional,flag that determines if the events original key words will be included in the definition, default is false.
+    - id: includeAbstractKeyword
+      type: System.Boolean
+      description: Optional, flag that determines if the events original keywords are being added if the abstract keyword will also be added if is defined, default is false.
+    - id: abstractKeyword
+      type: System.Boolean
+      description: Optional, defines if the event should be implemented as abstract, default is false.
+    - id: sealedKeyword
+      type: System.Boolean
+      description: Optional, add the sealed keyword to the event definition, default is false.
+    - id: staticKeyword
+      type: System.Boolean
+      description: Optional, set the event to be static, default is false.
+    - id: virtualKeyword
+      type: System.Boolean
+      description: Optional, adds the virtual keyword to the event definition, default is false.
+    - id: overrideKeyword
+      type: System.Boolean
+      description: Optional, flag that determines if the keyword override is added to the event declaration, default is false.
+    - id: syntax
+      type: System.String
+      description: Provided syntax that will be used in generating the event definition.
+    - id: multipleSyntax
+      type: System.Collections.Generic.IEnumerable{CodeFactory.WinVs.Models.CSharp.Builder.NamedSyntax}
+      description: Provides multiple named syntax that can be used in generating the event definition.
+    - id: nameFormat
+      type: CodeFactory.WinVs.Models.CSharp.Builder.NameFormatting
+      description: Optional parameter that determines the name formatting to use with the event.
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Function InjectEventAsync(sourceModel As CsEvent, manager As ISourceManager, indentLevel As Integer, location As InjectionLocation = InjectionLocation.EventAfter, eventName As String = Nothing, security As CsSecurity = CsSecurity.Unknown, includeAttributes As Boolean = False, ignoreAttributeTypes As IEnumerable(Of String) = Nothing, includeKeywords As Boolean = False, includeAbstractKeyword As Boolean = False, abstractKeyword As Boolean = False, sealedKeyword As Boolean = False, staticKeyword As Boolean = False, virtualKeyword As Boolean = False, overrideKeyword As Boolean = False, syntax As String = Nothing, multipleSyntax As IEnumerable(Of NamedSyntax) = Nothing, nameFormat As NameFormatting = Nothing) As Task
+  overload: CodeFactory.WinVs.Models.CSharp.Builder.IEventBuilder.InjectEventAsync*
+  nameWithType.vb: IEventBuilder.InjectEventAsync(CsEvent, ISourceManager, Integer, InjectionLocation, String, CsSecurity, Boolean, IEnumerable(Of String), Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, String, IEnumerable(Of NamedSyntax), NameFormatting)
+  fullName.vb: CodeFactory.WinVs.Models.CSharp.Builder.IEventBuilder.InjectEventAsync(CodeFactory.WinVs.Models.CSharp.CsEvent, CodeFactory.WinVs.Models.CSharp.Builder.ISourceManager, Integer, CodeFactory.WinVs.Models.CSharp.Builder.InjectionLocation, String, CodeFactory.WinVs.Models.CSharp.CsSecurity, Boolean, System.Collections.Generic.IEnumerable(Of String), Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, String, System.Collections.Generic.IEnumerable(Of CodeFactory.WinVs.Models.CSharp.Builder.NamedSyntax), CodeFactory.WinVs.Models.CSharp.Builder.NameFormatting)
+  name.vb: InjectEventAsync(CsEvent, ISourceManager, Integer, InjectionLocation, String, CsSecurity, Boolean, IEnumerable(Of String), Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, String, IEnumerable(Of NamedSyntax), NameFormatting)
+references:
+- uid: CodeFactory.WinVs.Models.CSharp.Builder
+  commentId: N:CodeFactory.WinVs.Models.CSharp.Builder
+  isExternal: true
+  href: CodeFactory.html
+  name: CodeFactory.WinVs.Models.CSharp.Builder
+  nameWithType: CodeFactory.WinVs.Models.CSharp.Builder
+  fullName: CodeFactory.WinVs.Models.CSharp.Builder
+  spec.csharp:
+  - uid: CodeFactory
+    name: CodeFactory
+    isExternal: true
+    href: CodeFactory.html
+  - name: .
+  - uid: CodeFactory.WinVs
+    name: WinVs
+    isExternal: true
+    href: CodeFactory.WinVs.html
+  - name: .
+  - uid: CodeFactory.WinVs.Models
+    name: Models
+    isExternal: true
+    href: CodeFactory.WinVs.Models.html
+  - name: .
+  - uid: CodeFactory.WinVs.Models.CSharp
+    name: CSharp
+    isExternal: true
+    href: CodeFactory.WinVs.Models.CSharp.html
+  - name: .
+  - uid: CodeFactory.WinVs.Models.CSharp.Builder
+    name: Builder
+    isExternal: true
+    href: CodeFactory.WinVs.Models.CSharp.Builder.html
+  spec.vb:
+  - uid: CodeFactory
+    name: CodeFactory
+    isExternal: true
+    href: CodeFactory.html
+  - name: .
+  - uid: CodeFactory.WinVs
+    name: WinVs
+    isExternal: true
+    href: CodeFactory.WinVs.html
+  - name: .
+  - uid: CodeFactory.WinVs.Models
+    name: Models
+    isExternal: true
+    href: CodeFactory.WinVs.Models.html
+  - name: .
+  - uid: CodeFactory.WinVs.Models.CSharp
+    name: CSharp
+    isExternal: true
+    href: CodeFactory.WinVs.Models.CSharp.html
+  - name: .
+  - uid: CodeFactory.WinVs.Models.CSharp.Builder
+    name: Builder
+    isExternal: true
+    href: CodeFactory.WinVs.Models.CSharp.Builder.html
+- uid: CodeFactory.WinVs.Models.CSharp.Builder.IBuilder.BuilderType
+  commentId: P:CodeFactory.WinVs.Models.CSharp.Builder.IBuilder.BuilderType
+  parent: CodeFactory.WinVs.Models.CSharp.Builder.IBuilder
+  isExternal: true
+  href: CodeFactory.WinVs.Models.CSharp.Builder.IBuilder.html#CodeFactory_WinVs_Models_CSharp_Builder_IBuilder_BuilderType
+  name: BuilderType
+  nameWithType: IBuilder.BuilderType
+  fullName: CodeFactory.WinVs.Models.CSharp.Builder.IBuilder.BuilderType
+- uid: CodeFactory.WinVs.Models.CSharp.Builder.IBuilder
+  commentId: T:CodeFactory.WinVs.Models.CSharp.Builder.IBuilder
+  parent: CodeFactory.WinVs.Models.CSharp.Builder
+  isExternal: true
+  href: CodeFactory.WinVs.Models.CSharp.Builder.IBuilder.html
+  name: IBuilder
+  nameWithType: IBuilder
+  fullName: CodeFactory.WinVs.Models.CSharp.Builder.IBuilder
+- uid: CodeFactory.WinVs.Models.CSharp.Builder.IEventBuilder.BuildEventAsync*
+  commentId: Overload:CodeFactory.WinVs.Models.CSharp.Builder.IEventBuilder.BuildEventAsync
+  isExternal: true
+  href: CodeFactory.WinVs.Models.CSharp.Builder.IEventBuilder.html#CodeFactory_WinVs_Models_CSharp_Builder_IEventBuilder_BuildEventAsync_CodeFactory_WinVs_Models_CSharp_CsEvent_CodeFactory_WinVs_Models_CSharp_Builder_ISourceManager_System_Int32_System_String_CodeFactory_WinVs_Models_CSharp_CsSecurity_System_Boolean_System_Collections_Generic_IEnumerable_System_String__System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_String_System_Collections_Generic_IEnumerable_CodeFactory_WinVs_Models_CSharp_Builder_NamedSyntax__CodeFactory_WinVs_Models_CSharp_Builder_NameFormatting_
+  name: BuildEventAsync
+  nameWithType: IEventBuilder.BuildEventAsync
+  fullName: CodeFactory.WinVs.Models.CSharp.Builder.IEventBuilder.BuildEventAsync
+- uid: CodeFactory.WinVs.Models.CSharp.CsEvent
+  commentId: T:CodeFactory.WinVs.Models.CSharp.CsEvent
+  parent: CodeFactory.WinVs.Models.CSharp
+  isExternal: true
+  href: CodeFactory.WinVs.Models.CSharp.CsEvent.html
+  name: CsEvent
+  nameWithType: CsEvent
+  fullName: CodeFactory.WinVs.Models.CSharp.CsEvent
+- uid: CodeFactory.WinVs.Models.CSharp.Builder.ISourceManager
+  commentId: T:CodeFactory.WinVs.Models.CSharp.Builder.ISourceManager
+  parent: CodeFactory.WinVs.Models.CSharp.Builder
+  isExternal: true
+  href: CodeFactory.WinVs.Models.CSharp.Builder.ISourceManager.html
+  name: ISourceManager
+  nameWithType: ISourceManager
+  fullName: CodeFactory.WinVs.Models.CSharp.Builder.ISourceManager
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: CodeFactory.WinVs.Models.CSharp.CsSecurity
+  commentId: T:CodeFactory.WinVs.Models.CSharp.CsSecurity
+  parent: CodeFactory.WinVs.Models.CSharp
+  isExternal: true
+  href: CodeFactory.WinVs.Models.CSharp.CsSecurity.html
+  name: CsSecurity
+  nameWithType: CsSecurity
+  fullName: CodeFactory.WinVs.Models.CSharp.CsSecurity
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System.Collections.Generic.IEnumerable{System.String}
+  commentId: T:System.Collections.Generic.IEnumerable{System.String}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<string>
+  nameWithType: IEnumerable<string>
+  fullName: System.Collections.Generic.IEnumerable<string>
+  nameWithType.vb: IEnumerable(Of String)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of String)
+  name.vb: IEnumerable(Of String)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.Collections.Generic.IEnumerable{CodeFactory.WinVs.Models.CSharp.Builder.NamedSyntax}
+  commentId: T:System.Collections.Generic.IEnumerable{CodeFactory.WinVs.Models.CSharp.Builder.NamedSyntax}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<NamedSyntax>
+  nameWithType: IEnumerable<NamedSyntax>
+  fullName: System.Collections.Generic.IEnumerable<CodeFactory.WinVs.Models.CSharp.Builder.NamedSyntax>
+  nameWithType.vb: IEnumerable(Of NamedSyntax)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of CodeFactory.WinVs.Models.CSharp.Builder.NamedSyntax)
+  name.vb: IEnumerable(Of NamedSyntax)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: CodeFactory.WinVs.Models.CSharp.Builder.NamedSyntax
+    name: NamedSyntax
+    isExternal: true
+    href: CodeFactory.WinVs.Models.CSharp.Builder.NamedSyntax.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: CodeFactory.WinVs.Models.CSharp.Builder.NamedSyntax
+    name: NamedSyntax
+    isExternal: true
+    href: CodeFactory.WinVs.Models.CSharp.Builder.NamedSyntax.html
+  - name: )
+- uid: CodeFactory.WinVs.Models.CSharp.Builder.NameFormatting
+  commentId: T:CodeFactory.WinVs.Models.CSharp.Builder.NameFormatting
+  parent: CodeFactory.WinVs.Models.CSharp.Builder
+  isExternal: true
+  href: CodeFactory.WinVs.Models.CSharp.Builder.NameFormatting.html
+  name: NameFormatting
+  nameWithType: NameFormatting
+  fullName: CodeFactory.WinVs.Models.CSharp.Builder.NameFormatting
+- uid: System.Threading.Tasks.Task{System.String}
+  commentId: T:System.Threading.Tasks.Task{System.String}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<string>
+  nameWithType: Task<string>
+  fullName: System.Threading.Tasks.Task<string>
+  nameWithType.vb: Task(Of String)
+  fullName.vb: System.Threading.Tasks.Task(Of String)
+  name.vb: Task(Of String)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: CodeFactory.WinVs.Models.CSharp
+  commentId: N:CodeFactory.WinVs.Models.CSharp
+  isExternal: true
+  href: CodeFactory.html
+  name: CodeFactory.WinVs.Models.CSharp
+  nameWithType: CodeFactory.WinVs.Models.CSharp
+  fullName: CodeFactory.WinVs.Models.CSharp
+  spec.csharp:
+  - uid: CodeFactory
+    name: CodeFactory
+    isExternal: true
+    href: CodeFactory.html
+  - name: .
+  - uid: CodeFactory.WinVs
+    name: WinVs
+    isExternal: true
+    href: CodeFactory.WinVs.html
+  - name: .
+  - uid: CodeFactory.WinVs.Models
+    name: Models
+    isExternal: true
+    href: CodeFactory.WinVs.Models.html
+  - name: .
+  - uid: CodeFactory.WinVs.Models.CSharp
+    name: CSharp
+    isExternal: true
+    href: CodeFactory.WinVs.Models.CSharp.html
+  spec.vb:
+  - uid: CodeFactory
+    name: CodeFactory
+    isExternal: true
+    href: CodeFactory.html
+  - name: .
+  - uid: CodeFactory.WinVs
+    name: WinVs
+    isExternal: true
+    href: CodeFactory.WinVs.html
+  - name: .
+  - uid: CodeFactory.WinVs.Models
+    name: Models
+    isExternal: true
+    href: CodeFactory.WinVs.Models.html
+  - name: .
+  - uid: CodeFactory.WinVs.Models.CSharp
+    name: CSharp
+    isExternal: true
+    href: CodeFactory.WinVs.Models.CSharp.html
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: CodeFactory.WinVs.Models.CSharp.Builder.IEventBuilder.InjectEventAsync*
+  commentId: Overload:CodeFactory.WinVs.Models.CSharp.Builder.IEventBuilder.InjectEventAsync
+  isExternal: true
+  href: CodeFactory.WinVs.Models.CSharp.Builder.IEventBuilder.html#CodeFactory_WinVs_Models_CSharp_Builder_IEventBuilder_InjectEventAsync_CodeFactory_WinVs_Models_CSharp_CsEvent_CodeFactory_WinVs_Models_CSharp_Builder_ISourceManager_System_Int32_CodeFactory_WinVs_Models_CSharp_Builder_InjectionLocation_System_String_CodeFactory_WinVs_Models_CSharp_CsSecurity_System_Boolean_System_Collections_Generic_IEnumerable_System_String__System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_String_System_Collections_Generic_IEnumerable_CodeFactory_WinVs_Models_CSharp_Builder_NamedSyntax__CodeFactory_WinVs_Models_CSharp_Builder_NameFormatting_
+  name: InjectEventAsync
+  nameWithType: IEventBuilder.InjectEventAsync
+  fullName: CodeFactory.WinVs.Models.CSharp.Builder.IEventBuilder.InjectEventAsync
+- uid: CodeFactory.WinVs.Models.CSharp.Builder.InjectionLocation
+  commentId: T:CodeFactory.WinVs.Models.CSharp.Builder.InjectionLocation
+  parent: CodeFactory.WinVs.Models.CSharp.Builder
+  isExternal: true
+  href: CodeFactory.WinVs.Models.CSharp.Builder.InjectionLocation.html
+  name: InjectionLocation
+  nameWithType: InjectionLocation
+  fullName: CodeFactory.WinVs.Models.CSharp.Builder.InjectionLocation
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task

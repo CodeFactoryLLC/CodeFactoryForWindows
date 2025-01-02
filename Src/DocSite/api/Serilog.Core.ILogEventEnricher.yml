@@ -1,0 +1,128 @@
+### YamlMime:ManagedReference
+items:
+- uid: Serilog.Core.ILogEventEnricher
+  commentId: T:Serilog.Core.ILogEventEnricher
+  id: ILogEventEnricher
+  parent: Serilog.Core
+  children:
+  - Serilog.Core.ILogEventEnricher.Enrich(Serilog.Events.LogEvent,Serilog.Core.ILogEventPropertyFactory)
+  langs:
+  - csharp
+  - vb
+  name: ILogEventEnricher
+  nameWithType: ILogEventEnricher
+  fullName: Serilog.Core.ILogEventEnricher
+  type: Interface
+  assemblies:
+  - Serilog
+  namespace: Serilog.Core
+  summary: Applied during logging to add additional information to log events.
+  example: []
+  syntax:
+    content: public interface ILogEventEnricher
+    content.vb: Public Interface ILogEventEnricher
+- uid: Serilog.Core.ILogEventEnricher.Enrich(Serilog.Events.LogEvent,Serilog.Core.ILogEventPropertyFactory)
+  commentId: M:Serilog.Core.ILogEventEnricher.Enrich(Serilog.Events.LogEvent,Serilog.Core.ILogEventPropertyFactory)
+  id: Enrich(Serilog.Events.LogEvent,Serilog.Core.ILogEventPropertyFactory)
+  parent: Serilog.Core.ILogEventEnricher
+  langs:
+  - csharp
+  - vb
+  name: Enrich(LogEvent, ILogEventPropertyFactory)
+  nameWithType: ILogEventEnricher.Enrich(LogEvent, ILogEventPropertyFactory)
+  fullName: Serilog.Core.ILogEventEnricher.Enrich(Serilog.Events.LogEvent, Serilog.Core.ILogEventPropertyFactory)
+  type: Method
+  assemblies:
+  - Serilog
+  namespace: Serilog.Core
+  summary: Enrich the log event.
+  example: []
+  syntax:
+    content: void Enrich(LogEvent logEvent, ILogEventPropertyFactory propertyFactory)
+    parameters:
+    - id: logEvent
+      type: Serilog.Events.LogEvent
+      description: The log event to enrich.
+    - id: propertyFactory
+      type: Serilog.Core.ILogEventPropertyFactory
+      description: Factory for creating new properties to add to the event.
+    content.vb: Sub Enrich(logEvent As LogEvent, propertyFactory As ILogEventPropertyFactory)
+  overload: Serilog.Core.ILogEventEnricher.Enrich*
+references:
+- uid: Serilog.Core
+  commentId: N:Serilog.Core
+  isExternal: true
+  href: Serilog.html
+  name: Serilog.Core
+  nameWithType: Serilog.Core
+  fullName: Serilog.Core
+  spec.csharp:
+  - uid: Serilog
+    name: Serilog
+    isExternal: true
+    href: Serilog.html
+  - name: .
+  - uid: Serilog.Core
+    name: Core
+    isExternal: true
+    href: Serilog.Core.html
+  spec.vb:
+  - uid: Serilog
+    name: Serilog
+    isExternal: true
+    href: Serilog.html
+  - name: .
+  - uid: Serilog.Core
+    name: Core
+    isExternal: true
+    href: Serilog.Core.html
+- uid: Serilog.Core.ILogEventEnricher.Enrich*
+  commentId: Overload:Serilog.Core.ILogEventEnricher.Enrich
+  isExternal: true
+  href: Serilog.Core.ILogEventEnricher.html#Serilog_Core_ILogEventEnricher_Enrich_Serilog_Events_LogEvent_Serilog_Core_ILogEventPropertyFactory_
+  name: Enrich
+  nameWithType: ILogEventEnricher.Enrich
+  fullName: Serilog.Core.ILogEventEnricher.Enrich
+- uid: Serilog.Events.LogEvent
+  commentId: T:Serilog.Events.LogEvent
+  parent: Serilog.Events
+  isExternal: true
+  href: Serilog.Events.LogEvent.html
+  name: LogEvent
+  nameWithType: LogEvent
+  fullName: Serilog.Events.LogEvent
+- uid: Serilog.Core.ILogEventPropertyFactory
+  commentId: T:Serilog.Core.ILogEventPropertyFactory
+  parent: Serilog.Core
+  isExternal: true
+  href: Serilog.Core.ILogEventPropertyFactory.html
+  name: ILogEventPropertyFactory
+  nameWithType: ILogEventPropertyFactory
+  fullName: Serilog.Core.ILogEventPropertyFactory
+- uid: Serilog.Events
+  commentId: N:Serilog.Events
+  isExternal: true
+  href: Serilog.html
+  name: Serilog.Events
+  nameWithType: Serilog.Events
+  fullName: Serilog.Events
+  spec.csharp:
+  - uid: Serilog
+    name: Serilog
+    isExternal: true
+    href: Serilog.html
+  - name: .
+  - uid: Serilog.Events
+    name: Events
+    isExternal: true
+    href: Serilog.Events.html
+  spec.vb:
+  - uid: Serilog
+    name: Serilog
+    isExternal: true
+    href: Serilog.html
+  - name: .
+  - uid: Serilog.Events
+    name: Events
+    isExternal: true
+    href: Serilog.Events.html

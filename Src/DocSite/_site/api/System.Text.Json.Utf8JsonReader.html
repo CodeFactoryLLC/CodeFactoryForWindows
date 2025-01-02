@@ -1,0 +1,2586 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+    <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Struct Utf8JsonReader | CodeFactory for Windows </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Struct Utf8JsonReader | CodeFactory for Windows ">
+      <meta name="generator" content="docfx ">
+  
+      <link rel="shortcut icon" href="../images/cfLogo70White.png">
+      <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/night-owl.min.css">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" integrity="sha384-EvBWSlnoFgZlXJvpzS+MAUEjvN7+gcCwH+qh7GRFOGgZO0PuwOFro7qPOJnLfe7l" crossorigin="anonymous">
+      <link rel="stylesheet" href="../styles/config.css">
+      <link rel="stylesheet" href="../styles/singulink.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+  
+  <meta property="docfx:rel" content="../">
+  <meta property="docfx:newtab" content="true">
+    </head>
+    <body>
+        <!-- Header required for docfx anchor scroll to work -->
+        <header id="head"></header>
+        <div class="top-navbar">
+            <a class="burger-icon" onclick="toggleMenu()">
+                <svg name="Hamburger" style="vertical-align: middle;" width="34" height="34" viewbox="0 0 24 24"><path fill="currentColor" fill-rule="evenodd" clip-rule="evenodd" d="M20 6H4V9H20V6ZM4 10.999H20V13.999H4V10.999ZM4 15.999H20V18.999H4V15.999Z"></path></svg>
+            </a>
+
+
+            <a class="brand" href="../index.html">
+              <img src="../images/cfLogo70White.png" alt="CodeFactory for Windows" class="logomark">
+              <span class="brand-title">CodeFactory for Windows</span>
+            </a>        </div>
+
+        <div class="body-content">
+            <div id="blackout" class="blackout" onclick="toggleMenu()"></div>
+
+            <nav id="sidebar" role="navigation">
+                <div class="sidebar">
+
+                    <div>
+                      <div class="mobile-hide">
+
+                        <a class="brand" href="../index.html">
+                          <img src="../images/cfLogo70White.png" alt="CodeFactory for Windows" class="logomark">
+                          <span class="brand-title">CodeFactory for Windows</span>
+                        </a>                      </div>
+
+                      <div class="sidesearch">
+                        <form id="search" role="search" class="search">
+                            <i class="bi bi-search search-icon"></i>
+                            <input type="text" id="search-query" placeholder="Search" autocomplete="off">
+                        </form>
+                      </div>
+
+                      <div id="navbar">
+                      </div>
+                    </div>                    <div class="sidebar-item-separator"></div>
+
+                        <div id="sidetoggle">
+                          <div id="sidetoc"></div>
+                        </div>
+                </div>
+                <div class="footer">
+  CodeFactory for Windows SDK
+  
+                </div>            </nav>
+
+            <main class="main-panel">
+
+                <div id="search-results" style="display: none;">
+                  <h1 class="search-list">Search Results for <span></span></h1>
+                  <div class="sr-items">
+                    <p><i class="bi bi-hourglass-split index-loading"></i></p>
+                  </div>
+                  <ul id="pagination" data-first=First data-prev=Previous data-next=Next data-last=Last></ul>
+                </div>
+ 
+
+                <div role="main" class="hide-when-search">
+
+                        <div class="subnav navbar navbar-default">
+                          <div class="container hide-when-search" id="breadcrumb">
+                            <ul class="breadcrumb">
+                              <li></li>
+                            </ul>
+                          </div>
+                        </div>
+
+
+                    <article class="content wrap" id="_content" data-uid="System.Text.Json.Utf8JsonReader">
+
+
+
+  <h1 id="System_Text_Json_Utf8JsonReader" data-uid="System.Text.Json.Utf8JsonReader" class="text-break">Struct Utf8JsonReader</h1>
+  <div class="markdown level0 summary"><p>Provides a high-performance API for forward-only, read-only access to UTF-8 encoded JSON text.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetype.equals">ValueType.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode">ValueType.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetype.tostring">ValueType.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="System.html">System</a>.<a class="xref" href="System.Text.html">Text</a>.<a class="xref" href="System.Text.Json.html">Json</a></h6>
+  <h6><strong>Assembly</strong>: System.Text.Json.dll</h6>
+  <h5 id="System_Text_Json_Utf8JsonReader_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ref struct Utf8JsonReader</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+</h3>
+  <a id="System_Text_Json_Utf8JsonReader__ctor_" data-uid="System.Text.Json.Utf8JsonReader.#ctor*"></a>
+  <h4 id="System_Text_Json_Utf8JsonReader__ctor_System_Buffers_ReadOnlySequence_System_Byte__System_Boolean_System_Text_Json_JsonReaderState_" data-uid="System.Text.Json.Utf8JsonReader.#ctor(System.Buffers.ReadOnlySequence{System.Byte},System.Boolean,System.Text.Json.JsonReaderState)">Utf8JsonReader(ReadOnlySequence&lt;byte&gt;, bool, JsonReaderState)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="System.Text.Json.Utf8JsonReader.html">Utf8JsonReader</a> structure that processes a read-only sequence of UTF-8 encoded text and indicates whether the input contains all the text to process.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Utf8JsonReader(ReadOnlySequence&lt;byte&gt; jsonData, bool isFinalBlock, JsonReaderState state)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.buffers.readonlysequence-1">ReadOnlySequence</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>&gt;</td>
+        <td><span class="parametername">jsonData</span></td>
+        <td><p>The UTF-8 encoded JSON text to process.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">isFinalBlock</span></td>
+        <td><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> to indicate that the input sequence contains the entire data to process; <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a> to indicate that the input span contains partial data with more data to follow.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="System.Text.Json.JsonReaderState.html">JsonReaderState</a></td>
+        <td><span class="parametername">state</span></td>
+        <td><p>An object that contains the reader state. If this is the first call to the constructor, pass the default state; otherwise, pass the value of the <a class="xref" href="System.Text.Json.Utf8JsonReader.html#System_Text_Json_Utf8JsonReader_CurrentState">CurrentState</a> property from the previous instance of the <a class="xref" href="System.Text.Json.Utf8JsonReader.html">Utf8JsonReader</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="System_Text_Json_Utf8JsonReader__ctor_" data-uid="System.Text.Json.Utf8JsonReader.#ctor*"></a>
+  <h4 id="System_Text_Json_Utf8JsonReader__ctor_System_Buffers_ReadOnlySequence_System_Byte__System_Text_Json_JsonReaderOptions_" data-uid="System.Text.Json.Utf8JsonReader.#ctor(System.Buffers.ReadOnlySequence{System.Byte},System.Text.Json.JsonReaderOptions)">Utf8JsonReader(ReadOnlySequence&lt;byte&gt;, JsonReaderOptions)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="System.Text.Json.Utf8JsonReader.html">Utf8JsonReader</a> structure that processes a read-only sequence of UTF-8 encoded text using the specified options.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Utf8JsonReader(ReadOnlySequence&lt;byte&gt; jsonData, JsonReaderOptions options = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.buffers.readonlysequence-1">ReadOnlySequence</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>&gt;</td>
+        <td><span class="parametername">jsonData</span></td>
+        <td><p>The UTF-8 encoded JSON text to process.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="System.Text.Json.JsonReaderOptions.html">JsonReaderOptions</a></td>
+        <td><span class="parametername">options</span></td>
+        <td><p>Defines customized behavior of the <a class="xref" href="System.Text.Json.Utf8JsonReader.html">Utf8JsonReader</a> that differs from the JSON RFC (for example how to handle comments or maximum depth allowed when reading). By default, the <a class="xref" href="System.Text.Json.Utf8JsonReader.html">Utf8JsonReader</a> follows the JSON RFC strictly; comments within the JSON are invalid, and the maximum depth is 64.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="System_Text_Json_Utf8JsonReader__ctor_" data-uid="System.Text.Json.Utf8JsonReader.#ctor*"></a>
+  <h4 id="System_Text_Json_Utf8JsonReader__ctor_System_ReadOnlySpan_System_Byte__System_Boolean_System_Text_Json_JsonReaderState_" data-uid="System.Text.Json.Utf8JsonReader.#ctor(System.ReadOnlySpan{System.Byte},System.Boolean,System.Text.Json.JsonReaderState)">Utf8JsonReader(ReadOnlySpan&lt;byte&gt;, bool, JsonReaderState)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="System.Text.Json.Utf8JsonReader.html">Utf8JsonReader</a> structure that processes a read-only span of UTF-8 encoded text and indicates whether the input contains all the text to process.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Utf8JsonReader(ReadOnlySpan&lt;byte&gt; jsonData, bool isFinalBlock, JsonReaderState state)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>&gt;</td>
+        <td><span class="parametername">jsonData</span></td>
+        <td><p>The UTF-8 encoded JSON text to process.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">isFinalBlock</span></td>
+        <td><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> to indicate that the input sequence contains the entire data to process; <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a> to indicate that the input span contains partial data with more data to follow.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="System.Text.Json.JsonReaderState.html">JsonReaderState</a></td>
+        <td><span class="parametername">state</span></td>
+        <td><p>An object that contains the reader state. If this is the first call to the constructor, pass the default state; otherwise, pass the value of the <a class="xref" href="System.Text.Json.Utf8JsonReader.html#System_Text_Json_Utf8JsonReader_CurrentState">CurrentState</a> property from the previous instance of the <a class="xref" href="System.Text.Json.Utf8JsonReader.html">Utf8JsonReader</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="System_Text_Json_Utf8JsonReader__ctor_" data-uid="System.Text.Json.Utf8JsonReader.#ctor*"></a>
+  <h4 id="System_Text_Json_Utf8JsonReader__ctor_System_ReadOnlySpan_System_Byte__System_Text_Json_JsonReaderOptions_" data-uid="System.Text.Json.Utf8JsonReader.#ctor(System.ReadOnlySpan{System.Byte},System.Text.Json.JsonReaderOptions)">Utf8JsonReader(ReadOnlySpan&lt;byte&gt;, JsonReaderOptions)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="System.Text.Json.Utf8JsonReader.html">Utf8JsonReader</a> structure that processes a read-only span of UTF-8 encoded text using the specified options.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Utf8JsonReader(ReadOnlySpan&lt;byte&gt; jsonData, JsonReaderOptions options = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>&gt;</td>
+        <td><span class="parametername">jsonData</span></td>
+        <td><p>The UTF-8 encoded JSON text to process.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="System.Text.Json.JsonReaderOptions.html">JsonReaderOptions</a></td>
+        <td><span class="parametername">options</span></td>
+        <td><p>Defines customized behavior of the <a class="xref" href="System.Text.Json.Utf8JsonReader.html">Utf8JsonReader</a> that differs from the JSON RFC (for example how to handle comments or maximum depth allowed when reading). By default, the <a class="xref" href="System.Text.Json.Utf8JsonReader.html">Utf8JsonReader</a> follows the JSON RFC strictly; comments within the JSON are invalid, and the maximum depth is 64.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+</h3>
+  <a id="System_Text_Json_Utf8JsonReader_BytesConsumed_" data-uid="System.Text.Json.Utf8JsonReader.BytesConsumed*"></a>
+  <h4 id="System_Text_Json_Utf8JsonReader_BytesConsumed" data-uid="System.Text.Json.Utf8JsonReader.BytesConsumed">BytesConsumed</h4>
+  <div class="markdown level1 summary"><p>Gets the total number of bytes consumed so far by this instance of the <a class="xref" href="System.Text.Json.Utf8JsonReader.html">Utf8JsonReader</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public long BytesConsumed { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></td>
+        <td><p>The total number of bytes consumed so far.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="System_Text_Json_Utf8JsonReader_CurrentDepth_" data-uid="System.Text.Json.Utf8JsonReader.CurrentDepth*"></a>
+  <h4 id="System_Text_Json_Utf8JsonReader_CurrentDepth" data-uid="System.Text.Json.Utf8JsonReader.CurrentDepth">CurrentDepth</h4>
+  <div class="markdown level1 summary"><p>Gets the depth of the current token.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int CurrentDepth { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><p>The depth of the current token.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="System_Text_Json_Utf8JsonReader_CurrentState_" data-uid="System.Text.Json.Utf8JsonReader.CurrentState*"></a>
+  <h4 id="System_Text_Json_Utf8JsonReader_CurrentState" data-uid="System.Text.Json.Utf8JsonReader.CurrentState">CurrentState</h4>
+  <div class="markdown level1 summary"><p>Gets the current <a class="xref" href="System.Text.Json.Utf8JsonReader.html">Utf8JsonReader</a> state to pass to a <a class="xref" href="System.Text.Json.Utf8JsonReader.html">Utf8JsonReader</a> constructor with more data.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public JsonReaderState CurrentState { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="System.Text.Json.JsonReaderState.html">JsonReaderState</a></td>
+        <td><p>The current reader state.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="System_Text_Json_Utf8JsonReader_HasValueSequence_" data-uid="System.Text.Json.Utf8JsonReader.HasValueSequence*"></a>
+  <h4 id="System_Text_Json_Utf8JsonReader_HasValueSequence" data-uid="System.Text.Json.Utf8JsonReader.HasValueSequence">HasValueSequence</h4>
+  <div class="markdown level1 summary"><p>Gets a value that indicates which <code>Value</code> property to use to get the token value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly bool HasValueSequence { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if <a class="xref" href="System.Text.Json.Utf8JsonReader.html#System_Text_Json_Utf8JsonReader_ValueSequence">ValueSequence</a> should be used to get the token value; <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a> if <a class="xref" href="System.Text.Json.Utf8JsonReader.html#System_Text_Json_Utf8JsonReader_ValueSpan">ValueSpan</a> should be used instead.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="System_Text_Json_Utf8JsonReader_IsFinalBlock_" data-uid="System.Text.Json.Utf8JsonReader.IsFinalBlock*"></a>
+  <h4 id="System_Text_Json_Utf8JsonReader_IsFinalBlock" data-uid="System.Text.Json.Utf8JsonReader.IsFinalBlock">IsFinalBlock</h4>
+  <div class="markdown level1 summary"><p>Gets the mode of this instance of the <a class="xref" href="System.Text.Json.Utf8JsonReader.html">Utf8JsonReader</a> which indicates whether all the JSON data was provided or there is more data to come.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsFinalBlock { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the reader was constructed with the input span or sequence containing the entire JSON data to process; <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a> if the reader was constructed with an input span or sequence that may contain partial JSON data with more data to follow.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="System_Text_Json_Utf8JsonReader_Position_" data-uid="System.Text.Json.Utf8JsonReader.Position*"></a>
+  <h4 id="System_Text_Json_Utf8JsonReader_Position" data-uid="System.Text.Json.Utf8JsonReader.Position">Position</h4>
+  <div class="markdown level1 summary"><p>Gets the current <a class="xref" href="System.SequencePosition.html">SequencePosition</a> within the provided UTF-8 encoded input ReadOnlySequence&lt;byte&gt; or a default <a class="xref" href="System.SequencePosition.html">SequencePosition</a> if the <a class="xref" href="System.Text.Json.Utf8JsonReader.html">Utf8JsonReader</a> struct was constructed with a ReadOnlySpan&lt;byte&gt;.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SequencePosition Position { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="System.SequencePosition.html">SequencePosition</a></td>
+        <td><p>The current <a class="xref" href="System.SequencePosition.html">SequencePosition</a> within the provided UTF-8 encoded input ReadOnlySequence&lt;byte&gt; or a default <a class="xref" href="System.SequencePosition.html">SequencePosition</a> if the <a class="xref" href="System.Text.Json.Utf8JsonReader.html">Utf8JsonReader</a> struct was constructed with a ReadOnlySpan&lt;byte&gt;.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="System_Text_Json_Utf8JsonReader_TokenStartIndex_" data-uid="System.Text.Json.Utf8JsonReader.TokenStartIndex*"></a>
+  <h4 id="System_Text_Json_Utf8JsonReader_TokenStartIndex" data-uid="System.Text.Json.Utf8JsonReader.TokenStartIndex">TokenStartIndex</h4>
+  <div class="markdown level1 summary"><p>Gets the index that the last processed JSON token starts at (within the given UTF-8 encoded input text), skipping any white space.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly long TokenStartIndex { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></td>
+        <td><p>The starting index of the last processed JSON token within the given UTF-8 encoded input text.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="System_Text_Json_Utf8JsonReader_TokenType_" data-uid="System.Text.Json.Utf8JsonReader.TokenType*"></a>
+  <h4 id="System_Text_Json_Utf8JsonReader_TokenType" data-uid="System.Text.Json.Utf8JsonReader.TokenType">TokenType</h4>
+  <div class="markdown level1 summary"><p>Gets the type of the last processed JSON token in the UTF-8 encoded JSON text.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public JsonTokenType TokenType { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="System.Text.Json.JsonTokenType.html">JsonTokenType</a></td>
+        <td><p>The type of the last processed JSON token.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="System_Text_Json_Utf8JsonReader_ValueSequence_" data-uid="System.Text.Json.Utf8JsonReader.ValueSequence*"></a>
+  <h4 id="System_Text_Json_Utf8JsonReader_ValueSequence" data-uid="System.Text.Json.Utf8JsonReader.ValueSequence">ValueSequence</h4>
+  <div class="markdown level1 summary"><p>Gets the raw value of the last processed token as a ReadOnlySequence&lt;byte&gt; slice of the input payload, only if the token is contained within multiple segments.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly ReadOnlySequence&lt;byte&gt; ValueSequence { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.buffers.readonlysequence-1">ReadOnlySequence</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>&gt;</td>
+        <td><p>A byte read-only sequence.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="System_Text_Json_Utf8JsonReader_ValueSpan_" data-uid="System.Text.Json.Utf8JsonReader.ValueSpan*"></a>
+  <h4 id="System_Text_Json_Utf8JsonReader_ValueSpan" data-uid="System.Text.Json.Utf8JsonReader.ValueSpan">ValueSpan</h4>
+  <div class="markdown level1 summary"><p>Gets the raw value of the last processed token as a ReadOnlySpan&lt;byte&gt; slice of the input payload, if the token fits in a single segment or if the reader was constructed with a JSON payload contained in a ReadOnlySpan&lt;byte&gt;.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly ReadOnlySpan&lt;byte&gt; ValueSpan { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>&gt;</td>
+        <td><p>A read-only span of bytes.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+</h3>
+  <a id="System_Text_Json_Utf8JsonReader_GetBoolean_" data-uid="System.Text.Json.Utf8JsonReader.GetBoolean*"></a>
+  <h4 id="System_Text_Json_Utf8JsonReader_GetBoolean" data-uid="System.Text.Json.Utf8JsonReader.GetBoolean">GetBoolean()</h4>
+  <div class="markdown level1 summary"><p>Reads the next JSON token value from the source as a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool GetBoolean()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the <a class="xref" href="System.Text.Json.Utf8JsonReader.html#System_Text_Json_Utf8JsonReader_TokenType">TokenType</a> is <a class="xref" href="System.Text.Json.JsonTokenType.html#System_Text_Json_JsonTokenType_True">True</a>; <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a> if the <a class="xref" href="System.Text.Json.Utf8JsonReader.html#System_Text_Json_Utf8JsonReader_TokenType">TokenType</a> is <a class="xref" href="System.Text.Json.JsonTokenType.html#System_Text_Json_JsonTokenType_False">False</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a></td>
+        <td><p>The value of the JSON token isn't a boolean value (that is, <a class="xref" href="System.Text.Json.JsonTokenType.html#System_Text_Json_JsonTokenType_True">True</a> or <a class="xref" href="System.Text.Json.JsonTokenType.html#System_Text_Json_JsonTokenType_False">False</a>).</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="System_Text_Json_Utf8JsonReader_GetByte_" data-uid="System.Text.Json.Utf8JsonReader.GetByte*"></a>
+  <h4 id="System_Text_Json_Utf8JsonReader_GetByte" data-uid="System.Text.Json.Utf8JsonReader.GetByte">GetByte()</h4>
+  <div class="markdown level1 summary"><p>Parses the current JSON token value from the source as a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public byte GetByte()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a></td>
+        <td><p>The value of the UTF-8 encoded token.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a></td>
+        <td><p>The value of the JSON token is not a <a class="xref" href="System.Text.Json.JsonTokenType.html#System_Text_Json_JsonTokenType_Number">Number</a>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.formatexception">FormatException</a></td>
+        <td><p>The numeric format of the JSON token value is incorrect (for example, it contains a fractional value or is written in scientific notation).</p>
+<p>-or-</p>
+<p>The JSON token value represents a number less than <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte.minvalue">MinValue</a> or greater than <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte.maxvalue">MaxValue</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="System_Text_Json_Utf8JsonReader_GetBytesFromBase64_" data-uid="System.Text.Json.Utf8JsonReader.GetBytesFromBase64*"></a>
+  <h4 id="System_Text_Json_Utf8JsonReader_GetBytesFromBase64" data-uid="System.Text.Json.Utf8JsonReader.GetBytesFromBase64">GetBytesFromBase64()</h4>
+  <div class="markdown level1 summary"><p>Parses the current JSON token value from the source and decodes the Base64 encoded JSON string as a byte array.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public byte[] GetBytesFromBase64()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</td>
+        <td><p>The byte array that represents the current JSON token value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a></td>
+        <td><p>The type of the JSON token is not a <a class="xref" href="System.Text.Json.JsonTokenType.html#System_Text_Json_JsonTokenType_String">String</a>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.formatexception">FormatException</a></td>
+        <td><p>The value is not encoded as Base64 text, so it can't be decoded to bytes.</p>
+<p>-or-</p>
+<p>The value contains invalid or more than two padding characters.</p>
+<p>-or-</p>
+<p>The value is incomplete. That is, the JSON string length is not a multiple of 4.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="System_Text_Json_Utf8JsonReader_GetComment_" data-uid="System.Text.Json.Utf8JsonReader.GetComment*"></a>
+  <h4 id="System_Text_Json_Utf8JsonReader_GetComment" data-uid="System.Text.Json.Utf8JsonReader.GetComment">GetComment()</h4>
+  <div class="markdown level1 summary"><p>Parses the current JSON token value from the source as a comment, transcoded it as a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string GetComment()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><p>The comment that represents the current JSON token value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a></td>
+        <td><p>The JSON token is not a comment.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="System_Text_Json_Utf8JsonReader_GetDateTime_" data-uid="System.Text.Json.Utf8JsonReader.GetDateTime*"></a>
+  <h4 id="System_Text_Json_Utf8JsonReader_GetDateTime" data-uid="System.Text.Json.Utf8JsonReader.GetDateTime">GetDateTime()</h4>
+  <div class="markdown level1 summary"><p>Reads the next JSON token value from the source and parses it to a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DateTime GetDateTime()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a></td>
+        <td><p>The date and time value, if the entire UTF-8 encoded token value can be successfully parsed.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a></td>
+        <td><p>The value of the JSON token isn't a <a class="xref" href="System.Text.Json.JsonTokenType.html#System_Text_Json_JsonTokenType_String">String</a>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.formatexception">FormatException</a></td>
+        <td><p>The JSON token value cannot be read as a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a>.</p>
+<p>-or-</p>
+<p>The entire UTF-8 encoded token value cannot be parsed to a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a> value.</p>
+<p>-or-</p>
+<p>The JSON token value is of an unsupported format.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="System_Text_Json_Utf8JsonReader_GetDateTimeOffset_" data-uid="System.Text.Json.Utf8JsonReader.GetDateTimeOffset*"></a>
+  <h4 id="System_Text_Json_Utf8JsonReader_GetDateTimeOffset" data-uid="System.Text.Json.Utf8JsonReader.GetDateTimeOffset">GetDateTimeOffset()</h4>
+  <div class="markdown level1 summary"><p>Reads the next JSON token value from the source and parses it to a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetimeoffset">DateTimeOffset</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DateTimeOffset GetDateTimeOffset()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetimeoffset">DateTimeOffset</a></td>
+        <td><p>The date and time offset, if the entire UTF-8 encoded token value can be successfully parsed.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a></td>
+        <td><p>The value of the JSON token isn't a <a class="xref" href="System.Text.Json.JsonTokenType.html#System_Text_Json_JsonTokenType_String">String</a>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.formatexception">FormatException</a></td>
+        <td><p>The JSON token value cannot be read as a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetimeoffset">DateTimeOffset</a>.</p>
+<p>-or-</p>
+<p>The entire UTF-8 encoded token value cannot be parsed to a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetimeoffset">DateTimeOffset</a> value.</p>
+<p>-or-</p>
+<p>The JSON token value is of an unsupported format.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="System_Text_Json_Utf8JsonReader_GetDecimal_" data-uid="System.Text.Json.Utf8JsonReader.GetDecimal*"></a>
+  <h4 id="System_Text_Json_Utf8JsonReader_GetDecimal" data-uid="System.Text.Json.Utf8JsonReader.GetDecimal">GetDecimal()</h4>
+  <div class="markdown level1 summary"><p>Reads the next JSON token value from the source and parses it to a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.decimal">decimal</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public decimal GetDecimal()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.decimal">decimal</a></td>
+        <td><p>The UTF-8 encoded token value parsed to a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.decimal">decimal</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a></td>
+        <td><p>The JSON token value isn't a <a class="xref" href="System.Text.Json.JsonTokenType.html#System_Text_Json_JsonTokenType_Number">Number</a>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.formatexception">FormatException</a></td>
+        <td><p>The JSON token value represents a number less than <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.decimal.minvalue">MinValue</a> or greater than <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.decimal.maxvalue">MaxValue</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="System_Text_Json_Utf8JsonReader_GetDouble_" data-uid="System.Text.Json.Utf8JsonReader.GetDouble*"></a>
+  <h4 id="System_Text_Json_Utf8JsonReader_GetDouble" data-uid="System.Text.Json.Utf8JsonReader.GetDouble">GetDouble()</h4>
+  <div class="markdown level1 summary"><p>Reads the next JSON token value from the source and parses it to a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double GetDouble()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
+        <td><p>The UTF-8 encoded token value parsed to a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a></td>
+        <td><p>The JSON token value isn't a <a class="xref" href="System.Text.Json.JsonTokenType.html#System_Text_Json_JsonTokenType_Number">Number</a>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.formatexception">FormatException</a></td>
+        <td><p>The JSON token value represents a number less than <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double.minvalue">MinValue</a> or greater than <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double.maxvalue">MaxValue</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="System_Text_Json_Utf8JsonReader_GetGuid_" data-uid="System.Text.Json.Utf8JsonReader.GetGuid*"></a>
+  <h4 id="System_Text_Json_Utf8JsonReader_GetGuid" data-uid="System.Text.Json.Utf8JsonReader.GetGuid">GetGuid()</h4>
+  <div class="markdown level1 summary"><p>Reads the next JSON token value from the source and parses it to a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Guid GetGuid()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></td>
+        <td><p>The GUID value, if the entire UTF-8 encoded token value can be successfully parsed.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a></td>
+        <td><p>The value of the JSON token isn't a <a class="xref" href="System.Text.Json.JsonTokenType.html#System_Text_Json_JsonTokenType_String">String</a>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.formatexception">FormatException</a></td>
+        <td><p>The JSON token value is in an unsupported format for a Guid.</p>
+<p>-or-</p>
+<p>The entire UTF-8 encoded token value cannot be parsed to a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a> value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="System_Text_Json_Utf8JsonReader_GetInt16_" data-uid="System.Text.Json.Utf8JsonReader.GetInt16*"></a>
+  <h4 id="System_Text_Json_Utf8JsonReader_GetInt16" data-uid="System.Text.Json.Utf8JsonReader.GetInt16">GetInt16()</h4>
+  <div class="markdown level1 summary"><p>Parses the current JSON token value from the source as a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int16">short</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public short GetInt16()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int16">short</a></td>
+        <td><p>The UTF-8 encoded token value parsed to an <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int16">short</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a></td>
+        <td><p>The value of the JSON token is not a <a class="xref" href="System.Text.Json.JsonTokenType.html#System_Text_Json_JsonTokenType_Number">Number</a>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.formatexception">FormatException</a></td>
+        <td><p>The numeric format of the JSON token value is incorrect (for example, it contains a fractional value or is written in scientific notation).</p>
+<p>-or-</p>
+<p>The JSON token value represents a number less than <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int16.minvalue">MinValue</a> or greater than <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int16.maxvalue">MaxValue</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="System_Text_Json_Utf8JsonReader_GetInt32_" data-uid="System.Text.Json.Utf8JsonReader.GetInt32*"></a>
+  <h4 id="System_Text_Json_Utf8JsonReader_GetInt32" data-uid="System.Text.Json.Utf8JsonReader.GetInt32">GetInt32()</h4>
+  <div class="markdown level1 summary"><p>Reads the next JSON token value from the source and parses it to an <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetInt32()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><p>The UTF-8 encoded token value parsed to an <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a></td>
+        <td><p>The JSON token value isn't a <a class="xref" href="System.Text.Json.JsonTokenType.html#System_Text_Json_JsonTokenType_Number">Number</a>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.formatexception">FormatException</a></td>
+        <td><p>The JSON token value is of the incorrect numeric format. For example, it contains a decimal or is written in scientific notation.</p>
+<p>-or-</p>
+<p>The JSON token value represents a number less than <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32.minvalue">MinValue</a> or greater than <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32.maxvalue">MaxValue</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="System_Text_Json_Utf8JsonReader_GetInt64_" data-uid="System.Text.Json.Utf8JsonReader.GetInt64*"></a>
+  <h4 id="System_Text_Json_Utf8JsonReader_GetInt64" data-uid="System.Text.Json.Utf8JsonReader.GetInt64">GetInt64()</h4>
+  <div class="markdown level1 summary"><p>Reads the next JSON token value from the source and parses it to an <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public long GetInt64()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></td>
+        <td><p>The UTF-8 encoded token value parsed to an <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a></td>
+        <td><p>The JSON token value isn't a <a class="xref" href="System.Text.Json.JsonTokenType.html#System_Text_Json_JsonTokenType_Number">Number</a>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.formatexception">FormatException</a></td>
+        <td><p>The JSON token value is of the incorrect numeric format. For example, it contains a decimal or is written in scientific notation.</p>
+<p>-or-</p>
+<p>The JSON token value represents a number less than <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64.minvalue">MinValue</a> or greater than <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64.maxvalue">MaxValue</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="System_Text_Json_Utf8JsonReader_GetSByte_" data-uid="System.Text.Json.Utf8JsonReader.GetSByte*"></a>
+  <h4 id="System_Text_Json_Utf8JsonReader_GetSByte" data-uid="System.Text.Json.Utf8JsonReader.GetSByte">GetSByte()</h4>
+  <div class="markdown level1 summary"><p>Parses the current JSON token value from the source as an <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.sbyte">sbyte</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[CLSCompliant(false)]
+public sbyte GetSByte()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.sbyte">sbyte</a></td>
+        <td><p>The UTF-8 encoded token value parsed to an <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.sbyte">sbyte</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a></td>
+        <td><p>The value of the JSON token is not a <a class="xref" href="System.Text.Json.JsonTokenType.html#System_Text_Json_JsonTokenType_Number">Number</a>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.formatexception">FormatException</a></td>
+        <td><p>The numeric format of the JSON token value is incorrect (for example, it contains a fractional value or is written in scientific notation).</p>
+<p>-or-</p>
+<p>The JSON token value represents a number less than <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.sbyte.minvalue">MinValue</a> or greater than <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.sbyte.maxvalue">MaxValue</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="System_Text_Json_Utf8JsonReader_GetSingle_" data-uid="System.Text.Json.Utf8JsonReader.GetSingle*"></a>
+  <h4 id="System_Text_Json_Utf8JsonReader_GetSingle" data-uid="System.Text.Json.Utf8JsonReader.GetSingle">GetSingle()</h4>
+  <div class="markdown level1 summary"><p>Reads the next JSON token value from the source and parses it to a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float GetSingle()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td><p>The UTF-8 encoded token value parsed to a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a></td>
+        <td><p>The JSON token value isn't a <a class="xref" href="System.Text.Json.JsonTokenType.html#System_Text_Json_JsonTokenType_Number">Number</a>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.formatexception">FormatException</a></td>
+        <td><p>The JSON token value represents a number less than <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single.minvalue">MinValue</a> or greater than <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single.maxvalue">MaxValue</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="System_Text_Json_Utf8JsonReader_GetString_" data-uid="System.Text.Json.Utf8JsonReader.GetString*"></a>
+  <h4 id="System_Text_Json_Utf8JsonReader_GetString" data-uid="System.Text.Json.Utf8JsonReader.GetString">GetString()</h4>
+  <div class="markdown level1 summary"><p>Reads the next JSON token value from the source, unescaped, and transcoded as a string.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string? GetString()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><p>The token value parsed to a string, or <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> if <a class="xref" href="System.Text.Json.Utf8JsonReader.html#System_Text_Json_Utf8JsonReader_TokenType">TokenType</a> is <a class="xref" href="System.Text.Json.JsonTokenType.html#System_Text_Json_JsonTokenType_Null">Null</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a></td>
+        <td><p>The JSON token value isn't a string (that is, not a <a class="xref" href="System.Text.Json.JsonTokenType.html#System_Text_Json_JsonTokenType_String">String</a>, <a class="xref" href="System.Text.Json.JsonTokenType.html#System_Text_Json_JsonTokenType_PropertyName">PropertyName</a>, or <a class="xref" href="System.Text.Json.JsonTokenType.html#System_Text_Json_JsonTokenType_Null">Null</a>).</p>
+<p>-or-</p>
+<p>The JSON string contains invalid UTF-8 bytes or invalid UTF-16 surrogates.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="System_Text_Json_Utf8JsonReader_GetUInt16_" data-uid="System.Text.Json.Utf8JsonReader.GetUInt16*"></a>
+  <h4 id="System_Text_Json_Utf8JsonReader_GetUInt16" data-uid="System.Text.Json.Utf8JsonReader.GetUInt16">GetUInt16()</h4>
+  <div class="markdown level1 summary"><p>Parses the current JSON token value from the source as a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint16">ushort</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[CLSCompliant(false)]
+public ushort GetUInt16()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint16">ushort</a></td>
+        <td><p>The UTF-8 encoded token value parsed to a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint16">ushort</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a></td>
+        <td><p>The value of the JSON token is not a <a class="xref" href="System.Text.Json.JsonTokenType.html#System_Text_Json_JsonTokenType_Number">Number</a>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.formatexception">FormatException</a></td>
+        <td><p>The numeric format of the JSON token value is incorrect (for example, it contains a fractional value or is written in scientific notation).</p>
+<p>-or-</p>
+<p>The JSON token value represents a number less than <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint16.minvalue">MinValue</a> or greater than <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint16.maxvalue">MaxValue</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="System_Text_Json_Utf8JsonReader_GetUInt32_" data-uid="System.Text.Json.Utf8JsonReader.GetUInt32*"></a>
+  <h4 id="System_Text_Json_Utf8JsonReader_GetUInt32" data-uid="System.Text.Json.Utf8JsonReader.GetUInt32">GetUInt32()</h4>
+  <div class="markdown level1 summary"><p>Reads the next JSON token value from the source and parses it to a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[CLSCompliant(false)]
+public uint GetUInt32()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></td>
+        <td><p>The UTF-8 encoded token value parsed to a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a></td>
+        <td><p>The JSON token value isn't a <a class="xref" href="System.Text.Json.JsonTokenType.html#System_Text_Json_JsonTokenType_Number">Number</a>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.formatexception">FormatException</a></td>
+        <td><p>The JSON token value is of the incorrect numeric format. For example, it contains a decimal or is written in scientific notation.</p>
+<p>-or-</p>
+<p>The JSON token value represents a number less than <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32.minvalue">MinValue</a> or greater than <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32.maxvalue">MaxValue</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="System_Text_Json_Utf8JsonReader_GetUInt64_" data-uid="System.Text.Json.Utf8JsonReader.GetUInt64*"></a>
+  <h4 id="System_Text_Json_Utf8JsonReader_GetUInt64" data-uid="System.Text.Json.Utf8JsonReader.GetUInt64">GetUInt64()</h4>
+  <div class="markdown level1 summary"><p>Reads the next JSON token value from the source and parses it to a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint64">ulong</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[CLSCompliant(false)]
+public ulong GetUInt64()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint64">ulong</a></td>
+        <td><p>The UTF-8 encoded token value parsed to a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint64">ulong</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a></td>
+        <td><p>The JSON token value isn't a <a class="xref" href="System.Text.Json.JsonTokenType.html#System_Text_Json_JsonTokenType_Number">Number</a>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.formatexception">FormatException</a></td>
+        <td><p>The JSON token value is of the incorrect numeric format. For example, it contains a decimal or is written in scientific notation.</p>
+<p>-or-</p>
+<p>The JSON token value represents a number less than <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint64.minvalue">MinValue</a> or greater than <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint64.maxvalue">MaxValue</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="System_Text_Json_Utf8JsonReader_Read_" data-uid="System.Text.Json.Utf8JsonReader.Read*"></a>
+  <h4 id="System_Text_Json_Utf8JsonReader_Read" data-uid="System.Text.Json.Utf8JsonReader.Read">Read()</h4>
+  <div class="markdown level1 summary"><p>Reads the next JSON token from the input source.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Read()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the token was read successfully; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="System.Text.Json.JsonException.html">JsonException</a></td>
+        <td><p>An invalid JSON token according to the JSON RFC is encountered.</p>
+<p>-or-</p>
+<p>The current depth exceeds the recursive limit set by the maximum depth.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="System_Text_Json_Utf8JsonReader_Skip_" data-uid="System.Text.Json.Utf8JsonReader.Skip*"></a>
+  <h4 id="System_Text_Json_Utf8JsonReader_Skip" data-uid="System.Text.Json.Utf8JsonReader.Skip">Skip()</h4>
+  <div class="markdown level1 summary"><p>Skips the children of the current JSON token.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Skip()</code></pre>
+  </div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a></td>
+        <td><p>The reader was given partial data with more data to follow (that is, <a class="xref" href="System.Text.Json.Utf8JsonReader.html#System_Text_Json_Utf8JsonReader_IsFinalBlock">IsFinalBlock</a> is <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>).</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="System.Text.Json.JsonException.html">JsonException</a></td>
+        <td><p>An invalid JSON token was encountered while skipping, according to the JSON RFC.</p>
+<p>-or-</p>
+<p>The current depth exceeds the recursive limit set by the maximum depth.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="System_Text_Json_Utf8JsonReader_TryGetByte_" data-uid="System.Text.Json.Utf8JsonReader.TryGetByte*"></a>
+  <h4 id="System_Text_Json_Utf8JsonReader_TryGetByte_System_Byte__" data-uid="System.Text.Json.Utf8JsonReader.TryGetByte(System.Byte@)">TryGetByte(out byte)</h4>
+  <div class="markdown level1 summary"><p>Tries to parse the current JSON token value from the source as a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a> and returns a value that indicates whether the operation succeeded.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool TryGetByte(out byte value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>When this method returns, contains the parsed value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the entire UTF-8 encoded token value can be successfully parsed to a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a> value; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a></td>
+        <td><p>The JSON token value isn't a <a class="xref" href="System.Text.Json.JsonTokenType.html#System_Text_Json_JsonTokenType_Number">Number</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="System_Text_Json_Utf8JsonReader_TryGetBytesFromBase64_" data-uid="System.Text.Json.Utf8JsonReader.TryGetBytesFromBase64*"></a>
+  <h4 id="System_Text_Json_Utf8JsonReader_TryGetBytesFromBase64_System_Byte____" data-uid="System.Text.Json.Utf8JsonReader.TryGetBytesFromBase64(System.Byte[]@)">TryGetBytesFromBase64(out byte[]?)</h4>
+  <div class="markdown level1 summary"><p>Tries to parse the current JSON token value from the source and decodes the Base64 encoded JSON string as a byte array and returns a value that indicates whether the operation succeeded.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool TryGetBytesFromBase64(out byte[]? value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</td>
+        <td><span class="parametername">value</span></td>
+        <td><p>When this method returns, contains the decoded binary representation of the Base64 text.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the entire token value is encoded as valid Base64 text and can be successfully decoded to bytes; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a></td>
+        <td><p>The JSON token is not a <a class="xref" href="System.Text.Json.JsonTokenType.html#System_Text_Json_JsonTokenType_String">String</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="System_Text_Json_Utf8JsonReader_TryGetDateTime_" data-uid="System.Text.Json.Utf8JsonReader.TryGetDateTime*"></a>
+  <h4 id="System_Text_Json_Utf8JsonReader_TryGetDateTime_System_DateTime__" data-uid="System.Text.Json.Utf8JsonReader.TryGetDateTime(System.DateTime@)">TryGetDateTime(out DateTime)</h4>
+  <div class="markdown level1 summary"><p>Tries to parse the current JSON token value from the source as a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a> and returns a value that indicates whether the operation succeeded.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool TryGetDateTime(out DateTime value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>When this method returns, contains the parsed value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the entire UTF-8 encoded token value can be successfully parsed to a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a> value; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a></td>
+        <td><p>The value of the JSON token isn't a <a class="xref" href="System.Text.Json.JsonTokenType.html#System_Text_Json_JsonTokenType_String">String</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="System_Text_Json_Utf8JsonReader_TryGetDateTimeOffset_" data-uid="System.Text.Json.Utf8JsonReader.TryGetDateTimeOffset*"></a>
+  <h4 id="System_Text_Json_Utf8JsonReader_TryGetDateTimeOffset_System_DateTimeOffset__" data-uid="System.Text.Json.Utf8JsonReader.TryGetDateTimeOffset(System.DateTimeOffset@)">TryGetDateTimeOffset(out DateTimeOffset)</h4>
+  <div class="markdown level1 summary"><p>Tries to parse the current JSON token value from the source as a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetimeoffset">DateTimeOffset</a> and returns a value that indicates whether the operation succeeded.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool TryGetDateTimeOffset(out DateTimeOffset value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetimeoffset">DateTimeOffset</a></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>When this method returns, contains the parsed value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the entire UTF-8 encoded token value can be successfully parsed to a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetimeoffset">DateTimeOffset</a> value; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a></td>
+        <td><p>The value of the JSON token isn't a <a class="xref" href="System.Text.Json.JsonTokenType.html#System_Text_Json_JsonTokenType_String">String</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="System_Text_Json_Utf8JsonReader_TryGetDecimal_" data-uid="System.Text.Json.Utf8JsonReader.TryGetDecimal*"></a>
+  <h4 id="System_Text_Json_Utf8JsonReader_TryGetDecimal_System_Decimal__" data-uid="System.Text.Json.Utf8JsonReader.TryGetDecimal(System.Decimal@)">TryGetDecimal(out decimal)</h4>
+  <div class="markdown level1 summary"><p>Tries to parse the current JSON token value from the source as a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.decimal">decimal</a> and returns a value that indicates whether the operation succeeded.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool TryGetDecimal(out decimal value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.decimal">decimal</a></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>When this method returns, contains the parsed value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the entire UTF-8 encoded token value can be successfully parsed to a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.decimal">decimal</a> value; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a></td>
+        <td><p>The JSON token value isn't a <a class="xref" href="System.Text.Json.JsonTokenType.html#System_Text_Json_JsonTokenType_Number">Number</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="System_Text_Json_Utf8JsonReader_TryGetDouble_" data-uid="System.Text.Json.Utf8JsonReader.TryGetDouble*"></a>
+  <h4 id="System_Text_Json_Utf8JsonReader_TryGetDouble_System_Double__" data-uid="System.Text.Json.Utf8JsonReader.TryGetDouble(System.Double@)">TryGetDouble(out double)</h4>
+  <div class="markdown level1 summary"><p>Tries to parse the current JSON token value from the source as a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a> and returns a value that indicates whether the operation succeeded.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool TryGetDouble(out double value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>When this method returns, contains the parsed value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the entire UTF-8 encoded token value can be successfully parsed to a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a> value; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a></td>
+        <td><p>The JSON token value isn't a <a class="xref" href="System.Text.Json.JsonTokenType.html#System_Text_Json_JsonTokenType_Number">Number</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="System_Text_Json_Utf8JsonReader_TryGetGuid_" data-uid="System.Text.Json.Utf8JsonReader.TryGetGuid*"></a>
+  <h4 id="System_Text_Json_Utf8JsonReader_TryGetGuid_System_Guid__" data-uid="System.Text.Json.Utf8JsonReader.TryGetGuid(System.Guid@)">TryGetGuid(out Guid)</h4>
+  <div class="markdown level1 summary"><p>Tries to parse the current JSON token value from the source as a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a> and returns a value that indicates whether the operation succeeded.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool TryGetGuid(out Guid value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>When this method returns, contains the parsed value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the entire UTF-8 encoded token value can be successfully parsed to a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a> value; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a></td>
+        <td><p>The value of the JSON token isn't a <a class="xref" href="System.Text.Json.JsonTokenType.html#System_Text_Json_JsonTokenType_String">String</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="System_Text_Json_Utf8JsonReader_TryGetInt16_" data-uid="System.Text.Json.Utf8JsonReader.TryGetInt16*"></a>
+  <h4 id="System_Text_Json_Utf8JsonReader_TryGetInt16_System_Int16__" data-uid="System.Text.Json.Utf8JsonReader.TryGetInt16(System.Int16@)">TryGetInt16(out short)</h4>
+  <div class="markdown level1 summary"><p>Tries to parse the current JSON token value from the source as an <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int16">short</a> and returns a value that indicates whether the operation succeeded.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool TryGetInt16(out short value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int16">short</a></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>When this method returns, contains the parsed value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the entire UTF-8 encoded token value can be successfully parsed to a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int16">short</a> value; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a></td>
+        <td><p>The JSON token value isn't a <a class="xref" href="System.Text.Json.JsonTokenType.html#System_Text_Json_JsonTokenType_Number">Number</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="System_Text_Json_Utf8JsonReader_TryGetInt32_" data-uid="System.Text.Json.Utf8JsonReader.TryGetInt32*"></a>
+  <h4 id="System_Text_Json_Utf8JsonReader_TryGetInt32_System_Int32__" data-uid="System.Text.Json.Utf8JsonReader.TryGetInt32(System.Int32@)">TryGetInt32(out int)</h4>
+  <div class="markdown level1 summary"><p>Tries to parse the current JSON token value from the source as an <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a> and returns a value that indicates whether the operation succeeded.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool TryGetInt32(out int value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>When this method returns, contains the parsed value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the entire UTF-8 encoded token value can be successfully parsed to an <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a> value; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a></td>
+        <td><p>The JSON token value isn't a <a class="xref" href="System.Text.Json.JsonTokenType.html#System_Text_Json_JsonTokenType_Number">Number</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="System_Text_Json_Utf8JsonReader_TryGetInt64_" data-uid="System.Text.Json.Utf8JsonReader.TryGetInt64*"></a>
+  <h4 id="System_Text_Json_Utf8JsonReader_TryGetInt64_System_Int64__" data-uid="System.Text.Json.Utf8JsonReader.TryGetInt64(System.Int64@)">TryGetInt64(out long)</h4>
+  <div class="markdown level1 summary"><p>Tries to parse the current JSON token value from the source as an <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a> and returns a value that indicates whether the operation succeeded.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool TryGetInt64(out long value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>When this method returns, contains the parsed value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the entire UTF-8 encoded token value can be successfully parsed to an <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a> value; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a></td>
+        <td><p>The JSON token value isn't a <a class="xref" href="System.Text.Json.JsonTokenType.html#System_Text_Json_JsonTokenType_Number">Number</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="System_Text_Json_Utf8JsonReader_TryGetSByte_" data-uid="System.Text.Json.Utf8JsonReader.TryGetSByte*"></a>
+  <h4 id="System_Text_Json_Utf8JsonReader_TryGetSByte_System_SByte__" data-uid="System.Text.Json.Utf8JsonReader.TryGetSByte(System.SByte@)">TryGetSByte(out sbyte)</h4>
+  <div class="markdown level1 summary"><p>Tries to parse the current JSON token value from the source as an <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.sbyte">sbyte</a> and returns a value that indicates whether the operation succeeded.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[CLSCompliant(false)]
+public bool TryGetSByte(out sbyte value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.sbyte">sbyte</a></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>When this method returns, contains the parsed value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the entire UTF-8 encoded token value can be successfully parsed to an <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.sbyte">sbyte</a> value; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a></td>
+        <td><p>The JSON token value isn't a <a class="xref" href="System.Text.Json.JsonTokenType.html#System_Text_Json_JsonTokenType_Number">Number</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="System_Text_Json_Utf8JsonReader_TryGetSingle_" data-uid="System.Text.Json.Utf8JsonReader.TryGetSingle*"></a>
+  <h4 id="System_Text_Json_Utf8JsonReader_TryGetSingle_System_Single__" data-uid="System.Text.Json.Utf8JsonReader.TryGetSingle(System.Single@)">TryGetSingle(out float)</h4>
+  <div class="markdown level1 summary"><p>Tries to parse the current JSON token value from the source as a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a> and returns a value that indicates whether the operation succeeded.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool TryGetSingle(out float value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>When this method returns, contains the parsed value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the entire UTF-8 encoded token value can be successfully parsed to an <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a> value; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a></td>
+        <td><p>The JSON token value isn't a <a class="xref" href="System.Text.Json.JsonTokenType.html#System_Text_Json_JsonTokenType_Number">Number</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="System_Text_Json_Utf8JsonReader_TryGetUInt16_" data-uid="System.Text.Json.Utf8JsonReader.TryGetUInt16*"></a>
+  <h4 id="System_Text_Json_Utf8JsonReader_TryGetUInt16_System_UInt16__" data-uid="System.Text.Json.Utf8JsonReader.TryGetUInt16(System.UInt16@)">TryGetUInt16(out ushort)</h4>
+  <div class="markdown level1 summary"><p>Tries to parse the current JSON token value from the source as a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint16">ushort</a> and returns a value that indicates whether the operation succeeded.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[CLSCompliant(false)]
+public bool TryGetUInt16(out ushort value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint16">ushort</a></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>When this method returns, contains the parsed value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the entire UTF-8 encoded token value can be successfully parsed to a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint16">ushort</a> value; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a></td>
+        <td><p>The JSON token value isn't a <a class="xref" href="System.Text.Json.JsonTokenType.html#System_Text_Json_JsonTokenType_Number">Number</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="System_Text_Json_Utf8JsonReader_TryGetUInt32_" data-uid="System.Text.Json.Utf8JsonReader.TryGetUInt32*"></a>
+  <h4 id="System_Text_Json_Utf8JsonReader_TryGetUInt32_System_UInt32__" data-uid="System.Text.Json.Utf8JsonReader.TryGetUInt32(System.UInt32@)">TryGetUInt32(out uint)</h4>
+  <div class="markdown level1 summary"><p>Tries to parse the current JSON token value from the source as a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a> and returns a value that indicates whether the operation succeeded.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[CLSCompliant(false)]
+public bool TryGetUInt32(out uint value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>When this method returns, contains the parsed value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the entire UTF-8 encoded token value can be successfully parsed to a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a> value; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a></td>
+        <td><p>The JSON token value isn't a <a class="xref" href="System.Text.Json.JsonTokenType.html#System_Text_Json_JsonTokenType_Number">Number</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="System_Text_Json_Utf8JsonReader_TryGetUInt64_" data-uid="System.Text.Json.Utf8JsonReader.TryGetUInt64*"></a>
+  <h4 id="System_Text_Json_Utf8JsonReader_TryGetUInt64_System_UInt64__" data-uid="System.Text.Json.Utf8JsonReader.TryGetUInt64(System.UInt64@)">TryGetUInt64(out ulong)</h4>
+  <div class="markdown level1 summary"><p>Tries to parse the current JSON token value from the source as a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint64">ulong</a> and returns a value that indicates whether the operation succeeded.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[CLSCompliant(false)]
+public bool TryGetUInt64(out ulong value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint64">ulong</a></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>When this method returns, contains the parsed value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the entire UTF-8 encoded token value can be successfully parsed to a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint64">ulong</a> value; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a></td>
+        <td><p>The JSON token value isn't a <a class="xref" href="System.Text.Json.JsonTokenType.html#System_Text_Json_JsonTokenType_Number">Number</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="System_Text_Json_Utf8JsonReader_TrySkip_" data-uid="System.Text.Json.Utf8JsonReader.TrySkip*"></a>
+  <h4 id="System_Text_Json_Utf8JsonReader_TrySkip" data-uid="System.Text.Json.Utf8JsonReader.TrySkip">TrySkip()</h4>
+  <div class="markdown level1 summary"><p>Tries to skip the children of the current JSON token.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool TrySkip()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if there was enough data for the children to be skipped successfully; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="System.Text.Json.JsonException.html">JsonException</a></td>
+        <td><p>An invalid JSON token was encountered while skipping, according to the JSON RFC.</p>
+<p>-or -</p>
+<p>The current depth exceeds the recursive limit set by the maximum depth.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="System_Text_Json_Utf8JsonReader_ValueTextEquals_" data-uid="System.Text.Json.Utf8JsonReader.ValueTextEquals*"></a>
+  <h4 id="System_Text_Json_Utf8JsonReader_ValueTextEquals_System_ReadOnlySpan_System_Byte__" data-uid="System.Text.Json.Utf8JsonReader.ValueTextEquals(System.ReadOnlySpan{System.Byte})">ValueTextEquals(ReadOnlySpan&lt;byte&gt;)</h4>
+  <div class="markdown level1 summary"><p>Compares the UTF-8 encoded text in a read-only byte span to the unescaped JSON token value in the source and returns a value that indicates whether they match.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool ValueTextEquals(ReadOnlySpan&lt;byte&gt; utf8Text)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>&gt;</td>
+        <td><span class="parametername">utf8Text</span></td>
+        <td><p>The UTF-8 encoded text to compare against.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the JSON token value in the source matches the UTF-8 encoded lookup text; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a></td>
+        <td><p>The JSON token is not a JSON string (that is, it is not <a class="xref" href="System.Text.Json.JsonTokenType.html#System_Text_Json_JsonTokenType_String">String</a> or <a class="xref" href="System.Text.Json.JsonTokenType.html#System_Text_Json_JsonTokenType_PropertyName">PropertyName</a>).</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="System_Text_Json_Utf8JsonReader_ValueTextEquals_" data-uid="System.Text.Json.Utf8JsonReader.ValueTextEquals*"></a>
+  <h4 id="System_Text_Json_Utf8JsonReader_ValueTextEquals_System_ReadOnlySpan_System_Char__" data-uid="System.Text.Json.Utf8JsonReader.ValueTextEquals(System.ReadOnlySpan{System.Char})">ValueTextEquals(ReadOnlySpan&lt;char&gt;)</h4>
+  <div class="markdown level1 summary"><p>Compares the text in a read-only character span to the unescaped JSON token value in the source and returns a value that indicates whether they match.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool ValueTextEquals(ReadOnlySpan&lt;char&gt; text)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.char">char</a>&gt;</td>
+        <td><span class="parametername">text</span></td>
+        <td><p>The text to compare against.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the JSON token value in the source matches the lookup text; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a></td>
+        <td><p>The JSON token is not a JSON string (that is, it is not <a class="xref" href="System.Text.Json.JsonTokenType.html#System_Text_Json_JsonTokenType_String">String</a> or <a class="xref" href="System.Text.Json.JsonTokenType.html#System_Text_Json_JsonTokenType_PropertyName">PropertyName</a>).</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="System_Text_Json_Utf8JsonReader_ValueTextEquals_" data-uid="System.Text.Json.Utf8JsonReader.ValueTextEquals*"></a>
+  <h4 id="System_Text_Json_Utf8JsonReader_ValueTextEquals_System_String_" data-uid="System.Text.Json.Utf8JsonReader.ValueTextEquals(System.String)">ValueTextEquals(string?)</h4>
+  <div class="markdown level1 summary"><p>Compares the string text to the unescaped JSON token value in the source and returns a value that indicates whether they match.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool ValueTextEquals(string? text)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">text</span></td>
+        <td><p>The text to compare against.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the JSON token value in the source matches the lookup text; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a></td>
+        <td><p>The JSON token is not a JSON string (that is, it is not <a class="xref" href="System.Text.Json.JsonTokenType.html#System_Text_Json_JsonTokenType_String">String</a> or <a class="xref" href="System.Text.Json.JsonTokenType.html#System_Text_Json_JsonTokenType_PropertyName">PropertyName</a>).</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+</article>
+                </div>
+
+                <div class="copyright-footer">
+                    <span>&#169; CodeFactory, LLC. All rights reserved.</span>
+                </div>
+            </main>
+        </div>
+
+
+        <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+        <script type="text/javascript" src="../styles/jquery.twbsPagination.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/mark.js@8.11.1/dist/jquery.mark.min.js"></script>
+        <script type="text/javascript" src="../styles/url.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/anchor-js@5.0.0/anchor.min.js"></script>
+        <script type="text/javascript" src="../styles/docfx.js"></script>
+        <script type="text/javascript" src="../styles/main.js"></script>
+        <script type="text/javascript" src="../styles/singulink.js"></script>    </body>
+</html>

@@ -55,7 +55,7 @@ namespace CodeFactory.WinVs.Models.CSharp
         public AttributeParameterKind ParameterKind => _parameterKind;
 
         /// <summary>
-        /// Gets the raw value assigned to the parameter. This will be populated if the property <see cref="IDotNetAttributeParameterValue.ParameterKind"/> is not set to 'Array'
+        /// Gets the raw value assigned to the parameter. This will be populated if the property <see cref="ParameterKind"/> is not set to 'Array'
         /// </summary>
         public string Value => _value;
 
@@ -70,7 +70,7 @@ namespace CodeFactory.WinVs.Models.CSharp
         public IReadOnlyList<CsAttributeParameterValue> Values => _values;
 
         /// <summary>
-        /// The enum value provides the name of the enumeration value that was provided. This will be populated if the property <see cref="IDotNetAttributeParameterValue.ParameterKind"/> is set to 'Enum'
+        /// The enum value provides the name of the enumeration value that was provided. This will be populated if the property <see cref="ParameterKind"/> is set to 'Enum'
         /// </summary>
         public string EnumValue => _enumValue;
 

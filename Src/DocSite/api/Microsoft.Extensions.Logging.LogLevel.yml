@@ -1,0 +1,230 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Extensions.Logging.LogLevel
+  commentId: T:Microsoft.Extensions.Logging.LogLevel
+  id: LogLevel
+  parent: Microsoft.Extensions.Logging
+  children:
+  - Microsoft.Extensions.Logging.LogLevel.Critical
+  - Microsoft.Extensions.Logging.LogLevel.Debug
+  - Microsoft.Extensions.Logging.LogLevel.Error
+  - Microsoft.Extensions.Logging.LogLevel.Information
+  - Microsoft.Extensions.Logging.LogLevel.None
+  - Microsoft.Extensions.Logging.LogLevel.Trace
+  - Microsoft.Extensions.Logging.LogLevel.Warning
+  langs:
+  - csharp
+  - vb
+  name: LogLevel
+  nameWithType: LogLevel
+  fullName: Microsoft.Extensions.Logging.LogLevel
+  type: Enum
+  assemblies:
+  - Microsoft.Extensions.Logging.Abstractions
+  namespace: Microsoft.Extensions.Logging
+  summary: Defines logging severity levels.
+  example: []
+  syntax:
+    content: public enum LogLevel
+    content.vb: Public Enum LogLevel
+- uid: Microsoft.Extensions.Logging.LogLevel.Trace
+  commentId: F:Microsoft.Extensions.Logging.LogLevel.Trace
+  id: Trace
+  parent: Microsoft.Extensions.Logging.LogLevel
+  langs:
+  - csharp
+  - vb
+  name: Trace
+  nameWithType: LogLevel.Trace
+  fullName: Microsoft.Extensions.Logging.LogLevel.Trace
+  type: Field
+  assemblies:
+  - Microsoft.Extensions.Logging.Abstractions
+  namespace: Microsoft.Extensions.Logging
+  summary: >-
+    Logs that contain the most detailed messages. These messages may contain sensitive application data.
+
+    These messages are disabled by default and should never be enabled in a production environment.
+  example: []
+  syntax:
+    content: Trace = 0
+    return:
+      type: Microsoft.Extensions.Logging.LogLevel
+- uid: Microsoft.Extensions.Logging.LogLevel.Debug
+  commentId: F:Microsoft.Extensions.Logging.LogLevel.Debug
+  id: Debug
+  parent: Microsoft.Extensions.Logging.LogLevel
+  langs:
+  - csharp
+  - vb
+  name: Debug
+  nameWithType: LogLevel.Debug
+  fullName: Microsoft.Extensions.Logging.LogLevel.Debug
+  type: Field
+  assemblies:
+  - Microsoft.Extensions.Logging.Abstractions
+  namespace: Microsoft.Extensions.Logging
+  summary: >-
+    Logs that are used for interactive investigation during development.  These logs should primarily contain
+
+    information useful for debugging and have no long-term value.
+  example: []
+  syntax:
+    content: Debug = 1
+    return:
+      type: Microsoft.Extensions.Logging.LogLevel
+- uid: Microsoft.Extensions.Logging.LogLevel.Information
+  commentId: F:Microsoft.Extensions.Logging.LogLevel.Information
+  id: Information
+  parent: Microsoft.Extensions.Logging.LogLevel
+  langs:
+  - csharp
+  - vb
+  name: Information
+  nameWithType: LogLevel.Information
+  fullName: Microsoft.Extensions.Logging.LogLevel.Information
+  type: Field
+  assemblies:
+  - Microsoft.Extensions.Logging.Abstractions
+  namespace: Microsoft.Extensions.Logging
+  summary: Logs that track the general flow of the application. These logs should have long-term value.
+  example: []
+  syntax:
+    content: Information = 2
+    return:
+      type: Microsoft.Extensions.Logging.LogLevel
+- uid: Microsoft.Extensions.Logging.LogLevel.Warning
+  commentId: F:Microsoft.Extensions.Logging.LogLevel.Warning
+  id: Warning
+  parent: Microsoft.Extensions.Logging.LogLevel
+  langs:
+  - csharp
+  - vb
+  name: Warning
+  nameWithType: LogLevel.Warning
+  fullName: Microsoft.Extensions.Logging.LogLevel.Warning
+  type: Field
+  assemblies:
+  - Microsoft.Extensions.Logging.Abstractions
+  namespace: Microsoft.Extensions.Logging
+  summary: >-
+    Logs that highlight an abnormal or unexpected event in the application flow, but do not otherwise cause the
+
+    application execution to stop.
+  example: []
+  syntax:
+    content: Warning = 3
+    return:
+      type: Microsoft.Extensions.Logging.LogLevel
+- uid: Microsoft.Extensions.Logging.LogLevel.Error
+  commentId: F:Microsoft.Extensions.Logging.LogLevel.Error
+  id: Error
+  parent: Microsoft.Extensions.Logging.LogLevel
+  langs:
+  - csharp
+  - vb
+  name: Error
+  nameWithType: LogLevel.Error
+  fullName: Microsoft.Extensions.Logging.LogLevel.Error
+  type: Field
+  assemblies:
+  - Microsoft.Extensions.Logging.Abstractions
+  namespace: Microsoft.Extensions.Logging
+  summary: >-
+    Logs that highlight when the current flow of execution is stopped due to a failure. These should indicate a
+
+    failure in the current activity, not an application-wide failure.
+  example: []
+  syntax:
+    content: Error = 4
+    return:
+      type: Microsoft.Extensions.Logging.LogLevel
+- uid: Microsoft.Extensions.Logging.LogLevel.Critical
+  commentId: F:Microsoft.Extensions.Logging.LogLevel.Critical
+  id: Critical
+  parent: Microsoft.Extensions.Logging.LogLevel
+  langs:
+  - csharp
+  - vb
+  name: Critical
+  nameWithType: LogLevel.Critical
+  fullName: Microsoft.Extensions.Logging.LogLevel.Critical
+  type: Field
+  assemblies:
+  - Microsoft.Extensions.Logging.Abstractions
+  namespace: Microsoft.Extensions.Logging
+  summary: >-
+    Logs that describe an unrecoverable application or system crash, or a catastrophic failure that requires
+
+    immediate attention.
+  example: []
+  syntax:
+    content: Critical = 5
+    return:
+      type: Microsoft.Extensions.Logging.LogLevel
+- uid: Microsoft.Extensions.Logging.LogLevel.None
+  commentId: F:Microsoft.Extensions.Logging.LogLevel.None
+  id: None
+  parent: Microsoft.Extensions.Logging.LogLevel
+  langs:
+  - csharp
+  - vb
+  name: None
+  nameWithType: LogLevel.None
+  fullName: Microsoft.Extensions.Logging.LogLevel.None
+  type: Field
+  assemblies:
+  - Microsoft.Extensions.Logging.Abstractions
+  namespace: Microsoft.Extensions.Logging
+  summary: Not used for writing log messages. Specifies that a logging category should not write any messages.
+  example: []
+  syntax:
+    content: None = 6
+    return:
+      type: Microsoft.Extensions.Logging.LogLevel
+references:
+- uid: Microsoft.Extensions.Logging
+  commentId: N:Microsoft.Extensions.Logging
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft
+  name: Microsoft.Extensions.Logging
+  nameWithType: Microsoft.Extensions.Logging
+  fullName: Microsoft.Extensions.Logging
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.Extensions
+    name: Extensions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions
+  - name: .
+  - uid: Microsoft.Extensions.Logging
+    name: Logging
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.Extensions
+    name: Extensions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions
+  - name: .
+  - uid: Microsoft.Extensions.Logging
+    name: Logging
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging
+- uid: Microsoft.Extensions.Logging.LogLevel
+  commentId: T:Microsoft.Extensions.Logging.LogLevel
+  parent: Microsoft.Extensions.Logging
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.loglevel
+  name: LogLevel
+  nameWithType: LogLevel
+  fullName: Microsoft.Extensions.Logging.LogLevel

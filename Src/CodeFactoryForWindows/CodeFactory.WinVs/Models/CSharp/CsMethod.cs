@@ -7,6 +7,7 @@ using System;
 using System.Collections.Generic;
 using System.Collections.Immutable;
 using System.Threading.Tasks;
+using CodeFactory.Document;
 using CodeFactory.SourceCode;
 
 namespace CodeFactory.WinVs.Models.CSharp
@@ -205,12 +206,28 @@ namespace CodeFactory.WinVs.Models.CSharp
         /// <inheritdoc />
         public abstract Task<CsSource> AddToBeginningBodySyntaxAsync(string sourceCode);
 
+        /// <summary>
+        /// Adds the source code to the beginning of the method body. The ContentSyntax must be set to Body or else an exception will be thrown.
+        /// </summary>
+        /// <param name="sourceCode">The source code that is to be added to the method body.</param>
+        /// <returns>Updated source model and the transaction details.</returns>
+        /// <exception cref="DocumentException">Error is raised when errors occur updating the source document.</exception>
+        public abstract Task<CsSourceTransaction> AddToBeginningBodySyntaxTransactionAsync(string sourceCode);
+
         /// <inheritdoc />
         [Obsolete("No longer support will be removed in later edition, you no longer need to pass the source document.",false)]
         public abstract Task<CsSource> AddToEndBodySyntaxAsync(string sourceDocument, string sourceCode);
 
         /// <inheritdoc />
         public abstract Task<CsSource> AddToEndBodySyntaxAsync(string sourceCode);
+
+        /// <summary>
+        /// Adds the source code to the end of the method body. The ContentSyntax must be set to Body or else an exception will be thrown.
+        /// </summary>
+        /// <param name="sourceCode">The source code that is to be added to the method body.</param>
+        /// <returns>Updated source model and the transaction details.</returns>
+        /// <exception cref="DocumentException">Error is raised when errors occur updating the source document.</exception>
+        public abstract Task<CsSourceTransaction> AddToEndBodySyntaxTransactionAsync(string sourceCode);
 
         /// <inheritdoc />
         [Obsolete("No longer support will be removed in later edition, you no longer need to pass the source document.",false)]
@@ -226,8 +243,25 @@ namespace CodeFactory.WinVs.Models.CSharp
         /// <inheritdoc />
         public abstract Task<CsSource> ReplaceBodySyntaxAsync(string sourceCode);
 
+        /// <summary>
+        /// Replaces the syntax in the body of the method. The ContentSyntax must be set to Body or else an exception will be thrown.
+        /// </summary>
+        /// <param name="sourceCode">The source code that is to be used to replace the original definition in the document.</param>
+        /// <returns>Updated source model and the transaction details.</returns>
+        /// <exception cref="DocumentException">Error is raised when errors occur updating the source document.</exception>
+        public abstract Task<CsSourceTransaction> ReplaceBodySyntaxTransactionAsync(string sourceCode);
+
         /// <inheritdoc />
         public abstract Task<CsSource> ReplaceExpressionAsync(string sourceCode);
+
+
+        /// <summary>
+        /// Replaces the expression assigned to the method with the provided source code. The ContentSyntax must be set to Expression or else an exception will be thrown. 
+        /// </summary>
+        /// <param name="sourceCode">The source code that will replace the original expression.</param>
+        /// <returns>Updated source model and the transaction details.</returns>
+        /// <exception cref="DocumentException">Error is raised when errors occur updating the source document.</exception>
+        public abstract Task<CsSourceTransaction> ReplaceExpressionTransactionAsync(string sourceCode);
 
         /// <inheritdoc />
         [Obsolete("No longer support will be removed in later edition, you no longer need to pass the source document.",false)]

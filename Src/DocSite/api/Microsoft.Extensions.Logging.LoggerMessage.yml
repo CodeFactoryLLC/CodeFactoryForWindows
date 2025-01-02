@@ -1,0 +1,2894 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Extensions.Logging.LoggerMessage
+  commentId: T:Microsoft.Extensions.Logging.LoggerMessage
+  id: LoggerMessage
+  parent: Microsoft.Extensions.Logging
+  children:
+  - Microsoft.Extensions.Logging.LoggerMessage.Define(Microsoft.Extensions.Logging.LogLevel,Microsoft.Extensions.Logging.EventId,System.String)
+  - Microsoft.Extensions.Logging.LoggerMessage.Define(Microsoft.Extensions.Logging.LogLevel,Microsoft.Extensions.Logging.EventId,System.String,Microsoft.Extensions.Logging.LogDefineOptions)
+  - Microsoft.Extensions.Logging.LoggerMessage.DefineScope(System.String)
+  - Microsoft.Extensions.Logging.LoggerMessage.DefineScope``1(System.String)
+  - Microsoft.Extensions.Logging.LoggerMessage.DefineScope``2(System.String)
+  - Microsoft.Extensions.Logging.LoggerMessage.DefineScope``3(System.String)
+  - Microsoft.Extensions.Logging.LoggerMessage.DefineScope``4(System.String)
+  - Microsoft.Extensions.Logging.LoggerMessage.DefineScope``5(System.String)
+  - Microsoft.Extensions.Logging.LoggerMessage.DefineScope``6(System.String)
+  - Microsoft.Extensions.Logging.LoggerMessage.Define``1(Microsoft.Extensions.Logging.LogLevel,Microsoft.Extensions.Logging.EventId,System.String)
+  - Microsoft.Extensions.Logging.LoggerMessage.Define``1(Microsoft.Extensions.Logging.LogLevel,Microsoft.Extensions.Logging.EventId,System.String,Microsoft.Extensions.Logging.LogDefineOptions)
+  - Microsoft.Extensions.Logging.LoggerMessage.Define``2(Microsoft.Extensions.Logging.LogLevel,Microsoft.Extensions.Logging.EventId,System.String)
+  - Microsoft.Extensions.Logging.LoggerMessage.Define``2(Microsoft.Extensions.Logging.LogLevel,Microsoft.Extensions.Logging.EventId,System.String,Microsoft.Extensions.Logging.LogDefineOptions)
+  - Microsoft.Extensions.Logging.LoggerMessage.Define``3(Microsoft.Extensions.Logging.LogLevel,Microsoft.Extensions.Logging.EventId,System.String)
+  - Microsoft.Extensions.Logging.LoggerMessage.Define``3(Microsoft.Extensions.Logging.LogLevel,Microsoft.Extensions.Logging.EventId,System.String,Microsoft.Extensions.Logging.LogDefineOptions)
+  - Microsoft.Extensions.Logging.LoggerMessage.Define``4(Microsoft.Extensions.Logging.LogLevel,Microsoft.Extensions.Logging.EventId,System.String)
+  - Microsoft.Extensions.Logging.LoggerMessage.Define``4(Microsoft.Extensions.Logging.LogLevel,Microsoft.Extensions.Logging.EventId,System.String,Microsoft.Extensions.Logging.LogDefineOptions)
+  - Microsoft.Extensions.Logging.LoggerMessage.Define``5(Microsoft.Extensions.Logging.LogLevel,Microsoft.Extensions.Logging.EventId,System.String)
+  - Microsoft.Extensions.Logging.LoggerMessage.Define``5(Microsoft.Extensions.Logging.LogLevel,Microsoft.Extensions.Logging.EventId,System.String,Microsoft.Extensions.Logging.LogDefineOptions)
+  - Microsoft.Extensions.Logging.LoggerMessage.Define``6(Microsoft.Extensions.Logging.LogLevel,Microsoft.Extensions.Logging.EventId,System.String)
+  - Microsoft.Extensions.Logging.LoggerMessage.Define``6(Microsoft.Extensions.Logging.LogLevel,Microsoft.Extensions.Logging.EventId,System.String,Microsoft.Extensions.Logging.LogDefineOptions)
+  langs:
+  - csharp
+  - vb
+  name: LoggerMessage
+  nameWithType: LoggerMessage
+  fullName: Microsoft.Extensions.Logging.LoggerMessage
+  type: Class
+  assemblies:
+  - Microsoft.Extensions.Logging.Abstractions
+  namespace: Microsoft.Extensions.Logging
+  summary: Creates delegates which can be later cached to log messages in a performant way.
+  example: []
+  syntax:
+    content: public static class LoggerMessage
+    content.vb: Public Module LoggerMessage
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: Microsoft.Extensions.Logging.LoggerMessage.DefineScope(System.String)
+  commentId: M:Microsoft.Extensions.Logging.LoggerMessage.DefineScope(System.String)
+  id: DefineScope(System.String)
+  parent: Microsoft.Extensions.Logging.LoggerMessage
+  langs:
+  - csharp
+  - vb
+  name: DefineScope(string)
+  nameWithType: LoggerMessage.DefineScope(string)
+  fullName: Microsoft.Extensions.Logging.LoggerMessage.DefineScope(string)
+  type: Method
+  assemblies:
+  - Microsoft.Extensions.Logging.Abstractions
+  namespace: Microsoft.Extensions.Logging
+  summary: Creates a delegate which can be invoked to create a log scope.
+  example: []
+  syntax:
+    content: public static Func<ILogger, IDisposable> DefineScope(string formatString)
+    parameters:
+    - id: formatString
+      type: System.String
+      description: The named format string
+    return:
+      type: System.Func{Microsoft.Extensions.Logging.ILogger,System.IDisposable}
+      description: A delegate which when invoked creates a log scope.
+    content.vb: Public Shared Function DefineScope(formatString As String) As Func(Of ILogger, IDisposable)
+  overload: Microsoft.Extensions.Logging.LoggerMessage.DefineScope*
+  nameWithType.vb: LoggerMessage.DefineScope(String)
+  fullName.vb: Microsoft.Extensions.Logging.LoggerMessage.DefineScope(String)
+  name.vb: DefineScope(String)
+- uid: Microsoft.Extensions.Logging.LoggerMessage.DefineScope``1(System.String)
+  commentId: M:Microsoft.Extensions.Logging.LoggerMessage.DefineScope``1(System.String)
+  id: DefineScope``1(System.String)
+  parent: Microsoft.Extensions.Logging.LoggerMessage
+  langs:
+  - csharp
+  - vb
+  name: DefineScope<T1>(string)
+  nameWithType: LoggerMessage.DefineScope<T1>(string)
+  fullName: Microsoft.Extensions.Logging.LoggerMessage.DefineScope<T1>(string)
+  type: Method
+  assemblies:
+  - Microsoft.Extensions.Logging.Abstractions
+  namespace: Microsoft.Extensions.Logging
+  summary: Creates a delegate which can be invoked to create a log scope.
+  example: []
+  syntax:
+    content: public static Func<ILogger, T1, IDisposable> DefineScope<T1>(string formatString)
+    parameters:
+    - id: formatString
+      type: System.String
+      description: The named format string
+    typeParameters:
+    - id: T1
+      description: The type of the first parameter passed to the named format string.
+    return:
+      type: System.Func{Microsoft.Extensions.Logging.ILogger,{T1},System.IDisposable}
+      description: A delegate which when invoked creates a log scope.
+    content.vb: Public Shared Function DefineScope(Of T1)(formatString As String) As Func(Of ILogger, T1, IDisposable)
+  overload: Microsoft.Extensions.Logging.LoggerMessage.DefineScope*
+  nameWithType.vb: LoggerMessage.DefineScope(Of T1)(String)
+  fullName.vb: Microsoft.Extensions.Logging.LoggerMessage.DefineScope(Of T1)(String)
+  name.vb: DefineScope(Of T1)(String)
+- uid: Microsoft.Extensions.Logging.LoggerMessage.DefineScope``2(System.String)
+  commentId: M:Microsoft.Extensions.Logging.LoggerMessage.DefineScope``2(System.String)
+  id: DefineScope``2(System.String)
+  parent: Microsoft.Extensions.Logging.LoggerMessage
+  langs:
+  - csharp
+  - vb
+  name: DefineScope<T1, T2>(string)
+  nameWithType: LoggerMessage.DefineScope<T1, T2>(string)
+  fullName: Microsoft.Extensions.Logging.LoggerMessage.DefineScope<T1, T2>(string)
+  type: Method
+  assemblies:
+  - Microsoft.Extensions.Logging.Abstractions
+  namespace: Microsoft.Extensions.Logging
+  summary: Creates a delegate which can be invoked to create a log scope.
+  example: []
+  syntax:
+    content: public static Func<ILogger, T1, T2, IDisposable> DefineScope<T1, T2>(string formatString)
+    parameters:
+    - id: formatString
+      type: System.String
+      description: The named format string
+    typeParameters:
+    - id: T1
+      description: The type of the first parameter passed to the named format string.
+    - id: T2
+      description: The type of the second parameter passed to the named format string.
+    return:
+      type: System.Func{Microsoft.Extensions.Logging.ILogger,{T1},{T2},System.IDisposable}
+      description: A delegate which when invoked creates a log scope.
+    content.vb: Public Shared Function DefineScope(Of T1, T2)(formatString As String) As Func(Of ILogger, T1, T2, IDisposable)
+  overload: Microsoft.Extensions.Logging.LoggerMessage.DefineScope*
+  nameWithType.vb: LoggerMessage.DefineScope(Of T1, T2)(String)
+  fullName.vb: Microsoft.Extensions.Logging.LoggerMessage.DefineScope(Of T1, T2)(String)
+  name.vb: DefineScope(Of T1, T2)(String)
+- uid: Microsoft.Extensions.Logging.LoggerMessage.DefineScope``3(System.String)
+  commentId: M:Microsoft.Extensions.Logging.LoggerMessage.DefineScope``3(System.String)
+  id: DefineScope``3(System.String)
+  parent: Microsoft.Extensions.Logging.LoggerMessage
+  langs:
+  - csharp
+  - vb
+  name: DefineScope<T1, T2, T3>(string)
+  nameWithType: LoggerMessage.DefineScope<T1, T2, T3>(string)
+  fullName: Microsoft.Extensions.Logging.LoggerMessage.DefineScope<T1, T2, T3>(string)
+  type: Method
+  assemblies:
+  - Microsoft.Extensions.Logging.Abstractions
+  namespace: Microsoft.Extensions.Logging
+  summary: Creates a delegate which can be invoked to create a log scope.
+  example: []
+  syntax:
+    content: public static Func<ILogger, T1, T2, T3, IDisposable> DefineScope<T1, T2, T3>(string formatString)
+    parameters:
+    - id: formatString
+      type: System.String
+      description: The named format string
+    typeParameters:
+    - id: T1
+      description: The type of the first parameter passed to the named format string.
+    - id: T2
+      description: The type of the second parameter passed to the named format string.
+    - id: T3
+      description: The type of the third parameter passed to the named format string.
+    return:
+      type: System.Func{Microsoft.Extensions.Logging.ILogger,{T1},{T2},{T3},System.IDisposable}
+      description: A delegate which when invoked creates a log scope.
+    content.vb: Public Shared Function DefineScope(Of T1, T2, T3)(formatString As String) As Func(Of ILogger, T1, T2, T3, IDisposable)
+  overload: Microsoft.Extensions.Logging.LoggerMessage.DefineScope*
+  nameWithType.vb: LoggerMessage.DefineScope(Of T1, T2, T3)(String)
+  fullName.vb: Microsoft.Extensions.Logging.LoggerMessage.DefineScope(Of T1, T2, T3)(String)
+  name.vb: DefineScope(Of T1, T2, T3)(String)
+- uid: Microsoft.Extensions.Logging.LoggerMessage.DefineScope``4(System.String)
+  commentId: M:Microsoft.Extensions.Logging.LoggerMessage.DefineScope``4(System.String)
+  id: DefineScope``4(System.String)
+  parent: Microsoft.Extensions.Logging.LoggerMessage
+  langs:
+  - csharp
+  - vb
+  name: DefineScope<T1, T2, T3, T4>(string)
+  nameWithType: LoggerMessage.DefineScope<T1, T2, T3, T4>(string)
+  fullName: Microsoft.Extensions.Logging.LoggerMessage.DefineScope<T1, T2, T3, T4>(string)
+  type: Method
+  assemblies:
+  - Microsoft.Extensions.Logging.Abstractions
+  namespace: Microsoft.Extensions.Logging
+  summary: Creates a delegate which can be invoked to create a log scope.
+  example: []
+  syntax:
+    content: public static Func<ILogger, T1, T2, T3, T4, IDisposable> DefineScope<T1, T2, T3, T4>(string formatString)
+    parameters:
+    - id: formatString
+      type: System.String
+      description: The named format string
+    typeParameters:
+    - id: T1
+      description: The type of the first parameter passed to the named format string.
+    - id: T2
+      description: The type of the second parameter passed to the named format string.
+    - id: T3
+      description: The type of the third parameter passed to the named format string.
+    - id: T4
+      description: The type of the fourth parameter passed to the named format string.
+    return:
+      type: System.Func{Microsoft.Extensions.Logging.ILogger,{T1},{T2},{T3},{T4},System.IDisposable}
+      description: A delegate which when invoked creates a log scope.
+    content.vb: Public Shared Function DefineScope(Of T1, T2, T3, T4)(formatString As String) As Func(Of ILogger, T1, T2, T3, T4, IDisposable)
+  overload: Microsoft.Extensions.Logging.LoggerMessage.DefineScope*
+  nameWithType.vb: LoggerMessage.DefineScope(Of T1, T2, T3, T4)(String)
+  fullName.vb: Microsoft.Extensions.Logging.LoggerMessage.DefineScope(Of T1, T2, T3, T4)(String)
+  name.vb: DefineScope(Of T1, T2, T3, T4)(String)
+- uid: Microsoft.Extensions.Logging.LoggerMessage.DefineScope``5(System.String)
+  commentId: M:Microsoft.Extensions.Logging.LoggerMessage.DefineScope``5(System.String)
+  id: DefineScope``5(System.String)
+  parent: Microsoft.Extensions.Logging.LoggerMessage
+  langs:
+  - csharp
+  - vb
+  name: DefineScope<T1, T2, T3, T4, T5>(string)
+  nameWithType: LoggerMessage.DefineScope<T1, T2, T3, T4, T5>(string)
+  fullName: Microsoft.Extensions.Logging.LoggerMessage.DefineScope<T1, T2, T3, T4, T5>(string)
+  type: Method
+  assemblies:
+  - Microsoft.Extensions.Logging.Abstractions
+  namespace: Microsoft.Extensions.Logging
+  summary: Creates a delegate which can be invoked to create a log scope.
+  example: []
+  syntax:
+    content: public static Func<ILogger, T1, T2, T3, T4, T5, IDisposable> DefineScope<T1, T2, T3, T4, T5>(string formatString)
+    parameters:
+    - id: formatString
+      type: System.String
+      description: The named format string
+    typeParameters:
+    - id: T1
+      description: The type of the first parameter passed to the named format string.
+    - id: T2
+      description: The type of the second parameter passed to the named format string.
+    - id: T3
+      description: The type of the third parameter passed to the named format string.
+    - id: T4
+      description: The type of the fourth parameter passed to the named format string.
+    - id: T5
+      description: The type of the fifth parameter passed to the named format string.
+    return:
+      type: System.Func{Microsoft.Extensions.Logging.ILogger,{T1},{T2},{T3},{T4},{T5},System.IDisposable}
+      description: A delegate which when invoked creates a log scope.
+    content.vb: Public Shared Function DefineScope(Of T1, T2, T3, T4, T5)(formatString As String) As Func(Of ILogger, T1, T2, T3, T4, T5, IDisposable)
+  overload: Microsoft.Extensions.Logging.LoggerMessage.DefineScope*
+  nameWithType.vb: LoggerMessage.DefineScope(Of T1, T2, T3, T4, T5)(String)
+  fullName.vb: Microsoft.Extensions.Logging.LoggerMessage.DefineScope(Of T1, T2, T3, T4, T5)(String)
+  name.vb: DefineScope(Of T1, T2, T3, T4, T5)(String)
+- uid: Microsoft.Extensions.Logging.LoggerMessage.DefineScope``6(System.String)
+  commentId: M:Microsoft.Extensions.Logging.LoggerMessage.DefineScope``6(System.String)
+  id: DefineScope``6(System.String)
+  parent: Microsoft.Extensions.Logging.LoggerMessage
+  langs:
+  - csharp
+  - vb
+  name: DefineScope<T1, T2, T3, T4, T5, T6>(string)
+  nameWithType: LoggerMessage.DefineScope<T1, T2, T3, T4, T5, T6>(string)
+  fullName: Microsoft.Extensions.Logging.LoggerMessage.DefineScope<T1, T2, T3, T4, T5, T6>(string)
+  type: Method
+  assemblies:
+  - Microsoft.Extensions.Logging.Abstractions
+  namespace: Microsoft.Extensions.Logging
+  summary: Creates a delegate which can be invoked to create a log scope.
+  example: []
+  syntax:
+    content: public static Func<ILogger, T1, T2, T3, T4, T5, T6, IDisposable> DefineScope<T1, T2, T3, T4, T5, T6>(string formatString)
+    parameters:
+    - id: formatString
+      type: System.String
+      description: The named format string
+    typeParameters:
+    - id: T1
+      description: The type of the first parameter passed to the named format string.
+    - id: T2
+      description: The type of the second parameter passed to the named format string.
+    - id: T3
+      description: The type of the third parameter passed to the named format string.
+    - id: T4
+      description: The type of the fourth parameter passed to the named format string.
+    - id: T5
+      description: The type of the fifth parameter passed to the named format string.
+    - id: T6
+      description: The type of the sixth parameter passed to the named format string.
+    return:
+      type: System.Func{Microsoft.Extensions.Logging.ILogger,{T1},{T2},{T3},{T4},{T5},{T6},System.IDisposable}
+      description: A delegate which when invoked creates a log scope.
+    content.vb: Public Shared Function DefineScope(Of T1, T2, T3, T4, T5, T6)(formatString As String) As Func(Of ILogger, T1, T2, T3, T4, T5, T6, IDisposable)
+  overload: Microsoft.Extensions.Logging.LoggerMessage.DefineScope*
+  nameWithType.vb: LoggerMessage.DefineScope(Of T1, T2, T3, T4, T5, T6)(String)
+  fullName.vb: Microsoft.Extensions.Logging.LoggerMessage.DefineScope(Of T1, T2, T3, T4, T5, T6)(String)
+  name.vb: DefineScope(Of T1, T2, T3, T4, T5, T6)(String)
+- uid: Microsoft.Extensions.Logging.LoggerMessage.Define(Microsoft.Extensions.Logging.LogLevel,Microsoft.Extensions.Logging.EventId,System.String)
+  commentId: M:Microsoft.Extensions.Logging.LoggerMessage.Define(Microsoft.Extensions.Logging.LogLevel,Microsoft.Extensions.Logging.EventId,System.String)
+  id: Define(Microsoft.Extensions.Logging.LogLevel,Microsoft.Extensions.Logging.EventId,System.String)
+  parent: Microsoft.Extensions.Logging.LoggerMessage
+  langs:
+  - csharp
+  - vb
+  name: Define(LogLevel, EventId, string)
+  nameWithType: LoggerMessage.Define(LogLevel, EventId, string)
+  fullName: Microsoft.Extensions.Logging.LoggerMessage.Define(Microsoft.Extensions.Logging.LogLevel, Microsoft.Extensions.Logging.EventId, string)
+  type: Method
+  assemblies:
+  - Microsoft.Extensions.Logging.Abstractions
+  namespace: Microsoft.Extensions.Logging
+  summary: Creates a delegate which can be invoked for logging a message.
+  example: []
+  syntax:
+    content: public static Action<ILogger, Exception?> Define(LogLevel logLevel, EventId eventId, string formatString)
+    parameters:
+    - id: logLevel
+      type: Microsoft.Extensions.Logging.LogLevel
+      description: The <xref href="Microsoft.Extensions.Logging.LogLevel" data-throw-if-not-resolved="false"></xref>
+    - id: eventId
+      type: Microsoft.Extensions.Logging.EventId
+      description: The event id
+    - id: formatString
+      type: System.String
+      description: The named format string
+    return:
+      type: System.Action{Microsoft.Extensions.Logging.ILogger,System.Exception}
+      description: A delegate which when invoked creates a log message.
+    content.vb: Public Shared Function Define(logLevel As LogLevel, eventId As EventId, formatString As String) As Action(Of ILogger, Exception)
+  overload: Microsoft.Extensions.Logging.LoggerMessage.Define*
+  nameWithType.vb: LoggerMessage.Define(LogLevel, EventId, String)
+  fullName.vb: Microsoft.Extensions.Logging.LoggerMessage.Define(Microsoft.Extensions.Logging.LogLevel, Microsoft.Extensions.Logging.EventId, String)
+  name.vb: Define(LogLevel, EventId, String)
+- uid: Microsoft.Extensions.Logging.LoggerMessage.Define(Microsoft.Extensions.Logging.LogLevel,Microsoft.Extensions.Logging.EventId,System.String,Microsoft.Extensions.Logging.LogDefineOptions)
+  commentId: M:Microsoft.Extensions.Logging.LoggerMessage.Define(Microsoft.Extensions.Logging.LogLevel,Microsoft.Extensions.Logging.EventId,System.String,Microsoft.Extensions.Logging.LogDefineOptions)
+  id: Define(Microsoft.Extensions.Logging.LogLevel,Microsoft.Extensions.Logging.EventId,System.String,Microsoft.Extensions.Logging.LogDefineOptions)
+  parent: Microsoft.Extensions.Logging.LoggerMessage
+  langs:
+  - csharp
+  - vb
+  name: Define(LogLevel, EventId, string, LogDefineOptions?)
+  nameWithType: LoggerMessage.Define(LogLevel, EventId, string, LogDefineOptions?)
+  fullName: Microsoft.Extensions.Logging.LoggerMessage.Define(Microsoft.Extensions.Logging.LogLevel, Microsoft.Extensions.Logging.EventId, string, Microsoft.Extensions.Logging.LogDefineOptions?)
+  type: Method
+  assemblies:
+  - Microsoft.Extensions.Logging.Abstractions
+  namespace: Microsoft.Extensions.Logging
+  summary: Creates a delegate which can be invoked for logging a message.
+  example: []
+  syntax:
+    content: public static Action<ILogger, Exception?> Define(LogLevel logLevel, EventId eventId, string formatString, LogDefineOptions? options)
+    parameters:
+    - id: logLevel
+      type: Microsoft.Extensions.Logging.LogLevel
+      description: The <xref href="Microsoft.Extensions.Logging.LogLevel" data-throw-if-not-resolved="false"></xref>
+    - id: eventId
+      type: Microsoft.Extensions.Logging.EventId
+      description: The event id
+    - id: formatString
+      type: System.String
+      description: The named format string
+    - id: options
+      type: Microsoft.Extensions.Logging.LogDefineOptions
+      description: The <xref href="Microsoft.Extensions.Logging.LogDefineOptions" data-throw-if-not-resolved="false"></xref>
+    return:
+      type: System.Action{Microsoft.Extensions.Logging.ILogger,System.Exception}
+      description: A delegate which when invoked creates a log message.
+    content.vb: Public Shared Function Define(logLevel As LogLevel, eventId As EventId, formatString As String, options As LogDefineOptions) As Action(Of ILogger, Exception)
+  overload: Microsoft.Extensions.Logging.LoggerMessage.Define*
+  nameWithType.vb: LoggerMessage.Define(LogLevel, EventId, String, LogDefineOptions)
+  fullName.vb: Microsoft.Extensions.Logging.LoggerMessage.Define(Microsoft.Extensions.Logging.LogLevel, Microsoft.Extensions.Logging.EventId, String, Microsoft.Extensions.Logging.LogDefineOptions)
+  name.vb: Define(LogLevel, EventId, String, LogDefineOptions)
+- uid: Microsoft.Extensions.Logging.LoggerMessage.Define``1(Microsoft.Extensions.Logging.LogLevel,Microsoft.Extensions.Logging.EventId,System.String)
+  commentId: M:Microsoft.Extensions.Logging.LoggerMessage.Define``1(Microsoft.Extensions.Logging.LogLevel,Microsoft.Extensions.Logging.EventId,System.String)
+  id: Define``1(Microsoft.Extensions.Logging.LogLevel,Microsoft.Extensions.Logging.EventId,System.String)
+  parent: Microsoft.Extensions.Logging.LoggerMessage
+  langs:
+  - csharp
+  - vb
+  name: Define<T1>(LogLevel, EventId, string)
+  nameWithType: LoggerMessage.Define<T1>(LogLevel, EventId, string)
+  fullName: Microsoft.Extensions.Logging.LoggerMessage.Define<T1>(Microsoft.Extensions.Logging.LogLevel, Microsoft.Extensions.Logging.EventId, string)
+  type: Method
+  assemblies:
+  - Microsoft.Extensions.Logging.Abstractions
+  namespace: Microsoft.Extensions.Logging
+  summary: Creates a delegate which can be invoked for logging a message.
+  example: []
+  syntax:
+    content: public static Action<ILogger, T1, Exception?> Define<T1>(LogLevel logLevel, EventId eventId, string formatString)
+    parameters:
+    - id: logLevel
+      type: Microsoft.Extensions.Logging.LogLevel
+      description: The <xref href="Microsoft.Extensions.Logging.LogLevel" data-throw-if-not-resolved="false"></xref>
+    - id: eventId
+      type: Microsoft.Extensions.Logging.EventId
+      description: The event id
+    - id: formatString
+      type: System.String
+      description: The named format string
+    typeParameters:
+    - id: T1
+      description: The type of the first parameter passed to the named format string.
+    return:
+      type: System.Action{Microsoft.Extensions.Logging.ILogger,{T1},System.Exception}
+      description: A delegate which when invoked creates a log message.
+    content.vb: Public Shared Function Define(Of T1)(logLevel As LogLevel, eventId As EventId, formatString As String) As Action(Of ILogger, T1, Exception)
+  overload: Microsoft.Extensions.Logging.LoggerMessage.Define*
+  nameWithType.vb: LoggerMessage.Define(Of T1)(LogLevel, EventId, String)
+  fullName.vb: Microsoft.Extensions.Logging.LoggerMessage.Define(Of T1)(Microsoft.Extensions.Logging.LogLevel, Microsoft.Extensions.Logging.EventId, String)
+  name.vb: Define(Of T1)(LogLevel, EventId, String)
+- uid: Microsoft.Extensions.Logging.LoggerMessage.Define``1(Microsoft.Extensions.Logging.LogLevel,Microsoft.Extensions.Logging.EventId,System.String,Microsoft.Extensions.Logging.LogDefineOptions)
+  commentId: M:Microsoft.Extensions.Logging.LoggerMessage.Define``1(Microsoft.Extensions.Logging.LogLevel,Microsoft.Extensions.Logging.EventId,System.String,Microsoft.Extensions.Logging.LogDefineOptions)
+  id: Define``1(Microsoft.Extensions.Logging.LogLevel,Microsoft.Extensions.Logging.EventId,System.String,Microsoft.Extensions.Logging.LogDefineOptions)
+  parent: Microsoft.Extensions.Logging.LoggerMessage
+  langs:
+  - csharp
+  - vb
+  name: Define<T1>(LogLevel, EventId, string, LogDefineOptions?)
+  nameWithType: LoggerMessage.Define<T1>(LogLevel, EventId, string, LogDefineOptions?)
+  fullName: Microsoft.Extensions.Logging.LoggerMessage.Define<T1>(Microsoft.Extensions.Logging.LogLevel, Microsoft.Extensions.Logging.EventId, string, Microsoft.Extensions.Logging.LogDefineOptions?)
+  type: Method
+  assemblies:
+  - Microsoft.Extensions.Logging.Abstractions
+  namespace: Microsoft.Extensions.Logging
+  summary: Creates a delegate which can be invoked for logging a message.
+  example: []
+  syntax:
+    content: public static Action<ILogger, T1, Exception?> Define<T1>(LogLevel logLevel, EventId eventId, string formatString, LogDefineOptions? options)
+    parameters:
+    - id: logLevel
+      type: Microsoft.Extensions.Logging.LogLevel
+      description: The <xref href="Microsoft.Extensions.Logging.LogLevel" data-throw-if-not-resolved="false"></xref>
+    - id: eventId
+      type: Microsoft.Extensions.Logging.EventId
+      description: The event id
+    - id: formatString
+      type: System.String
+      description: The named format string
+    - id: options
+      type: Microsoft.Extensions.Logging.LogDefineOptions
+      description: The <xref href="Microsoft.Extensions.Logging.LogDefineOptions" data-throw-if-not-resolved="false"></xref>
+    typeParameters:
+    - id: T1
+      description: The type of the first parameter passed to the named format string.
+    return:
+      type: System.Action{Microsoft.Extensions.Logging.ILogger,{T1},System.Exception}
+      description: A delegate which when invoked creates a log message.
+    content.vb: Public Shared Function Define(Of T1)(logLevel As LogLevel, eventId As EventId, formatString As String, options As LogDefineOptions) As Action(Of ILogger, T1, Exception)
+  overload: Microsoft.Extensions.Logging.LoggerMessage.Define*
+  nameWithType.vb: LoggerMessage.Define(Of T1)(LogLevel, EventId, String, LogDefineOptions)
+  fullName.vb: Microsoft.Extensions.Logging.LoggerMessage.Define(Of T1)(Microsoft.Extensions.Logging.LogLevel, Microsoft.Extensions.Logging.EventId, String, Microsoft.Extensions.Logging.LogDefineOptions)
+  name.vb: Define(Of T1)(LogLevel, EventId, String, LogDefineOptions)
+- uid: Microsoft.Extensions.Logging.LoggerMessage.Define``2(Microsoft.Extensions.Logging.LogLevel,Microsoft.Extensions.Logging.EventId,System.String)
+  commentId: M:Microsoft.Extensions.Logging.LoggerMessage.Define``2(Microsoft.Extensions.Logging.LogLevel,Microsoft.Extensions.Logging.EventId,System.String)
+  id: Define``2(Microsoft.Extensions.Logging.LogLevel,Microsoft.Extensions.Logging.EventId,System.String)
+  parent: Microsoft.Extensions.Logging.LoggerMessage
+  langs:
+  - csharp
+  - vb
+  name: Define<T1, T2>(LogLevel, EventId, string)
+  nameWithType: LoggerMessage.Define<T1, T2>(LogLevel, EventId, string)
+  fullName: Microsoft.Extensions.Logging.LoggerMessage.Define<T1, T2>(Microsoft.Extensions.Logging.LogLevel, Microsoft.Extensions.Logging.EventId, string)
+  type: Method
+  assemblies:
+  - Microsoft.Extensions.Logging.Abstractions
+  namespace: Microsoft.Extensions.Logging
+  summary: Creates a delegate which can be invoked for logging a message.
+  example: []
+  syntax:
+    content: public static Action<ILogger, T1, T2, Exception?> Define<T1, T2>(LogLevel logLevel, EventId eventId, string formatString)
+    parameters:
+    - id: logLevel
+      type: Microsoft.Extensions.Logging.LogLevel
+      description: The <xref href="Microsoft.Extensions.Logging.LogLevel" data-throw-if-not-resolved="false"></xref>
+    - id: eventId
+      type: Microsoft.Extensions.Logging.EventId
+      description: The event id
+    - id: formatString
+      type: System.String
+      description: The named format string
+    typeParameters:
+    - id: T1
+      description: The type of the first parameter passed to the named format string.
+    - id: T2
+      description: The type of the second parameter passed to the named format string.
+    return:
+      type: System.Action{Microsoft.Extensions.Logging.ILogger,{T1},{T2},System.Exception}
+      description: A delegate which when invoked creates a log message.
+    content.vb: Public Shared Function Define(Of T1, T2)(logLevel As LogLevel, eventId As EventId, formatString As String) As Action(Of ILogger, T1, T2, Exception)
+  overload: Microsoft.Extensions.Logging.LoggerMessage.Define*
+  nameWithType.vb: LoggerMessage.Define(Of T1, T2)(LogLevel, EventId, String)
+  fullName.vb: Microsoft.Extensions.Logging.LoggerMessage.Define(Of T1, T2)(Microsoft.Extensions.Logging.LogLevel, Microsoft.Extensions.Logging.EventId, String)
+  name.vb: Define(Of T1, T2)(LogLevel, EventId, String)
+- uid: Microsoft.Extensions.Logging.LoggerMessage.Define``2(Microsoft.Extensions.Logging.LogLevel,Microsoft.Extensions.Logging.EventId,System.String,Microsoft.Extensions.Logging.LogDefineOptions)
+  commentId: M:Microsoft.Extensions.Logging.LoggerMessage.Define``2(Microsoft.Extensions.Logging.LogLevel,Microsoft.Extensions.Logging.EventId,System.String,Microsoft.Extensions.Logging.LogDefineOptions)
+  id: Define``2(Microsoft.Extensions.Logging.LogLevel,Microsoft.Extensions.Logging.EventId,System.String,Microsoft.Extensions.Logging.LogDefineOptions)
+  parent: Microsoft.Extensions.Logging.LoggerMessage
+  langs:
+  - csharp
+  - vb
+  name: Define<T1, T2>(LogLevel, EventId, string, LogDefineOptions?)
+  nameWithType: LoggerMessage.Define<T1, T2>(LogLevel, EventId, string, LogDefineOptions?)
+  fullName: Microsoft.Extensions.Logging.LoggerMessage.Define<T1, T2>(Microsoft.Extensions.Logging.LogLevel, Microsoft.Extensions.Logging.EventId, string, Microsoft.Extensions.Logging.LogDefineOptions?)
+  type: Method
+  assemblies:
+  - Microsoft.Extensions.Logging.Abstractions
+  namespace: Microsoft.Extensions.Logging
+  summary: Creates a delegate which can be invoked for logging a message.
+  example: []
+  syntax:
+    content: public static Action<ILogger, T1, T2, Exception?> Define<T1, T2>(LogLevel logLevel, EventId eventId, string formatString, LogDefineOptions? options)
+    parameters:
+    - id: logLevel
+      type: Microsoft.Extensions.Logging.LogLevel
+      description: The <xref href="Microsoft.Extensions.Logging.LogLevel" data-throw-if-not-resolved="false"></xref>
+    - id: eventId
+      type: Microsoft.Extensions.Logging.EventId
+      description: The event id
+    - id: formatString
+      type: System.String
+      description: The named format string
+    - id: options
+      type: Microsoft.Extensions.Logging.LogDefineOptions
+      description: The <xref href="Microsoft.Extensions.Logging.LogDefineOptions" data-throw-if-not-resolved="false"></xref>
+    typeParameters:
+    - id: T1
+      description: The type of the first parameter passed to the named format string.
+    - id: T2
+      description: The type of the second parameter passed to the named format string.
+    return:
+      type: System.Action{Microsoft.Extensions.Logging.ILogger,{T1},{T2},System.Exception}
+      description: A delegate which when invoked creates a log message.
+    content.vb: Public Shared Function Define(Of T1, T2)(logLevel As LogLevel, eventId As EventId, formatString As String, options As LogDefineOptions) As Action(Of ILogger, T1, T2, Exception)
+  overload: Microsoft.Extensions.Logging.LoggerMessage.Define*
+  nameWithType.vb: LoggerMessage.Define(Of T1, T2)(LogLevel, EventId, String, LogDefineOptions)
+  fullName.vb: Microsoft.Extensions.Logging.LoggerMessage.Define(Of T1, T2)(Microsoft.Extensions.Logging.LogLevel, Microsoft.Extensions.Logging.EventId, String, Microsoft.Extensions.Logging.LogDefineOptions)
+  name.vb: Define(Of T1, T2)(LogLevel, EventId, String, LogDefineOptions)
+- uid: Microsoft.Extensions.Logging.LoggerMessage.Define``3(Microsoft.Extensions.Logging.LogLevel,Microsoft.Extensions.Logging.EventId,System.String)
+  commentId: M:Microsoft.Extensions.Logging.LoggerMessage.Define``3(Microsoft.Extensions.Logging.LogLevel,Microsoft.Extensions.Logging.EventId,System.String)
+  id: Define``3(Microsoft.Extensions.Logging.LogLevel,Microsoft.Extensions.Logging.EventId,System.String)
+  parent: Microsoft.Extensions.Logging.LoggerMessage
+  langs:
+  - csharp
+  - vb
+  name: Define<T1, T2, T3>(LogLevel, EventId, string)
+  nameWithType: LoggerMessage.Define<T1, T2, T3>(LogLevel, EventId, string)
+  fullName: Microsoft.Extensions.Logging.LoggerMessage.Define<T1, T2, T3>(Microsoft.Extensions.Logging.LogLevel, Microsoft.Extensions.Logging.EventId, string)
+  type: Method
+  assemblies:
+  - Microsoft.Extensions.Logging.Abstractions
+  namespace: Microsoft.Extensions.Logging
+  summary: Creates a delegate which can be invoked for logging a message.
+  example: []
+  syntax:
+    content: public static Action<ILogger, T1, T2, T3, Exception?> Define<T1, T2, T3>(LogLevel logLevel, EventId eventId, string formatString)
+    parameters:
+    - id: logLevel
+      type: Microsoft.Extensions.Logging.LogLevel
+      description: The <xref href="Microsoft.Extensions.Logging.LogLevel" data-throw-if-not-resolved="false"></xref>
+    - id: eventId
+      type: Microsoft.Extensions.Logging.EventId
+      description: The event id
+    - id: formatString
+      type: System.String
+      description: The named format string
+    typeParameters:
+    - id: T1
+      description: The type of the first parameter passed to the named format string.
+    - id: T2
+      description: The type of the second parameter passed to the named format string.
+    - id: T3
+      description: The type of the third parameter passed to the named format string.
+    return:
+      type: System.Action{Microsoft.Extensions.Logging.ILogger,{T1},{T2},{T3},System.Exception}
+      description: A delegate which when invoked creates a log message.
+    content.vb: Public Shared Function Define(Of T1, T2, T3)(logLevel As LogLevel, eventId As EventId, formatString As String) As Action(Of ILogger, T1, T2, T3, Exception)
+  overload: Microsoft.Extensions.Logging.LoggerMessage.Define*
+  nameWithType.vb: LoggerMessage.Define(Of T1, T2, T3)(LogLevel, EventId, String)
+  fullName.vb: Microsoft.Extensions.Logging.LoggerMessage.Define(Of T1, T2, T3)(Microsoft.Extensions.Logging.LogLevel, Microsoft.Extensions.Logging.EventId, String)
+  name.vb: Define(Of T1, T2, T3)(LogLevel, EventId, String)
+- uid: Microsoft.Extensions.Logging.LoggerMessage.Define``3(Microsoft.Extensions.Logging.LogLevel,Microsoft.Extensions.Logging.EventId,System.String,Microsoft.Extensions.Logging.LogDefineOptions)
+  commentId: M:Microsoft.Extensions.Logging.LoggerMessage.Define``3(Microsoft.Extensions.Logging.LogLevel,Microsoft.Extensions.Logging.EventId,System.String,Microsoft.Extensions.Logging.LogDefineOptions)
+  id: Define``3(Microsoft.Extensions.Logging.LogLevel,Microsoft.Extensions.Logging.EventId,System.String,Microsoft.Extensions.Logging.LogDefineOptions)
+  parent: Microsoft.Extensions.Logging.LoggerMessage
+  langs:
+  - csharp
+  - vb
+  name: Define<T1, T2, T3>(LogLevel, EventId, string, LogDefineOptions?)
+  nameWithType: LoggerMessage.Define<T1, T2, T3>(LogLevel, EventId, string, LogDefineOptions?)
+  fullName: Microsoft.Extensions.Logging.LoggerMessage.Define<T1, T2, T3>(Microsoft.Extensions.Logging.LogLevel, Microsoft.Extensions.Logging.EventId, string, Microsoft.Extensions.Logging.LogDefineOptions?)
+  type: Method
+  assemblies:
+  - Microsoft.Extensions.Logging.Abstractions
+  namespace: Microsoft.Extensions.Logging
+  summary: Creates a delegate which can be invoked for logging a message.
+  example: []
+  syntax:
+    content: public static Action<ILogger, T1, T2, T3, Exception?> Define<T1, T2, T3>(LogLevel logLevel, EventId eventId, string formatString, LogDefineOptions? options)
+    parameters:
+    - id: logLevel
+      type: Microsoft.Extensions.Logging.LogLevel
+      description: The <xref href="Microsoft.Extensions.Logging.LogLevel" data-throw-if-not-resolved="false"></xref>
+    - id: eventId
+      type: Microsoft.Extensions.Logging.EventId
+      description: The event id
+    - id: formatString
+      type: System.String
+      description: The named format string
+    - id: options
+      type: Microsoft.Extensions.Logging.LogDefineOptions
+      description: The <xref href="Microsoft.Extensions.Logging.LogDefineOptions" data-throw-if-not-resolved="false"></xref>
+    typeParameters:
+    - id: T1
+      description: The type of the first parameter passed to the named format string.
+    - id: T2
+      description: The type of the second parameter passed to the named format string.
+    - id: T3
+      description: The type of the third parameter passed to the named format string.
+    return:
+      type: System.Action{Microsoft.Extensions.Logging.ILogger,{T1},{T2},{T3},System.Exception}
+      description: A delegate which when invoked creates a log message.
+    content.vb: Public Shared Function Define(Of T1, T2, T3)(logLevel As LogLevel, eventId As EventId, formatString As String, options As LogDefineOptions) As Action(Of ILogger, T1, T2, T3, Exception)
+  overload: Microsoft.Extensions.Logging.LoggerMessage.Define*
+  nameWithType.vb: LoggerMessage.Define(Of T1, T2, T3)(LogLevel, EventId, String, LogDefineOptions)
+  fullName.vb: Microsoft.Extensions.Logging.LoggerMessage.Define(Of T1, T2, T3)(Microsoft.Extensions.Logging.LogLevel, Microsoft.Extensions.Logging.EventId, String, Microsoft.Extensions.Logging.LogDefineOptions)
+  name.vb: Define(Of T1, T2, T3)(LogLevel, EventId, String, LogDefineOptions)
+- uid: Microsoft.Extensions.Logging.LoggerMessage.Define``4(Microsoft.Extensions.Logging.LogLevel,Microsoft.Extensions.Logging.EventId,System.String)
+  commentId: M:Microsoft.Extensions.Logging.LoggerMessage.Define``4(Microsoft.Extensions.Logging.LogLevel,Microsoft.Extensions.Logging.EventId,System.String)
+  id: Define``4(Microsoft.Extensions.Logging.LogLevel,Microsoft.Extensions.Logging.EventId,System.String)
+  parent: Microsoft.Extensions.Logging.LoggerMessage
+  langs:
+  - csharp
+  - vb
+  name: Define<T1, T2, T3, T4>(LogLevel, EventId, string)
+  nameWithType: LoggerMessage.Define<T1, T2, T3, T4>(LogLevel, EventId, string)
+  fullName: Microsoft.Extensions.Logging.LoggerMessage.Define<T1, T2, T3, T4>(Microsoft.Extensions.Logging.LogLevel, Microsoft.Extensions.Logging.EventId, string)
+  type: Method
+  assemblies:
+  - Microsoft.Extensions.Logging.Abstractions
+  namespace: Microsoft.Extensions.Logging
+  summary: Creates a delegate which can be invoked for logging a message.
+  example: []
+  syntax:
+    content: public static Action<ILogger, T1, T2, T3, T4, Exception?> Define<T1, T2, T3, T4>(LogLevel logLevel, EventId eventId, string formatString)
+    parameters:
+    - id: logLevel
+      type: Microsoft.Extensions.Logging.LogLevel
+      description: The <xref href="Microsoft.Extensions.Logging.LogLevel" data-throw-if-not-resolved="false"></xref>
+    - id: eventId
+      type: Microsoft.Extensions.Logging.EventId
+      description: The event id
+    - id: formatString
+      type: System.String
+      description: The named format string
+    typeParameters:
+    - id: T1
+      description: The type of the first parameter passed to the named format string.
+    - id: T2
+      description: The type of the second parameter passed to the named format string.
+    - id: T3
+      description: The type of the third parameter passed to the named format string.
+    - id: T4
+      description: The type of the fourth parameter passed to the named format string.
+    return:
+      type: System.Action{Microsoft.Extensions.Logging.ILogger,{T1},{T2},{T3},{T4},System.Exception}
+      description: A delegate which when invoked creates a log message.
+    content.vb: Public Shared Function Define(Of T1, T2, T3, T4)(logLevel As LogLevel, eventId As EventId, formatString As String) As Action(Of ILogger, T1, T2, T3, T4, Exception)
+  overload: Microsoft.Extensions.Logging.LoggerMessage.Define*
+  nameWithType.vb: LoggerMessage.Define(Of T1, T2, T3, T4)(LogLevel, EventId, String)
+  fullName.vb: Microsoft.Extensions.Logging.LoggerMessage.Define(Of T1, T2, T3, T4)(Microsoft.Extensions.Logging.LogLevel, Microsoft.Extensions.Logging.EventId, String)
+  name.vb: Define(Of T1, T2, T3, T4)(LogLevel, EventId, String)
+- uid: Microsoft.Extensions.Logging.LoggerMessage.Define``4(Microsoft.Extensions.Logging.LogLevel,Microsoft.Extensions.Logging.EventId,System.String,Microsoft.Extensions.Logging.LogDefineOptions)
+  commentId: M:Microsoft.Extensions.Logging.LoggerMessage.Define``4(Microsoft.Extensions.Logging.LogLevel,Microsoft.Extensions.Logging.EventId,System.String,Microsoft.Extensions.Logging.LogDefineOptions)
+  id: Define``4(Microsoft.Extensions.Logging.LogLevel,Microsoft.Extensions.Logging.EventId,System.String,Microsoft.Extensions.Logging.LogDefineOptions)
+  parent: Microsoft.Extensions.Logging.LoggerMessage
+  langs:
+  - csharp
+  - vb
+  name: Define<T1, T2, T3, T4>(LogLevel, EventId, string, LogDefineOptions?)
+  nameWithType: LoggerMessage.Define<T1, T2, T3, T4>(LogLevel, EventId, string, LogDefineOptions?)
+  fullName: Microsoft.Extensions.Logging.LoggerMessage.Define<T1, T2, T3, T4>(Microsoft.Extensions.Logging.LogLevel, Microsoft.Extensions.Logging.EventId, string, Microsoft.Extensions.Logging.LogDefineOptions?)
+  type: Method
+  assemblies:
+  - Microsoft.Extensions.Logging.Abstractions
+  namespace: Microsoft.Extensions.Logging
+  summary: Creates a delegate which can be invoked for logging a message.
+  example: []
+  syntax:
+    content: public static Action<ILogger, T1, T2, T3, T4, Exception?> Define<T1, T2, T3, T4>(LogLevel logLevel, EventId eventId, string formatString, LogDefineOptions? options)
+    parameters:
+    - id: logLevel
+      type: Microsoft.Extensions.Logging.LogLevel
+      description: The <xref href="Microsoft.Extensions.Logging.LogLevel" data-throw-if-not-resolved="false"></xref>
+    - id: eventId
+      type: Microsoft.Extensions.Logging.EventId
+      description: The event id
+    - id: formatString
+      type: System.String
+      description: The named format string
+    - id: options
+      type: Microsoft.Extensions.Logging.LogDefineOptions
+      description: The <xref href="Microsoft.Extensions.Logging.LogDefineOptions" data-throw-if-not-resolved="false"></xref>
+    typeParameters:
+    - id: T1
+      description: The type of the first parameter passed to the named format string.
+    - id: T2
+      description: The type of the second parameter passed to the named format string.
+    - id: T3
+      description: The type of the third parameter passed to the named format string.
+    - id: T4
+      description: The type of the fourth parameter passed to the named format string.
+    return:
+      type: System.Action{Microsoft.Extensions.Logging.ILogger,{T1},{T2},{T3},{T4},System.Exception}
+      description: A delegate which when invoked creates a log message.
+    content.vb: Public Shared Function Define(Of T1, T2, T3, T4)(logLevel As LogLevel, eventId As EventId, formatString As String, options As LogDefineOptions) As Action(Of ILogger, T1, T2, T3, T4, Exception)
+  overload: Microsoft.Extensions.Logging.LoggerMessage.Define*
+  nameWithType.vb: LoggerMessage.Define(Of T1, T2, T3, T4)(LogLevel, EventId, String, LogDefineOptions)
+  fullName.vb: Microsoft.Extensions.Logging.LoggerMessage.Define(Of T1, T2, T3, T4)(Microsoft.Extensions.Logging.LogLevel, Microsoft.Extensions.Logging.EventId, String, Microsoft.Extensions.Logging.LogDefineOptions)
+  name.vb: Define(Of T1, T2, T3, T4)(LogLevel, EventId, String, LogDefineOptions)
+- uid: Microsoft.Extensions.Logging.LoggerMessage.Define``5(Microsoft.Extensions.Logging.LogLevel,Microsoft.Extensions.Logging.EventId,System.String)
+  commentId: M:Microsoft.Extensions.Logging.LoggerMessage.Define``5(Microsoft.Extensions.Logging.LogLevel,Microsoft.Extensions.Logging.EventId,System.String)
+  id: Define``5(Microsoft.Extensions.Logging.LogLevel,Microsoft.Extensions.Logging.EventId,System.String)
+  parent: Microsoft.Extensions.Logging.LoggerMessage
+  langs:
+  - csharp
+  - vb
+  name: Define<T1, T2, T3, T4, T5>(LogLevel, EventId, string)
+  nameWithType: LoggerMessage.Define<T1, T2, T3, T4, T5>(LogLevel, EventId, string)
+  fullName: Microsoft.Extensions.Logging.LoggerMessage.Define<T1, T2, T3, T4, T5>(Microsoft.Extensions.Logging.LogLevel, Microsoft.Extensions.Logging.EventId, string)
+  type: Method
+  assemblies:
+  - Microsoft.Extensions.Logging.Abstractions
+  namespace: Microsoft.Extensions.Logging
+  summary: Creates a delegate which can be invoked for logging a message.
+  example: []
+  syntax:
+    content: public static Action<ILogger, T1, T2, T3, T4, T5, Exception?> Define<T1, T2, T3, T4, T5>(LogLevel logLevel, EventId eventId, string formatString)
+    parameters:
+    - id: logLevel
+      type: Microsoft.Extensions.Logging.LogLevel
+      description: The <xref href="Microsoft.Extensions.Logging.LogLevel" data-throw-if-not-resolved="false"></xref>
+    - id: eventId
+      type: Microsoft.Extensions.Logging.EventId
+      description: The event id
+    - id: formatString
+      type: System.String
+      description: The named format string
+    typeParameters:
+    - id: T1
+      description: The type of the first parameter passed to the named format string.
+    - id: T2
+      description: The type of the second parameter passed to the named format string.
+    - id: T3
+      description: The type of the third parameter passed to the named format string.
+    - id: T4
+      description: The type of the fourth parameter passed to the named format string.
+    - id: T5
+      description: The type of the fifth parameter passed to the named format string.
+    return:
+      type: System.Action{Microsoft.Extensions.Logging.ILogger,{T1},{T2},{T3},{T4},{T5},System.Exception}
+      description: A delegate which when invoked creates a log message.
+    content.vb: Public Shared Function Define(Of T1, T2, T3, T4, T5)(logLevel As LogLevel, eventId As EventId, formatString As String) As Action(Of ILogger, T1, T2, T3, T4, T5, Exception)
+  overload: Microsoft.Extensions.Logging.LoggerMessage.Define*
+  nameWithType.vb: LoggerMessage.Define(Of T1, T2, T3, T4, T5)(LogLevel, EventId, String)
+  fullName.vb: Microsoft.Extensions.Logging.LoggerMessage.Define(Of T1, T2, T3, T4, T5)(Microsoft.Extensions.Logging.LogLevel, Microsoft.Extensions.Logging.EventId, String)
+  name.vb: Define(Of T1, T2, T3, T4, T5)(LogLevel, EventId, String)
+- uid: Microsoft.Extensions.Logging.LoggerMessage.Define``5(Microsoft.Extensions.Logging.LogLevel,Microsoft.Extensions.Logging.EventId,System.String,Microsoft.Extensions.Logging.LogDefineOptions)
+  commentId: M:Microsoft.Extensions.Logging.LoggerMessage.Define``5(Microsoft.Extensions.Logging.LogLevel,Microsoft.Extensions.Logging.EventId,System.String,Microsoft.Extensions.Logging.LogDefineOptions)
+  id: Define``5(Microsoft.Extensions.Logging.LogLevel,Microsoft.Extensions.Logging.EventId,System.String,Microsoft.Extensions.Logging.LogDefineOptions)
+  parent: Microsoft.Extensions.Logging.LoggerMessage
+  langs:
+  - csharp
+  - vb
+  name: Define<T1, T2, T3, T4, T5>(LogLevel, EventId, string, LogDefineOptions?)
+  nameWithType: LoggerMessage.Define<T1, T2, T3, T4, T5>(LogLevel, EventId, string, LogDefineOptions?)
+  fullName: Microsoft.Extensions.Logging.LoggerMessage.Define<T1, T2, T3, T4, T5>(Microsoft.Extensions.Logging.LogLevel, Microsoft.Extensions.Logging.EventId, string, Microsoft.Extensions.Logging.LogDefineOptions?)
+  type: Method
+  assemblies:
+  - Microsoft.Extensions.Logging.Abstractions
+  namespace: Microsoft.Extensions.Logging
+  summary: Creates a delegate which can be invoked for logging a message.
+  example: []
+  syntax:
+    content: public static Action<ILogger, T1, T2, T3, T4, T5, Exception?> Define<T1, T2, T3, T4, T5>(LogLevel logLevel, EventId eventId, string formatString, LogDefineOptions? options)
+    parameters:
+    - id: logLevel
+      type: Microsoft.Extensions.Logging.LogLevel
+      description: The <xref href="Microsoft.Extensions.Logging.LogLevel" data-throw-if-not-resolved="false"></xref>
+    - id: eventId
+      type: Microsoft.Extensions.Logging.EventId
+      description: The event id
+    - id: formatString
+      type: System.String
+      description: The named format string
+    - id: options
+      type: Microsoft.Extensions.Logging.LogDefineOptions
+      description: The <xref href="Microsoft.Extensions.Logging.LogDefineOptions" data-throw-if-not-resolved="false"></xref>
+    typeParameters:
+    - id: T1
+      description: The type of the first parameter passed to the named format string.
+    - id: T2
+      description: The type of the second parameter passed to the named format string.
+    - id: T3
+      description: The type of the third parameter passed to the named format string.
+    - id: T4
+      description: The type of the fourth parameter passed to the named format string.
+    - id: T5
+      description: The type of the fifth parameter passed to the named format string.
+    return:
+      type: System.Action{Microsoft.Extensions.Logging.ILogger,{T1},{T2},{T3},{T4},{T5},System.Exception}
+      description: A delegate which when invoked creates a log message.
+    content.vb: Public Shared Function Define(Of T1, T2, T3, T4, T5)(logLevel As LogLevel, eventId As EventId, formatString As String, options As LogDefineOptions) As Action(Of ILogger, T1, T2, T3, T4, T5, Exception)
+  overload: Microsoft.Extensions.Logging.LoggerMessage.Define*
+  nameWithType.vb: LoggerMessage.Define(Of T1, T2, T3, T4, T5)(LogLevel, EventId, String, LogDefineOptions)
+  fullName.vb: Microsoft.Extensions.Logging.LoggerMessage.Define(Of T1, T2, T3, T4, T5)(Microsoft.Extensions.Logging.LogLevel, Microsoft.Extensions.Logging.EventId, String, Microsoft.Extensions.Logging.LogDefineOptions)
+  name.vb: Define(Of T1, T2, T3, T4, T5)(LogLevel, EventId, String, LogDefineOptions)
+- uid: Microsoft.Extensions.Logging.LoggerMessage.Define``6(Microsoft.Extensions.Logging.LogLevel,Microsoft.Extensions.Logging.EventId,System.String)
+  commentId: M:Microsoft.Extensions.Logging.LoggerMessage.Define``6(Microsoft.Extensions.Logging.LogLevel,Microsoft.Extensions.Logging.EventId,System.String)
+  id: Define``6(Microsoft.Extensions.Logging.LogLevel,Microsoft.Extensions.Logging.EventId,System.String)
+  parent: Microsoft.Extensions.Logging.LoggerMessage
+  langs:
+  - csharp
+  - vb
+  name: Define<T1, T2, T3, T4, T5, T6>(LogLevel, EventId, string)
+  nameWithType: LoggerMessage.Define<T1, T2, T3, T4, T5, T6>(LogLevel, EventId, string)
+  fullName: Microsoft.Extensions.Logging.LoggerMessage.Define<T1, T2, T3, T4, T5, T6>(Microsoft.Extensions.Logging.LogLevel, Microsoft.Extensions.Logging.EventId, string)
+  type: Method
+  assemblies:
+  - Microsoft.Extensions.Logging.Abstractions
+  namespace: Microsoft.Extensions.Logging
+  summary: Creates a delegate which can be invoked for logging a message.
+  example: []
+  syntax:
+    content: public static Action<ILogger, T1, T2, T3, T4, T5, T6, Exception?> Define<T1, T2, T3, T4, T5, T6>(LogLevel logLevel, EventId eventId, string formatString)
+    parameters:
+    - id: logLevel
+      type: Microsoft.Extensions.Logging.LogLevel
+      description: The <xref href="Microsoft.Extensions.Logging.LogLevel" data-throw-if-not-resolved="false"></xref>
+    - id: eventId
+      type: Microsoft.Extensions.Logging.EventId
+      description: The event id
+    - id: formatString
+      type: System.String
+      description: The named format string
+    typeParameters:
+    - id: T1
+      description: The type of the first parameter passed to the named format string.
+    - id: T2
+      description: The type of the second parameter passed to the named format string.
+    - id: T3
+      description: The type of the third parameter passed to the named format string.
+    - id: T4
+      description: The type of the fourth parameter passed to the named format string.
+    - id: T5
+      description: The type of the fifth parameter passed to the named format string.
+    - id: T6
+      description: The type of the sixth parameter passed to the named format string.
+    return:
+      type: System.Action{Microsoft.Extensions.Logging.ILogger,{T1},{T2},{T3},{T4},{T5},{T6},System.Exception}
+      description: A delegate which when invoked creates a log message.
+    content.vb: Public Shared Function Define(Of T1, T2, T3, T4, T5, T6)(logLevel As LogLevel, eventId As EventId, formatString As String) As Action(Of ILogger, T1, T2, T3, T4, T5, T6, Exception)
+  overload: Microsoft.Extensions.Logging.LoggerMessage.Define*
+  nameWithType.vb: LoggerMessage.Define(Of T1, T2, T3, T4, T5, T6)(LogLevel, EventId, String)
+  fullName.vb: Microsoft.Extensions.Logging.LoggerMessage.Define(Of T1, T2, T3, T4, T5, T6)(Microsoft.Extensions.Logging.LogLevel, Microsoft.Extensions.Logging.EventId, String)
+  name.vb: Define(Of T1, T2, T3, T4, T5, T6)(LogLevel, EventId, String)
+- uid: Microsoft.Extensions.Logging.LoggerMessage.Define``6(Microsoft.Extensions.Logging.LogLevel,Microsoft.Extensions.Logging.EventId,System.String,Microsoft.Extensions.Logging.LogDefineOptions)
+  commentId: M:Microsoft.Extensions.Logging.LoggerMessage.Define``6(Microsoft.Extensions.Logging.LogLevel,Microsoft.Extensions.Logging.EventId,System.String,Microsoft.Extensions.Logging.LogDefineOptions)
+  id: Define``6(Microsoft.Extensions.Logging.LogLevel,Microsoft.Extensions.Logging.EventId,System.String,Microsoft.Extensions.Logging.LogDefineOptions)
+  parent: Microsoft.Extensions.Logging.LoggerMessage
+  langs:
+  - csharp
+  - vb
+  name: Define<T1, T2, T3, T4, T5, T6>(LogLevel, EventId, string, LogDefineOptions?)
+  nameWithType: LoggerMessage.Define<T1, T2, T3, T4, T5, T6>(LogLevel, EventId, string, LogDefineOptions?)
+  fullName: Microsoft.Extensions.Logging.LoggerMessage.Define<T1, T2, T3, T4, T5, T6>(Microsoft.Extensions.Logging.LogLevel, Microsoft.Extensions.Logging.EventId, string, Microsoft.Extensions.Logging.LogDefineOptions?)
+  type: Method
+  assemblies:
+  - Microsoft.Extensions.Logging.Abstractions
+  namespace: Microsoft.Extensions.Logging
+  summary: Creates a delegate which can be invoked for logging a message.
+  example: []
+  syntax:
+    content: public static Action<ILogger, T1, T2, T3, T4, T5, T6, Exception?> Define<T1, T2, T3, T4, T5, T6>(LogLevel logLevel, EventId eventId, string formatString, LogDefineOptions? options)
+    parameters:
+    - id: logLevel
+      type: Microsoft.Extensions.Logging.LogLevel
+      description: The <xref href="Microsoft.Extensions.Logging.LogLevel" data-throw-if-not-resolved="false"></xref>
+    - id: eventId
+      type: Microsoft.Extensions.Logging.EventId
+      description: The event id
+    - id: formatString
+      type: System.String
+      description: The named format string
+    - id: options
+      type: Microsoft.Extensions.Logging.LogDefineOptions
+      description: The <xref href="Microsoft.Extensions.Logging.LogDefineOptions" data-throw-if-not-resolved="false"></xref>
+    typeParameters:
+    - id: T1
+      description: The type of the first parameter passed to the named format string.
+    - id: T2
+      description: The type of the second parameter passed to the named format string.
+    - id: T3
+      description: The type of the third parameter passed to the named format string.
+    - id: T4
+      description: The type of the fourth parameter passed to the named format string.
+    - id: T5
+      description: The type of the fifth parameter passed to the named format string.
+    - id: T6
+      description: The type of the sixth parameter passed to the named format string.
+    return:
+      type: System.Action{Microsoft.Extensions.Logging.ILogger,{T1},{T2},{T3},{T4},{T5},{T6},System.Exception}
+      description: A delegate which when invoked creates a log message.
+    content.vb: Public Shared Function Define(Of T1, T2, T3, T4, T5, T6)(logLevel As LogLevel, eventId As EventId, formatString As String, options As LogDefineOptions) As Action(Of ILogger, T1, T2, T3, T4, T5, T6, Exception)
+  overload: Microsoft.Extensions.Logging.LoggerMessage.Define*
+  nameWithType.vb: LoggerMessage.Define(Of T1, T2, T3, T4, T5, T6)(LogLevel, EventId, String, LogDefineOptions)
+  fullName.vb: Microsoft.Extensions.Logging.LoggerMessage.Define(Of T1, T2, T3, T4, T5, T6)(Microsoft.Extensions.Logging.LogLevel, Microsoft.Extensions.Logging.EventId, String, Microsoft.Extensions.Logging.LogDefineOptions)
+  name.vb: Define(Of T1, T2, T3, T4, T5, T6)(LogLevel, EventId, String, LogDefineOptions)
+references:
+- uid: Microsoft.Extensions.Logging
+  commentId: N:Microsoft.Extensions.Logging
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft
+  name: Microsoft.Extensions.Logging
+  nameWithType: Microsoft.Extensions.Logging
+  fullName: Microsoft.Extensions.Logging
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.Extensions
+    name: Extensions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions
+  - name: .
+  - uid: Microsoft.Extensions.Logging
+    name: Logging
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.Extensions
+    name: Extensions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions
+  - name: .
+  - uid: Microsoft.Extensions.Logging
+    name: Logging
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Microsoft.Extensions.Logging.LoggerMessage.DefineScope*
+  commentId: Overload:Microsoft.Extensions.Logging.LoggerMessage.DefineScope
+  isExternal: true
+  href: Microsoft.Extensions.Logging.LoggerMessage.html#Microsoft_Extensions_Logging_LoggerMessage_DefineScope_System_String_
+  name: DefineScope
+  nameWithType: LoggerMessage.DefineScope
+  fullName: Microsoft.Extensions.Logging.LoggerMessage.DefineScope
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Func{Microsoft.Extensions.Logging.ILogger,System.IDisposable}
+  commentId: T:System.Func{Microsoft.Extensions.Logging.ILogger,System.IDisposable}
+  parent: System
+  definition: System.Func`2
+  href: https://learn.microsoft.com/dotnet/api/system.func-2
+  name: Func<ILogger, IDisposable>
+  nameWithType: Func<ILogger, IDisposable>
+  fullName: System.Func<Microsoft.Extensions.Logging.ILogger, System.IDisposable>
+  nameWithType.vb: Func(Of ILogger, IDisposable)
+  fullName.vb: System.Func(Of Microsoft.Extensions.Logging.ILogger, System.IDisposable)
+  name.vb: Func(Of ILogger, IDisposable)
+  spec.csharp:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - uid: Microsoft.Extensions.Logging.ILogger
+    name: ILogger
+    isExternal: true
+    href: Microsoft.Extensions.Logging.ILogger.html
+  - name: ','
+  - name: " "
+  - uid: System.IDisposable
+    name: IDisposable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Microsoft.Extensions.Logging.ILogger
+    name: ILogger
+    isExternal: true
+    href: Microsoft.Extensions.Logging.ILogger.html
+  - name: ','
+  - name: " "
+  - uid: System.IDisposable
+    name: IDisposable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable
+  - name: )
+- uid: System.Func`2
+  commentId: T:System.Func`2
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.func-2
+  name: Func<T, TResult>
+  nameWithType: Func<T, TResult>
+  fullName: System.Func<T, TResult>
+  nameWithType.vb: Func(Of T, TResult)
+  fullName.vb: System.Func(Of T, TResult)
+  name.vb: Func(Of T, TResult)
+  spec.csharp:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Func{Microsoft.Extensions.Logging.ILogger,{T1},System.IDisposable}
+  commentId: T:System.Func{Microsoft.Extensions.Logging.ILogger,``0,System.IDisposable}
+  parent: System
+  definition: System.Func`3
+  href: https://learn.microsoft.com/dotnet/api/system.func-3
+  name: Func<ILogger, T1, IDisposable>
+  nameWithType: Func<ILogger, T1, IDisposable>
+  fullName: System.Func<Microsoft.Extensions.Logging.ILogger, T1, System.IDisposable>
+  nameWithType.vb: Func(Of ILogger, T1, IDisposable)
+  fullName.vb: System.Func(Of Microsoft.Extensions.Logging.ILogger, T1, System.IDisposable)
+  name.vb: Func(Of ILogger, T1, IDisposable)
+  spec.csharp:
+  - uid: System.Func`3
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-3
+  - name: <
+  - uid: Microsoft.Extensions.Logging.ILogger
+    name: ILogger
+    isExternal: true
+    href: Microsoft.Extensions.Logging.ILogger.html
+  - name: ','
+  - name: " "
+  - name: T1
+  - name: ','
+  - name: " "
+  - uid: System.IDisposable
+    name: IDisposable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`3
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-3
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Microsoft.Extensions.Logging.ILogger
+    name: ILogger
+    isExternal: true
+    href: Microsoft.Extensions.Logging.ILogger.html
+  - name: ','
+  - name: " "
+  - name: T1
+  - name: ','
+  - name: " "
+  - uid: System.IDisposable
+    name: IDisposable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable
+  - name: )
+- uid: System.Func`3
+  commentId: T:System.Func`3
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.func-3
+  name: Func<T1, T2, TResult>
+  nameWithType: Func<T1, T2, TResult>
+  fullName: System.Func<T1, T2, TResult>
+  nameWithType.vb: Func(Of T1, T2, TResult)
+  fullName.vb: System.Func(Of T1, T2, TResult)
+  name.vb: Func(Of T1, T2, TResult)
+  spec.csharp:
+  - uid: System.Func`3
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-3
+  - name: <
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`3
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-3
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Func{Microsoft.Extensions.Logging.ILogger,{T1},{T2},System.IDisposable}
+  commentId: T:System.Func{Microsoft.Extensions.Logging.ILogger,``0,``1,System.IDisposable}
+  parent: System
+  definition: System.Func`4
+  href: https://learn.microsoft.com/dotnet/api/system.func-4
+  name: Func<ILogger, T1, T2, IDisposable>
+  nameWithType: Func<ILogger, T1, T2, IDisposable>
+  fullName: System.Func<Microsoft.Extensions.Logging.ILogger, T1, T2, System.IDisposable>
+  nameWithType.vb: Func(Of ILogger, T1, T2, IDisposable)
+  fullName.vb: System.Func(Of Microsoft.Extensions.Logging.ILogger, T1, T2, System.IDisposable)
+  name.vb: Func(Of ILogger, T1, T2, IDisposable)
+  spec.csharp:
+  - uid: System.Func`4
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-4
+  - name: <
+  - uid: Microsoft.Extensions.Logging.ILogger
+    name: ILogger
+    isExternal: true
+    href: Microsoft.Extensions.Logging.ILogger.html
+  - name: ','
+  - name: " "
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: ','
+  - name: " "
+  - uid: System.IDisposable
+    name: IDisposable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`4
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-4
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Microsoft.Extensions.Logging.ILogger
+    name: ILogger
+    isExternal: true
+    href: Microsoft.Extensions.Logging.ILogger.html
+  - name: ','
+  - name: " "
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: ','
+  - name: " "
+  - uid: System.IDisposable
+    name: IDisposable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable
+  - name: )
+- uid: System.Func`4
+  commentId: T:System.Func`4
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.func-4
+  name: Func<T1, T2, T3, TResult>
+  nameWithType: Func<T1, T2, T3, TResult>
+  fullName: System.Func<T1, T2, T3, TResult>
+  nameWithType.vb: Func(Of T1, T2, T3, TResult)
+  fullName.vb: System.Func(Of T1, T2, T3, TResult)
+  name.vb: Func(Of T1, T2, T3, TResult)
+  spec.csharp:
+  - uid: System.Func`4
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-4
+  - name: <
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: ','
+  - name: " "
+  - name: T3
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`4
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-4
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: ','
+  - name: " "
+  - name: T3
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Func{Microsoft.Extensions.Logging.ILogger,{T1},{T2},{T3},System.IDisposable}
+  commentId: T:System.Func{Microsoft.Extensions.Logging.ILogger,``0,``1,``2,System.IDisposable}
+  parent: System
+  definition: System.Func`5
+  href: https://learn.microsoft.com/dotnet/api/system.func-5
+  name: Func<ILogger, T1, T2, T3, IDisposable>
+  nameWithType: Func<ILogger, T1, T2, T3, IDisposable>
+  fullName: System.Func<Microsoft.Extensions.Logging.ILogger, T1, T2, T3, System.IDisposable>
+  nameWithType.vb: Func(Of ILogger, T1, T2, T3, IDisposable)
+  fullName.vb: System.Func(Of Microsoft.Extensions.Logging.ILogger, T1, T2, T3, System.IDisposable)
+  name.vb: Func(Of ILogger, T1, T2, T3, IDisposable)
+  spec.csharp:
+  - uid: System.Func`5
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-5
+  - name: <
+  - uid: Microsoft.Extensions.Logging.ILogger
+    name: ILogger
+    isExternal: true
+    href: Microsoft.Extensions.Logging.ILogger.html
+  - name: ','
+  - name: " "
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: ','
+  - name: " "
+  - name: T3
+  - name: ','
+  - name: " "
+  - uid: System.IDisposable
+    name: IDisposable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`5
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-5
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Microsoft.Extensions.Logging.ILogger
+    name: ILogger
+    isExternal: true
+    href: Microsoft.Extensions.Logging.ILogger.html
+  - name: ','
+  - name: " "
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: ','
+  - name: " "
+  - name: T3
+  - name: ','
+  - name: " "
+  - uid: System.IDisposable
+    name: IDisposable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable
+  - name: )
+- uid: System.Func`5
+  commentId: T:System.Func`5
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.func-5
+  name: Func<T1, T2, T3, T4, TResult>
+  nameWithType: Func<T1, T2, T3, T4, TResult>
+  fullName: System.Func<T1, T2, T3, T4, TResult>
+  nameWithType.vb: Func(Of T1, T2, T3, T4, TResult)
+  fullName.vb: System.Func(Of T1, T2, T3, T4, TResult)
+  name.vb: Func(Of T1, T2, T3, T4, TResult)
+  spec.csharp:
+  - uid: System.Func`5
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-5
+  - name: <
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: ','
+  - name: " "
+  - name: T3
+  - name: ','
+  - name: " "
+  - name: T4
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`5
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-5
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: ','
+  - name: " "
+  - name: T3
+  - name: ','
+  - name: " "
+  - name: T4
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Func{Microsoft.Extensions.Logging.ILogger,{T1},{T2},{T3},{T4},System.IDisposable}
+  commentId: T:System.Func{Microsoft.Extensions.Logging.ILogger,``0,``1,``2,``3,System.IDisposable}
+  parent: System
+  definition: System.Func`6
+  href: https://learn.microsoft.com/dotnet/api/system.func-6
+  name: Func<ILogger, T1, T2, T3, T4, IDisposable>
+  nameWithType: Func<ILogger, T1, T2, T3, T4, IDisposable>
+  fullName: System.Func<Microsoft.Extensions.Logging.ILogger, T1, T2, T3, T4, System.IDisposable>
+  nameWithType.vb: Func(Of ILogger, T1, T2, T3, T4, IDisposable)
+  fullName.vb: System.Func(Of Microsoft.Extensions.Logging.ILogger, T1, T2, T3, T4, System.IDisposable)
+  name.vb: Func(Of ILogger, T1, T2, T3, T4, IDisposable)
+  spec.csharp:
+  - uid: System.Func`6
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-6
+  - name: <
+  - uid: Microsoft.Extensions.Logging.ILogger
+    name: ILogger
+    isExternal: true
+    href: Microsoft.Extensions.Logging.ILogger.html
+  - name: ','
+  - name: " "
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: ','
+  - name: " "
+  - name: T3
+  - name: ','
+  - name: " "
+  - name: T4
+  - name: ','
+  - name: " "
+  - uid: System.IDisposable
+    name: IDisposable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`6
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-6
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Microsoft.Extensions.Logging.ILogger
+    name: ILogger
+    isExternal: true
+    href: Microsoft.Extensions.Logging.ILogger.html
+  - name: ','
+  - name: " "
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: ','
+  - name: " "
+  - name: T3
+  - name: ','
+  - name: " "
+  - name: T4
+  - name: ','
+  - name: " "
+  - uid: System.IDisposable
+    name: IDisposable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable
+  - name: )
+- uid: System.Func`6
+  commentId: T:System.Func`6
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.func-6
+  name: Func<T1, T2, T3, T4, T5, TResult>
+  nameWithType: Func<T1, T2, T3, T4, T5, TResult>
+  fullName: System.Func<T1, T2, T3, T4, T5, TResult>
+  nameWithType.vb: Func(Of T1, T2, T3, T4, T5, TResult)
+  fullName.vb: System.Func(Of T1, T2, T3, T4, T5, TResult)
+  name.vb: Func(Of T1, T2, T3, T4, T5, TResult)
+  spec.csharp:
+  - uid: System.Func`6
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-6
+  - name: <
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: ','
+  - name: " "
+  - name: T3
+  - name: ','
+  - name: " "
+  - name: T4
+  - name: ','
+  - name: " "
+  - name: T5
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`6
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-6
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: ','
+  - name: " "
+  - name: T3
+  - name: ','
+  - name: " "
+  - name: T4
+  - name: ','
+  - name: " "
+  - name: T5
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Func{Microsoft.Extensions.Logging.ILogger,{T1},{T2},{T3},{T4},{T5},System.IDisposable}
+  commentId: T:System.Func{Microsoft.Extensions.Logging.ILogger,``0,``1,``2,``3,``4,System.IDisposable}
+  parent: System
+  definition: System.Func`7
+  href: https://learn.microsoft.com/dotnet/api/system.func-7
+  name: Func<ILogger, T1, T2, T3, T4, T5, IDisposable>
+  nameWithType: Func<ILogger, T1, T2, T3, T4, T5, IDisposable>
+  fullName: System.Func<Microsoft.Extensions.Logging.ILogger, T1, T2, T3, T4, T5, System.IDisposable>
+  nameWithType.vb: Func(Of ILogger, T1, T2, T3, T4, T5, IDisposable)
+  fullName.vb: System.Func(Of Microsoft.Extensions.Logging.ILogger, T1, T2, T3, T4, T5, System.IDisposable)
+  name.vb: Func(Of ILogger, T1, T2, T3, T4, T5, IDisposable)
+  spec.csharp:
+  - uid: System.Func`7
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-7
+  - name: <
+  - uid: Microsoft.Extensions.Logging.ILogger
+    name: ILogger
+    isExternal: true
+    href: Microsoft.Extensions.Logging.ILogger.html
+  - name: ','
+  - name: " "
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: ','
+  - name: " "
+  - name: T3
+  - name: ','
+  - name: " "
+  - name: T4
+  - name: ','
+  - name: " "
+  - name: T5
+  - name: ','
+  - name: " "
+  - uid: System.IDisposable
+    name: IDisposable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`7
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-7
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Microsoft.Extensions.Logging.ILogger
+    name: ILogger
+    isExternal: true
+    href: Microsoft.Extensions.Logging.ILogger.html
+  - name: ','
+  - name: " "
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: ','
+  - name: " "
+  - name: T3
+  - name: ','
+  - name: " "
+  - name: T4
+  - name: ','
+  - name: " "
+  - name: T5
+  - name: ','
+  - name: " "
+  - uid: System.IDisposable
+    name: IDisposable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable
+  - name: )
+- uid: System.Func`7
+  commentId: T:System.Func`7
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.func-7
+  name: Func<T1, T2, T3, T4, T5, T6, TResult>
+  nameWithType: Func<T1, T2, T3, T4, T5, T6, TResult>
+  fullName: System.Func<T1, T2, T3, T4, T5, T6, TResult>
+  nameWithType.vb: Func(Of T1, T2, T3, T4, T5, T6, TResult)
+  fullName.vb: System.Func(Of T1, T2, T3, T4, T5, T6, TResult)
+  name.vb: Func(Of T1, T2, T3, T4, T5, T6, TResult)
+  spec.csharp:
+  - uid: System.Func`7
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-7
+  - name: <
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: ','
+  - name: " "
+  - name: T3
+  - name: ','
+  - name: " "
+  - name: T4
+  - name: ','
+  - name: " "
+  - name: T5
+  - name: ','
+  - name: " "
+  - name: T6
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`7
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-7
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: ','
+  - name: " "
+  - name: T3
+  - name: ','
+  - name: " "
+  - name: T4
+  - name: ','
+  - name: " "
+  - name: T5
+  - name: ','
+  - name: " "
+  - name: T6
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Func{Microsoft.Extensions.Logging.ILogger,{T1},{T2},{T3},{T4},{T5},{T6},System.IDisposable}
+  commentId: T:System.Func{Microsoft.Extensions.Logging.ILogger,``0,``1,``2,``3,``4,``5,System.IDisposable}
+  parent: System
+  definition: System.Func`8
+  href: https://learn.microsoft.com/dotnet/api/system.func-8
+  name: Func<ILogger, T1, T2, T3, T4, T5, T6, IDisposable>
+  nameWithType: Func<ILogger, T1, T2, T3, T4, T5, T6, IDisposable>
+  fullName: System.Func<Microsoft.Extensions.Logging.ILogger, T1, T2, T3, T4, T5, T6, System.IDisposable>
+  nameWithType.vb: Func(Of ILogger, T1, T2, T3, T4, T5, T6, IDisposable)
+  fullName.vb: System.Func(Of Microsoft.Extensions.Logging.ILogger, T1, T2, T3, T4, T5, T6, System.IDisposable)
+  name.vb: Func(Of ILogger, T1, T2, T3, T4, T5, T6, IDisposable)
+  spec.csharp:
+  - uid: System.Func`8
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-8
+  - name: <
+  - uid: Microsoft.Extensions.Logging.ILogger
+    name: ILogger
+    isExternal: true
+    href: Microsoft.Extensions.Logging.ILogger.html
+  - name: ','
+  - name: " "
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: ','
+  - name: " "
+  - name: T3
+  - name: ','
+  - name: " "
+  - name: T4
+  - name: ','
+  - name: " "
+  - name: T5
+  - name: ','
+  - name: " "
+  - name: T6
+  - name: ','
+  - name: " "
+  - uid: System.IDisposable
+    name: IDisposable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`8
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-8
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Microsoft.Extensions.Logging.ILogger
+    name: ILogger
+    isExternal: true
+    href: Microsoft.Extensions.Logging.ILogger.html
+  - name: ','
+  - name: " "
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: ','
+  - name: " "
+  - name: T3
+  - name: ','
+  - name: " "
+  - name: T4
+  - name: ','
+  - name: " "
+  - name: T5
+  - name: ','
+  - name: " "
+  - name: T6
+  - name: ','
+  - name: " "
+  - uid: System.IDisposable
+    name: IDisposable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable
+  - name: )
+- uid: System.Func`8
+  commentId: T:System.Func`8
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.func-8
+  name: Func<T1, T2, T3, T4, T5, T6, T7, TResult>
+  nameWithType: Func<T1, T2, T3, T4, T5, T6, T7, TResult>
+  fullName: System.Func<T1, T2, T3, T4, T5, T6, T7, TResult>
+  nameWithType.vb: Func(Of T1, T2, T3, T4, T5, T6, T7, TResult)
+  fullName.vb: System.Func(Of T1, T2, T3, T4, T5, T6, T7, TResult)
+  name.vb: Func(Of T1, T2, T3, T4, T5, T6, T7, TResult)
+  spec.csharp:
+  - uid: System.Func`8
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-8
+  - name: <
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: ','
+  - name: " "
+  - name: T3
+  - name: ','
+  - name: " "
+  - name: T4
+  - name: ','
+  - name: " "
+  - name: T5
+  - name: ','
+  - name: " "
+  - name: T6
+  - name: ','
+  - name: " "
+  - name: T7
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`8
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-8
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: ','
+  - name: " "
+  - name: T3
+  - name: ','
+  - name: " "
+  - name: T4
+  - name: ','
+  - name: " "
+  - name: T5
+  - name: ','
+  - name: " "
+  - name: T6
+  - name: ','
+  - name: " "
+  - name: T7
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: Microsoft.Extensions.Logging.LogLevel
+  commentId: T:Microsoft.Extensions.Logging.LogLevel
+  parent: Microsoft.Extensions.Logging
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.loglevel
+  name: LogLevel
+  nameWithType: LogLevel
+  fullName: Microsoft.Extensions.Logging.LogLevel
+- uid: Microsoft.Extensions.Logging.LoggerMessage.Define*
+  commentId: Overload:Microsoft.Extensions.Logging.LoggerMessage.Define
+  isExternal: true
+  href: Microsoft.Extensions.Logging.LoggerMessage.html#Microsoft_Extensions_Logging_LoggerMessage_Define_Microsoft_Extensions_Logging_LogLevel_Microsoft_Extensions_Logging_EventId_System_String_
+  name: Define
+  nameWithType: LoggerMessage.Define
+  fullName: Microsoft.Extensions.Logging.LoggerMessage.Define
+- uid: Microsoft.Extensions.Logging.EventId
+  commentId: T:Microsoft.Extensions.Logging.EventId
+  parent: Microsoft.Extensions.Logging
+  isExternal: true
+  href: Microsoft.Extensions.Logging.EventId.html
+  name: EventId
+  nameWithType: EventId
+  fullName: Microsoft.Extensions.Logging.EventId
+- uid: System.Action{Microsoft.Extensions.Logging.ILogger,System.Exception}
+  commentId: T:System.Action{Microsoft.Extensions.Logging.ILogger,System.Exception}
+  parent: System
+  definition: System.Action`2
+  href: https://learn.microsoft.com/dotnet/api/system.action-2
+  name: Action<ILogger, Exception>
+  nameWithType: Action<ILogger, Exception>
+  fullName: System.Action<Microsoft.Extensions.Logging.ILogger, System.Exception>
+  nameWithType.vb: Action(Of ILogger, Exception)
+  fullName.vb: System.Action(Of Microsoft.Extensions.Logging.ILogger, System.Exception)
+  name.vb: Action(Of ILogger, Exception)
+  spec.csharp:
+  - uid: System.Action`2
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-2
+  - name: <
+  - uid: Microsoft.Extensions.Logging.ILogger
+    name: ILogger
+    isExternal: true
+    href: Microsoft.Extensions.Logging.ILogger.html
+  - name: ','
+  - name: " "
+  - uid: System.Exception
+    name: Exception
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.exception
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`2
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Microsoft.Extensions.Logging.ILogger
+    name: ILogger
+    isExternal: true
+    href: Microsoft.Extensions.Logging.ILogger.html
+  - name: ','
+  - name: " "
+  - uid: System.Exception
+    name: Exception
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.exception
+  - name: )
+- uid: System.Action`2
+  commentId: T:System.Action`2
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.action-2
+  name: Action<T1, T2>
+  nameWithType: Action<T1, T2>
+  fullName: System.Action<T1, T2>
+  nameWithType.vb: Action(Of T1, T2)
+  fullName.vb: System.Action(Of T1, T2)
+  name.vb: Action(Of T1, T2)
+  spec.csharp:
+  - uid: System.Action`2
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-2
+  - name: <
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`2
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: )
+- uid: Microsoft.Extensions.Logging.LogDefineOptions
+  commentId: T:Microsoft.Extensions.Logging.LogDefineOptions
+  parent: Microsoft.Extensions.Logging
+  isExternal: true
+  href: Microsoft.Extensions.Logging.LogDefineOptions.html
+  name: LogDefineOptions
+  nameWithType: LogDefineOptions
+  fullName: Microsoft.Extensions.Logging.LogDefineOptions
+- uid: System.Action{Microsoft.Extensions.Logging.ILogger,{T1},System.Exception}
+  commentId: T:System.Action{Microsoft.Extensions.Logging.ILogger,``0,System.Exception}
+  parent: System
+  definition: System.Action`3
+  href: https://learn.microsoft.com/dotnet/api/system.action-3
+  name: Action<ILogger, T1, Exception>
+  nameWithType: Action<ILogger, T1, Exception>
+  fullName: System.Action<Microsoft.Extensions.Logging.ILogger, T1, System.Exception>
+  nameWithType.vb: Action(Of ILogger, T1, Exception)
+  fullName.vb: System.Action(Of Microsoft.Extensions.Logging.ILogger, T1, System.Exception)
+  name.vb: Action(Of ILogger, T1, Exception)
+  spec.csharp:
+  - uid: System.Action`3
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-3
+  - name: <
+  - uid: Microsoft.Extensions.Logging.ILogger
+    name: ILogger
+    isExternal: true
+    href: Microsoft.Extensions.Logging.ILogger.html
+  - name: ','
+  - name: " "
+  - name: T1
+  - name: ','
+  - name: " "
+  - uid: System.Exception
+    name: Exception
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.exception
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`3
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-3
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Microsoft.Extensions.Logging.ILogger
+    name: ILogger
+    isExternal: true
+    href: Microsoft.Extensions.Logging.ILogger.html
+  - name: ','
+  - name: " "
+  - name: T1
+  - name: ','
+  - name: " "
+  - uid: System.Exception
+    name: Exception
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.exception
+  - name: )
+- uid: System.Action`3
+  commentId: T:System.Action`3
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.action-3
+  name: Action<T1, T2, T3>
+  nameWithType: Action<T1, T2, T3>
+  fullName: System.Action<T1, T2, T3>
+  nameWithType.vb: Action(Of T1, T2, T3)
+  fullName.vb: System.Action(Of T1, T2, T3)
+  name.vb: Action(Of T1, T2, T3)
+  spec.csharp:
+  - uid: System.Action`3
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-3
+  - name: <
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: ','
+  - name: " "
+  - name: T3
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`3
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-3
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: ','
+  - name: " "
+  - name: T3
+  - name: )
+- uid: System.Action{Microsoft.Extensions.Logging.ILogger,{T1},{T2},System.Exception}
+  commentId: T:System.Action{Microsoft.Extensions.Logging.ILogger,``0,``1,System.Exception}
+  parent: System
+  definition: System.Action`4
+  href: https://learn.microsoft.com/dotnet/api/system.action-4
+  name: Action<ILogger, T1, T2, Exception>
+  nameWithType: Action<ILogger, T1, T2, Exception>
+  fullName: System.Action<Microsoft.Extensions.Logging.ILogger, T1, T2, System.Exception>
+  nameWithType.vb: Action(Of ILogger, T1, T2, Exception)
+  fullName.vb: System.Action(Of Microsoft.Extensions.Logging.ILogger, T1, T2, System.Exception)
+  name.vb: Action(Of ILogger, T1, T2, Exception)
+  spec.csharp:
+  - uid: System.Action`4
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-4
+  - name: <
+  - uid: Microsoft.Extensions.Logging.ILogger
+    name: ILogger
+    isExternal: true
+    href: Microsoft.Extensions.Logging.ILogger.html
+  - name: ','
+  - name: " "
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: ','
+  - name: " "
+  - uid: System.Exception
+    name: Exception
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.exception
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`4
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-4
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Microsoft.Extensions.Logging.ILogger
+    name: ILogger
+    isExternal: true
+    href: Microsoft.Extensions.Logging.ILogger.html
+  - name: ','
+  - name: " "
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: ','
+  - name: " "
+  - uid: System.Exception
+    name: Exception
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.exception
+  - name: )
+- uid: System.Action`4
+  commentId: T:System.Action`4
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.action-4
+  name: Action<T1, T2, T3, T4>
+  nameWithType: Action<T1, T2, T3, T4>
+  fullName: System.Action<T1, T2, T3, T4>
+  nameWithType.vb: Action(Of T1, T2, T3, T4)
+  fullName.vb: System.Action(Of T1, T2, T3, T4)
+  name.vb: Action(Of T1, T2, T3, T4)
+  spec.csharp:
+  - uid: System.Action`4
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-4
+  - name: <
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: ','
+  - name: " "
+  - name: T3
+  - name: ','
+  - name: " "
+  - name: T4
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`4
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-4
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: ','
+  - name: " "
+  - name: T3
+  - name: ','
+  - name: " "
+  - name: T4
+  - name: )
+- uid: System.Action{Microsoft.Extensions.Logging.ILogger,{T1},{T2},{T3},System.Exception}
+  commentId: T:System.Action{Microsoft.Extensions.Logging.ILogger,``0,``1,``2,System.Exception}
+  parent: System
+  definition: System.Action`5
+  href: https://learn.microsoft.com/dotnet/api/system.action-5
+  name: Action<ILogger, T1, T2, T3, Exception>
+  nameWithType: Action<ILogger, T1, T2, T3, Exception>
+  fullName: System.Action<Microsoft.Extensions.Logging.ILogger, T1, T2, T3, System.Exception>
+  nameWithType.vb: Action(Of ILogger, T1, T2, T3, Exception)
+  fullName.vb: System.Action(Of Microsoft.Extensions.Logging.ILogger, T1, T2, T3, System.Exception)
+  name.vb: Action(Of ILogger, T1, T2, T3, Exception)
+  spec.csharp:
+  - uid: System.Action`5
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-5
+  - name: <
+  - uid: Microsoft.Extensions.Logging.ILogger
+    name: ILogger
+    isExternal: true
+    href: Microsoft.Extensions.Logging.ILogger.html
+  - name: ','
+  - name: " "
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: ','
+  - name: " "
+  - name: T3
+  - name: ','
+  - name: " "
+  - uid: System.Exception
+    name: Exception
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.exception
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`5
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-5
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Microsoft.Extensions.Logging.ILogger
+    name: ILogger
+    isExternal: true
+    href: Microsoft.Extensions.Logging.ILogger.html
+  - name: ','
+  - name: " "
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: ','
+  - name: " "
+  - name: T3
+  - name: ','
+  - name: " "
+  - uid: System.Exception
+    name: Exception
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.exception
+  - name: )
+- uid: System.Action`5
+  commentId: T:System.Action`5
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.action-5
+  name: Action<T1, T2, T3, T4, T5>
+  nameWithType: Action<T1, T2, T3, T4, T5>
+  fullName: System.Action<T1, T2, T3, T4, T5>
+  nameWithType.vb: Action(Of T1, T2, T3, T4, T5)
+  fullName.vb: System.Action(Of T1, T2, T3, T4, T5)
+  name.vb: Action(Of T1, T2, T3, T4, T5)
+  spec.csharp:
+  - uid: System.Action`5
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-5
+  - name: <
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: ','
+  - name: " "
+  - name: T3
+  - name: ','
+  - name: " "
+  - name: T4
+  - name: ','
+  - name: " "
+  - name: T5
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`5
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-5
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: ','
+  - name: " "
+  - name: T3
+  - name: ','
+  - name: " "
+  - name: T4
+  - name: ','
+  - name: " "
+  - name: T5
+  - name: )
+- uid: System.Action{Microsoft.Extensions.Logging.ILogger,{T1},{T2},{T3},{T4},System.Exception}
+  commentId: T:System.Action{Microsoft.Extensions.Logging.ILogger,``0,``1,``2,``3,System.Exception}
+  parent: System
+  definition: System.Action`6
+  href: https://learn.microsoft.com/dotnet/api/system.action-6
+  name: Action<ILogger, T1, T2, T3, T4, Exception>
+  nameWithType: Action<ILogger, T1, T2, T3, T4, Exception>
+  fullName: System.Action<Microsoft.Extensions.Logging.ILogger, T1, T2, T3, T4, System.Exception>
+  nameWithType.vb: Action(Of ILogger, T1, T2, T3, T4, Exception)
+  fullName.vb: System.Action(Of Microsoft.Extensions.Logging.ILogger, T1, T2, T3, T4, System.Exception)
+  name.vb: Action(Of ILogger, T1, T2, T3, T4, Exception)
+  spec.csharp:
+  - uid: System.Action`6
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-6
+  - name: <
+  - uid: Microsoft.Extensions.Logging.ILogger
+    name: ILogger
+    isExternal: true
+    href: Microsoft.Extensions.Logging.ILogger.html
+  - name: ','
+  - name: " "
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: ','
+  - name: " "
+  - name: T3
+  - name: ','
+  - name: " "
+  - name: T4
+  - name: ','
+  - name: " "
+  - uid: System.Exception
+    name: Exception
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.exception
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`6
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-6
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Microsoft.Extensions.Logging.ILogger
+    name: ILogger
+    isExternal: true
+    href: Microsoft.Extensions.Logging.ILogger.html
+  - name: ','
+  - name: " "
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: ','
+  - name: " "
+  - name: T3
+  - name: ','
+  - name: " "
+  - name: T4
+  - name: ','
+  - name: " "
+  - uid: System.Exception
+    name: Exception
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.exception
+  - name: )
+- uid: System.Action`6
+  commentId: T:System.Action`6
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.action-6
+  name: Action<T1, T2, T3, T4, T5, T6>
+  nameWithType: Action<T1, T2, T3, T4, T5, T6>
+  fullName: System.Action<T1, T2, T3, T4, T5, T6>
+  nameWithType.vb: Action(Of T1, T2, T3, T4, T5, T6)
+  fullName.vb: System.Action(Of T1, T2, T3, T4, T5, T6)
+  name.vb: Action(Of T1, T2, T3, T4, T5, T6)
+  spec.csharp:
+  - uid: System.Action`6
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-6
+  - name: <
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: ','
+  - name: " "
+  - name: T3
+  - name: ','
+  - name: " "
+  - name: T4
+  - name: ','
+  - name: " "
+  - name: T5
+  - name: ','
+  - name: " "
+  - name: T6
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`6
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-6
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: ','
+  - name: " "
+  - name: T3
+  - name: ','
+  - name: " "
+  - name: T4
+  - name: ','
+  - name: " "
+  - name: T5
+  - name: ','
+  - name: " "
+  - name: T6
+  - name: )
+- uid: System.Action{Microsoft.Extensions.Logging.ILogger,{T1},{T2},{T3},{T4},{T5},System.Exception}
+  commentId: T:System.Action{Microsoft.Extensions.Logging.ILogger,``0,``1,``2,``3,``4,System.Exception}
+  parent: System
+  definition: System.Action`7
+  href: https://learn.microsoft.com/dotnet/api/system.action-7
+  name: Action<ILogger, T1, T2, T3, T4, T5, Exception>
+  nameWithType: Action<ILogger, T1, T2, T3, T4, T5, Exception>
+  fullName: System.Action<Microsoft.Extensions.Logging.ILogger, T1, T2, T3, T4, T5, System.Exception>
+  nameWithType.vb: Action(Of ILogger, T1, T2, T3, T4, T5, Exception)
+  fullName.vb: System.Action(Of Microsoft.Extensions.Logging.ILogger, T1, T2, T3, T4, T5, System.Exception)
+  name.vb: Action(Of ILogger, T1, T2, T3, T4, T5, Exception)
+  spec.csharp:
+  - uid: System.Action`7
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-7
+  - name: <
+  - uid: Microsoft.Extensions.Logging.ILogger
+    name: ILogger
+    isExternal: true
+    href: Microsoft.Extensions.Logging.ILogger.html
+  - name: ','
+  - name: " "
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: ','
+  - name: " "
+  - name: T3
+  - name: ','
+  - name: " "
+  - name: T4
+  - name: ','
+  - name: " "
+  - name: T5
+  - name: ','
+  - name: " "
+  - uid: System.Exception
+    name: Exception
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.exception
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`7
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-7
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Microsoft.Extensions.Logging.ILogger
+    name: ILogger
+    isExternal: true
+    href: Microsoft.Extensions.Logging.ILogger.html
+  - name: ','
+  - name: " "
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: ','
+  - name: " "
+  - name: T3
+  - name: ','
+  - name: " "
+  - name: T4
+  - name: ','
+  - name: " "
+  - name: T5
+  - name: ','
+  - name: " "
+  - uid: System.Exception
+    name: Exception
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.exception
+  - name: )
+- uid: System.Action`7
+  commentId: T:System.Action`7
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.action-7
+  name: Action<T1, T2, T3, T4, T5, T6, T7>
+  nameWithType: Action<T1, T2, T3, T4, T5, T6, T7>
+  fullName: System.Action<T1, T2, T3, T4, T5, T6, T7>
+  nameWithType.vb: Action(Of T1, T2, T3, T4, T5, T6, T7)
+  fullName.vb: System.Action(Of T1, T2, T3, T4, T5, T6, T7)
+  name.vb: Action(Of T1, T2, T3, T4, T5, T6, T7)
+  spec.csharp:
+  - uid: System.Action`7
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-7
+  - name: <
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: ','
+  - name: " "
+  - name: T3
+  - name: ','
+  - name: " "
+  - name: T4
+  - name: ','
+  - name: " "
+  - name: T5
+  - name: ','
+  - name: " "
+  - name: T6
+  - name: ','
+  - name: " "
+  - name: T7
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`7
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-7
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: ','
+  - name: " "
+  - name: T3
+  - name: ','
+  - name: " "
+  - name: T4
+  - name: ','
+  - name: " "
+  - name: T5
+  - name: ','
+  - name: " "
+  - name: T6
+  - name: ','
+  - name: " "
+  - name: T7
+  - name: )
+- uid: System.Action{Microsoft.Extensions.Logging.ILogger,{T1},{T2},{T3},{T4},{T5},{T6},System.Exception}
+  commentId: T:System.Action{Microsoft.Extensions.Logging.ILogger,``0,``1,``2,``3,``4,``5,System.Exception}
+  parent: System
+  definition: System.Action`8
+  href: https://learn.microsoft.com/dotnet/api/system.action-8
+  name: Action<ILogger, T1, T2, T3, T4, T5, T6, Exception>
+  nameWithType: Action<ILogger, T1, T2, T3, T4, T5, T6, Exception>
+  fullName: System.Action<Microsoft.Extensions.Logging.ILogger, T1, T2, T3, T4, T5, T6, System.Exception>
+  nameWithType.vb: Action(Of ILogger, T1, T2, T3, T4, T5, T6, Exception)
+  fullName.vb: System.Action(Of Microsoft.Extensions.Logging.ILogger, T1, T2, T3, T4, T5, T6, System.Exception)
+  name.vb: Action(Of ILogger, T1, T2, T3, T4, T5, T6, Exception)
+  spec.csharp:
+  - uid: System.Action`8
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-8
+  - name: <
+  - uid: Microsoft.Extensions.Logging.ILogger
+    name: ILogger
+    isExternal: true
+    href: Microsoft.Extensions.Logging.ILogger.html
+  - name: ','
+  - name: " "
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: ','
+  - name: " "
+  - name: T3
+  - name: ','
+  - name: " "
+  - name: T4
+  - name: ','
+  - name: " "
+  - name: T5
+  - name: ','
+  - name: " "
+  - name: T6
+  - name: ','
+  - name: " "
+  - uid: System.Exception
+    name: Exception
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.exception
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`8
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-8
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Microsoft.Extensions.Logging.ILogger
+    name: ILogger
+    isExternal: true
+    href: Microsoft.Extensions.Logging.ILogger.html
+  - name: ','
+  - name: " "
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: ','
+  - name: " "
+  - name: T3
+  - name: ','
+  - name: " "
+  - name: T4
+  - name: ','
+  - name: " "
+  - name: T5
+  - name: ','
+  - name: " "
+  - name: T6
+  - name: ','
+  - name: " "
+  - uid: System.Exception
+    name: Exception
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.exception
+  - name: )
+- uid: System.Action`8
+  commentId: T:System.Action`8
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.action-8
+  name: Action<T1, T2, T3, T4, T5, T6, T7, T8>
+  nameWithType: Action<T1, T2, T3, T4, T5, T6, T7, T8>
+  fullName: System.Action<T1, T2, T3, T4, T5, T6, T7, T8>
+  nameWithType.vb: Action(Of T1, T2, T3, T4, T5, T6, T7, T8)
+  fullName.vb: System.Action(Of T1, T2, T3, T4, T5, T6, T7, T8)
+  name.vb: Action(Of T1, T2, T3, T4, T5, T6, T7, T8)
+  spec.csharp:
+  - uid: System.Action`8
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-8
+  - name: <
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: ','
+  - name: " "
+  - name: T3
+  - name: ','
+  - name: " "
+  - name: T4
+  - name: ','
+  - name: " "
+  - name: T5
+  - name: ','
+  - name: " "
+  - name: T6
+  - name: ','
+  - name: " "
+  - name: T7
+  - name: ','
+  - name: " "
+  - name: T8
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`8
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-8
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: ','
+  - name: " "
+  - name: T3
+  - name: ','
+  - name: " "
+  - name: T4
+  - name: ','
+  - name: " "
+  - name: T5
+  - name: ','
+  - name: " "
+  - name: T6
+  - name: ','
+  - name: " "
+  - name: T7
+  - name: ','
+  - name: " "
+  - name: T8
+  - name: )

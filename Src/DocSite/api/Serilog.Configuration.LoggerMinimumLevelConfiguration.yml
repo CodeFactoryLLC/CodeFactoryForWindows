@@ -1,0 +1,913 @@
+### YamlMime:ManagedReference
+items:
+- uid: Serilog.Configuration.LoggerMinimumLevelConfiguration
+  commentId: T:Serilog.Configuration.LoggerMinimumLevelConfiguration
+  id: LoggerMinimumLevelConfiguration
+  parent: Serilog.Configuration
+  children:
+  - Serilog.Configuration.LoggerMinimumLevelConfiguration.ControlledBy(Serilog.Core.LoggingLevelSwitch)
+  - Serilog.Configuration.LoggerMinimumLevelConfiguration.Debug
+  - Serilog.Configuration.LoggerMinimumLevelConfiguration.Error
+  - Serilog.Configuration.LoggerMinimumLevelConfiguration.Fatal
+  - Serilog.Configuration.LoggerMinimumLevelConfiguration.Information
+  - Serilog.Configuration.LoggerMinimumLevelConfiguration.Is(Serilog.Events.LogEventLevel)
+  - Serilog.Configuration.LoggerMinimumLevelConfiguration.Override(System.String,Serilog.Core.LoggingLevelSwitch)
+  - Serilog.Configuration.LoggerMinimumLevelConfiguration.Override(System.String,Serilog.Events.LogEventLevel)
+  - Serilog.Configuration.LoggerMinimumLevelConfiguration.Verbose
+  - Serilog.Configuration.LoggerMinimumLevelConfiguration.Warning
+  langs:
+  - csharp
+  - vb
+  name: LoggerMinimumLevelConfiguration
+  nameWithType: LoggerMinimumLevelConfiguration
+  fullName: Serilog.Configuration.LoggerMinimumLevelConfiguration
+  type: Class
+  assemblies:
+  - Serilog
+  namespace: Serilog.Configuration
+  summary: Controls sink configuration.
+  example: []
+  syntax:
+    content: public class LoggerMinimumLevelConfiguration
+    content.vb: Public Class LoggerMinimumLevelConfiguration
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: Serilog.Configuration.LoggerMinimumLevelConfiguration.Is(Serilog.Events.LogEventLevel)
+  commentId: M:Serilog.Configuration.LoggerMinimumLevelConfiguration.Is(Serilog.Events.LogEventLevel)
+  id: Is(Serilog.Events.LogEventLevel)
+  parent: Serilog.Configuration.LoggerMinimumLevelConfiguration
+  langs:
+  - csharp
+  - vb
+  name: Is(LogEventLevel)
+  nameWithType: LoggerMinimumLevelConfiguration.Is(LogEventLevel)
+  fullName: Serilog.Configuration.LoggerMinimumLevelConfiguration.Is(Serilog.Events.LogEventLevel)
+  type: Method
+  assemblies:
+  - Serilog
+  namespace: Serilog.Configuration
+  summary: Sets the minimum level at which events will be passed to sinks.
+  example: []
+  syntax:
+    content: public LoggerConfiguration Is(LogEventLevel minimumLevel)
+    parameters:
+    - id: minimumLevel
+      type: Serilog.Events.LogEventLevel
+      description: The minimum level to set.
+    return:
+      type: Serilog.LoggerConfiguration
+      description: Configuration object allowing method chaining.
+    content.vb: Public Function [Is](minimumLevel As LogEventLevel) As LoggerConfiguration
+  overload: Serilog.Configuration.LoggerMinimumLevelConfiguration.Is*
+- uid: Serilog.Configuration.LoggerMinimumLevelConfiguration.ControlledBy(Serilog.Core.LoggingLevelSwitch)
+  commentId: M:Serilog.Configuration.LoggerMinimumLevelConfiguration.ControlledBy(Serilog.Core.LoggingLevelSwitch)
+  id: ControlledBy(Serilog.Core.LoggingLevelSwitch)
+  parent: Serilog.Configuration.LoggerMinimumLevelConfiguration
+  langs:
+  - csharp
+  - vb
+  name: ControlledBy(LoggingLevelSwitch)
+  nameWithType: LoggerMinimumLevelConfiguration.ControlledBy(LoggingLevelSwitch)
+  fullName: Serilog.Configuration.LoggerMinimumLevelConfiguration.ControlledBy(Serilog.Core.LoggingLevelSwitch)
+  type: Method
+  assemblies:
+  - Serilog
+  namespace: Serilog.Configuration
+  summary: Sets the minimum level to be dynamically controlled by the provided switch.
+  example: []
+  syntax:
+    content: public LoggerConfiguration ControlledBy(LoggingLevelSwitch levelSwitch)
+    parameters:
+    - id: levelSwitch
+      type: Serilog.Core.LoggingLevelSwitch
+      description: The switch.
+    return:
+      type: Serilog.LoggerConfiguration
+      description: Configuration object allowing method chaining.
+    content.vb: Public Function ControlledBy(levelSwitch As LoggingLevelSwitch) As LoggerConfiguration
+  overload: Serilog.Configuration.LoggerMinimumLevelConfiguration.ControlledBy*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: When <code class="paramref">levelSwitch</code> is <pre><code class="lang-csharp">null</code></pre>
+- uid: Serilog.Configuration.LoggerMinimumLevelConfiguration.Verbose
+  commentId: M:Serilog.Configuration.LoggerMinimumLevelConfiguration.Verbose
+  id: Verbose
+  parent: Serilog.Configuration.LoggerMinimumLevelConfiguration
+  langs:
+  - csharp
+  - vb
+  name: Verbose()
+  nameWithType: LoggerMinimumLevelConfiguration.Verbose()
+  fullName: Serilog.Configuration.LoggerMinimumLevelConfiguration.Verbose()
+  type: Method
+  assemblies:
+  - Serilog
+  namespace: Serilog.Configuration
+  summary: >-
+    Anything and everything you might want to know about
+
+    a running block of code.
+  example: []
+  syntax:
+    content: public LoggerConfiguration Verbose()
+    return:
+      type: Serilog.LoggerConfiguration
+      description: Configuration object allowing method chaining.
+    content.vb: Public Function Verbose() As LoggerConfiguration
+  overload: Serilog.Configuration.LoggerMinimumLevelConfiguration.Verbose*
+- uid: Serilog.Configuration.LoggerMinimumLevelConfiguration.Debug
+  commentId: M:Serilog.Configuration.LoggerMinimumLevelConfiguration.Debug
+  id: Debug
+  parent: Serilog.Configuration.LoggerMinimumLevelConfiguration
+  langs:
+  - csharp
+  - vb
+  name: Debug()
+  nameWithType: LoggerMinimumLevelConfiguration.Debug()
+  fullName: Serilog.Configuration.LoggerMinimumLevelConfiguration.Debug()
+  type: Method
+  assemblies:
+  - Serilog
+  namespace: Serilog.Configuration
+  summary: >-
+    Internal system events that aren't necessarily
+
+    observable from the outside.
+  example: []
+  syntax:
+    content: public LoggerConfiguration Debug()
+    return:
+      type: Serilog.LoggerConfiguration
+      description: Configuration object allowing method chaining.
+    content.vb: Public Function Debug() As LoggerConfiguration
+  overload: Serilog.Configuration.LoggerMinimumLevelConfiguration.Debug*
+- uid: Serilog.Configuration.LoggerMinimumLevelConfiguration.Information
+  commentId: M:Serilog.Configuration.LoggerMinimumLevelConfiguration.Information
+  id: Information
+  parent: Serilog.Configuration.LoggerMinimumLevelConfiguration
+  langs:
+  - csharp
+  - vb
+  name: Information()
+  nameWithType: LoggerMinimumLevelConfiguration.Information()
+  fullName: Serilog.Configuration.LoggerMinimumLevelConfiguration.Information()
+  type: Method
+  assemblies:
+  - Serilog
+  namespace: Serilog.Configuration
+  summary: >-
+    The lifeblood of operational intelligence - things
+
+    happen.
+  example: []
+  syntax:
+    content: public LoggerConfiguration Information()
+    return:
+      type: Serilog.LoggerConfiguration
+      description: Configuration object allowing method chaining.
+    content.vb: Public Function Information() As LoggerConfiguration
+  overload: Serilog.Configuration.LoggerMinimumLevelConfiguration.Information*
+- uid: Serilog.Configuration.LoggerMinimumLevelConfiguration.Warning
+  commentId: M:Serilog.Configuration.LoggerMinimumLevelConfiguration.Warning
+  id: Warning
+  parent: Serilog.Configuration.LoggerMinimumLevelConfiguration
+  langs:
+  - csharp
+  - vb
+  name: Warning()
+  nameWithType: LoggerMinimumLevelConfiguration.Warning()
+  fullName: Serilog.Configuration.LoggerMinimumLevelConfiguration.Warning()
+  type: Method
+  assemblies:
+  - Serilog
+  namespace: Serilog.Configuration
+  summary: Service is degraded or endangered.
+  example: []
+  syntax:
+    content: public LoggerConfiguration Warning()
+    return:
+      type: Serilog.LoggerConfiguration
+      description: Configuration object allowing method chaining.
+    content.vb: Public Function Warning() As LoggerConfiguration
+  overload: Serilog.Configuration.LoggerMinimumLevelConfiguration.Warning*
+- uid: Serilog.Configuration.LoggerMinimumLevelConfiguration.Error
+  commentId: M:Serilog.Configuration.LoggerMinimumLevelConfiguration.Error
+  id: Error
+  parent: Serilog.Configuration.LoggerMinimumLevelConfiguration
+  langs:
+  - csharp
+  - vb
+  name: Error()
+  nameWithType: LoggerMinimumLevelConfiguration.Error()
+  fullName: Serilog.Configuration.LoggerMinimumLevelConfiguration.Error()
+  type: Method
+  assemblies:
+  - Serilog
+  namespace: Serilog.Configuration
+  summary: >-
+    Functionality is unavailable, invariants are broken
+
+    or data is lost.
+  example: []
+  syntax:
+    content: public LoggerConfiguration Error()
+    return:
+      type: Serilog.LoggerConfiguration
+      description: Configuration object allowing method chaining.
+    content.vb: Public Function [Error]() As LoggerConfiguration
+  overload: Serilog.Configuration.LoggerMinimumLevelConfiguration.Error*
+- uid: Serilog.Configuration.LoggerMinimumLevelConfiguration.Fatal
+  commentId: M:Serilog.Configuration.LoggerMinimumLevelConfiguration.Fatal
+  id: Fatal
+  parent: Serilog.Configuration.LoggerMinimumLevelConfiguration
+  langs:
+  - csharp
+  - vb
+  name: Fatal()
+  nameWithType: LoggerMinimumLevelConfiguration.Fatal()
+  fullName: Serilog.Configuration.LoggerMinimumLevelConfiguration.Fatal()
+  type: Method
+  assemblies:
+  - Serilog
+  namespace: Serilog.Configuration
+  summary: >-
+    If you have a pager, it goes off when one of these
+
+    occurs.
+  example: []
+  syntax:
+    content: public LoggerConfiguration Fatal()
+    return:
+      type: Serilog.LoggerConfiguration
+      description: Configuration object allowing method chaining.
+    content.vb: Public Function Fatal() As LoggerConfiguration
+  overload: Serilog.Configuration.LoggerMinimumLevelConfiguration.Fatal*
+- uid: Serilog.Configuration.LoggerMinimumLevelConfiguration.Override(System.String,Serilog.Core.LoggingLevelSwitch)
+  commentId: M:Serilog.Configuration.LoggerMinimumLevelConfiguration.Override(System.String,Serilog.Core.LoggingLevelSwitch)
+  id: Override(System.String,Serilog.Core.LoggingLevelSwitch)
+  parent: Serilog.Configuration.LoggerMinimumLevelConfiguration
+  langs:
+  - csharp
+  - vb
+  name: Override(string, LoggingLevelSwitch)
+  nameWithType: LoggerMinimumLevelConfiguration.Override(string, LoggingLevelSwitch)
+  fullName: Serilog.Configuration.LoggerMinimumLevelConfiguration.Override(string, Serilog.Core.LoggingLevelSwitch)
+  type: Method
+  assemblies:
+  - Serilog
+  namespace: Serilog.Configuration
+  summary: >-
+    Override the minimum level for events from a specific namespace or type name.
+
+    This API is not supported for configuring sub-loggers (created through <xref href="Serilog.Configuration.LoggerSinkConfiguration.Logger(Serilog.ILogger%2cSerilog.Events.LogEventLevel)" data-throw-if-not-resolved="false"></xref>). Use <xref href="Serilog.LoggerConfiguration.Filter" data-throw-if-not-resolved="false"></xref> or <xref href="Serilog.Configuration.LoggerSinkConfiguration.Conditional(System.Func%7bSerilog.Events.LogEvent%2cSystem.Boolean%7d%2cSystem.Action%7bSerilog.Configuration.LoggerSinkConfiguration%7d)" data-throw-if-not-resolved="false"></xref> instead.
+
+    You also might consider using https://github.com/serilog/serilog-filters-expressions.
+  example: []
+  syntax:
+    content: public LoggerConfiguration Override(string source, LoggingLevelSwitch levelSwitch)
+    parameters:
+    - id: source
+      type: System.String
+      description: The (partial) namespace or type name to set the override for.
+    - id: levelSwitch
+      type: Serilog.Core.LoggingLevelSwitch
+      description: The switch controlling loggers for matching sources.
+    return:
+      type: Serilog.LoggerConfiguration
+      description: Configuration object allowing method chaining.
+    content.vb: Public Function Override(source As String, levelSwitch As LoggingLevelSwitch) As LoggerConfiguration
+  overload: Serilog.Configuration.LoggerMinimumLevelConfiguration.Override*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: When <code class="paramref">source</code> is <pre><code class="lang-csharp">null</code></pre>
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: When a trimmed <code class="paramref">source</code> is empty
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: When <code class="paramref">levelSwitch</code> is <pre><code class="lang-csharp">null</code></pre>
+  nameWithType.vb: LoggerMinimumLevelConfiguration.Override(String, LoggingLevelSwitch)
+  fullName.vb: Serilog.Configuration.LoggerMinimumLevelConfiguration.Override(String, Serilog.Core.LoggingLevelSwitch)
+  name.vb: Override(String, LoggingLevelSwitch)
+- uid: Serilog.Configuration.LoggerMinimumLevelConfiguration.Override(System.String,Serilog.Events.LogEventLevel)
+  commentId: M:Serilog.Configuration.LoggerMinimumLevelConfiguration.Override(System.String,Serilog.Events.LogEventLevel)
+  id: Override(System.String,Serilog.Events.LogEventLevel)
+  parent: Serilog.Configuration.LoggerMinimumLevelConfiguration
+  langs:
+  - csharp
+  - vb
+  name: Override(string, LogEventLevel)
+  nameWithType: LoggerMinimumLevelConfiguration.Override(string, LogEventLevel)
+  fullName: Serilog.Configuration.LoggerMinimumLevelConfiguration.Override(string, Serilog.Events.LogEventLevel)
+  type: Method
+  assemblies:
+  - Serilog
+  namespace: Serilog.Configuration
+  summary: >-
+    Override the minimum level for events from a specific namespace or type name.
+
+    This API is not supported for configuring sub-loggers (created through <xref href="Serilog.Configuration.LoggerSinkConfiguration.Logger(Serilog.ILogger%2cSerilog.Events.LogEventLevel)" data-throw-if-not-resolved="false"></xref>). Use <xref href="Serilog.LoggerConfiguration.Filter" data-throw-if-not-resolved="false"></xref> or <xref href="Serilog.Configuration.LoggerSinkConfiguration.Conditional(System.Func%7bSerilog.Events.LogEvent%2cSystem.Boolean%7d%2cSystem.Action%7bSerilog.Configuration.LoggerSinkConfiguration%7d)" data-throw-if-not-resolved="false"></xref> instead.
+
+    You also might consider using https://github.com/serilog/serilog-filters-expressions.
+  example: []
+  syntax:
+    content: public LoggerConfiguration Override(string source, LogEventLevel minimumLevel)
+    parameters:
+    - id: source
+      type: System.String
+      description: The (partial) namespace or type name to set the override for.
+    - id: minimumLevel
+      type: Serilog.Events.LogEventLevel
+      description: The minimum level applied to loggers for matching sources.
+    return:
+      type: Serilog.LoggerConfiguration
+      description: Configuration object allowing method chaining.
+    content.vb: Public Function Override(source As String, minimumLevel As LogEventLevel) As LoggerConfiguration
+  overload: Serilog.Configuration.LoggerMinimumLevelConfiguration.Override*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: When <code class="paramref">source</code> is <pre><code class="lang-csharp">null</code></pre>
+  nameWithType.vb: LoggerMinimumLevelConfiguration.Override(String, LogEventLevel)
+  fullName.vb: Serilog.Configuration.LoggerMinimumLevelConfiguration.Override(String, Serilog.Events.LogEventLevel)
+  name.vb: Override(String, LogEventLevel)
+references:
+- uid: Serilog.Configuration
+  commentId: N:Serilog.Configuration
+  isExternal: true
+  href: Serilog.html
+  name: Serilog.Configuration
+  nameWithType: Serilog.Configuration
+  fullName: Serilog.Configuration
+  spec.csharp:
+  - uid: Serilog
+    name: Serilog
+    isExternal: true
+    href: Serilog.html
+  - name: .
+  - uid: Serilog.Configuration
+    name: Configuration
+    isExternal: true
+    href: Serilog.Configuration.html
+  spec.vb:
+  - uid: Serilog
+    name: Serilog
+    isExternal: true
+    href: Serilog.html
+  - name: .
+  - uid: Serilog.Configuration
+    name: Configuration
+    isExternal: true
+    href: Serilog.Configuration.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Serilog.Configuration.LoggerMinimumLevelConfiguration.Is*
+  commentId: Overload:Serilog.Configuration.LoggerMinimumLevelConfiguration.Is
+  isExternal: true
+  href: Serilog.Configuration.LoggerMinimumLevelConfiguration.html#Serilog_Configuration_LoggerMinimumLevelConfiguration_Is_Serilog_Events_LogEventLevel_
+  name: Is
+  nameWithType: LoggerMinimumLevelConfiguration.Is
+  fullName: Serilog.Configuration.LoggerMinimumLevelConfiguration.Is
+- uid: Serilog.Events.LogEventLevel
+  commentId: T:Serilog.Events.LogEventLevel
+  parent: Serilog.Events
+  isExternal: true
+  href: Serilog.Events.LogEventLevel.html
+  name: LogEventLevel
+  nameWithType: LogEventLevel
+  fullName: Serilog.Events.LogEventLevel
+- uid: Serilog.LoggerConfiguration
+  commentId: T:Serilog.LoggerConfiguration
+  parent: Serilog
+  isExternal: true
+  href: Serilog.LoggerConfiguration.html
+  name: LoggerConfiguration
+  nameWithType: LoggerConfiguration
+  fullName: Serilog.LoggerConfiguration
+- uid: Serilog.Events
+  commentId: N:Serilog.Events
+  isExternal: true
+  href: Serilog.html
+  name: Serilog.Events
+  nameWithType: Serilog.Events
+  fullName: Serilog.Events
+  spec.csharp:
+  - uid: Serilog
+    name: Serilog
+    isExternal: true
+    href: Serilog.html
+  - name: .
+  - uid: Serilog.Events
+    name: Events
+    isExternal: true
+    href: Serilog.Events.html
+  spec.vb:
+  - uid: Serilog
+    name: Serilog
+    isExternal: true
+    href: Serilog.html
+  - name: .
+  - uid: Serilog.Events
+    name: Events
+    isExternal: true
+    href: Serilog.Events.html
+- uid: Serilog
+  commentId: N:Serilog
+  isExternal: true
+  href: Serilog.html
+  name: Serilog
+  nameWithType: Serilog
+  fullName: Serilog
+- uid: System.ArgumentNullException
+  commentId: T:System.ArgumentNullException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.argumentnullexception
+  name: ArgumentNullException
+  nameWithType: ArgumentNullException
+  fullName: System.ArgumentNullException
+- uid: Serilog.Configuration.LoggerMinimumLevelConfiguration.ControlledBy*
+  commentId: Overload:Serilog.Configuration.LoggerMinimumLevelConfiguration.ControlledBy
+  isExternal: true
+  href: Serilog.Configuration.LoggerMinimumLevelConfiguration.html#Serilog_Configuration_LoggerMinimumLevelConfiguration_ControlledBy_Serilog_Core_LoggingLevelSwitch_
+  name: ControlledBy
+  nameWithType: LoggerMinimumLevelConfiguration.ControlledBy
+  fullName: Serilog.Configuration.LoggerMinimumLevelConfiguration.ControlledBy
+- uid: Serilog.Core.LoggingLevelSwitch
+  commentId: T:Serilog.Core.LoggingLevelSwitch
+  parent: Serilog.Core
+  isExternal: true
+  href: Serilog.Core.LoggingLevelSwitch.html
+  name: LoggingLevelSwitch
+  nameWithType: LoggingLevelSwitch
+  fullName: Serilog.Core.LoggingLevelSwitch
+- uid: Serilog.Core
+  commentId: N:Serilog.Core
+  isExternal: true
+  href: Serilog.html
+  name: Serilog.Core
+  nameWithType: Serilog.Core
+  fullName: Serilog.Core
+  spec.csharp:
+  - uid: Serilog
+    name: Serilog
+    isExternal: true
+    href: Serilog.html
+  - name: .
+  - uid: Serilog.Core
+    name: Core
+    isExternal: true
+    href: Serilog.Core.html
+  spec.vb:
+  - uid: Serilog
+    name: Serilog
+    isExternal: true
+    href: Serilog.html
+  - name: .
+  - uid: Serilog.Core
+    name: Core
+    isExternal: true
+    href: Serilog.Core.html
+- uid: Serilog.Configuration.LoggerMinimumLevelConfiguration.Verbose*
+  commentId: Overload:Serilog.Configuration.LoggerMinimumLevelConfiguration.Verbose
+  isExternal: true
+  href: Serilog.Configuration.LoggerMinimumLevelConfiguration.html#Serilog_Configuration_LoggerMinimumLevelConfiguration_Verbose
+  name: Verbose
+  nameWithType: LoggerMinimumLevelConfiguration.Verbose
+  fullName: Serilog.Configuration.LoggerMinimumLevelConfiguration.Verbose
+- uid: Serilog.Configuration.LoggerMinimumLevelConfiguration.Debug*
+  commentId: Overload:Serilog.Configuration.LoggerMinimumLevelConfiguration.Debug
+  isExternal: true
+  href: Serilog.Configuration.LoggerMinimumLevelConfiguration.html#Serilog_Configuration_LoggerMinimumLevelConfiguration_Debug
+  name: Debug
+  nameWithType: LoggerMinimumLevelConfiguration.Debug
+  fullName: Serilog.Configuration.LoggerMinimumLevelConfiguration.Debug
+- uid: Serilog.Configuration.LoggerMinimumLevelConfiguration.Information*
+  commentId: Overload:Serilog.Configuration.LoggerMinimumLevelConfiguration.Information
+  isExternal: true
+  href: Serilog.Configuration.LoggerMinimumLevelConfiguration.html#Serilog_Configuration_LoggerMinimumLevelConfiguration_Information
+  name: Information
+  nameWithType: LoggerMinimumLevelConfiguration.Information
+  fullName: Serilog.Configuration.LoggerMinimumLevelConfiguration.Information
+- uid: Serilog.Configuration.LoggerMinimumLevelConfiguration.Warning*
+  commentId: Overload:Serilog.Configuration.LoggerMinimumLevelConfiguration.Warning
+  isExternal: true
+  href: Serilog.Configuration.LoggerMinimumLevelConfiguration.html#Serilog_Configuration_LoggerMinimumLevelConfiguration_Warning
+  name: Warning
+  nameWithType: LoggerMinimumLevelConfiguration.Warning
+  fullName: Serilog.Configuration.LoggerMinimumLevelConfiguration.Warning
+- uid: Serilog.Configuration.LoggerMinimumLevelConfiguration.Error*
+  commentId: Overload:Serilog.Configuration.LoggerMinimumLevelConfiguration.Error
+  isExternal: true
+  href: Serilog.Configuration.LoggerMinimumLevelConfiguration.html#Serilog_Configuration_LoggerMinimumLevelConfiguration_Error
+  name: Error
+  nameWithType: LoggerMinimumLevelConfiguration.Error
+  fullName: Serilog.Configuration.LoggerMinimumLevelConfiguration.Error
+- uid: Serilog.Configuration.LoggerMinimumLevelConfiguration.Fatal*
+  commentId: Overload:Serilog.Configuration.LoggerMinimumLevelConfiguration.Fatal
+  isExternal: true
+  href: Serilog.Configuration.LoggerMinimumLevelConfiguration.html#Serilog_Configuration_LoggerMinimumLevelConfiguration_Fatal
+  name: Fatal
+  nameWithType: LoggerMinimumLevelConfiguration.Fatal
+  fullName: Serilog.Configuration.LoggerMinimumLevelConfiguration.Fatal
+- uid: Serilog.Configuration.LoggerSinkConfiguration.Logger(Serilog.ILogger,Serilog.Events.LogEventLevel)
+  commentId: M:Serilog.Configuration.LoggerSinkConfiguration.Logger(Serilog.ILogger,Serilog.Events.LogEventLevel)
+  isExternal: true
+  href: Serilog.Configuration.LoggerSinkConfiguration.html#Serilog_Configuration_LoggerSinkConfiguration_Logger_Serilog_ILogger_Serilog_Events_LogEventLevel_
+  name: Logger(ILogger, LogEventLevel)
+  nameWithType: LoggerSinkConfiguration.Logger(ILogger, LogEventLevel)
+  fullName: Serilog.Configuration.LoggerSinkConfiguration.Logger(Serilog.ILogger, Serilog.Events.LogEventLevel)
+  spec.csharp:
+  - uid: Serilog.Configuration.LoggerSinkConfiguration.Logger(Serilog.ILogger,Serilog.Events.LogEventLevel)
+    name: Logger
+    isExternal: true
+    href: Serilog.Configuration.LoggerSinkConfiguration.html#Serilog_Configuration_LoggerSinkConfiguration_Logger_Serilog_ILogger_Serilog_Events_LogEventLevel_
+  - name: (
+  - uid: Serilog.ILogger
+    name: ILogger
+    isExternal: true
+    href: Serilog.ILogger.html
+  - name: ','
+  - name: " "
+  - uid: Serilog.Events.LogEventLevel
+    name: LogEventLevel
+    isExternal: true
+    href: Serilog.Events.LogEventLevel.html
+  - name: )
+  spec.vb:
+  - uid: Serilog.Configuration.LoggerSinkConfiguration.Logger(Serilog.ILogger,Serilog.Events.LogEventLevel)
+    name: Logger
+    isExternal: true
+    href: Serilog.Configuration.LoggerSinkConfiguration.html#Serilog_Configuration_LoggerSinkConfiguration_Logger_Serilog_ILogger_Serilog_Events_LogEventLevel_
+  - name: (
+  - uid: Serilog.ILogger
+    name: ILogger
+    isExternal: true
+    href: Serilog.ILogger.html
+  - name: ','
+  - name: " "
+  - uid: Serilog.Events.LogEventLevel
+    name: LogEventLevel
+    isExternal: true
+    href: Serilog.Events.LogEventLevel.html
+  - name: )
+- uid: Serilog.LoggerConfiguration.Filter
+  commentId: P:Serilog.LoggerConfiguration.Filter
+  isExternal: true
+  href: Serilog.LoggerConfiguration.html#Serilog_LoggerConfiguration_Filter
+  name: Filter
+  nameWithType: LoggerConfiguration.Filter
+  fullName: Serilog.LoggerConfiguration.Filter
+- uid: Serilog.Configuration.LoggerSinkConfiguration.Conditional(System.Func{Serilog.Events.LogEvent,System.Boolean},System.Action{Serilog.Configuration.LoggerSinkConfiguration})
+  commentId: M:Serilog.Configuration.LoggerSinkConfiguration.Conditional(System.Func{Serilog.Events.LogEvent,System.Boolean},System.Action{Serilog.Configuration.LoggerSinkConfiguration})
+  isExternal: true
+  href: Serilog.Configuration.LoggerSinkConfiguration.html#Serilog_Configuration_LoggerSinkConfiguration_Conditional_System_Func_Serilog_Events_LogEvent_System_Boolean__System_Action_Serilog_Configuration_LoggerSinkConfiguration__
+  name: Conditional(Func<LogEvent, bool>, Action<LoggerSinkConfiguration>)
+  nameWithType: LoggerSinkConfiguration.Conditional(Func<LogEvent, bool>, Action<LoggerSinkConfiguration>)
+  fullName: Serilog.Configuration.LoggerSinkConfiguration.Conditional(System.Func<Serilog.Events.LogEvent, bool>, System.Action<Serilog.Configuration.LoggerSinkConfiguration>)
+  nameWithType.vb: LoggerSinkConfiguration.Conditional(Func(Of LogEvent, Boolean), Action(Of LoggerSinkConfiguration))
+  fullName.vb: Serilog.Configuration.LoggerSinkConfiguration.Conditional(System.Func(Of Serilog.Events.LogEvent, Boolean), System.Action(Of Serilog.Configuration.LoggerSinkConfiguration))
+  name.vb: Conditional(Func(Of LogEvent, Boolean), Action(Of LoggerSinkConfiguration))
+  spec.csharp:
+  - uid: Serilog.Configuration.LoggerSinkConfiguration.Conditional(System.Func{Serilog.Events.LogEvent,System.Boolean},System.Action{Serilog.Configuration.LoggerSinkConfiguration})
+    name: Conditional
+    isExternal: true
+    href: Serilog.Configuration.LoggerSinkConfiguration.html#Serilog_Configuration_LoggerSinkConfiguration_Conditional_System_Func_Serilog_Events_LogEvent_System_Boolean__System_Action_Serilog_Configuration_LoggerSinkConfiguration__
+  - name: (
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - uid: Serilog.Events.LogEvent
+    name: LogEvent
+    isExternal: true
+    href: Serilog.Events.LogEvent.html
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: <
+  - uid: Serilog.Configuration.LoggerSinkConfiguration
+    name: LoggerSinkConfiguration
+    isExternal: true
+    href: Serilog.Configuration.LoggerSinkConfiguration.html
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: Serilog.Configuration.LoggerSinkConfiguration.Conditional(System.Func{Serilog.Events.LogEvent,System.Boolean},System.Action{Serilog.Configuration.LoggerSinkConfiguration})
+    name: Conditional
+    isExternal: true
+    href: Serilog.Configuration.LoggerSinkConfiguration.html#Serilog_Configuration_LoggerSinkConfiguration_Conditional_System_Func_Serilog_Events_LogEvent_System_Boolean__System_Action_Serilog_Configuration_LoggerSinkConfiguration__
+  - name: (
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Serilog.Events.LogEvent
+    name: LogEvent
+    isExternal: true
+    href: Serilog.Events.LogEvent.html
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Serilog.Configuration.LoggerSinkConfiguration
+    name: LoggerSinkConfiguration
+    isExternal: true
+    href: Serilog.Configuration.LoggerSinkConfiguration.html
+  - name: )
+  - name: )
+- uid: System.ArgumentException
+  commentId: T:System.ArgumentException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.argumentexception
+  name: ArgumentException
+  nameWithType: ArgumentException
+  fullName: System.ArgumentException
+- uid: Serilog.Configuration.LoggerMinimumLevelConfiguration.Override*
+  commentId: Overload:Serilog.Configuration.LoggerMinimumLevelConfiguration.Override
+  isExternal: true
+  href: Serilog.Configuration.LoggerMinimumLevelConfiguration.html#Serilog_Configuration_LoggerMinimumLevelConfiguration_Override_System_String_Serilog_Core_LoggingLevelSwitch_
+  name: Override
+  nameWithType: LoggerMinimumLevelConfiguration.Override
+  fullName: Serilog.Configuration.LoggerMinimumLevelConfiguration.Override
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String

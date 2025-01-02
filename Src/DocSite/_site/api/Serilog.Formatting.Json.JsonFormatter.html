@@ -1,0 +1,875 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+    <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Class JsonFormatter | CodeFactory for Windows </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Class JsonFormatter | CodeFactory for Windows ">
+      <meta name="generator" content="docfx ">
+  
+      <link rel="shortcut icon" href="../images/cfLogo70White.png">
+      <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/night-owl.min.css">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" integrity="sha384-EvBWSlnoFgZlXJvpzS+MAUEjvN7+gcCwH+qh7GRFOGgZO0PuwOFro7qPOJnLfe7l" crossorigin="anonymous">
+      <link rel="stylesheet" href="../styles/config.css">
+      <link rel="stylesheet" href="../styles/singulink.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+  
+  <meta property="docfx:rel" content="../">
+  <meta property="docfx:newtab" content="true">
+    </head>
+    <body>
+        <!-- Header required for docfx anchor scroll to work -->
+        <header id="head"></header>
+        <div class="top-navbar">
+            <a class="burger-icon" onclick="toggleMenu()">
+                <svg name="Hamburger" style="vertical-align: middle;" width="34" height="34" viewbox="0 0 24 24"><path fill="currentColor" fill-rule="evenodd" clip-rule="evenodd" d="M20 6H4V9H20V6ZM4 10.999H20V13.999H4V10.999ZM4 15.999H20V18.999H4V15.999Z"></path></svg>
+            </a>
+
+
+            <a class="brand" href="../index.html">
+              <img src="../images/cfLogo70White.png" alt="CodeFactory for Windows" class="logomark">
+              <span class="brand-title">CodeFactory for Windows</span>
+            </a>        </div>
+
+        <div class="body-content">
+            <div id="blackout" class="blackout" onclick="toggleMenu()"></div>
+
+            <nav id="sidebar" role="navigation">
+                <div class="sidebar">
+
+                    <div>
+                      <div class="mobile-hide">
+
+                        <a class="brand" href="../index.html">
+                          <img src="../images/cfLogo70White.png" alt="CodeFactory for Windows" class="logomark">
+                          <span class="brand-title">CodeFactory for Windows</span>
+                        </a>                      </div>
+
+                      <div class="sidesearch">
+                        <form id="search" role="search" class="search">
+                            <i class="bi bi-search search-icon"></i>
+                            <input type="text" id="search-query" placeholder="Search" autocomplete="off">
+                        </form>
+                      </div>
+
+                      <div id="navbar">
+                      </div>
+                    </div>                    <div class="sidebar-item-separator"></div>
+
+                        <div id="sidetoggle">
+                          <div id="sidetoc"></div>
+                        </div>
+                </div>
+                <div class="footer">
+  CodeFactory for Windows SDK
+  
+                </div>            </nav>
+
+            <main class="main-panel">
+
+                <div id="search-results" style="display: none;">
+                  <h1 class="search-list">Search Results for <span></span></h1>
+                  <div class="sr-items">
+                    <p><i class="bi bi-hourglass-split index-loading"></i></p>
+                  </div>
+                  <ul id="pagination" data-first=First data-prev=Previous data-next=Next data-last=Last></ul>
+                </div>
+ 
+
+                <div role="main" class="hide-when-search">
+
+                        <div class="subnav navbar navbar-default">
+                          <div class="container hide-when-search" id="breadcrumb">
+                            <ul class="breadcrumb">
+                              <li></li>
+                            </ul>
+                          </div>
+                        </div>
+
+
+                    <article class="content wrap" id="_content" data-uid="Serilog.Formatting.Json.JsonFormatter">
+
+
+
+  <h1 id="Serilog_Formatting_Json_JsonFormatter" data-uid="Serilog.Formatting.Json.JsonFormatter" class="text-break">Class JsonFormatter</h1>
+  <div class="markdown level0 summary"><p>Formats log events in a simple JSON structure. Instances of this class
+are safe for concurrent access by multiple threads.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+    <div class="level1"><span class="xref">JsonFormatter</span></div>
+  </div>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="Serilog.Formatting.ITextFormatter.html">ITextFormatter</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Serilog.html">Serilog</a>.<a class="xref" href="Serilog.Formatting.html">Formatting</a>.<a class="xref" href="Serilog.Formatting.Json.html">Json</a></h6>
+  <h6><strong>Assembly</strong>: Serilog.dll</h6>
+  <h5 id="Serilog_Formatting_Json_JsonFormatter_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class JsonFormatter : ITextFormatter</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+</h3>
+  <a id="Serilog_Formatting_Json_JsonFormatter__ctor_" data-uid="Serilog.Formatting.Json.JsonFormatter.#ctor*"></a>
+  <h4 id="Serilog_Formatting_Json_JsonFormatter__ctor_System_Boolean_System_String_System_Boolean_System_IFormatProvider_" data-uid="Serilog.Formatting.Json.JsonFormatter.#ctor(System.Boolean,System.String,System.Boolean,System.IFormatProvider)">JsonFormatter(bool, string?, bool, IFormatProvider?)</h4>
+  <div class="markdown level1 summary"><p>Construct a <a class="xref" href="Serilog.Formatting.Json.JsonFormatter.html">JsonFormatter</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;The omitEnclosingObject parameter is obsolete and will be removed in a future Serilog version.&quot;)]
+public JsonFormatter(bool omitEnclosingObject, string? closingDelimiter = null, bool renderMessage = false, IFormatProvider? formatProvider = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">omitEnclosingObject</span></td>
+        <td><p>If true, the properties of the event will be written to
+the output without enclosing braces. Otherwise, if false, each event will be written as a well-formed
+JSON object.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">closingDelimiter</span></td>
+        <td><p>A string that will be written after each log event is formatted.
+If null, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.environment.newline">NewLine</a> will be used. Ignored if <code class="paramref">omitEnclosingObject</code>
+is true.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">renderMessage</span></td>
+        <td><p>If true, the message will be rendered and written to the output as a
+property named RenderedMessage.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iformatprovider">IFormatProvider</a></td>
+        <td><span class="parametername">formatProvider</span></td>
+        <td><p>Supplies culture-specific formatting information, or null.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Serilog_Formatting_Json_JsonFormatter__ctor_" data-uid="Serilog.Formatting.Json.JsonFormatter.#ctor*"></a>
+  <h4 id="Serilog_Formatting_Json_JsonFormatter__ctor_System_String_System_Boolean_System_IFormatProvider_" data-uid="Serilog.Formatting.Json.JsonFormatter.#ctor(System.String,System.Boolean,System.IFormatProvider)">JsonFormatter(string?, bool, IFormatProvider?)</h4>
+  <div class="markdown level1 summary"><p>Construct a <a class="xref" href="Serilog.Formatting.Json.JsonFormatter.html">JsonFormatter</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public JsonFormatter(string? closingDelimiter = null, bool renderMessage = false, IFormatProvider? formatProvider = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">closingDelimiter</span></td>
+        <td><p>A string that will be written after each log event is formatted.
+If null, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.environment.newline">NewLine</a> will be used.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">renderMessage</span></td>
+        <td><p>If true, the message will be rendered and written to the output as a
+property named RenderedMessage.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iformatprovider">IFormatProvider</a></td>
+        <td><span class="parametername">formatProvider</span></td>
+        <td><p>Supplies culture-specific formatting information, or null.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+</h3>
+  <a id="Serilog_Formatting_Json_JsonFormatter_AddLiteralWriter_" data-uid="Serilog.Formatting.Json.JsonFormatter.AddLiteralWriter*"></a>
+  <h4 id="Serilog_Formatting_Json_JsonFormatter_AddLiteralWriter_System_Type_System_Action_System_Object_System_IO_TextWriter__" data-uid="Serilog.Formatting.Json.JsonFormatter.AddLiteralWriter(System.Type,System.Action{System.Object,System.IO.TextWriter})">AddLiteralWriter(Type, Action&lt;object, TextWriter&gt;)</h4>
+  <div class="markdown level1 summary"><p>Adds a writer function for a given type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Extension of JsonFormatter by subclassing is obsolete and will be removed in a future Serilog version. Write a custom formatter based on JsonValueFormatter instead. See https://github.com/serilog/serilog/pull/819.&quot;)]
+protected void AddLiteralWriter(Type type, Action&lt;object, TextWriter&gt; writer)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a></td>
+        <td><span class="parametername">type</span></td>
+        <td><p>The type of values, which <code class="paramref">writer</code> handles.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-2">Action</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.textwriter">TextWriter</a>&gt;</td>
+        <td><span class="parametername">writer</span></td>
+        <td><p>The function, which writes the values.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></td>
+        <td><p>When <code class="paramref">type</code> is <pre><code class="lang-csharp">null</code></pre>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></td>
+        <td><p>When <code class="paramref">writer</code> is <pre><code class="lang-csharp">null</code></pre>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Serilog_Formatting_Json_JsonFormatter_Format_" data-uid="Serilog.Formatting.Json.JsonFormatter.Format*"></a>
+  <h4 id="Serilog_Formatting_Json_JsonFormatter_Format_Serilog_Events_LogEvent_System_IO_TextWriter_" data-uid="Serilog.Formatting.Json.JsonFormatter.Format(Serilog.Events.LogEvent,System.IO.TextWriter)">Format(LogEvent, TextWriter)</h4>
+  <div class="markdown level1 summary"><p>Format the log event into the output.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Format(LogEvent logEvent, TextWriter output)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Serilog.Events.LogEvent.html">LogEvent</a></td>
+        <td><span class="parametername">logEvent</span></td>
+        <td><p>The event to format.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.textwriter">TextWriter</a></td>
+        <td><span class="parametername">output</span></td>
+        <td><p>The output.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></td>
+        <td><p>When <code class="paramref">logEvent</code> is <pre><code class="lang-csharp">null</code></pre>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></td>
+        <td><p>When <code class="paramref">output</code> is <pre><code class="lang-csharp">null</code></pre>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Serilog_Formatting_Json_JsonFormatter_WriteDictionary_" data-uid="Serilog.Formatting.Json.JsonFormatter.WriteDictionary*"></a>
+  <h4 id="Serilog_Formatting_Json_JsonFormatter_WriteDictionary_System_Collections_Generic_IReadOnlyDictionary_Serilog_Events_ScalarValue_Serilog_Events_LogEventPropertyValue__System_IO_TextWriter_" data-uid="Serilog.Formatting.Json.JsonFormatter.WriteDictionary(System.Collections.Generic.IReadOnlyDictionary{Serilog.Events.ScalarValue,Serilog.Events.LogEventPropertyValue},System.IO.TextWriter)">WriteDictionary(IReadOnlyDictionary&lt;ScalarValue, LogEventPropertyValue&gt;, TextWriter)</h4>
+  <div class="markdown level1 summary"><p>Writes out a dictionary</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Extension of JsonFormatter by subclassing is obsolete and will be removed in a future Serilog version. Write a custom formatter based on JsonValueFormatter instead. See https://github.com/serilog/serilog/pull/819.&quot;)]
+protected virtual void WriteDictionary(IReadOnlyDictionary&lt;ScalarValue, LogEventPropertyValue&gt; elements, TextWriter output)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlydictionary-2">IReadOnlyDictionary</a>&lt;<a class="xref" href="Serilog.Events.ScalarValue.html">ScalarValue</a>, <a class="xref" href="Serilog.Events.LogEventPropertyValue.html">LogEventPropertyValue</a>&gt;</td>
+        <td><span class="parametername">elements</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.textwriter">TextWriter</a></td>
+        <td><span class="parametername">output</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Serilog_Formatting_Json_JsonFormatter_WriteException_" data-uid="Serilog.Formatting.Json.JsonFormatter.WriteException*"></a>
+  <h4 id="Serilog_Formatting_Json_JsonFormatter_WriteException_System_Exception_System_String__System_IO_TextWriter_" data-uid="Serilog.Formatting.Json.JsonFormatter.WriteException(System.Exception,System.String@,System.IO.TextWriter)">WriteException(Exception, ref string, TextWriter)</h4>
+  <div class="markdown level1 summary"><p>Writes out the attached exception</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Extension of JsonFormatter by subclassing is obsolete and will be removed in a future Serilog version. Write a custom formatter based on JsonValueFormatter instead. See https://github.com/serilog/serilog/pull/819.&quot;)]
+protected virtual void WriteException(Exception exception, ref string delim, TextWriter output)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.exception">Exception</a></td>
+        <td><span class="parametername">exception</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">delim</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.textwriter">TextWriter</a></td>
+        <td><span class="parametername">output</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Serilog_Formatting_Json_JsonFormatter_WriteJsonProperty_" data-uid="Serilog.Formatting.Json.JsonFormatter.WriteJsonProperty*"></a>
+  <h4 id="Serilog_Formatting_Json_JsonFormatter_WriteJsonProperty_System_String_System_Object_System_String__System_IO_TextWriter_" data-uid="Serilog.Formatting.Json.JsonFormatter.WriteJsonProperty(System.String,System.Object,System.String@,System.IO.TextWriter)">WriteJsonProperty(string, object?, ref string, TextWriter)</h4>
+  <div class="markdown level1 summary"><p>Writes out a json property with the specified value on output writer</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Extension of JsonFormatter by subclassing is obsolete and will be removed in a future Serilog version. Write a custom formatter based on JsonValueFormatter instead. See https://github.com/serilog/serilog/pull/819.&quot;)]
+protected virtual void WriteJsonProperty(string name, object? value, ref string precedingDelimiter, TextWriter output)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">name</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">precedingDelimiter</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.textwriter">TextWriter</a></td>
+        <td><span class="parametername">output</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Serilog_Formatting_Json_JsonFormatter_WriteLevel_" data-uid="Serilog.Formatting.Json.JsonFormatter.WriteLevel*"></a>
+  <h4 id="Serilog_Formatting_Json_JsonFormatter_WriteLevel_Serilog_Events_LogEventLevel_System_String__System_IO_TextWriter_" data-uid="Serilog.Formatting.Json.JsonFormatter.WriteLevel(Serilog.Events.LogEventLevel,System.String@,System.IO.TextWriter)">WriteLevel(LogEventLevel, ref string, TextWriter)</h4>
+  <div class="markdown level1 summary"><p>Writes out the log level</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Extension of JsonFormatter by subclassing is obsolete and will be removed in a future Serilog version. Write a custom formatter based on JsonValueFormatter instead. See https://github.com/serilog/serilog/pull/819.&quot;)]
+protected virtual void WriteLevel(LogEventLevel level, ref string delim, TextWriter output)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Serilog.Events.LogEventLevel.html">LogEventLevel</a></td>
+        <td><span class="parametername">level</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">delim</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.textwriter">TextWriter</a></td>
+        <td><span class="parametername">output</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Serilog_Formatting_Json_JsonFormatter_WriteLiteralValue_" data-uid="Serilog.Formatting.Json.JsonFormatter.WriteLiteralValue*"></a>
+  <h4 id="Serilog_Formatting_Json_JsonFormatter_WriteLiteralValue_System_Object_System_IO_TextWriter_" data-uid="Serilog.Formatting.Json.JsonFormatter.WriteLiteralValue(System.Object,System.IO.TextWriter)">WriteLiteralValue(object, TextWriter)</h4>
+  <div class="markdown level1 summary"><p>Allows a subclass to write out objects that have no configured literal writer.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Extension of JsonFormatter by subclassing is obsolete and will be removed in a future Serilog version. Write a custom formatter based on JsonValueFormatter instead. See https://github.com/serilog/serilog/pull/819.&quot;)]
+protected virtual void WriteLiteralValue(object value, TextWriter output)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>The value to be written as a json construct</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.textwriter">TextWriter</a></td>
+        <td><span class="parametername">output</span></td>
+        <td><p>The writer to write on</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Serilog_Formatting_Json_JsonFormatter_WriteMessageTemplate_" data-uid="Serilog.Formatting.Json.JsonFormatter.WriteMessageTemplate*"></a>
+  <h4 id="Serilog_Formatting_Json_JsonFormatter_WriteMessageTemplate_System_String_System_String__System_IO_TextWriter_" data-uid="Serilog.Formatting.Json.JsonFormatter.WriteMessageTemplate(System.String,System.String@,System.IO.TextWriter)">WriteMessageTemplate(string, ref string, TextWriter)</h4>
+  <div class="markdown level1 summary"><p>Writes out the message template for the logevent.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Extension of JsonFormatter by subclassing is obsolete and will be removed in a future Serilog version. Write a custom formatter based on JsonValueFormatter instead. See https://github.com/serilog/serilog/pull/819.&quot;)]
+protected virtual void WriteMessageTemplate(string template, ref string delim, TextWriter output)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">template</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">delim</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.textwriter">TextWriter</a></td>
+        <td><span class="parametername">output</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Serilog_Formatting_Json_JsonFormatter_WriteProperties_" data-uid="Serilog.Formatting.Json.JsonFormatter.WriteProperties*"></a>
+  <h4 id="Serilog_Formatting_Json_JsonFormatter_WriteProperties_System_Collections_Generic_IReadOnlyDictionary_System_String_Serilog_Events_LogEventPropertyValue__System_IO_TextWriter_" data-uid="Serilog.Formatting.Json.JsonFormatter.WriteProperties(System.Collections.Generic.IReadOnlyDictionary{System.String,Serilog.Events.LogEventPropertyValue},System.IO.TextWriter)">WriteProperties(IReadOnlyDictionary&lt;string, LogEventPropertyValue&gt;, TextWriter)</h4>
+  <div class="markdown level1 summary"><p>Writes out the attached properties</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Extension of JsonFormatter by subclassing is obsolete and will be removed in a future Serilog version. Write a custom formatter based on JsonValueFormatter instead. See https://github.com/serilog/serilog/pull/819.&quot;)]
+protected virtual void WriteProperties(IReadOnlyDictionary&lt;string, LogEventPropertyValue&gt; properties, TextWriter output)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlydictionary-2">IReadOnlyDictionary</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="Serilog.Events.LogEventPropertyValue.html">LogEventPropertyValue</a>&gt;</td>
+        <td><span class="parametername">properties</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.textwriter">TextWriter</a></td>
+        <td><span class="parametername">output</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Serilog_Formatting_Json_JsonFormatter_WritePropertiesValues_" data-uid="Serilog.Formatting.Json.JsonFormatter.WritePropertiesValues*"></a>
+  <h4 id="Serilog_Formatting_Json_JsonFormatter_WritePropertiesValues_System_Collections_Generic_IReadOnlyDictionary_System_String_Serilog_Events_LogEventPropertyValue__System_IO_TextWriter_" data-uid="Serilog.Formatting.Json.JsonFormatter.WritePropertiesValues(System.Collections.Generic.IReadOnlyDictionary{System.String,Serilog.Events.LogEventPropertyValue},System.IO.TextWriter)">WritePropertiesValues(IReadOnlyDictionary&lt;string, LogEventPropertyValue&gt;, TextWriter)</h4>
+  <div class="markdown level1 summary"><p>Writes out the attached properties values</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Extension of JsonFormatter by subclassing is obsolete and will be removed in a future Serilog version. Write a custom formatter based on JsonValueFormatter instead. See https://github.com/serilog/serilog/pull/819.&quot;)]
+protected virtual void WritePropertiesValues(IReadOnlyDictionary&lt;string, LogEventPropertyValue&gt; properties, TextWriter output)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlydictionary-2">IReadOnlyDictionary</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="Serilog.Events.LogEventPropertyValue.html">LogEventPropertyValue</a>&gt;</td>
+        <td><span class="parametername">properties</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.textwriter">TextWriter</a></td>
+        <td><span class="parametername">output</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Serilog_Formatting_Json_JsonFormatter_WriteRenderedMessage_" data-uid="Serilog.Formatting.Json.JsonFormatter.WriteRenderedMessage*"></a>
+  <h4 id="Serilog_Formatting_Json_JsonFormatter_WriteRenderedMessage_System_String_System_String__System_IO_TextWriter_" data-uid="Serilog.Formatting.Json.JsonFormatter.WriteRenderedMessage(System.String,System.String@,System.IO.TextWriter)">WriteRenderedMessage(string, ref string, TextWriter)</h4>
+  <div class="markdown level1 summary"><p>(Optionally) writes out the rendered message</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Extension of JsonFormatter by subclassing is obsolete and will be removed in a future Serilog version. Write a custom formatter based on JsonValueFormatter instead. See https://github.com/serilog/serilog/pull/819.&quot;)]
+protected virtual void WriteRenderedMessage(string message, ref string delim, TextWriter output)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">message</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">delim</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.textwriter">TextWriter</a></td>
+        <td><span class="parametername">output</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Serilog_Formatting_Json_JsonFormatter_WriteRenderings_" data-uid="Serilog.Formatting.Json.JsonFormatter.WriteRenderings*"></a>
+  <h4 id="Serilog_Formatting_Json_JsonFormatter_WriteRenderings_System_Linq_IGrouping_System_String_Serilog_Parsing_PropertyToken____System_Collections_Generic_IReadOnlyDictionary_System_String_Serilog_Events_LogEventPropertyValue__System_IO_TextWriter_" data-uid="Serilog.Formatting.Json.JsonFormatter.WriteRenderings(System.Linq.IGrouping{System.String,Serilog.Parsing.PropertyToken}[],System.Collections.Generic.IReadOnlyDictionary{System.String,Serilog.Events.LogEventPropertyValue},System.IO.TextWriter)">WriteRenderings(IGrouping&lt;string, PropertyToken&gt;[], IReadOnlyDictionary&lt;string, LogEventPropertyValue&gt;, TextWriter)</h4>
+  <div class="markdown level1 summary"><p>Writes out individual renderings of attached properties</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Extension of JsonFormatter by subclassing is obsolete and will be removed in a future Serilog version. Write a custom formatter based on JsonValueFormatter instead. See https://github.com/serilog/serilog/pull/819.&quot;)]
+protected virtual void WriteRenderings(IGrouping&lt;string, PropertyToken&gt;[] tokensWithFormat, IReadOnlyDictionary&lt;string, LogEventPropertyValue&gt; properties, TextWriter output)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.linq.igrouping-2">IGrouping</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="Serilog.Parsing.PropertyToken.html">PropertyToken</a>&gt;[]</td>
+        <td><span class="parametername">tokensWithFormat</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlydictionary-2">IReadOnlyDictionary</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="Serilog.Events.LogEventPropertyValue.html">LogEventPropertyValue</a>&gt;</td>
+        <td><span class="parametername">properties</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.textwriter">TextWriter</a></td>
+        <td><span class="parametername">output</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Serilog_Formatting_Json_JsonFormatter_WriteRenderingsValues_" data-uid="Serilog.Formatting.Json.JsonFormatter.WriteRenderingsValues*"></a>
+  <h4 id="Serilog_Formatting_Json_JsonFormatter_WriteRenderingsValues_System_Linq_IGrouping_System_String_Serilog_Parsing_PropertyToken____System_Collections_Generic_IReadOnlyDictionary_System_String_Serilog_Events_LogEventPropertyValue__System_IO_TextWriter_" data-uid="Serilog.Formatting.Json.JsonFormatter.WriteRenderingsValues(System.Linq.IGrouping{System.String,Serilog.Parsing.PropertyToken}[],System.Collections.Generic.IReadOnlyDictionary{System.String,Serilog.Events.LogEventPropertyValue},System.IO.TextWriter)">WriteRenderingsValues(IGrouping&lt;string, PropertyToken&gt;[], IReadOnlyDictionary&lt;string, LogEventPropertyValue&gt;, TextWriter)</h4>
+  <div class="markdown level1 summary"><p>Writes out the values of individual renderings of attached properties</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Extension of JsonFormatter by subclassing is obsolete and will be removed in a future Serilog version. Write a custom formatter based on JsonValueFormatter instead. See https://github.com/serilog/serilog/pull/819.&quot;)]
+protected virtual void WriteRenderingsValues(IGrouping&lt;string, PropertyToken&gt;[] tokensWithFormat, IReadOnlyDictionary&lt;string, LogEventPropertyValue&gt; properties, TextWriter output)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.linq.igrouping-2">IGrouping</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="Serilog.Parsing.PropertyToken.html">PropertyToken</a>&gt;[]</td>
+        <td><span class="parametername">tokensWithFormat</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlydictionary-2">IReadOnlyDictionary</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="Serilog.Events.LogEventPropertyValue.html">LogEventPropertyValue</a>&gt;</td>
+        <td><span class="parametername">properties</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.textwriter">TextWriter</a></td>
+        <td><span class="parametername">output</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Serilog_Formatting_Json_JsonFormatter_WriteSequence_" data-uid="Serilog.Formatting.Json.JsonFormatter.WriteSequence*"></a>
+  <h4 id="Serilog_Formatting_Json_JsonFormatter_WriteSequence_System_Collections_IEnumerable_System_IO_TextWriter_" data-uid="Serilog.Formatting.Json.JsonFormatter.WriteSequence(System.Collections.IEnumerable,System.IO.TextWriter)">WriteSequence(IEnumerable, TextWriter)</h4>
+  <div class="markdown level1 summary"><p>Writes out a sequence property</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Extension of JsonFormatter by subclassing is obsolete and will be removed in a future Serilog version. Write a custom formatter based on JsonValueFormatter instead. See https://github.com/serilog/serilog/pull/819.&quot;)]
+protected virtual void WriteSequence(IEnumerable elements, TextWriter output)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.ienumerable">IEnumerable</a></td>
+        <td><span class="parametername">elements</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.textwriter">TextWriter</a></td>
+        <td><span class="parametername">output</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Serilog_Formatting_Json_JsonFormatter_WriteStructure_" data-uid="Serilog.Formatting.Json.JsonFormatter.WriteStructure*"></a>
+  <h4 id="Serilog_Formatting_Json_JsonFormatter_WriteStructure_System_String_System_Collections_Generic_IEnumerable_Serilog_Events_LogEventProperty__System_IO_TextWriter_" data-uid="Serilog.Formatting.Json.JsonFormatter.WriteStructure(System.String,System.Collections.Generic.IEnumerable{Serilog.Events.LogEventProperty},System.IO.TextWriter)">WriteStructure(string?, IEnumerable&lt;LogEventProperty&gt;, TextWriter)</h4>
+  <div class="markdown level1 summary"><p>Writes out a structure property</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Extension of JsonFormatter by subclassing is obsolete and will be removed in a future Serilog version. Write a custom formatter based on JsonValueFormatter instead. See https://github.com/serilog/serilog/pull/819.&quot;)]
+protected virtual void WriteStructure(string? typeTag, IEnumerable&lt;LogEventProperty&gt; properties, TextWriter output)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">typeTag</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Serilog.Events.LogEventProperty.html">LogEventProperty</a>&gt;</td>
+        <td><span class="parametername">properties</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.textwriter">TextWriter</a></td>
+        <td><span class="parametername">output</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Serilog_Formatting_Json_JsonFormatter_WriteTimestamp_" data-uid="Serilog.Formatting.Json.JsonFormatter.WriteTimestamp*"></a>
+  <h4 id="Serilog_Formatting_Json_JsonFormatter_WriteTimestamp_System_DateTimeOffset_System_String__System_IO_TextWriter_" data-uid="Serilog.Formatting.Json.JsonFormatter.WriteTimestamp(System.DateTimeOffset,System.String@,System.IO.TextWriter)">WriteTimestamp(DateTimeOffset, ref string, TextWriter)</h4>
+  <div class="markdown level1 summary"><p>Writes out the log timestamp</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Extension of JsonFormatter by subclassing is obsolete and will be removed in a future Serilog version. Write a custom formatter based on JsonValueFormatter instead. See https://github.com/serilog/serilog/pull/819.&quot;)]
+protected virtual void WriteTimestamp(DateTimeOffset timestamp, ref string delim, TextWriter output)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetimeoffset">DateTimeOffset</a></td>
+        <td><span class="parametername">timestamp</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">delim</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.textwriter">TextWriter</a></td>
+        <td><span class="parametername">output</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="Serilog.Formatting.ITextFormatter.html">ITextFormatter</a>
+  </div>
+
+</article>
+                </div>
+
+                <div class="copyright-footer">
+                    <span>&#169; CodeFactory, LLC. All rights reserved.</span>
+                </div>
+            </main>
+        </div>
+
+
+        <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+        <script type="text/javascript" src="../styles/jquery.twbsPagination.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/mark.js@8.11.1/dist/jquery.mark.min.js"></script>
+        <script type="text/javascript" src="../styles/url.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/anchor-js@5.0.0/anchor.min.js"></script>
+        <script type="text/javascript" src="../styles/docfx.js"></script>
+        <script type="text/javascript" src="../styles/main.js"></script>
+        <script type="text/javascript" src="../styles/singulink.js"></script>    </body>
+</html>

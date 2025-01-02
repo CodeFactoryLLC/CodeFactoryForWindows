@@ -1,0 +1,1026 @@
+### YamlMime:ManagedReference
+items:
+- uid: System.Buffers.StandardFormat
+  commentId: T:System.Buffers.StandardFormat
+  id: StandardFormat
+  parent: System.Buffers
+  children:
+  - System.Buffers.StandardFormat.#ctor(System.Char,System.Byte)
+  - System.Buffers.StandardFormat.Equals(System.Buffers.StandardFormat)
+  - System.Buffers.StandardFormat.Equals(System.Object)
+  - System.Buffers.StandardFormat.GetHashCode
+  - System.Buffers.StandardFormat.HasPrecision
+  - System.Buffers.StandardFormat.IsDefault
+  - System.Buffers.StandardFormat.MaxPrecision
+  - System.Buffers.StandardFormat.NoPrecision
+  - System.Buffers.StandardFormat.Parse(System.ReadOnlySpan{System.Char})
+  - System.Buffers.StandardFormat.Parse(System.String)
+  - System.Buffers.StandardFormat.Precision
+  - System.Buffers.StandardFormat.Symbol
+  - System.Buffers.StandardFormat.ToString
+  - System.Buffers.StandardFormat.op_Equality(System.Buffers.StandardFormat,System.Buffers.StandardFormat)
+  - System.Buffers.StandardFormat.op_Implicit(System.Char)~System.Buffers.StandardFormat
+  - System.Buffers.StandardFormat.op_Inequality(System.Buffers.StandardFormat,System.Buffers.StandardFormat)
+  langs:
+  - csharp
+  - vb
+  name: StandardFormat
+  nameWithType: StandardFormat
+  fullName: System.Buffers.StandardFormat
+  type: Struct
+  assemblies:
+  - System.Memory
+  namespace: System.Buffers
+  syntax:
+    content: 'public readonly struct StandardFormat : IEquatable<StandardFormat>'
+    content.vb: Public Structure StandardFormat Implements IEquatable(Of StandardFormat)
+  implements:
+  - System.IEquatable{System.Buffers.StandardFormat}
+  inheritedMembers:
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetType
+- uid: System.Buffers.StandardFormat.NoPrecision
+  commentId: F:System.Buffers.StandardFormat.NoPrecision
+  id: NoPrecision
+  parent: System.Buffers.StandardFormat
+  langs:
+  - csharp
+  - vb
+  name: NoPrecision
+  nameWithType: StandardFormat.NoPrecision
+  fullName: System.Buffers.StandardFormat.NoPrecision
+  type: Field
+  assemblies:
+  - System.Memory
+  namespace: System.Buffers
+  syntax:
+    content: public const byte NoPrecision = 255
+    return:
+      type: System.Byte
+    content.vb: Public Const NoPrecision As Byte = 255
+- uid: System.Buffers.StandardFormat.MaxPrecision
+  commentId: F:System.Buffers.StandardFormat.MaxPrecision
+  id: MaxPrecision
+  parent: System.Buffers.StandardFormat
+  langs:
+  - csharp
+  - vb
+  name: MaxPrecision
+  nameWithType: StandardFormat.MaxPrecision
+  fullName: System.Buffers.StandardFormat.MaxPrecision
+  type: Field
+  assemblies:
+  - System.Memory
+  namespace: System.Buffers
+  syntax:
+    content: public const byte MaxPrecision = 99
+    return:
+      type: System.Byte
+    content.vb: Public Const MaxPrecision As Byte = 99
+- uid: System.Buffers.StandardFormat.#ctor(System.Char,System.Byte)
+  commentId: M:System.Buffers.StandardFormat.#ctor(System.Char,System.Byte)
+  id: '#ctor(System.Char,System.Byte)'
+  parent: System.Buffers.StandardFormat
+  langs:
+  - csharp
+  - vb
+  name: StandardFormat(char, byte)
+  nameWithType: StandardFormat.StandardFormat(char, byte)
+  fullName: System.Buffers.StandardFormat.StandardFormat(char, byte)
+  type: Constructor
+  assemblies:
+  - System.Memory
+  namespace: System.Buffers
+  syntax:
+    content: public StandardFormat(char symbol, byte precision = 255)
+    parameters:
+    - id: symbol
+      type: System.Char
+    - id: precision
+      type: System.Byte
+    content.vb: Public Sub New(symbol As Char, precision As Byte = 255)
+  overload: System.Buffers.StandardFormat.#ctor*
+  nameWithType.vb: StandardFormat.New(Char, Byte)
+  fullName.vb: System.Buffers.StandardFormat.New(Char, Byte)
+  name.vb: New(Char, Byte)
+- uid: System.Buffers.StandardFormat.op_Implicit(System.Char)~System.Buffers.StandardFormat
+  commentId: M:System.Buffers.StandardFormat.op_Implicit(System.Char)~System.Buffers.StandardFormat
+  id: op_Implicit(System.Char)~System.Buffers.StandardFormat
+  parent: System.Buffers.StandardFormat
+  langs:
+  - csharp
+  - vb
+  name: implicit operator StandardFormat(char)
+  nameWithType: StandardFormat.implicit operator StandardFormat(char)
+  fullName: System.Buffers.StandardFormat.implicit operator System.Buffers.StandardFormat(char)
+  type: Operator
+  assemblies:
+  - System.Memory
+  namespace: System.Buffers
+  syntax:
+    content: public static implicit operator StandardFormat(char symbol)
+    parameters:
+    - id: symbol
+      type: System.Char
+    return:
+      type: System.Buffers.StandardFormat
+    content.vb: Public Shared Widening Operator CType(symbol As Char) As StandardFormat
+  overload: System.Buffers.StandardFormat.op_Implicit*
+  nameWithType.vb: StandardFormat.CType(Char)
+  fullName.vb: System.Buffers.StandardFormat.CType(Char)
+  name.vb: CType(Char)
+- uid: System.Buffers.StandardFormat.Parse(System.ReadOnlySpan{System.Char})
+  commentId: M:System.Buffers.StandardFormat.Parse(System.ReadOnlySpan{System.Char})
+  id: Parse(System.ReadOnlySpan{System.Char})
+  parent: System.Buffers.StandardFormat
+  langs:
+  - csharp
+  - vb
+  name: Parse(ReadOnlySpan<char>)
+  nameWithType: StandardFormat.Parse(ReadOnlySpan<char>)
+  fullName: System.Buffers.StandardFormat.Parse(System.ReadOnlySpan<char>)
+  type: Method
+  assemblies:
+  - System.Memory
+  namespace: System.Buffers
+  syntax:
+    content: public static StandardFormat Parse(ReadOnlySpan<char> format)
+    parameters:
+    - id: format
+      type: System.ReadOnlySpan{System.Char}
+    return:
+      type: System.Buffers.StandardFormat
+    content.vb: Public Shared Function Parse(format As ReadOnlySpan(Of Char)) As StandardFormat
+  overload: System.Buffers.StandardFormat.Parse*
+  nameWithType.vb: StandardFormat.Parse(ReadOnlySpan(Of Char))
+  fullName.vb: System.Buffers.StandardFormat.Parse(System.ReadOnlySpan(Of Char))
+  name.vb: Parse(ReadOnlySpan(Of Char))
+- uid: System.Buffers.StandardFormat.Parse(System.String)
+  commentId: M:System.Buffers.StandardFormat.Parse(System.String)
+  id: Parse(System.String)
+  parent: System.Buffers.StandardFormat
+  langs:
+  - csharp
+  - vb
+  name: Parse(string)
+  nameWithType: StandardFormat.Parse(string)
+  fullName: System.Buffers.StandardFormat.Parse(string)
+  type: Method
+  assemblies:
+  - System.Memory
+  namespace: System.Buffers
+  syntax:
+    content: public static StandardFormat Parse(string format)
+    parameters:
+    - id: format
+      type: System.String
+    return:
+      type: System.Buffers.StandardFormat
+    content.vb: Public Shared Function Parse(format As String) As StandardFormat
+  overload: System.Buffers.StandardFormat.Parse*
+  nameWithType.vb: StandardFormat.Parse(String)
+  fullName.vb: System.Buffers.StandardFormat.Parse(String)
+  name.vb: Parse(String)
+- uid: System.Buffers.StandardFormat.Equals(System.Object)
+  commentId: M:System.Buffers.StandardFormat.Equals(System.Object)
+  id: Equals(System.Object)
+  parent: System.Buffers.StandardFormat
+  langs:
+  - csharp
+  - vb
+  name: Equals(object)
+  nameWithType: StandardFormat.Equals(object)
+  fullName: System.Buffers.StandardFormat.Equals(object)
+  type: Method
+  assemblies:
+  - System.Memory
+  namespace: System.Buffers
+  example: []
+  syntax:
+    content: public override bool Equals(object obj)
+    parameters:
+    - id: obj
+      type: System.Object
+    return:
+      type: System.Boolean
+    content.vb: Public Overrides Function Equals(obj As Object) As Boolean
+  overridden: System.ValueType.Equals(System.Object)
+  overload: System.Buffers.StandardFormat.Equals*
+  nameWithType.vb: StandardFormat.Equals(Object)
+  fullName.vb: System.Buffers.StandardFormat.Equals(Object)
+  name.vb: Equals(Object)
+- uid: System.Buffers.StandardFormat.GetHashCode
+  commentId: M:System.Buffers.StandardFormat.GetHashCode
+  id: GetHashCode
+  parent: System.Buffers.StandardFormat
+  langs:
+  - csharp
+  - vb
+  name: GetHashCode()
+  nameWithType: StandardFormat.GetHashCode()
+  fullName: System.Buffers.StandardFormat.GetHashCode()
+  type: Method
+  assemblies:
+  - System.Memory
+  namespace: System.Buffers
+  example: []
+  syntax:
+    content: public override int GetHashCode()
+    return:
+      type: System.Int32
+    content.vb: Public Overrides Function GetHashCode() As Integer
+  overridden: System.ValueType.GetHashCode
+  overload: System.Buffers.StandardFormat.GetHashCode*
+- uid: System.Buffers.StandardFormat.Equals(System.Buffers.StandardFormat)
+  commentId: M:System.Buffers.StandardFormat.Equals(System.Buffers.StandardFormat)
+  id: Equals(System.Buffers.StandardFormat)
+  parent: System.Buffers.StandardFormat
+  langs:
+  - csharp
+  - vb
+  name: Equals(StandardFormat)
+  nameWithType: StandardFormat.Equals(StandardFormat)
+  fullName: System.Buffers.StandardFormat.Equals(System.Buffers.StandardFormat)
+  type: Method
+  assemblies:
+  - System.Memory
+  namespace: System.Buffers
+  example: []
+  syntax:
+    content: public bool Equals(StandardFormat other)
+    parameters:
+    - id: other
+      type: System.Buffers.StandardFormat
+    return:
+      type: System.Boolean
+    content.vb: Public Function Equals(other As StandardFormat) As Boolean
+  overload: System.Buffers.StandardFormat.Equals*
+  implements:
+  - System.IEquatable{System.Buffers.StandardFormat}.Equals(System.Buffers.StandardFormat)
+- uid: System.Buffers.StandardFormat.ToString
+  commentId: M:System.Buffers.StandardFormat.ToString
+  id: ToString
+  parent: System.Buffers.StandardFormat
+  langs:
+  - csharp
+  - vb
+  name: ToString()
+  nameWithType: StandardFormat.ToString()
+  fullName: System.Buffers.StandardFormat.ToString()
+  type: Method
+  assemblies:
+  - System.Memory
+  namespace: System.Buffers
+  example: []
+  syntax:
+    content: public override string ToString()
+    return:
+      type: System.String
+    content.vb: Public Overrides Function ToString() As String
+  overridden: System.ValueType.ToString
+  overload: System.Buffers.StandardFormat.ToString*
+- uid: System.Buffers.StandardFormat.op_Equality(System.Buffers.StandardFormat,System.Buffers.StandardFormat)
+  commentId: M:System.Buffers.StandardFormat.op_Equality(System.Buffers.StandardFormat,System.Buffers.StandardFormat)
+  id: op_Equality(System.Buffers.StandardFormat,System.Buffers.StandardFormat)
+  parent: System.Buffers.StandardFormat
+  langs:
+  - csharp
+  - vb
+  name: operator ==(StandardFormat, StandardFormat)
+  nameWithType: StandardFormat.operator ==(StandardFormat, StandardFormat)
+  fullName: System.Buffers.StandardFormat.operator ==(System.Buffers.StandardFormat, System.Buffers.StandardFormat)
+  type: Operator
+  assemblies:
+  - System.Memory
+  namespace: System.Buffers
+  syntax:
+    content: public static bool operator ==(StandardFormat left, StandardFormat right)
+    parameters:
+    - id: left
+      type: System.Buffers.StandardFormat
+    - id: right
+      type: System.Buffers.StandardFormat
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Operator =(left As StandardFormat, right As StandardFormat) As Boolean
+  overload: System.Buffers.StandardFormat.op_Equality*
+  nameWithType.vb: StandardFormat.=(StandardFormat, StandardFormat)
+  fullName.vb: System.Buffers.StandardFormat.=(System.Buffers.StandardFormat, System.Buffers.StandardFormat)
+  name.vb: =(StandardFormat, StandardFormat)
+- uid: System.Buffers.StandardFormat.op_Inequality(System.Buffers.StandardFormat,System.Buffers.StandardFormat)
+  commentId: M:System.Buffers.StandardFormat.op_Inequality(System.Buffers.StandardFormat,System.Buffers.StandardFormat)
+  id: op_Inequality(System.Buffers.StandardFormat,System.Buffers.StandardFormat)
+  parent: System.Buffers.StandardFormat
+  langs:
+  - csharp
+  - vb
+  name: operator !=(StandardFormat, StandardFormat)
+  nameWithType: StandardFormat.operator !=(StandardFormat, StandardFormat)
+  fullName: System.Buffers.StandardFormat.operator !=(System.Buffers.StandardFormat, System.Buffers.StandardFormat)
+  type: Operator
+  assemblies:
+  - System.Memory
+  namespace: System.Buffers
+  syntax:
+    content: public static bool operator !=(StandardFormat left, StandardFormat right)
+    parameters:
+    - id: left
+      type: System.Buffers.StandardFormat
+    - id: right
+      type: System.Buffers.StandardFormat
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Operator <>(left As StandardFormat, right As StandardFormat) As Boolean
+  overload: System.Buffers.StandardFormat.op_Inequality*
+  nameWithType.vb: StandardFormat.<>(StandardFormat, StandardFormat)
+  fullName.vb: System.Buffers.StandardFormat.<>(System.Buffers.StandardFormat, System.Buffers.StandardFormat)
+  name.vb: <>(StandardFormat, StandardFormat)
+- uid: System.Buffers.StandardFormat.Symbol
+  commentId: P:System.Buffers.StandardFormat.Symbol
+  id: Symbol
+  parent: System.Buffers.StandardFormat
+  langs:
+  - csharp
+  - vb
+  name: Symbol
+  nameWithType: StandardFormat.Symbol
+  fullName: System.Buffers.StandardFormat.Symbol
+  type: Property
+  assemblies:
+  - System.Memory
+  namespace: System.Buffers
+  syntax:
+    content: public char Symbol { get; }
+    parameters: []
+    return:
+      type: System.Char
+    content.vb: Public ReadOnly Property Symbol As Char
+  overload: System.Buffers.StandardFormat.Symbol*
+- uid: System.Buffers.StandardFormat.Precision
+  commentId: P:System.Buffers.StandardFormat.Precision
+  id: Precision
+  parent: System.Buffers.StandardFormat
+  langs:
+  - csharp
+  - vb
+  name: Precision
+  nameWithType: StandardFormat.Precision
+  fullName: System.Buffers.StandardFormat.Precision
+  type: Property
+  assemblies:
+  - System.Memory
+  namespace: System.Buffers
+  syntax:
+    content: public byte Precision { get; }
+    parameters: []
+    return:
+      type: System.Byte
+    content.vb: Public ReadOnly Property Precision As Byte
+  overload: System.Buffers.StandardFormat.Precision*
+- uid: System.Buffers.StandardFormat.HasPrecision
+  commentId: P:System.Buffers.StandardFormat.HasPrecision
+  id: HasPrecision
+  parent: System.Buffers.StandardFormat
+  langs:
+  - csharp
+  - vb
+  name: HasPrecision
+  nameWithType: StandardFormat.HasPrecision
+  fullName: System.Buffers.StandardFormat.HasPrecision
+  type: Property
+  assemblies:
+  - System.Memory
+  namespace: System.Buffers
+  syntax:
+    content: public bool HasPrecision { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property HasPrecision As Boolean
+  overload: System.Buffers.StandardFormat.HasPrecision*
+- uid: System.Buffers.StandardFormat.IsDefault
+  commentId: P:System.Buffers.StandardFormat.IsDefault
+  id: IsDefault
+  parent: System.Buffers.StandardFormat
+  langs:
+  - csharp
+  - vb
+  name: IsDefault
+  nameWithType: StandardFormat.IsDefault
+  fullName: System.Buffers.StandardFormat.IsDefault
+  type: Property
+  assemblies:
+  - System.Memory
+  namespace: System.Buffers
+  syntax:
+    content: public bool IsDefault { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property IsDefault As Boolean
+  overload: System.Buffers.StandardFormat.IsDefault*
+references:
+- uid: System.Buffers
+  commentId: N:System.Buffers
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Buffers
+  nameWithType: System.Buffers
+  fullName: System.Buffers
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Buffers
+    name: Buffers
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.buffers
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Buffers
+    name: Buffers
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.buffers
+- uid: System.IEquatable{System.Buffers.StandardFormat}
+  commentId: T:System.IEquatable{System.Buffers.StandardFormat}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<StandardFormat>
+  nameWithType: IEquatable<StandardFormat>
+  fullName: System.IEquatable<System.Buffers.StandardFormat>
+  nameWithType.vb: IEquatable(Of StandardFormat)
+  fullName.vb: System.IEquatable(Of System.Buffers.StandardFormat)
+  name.vb: IEquatable(Of StandardFormat)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: System.Buffers.StandardFormat
+    name: StandardFormat
+    isExternal: true
+    href: System.Buffers.StandardFormat.html
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Buffers.StandardFormat
+    name: StandardFormat
+    isExternal: true
+    href: System.Buffers.StandardFormat.html
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.IEquatable`1
+  commentId: T:System.IEquatable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<T>
+  nameWithType: IEquatable<T>
+  fullName: System.IEquatable<T>
+  nameWithType.vb: IEquatable(Of T)
+  fullName.vb: System.IEquatable(Of T)
+  name.vb: IEquatable(Of T)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Byte
+  commentId: T:System.Byte
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.byte
+  name: byte
+  nameWithType: byte
+  fullName: byte
+  nameWithType.vb: Byte
+  fullName.vb: Byte
+  name.vb: Byte
+- uid: System.Buffers.StandardFormat.#ctor*
+  commentId: Overload:System.Buffers.StandardFormat.#ctor
+  isExternal: true
+  href: System.Buffers.StandardFormat.html#System_Buffers_StandardFormat__ctor_System_Char_System_Byte_
+  name: StandardFormat
+  nameWithType: StandardFormat.StandardFormat
+  fullName: System.Buffers.StandardFormat.StandardFormat
+  nameWithType.vb: StandardFormat.New
+  fullName.vb: System.Buffers.StandardFormat.New
+  name.vb: New
+- uid: System.Char
+  commentId: T:System.Char
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.char
+  name: char
+  nameWithType: char
+  fullName: char
+  nameWithType.vb: Char
+  fullName.vb: Char
+  name.vb: Char
+- uid: System.Buffers.StandardFormat.op_Implicit*
+  commentId: Overload:System.Buffers.StandardFormat.op_Implicit
+  name: implicit operator
+  nameWithType: StandardFormat.implicit operator
+  fullName: System.Buffers.StandardFormat.implicit operator
+  nameWithType.vb: StandardFormat.CType
+  fullName.vb: System.Buffers.StandardFormat.CType
+  name.vb: CType
+  spec.csharp:
+  - name: implicit
+  - name: " "
+  - name: operator
+- uid: System.Buffers.StandardFormat
+  commentId: T:System.Buffers.StandardFormat
+  parent: System.Buffers
+  isExternal: true
+  href: System.Buffers.StandardFormat.html
+  name: StandardFormat
+  nameWithType: StandardFormat
+  fullName: System.Buffers.StandardFormat
+- uid: System.Buffers.StandardFormat.Parse*
+  commentId: Overload:System.Buffers.StandardFormat.Parse
+  isExternal: true
+  href: System.Buffers.StandardFormat.html#System_Buffers_StandardFormat_Parse_System_ReadOnlySpan_System_Char__
+  name: Parse
+  nameWithType: StandardFormat.Parse
+  fullName: System.Buffers.StandardFormat.Parse
+- uid: System.ReadOnlySpan{System.Char}
+  commentId: T:System.ReadOnlySpan{System.Char}
+  parent: System
+  definition: System.ReadOnlySpan`1
+  href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  name: ReadOnlySpan<char>
+  nameWithType: ReadOnlySpan<char>
+  fullName: System.ReadOnlySpan<char>
+  nameWithType.vb: ReadOnlySpan(Of Char)
+  fullName.vb: System.ReadOnlySpan(Of Char)
+  name.vb: ReadOnlySpan(Of Char)
+  spec.csharp:
+  - uid: System.ReadOnlySpan`1
+    name: ReadOnlySpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  - name: <
+  - uid: System.Char
+    name: char
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.char
+  - name: '>'
+  spec.vb:
+  - uid: System.ReadOnlySpan`1
+    name: ReadOnlySpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Char
+    name: Char
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.char
+  - name: )
+- uid: System.ReadOnlySpan`1
+  commentId: T:System.ReadOnlySpan`1
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  name: ReadOnlySpan<T>
+  nameWithType: ReadOnlySpan<T>
+  fullName: System.ReadOnlySpan<T>
+  nameWithType.vb: ReadOnlySpan(Of T)
+  fullName.vb: System.ReadOnlySpan(Of T)
+  name.vb: ReadOnlySpan(Of T)
+  spec.csharp:
+  - uid: System.ReadOnlySpan`1
+    name: ReadOnlySpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.ReadOnlySpan`1
+    name: ReadOnlySpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.ValueType.Equals(System.Object)
+  commentId: M:System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  name: Equals(object)
+  nameWithType: ValueType.Equals(object)
+  fullName: System.ValueType.Equals(object)
+  nameWithType.vb: ValueType.Equals(Object)
+  fullName.vb: System.ValueType.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Buffers.StandardFormat.Equals*
+  commentId: Overload:System.Buffers.StandardFormat.Equals
+  isExternal: true
+  href: System.Buffers.StandardFormat.html#System_Buffers_StandardFormat_Equals_System_Object_
+  name: Equals
+  nameWithType: StandardFormat.Equals
+  fullName: System.Buffers.StandardFormat.Equals
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System.ValueType
+  commentId: T:System.ValueType
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype
+  name: ValueType
+  nameWithType: ValueType
+  fullName: System.ValueType
+- uid: System.ValueType.GetHashCode
+  commentId: M:System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  name: GetHashCode()
+  nameWithType: ValueType.GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+- uid: System.Buffers.StandardFormat.GetHashCode*
+  commentId: Overload:System.Buffers.StandardFormat.GetHashCode
+  isExternal: true
+  href: System.Buffers.StandardFormat.html#System_Buffers_StandardFormat_GetHashCode
+  name: GetHashCode
+  nameWithType: StandardFormat.GetHashCode
+  fullName: System.Buffers.StandardFormat.GetHashCode
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.IEquatable{System.Buffers.StandardFormat}.Equals(System.Buffers.StandardFormat)
+  commentId: M:System.IEquatable{System.Buffers.StandardFormat}.Equals(System.Buffers.StandardFormat)
+  parent: System.IEquatable{System.Buffers.StandardFormat}
+  definition: System.IEquatable`1.Equals(`0)
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  name: Equals(StandardFormat)
+  nameWithType: IEquatable<StandardFormat>.Equals(StandardFormat)
+  fullName: System.IEquatable<System.Buffers.StandardFormat>.Equals(System.Buffers.StandardFormat)
+  nameWithType.vb: IEquatable(Of StandardFormat).Equals(StandardFormat)
+  fullName.vb: System.IEquatable(Of System.Buffers.StandardFormat).Equals(System.Buffers.StandardFormat)
+  spec.csharp:
+  - uid: System.IEquatable{System.Buffers.StandardFormat}.Equals(System.Buffers.StandardFormat)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - uid: System.Buffers.StandardFormat
+    name: StandardFormat
+    isExternal: true
+    href: System.Buffers.StandardFormat.html
+  - name: )
+  spec.vb:
+  - uid: System.IEquatable{System.Buffers.StandardFormat}.Equals(System.Buffers.StandardFormat)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - uid: System.Buffers.StandardFormat
+    name: StandardFormat
+    isExternal: true
+    href: System.Buffers.StandardFormat.html
+  - name: )
+- uid: System.IEquatable`1.Equals(`0)
+  commentId: M:System.IEquatable`1.Equals(`0)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  name: Equals(T)
+  nameWithType: IEquatable<T>.Equals(T)
+  fullName: System.IEquatable<T>.Equals(T)
+  nameWithType.vb: IEquatable(Of T).Equals(T)
+  fullName.vb: System.IEquatable(Of T).Equals(T)
+  spec.csharp:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - name: T
+  - name: )
+- uid: System.ValueType.ToString
+  commentId: M:System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  name: ToString()
+  nameWithType: ValueType.ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+- uid: System.Buffers.StandardFormat.ToString*
+  commentId: Overload:System.Buffers.StandardFormat.ToString
+  isExternal: true
+  href: System.Buffers.StandardFormat.html#System_Buffers_StandardFormat_ToString
+  name: ToString
+  nameWithType: StandardFormat.ToString
+  fullName: System.Buffers.StandardFormat.ToString
+- uid: System.Buffers.StandardFormat.op_Equality*
+  commentId: Overload:System.Buffers.StandardFormat.op_Equality
+  isExternal: true
+  href: System.Buffers.StandardFormat.html#System_Buffers_StandardFormat_op_Equality_System_Buffers_StandardFormat_System_Buffers_StandardFormat_
+  name: operator ==
+  nameWithType: StandardFormat.operator ==
+  fullName: System.Buffers.StandardFormat.operator ==
+  nameWithType.vb: StandardFormat.=
+  fullName.vb: System.Buffers.StandardFormat.=
+  name.vb: =
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: System.Buffers.StandardFormat.op_Equality*
+    name: ==
+    isExternal: true
+    href: System.Buffers.StandardFormat.html#System_Buffers_StandardFormat_op_Equality_System_Buffers_StandardFormat_System_Buffers_StandardFormat_
+- uid: System.Buffers.StandardFormat.op_Inequality*
+  commentId: Overload:System.Buffers.StandardFormat.op_Inequality
+  isExternal: true
+  href: System.Buffers.StandardFormat.html#System_Buffers_StandardFormat_op_Inequality_System_Buffers_StandardFormat_System_Buffers_StandardFormat_
+  name: operator !=
+  nameWithType: StandardFormat.operator !=
+  fullName: System.Buffers.StandardFormat.operator !=
+  nameWithType.vb: StandardFormat.<>
+  fullName.vb: System.Buffers.StandardFormat.<>
+  name.vb: <>
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: System.Buffers.StandardFormat.op_Inequality*
+    name: '!='
+    isExternal: true
+    href: System.Buffers.StandardFormat.html#System_Buffers_StandardFormat_op_Inequality_System_Buffers_StandardFormat_System_Buffers_StandardFormat_
+- uid: System.Buffers.StandardFormat.Symbol*
+  commentId: Overload:System.Buffers.StandardFormat.Symbol
+  isExternal: true
+  href: System.Buffers.StandardFormat.html#System_Buffers_StandardFormat_Symbol
+  name: Symbol
+  nameWithType: StandardFormat.Symbol
+  fullName: System.Buffers.StandardFormat.Symbol
+- uid: System.Buffers.StandardFormat.Precision*
+  commentId: Overload:System.Buffers.StandardFormat.Precision
+  isExternal: true
+  href: System.Buffers.StandardFormat.html#System_Buffers_StandardFormat_Precision
+  name: Precision
+  nameWithType: StandardFormat.Precision
+  fullName: System.Buffers.StandardFormat.Precision
+- uid: System.Buffers.StandardFormat.HasPrecision*
+  commentId: Overload:System.Buffers.StandardFormat.HasPrecision
+  isExternal: true
+  href: System.Buffers.StandardFormat.html#System_Buffers_StandardFormat_HasPrecision
+  name: HasPrecision
+  nameWithType: StandardFormat.HasPrecision
+  fullName: System.Buffers.StandardFormat.HasPrecision
+- uid: System.Buffers.StandardFormat.IsDefault*
+  commentId: Overload:System.Buffers.StandardFormat.IsDefault
+  isExternal: true
+  href: System.Buffers.StandardFormat.html#System_Buffers_StandardFormat_IsDefault
+  name: IsDefault
+  nameWithType: StandardFormat.IsDefault
+  fullName: System.Buffers.StandardFormat.IsDefault

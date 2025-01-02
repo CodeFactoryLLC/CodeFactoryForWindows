@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using CodeFactory.WinVs.Stats;
 
 namespace CodeFactory.WinVs.Models.CSharp.Builder
 {
@@ -66,9 +67,20 @@ namespace CodeFactory.WinVs.Models.CSharp.Builder
         /// <exception cref="ArgumentNullException">Thrown if either the source or the container is null after updating.</exception>
         public override async Task FieldsAddBeforeAsync(string syntax)
         {
-            if (string.IsNullOrEmpty(syntax)) return;
-            await this.ContainerAddToBeginningAsync(syntax);
-           
+            await FieldsAddBeforeTransactionAsync(syntax);
+
+        }
+
+        /// <summary>
+        /// Adds the provided syntax before the field definitions.
+        /// </summary>
+        /// <param name="syntax">Target syntax to be added.</param>
+        /// <exception cref="ArgumentNullException">Thrown if either the source or the container is null after updating.</exception>
+        /// <returns>The details of the updated source or null if the transaction details could not be saved.</returns>
+        public override async Task<TransactionDetail> FieldsAddBeforeTransactionAsync(string syntax)
+        {
+            if (string.IsNullOrEmpty(syntax)) return null;
+            return await this.ContainerAddToBeginningTransactionAsync(syntax);
         }
 
         /// <summary>
@@ -78,8 +90,19 @@ namespace CodeFactory.WinVs.Models.CSharp.Builder
         /// <exception cref="ArgumentNullException">Thrown if either the source or the container is null after updating.</exception>
         public override async Task FieldsAddAfterAsync(string syntax)
         {
-            if (string.IsNullOrEmpty(syntax)) return;
-            await this.ContainerAddToBeginningAsync(syntax);
+            await FieldsAddAfterTransactionAsync(syntax);
+        }
+
+        /// <summary>
+        /// Adds the provided syntax after the field definitions.
+        /// </summary>
+        /// <param name="syntax">Target syntax to be added.</param>
+        /// <exception cref="ArgumentNullException">Thrown if either the source or the container is null after updating.</exception>
+        /// <returns>The details of the updated source or null if the transaction details could not be saved.</returns>
+        public override async Task<TransactionDetail> FieldsAddAfterTransactionAsync(string syntax)
+        {
+            if (string.IsNullOrEmpty(syntax)) return null;
+            return await this.ContainerAddToBeginningTransactionAsync(syntax);
         }
 
         /// <summary>
@@ -89,8 +112,19 @@ namespace CodeFactory.WinVs.Models.CSharp.Builder
         /// <exception cref="ArgumentNullException">Thrown if either the source or the container is null after updating.</exception>
         public override async Task ConstructorsAddBeforeAsync(string syntax)
         {
-            if (string.IsNullOrEmpty(syntax)) return;
-            await this.ContainerAddToBeginningAsync(syntax);
+            await ConstructorsAddBeforeTransactionAsync(syntax);
+        }
+
+        /// <summary>
+        /// Add the provided syntax before the constructor definitions.
+        /// </summary>
+        /// <param name="syntax">Target syntax to be added.</param>
+        /// <exception cref="ArgumentNullException">Thrown if either the source or the container is null after updating.</exception>
+        /// <returns>The details of the updated source or null if the transaction details could not be saved.</returns>
+        public override async Task<TransactionDetail> ConstructorsAddBeforeTransactionAsync(string syntax)
+        {
+            if (string.IsNullOrEmpty(syntax)) return null;
+            return await this.ContainerAddToBeginningTransactionAsync(syntax);
         }
 
         /// <summary>
@@ -100,8 +134,19 @@ namespace CodeFactory.WinVs.Models.CSharp.Builder
         /// <exception cref="ArgumentNullException">Thrown if either the source or the container is null after updating.</exception>
         public override async Task ConstructorsAddAfterAsync(string syntax)
         {
-            if (string.IsNullOrEmpty(syntax)) return;
-            await this.ContainerAddToBeginningAsync(syntax);
+            await ConstructorsAddAfterTransactionAsync(syntax);
+        }
+
+        /// <summary>
+        /// Add the provided syntax after the constructor definitions.
+        /// </summary>
+        /// <param name="syntax">Target syntax to be added.</param>
+        /// <exception cref="ArgumentNullException">Thrown if either the source or the container is null after updating.</exception>
+        /// <returns>The details of the updated source or null if the transaction details could not be saved.</returns>
+        public override async Task<TransactionDetail> ConstructorsAddAfterTransactionAsync(string syntax)
+        {
+            if (string.IsNullOrEmpty(syntax)) return null;
+            return await this.ContainerAddToBeginningTransactionAsync(syntax);
         }
     }
 }

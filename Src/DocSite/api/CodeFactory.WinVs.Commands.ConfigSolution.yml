@@ -1,0 +1,793 @@
+### YamlMime:ManagedReference
+items:
+- uid: CodeFactory.WinVs.Commands.ConfigSolution
+  commentId: T:CodeFactory.WinVs.Commands.ConfigSolution
+  id: ConfigSolution
+  parent: CodeFactory.WinVs.Commands
+  children:
+  - CodeFactory.WinVs.Commands.ConfigSolution.#ctor
+  - CodeFactory.WinVs.Commands.ConfigSolution.AddCommand(CodeFactory.WinVs.Commands.ConfigCommand)
+  - CodeFactory.WinVs.Commands.ConfigSolution.CommandByName(System.String)
+  - CodeFactory.WinVs.Commands.ConfigSolution.Commands
+  - CodeFactory.WinVs.Commands.ConfigSolution.CommandsByCategory(System.String)
+  - CodeFactory.WinVs.Commands.ConfigSolution.CommandsByType(System.String)
+  - CodeFactory.WinVs.Commands.ConfigSolution.Name
+  langs:
+  - csharp
+  - vb
+  name: ConfigSolution
+  nameWithType: ConfigSolution
+  fullName: CodeFactory.WinVs.Commands.ConfigSolution
+  type: Class
+  source:
+    href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/e63c05962945f61f2329e19d324f24a768806f18/Src/CodeFactoryForWindows/CodeFactory.WinVs/Commands/ConfigSolution.cs
+  assemblies:
+  - CodeFactory.WinVs
+  namespace: CodeFactory.WinVs.Commands
+  summary: The configuration information for a solution to be automated.
+  example: []
+  syntax:
+    content: public class ConfigSolution
+    content.vb: Public Class ConfigSolution
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+- uid: CodeFactory.WinVs.Commands.ConfigSolution.AddCommand(CodeFactory.WinVs.Commands.ConfigCommand)
+  commentId: M:CodeFactory.WinVs.Commands.ConfigSolution.AddCommand(CodeFactory.WinVs.Commands.ConfigCommand)
+  id: AddCommand(CodeFactory.WinVs.Commands.ConfigCommand)
+  parent: CodeFactory.WinVs.Commands.ConfigSolution
+  langs:
+  - csharp
+  - vb
+  name: AddCommand(ConfigCommand)
+  nameWithType: ConfigSolution.AddCommand(ConfigCommand)
+  fullName: CodeFactory.WinVs.Commands.ConfigSolution.AddCommand(CodeFactory.WinVs.Commands.ConfigCommand)
+  type: Method
+  source:
+    href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/e63c05962945f61f2329e19d324f24a768806f18/Src/CodeFactoryForWindows/CodeFactory.WinVs/Commands/ConfigSolution.cs
+  assemblies:
+  - CodeFactory.WinVs
+  namespace: CodeFactory.WinVs.Commands
+  summary: Fluent method that adds a command to the solution configuration.
+  example: []
+  syntax:
+    content: public ConfigSolution AddCommand(ConfigCommand command)
+    parameters:
+    - id: command
+      type: CodeFactory.WinVs.Commands.ConfigCommand
+      description: Command to add to the source configuration.
+    return:
+      type: CodeFactory.WinVs.Commands.ConfigSolution
+      description: Updated solution configuration.
+    content.vb: Public Function AddCommand(command As ConfigCommand) As ConfigSolution
+  overload: CodeFactory.WinVs.Commands.ConfigSolution.AddCommand*
+- uid: CodeFactory.WinVs.Commands.ConfigSolution.CommandByName(System.String)
+  commentId: M:CodeFactory.WinVs.Commands.ConfigSolution.CommandByName(System.String)
+  id: CommandByName(System.String)
+  parent: CodeFactory.WinVs.Commands.ConfigSolution
+  langs:
+  - csharp
+  - vb
+  name: CommandByName(string)
+  nameWithType: ConfigSolution.CommandByName(string)
+  fullName: CodeFactory.WinVs.Commands.ConfigSolution.CommandByName(string)
+  type: Method
+  source:
+    href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/e63c05962945f61f2329e19d324f24a768806f18/Src/CodeFactoryForWindows/CodeFactory.WinVs/Commands/ConfigSolution.cs
+  assemblies:
+  - CodeFactory.WinVs
+  namespace: CodeFactory.WinVs.Commands
+  summary: Accesses a target command by the name assigned to the command.
+  example: []
+  syntax:
+    content: public ConfigCommand CommandByName(string name)
+    parameters:
+    - id: name
+      type: System.String
+      description: The name of the command to retrieve
+    return:
+      type: CodeFactory.WinVs.Commands.ConfigCommand
+      description: The specific command or null if the command was not found.
+    content.vb: Public Function CommandByName(name As String) As ConfigCommand
+  overload: CodeFactory.WinVs.Commands.ConfigSolution.CommandByName*
+  nameWithType.vb: ConfigSolution.CommandByName(String)
+  fullName.vb: CodeFactory.WinVs.Commands.ConfigSolution.CommandByName(String)
+  name.vb: CommandByName(String)
+- uid: CodeFactory.WinVs.Commands.ConfigSolution.CommandsByType(System.String)
+  commentId: M:CodeFactory.WinVs.Commands.ConfigSolution.CommandsByType(System.String)
+  id: CommandsByType(System.String)
+  parent: CodeFactory.WinVs.Commands.ConfigSolution
+  langs:
+  - csharp
+  - vb
+  name: CommandsByType(string)
+  nameWithType: ConfigSolution.CommandsByType(string)
+  fullName: CodeFactory.WinVs.Commands.ConfigSolution.CommandsByType(string)
+  type: Method
+  source:
+    href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/e63c05962945f61f2329e19d324f24a768806f18/Src/CodeFactoryForWindows/CodeFactory.WinVs/Commands/ConfigSolution.cs
+  assemblies:
+  - CodeFactory.WinVs
+  namespace: CodeFactory.WinVs.Commands
+  summary: Accesses target commands by the type of command that has been saved.
+  example: []
+  syntax:
+    content: public IReadOnlyList<ConfigCommand> CommandsByType(string commandType)
+    parameters:
+    - id: commandType
+      type: System.String
+      description: The type of command to retrieve from the configuration.
+    return:
+      type: System.Collections.Generic.IReadOnlyList{CodeFactory.WinVs.Commands.ConfigCommand}
+      description: The found command sources or an empty list.
+    content.vb: Public Function CommandsByType(commandType As String) As IReadOnlyList(Of ConfigCommand)
+  overload: CodeFactory.WinVs.Commands.ConfigSolution.CommandsByType*
+  nameWithType.vb: ConfigSolution.CommandsByType(String)
+  fullName.vb: CodeFactory.WinVs.Commands.ConfigSolution.CommandsByType(String)
+  name.vb: CommandsByType(String)
+- uid: CodeFactory.WinVs.Commands.ConfigSolution.CommandsByCategory(System.String)
+  commentId: M:CodeFactory.WinVs.Commands.ConfigSolution.CommandsByCategory(System.String)
+  id: CommandsByCategory(System.String)
+  parent: CodeFactory.WinVs.Commands.ConfigSolution
+  langs:
+  - csharp
+  - vb
+  name: CommandsByCategory(string)
+  nameWithType: ConfigSolution.CommandsByCategory(string)
+  fullName: CodeFactory.WinVs.Commands.ConfigSolution.CommandsByCategory(string)
+  type: Method
+  source:
+    href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/e63c05962945f61f2329e19d324f24a768806f18/Src/CodeFactoryForWindows/CodeFactory.WinVs/Commands/ConfigSolution.cs
+  assemblies:
+  - CodeFactory.WinVs
+  namespace: CodeFactory.WinVs.Commands
+  summary: Accesses target commands by the category that was assigned to the command.
+  example: []
+  syntax:
+    content: public IReadOnlyList<ConfigCommand> CommandsByCategory(string category)
+    parameters:
+    - id: category
+      type: System.String
+      description: The category in which the commands where saved as.
+    return:
+      type: System.Collections.Generic.IReadOnlyList{CodeFactory.WinVs.Commands.ConfigCommand}
+      description: The found command sources or an empty list.
+    content.vb: Public Function CommandsByCategory(category As String) As IReadOnlyList(Of ConfigCommand)
+  overload: CodeFactory.WinVs.Commands.ConfigSolution.CommandsByCategory*
+  nameWithType.vb: ConfigSolution.CommandsByCategory(String)
+  fullName.vb: CodeFactory.WinVs.Commands.ConfigSolution.CommandsByCategory(String)
+  name.vb: CommandsByCategory(String)
+- uid: CodeFactory.WinVs.Commands.ConfigSolution.#ctor
+  commentId: M:CodeFactory.WinVs.Commands.ConfigSolution.#ctor
+  id: '#ctor'
+  parent: CodeFactory.WinVs.Commands.ConfigSolution
+  langs:
+  - csharp
+  - vb
+  name: ConfigSolution()
+  nameWithType: ConfigSolution.ConfigSolution()
+  fullName: CodeFactory.WinVs.Commands.ConfigSolution.ConfigSolution()
+  type: Constructor
+  source:
+    href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/e63c05962945f61f2329e19d324f24a768806f18/Src/CodeFactoryForWindows/CodeFactory.WinVs/Commands/ConfigSolution.cs
+  assemblies:
+  - CodeFactory.WinVs
+  namespace: CodeFactory.WinVs.Commands
+  syntax:
+    content: public ConfigSolution()
+    content.vb: Public Sub New()
+  overload: CodeFactory.WinVs.Commands.ConfigSolution.#ctor*
+  nameWithType.vb: ConfigSolution.New()
+  fullName.vb: CodeFactory.WinVs.Commands.ConfigSolution.New()
+  name.vb: New()
+- uid: CodeFactory.WinVs.Commands.ConfigSolution.Name
+  commentId: P:CodeFactory.WinVs.Commands.ConfigSolution.Name
+  id: Name
+  parent: CodeFactory.WinVs.Commands.ConfigSolution
+  langs:
+  - csharp
+  - vb
+  name: Name
+  nameWithType: ConfigSolution.Name
+  fullName: CodeFactory.WinVs.Commands.ConfigSolution.Name
+  type: Property
+  source:
+    href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/e63c05962945f61f2329e19d324f24a768806f18/Src/CodeFactoryForWindows/CodeFactory.WinVs/Commands/ConfigSolution.cs
+  assemblies:
+  - CodeFactory.WinVs
+  namespace: CodeFactory.WinVs.Commands
+  summary: Name assigned to the configuration that is loaded by the solution.
+  example: []
+  syntax:
+    content: public string Name { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Name As String
+  overload: CodeFactory.WinVs.Commands.ConfigSolution.Name*
+- uid: CodeFactory.WinVs.Commands.ConfigSolution.Commands
+  commentId: P:CodeFactory.WinVs.Commands.ConfigSolution.Commands
+  id: Commands
+  parent: CodeFactory.WinVs.Commands.ConfigSolution
+  langs:
+  - csharp
+  - vb
+  name: Commands
+  nameWithType: ConfigSolution.Commands
+  fullName: CodeFactory.WinVs.Commands.ConfigSolution.Commands
+  type: Property
+  source:
+    href: https://github.com/CodeFactoryLLC/CodeFactoryForWindows/blob/e63c05962945f61f2329e19d324f24a768806f18/Src/CodeFactoryForWindows/CodeFactory.WinVs/Commands/ConfigSolution.cs
+  assemblies:
+  - CodeFactory.WinVs
+  namespace: CodeFactory.WinVs.Commands
+  summary: Configuration of the commands that were loaded.
+  example: []
+  syntax:
+    content: public ImmutableList<ConfigCommand> Commands { get; set; }
+    parameters: []
+    return:
+      type: System.Collections.Immutable.ImmutableList{CodeFactory.WinVs.Commands.ConfigCommand}
+    content.vb: Public Property Commands As ImmutableList(Of ConfigCommand)
+  overload: CodeFactory.WinVs.Commands.ConfigSolution.Commands*
+references:
+- uid: CodeFactory.WinVs.Commands
+  commentId: N:CodeFactory.WinVs.Commands
+  isExternal: true
+  href: CodeFactory.html
+  name: CodeFactory.WinVs.Commands
+  nameWithType: CodeFactory.WinVs.Commands
+  fullName: CodeFactory.WinVs.Commands
+  spec.csharp:
+  - uid: CodeFactory
+    name: CodeFactory
+    isExternal: true
+    href: CodeFactory.html
+  - name: .
+  - uid: CodeFactory.WinVs
+    name: WinVs
+    isExternal: true
+    href: CodeFactory.WinVs.html
+  - name: .
+  - uid: CodeFactory.WinVs.Commands
+    name: Commands
+    isExternal: true
+    href: CodeFactory.WinVs.Commands.html
+  spec.vb:
+  - uid: CodeFactory
+    name: CodeFactory
+    isExternal: true
+    href: CodeFactory.html
+  - name: .
+  - uid: CodeFactory.WinVs
+    name: WinVs
+    isExternal: true
+    href: CodeFactory.WinVs.html
+  - name: .
+  - uid: CodeFactory.WinVs.Commands
+    name: Commands
+    isExternal: true
+    href: CodeFactory.WinVs.Commands.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: CodeFactory.WinVs.Commands.ConfigSolution.AddCommand*
+  commentId: Overload:CodeFactory.WinVs.Commands.ConfigSolution.AddCommand
+  isExternal: true
+  href: CodeFactory.WinVs.Commands.ConfigSolution.html#CodeFactory_WinVs_Commands_ConfigSolution_AddCommand_CodeFactory_WinVs_Commands_ConfigCommand_
+  name: AddCommand
+  nameWithType: ConfigSolution.AddCommand
+  fullName: CodeFactory.WinVs.Commands.ConfigSolution.AddCommand
+- uid: CodeFactory.WinVs.Commands.ConfigCommand
+  commentId: T:CodeFactory.WinVs.Commands.ConfigCommand
+  parent: CodeFactory.WinVs.Commands
+  isExternal: true
+  href: CodeFactory.WinVs.Commands.ConfigCommand.html
+  name: ConfigCommand
+  nameWithType: ConfigCommand
+  fullName: CodeFactory.WinVs.Commands.ConfigCommand
+- uid: CodeFactory.WinVs.Commands.ConfigSolution
+  commentId: T:CodeFactory.WinVs.Commands.ConfigSolution
+  parent: CodeFactory.WinVs.Commands
+  isExternal: true
+  href: CodeFactory.WinVs.Commands.ConfigSolution.html
+  name: ConfigSolution
+  nameWithType: ConfigSolution
+  fullName: CodeFactory.WinVs.Commands.ConfigSolution
+- uid: CodeFactory.WinVs.Commands.ConfigSolution.CommandByName*
+  commentId: Overload:CodeFactory.WinVs.Commands.ConfigSolution.CommandByName
+  isExternal: true
+  href: CodeFactory.WinVs.Commands.ConfigSolution.html#CodeFactory_WinVs_Commands_ConfigSolution_CommandByName_System_String_
+  name: CommandByName
+  nameWithType: ConfigSolution.CommandByName
+  fullName: CodeFactory.WinVs.Commands.ConfigSolution.CommandByName
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: CodeFactory.WinVs.Commands.ConfigSolution.CommandsByType*
+  commentId: Overload:CodeFactory.WinVs.Commands.ConfigSolution.CommandsByType
+  isExternal: true
+  href: CodeFactory.WinVs.Commands.ConfigSolution.html#CodeFactory_WinVs_Commands_ConfigSolution_CommandsByType_System_String_
+  name: CommandsByType
+  nameWithType: ConfigSolution.CommandsByType
+  fullName: CodeFactory.WinVs.Commands.ConfigSolution.CommandsByType
+- uid: System.Collections.Generic.IReadOnlyList{CodeFactory.WinVs.Commands.ConfigCommand}
+  commentId: T:System.Collections.Generic.IReadOnlyList{CodeFactory.WinVs.Commands.ConfigCommand}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IReadOnlyList`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  name: IReadOnlyList<ConfigCommand>
+  nameWithType: IReadOnlyList<ConfigCommand>
+  fullName: System.Collections.Generic.IReadOnlyList<CodeFactory.WinVs.Commands.ConfigCommand>
+  nameWithType.vb: IReadOnlyList(Of ConfigCommand)
+  fullName.vb: System.Collections.Generic.IReadOnlyList(Of CodeFactory.WinVs.Commands.ConfigCommand)
+  name.vb: IReadOnlyList(Of ConfigCommand)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - uid: CodeFactory.WinVs.Commands.ConfigCommand
+    name: ConfigCommand
+    isExternal: true
+    href: CodeFactory.WinVs.Commands.ConfigCommand.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: CodeFactory.WinVs.Commands.ConfigCommand
+    name: ConfigCommand
+    isExternal: true
+    href: CodeFactory.WinVs.Commands.ConfigCommand.html
+  - name: )
+- uid: System.Collections.Generic.IReadOnlyList`1
+  commentId: T:System.Collections.Generic.IReadOnlyList`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  name: IReadOnlyList<T>
+  nameWithType: IReadOnlyList<T>
+  fullName: System.Collections.Generic.IReadOnlyList<T>
+  nameWithType.vb: IReadOnlyList(Of T)
+  fullName.vb: System.Collections.Generic.IReadOnlyList(Of T)
+  name.vb: IReadOnlyList(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: CodeFactory.WinVs.Commands.ConfigSolution.CommandsByCategory*
+  commentId: Overload:CodeFactory.WinVs.Commands.ConfigSolution.CommandsByCategory
+  isExternal: true
+  href: CodeFactory.WinVs.Commands.ConfigSolution.html#CodeFactory_WinVs_Commands_ConfigSolution_CommandsByCategory_System_String_
+  name: CommandsByCategory
+  nameWithType: ConfigSolution.CommandsByCategory
+  fullName: CodeFactory.WinVs.Commands.ConfigSolution.CommandsByCategory
+- uid: CodeFactory.WinVs.Commands.ConfigSolution.#ctor*
+  commentId: Overload:CodeFactory.WinVs.Commands.ConfigSolution.#ctor
+  isExternal: true
+  href: CodeFactory.WinVs.Commands.ConfigSolution.html#CodeFactory_WinVs_Commands_ConfigSolution__ctor
+  name: ConfigSolution
+  nameWithType: ConfigSolution.ConfigSolution
+  fullName: CodeFactory.WinVs.Commands.ConfigSolution.ConfigSolution
+  nameWithType.vb: ConfigSolution.New
+  fullName.vb: CodeFactory.WinVs.Commands.ConfigSolution.New
+  name.vb: New
+- uid: CodeFactory.WinVs.Commands.ConfigSolution.Name*
+  commentId: Overload:CodeFactory.WinVs.Commands.ConfigSolution.Name
+  isExternal: true
+  href: CodeFactory.WinVs.Commands.ConfigSolution.html#CodeFactory_WinVs_Commands_ConfigSolution_Name
+  name: Name
+  nameWithType: ConfigSolution.Name
+  fullName: CodeFactory.WinVs.Commands.ConfigSolution.Name
+- uid: CodeFactory.WinVs.Commands.ConfigSolution.Commands*
+  commentId: Overload:CodeFactory.WinVs.Commands.ConfigSolution.Commands
+  isExternal: true
+  href: CodeFactory.WinVs.Commands.ConfigSolution.html#CodeFactory_WinVs_Commands_ConfigSolution_Commands
+  name: Commands
+  nameWithType: ConfigSolution.Commands
+  fullName: CodeFactory.WinVs.Commands.ConfigSolution.Commands
+- uid: System.Collections.Immutable.ImmutableList{CodeFactory.WinVs.Commands.ConfigCommand}
+  commentId: T:System.Collections.Immutable.ImmutableList{CodeFactory.WinVs.Commands.ConfigCommand}
+  parent: System.Collections.Immutable
+  definition: System.Collections.Immutable.ImmutableList`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.immutable.immutablelist-1
+  name: ImmutableList<ConfigCommand>
+  nameWithType: ImmutableList<ConfigCommand>
+  fullName: System.Collections.Immutable.ImmutableList<CodeFactory.WinVs.Commands.ConfigCommand>
+  nameWithType.vb: ImmutableList(Of ConfigCommand)
+  fullName.vb: System.Collections.Immutable.ImmutableList(Of CodeFactory.WinVs.Commands.ConfigCommand)
+  name.vb: ImmutableList(Of ConfigCommand)
+  spec.csharp:
+  - uid: System.Collections.Immutable.ImmutableList`1
+    name: ImmutableList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.immutable.immutablelist-1
+  - name: <
+  - uid: CodeFactory.WinVs.Commands.ConfigCommand
+    name: ConfigCommand
+    isExternal: true
+    href: CodeFactory.WinVs.Commands.ConfigCommand.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Immutable.ImmutableList`1
+    name: ImmutableList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.immutable.immutablelist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: CodeFactory.WinVs.Commands.ConfigCommand
+    name: ConfigCommand
+    isExternal: true
+    href: CodeFactory.WinVs.Commands.ConfigCommand.html
+  - name: )
+- uid: System.Collections.Immutable.ImmutableList`1
+  commentId: T:System.Collections.Immutable.ImmutableList`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.immutable.immutablelist-1
+  name: ImmutableList<T>
+  nameWithType: ImmutableList<T>
+  fullName: System.Collections.Immutable.ImmutableList<T>
+  nameWithType.vb: ImmutableList(Of T)
+  fullName.vb: System.Collections.Immutable.ImmutableList(Of T)
+  name.vb: ImmutableList(Of T)
+  spec.csharp:
+  - uid: System.Collections.Immutable.ImmutableList`1
+    name: ImmutableList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.immutable.immutablelist-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Immutable.ImmutableList`1
+    name: ImmutableList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.immutable.immutablelist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Immutable
+  commentId: N:System.Collections.Immutable
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Immutable
+  nameWithType: System.Collections.Immutable
+  fullName: System.Collections.Immutable
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Immutable
+    name: Immutable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.immutable
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Immutable
+    name: Immutable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.immutable

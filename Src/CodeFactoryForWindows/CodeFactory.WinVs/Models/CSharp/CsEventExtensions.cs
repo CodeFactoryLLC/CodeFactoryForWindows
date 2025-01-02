@@ -14,7 +14,6 @@ namespace CodeFactory.WinVs.Models.CSharp
         /// </summary>
         /// <param name="source">Source model to use to build the hash.</param>
         /// <param name="includeSecurity">Optional parameter that includes security in the comparision hash, default value is true.</param>
-        /// <param name="includeAttributes">Optional parameter that includes attributes in the comparision hash, default value is true.</param>
         /// <param name="includeKeywords">Optional parameter that includes keywords in the comparision hash, default value is true.</param>
         /// <param name="includeAbstractKeyword">Optional parameter that includes abstract keyword in the comparision hash, default value is false.</param>
         /// <param name="mappedNamespaces">Optional parameter that provides namespaces to be mapped to.</param>

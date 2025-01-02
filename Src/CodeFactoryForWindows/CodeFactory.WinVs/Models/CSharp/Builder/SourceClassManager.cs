@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using CodeFactory.WinVs.Stats;
 
 namespace CodeFactory.WinVs.Models.CSharp.Builder
 {
@@ -81,28 +82,45 @@ namespace CodeFactory.WinVs.Models.CSharp.Builder
         /// <exception cref="ArgumentNullException">Thrown if either the source or the container is null after updating.</exception>
         public override async Task FieldsAddBeforeAsync(string syntax)
         {
-            if (string.IsNullOrEmpty(syntax)) return;
+            await FieldsAddBeforeTransactionAsync(syntax);
+        }
+
+        /// <summary>
+        /// Adds the provided syntax before the field definitions.
+        /// </summary>
+        /// <param name="syntax">Target syntax to be added.</param>
+        /// <exception cref="ArgumentNullException">Thrown if either the source or the container is null after updating.</exception>
+        /// <returns>The details of the updated source or null if the transaction details could not be saved.</returns>
+        public override async Task<TransactionDetail> FieldsAddBeforeTransactionAsync(string syntax)
+        {
+            if (string.IsNullOrEmpty(syntax)) return null;
             var source = Source ?? throw new ArgumentNullException(nameof(Source));
             var container = Container ?? throw new ArgumentNullException(nameof(Container));
 
             var sourceDoc = source.SourceDocument;
 
+            TransactionDetail result = null;
+
             if (container.Fields.Any(f => f.ModelSourceFile == sourceDoc & f.LoadedFromSource))
             {
                 var fieldData = container.Fields.First(f => f.ModelSourceFile == sourceDoc & f.LoadedFromSource);
 
-                var updatedSource = await fieldData.AddBeforeAsync(syntax);
+                var updatedSource = await fieldData.AddBeforeTransactionAsync(syntax);
 
-                if (updatedSource == null) throw new ArgumentNullException(nameof(Source));
+                if (updatedSource?.Source == null) throw new ArgumentNullException(nameof(Source));
 
-                var updatedContainer = updatedSource.GetModel<CsClass>(ContainerPath);
+                var updatedContainer = updatedSource.Source.GetModel<CsClass>(ContainerPath);
 
-                UpdateSources(updatedSource, updatedContainer);
+                UpdateSources(updatedSource.Source, updatedContainer);
+
+                result = updatedSource.Transaction;
             }
             else
             {
-                await this.ContainerAddToBeginningAsync(syntax);
+               result = await this.ContainerAddToBeginningTransactionAsync(syntax);
             }
+
+            return result;
         }
 
         /// <summary>
@@ -137,34 +155,88 @@ namespace CodeFactory.WinVs.Models.CSharp.Builder
         }
 
         /// <summary>
+        /// Adds the provided syntax after the field definitions.
+        /// </summary>
+        /// <param name="syntax">Target syntax to be added.</param>
+        /// <exception cref="ArgumentNullException">Thrown if either the source or the container is null after updating.</exception>
+        /// <returns>The details of the updated source or null if the transaction details could not be saved.</returns>
+        public override async Task<TransactionDetail> FieldsAddAfterTransactionAsync(string syntax)
+        {
+            if (string.IsNullOrEmpty(syntax)) return null;
+            var source = Source ?? throw new ArgumentNullException(nameof(Source));
+            var container = Container ?? throw new ArgumentNullException(nameof(Container));
+
+            var sourceDoc = source.SourceDocument;
+
+            TransactionDetail result = null;
+
+            if (container.Fields.Any(f => f.ModelSourceFile == sourceDoc & f.LoadedFromSource))
+            {
+                var fieldData = container.Fields.Last(f => f.ModelSourceFile == sourceDoc & f.LoadedFromSource);
+
+                var updatedSource = await fieldData.AddAfterTransactionAsync(syntax);
+
+                if (updatedSource?.Source == null) throw new ArgumentNullException(nameof(Source));
+
+                var updatedContainer = updatedSource.Source.GetModel<CsClass>(ContainerPath);
+
+                UpdateSources(updatedSource.Source, updatedContainer);
+
+                result = updatedSource.Transaction;
+            }
+            else
+            {
+              result =   await this.ContainerAddToBeginningTransactionAsync(syntax);
+            }
+
+            return result;
+        }
+
+        /// <summary>
         /// Add the provided syntax before the constructor definitions.
         /// </summary>
         /// <param name="syntax">Target syntax to be added.</param>
         /// <exception cref="ArgumentNullException">Thrown if either the source or the container is null after updating.</exception>
         public override async Task ConstructorsAddBeforeAsync(string syntax)
         {
-            if (string.IsNullOrEmpty(syntax)) return;
+            await ConstructorsAddBeforeTransactionAsync(syntax);
+        }
+
+        /// <summary>
+        /// Add the provided syntax before the constructor definitions.
+        /// </summary>
+        /// <param name="syntax">Target syntax to be added.</param>
+        /// <exception cref="ArgumentNullException">Thrown if either the source or the container is null after updating.</exception>
+        /// <returns>The details of the updated source or null if the transaction details could not be saved.</returns>
+        public override async Task<TransactionDetail> ConstructorsAddBeforeTransactionAsync(string syntax)
+        {
+            if (string.IsNullOrEmpty(syntax)) return null;
             var source = Source ?? throw new ArgumentNullException(nameof(Source));
             var container = Container ?? throw new ArgumentNullException(nameof(Container));
 
             var sourceDoc = source.SourceDocument;
 
+            TransactionDetail result = null;
             if (container.Constructors.Any(c => c.ModelSourceFile == sourceDoc & c.LoadedFromSource))
             {
                 var constData = container.Constructors.First(c => c.ModelSourceFile == sourceDoc & c.LoadedFromSource);
 
-                var updatedSource = await constData.AddBeforeAsync(syntax);
+                var updatedSource = await constData.AddBeforeTransactionAsync(syntax);
 
-                if (updatedSource == null) throw new ArgumentNullException(nameof(Source));
+                if (updatedSource?.Source == null) throw new ArgumentNullException(nameof(Source));
 
-                var updatedContainer = updatedSource.GetModel<CsClass>(ContainerPath);
+                var updatedContainer = updatedSource.Source.GetModel<CsClass>(ContainerPath);
 
-                UpdateSources(updatedSource, updatedContainer);
+                UpdateSources(updatedSource.Source, updatedContainer);
+
+                result = updatedSource.Transaction;
             }
             else
             {
-                await this.FieldsAddAfterAsync(syntax);
+                result = await this.FieldsAddAfterTransactionAsync(syntax);
             }
+
+            return result;
         }
 
         /// <summary>
@@ -174,28 +246,45 @@ namespace CodeFactory.WinVs.Models.CSharp.Builder
         /// <exception cref="ArgumentNullException">Thrown if either the source or the container is null after updating.</exception>
         public override async Task ConstructorsAddAfterAsync(string syntax)
         {
-            if (string.IsNullOrEmpty(syntax)) return;
+            await ConstructorsAddAfterTransactionAsync(syntax);
+        }
+
+        /// <summary>
+        /// Add the provided syntax after the constructor definitions.
+        /// </summary>
+        /// <param name="syntax">Target syntax to be added.</param>
+        /// <exception cref="ArgumentNullException">Thrown if either the source or the container is null after updating.</exception>
+        /// <returns>The details of the updated source or null if the transaction details could not be saved.</returns>
+        public override async Task<TransactionDetail> ConstructorsAddAfterTransactionAsync(string syntax)
+        {
+            if (string.IsNullOrEmpty(syntax)) return null;
             var source = Source ?? throw new ArgumentNullException(nameof(Source));
             var container = Container ?? throw new ArgumentNullException(nameof(Container));
 
             var sourceDoc = source.SourceDocument;
 
+            TransactionDetail result = null;
+
             if (container.Constructors.Any(c => c.ModelSourceFile == sourceDoc & c.LoadedFromSource))
             {
                 var constData = container.Constructors.Last(c => c.ModelSourceFile == sourceDoc & c.LoadedFromSource);
 
-                var updatedSource = await constData.AddAfterAsync(syntax);
+                var updatedSource = await constData.AddAfterTransactionAsync(syntax);
 
-                if (updatedSource == null) throw new ArgumentNullException(nameof(Source));
+                if (updatedSource?.Source == null) throw new ArgumentNullException(nameof(Source));
 
-                var updatedContainer = updatedSource.GetModel<CsClass>(ContainerPath);
+                var updatedContainer = updatedSource.Source.GetModel<CsClass>(ContainerPath);
 
-                UpdateSources(updatedSource, updatedContainer);
+                UpdateSources(updatedSource.Source, updatedContainer);
+
+                result = updatedSource.Transaction;
             }
             else
             {
-                await this.FieldsAddAfterAsync(syntax);
+                result = await this.FieldsAddAfterTransactionAsync(syntax);
             }
+
+            return result;
         }
     }
 }

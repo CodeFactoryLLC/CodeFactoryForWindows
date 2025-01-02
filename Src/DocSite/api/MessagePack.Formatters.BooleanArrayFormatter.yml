@@ -1,0 +1,715 @@
+### YamlMime:ManagedReference
+items:
+- uid: MessagePack.Formatters.BooleanArrayFormatter
+  commentId: T:MessagePack.Formatters.BooleanArrayFormatter
+  id: BooleanArrayFormatter
+  parent: MessagePack.Formatters
+  children:
+  - MessagePack.Formatters.BooleanArrayFormatter.Deserialize(MessagePack.MessagePackReader@,MessagePack.MessagePackSerializerOptions)
+  - MessagePack.Formatters.BooleanArrayFormatter.Instance
+  - MessagePack.Formatters.BooleanArrayFormatter.Serialize(MessagePack.MessagePackWriter@,System.Boolean[],MessagePack.MessagePackSerializerOptions)
+  langs:
+  - csharp
+  - vb
+  name: BooleanArrayFormatter
+  nameWithType: BooleanArrayFormatter
+  fullName: MessagePack.Formatters.BooleanArrayFormatter
+  type: Class
+  assemblies:
+  - MessagePack
+  namespace: MessagePack.Formatters
+  syntax:
+    content: 'public sealed class BooleanArrayFormatter : IMessagePackFormatter<bool[]?>'
+    content.vb: Public NotInheritable Class BooleanArrayFormatter Implements IMessagePackFormatter(Of Boolean())
+  inheritance:
+  - System.Object
+  implements:
+  - MessagePack.Formatters.IMessagePackFormatter{System.Boolean[]}
+  inheritedMembers:
+  - System.Object.GetType
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+- uid: MessagePack.Formatters.BooleanArrayFormatter.Instance
+  commentId: F:MessagePack.Formatters.BooleanArrayFormatter.Instance
+  id: Instance
+  parent: MessagePack.Formatters.BooleanArrayFormatter
+  langs:
+  - csharp
+  - vb
+  name: Instance
+  nameWithType: BooleanArrayFormatter.Instance
+  fullName: MessagePack.Formatters.BooleanArrayFormatter.Instance
+  type: Field
+  assemblies:
+  - MessagePack
+  namespace: MessagePack.Formatters
+  syntax:
+    content: public static readonly BooleanArrayFormatter Instance
+    return:
+      type: MessagePack.Formatters.BooleanArrayFormatter
+    content.vb: Public Shared ReadOnly Instance As BooleanArrayFormatter
+- uid: MessagePack.Formatters.BooleanArrayFormatter.Serialize(MessagePack.MessagePackWriter@,System.Boolean[],MessagePack.MessagePackSerializerOptions)
+  commentId: M:MessagePack.Formatters.BooleanArrayFormatter.Serialize(MessagePack.MessagePackWriter@,System.Boolean[],MessagePack.MessagePackSerializerOptions)
+  id: Serialize(MessagePack.MessagePackWriter@,System.Boolean[],MessagePack.MessagePackSerializerOptions)
+  parent: MessagePack.Formatters.BooleanArrayFormatter
+  langs:
+  - csharp
+  - vb
+  name: Serialize(ref MessagePackWriter, bool[]?, MessagePackSerializerOptions)
+  nameWithType: BooleanArrayFormatter.Serialize(ref MessagePackWriter, bool[]?, MessagePackSerializerOptions)
+  fullName: MessagePack.Formatters.BooleanArrayFormatter.Serialize(ref MessagePack.MessagePackWriter, bool[]?, MessagePack.MessagePackSerializerOptions)
+  type: Method
+  assemblies:
+  - MessagePack
+  namespace: MessagePack.Formatters
+  summary: Serializes a value.
+  example: []
+  syntax:
+    content: public void Serialize(ref MessagePackWriter writer, bool[]? value, MessagePackSerializerOptions options)
+    parameters:
+    - id: writer
+      type: MessagePack.MessagePackWriter
+      description: The writer to use when serializing the value.
+    - id: value
+      type: System.Boolean[]
+      description: The value to be serialized.
+    - id: options
+      type: MessagePack.MessagePackSerializerOptions
+      description: The serialization settings to use, including the resolver to use to obtain formatters for types that make up the composite type <code class="typeparamref">T</code>.
+    content.vb: Public Sub Serialize(writer As MessagePackWriter, value As Boolean(), options As MessagePackSerializerOptions)
+  overload: MessagePack.Formatters.BooleanArrayFormatter.Serialize*
+  implements:
+  - MessagePack.Formatters.IMessagePackFormatter{System.Boolean[]}.Serialize(MessagePack.MessagePackWriter@,System.Boolean[],MessagePack.MessagePackSerializerOptions)
+  nameWithType.vb: BooleanArrayFormatter.Serialize(MessagePackWriter, Boolean(), MessagePackSerializerOptions)
+  fullName.vb: MessagePack.Formatters.BooleanArrayFormatter.Serialize(MessagePack.MessagePackWriter, Boolean(), MessagePack.MessagePackSerializerOptions)
+  name.vb: Serialize(MessagePackWriter, Boolean(), MessagePackSerializerOptions)
+- uid: MessagePack.Formatters.BooleanArrayFormatter.Deserialize(MessagePack.MessagePackReader@,MessagePack.MessagePackSerializerOptions)
+  commentId: M:MessagePack.Formatters.BooleanArrayFormatter.Deserialize(MessagePack.MessagePackReader@,MessagePack.MessagePackSerializerOptions)
+  id: Deserialize(MessagePack.MessagePackReader@,MessagePack.MessagePackSerializerOptions)
+  parent: MessagePack.Formatters.BooleanArrayFormatter
+  langs:
+  - csharp
+  - vb
+  name: Deserialize(ref MessagePackReader, MessagePackSerializerOptions)
+  nameWithType: BooleanArrayFormatter.Deserialize(ref MessagePackReader, MessagePackSerializerOptions)
+  fullName: MessagePack.Formatters.BooleanArrayFormatter.Deserialize(ref MessagePack.MessagePackReader, MessagePack.MessagePackSerializerOptions)
+  type: Method
+  assemblies:
+  - MessagePack
+  namespace: MessagePack.Formatters
+  summary: Deserializes a value.
+  example: []
+  syntax:
+    content: public bool[]? Deserialize(ref MessagePackReader reader, MessagePackSerializerOptions options)
+    parameters:
+    - id: reader
+      type: MessagePack.MessagePackReader
+      description: The reader to deserialize from.
+    - id: options
+      type: MessagePack.MessagePackSerializerOptions
+      description: The serialization settings to use, including the resolver to use to obtain formatters for types that make up the composite type <code class="typeparamref">T</code>.
+    return:
+      type: System.Boolean[]
+      description: The deserialized value.
+    content.vb: Public Function Deserialize(reader As MessagePackReader, options As MessagePackSerializerOptions) As Boolean()
+  overload: MessagePack.Formatters.BooleanArrayFormatter.Deserialize*
+  implements:
+  - MessagePack.Formatters.IMessagePackFormatter{System.Boolean[]}.Deserialize(MessagePack.MessagePackReader@,MessagePack.MessagePackSerializerOptions)
+  nameWithType.vb: BooleanArrayFormatter.Deserialize(MessagePackReader, MessagePackSerializerOptions)
+  fullName.vb: MessagePack.Formatters.BooleanArrayFormatter.Deserialize(MessagePack.MessagePackReader, MessagePack.MessagePackSerializerOptions)
+  name.vb: Deserialize(MessagePackReader, MessagePackSerializerOptions)
+references:
+- uid: MessagePack.Formatters
+  commentId: N:MessagePack.Formatters
+  isExternal: true
+  href: MessagePack.html
+  name: MessagePack.Formatters
+  nameWithType: MessagePack.Formatters
+  fullName: MessagePack.Formatters
+  spec.csharp:
+  - uid: MessagePack
+    name: MessagePack
+    isExternal: true
+    href: MessagePack.html
+  - name: .
+  - uid: MessagePack.Formatters
+    name: Formatters
+    isExternal: true
+    href: MessagePack.Formatters.html
+  spec.vb:
+  - uid: MessagePack
+    name: MessagePack
+    isExternal: true
+    href: MessagePack.html
+  - name: .
+  - uid: MessagePack.Formatters
+    name: Formatters
+    isExternal: true
+    href: MessagePack.Formatters.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: MessagePack.Formatters.IMessagePackFormatter{System.Boolean[]}
+  commentId: T:MessagePack.Formatters.IMessagePackFormatter{System.Boolean[]}
+  parent: MessagePack.Formatters
+  definition: MessagePack.Formatters.IMessagePackFormatter`1
+  href: MessagePack.Formatters.IMessagePackFormatter-1.html
+  name: IMessagePackFormatter<bool[]>
+  nameWithType: IMessagePackFormatter<bool[]>
+  fullName: MessagePack.Formatters.IMessagePackFormatter<bool[]>
+  nameWithType.vb: IMessagePackFormatter(Of Boolean())
+  fullName.vb: MessagePack.Formatters.IMessagePackFormatter(Of Boolean())
+  name.vb: IMessagePackFormatter(Of Boolean())
+  spec.csharp:
+  - uid: MessagePack.Formatters.IMessagePackFormatter`1
+    name: IMessagePackFormatter
+    isExternal: true
+    href: MessagePack.Formatters.IMessagePackFormatter-1.html
+  - name: <
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '['
+  - name: ']'
+  - name: '>'
+  spec.vb:
+  - uid: MessagePack.Formatters.IMessagePackFormatter`1
+    name: IMessagePackFormatter
+    isExternal: true
+    href: MessagePack.Formatters.IMessagePackFormatter-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: (
+  - name: )
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: MessagePack.Formatters.IMessagePackFormatter`1
+  commentId: T:MessagePack.Formatters.IMessagePackFormatter`1
+  isExternal: true
+  href: MessagePack.Formatters.IMessagePackFormatter-1.html
+  name: IMessagePackFormatter<T>
+  nameWithType: IMessagePackFormatter<T>
+  fullName: MessagePack.Formatters.IMessagePackFormatter<T>
+  nameWithType.vb: IMessagePackFormatter(Of T)
+  fullName.vb: MessagePack.Formatters.IMessagePackFormatter(Of T)
+  name.vb: IMessagePackFormatter(Of T)
+  spec.csharp:
+  - uid: MessagePack.Formatters.IMessagePackFormatter`1
+    name: IMessagePackFormatter
+    isExternal: true
+    href: MessagePack.Formatters.IMessagePackFormatter-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: MessagePack.Formatters.IMessagePackFormatter`1
+    name: IMessagePackFormatter
+    isExternal: true
+    href: MessagePack.Formatters.IMessagePackFormatter-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: MessagePack.Formatters.BooleanArrayFormatter
+  commentId: T:MessagePack.Formatters.BooleanArrayFormatter
+  parent: MessagePack.Formatters
+  isExternal: true
+  href: MessagePack.Formatters.BooleanArrayFormatter.html
+  name: BooleanArrayFormatter
+  nameWithType: BooleanArrayFormatter
+  fullName: MessagePack.Formatters.BooleanArrayFormatter
+- uid: MessagePack.Formatters.BooleanArrayFormatter.Serialize*
+  commentId: Overload:MessagePack.Formatters.BooleanArrayFormatter.Serialize
+  isExternal: true
+  href: MessagePack.Formatters.BooleanArrayFormatter.html#MessagePack_Formatters_BooleanArrayFormatter_Serialize_MessagePack_MessagePackWriter__System_Boolean___MessagePack_MessagePackSerializerOptions_
+  name: Serialize
+  nameWithType: BooleanArrayFormatter.Serialize
+  fullName: MessagePack.Formatters.BooleanArrayFormatter.Serialize
+- uid: MessagePack.Formatters.IMessagePackFormatter{System.Boolean[]}.Serialize(MessagePack.MessagePackWriter@,System.Boolean[],MessagePack.MessagePackSerializerOptions)
+  commentId: M:MessagePack.Formatters.IMessagePackFormatter{System.Boolean[]}.Serialize(MessagePack.MessagePackWriter@,System.Boolean[],MessagePack.MessagePackSerializerOptions)
+  parent: MessagePack.Formatters.IMessagePackFormatter{System.Boolean[]}
+  definition: MessagePack.Formatters.IMessagePackFormatter`1.Serialize(MessagePack.MessagePackWriter@,`0,MessagePack.MessagePackSerializerOptions)
+  href: MessagePack.Formatters.IMessagePackFormatter-1.html#MessagePack_Formatters_IMessagePackFormatter_1_Serialize_MessagePack_MessagePackWriter___0_MessagePack_MessagePackSerializerOptions_
+  name: Serialize(ref MessagePackWriter, bool[], MessagePackSerializerOptions)
+  nameWithType: IMessagePackFormatter<bool[]>.Serialize(ref MessagePackWriter, bool[], MessagePackSerializerOptions)
+  fullName: MessagePack.Formatters.IMessagePackFormatter<bool[]>.Serialize(ref MessagePack.MessagePackWriter, bool[], MessagePack.MessagePackSerializerOptions)
+  nameWithType.vb: IMessagePackFormatter(Of Boolean()).Serialize(MessagePackWriter, Boolean(), MessagePackSerializerOptions)
+  fullName.vb: MessagePack.Formatters.IMessagePackFormatter(Of Boolean()).Serialize(MessagePack.MessagePackWriter, Boolean(), MessagePack.MessagePackSerializerOptions)
+  name.vb: Serialize(MessagePackWriter, Boolean(), MessagePackSerializerOptions)
+  spec.csharp:
+  - uid: MessagePack.Formatters.IMessagePackFormatter{System.Boolean[]}.Serialize(MessagePack.MessagePackWriter@,System.Boolean[],MessagePack.MessagePackSerializerOptions)
+    name: Serialize
+    isExternal: true
+    href: MessagePack.Formatters.IMessagePackFormatter-1.html#MessagePack_Formatters_IMessagePackFormatter_1_Serialize_MessagePack_MessagePackWriter___0_MessagePack_MessagePackSerializerOptions_
+  - name: (
+  - name: ref
+  - name: " "
+  - uid: MessagePack.MessagePackWriter
+    name: MessagePackWriter
+    isExternal: true
+    href: MessagePack.MessagePackWriter.html
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '['
+  - name: ']'
+  - name: ','
+  - name: " "
+  - uid: MessagePack.MessagePackSerializerOptions
+    name: MessagePackSerializerOptions
+    isExternal: true
+    href: MessagePack.MessagePackSerializerOptions.html
+  - name: )
+  spec.vb:
+  - uid: MessagePack.Formatters.IMessagePackFormatter{System.Boolean[]}.Serialize(MessagePack.MessagePackWriter@,System.Boolean[],MessagePack.MessagePackSerializerOptions)
+    name: Serialize
+    isExternal: true
+    href: MessagePack.Formatters.IMessagePackFormatter-1.html#MessagePack_Formatters_IMessagePackFormatter_1_Serialize_MessagePack_MessagePackWriter___0_MessagePack_MessagePackSerializerOptions_
+  - name: (
+  - uid: MessagePack.MessagePackWriter
+    name: MessagePackWriter
+    isExternal: true
+    href: MessagePack.MessagePackWriter.html
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: (
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: MessagePack.MessagePackSerializerOptions
+    name: MessagePackSerializerOptions
+    isExternal: true
+    href: MessagePack.MessagePackSerializerOptions.html
+  - name: )
+- uid: MessagePack.MessagePackWriter
+  commentId: T:MessagePack.MessagePackWriter
+  parent: MessagePack
+  isExternal: true
+  href: MessagePack.MessagePackWriter.html
+  name: MessagePackWriter
+  nameWithType: MessagePackWriter
+  fullName: MessagePack.MessagePackWriter
+- uid: System.Boolean[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool[]
+  nameWithType: bool[]
+  fullName: bool[]
+  nameWithType.vb: Boolean()
+  fullName.vb: Boolean()
+  name.vb: Boolean()
+  spec.csharp:
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: (
+  - name: )
+- uid: MessagePack.MessagePackSerializerOptions
+  commentId: T:MessagePack.MessagePackSerializerOptions
+  parent: MessagePack
+  isExternal: true
+  href: MessagePack.MessagePackSerializerOptions.html
+  name: MessagePackSerializerOptions
+  nameWithType: MessagePackSerializerOptions
+  fullName: MessagePack.MessagePackSerializerOptions
+- uid: MessagePack.Formatters.IMessagePackFormatter`1.Serialize(MessagePack.MessagePackWriter@,`0,MessagePack.MessagePackSerializerOptions)
+  commentId: M:MessagePack.Formatters.IMessagePackFormatter`1.Serialize(MessagePack.MessagePackWriter@,`0,MessagePack.MessagePackSerializerOptions)
+  isExternal: true
+  href: MessagePack.Formatters.IMessagePackFormatter-1.html#MessagePack_Formatters_IMessagePackFormatter_1_Serialize_MessagePack_MessagePackWriter___0_MessagePack_MessagePackSerializerOptions_
+  name: Serialize(ref MessagePackWriter, T, MessagePackSerializerOptions)
+  nameWithType: IMessagePackFormatter<T>.Serialize(ref MessagePackWriter, T, MessagePackSerializerOptions)
+  fullName: MessagePack.Formatters.IMessagePackFormatter<T>.Serialize(ref MessagePack.MessagePackWriter, T, MessagePack.MessagePackSerializerOptions)
+  nameWithType.vb: IMessagePackFormatter(Of T).Serialize(MessagePackWriter, T, MessagePackSerializerOptions)
+  fullName.vb: MessagePack.Formatters.IMessagePackFormatter(Of T).Serialize(MessagePack.MessagePackWriter, T, MessagePack.MessagePackSerializerOptions)
+  name.vb: Serialize(MessagePackWriter, T, MessagePackSerializerOptions)
+  spec.csharp:
+  - uid: MessagePack.Formatters.IMessagePackFormatter`1.Serialize(MessagePack.MessagePackWriter@,`0,MessagePack.MessagePackSerializerOptions)
+    name: Serialize
+    isExternal: true
+    href: MessagePack.Formatters.IMessagePackFormatter-1.html#MessagePack_Formatters_IMessagePackFormatter_1_Serialize_MessagePack_MessagePackWriter___0_MessagePack_MessagePackSerializerOptions_
+  - name: (
+  - name: ref
+  - name: " "
+  - uid: MessagePack.MessagePackWriter
+    name: MessagePackWriter
+    isExternal: true
+    href: MessagePack.MessagePackWriter.html
+  - name: ','
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: MessagePack.MessagePackSerializerOptions
+    name: MessagePackSerializerOptions
+    isExternal: true
+    href: MessagePack.MessagePackSerializerOptions.html
+  - name: )
+  spec.vb:
+  - uid: MessagePack.Formatters.IMessagePackFormatter`1.Serialize(MessagePack.MessagePackWriter@,`0,MessagePack.MessagePackSerializerOptions)
+    name: Serialize
+    isExternal: true
+    href: MessagePack.Formatters.IMessagePackFormatter-1.html#MessagePack_Formatters_IMessagePackFormatter_1_Serialize_MessagePack_MessagePackWriter___0_MessagePack_MessagePackSerializerOptions_
+  - name: (
+  - uid: MessagePack.MessagePackWriter
+    name: MessagePackWriter
+    isExternal: true
+    href: MessagePack.MessagePackWriter.html
+  - name: ','
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: MessagePack.MessagePackSerializerOptions
+    name: MessagePackSerializerOptions
+    isExternal: true
+    href: MessagePack.MessagePackSerializerOptions.html
+  - name: )
+- uid: MessagePack
+  commentId: N:MessagePack
+  isExternal: true
+  href: MessagePack.html
+  name: MessagePack
+  nameWithType: MessagePack
+  fullName: MessagePack
+- uid: MessagePack.Formatters.BooleanArrayFormatter.Deserialize*
+  commentId: Overload:MessagePack.Formatters.BooleanArrayFormatter.Deserialize
+  isExternal: true
+  href: MessagePack.Formatters.BooleanArrayFormatter.html#MessagePack_Formatters_BooleanArrayFormatter_Deserialize_MessagePack_MessagePackReader__MessagePack_MessagePackSerializerOptions_
+  name: Deserialize
+  nameWithType: BooleanArrayFormatter.Deserialize
+  fullName: MessagePack.Formatters.BooleanArrayFormatter.Deserialize
+- uid: MessagePack.Formatters.IMessagePackFormatter{System.Boolean[]}.Deserialize(MessagePack.MessagePackReader@,MessagePack.MessagePackSerializerOptions)
+  commentId: M:MessagePack.Formatters.IMessagePackFormatter{System.Boolean[]}.Deserialize(MessagePack.MessagePackReader@,MessagePack.MessagePackSerializerOptions)
+  parent: MessagePack.Formatters.IMessagePackFormatter{System.Boolean[]}
+  definition: MessagePack.Formatters.IMessagePackFormatter`1.Deserialize(MessagePack.MessagePackReader@,MessagePack.MessagePackSerializerOptions)
+  href: MessagePack.Formatters.IMessagePackFormatter-1.html#MessagePack_Formatters_IMessagePackFormatter_1_Deserialize_MessagePack_MessagePackReader__MessagePack_MessagePackSerializerOptions_
+  name: Deserialize(ref MessagePackReader, MessagePackSerializerOptions)
+  nameWithType: IMessagePackFormatter<bool[]>.Deserialize(ref MessagePackReader, MessagePackSerializerOptions)
+  fullName: MessagePack.Formatters.IMessagePackFormatter<bool[]>.Deserialize(ref MessagePack.MessagePackReader, MessagePack.MessagePackSerializerOptions)
+  nameWithType.vb: IMessagePackFormatter(Of Boolean()).Deserialize(MessagePackReader, MessagePackSerializerOptions)
+  fullName.vb: MessagePack.Formatters.IMessagePackFormatter(Of Boolean()).Deserialize(MessagePack.MessagePackReader, MessagePack.MessagePackSerializerOptions)
+  name.vb: Deserialize(MessagePackReader, MessagePackSerializerOptions)
+  spec.csharp:
+  - uid: MessagePack.Formatters.IMessagePackFormatter{System.Boolean[]}.Deserialize(MessagePack.MessagePackReader@,MessagePack.MessagePackSerializerOptions)
+    name: Deserialize
+    isExternal: true
+    href: MessagePack.Formatters.IMessagePackFormatter-1.html#MessagePack_Formatters_IMessagePackFormatter_1_Deserialize_MessagePack_MessagePackReader__MessagePack_MessagePackSerializerOptions_
+  - name: (
+  - name: ref
+  - name: " "
+  - uid: MessagePack.MessagePackReader
+    name: MessagePackReader
+    isExternal: true
+    href: MessagePack.MessagePackReader.html
+  - name: ','
+  - name: " "
+  - uid: MessagePack.MessagePackSerializerOptions
+    name: MessagePackSerializerOptions
+    isExternal: true
+    href: MessagePack.MessagePackSerializerOptions.html
+  - name: )
+  spec.vb:
+  - uid: MessagePack.Formatters.IMessagePackFormatter{System.Boolean[]}.Deserialize(MessagePack.MessagePackReader@,MessagePack.MessagePackSerializerOptions)
+    name: Deserialize
+    isExternal: true
+    href: MessagePack.Formatters.IMessagePackFormatter-1.html#MessagePack_Formatters_IMessagePackFormatter_1_Deserialize_MessagePack_MessagePackReader__MessagePack_MessagePackSerializerOptions_
+  - name: (
+  - uid: MessagePack.MessagePackReader
+    name: MessagePackReader
+    isExternal: true
+    href: MessagePack.MessagePackReader.html
+  - name: ','
+  - name: " "
+  - uid: MessagePack.MessagePackSerializerOptions
+    name: MessagePackSerializerOptions
+    isExternal: true
+    href: MessagePack.MessagePackSerializerOptions.html
+  - name: )
+- uid: MessagePack.MessagePackReader
+  commentId: T:MessagePack.MessagePackReader
+  parent: MessagePack
+  isExternal: true
+  href: MessagePack.MessagePackReader.html
+  name: MessagePackReader
+  nameWithType: MessagePackReader
+  fullName: MessagePack.MessagePackReader
+- uid: MessagePack.Formatters.IMessagePackFormatter`1.Deserialize(MessagePack.MessagePackReader@,MessagePack.MessagePackSerializerOptions)
+  commentId: M:MessagePack.Formatters.IMessagePackFormatter`1.Deserialize(MessagePack.MessagePackReader@,MessagePack.MessagePackSerializerOptions)
+  isExternal: true
+  href: MessagePack.Formatters.IMessagePackFormatter-1.html#MessagePack_Formatters_IMessagePackFormatter_1_Deserialize_MessagePack_MessagePackReader__MessagePack_MessagePackSerializerOptions_
+  name: Deserialize(ref MessagePackReader, MessagePackSerializerOptions)
+  nameWithType: IMessagePackFormatter<T>.Deserialize(ref MessagePackReader, MessagePackSerializerOptions)
+  fullName: MessagePack.Formatters.IMessagePackFormatter<T>.Deserialize(ref MessagePack.MessagePackReader, MessagePack.MessagePackSerializerOptions)
+  nameWithType.vb: IMessagePackFormatter(Of T).Deserialize(MessagePackReader, MessagePackSerializerOptions)
+  fullName.vb: MessagePack.Formatters.IMessagePackFormatter(Of T).Deserialize(MessagePack.MessagePackReader, MessagePack.MessagePackSerializerOptions)
+  name.vb: Deserialize(MessagePackReader, MessagePackSerializerOptions)
+  spec.csharp:
+  - uid: MessagePack.Formatters.IMessagePackFormatter`1.Deserialize(MessagePack.MessagePackReader@,MessagePack.MessagePackSerializerOptions)
+    name: Deserialize
+    isExternal: true
+    href: MessagePack.Formatters.IMessagePackFormatter-1.html#MessagePack_Formatters_IMessagePackFormatter_1_Deserialize_MessagePack_MessagePackReader__MessagePack_MessagePackSerializerOptions_
+  - name: (
+  - name: ref
+  - name: " "
+  - uid: MessagePack.MessagePackReader
+    name: MessagePackReader
+    isExternal: true
+    href: MessagePack.MessagePackReader.html
+  - name: ','
+  - name: " "
+  - uid: MessagePack.MessagePackSerializerOptions
+    name: MessagePackSerializerOptions
+    isExternal: true
+    href: MessagePack.MessagePackSerializerOptions.html
+  - name: )
+  spec.vb:
+  - uid: MessagePack.Formatters.IMessagePackFormatter`1.Deserialize(MessagePack.MessagePackReader@,MessagePack.MessagePackSerializerOptions)
+    name: Deserialize
+    isExternal: true
+    href: MessagePack.Formatters.IMessagePackFormatter-1.html#MessagePack_Formatters_IMessagePackFormatter_1_Deserialize_MessagePack_MessagePackReader__MessagePack_MessagePackSerializerOptions_
+  - name: (
+  - uid: MessagePack.MessagePackReader
+    name: MessagePackReader
+    isExternal: true
+    href: MessagePack.MessagePackReader.html
+  - name: ','
+  - name: " "
+  - uid: MessagePack.MessagePackSerializerOptions
+    name: MessagePackSerializerOptions
+    isExternal: true
+    href: MessagePack.MessagePackSerializerOptions.html
+  - name: )

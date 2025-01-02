@@ -39,7 +39,7 @@ namespace CodeFactory.WinVs.Wpf
         }
 
         /// <summary>
-        /// Initializes the base implementation of a <see cref="VsUserControl"/> user control.
+        /// Initializes the base implementation of a <see cref="ViewUserControl"/> user control.
         /// </summary>
         /// <param name="actions">The visual studio actions accessible in this user control. </param>
         /// <param name="logger">The logger for interaction inside this user control.</param>

@@ -1,0 +1,2093 @@
+### YamlMime:ManagedReference
+items:
+- uid: System.Runtime.CompilerServices.Unsafe
+  commentId: T:System.Runtime.CompilerServices.Unsafe
+  id: Unsafe
+  parent: System.Runtime.CompilerServices
+  children:
+  - System.Runtime.CompilerServices.Unsafe.AddByteOffset``1(``0@,System.IntPtr)
+  - System.Runtime.CompilerServices.Unsafe.AddByteOffset``1(``0@,System.UIntPtr)
+  - System.Runtime.CompilerServices.Unsafe.Add``1(System.Void*,System.Int32)
+  - System.Runtime.CompilerServices.Unsafe.Add``1(``0@,System.Int32)
+  - System.Runtime.CompilerServices.Unsafe.Add``1(``0@,System.IntPtr)
+  - System.Runtime.CompilerServices.Unsafe.Add``1(``0@,System.UIntPtr)
+  - System.Runtime.CompilerServices.Unsafe.AreSame``1(``0@,``0@)
+  - System.Runtime.CompilerServices.Unsafe.AsPointer``1(``0@)
+  - System.Runtime.CompilerServices.Unsafe.AsRef``1(System.Void*)
+  - System.Runtime.CompilerServices.Unsafe.AsRef``1(``0@)
+  - System.Runtime.CompilerServices.Unsafe.As``1(System.Object)
+  - System.Runtime.CompilerServices.Unsafe.As``2(``0@)
+  - System.Runtime.CompilerServices.Unsafe.ByteOffset``1(``0@,``0@)
+  - System.Runtime.CompilerServices.Unsafe.CopyBlock(System.Byte@,System.Byte@,System.UInt32)
+  - System.Runtime.CompilerServices.Unsafe.CopyBlock(System.Void*,System.Void*,System.UInt32)
+  - System.Runtime.CompilerServices.Unsafe.CopyBlockUnaligned(System.Byte@,System.Byte@,System.UInt32)
+  - System.Runtime.CompilerServices.Unsafe.CopyBlockUnaligned(System.Void*,System.Void*,System.UInt32)
+  - System.Runtime.CompilerServices.Unsafe.Copy``1(System.Void*,``0@)
+  - System.Runtime.CompilerServices.Unsafe.Copy``1(``0@,System.Void*)
+  - System.Runtime.CompilerServices.Unsafe.InitBlock(System.Byte@,System.Byte,System.UInt32)
+  - System.Runtime.CompilerServices.Unsafe.InitBlock(System.Void*,System.Byte,System.UInt32)
+  - System.Runtime.CompilerServices.Unsafe.InitBlockUnaligned(System.Byte@,System.Byte,System.UInt32)
+  - System.Runtime.CompilerServices.Unsafe.InitBlockUnaligned(System.Void*,System.Byte,System.UInt32)
+  - System.Runtime.CompilerServices.Unsafe.IsAddressGreaterThan``1(``0@,``0@)
+  - System.Runtime.CompilerServices.Unsafe.IsAddressLessThan``1(``0@,``0@)
+  - System.Runtime.CompilerServices.Unsafe.IsNullRef``1(``0@)
+  - System.Runtime.CompilerServices.Unsafe.NullRef``1
+  - System.Runtime.CompilerServices.Unsafe.ReadUnaligned``1(System.Byte@)
+  - System.Runtime.CompilerServices.Unsafe.ReadUnaligned``1(System.Void*)
+  - System.Runtime.CompilerServices.Unsafe.Read``1(System.Void*)
+  - System.Runtime.CompilerServices.Unsafe.SizeOf``1
+  - System.Runtime.CompilerServices.Unsafe.SkipInit``1(``0@)
+  - System.Runtime.CompilerServices.Unsafe.SubtractByteOffset``1(``0@,System.IntPtr)
+  - System.Runtime.CompilerServices.Unsafe.SubtractByteOffset``1(``0@,System.UIntPtr)
+  - System.Runtime.CompilerServices.Unsafe.Subtract``1(System.Void*,System.Int32)
+  - System.Runtime.CompilerServices.Unsafe.Subtract``1(``0@,System.Int32)
+  - System.Runtime.CompilerServices.Unsafe.Subtract``1(``0@,System.IntPtr)
+  - System.Runtime.CompilerServices.Unsafe.Subtract``1(``0@,System.UIntPtr)
+  - System.Runtime.CompilerServices.Unsafe.Unbox``1(System.Object)
+  - System.Runtime.CompilerServices.Unsafe.WriteUnaligned``1(System.Byte@,``0)
+  - System.Runtime.CompilerServices.Unsafe.WriteUnaligned``1(System.Void*,``0)
+  - System.Runtime.CompilerServices.Unsafe.Write``1(System.Void*,``0)
+  langs:
+  - csharp
+  - vb
+  name: Unsafe
+  nameWithType: Unsafe
+  fullName: System.Runtime.CompilerServices.Unsafe
+  type: Class
+  assemblies:
+  - System.Runtime.CompilerServices.Unsafe
+  namespace: System.Runtime.CompilerServices
+  summary: Contains generic, low-level functionality for manipulating pointers.
+  example: []
+  syntax:
+    content: public static class Unsafe
+    content.vb: Public Module Unsafe
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: System.Runtime.CompilerServices.Unsafe.Read``1(System.Void*)
+  commentId: M:System.Runtime.CompilerServices.Unsafe.Read``1(System.Void*)
+  id: Read``1(System.Void*)
+  parent: System.Runtime.CompilerServices.Unsafe
+  langs:
+  - csharp
+  - vb
+  name: Read<T>(void*)
+  nameWithType: Unsafe.Read<T>(void*)
+  fullName: System.Runtime.CompilerServices.Unsafe.Read<T>(void*)
+  type: Method
+  assemblies:
+  - System.Runtime.CompilerServices.Unsafe
+  namespace: System.Runtime.CompilerServices
+  summary: Reads a value of type <code class="typeparamref">T</code> from the given location.
+  example: []
+  syntax:
+    content: public static T Read<T>(void* source)
+    parameters:
+    - id: source
+      type: System.Void*
+      description: The location to read from.
+    typeParameters:
+    - id: T
+      description: The type to read.
+    return:
+      type: '{T}'
+      description: An object of type <code class="typeparamref">T</code> read from the given location.
+    content.vb: Public Shared Function Read(Of T)(source As Void*) As T
+  overload: System.Runtime.CompilerServices.Unsafe.Read*
+  nameWithType.vb: Unsafe.Read(Of T)(Void*)
+  fullName.vb: System.Runtime.CompilerServices.Unsafe.Read(Of T)(Void*)
+  name.vb: Read(Of T)(Void*)
+- uid: System.Runtime.CompilerServices.Unsafe.ReadUnaligned``1(System.Void*)
+  commentId: M:System.Runtime.CompilerServices.Unsafe.ReadUnaligned``1(System.Void*)
+  id: ReadUnaligned``1(System.Void*)
+  parent: System.Runtime.CompilerServices.Unsafe
+  langs:
+  - csharp
+  - vb
+  name: ReadUnaligned<T>(void*)
+  nameWithType: Unsafe.ReadUnaligned<T>(void*)
+  fullName: System.Runtime.CompilerServices.Unsafe.ReadUnaligned<T>(void*)
+  type: Method
+  assemblies:
+  - System.Runtime.CompilerServices.Unsafe
+  namespace: System.Runtime.CompilerServices
+  summary: Reads a value of type <code class="typeparamref">T</code> from the given location without assuming architecture dependent alignment of the addresses.
+  example: []
+  syntax:
+    content: public static T ReadUnaligned<T>(void* source)
+    parameters:
+    - id: source
+      type: System.Void*
+      description: The location to read from.
+    typeParameters:
+    - id: T
+      description: The type to read.
+    return:
+      type: '{T}'
+      description: An object of type <code class="typeparamref">T</code> read from the given location.
+    content.vb: Public Shared Function ReadUnaligned(Of T)(source As Void*) As T
+  overload: System.Runtime.CompilerServices.Unsafe.ReadUnaligned*
+  nameWithType.vb: Unsafe.ReadUnaligned(Of T)(Void*)
+  fullName.vb: System.Runtime.CompilerServices.Unsafe.ReadUnaligned(Of T)(Void*)
+  name.vb: ReadUnaligned(Of T)(Void*)
+- uid: System.Runtime.CompilerServices.Unsafe.ReadUnaligned``1(System.Byte@)
+  commentId: M:System.Runtime.CompilerServices.Unsafe.ReadUnaligned``1(System.Byte@)
+  id: ReadUnaligned``1(System.Byte@)
+  parent: System.Runtime.CompilerServices.Unsafe
+  langs:
+  - csharp
+  - vb
+  name: ReadUnaligned<T>(ref byte)
+  nameWithType: Unsafe.ReadUnaligned<T>(ref byte)
+  fullName: System.Runtime.CompilerServices.Unsafe.ReadUnaligned<T>(ref byte)
+  type: Method
+  assemblies:
+  - System.Runtime.CompilerServices.Unsafe
+  namespace: System.Runtime.CompilerServices
+  summary: Reads a value of type <code class="typeparamref">T</code> from the given location without assuming architecture dependent alignment of the addresses.
+  example: []
+  syntax:
+    content: public static T ReadUnaligned<T>(ref byte source)
+    parameters:
+    - id: source
+      type: System.Byte
+      description: The location to read from.
+    typeParameters:
+    - id: T
+      description: The type to read.
+    return:
+      type: '{T}'
+      description: An object of type <code class="typeparamref">T</code> read from the given location.
+    content.vb: Public Shared Function ReadUnaligned(Of T)(source As Byte) As T
+  overload: System.Runtime.CompilerServices.Unsafe.ReadUnaligned*
+  nameWithType.vb: Unsafe.ReadUnaligned(Of T)(Byte)
+  fullName.vb: System.Runtime.CompilerServices.Unsafe.ReadUnaligned(Of T)(Byte)
+  name.vb: ReadUnaligned(Of T)(Byte)
+- uid: System.Runtime.CompilerServices.Unsafe.Write``1(System.Void*,``0)
+  commentId: M:System.Runtime.CompilerServices.Unsafe.Write``1(System.Void*,``0)
+  id: Write``1(System.Void*,``0)
+  parent: System.Runtime.CompilerServices.Unsafe
+  langs:
+  - csharp
+  - vb
+  name: Write<T>(void*, T)
+  nameWithType: Unsafe.Write<T>(void*, T)
+  fullName: System.Runtime.CompilerServices.Unsafe.Write<T>(void*, T)
+  type: Method
+  assemblies:
+  - System.Runtime.CompilerServices.Unsafe
+  namespace: System.Runtime.CompilerServices
+  summary: Writes a value of type <code class="typeparamref">T</code> to the given location.
+  example: []
+  syntax:
+    content: public static void Write<T>(void* destination, T value)
+    parameters:
+    - id: destination
+      type: System.Void*
+      description: The location to write to.
+    - id: value
+      type: '{T}'
+      description: The value to write.
+    typeParameters:
+    - id: T
+      description: The type of value to write.
+    content.vb: Public Shared Sub Write(Of T)(destination As Void*, value As T)
+  overload: System.Runtime.CompilerServices.Unsafe.Write*
+  nameWithType.vb: Unsafe.Write(Of T)(Void*, T)
+  fullName.vb: System.Runtime.CompilerServices.Unsafe.Write(Of T)(Void*, T)
+  name.vb: Write(Of T)(Void*, T)
+- uid: System.Runtime.CompilerServices.Unsafe.WriteUnaligned``1(System.Void*,``0)
+  commentId: M:System.Runtime.CompilerServices.Unsafe.WriteUnaligned``1(System.Void*,``0)
+  id: WriteUnaligned``1(System.Void*,``0)
+  parent: System.Runtime.CompilerServices.Unsafe
+  langs:
+  - csharp
+  - vb
+  name: WriteUnaligned<T>(void*, T)
+  nameWithType: Unsafe.WriteUnaligned<T>(void*, T)
+  fullName: System.Runtime.CompilerServices.Unsafe.WriteUnaligned<T>(void*, T)
+  type: Method
+  assemblies:
+  - System.Runtime.CompilerServices.Unsafe
+  namespace: System.Runtime.CompilerServices
+  summary: Writes a value of type <code class="typeparamref">T</code> to the given location without assuming architecture dependent alignment of the addresses.
+  example: []
+  syntax:
+    content: public static void WriteUnaligned<T>(void* destination, T value)
+    parameters:
+    - id: destination
+      type: System.Void*
+      description: The location to write to.
+    - id: value
+      type: '{T}'
+      description: The value to write.
+    typeParameters:
+    - id: T
+      description: The type of value to write.
+    content.vb: Public Shared Sub WriteUnaligned(Of T)(destination As Void*, value As T)
+  overload: System.Runtime.CompilerServices.Unsafe.WriteUnaligned*
+  nameWithType.vb: Unsafe.WriteUnaligned(Of T)(Void*, T)
+  fullName.vb: System.Runtime.CompilerServices.Unsafe.WriteUnaligned(Of T)(Void*, T)
+  name.vb: WriteUnaligned(Of T)(Void*, T)
+- uid: System.Runtime.CompilerServices.Unsafe.WriteUnaligned``1(System.Byte@,``0)
+  commentId: M:System.Runtime.CompilerServices.Unsafe.WriteUnaligned``1(System.Byte@,``0)
+  id: WriteUnaligned``1(System.Byte@,``0)
+  parent: System.Runtime.CompilerServices.Unsafe
+  langs:
+  - csharp
+  - vb
+  name: WriteUnaligned<T>(ref byte, T)
+  nameWithType: Unsafe.WriteUnaligned<T>(ref byte, T)
+  fullName: System.Runtime.CompilerServices.Unsafe.WriteUnaligned<T>(ref byte, T)
+  type: Method
+  assemblies:
+  - System.Runtime.CompilerServices.Unsafe
+  namespace: System.Runtime.CompilerServices
+  summary: Writes a value of type <code class="typeparamref">T</code> to the given location without assuming architecture dependent alignment of the addresses.
+  example: []
+  syntax:
+    content: public static void WriteUnaligned<T>(ref byte destination, T value)
+    parameters:
+    - id: destination
+      type: System.Byte
+      description: The location to write to.
+    - id: value
+      type: '{T}'
+      description: The value to write.
+    typeParameters:
+    - id: T
+      description: The type of value to write.
+    content.vb: Public Shared Sub WriteUnaligned(Of T)(destination As Byte, value As T)
+  overload: System.Runtime.CompilerServices.Unsafe.WriteUnaligned*
+  nameWithType.vb: Unsafe.WriteUnaligned(Of T)(Byte, T)
+  fullName.vb: System.Runtime.CompilerServices.Unsafe.WriteUnaligned(Of T)(Byte, T)
+  name.vb: WriteUnaligned(Of T)(Byte, T)
+- uid: System.Runtime.CompilerServices.Unsafe.Copy``1(System.Void*,``0@)
+  commentId: M:System.Runtime.CompilerServices.Unsafe.Copy``1(System.Void*,``0@)
+  id: Copy``1(System.Void*,``0@)
+  parent: System.Runtime.CompilerServices.Unsafe
+  langs:
+  - csharp
+  - vb
+  name: Copy<T>(void*, ref T)
+  nameWithType: Unsafe.Copy<T>(void*, ref T)
+  fullName: System.Runtime.CompilerServices.Unsafe.Copy<T>(void*, ref T)
+  type: Method
+  assemblies:
+  - System.Runtime.CompilerServices.Unsafe
+  namespace: System.Runtime.CompilerServices
+  summary: Copies a value of type <code class="typeparamref">T</code> to the given location.
+  example: []
+  syntax:
+    content: public static void Copy<T>(void* destination, ref T source)
+    parameters:
+    - id: destination
+      type: System.Void*
+      description: The location to copy to.
+    - id: source
+      type: '{T}'
+      description: A reference to the value to copy.
+    typeParameters:
+    - id: T
+      description: The type of value to copy.
+    content.vb: Public Shared Sub Copy(Of T)(destination As Void*, source As T)
+  overload: System.Runtime.CompilerServices.Unsafe.Copy*
+  nameWithType.vb: Unsafe.Copy(Of T)(Void*, T)
+  fullName.vb: System.Runtime.CompilerServices.Unsafe.Copy(Of T)(Void*, T)
+  name.vb: Copy(Of T)(Void*, T)
+- uid: System.Runtime.CompilerServices.Unsafe.Copy``1(``0@,System.Void*)
+  commentId: M:System.Runtime.CompilerServices.Unsafe.Copy``1(``0@,System.Void*)
+  id: Copy``1(``0@,System.Void*)
+  parent: System.Runtime.CompilerServices.Unsafe
+  langs:
+  - csharp
+  - vb
+  name: Copy<T>(ref T, void*)
+  nameWithType: Unsafe.Copy<T>(ref T, void*)
+  fullName: System.Runtime.CompilerServices.Unsafe.Copy<T>(ref T, void*)
+  type: Method
+  assemblies:
+  - System.Runtime.CompilerServices.Unsafe
+  namespace: System.Runtime.CompilerServices
+  summary: Copies a value of type <code class="typeparamref">T</code> to the given location.
+  example: []
+  syntax:
+    content: public static void Copy<T>(ref T destination, void* source)
+    parameters:
+    - id: destination
+      type: '{T}'
+      description: The location to copy to.
+    - id: source
+      type: System.Void*
+      description: A pointer to the value to copy.
+    typeParameters:
+    - id: T
+      description: The type of value to copy.
+    content.vb: Public Shared Sub Copy(Of T)(destination As T, source As Void*)
+  overload: System.Runtime.CompilerServices.Unsafe.Copy*
+  nameWithType.vb: Unsafe.Copy(Of T)(T, Void*)
+  fullName.vb: System.Runtime.CompilerServices.Unsafe.Copy(Of T)(T, Void*)
+  name.vb: Copy(Of T)(T, Void*)
+- uid: System.Runtime.CompilerServices.Unsafe.AsPointer``1(``0@)
+  commentId: M:System.Runtime.CompilerServices.Unsafe.AsPointer``1(``0@)
+  id: AsPointer``1(``0@)
+  parent: System.Runtime.CompilerServices.Unsafe
+  langs:
+  - csharp
+  - vb
+  name: AsPointer<T>(ref T)
+  nameWithType: Unsafe.AsPointer<T>(ref T)
+  fullName: System.Runtime.CompilerServices.Unsafe.AsPointer<T>(ref T)
+  type: Method
+  assemblies:
+  - System.Runtime.CompilerServices.Unsafe
+  namespace: System.Runtime.CompilerServices
+  summary: Returns a pointer to the given by-ref parameter.
+  example: []
+  syntax:
+    content: public static void* AsPointer<T>(ref T value)
+    parameters:
+    - id: value
+      type: '{T}'
+      description: The object whose pointer is obtained.
+    typeParameters:
+    - id: T
+      description: The type of object.
+    return:
+      type: System.Void*
+      description: A pointer to the given value.
+    content.vb: Public Shared Function AsPointer(Of T)(value As T) As Void*
+  overload: System.Runtime.CompilerServices.Unsafe.AsPointer*
+  nameWithType.vb: Unsafe.AsPointer(Of T)(T)
+  fullName.vb: System.Runtime.CompilerServices.Unsafe.AsPointer(Of T)(T)
+  name.vb: AsPointer(Of T)(T)
+- uid: System.Runtime.CompilerServices.Unsafe.SkipInit``1(``0@)
+  commentId: M:System.Runtime.CompilerServices.Unsafe.SkipInit``1(``0@)
+  id: SkipInit``1(``0@)
+  parent: System.Runtime.CompilerServices.Unsafe
+  langs:
+  - csharp
+  - vb
+  name: SkipInit<T>(out T)
+  nameWithType: Unsafe.SkipInit<T>(out T)
+  fullName: System.Runtime.CompilerServices.Unsafe.SkipInit<T>(out T)
+  type: Method
+  assemblies:
+  - System.Runtime.CompilerServices.Unsafe
+  namespace: System.Runtime.CompilerServices
+  summary: Bypasses definite assignment rules for a given value.
+  example: []
+  syntax:
+    content: public static void SkipInit<T>(out T value)
+    parameters:
+    - id: value
+      type: '{T}'
+      description: The uninitialized object.
+    typeParameters:
+    - id: T
+      description: The type of the uninitialized object.
+    content.vb: Public Shared Sub SkipInit(Of T)(value As T)
+  overload: System.Runtime.CompilerServices.Unsafe.SkipInit*
+  nameWithType.vb: Unsafe.SkipInit(Of T)(T)
+  fullName.vb: System.Runtime.CompilerServices.Unsafe.SkipInit(Of T)(T)
+  name.vb: SkipInit(Of T)(T)
+- uid: System.Runtime.CompilerServices.Unsafe.SizeOf``1
+  commentId: M:System.Runtime.CompilerServices.Unsafe.SizeOf``1
+  id: SizeOf``1
+  parent: System.Runtime.CompilerServices.Unsafe
+  langs:
+  - csharp
+  - vb
+  name: SizeOf<T>()
+  nameWithType: Unsafe.SizeOf<T>()
+  fullName: System.Runtime.CompilerServices.Unsafe.SizeOf<T>()
+  type: Method
+  assemblies:
+  - System.Runtime.CompilerServices.Unsafe
+  namespace: System.Runtime.CompilerServices
+  summary: Returns the size of an object of the given type parameter.
+  example: []
+  syntax:
+    content: public static int SizeOf<T>()
+    typeParameters:
+    - id: T
+      description: The type of object whose size is retrieved.
+    return:
+      type: System.Int32
+      description: The size of an object of type <code class="typeparamref">T</code>.
+    content.vb: Public Shared Function SizeOf(Of T)() As Integer
+  overload: System.Runtime.CompilerServices.Unsafe.SizeOf*
+  nameWithType.vb: Unsafe.SizeOf(Of T)()
+  fullName.vb: System.Runtime.CompilerServices.Unsafe.SizeOf(Of T)()
+  name.vb: SizeOf(Of T)()
+- uid: System.Runtime.CompilerServices.Unsafe.CopyBlock(System.Void*,System.Void*,System.UInt32)
+  commentId: M:System.Runtime.CompilerServices.Unsafe.CopyBlock(System.Void*,System.Void*,System.UInt32)
+  id: CopyBlock(System.Void*,System.Void*,System.UInt32)
+  parent: System.Runtime.CompilerServices.Unsafe
+  langs:
+  - csharp
+  - vb
+  name: CopyBlock(void*, void*, uint)
+  nameWithType: Unsafe.CopyBlock(void*, void*, uint)
+  fullName: System.Runtime.CompilerServices.Unsafe.CopyBlock(void*, void*, uint)
+  type: Method
+  assemblies:
+  - System.Runtime.CompilerServices.Unsafe
+  namespace: System.Runtime.CompilerServices
+  summary: Copies bytes from the source address to the destination address.
+  example: []
+  syntax:
+    content: public static void CopyBlock(void* destination, void* source, uint byteCount)
+    parameters:
+    - id: destination
+      type: System.Void*
+      description: The destination address to copy to.
+    - id: source
+      type: System.Void*
+      description: The source address to copy from.
+    - id: byteCount
+      type: System.UInt32
+      description: The number of bytes to copy.
+    content.vb: Public Shared Sub CopyBlock(destination As Void*, source As Void*, byteCount As UInteger)
+  overload: System.Runtime.CompilerServices.Unsafe.CopyBlock*
+  nameWithType.vb: Unsafe.CopyBlock(Void*, Void*, UInteger)
+  fullName.vb: System.Runtime.CompilerServices.Unsafe.CopyBlock(Void*, Void*, UInteger)
+  name.vb: CopyBlock(Void*, Void*, UInteger)
+- uid: System.Runtime.CompilerServices.Unsafe.CopyBlock(System.Byte@,System.Byte@,System.UInt32)
+  commentId: M:System.Runtime.CompilerServices.Unsafe.CopyBlock(System.Byte@,System.Byte@,System.UInt32)
+  id: CopyBlock(System.Byte@,System.Byte@,System.UInt32)
+  parent: System.Runtime.CompilerServices.Unsafe
+  langs:
+  - csharp
+  - vb
+  name: CopyBlock(ref byte, ref byte, uint)
+  nameWithType: Unsafe.CopyBlock(ref byte, ref byte, uint)
+  fullName: System.Runtime.CompilerServices.Unsafe.CopyBlock(ref byte, ref byte, uint)
+  type: Method
+  assemblies:
+  - System.Runtime.CompilerServices.Unsafe
+  namespace: System.Runtime.CompilerServices
+  summary: Copies bytes from the source address to the destination address.
+  example: []
+  syntax:
+    content: public static void CopyBlock(ref byte destination, ref byte source, uint byteCount)
+    parameters:
+    - id: destination
+      type: System.Byte
+      description: The destination address to copy to.
+    - id: source
+      type: System.Byte
+      description: The source address to copy from.
+    - id: byteCount
+      type: System.UInt32
+      description: The number of bytes to copy.
+    content.vb: Public Shared Sub CopyBlock(destination As Byte, source As Byte, byteCount As UInteger)
+  overload: System.Runtime.CompilerServices.Unsafe.CopyBlock*
+  nameWithType.vb: Unsafe.CopyBlock(Byte, Byte, UInteger)
+  fullName.vb: System.Runtime.CompilerServices.Unsafe.CopyBlock(Byte, Byte, UInteger)
+  name.vb: CopyBlock(Byte, Byte, UInteger)
+- uid: System.Runtime.CompilerServices.Unsafe.CopyBlockUnaligned(System.Void*,System.Void*,System.UInt32)
+  commentId: M:System.Runtime.CompilerServices.Unsafe.CopyBlockUnaligned(System.Void*,System.Void*,System.UInt32)
+  id: CopyBlockUnaligned(System.Void*,System.Void*,System.UInt32)
+  parent: System.Runtime.CompilerServices.Unsafe
+  langs:
+  - csharp
+  - vb
+  name: CopyBlockUnaligned(void*, void*, uint)
+  nameWithType: Unsafe.CopyBlockUnaligned(void*, void*, uint)
+  fullName: System.Runtime.CompilerServices.Unsafe.CopyBlockUnaligned(void*, void*, uint)
+  type: Method
+  assemblies:
+  - System.Runtime.CompilerServices.Unsafe
+  namespace: System.Runtime.CompilerServices
+  summary: Copies bytes from the source address to the destination address without assuming architecture dependent alignment of the addresses.
+  example: []
+  syntax:
+    content: public static void CopyBlockUnaligned(void* destination, void* source, uint byteCount)
+    parameters:
+    - id: destination
+      type: System.Void*
+      description: The destination address to copy to.
+    - id: source
+      type: System.Void*
+      description: The source address to copy from.
+    - id: byteCount
+      type: System.UInt32
+      description: The number of bytes to copy.
+    content.vb: Public Shared Sub CopyBlockUnaligned(destination As Void*, source As Void*, byteCount As UInteger)
+  overload: System.Runtime.CompilerServices.Unsafe.CopyBlockUnaligned*
+  nameWithType.vb: Unsafe.CopyBlockUnaligned(Void*, Void*, UInteger)
+  fullName.vb: System.Runtime.CompilerServices.Unsafe.CopyBlockUnaligned(Void*, Void*, UInteger)
+  name.vb: CopyBlockUnaligned(Void*, Void*, UInteger)
+- uid: System.Runtime.CompilerServices.Unsafe.CopyBlockUnaligned(System.Byte@,System.Byte@,System.UInt32)
+  commentId: M:System.Runtime.CompilerServices.Unsafe.CopyBlockUnaligned(System.Byte@,System.Byte@,System.UInt32)
+  id: CopyBlockUnaligned(System.Byte@,System.Byte@,System.UInt32)
+  parent: System.Runtime.CompilerServices.Unsafe
+  langs:
+  - csharp
+  - vb
+  name: CopyBlockUnaligned(ref byte, ref byte, uint)
+  nameWithType: Unsafe.CopyBlockUnaligned(ref byte, ref byte, uint)
+  fullName: System.Runtime.CompilerServices.Unsafe.CopyBlockUnaligned(ref byte, ref byte, uint)
+  type: Method
+  assemblies:
+  - System.Runtime.CompilerServices.Unsafe
+  namespace: System.Runtime.CompilerServices
+  summary: Copies bytes from the source address to the destination address without assuming architecture dependent alignment of the addresses.
+  example: []
+  syntax:
+    content: public static void CopyBlockUnaligned(ref byte destination, ref byte source, uint byteCount)
+    parameters:
+    - id: destination
+      type: System.Byte
+      description: The destination address to copy to.
+    - id: source
+      type: System.Byte
+      description: The source address to copy from.
+    - id: byteCount
+      type: System.UInt32
+      description: The number of bytes to copy.
+    content.vb: Public Shared Sub CopyBlockUnaligned(destination As Byte, source As Byte, byteCount As UInteger)
+  overload: System.Runtime.CompilerServices.Unsafe.CopyBlockUnaligned*
+  nameWithType.vb: Unsafe.CopyBlockUnaligned(Byte, Byte, UInteger)
+  fullName.vb: System.Runtime.CompilerServices.Unsafe.CopyBlockUnaligned(Byte, Byte, UInteger)
+  name.vb: CopyBlockUnaligned(Byte, Byte, UInteger)
+- uid: System.Runtime.CompilerServices.Unsafe.InitBlock(System.Void*,System.Byte,System.UInt32)
+  commentId: M:System.Runtime.CompilerServices.Unsafe.InitBlock(System.Void*,System.Byte,System.UInt32)
+  id: InitBlock(System.Void*,System.Byte,System.UInt32)
+  parent: System.Runtime.CompilerServices.Unsafe
+  langs:
+  - csharp
+  - vb
+  name: InitBlock(void*, byte, uint)
+  nameWithType: Unsafe.InitBlock(void*, byte, uint)
+  fullName: System.Runtime.CompilerServices.Unsafe.InitBlock(void*, byte, uint)
+  type: Method
+  assemblies:
+  - System.Runtime.CompilerServices.Unsafe
+  namespace: System.Runtime.CompilerServices
+  summary: Initializes a block of memory at the given location with a given initial value.
+  example: []
+  syntax:
+    content: public static void InitBlock(void* startAddress, byte value, uint byteCount)
+    parameters:
+    - id: startAddress
+      type: System.Void*
+      description: The address of the start of the memory block to initialize.
+    - id: value
+      type: System.Byte
+      description: The value to initialize the block to.
+    - id: byteCount
+      type: System.UInt32
+      description: The number of bytes to initialize.
+    content.vb: Public Shared Sub InitBlock(startAddress As Void*, value As Byte, byteCount As UInteger)
+  overload: System.Runtime.CompilerServices.Unsafe.InitBlock*
+  nameWithType.vb: Unsafe.InitBlock(Void*, Byte, UInteger)
+  fullName.vb: System.Runtime.CompilerServices.Unsafe.InitBlock(Void*, Byte, UInteger)
+  name.vb: InitBlock(Void*, Byte, UInteger)
+- uid: System.Runtime.CompilerServices.Unsafe.InitBlock(System.Byte@,System.Byte,System.UInt32)
+  commentId: M:System.Runtime.CompilerServices.Unsafe.InitBlock(System.Byte@,System.Byte,System.UInt32)
+  id: InitBlock(System.Byte@,System.Byte,System.UInt32)
+  parent: System.Runtime.CompilerServices.Unsafe
+  langs:
+  - csharp
+  - vb
+  name: InitBlock(ref byte, byte, uint)
+  nameWithType: Unsafe.InitBlock(ref byte, byte, uint)
+  fullName: System.Runtime.CompilerServices.Unsafe.InitBlock(ref byte, byte, uint)
+  type: Method
+  assemblies:
+  - System.Runtime.CompilerServices.Unsafe
+  namespace: System.Runtime.CompilerServices
+  summary: Initializes a block of memory at the given location with a given initial value.
+  example: []
+  syntax:
+    content: public static void InitBlock(ref byte startAddress, byte value, uint byteCount)
+    parameters:
+    - id: startAddress
+      type: System.Byte
+      description: The address of the start of the memory block to initialize.
+    - id: value
+      type: System.Byte
+      description: The value to initialize the block to.
+    - id: byteCount
+      type: System.UInt32
+      description: The number of bytes to initialize.
+    content.vb: Public Shared Sub InitBlock(startAddress As Byte, value As Byte, byteCount As UInteger)
+  overload: System.Runtime.CompilerServices.Unsafe.InitBlock*
+  nameWithType.vb: Unsafe.InitBlock(Byte, Byte, UInteger)
+  fullName.vb: System.Runtime.CompilerServices.Unsafe.InitBlock(Byte, Byte, UInteger)
+  name.vb: InitBlock(Byte, Byte, UInteger)
+- uid: System.Runtime.CompilerServices.Unsafe.InitBlockUnaligned(System.Void*,System.Byte,System.UInt32)
+  commentId: M:System.Runtime.CompilerServices.Unsafe.InitBlockUnaligned(System.Void*,System.Byte,System.UInt32)
+  id: InitBlockUnaligned(System.Void*,System.Byte,System.UInt32)
+  parent: System.Runtime.CompilerServices.Unsafe
+  langs:
+  - csharp
+  - vb
+  name: InitBlockUnaligned(void*, byte, uint)
+  nameWithType: Unsafe.InitBlockUnaligned(void*, byte, uint)
+  fullName: System.Runtime.CompilerServices.Unsafe.InitBlockUnaligned(void*, byte, uint)
+  type: Method
+  assemblies:
+  - System.Runtime.CompilerServices.Unsafe
+  namespace: System.Runtime.CompilerServices
+  summary: Initializes a block of memory at the given location with a given initial value without assuming architecture dependent alignment of the address.
+  example: []
+  syntax:
+    content: public static void InitBlockUnaligned(void* startAddress, byte value, uint byteCount)
+    parameters:
+    - id: startAddress
+      type: System.Void*
+      description: The address of the start of the memory block to initialize.
+    - id: value
+      type: System.Byte
+      description: The value to initialize the block to.
+    - id: byteCount
+      type: System.UInt32
+      description: The number of bytes to initialize.
+    content.vb: Public Shared Sub InitBlockUnaligned(startAddress As Void*, value As Byte, byteCount As UInteger)
+  overload: System.Runtime.CompilerServices.Unsafe.InitBlockUnaligned*
+  nameWithType.vb: Unsafe.InitBlockUnaligned(Void*, Byte, UInteger)
+  fullName.vb: System.Runtime.CompilerServices.Unsafe.InitBlockUnaligned(Void*, Byte, UInteger)
+  name.vb: InitBlockUnaligned(Void*, Byte, UInteger)
+- uid: System.Runtime.CompilerServices.Unsafe.InitBlockUnaligned(System.Byte@,System.Byte,System.UInt32)
+  commentId: M:System.Runtime.CompilerServices.Unsafe.InitBlockUnaligned(System.Byte@,System.Byte,System.UInt32)
+  id: InitBlockUnaligned(System.Byte@,System.Byte,System.UInt32)
+  parent: System.Runtime.CompilerServices.Unsafe
+  langs:
+  - csharp
+  - vb
+  name: InitBlockUnaligned(ref byte, byte, uint)
+  nameWithType: Unsafe.InitBlockUnaligned(ref byte, byte, uint)
+  fullName: System.Runtime.CompilerServices.Unsafe.InitBlockUnaligned(ref byte, byte, uint)
+  type: Method
+  assemblies:
+  - System.Runtime.CompilerServices.Unsafe
+  namespace: System.Runtime.CompilerServices
+  summary: Initializes a block of memory at the given location with a given initial value without assuming architecture dependent alignment of the address.
+  example: []
+  syntax:
+    content: public static void InitBlockUnaligned(ref byte startAddress, byte value, uint byteCount)
+    parameters:
+    - id: startAddress
+      type: System.Byte
+      description: The address of the start of the memory block to initialize.
+    - id: value
+      type: System.Byte
+      description: The value to initialize the block to.
+    - id: byteCount
+      type: System.UInt32
+      description: The number of bytes to initialize.
+    content.vb: Public Shared Sub InitBlockUnaligned(startAddress As Byte, value As Byte, byteCount As UInteger)
+  overload: System.Runtime.CompilerServices.Unsafe.InitBlockUnaligned*
+  nameWithType.vb: Unsafe.InitBlockUnaligned(Byte, Byte, UInteger)
+  fullName.vb: System.Runtime.CompilerServices.Unsafe.InitBlockUnaligned(Byte, Byte, UInteger)
+  name.vb: InitBlockUnaligned(Byte, Byte, UInteger)
+- uid: System.Runtime.CompilerServices.Unsafe.As``1(System.Object)
+  commentId: M:System.Runtime.CompilerServices.Unsafe.As``1(System.Object)
+  id: As``1(System.Object)
+  parent: System.Runtime.CompilerServices.Unsafe
+  langs:
+  - csharp
+  - vb
+  name: As<T>(object)
+  nameWithType: Unsafe.As<T>(object)
+  fullName: System.Runtime.CompilerServices.Unsafe.As<T>(object)
+  type: Method
+  assemblies:
+  - System.Runtime.CompilerServices.Unsafe
+  namespace: System.Runtime.CompilerServices
+  summary: Casts the given object to the specified type.
+  example: []
+  syntax:
+    content: 'public static T As<T>(object o) where T : class'
+    parameters:
+    - id: o
+      type: System.Object
+      description: The object to cast.
+    typeParameters:
+    - id: T
+      description: The type which the object will be cast to.
+    return:
+      type: '{T}'
+      description: The original object, casted to the given type.
+    content.vb: Public Shared Function [As](Of T As Class)(o As Object) As T
+  overload: System.Runtime.CompilerServices.Unsafe.As*
+  nameWithType.vb: Unsafe.As(Of T)(Object)
+  fullName.vb: System.Runtime.CompilerServices.Unsafe.As(Of T)(Object)
+  name.vb: As(Of T)(Object)
+- uid: System.Runtime.CompilerServices.Unsafe.AsRef``1(System.Void*)
+  commentId: M:System.Runtime.CompilerServices.Unsafe.AsRef``1(System.Void*)
+  id: AsRef``1(System.Void*)
+  parent: System.Runtime.CompilerServices.Unsafe
+  langs:
+  - csharp
+  - vb
+  name: AsRef<T>(void*)
+  nameWithType: Unsafe.AsRef<T>(void*)
+  fullName: System.Runtime.CompilerServices.Unsafe.AsRef<T>(void*)
+  type: Method
+  assemblies:
+  - System.Runtime.CompilerServices.Unsafe
+  namespace: System.Runtime.CompilerServices
+  summary: Reinterprets the given location as a reference to a value of type <code class="typeparamref">T</code>.
+  example: []
+  syntax:
+    content: public static ref T AsRef<T>(void* source)
+    parameters:
+    - id: source
+      type: System.Void*
+      description: The location of the value to reference.
+    typeParameters:
+    - id: T
+      description: The type of the interpreted location.
+    return:
+      type: '{T}'
+      description: A reference to a value of type <code class="typeparamref">T</code>.
+    content.vb: Public Shared ByRef Function AsRef(Of T)(source As Void*) As T
+  overload: System.Runtime.CompilerServices.Unsafe.AsRef*
+  nameWithType.vb: Unsafe.AsRef(Of T)(Void*)
+  fullName.vb: System.Runtime.CompilerServices.Unsafe.AsRef(Of T)(Void*)
+  name.vb: AsRef(Of T)(Void*)
+- uid: System.Runtime.CompilerServices.Unsafe.AsRef``1(``0@)
+  commentId: M:System.Runtime.CompilerServices.Unsafe.AsRef``1(``0@)
+  id: AsRef``1(``0@)
+  parent: System.Runtime.CompilerServices.Unsafe
+  langs:
+  - csharp
+  - vb
+  name: AsRef<T>(in T)
+  nameWithType: Unsafe.AsRef<T>(in T)
+  fullName: System.Runtime.CompilerServices.Unsafe.AsRef<T>(in T)
+  type: Method
+  assemblies:
+  - System.Runtime.CompilerServices.Unsafe
+  namespace: System.Runtime.CompilerServices
+  summary: Reinterprets the given read-only reference as a reference.
+  example: []
+  syntax:
+    content: public static ref T AsRef<T>(in T source)
+    parameters:
+    - id: source
+      type: '{T}'
+      description: The read-only reference to reinterpret.
+    typeParameters:
+    - id: T
+      description: The type of reference.
+    return:
+      type: '{T}'
+      description: A reference to a value of type <code class="typeparamref">T</code>.
+    content.vb: Public Shared ByRef Function AsRef(Of T)(source As T) As T
+  overload: System.Runtime.CompilerServices.Unsafe.AsRef*
+  nameWithType.vb: Unsafe.AsRef(Of T)(T)
+  fullName.vb: System.Runtime.CompilerServices.Unsafe.AsRef(Of T)(T)
+  name.vb: AsRef(Of T)(T)
+- uid: System.Runtime.CompilerServices.Unsafe.As``2(``0@)
+  commentId: M:System.Runtime.CompilerServices.Unsafe.As``2(``0@)
+  id: As``2(``0@)
+  parent: System.Runtime.CompilerServices.Unsafe
+  langs:
+  - csharp
+  - vb
+  name: As<TFrom, TTo>(ref TFrom)
+  nameWithType: Unsafe.As<TFrom, TTo>(ref TFrom)
+  fullName: System.Runtime.CompilerServices.Unsafe.As<TFrom, TTo>(ref TFrom)
+  type: Method
+  assemblies:
+  - System.Runtime.CompilerServices.Unsafe
+  namespace: System.Runtime.CompilerServices
+  summary: Reinterprets the given reference as a reference to a value of type <code class="typeparamref">TTo</code>.
+  example: []
+  syntax:
+    content: public static ref TTo As<TFrom, TTo>(ref TFrom source)
+    parameters:
+    - id: source
+      type: '{TFrom}'
+      description: The reference to reinterpret.
+    typeParameters:
+    - id: TFrom
+      description: The type of reference to reinterpret.
+    - id: TTo
+      description: The desired type of the reference.
+    return:
+      type: '{TTo}'
+      description: A reference to a value of type <code class="typeparamref">TTo</code>.
+    content.vb: Public Shared ByRef Function [As](Of TFrom, TTo)(source As TFrom) As TTo
+  overload: System.Runtime.CompilerServices.Unsafe.As*
+  nameWithType.vb: Unsafe.As(Of TFrom, TTo)(TFrom)
+  fullName.vb: System.Runtime.CompilerServices.Unsafe.As(Of TFrom, TTo)(TFrom)
+  name.vb: As(Of TFrom, TTo)(TFrom)
+- uid: System.Runtime.CompilerServices.Unsafe.Unbox``1(System.Object)
+  commentId: M:System.Runtime.CompilerServices.Unsafe.Unbox``1(System.Object)
+  id: Unbox``1(System.Object)
+  parent: System.Runtime.CompilerServices.Unsafe
+  langs:
+  - csharp
+  - vb
+  name: Unbox<T>(object)
+  nameWithType: Unsafe.Unbox<T>(object)
+  fullName: System.Runtime.CompilerServices.Unsafe.Unbox<T>(object)
+  type: Method
+  assemblies:
+  - System.Runtime.CompilerServices.Unsafe
+  namespace: System.Runtime.CompilerServices
+  summary: Returns a <code>mutable ref</code> to a boxed value.
+  example: []
+  syntax:
+    content: 'public static ref T Unbox<T>(object box) where T : struct'
+    parameters:
+    - id: box
+      type: System.Object
+      description: The value to unbox.
+    typeParameters:
+    - id: T
+      description: The type to be unboxed.
+    return:
+      type: '{T}'
+      description: A <code>mutable ref</code> to the boxed value <code class="paramref">box</code>.
+    content.vb: Public Shared ByRef Function Unbox(Of T As Structure)(box As Object) As T
+  overload: System.Runtime.CompilerServices.Unsafe.Unbox*
+  exceptions:
+  - type: System.NullReferenceException
+    commentId: T:System.NullReferenceException
+    description: <code class="paramref">box</code> is <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>, and <code class="typeparamref">T</code> is a non-nullable value type.
+  - type: System.InvalidCastException
+    commentId: T:System.InvalidCastException
+    description: "    <code class=\"paramref\">box</code> is not a boxed value type.\r\n\r\n-or-\r\n\r\n<code class=\"paramref\">box</code> is not a boxed <code class=\"typeparamref\">T</code>."
+  - type: System.TypeLoadException
+    commentId: T:System.TypeLoadException
+    description: <code class="typeparamref">T</code> cannot be found.
+  nameWithType.vb: Unsafe.Unbox(Of T)(Object)
+  fullName.vb: System.Runtime.CompilerServices.Unsafe.Unbox(Of T)(Object)
+  name.vb: Unbox(Of T)(Object)
+- uid: System.Runtime.CompilerServices.Unsafe.Add``1(``0@,System.Int32)
+  commentId: M:System.Runtime.CompilerServices.Unsafe.Add``1(``0@,System.Int32)
+  id: Add``1(``0@,System.Int32)
+  parent: System.Runtime.CompilerServices.Unsafe
+  langs:
+  - csharp
+  - vb
+  name: Add<T>(ref T, int)
+  nameWithType: Unsafe.Add<T>(ref T, int)
+  fullName: System.Runtime.CompilerServices.Unsafe.Add<T>(ref T, int)
+  type: Method
+  assemblies:
+  - System.Runtime.CompilerServices.Unsafe
+  namespace: System.Runtime.CompilerServices
+  summary: Adds an element offset to the given reference.
+  example: []
+  syntax:
+    content: public static ref T Add<T>(ref T source, int elementOffset)
+    parameters:
+    - id: source
+      type: '{T}'
+      description: The reference to add the offset to.
+    - id: elementOffset
+      type: System.Int32
+      description: The offset to add.
+    typeParameters:
+    - id: T
+      description: The type of reference.
+    return:
+      type: '{T}'
+      description: A new reference that reflects the addition of offset to pointer.
+    content.vb: Public Shared ByRef Function Add(Of T)(source As T, elementOffset As Integer) As T
+  overload: System.Runtime.CompilerServices.Unsafe.Add*
+  nameWithType.vb: Unsafe.Add(Of T)(T, Integer)
+  fullName.vb: System.Runtime.CompilerServices.Unsafe.Add(Of T)(T, Integer)
+  name.vb: Add(Of T)(T, Integer)
+- uid: System.Runtime.CompilerServices.Unsafe.Add``1(System.Void*,System.Int32)
+  commentId: M:System.Runtime.CompilerServices.Unsafe.Add``1(System.Void*,System.Int32)
+  id: Add``1(System.Void*,System.Int32)
+  parent: System.Runtime.CompilerServices.Unsafe
+  langs:
+  - csharp
+  - vb
+  name: Add<T>(void*, int)
+  nameWithType: Unsafe.Add<T>(void*, int)
+  fullName: System.Runtime.CompilerServices.Unsafe.Add<T>(void*, int)
+  type: Method
+  assemblies:
+  - System.Runtime.CompilerServices.Unsafe
+  namespace: System.Runtime.CompilerServices
+  summary: Adds an element offset to the given void pointer.
+  example: []
+  syntax:
+    content: public static void* Add<T>(void* source, int elementOffset)
+    parameters:
+    - id: source
+      type: System.Void*
+      description: The void pointer to add the offset to.
+    - id: elementOffset
+      type: System.Int32
+      description: The offset to add.
+    typeParameters:
+    - id: T
+      description: The type of void pointer.
+    return:
+      type: System.Void*
+      description: A new void pointer that reflects the addition of offset to the specified pointer.
+    content.vb: Public Shared Function Add(Of T)(source As Void*, elementOffset As Integer) As Void*
+  overload: System.Runtime.CompilerServices.Unsafe.Add*
+  nameWithType.vb: Unsafe.Add(Of T)(Void*, Integer)
+  fullName.vb: System.Runtime.CompilerServices.Unsafe.Add(Of T)(Void*, Integer)
+  name.vb: Add(Of T)(Void*, Integer)
+- uid: System.Runtime.CompilerServices.Unsafe.Add``1(``0@,System.IntPtr)
+  commentId: M:System.Runtime.CompilerServices.Unsafe.Add``1(``0@,System.IntPtr)
+  id: Add``1(``0@,System.IntPtr)
+  parent: System.Runtime.CompilerServices.Unsafe
+  langs:
+  - csharp
+  - vb
+  name: Add<T>(ref T, IntPtr)
+  nameWithType: Unsafe.Add<T>(ref T, IntPtr)
+  fullName: System.Runtime.CompilerServices.Unsafe.Add<T>(ref T, System.IntPtr)
+  type: Method
+  assemblies:
+  - System.Runtime.CompilerServices.Unsafe
+  namespace: System.Runtime.CompilerServices
+  summary: Adds an element offset to the given reference.
+  example: []
+  syntax:
+    content: public static ref T Add<T>(ref T source, IntPtr elementOffset)
+    parameters:
+    - id: source
+      type: '{T}'
+      description: The reference to add the offset to.
+    - id: elementOffset
+      type: System.IntPtr
+      description: The offset to add.
+    typeParameters:
+    - id: T
+      description: The type of reference.
+    return:
+      type: '{T}'
+      description: A new reference that reflects the addition of offset to pointer.
+    content.vb: Public Shared ByRef Function Add(Of T)(source As T, elementOffset As IntPtr) As T
+  overload: System.Runtime.CompilerServices.Unsafe.Add*
+  nameWithType.vb: Unsafe.Add(Of T)(T, IntPtr)
+  fullName.vb: System.Runtime.CompilerServices.Unsafe.Add(Of T)(T, System.IntPtr)
+  name.vb: Add(Of T)(T, IntPtr)
+- uid: System.Runtime.CompilerServices.Unsafe.Add``1(``0@,System.UIntPtr)
+  commentId: M:System.Runtime.CompilerServices.Unsafe.Add``1(``0@,System.UIntPtr)
+  id: Add``1(``0@,System.UIntPtr)
+  parent: System.Runtime.CompilerServices.Unsafe
+  langs:
+  - csharp
+  - vb
+  name: Add<T>(ref T, nuint)
+  nameWithType: Unsafe.Add<T>(ref T, nuint)
+  fullName: System.Runtime.CompilerServices.Unsafe.Add<T>(ref T, nuint)
+  type: Method
+  assemblies:
+  - System.Runtime.CompilerServices.Unsafe
+  namespace: System.Runtime.CompilerServices
+  summary: Adds an element offset to the given reference.
+  example: []
+  syntax:
+    content: public static ref T Add<T>(ref T source, nuint elementOffset)
+    parameters:
+    - id: source
+      type: '{T}'
+      description: The reference to add the offset to.
+    - id: elementOffset
+      type: System.UIntPtr
+      description: The offset to add.
+    typeParameters:
+    - id: T
+      description: The type of reference.
+    return:
+      type: '{T}'
+      description: A new reference that reflects the addition of offset to pointer.
+    content.vb: Public Shared ByRef Function Add(Of T)(source As T, elementOffset As UIntPtr) As T
+  overload: System.Runtime.CompilerServices.Unsafe.Add*
+  nameWithType.vb: Unsafe.Add(Of T)(T, UIntPtr)
+  fullName.vb: System.Runtime.CompilerServices.Unsafe.Add(Of T)(T, System.UIntPtr)
+  name.vb: Add(Of T)(T, UIntPtr)
+- uid: System.Runtime.CompilerServices.Unsafe.AddByteOffset``1(``0@,System.IntPtr)
+  commentId: M:System.Runtime.CompilerServices.Unsafe.AddByteOffset``1(``0@,System.IntPtr)
+  id: AddByteOffset``1(``0@,System.IntPtr)
+  parent: System.Runtime.CompilerServices.Unsafe
+  langs:
+  - csharp
+  - vb
+  name: AddByteOffset<T>(ref T, IntPtr)
+  nameWithType: Unsafe.AddByteOffset<T>(ref T, IntPtr)
+  fullName: System.Runtime.CompilerServices.Unsafe.AddByteOffset<T>(ref T, System.IntPtr)
+  type: Method
+  assemblies:
+  - System.Runtime.CompilerServices.Unsafe
+  namespace: System.Runtime.CompilerServices
+  summary: Adds a byte offset to the given reference.
+  example: []
+  syntax:
+    content: public static ref T AddByteOffset<T>(ref T source, IntPtr byteOffset)
+    parameters:
+    - id: source
+      type: '{T}'
+      description: The reference to add the offset to.
+    - id: byteOffset
+      type: System.IntPtr
+      description: The offset to add.
+    typeParameters:
+    - id: T
+      description: The type of reference.
+    return:
+      type: '{T}'
+      description: A new reference that reflects the addition of byte offset to pointer.
+    content.vb: Public Shared ByRef Function AddByteOffset(Of T)(source As T, byteOffset As IntPtr) As T
+  overload: System.Runtime.CompilerServices.Unsafe.AddByteOffset*
+  nameWithType.vb: Unsafe.AddByteOffset(Of T)(T, IntPtr)
+  fullName.vb: System.Runtime.CompilerServices.Unsafe.AddByteOffset(Of T)(T, System.IntPtr)
+  name.vb: AddByteOffset(Of T)(T, IntPtr)
+- uid: System.Runtime.CompilerServices.Unsafe.AddByteOffset``1(``0@,System.UIntPtr)
+  commentId: M:System.Runtime.CompilerServices.Unsafe.AddByteOffset``1(``0@,System.UIntPtr)
+  id: AddByteOffset``1(``0@,System.UIntPtr)
+  parent: System.Runtime.CompilerServices.Unsafe
+  langs:
+  - csharp
+  - vb
+  name: AddByteOffset<T>(ref T, nuint)
+  nameWithType: Unsafe.AddByteOffset<T>(ref T, nuint)
+  fullName: System.Runtime.CompilerServices.Unsafe.AddByteOffset<T>(ref T, nuint)
+  type: Method
+  assemblies:
+  - System.Runtime.CompilerServices.Unsafe
+  namespace: System.Runtime.CompilerServices
+  summary: Adds a byte offset to the given reference.
+  example: []
+  syntax:
+    content: public static ref T AddByteOffset<T>(ref T source, nuint byteOffset)
+    parameters:
+    - id: source
+      type: '{T}'
+      description: The reference to add the offset to.
+    - id: byteOffset
+      type: System.UIntPtr
+      description: The offset to add.
+    typeParameters:
+    - id: T
+      description: The type of reference.
+    return:
+      type: '{T}'
+      description: A new reference that reflects the addition of byte offset to pointer.
+    content.vb: Public Shared ByRef Function AddByteOffset(Of T)(source As T, byteOffset As UIntPtr) As T
+  overload: System.Runtime.CompilerServices.Unsafe.AddByteOffset*
+  nameWithType.vb: Unsafe.AddByteOffset(Of T)(T, UIntPtr)
+  fullName.vb: System.Runtime.CompilerServices.Unsafe.AddByteOffset(Of T)(T, System.UIntPtr)
+  name.vb: AddByteOffset(Of T)(T, UIntPtr)
+- uid: System.Runtime.CompilerServices.Unsafe.Subtract``1(``0@,System.Int32)
+  commentId: M:System.Runtime.CompilerServices.Unsafe.Subtract``1(``0@,System.Int32)
+  id: Subtract``1(``0@,System.Int32)
+  parent: System.Runtime.CompilerServices.Unsafe
+  langs:
+  - csharp
+  - vb
+  name: Subtract<T>(ref T, int)
+  nameWithType: Unsafe.Subtract<T>(ref T, int)
+  fullName: System.Runtime.CompilerServices.Unsafe.Subtract<T>(ref T, int)
+  type: Method
+  assemblies:
+  - System.Runtime.CompilerServices.Unsafe
+  namespace: System.Runtime.CompilerServices
+  summary: Subtracts an element offset from the given reference.
+  example: []
+  syntax:
+    content: public static ref T Subtract<T>(ref T source, int elementOffset)
+    parameters:
+    - id: source
+      type: '{T}'
+      description: The reference to subtract the offset from.
+    - id: elementOffset
+      type: System.Int32
+      description: The offset to subtract.
+    typeParameters:
+    - id: T
+      description: The type of reference.
+    return:
+      type: '{T}'
+      description: A new reference that reflects the subtraction of offset from pointer.
+    content.vb: Public Shared ByRef Function Subtract(Of T)(source As T, elementOffset As Integer) As T
+  overload: System.Runtime.CompilerServices.Unsafe.Subtract*
+  nameWithType.vb: Unsafe.Subtract(Of T)(T, Integer)
+  fullName.vb: System.Runtime.CompilerServices.Unsafe.Subtract(Of T)(T, Integer)
+  name.vb: Subtract(Of T)(T, Integer)
+- uid: System.Runtime.CompilerServices.Unsafe.Subtract``1(System.Void*,System.Int32)
+  commentId: M:System.Runtime.CompilerServices.Unsafe.Subtract``1(System.Void*,System.Int32)
+  id: Subtract``1(System.Void*,System.Int32)
+  parent: System.Runtime.CompilerServices.Unsafe
+  langs:
+  - csharp
+  - vb
+  name: Subtract<T>(void*, int)
+  nameWithType: Unsafe.Subtract<T>(void*, int)
+  fullName: System.Runtime.CompilerServices.Unsafe.Subtract<T>(void*, int)
+  type: Method
+  assemblies:
+  - System.Runtime.CompilerServices.Unsafe
+  namespace: System.Runtime.CompilerServices
+  summary: Subtracts an element offset from the given void pointer.
+  example: []
+  syntax:
+    content: public static void* Subtract<T>(void* source, int elementOffset)
+    parameters:
+    - id: source
+      type: System.Void*
+      description: The void pointer to subtract the offset from.
+    - id: elementOffset
+      type: System.Int32
+      description: The offset to subtract.
+    typeParameters:
+    - id: T
+      description: The type of the void pointer.
+    return:
+      type: System.Void*
+      description: A new void pointer that reflects the subtraction of offset from the specified pointer.
+    content.vb: Public Shared Function Subtract(Of T)(source As Void*, elementOffset As Integer) As Void*
+  overload: System.Runtime.CompilerServices.Unsafe.Subtract*
+  nameWithType.vb: Unsafe.Subtract(Of T)(Void*, Integer)
+  fullName.vb: System.Runtime.CompilerServices.Unsafe.Subtract(Of T)(Void*, Integer)
+  name.vb: Subtract(Of T)(Void*, Integer)
+- uid: System.Runtime.CompilerServices.Unsafe.Subtract``1(``0@,System.IntPtr)
+  commentId: M:System.Runtime.CompilerServices.Unsafe.Subtract``1(``0@,System.IntPtr)
+  id: Subtract``1(``0@,System.IntPtr)
+  parent: System.Runtime.CompilerServices.Unsafe
+  langs:
+  - csharp
+  - vb
+  name: Subtract<T>(ref T, IntPtr)
+  nameWithType: Unsafe.Subtract<T>(ref T, IntPtr)
+  fullName: System.Runtime.CompilerServices.Unsafe.Subtract<T>(ref T, System.IntPtr)
+  type: Method
+  assemblies:
+  - System.Runtime.CompilerServices.Unsafe
+  namespace: System.Runtime.CompilerServices
+  summary: Subtracts an element offset from the given reference.
+  example: []
+  syntax:
+    content: public static ref T Subtract<T>(ref T source, IntPtr elementOffset)
+    parameters:
+    - id: source
+      type: '{T}'
+      description: The reference to subtract the offset from.
+    - id: elementOffset
+      type: System.IntPtr
+      description: The offset to subtract.
+    typeParameters:
+    - id: T
+      description: The type of reference.
+    return:
+      type: '{T}'
+      description: A new reference that reflects the subtraction of offset from pointer.
+    content.vb: Public Shared ByRef Function Subtract(Of T)(source As T, elementOffset As IntPtr) As T
+  overload: System.Runtime.CompilerServices.Unsafe.Subtract*
+  nameWithType.vb: Unsafe.Subtract(Of T)(T, IntPtr)
+  fullName.vb: System.Runtime.CompilerServices.Unsafe.Subtract(Of T)(T, System.IntPtr)
+  name.vb: Subtract(Of T)(T, IntPtr)
+- uid: System.Runtime.CompilerServices.Unsafe.Subtract``1(``0@,System.UIntPtr)
+  commentId: M:System.Runtime.CompilerServices.Unsafe.Subtract``1(``0@,System.UIntPtr)
+  id: Subtract``1(``0@,System.UIntPtr)
+  parent: System.Runtime.CompilerServices.Unsafe
+  langs:
+  - csharp
+  - vb
+  name: Subtract<T>(ref T, nuint)
+  nameWithType: Unsafe.Subtract<T>(ref T, nuint)
+  fullName: System.Runtime.CompilerServices.Unsafe.Subtract<T>(ref T, nuint)
+  type: Method
+  assemblies:
+  - System.Runtime.CompilerServices.Unsafe
+  namespace: System.Runtime.CompilerServices
+  summary: Subtracts an element offset from the given reference.
+  example: []
+  syntax:
+    content: public static ref T Subtract<T>(ref T source, nuint elementOffset)
+    parameters:
+    - id: source
+      type: '{T}'
+      description: The reference to subtract the offset from.
+    - id: elementOffset
+      type: System.UIntPtr
+      description: The offset to subtract.
+    typeParameters:
+    - id: T
+      description: The type of reference.
+    return:
+      type: '{T}'
+      description: A new reference that reflects the subraction of offset from pointer.
+    content.vb: Public Shared ByRef Function Subtract(Of T)(source As T, elementOffset As UIntPtr) As T
+  overload: System.Runtime.CompilerServices.Unsafe.Subtract*
+  nameWithType.vb: Unsafe.Subtract(Of T)(T, UIntPtr)
+  fullName.vb: System.Runtime.CompilerServices.Unsafe.Subtract(Of T)(T, System.UIntPtr)
+  name.vb: Subtract(Of T)(T, UIntPtr)
+- uid: System.Runtime.CompilerServices.Unsafe.SubtractByteOffset``1(``0@,System.IntPtr)
+  commentId: M:System.Runtime.CompilerServices.Unsafe.SubtractByteOffset``1(``0@,System.IntPtr)
+  id: SubtractByteOffset``1(``0@,System.IntPtr)
+  parent: System.Runtime.CompilerServices.Unsafe
+  langs:
+  - csharp
+  - vb
+  name: SubtractByteOffset<T>(ref T, IntPtr)
+  nameWithType: Unsafe.SubtractByteOffset<T>(ref T, IntPtr)
+  fullName: System.Runtime.CompilerServices.Unsafe.SubtractByteOffset<T>(ref T, System.IntPtr)
+  type: Method
+  assemblies:
+  - System.Runtime.CompilerServices.Unsafe
+  namespace: System.Runtime.CompilerServices
+  summary: Subtracts a byte offset from the given reference.
+  example: []
+  syntax:
+    content: public static ref T SubtractByteOffset<T>(ref T source, IntPtr byteOffset)
+    parameters:
+    - id: source
+      type: '{T}'
+      description: The reference to subtract the offset from.
+    - id: byteOffset
+      type: System.IntPtr
+      description: The offset to subtract.
+    typeParameters:
+    - id: T
+      description: The type of reference.
+    return:
+      type: '{T}'
+      description: A new reference that reflects the subtraction of byte offset from pointer.
+    content.vb: Public Shared ByRef Function SubtractByteOffset(Of T)(source As T, byteOffset As IntPtr) As T
+  overload: System.Runtime.CompilerServices.Unsafe.SubtractByteOffset*
+  nameWithType.vb: Unsafe.SubtractByteOffset(Of T)(T, IntPtr)
+  fullName.vb: System.Runtime.CompilerServices.Unsafe.SubtractByteOffset(Of T)(T, System.IntPtr)
+  name.vb: SubtractByteOffset(Of T)(T, IntPtr)
+- uid: System.Runtime.CompilerServices.Unsafe.SubtractByteOffset``1(``0@,System.UIntPtr)
+  commentId: M:System.Runtime.CompilerServices.Unsafe.SubtractByteOffset``1(``0@,System.UIntPtr)
+  id: SubtractByteOffset``1(``0@,System.UIntPtr)
+  parent: System.Runtime.CompilerServices.Unsafe
+  langs:
+  - csharp
+  - vb
+  name: SubtractByteOffset<T>(ref T, nuint)
+  nameWithType: Unsafe.SubtractByteOffset<T>(ref T, nuint)
+  fullName: System.Runtime.CompilerServices.Unsafe.SubtractByteOffset<T>(ref T, nuint)
+  type: Method
+  assemblies:
+  - System.Runtime.CompilerServices.Unsafe
+  namespace: System.Runtime.CompilerServices
+  summary: Subtracts a byte offset from the given reference.
+  example: []
+  syntax:
+    content: public static ref T SubtractByteOffset<T>(ref T source, nuint byteOffset)
+    parameters:
+    - id: source
+      type: '{T}'
+      description: The reference to subtract the offset from.
+    - id: byteOffset
+      type: System.UIntPtr
+      description: The offset to subtract.
+    typeParameters:
+    - id: T
+      description: The type of reference.
+    return:
+      type: '{T}'
+      description: A new reference that reflects the subraction of byte offset from pointer.
+    content.vb: Public Shared ByRef Function SubtractByteOffset(Of T)(source As T, byteOffset As UIntPtr) As T
+  overload: System.Runtime.CompilerServices.Unsafe.SubtractByteOffset*
+  nameWithType.vb: Unsafe.SubtractByteOffset(Of T)(T, UIntPtr)
+  fullName.vb: System.Runtime.CompilerServices.Unsafe.SubtractByteOffset(Of T)(T, System.UIntPtr)
+  name.vb: SubtractByteOffset(Of T)(T, UIntPtr)
+- uid: System.Runtime.CompilerServices.Unsafe.ByteOffset``1(``0@,``0@)
+  commentId: M:System.Runtime.CompilerServices.Unsafe.ByteOffset``1(``0@,``0@)
+  id: ByteOffset``1(``0@,``0@)
+  parent: System.Runtime.CompilerServices.Unsafe
+  langs:
+  - csharp
+  - vb
+  name: ByteOffset<T>(ref T, ref T)
+  nameWithType: Unsafe.ByteOffset<T>(ref T, ref T)
+  fullName: System.Runtime.CompilerServices.Unsafe.ByteOffset<T>(ref T, ref T)
+  type: Method
+  assemblies:
+  - System.Runtime.CompilerServices.Unsafe
+  namespace: System.Runtime.CompilerServices
+  summary: Determines the byte offset from origin to target from the given references.
+  example: []
+  syntax:
+    content: public static IntPtr ByteOffset<T>(ref T origin, ref T target)
+    parameters:
+    - id: origin
+      type: '{T}'
+      description: The reference to origin.
+    - id: target
+      type: '{T}'
+      description: The reference to target.
+    typeParameters:
+    - id: T
+      description: The type of reference.
+    return:
+      type: System.IntPtr
+      description: Byte offset from origin to target i.e. <code class="paramref">target</code> - <code class="paramref">origin</code>.
+    content.vb: Public Shared Function ByteOffset(Of T)(origin As T, target As T) As IntPtr
+  overload: System.Runtime.CompilerServices.Unsafe.ByteOffset*
+  nameWithType.vb: Unsafe.ByteOffset(Of T)(T, T)
+  fullName.vb: System.Runtime.CompilerServices.Unsafe.ByteOffset(Of T)(T, T)
+  name.vb: ByteOffset(Of T)(T, T)
+- uid: System.Runtime.CompilerServices.Unsafe.AreSame``1(``0@,``0@)
+  commentId: M:System.Runtime.CompilerServices.Unsafe.AreSame``1(``0@,``0@)
+  id: AreSame``1(``0@,``0@)
+  parent: System.Runtime.CompilerServices.Unsafe
+  langs:
+  - csharp
+  - vb
+  name: AreSame<T>(ref T, ref T)
+  nameWithType: Unsafe.AreSame<T>(ref T, ref T)
+  fullName: System.Runtime.CompilerServices.Unsafe.AreSame<T>(ref T, ref T)
+  type: Method
+  assemblies:
+  - System.Runtime.CompilerServices.Unsafe
+  namespace: System.Runtime.CompilerServices
+  summary: Determines whether the specified references point to the same location.
+  example: []
+  syntax:
+    content: public static bool AreSame<T>(ref T left, ref T right)
+    parameters:
+    - id: left
+      type: '{T}'
+      description: The first reference to compare.
+    - id: right
+      type: '{T}'
+      description: The second reference to compare.
+    typeParameters:
+    - id: T
+      description: The type of reference.
+    return:
+      type: System.Boolean
+      description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if <code class="paramref">left</code> and <code class="paramref">right</code> point to the same location; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
+    content.vb: Public Shared Function AreSame(Of T)(left As T, right As T) As Boolean
+  overload: System.Runtime.CompilerServices.Unsafe.AreSame*
+  nameWithType.vb: Unsafe.AreSame(Of T)(T, T)
+  fullName.vb: System.Runtime.CompilerServices.Unsafe.AreSame(Of T)(T, T)
+  name.vb: AreSame(Of T)(T, T)
+- uid: System.Runtime.CompilerServices.Unsafe.IsAddressGreaterThan``1(``0@,``0@)
+  commentId: M:System.Runtime.CompilerServices.Unsafe.IsAddressGreaterThan``1(``0@,``0@)
+  id: IsAddressGreaterThan``1(``0@,``0@)
+  parent: System.Runtime.CompilerServices.Unsafe
+  langs:
+  - csharp
+  - vb
+  name: IsAddressGreaterThan<T>(ref T, ref T)
+  nameWithType: Unsafe.IsAddressGreaterThan<T>(ref T, ref T)
+  fullName: System.Runtime.CompilerServices.Unsafe.IsAddressGreaterThan<T>(ref T, ref T)
+  type: Method
+  assemblies:
+  - System.Runtime.CompilerServices.Unsafe
+  namespace: System.Runtime.CompilerServices
+  summary: Returns a value that indicates whether a specified reference is greater than another specified reference.
+  example: []
+  syntax:
+    content: public static bool IsAddressGreaterThan<T>(ref T left, ref T right)
+    parameters:
+    - id: left
+      type: '{T}'
+      description: The first value to compare.
+    - id: right
+      type: '{T}'
+      description: The second value to compare.
+    typeParameters:
+    - id: T
+      description: The type of the reference.
+    return:
+      type: System.Boolean
+      description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if <code class="paramref">left</code> is greater than <code class="paramref">right</code>; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
+    content.vb: Public Shared Function IsAddressGreaterThan(Of T)(left As T, right As T) As Boolean
+  overload: System.Runtime.CompilerServices.Unsafe.IsAddressGreaterThan*
+  nameWithType.vb: Unsafe.IsAddressGreaterThan(Of T)(T, T)
+  fullName.vb: System.Runtime.CompilerServices.Unsafe.IsAddressGreaterThan(Of T)(T, T)
+  name.vb: IsAddressGreaterThan(Of T)(T, T)
+- uid: System.Runtime.CompilerServices.Unsafe.IsAddressLessThan``1(``0@,``0@)
+  commentId: M:System.Runtime.CompilerServices.Unsafe.IsAddressLessThan``1(``0@,``0@)
+  id: IsAddressLessThan``1(``0@,``0@)
+  parent: System.Runtime.CompilerServices.Unsafe
+  langs:
+  - csharp
+  - vb
+  name: IsAddressLessThan<T>(ref T, ref T)
+  nameWithType: Unsafe.IsAddressLessThan<T>(ref T, ref T)
+  fullName: System.Runtime.CompilerServices.Unsafe.IsAddressLessThan<T>(ref T, ref T)
+  type: Method
+  assemblies:
+  - System.Runtime.CompilerServices.Unsafe
+  namespace: System.Runtime.CompilerServices
+  summary: Returns a value that indicates whether a specified reference is less than another specified reference.
+  example: []
+  syntax:
+    content: public static bool IsAddressLessThan<T>(ref T left, ref T right)
+    parameters:
+    - id: left
+      type: '{T}'
+      description: The first value to compare.
+    - id: right
+      type: '{T}'
+      description: The second value to compare.
+    typeParameters:
+    - id: T
+      description: The type of the reference.
+    return:
+      type: System.Boolean
+      description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if <code class="paramref">left</code> is less than <code class="paramref">right</code>; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
+    content.vb: Public Shared Function IsAddressLessThan(Of T)(left As T, right As T) As Boolean
+  overload: System.Runtime.CompilerServices.Unsafe.IsAddressLessThan*
+  nameWithType.vb: Unsafe.IsAddressLessThan(Of T)(T, T)
+  fullName.vb: System.Runtime.CompilerServices.Unsafe.IsAddressLessThan(Of T)(T, T)
+  name.vb: IsAddressLessThan(Of T)(T, T)
+- uid: System.Runtime.CompilerServices.Unsafe.IsNullRef``1(``0@)
+  commentId: M:System.Runtime.CompilerServices.Unsafe.IsNullRef``1(``0@)
+  id: IsNullRef``1(``0@)
+  parent: System.Runtime.CompilerServices.Unsafe
+  langs:
+  - csharp
+  - vb
+  name: IsNullRef<T>(ref T)
+  nameWithType: Unsafe.IsNullRef<T>(ref T)
+  fullName: System.Runtime.CompilerServices.Unsafe.IsNullRef<T>(ref T)
+  type: Method
+  assemblies:
+  - System.Runtime.CompilerServices.Unsafe
+  namespace: System.Runtime.CompilerServices
+  summary: Determines if a given reference to a value of type <code class="typeparamref">T</code> is a null reference.
+  example: []
+  syntax:
+    content: public static bool IsNullRef<T>(ref T source)
+    parameters:
+    - id: source
+      type: '{T}'
+      description: The reference to check.
+    typeParameters:
+    - id: T
+      description: The type of the reference.
+    return:
+      type: System.Boolean
+      description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if <code class="paramref">source</code> is a null reference; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
+    content.vb: Public Shared Function IsNullRef(Of T)(source As T) As Boolean
+  overload: System.Runtime.CompilerServices.Unsafe.IsNullRef*
+  nameWithType.vb: Unsafe.IsNullRef(Of T)(T)
+  fullName.vb: System.Runtime.CompilerServices.Unsafe.IsNullRef(Of T)(T)
+  name.vb: IsNullRef(Of T)(T)
+- uid: System.Runtime.CompilerServices.Unsafe.NullRef``1
+  commentId: M:System.Runtime.CompilerServices.Unsafe.NullRef``1
+  id: NullRef``1
+  parent: System.Runtime.CompilerServices.Unsafe
+  langs:
+  - csharp
+  - vb
+  name: NullRef<T>()
+  nameWithType: Unsafe.NullRef<T>()
+  fullName: System.Runtime.CompilerServices.Unsafe.NullRef<T>()
+  type: Method
+  assemblies:
+  - System.Runtime.CompilerServices.Unsafe
+  namespace: System.Runtime.CompilerServices
+  summary: Returns a reference to a value of type <code class="typeparamref">T</code> that is a null reference.
+  example: []
+  syntax:
+    content: public static ref T NullRef<T>()
+    typeParameters:
+    - id: T
+      description: The type of the reference.
+    return:
+      type: '{T}'
+      description: A reference to a value of type <code class="typeparamref">T</code> that is a null reference.
+    content.vb: Public Shared ByRef Function NullRef(Of T)() As T
+  overload: System.Runtime.CompilerServices.Unsafe.NullRef*
+  nameWithType.vb: Unsafe.NullRef(Of T)()
+  fullName.vb: System.Runtime.CompilerServices.Unsafe.NullRef(Of T)()
+  name.vb: NullRef(Of T)()
+references:
+- uid: System.Runtime.CompilerServices
+  commentId: N:System.Runtime.CompilerServices
+  isExternal: true
+  href: System.html
+  name: System.Runtime.CompilerServices
+  nameWithType: System.Runtime.CompilerServices
+  fullName: System.Runtime.CompilerServices
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: System.html
+  - name: .
+  - uid: System.Runtime
+    name: Runtime
+    isExternal: true
+    href: System.Runtime.html
+  - name: .
+  - uid: System.Runtime.CompilerServices
+    name: CompilerServices
+    isExternal: true
+    href: System.Runtime.CompilerServices.html
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: System.html
+  - name: .
+  - uid: System.Runtime
+    name: Runtime
+    isExternal: true
+    href: System.Runtime.html
+  - name: .
+  - uid: System.Runtime.CompilerServices
+    name: CompilerServices
+    isExternal: true
+    href: System.Runtime.CompilerServices.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Runtime.CompilerServices.Unsafe.Read*
+  commentId: Overload:System.Runtime.CompilerServices.Unsafe.Read
+  isExternal: true
+  href: System.Runtime.CompilerServices.Unsafe.html#System_Runtime_CompilerServices_Unsafe_Read__1_System_Void__
+  name: Read
+  nameWithType: Unsafe.Read
+  fullName: System.Runtime.CompilerServices.Unsafe.Read
+- uid: System.Void*
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.void
+  name: void*
+  nameWithType: void*
+  fullName: void*
+  nameWithType.vb: Void*
+  fullName.vb: Void*
+  name.vb: Void*
+  spec.csharp:
+  - uid: System.Void
+    name: void
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.void
+  - name: '*'
+  spec.vb:
+  - uid: System.Void
+    name: Void
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.void
+  - name: '*'
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: System.Runtime.CompilerServices.Unsafe.ReadUnaligned*
+  commentId: Overload:System.Runtime.CompilerServices.Unsafe.ReadUnaligned
+  isExternal: true
+  href: System.Runtime.CompilerServices.Unsafe.html#System_Runtime_CompilerServices_Unsafe_ReadUnaligned__1_System_Void__
+  name: ReadUnaligned
+  nameWithType: Unsafe.ReadUnaligned
+  fullName: System.Runtime.CompilerServices.Unsafe.ReadUnaligned
+- uid: System.Byte
+  commentId: T:System.Byte
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.byte
+  name: byte
+  nameWithType: byte
+  fullName: byte
+  nameWithType.vb: Byte
+  fullName.vb: Byte
+  name.vb: Byte
+- uid: System.Runtime.CompilerServices.Unsafe.Write*
+  commentId: Overload:System.Runtime.CompilerServices.Unsafe.Write
+  isExternal: true
+  href: System.Runtime.CompilerServices.Unsafe.html#System_Runtime_CompilerServices_Unsafe_Write__1_System_Void____0_
+  name: Write
+  nameWithType: Unsafe.Write
+  fullName: System.Runtime.CompilerServices.Unsafe.Write
+- uid: System.Runtime.CompilerServices.Unsafe.WriteUnaligned*
+  commentId: Overload:System.Runtime.CompilerServices.Unsafe.WriteUnaligned
+  isExternal: true
+  href: System.Runtime.CompilerServices.Unsafe.html#System_Runtime_CompilerServices_Unsafe_WriteUnaligned__1_System_Void____0_
+  name: WriteUnaligned
+  nameWithType: Unsafe.WriteUnaligned
+  fullName: System.Runtime.CompilerServices.Unsafe.WriteUnaligned
+- uid: System.Runtime.CompilerServices.Unsafe.Copy*
+  commentId: Overload:System.Runtime.CompilerServices.Unsafe.Copy
+  isExternal: true
+  href: System.Runtime.CompilerServices.Unsafe.html#System_Runtime_CompilerServices_Unsafe_Copy__1_System_Void____0__
+  name: Copy
+  nameWithType: Unsafe.Copy
+  fullName: System.Runtime.CompilerServices.Unsafe.Copy
+- uid: System.Runtime.CompilerServices.Unsafe.AsPointer*
+  commentId: Overload:System.Runtime.CompilerServices.Unsafe.AsPointer
+  isExternal: true
+  href: System.Runtime.CompilerServices.Unsafe.html#System_Runtime_CompilerServices_Unsafe_AsPointer__1___0__
+  name: AsPointer
+  nameWithType: Unsafe.AsPointer
+  fullName: System.Runtime.CompilerServices.Unsafe.AsPointer
+- uid: System.Runtime.CompilerServices.Unsafe.SkipInit*
+  commentId: Overload:System.Runtime.CompilerServices.Unsafe.SkipInit
+  isExternal: true
+  href: System.Runtime.CompilerServices.Unsafe.html#System_Runtime_CompilerServices_Unsafe_SkipInit__1___0__
+  name: SkipInit
+  nameWithType: Unsafe.SkipInit
+  fullName: System.Runtime.CompilerServices.Unsafe.SkipInit
+- uid: System.Runtime.CompilerServices.Unsafe.SizeOf*
+  commentId: Overload:System.Runtime.CompilerServices.Unsafe.SizeOf
+  isExternal: true
+  href: System.Runtime.CompilerServices.Unsafe.html#System_Runtime_CompilerServices_Unsafe_SizeOf__1
+  name: SizeOf
+  nameWithType: Unsafe.SizeOf
+  fullName: System.Runtime.CompilerServices.Unsafe.SizeOf
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.Runtime.CompilerServices.Unsafe.CopyBlock*
+  commentId: Overload:System.Runtime.CompilerServices.Unsafe.CopyBlock
+  isExternal: true
+  href: System.Runtime.CompilerServices.Unsafe.html#System_Runtime_CompilerServices_Unsafe_CopyBlock_System_Void__System_Void__System_UInt32_
+  name: CopyBlock
+  nameWithType: Unsafe.CopyBlock
+  fullName: System.Runtime.CompilerServices.Unsafe.CopyBlock
+- uid: System.UInt32
+  commentId: T:System.UInt32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.uint32
+  name: uint
+  nameWithType: uint
+  fullName: uint
+  nameWithType.vb: UInteger
+  fullName.vb: UInteger
+  name.vb: UInteger
+- uid: System.Runtime.CompilerServices.Unsafe.CopyBlockUnaligned*
+  commentId: Overload:System.Runtime.CompilerServices.Unsafe.CopyBlockUnaligned
+  isExternal: true
+  href: System.Runtime.CompilerServices.Unsafe.html#System_Runtime_CompilerServices_Unsafe_CopyBlockUnaligned_System_Void__System_Void__System_UInt32_
+  name: CopyBlockUnaligned
+  nameWithType: Unsafe.CopyBlockUnaligned
+  fullName: System.Runtime.CompilerServices.Unsafe.CopyBlockUnaligned
+- uid: System.Runtime.CompilerServices.Unsafe.InitBlock*
+  commentId: Overload:System.Runtime.CompilerServices.Unsafe.InitBlock
+  isExternal: true
+  href: System.Runtime.CompilerServices.Unsafe.html#System_Runtime_CompilerServices_Unsafe_InitBlock_System_Void__System_Byte_System_UInt32_
+  name: InitBlock
+  nameWithType: Unsafe.InitBlock
+  fullName: System.Runtime.CompilerServices.Unsafe.InitBlock
+- uid: System.Runtime.CompilerServices.Unsafe.InitBlockUnaligned*
+  commentId: Overload:System.Runtime.CompilerServices.Unsafe.InitBlockUnaligned
+  isExternal: true
+  href: System.Runtime.CompilerServices.Unsafe.html#System_Runtime_CompilerServices_Unsafe_InitBlockUnaligned_System_Void__System_Byte_System_UInt32_
+  name: InitBlockUnaligned
+  nameWithType: Unsafe.InitBlockUnaligned
+  fullName: System.Runtime.CompilerServices.Unsafe.InitBlockUnaligned
+- uid: System.Runtime.CompilerServices.Unsafe.As*
+  commentId: Overload:System.Runtime.CompilerServices.Unsafe.As
+  isExternal: true
+  href: System.Runtime.CompilerServices.Unsafe.html#System_Runtime_CompilerServices_Unsafe_As__1_System_Object_
+  name: As
+  nameWithType: Unsafe.As
+  fullName: System.Runtime.CompilerServices.Unsafe.As
+- uid: System.Runtime.CompilerServices.Unsafe.AsRef*
+  commentId: Overload:System.Runtime.CompilerServices.Unsafe.AsRef
+  isExternal: true
+  href: System.Runtime.CompilerServices.Unsafe.html#System_Runtime_CompilerServices_Unsafe_AsRef__1_System_Void__
+  name: AsRef
+  nameWithType: Unsafe.AsRef
+  fullName: System.Runtime.CompilerServices.Unsafe.AsRef
+- uid: '{TFrom}'
+  commentId: '!:TFrom'
+  definition: TFrom
+  name: TFrom
+  nameWithType: TFrom
+  fullName: TFrom
+- uid: '{TTo}'
+  commentId: '!:TTo'
+  definition: TTo
+  name: TTo
+  nameWithType: TTo
+  fullName: TTo
+- uid: TFrom
+  commentId: '!:TFrom'
+  name: TFrom
+  nameWithType: TFrom
+  fullName: TFrom
+- uid: TTo
+  commentId: '!:TTo'
+  name: TTo
+  nameWithType: TTo
+  fullName: TTo
+- uid: System.NullReferenceException
+  commentId: T:System.NullReferenceException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.nullreferenceexception
+  name: NullReferenceException
+  nameWithType: NullReferenceException
+  fullName: System.NullReferenceException
+- uid: System.InvalidCastException
+  commentId: T:System.InvalidCastException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.invalidcastexception
+  name: InvalidCastException
+  nameWithType: InvalidCastException
+  fullName: System.InvalidCastException
+- uid: System.TypeLoadException
+  commentId: T:System.TypeLoadException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.typeloadexception
+  name: TypeLoadException
+  nameWithType: TypeLoadException
+  fullName: System.TypeLoadException
+- uid: System.Runtime.CompilerServices.Unsafe.Unbox*
+  commentId: Overload:System.Runtime.CompilerServices.Unsafe.Unbox
+  isExternal: true
+  href: System.Runtime.CompilerServices.Unsafe.html#System_Runtime_CompilerServices_Unsafe_Unbox__1_System_Object_
+  name: Unbox
+  nameWithType: Unsafe.Unbox
+  fullName: System.Runtime.CompilerServices.Unsafe.Unbox
+- uid: System.Runtime.CompilerServices.Unsafe.Add*
+  commentId: Overload:System.Runtime.CompilerServices.Unsafe.Add
+  isExternal: true
+  href: System.Runtime.CompilerServices.Unsafe.html#System_Runtime_CompilerServices_Unsafe_Add__1___0__System_Int32_
+  name: Add
+  nameWithType: Unsafe.Add
+  fullName: System.Runtime.CompilerServices.Unsafe.Add
+- uid: System.IntPtr
+  commentId: T:System.IntPtr
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.intptr
+  name: IntPtr
+  nameWithType: IntPtr
+  fullName: System.IntPtr
+- uid: System.UIntPtr
+  commentId: T:System.UIntPtr
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.uintptr
+  name: UIntPtr
+  nameWithType: UIntPtr
+  fullName: System.UIntPtr
+- uid: System.Runtime.CompilerServices.Unsafe.AddByteOffset*
+  commentId: Overload:System.Runtime.CompilerServices.Unsafe.AddByteOffset
+  isExternal: true
+  href: System.Runtime.CompilerServices.Unsafe.html#System_Runtime_CompilerServices_Unsafe_AddByteOffset__1___0__System_IntPtr_
+  name: AddByteOffset
+  nameWithType: Unsafe.AddByteOffset
+  fullName: System.Runtime.CompilerServices.Unsafe.AddByteOffset
+- uid: System.Runtime.CompilerServices.Unsafe.Subtract*
+  commentId: Overload:System.Runtime.CompilerServices.Unsafe.Subtract
+  isExternal: true
+  href: System.Runtime.CompilerServices.Unsafe.html#System_Runtime_CompilerServices_Unsafe_Subtract__1___0__System_Int32_
+  name: Subtract
+  nameWithType: Unsafe.Subtract
+  fullName: System.Runtime.CompilerServices.Unsafe.Subtract
+- uid: System.Runtime.CompilerServices.Unsafe.SubtractByteOffset*
+  commentId: Overload:System.Runtime.CompilerServices.Unsafe.SubtractByteOffset
+  isExternal: true
+  href: System.Runtime.CompilerServices.Unsafe.html#System_Runtime_CompilerServices_Unsafe_SubtractByteOffset__1___0__System_IntPtr_
+  name: SubtractByteOffset
+  nameWithType: Unsafe.SubtractByteOffset
+  fullName: System.Runtime.CompilerServices.Unsafe.SubtractByteOffset
+- uid: System.Runtime.CompilerServices.Unsafe.ByteOffset*
+  commentId: Overload:System.Runtime.CompilerServices.Unsafe.ByteOffset
+  isExternal: true
+  href: System.Runtime.CompilerServices.Unsafe.html#System_Runtime_CompilerServices_Unsafe_ByteOffset__1___0____0__
+  name: ByteOffset
+  nameWithType: Unsafe.ByteOffset
+  fullName: System.Runtime.CompilerServices.Unsafe.ByteOffset
+- uid: System.Runtime.CompilerServices.Unsafe.AreSame*
+  commentId: Overload:System.Runtime.CompilerServices.Unsafe.AreSame
+  isExternal: true
+  href: System.Runtime.CompilerServices.Unsafe.html#System_Runtime_CompilerServices_Unsafe_AreSame__1___0____0__
+  name: AreSame
+  nameWithType: Unsafe.AreSame
+  fullName: System.Runtime.CompilerServices.Unsafe.AreSame
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System.Runtime.CompilerServices.Unsafe.IsAddressGreaterThan*
+  commentId: Overload:System.Runtime.CompilerServices.Unsafe.IsAddressGreaterThan
+  isExternal: true
+  href: System.Runtime.CompilerServices.Unsafe.html#System_Runtime_CompilerServices_Unsafe_IsAddressGreaterThan__1___0____0__
+  name: IsAddressGreaterThan
+  nameWithType: Unsafe.IsAddressGreaterThan
+  fullName: System.Runtime.CompilerServices.Unsafe.IsAddressGreaterThan
+- uid: System.Runtime.CompilerServices.Unsafe.IsAddressLessThan*
+  commentId: Overload:System.Runtime.CompilerServices.Unsafe.IsAddressLessThan
+  isExternal: true
+  href: System.Runtime.CompilerServices.Unsafe.html#System_Runtime_CompilerServices_Unsafe_IsAddressLessThan__1___0____0__
+  name: IsAddressLessThan
+  nameWithType: Unsafe.IsAddressLessThan
+  fullName: System.Runtime.CompilerServices.Unsafe.IsAddressLessThan
+- uid: System.Runtime.CompilerServices.Unsafe.IsNullRef*
+  commentId: Overload:System.Runtime.CompilerServices.Unsafe.IsNullRef
+  isExternal: true
+  href: System.Runtime.CompilerServices.Unsafe.html#System_Runtime_CompilerServices_Unsafe_IsNullRef__1___0__
+  name: IsNullRef
+  nameWithType: Unsafe.IsNullRef
+  fullName: System.Runtime.CompilerServices.Unsafe.IsNullRef
+- uid: System.Runtime.CompilerServices.Unsafe.NullRef*
+  commentId: Overload:System.Runtime.CompilerServices.Unsafe.NullRef
+  isExternal: true
+  href: System.Runtime.CompilerServices.Unsafe.html#System_Runtime_CompilerServices_Unsafe_NullRef__1
+  name: NullRef
+  nameWithType: Unsafe.NullRef
+  fullName: System.Runtime.CompilerServices.Unsafe.NullRef

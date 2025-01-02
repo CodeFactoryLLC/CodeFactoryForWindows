@@ -1,0 +1,996 @@
+### YamlMime:ManagedReference
+items:
+- uid: System.Text.Encodings.Web.JavaScriptEncoder
+  commentId: T:System.Text.Encodings.Web.JavaScriptEncoder
+  id: JavaScriptEncoder
+  parent: System.Text.Encodings.Web
+  children:
+  - System.Text.Encodings.Web.JavaScriptEncoder.#ctor
+  - System.Text.Encodings.Web.JavaScriptEncoder.Create(System.Text.Encodings.Web.TextEncoderSettings)
+  - System.Text.Encodings.Web.JavaScriptEncoder.Create(System.Text.Unicode.UnicodeRange[])
+  - System.Text.Encodings.Web.JavaScriptEncoder.Default
+  - System.Text.Encodings.Web.JavaScriptEncoder.UnsafeRelaxedJsonEscaping
+  langs:
+  - csharp
+  - vb
+  name: JavaScriptEncoder
+  nameWithType: JavaScriptEncoder
+  fullName: System.Text.Encodings.Web.JavaScriptEncoder
+  type: Class
+  assemblies:
+  - System.Text.Encodings.Web
+  namespace: System.Text.Encodings.Web
+  summary: Represents a JavaScript character encoding.
+  example: []
+  syntax:
+    content: 'public abstract class JavaScriptEncoder : TextEncoder'
+    content.vb: Public MustInherit Class JavaScriptEncoder Inherits TextEncoder
+  inheritance:
+  - System.Object
+  - System.Text.Encodings.Web.TextEncoder
+  inheritedMembers:
+  - System.Text.Encodings.Web.TextEncoder.Encode(System.String)
+  - System.Text.Encodings.Web.TextEncoder.Encode(System.IO.TextWriter,System.String)
+  - System.Text.Encodings.Web.TextEncoder.Encode(System.IO.TextWriter,System.String,System.Int32,System.Int32)
+  - System.Text.Encodings.Web.TextEncoder.Encode(System.IO.TextWriter,System.Char[],System.Int32,System.Int32)
+  - System.Text.Encodings.Web.TextEncoder.EncodeUtf8(System.ReadOnlySpan{System.Byte},System.Span{System.Byte},System.Int32@,System.Int32@,System.Boolean)
+  - System.Text.Encodings.Web.TextEncoder.Encode(System.ReadOnlySpan{System.Char},System.Span{System.Char},System.Int32@,System.Int32@,System.Boolean)
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: System.Text.Encodings.Web.JavaScriptEncoder.Create(System.Text.Encodings.Web.TextEncoderSettings)
+  commentId: M:System.Text.Encodings.Web.JavaScriptEncoder.Create(System.Text.Encodings.Web.TextEncoderSettings)
+  id: Create(System.Text.Encodings.Web.TextEncoderSettings)
+  parent: System.Text.Encodings.Web.JavaScriptEncoder
+  langs:
+  - csharp
+  - vb
+  name: Create(TextEncoderSettings)
+  nameWithType: JavaScriptEncoder.Create(TextEncoderSettings)
+  fullName: System.Text.Encodings.Web.JavaScriptEncoder.Create(System.Text.Encodings.Web.TextEncoderSettings)
+  type: Method
+  assemblies:
+  - System.Text.Encodings.Web
+  namespace: System.Text.Encodings.Web
+  summary: Creates a new instance of JavaScriptEncoder class with the specified settings.
+  example: []
+  syntax:
+    content: public static JavaScriptEncoder Create(TextEncoderSettings settings)
+    parameters:
+    - id: settings
+      type: System.Text.Encodings.Web.TextEncoderSettings
+      description: Settings that control how the <xref href="System.Text.Encodings.Web.JavaScriptEncoder" data-throw-if-not-resolved="false"></xref> instance encodes, primarily which characters to encode.
+    return:
+      type: System.Text.Encodings.Web.JavaScriptEncoder
+      description: A new instance of the <xref href="System.Text.Encodings.Web.JavaScriptEncoder" data-throw-if-not-resolved="false"></xref> class.
+    content.vb: Public Shared Function Create(settings As TextEncoderSettings) As JavaScriptEncoder
+  overload: System.Text.Encodings.Web.JavaScriptEncoder.Create*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: <code class="paramref">settings</code> is <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.
+- uid: System.Text.Encodings.Web.JavaScriptEncoder.Create(System.Text.Unicode.UnicodeRange[])
+  commentId: M:System.Text.Encodings.Web.JavaScriptEncoder.Create(System.Text.Unicode.UnicodeRange[])
+  id: Create(System.Text.Unicode.UnicodeRange[])
+  parent: System.Text.Encodings.Web.JavaScriptEncoder
+  langs:
+  - csharp
+  - vb
+  name: Create(params UnicodeRange[])
+  nameWithType: JavaScriptEncoder.Create(params UnicodeRange[])
+  fullName: System.Text.Encodings.Web.JavaScriptEncoder.Create(params System.Text.Unicode.UnicodeRange[])
+  type: Method
+  assemblies:
+  - System.Text.Encodings.Web
+  namespace: System.Text.Encodings.Web
+  summary: Creates a new instance of the JavaScriptEncoder class that specifies characters the encoder is allowed to not encode.
+  example: []
+  syntax:
+    content: public static JavaScriptEncoder Create(params UnicodeRange[] allowedRanges)
+    parameters:
+    - id: allowedRanges
+      type: System.Text.Unicode.UnicodeRange[]
+      description: The set of characters that the encoder is allowed to not encode.
+    return:
+      type: System.Text.Encodings.Web.JavaScriptEncoder
+      description: A new instance of the <xref href="System.Text.Encodings.Web.JavaScriptEncoder" data-throw-if-not-resolved="false"></xref> class.
+    content.vb: Public Shared Function Create(ParamArray allowedRanges As UnicodeRange()) As JavaScriptEncoder
+  overload: System.Text.Encodings.Web.JavaScriptEncoder.Create*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: <code class="paramref">allowedRanges</code> is <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.
+  nameWithType.vb: JavaScriptEncoder.Create(ParamArray UnicodeRange())
+  fullName.vb: System.Text.Encodings.Web.JavaScriptEncoder.Create(ParamArray System.Text.Unicode.UnicodeRange())
+  name.vb: Create(ParamArray UnicodeRange())
+- uid: System.Text.Encodings.Web.JavaScriptEncoder.#ctor
+  commentId: M:System.Text.Encodings.Web.JavaScriptEncoder.#ctor
+  id: '#ctor'
+  parent: System.Text.Encodings.Web.JavaScriptEncoder
+  langs:
+  - csharp
+  - vb
+  name: JavaScriptEncoder()
+  nameWithType: JavaScriptEncoder.JavaScriptEncoder()
+  fullName: System.Text.Encodings.Web.JavaScriptEncoder.JavaScriptEncoder()
+  type: Constructor
+  assemblies:
+  - System.Text.Encodings.Web
+  namespace: System.Text.Encodings.Web
+  summary: Initializes a new instance of the <xref href="System.Text.Encodings.Web.JavaScriptEncoder" data-throw-if-not-resolved="false"></xref> class.
+  example: []
+  syntax:
+    content: protected JavaScriptEncoder()
+    content.vb: Protected Sub New()
+  overload: System.Text.Encodings.Web.JavaScriptEncoder.#ctor*
+  nameWithType.vb: JavaScriptEncoder.New()
+  fullName.vb: System.Text.Encodings.Web.JavaScriptEncoder.New()
+  name.vb: New()
+- uid: System.Text.Encodings.Web.JavaScriptEncoder.Default
+  commentId: P:System.Text.Encodings.Web.JavaScriptEncoder.Default
+  id: Default
+  parent: System.Text.Encodings.Web.JavaScriptEncoder
+  langs:
+  - csharp
+  - vb
+  name: Default
+  nameWithType: JavaScriptEncoder.Default
+  fullName: System.Text.Encodings.Web.JavaScriptEncoder.Default
+  type: Property
+  assemblies:
+  - System.Text.Encodings.Web
+  namespace: System.Text.Encodings.Web
+  summary: Gets a built-in instance of the <xref href="System.Text.Encodings.Web.JavaScriptEncoder" data-throw-if-not-resolved="false"></xref> class.
+  example: []
+  syntax:
+    content: public static JavaScriptEncoder Default { get; }
+    parameters: []
+    return:
+      type: System.Text.Encodings.Web.JavaScriptEncoder
+      description: A built-in instance of the <xref href="System.Text.Encodings.Web.JavaScriptEncoder" data-throw-if-not-resolved="false"></xref> class.
+    content.vb: Public Shared ReadOnly Property [Default] As JavaScriptEncoder
+  overload: System.Text.Encodings.Web.JavaScriptEncoder.Default*
+- uid: System.Text.Encodings.Web.JavaScriptEncoder.UnsafeRelaxedJsonEscaping
+  commentId: P:System.Text.Encodings.Web.JavaScriptEncoder.UnsafeRelaxedJsonEscaping
+  id: UnsafeRelaxedJsonEscaping
+  parent: System.Text.Encodings.Web.JavaScriptEncoder
+  langs:
+  - csharp
+  - vb
+  name: UnsafeRelaxedJsonEscaping
+  nameWithType: JavaScriptEncoder.UnsafeRelaxedJsonEscaping
+  fullName: System.Text.Encodings.Web.JavaScriptEncoder.UnsafeRelaxedJsonEscaping
+  type: Property
+  assemblies:
+  - System.Text.Encodings.Web
+  namespace: System.Text.Encodings.Web
+  summary: Gets a built-in JavaScript encoder instance that is less strict about what is encoded.
+  example: []
+  syntax:
+    content: public static JavaScriptEncoder UnsafeRelaxedJsonEscaping { get; }
+    parameters: []
+    return:
+      type: System.Text.Encodings.Web.JavaScriptEncoder
+      description: A JavaScript encoder instance.
+    content.vb: Public Shared ReadOnly Property UnsafeRelaxedJsonEscaping As JavaScriptEncoder
+  overload: System.Text.Encodings.Web.JavaScriptEncoder.UnsafeRelaxedJsonEscaping*
+references:
+- uid: System.Text.Encodings.Web
+  commentId: N:System.Text.Encodings.Web
+  isExternal: true
+  href: System.html
+  name: System.Text.Encodings.Web
+  nameWithType: System.Text.Encodings.Web
+  fullName: System.Text.Encodings.Web
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: System.html
+  - name: .
+  - uid: System.Text
+    name: Text
+    isExternal: true
+    href: System.Text.html
+  - name: .
+  - uid: System.Text.Encodings
+    name: Encodings
+    isExternal: true
+    href: System.Text.Encodings.html
+  - name: .
+  - uid: System.Text.Encodings.Web
+    name: Web
+    isExternal: true
+    href: System.Text.Encodings.Web.html
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: System.html
+  - name: .
+  - uid: System.Text
+    name: Text
+    isExternal: true
+    href: System.Text.html
+  - name: .
+  - uid: System.Text.Encodings
+    name: Encodings
+    isExternal: true
+    href: System.Text.Encodings.html
+  - name: .
+  - uid: System.Text.Encodings.Web
+    name: Web
+    isExternal: true
+    href: System.Text.Encodings.Web.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Text.Encodings.Web.TextEncoder
+  commentId: T:System.Text.Encodings.Web.TextEncoder
+  parent: System.Text.Encodings.Web
+  isExternal: true
+  href: System.Text.Encodings.Web.TextEncoder.html
+  name: TextEncoder
+  nameWithType: TextEncoder
+  fullName: System.Text.Encodings.Web.TextEncoder
+- uid: System.Text.Encodings.Web.TextEncoder.Encode(System.String)
+  commentId: M:System.Text.Encodings.Web.TextEncoder.Encode(System.String)
+  parent: System.Text.Encodings.Web.TextEncoder
+  isExternal: true
+  href: System.Text.Encodings.Web.TextEncoder.html#System_Text_Encodings_Web_TextEncoder_Encode_System_String_
+  name: Encode(string)
+  nameWithType: TextEncoder.Encode(string)
+  fullName: System.Text.Encodings.Web.TextEncoder.Encode(string)
+  nameWithType.vb: TextEncoder.Encode(String)
+  fullName.vb: System.Text.Encodings.Web.TextEncoder.Encode(String)
+  name.vb: Encode(String)
+  spec.csharp:
+  - uid: System.Text.Encodings.Web.TextEncoder.Encode(System.String)
+    name: Encode
+    isExternal: true
+    href: System.Text.Encodings.Web.TextEncoder.html#System_Text_Encodings_Web_TextEncoder_Encode_System_String_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: System.Text.Encodings.Web.TextEncoder.Encode(System.String)
+    name: Encode
+    isExternal: true
+    href: System.Text.Encodings.Web.TextEncoder.html#System_Text_Encodings_Web_TextEncoder_Encode_System_String_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.Text.Encodings.Web.TextEncoder.Encode(System.IO.TextWriter,System.String)
+  commentId: M:System.Text.Encodings.Web.TextEncoder.Encode(System.IO.TextWriter,System.String)
+  parent: System.Text.Encodings.Web.TextEncoder
+  isExternal: true
+  href: System.Text.Encodings.Web.TextEncoder.html#System_Text_Encodings_Web_TextEncoder_Encode_System_IO_TextWriter_System_String_
+  name: Encode(TextWriter, string)
+  nameWithType: TextEncoder.Encode(TextWriter, string)
+  fullName: System.Text.Encodings.Web.TextEncoder.Encode(System.IO.TextWriter, string)
+  nameWithType.vb: TextEncoder.Encode(TextWriter, String)
+  fullName.vb: System.Text.Encodings.Web.TextEncoder.Encode(System.IO.TextWriter, String)
+  name.vb: Encode(TextWriter, String)
+  spec.csharp:
+  - uid: System.Text.Encodings.Web.TextEncoder.Encode(System.IO.TextWriter,System.String)
+    name: Encode
+    isExternal: true
+    href: System.Text.Encodings.Web.TextEncoder.html#System_Text_Encodings_Web_TextEncoder_Encode_System_IO_TextWriter_System_String_
+  - name: (
+  - uid: System.IO.TextWriter
+    name: TextWriter
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io.textwriter
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: System.Text.Encodings.Web.TextEncoder.Encode(System.IO.TextWriter,System.String)
+    name: Encode
+    isExternal: true
+    href: System.Text.Encodings.Web.TextEncoder.html#System_Text_Encodings_Web_TextEncoder_Encode_System_IO_TextWriter_System_String_
+  - name: (
+  - uid: System.IO.TextWriter
+    name: TextWriter
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io.textwriter
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.Text.Encodings.Web.TextEncoder.Encode(System.IO.TextWriter,System.String,System.Int32,System.Int32)
+  commentId: M:System.Text.Encodings.Web.TextEncoder.Encode(System.IO.TextWriter,System.String,System.Int32,System.Int32)
+  parent: System.Text.Encodings.Web.TextEncoder
+  isExternal: true
+  href: System.Text.Encodings.Web.TextEncoder.html#System_Text_Encodings_Web_TextEncoder_Encode_System_IO_TextWriter_System_String_System_Int32_System_Int32_
+  name: Encode(TextWriter, string, int, int)
+  nameWithType: TextEncoder.Encode(TextWriter, string, int, int)
+  fullName: System.Text.Encodings.Web.TextEncoder.Encode(System.IO.TextWriter, string, int, int)
+  nameWithType.vb: TextEncoder.Encode(TextWriter, String, Integer, Integer)
+  fullName.vb: System.Text.Encodings.Web.TextEncoder.Encode(System.IO.TextWriter, String, Integer, Integer)
+  name.vb: Encode(TextWriter, String, Integer, Integer)
+  spec.csharp:
+  - uid: System.Text.Encodings.Web.TextEncoder.Encode(System.IO.TextWriter,System.String,System.Int32,System.Int32)
+    name: Encode
+    isExternal: true
+    href: System.Text.Encodings.Web.TextEncoder.html#System_Text_Encodings_Web_TextEncoder_Encode_System_IO_TextWriter_System_String_System_Int32_System_Int32_
+  - name: (
+  - uid: System.IO.TextWriter
+    name: TextWriter
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io.textwriter
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: System.Text.Encodings.Web.TextEncoder.Encode(System.IO.TextWriter,System.String,System.Int32,System.Int32)
+    name: Encode
+    isExternal: true
+    href: System.Text.Encodings.Web.TextEncoder.html#System_Text_Encodings_Web_TextEncoder_Encode_System_IO_TextWriter_System_String_System_Int32_System_Int32_
+  - name: (
+  - uid: System.IO.TextWriter
+    name: TextWriter
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io.textwriter
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: System.Text.Encodings.Web.TextEncoder.Encode(System.IO.TextWriter,System.Char[],System.Int32,System.Int32)
+  commentId: M:System.Text.Encodings.Web.TextEncoder.Encode(System.IO.TextWriter,System.Char[],System.Int32,System.Int32)
+  parent: System.Text.Encodings.Web.TextEncoder
+  isExternal: true
+  href: System.Text.Encodings.Web.TextEncoder.html#System_Text_Encodings_Web_TextEncoder_Encode_System_IO_TextWriter_System_Char___System_Int32_System_Int32_
+  name: Encode(TextWriter, char[], int, int)
+  nameWithType: TextEncoder.Encode(TextWriter, char[], int, int)
+  fullName: System.Text.Encodings.Web.TextEncoder.Encode(System.IO.TextWriter, char[], int, int)
+  nameWithType.vb: TextEncoder.Encode(TextWriter, Char(), Integer, Integer)
+  fullName.vb: System.Text.Encodings.Web.TextEncoder.Encode(System.IO.TextWriter, Char(), Integer, Integer)
+  name.vb: Encode(TextWriter, Char(), Integer, Integer)
+  spec.csharp:
+  - uid: System.Text.Encodings.Web.TextEncoder.Encode(System.IO.TextWriter,System.Char[],System.Int32,System.Int32)
+    name: Encode
+    isExternal: true
+    href: System.Text.Encodings.Web.TextEncoder.html#System_Text_Encodings_Web_TextEncoder_Encode_System_IO_TextWriter_System_Char___System_Int32_System_Int32_
+  - name: (
+  - uid: System.IO.TextWriter
+    name: TextWriter
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io.textwriter
+  - name: ','
+  - name: " "
+  - uid: System.Char
+    name: char
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.char
+  - name: '['
+  - name: ']'
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: System.Text.Encodings.Web.TextEncoder.Encode(System.IO.TextWriter,System.Char[],System.Int32,System.Int32)
+    name: Encode
+    isExternal: true
+    href: System.Text.Encodings.Web.TextEncoder.html#System_Text_Encodings_Web_TextEncoder_Encode_System_IO_TextWriter_System_Char___System_Int32_System_Int32_
+  - name: (
+  - uid: System.IO.TextWriter
+    name: TextWriter
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io.textwriter
+  - name: ','
+  - name: " "
+  - uid: System.Char
+    name: Char
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.char
+  - name: (
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: System.Text.Encodings.Web.TextEncoder.EncodeUtf8(System.ReadOnlySpan{System.Byte},System.Span{System.Byte},System.Int32@,System.Int32@,System.Boolean)
+  commentId: M:System.Text.Encodings.Web.TextEncoder.EncodeUtf8(System.ReadOnlySpan{System.Byte},System.Span{System.Byte},System.Int32@,System.Int32@,System.Boolean)
+  parent: System.Text.Encodings.Web.TextEncoder
+  isExternal: true
+  href: System.Text.Encodings.Web.TextEncoder.html#System_Text_Encodings_Web_TextEncoder_EncodeUtf8_System_ReadOnlySpan_System_Byte__System_Span_System_Byte__System_Int32__System_Int32__System_Boolean_
+  name: EncodeUtf8(ReadOnlySpan<byte>, Span<byte>, out int, out int, bool)
+  nameWithType: TextEncoder.EncodeUtf8(ReadOnlySpan<byte>, Span<byte>, out int, out int, bool)
+  fullName: System.Text.Encodings.Web.TextEncoder.EncodeUtf8(System.ReadOnlySpan<byte>, System.Span<byte>, out int, out int, bool)
+  nameWithType.vb: TextEncoder.EncodeUtf8(ReadOnlySpan(Of Byte), Span(Of Byte), Integer, Integer, Boolean)
+  fullName.vb: System.Text.Encodings.Web.TextEncoder.EncodeUtf8(System.ReadOnlySpan(Of Byte), System.Span(Of Byte), Integer, Integer, Boolean)
+  name.vb: EncodeUtf8(ReadOnlySpan(Of Byte), Span(Of Byte), Integer, Integer, Boolean)
+  spec.csharp:
+  - uid: System.Text.Encodings.Web.TextEncoder.EncodeUtf8(System.ReadOnlySpan{System.Byte},System.Span{System.Byte},System.Int32@,System.Int32@,System.Boolean)
+    name: EncodeUtf8
+    isExternal: true
+    href: System.Text.Encodings.Web.TextEncoder.html#System_Text_Encodings_Web_TextEncoder_EncodeUtf8_System_ReadOnlySpan_System_Byte__System_Span_System_Byte__System_Int32__System_Int32__System_Boolean_
+  - name: (
+  - uid: System.ReadOnlySpan`1
+    name: ReadOnlySpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  - name: <
+  - uid: System.Byte
+    name: byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.Span`1
+    name: Span
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.span-1
+  - name: <
+  - uid: System.Byte
+    name: byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: '>'
+  - name: ','
+  - name: " "
+  - name: out
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - name: out
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  spec.vb:
+  - uid: System.Text.Encodings.Web.TextEncoder.EncodeUtf8(System.ReadOnlySpan{System.Byte},System.Span{System.Byte},System.Int32@,System.Int32@,System.Boolean)
+    name: EncodeUtf8
+    isExternal: true
+    href: System.Text.Encodings.Web.TextEncoder.html#System_Text_Encodings_Web_TextEncoder_EncodeUtf8_System_ReadOnlySpan_System_Byte__System_Span_System_Byte__System_Int32__System_Int32__System_Boolean_
+  - name: (
+  - uid: System.ReadOnlySpan`1
+    name: ReadOnlySpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Byte
+    name: Byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.Span`1
+    name: Span
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.span-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Byte
+    name: Byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: System.Text.Encodings.Web.TextEncoder.Encode(System.ReadOnlySpan{System.Char},System.Span{System.Char},System.Int32@,System.Int32@,System.Boolean)
+  commentId: M:System.Text.Encodings.Web.TextEncoder.Encode(System.ReadOnlySpan{System.Char},System.Span{System.Char},System.Int32@,System.Int32@,System.Boolean)
+  parent: System.Text.Encodings.Web.TextEncoder
+  isExternal: true
+  href: System.Text.Encodings.Web.TextEncoder.html#System_Text_Encodings_Web_TextEncoder_Encode_System_ReadOnlySpan_System_Char__System_Span_System_Char__System_Int32__System_Int32__System_Boolean_
+  name: Encode(ReadOnlySpan<char>, Span<char>, out int, out int, bool)
+  nameWithType: TextEncoder.Encode(ReadOnlySpan<char>, Span<char>, out int, out int, bool)
+  fullName: System.Text.Encodings.Web.TextEncoder.Encode(System.ReadOnlySpan<char>, System.Span<char>, out int, out int, bool)
+  nameWithType.vb: TextEncoder.Encode(ReadOnlySpan(Of Char), Span(Of Char), Integer, Integer, Boolean)
+  fullName.vb: System.Text.Encodings.Web.TextEncoder.Encode(System.ReadOnlySpan(Of Char), System.Span(Of Char), Integer, Integer, Boolean)
+  name.vb: Encode(ReadOnlySpan(Of Char), Span(Of Char), Integer, Integer, Boolean)
+  spec.csharp:
+  - uid: System.Text.Encodings.Web.TextEncoder.Encode(System.ReadOnlySpan{System.Char},System.Span{System.Char},System.Int32@,System.Int32@,System.Boolean)
+    name: Encode
+    isExternal: true
+    href: System.Text.Encodings.Web.TextEncoder.html#System_Text_Encodings_Web_TextEncoder_Encode_System_ReadOnlySpan_System_Char__System_Span_System_Char__System_Int32__System_Int32__System_Boolean_
+  - name: (
+  - uid: System.ReadOnlySpan`1
+    name: ReadOnlySpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  - name: <
+  - uid: System.Char
+    name: char
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.char
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.Span`1
+    name: Span
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.span-1
+  - name: <
+  - uid: System.Char
+    name: char
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.char
+  - name: '>'
+  - name: ','
+  - name: " "
+  - name: out
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - name: out
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  spec.vb:
+  - uid: System.Text.Encodings.Web.TextEncoder.Encode(System.ReadOnlySpan{System.Char},System.Span{System.Char},System.Int32@,System.Int32@,System.Boolean)
+    name: Encode
+    isExternal: true
+    href: System.Text.Encodings.Web.TextEncoder.html#System_Text_Encodings_Web_TextEncoder_Encode_System_ReadOnlySpan_System_Char__System_Span_System_Char__System_Int32__System_Int32__System_Boolean_
+  - name: (
+  - uid: System.ReadOnlySpan`1
+    name: ReadOnlySpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Char
+    name: Char
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.char
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.Span`1
+    name: Span
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.span-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Char
+    name: Char
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.char
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Text.Encodings.Web.JavaScriptEncoder
+  commentId: T:System.Text.Encodings.Web.JavaScriptEncoder
+  parent: System.Text.Encodings.Web
+  isExternal: true
+  href: System.Text.Encodings.Web.JavaScriptEncoder.html
+  name: JavaScriptEncoder
+  nameWithType: JavaScriptEncoder
+  fullName: System.Text.Encodings.Web.JavaScriptEncoder
+- uid: System.ArgumentNullException
+  commentId: T:System.ArgumentNullException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.argumentnullexception
+  name: ArgumentNullException
+  nameWithType: ArgumentNullException
+  fullName: System.ArgumentNullException
+- uid: System.Text.Encodings.Web.JavaScriptEncoder.Create*
+  commentId: Overload:System.Text.Encodings.Web.JavaScriptEncoder.Create
+  isExternal: true
+  href: System.Text.Encodings.Web.JavaScriptEncoder.html#System_Text_Encodings_Web_JavaScriptEncoder_Create_System_Text_Encodings_Web_TextEncoderSettings_
+  name: Create
+  nameWithType: JavaScriptEncoder.Create
+  fullName: System.Text.Encodings.Web.JavaScriptEncoder.Create
+- uid: System.Text.Encodings.Web.TextEncoderSettings
+  commentId: T:System.Text.Encodings.Web.TextEncoderSettings
+  parent: System.Text.Encodings.Web
+  isExternal: true
+  href: System.Text.Encodings.Web.TextEncoderSettings.html
+  name: TextEncoderSettings
+  nameWithType: TextEncoderSettings
+  fullName: System.Text.Encodings.Web.TextEncoderSettings
+- uid: System.Text.Unicode.UnicodeRange[]
+  isExternal: true
+  href: System.Text.Unicode.UnicodeRange.html
+  name: UnicodeRange[]
+  nameWithType: UnicodeRange[]
+  fullName: System.Text.Unicode.UnicodeRange[]
+  nameWithType.vb: UnicodeRange()
+  fullName.vb: System.Text.Unicode.UnicodeRange()
+  name.vb: UnicodeRange()
+  spec.csharp:
+  - uid: System.Text.Unicode.UnicodeRange
+    name: UnicodeRange
+    isExternal: true
+    href: System.Text.Unicode.UnicodeRange.html
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.Text.Unicode.UnicodeRange
+    name: UnicodeRange
+    isExternal: true
+    href: System.Text.Unicode.UnicodeRange.html
+  - name: (
+  - name: )
+- uid: System.Text.Encodings.Web.JavaScriptEncoder.#ctor*
+  commentId: Overload:System.Text.Encodings.Web.JavaScriptEncoder.#ctor
+  isExternal: true
+  href: System.Text.Encodings.Web.JavaScriptEncoder.html#System_Text_Encodings_Web_JavaScriptEncoder__ctor
+  name: JavaScriptEncoder
+  nameWithType: JavaScriptEncoder.JavaScriptEncoder
+  fullName: System.Text.Encodings.Web.JavaScriptEncoder.JavaScriptEncoder
+  nameWithType.vb: JavaScriptEncoder.New
+  fullName.vb: System.Text.Encodings.Web.JavaScriptEncoder.New
+  name.vb: New
+- uid: System.Text.Encodings.Web.JavaScriptEncoder.Default*
+  commentId: Overload:System.Text.Encodings.Web.JavaScriptEncoder.Default
+  isExternal: true
+  href: System.Text.Encodings.Web.JavaScriptEncoder.html#System_Text_Encodings_Web_JavaScriptEncoder_Default
+  name: Default
+  nameWithType: JavaScriptEncoder.Default
+  fullName: System.Text.Encodings.Web.JavaScriptEncoder.Default
+- uid: System.Text.Encodings.Web.JavaScriptEncoder.UnsafeRelaxedJsonEscaping*
+  commentId: Overload:System.Text.Encodings.Web.JavaScriptEncoder.UnsafeRelaxedJsonEscaping
+  isExternal: true
+  href: System.Text.Encodings.Web.JavaScriptEncoder.html#System_Text_Encodings_Web_JavaScriptEncoder_UnsafeRelaxedJsonEscaping
+  name: UnsafeRelaxedJsonEscaping
+  nameWithType: JavaScriptEncoder.UnsafeRelaxedJsonEscaping
+  fullName: System.Text.Encodings.Web.JavaScriptEncoder.UnsafeRelaxedJsonEscaping

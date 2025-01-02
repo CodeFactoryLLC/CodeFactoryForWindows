@@ -1,0 +1,1429 @@
+### YamlMime:ManagedReference
+items:
+- uid: MessagePack.Formatters.InterfaceSetFormatter`1
+  commentId: T:MessagePack.Formatters.InterfaceSetFormatter`1
+  id: InterfaceSetFormatter`1
+  parent: MessagePack.Formatters
+  children:
+  - MessagePack.Formatters.InterfaceSetFormatter`1.#ctor
+  - MessagePack.Formatters.InterfaceSetFormatter`1.Add(System.Collections.Generic.HashSet{`0},System.Int32,`0,MessagePack.MessagePackSerializerOptions)
+  - MessagePack.Formatters.InterfaceSetFormatter`1.Complete(System.Collections.Generic.HashSet{`0})
+  - MessagePack.Formatters.InterfaceSetFormatter`1.Create(System.Int32,MessagePack.MessagePackSerializerOptions)
+  langs:
+  - csharp
+  - vb
+  name: InterfaceSetFormatter<T>
+  nameWithType: InterfaceSetFormatter<T>
+  fullName: MessagePack.Formatters.InterfaceSetFormatter<T>
+  type: Class
+  assemblies:
+  - MessagePack
+  namespace: MessagePack.Formatters
+  syntax:
+    content: 'public sealed class InterfaceSetFormatter<T> : CollectionFormatterBase<T, HashSet<T>, ISet<T>>, IMessagePackFormatter<ISet<T>?>'
+    typeParameters:
+    - id: T
+    content.vb: Public NotInheritable Class InterfaceSetFormatter(Of T) Inherits CollectionFormatterBase(Of T, HashSet(Of T), ISet(Of T)) Implements IMessagePackFormatter(Of ISet(Of T))
+  inheritance:
+  - System.Object
+  - MessagePack.Formatters.CollectionFormatterBase{{T},System.Collections.Generic.HashSet{{T}},System.Collections.Generic.IEnumerator{{T}},System.Collections.Generic.ISet{{T}}}
+  - MessagePack.Formatters.CollectionFormatterBase{{T},System.Collections.Generic.HashSet{{T}},System.Collections.Generic.ISet{{T}}}
+  implements:
+  - MessagePack.Formatters.IMessagePackFormatter{System.Collections.Generic.ISet{{T}}}
+  inheritedMembers:
+  - MessagePack.Formatters.CollectionFormatterBase{{T},System.Collections.Generic.HashSet{{T}},System.Collections.Generic.IEnumerator{{T}},System.Collections.Generic.ISet{{T}}}.Serialize(MessagePack.MessagePackWriter@,System.Collections.Generic.ISet{{T}},MessagePack.MessagePackSerializerOptions)
+  - MessagePack.Formatters.CollectionFormatterBase{{T},System.Collections.Generic.HashSet{{T}},System.Collections.Generic.IEnumerator{{T}},System.Collections.Generic.ISet{{T}}}.Deserialize(MessagePack.MessagePackReader@,MessagePack.MessagePackSerializerOptions)
+  - System.Object.GetType
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  nameWithType.vb: InterfaceSetFormatter(Of T)
+  fullName.vb: MessagePack.Formatters.InterfaceSetFormatter(Of T)
+  name.vb: InterfaceSetFormatter(Of T)
+- uid: MessagePack.Formatters.InterfaceSetFormatter`1.Add(System.Collections.Generic.HashSet{`0},System.Int32,`0,MessagePack.MessagePackSerializerOptions)
+  commentId: M:MessagePack.Formatters.InterfaceSetFormatter`1.Add(System.Collections.Generic.HashSet{`0},System.Int32,`0,MessagePack.MessagePackSerializerOptions)
+  id: Add(System.Collections.Generic.HashSet{`0},System.Int32,`0,MessagePack.MessagePackSerializerOptions)
+  parent: MessagePack.Formatters.InterfaceSetFormatter`1
+  langs:
+  - csharp
+  - vb
+  name: Add(HashSet<T>, int, T, MessagePackSerializerOptions)
+  nameWithType: InterfaceSetFormatter<T>.Add(HashSet<T>, int, T, MessagePackSerializerOptions)
+  fullName: MessagePack.Formatters.InterfaceSetFormatter<T>.Add(System.Collections.Generic.HashSet<T>, int, T, MessagePack.MessagePackSerializerOptions)
+  type: Method
+  assemblies:
+  - MessagePack
+  namespace: MessagePack.Formatters
+  example: []
+  syntax:
+    content: protected override void Add(HashSet<T> collection, int index, T value, MessagePackSerializerOptions options)
+    parameters:
+    - id: collection
+      type: System.Collections.Generic.HashSet{{T}}
+    - id: index
+      type: System.Int32
+    - id: value
+      type: '{T}'
+    - id: options
+      type: MessagePack.MessagePackSerializerOptions
+    content.vb: Protected Overrides Sub Add(collection As HashSet(Of T), index As Integer, value As T, options As MessagePackSerializerOptions)
+  overridden: MessagePack.Formatters.CollectionFormatterBase{{T},System.Collections.Generic.HashSet{{T}},System.Collections.Generic.IEnumerator{{T}},System.Collections.Generic.ISet{{T}}}.Add(System.Collections.Generic.HashSet{{T}},System.Int32,{T},MessagePack.MessagePackSerializerOptions)
+  overload: MessagePack.Formatters.InterfaceSetFormatter`1.Add*
+  nameWithType.vb: InterfaceSetFormatter(Of T).Add(HashSet(Of T), Integer, T, MessagePackSerializerOptions)
+  fullName.vb: MessagePack.Formatters.InterfaceSetFormatter(Of T).Add(System.Collections.Generic.HashSet(Of T), Integer, T, MessagePack.MessagePackSerializerOptions)
+  name.vb: Add(HashSet(Of T), Integer, T, MessagePackSerializerOptions)
+- uid: MessagePack.Formatters.InterfaceSetFormatter`1.Complete(System.Collections.Generic.HashSet{`0})
+  commentId: M:MessagePack.Formatters.InterfaceSetFormatter`1.Complete(System.Collections.Generic.HashSet{`0})
+  id: Complete(System.Collections.Generic.HashSet{`0})
+  parent: MessagePack.Formatters.InterfaceSetFormatter`1
+  langs:
+  - csharp
+  - vb
+  name: Complete(HashSet<T>)
+  nameWithType: InterfaceSetFormatter<T>.Complete(HashSet<T>)
+  fullName: MessagePack.Formatters.InterfaceSetFormatter<T>.Complete(System.Collections.Generic.HashSet<T>)
+  type: Method
+  assemblies:
+  - MessagePack
+  namespace: MessagePack.Formatters
+  example: []
+  syntax:
+    content: protected override ISet<T> Complete(HashSet<T> intermediateCollection)
+    parameters:
+    - id: intermediateCollection
+      type: System.Collections.Generic.HashSet{{T}}
+    return:
+      type: System.Collections.Generic.ISet{{T}}
+    content.vb: Protected Overrides Function Complete(intermediateCollection As HashSet(Of T)) As ISet(Of T)
+  overridden: MessagePack.Formatters.CollectionFormatterBase{{T},System.Collections.Generic.HashSet{{T}},System.Collections.Generic.IEnumerator{{T}},System.Collections.Generic.ISet{{T}}}.Complete(System.Collections.Generic.HashSet{{T}})
+  overload: MessagePack.Formatters.InterfaceSetFormatter`1.Complete*
+  nameWithType.vb: InterfaceSetFormatter(Of T).Complete(HashSet(Of T))
+  fullName.vb: MessagePack.Formatters.InterfaceSetFormatter(Of T).Complete(System.Collections.Generic.HashSet(Of T))
+  name.vb: Complete(HashSet(Of T))
+- uid: MessagePack.Formatters.InterfaceSetFormatter`1.Create(System.Int32,MessagePack.MessagePackSerializerOptions)
+  commentId: M:MessagePack.Formatters.InterfaceSetFormatter`1.Create(System.Int32,MessagePack.MessagePackSerializerOptions)
+  id: Create(System.Int32,MessagePack.MessagePackSerializerOptions)
+  parent: MessagePack.Formatters.InterfaceSetFormatter`1
+  langs:
+  - csharp
+  - vb
+  name: Create(int, MessagePackSerializerOptions)
+  nameWithType: InterfaceSetFormatter<T>.Create(int, MessagePackSerializerOptions)
+  fullName: MessagePack.Formatters.InterfaceSetFormatter<T>.Create(int, MessagePack.MessagePackSerializerOptions)
+  type: Method
+  assemblies:
+  - MessagePack
+  namespace: MessagePack.Formatters
+  example: []
+  syntax:
+    content: protected override HashSet<T> Create(int count, MessagePackSerializerOptions options)
+    parameters:
+    - id: count
+      type: System.Int32
+    - id: options
+      type: MessagePack.MessagePackSerializerOptions
+    return:
+      type: System.Collections.Generic.HashSet{{T}}
+    content.vb: Protected Overrides Function Create(count As Integer, options As MessagePackSerializerOptions) As HashSet(Of T)
+  overridden: MessagePack.Formatters.CollectionFormatterBase{{T},System.Collections.Generic.HashSet{{T}},System.Collections.Generic.IEnumerator{{T}},System.Collections.Generic.ISet{{T}}}.Create(System.Int32,MessagePack.MessagePackSerializerOptions)
+  overload: MessagePack.Formatters.InterfaceSetFormatter`1.Create*
+  nameWithType.vb: InterfaceSetFormatter(Of T).Create(Integer, MessagePackSerializerOptions)
+  fullName.vb: MessagePack.Formatters.InterfaceSetFormatter(Of T).Create(Integer, MessagePack.MessagePackSerializerOptions)
+  name.vb: Create(Integer, MessagePackSerializerOptions)
+- uid: MessagePack.Formatters.InterfaceSetFormatter`1.#ctor
+  commentId: M:MessagePack.Formatters.InterfaceSetFormatter`1.#ctor
+  id: '#ctor'
+  parent: MessagePack.Formatters.InterfaceSetFormatter`1
+  langs:
+  - csharp
+  - vb
+  name: InterfaceSetFormatter()
+  nameWithType: InterfaceSetFormatter<T>.InterfaceSetFormatter()
+  fullName: MessagePack.Formatters.InterfaceSetFormatter<T>.InterfaceSetFormatter()
+  type: Constructor
+  assemblies:
+  - MessagePack
+  namespace: MessagePack.Formatters
+  syntax:
+    content: public InterfaceSetFormatter()
+    content.vb: Public Sub New()
+  overload: MessagePack.Formatters.InterfaceSetFormatter`1.#ctor*
+  nameWithType.vb: InterfaceSetFormatter(Of T).New()
+  fullName.vb: MessagePack.Formatters.InterfaceSetFormatter(Of T).New()
+  name.vb: New()
+references:
+- uid: MessagePack.Formatters
+  commentId: N:MessagePack.Formatters
+  isExternal: true
+  href: MessagePack.html
+  name: MessagePack.Formatters
+  nameWithType: MessagePack.Formatters
+  fullName: MessagePack.Formatters
+  spec.csharp:
+  - uid: MessagePack
+    name: MessagePack
+    isExternal: true
+    href: MessagePack.html
+  - name: .
+  - uid: MessagePack.Formatters
+    name: Formatters
+    isExternal: true
+    href: MessagePack.Formatters.html
+  spec.vb:
+  - uid: MessagePack
+    name: MessagePack
+    isExternal: true
+    href: MessagePack.html
+  - name: .
+  - uid: MessagePack.Formatters
+    name: Formatters
+    isExternal: true
+    href: MessagePack.Formatters.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: MessagePack.Formatters.CollectionFormatterBase{{T},System.Collections.Generic.HashSet{{T}},System.Collections.Generic.IEnumerator{{T}},System.Collections.Generic.ISet{{T}}}
+  commentId: T:MessagePack.Formatters.CollectionFormatterBase{`0,System.Collections.Generic.HashSet{`0},System.Collections.Generic.IEnumerator{`0},System.Collections.Generic.ISet{`0}}
+  parent: MessagePack.Formatters
+  definition: MessagePack.Formatters.CollectionFormatterBase`4
+  href: MessagePack.Formatters.CollectionFormatterBase-4.html
+  name: CollectionFormatterBase<T, HashSet<T>, IEnumerator<T>, ISet<T>>
+  nameWithType: CollectionFormatterBase<T, HashSet<T>, IEnumerator<T>, ISet<T>>
+  fullName: MessagePack.Formatters.CollectionFormatterBase<T, System.Collections.Generic.HashSet<T>, System.Collections.Generic.IEnumerator<T>, System.Collections.Generic.ISet<T>>
+  nameWithType.vb: CollectionFormatterBase(Of T, HashSet(Of T), IEnumerator(Of T), ISet(Of T))
+  fullName.vb: MessagePack.Formatters.CollectionFormatterBase(Of T, System.Collections.Generic.HashSet(Of T), System.Collections.Generic.IEnumerator(Of T), System.Collections.Generic.ISet(Of T))
+  name.vb: CollectionFormatterBase(Of T, HashSet(Of T), IEnumerator(Of T), ISet(Of T))
+  spec.csharp:
+  - uid: MessagePack.Formatters.CollectionFormatterBase`4
+    name: CollectionFormatterBase
+    isExternal: true
+    href: MessagePack.Formatters.CollectionFormatterBase-4.html
+  - name: <
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.HashSet`1
+    name: HashSet
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.hashset-1
+  - name: <
+  - name: T
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.IEnumerator`1
+    name: IEnumerator
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerator-1
+  - name: <
+  - name: T
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.ISet`1
+    name: ISet
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.iset-1
+  - name: <
+  - name: T
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: MessagePack.Formatters.CollectionFormatterBase`4
+    name: CollectionFormatterBase
+    isExternal: true
+    href: MessagePack.Formatters.CollectionFormatterBase-4.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.HashSet`1
+    name: HashSet
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.hashset-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.IEnumerator`1
+    name: IEnumerator
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerator-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.ISet`1
+    name: ISet
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.iset-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: )
+- uid: MessagePack.Formatters.CollectionFormatterBase{{T},System.Collections.Generic.HashSet{{T}},System.Collections.Generic.ISet{{T}}}
+  commentId: T:MessagePack.Formatters.CollectionFormatterBase{`0,System.Collections.Generic.HashSet{`0},System.Collections.Generic.ISet{`0}}
+  parent: MessagePack.Formatters
+  definition: MessagePack.Formatters.CollectionFormatterBase`3
+  href: MessagePack.Formatters.CollectionFormatterBase-3.html
+  name: CollectionFormatterBase<T, HashSet<T>, ISet<T>>
+  nameWithType: CollectionFormatterBase<T, HashSet<T>, ISet<T>>
+  fullName: MessagePack.Formatters.CollectionFormatterBase<T, System.Collections.Generic.HashSet<T>, System.Collections.Generic.ISet<T>>
+  nameWithType.vb: CollectionFormatterBase(Of T, HashSet(Of T), ISet(Of T))
+  fullName.vb: MessagePack.Formatters.CollectionFormatterBase(Of T, System.Collections.Generic.HashSet(Of T), System.Collections.Generic.ISet(Of T))
+  name.vb: CollectionFormatterBase(Of T, HashSet(Of T), ISet(Of T))
+  spec.csharp:
+  - uid: MessagePack.Formatters.CollectionFormatterBase`3
+    name: CollectionFormatterBase
+    isExternal: true
+    href: MessagePack.Formatters.CollectionFormatterBase-3.html
+  - name: <
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.HashSet`1
+    name: HashSet
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.hashset-1
+  - name: <
+  - name: T
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.ISet`1
+    name: ISet
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.iset-1
+  - name: <
+  - name: T
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: MessagePack.Formatters.CollectionFormatterBase`3
+    name: CollectionFormatterBase
+    isExternal: true
+    href: MessagePack.Formatters.CollectionFormatterBase-3.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.HashSet`1
+    name: HashSet
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.hashset-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.ISet`1
+    name: ISet
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.iset-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: )
+- uid: MessagePack.Formatters.IMessagePackFormatter{System.Collections.Generic.ISet{{T}}}
+  commentId: T:MessagePack.Formatters.IMessagePackFormatter{System.Collections.Generic.ISet{`0}}
+  parent: MessagePack.Formatters
+  definition: MessagePack.Formatters.IMessagePackFormatter`1
+  href: MessagePack.Formatters.IMessagePackFormatter-1.html
+  name: IMessagePackFormatter<ISet<T>>
+  nameWithType: IMessagePackFormatter<ISet<T>>
+  fullName: MessagePack.Formatters.IMessagePackFormatter<System.Collections.Generic.ISet<T>>
+  nameWithType.vb: IMessagePackFormatter(Of ISet(Of T))
+  fullName.vb: MessagePack.Formatters.IMessagePackFormatter(Of System.Collections.Generic.ISet(Of T))
+  name.vb: IMessagePackFormatter(Of ISet(Of T))
+  spec.csharp:
+  - uid: MessagePack.Formatters.IMessagePackFormatter`1
+    name: IMessagePackFormatter
+    isExternal: true
+    href: MessagePack.Formatters.IMessagePackFormatter-1.html
+  - name: <
+  - uid: System.Collections.Generic.ISet`1
+    name: ISet
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.iset-1
+  - name: <
+  - name: T
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: MessagePack.Formatters.IMessagePackFormatter`1
+    name: IMessagePackFormatter
+    isExternal: true
+    href: MessagePack.Formatters.IMessagePackFormatter-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Collections.Generic.ISet`1
+    name: ISet
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.iset-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: )
+- uid: MessagePack.Formatters.CollectionFormatterBase{{T},System.Collections.Generic.HashSet{{T}},System.Collections.Generic.IEnumerator{{T}},System.Collections.Generic.ISet{{T}}}.Serialize(MessagePack.MessagePackWriter@,System.Collections.Generic.ISet{{T}},MessagePack.MessagePackSerializerOptions)
+  commentId: M:MessagePack.Formatters.CollectionFormatterBase{`0,System.Collections.Generic.HashSet{`0},System.Collections.Generic.IEnumerator{`0},System.Collections.Generic.ISet{`0}}.Serialize(MessagePack.MessagePackWriter@,System.Collections.Generic.ISet{`0},MessagePack.MessagePackSerializerOptions)
+  parent: MessagePack.Formatters.CollectionFormatterBase{{T},System.Collections.Generic.HashSet{{T}},System.Collections.Generic.IEnumerator{{T}},System.Collections.Generic.ISet{{T}}}
+  definition: MessagePack.Formatters.CollectionFormatterBase`4.Serialize(MessagePack.MessagePackWriter@,`3,MessagePack.MessagePackSerializerOptions)
+  href: MessagePack.Formatters.CollectionFormatterBase-4.html#MessagePack_Formatters_CollectionFormatterBase_4_Serialize_MessagePack_MessagePackWriter___3_MessagePack_MessagePackSerializerOptions_
+  name: Serialize(ref MessagePackWriter, ISet<T>, MessagePackSerializerOptions)
+  nameWithType: CollectionFormatterBase<T, HashSet<T>, IEnumerator<T>, ISet<T>>.Serialize(ref MessagePackWriter, ISet<T>, MessagePackSerializerOptions)
+  fullName: MessagePack.Formatters.CollectionFormatterBase<T, System.Collections.Generic.HashSet<T>, System.Collections.Generic.IEnumerator<T>, System.Collections.Generic.ISet<T>>.Serialize(ref MessagePack.MessagePackWriter, System.Collections.Generic.ISet<T>, MessagePack.MessagePackSerializerOptions)
+  nameWithType.vb: CollectionFormatterBase(Of T, HashSet(Of T), IEnumerator(Of T), ISet(Of T)).Serialize(MessagePackWriter, ISet(Of T), MessagePackSerializerOptions)
+  fullName.vb: MessagePack.Formatters.CollectionFormatterBase(Of T, System.Collections.Generic.HashSet(Of T), System.Collections.Generic.IEnumerator(Of T), System.Collections.Generic.ISet(Of T)).Serialize(MessagePack.MessagePackWriter, System.Collections.Generic.ISet(Of T), MessagePack.MessagePackSerializerOptions)
+  name.vb: Serialize(MessagePackWriter, ISet(Of T), MessagePackSerializerOptions)
+  spec.csharp:
+  - uid: MessagePack.Formatters.CollectionFormatterBase{`0,System.Collections.Generic.HashSet{`0},System.Collections.Generic.IEnumerator{`0},System.Collections.Generic.ISet{`0}}.Serialize(MessagePack.MessagePackWriter@,System.Collections.Generic.ISet{`0},MessagePack.MessagePackSerializerOptions)
+    name: Serialize
+    isExternal: true
+    href: MessagePack.Formatters.CollectionFormatterBase-4.html#MessagePack_Formatters_CollectionFormatterBase_4_Serialize_MessagePack_MessagePackWriter___3_MessagePack_MessagePackSerializerOptions_
+  - name: (
+  - name: ref
+  - name: " "
+  - uid: MessagePack.MessagePackWriter
+    name: MessagePackWriter
+    isExternal: true
+    href: MessagePack.MessagePackWriter.html
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.ISet`1
+    name: ISet
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.iset-1
+  - name: <
+  - name: T
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: MessagePack.MessagePackSerializerOptions
+    name: MessagePackSerializerOptions
+    isExternal: true
+    href: MessagePack.MessagePackSerializerOptions.html
+  - name: )
+  spec.vb:
+  - uid: MessagePack.Formatters.CollectionFormatterBase{`0,System.Collections.Generic.HashSet{`0},System.Collections.Generic.IEnumerator{`0},System.Collections.Generic.ISet{`0}}.Serialize(MessagePack.MessagePackWriter@,System.Collections.Generic.ISet{`0},MessagePack.MessagePackSerializerOptions)
+    name: Serialize
+    isExternal: true
+    href: MessagePack.Formatters.CollectionFormatterBase-4.html#MessagePack_Formatters_CollectionFormatterBase_4_Serialize_MessagePack_MessagePackWriter___3_MessagePack_MessagePackSerializerOptions_
+  - name: (
+  - uid: MessagePack.MessagePackWriter
+    name: MessagePackWriter
+    isExternal: true
+    href: MessagePack.MessagePackWriter.html
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.ISet`1
+    name: ISet
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.iset-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: MessagePack.MessagePackSerializerOptions
+    name: MessagePackSerializerOptions
+    isExternal: true
+    href: MessagePack.MessagePackSerializerOptions.html
+  - name: )
+- uid: MessagePack.Formatters.CollectionFormatterBase{{T},System.Collections.Generic.HashSet{{T}},System.Collections.Generic.IEnumerator{{T}},System.Collections.Generic.ISet{{T}}}.Deserialize(MessagePack.MessagePackReader@,MessagePack.MessagePackSerializerOptions)
+  commentId: M:MessagePack.Formatters.CollectionFormatterBase{`0,System.Collections.Generic.HashSet{`0},System.Collections.Generic.IEnumerator{`0},System.Collections.Generic.ISet{`0}}.Deserialize(MessagePack.MessagePackReader@,MessagePack.MessagePackSerializerOptions)
+  parent: MessagePack.Formatters.CollectionFormatterBase{{T},System.Collections.Generic.HashSet{{T}},System.Collections.Generic.IEnumerator{{T}},System.Collections.Generic.ISet{{T}}}
+  definition: MessagePack.Formatters.CollectionFormatterBase`4.Deserialize(MessagePack.MessagePackReader@,MessagePack.MessagePackSerializerOptions)
+  href: MessagePack.Formatters.CollectionFormatterBase-4.html#MessagePack_Formatters_CollectionFormatterBase_4_Deserialize_MessagePack_MessagePackReader__MessagePack_MessagePackSerializerOptions_
+  name: Deserialize(ref MessagePackReader, MessagePackSerializerOptions)
+  nameWithType: CollectionFormatterBase<T, HashSet<T>, IEnumerator<T>, ISet<T>>.Deserialize(ref MessagePackReader, MessagePackSerializerOptions)
+  fullName: MessagePack.Formatters.CollectionFormatterBase<T, System.Collections.Generic.HashSet<T>, System.Collections.Generic.IEnumerator<T>, System.Collections.Generic.ISet<T>>.Deserialize(ref MessagePack.MessagePackReader, MessagePack.MessagePackSerializerOptions)
+  nameWithType.vb: CollectionFormatterBase(Of T, HashSet(Of T), IEnumerator(Of T), ISet(Of T)).Deserialize(MessagePackReader, MessagePackSerializerOptions)
+  fullName.vb: MessagePack.Formatters.CollectionFormatterBase(Of T, System.Collections.Generic.HashSet(Of T), System.Collections.Generic.IEnumerator(Of T), System.Collections.Generic.ISet(Of T)).Deserialize(MessagePack.MessagePackReader, MessagePack.MessagePackSerializerOptions)
+  name.vb: Deserialize(MessagePackReader, MessagePackSerializerOptions)
+  spec.csharp:
+  - uid: MessagePack.Formatters.CollectionFormatterBase{`0,System.Collections.Generic.HashSet{`0},System.Collections.Generic.IEnumerator{`0},System.Collections.Generic.ISet{`0}}.Deserialize(MessagePack.MessagePackReader@,MessagePack.MessagePackSerializerOptions)
+    name: Deserialize
+    isExternal: true
+    href: MessagePack.Formatters.CollectionFormatterBase-4.html#MessagePack_Formatters_CollectionFormatterBase_4_Deserialize_MessagePack_MessagePackReader__MessagePack_MessagePackSerializerOptions_
+  - name: (
+  - name: ref
+  - name: " "
+  - uid: MessagePack.MessagePackReader
+    name: MessagePackReader
+    isExternal: true
+    href: MessagePack.MessagePackReader.html
+  - name: ','
+  - name: " "
+  - uid: MessagePack.MessagePackSerializerOptions
+    name: MessagePackSerializerOptions
+    isExternal: true
+    href: MessagePack.MessagePackSerializerOptions.html
+  - name: )
+  spec.vb:
+  - uid: MessagePack.Formatters.CollectionFormatterBase{`0,System.Collections.Generic.HashSet{`0},System.Collections.Generic.IEnumerator{`0},System.Collections.Generic.ISet{`0}}.Deserialize(MessagePack.MessagePackReader@,MessagePack.MessagePackSerializerOptions)
+    name: Deserialize
+    isExternal: true
+    href: MessagePack.Formatters.CollectionFormatterBase-4.html#MessagePack_Formatters_CollectionFormatterBase_4_Deserialize_MessagePack_MessagePackReader__MessagePack_MessagePackSerializerOptions_
+  - name: (
+  - uid: MessagePack.MessagePackReader
+    name: MessagePackReader
+    isExternal: true
+    href: MessagePack.MessagePackReader.html
+  - name: ','
+  - name: " "
+  - uid: MessagePack.MessagePackSerializerOptions
+    name: MessagePackSerializerOptions
+    isExternal: true
+    href: MessagePack.MessagePackSerializerOptions.html
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: MessagePack.Formatters.CollectionFormatterBase`4
+  commentId: T:MessagePack.Formatters.CollectionFormatterBase`4
+  isExternal: true
+  href: MessagePack.Formatters.CollectionFormatterBase-4.html
+  name: CollectionFormatterBase<TElement, TIntermediate, TEnumerator, TCollection>
+  nameWithType: CollectionFormatterBase<TElement, TIntermediate, TEnumerator, TCollection>
+  fullName: MessagePack.Formatters.CollectionFormatterBase<TElement, TIntermediate, TEnumerator, TCollection>
+  nameWithType.vb: CollectionFormatterBase(Of TElement, TIntermediate, TEnumerator, TCollection)
+  fullName.vb: MessagePack.Formatters.CollectionFormatterBase(Of TElement, TIntermediate, TEnumerator, TCollection)
+  name.vb: CollectionFormatterBase(Of TElement, TIntermediate, TEnumerator, TCollection)
+  spec.csharp:
+  - uid: MessagePack.Formatters.CollectionFormatterBase`4
+    name: CollectionFormatterBase
+    isExternal: true
+    href: MessagePack.Formatters.CollectionFormatterBase-4.html
+  - name: <
+  - name: TElement
+  - name: ','
+  - name: " "
+  - name: TIntermediate
+  - name: ','
+  - name: " "
+  - name: TEnumerator
+  - name: ','
+  - name: " "
+  - name: TCollection
+  - name: '>'
+  spec.vb:
+  - uid: MessagePack.Formatters.CollectionFormatterBase`4
+    name: CollectionFormatterBase
+    isExternal: true
+    href: MessagePack.Formatters.CollectionFormatterBase-4.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TElement
+  - name: ','
+  - name: " "
+  - name: TIntermediate
+  - name: ','
+  - name: " "
+  - name: TEnumerator
+  - name: ','
+  - name: " "
+  - name: TCollection
+  - name: )
+- uid: MessagePack.Formatters.CollectionFormatterBase`3
+  commentId: T:MessagePack.Formatters.CollectionFormatterBase`3
+  isExternal: true
+  href: MessagePack.Formatters.CollectionFormatterBase-3.html
+  name: CollectionFormatterBase<TElement, TIntermediate, TCollection>
+  nameWithType: CollectionFormatterBase<TElement, TIntermediate, TCollection>
+  fullName: MessagePack.Formatters.CollectionFormatterBase<TElement, TIntermediate, TCollection>
+  nameWithType.vb: CollectionFormatterBase(Of TElement, TIntermediate, TCollection)
+  fullName.vb: MessagePack.Formatters.CollectionFormatterBase(Of TElement, TIntermediate, TCollection)
+  name.vb: CollectionFormatterBase(Of TElement, TIntermediate, TCollection)
+  spec.csharp:
+  - uid: MessagePack.Formatters.CollectionFormatterBase`3
+    name: CollectionFormatterBase
+    isExternal: true
+    href: MessagePack.Formatters.CollectionFormatterBase-3.html
+  - name: <
+  - name: TElement
+  - name: ','
+  - name: " "
+  - name: TIntermediate
+  - name: ','
+  - name: " "
+  - name: TCollection
+  - name: '>'
+  spec.vb:
+  - uid: MessagePack.Formatters.CollectionFormatterBase`3
+    name: CollectionFormatterBase
+    isExternal: true
+    href: MessagePack.Formatters.CollectionFormatterBase-3.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TElement
+  - name: ','
+  - name: " "
+  - name: TIntermediate
+  - name: ','
+  - name: " "
+  - name: TCollection
+  - name: )
+- uid: MessagePack.Formatters.IMessagePackFormatter`1
+  commentId: T:MessagePack.Formatters.IMessagePackFormatter`1
+  isExternal: true
+  href: MessagePack.Formatters.IMessagePackFormatter-1.html
+  name: IMessagePackFormatter<T>
+  nameWithType: IMessagePackFormatter<T>
+  fullName: MessagePack.Formatters.IMessagePackFormatter<T>
+  nameWithType.vb: IMessagePackFormatter(Of T)
+  fullName.vb: MessagePack.Formatters.IMessagePackFormatter(Of T)
+  name.vb: IMessagePackFormatter(Of T)
+  spec.csharp:
+  - uid: MessagePack.Formatters.IMessagePackFormatter`1
+    name: IMessagePackFormatter
+    isExternal: true
+    href: MessagePack.Formatters.IMessagePackFormatter-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: MessagePack.Formatters.IMessagePackFormatter`1
+    name: IMessagePackFormatter
+    isExternal: true
+    href: MessagePack.Formatters.IMessagePackFormatter-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: MessagePack.Formatters.CollectionFormatterBase`4.Serialize(MessagePack.MessagePackWriter@,`3,MessagePack.MessagePackSerializerOptions)
+  commentId: M:MessagePack.Formatters.CollectionFormatterBase`4.Serialize(MessagePack.MessagePackWriter@,`3,MessagePack.MessagePackSerializerOptions)
+  isExternal: true
+  href: MessagePack.Formatters.CollectionFormatterBase-4.html#MessagePack_Formatters_CollectionFormatterBase_4_Serialize_MessagePack_MessagePackWriter___3_MessagePack_MessagePackSerializerOptions_
+  name: Serialize(ref MessagePackWriter, TCollection, MessagePackSerializerOptions)
+  nameWithType: CollectionFormatterBase<TElement, TIntermediate, TEnumerator, TCollection>.Serialize(ref MessagePackWriter, TCollection, MessagePackSerializerOptions)
+  fullName: MessagePack.Formatters.CollectionFormatterBase<TElement, TIntermediate, TEnumerator, TCollection>.Serialize(ref MessagePack.MessagePackWriter, TCollection, MessagePack.MessagePackSerializerOptions)
+  nameWithType.vb: CollectionFormatterBase(Of TElement, TIntermediate, TEnumerator, TCollection).Serialize(MessagePackWriter, TCollection, MessagePackSerializerOptions)
+  fullName.vb: MessagePack.Formatters.CollectionFormatterBase(Of TElement, TIntermediate, TEnumerator, TCollection).Serialize(MessagePack.MessagePackWriter, TCollection, MessagePack.MessagePackSerializerOptions)
+  name.vb: Serialize(MessagePackWriter, TCollection, MessagePackSerializerOptions)
+  spec.csharp:
+  - uid: MessagePack.Formatters.CollectionFormatterBase`4.Serialize(MessagePack.MessagePackWriter@,`3,MessagePack.MessagePackSerializerOptions)
+    name: Serialize
+    isExternal: true
+    href: MessagePack.Formatters.CollectionFormatterBase-4.html#MessagePack_Formatters_CollectionFormatterBase_4_Serialize_MessagePack_MessagePackWriter___3_MessagePack_MessagePackSerializerOptions_
+  - name: (
+  - name: ref
+  - name: " "
+  - uid: MessagePack.MessagePackWriter
+    name: MessagePackWriter
+    isExternal: true
+    href: MessagePack.MessagePackWriter.html
+  - name: ','
+  - name: " "
+  - name: TCollection
+  - name: ','
+  - name: " "
+  - uid: MessagePack.MessagePackSerializerOptions
+    name: MessagePackSerializerOptions
+    isExternal: true
+    href: MessagePack.MessagePackSerializerOptions.html
+  - name: )
+  spec.vb:
+  - uid: MessagePack.Formatters.CollectionFormatterBase`4.Serialize(MessagePack.MessagePackWriter@,`3,MessagePack.MessagePackSerializerOptions)
+    name: Serialize
+    isExternal: true
+    href: MessagePack.Formatters.CollectionFormatterBase-4.html#MessagePack_Formatters_CollectionFormatterBase_4_Serialize_MessagePack_MessagePackWriter___3_MessagePack_MessagePackSerializerOptions_
+  - name: (
+  - uid: MessagePack.MessagePackWriter
+    name: MessagePackWriter
+    isExternal: true
+    href: MessagePack.MessagePackWriter.html
+  - name: ','
+  - name: " "
+  - name: TCollection
+  - name: ','
+  - name: " "
+  - uid: MessagePack.MessagePackSerializerOptions
+    name: MessagePackSerializerOptions
+    isExternal: true
+    href: MessagePack.MessagePackSerializerOptions.html
+  - name: )
+- uid: MessagePack.Formatters.CollectionFormatterBase`4.Deserialize(MessagePack.MessagePackReader@,MessagePack.MessagePackSerializerOptions)
+  commentId: M:MessagePack.Formatters.CollectionFormatterBase`4.Deserialize(MessagePack.MessagePackReader@,MessagePack.MessagePackSerializerOptions)
+  isExternal: true
+  href: MessagePack.Formatters.CollectionFormatterBase-4.html#MessagePack_Formatters_CollectionFormatterBase_4_Deserialize_MessagePack_MessagePackReader__MessagePack_MessagePackSerializerOptions_
+  name: Deserialize(ref MessagePackReader, MessagePackSerializerOptions)
+  nameWithType: CollectionFormatterBase<TElement, TIntermediate, TEnumerator, TCollection>.Deserialize(ref MessagePackReader, MessagePackSerializerOptions)
+  fullName: MessagePack.Formatters.CollectionFormatterBase<TElement, TIntermediate, TEnumerator, TCollection>.Deserialize(ref MessagePack.MessagePackReader, MessagePack.MessagePackSerializerOptions)
+  nameWithType.vb: CollectionFormatterBase(Of TElement, TIntermediate, TEnumerator, TCollection).Deserialize(MessagePackReader, MessagePackSerializerOptions)
+  fullName.vb: MessagePack.Formatters.CollectionFormatterBase(Of TElement, TIntermediate, TEnumerator, TCollection).Deserialize(MessagePack.MessagePackReader, MessagePack.MessagePackSerializerOptions)
+  name.vb: Deserialize(MessagePackReader, MessagePackSerializerOptions)
+  spec.csharp:
+  - uid: MessagePack.Formatters.CollectionFormatterBase`4.Deserialize(MessagePack.MessagePackReader@,MessagePack.MessagePackSerializerOptions)
+    name: Deserialize
+    isExternal: true
+    href: MessagePack.Formatters.CollectionFormatterBase-4.html#MessagePack_Formatters_CollectionFormatterBase_4_Deserialize_MessagePack_MessagePackReader__MessagePack_MessagePackSerializerOptions_
+  - name: (
+  - name: ref
+  - name: " "
+  - uid: MessagePack.MessagePackReader
+    name: MessagePackReader
+    isExternal: true
+    href: MessagePack.MessagePackReader.html
+  - name: ','
+  - name: " "
+  - uid: MessagePack.MessagePackSerializerOptions
+    name: MessagePackSerializerOptions
+    isExternal: true
+    href: MessagePack.MessagePackSerializerOptions.html
+  - name: )
+  spec.vb:
+  - uid: MessagePack.Formatters.CollectionFormatterBase`4.Deserialize(MessagePack.MessagePackReader@,MessagePack.MessagePackSerializerOptions)
+    name: Deserialize
+    isExternal: true
+    href: MessagePack.Formatters.CollectionFormatterBase-4.html#MessagePack_Formatters_CollectionFormatterBase_4_Deserialize_MessagePack_MessagePackReader__MessagePack_MessagePackSerializerOptions_
+  - name: (
+  - uid: MessagePack.MessagePackReader
+    name: MessagePackReader
+    isExternal: true
+    href: MessagePack.MessagePackReader.html
+  - name: ','
+  - name: " "
+  - uid: MessagePack.MessagePackSerializerOptions
+    name: MessagePackSerializerOptions
+    isExternal: true
+    href: MessagePack.MessagePackSerializerOptions.html
+  - name: )
+- uid: MessagePack.Formatters.CollectionFormatterBase{{T},System.Collections.Generic.HashSet{{T}},System.Collections.Generic.IEnumerator{{T}},System.Collections.Generic.ISet{{T}}}.Add(System.Collections.Generic.HashSet{{T}},System.Int32,{T},MessagePack.MessagePackSerializerOptions)
+  commentId: M:MessagePack.Formatters.CollectionFormatterBase{`0,System.Collections.Generic.HashSet{`0},System.Collections.Generic.IEnumerator{`0},System.Collections.Generic.ISet{`0}}.Add(System.Collections.Generic.HashSet{`0},System.Int32,`0,MessagePack.MessagePackSerializerOptions)
+  parent: MessagePack.Formatters.CollectionFormatterBase{{T},System.Collections.Generic.HashSet{{T}},System.Collections.Generic.IEnumerator{{T}},System.Collections.Generic.ISet{{T}}}
+  definition: MessagePack.Formatters.CollectionFormatterBase`4.Add(`1,System.Int32,`0,MessagePack.MessagePackSerializerOptions)
+  href: MessagePack.Formatters.CollectionFormatterBase-4.html#MessagePack_Formatters_CollectionFormatterBase_4_Add__1_System_Int32__0_MessagePack_MessagePackSerializerOptions_
+  name: Add(HashSet<T>, int, T, MessagePackSerializerOptions)
+  nameWithType: CollectionFormatterBase<T, HashSet<T>, IEnumerator<T>, ISet<T>>.Add(HashSet<T>, int, T, MessagePackSerializerOptions)
+  fullName: MessagePack.Formatters.CollectionFormatterBase<T, System.Collections.Generic.HashSet<T>, System.Collections.Generic.IEnumerator<T>, System.Collections.Generic.ISet<T>>.Add(System.Collections.Generic.HashSet<T>, int, T, MessagePack.MessagePackSerializerOptions)
+  nameWithType.vb: CollectionFormatterBase(Of T, HashSet(Of T), IEnumerator(Of T), ISet(Of T)).Add(HashSet(Of T), Integer, T, MessagePackSerializerOptions)
+  fullName.vb: MessagePack.Formatters.CollectionFormatterBase(Of T, System.Collections.Generic.HashSet(Of T), System.Collections.Generic.IEnumerator(Of T), System.Collections.Generic.ISet(Of T)).Add(System.Collections.Generic.HashSet(Of T), Integer, T, MessagePack.MessagePackSerializerOptions)
+  name.vb: Add(HashSet(Of T), Integer, T, MessagePackSerializerOptions)
+  spec.csharp:
+  - uid: MessagePack.Formatters.CollectionFormatterBase{`0,System.Collections.Generic.HashSet{`0},System.Collections.Generic.IEnumerator{`0},System.Collections.Generic.ISet{`0}}.Add(System.Collections.Generic.HashSet{`0},System.Int32,`0,MessagePack.MessagePackSerializerOptions)
+    name: Add
+    isExternal: true
+    href: MessagePack.Formatters.CollectionFormatterBase-4.html#MessagePack_Formatters_CollectionFormatterBase_4_Add__1_System_Int32__0_MessagePack_MessagePackSerializerOptions_
+  - name: (
+  - uid: System.Collections.Generic.HashSet`1
+    name: HashSet
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.hashset-1
+  - name: <
+  - name: T
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: MessagePack.MessagePackSerializerOptions
+    name: MessagePackSerializerOptions
+    isExternal: true
+    href: MessagePack.MessagePackSerializerOptions.html
+  - name: )
+  spec.vb:
+  - uid: MessagePack.Formatters.CollectionFormatterBase{`0,System.Collections.Generic.HashSet{`0},System.Collections.Generic.IEnumerator{`0},System.Collections.Generic.ISet{`0}}.Add(System.Collections.Generic.HashSet{`0},System.Int32,`0,MessagePack.MessagePackSerializerOptions)
+    name: Add
+    isExternal: true
+    href: MessagePack.Formatters.CollectionFormatterBase-4.html#MessagePack_Formatters_CollectionFormatterBase_4_Add__1_System_Int32__0_MessagePack_MessagePackSerializerOptions_
+  - name: (
+  - uid: System.Collections.Generic.HashSet`1
+    name: HashSet
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.hashset-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: MessagePack.MessagePackSerializerOptions
+    name: MessagePackSerializerOptions
+    isExternal: true
+    href: MessagePack.MessagePackSerializerOptions.html
+  - name: )
+- uid: MessagePack.Formatters.InterfaceSetFormatter`1.Add*
+  commentId: Overload:MessagePack.Formatters.InterfaceSetFormatter`1.Add
+  isExternal: true
+  href: MessagePack.Formatters.InterfaceSetFormatter-1.html#MessagePack_Formatters_InterfaceSetFormatter_1_Add_System_Collections_Generic_HashSet__0__System_Int32__0_MessagePack_MessagePackSerializerOptions_
+  name: Add
+  nameWithType: InterfaceSetFormatter<T>.Add
+  fullName: MessagePack.Formatters.InterfaceSetFormatter<T>.Add
+  nameWithType.vb: InterfaceSetFormatter(Of T).Add
+  fullName.vb: MessagePack.Formatters.InterfaceSetFormatter(Of T).Add
+- uid: System.Collections.Generic.HashSet{{T}}
+  commentId: T:System.Collections.Generic.HashSet{`0}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.HashSet`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.hashset-1
+  name: HashSet<T>
+  nameWithType: HashSet<T>
+  fullName: System.Collections.Generic.HashSet<T>
+  nameWithType.vb: HashSet(Of T)
+  fullName.vb: System.Collections.Generic.HashSet(Of T)
+  name.vb: HashSet(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.HashSet`1
+    name: HashSet
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.hashset-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.HashSet`1
+    name: HashSet
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.hashset-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: MessagePack.MessagePackSerializerOptions
+  commentId: T:MessagePack.MessagePackSerializerOptions
+  parent: MessagePack
+  isExternal: true
+  href: MessagePack.MessagePackSerializerOptions.html
+  name: MessagePackSerializerOptions
+  nameWithType: MessagePackSerializerOptions
+  fullName: MessagePack.MessagePackSerializerOptions
+- uid: MessagePack.Formatters.CollectionFormatterBase`4.Add(`1,System.Int32,`0,MessagePack.MessagePackSerializerOptions)
+  commentId: M:MessagePack.Formatters.CollectionFormatterBase`4.Add(`1,System.Int32,`0,MessagePack.MessagePackSerializerOptions)
+  isExternal: true
+  href: MessagePack.Formatters.CollectionFormatterBase-4.html#MessagePack_Formatters_CollectionFormatterBase_4_Add__1_System_Int32__0_MessagePack_MessagePackSerializerOptions_
+  name: Add(TIntermediate, int, TElement, MessagePackSerializerOptions)
+  nameWithType: CollectionFormatterBase<TElement, TIntermediate, TEnumerator, TCollection>.Add(TIntermediate, int, TElement, MessagePackSerializerOptions)
+  fullName: MessagePack.Formatters.CollectionFormatterBase<TElement, TIntermediate, TEnumerator, TCollection>.Add(TIntermediate, int, TElement, MessagePack.MessagePackSerializerOptions)
+  nameWithType.vb: CollectionFormatterBase(Of TElement, TIntermediate, TEnumerator, TCollection).Add(TIntermediate, Integer, TElement, MessagePackSerializerOptions)
+  fullName.vb: MessagePack.Formatters.CollectionFormatterBase(Of TElement, TIntermediate, TEnumerator, TCollection).Add(TIntermediate, Integer, TElement, MessagePack.MessagePackSerializerOptions)
+  name.vb: Add(TIntermediate, Integer, TElement, MessagePackSerializerOptions)
+  spec.csharp:
+  - uid: MessagePack.Formatters.CollectionFormatterBase`4.Add(`1,System.Int32,`0,MessagePack.MessagePackSerializerOptions)
+    name: Add
+    isExternal: true
+    href: MessagePack.Formatters.CollectionFormatterBase-4.html#MessagePack_Formatters_CollectionFormatterBase_4_Add__1_System_Int32__0_MessagePack_MessagePackSerializerOptions_
+  - name: (
+  - name: TIntermediate
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - name: TElement
+  - name: ','
+  - name: " "
+  - uid: MessagePack.MessagePackSerializerOptions
+    name: MessagePackSerializerOptions
+    isExternal: true
+    href: MessagePack.MessagePackSerializerOptions.html
+  - name: )
+  spec.vb:
+  - uid: MessagePack.Formatters.CollectionFormatterBase`4.Add(`1,System.Int32,`0,MessagePack.MessagePackSerializerOptions)
+    name: Add
+    isExternal: true
+    href: MessagePack.Formatters.CollectionFormatterBase-4.html#MessagePack_Formatters_CollectionFormatterBase_4_Add__1_System_Int32__0_MessagePack_MessagePackSerializerOptions_
+  - name: (
+  - name: TIntermediate
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - name: TElement
+  - name: ','
+  - name: " "
+  - uid: MessagePack.MessagePackSerializerOptions
+    name: MessagePackSerializerOptions
+    isExternal: true
+    href: MessagePack.MessagePackSerializerOptions.html
+  - name: )
+- uid: System.Collections.Generic.HashSet`1
+  commentId: T:System.Collections.Generic.HashSet`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.hashset-1
+  name: HashSet<T>
+  nameWithType: HashSet<T>
+  fullName: System.Collections.Generic.HashSet<T>
+  nameWithType.vb: HashSet(Of T)
+  fullName.vb: System.Collections.Generic.HashSet(Of T)
+  name.vb: HashSet(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.HashSet`1
+    name: HashSet
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.hashset-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.HashSet`1
+    name: HashSet
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.hashset-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: MessagePack
+  commentId: N:MessagePack
+  isExternal: true
+  href: MessagePack.html
+  name: MessagePack
+  nameWithType: MessagePack
+  fullName: MessagePack
+- uid: MessagePack.Formatters.CollectionFormatterBase{{T},System.Collections.Generic.HashSet{{T}},System.Collections.Generic.IEnumerator{{T}},System.Collections.Generic.ISet{{T}}}.Complete(System.Collections.Generic.HashSet{{T}})
+  commentId: M:MessagePack.Formatters.CollectionFormatterBase{`0,System.Collections.Generic.HashSet{`0},System.Collections.Generic.IEnumerator{`0},System.Collections.Generic.ISet{`0}}.Complete(System.Collections.Generic.HashSet{`0})
+  parent: MessagePack.Formatters.CollectionFormatterBase{{T},System.Collections.Generic.HashSet{{T}},System.Collections.Generic.IEnumerator{{T}},System.Collections.Generic.ISet{{T}}}
+  definition: MessagePack.Formatters.CollectionFormatterBase`4.Complete(`1)
+  href: MessagePack.Formatters.CollectionFormatterBase-4.html#MessagePack_Formatters_CollectionFormatterBase_4_Complete__1_
+  name: Complete(HashSet<T>)
+  nameWithType: CollectionFormatterBase<T, HashSet<T>, IEnumerator<T>, ISet<T>>.Complete(HashSet<T>)
+  fullName: MessagePack.Formatters.CollectionFormatterBase<T, System.Collections.Generic.HashSet<T>, System.Collections.Generic.IEnumerator<T>, System.Collections.Generic.ISet<T>>.Complete(System.Collections.Generic.HashSet<T>)
+  nameWithType.vb: CollectionFormatterBase(Of T, HashSet(Of T), IEnumerator(Of T), ISet(Of T)).Complete(HashSet(Of T))
+  fullName.vb: MessagePack.Formatters.CollectionFormatterBase(Of T, System.Collections.Generic.HashSet(Of T), System.Collections.Generic.IEnumerator(Of T), System.Collections.Generic.ISet(Of T)).Complete(System.Collections.Generic.HashSet(Of T))
+  name.vb: Complete(HashSet(Of T))
+  spec.csharp:
+  - uid: MessagePack.Formatters.CollectionFormatterBase{`0,System.Collections.Generic.HashSet{`0},System.Collections.Generic.IEnumerator{`0},System.Collections.Generic.ISet{`0}}.Complete(System.Collections.Generic.HashSet{`0})
+    name: Complete
+    isExternal: true
+    href: MessagePack.Formatters.CollectionFormatterBase-4.html#MessagePack_Formatters_CollectionFormatterBase_4_Complete__1_
+  - name: (
+  - uid: System.Collections.Generic.HashSet`1
+    name: HashSet
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.hashset-1
+  - name: <
+  - name: T
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: MessagePack.Formatters.CollectionFormatterBase{`0,System.Collections.Generic.HashSet{`0},System.Collections.Generic.IEnumerator{`0},System.Collections.Generic.ISet{`0}}.Complete(System.Collections.Generic.HashSet{`0})
+    name: Complete
+    isExternal: true
+    href: MessagePack.Formatters.CollectionFormatterBase-4.html#MessagePack_Formatters_CollectionFormatterBase_4_Complete__1_
+  - name: (
+  - uid: System.Collections.Generic.HashSet`1
+    name: HashSet
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.hashset-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: )
+- uid: MessagePack.Formatters.InterfaceSetFormatter`1.Complete*
+  commentId: Overload:MessagePack.Formatters.InterfaceSetFormatter`1.Complete
+  isExternal: true
+  href: MessagePack.Formatters.InterfaceSetFormatter-1.html#MessagePack_Formatters_InterfaceSetFormatter_1_Complete_System_Collections_Generic_HashSet__0__
+  name: Complete
+  nameWithType: InterfaceSetFormatter<T>.Complete
+  fullName: MessagePack.Formatters.InterfaceSetFormatter<T>.Complete
+  nameWithType.vb: InterfaceSetFormatter(Of T).Complete
+  fullName.vb: MessagePack.Formatters.InterfaceSetFormatter(Of T).Complete
+- uid: System.Collections.Generic.ISet{{T}}
+  commentId: T:System.Collections.Generic.ISet{`0}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.ISet`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.iset-1
+  name: ISet<T>
+  nameWithType: ISet<T>
+  fullName: System.Collections.Generic.ISet<T>
+  nameWithType.vb: ISet(Of T)
+  fullName.vb: System.Collections.Generic.ISet(Of T)
+  name.vb: ISet(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.ISet`1
+    name: ISet
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.iset-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.ISet`1
+    name: ISet
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.iset-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: MessagePack.Formatters.CollectionFormatterBase`4.Complete(`1)
+  commentId: M:MessagePack.Formatters.CollectionFormatterBase`4.Complete(`1)
+  isExternal: true
+  href: MessagePack.Formatters.CollectionFormatterBase-4.html#MessagePack_Formatters_CollectionFormatterBase_4_Complete__1_
+  name: Complete(TIntermediate)
+  nameWithType: CollectionFormatterBase<TElement, TIntermediate, TEnumerator, TCollection>.Complete(TIntermediate)
+  fullName: MessagePack.Formatters.CollectionFormatterBase<TElement, TIntermediate, TEnumerator, TCollection>.Complete(TIntermediate)
+  nameWithType.vb: CollectionFormatterBase(Of TElement, TIntermediate, TEnumerator, TCollection).Complete(TIntermediate)
+  fullName.vb: MessagePack.Formatters.CollectionFormatterBase(Of TElement, TIntermediate, TEnumerator, TCollection).Complete(TIntermediate)
+  spec.csharp:
+  - uid: MessagePack.Formatters.CollectionFormatterBase`4.Complete(`1)
+    name: Complete
+    isExternal: true
+    href: MessagePack.Formatters.CollectionFormatterBase-4.html#MessagePack_Formatters_CollectionFormatterBase_4_Complete__1_
+  - name: (
+  - name: TIntermediate
+  - name: )
+  spec.vb:
+  - uid: MessagePack.Formatters.CollectionFormatterBase`4.Complete(`1)
+    name: Complete
+    isExternal: true
+    href: MessagePack.Formatters.CollectionFormatterBase-4.html#MessagePack_Formatters_CollectionFormatterBase_4_Complete__1_
+  - name: (
+  - name: TIntermediate
+  - name: )
+- uid: System.Collections.Generic.ISet`1
+  commentId: T:System.Collections.Generic.ISet`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.iset-1
+  name: ISet<T>
+  nameWithType: ISet<T>
+  fullName: System.Collections.Generic.ISet<T>
+  nameWithType.vb: ISet(Of T)
+  fullName.vb: System.Collections.Generic.ISet(Of T)
+  name.vb: ISet(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.ISet`1
+    name: ISet
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.iset-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.ISet`1
+    name: ISet
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.iset-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: MessagePack.Formatters.CollectionFormatterBase{{T},System.Collections.Generic.HashSet{{T}},System.Collections.Generic.IEnumerator{{T}},System.Collections.Generic.ISet{{T}}}.Create(System.Int32,MessagePack.MessagePackSerializerOptions)
+  commentId: M:MessagePack.Formatters.CollectionFormatterBase{`0,System.Collections.Generic.HashSet{`0},System.Collections.Generic.IEnumerator{`0},System.Collections.Generic.ISet{`0}}.Create(System.Int32,MessagePack.MessagePackSerializerOptions)
+  parent: MessagePack.Formatters.CollectionFormatterBase{{T},System.Collections.Generic.HashSet{{T}},System.Collections.Generic.IEnumerator{{T}},System.Collections.Generic.ISet{{T}}}
+  definition: MessagePack.Formatters.CollectionFormatterBase`4.Create(System.Int32,MessagePack.MessagePackSerializerOptions)
+  href: MessagePack.Formatters.CollectionFormatterBase-4.html#MessagePack_Formatters_CollectionFormatterBase_4_Create_System_Int32_MessagePack_MessagePackSerializerOptions_
+  name: Create(int, MessagePackSerializerOptions)
+  nameWithType: CollectionFormatterBase<T, HashSet<T>, IEnumerator<T>, ISet<T>>.Create(int, MessagePackSerializerOptions)
+  fullName: MessagePack.Formatters.CollectionFormatterBase<T, System.Collections.Generic.HashSet<T>, System.Collections.Generic.IEnumerator<T>, System.Collections.Generic.ISet<T>>.Create(int, MessagePack.MessagePackSerializerOptions)
+  nameWithType.vb: CollectionFormatterBase(Of T, HashSet(Of T), IEnumerator(Of T), ISet(Of T)).Create(Integer, MessagePackSerializerOptions)
+  fullName.vb: MessagePack.Formatters.CollectionFormatterBase(Of T, System.Collections.Generic.HashSet(Of T), System.Collections.Generic.IEnumerator(Of T), System.Collections.Generic.ISet(Of T)).Create(Integer, MessagePack.MessagePackSerializerOptions)
+  name.vb: Create(Integer, MessagePackSerializerOptions)
+  spec.csharp:
+  - uid: MessagePack.Formatters.CollectionFormatterBase{`0,System.Collections.Generic.HashSet{`0},System.Collections.Generic.IEnumerator{`0},System.Collections.Generic.ISet{`0}}.Create(System.Int32,MessagePack.MessagePackSerializerOptions)
+    name: Create
+    isExternal: true
+    href: MessagePack.Formatters.CollectionFormatterBase-4.html#MessagePack_Formatters_CollectionFormatterBase_4_Create_System_Int32_MessagePack_MessagePackSerializerOptions_
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: MessagePack.MessagePackSerializerOptions
+    name: MessagePackSerializerOptions
+    isExternal: true
+    href: MessagePack.MessagePackSerializerOptions.html
+  - name: )
+  spec.vb:
+  - uid: MessagePack.Formatters.CollectionFormatterBase{`0,System.Collections.Generic.HashSet{`0},System.Collections.Generic.IEnumerator{`0},System.Collections.Generic.ISet{`0}}.Create(System.Int32,MessagePack.MessagePackSerializerOptions)
+    name: Create
+    isExternal: true
+    href: MessagePack.Formatters.CollectionFormatterBase-4.html#MessagePack_Formatters_CollectionFormatterBase_4_Create_System_Int32_MessagePack_MessagePackSerializerOptions_
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: MessagePack.MessagePackSerializerOptions
+    name: MessagePackSerializerOptions
+    isExternal: true
+    href: MessagePack.MessagePackSerializerOptions.html
+  - name: )
+- uid: MessagePack.Formatters.InterfaceSetFormatter`1.Create*
+  commentId: Overload:MessagePack.Formatters.InterfaceSetFormatter`1.Create
+  isExternal: true
+  href: MessagePack.Formatters.InterfaceSetFormatter-1.html#MessagePack_Formatters_InterfaceSetFormatter_1_Create_System_Int32_MessagePack_MessagePackSerializerOptions_
+  name: Create
+  nameWithType: InterfaceSetFormatter<T>.Create
+  fullName: MessagePack.Formatters.InterfaceSetFormatter<T>.Create
+  nameWithType.vb: InterfaceSetFormatter(Of T).Create
+  fullName.vb: MessagePack.Formatters.InterfaceSetFormatter(Of T).Create
+- uid: MessagePack.Formatters.CollectionFormatterBase`4.Create(System.Int32,MessagePack.MessagePackSerializerOptions)
+  commentId: M:MessagePack.Formatters.CollectionFormatterBase`4.Create(System.Int32,MessagePack.MessagePackSerializerOptions)
+  isExternal: true
+  href: MessagePack.Formatters.CollectionFormatterBase-4.html#MessagePack_Formatters_CollectionFormatterBase_4_Create_System_Int32_MessagePack_MessagePackSerializerOptions_
+  name: Create(int, MessagePackSerializerOptions)
+  nameWithType: CollectionFormatterBase<TElement, TIntermediate, TEnumerator, TCollection>.Create(int, MessagePackSerializerOptions)
+  fullName: MessagePack.Formatters.CollectionFormatterBase<TElement, TIntermediate, TEnumerator, TCollection>.Create(int, MessagePack.MessagePackSerializerOptions)
+  nameWithType.vb: CollectionFormatterBase(Of TElement, TIntermediate, TEnumerator, TCollection).Create(Integer, MessagePackSerializerOptions)
+  fullName.vb: MessagePack.Formatters.CollectionFormatterBase(Of TElement, TIntermediate, TEnumerator, TCollection).Create(Integer, MessagePack.MessagePackSerializerOptions)
+  name.vb: Create(Integer, MessagePackSerializerOptions)
+  spec.csharp:
+  - uid: MessagePack.Formatters.CollectionFormatterBase`4.Create(System.Int32,MessagePack.MessagePackSerializerOptions)
+    name: Create
+    isExternal: true
+    href: MessagePack.Formatters.CollectionFormatterBase-4.html#MessagePack_Formatters_CollectionFormatterBase_4_Create_System_Int32_MessagePack_MessagePackSerializerOptions_
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: MessagePack.MessagePackSerializerOptions
+    name: MessagePackSerializerOptions
+    isExternal: true
+    href: MessagePack.MessagePackSerializerOptions.html
+  - name: )
+  spec.vb:
+  - uid: MessagePack.Formatters.CollectionFormatterBase`4.Create(System.Int32,MessagePack.MessagePackSerializerOptions)
+    name: Create
+    isExternal: true
+    href: MessagePack.Formatters.CollectionFormatterBase-4.html#MessagePack_Formatters_CollectionFormatterBase_4_Create_System_Int32_MessagePack_MessagePackSerializerOptions_
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: MessagePack.MessagePackSerializerOptions
+    name: MessagePackSerializerOptions
+    isExternal: true
+    href: MessagePack.MessagePackSerializerOptions.html
+  - name: )
+- uid: MessagePack.Formatters.InterfaceSetFormatter`1.#ctor*
+  commentId: Overload:MessagePack.Formatters.InterfaceSetFormatter`1.#ctor
+  isExternal: true
+  href: MessagePack.Formatters.InterfaceSetFormatter-1.html#MessagePack_Formatters_InterfaceSetFormatter_1__ctor
+  name: InterfaceSetFormatter
+  nameWithType: InterfaceSetFormatter<T>.InterfaceSetFormatter
+  fullName: MessagePack.Formatters.InterfaceSetFormatter<T>.InterfaceSetFormatter
+  nameWithType.vb: InterfaceSetFormatter(Of T).New
+  fullName.vb: MessagePack.Formatters.InterfaceSetFormatter(Of T).New
+  name.vb: New

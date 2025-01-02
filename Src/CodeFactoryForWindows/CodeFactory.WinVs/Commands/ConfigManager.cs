@@ -65,7 +65,7 @@ namespace CodeFactory.WinVs.Commands
 
             if (string.IsNullOrEmpty(fileName)) throw new ArgumentException(nameof(fileName));
 
-            bool hasConfig = false;
+            //bool hasConfig = false;
 
             var solutionChildren = await solution.GetChildrenAsync(false);
             var automationFolder = solutionChildren.Where(m => m.ModelType == VisualStudioModelType.SolutionFolder).Cast<VsSolutionFolder>().FirstOrDefault(f => f.Name == "Automation");

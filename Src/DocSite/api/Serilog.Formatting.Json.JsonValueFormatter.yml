@@ -1,0 +1,1377 @@
+### YamlMime:ManagedReference
+items:
+- uid: Serilog.Formatting.Json.JsonValueFormatter
+  commentId: T:Serilog.Formatting.Json.JsonValueFormatter
+  id: JsonValueFormatter
+  parent: Serilog.Formatting.Json
+  children:
+  - Serilog.Formatting.Json.JsonValueFormatter.#ctor(System.String)
+  - Serilog.Formatting.Json.JsonValueFormatter.Format(Serilog.Events.LogEventPropertyValue,System.IO.TextWriter)
+  - Serilog.Formatting.Json.JsonValueFormatter.FormatLiteralValue(System.Object,System.IO.TextWriter)
+  - Serilog.Formatting.Json.JsonValueFormatter.VisitDictionaryValue(System.IO.TextWriter,Serilog.Events.DictionaryValue)
+  - Serilog.Formatting.Json.JsonValueFormatter.VisitScalarValue(System.IO.TextWriter,Serilog.Events.ScalarValue)
+  - Serilog.Formatting.Json.JsonValueFormatter.VisitSequenceValue(System.IO.TextWriter,Serilog.Events.SequenceValue)
+  - Serilog.Formatting.Json.JsonValueFormatter.VisitStructureValue(System.IO.TextWriter,Serilog.Events.StructureValue)
+  - Serilog.Formatting.Json.JsonValueFormatter.WriteQuotedJsonString(System.String,System.IO.TextWriter)
+  langs:
+  - csharp
+  - vb
+  name: JsonValueFormatter
+  nameWithType: JsonValueFormatter
+  fullName: Serilog.Formatting.Json.JsonValueFormatter
+  type: Class
+  assemblies:
+  - Serilog
+  namespace: Serilog.Formatting.Json
+  summary: Converts Serilog's structured property value format into JSON.
+  example: []
+  syntax:
+    content: 'public class JsonValueFormatter : LogEventPropertyValueVisitor<TextWriter, bool>'
+    content.vb: Public Class JsonValueFormatter Inherits LogEventPropertyValueVisitor(Of TextWriter, Boolean)
+  inheritance:
+  - System.Object
+  - Serilog.Data.LogEventPropertyValueVisitor{System.IO.TextWriter,System.Boolean}
+  inheritedMembers:
+  - Serilog.Data.LogEventPropertyValueVisitor{System.IO.TextWriter,System.Boolean}.Visit(System.IO.TextWriter,Serilog.Events.LogEventPropertyValue)
+  - Serilog.Data.LogEventPropertyValueVisitor{System.IO.TextWriter,System.Boolean}.VisitScalarValue(System.IO.TextWriter,Serilog.Events.ScalarValue)
+  - Serilog.Data.LogEventPropertyValueVisitor{System.IO.TextWriter,System.Boolean}.VisitSequenceValue(System.IO.TextWriter,Serilog.Events.SequenceValue)
+  - Serilog.Data.LogEventPropertyValueVisitor{System.IO.TextWriter,System.Boolean}.VisitStructureValue(System.IO.TextWriter,Serilog.Events.StructureValue)
+  - Serilog.Data.LogEventPropertyValueVisitor{System.IO.TextWriter,System.Boolean}.VisitDictionaryValue(System.IO.TextWriter,Serilog.Events.DictionaryValue)
+  - Serilog.Data.LogEventPropertyValueVisitor{System.IO.TextWriter,System.Boolean}.VisitUnsupportedValue(System.IO.TextWriter,Serilog.Events.LogEventPropertyValue)
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: Serilog.Formatting.Json.JsonValueFormatter.#ctor(System.String)
+  commentId: M:Serilog.Formatting.Json.JsonValueFormatter.#ctor(System.String)
+  id: '#ctor(System.String)'
+  parent: Serilog.Formatting.Json.JsonValueFormatter
+  langs:
+  - csharp
+  - vb
+  name: JsonValueFormatter(string?)
+  nameWithType: JsonValueFormatter.JsonValueFormatter(string?)
+  fullName: Serilog.Formatting.Json.JsonValueFormatter.JsonValueFormatter(string?)
+  type: Constructor
+  assemblies:
+  - Serilog
+  namespace: Serilog.Formatting.Json
+  summary: Construct a <xref href="Serilog.Formatting.Json.JsonFormatter" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public JsonValueFormatter(string? typeTagName = "_typeTag")
+    parameters:
+    - id: typeTagName
+      type: System.String
+      description: >-
+        When serializing structured (object) values,
+                    the property name to use for the Serilog <xref href="Serilog.Events.StructureValue.TypeTag" data-throw-if-not-resolved="false"></xref> field
+                    in the resulting JSON. If null, no type tag field will be written. The default is
+                    "_typeTag".
+    content.vb: Public Sub New(typeTagName As String = "_typeTag")
+  overload: Serilog.Formatting.Json.JsonValueFormatter.#ctor*
+  nameWithType.vb: JsonValueFormatter.New(String)
+  fullName.vb: Serilog.Formatting.Json.JsonValueFormatter.New(String)
+  name.vb: New(String)
+- uid: Serilog.Formatting.Json.JsonValueFormatter.Format(Serilog.Events.LogEventPropertyValue,System.IO.TextWriter)
+  commentId: M:Serilog.Formatting.Json.JsonValueFormatter.Format(Serilog.Events.LogEventPropertyValue,System.IO.TextWriter)
+  id: Format(Serilog.Events.LogEventPropertyValue,System.IO.TextWriter)
+  parent: Serilog.Formatting.Json.JsonValueFormatter
+  langs:
+  - csharp
+  - vb
+  name: Format(LogEventPropertyValue, TextWriter)
+  nameWithType: JsonValueFormatter.Format(LogEventPropertyValue, TextWriter)
+  fullName: Serilog.Formatting.Json.JsonValueFormatter.Format(Serilog.Events.LogEventPropertyValue, System.IO.TextWriter)
+  type: Method
+  assemblies:
+  - Serilog
+  namespace: Serilog.Formatting.Json
+  summary: Format <code class="paramref">value</code> as JSON to <code class="paramref">output</code>.
+  example: []
+  syntax:
+    content: public void Format(LogEventPropertyValue value, TextWriter output)
+    parameters:
+    - id: value
+      type: Serilog.Events.LogEventPropertyValue
+      description: The value to format
+    - id: output
+      type: System.IO.TextWriter
+      description: The output
+    content.vb: Public Sub Format(value As LogEventPropertyValue, output As TextWriter)
+  overload: Serilog.Formatting.Json.JsonValueFormatter.Format*
+- uid: Serilog.Formatting.Json.JsonValueFormatter.VisitScalarValue(System.IO.TextWriter,Serilog.Events.ScalarValue)
+  commentId: M:Serilog.Formatting.Json.JsonValueFormatter.VisitScalarValue(System.IO.TextWriter,Serilog.Events.ScalarValue)
+  id: VisitScalarValue(System.IO.TextWriter,Serilog.Events.ScalarValue)
+  parent: Serilog.Formatting.Json.JsonValueFormatter
+  langs:
+  - csharp
+  - vb
+  name: VisitScalarValue(TextWriter, ScalarValue)
+  nameWithType: JsonValueFormatter.VisitScalarValue(TextWriter, ScalarValue)
+  fullName: Serilog.Formatting.Json.JsonValueFormatter.VisitScalarValue(System.IO.TextWriter, Serilog.Events.ScalarValue)
+  type: Method
+  assemblies:
+  - Serilog
+  namespace: Serilog.Formatting.Json
+  summary: Visit a <xref href="Serilog.Events.ScalarValue" data-throw-if-not-resolved="false"></xref> value.
+  example: []
+  syntax:
+    content: protected override bool VisitScalarValue(TextWriter state, ScalarValue scalar)
+    parameters:
+    - id: state
+      type: System.IO.TextWriter
+      description: Operation state.
+    - id: scalar
+      type: Serilog.Events.ScalarValue
+      description: The value to visit.
+    return:
+      type: System.Boolean
+      description: The result of visiting <code class="paramref">scalar</code>.
+    content.vb: Protected Overrides Function VisitScalarValue(state As TextWriter, scalar As ScalarValue) As Boolean
+  overridden: Serilog.Data.LogEventPropertyValueVisitor{System.IO.TextWriter,System.Boolean}.VisitScalarValue(System.IO.TextWriter,Serilog.Events.ScalarValue)
+  overload: Serilog.Formatting.Json.JsonValueFormatter.VisitScalarValue*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: When <code class="paramref">scalar</code> is <pre><code class="lang-csharp">null</code></pre>
+- uid: Serilog.Formatting.Json.JsonValueFormatter.VisitSequenceValue(System.IO.TextWriter,Serilog.Events.SequenceValue)
+  commentId: M:Serilog.Formatting.Json.JsonValueFormatter.VisitSequenceValue(System.IO.TextWriter,Serilog.Events.SequenceValue)
+  id: VisitSequenceValue(System.IO.TextWriter,Serilog.Events.SequenceValue)
+  parent: Serilog.Formatting.Json.JsonValueFormatter
+  langs:
+  - csharp
+  - vb
+  name: VisitSequenceValue(TextWriter, SequenceValue)
+  nameWithType: JsonValueFormatter.VisitSequenceValue(TextWriter, SequenceValue)
+  fullName: Serilog.Formatting.Json.JsonValueFormatter.VisitSequenceValue(System.IO.TextWriter, Serilog.Events.SequenceValue)
+  type: Method
+  assemblies:
+  - Serilog
+  namespace: Serilog.Formatting.Json
+  summary: Visit a <xref href="Serilog.Events.SequenceValue" data-throw-if-not-resolved="false"></xref> value.
+  example: []
+  syntax:
+    content: protected override bool VisitSequenceValue(TextWriter state, SequenceValue sequence)
+    parameters:
+    - id: state
+      type: System.IO.TextWriter
+      description: Operation state.
+    - id: sequence
+      type: Serilog.Events.SequenceValue
+      description: The value to visit.
+    return:
+      type: System.Boolean
+      description: The result of visiting <code class="paramref">sequence</code>.
+    content.vb: Protected Overrides Function VisitSequenceValue(state As TextWriter, sequence As SequenceValue) As Boolean
+  overridden: Serilog.Data.LogEventPropertyValueVisitor{System.IO.TextWriter,System.Boolean}.VisitSequenceValue(System.IO.TextWriter,Serilog.Events.SequenceValue)
+  overload: Serilog.Formatting.Json.JsonValueFormatter.VisitSequenceValue*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: When <code class="paramref">sequence</code> is <pre><code class="lang-csharp">null</code></pre>
+- uid: Serilog.Formatting.Json.JsonValueFormatter.VisitStructureValue(System.IO.TextWriter,Serilog.Events.StructureValue)
+  commentId: M:Serilog.Formatting.Json.JsonValueFormatter.VisitStructureValue(System.IO.TextWriter,Serilog.Events.StructureValue)
+  id: VisitStructureValue(System.IO.TextWriter,Serilog.Events.StructureValue)
+  parent: Serilog.Formatting.Json.JsonValueFormatter
+  langs:
+  - csharp
+  - vb
+  name: VisitStructureValue(TextWriter, StructureValue)
+  nameWithType: JsonValueFormatter.VisitStructureValue(TextWriter, StructureValue)
+  fullName: Serilog.Formatting.Json.JsonValueFormatter.VisitStructureValue(System.IO.TextWriter, Serilog.Events.StructureValue)
+  type: Method
+  assemblies:
+  - Serilog
+  namespace: Serilog.Formatting.Json
+  summary: Visit a <xref href="Serilog.Events.StructureValue" data-throw-if-not-resolved="false"></xref> value.
+  example: []
+  syntax:
+    content: protected override bool VisitStructureValue(TextWriter state, StructureValue structure)
+    parameters:
+    - id: state
+      type: System.IO.TextWriter
+      description: Operation state.
+    - id: structure
+      type: Serilog.Events.StructureValue
+      description: The value to visit.
+    return:
+      type: System.Boolean
+      description: The result of visiting <code class="paramref">structure</code>.
+    content.vb: Protected Overrides Function VisitStructureValue(state As TextWriter, [structure] As StructureValue) As Boolean
+  overridden: Serilog.Data.LogEventPropertyValueVisitor{System.IO.TextWriter,System.Boolean}.VisitStructureValue(System.IO.TextWriter,Serilog.Events.StructureValue)
+  overload: Serilog.Formatting.Json.JsonValueFormatter.VisitStructureValue*
+- uid: Serilog.Formatting.Json.JsonValueFormatter.VisitDictionaryValue(System.IO.TextWriter,Serilog.Events.DictionaryValue)
+  commentId: M:Serilog.Formatting.Json.JsonValueFormatter.VisitDictionaryValue(System.IO.TextWriter,Serilog.Events.DictionaryValue)
+  id: VisitDictionaryValue(System.IO.TextWriter,Serilog.Events.DictionaryValue)
+  parent: Serilog.Formatting.Json.JsonValueFormatter
+  langs:
+  - csharp
+  - vb
+  name: VisitDictionaryValue(TextWriter, DictionaryValue)
+  nameWithType: JsonValueFormatter.VisitDictionaryValue(TextWriter, DictionaryValue)
+  fullName: Serilog.Formatting.Json.JsonValueFormatter.VisitDictionaryValue(System.IO.TextWriter, Serilog.Events.DictionaryValue)
+  type: Method
+  assemblies:
+  - Serilog
+  namespace: Serilog.Formatting.Json
+  summary: Visit a <xref href="Serilog.Events.DictionaryValue" data-throw-if-not-resolved="false"></xref> value.
+  example: []
+  syntax:
+    content: protected override bool VisitDictionaryValue(TextWriter state, DictionaryValue dictionary)
+    parameters:
+    - id: state
+      type: System.IO.TextWriter
+      description: Operation state.
+    - id: dictionary
+      type: Serilog.Events.DictionaryValue
+      description: The value to visit.
+    return:
+      type: System.Boolean
+      description: The result of visiting <code class="paramref">dictionary</code>.
+    content.vb: Protected Overrides Function VisitDictionaryValue(state As TextWriter, dictionary As DictionaryValue) As Boolean
+  overridden: Serilog.Data.LogEventPropertyValueVisitor{System.IO.TextWriter,System.Boolean}.VisitDictionaryValue(System.IO.TextWriter,Serilog.Events.DictionaryValue)
+  overload: Serilog.Formatting.Json.JsonValueFormatter.VisitDictionaryValue*
+- uid: Serilog.Formatting.Json.JsonValueFormatter.FormatLiteralValue(System.Object,System.IO.TextWriter)
+  commentId: M:Serilog.Formatting.Json.JsonValueFormatter.FormatLiteralValue(System.Object,System.IO.TextWriter)
+  id: FormatLiteralValue(System.Object,System.IO.TextWriter)
+  parent: Serilog.Formatting.Json.JsonValueFormatter
+  langs:
+  - csharp
+  - vb
+  name: FormatLiteralValue(object?, TextWriter)
+  nameWithType: JsonValueFormatter.FormatLiteralValue(object?, TextWriter)
+  fullName: Serilog.Formatting.Json.JsonValueFormatter.FormatLiteralValue(object?, System.IO.TextWriter)
+  type: Method
+  assemblies:
+  - Serilog
+  namespace: Serilog.Formatting.Json
+  summary: >-
+    Write a literal as a single JSON value, e.g. as a number or string. Override to
+
+    support more value types. Don't write arrays/structures through this method - the
+
+    active destructuring policies have already indicated the value should be scalar at
+
+    this point.
+  example: []
+  syntax:
+    content: protected virtual void FormatLiteralValue(object? value, TextWriter output)
+    parameters:
+    - id: value
+      type: System.Object
+      description: The value to write.
+    - id: output
+      type: System.IO.TextWriter
+      description: The output
+    content.vb: Protected Overridable Sub FormatLiteralValue(value As Object, output As TextWriter)
+  overload: Serilog.Formatting.Json.JsonValueFormatter.FormatLiteralValue*
+  nameWithType.vb: JsonValueFormatter.FormatLiteralValue(Object, TextWriter)
+  fullName.vb: Serilog.Formatting.Json.JsonValueFormatter.FormatLiteralValue(Object, System.IO.TextWriter)
+  name.vb: FormatLiteralValue(Object, TextWriter)
+- uid: Serilog.Formatting.Json.JsonValueFormatter.WriteQuotedJsonString(System.String,System.IO.TextWriter)
+  commentId: M:Serilog.Formatting.Json.JsonValueFormatter.WriteQuotedJsonString(System.String,System.IO.TextWriter)
+  id: WriteQuotedJsonString(System.String,System.IO.TextWriter)
+  parent: Serilog.Formatting.Json.JsonValueFormatter
+  langs:
+  - csharp
+  - vb
+  name: WriteQuotedJsonString(string, TextWriter)
+  nameWithType: JsonValueFormatter.WriteQuotedJsonString(string, TextWriter)
+  fullName: Serilog.Formatting.Json.JsonValueFormatter.WriteQuotedJsonString(string, System.IO.TextWriter)
+  type: Method
+  assemblies:
+  - Serilog
+  namespace: Serilog.Formatting.Json
+  summary: Write a valid JSON string literal, escaping as necessary.
+  example: []
+  syntax:
+    content: public static void WriteQuotedJsonString(string str, TextWriter output)
+    parameters:
+    - id: str
+      type: System.String
+      description: The string value to write.
+    - id: output
+      type: System.IO.TextWriter
+      description: The output.
+    content.vb: Public Shared Sub WriteQuotedJsonString(str As String, output As TextWriter)
+  overload: Serilog.Formatting.Json.JsonValueFormatter.WriteQuotedJsonString*
+  nameWithType.vb: JsonValueFormatter.WriteQuotedJsonString(String, TextWriter)
+  fullName.vb: Serilog.Formatting.Json.JsonValueFormatter.WriteQuotedJsonString(String, System.IO.TextWriter)
+  name.vb: WriteQuotedJsonString(String, TextWriter)
+references:
+- uid: Serilog.Formatting.Json
+  commentId: N:Serilog.Formatting.Json
+  isExternal: true
+  href: Serilog.html
+  name: Serilog.Formatting.Json
+  nameWithType: Serilog.Formatting.Json
+  fullName: Serilog.Formatting.Json
+  spec.csharp:
+  - uid: Serilog
+    name: Serilog
+    isExternal: true
+    href: Serilog.html
+  - name: .
+  - uid: Serilog.Formatting
+    name: Formatting
+    isExternal: true
+    href: Serilog.Formatting.html
+  - name: .
+  - uid: Serilog.Formatting.Json
+    name: Json
+    isExternal: true
+    href: Serilog.Formatting.Json.html
+  spec.vb:
+  - uid: Serilog
+    name: Serilog
+    isExternal: true
+    href: Serilog.html
+  - name: .
+  - uid: Serilog.Formatting
+    name: Formatting
+    isExternal: true
+    href: Serilog.Formatting.html
+  - name: .
+  - uid: Serilog.Formatting.Json
+    name: Json
+    isExternal: true
+    href: Serilog.Formatting.Json.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Serilog.Data.LogEventPropertyValueVisitor{System.IO.TextWriter,System.Boolean}
+  commentId: T:Serilog.Data.LogEventPropertyValueVisitor{System.IO.TextWriter,System.Boolean}
+  parent: Serilog.Data
+  definition: Serilog.Data.LogEventPropertyValueVisitor`2
+  href: Serilog.Data.LogEventPropertyValueVisitor-2.html
+  name: LogEventPropertyValueVisitor<TextWriter, bool>
+  nameWithType: LogEventPropertyValueVisitor<TextWriter, bool>
+  fullName: Serilog.Data.LogEventPropertyValueVisitor<System.IO.TextWriter, bool>
+  nameWithType.vb: LogEventPropertyValueVisitor(Of TextWriter, Boolean)
+  fullName.vb: Serilog.Data.LogEventPropertyValueVisitor(Of System.IO.TextWriter, Boolean)
+  name.vb: LogEventPropertyValueVisitor(Of TextWriter, Boolean)
+  spec.csharp:
+  - uid: Serilog.Data.LogEventPropertyValueVisitor`2
+    name: LogEventPropertyValueVisitor
+    isExternal: true
+    href: Serilog.Data.LogEventPropertyValueVisitor-2.html
+  - name: <
+  - uid: System.IO.TextWriter
+    name: TextWriter
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io.textwriter
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '>'
+  spec.vb:
+  - uid: Serilog.Data.LogEventPropertyValueVisitor`2
+    name: LogEventPropertyValueVisitor
+    isExternal: true
+    href: Serilog.Data.LogEventPropertyValueVisitor-2.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.IO.TextWriter
+    name: TextWriter
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io.textwriter
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: Serilog.Data.LogEventPropertyValueVisitor{System.IO.TextWriter,System.Boolean}.Visit(System.IO.TextWriter,Serilog.Events.LogEventPropertyValue)
+  commentId: M:Serilog.Data.LogEventPropertyValueVisitor{System.IO.TextWriter,System.Boolean}.Visit(System.IO.TextWriter,Serilog.Events.LogEventPropertyValue)
+  parent: Serilog.Data.LogEventPropertyValueVisitor{System.IO.TextWriter,System.Boolean}
+  definition: Serilog.Data.LogEventPropertyValueVisitor`2.Visit(`0,Serilog.Events.LogEventPropertyValue)
+  href: Serilog.Data.LogEventPropertyValueVisitor-2.html#Serilog_Data_LogEventPropertyValueVisitor_2_Visit__0_Serilog_Events_LogEventPropertyValue_
+  name: Visit(TextWriter, LogEventPropertyValue)
+  nameWithType: LogEventPropertyValueVisitor<TextWriter, bool>.Visit(TextWriter, LogEventPropertyValue)
+  fullName: Serilog.Data.LogEventPropertyValueVisitor<System.IO.TextWriter, bool>.Visit(System.IO.TextWriter, Serilog.Events.LogEventPropertyValue)
+  nameWithType.vb: LogEventPropertyValueVisitor(Of TextWriter, Boolean).Visit(TextWriter, LogEventPropertyValue)
+  fullName.vb: Serilog.Data.LogEventPropertyValueVisitor(Of System.IO.TextWriter, Boolean).Visit(System.IO.TextWriter, Serilog.Events.LogEventPropertyValue)
+  spec.csharp:
+  - uid: Serilog.Data.LogEventPropertyValueVisitor{System.IO.TextWriter,System.Boolean}.Visit(System.IO.TextWriter,Serilog.Events.LogEventPropertyValue)
+    name: Visit
+    isExternal: true
+    href: Serilog.Data.LogEventPropertyValueVisitor-2.html#Serilog_Data_LogEventPropertyValueVisitor_2_Visit__0_Serilog_Events_LogEventPropertyValue_
+  - name: (
+  - uid: System.IO.TextWriter
+    name: TextWriter
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io.textwriter
+  - name: ','
+  - name: " "
+  - uid: Serilog.Events.LogEventPropertyValue
+    name: LogEventPropertyValue
+    isExternal: true
+    href: Serilog.Events.LogEventPropertyValue.html
+  - name: )
+  spec.vb:
+  - uid: Serilog.Data.LogEventPropertyValueVisitor{System.IO.TextWriter,System.Boolean}.Visit(System.IO.TextWriter,Serilog.Events.LogEventPropertyValue)
+    name: Visit
+    isExternal: true
+    href: Serilog.Data.LogEventPropertyValueVisitor-2.html#Serilog_Data_LogEventPropertyValueVisitor_2_Visit__0_Serilog_Events_LogEventPropertyValue_
+  - name: (
+  - uid: System.IO.TextWriter
+    name: TextWriter
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io.textwriter
+  - name: ','
+  - name: " "
+  - uid: Serilog.Events.LogEventPropertyValue
+    name: LogEventPropertyValue
+    isExternal: true
+    href: Serilog.Events.LogEventPropertyValue.html
+  - name: )
+- uid: Serilog.Data.LogEventPropertyValueVisitor{System.IO.TextWriter,System.Boolean}.VisitScalarValue(System.IO.TextWriter,Serilog.Events.ScalarValue)
+  commentId: M:Serilog.Data.LogEventPropertyValueVisitor{System.IO.TextWriter,System.Boolean}.VisitScalarValue(System.IO.TextWriter,Serilog.Events.ScalarValue)
+  parent: Serilog.Data.LogEventPropertyValueVisitor{System.IO.TextWriter,System.Boolean}
+  definition: Serilog.Data.LogEventPropertyValueVisitor`2.VisitScalarValue(`0,Serilog.Events.ScalarValue)
+  href: Serilog.Data.LogEventPropertyValueVisitor-2.html#Serilog_Data_LogEventPropertyValueVisitor_2_VisitScalarValue__0_Serilog_Events_ScalarValue_
+  name: VisitScalarValue(TextWriter, ScalarValue)
+  nameWithType: LogEventPropertyValueVisitor<TextWriter, bool>.VisitScalarValue(TextWriter, ScalarValue)
+  fullName: Serilog.Data.LogEventPropertyValueVisitor<System.IO.TextWriter, bool>.VisitScalarValue(System.IO.TextWriter, Serilog.Events.ScalarValue)
+  nameWithType.vb: LogEventPropertyValueVisitor(Of TextWriter, Boolean).VisitScalarValue(TextWriter, ScalarValue)
+  fullName.vb: Serilog.Data.LogEventPropertyValueVisitor(Of System.IO.TextWriter, Boolean).VisitScalarValue(System.IO.TextWriter, Serilog.Events.ScalarValue)
+  spec.csharp:
+  - uid: Serilog.Data.LogEventPropertyValueVisitor{System.IO.TextWriter,System.Boolean}.VisitScalarValue(System.IO.TextWriter,Serilog.Events.ScalarValue)
+    name: VisitScalarValue
+    isExternal: true
+    href: Serilog.Data.LogEventPropertyValueVisitor-2.html#Serilog_Data_LogEventPropertyValueVisitor_2_VisitScalarValue__0_Serilog_Events_ScalarValue_
+  - name: (
+  - uid: System.IO.TextWriter
+    name: TextWriter
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io.textwriter
+  - name: ','
+  - name: " "
+  - uid: Serilog.Events.ScalarValue
+    name: ScalarValue
+    isExternal: true
+    href: Serilog.Events.ScalarValue.html
+  - name: )
+  spec.vb:
+  - uid: Serilog.Data.LogEventPropertyValueVisitor{System.IO.TextWriter,System.Boolean}.VisitScalarValue(System.IO.TextWriter,Serilog.Events.ScalarValue)
+    name: VisitScalarValue
+    isExternal: true
+    href: Serilog.Data.LogEventPropertyValueVisitor-2.html#Serilog_Data_LogEventPropertyValueVisitor_2_VisitScalarValue__0_Serilog_Events_ScalarValue_
+  - name: (
+  - uid: System.IO.TextWriter
+    name: TextWriter
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io.textwriter
+  - name: ','
+  - name: " "
+  - uid: Serilog.Events.ScalarValue
+    name: ScalarValue
+    isExternal: true
+    href: Serilog.Events.ScalarValue.html
+  - name: )
+- uid: Serilog.Data.LogEventPropertyValueVisitor{System.IO.TextWriter,System.Boolean}.VisitSequenceValue(System.IO.TextWriter,Serilog.Events.SequenceValue)
+  commentId: M:Serilog.Data.LogEventPropertyValueVisitor{System.IO.TextWriter,System.Boolean}.VisitSequenceValue(System.IO.TextWriter,Serilog.Events.SequenceValue)
+  parent: Serilog.Data.LogEventPropertyValueVisitor{System.IO.TextWriter,System.Boolean}
+  definition: Serilog.Data.LogEventPropertyValueVisitor`2.VisitSequenceValue(`0,Serilog.Events.SequenceValue)
+  href: Serilog.Data.LogEventPropertyValueVisitor-2.html#Serilog_Data_LogEventPropertyValueVisitor_2_VisitSequenceValue__0_Serilog_Events_SequenceValue_
+  name: VisitSequenceValue(TextWriter, SequenceValue)
+  nameWithType: LogEventPropertyValueVisitor<TextWriter, bool>.VisitSequenceValue(TextWriter, SequenceValue)
+  fullName: Serilog.Data.LogEventPropertyValueVisitor<System.IO.TextWriter, bool>.VisitSequenceValue(System.IO.TextWriter, Serilog.Events.SequenceValue)
+  nameWithType.vb: LogEventPropertyValueVisitor(Of TextWriter, Boolean).VisitSequenceValue(TextWriter, SequenceValue)
+  fullName.vb: Serilog.Data.LogEventPropertyValueVisitor(Of System.IO.TextWriter, Boolean).VisitSequenceValue(System.IO.TextWriter, Serilog.Events.SequenceValue)
+  spec.csharp:
+  - uid: Serilog.Data.LogEventPropertyValueVisitor{System.IO.TextWriter,System.Boolean}.VisitSequenceValue(System.IO.TextWriter,Serilog.Events.SequenceValue)
+    name: VisitSequenceValue
+    isExternal: true
+    href: Serilog.Data.LogEventPropertyValueVisitor-2.html#Serilog_Data_LogEventPropertyValueVisitor_2_VisitSequenceValue__0_Serilog_Events_SequenceValue_
+  - name: (
+  - uid: System.IO.TextWriter
+    name: TextWriter
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io.textwriter
+  - name: ','
+  - name: " "
+  - uid: Serilog.Events.SequenceValue
+    name: SequenceValue
+    isExternal: true
+    href: Serilog.Events.SequenceValue.html
+  - name: )
+  spec.vb:
+  - uid: Serilog.Data.LogEventPropertyValueVisitor{System.IO.TextWriter,System.Boolean}.VisitSequenceValue(System.IO.TextWriter,Serilog.Events.SequenceValue)
+    name: VisitSequenceValue
+    isExternal: true
+    href: Serilog.Data.LogEventPropertyValueVisitor-2.html#Serilog_Data_LogEventPropertyValueVisitor_2_VisitSequenceValue__0_Serilog_Events_SequenceValue_
+  - name: (
+  - uid: System.IO.TextWriter
+    name: TextWriter
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io.textwriter
+  - name: ','
+  - name: " "
+  - uid: Serilog.Events.SequenceValue
+    name: SequenceValue
+    isExternal: true
+    href: Serilog.Events.SequenceValue.html
+  - name: )
+- uid: Serilog.Data.LogEventPropertyValueVisitor{System.IO.TextWriter,System.Boolean}.VisitStructureValue(System.IO.TextWriter,Serilog.Events.StructureValue)
+  commentId: M:Serilog.Data.LogEventPropertyValueVisitor{System.IO.TextWriter,System.Boolean}.VisitStructureValue(System.IO.TextWriter,Serilog.Events.StructureValue)
+  parent: Serilog.Data.LogEventPropertyValueVisitor{System.IO.TextWriter,System.Boolean}
+  definition: Serilog.Data.LogEventPropertyValueVisitor`2.VisitStructureValue(`0,Serilog.Events.StructureValue)
+  href: Serilog.Data.LogEventPropertyValueVisitor-2.html#Serilog_Data_LogEventPropertyValueVisitor_2_VisitStructureValue__0_Serilog_Events_StructureValue_
+  name: VisitStructureValue(TextWriter, StructureValue)
+  nameWithType: LogEventPropertyValueVisitor<TextWriter, bool>.VisitStructureValue(TextWriter, StructureValue)
+  fullName: Serilog.Data.LogEventPropertyValueVisitor<System.IO.TextWriter, bool>.VisitStructureValue(System.IO.TextWriter, Serilog.Events.StructureValue)
+  nameWithType.vb: LogEventPropertyValueVisitor(Of TextWriter, Boolean).VisitStructureValue(TextWriter, StructureValue)
+  fullName.vb: Serilog.Data.LogEventPropertyValueVisitor(Of System.IO.TextWriter, Boolean).VisitStructureValue(System.IO.TextWriter, Serilog.Events.StructureValue)
+  spec.csharp:
+  - uid: Serilog.Data.LogEventPropertyValueVisitor{System.IO.TextWriter,System.Boolean}.VisitStructureValue(System.IO.TextWriter,Serilog.Events.StructureValue)
+    name: VisitStructureValue
+    isExternal: true
+    href: Serilog.Data.LogEventPropertyValueVisitor-2.html#Serilog_Data_LogEventPropertyValueVisitor_2_VisitStructureValue__0_Serilog_Events_StructureValue_
+  - name: (
+  - uid: System.IO.TextWriter
+    name: TextWriter
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io.textwriter
+  - name: ','
+  - name: " "
+  - uid: Serilog.Events.StructureValue
+    name: StructureValue
+    isExternal: true
+    href: Serilog.Events.StructureValue.html
+  - name: )
+  spec.vb:
+  - uid: Serilog.Data.LogEventPropertyValueVisitor{System.IO.TextWriter,System.Boolean}.VisitStructureValue(System.IO.TextWriter,Serilog.Events.StructureValue)
+    name: VisitStructureValue
+    isExternal: true
+    href: Serilog.Data.LogEventPropertyValueVisitor-2.html#Serilog_Data_LogEventPropertyValueVisitor_2_VisitStructureValue__0_Serilog_Events_StructureValue_
+  - name: (
+  - uid: System.IO.TextWriter
+    name: TextWriter
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io.textwriter
+  - name: ','
+  - name: " "
+  - uid: Serilog.Events.StructureValue
+    name: StructureValue
+    isExternal: true
+    href: Serilog.Events.StructureValue.html
+  - name: )
+- uid: Serilog.Data.LogEventPropertyValueVisitor{System.IO.TextWriter,System.Boolean}.VisitDictionaryValue(System.IO.TextWriter,Serilog.Events.DictionaryValue)
+  commentId: M:Serilog.Data.LogEventPropertyValueVisitor{System.IO.TextWriter,System.Boolean}.VisitDictionaryValue(System.IO.TextWriter,Serilog.Events.DictionaryValue)
+  parent: Serilog.Data.LogEventPropertyValueVisitor{System.IO.TextWriter,System.Boolean}
+  definition: Serilog.Data.LogEventPropertyValueVisitor`2.VisitDictionaryValue(`0,Serilog.Events.DictionaryValue)
+  href: Serilog.Data.LogEventPropertyValueVisitor-2.html#Serilog_Data_LogEventPropertyValueVisitor_2_VisitDictionaryValue__0_Serilog_Events_DictionaryValue_
+  name: VisitDictionaryValue(TextWriter, DictionaryValue)
+  nameWithType: LogEventPropertyValueVisitor<TextWriter, bool>.VisitDictionaryValue(TextWriter, DictionaryValue)
+  fullName: Serilog.Data.LogEventPropertyValueVisitor<System.IO.TextWriter, bool>.VisitDictionaryValue(System.IO.TextWriter, Serilog.Events.DictionaryValue)
+  nameWithType.vb: LogEventPropertyValueVisitor(Of TextWriter, Boolean).VisitDictionaryValue(TextWriter, DictionaryValue)
+  fullName.vb: Serilog.Data.LogEventPropertyValueVisitor(Of System.IO.TextWriter, Boolean).VisitDictionaryValue(System.IO.TextWriter, Serilog.Events.DictionaryValue)
+  spec.csharp:
+  - uid: Serilog.Data.LogEventPropertyValueVisitor{System.IO.TextWriter,System.Boolean}.VisitDictionaryValue(System.IO.TextWriter,Serilog.Events.DictionaryValue)
+    name: VisitDictionaryValue
+    isExternal: true
+    href: Serilog.Data.LogEventPropertyValueVisitor-2.html#Serilog_Data_LogEventPropertyValueVisitor_2_VisitDictionaryValue__0_Serilog_Events_DictionaryValue_
+  - name: (
+  - uid: System.IO.TextWriter
+    name: TextWriter
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io.textwriter
+  - name: ','
+  - name: " "
+  - uid: Serilog.Events.DictionaryValue
+    name: DictionaryValue
+    isExternal: true
+    href: Serilog.Events.DictionaryValue.html
+  - name: )
+  spec.vb:
+  - uid: Serilog.Data.LogEventPropertyValueVisitor{System.IO.TextWriter,System.Boolean}.VisitDictionaryValue(System.IO.TextWriter,Serilog.Events.DictionaryValue)
+    name: VisitDictionaryValue
+    isExternal: true
+    href: Serilog.Data.LogEventPropertyValueVisitor-2.html#Serilog_Data_LogEventPropertyValueVisitor_2_VisitDictionaryValue__0_Serilog_Events_DictionaryValue_
+  - name: (
+  - uid: System.IO.TextWriter
+    name: TextWriter
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io.textwriter
+  - name: ','
+  - name: " "
+  - uid: Serilog.Events.DictionaryValue
+    name: DictionaryValue
+    isExternal: true
+    href: Serilog.Events.DictionaryValue.html
+  - name: )
+- uid: Serilog.Data.LogEventPropertyValueVisitor{System.IO.TextWriter,System.Boolean}.VisitUnsupportedValue(System.IO.TextWriter,Serilog.Events.LogEventPropertyValue)
+  commentId: M:Serilog.Data.LogEventPropertyValueVisitor{System.IO.TextWriter,System.Boolean}.VisitUnsupportedValue(System.IO.TextWriter,Serilog.Events.LogEventPropertyValue)
+  parent: Serilog.Data.LogEventPropertyValueVisitor{System.IO.TextWriter,System.Boolean}
+  definition: Serilog.Data.LogEventPropertyValueVisitor`2.VisitUnsupportedValue(`0,Serilog.Events.LogEventPropertyValue)
+  href: Serilog.Data.LogEventPropertyValueVisitor-2.html#Serilog_Data_LogEventPropertyValueVisitor_2_VisitUnsupportedValue__0_Serilog_Events_LogEventPropertyValue_
+  name: VisitUnsupportedValue(TextWriter, LogEventPropertyValue)
+  nameWithType: LogEventPropertyValueVisitor<TextWriter, bool>.VisitUnsupportedValue(TextWriter, LogEventPropertyValue)
+  fullName: Serilog.Data.LogEventPropertyValueVisitor<System.IO.TextWriter, bool>.VisitUnsupportedValue(System.IO.TextWriter, Serilog.Events.LogEventPropertyValue)
+  nameWithType.vb: LogEventPropertyValueVisitor(Of TextWriter, Boolean).VisitUnsupportedValue(TextWriter, LogEventPropertyValue)
+  fullName.vb: Serilog.Data.LogEventPropertyValueVisitor(Of System.IO.TextWriter, Boolean).VisitUnsupportedValue(System.IO.TextWriter, Serilog.Events.LogEventPropertyValue)
+  spec.csharp:
+  - uid: Serilog.Data.LogEventPropertyValueVisitor{System.IO.TextWriter,System.Boolean}.VisitUnsupportedValue(System.IO.TextWriter,Serilog.Events.LogEventPropertyValue)
+    name: VisitUnsupportedValue
+    isExternal: true
+    href: Serilog.Data.LogEventPropertyValueVisitor-2.html#Serilog_Data_LogEventPropertyValueVisitor_2_VisitUnsupportedValue__0_Serilog_Events_LogEventPropertyValue_
+  - name: (
+  - uid: System.IO.TextWriter
+    name: TextWriter
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io.textwriter
+  - name: ','
+  - name: " "
+  - uid: Serilog.Events.LogEventPropertyValue
+    name: LogEventPropertyValue
+    isExternal: true
+    href: Serilog.Events.LogEventPropertyValue.html
+  - name: )
+  spec.vb:
+  - uid: Serilog.Data.LogEventPropertyValueVisitor{System.IO.TextWriter,System.Boolean}.VisitUnsupportedValue(System.IO.TextWriter,Serilog.Events.LogEventPropertyValue)
+    name: VisitUnsupportedValue
+    isExternal: true
+    href: Serilog.Data.LogEventPropertyValueVisitor-2.html#Serilog_Data_LogEventPropertyValueVisitor_2_VisitUnsupportedValue__0_Serilog_Events_LogEventPropertyValue_
+  - name: (
+  - uid: System.IO.TextWriter
+    name: TextWriter
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io.textwriter
+  - name: ','
+  - name: " "
+  - uid: Serilog.Events.LogEventPropertyValue
+    name: LogEventPropertyValue
+    isExternal: true
+    href: Serilog.Events.LogEventPropertyValue.html
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Serilog.Data.LogEventPropertyValueVisitor`2
+  commentId: T:Serilog.Data.LogEventPropertyValueVisitor`2
+  isExternal: true
+  href: Serilog.Data.LogEventPropertyValueVisitor-2.html
+  name: LogEventPropertyValueVisitor<TState, TResult>
+  nameWithType: LogEventPropertyValueVisitor<TState, TResult>
+  fullName: Serilog.Data.LogEventPropertyValueVisitor<TState, TResult>
+  nameWithType.vb: LogEventPropertyValueVisitor(Of TState, TResult)
+  fullName.vb: Serilog.Data.LogEventPropertyValueVisitor(Of TState, TResult)
+  name.vb: LogEventPropertyValueVisitor(Of TState, TResult)
+  spec.csharp:
+  - uid: Serilog.Data.LogEventPropertyValueVisitor`2
+    name: LogEventPropertyValueVisitor
+    isExternal: true
+    href: Serilog.Data.LogEventPropertyValueVisitor-2.html
+  - name: <
+  - name: TState
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: Serilog.Data.LogEventPropertyValueVisitor`2
+    name: LogEventPropertyValueVisitor
+    isExternal: true
+    href: Serilog.Data.LogEventPropertyValueVisitor-2.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TState
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: Serilog.Data
+  commentId: N:Serilog.Data
+  isExternal: true
+  href: Serilog.html
+  name: Serilog.Data
+  nameWithType: Serilog.Data
+  fullName: Serilog.Data
+  spec.csharp:
+  - uid: Serilog
+    name: Serilog
+    isExternal: true
+    href: Serilog.html
+  - name: .
+  - uid: Serilog.Data
+    name: Data
+    isExternal: true
+    href: Serilog.Data.html
+  spec.vb:
+  - uid: Serilog
+    name: Serilog
+    isExternal: true
+    href: Serilog.html
+  - name: .
+  - uid: Serilog.Data
+    name: Data
+    isExternal: true
+    href: Serilog.Data.html
+- uid: Serilog.Data.LogEventPropertyValueVisitor`2.Visit(`0,Serilog.Events.LogEventPropertyValue)
+  commentId: M:Serilog.Data.LogEventPropertyValueVisitor`2.Visit(`0,Serilog.Events.LogEventPropertyValue)
+  isExternal: true
+  href: Serilog.Data.LogEventPropertyValueVisitor-2.html#Serilog_Data_LogEventPropertyValueVisitor_2_Visit__0_Serilog_Events_LogEventPropertyValue_
+  name: Visit(TState, LogEventPropertyValue)
+  nameWithType: LogEventPropertyValueVisitor<TState, TResult>.Visit(TState, LogEventPropertyValue)
+  fullName: Serilog.Data.LogEventPropertyValueVisitor<TState, TResult>.Visit(TState, Serilog.Events.LogEventPropertyValue)
+  nameWithType.vb: LogEventPropertyValueVisitor(Of TState, TResult).Visit(TState, LogEventPropertyValue)
+  fullName.vb: Serilog.Data.LogEventPropertyValueVisitor(Of TState, TResult).Visit(TState, Serilog.Events.LogEventPropertyValue)
+  spec.csharp:
+  - uid: Serilog.Data.LogEventPropertyValueVisitor`2.Visit(`0,Serilog.Events.LogEventPropertyValue)
+    name: Visit
+    isExternal: true
+    href: Serilog.Data.LogEventPropertyValueVisitor-2.html#Serilog_Data_LogEventPropertyValueVisitor_2_Visit__0_Serilog_Events_LogEventPropertyValue_
+  - name: (
+  - name: TState
+  - name: ','
+  - name: " "
+  - uid: Serilog.Events.LogEventPropertyValue
+    name: LogEventPropertyValue
+    isExternal: true
+    href: Serilog.Events.LogEventPropertyValue.html
+  - name: )
+  spec.vb:
+  - uid: Serilog.Data.LogEventPropertyValueVisitor`2.Visit(`0,Serilog.Events.LogEventPropertyValue)
+    name: Visit
+    isExternal: true
+    href: Serilog.Data.LogEventPropertyValueVisitor-2.html#Serilog_Data_LogEventPropertyValueVisitor_2_Visit__0_Serilog_Events_LogEventPropertyValue_
+  - name: (
+  - name: TState
+  - name: ','
+  - name: " "
+  - uid: Serilog.Events.LogEventPropertyValue
+    name: LogEventPropertyValue
+    isExternal: true
+    href: Serilog.Events.LogEventPropertyValue.html
+  - name: )
+- uid: Serilog.Data.LogEventPropertyValueVisitor`2.VisitScalarValue(`0,Serilog.Events.ScalarValue)
+  commentId: M:Serilog.Data.LogEventPropertyValueVisitor`2.VisitScalarValue(`0,Serilog.Events.ScalarValue)
+  isExternal: true
+  href: Serilog.Data.LogEventPropertyValueVisitor-2.html#Serilog_Data_LogEventPropertyValueVisitor_2_VisitScalarValue__0_Serilog_Events_ScalarValue_
+  name: VisitScalarValue(TState, ScalarValue)
+  nameWithType: LogEventPropertyValueVisitor<TState, TResult>.VisitScalarValue(TState, ScalarValue)
+  fullName: Serilog.Data.LogEventPropertyValueVisitor<TState, TResult>.VisitScalarValue(TState, Serilog.Events.ScalarValue)
+  nameWithType.vb: LogEventPropertyValueVisitor(Of TState, TResult).VisitScalarValue(TState, ScalarValue)
+  fullName.vb: Serilog.Data.LogEventPropertyValueVisitor(Of TState, TResult).VisitScalarValue(TState, Serilog.Events.ScalarValue)
+  spec.csharp:
+  - uid: Serilog.Data.LogEventPropertyValueVisitor`2.VisitScalarValue(`0,Serilog.Events.ScalarValue)
+    name: VisitScalarValue
+    isExternal: true
+    href: Serilog.Data.LogEventPropertyValueVisitor-2.html#Serilog_Data_LogEventPropertyValueVisitor_2_VisitScalarValue__0_Serilog_Events_ScalarValue_
+  - name: (
+  - name: TState
+  - name: ','
+  - name: " "
+  - uid: Serilog.Events.ScalarValue
+    name: ScalarValue
+    isExternal: true
+    href: Serilog.Events.ScalarValue.html
+  - name: )
+  spec.vb:
+  - uid: Serilog.Data.LogEventPropertyValueVisitor`2.VisitScalarValue(`0,Serilog.Events.ScalarValue)
+    name: VisitScalarValue
+    isExternal: true
+    href: Serilog.Data.LogEventPropertyValueVisitor-2.html#Serilog_Data_LogEventPropertyValueVisitor_2_VisitScalarValue__0_Serilog_Events_ScalarValue_
+  - name: (
+  - name: TState
+  - name: ','
+  - name: " "
+  - uid: Serilog.Events.ScalarValue
+    name: ScalarValue
+    isExternal: true
+    href: Serilog.Events.ScalarValue.html
+  - name: )
+- uid: Serilog.Data.LogEventPropertyValueVisitor`2.VisitSequenceValue(`0,Serilog.Events.SequenceValue)
+  commentId: M:Serilog.Data.LogEventPropertyValueVisitor`2.VisitSequenceValue(`0,Serilog.Events.SequenceValue)
+  isExternal: true
+  href: Serilog.Data.LogEventPropertyValueVisitor-2.html#Serilog_Data_LogEventPropertyValueVisitor_2_VisitSequenceValue__0_Serilog_Events_SequenceValue_
+  name: VisitSequenceValue(TState, SequenceValue)
+  nameWithType: LogEventPropertyValueVisitor<TState, TResult>.VisitSequenceValue(TState, SequenceValue)
+  fullName: Serilog.Data.LogEventPropertyValueVisitor<TState, TResult>.VisitSequenceValue(TState, Serilog.Events.SequenceValue)
+  nameWithType.vb: LogEventPropertyValueVisitor(Of TState, TResult).VisitSequenceValue(TState, SequenceValue)
+  fullName.vb: Serilog.Data.LogEventPropertyValueVisitor(Of TState, TResult).VisitSequenceValue(TState, Serilog.Events.SequenceValue)
+  spec.csharp:
+  - uid: Serilog.Data.LogEventPropertyValueVisitor`2.VisitSequenceValue(`0,Serilog.Events.SequenceValue)
+    name: VisitSequenceValue
+    isExternal: true
+    href: Serilog.Data.LogEventPropertyValueVisitor-2.html#Serilog_Data_LogEventPropertyValueVisitor_2_VisitSequenceValue__0_Serilog_Events_SequenceValue_
+  - name: (
+  - name: TState
+  - name: ','
+  - name: " "
+  - uid: Serilog.Events.SequenceValue
+    name: SequenceValue
+    isExternal: true
+    href: Serilog.Events.SequenceValue.html
+  - name: )
+  spec.vb:
+  - uid: Serilog.Data.LogEventPropertyValueVisitor`2.VisitSequenceValue(`0,Serilog.Events.SequenceValue)
+    name: VisitSequenceValue
+    isExternal: true
+    href: Serilog.Data.LogEventPropertyValueVisitor-2.html#Serilog_Data_LogEventPropertyValueVisitor_2_VisitSequenceValue__0_Serilog_Events_SequenceValue_
+  - name: (
+  - name: TState
+  - name: ','
+  - name: " "
+  - uid: Serilog.Events.SequenceValue
+    name: SequenceValue
+    isExternal: true
+    href: Serilog.Events.SequenceValue.html
+  - name: )
+- uid: Serilog.Data.LogEventPropertyValueVisitor`2.VisitStructureValue(`0,Serilog.Events.StructureValue)
+  commentId: M:Serilog.Data.LogEventPropertyValueVisitor`2.VisitStructureValue(`0,Serilog.Events.StructureValue)
+  isExternal: true
+  href: Serilog.Data.LogEventPropertyValueVisitor-2.html#Serilog_Data_LogEventPropertyValueVisitor_2_VisitStructureValue__0_Serilog_Events_StructureValue_
+  name: VisitStructureValue(TState, StructureValue)
+  nameWithType: LogEventPropertyValueVisitor<TState, TResult>.VisitStructureValue(TState, StructureValue)
+  fullName: Serilog.Data.LogEventPropertyValueVisitor<TState, TResult>.VisitStructureValue(TState, Serilog.Events.StructureValue)
+  nameWithType.vb: LogEventPropertyValueVisitor(Of TState, TResult).VisitStructureValue(TState, StructureValue)
+  fullName.vb: Serilog.Data.LogEventPropertyValueVisitor(Of TState, TResult).VisitStructureValue(TState, Serilog.Events.StructureValue)
+  spec.csharp:
+  - uid: Serilog.Data.LogEventPropertyValueVisitor`2.VisitStructureValue(`0,Serilog.Events.StructureValue)
+    name: VisitStructureValue
+    isExternal: true
+    href: Serilog.Data.LogEventPropertyValueVisitor-2.html#Serilog_Data_LogEventPropertyValueVisitor_2_VisitStructureValue__0_Serilog_Events_StructureValue_
+  - name: (
+  - name: TState
+  - name: ','
+  - name: " "
+  - uid: Serilog.Events.StructureValue
+    name: StructureValue
+    isExternal: true
+    href: Serilog.Events.StructureValue.html
+  - name: )
+  spec.vb:
+  - uid: Serilog.Data.LogEventPropertyValueVisitor`2.VisitStructureValue(`0,Serilog.Events.StructureValue)
+    name: VisitStructureValue
+    isExternal: true
+    href: Serilog.Data.LogEventPropertyValueVisitor-2.html#Serilog_Data_LogEventPropertyValueVisitor_2_VisitStructureValue__0_Serilog_Events_StructureValue_
+  - name: (
+  - name: TState
+  - name: ','
+  - name: " "
+  - uid: Serilog.Events.StructureValue
+    name: StructureValue
+    isExternal: true
+    href: Serilog.Events.StructureValue.html
+  - name: )
+- uid: Serilog.Data.LogEventPropertyValueVisitor`2.VisitDictionaryValue(`0,Serilog.Events.DictionaryValue)
+  commentId: M:Serilog.Data.LogEventPropertyValueVisitor`2.VisitDictionaryValue(`0,Serilog.Events.DictionaryValue)
+  isExternal: true
+  href: Serilog.Data.LogEventPropertyValueVisitor-2.html#Serilog_Data_LogEventPropertyValueVisitor_2_VisitDictionaryValue__0_Serilog_Events_DictionaryValue_
+  name: VisitDictionaryValue(TState, DictionaryValue)
+  nameWithType: LogEventPropertyValueVisitor<TState, TResult>.VisitDictionaryValue(TState, DictionaryValue)
+  fullName: Serilog.Data.LogEventPropertyValueVisitor<TState, TResult>.VisitDictionaryValue(TState, Serilog.Events.DictionaryValue)
+  nameWithType.vb: LogEventPropertyValueVisitor(Of TState, TResult).VisitDictionaryValue(TState, DictionaryValue)
+  fullName.vb: Serilog.Data.LogEventPropertyValueVisitor(Of TState, TResult).VisitDictionaryValue(TState, Serilog.Events.DictionaryValue)
+  spec.csharp:
+  - uid: Serilog.Data.LogEventPropertyValueVisitor`2.VisitDictionaryValue(`0,Serilog.Events.DictionaryValue)
+    name: VisitDictionaryValue
+    isExternal: true
+    href: Serilog.Data.LogEventPropertyValueVisitor-2.html#Serilog_Data_LogEventPropertyValueVisitor_2_VisitDictionaryValue__0_Serilog_Events_DictionaryValue_
+  - name: (
+  - name: TState
+  - name: ','
+  - name: " "
+  - uid: Serilog.Events.DictionaryValue
+    name: DictionaryValue
+    isExternal: true
+    href: Serilog.Events.DictionaryValue.html
+  - name: )
+  spec.vb:
+  - uid: Serilog.Data.LogEventPropertyValueVisitor`2.VisitDictionaryValue(`0,Serilog.Events.DictionaryValue)
+    name: VisitDictionaryValue
+    isExternal: true
+    href: Serilog.Data.LogEventPropertyValueVisitor-2.html#Serilog_Data_LogEventPropertyValueVisitor_2_VisitDictionaryValue__0_Serilog_Events_DictionaryValue_
+  - name: (
+  - name: TState
+  - name: ','
+  - name: " "
+  - uid: Serilog.Events.DictionaryValue
+    name: DictionaryValue
+    isExternal: true
+    href: Serilog.Events.DictionaryValue.html
+  - name: )
+- uid: Serilog.Data.LogEventPropertyValueVisitor`2.VisitUnsupportedValue(`0,Serilog.Events.LogEventPropertyValue)
+  commentId: M:Serilog.Data.LogEventPropertyValueVisitor`2.VisitUnsupportedValue(`0,Serilog.Events.LogEventPropertyValue)
+  isExternal: true
+  href: Serilog.Data.LogEventPropertyValueVisitor-2.html#Serilog_Data_LogEventPropertyValueVisitor_2_VisitUnsupportedValue__0_Serilog_Events_LogEventPropertyValue_
+  name: VisitUnsupportedValue(TState, LogEventPropertyValue)
+  nameWithType: LogEventPropertyValueVisitor<TState, TResult>.VisitUnsupportedValue(TState, LogEventPropertyValue)
+  fullName: Serilog.Data.LogEventPropertyValueVisitor<TState, TResult>.VisitUnsupportedValue(TState, Serilog.Events.LogEventPropertyValue)
+  nameWithType.vb: LogEventPropertyValueVisitor(Of TState, TResult).VisitUnsupportedValue(TState, LogEventPropertyValue)
+  fullName.vb: Serilog.Data.LogEventPropertyValueVisitor(Of TState, TResult).VisitUnsupportedValue(TState, Serilog.Events.LogEventPropertyValue)
+  spec.csharp:
+  - uid: Serilog.Data.LogEventPropertyValueVisitor`2.VisitUnsupportedValue(`0,Serilog.Events.LogEventPropertyValue)
+    name: VisitUnsupportedValue
+    isExternal: true
+    href: Serilog.Data.LogEventPropertyValueVisitor-2.html#Serilog_Data_LogEventPropertyValueVisitor_2_VisitUnsupportedValue__0_Serilog_Events_LogEventPropertyValue_
+  - name: (
+  - name: TState
+  - name: ','
+  - name: " "
+  - uid: Serilog.Events.LogEventPropertyValue
+    name: LogEventPropertyValue
+    isExternal: true
+    href: Serilog.Events.LogEventPropertyValue.html
+  - name: )
+  spec.vb:
+  - uid: Serilog.Data.LogEventPropertyValueVisitor`2.VisitUnsupportedValue(`0,Serilog.Events.LogEventPropertyValue)
+    name: VisitUnsupportedValue
+    isExternal: true
+    href: Serilog.Data.LogEventPropertyValueVisitor-2.html#Serilog_Data_LogEventPropertyValueVisitor_2_VisitUnsupportedValue__0_Serilog_Events_LogEventPropertyValue_
+  - name: (
+  - name: TState
+  - name: ','
+  - name: " "
+  - uid: Serilog.Events.LogEventPropertyValue
+    name: LogEventPropertyValue
+    isExternal: true
+    href: Serilog.Events.LogEventPropertyValue.html
+  - name: )
+- uid: Serilog.Formatting.Json.JsonFormatter
+  commentId: T:Serilog.Formatting.Json.JsonFormatter
+  isExternal: true
+  href: Serilog.Formatting.Json.JsonFormatter.html
+  name: JsonFormatter
+  nameWithType: JsonFormatter
+  fullName: Serilog.Formatting.Json.JsonFormatter
+- uid: Serilog.Events.StructureValue.TypeTag
+  commentId: P:Serilog.Events.StructureValue.TypeTag
+  isExternal: true
+  href: Serilog.Events.StructureValue.html#Serilog_Events_StructureValue_TypeTag
+  name: TypeTag
+  nameWithType: StructureValue.TypeTag
+  fullName: Serilog.Events.StructureValue.TypeTag
+- uid: Serilog.Formatting.Json.JsonValueFormatter.#ctor*
+  commentId: Overload:Serilog.Formatting.Json.JsonValueFormatter.#ctor
+  isExternal: true
+  href: Serilog.Formatting.Json.JsonValueFormatter.html#Serilog_Formatting_Json_JsonValueFormatter__ctor_System_String_
+  name: JsonValueFormatter
+  nameWithType: JsonValueFormatter.JsonValueFormatter
+  fullName: Serilog.Formatting.Json.JsonValueFormatter.JsonValueFormatter
+  nameWithType.vb: JsonValueFormatter.New
+  fullName.vb: Serilog.Formatting.Json.JsonValueFormatter.New
+  name.vb: New
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Serilog.Formatting.Json.JsonValueFormatter.Format*
+  commentId: Overload:Serilog.Formatting.Json.JsonValueFormatter.Format
+  isExternal: true
+  href: Serilog.Formatting.Json.JsonValueFormatter.html#Serilog_Formatting_Json_JsonValueFormatter_Format_Serilog_Events_LogEventPropertyValue_System_IO_TextWriter_
+  name: Format
+  nameWithType: JsonValueFormatter.Format
+  fullName: Serilog.Formatting.Json.JsonValueFormatter.Format
+- uid: Serilog.Events.LogEventPropertyValue
+  commentId: T:Serilog.Events.LogEventPropertyValue
+  parent: Serilog.Events
+  isExternal: true
+  href: Serilog.Events.LogEventPropertyValue.html
+  name: LogEventPropertyValue
+  nameWithType: LogEventPropertyValue
+  fullName: Serilog.Events.LogEventPropertyValue
+- uid: System.IO.TextWriter
+  commentId: T:System.IO.TextWriter
+  parent: System.IO
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.io.textwriter
+  name: TextWriter
+  nameWithType: TextWriter
+  fullName: System.IO.TextWriter
+- uid: Serilog.Events
+  commentId: N:Serilog.Events
+  isExternal: true
+  href: Serilog.html
+  name: Serilog.Events
+  nameWithType: Serilog.Events
+  fullName: Serilog.Events
+  spec.csharp:
+  - uid: Serilog
+    name: Serilog
+    isExternal: true
+    href: Serilog.html
+  - name: .
+  - uid: Serilog.Events
+    name: Events
+    isExternal: true
+    href: Serilog.Events.html
+  spec.vb:
+  - uid: Serilog
+    name: Serilog
+    isExternal: true
+    href: Serilog.html
+  - name: .
+  - uid: Serilog.Events
+    name: Events
+    isExternal: true
+    href: Serilog.Events.html
+- uid: System.IO
+  commentId: N:System.IO
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.IO
+  nameWithType: System.IO
+  fullName: System.IO
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.IO
+    name: IO
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.IO
+    name: IO
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io
+- uid: Serilog.Events.ScalarValue
+  commentId: T:Serilog.Events.ScalarValue
+  parent: Serilog.Events
+  isExternal: true
+  href: Serilog.Events.ScalarValue.html
+  name: ScalarValue
+  nameWithType: ScalarValue
+  fullName: Serilog.Events.ScalarValue
+- uid: System.ArgumentNullException
+  commentId: T:System.ArgumentNullException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.argumentnullexception
+  name: ArgumentNullException
+  nameWithType: ArgumentNullException
+  fullName: System.ArgumentNullException
+- uid: Serilog.Formatting.Json.JsonValueFormatter.VisitScalarValue*
+  commentId: Overload:Serilog.Formatting.Json.JsonValueFormatter.VisitScalarValue
+  isExternal: true
+  href: Serilog.Formatting.Json.JsonValueFormatter.html#Serilog_Formatting_Json_JsonValueFormatter_VisitScalarValue_System_IO_TextWriter_Serilog_Events_ScalarValue_
+  name: VisitScalarValue
+  nameWithType: JsonValueFormatter.VisitScalarValue
+  fullName: Serilog.Formatting.Json.JsonValueFormatter.VisitScalarValue
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Serilog.Events.SequenceValue
+  commentId: T:Serilog.Events.SequenceValue
+  parent: Serilog.Events
+  isExternal: true
+  href: Serilog.Events.SequenceValue.html
+  name: SequenceValue
+  nameWithType: SequenceValue
+  fullName: Serilog.Events.SequenceValue
+- uid: Serilog.Formatting.Json.JsonValueFormatter.VisitSequenceValue*
+  commentId: Overload:Serilog.Formatting.Json.JsonValueFormatter.VisitSequenceValue
+  isExternal: true
+  href: Serilog.Formatting.Json.JsonValueFormatter.html#Serilog_Formatting_Json_JsonValueFormatter_VisitSequenceValue_System_IO_TextWriter_Serilog_Events_SequenceValue_
+  name: VisitSequenceValue
+  nameWithType: JsonValueFormatter.VisitSequenceValue
+  fullName: Serilog.Formatting.Json.JsonValueFormatter.VisitSequenceValue
+- uid: Serilog.Events.StructureValue
+  commentId: T:Serilog.Events.StructureValue
+  parent: Serilog.Events
+  isExternal: true
+  href: Serilog.Events.StructureValue.html
+  name: StructureValue
+  nameWithType: StructureValue
+  fullName: Serilog.Events.StructureValue
+- uid: Serilog.Formatting.Json.JsonValueFormatter.VisitStructureValue*
+  commentId: Overload:Serilog.Formatting.Json.JsonValueFormatter.VisitStructureValue
+  isExternal: true
+  href: Serilog.Formatting.Json.JsonValueFormatter.html#Serilog_Formatting_Json_JsonValueFormatter_VisitStructureValue_System_IO_TextWriter_Serilog_Events_StructureValue_
+  name: VisitStructureValue
+  nameWithType: JsonValueFormatter.VisitStructureValue
+  fullName: Serilog.Formatting.Json.JsonValueFormatter.VisitStructureValue
+- uid: Serilog.Events.DictionaryValue
+  commentId: T:Serilog.Events.DictionaryValue
+  parent: Serilog.Events
+  isExternal: true
+  href: Serilog.Events.DictionaryValue.html
+  name: DictionaryValue
+  nameWithType: DictionaryValue
+  fullName: Serilog.Events.DictionaryValue
+- uid: Serilog.Formatting.Json.JsonValueFormatter.VisitDictionaryValue*
+  commentId: Overload:Serilog.Formatting.Json.JsonValueFormatter.VisitDictionaryValue
+  isExternal: true
+  href: Serilog.Formatting.Json.JsonValueFormatter.html#Serilog_Formatting_Json_JsonValueFormatter_VisitDictionaryValue_System_IO_TextWriter_Serilog_Events_DictionaryValue_
+  name: VisitDictionaryValue
+  nameWithType: JsonValueFormatter.VisitDictionaryValue
+  fullName: Serilog.Formatting.Json.JsonValueFormatter.VisitDictionaryValue
+- uid: Serilog.Formatting.Json.JsonValueFormatter.FormatLiteralValue*
+  commentId: Overload:Serilog.Formatting.Json.JsonValueFormatter.FormatLiteralValue
+  isExternal: true
+  href: Serilog.Formatting.Json.JsonValueFormatter.html#Serilog_Formatting_Json_JsonValueFormatter_FormatLiteralValue_System_Object_System_IO_TextWriter_
+  name: FormatLiteralValue
+  nameWithType: JsonValueFormatter.FormatLiteralValue
+  fullName: Serilog.Formatting.Json.JsonValueFormatter.FormatLiteralValue
+- uid: Serilog.Formatting.Json.JsonValueFormatter.WriteQuotedJsonString*
+  commentId: Overload:Serilog.Formatting.Json.JsonValueFormatter.WriteQuotedJsonString
+  isExternal: true
+  href: Serilog.Formatting.Json.JsonValueFormatter.html#Serilog_Formatting_Json_JsonValueFormatter_WriteQuotedJsonString_System_String_System_IO_TextWriter_
+  name: WriteQuotedJsonString
+  nameWithType: JsonValueFormatter.WriteQuotedJsonString
+  fullName: Serilog.Formatting.Json.JsonValueFormatter.WriteQuotedJsonString

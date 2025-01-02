@@ -1,0 +1,748 @@
+### YamlMime:ManagedReference
+items:
+- uid: System.Collections.Immutable.ImmutableStack
+  commentId: T:System.Collections.Immutable.ImmutableStack
+  id: ImmutableStack
+  parent: System.Collections.Immutable
+  children:
+  - System.Collections.Immutable.ImmutableStack.CreateRange``1(System.Collections.Generic.IEnumerable{``0})
+  - System.Collections.Immutable.ImmutableStack.Create``1
+  - System.Collections.Immutable.ImmutableStack.Create``1(``0)
+  - System.Collections.Immutable.ImmutableStack.Create``1(``0[])
+  - System.Collections.Immutable.ImmutableStack.Pop``1(System.Collections.Immutable.IImmutableStack{``0},``0@)
+  langs:
+  - csharp
+  - vb
+  name: ImmutableStack
+  nameWithType: ImmutableStack
+  fullName: System.Collections.Immutable.ImmutableStack
+  type: Class
+  assemblies:
+  - System.Collections.Immutable
+  namespace: System.Collections.Immutable
+  summary: >-
+    Provides a set of initialization methods for instances of the <xref href="System.Collections.Immutable.ImmutableStack%601" data-throw-if-not-resolved="false"></xref> class.  
+
+     NuGet package: System.Collections.Immutable (about immutable collections and how to install)
+  example: []
+  syntax:
+    content: public static class ImmutableStack
+    content.vb: Public Module ImmutableStack
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: System.Collections.Immutable.ImmutableStack.Create``1
+  commentId: M:System.Collections.Immutable.ImmutableStack.Create``1
+  id: Create``1
+  parent: System.Collections.Immutable.ImmutableStack
+  langs:
+  - csharp
+  - vb
+  name: Create<T>()
+  nameWithType: ImmutableStack.Create<T>()
+  fullName: System.Collections.Immutable.ImmutableStack.Create<T>()
+  type: Method
+  assemblies:
+  - System.Collections.Immutable
+  namespace: System.Collections.Immutable
+  summary: Creates an empty immutable stack.
+  example: []
+  syntax:
+    content: public static ImmutableStack<T> Create<T>()
+    typeParameters:
+    - id: T
+      description: The type of items to be stored in the immutable stack.
+    return:
+      type: System.Collections.Immutable.ImmutableStack{{T}}
+      description: An empty immutable stack.
+    content.vb: Public Shared Function Create(Of T)() As ImmutableStack(Of T)
+  overload: System.Collections.Immutable.ImmutableStack.Create*
+  nameWithType.vb: ImmutableStack.Create(Of T)()
+  fullName.vb: System.Collections.Immutable.ImmutableStack.Create(Of T)()
+  name.vb: Create(Of T)()
+- uid: System.Collections.Immutable.ImmutableStack.Create``1(``0)
+  commentId: M:System.Collections.Immutable.ImmutableStack.Create``1(``0)
+  id: Create``1(``0)
+  parent: System.Collections.Immutable.ImmutableStack
+  langs:
+  - csharp
+  - vb
+  name: Create<T>(T)
+  nameWithType: ImmutableStack.Create<T>(T)
+  fullName: System.Collections.Immutable.ImmutableStack.Create<T>(T)
+  type: Method
+  assemblies:
+  - System.Collections.Immutable
+  namespace: System.Collections.Immutable
+  summary: Creates a new immutable stack that contains the specified item.
+  example: []
+  syntax:
+    content: public static ImmutableStack<T> Create<T>(T item)
+    parameters:
+    - id: item
+      type: '{T}'
+      description: The item to prepopulate the stack with.
+    typeParameters:
+    - id: T
+      description: The type of items in the immutable stack.
+    return:
+      type: System.Collections.Immutable.ImmutableStack{{T}}
+      description: A new immutable collection that contains the specified item.
+    content.vb: Public Shared Function Create(Of T)(item As T) As ImmutableStack(Of T)
+  overload: System.Collections.Immutable.ImmutableStack.Create*
+  nameWithType.vb: ImmutableStack.Create(Of T)(T)
+  fullName.vb: System.Collections.Immutable.ImmutableStack.Create(Of T)(T)
+  name.vb: Create(Of T)(T)
+- uid: System.Collections.Immutable.ImmutableStack.CreateRange``1(System.Collections.Generic.IEnumerable{``0})
+  commentId: M:System.Collections.Immutable.ImmutableStack.CreateRange``1(System.Collections.Generic.IEnumerable{``0})
+  id: CreateRange``1(System.Collections.Generic.IEnumerable{``0})
+  parent: System.Collections.Immutable.ImmutableStack
+  langs:
+  - csharp
+  - vb
+  name: CreateRange<T>(IEnumerable<T>)
+  nameWithType: ImmutableStack.CreateRange<T>(IEnumerable<T>)
+  fullName: System.Collections.Immutable.ImmutableStack.CreateRange<T>(System.Collections.Generic.IEnumerable<T>)
+  type: Method
+  assemblies:
+  - System.Collections.Immutable
+  namespace: System.Collections.Immutable
+  summary: Creates a new immutable stack that contains the specified items.
+  example: []
+  syntax:
+    content: public static ImmutableStack<T> CreateRange<T>(IEnumerable<T> items)
+    parameters:
+    - id: items
+      type: System.Collections.Generic.IEnumerable{{T}}
+      description: The items to add to the stack before it's immutable.
+    typeParameters:
+    - id: T
+      description: The type of items in the stack.
+    return:
+      type: System.Collections.Immutable.ImmutableStack{{T}}
+      description: An immutable stack that contains the specified items.
+    content.vb: Public Shared Function CreateRange(Of T)(items As IEnumerable(Of T)) As ImmutableStack(Of T)
+  overload: System.Collections.Immutable.ImmutableStack.CreateRange*
+  nameWithType.vb: ImmutableStack.CreateRange(Of T)(IEnumerable(Of T))
+  fullName.vb: System.Collections.Immutable.ImmutableStack.CreateRange(Of T)(System.Collections.Generic.IEnumerable(Of T))
+  name.vb: CreateRange(Of T)(IEnumerable(Of T))
+- uid: System.Collections.Immutable.ImmutableStack.Create``1(``0[])
+  commentId: M:System.Collections.Immutable.ImmutableStack.Create``1(``0[])
+  id: Create``1(``0[])
+  parent: System.Collections.Immutable.ImmutableStack
+  langs:
+  - csharp
+  - vb
+  name: Create<T>(params T[])
+  nameWithType: ImmutableStack.Create<T>(params T[])
+  fullName: System.Collections.Immutable.ImmutableStack.Create<T>(params T[])
+  type: Method
+  assemblies:
+  - System.Collections.Immutable
+  namespace: System.Collections.Immutable
+  summary: Creates a new immutable stack that contains the specified array of items.
+  example: []
+  syntax:
+    content: public static ImmutableStack<T> Create<T>(params T[] items)
+    parameters:
+    - id: items
+      type: '{T}[]'
+      description: An array that contains the items to prepopulate the stack with.
+    typeParameters:
+    - id: T
+      description: The type of items in the immutable stack.
+    return:
+      type: System.Collections.Immutable.ImmutableStack{{T}}
+      description: A new immutable stack that contains the specified items.
+    content.vb: Public Shared Function Create(Of T)(ParamArray items As T()) As ImmutableStack(Of T)
+  overload: System.Collections.Immutable.ImmutableStack.Create*
+  nameWithType.vb: ImmutableStack.Create(Of T)(ParamArray T())
+  fullName.vb: System.Collections.Immutable.ImmutableStack.Create(Of T)(ParamArray T())
+  name.vb: Create(Of T)(ParamArray T())
+- uid: System.Collections.Immutable.ImmutableStack.Pop``1(System.Collections.Immutable.IImmutableStack{``0},``0@)
+  commentId: M:System.Collections.Immutable.ImmutableStack.Pop``1(System.Collections.Immutable.IImmutableStack{``0},``0@)
+  id: Pop``1(System.Collections.Immutable.IImmutableStack{``0},``0@)
+  isExtensionMethod: true
+  parent: System.Collections.Immutable.ImmutableStack
+  langs:
+  - csharp
+  - vb
+  name: Pop<T>(IImmutableStack<T>, out T)
+  nameWithType: ImmutableStack.Pop<T>(IImmutableStack<T>, out T)
+  fullName: System.Collections.Immutable.ImmutableStack.Pop<T>(System.Collections.Immutable.IImmutableStack<T>, out T)
+  type: Method
+  assemblies:
+  - System.Collections.Immutable
+  namespace: System.Collections.Immutable
+  summary: Removes the specified item from an immutable stack.
+  example: []
+  syntax:
+    content: public static IImmutableStack<T> Pop<T>(this IImmutableStack<T> stack, out T value)
+    parameters:
+    - id: stack
+      type: System.Collections.Immutable.IImmutableStack{{T}}
+      description: The stack to modify.
+    - id: value
+      type: '{T}'
+      description: The item to remove from the stack.
+    typeParameters:
+    - id: T
+      description: The type of items contained in the stack.
+    return:
+      type: System.Collections.Immutable.IImmutableStack{{T}}
+      description: A stack; never <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.
+    content.vb: Public Shared Function Pop(Of T)(stack As IImmutableStack(Of T), value As T) As IImmutableStack(Of T)
+  overload: System.Collections.Immutable.ImmutableStack.Pop*
+  exceptions:
+  - type: System.InvalidOperationException
+    commentId: T:System.InvalidOperationException
+    description: The stack is empty.
+  nameWithType.vb: ImmutableStack.Pop(Of T)(IImmutableStack(Of T), T)
+  fullName.vb: System.Collections.Immutable.ImmutableStack.Pop(Of T)(System.Collections.Immutable.IImmutableStack(Of T), T)
+  name.vb: Pop(Of T)(IImmutableStack(Of T), T)
+references:
+- uid: System.Collections.Immutable.ImmutableStack`1
+  commentId: T:System.Collections.Immutable.ImmutableStack`1
+  parent: System.Collections.Immutable
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.immutable.immutablestack-1
+  name: ImmutableStack<T>
+  nameWithType: ImmutableStack<T>
+  fullName: System.Collections.Immutable.ImmutableStack<T>
+  nameWithType.vb: ImmutableStack(Of T)
+  fullName.vb: System.Collections.Immutable.ImmutableStack(Of T)
+  name.vb: ImmutableStack(Of T)
+  spec.csharp:
+  - uid: System.Collections.Immutable.ImmutableStack`1
+    name: ImmutableStack
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.immutable.immutablestack-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Immutable.ImmutableStack`1
+    name: ImmutableStack
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.immutable.immutablestack-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Immutable
+  commentId: N:System.Collections.Immutable
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Immutable
+  nameWithType: System.Collections.Immutable
+  fullName: System.Collections.Immutable
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Immutable
+    name: Immutable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.immutable
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Immutable
+    name: Immutable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.immutable
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Collections.Immutable.ImmutableStack.Create*
+  commentId: Overload:System.Collections.Immutable.ImmutableStack.Create
+  isExternal: true
+  href: System.Collections.Immutable.ImmutableStack.html#System_Collections_Immutable_ImmutableStack_Create__1
+  name: Create
+  nameWithType: ImmutableStack.Create
+  fullName: System.Collections.Immutable.ImmutableStack.Create
+- uid: System.Collections.Immutable.ImmutableStack{{T}}
+  commentId: T:System.Collections.Immutable.ImmutableStack{`0}
+  parent: System.Collections.Immutable
+  definition: System.Collections.Immutable.ImmutableStack`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.immutable.immutablestack-1
+  name: ImmutableStack<T>
+  nameWithType: ImmutableStack<T>
+  fullName: System.Collections.Immutable.ImmutableStack<T>
+  nameWithType.vb: ImmutableStack(Of T)
+  fullName.vb: System.Collections.Immutable.ImmutableStack(Of T)
+  name.vb: ImmutableStack(Of T)
+  spec.csharp:
+  - uid: System.Collections.Immutable.ImmutableStack`1
+    name: ImmutableStack
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.immutable.immutablestack-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Immutable.ImmutableStack`1
+    name: ImmutableStack
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.immutable.immutablestack-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: System.Collections.Immutable.ImmutableStack.CreateRange*
+  commentId: Overload:System.Collections.Immutable.ImmutableStack.CreateRange
+  isExternal: true
+  href: System.Collections.Immutable.ImmutableStack.html#System_Collections_Immutable_ImmutableStack_CreateRange__1_System_Collections_Generic_IEnumerable___0__
+  name: CreateRange
+  nameWithType: ImmutableStack.CreateRange
+  fullName: System.Collections.Immutable.ImmutableStack.CreateRange
+- uid: System.Collections.Generic.IEnumerable{{T}}
+  commentId: T:System.Collections.Generic.IEnumerable{`0}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: '{T}[]'
+  isExternal: true
+  name: T[]
+  nameWithType: T[]
+  fullName: T[]
+  nameWithType.vb: T()
+  fullName.vb: T()
+  name.vb: T()
+  spec.csharp:
+  - name: T
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - name: T
+  - name: (
+  - name: )
+- uid: System.InvalidOperationException
+  commentId: T:System.InvalidOperationException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.invalidoperationexception
+  name: InvalidOperationException
+  nameWithType: InvalidOperationException
+  fullName: System.InvalidOperationException
+- uid: System.Collections.Immutable.ImmutableStack.Pop*
+  commentId: Overload:System.Collections.Immutable.ImmutableStack.Pop
+  isExternal: true
+  href: System.Collections.Immutable.ImmutableStack.html#System_Collections_Immutable_ImmutableStack_Pop__1_System_Collections_Immutable_IImmutableStack___0____0__
+  name: Pop
+  nameWithType: ImmutableStack.Pop
+  fullName: System.Collections.Immutable.ImmutableStack.Pop
+- uid: System.Collections.Immutable.IImmutableStack{{T}}
+  commentId: T:System.Collections.Immutable.IImmutableStack{`0}
+  parent: System.Collections.Immutable
+  definition: System.Collections.Immutable.IImmutableStack`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.immutable.iimmutablestack-1
+  name: IImmutableStack<T>
+  nameWithType: IImmutableStack<T>
+  fullName: System.Collections.Immutable.IImmutableStack<T>
+  nameWithType.vb: IImmutableStack(Of T)
+  fullName.vb: System.Collections.Immutable.IImmutableStack(Of T)
+  name.vb: IImmutableStack(Of T)
+  spec.csharp:
+  - uid: System.Collections.Immutable.IImmutableStack`1
+    name: IImmutableStack
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.immutable.iimmutablestack-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Immutable.IImmutableStack`1
+    name: IImmutableStack
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.immutable.iimmutablestack-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Immutable.IImmutableStack`1
+  commentId: T:System.Collections.Immutable.IImmutableStack`1
+  parent: System.Collections.Immutable
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.immutable.iimmutablestack-1
+  name: IImmutableStack<T>
+  nameWithType: IImmutableStack<T>
+  fullName: System.Collections.Immutable.IImmutableStack<T>
+  nameWithType.vb: IImmutableStack(Of T)
+  fullName.vb: System.Collections.Immutable.IImmutableStack(Of T)
+  name.vb: IImmutableStack(Of T)
+  spec.csharp:
+  - uid: System.Collections.Immutable.IImmutableStack`1
+    name: IImmutableStack
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.immutable.iimmutablestack-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Immutable.IImmutableStack`1
+    name: IImmutableStack
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.immutable.iimmutablestack-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )

@@ -1,0 +1,582 @@
+### YamlMime:ManagedReference
+items:
+- uid: MessagePack.ExtensionHeader
+  commentId: T:MessagePack.ExtensionHeader
+  id: ExtensionHeader
+  parent: MessagePack
+  children:
+  - MessagePack.ExtensionHeader.#ctor(System.SByte,System.Int32)
+  - MessagePack.ExtensionHeader.#ctor(System.SByte,System.UInt32)
+  - MessagePack.ExtensionHeader.Equals(MessagePack.ExtensionHeader)
+  - MessagePack.ExtensionHeader.Length
+  - MessagePack.ExtensionHeader.TypeCode
+  langs:
+  - csharp
+  - vb
+  name: ExtensionHeader
+  nameWithType: ExtensionHeader
+  fullName: MessagePack.ExtensionHeader
+  type: Struct
+  assemblies:
+  - MessagePack
+  namespace: MessagePack
+  syntax:
+    content: 'public struct ExtensionHeader : IEquatable<ExtensionHeader>'
+    content.vb: Public Structure ExtensionHeader Implements IEquatable(Of ExtensionHeader)
+  implements:
+  - System.IEquatable{MessagePack.ExtensionHeader}
+  inheritedMembers:
+  - System.ValueType.Equals(System.Object)
+  - System.ValueType.GetHashCode
+  - System.ValueType.ToString
+  - System.Object.GetType
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+- uid: MessagePack.ExtensionHeader.#ctor(System.SByte,System.UInt32)
+  commentId: M:MessagePack.ExtensionHeader.#ctor(System.SByte,System.UInt32)
+  id: '#ctor(System.SByte,System.UInt32)'
+  parent: MessagePack.ExtensionHeader
+  langs:
+  - csharp
+  - vb
+  name: ExtensionHeader(sbyte, uint)
+  nameWithType: ExtensionHeader.ExtensionHeader(sbyte, uint)
+  fullName: MessagePack.ExtensionHeader.ExtensionHeader(sbyte, uint)
+  type: Constructor
+  assemblies:
+  - MessagePack
+  namespace: MessagePack
+  syntax:
+    content: public ExtensionHeader(sbyte typeCode, uint length)
+    parameters:
+    - id: typeCode
+      type: System.SByte
+    - id: length
+      type: System.UInt32
+    content.vb: Public Sub New(typeCode As SByte, length As UInteger)
+  overload: MessagePack.ExtensionHeader.#ctor*
+  nameWithType.vb: ExtensionHeader.New(SByte, UInteger)
+  fullName.vb: MessagePack.ExtensionHeader.New(SByte, UInteger)
+  name.vb: New(SByte, UInteger)
+- uid: MessagePack.ExtensionHeader.#ctor(System.SByte,System.Int32)
+  commentId: M:MessagePack.ExtensionHeader.#ctor(System.SByte,System.Int32)
+  id: '#ctor(System.SByte,System.Int32)'
+  parent: MessagePack.ExtensionHeader
+  langs:
+  - csharp
+  - vb
+  name: ExtensionHeader(sbyte, int)
+  nameWithType: ExtensionHeader.ExtensionHeader(sbyte, int)
+  fullName: MessagePack.ExtensionHeader.ExtensionHeader(sbyte, int)
+  type: Constructor
+  assemblies:
+  - MessagePack
+  namespace: MessagePack
+  syntax:
+    content: public ExtensionHeader(sbyte typeCode, int length)
+    parameters:
+    - id: typeCode
+      type: System.SByte
+    - id: length
+      type: System.Int32
+    content.vb: Public Sub New(typeCode As SByte, length As Integer)
+  overload: MessagePack.ExtensionHeader.#ctor*
+  nameWithType.vb: ExtensionHeader.New(SByte, Integer)
+  fullName.vb: MessagePack.ExtensionHeader.New(SByte, Integer)
+  name.vb: New(SByte, Integer)
+- uid: MessagePack.ExtensionHeader.Equals(MessagePack.ExtensionHeader)
+  commentId: M:MessagePack.ExtensionHeader.Equals(MessagePack.ExtensionHeader)
+  id: Equals(MessagePack.ExtensionHeader)
+  parent: MessagePack.ExtensionHeader
+  langs:
+  - csharp
+  - vb
+  name: Equals(ExtensionHeader)
+  nameWithType: ExtensionHeader.Equals(ExtensionHeader)
+  fullName: MessagePack.ExtensionHeader.Equals(MessagePack.ExtensionHeader)
+  type: Method
+  assemblies:
+  - MessagePack
+  namespace: MessagePack
+  example: []
+  syntax:
+    content: public bool Equals(ExtensionHeader other)
+    parameters:
+    - id: other
+      type: MessagePack.ExtensionHeader
+    return:
+      type: System.Boolean
+    content.vb: Public Function Equals(other As ExtensionHeader) As Boolean
+  overload: MessagePack.ExtensionHeader.Equals*
+  implements:
+  - System.IEquatable{MessagePack.ExtensionHeader}.Equals(MessagePack.ExtensionHeader)
+- uid: MessagePack.ExtensionHeader.TypeCode
+  commentId: P:MessagePack.ExtensionHeader.TypeCode
+  id: TypeCode
+  parent: MessagePack.ExtensionHeader
+  langs:
+  - csharp
+  - vb
+  name: TypeCode
+  nameWithType: ExtensionHeader.TypeCode
+  fullName: MessagePack.ExtensionHeader.TypeCode
+  type: Property
+  assemblies:
+  - MessagePack
+  namespace: MessagePack
+  syntax:
+    content: public readonly sbyte TypeCode { get; }
+    parameters: []
+    return:
+      type: System.SByte
+    content.vb: Public ReadOnly Property TypeCode As SByte
+  overload: MessagePack.ExtensionHeader.TypeCode*
+- uid: MessagePack.ExtensionHeader.Length
+  commentId: P:MessagePack.ExtensionHeader.Length
+  id: Length
+  parent: MessagePack.ExtensionHeader
+  langs:
+  - csharp
+  - vb
+  name: Length
+  nameWithType: ExtensionHeader.Length
+  fullName: MessagePack.ExtensionHeader.Length
+  type: Property
+  assemblies:
+  - MessagePack
+  namespace: MessagePack
+  syntax:
+    content: public readonly uint Length { get; }
+    parameters: []
+    return:
+      type: System.UInt32
+    content.vb: Public ReadOnly Property Length As UInteger
+  overload: MessagePack.ExtensionHeader.Length*
+references:
+- uid: MessagePack
+  commentId: N:MessagePack
+  isExternal: true
+  href: MessagePack.html
+  name: MessagePack
+  nameWithType: MessagePack
+  fullName: MessagePack
+- uid: System.IEquatable{MessagePack.ExtensionHeader}
+  commentId: T:System.IEquatable{MessagePack.ExtensionHeader}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<ExtensionHeader>
+  nameWithType: IEquatable<ExtensionHeader>
+  fullName: System.IEquatable<MessagePack.ExtensionHeader>
+  nameWithType.vb: IEquatable(Of ExtensionHeader)
+  fullName.vb: System.IEquatable(Of MessagePack.ExtensionHeader)
+  name.vb: IEquatable(Of ExtensionHeader)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: MessagePack.ExtensionHeader
+    name: ExtensionHeader
+    isExternal: true
+    href: MessagePack.ExtensionHeader.html
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: MessagePack.ExtensionHeader
+    name: ExtensionHeader
+    isExternal: true
+    href: MessagePack.ExtensionHeader.html
+  - name: )
+- uid: System.ValueType.Equals(System.Object)
+  commentId: M:System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  name: Equals(object)
+  nameWithType: ValueType.Equals(object)
+  fullName: System.ValueType.Equals(object)
+  nameWithType.vb: ValueType.Equals(Object)
+  fullName.vb: System.ValueType.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType.GetHashCode
+  commentId: M:System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  name: GetHashCode()
+  nameWithType: ValueType.GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+- uid: System.ValueType.ToString
+  commentId: M:System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  name: ToString()
+  nameWithType: ValueType.ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.IEquatable`1
+  commentId: T:System.IEquatable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<T>
+  nameWithType: IEquatable<T>
+  fullName: System.IEquatable<T>
+  nameWithType.vb: IEquatable(Of T)
+  fullName.vb: System.IEquatable(Of T)
+  name.vb: IEquatable(Of T)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.ValueType
+  commentId: T:System.ValueType
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype
+  name: ValueType
+  nameWithType: ValueType
+  fullName: System.ValueType
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: MessagePack.ExtensionHeader.#ctor*
+  commentId: Overload:MessagePack.ExtensionHeader.#ctor
+  isExternal: true
+  href: MessagePack.ExtensionHeader.html#MessagePack_ExtensionHeader__ctor_System_SByte_System_UInt32_
+  name: ExtensionHeader
+  nameWithType: ExtensionHeader.ExtensionHeader
+  fullName: MessagePack.ExtensionHeader.ExtensionHeader
+  nameWithType.vb: ExtensionHeader.New
+  fullName.vb: MessagePack.ExtensionHeader.New
+  name.vb: New
+- uid: System.SByte
+  commentId: T:System.SByte
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.sbyte
+  name: sbyte
+  nameWithType: sbyte
+  fullName: sbyte
+  nameWithType.vb: SByte
+  fullName.vb: SByte
+  name.vb: SByte
+- uid: System.UInt32
+  commentId: T:System.UInt32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.uint32
+  name: uint
+  nameWithType: uint
+  fullName: uint
+  nameWithType.vb: UInteger
+  fullName.vb: UInteger
+  name.vb: UInteger
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: MessagePack.ExtensionHeader.Equals*
+  commentId: Overload:MessagePack.ExtensionHeader.Equals
+  isExternal: true
+  href: MessagePack.ExtensionHeader.html#MessagePack_ExtensionHeader_Equals_MessagePack_ExtensionHeader_
+  name: Equals
+  nameWithType: ExtensionHeader.Equals
+  fullName: MessagePack.ExtensionHeader.Equals
+- uid: System.IEquatable{MessagePack.ExtensionHeader}.Equals(MessagePack.ExtensionHeader)
+  commentId: M:System.IEquatable{MessagePack.ExtensionHeader}.Equals(MessagePack.ExtensionHeader)
+  parent: System.IEquatable{MessagePack.ExtensionHeader}
+  definition: System.IEquatable`1.Equals(`0)
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  name: Equals(ExtensionHeader)
+  nameWithType: IEquatable<ExtensionHeader>.Equals(ExtensionHeader)
+  fullName: System.IEquatable<MessagePack.ExtensionHeader>.Equals(MessagePack.ExtensionHeader)
+  nameWithType.vb: IEquatable(Of ExtensionHeader).Equals(ExtensionHeader)
+  fullName.vb: System.IEquatable(Of MessagePack.ExtensionHeader).Equals(MessagePack.ExtensionHeader)
+  spec.csharp:
+  - uid: System.IEquatable{MessagePack.ExtensionHeader}.Equals(MessagePack.ExtensionHeader)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - uid: MessagePack.ExtensionHeader
+    name: ExtensionHeader
+    isExternal: true
+    href: MessagePack.ExtensionHeader.html
+  - name: )
+  spec.vb:
+  - uid: System.IEquatable{MessagePack.ExtensionHeader}.Equals(MessagePack.ExtensionHeader)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - uid: MessagePack.ExtensionHeader
+    name: ExtensionHeader
+    isExternal: true
+    href: MessagePack.ExtensionHeader.html
+  - name: )
+- uid: MessagePack.ExtensionHeader
+  commentId: T:MessagePack.ExtensionHeader
+  parent: MessagePack
+  isExternal: true
+  href: MessagePack.ExtensionHeader.html
+  name: ExtensionHeader
+  nameWithType: ExtensionHeader
+  fullName: MessagePack.ExtensionHeader
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System.IEquatable`1.Equals(`0)
+  commentId: M:System.IEquatable`1.Equals(`0)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  name: Equals(T)
+  nameWithType: IEquatable<T>.Equals(T)
+  fullName: System.IEquatable<T>.Equals(T)
+  nameWithType.vb: IEquatable(Of T).Equals(T)
+  fullName.vb: System.IEquatable(Of T).Equals(T)
+  spec.csharp:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - name: T
+  - name: )
+- uid: MessagePack.ExtensionHeader.TypeCode*
+  commentId: Overload:MessagePack.ExtensionHeader.TypeCode
+  isExternal: true
+  href: MessagePack.ExtensionHeader.html#MessagePack_ExtensionHeader_TypeCode
+  name: TypeCode
+  nameWithType: ExtensionHeader.TypeCode
+  fullName: MessagePack.ExtensionHeader.TypeCode
+- uid: MessagePack.ExtensionHeader.Length*
+  commentId: Overload:MessagePack.ExtensionHeader.Length
+  isExternal: true
+  href: MessagePack.ExtensionHeader.html#MessagePack_ExtensionHeader_Length
+  name: Length
+  nameWithType: ExtensionHeader.Length
+  fullName: MessagePack.ExtensionHeader.Length
