@@ -10,7 +10,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("CodeFactory, LLC.")]
 [assembly: AssemblyProduct("CodeFactory.WinVs.Wpf")]
-[assembly: AssemblyCopyright("Copyright © 2023 CodeFactory, LLC.")]
+[assembly: AssemblyCopyright("Copyright © 2025 CodeFactory, LLC.")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
@@ -33,4 +33,4 @@ using System.Runtime.InteropServices;
 // by using the '*' as shown below:
 // [assembly: AssemblyVersion("1.0.*")]
 [assembly: AssemblyVersion("2.0.0.0")]
-[assembly: AssemblyFileVersion("2.24361.0.1")]
+[assembly: AssemblyFileVersion("2.25003.0.1")]

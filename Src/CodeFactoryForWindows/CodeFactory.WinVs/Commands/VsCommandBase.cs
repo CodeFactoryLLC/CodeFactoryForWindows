@@ -1,6 +1,6 @@
 ﻿//*****************************************************************************
 //* Code Factory SDK
-//* Copyright (c) 2020-2023 CodeFactory, LLC
+//* Copyright (c) 2020-2025 CodeFactory, LLC
 //*****************************************************************************
 using System.Threading.Tasks;
 using CodeFactory.WinVs.Logging;
@@ -61,7 +61,11 @@ namespace CodeFactory.WinVs.Commands
         /// Loads the external configuration definition for this command.
         /// </summary>
         /// <returns>Will return the command configuration or null if this command does not support external configurations.</returns>
-        public abstract ConfigCommand LoadExternalConfigDefinition();
+        public virtual ConfigCommand LoadExternalConfigDefinition()
+        {
+            //By default we return null since not all commands will have external configurations.
+            return null;
+        }
 
 
         /// <summary>
@@ -70,7 +74,7 @@ namespace CodeFactory.WinVs.Commands
         public string CommandTitle => _commandTitle;
 
         /// <summary>
-        /// An optional discription that discribes what this factory command is intended for. 
+        /// An optional description that describes what this factory command is intended for. 
         /// </summary>
         public string CommandDescription => _commandDescription;
 

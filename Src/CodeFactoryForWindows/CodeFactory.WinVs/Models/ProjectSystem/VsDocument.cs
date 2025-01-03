@@ -8,6 +8,7 @@ using System.Threading.Tasks;
 using CodeFactory.Document;
 using CodeFactory.SourceCode;
 using CodeFactory.WinVs.Models.CSharp;
+using CodeFactory.WinVs.Stats;
 
 namespace CodeFactory.WinVs.Models.ProjectSystem
 {
@@ -134,10 +135,24 @@ namespace CodeFactory.WinVs.Models.ProjectSystem
         public abstract Task AddContentToBeginningAsync(string content);
 
         /// <summary>
+        /// Adds content to the beginning of a document.
+        /// </summary>
+        /// <param name="content">The content to be added.</param>
+        /// <returns>Details of the transaction that was performed.</returns>
+        public abstract Task<TransactionDetail> AddContentToBeginningTransactionAsync(string content);
+
+        /// <summary>
         /// Adds content to the end of a document.
         /// </summary>
         /// <param name="content">The content to be added.</param>
         public abstract Task AddContentToEndAsync(string content);
+
+        /// <summary>
+        /// Adds content to the end of a document.
+        /// </summary>
+        /// <param name="content">The content to be added.</param>
+        /// <returns>Details of the transaction that was performed.</returns>
+        public abstract Task<TransactionDetail> AddContentToEndTransactionAsync(string content);
 
         /// <summary>
         /// Adds content to a target starting at an assigned
@@ -145,6 +160,14 @@ namespace CodeFactory.WinVs.Models.ProjectSystem
         /// <param name="location">Location within the document to add content to.</param>
         /// <param name="content">The content to be added to the document.</param>
         public abstract Task AddContentAsync(IDocumentLocation location, string content);
+
+        /// <summary>
+        /// Adds content to a target starting at an assigned
+        /// </summary>
+        /// <param name="location">Location within the document to add content to.</param>
+        /// <param name="content">The content to be added to the document.</param>
+        /// <returns>Details of the transaction that was performed.</returns>
+        public abstract Task<TransactionDetail> AddContentTransactionAsync(IDocumentLocation location, string content);
 
         /// <summary>
         /// Removes all the content from a document.
@@ -169,9 +192,25 @@ namespace CodeFactory.WinVs.Models.ProjectSystem
         /// Replaces all the content within the document.
         /// </summary>
         /// <param name="content">Content to replace the existing content in the document.</param>
+        /// <returns>Details of the transaction that was performed.</returns>
+        public abstract Task<TransactionDetail> ReplaceContentTransactionAsync(string content);
+
+        /// <summary>
+        /// Replaces all the content within the document.
+        /// </summary>
+        /// <param name="content">Content to replace the existing content in the document.</param>
         /// <param name="startLocation">The starting position within the document to replace content.</param>
         /// <param name="endLocation">The ending location within the document to replace content.</param>
         public abstract Task ReplaceContentAsync( string content, IDocumentLocation startLocation, IDocumentLocation endLocation);
+
+        /// <summary>
+        /// Replaces all the content within the document.
+        /// </summary>
+        /// <param name="content">Content to replace the existing content in the document.</param>
+        /// <param name="startLocation">The starting position within the document to replace content.</param>
+        /// <param name="endLocation">The ending location within the document to replace content.</param>
+        /// <returns>Details of the transaction that was performed.</returns>
+        public abstract Task<TransactionDetail> ReplaceContentTransactionAsync(string content, IDocumentLocation startLocation, IDocumentLocation endLocation);
 
         /// <summary>
         /// If the document is implemented as a C# code model. Will return the C# source code model from the visual studio document.

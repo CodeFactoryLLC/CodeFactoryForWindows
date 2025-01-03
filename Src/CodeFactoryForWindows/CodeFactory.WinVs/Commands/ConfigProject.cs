@@ -1,69 +1,90 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Collections.Immutable;
+﻿//*****************************************************************************
+//* Code Factory SDK
+//* Copyright (c) 2023-2025 CodeFactory, LLC
+//*****************************************************************************
+using System;
+using System.Collections.ObjectModel;
 using System.Linq;
-using System.Text;
+using MessagePack;
 
 namespace CodeFactory.WinVs.Commands
 {
-     /// <summary>
+    /// <summary>
     /// Holds the configuration for a target project and any target project folder under the project that are needed in the configuration.
     /// </summary>
-    public class ConfigProject:IConfigGuidance
+    [MessagePackObject]
+    public class ConfigProject:PropertyChangedBase,IConfigGuidance
     {
         /// <summary>
         /// Backing fields for properties
         /// </summary>
         private  string _name;
         private string _projectName;
-        private ImmutableList<ConfigFolder> _folders = ImmutableList<ConfigFolder>.Empty;
-        private ImmutableList<ConfigParameter> _parameters = ImmutableList<ConfigParameter>.Empty;
+        private ObservableCollection<ConfigFolder> _folders = new ObservableCollection<ConfigFolder>();
+        private ObservableCollection<ConfigParameter> _parameters = new ObservableCollection<ConfigParameter>();
         private string _guidance;
+        private string _guidanceUrl;
 
         /// <summary>
         /// The configuration name assigned to the project.
         /// </summary>
+        [Key(0)]
         public string Name
         {
-            get => _name; 
-            set => _name = value;
+            get => _name;
+            set { _name = value; OnPropertyChanged(); }
         }
 
         /// <summary>
         /// The target project in the solution this configuration talks to.
         /// </summary>
+        [Key(1)]
         public string ProjectName
         {
-            get => _projectName; 
-            set => _projectName = value;
+            get => _projectName;
+            set { _projectName = value; OnPropertyChanged();}
         }
 
         /// <summary>
         /// ConfigFolder that are part of the project.
         /// </summary>
-        public ImmutableList<ConfigFolder> Folders
+        [Key(2)]
+        public ObservableCollection<ConfigFolder> Folders
         {
-            get => _folders ?? ImmutableList<ConfigFolder>.Empty;
-            set => _folders = value;
+            get => _folders;
+            set { _folders = value; OnPropertyChanged();}
         }
 
         /// <summary>
         /// Parameters that are assigned to the project.
         /// </summary>
-        public ImmutableList<ConfigParameter> Parameters
+        [Key(3)]
+        public ObservableCollection<ConfigParameter> Parameters
         {
-            get => _parameters ?? ImmutableList<ConfigParameter>.Empty;
-            set => _parameters = value;
+            get => _parameters;
+            set { _parameters = value;OnPropertyChanged(); }
         }
 
         /// <summary>
         /// Instructions for what data is to go into the configuration. 
         /// </summary>
+        [Key(4)]
         public string Guidance
         {
             get => _guidance;
-            set => _guidance = value;
+            set { _guidance = value;OnPropertyChanged(); }
         }
+
+        /// <summary>
+        /// The url to external guidance that explains the configuration element.
+        /// </summary>
+        [Key(5)]
+        public string GuidanceUrl
+        {
+            get => _guidanceUrl;
+            set { _guidanceUrl = value; OnPropertyChanged(); }
+        }
+        
 
         /// <summary>
         /// Fluent method that adds a folder to the project source.
@@ -74,7 +95,7 @@ namespace CodeFactory.WinVs.Commands
         {
             if (folder == null) return this;
 
-            _folders =  _folders.Add(folder);
+            _folders.Add(folder);
 
             return this;
         }
@@ -88,7 +109,7 @@ namespace CodeFactory.WinVs.Commands
         {
             if(parameter == null) return this;
 
-            _parameters =  _parameters.Add(parameter);
+            _parameters.Add(parameter);
 
             return this;
         }
@@ -114,13 +135,51 @@ namespace CodeFactory.WinVs.Commands
         }
 
         /// <summary>
-        /// Get the value for a parameter that is hosted in the project.
+        /// Gets the target parameter value that has been assigned to a parameter source assigned to this project.
         /// </summary>
-        /// <param name="name">The name of the parameter to get the value from.</param>
-        /// <returns>The value of the parameter or null if the parameter is not found.</returns>
-        public string ParameterValue(string name)
+        /// <param name="name">Name of the parameter to lookup.</param>
+        /// <returns>The parameter value or null.</returns>
+        public string ParameterValueString(string name)
         {
-            return string.IsNullOrEmpty(name)? null: _parameters.FirstOrDefault(p => p.Name == name)?.Value;
+            return string.IsNullOrEmpty(name)
+                ? null
+                : _parameters.FirstOrDefault(p => p.Name == name)?.Value?.StringValue;
+        }
+
+        /// <summary>
+        /// Gets the target parameter boolean value that has been assigned to a parameter source assigned to this project.
+        /// </summary>
+        /// <param name="name">Name of the parameter to lookup.</param>
+        /// <returns>The parameter value or null.</returns>
+        public bool? ParameterValueBool(string name)
+        {
+            return string.IsNullOrEmpty(name)
+                ? null
+                : _parameters.FirstOrDefault(p => p.Name == name)?.Value?.BoolValue;
+        }
+
+        /// <summary>
+        /// Gets the target parameter list value that has been assigned to a parameter source assigned to this project.
+        /// </summary>
+        /// <param name="name">Name of the parameter to lookup.</param>
+        /// <returns>The parameter value or null.</returns>
+        public ObservableCollection<string> ParameterValueList(string name)
+        {
+            return string.IsNullOrEmpty(name)
+                ? null
+                : _parameters.FirstOrDefault(p => p.Name == name)?.Value?.ListValue;
+        }
+
+        /// <summary>
+        /// Gets the target parameter date time value that has been assigned to a parameter source assigned to this project.
+        /// </summary>
+        /// <param name="name">Name of the parameter to lookup.</param>
+        /// <returns>The parameter value or null.</returns>
+        public DateTime? ParameterValueDateTime(string name)
+        {
+            return string.IsNullOrEmpty(name)
+                ? null
+                : _parameters.FirstOrDefault(p => p.Name == name)?.Value?.DateTimeValue;
         }
     }
 }

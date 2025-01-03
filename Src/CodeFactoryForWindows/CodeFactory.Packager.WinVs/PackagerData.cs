@@ -1,6 +1,6 @@
 ﻿//*****************************************************************************
 //* Code Factory SDK - Windows Visual Studio
-//* Copyright (c) 2023 CodeFactory, LLC
+//* Copyright (c) 2023-2025 CodeFactory, LLC
 //*****************************************************************************
 
 using System.Collections.Immutable;
@@ -84,6 +84,7 @@ namespace CodeFactory.Packager.WinVs
             new string[] 
             {   "CodeFactory", 
                 "CodeFactory.WinVs", 
+                "CodeFactory.WinVs.Wpf",
                 "MessagePack.Annotations", 
                 "MessagePack", 
                 "Microsoft.Bcl.AsyncInterfaces",

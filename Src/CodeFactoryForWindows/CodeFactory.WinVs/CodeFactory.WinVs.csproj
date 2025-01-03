@@ -5,24 +5,47 @@
     <SignAssembly>True</SignAssembly>
     <AssemblyOriginatorKeyFile>CFSigner.snk</AssemblyOriginatorKeyFile>
 	  <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
-	  <Version>2.24361.0.1-PreRelease</Version>
+	  <Version>2.25003.0.1-PreRelease</Version>
 	  <Authors>CodeFactory, LLC.</Authors>
 	  <Company>CodeFactory, LLC.</Company>
 	  <Product>CodeFactory Base Library</Product>
-	  <Copyright>Copyright ©  2023 CodeFactory, LLC.</Copyright>
+	  <Copyright>Copyright ©  2025 CodeFactory, LLC.</Copyright>
 	  <Description>The CodeFactory API that supports Visual Studio - Windows</Description>
 	  <PackageLicenseExpression> MIT</PackageLicenseExpression>
 	  <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
 	  <IncludeSymbols>False</IncludeSymbols>
 	  <Title>CodeFactory API for Visual Studio - Windows </Title>
 	  <AssemblyVersion>2.0.0.0</AssemblyVersion>
-	  <FileVersion>2.24361.0.1</FileVersion>
+	  <FileVersion>2.25003.0.1</FileVersion>
 	  <PackageIcon>CFLogo128.png</PackageIcon>
 	  <PackageReleaseNotes>
-		  Release Updates for 2.24361.0.1
+		  Release Updates for 2.25003.0.1
 
-		  Execution logging for CodeFactory Commands
-		  - CommandNotifications has been added to CodeFactory commands. This allows real time logging of what happened in a command to log to the CodeFactory output window. 
+		  Recompile Release:
+		  When you update your automation to this version of the SDK. 
+		  You will need to recompile your automation projects to the new version of the SDK, and make sure you have the CodeFactory runtime at least the same version or higher.
+
+		  Command External Configuration Updates:
+		  Deprecated the use of the CommandManager class. All command configuration is now done through the ExternalConfig class.
+		  ConfigParameter now supports multiple value types including string, bool, datetime and list.
+
+		  External Configuration Editor:
+		  All CodeFactory command projects now have an external configuration editor that handles the configuration of the commands that are hosted in a CFA file.
+		  The editor is triggered by right clicking on the Solution node in solution explorer and selecting [cF] Automation Configuration.
+
+		  Transaction History:
+		  CodeFactory now tracks the historical statics of all commands that write to files in projects and the solution.
+		  The following statics are tracked:
+		  - Name of the file updated.
+		  - Name of the project the file resides in or null if it is not part of a project.
+		  - Name of the solution the file resides.
+		  - Relative path of the file from the project or solution root.
+		  - Number of characters written to the file omitting the white space characters and line returns.
+		  - Number of lines written to the file, omitting the lines with no content.
+
+		  Transaction Results:
+		  You can now get the transaction results from any insert or replace operation. This will return the above statics for the transaction.
+
 	  </PackageReleaseNotes>
 	  <GenerateDocumentationFile>True</GenerateDocumentationFile>
   </PropertyGroup>
