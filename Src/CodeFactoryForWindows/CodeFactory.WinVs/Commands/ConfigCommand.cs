@@ -206,7 +206,7 @@ namespace CodeFactory.WinVs.Commands
         /// </summary>
         /// <param name="name">Name of the parameter to lookup.</param>
         /// <returns>The parameter value or null.</returns>
-        public ObservableCollection<string> ParameterValueList(string name)
+        public ObservableCollection<ConfigParameterListValue> ParameterValueList(string name)
         {
             return string.IsNullOrEmpty(name)
                 ? null
