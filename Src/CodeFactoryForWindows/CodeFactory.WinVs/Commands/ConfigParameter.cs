@@ -17,6 +17,7 @@ namespace CodeFactory.WinVs.Commands
         private ConfigParameterValue _value;
         private string _guidance;
         private string _guidanceUrl;
+        private bool _required = false;
 
         /// <summary>
         /// Name of the parameter itself.
@@ -28,11 +29,20 @@ namespace CodeFactory.WinVs.Commands
             set { _name = value; OnPropertyChanged(); }
         }
 
+        /// <summary>
+        /// Flag that determines if the parameter is required in order for the automation to run.
+        /// </summary>
+        [Key(1)]
+        public bool Required
+        {
+            get => _required;
+            set { _required = value; OnPropertyChanged(); }
+        }
 
         /// <summary>
         /// The value that is assigned to the parameter.
         /// </summary>
-        [Key(1)]
+        [Key(2)]
         public ConfigParameterValue Value
         {
             get => _value;
@@ -43,7 +53,7 @@ namespace CodeFactory.WinVs.Commands
         /// <summary>
         /// Instructions for what data is to go into the configuration. 
         /// </summary>
-        [Key(2)]
+        [Key(3)]
         public string Guidance
         {
             get => _guidance;
@@ -53,7 +63,7 @@ namespace CodeFactory.WinVs.Commands
         /// <summary>
         /// The url to external guidance that explains the configuration element.
         /// </summary>
-        [Key(3)]
+        [Key(4)]
         public string GuidanceUrl
         {
             get => _guidanceUrl;

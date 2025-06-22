@@ -2,10 +2,11 @@
 
   <PropertyGroup>
 	<TargetFramework>netstandard2.0</TargetFramework>
+	<LangVersion>13</LangVersion>
     <SignAssembly>True</SignAssembly>
     <AssemblyOriginatorKeyFile>CFSigner.snk</AssemblyOriginatorKeyFile>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
-    <Version>2.25165.0.1-PreRelease</Version>
+    <Version>2.25172.0.1-PreRelease</Version>
     <Authors>CodeFactory, LLC.</Authors>
     <Company>CodeFactory, LLC.</Company>
     <Product>CodeFactory Base Library</Product>
@@ -16,11 +17,11 @@
     <IncludeSymbols>False</IncludeSymbols>
     <Title>CodeFactory Base Libraries </Title>
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
-    <FileVersion>2.25165.0.1</FileVersion>
+    <FileVersion>2.25172.0.1</FileVersion>
     <PackageIcon>CFLogo128.png</PackageIcon>
     <RepositoryType>git</RepositoryType>
     <PackageReleaseNotes>
-		Release Updates for 2.25165.0.1
+		Release Updates for 2.25172.0.1
 
 		Recompile Release:
 		When you update your automation to this version of the SDK.
@@ -39,6 +40,13 @@
       <PackagePath>\</PackagePath>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="PolySharp" Version="1.15.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
   </ItemGroup>
 
   <ItemGroup>

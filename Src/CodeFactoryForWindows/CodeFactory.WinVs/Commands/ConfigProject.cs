@@ -24,6 +24,7 @@ namespace CodeFactory.WinVs.Commands
         private ObservableCollection<ConfigParameter> _parameters = new ObservableCollection<ConfigParameter>();
         private string _guidance;
         private string _guidanceUrl;
+        private bool _required = false;
 
         /// <summary>
         /// The configuration name assigned to the project.
@@ -46,9 +47,19 @@ namespace CodeFactory.WinVs.Commands
         }
 
         /// <summary>
-        /// ConfigFolder that are part of the project.
+        /// Flag that determines if the project is required in order for the automation to run.
         /// </summary>
         [Key(2)]
+        public bool Required
+        {
+            get => _required;
+            set { _required = value; OnPropertyChanged(); }
+        }
+
+        /// <summary>
+        /// ConfigFolder that are part of the project.
+        /// </summary>
+        [Key(3)]
         public ObservableCollection<ConfigFolder> Folders
         {
             get => _folders;
@@ -58,7 +69,7 @@ namespace CodeFactory.WinVs.Commands
         /// <summary>
         /// Parameters that are assigned to the project.
         /// </summary>
-        [Key(3)]
+        [Key(4)]
         public ObservableCollection<ConfigParameter> Parameters
         {
             get => _parameters;
@@ -68,7 +79,7 @@ namespace CodeFactory.WinVs.Commands
         /// <summary>
         /// Instructions for what data is to go into the configuration. 
         /// </summary>
-        [Key(4)]
+        [Key(5)]
         public string Guidance
         {
             get => _guidance;
@@ -78,7 +89,7 @@ namespace CodeFactory.WinVs.Commands
         /// <summary>
         /// The url to external guidance that explains the configuration element.
         /// </summary>
-        [Key(5)]
+        [Key(6)]
         public string GuidanceUrl
         {
             get => _guidanceUrl;

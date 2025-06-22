@@ -20,7 +20,7 @@ namespace CodeFactory.WinVs.Commands
         private bool? _boolValue;
         private ObservableCollection<ConfigParameterListValue> _listValue = new ObservableCollection<ConfigParameterListValue>();
         private DateTime? _dateTimeValue;
-
+        private ConfigParameterSelectedValue _selectedValue = new ConfigParameterSelectedValue();
 
 
         /// <summary>
@@ -71,6 +71,16 @@ namespace CodeFactory.WinVs.Commands
         {
             get => _dateTimeValue;
             set { _dateTimeValue = value; OnPropertyChanged(); }
+        }
+
+        /// <summary>
+        /// The selected value from a list of values that is assigned to the parameter. This will be an empty instance if the value is not a selected value.
+        /// </summary>
+        [Key(5)]
+        public ConfigParameterSelectedValue SelectedValue 
+        {   
+            get => _selectedValue;
+            set { _selectedValue = value; OnPropertyChanged(); }
         }
 
     }

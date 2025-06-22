@@ -28,9 +28,13 @@ namespace CodeFactory.WinVs.Commands
         /// <summary>
         /// The value is a date time.
         /// </summary>
-        DateTime = 3
+        DateTime = 3,
 
+        /// <summary>
+        /// The value is a selected value from a list of values.
+        /// </summary>
 
+        SelectedValue = 4
 
     }
 }
