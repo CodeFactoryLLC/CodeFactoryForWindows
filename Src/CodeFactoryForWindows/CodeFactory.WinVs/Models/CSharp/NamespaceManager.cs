@@ -39,6 +39,13 @@ namespace CodeFactory.WinVs.Models.CSharp
         }
 
         /// <summary>
+        /// The collection of using statements that are managed by the namespace manager.
+        /// </summary>
+        public IReadOnlyList<IUsingStatementNamespace> UsingStatements => _usingStatements;
+
+
+
+        /// <summary>
         /// Sorts the using statements for easier use with namespace management.
         /// </summary>
         /// <param name="usingStatements">Using statements to process</param>
