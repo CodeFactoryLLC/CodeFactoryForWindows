@@ -3,6 +3,7 @@
 //* Copyright (c) 2020-2023 CodeFactory, LLC
 //*****************************************************************************
 
+using CodeFactory.WinVs.Models.CSharp;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
@@ -67,6 +68,22 @@ namespace CodeFactory.WinVs.Models.ProjectSystem
         /// <param name="source">Source project to get referenced projects from.</param>
         /// <returns>Readonly list of the referenced projects or an empty list if there is no referenced projects.</returns>
         Task<IReadOnlyList<VsProject>> GetReferencedProjects(VsProject source);
+
+        /// <summary>
+        /// Asynchronously retrieves a collection of source code files from the specified Visual Studio project that
+        /// match the given search criteria.
+        /// </summary>
+        /// <remarks>This method performs an asynchronous search within the provided project and applies
+        /// the specified  search criteria to identify matching source code files. Use the <paramref
+        /// name="IgnoreFolderPaths"/>  parameter to exclude specific folders from the search if needed.</remarks>
+        /// <param name="source">The Visual Studio project to search for source code files.</param>
+        /// <param name="searchCriteria">The criteria used to filter the source code files to be retrieved.</param>
+        /// <param name="searchSubFolders">Flag that determines if sub folders from this location will be searched. Default value is <c>true</c>.</param>
+        /// <param name="IgnoreFolderPaths">An optional collection of folder paths to exclude from the search. If <see langword="null"/>, no folders are
+        /// excluded. When setting the folder paths just include the folder name. If you are going multiple folders deep use a forward slash as the folder seperator.</param>
+        /// <returns>A task that represents the asynchronous operation. The task result contains a read-only list of  <see
+        /// cref="CsSource"/> objects that match the specified search criteria.</returns>
+        Task<IReadOnlyList<CsSource>> FindCSharpSourceCodeAsync(VsProject source, CsSourceSearchCriteria searchCriteria, bool searchSubFolders = true, IEnumerable<string> IgnoreFolderPaths = null);
 
     }
 }
