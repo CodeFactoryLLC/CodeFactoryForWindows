@@ -10,6 +10,12 @@ namespace CodeFactory.WinVs.Models.CSharp
     /// </summary>
     public class CsSearchContainer
     {
+
+        /// <summary>
+        /// The file path of the C# container represented by this instance.
+        /// </summary>
+        public string FilePath { get; init; } = null;
+
         /// <summary>
         /// The namespace the C# cntainer is defined in.
         /// </summary>
@@ -69,31 +75,6 @@ namespace CodeFactory.WinVs.Models.CSharp
         /// List of the attributes defined for the container.
         /// </summary>
         public IReadOnlyList<CsAttribute> Attributes { get; init; } = ImmutableList<CsAttribute>.Empty;
-
-        /// <summary>
-        /// Flag that determines if the container has any fields defined.
-        /// </summary>
-        public bool HasFields { get; init; } = false;
-
-        /// <summary>
-        /// Flag that determines if the container has any properties defined.
-        /// </summary>
-        public bool HasProperties { get; init; } = false;
-
-        /// <summary>
-        /// Flag that determines if the container has any methods defined.
-        /// </summary>
-        public bool HasMethods { get; init; } = false;
-
-        /// <summary>
-        /// Flag that determines if the container has any events defined.
-        /// </summary>
-        public bool HasEvents { get; init; } = false;
-
-        /// <summary>
-        /// Flag that determines if the container has any constructors defined.
-        /// </summary>
-        public bool HasConstructors { get; init; } = false;
 
     }
 }

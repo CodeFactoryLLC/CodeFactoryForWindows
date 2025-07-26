@@ -18,17 +18,17 @@ namespace CodeFactory.WinVs.Loader
         /// <summary>
         /// The minimum version of the SDK that can be loaded and used.
         /// </summary>
-        public const string MinVersion = "2.25191.0.1";
+        public const string MinVersion = "2.25206.0.1";
 
         /// <summary>
         /// The maximum version of the SDK that can be loaded and used.
         /// </summary>
-        public const string MaxVersion = "2.25191.0.1";
+        public const string MaxVersion = "2.25206.0.1";
 
         /// <summary>
         /// The target version of the NuGet package this SDK is deployed from.
         /// </summary>
-        public const string NuGetSdkVersion = "2.25191.0.1-PreRelease";
+        public const string NuGetSdkVersion = "2.25206.0.1-PreRelease";
 
         /// <summary>
         /// The name of the assembly type for the CodeFactory SDK version attribute.

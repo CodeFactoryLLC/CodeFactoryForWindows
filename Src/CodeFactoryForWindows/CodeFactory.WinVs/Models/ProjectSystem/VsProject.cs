@@ -168,5 +168,24 @@ namespace CodeFactory.WinVs.Models.ProjectSystem
         /// <returns>A task that represents the asynchronous operation. The task result contains a read-only list of  <see
         /// cref="CsSource"/> objects that match the specified search criteria.</returns>
         public abstract Task<IReadOnlyList<CsSource>> FindCSharpSourceCodeAsync(CsSourceSearchCriteria searchCriteria, bool searchSubFolders = true, IEnumerable<string> IgnoreFolderPaths = null);
+
+
+        /// <summary>
+        /// Asynchronously loads a <see cref="VsCSharpSource"/> object from the specified C# source file within a Visual
+        /// Studio project.
+        /// </summary>
+        /// <param name="csSource">The C# source file to load.</param>
+        /// <returns>A task that represents the asynchronous operation. The task result contains the loaded <see
+        /// cref="VsCSharpSource"/> object.</returns>
+        public abstract Task<VsCSharpSource> LoadFromCsSourceAsync(CsSource csSource);
+
+
+        /// <summary>
+        /// Asynchronously loads a C# source file from the specified container.
+        /// </summary>
+        /// <param name="source">The container from which the C# source file will be loaded. This parameter cannot be null.</param>
+        /// <returns>A task that represents the asynchronous operation. The task result contains the loaded <see
+        /// cref="VsCSharpSource"/> object.</returns>
+        public abstract Task<VsCSharpSource> LoadCSharpSourceFromContainerAsync(CsContainer source);
     }
 }
