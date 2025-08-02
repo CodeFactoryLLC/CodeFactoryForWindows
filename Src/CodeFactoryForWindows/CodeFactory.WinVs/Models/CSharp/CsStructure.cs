@@ -16,44 +16,46 @@ namespace CodeFactory.WinVs.Models.CSharp
     public abstract class CsStructure:CsContainerWithNestedContainers,ICsStructure
     {
         /// <summary>
-        /// Constructor for the <see cref="CsStructure"/>
+        /// Initializes a new instance of the <see cref="CsStructure"/> class, representing a C# structure with metadata
+        /// about its attributes, generics, inheritance, members, and other characteristics.
         /// </summary>
-        /// <param name="isLoaded">Flag that determines if the model was loaded.</param>
-        /// <param name="hasErrors">Flag that determine if errors were found creating the model.</param>
-        /// <param name="loadedFromSource">Flag that determines if the model was loaded from source code or from an existing library.</param>
-        /// <param name="language">The target language the model was generated from.</param>
-        /// <param name="members">The members assigned to this container.</param>
-        /// <param name="isNested">Flag that determines if the container type is nested in another type definition.</param>
-        /// <param name="nestedType">Enumeration of the type of nesting the container is.</param>
-        /// <param name="nestedModels">List of nested models assigned to this container. This is an optional parameter and can be null</param>
-        /// <param name="sourceDocument">The source document that was used to build this model. This is optional parameter and can be null.</param>
-        /// <param name="modelStore">Optional the lookup storage for models created during the compile or lookup of the model.</param>
-        /// <param name="modelErrors">Optional the error that occurred while creating the model.</param>
-        /// <param name="attributes">List of the attributes assigned to this model.</param>
-        /// <param name="isGeneric">Flag that determines if the container is a generic definition.</param>
-        /// <param name="hasStrongTypesInGenerics">Flag that determines if the generics use strong type definitions.</param>
-        /// <param name="genericParameters">Generic parameters assigned to the container.</param>
-        /// <param name="genericTypes">Target types for the generic parameters assigned to the container.</param>
-        /// <param name="modelSourceFile">The source file the model was generated from.</param>
-        /// <param name="sourceFiles">List of the fully qualified paths to the source code files this model is defined in.</param>
-        /// <param name="hasDocumentation">Flag that determines if the model has XML documentation assigned to it.</param>
-        /// <param name="documentation">The xml documentation assigned to the model.</param>
-        /// <param name="lookupPath">The fully qualified model lookup path for this model.</param>
-        /// <param name="name">The name of the model.</param>
-        /// <param name="ns">The namespace the container belongs to.</param>
-        /// <param name="parentPath">The fully qualified lookup path for the parent model to this one.</param>
-        /// <param name="security">The security scope assigned to this model.</param>
-        /// <param name="inheritedInterfaces">The interfaces that are inherited by this container.</param>
+        /// <param name="isLoaded">Indicates whether the structure has been successfully loaded.</param>
+        /// <param name="hasErrors">Indicates whether the structure contains errors.</param>
+        /// <param name="loadedFromSource">Indicates whether the structure was loaded from source code.</param>
+        /// <param name="language">The programming language of the source code, typically C#.</param>
+        /// <param name="attributes">A read-only list of attributes applied to the structure.</param>
+        /// <param name="isGeneric">Indicates whether the structure is a generic type.</param>
+        /// <param name="hasStrongTypesInGenerics">Indicates whether the generic parameters of the structure are strongly typed.</param>
+        /// <param name="genericParameters">A read-only list of generic parameters defined by the structure.</param>
+        /// <param name="genericTypes">A read-only list of generic types used by the structure.</param>
+        /// <param name="modelSourceFile">The file path of the source file where the structure is defined.</param>
+        /// <param name="sourceFiles">A read-only list of source files associated with the structure.</param>
+        /// <param name="hasDocumentation">Indicates whether the structure has associated XML documentation.</param>
+        /// <param name="documentation">The XML documentation associated with the structure, if available.</param>
+        /// <param name="lookupPath">The lookup path used to identify the structure within the model hierarchy.</param>
+        /// <param name="name">The name of the structure.</param>
+        /// <param name="ns">The namespace in which the structure is defined.</param>
+        /// <param name="parentPath">The path to the parent container of the structure, if applicable.</param>
+        /// <param name="security">The security level (accessibility) of the structure, such as public or internal.</param>
+        /// <param name="inheritedInterfaces">A read-only list of all interfaces inherited by the structure, including indirect inheritance.</param>
+        /// <param name="directInheritedInterfaces">A read-only list of interfaces directly inherited by the structure.</param>
+        /// <param name="members">A read-only list of members (fields, properties, methods, etc.) defined in the structure.</param>
+        /// <param name="isNested">Indicates whether the structure is nested within another type.</param>
+        /// <param name="nestedType">The type of nesting, if the structure is nested.</param>
+        /// <param name="nestedModels">A read-only list of nested models contained within the structure, if any. This parameter is optional.</param>
+        /// <param name="sourceDocument">The source document associated with the structure, if available. This parameter is optional.</param>
+        /// <param name="modelStore">The model store containing additional metadata or related models. This parameter is optional.</param>
+        /// <param name="modelErrors">A read-only list of errors encountered while loading the structure. This parameter is optional.</param>
         protected CsStructure(bool isLoaded, bool hasErrors, bool loadedFromSource, SourceCodeType language,
             IReadOnlyList<CsAttribute> attributes, bool isGeneric, bool hasStrongTypesInGenerics,
             IReadOnlyList<CsGenericParameter> genericParameters, IReadOnlyList<CsType> genericTypes, string modelSourceFile, IReadOnlyList<string> sourceFiles,
             bool hasDocumentation, string documentation, string lookupPath, string name, string ns, string parentPath,
-            CsSecurity security, IReadOnlyList<CsInterface> inheritedInterfaces, IReadOnlyList<CsMember> members,bool isNested,CsNestedType nestedType,IReadOnlyList<ICsNestedModel> nestedModels = null,
+            CsSecurity security, IReadOnlyList<CsInterface> inheritedInterfaces, IReadOnlyList<CsInterface> directInheritedInterfaces, IReadOnlyList<CsMember> members,bool isNested,CsNestedType nestedType,IReadOnlyList<ICsNestedModel> nestedModels = null,
 
         string sourceDocument = null, ModelStore<ICsModel> modelStore = null, IReadOnlyList<ModelLoadException> modelErrors = null)
             : base(isLoaded, hasErrors, loadedFromSource, language, CsModelType.Structure,
             attributes, isGeneric, hasStrongTypesInGenerics, genericParameters, genericTypes, modelSourceFile, sourceFiles, hasDocumentation,
-            documentation, lookupPath, name, ns, parentPath, CsContainerType.Structure, security, inheritedInterfaces, members,isNested,nestedType,
+            documentation, lookupPath, name, ns, parentPath, CsContainerType.Structure, security, inheritedInterfaces, directInheritedInterfaces, members,isNested,nestedType,
             nestedModels, sourceDocument, modelStore, modelErrors)
         {
             //Intentionally blank
