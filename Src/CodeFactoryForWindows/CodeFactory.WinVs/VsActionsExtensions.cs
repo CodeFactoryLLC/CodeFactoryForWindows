@@ -173,5 +173,83 @@ namespace CodeFactory.WinVs
 
             return await source.GetCSharpSourceAsync(member.ModelSourceFile);
         }
+
+        /// <summary>
+        /// Asynchronously loads an external configuration command based on the specified command type and Visual Studio
+        /// model.
+        /// </summary>
+        /// <remarks>This method attempts to load the external configuration command by first determining
+        /// the appropriate folder path  based on the <paramref name="commandResult"/> and the value of <paramref
+        /// name="loadFolderConfiguration"/>.  If a folder path is determined, the configuration is loaded by folder.
+        /// Otherwise, it falls back to loading the configuration by project.</remarks>
+        /// <param name="source">The <see cref="IVsActions"/> instance used to perform Visual Studio-related actions. Cannot be null.</param>
+        /// <param name="commandType">The type of the command to load. This is typically a string identifier for the command.</param>
+        /// <param name="commandResult">The <see cref="VsModel"/> instance representing the context for the command. Cannot be null.</param>
+        /// <param name="loadFolderConfiguration">A boolean value indicating whether to load the configuration based on the folder structure.  If <see
+        /// langword="true"/>, the configuration is loaded by folder; otherwise, it is loaded by project.</param>
+        /// <returns>A task that represents the asynchronous operation. The task result contains the loaded <see
+        /// cref="ConfigCommand"/> instance,  or <see langword="null"/> if the operation fails or the inputs are
+        /// invalid.</returns>
+        public static async Task<ConfigCommand> LoadExternalConfigAsync(this IVsActions source, string commandType, VsModel commandResult, bool loadFolderConfiguration = true)
+        {
+            if (source == null) return null;
+            if (commandResult == null) return null;
+
+            //Holds the name of the project folder.
+            string folderPath = null;
+
+            //Holds the result of the command configuration that is loaded.
+            ConfigCommand result = null;
+
+            //Getting the folder path is only required if we are loading the configuration by folder structure.
+            if (loadFolderConfiguration)
+            {
+                switch (commandResult.ModelType)
+                {
+                    case VisualStudioModelType.CSharpSource:
+
+
+                        var csSource = commandResult as VsCSharpSource;
+
+                        if (csSource != null)
+                        {
+                            var csSourceFolder = await csSource.GetParentProjectFolderAsync();
+                            folderPath = csSourceFolder?.Path;
+                        }
+
+                        break;
+
+                    case VisualStudioModelType.ProjectFolder:
+
+                        //If the command result is a project folder then we can use the path directly.
+                        folderPath = ((VsProjectFolder)commandResult).Path;
+                        break;
+
+                    case VisualStudioModelType.Document:
+
+                        var docSource = commandResult as VsDocument;
+
+                        if (docSource != null)
+                        {
+                            var csSourceFolder = await docSource.GetParentProjectFolderAsync();
+                            folderPath = csSourceFolder?.Path;
+                        }
+                        break;
+
+                    default:
+                        //setting the folder path to null will cause the command to load by project.
+                        folderPath = null;
+                        break;
+                }
+
+
+                if (folderPath != null) result = await ExternalConfig.LoadCommandByFolderAsync(commandType, folderPath, commandResult);
+            }
+
+            result ??= await ExternalConfig.LoadCommandByProjectAsync(commandType, commandResult);
+
+            return result;
+
+        }
     }
 }
