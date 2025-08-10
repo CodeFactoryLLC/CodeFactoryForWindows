@@ -1,10 +1,13 @@
-﻿using CodeFactory.WinVs.Models.ProjectSystem;
+﻿//*****************************************************************************
+//* Code Factory SDK
+//* Copyright (c) 2023-2025 CodeFactory, LLC
+//*****************************************************************************
+using CodeFactory.WinVs.Models.ProjectSystem;
 using System;
-using System.Collections.Generic;
 using System.Collections.Immutable;
+using System.Collections.ObjectModel;
 using System.IO;
 using System.Linq;
-using System.Text;
 using System.Text.Json;
 using System.Threading.Tasks;
 
@@ -13,6 +16,7 @@ namespace CodeFactory.WinVs.Commands
     /// <summary>
     /// Managers the loading and saving of solution configurations. 
     /// </summary>
+    [Obsolete("The ConfigManager is now obsolete, you should use the ExternalConfig for loading configuration data into commands. This will be removed in a later release of CodeFactory.")]
     public static class ConfigManager
     {
         /// <summary>
@@ -25,7 +29,8 @@ namespace CodeFactory.WinVs.Commands
         /// </summary>
         private static ConfigSolution _configuration;
 
-        private static ImmutableList<ConfigCommand> _defaultConfiguration = ImmutableList<ConfigCommand>.Empty;
+        private static ObservableCollection<ConfigCommand> _defaultConfiguration =
+            new ObservableCollection<ConfigCommand>();
 
         /// <summary>
         /// The name of the loaded configuration. Will be null if the configuration is not loaded.
@@ -278,7 +283,8 @@ namespace CodeFactory.WinVs.Commands
         /// <param name="command">Command configuration to be registered</param>
         public static void RegisterCommandWithDefaultConfiguration(this ConfigCommand command)
         {
-            _defaultConfiguration =  _defaultConfiguration.Add(command);
+            if(command == null) return;
+            _defaultConfiguration.Add(command);
         }
 
     }

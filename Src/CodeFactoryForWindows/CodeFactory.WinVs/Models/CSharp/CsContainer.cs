@@ -34,44 +34,50 @@ namespace CodeFactory.WinVs.Models.CSharp
         private readonly CsContainerType _containerType;
         private readonly CsSecurity _security;
         private readonly IReadOnlyList<CsInterface> _inheritedInterfaces;
+        private readonly IReadOnlyList<CsInterface> _directInheritedInterfaces;
         private readonly IReadOnlyList<CsMember> _members;
 
         #endregion
 
         /// <summary>
-        /// Constructor for the <see cref="CsContainer"/>
+        /// Initializes a new instance of the <see cref="CsContainer"/> class, representing a container for code model
+        /// elements such as classes, interfaces, or structs.
         /// </summary>
-        /// <param name="isLoaded">Flag that determines if the model was loaded.</param>
-        /// <param name="hasErrors">Flag that determine if errors were found creating the model.</param>
-        /// <param name="loadedFromSource">Flag that determines if the model was loaded from source code or from an existing library.</param>
-        /// <param name="language">The target language the model was generated from.</param>
-        /// <param name="modelType">The type of code model created.</param>
-        /// <param name="members">The members assigned to this container.</param>
-        /// <param name="sourceDocument">The source document that was used to build this model. This is optional parameter and can be null.</param>
-        /// <param name="modelStore">Optional the lookup storage for models created during the compile or lookup of the model.</param>
-        /// <param name="modelErrors">Optional the error that occurred while creating the model.</param>
-        /// <param name="attributes">List of the attributes assigned to this model.</param>
-        /// <param name="isGeneric">Flag that determines if the container is a generic definition.</param>
-        /// <param name="hasStrongTypesInGenerics">Flag that determines if the generics use strong type definitions.</param>
-        /// <param name="genericParameters">Generic parameters assigned to the container.</param>
-        /// <param name="genericTypes">Target types for the generic parameters assigned to the container.</param>
-        /// <param name="modelSourceFile">The source file the model was loaded from.</param>
-        /// <param name="sourceFiles">List of the fully qualified paths to the source code files this model is defined in.</param>
-        /// <param name="hasDocumentation">Flag that determines if the model has XML documentation assigned to it.</param>
-        /// <param name="documentation">The xml documentation assigned to the model.</param>
-        /// <param name="lookupPath">The fully qualified model lookup path for this model.</param>
-        /// <param name="name">The name of the model.</param>
-        /// <param name="ns">The namespace the container belongs to.</param>
-        /// <param name="parentPath">The fully qualified lookup path for the parent model to this one.</param>
-        /// <param name="containerType">The type of container this model represents.</param>
-        /// <param name="security">The security scope assigned to this model.</param>
-        /// <param name="inheritedInterfaces">The interfaces that are inherited by this container.</param>
+        /// <remarks>This constructor is typically used to initialize a container that represents a code
+        /// model element such as a class, interface, or struct. It provides detailed information about the container's
+        /// attributes, generic parameters, inheritance, and associated source files.</remarks>
+        /// <param name="isLoaded">Indicates whether the container has been successfully loaded.</param>
+        /// <param name="hasErrors">Indicates whether the container contains any errors.</param>
+        /// <param name="loadedFromSource">Indicates whether the container was loaded from source code.</param>
+        /// <param name="language">The programming language of the source code represented by the container.</param>
+        /// <param name="modelType">The type of the model represented by the container.</param>
+        /// <param name="attributes">A collection of attributes applied to the container.</param>
+        /// <param name="isGeneric">Indicates whether the container is a generic type.</param>
+        /// <param name="hasStrongTypesInGenerics">Indicates whether the generic parameters of the container are strongly typed.</param>
+        /// <param name="genericParameters">A collection of generic parameters defined by the container.</param>
+        /// <param name="genericTypes">A collection of generic types used by the container.</param>
+        /// <param name="modelSourceFile">The file path of the source file where the container is defined.</param>
+        /// <param name="sourceFiles">A collection of source files associated with the container.</param>
+        /// <param name="hasDocumentation">Indicates whether the container has associated documentation.</param>
+        /// <param name="documentation">The documentation associated with the container, if available.</param>
+        /// <param name="lookupPath">The lookup path used to identify the container within the model.</param>
+        /// <param name="name">The name of the container.</param>
+        /// <param name="ns">The namespace to which the container belongs.</param>
+        /// <param name="parentPath">The path of the parent container, if applicable.</param>
+        /// <param name="containerType">The type of the container (e.g., class, interface, struct).</param>
+        /// <param name="security">The security level of the container (e.g., public, private, protected).</param>
+        /// <param name="inheritedInterfaces">A collection of interfaces inherited by the container, including both direct and indirect inheritance.</param>
+        /// <param name="directInheritedInterfaces">A collection of interfaces directly inherited by the container.</param>
+        /// <param name="members">A collection of members (e.g., methods, properties) defined within the container.</param>
+        /// <param name="sourceDocument">The source document associated with the container, if applicable. This parameter is optional.</param>
+        /// <param name="modelStore">The model store used to manage the container's associated models. This parameter is optional.</param>
+        /// <param name="modelErrors">A collection of errors encountered during the loading of the container. This parameter is optional.</param>
         protected CsContainer(bool isLoaded, bool hasErrors, bool loadedFromSource, SourceCodeType language, CsModelType modelType,
             IReadOnlyList<CsAttribute> attributes, bool isGeneric, bool hasStrongTypesInGenerics, 
             IReadOnlyList<CsGenericParameter> genericParameters, IReadOnlyList<CsType> genericTypes, string modelSourceFile,
             IReadOnlyList<string> sourceFiles, bool hasDocumentation, string documentation, string lookupPath,
             string name, string ns, string parentPath, CsContainerType containerType, CsSecurity security,
-            IReadOnlyList<CsInterface> inheritedInterfaces, IReadOnlyList<CsMember> members,
+            IReadOnlyList<CsInterface> inheritedInterfaces, IReadOnlyList<CsInterface> directInheritedInterfaces, IReadOnlyList<CsMember> members,
             string sourceDocument = null, ModelStore<ICsModel> modelStore = null, IReadOnlyList<ModelLoadException> modelErrors = null)
             : base(isLoaded, hasErrors, loadedFromSource, language, modelType, sourceDocument, modelStore, modelErrors)
         {
@@ -91,6 +97,7 @@ namespace CodeFactory.WinVs.Models.CSharp
             _containerType = containerType;
             _security = security;
             _inheritedInterfaces = inheritedInterfaces ?? ImmutableList<CsInterface>.Empty;
+            _directInheritedInterfaces = directInheritedInterfaces ?? ImmutableList<CsInterface>.Empty;
             _members = members ?? ImmutableList<CsMember>.Empty;
         }
 
@@ -204,6 +211,11 @@ namespace CodeFactory.WinVs.Models.CSharp
         ///     List of the interfaces that are inherited by this container.
         /// </summary>
         public IReadOnlyList<CsInterface> InheritedInterfaces => _inheritedInterfaces;
+
+        /// <summary>
+        /// List of the interfaces that are directly inherited by this container. This does not include interfaces that are inherited by base classes. Or interfaces that are inherited by other interfaces that this container inherits from.
+        /// </summary>
+        public IReadOnlyList<CsInterface> DirectInheritedInterfaces => throw new NotImplementedException();
 
         /// <summary>
         ///     List of the members that are implemented in this container.
@@ -450,5 +462,6 @@ namespace CodeFactory.WinVs.Models.CSharp
         /// <inheritdoc/>
         public string ModelSourceFile => _modelSourceFile;
 
+        
     }
 }

@@ -23,45 +23,51 @@ namespace CodeFactory.WinVs.Models.CSharp
         #endregion
 
         /// <summary>
-        /// Constructor for the <see cref="CsRecord"/>
+        /// Initializes a new instance of the <see cref="CsRecord"/> class, representing a C# record type with its
+        /// associated metadata and characteristics.
         /// </summary>
-        /// <param name="isLoaded">Flag that determines if the model was loaded.</param>
-        /// <param name="hasErrors">Flag that determine if errors were found creating the model.</param>
-        /// <param name="loadedFromSource">Flag that determines if the model was loaded from source code or from an existing library.</param>
-        /// <param name="language">The target language the model was generated from.</param>
-        /// <param name="members">The members assigned to this container.</param>
-        /// <param name="baseRecord">The record model that is base record of this record.</param>
-        /// <param name="sourceDocument">The source document that was used to build this model. This is optional parameter and can be null.</param>
-        /// <param name="modelStore">Optional the lookup storage for models created during the compile or lookup of the model.</param>
-        /// <param name="modelErrors">Optional the error that occurred while creating the model.</param>
-        /// <param name="attributes">List of the attributes assigned to this model.</param>
-        /// <param name="isGeneric">Flag that determines if the container is a generic definition.</param>
-        /// <param name="hasStrongTypesInGenerics">Flag that determines if the generics use strong type definitions.</param>
-        /// <param name="genericParameters">Generic parameters assigned to the container.</param>
-        /// <param name="genericTypes">Target types for the generic parameters assigned to the container.</param>
-        /// <param name="modelSourceFile">The source code file the model was generated from.</param>
-        /// <param name="sourceFiles">List of the fully qualified paths to the source code files this model is defined in.</param>
-        /// <param name="hasDocumentation">Flag that determines if the model has XML documentation assigned to it.</param>
-        /// <param name="documentation">The xml documentation assigned to the model.</param>
-        /// <param name="lookupPath">The fully qualified model lookup path for this model.</param>
-        /// <param name="name">The name of the model.</param>
-        /// <param name="ns">The namespace the container belongs to.</param>
-        /// <param name="parentPath">The fully qualified lookup path for the parent model to this one.</param>
-        /// <param name="security">The security scope assigned to this model.</param>
-        /// <param name="inheritedInterfaces">The interfaces that are inherited by this container.</param>
-        /// <param name="isStatic">Flag that determines if the model is static.</param>
-        /// <param name="isAbstract">Flag that determines if the model is abstract.</param>
-        /// <param name="isSealed">Flag that determines if the model is sealed.</param>
+        /// <remarks>This constructor is primarily used to initialize a <see cref="CsRecord"/> instance
+        /// with detailed metadata about the record, including its attributes, generic parameters, inheritance, and
+        /// members. It is typically used in scenarios where a comprehensive representation of a C# record is required,
+        /// such as code analysis or generation tools.</remarks>
+        /// <param name="isLoaded">Indicates whether the record has been successfully loaded.</param>
+        /// <param name="hasErrors">Indicates whether the record contains any errors.</param>
+        /// <param name="loadedFromSource">Indicates whether the record was loaded from source code.</param>
+        /// <param name="language">The programming language of the source code, typically C#.</param>
+        /// <param name="attributes">A read-only list of attributes applied to the record.</param>
+        /// <param name="isGeneric">Indicates whether the record is a generic type.</param>
+        /// <param name="hasStrongTypesInGenerics">Indicates whether the generic parameters of the record are strongly typed.</param>
+        /// <param name="genericParameters">A read-only list of generic parameters defined by the record.</param>
+        /// <param name="genericTypes">A read-only list of generic types used by the record.</param>
+        /// <param name="modelSourceFile">The file path of the primary source file for the record's model.</param>
+        /// <param name="sourceFiles">A read-only list of source files associated with the record.</param>
+        /// <param name="hasDocumentation">Indicates whether the record has associated documentation.</param>
+        /// <param name="documentation">The documentation string associated with the record, if available.</param>
+        /// <param name="lookupPath">The lookup path used to identify the record within the model.</param>
+        /// <param name="name">The name of the record.</param>
+        /// <param name="ns">The namespace in which the record is defined.</param>
+        /// <param name="parentPath">The path to the parent container of the record, if applicable.</param>
+        /// <param name="security">The security level (accessibility) of the record, such as public or private.</param>
+        /// <param name="inheritedInterfaces">A read-only list of all interfaces inherited by the record, including indirect inheritance.</param>
+        /// <param name="directInheritedInterfaces">A read-only list of interfaces directly inherited by the record.</param>
+        /// <param name="members">A read-only list of members (fields, properties, methods, etc.) defined within the record.</param>
+        /// <param name="isStatic">Indicates whether the record is static.</param>
+        /// <param name="isAbstract">Indicates whether the record is abstract.</param>
+        /// <param name="isSealed">Indicates whether the record is sealed.</param>
+        /// <param name="baseRecord">The base record from which this record inherits, if any.</param>
+        /// <param name="sourceDocument">The source document associated with the record, if available. This parameter is optional.</param>
+        /// <param name="modelStore">The model store containing the record, if applicable. This parameter is optional.</param>
+        /// <param name="modelErrors">A read-only list of errors encountered while loading the record's model, if any. This parameter is optional.</param>
         protected CsRecord(bool isLoaded, bool hasErrors, bool loadedFromSource, SourceCodeType language,
             IReadOnlyList<CsAttribute> attributes, bool isGeneric, bool hasStrongTypesInGenerics,
             IReadOnlyList<CsGenericParameter> genericParameters, IReadOnlyList<CsType> genericTypes, string modelSourceFile, IReadOnlyList<string> sourceFiles,
             bool hasDocumentation, string documentation, string lookupPath, string name, string ns, string parentPath, 
-            CsSecurity security, IReadOnlyList<CsInterface> inheritedInterfaces, IReadOnlyList<CsMember> members,
+            CsSecurity security, IReadOnlyList<CsInterface> inheritedInterfaces, IReadOnlyList<CsInterface> directInheritedInterfaces, IReadOnlyList<CsMember> members,
             bool isStatic, bool isAbstract, bool isSealed, CsRecord baseRecord,string sourceDocument = null, 
             ModelStore<ICsModel> modelStore = null, IReadOnlyList<ModelLoadException> modelErrors = null)
             : base(isLoaded, hasErrors, loadedFromSource, language, CsModelType.Record, attributes, 
                 isGeneric, hasStrongTypesInGenerics, genericParameters, genericTypes, modelSourceFile, sourceFiles, hasDocumentation,
-                documentation, lookupPath, name, ns, parentPath, CsContainerType.Record, security, inheritedInterfaces, 
+                documentation, lookupPath, name, ns, parentPath, CsContainerType.Record, security, inheritedInterfaces, directInheritedInterfaces,
                 members,sourceDocument, modelStore, modelErrors)
         {
             _isStatic = isStatic;

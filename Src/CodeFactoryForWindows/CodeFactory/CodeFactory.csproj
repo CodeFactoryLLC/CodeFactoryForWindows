@@ -2,24 +2,31 @@
 
   <PropertyGroup>
 	<TargetFramework>netstandard2.0</TargetFramework>
+	<LangVersion>13</LangVersion>
     <SignAssembly>True</SignAssembly>
     <AssemblyOriginatorKeyFile>CFSigner.snk</AssemblyOriginatorKeyFile>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
-    <Version>2.24361.0.1-PreRelease</Version>
+    <Version>2.25220.0.1-PreRelease</Version>
     <Authors>CodeFactory, LLC.</Authors>
     <Company>CodeFactory, LLC.</Company>
     <Product>CodeFactory Base Library</Product>
-    <Copyright>Copyright ©  2023 CodeFactory, LLC.</Copyright>
+    <Copyright>Copyright © 2025 CodeFactory, LLC.</Copyright>
     <Description>The base contracts and logic used by CodeFactory automation.</Description>
     <PackageLicenseExpression> MIT</PackageLicenseExpression>
     <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
     <IncludeSymbols>False</IncludeSymbols>
     <Title>CodeFactory Base Libraries </Title>
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
-    <FileVersion>2.24361.0.1</FileVersion>
+    <FileVersion>2.25220.0.1</FileVersion>
     <PackageIcon>CFLogo128.png</PackageIcon>
     <RepositoryType>git</RepositoryType>
-    <PackageReleaseNotes>Pre release of CodeFactory for Windows Version 2.0. No documentation or site access at this time.</PackageReleaseNotes>
+    <PackageReleaseNotes>
+		Release Updates for 2.25220.0.1
+
+		Recompile Release:
+		When you update your automation to this version of the SDK.
+		You will need to recompile your automation projects to the new version of the SDK, and make sure you have the CodeFactory runtime at least the same version or higher.
+	</PackageReleaseNotes>
     <GenerateDocumentationFile>True</GenerateDocumentationFile>
   </PropertyGroup>
 
@@ -33,6 +40,13 @@
       <PackagePath>\</PackagePath>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="PolySharp" Version="1.15.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
   </ItemGroup>
 
   <ItemGroup>

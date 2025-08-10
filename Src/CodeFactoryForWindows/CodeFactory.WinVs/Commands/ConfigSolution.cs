@@ -1,36 +1,44 @@
-﻿using System;
+﻿//*****************************************************************************
+//* Code Factory SDK
+//* Copyright (c) 2023-2025 CodeFactory, LLC
+//*****************************************************************************
 using System.Collections.Generic;
 using System.Collections.Immutable;
+using System.Collections.ObjectModel;
 using System.Linq;
-using System.Text;
+using MessagePack;
 
 namespace CodeFactory.WinVs.Commands
-{ 
+{
     /// <summary>
     /// The configuration information for a solution to be automated.
     /// </summary>
-    public class ConfigSolution
+    [MessagePackObject]
+    public class ConfigSolution: PropertyChangedBase
     {
         //Backing fields for the properties
         private string _name;
-        private ImmutableList<ConfigCommand> _commands = ImmutableList<ConfigCommand>.Empty;
+        private ObservableCollection<ConfigCommand> _commands = new ObservableCollection<ConfigCommand>();
+        
 
         /// <summary>
         /// Name assigned to the configuration that is loaded by the solution.
         /// </summary>
+        [Key(0)]
         public string Name
         {
             get => _name;
-            set => _name = value;
+            set { _name = value; OnPropertyChanged(); }
         }
 
         /// <summary>
         /// Configuration of the commands that were loaded.
         /// </summary>
-        public ImmutableList<ConfigCommand> Commands
+        [Key(1)]
+        public ObservableCollection<ConfigCommand> Commands
         {
-            get => _commands ?? ImmutableList<ConfigCommand>.Empty;
-            set => _commands = value;
+            get => _commands;
+            set { _commands = value; OnPropertyChanged(); }
         }
 
         /// <summary>
@@ -42,7 +50,7 @@ namespace CodeFactory.WinVs.Commands
         {
             if (command == null) return this;
 
-            _commands = _commands.Add(command);
+            _commands.Add(command);
 
             return this;
         }

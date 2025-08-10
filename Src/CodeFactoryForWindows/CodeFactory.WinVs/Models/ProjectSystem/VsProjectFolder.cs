@@ -3,6 +3,7 @@
 //* Copyright (c) 2020-2023 CodeFactory, LLC
 //*****************************************************************************
 
+using CodeFactory.WinVs.Models.CSharp;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
@@ -110,5 +111,39 @@ namespace CodeFactory.WinVs.Models.ProjectSystem
         /// </summary>
         /// <returns>The fully qualified namespace if the project is a c# project that supports this project folder. Otherwise null will be returned.</returns>
         public abstract Task<string> GetCSharpNamespaceAsync();
+
+        /// <summary>
+        /// Asynchronously retrieves a collection of source code files from the specified Visual Studio project folder that
+        /// match the given search criteria.
+        /// </summary>
+        /// <remarks>This method performs an asynchronous search within the provided project folder and applies
+        /// the specified  search criteria to identify matching source code files. Use the <paramref
+        /// name="IgnoreFolderPaths"/>  parameter to exclude specific folders from the search if needed.</remarks>
+        /// <param name="searchCriteria">The criteria used to filter the source code files to be retrieved.</param>
+        /// <param name="searchSubFolders">Flag that determines if sub folders from this location will be searched. Default value is <c>true</c>.</param>
+        /// <param name="IgnoreFolderPaths">An optional collection of folder paths to exclude from the search. If <see langword="null"/>, no folders are
+        /// excluded. When setting the folder paths just include the folder name. If you are going multiple folders deep use a forward slash as the folder seperator.</param>
+        /// <returns>A task that represents the asynchronous operation. The task result contains a read-only list of  <see
+        /// cref="CsSource"/> objects that match the specified search criteria.</returns>
+        public abstract Task<IReadOnlyList<CsSource>> FindCSharpSourceCodeAsync(CsSourceSearchCriteria searchCriteria, bool searchSubFolders = true, IEnumerable<string> IgnoreFolderPaths = null);
+
+
+        /// <summary>
+        /// Asynchronously loads a <see cref="VsCSharpSource"/> object from the specified C# source file within a Visual
+        /// Studio project folder.
+        /// </summary>
+        /// <param name="csSource">The C# source file to load.</param>
+        /// <returns>A task that represents the asynchronous operation. The task result contains the loaded <see
+        /// cref="VsCSharpSource"/> object.</returns>
+        public abstract Task<VsCSharpSource> LoadFromCsSourceAsync(CsSource csSource);
+
+
+        /// <summary>
+        /// Asynchronously loads a C# source file from the specified container.
+        /// </summary>
+        /// <param name="source">The container from which the C# source file will be loaded. This parameter cannot be null.</param>
+        /// <returns>A task that represents the asynchronous operation. The task result contains the loaded <see
+        /// cref="VsCSharpSource"/> object.</returns>
+        public abstract Task<VsCSharpSource> LoadCSharpSourceFromContainerAsync(CsContainer source);
     }
 }

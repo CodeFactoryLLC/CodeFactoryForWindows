@@ -40,6 +40,11 @@ namespace CodeFactory.WinVs.Models.CSharp
         IReadOnlyList<CsInterface> InheritedInterfaces { get; }
 
         /// <summary>
+        /// List of the interfaces that are directly inherited by this container. This does not include interfaces that are inherited by base classes. Or interfaces that are inherited by other interfaces that this container inherits from.
+        /// </summary>
+        IReadOnlyList<CsInterface> DirectInheritedInterfaces { get; }
+
+        /// <summary>
         ///     List of the members that are implemented in this container.
         /// </summary>
         IReadOnlyList<CsMember> Members { get; }

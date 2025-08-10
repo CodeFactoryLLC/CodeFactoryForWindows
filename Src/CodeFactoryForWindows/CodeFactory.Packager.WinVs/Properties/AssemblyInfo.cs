@@ -6,11 +6,11 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("CodeFactory.Packager.WinVs")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyDescription("Commandline utility that creates the CodeFactory Automation file. (cfa)")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
+[assembly: AssemblyCompany("CodeFactory, LLC.")]
 [assembly: AssemblyProduct("CodeFactory.Packager.WinVs")]
-[assembly: AssemblyCopyright("Copyright ©  2023")]
+[assembly: AssemblyCopyright("Copyright © 2025 CodeFactory, LLC.")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
@@ -33,4 +33,4 @@ using System.Runtime.InteropServices;
 // by using the '*' as shown below:
 // [assembly: AssemblyVersion("1.0.*")]
 [assembly: AssemblyVersion("2.0.0.0")]
-[assembly: AssemblyFileVersion("2.24361.0.1")]
+[assembly: AssemblyFileVersion("2.25220.0.1")]

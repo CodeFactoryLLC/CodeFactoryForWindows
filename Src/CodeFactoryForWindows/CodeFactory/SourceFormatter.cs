@@ -1,6 +1,6 @@
 ﻿//*****************************************************************************
 //* Code Factory SDK
-//* Copyright (c) 2023 CodeFactory, LLC
+//* Copyright (c) 2023-2025 CodeFactory, LLC
 //*****************************************************************************
 using System;
 using System.Collections.Generic;
@@ -40,6 +40,50 @@ namespace CodeFactory
         {
             if (string.IsNullOrEmpty(code)) return;
             _codeFormatter.Append(code);
+        }
+
+        /// <summary>
+        /// Appends the specified code to the internal formatter, preceded by the specified level of indentation.
+        /// </summary>
+        /// <remarks>Each indentation level corresponds to a predefined indentation statement. If
+        /// <paramref name="code"/> is <see langword="null"/> or empty, the method performs no action.</remarks>
+        /// <param name="indentLevel">The number of indentation levels to prepend before appending the code. Must be non-negative.</param>
+        /// <param name="code">The code to append. Cannot be <see langword="null"/> or empty.</param>
+        public void AppendCode(int indentLevel, string code)
+        {
+            if (string.IsNullOrEmpty(code)) return;
+
+            // Append the indent level
+            for (int i = 0; i < indentLevel; i++)
+            {
+                _codeFormatter.Append(_indentStatement);
+            }
+            // Append the code
+            _codeFormatter.Append(code);
+        }
+
+        /// <summary>
+        /// Appends the specified code to the internal formatter, preceded by the specified indentation level,  and adds
+        /// a new line at the end.
+        /// </summary>
+        /// <remarks>This method formats the code by adding the specified number of indentation levels
+        /// before appending it,  followed by a new line. If <paramref name="code"/> is null or empty, the method
+        /// performs no action.</remarks>
+        /// <param name="indentLevel">The number of indentation levels to prepend before the code. Must be non-negative.</param>
+        /// <param name="code">The code to append. Cannot be null or empty.</param>
+        public void AppendCodeEndWithNewLine(int indentLevel, string code)
+        {
+            if (string.IsNullOrEmpty(code)) return;
+
+            // Append the indent level
+            for (int i = 0; i < indentLevel; i++)
+            {
+                _codeFormatter.Append(_indentStatement);
+            }
+            // Append the code
+            _codeFormatter.Append(code);
+
+            _codeFormatter.AppendLine();
         }
 
         /// <summary>

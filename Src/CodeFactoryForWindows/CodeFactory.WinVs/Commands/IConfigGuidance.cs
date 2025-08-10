@@ -1,6 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿//*****************************************************************************
+//* Code Factory SDK
+//* Copyright (c) 2023-2025 CodeFactory, LLC
+//*****************************************************************************
 
 namespace CodeFactory.WinVs.Commands
 {
@@ -13,5 +14,10 @@ namespace CodeFactory.WinVs.Commands
         /// Instructions for what data is to go into the configuration. 
         /// </summary>
         string Guidance { get; set; }
+
+        /// <summary>
+        /// The url to external guidance that explains the configuration element.
+        /// </summary>
+        string GuidanceUrl { get; set; }
     }
 }

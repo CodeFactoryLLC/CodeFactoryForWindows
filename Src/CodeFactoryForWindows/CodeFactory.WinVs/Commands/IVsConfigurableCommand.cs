@@ -1,6 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿//*****************************************************************************
+//* Code Factory SDK
+//* Copyright (c) 2023-2025 CodeFactory, LLC
+//*****************************************************************************
 
 namespace CodeFactory.WinVs.Commands
 {

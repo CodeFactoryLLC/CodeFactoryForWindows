@@ -11,7 +11,7 @@ namespace CodeFactory.WinVs.Commands.IDE
     /// <summary>
     /// Base implementation of the solution explorer command <see cref="ISolutionLoadCommand"/>
     /// </summary>
-    public abstract class SolutionLoadCommandBase: VsEnviromentCommandBase<VsSolution>,ISolutionLoadCommand
+    public abstract class SolutionLoadCommandBase: VsEnvironmentCommandBase<VsSolution>,ISolutionLoadCommand
     {
 
         /// <inheritdoc />

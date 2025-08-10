@@ -1,9 +1,10 @@
 ﻿//*****************************************************************************
 //* Code Factory SDK
-//* Copyright (c) 2023 CodeFactory, LLC
+//* Copyright (c) 2023-2025 CodeFactory, LLC
 //*****************************************************************************
 using System.Threading.Tasks;
 using CodeFactory.WinVs.Logging;
+// ReSharper disable InconsistentNaming
 
 namespace CodeFactory.WinVs.Commands
 {
@@ -11,7 +12,7 @@ namespace CodeFactory.WinVs.Commands
     /// Base implementation for a environment command that supports integration with the Visual studio IDE environment directly. 
     /// </summary>
     /// <typeparam name="TModel">The target visual studio model type to be returned from the visual studio environment command.</typeparam>
-    public abstract class VsEnviromentCommandBase<TModel> : IVsEnvironmentCommand<TModel> where TModel : class
+    public abstract class VsEnvironmentCommandBase<TModel> : IVsEnvironmentCommand<TModel> where TModel : class
     {
         /// <summary>
         /// Backing field for the property <see cref="CommandTitle"/>
@@ -46,7 +47,7 @@ namespace CodeFactory.WinVs.Commands
         /// <param name="commandType">The target type of command being created. </param>
         /// <param name="commandTitle">The title displayed in visual studio for this command.</param>
         /// <param name="commandDescription">A brief description of the purpose of this command.</param>
-        protected VsEnviromentCommandBase(ILogger logger, IVsActions commands, VsCommandType commandType, string commandTitle, string commandDescription)
+        protected VsEnvironmentCommandBase(ILogger logger, IVsActions commands, VsCommandType commandType, string commandTitle, string commandDescription)
         {
             _logger = logger;
             _commandType = commandType;
@@ -61,7 +62,7 @@ namespace CodeFactory.WinVs.Commands
         public string CommandTitle => _commandTitle;
 
         /// <summary>
-        /// An optional discription that discribes what this factory command is intended for. 
+        /// An optional description that describes what this factory command is intended for. 
         /// </summary>
         public string CommandDescription => _commandDescription;
 

@@ -1,15 +1,22 @@
-﻿using System;
+﻿//*****************************************************************************
+//* Code Factory SDK
+//* Copyright (c) 2023-2025 CodeFactory, LLC
+//*****************************************************************************
+using System;
 using System.Collections.Generic;
 using System.Collections.Immutable;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
+using MessagePack;
 
 namespace CodeFactory.WinVs.Commands
 {
     /// <summary>
     /// Stores the configuration for a CodeFactory command.
     /// </summary>
-    public class ConfigCommand:IConfigGuidance
+    [MessagePackObject]
+    public class ConfigCommand:PropertyChangedBase,IConfigGuidance
     {
         //Backing fields for the properties
         private string _name;
@@ -20,73 +27,92 @@ namespace CodeFactory.WinVs.Commands
 
         private ConfigProject _executionProject;
 
-        private ImmutableList<ConfigProject> _projects = ImmutableList<ConfigProject>.Empty;
+        private ObservableCollection<ConfigProject> _projects = new ObservableCollection<ConfigProject>();
 
-        private ImmutableList<ConfigParameter> _parameters = ImmutableList<ConfigParameter>.Empty;
+        private ObservableCollection<ConfigParameter> _parameters = new ObservableCollection<ConfigParameter>();
 
         private string _guidance;
+
+        private string _guidanceUrl;
 
         /// <summary>
         /// The name assigned to represent the command being executed.
         /// </summary>
-        public string Name 
+        [Key(0)]
+        public string Name
         {
-            get => _name; 
-            set => _name = value;
+            get => _name;
+            set { _name = value; OnPropertyChanged(); }
         }
 
         /// <summary>
         /// The target category the command belongs to.
         /// </summary>
+        [Key(1)]
         public string Category
-        { 
+        {
             get => _category;
-            set => _category = value;
+            set { _category = value; OnPropertyChanged();}
         }
 
         /// <summary>
         /// The fully qualified type name of the command that is used by this configuration. 
         /// </summary>
+        [Key(2)]
         public string CommandType
         {
             get => _commandType;
-            set => _commandType = value;
+            set { _commandType = value; OnPropertyChanged();}
         }
 
         /// <summary>
         /// The project the command is executed in.
         /// </summary>
+        [Key(3)]
         public ConfigProject ExecutionProject
-        { 
-            get => _executionProject; 
-            set => _executionProject = value;
+        {
+            get => _executionProject;
+            set { _executionProject = value; OnPropertyChanged(); }
         }
 
         /// <summary>
         /// Additional projects that will provide source and target projects used by the executing command.
         /// </summary>
-        public ImmutableList<ConfigProject> Projects
+        [Key(4)]
+        public ObservableCollection<ConfigProject> Projects
         {
-            get => _projects ?? ImmutableList<ConfigProject>.Empty;
-            set => _projects = value;
+            get => _projects;
+            set { _projects = value; OnPropertyChanged(); }
         }
 
         /// <summary>
         /// Parameters that are used with the command implementation.
         /// </summary>
-        public ImmutableList<ConfigParameter> Parameters
-        { 
-            get => _parameters ?? ImmutableList<ConfigParameter>.Empty;
-            set => _parameters = value;
+        [Key(5)]
+        public ObservableCollection<ConfigParameter> Parameters
+        {
+            get => _parameters;
+            set { _parameters = value; OnPropertyChanged(); }
         }
 
         /// <summary>
         /// Instructions for what data is to go into the configuration. 
         /// </summary>
-        public string Guidance 
-        { 
-            get => _guidance; 
-            set => _guidance = value; 
+        [Key(6)]
+        public string Guidance
+        {
+            get => _guidance;
+            set { _guidance = value; OnPropertyChanged(); }
+        }
+
+        /// <summary>
+        /// The url to external guidance that explains the configuration element.
+        /// </summary>
+        [Key(7)]
+        public string GuidanceUrl
+        {
+            get => _guidanceUrl;
+            set { _guidanceUrl = value; OnPropertyChanged(); }
         }
 
         /// <summary>
@@ -112,7 +138,7 @@ namespace CodeFactory.WinVs.Commands
         {
             if (project == null) return this;
 
-            _projects =  _projects.Add(project);
+            _projects.Add(project);
 
             return this;
         }
@@ -126,7 +152,7 @@ namespace CodeFactory.WinVs.Commands
         { 
             if (parameter == null) return this;
 
-            _parameters =  _parameters.Add(parameter);
+            _parameters.Add(parameter);
 
             return this;
         }
@@ -156,9 +182,49 @@ namespace CodeFactory.WinVs.Commands
         /// </summary>
         /// <param name="name">Name of the parameter to lookup.</param>
         /// <returns>The parameter value or null.</returns>
-        public string ParameterValue(string name)
+        public string ParameterValueString(string name)
         {
-            return string.IsNullOrEmpty(name) ? null : _parameters.FirstOrDefault(p => p.Name == name)?.Value;
+            return string.IsNullOrEmpty(name)
+                ? null
+                : _parameters.FirstOrDefault(p => p.Name == name)?.Value?.StringValue;
         }
+
+        /// <summary>
+        /// Gets the target parameter boolean value that has been assigned to a parameter source assigned to this command source.
+        /// </summary>
+        /// <param name="name">Name of the parameter to lookup.</param>
+        /// <returns>The parameter value or null.</returns>
+        public bool? ParameterValueBool(string name)
+        {
+            return string.IsNullOrEmpty(name)
+                ? null
+                : _parameters.FirstOrDefault(p => p.Name == name)?.Value?.BoolValue;
+        }
+
+        /// <summary>
+        /// Gets the target parameter list value that has been assigned to a parameter source assigned to this command source.
+        /// </summary>
+        /// <param name="name">Name of the parameter to lookup.</param>
+        /// <returns>The parameter value or null.</returns>
+        public ObservableCollection<ConfigParameterListValue> ParameterValueList(string name)
+        {
+            return string.IsNullOrEmpty(name)
+                ? null
+                : _parameters.FirstOrDefault(p => p.Name == name)?.Value?.ListValue;
+        }
+
+        /// <summary>
+        /// Gets the target parameter date time value that has been assigned to a parameter source assigned to this command source.
+        /// </summary>
+        /// <param name="name">Name of the parameter to lookup.</param>
+        /// <returns>The parameter value or null.</returns>
+        public DateTime? ParameterValueDateTime(string name)
+        {
+            return string.IsNullOrEmpty(name)
+                ? null
+                : _parameters.FirstOrDefault(p => p.Name == name)?.Value?.DateTimeValue;
+        }
+
+
     }
 }

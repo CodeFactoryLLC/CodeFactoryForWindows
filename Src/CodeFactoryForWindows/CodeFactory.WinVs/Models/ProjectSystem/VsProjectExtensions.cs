@@ -27,14 +27,23 @@ namespace CodeFactory.WinVs.Models.ProjectSystem
 
             if (string.IsNullOrEmpty(className)) return null;
 
-            var children = await source.GetChildrenAsync(searchAllFolders, true);
+            //var children = await source.GetChildrenAsync(searchAllFolders, true);
 
-            var sourceCode = children.Where(m => m.ModelType == VisualStudioModelType.CSharpSource)
-                .Cast<VsCSharpSource>();
+            //var sourceCode = children.Where(m => m.ModelType == VisualStudioModelType.CSharpSource)
+            //    .Cast<VsCSharpSource>();
 
-            var result = sourceCode.FirstOrDefault(s => s.SourceCode.Classes.Any(c => c.Name == className));
+            //var result = sourceCode.FirstOrDefault(s => s.SourceCode.Classes.Any(c => c.Name == className));
 
-            return result;
+            var searchCriteria = new CsSourceSearchCriteria
+            {
+                ContainerSearch = c => (c.Name == className) & (c.ContainerType == CsContainerType.Class)
+            };
+
+            var classSources = await source.FindCSharpSourceCodeAsync(searchCriteria, searchAllFolders);
+
+            var classSource = classSources.FirstOrDefault();
+
+            return classSource != null ? await source.LoadFromCsSourceAsync(classSource) : null;
         }
 
         /// <summary>
@@ -51,17 +60,27 @@ namespace CodeFactory.WinVs.Models.ProjectSystem
 
             if (string.IsNullOrEmpty(name)) return null;
 
-            var children = await source.GetChildrenAsync(searchAllFolders, true);
+            // var children = await source.GetChildrenAsync(searchAllFolders, true);
 
-            var sourceCode = children.Where(m => m.ModelType == VisualStudioModelType.CSharpSource)
-                .Cast<VsCSharpSource>();
+            // var sourceCode = children.Where(m => m.ModelType == VisualStudioModelType.CSharpSource)
+            //     .Cast<VsCSharpSource>();
 
-           if(sourceCode == null) return null;
-           if(!sourceCode.Any()) return null;
+            //if(sourceCode == null) return null;
+            //if(!sourceCode.Any()) return null;
 
-            var result = sourceCode.FirstOrDefault(s => s.SourceCode.Interfaces.Any(c => c.Name == name));
+            // var result = sourceCode.FirstOrDefault(s => s.SourceCode.Interfaces.Any(c => c.Name == name));
 
-            return result;
+            var searchCriteria = new CsSourceSearchCriteria
+            {
+                ContainerSearch = c => (c.Name == name) & (c.ContainerType == CsContainerType.Interface)
+            };
+
+            var interfaceSources = await source.FindCSharpSourceCodeAsync(searchCriteria, searchAllFolders);
+
+            var interfaceSource = interfaceSources.FirstOrDefault();
+
+            return interfaceSource != null ? await source.LoadFromCsSourceAsync(interfaceSource) : null;
+
         }
 
         /// <summary>
@@ -78,17 +97,27 @@ namespace CodeFactory.WinVs.Models.ProjectSystem
 
             if (string.IsNullOrEmpty(fileName)) return null;
 
-            var children = await source.GetChildrenAsync(searchAllFolders, true);
+            //var children = await source.GetChildrenAsync(searchAllFolders, true);
 
-            var sourceCode = children.Where(m => m.ModelType == VisualStudioModelType.CSharpSource)
-                .Cast<VsCSharpSource>();
+            //var sourceCode = children.Where(m => m.ModelType == VisualStudioModelType.CSharpSource)
+            //    .Cast<VsCSharpSource>();
 
-            if (sourceCode == null) return null;
-            if (!sourceCode.Any()) return null;
+            //if (sourceCode == null) return null;
+            //if (!sourceCode.Any()) return null;
 
-            var result = sourceCode.FirstOrDefault(s => Path.GetFileName(s.SourceCode.SourceDocument) == fileName);
+            //var result = sourceCode.FirstOrDefault(s => Path.GetFileName(s.SourceCode.SourceDocument) == fileName);
 
-            return result;
+            var searchCriteria = new CsSourceSearchCriteria
+            {
+                ContainerSearch = f => f.FilePath != null ? Path.GetFileName(f.FilePath) == fileName : false
+            };
+
+            var fileSources = await source.FindCSharpSourceCodeAsync(searchCriteria, searchAllFolders);
+
+            var fileSource = fileSources.FirstOrDefault();
+
+            return fileSource != null ? await source.LoadFromCsSourceAsync(fileSource) : null;
+
         }
 
         /// <summary>
