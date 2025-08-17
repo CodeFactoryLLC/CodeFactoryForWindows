@@ -138,11 +138,11 @@ namespace CodeFactory.WinVs.Models.ProjectSystem
         /// <returns>Readonly list of the referenced projects or an empty list if there is no referenced projects.</returns>
         public async Task<IReadOnlyList<VsProject>> GetReferencedProjects()
         {
-            if (!IsLoaded) return ImmutableList<VsProject>.Empty;
+            if (!IsLoaded) return ImmutableArray<VsProject>.Empty;
 
             var projectReferences = await GetProjectReferencesAsync();
 
-            if(!projectReferences.Any(r => r.Type == ProjectReferenceType.Project)) return ImmutableList<VsProject>.Empty;
+            if(!projectReferences.Any(r => r.Type == ProjectReferenceType.Project)) return ImmutableArray<VsProject>.Empty;
 
             var projects = new List<VsProject>();
             foreach (var vsProjectReference in projectReferences)
@@ -151,7 +151,7 @@ namespace CodeFactory.WinVs.Models.ProjectSystem
                 if(project != null) projects.Add(project);
             }
 
-            return projects.Any() ? projects.ToImmutableList() : ImmutableList<VsProject>.Empty;
+            return projects.Any() ? projects.ToImmutableArray() : ImmutableArray<VsProject>.Empty;
         }
 
         /// <summary>
@@ -169,7 +169,6 @@ namespace CodeFactory.WinVs.Models.ProjectSystem
         /// cref="CsSource"/> objects that match the specified search criteria.</returns>
         public abstract Task<IReadOnlyList<CsSource>> FindCSharpSourceCodeAsync(CsSourceSearchCriteria searchCriteria, bool searchSubFolders = true, IEnumerable<string> IgnoreFolderPaths = null);
 
-
         /// <summary>
         /// Asynchronously loads a <see cref="VsCSharpSource"/> object from the specified C# source file within a Visual
         /// Studio project.
@@ -179,7 +178,6 @@ namespace CodeFactory.WinVs.Models.ProjectSystem
         /// cref="VsCSharpSource"/> object.</returns>
         public abstract Task<VsCSharpSource> LoadFromCsSourceAsync(CsSource csSource);
 
-
         /// <summary>
         /// Asynchronously loads a C# source file from the specified container.
         /// </summary>
@@ -187,5 +185,84 @@ namespace CodeFactory.WinVs.Models.ProjectSystem
         /// <returns>A task that represents the asynchronous operation. The task result contains the loaded <see
         /// cref="VsCSharpSource"/> object.</returns>
         public abstract Task<VsCSharpSource> LoadCSharpSourceFromContainerAsync(CsContainer source);
+
+        /// <summary>
+        /// Asynchronously retrieves a list of NuGet packages from the Visual Studio project.
+        /// </summary>
+        /// <remarks>The returned list may be empty if no NuGet packages are available.</remarks>
+        /// <returns>A task that represents the asynchronous operation. The task result contains a read-only list of  <see
+        /// cref="NuGetPackage"/> objects representing the retrieved NuGet packages.</returns>
+        public abstract Task<IReadOnlyList<NuGetPackage>> GetNuGetPackagesAsync();
+
+        /// <summary>
+        /// Asynchronously adds a NuGet package to the project.
+        /// </summary>
+        /// <remarks>This method attempts to add the specified NuGet package to the project. Ensure that
+        /// the package ID and version are valid and that the project is in a state that allows modifications.</remarks>
+        /// <param name="packageId">The unique identifier of the NuGet package to add. This cannot be null or empty.</param>
+        /// <param name="version">The version of the NuGet package to add. This cannot be null or empty.</param>
+        /// <param name="acceptPackageLicense">Flag that determines if you accept the license notice on a nuget package.</param>
+        /// <returns>A task that represents the asynchronous operation. The task result is <see langword="true"/> if the package
+        /// was successfully added; otherwise, <see langword="false"/>.</returns>
+        public abstract Task<bool> AddNuGetPackageAsync(string packageId, string version, bool acceptPackageLicense);
+
+        /// <summary>
+        /// Removes a NuGet package with the specified package ID from the system.
+        /// </summary>
+        /// <remarks>This method performs an asynchronous operation to remove a NuGet package. Ensure that
+        /// the package ID provided is valid and corresponds to an existing package in the system.</remarks>
+        /// <param name="packageId">The unique identifier of the NuGet package to remove. This value cannot be null or empty.</param>
+        /// <returns>A task that represents the asynchronous operation. The task result is <see langword="true"/> if the package
+        /// was successfully removed; otherwise, <see langword="false"/>.</returns>
+        public abstract Task<bool> RemoveNuGetPackageAsync(string packageId);
+
+        /// <summary>
+        /// Adds a reference to the specified project asynchronously.
+        /// </summary>
+        /// <remarks>This method performs the operation asynchronously and may involve I/O operations.
+        /// Ensure that the project name provided is valid and corresponds to an existing project.</remarks>
+        /// <param name="projectName">The name of the project to add as a reference. Cannot be null or empty.</param>
+        /// <returns>A task that represents the asynchronous operation. The task result is <see langword="true"/> if the project
+        /// reference was added successfully; otherwise, <see langword="false"/>.</returns>
+        public abstract Task<bool> AddProjectReferenceAsync(string projectName);
+
+        /// <summary>
+        /// Adds a reference to the specified project asynchronously.
+        /// </summary>
+        /// <remarks>This method performs the operation asynchronously and may involve file system or
+        /// project system updates. Ensure that the provided <paramref name="project"/> is valid and
+        /// accessible.</remarks>
+        /// <param name="project">The project to be added as a reference. Cannot be <see langword="null"/>.</param>
+        /// <returns>A task that represents the asynchronous operation. The task result is <see langword="true"/> if the project
+        /// reference was added successfully; otherwise, <see langword="false"/>.</returns>
+        public abstract Task<bool> AddProjectReferenceAsync(VsProject project);
+
+        /// <summary>
+        /// Removes a project reference by its name asynchronously.
+        /// </summary>
+        /// <remarks>This method performs the removal operation asynchronously. Ensure that the project
+        /// name provided matches an existing reference to avoid unexpected results.</remarks>
+        /// <param name="projectName">The name of the project to remove as a reference. Cannot be null or empty.</param>
+        /// <returns>A task that represents the asynchronous operation. The task result is <see langword="true"/> if the project
+        /// reference was successfully removed; otherwise, <see langword="false"/>.</returns>
+        public abstract Task<bool> RemoveProjectReferenceAsync(string projectName);
+
+        /// <summary>
+        /// Removes a project reference from the current project asynchronously.
+        /// </summary>
+        /// <param name="project">The <see cref="VsProject"/> instance representing the project to be removed as a reference.</param>
+        /// <returns>A task that represents the asynchronous operation. The task result is <see langword="true"/> if the project
+        /// reference was successfully removed; otherwise, <see langword="false"/>.</returns>
+        public abstract Task<bool> RemoveProjectReferenceAsync(VsProject project);
+
+        /// <summary>
+        /// Removes a project reference from the current project asynchronously.
+        /// </summary>
+        /// <remarks>This method performs the removal operation asynchronously. Ensure that the provided
+        /// reference is valid and exists in the current project before calling this method.</remarks>
+        /// <param name="reference">The project reference to be removed. Must not be <see langword="null"/>.</param>
+        /// <returns>A task that represents the asynchronous operation. The task result is <see langword="true"/> if the
+        /// reference was successfully removed; otherwise, <see langword="false"/>.</returns>
+        public abstract Task<bool> RemoveProjectReferenceAsync(VsReference reference);
     }
 }

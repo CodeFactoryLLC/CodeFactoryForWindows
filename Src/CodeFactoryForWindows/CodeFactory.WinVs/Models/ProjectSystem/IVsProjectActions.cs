@@ -96,5 +96,93 @@ namespace CodeFactory.WinVs.Models.ProjectSystem
         /// cref="VsCSharpSource"/> object.</returns>
         Task<VsCSharpSource> LoadFromCsSourceAsync(VsProject source,CsSource csSource);
 
+
+        /// <summary>
+        /// Asynchronously retrieves a list of NuGet packages from the Visual Studio project.
+        /// </summary>
+        /// <param name="source">Source project to get the NuGet packages from. </param>
+        /// <remarks>The returned list may be empty if no NuGet packages are available.</remarks>
+        /// <returns>A task that represents the asynchronous operation. The task result contains a read-only list of  <see
+        /// cref="NuGetPackage"/> objects representing the retrieved NuGet packages.</returns>
+        Task<IReadOnlyList<NuGetPackage>> GetNuGetPackagesAsync(VsProject source);
+
+        /// <summary>
+        /// Asynchronously adds a NuGet package to the project.
+        /// </summary>
+        /// <remarks>This method attempts to add the specified NuGet package to the project. Ensure that
+        /// the package ID and version are valid and that the project is in a state that allows modifications.</remarks>
+        /// <param name="source">The project to which the NuGet package will be added. This cannot be <see langword="null"/>.</param>
+        /// <param name="packageId">The unique identifier of the NuGet package to add. This cannot be null or empty.</param>
+        /// <param name="version">The version of the NuGet package to add. This cannot be null or empty.</param>
+        /// <param name="acceptPackageLicense">Flag that determines if you accept the license notice on a nuget package.</param>
+        /// <returns>A task that represents the asynchronous operation. The task result is <see langword="true"/> if the package
+        /// was successfully added; otherwise, <see langword="false"/>.</returns>
+        Task<bool> AddNuGetPackageAsync(VsProject source, string packageId, string version, bool acceptPackageLicense);
+
+        /// <summary>
+        /// Removes a NuGet package with the specified package ID from the system.
+        /// </summary>
+        /// <remarks>This method performs an asynchronous operation to remove a NuGet package. Ensure that
+        /// the package ID provided is valid and corresponds to an existing package in the system.</remarks>
+        /// <param name="source">The project from which the NuGet package will be removed. This cannot be <see langword="null"/>.</param>
+        /// <param name="packageId">The unique identifier of the NuGet package to remove. This value cannot be null or empty.</param>
+        /// <returns>A task that represents the asynchronous operation. The task result is <see langword="true"/> if the package
+        /// was successfully removed; otherwise, <see langword="false"/>.</returns>
+        Task<bool> RemoveNuGetPackageAsync(VsProject source, string packageId);
+
+        /// <summary>
+        /// Adds a reference to the specified project asynchronously.
+        /// </summary>
+        /// <remarks>This method performs the operation asynchronously and may involve I/O operations.
+        /// Ensure that the project name provided is valid and corresponds to an existing project.</remarks>
+        /// <param name="source">Source project to add the reference to.</param>
+        /// <param name="projectName">The name of the project to add as a reference. Cannot be null or empty.</param>
+        /// <returns>A task that represents the asynchronous operation. The task result is <see langword="true"/> if the project
+        /// reference was added successfully; otherwise, <see langword="false"/>.</returns>
+        Task<bool> AddProjectReferenceAsync(VsProject source, string projectName);
+
+        /// <summary>
+        /// Adds a reference to the specified project asynchronously.
+        /// </summary>
+        /// <remarks>This method performs the operation asynchronously and may involve file system or
+        /// project system updates. Ensure that the provided <paramref name="project"/> is valid and
+        /// accessible.</remarks>
+        /// <param name="source">Source project to add the reference to.</param>
+        /// <param name="project">The project to be added as a reference. Cannot be <see langword="null"/>.</param>
+        /// <returns>A task that represents the asynchronous operation. The task result is <see langword="true"/> if the project
+        /// reference was added successfully; otherwise, <see langword="false"/>.</returns>
+        Task<bool> AddProjectReferenceAsync(VsProject source, VsProject project);
+
+        /// <summary>
+        /// Removes a project reference by its name asynchronously.
+        /// </summary>
+        /// <remarks>This method performs the removal operation asynchronously. Ensure that the project
+        /// name provided matches an existing reference to avoid unexpected results.</remarks>
+        /// <param name="source">Source project to remove the reference from.</param>
+        /// <param name="projectName">The name of the project to remove as a reference. Cannot be null or empty.</param>
+        /// <returns>A task that represents the asynchronous operation. The task result is <see langword="true"/> if the project
+        /// reference was successfully removed; otherwise, <see langword="false"/>.</returns>
+        Task<bool> RemoveProjectReferenceAsync(VsProject source, string projectName);
+
+        /// <summary>
+        /// Removes a project reference from the current project asynchronously.
+        /// </summary>
+        /// <param name="source">Source project to remove the reference from.</param>
+        /// <param name="project">The <see cref="VsProject"/> instance representing the project to be removed as a reference.</param>
+        /// <returns>A task that represents the asynchronous operation. The task result is <see langword="true"/> if the project
+        /// reference was successfully removed; otherwise, <see langword="false"/>.</returns>
+        Task<bool> RemoveProjectReferenceAsync(VsProject source, VsProject project);
+
+        /// <summary>
+        /// Removes a project reference from the current project asynchronously.
+        /// </summary>
+        /// <remarks>This method performs the removal operation asynchronously. Ensure that the provided
+        /// reference is valid and exists in the current project before calling this method.</remarks>
+        /// <param name="source">Source project to remove the reference from.</param>
+        /// <param name="reference">The project reference to be removed. Must not be <see langword="null"/>.</param>
+        /// <returns>A task that represents the asynchronous operation. The task result is <see langword="true"/> if the
+        /// reference was successfully removed; otherwise, <see langword="false"/>.</returns>
+        Task<bool> RemoveProjectReferenceAsync(VsProject source, VsReference reference);
+
     }
 }
