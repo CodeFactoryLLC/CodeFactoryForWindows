@@ -23,12 +23,12 @@ namespace CodeFactory.WinVs.Loader
         /// <summary>
         /// The maximum version of the SDK that can be loaded and used.
         /// </summary>
-        public const string MaxVersion = "2.25220.0.1";
+        public const string MaxVersion = "2.25229.0.1";
 
         /// <summary>
         /// The target version of the NuGet package this SDK is deployed from.
         /// </summary>
-        public const string NuGetSdkVersion = "2.25220.0.1-PreRelease";
+        public const string NuGetSdkVersion = "2.25229.0.1-PreRelease";
 
         /// <summary>
         /// The name of the assembly type for the CodeFactory SDK version attribute.
@@ -54,6 +54,8 @@ namespace CodeFactory.WinVs.Loader
             Assembly workAssembly = sourceAssembly;
             
             bool cfAssembly = false;
+
+            string rawVersion = "0.0.0.0";
             try
             {
                 cfAssembly = workAssembly.GetReferencedAssemblies().Any(a => a.Name == CodeFactoryAssemblyName);
@@ -62,7 +64,7 @@ namespace CodeFactory.WinVs.Loader
 
                 var versionSdk = customAttributes.FirstOrDefault(c => c.AttributeType.Name == CodeFactorySdkVersionAttributeName);
 
-                var rawVersion = versionSdk?.ConstructorArguments.FirstOrDefault().Value as string;
+                rawVersion = versionSdk?.ConstructorArguments.FirstOrDefault().Value as string;
 
                 if (string.IsNullOrEmpty(rawVersion)) return;
 
@@ -80,11 +82,10 @@ namespace CodeFactory.WinVs.Loader
             {
                 throw;
             }
-            catch (Exception)
+            catch (Exception unhandledException)
             {
                 if (cfAssembly)
-                    throw new UnsupportedSdkLibraryException(workAssembly.FullName, "0.0.0.0", MinVersion,
-                        MaxVersion);
+                    throw new LoadErrorSdkLibraryException(workAssembly.FullName, rawVersion, MinVersion,MaxVersion, unhandledException);
             }
             finally
             {

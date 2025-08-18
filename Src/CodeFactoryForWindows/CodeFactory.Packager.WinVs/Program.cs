@@ -148,6 +148,11 @@ namespace CodeFactory.Packager.WinVs
                 Console.WriteLine($"--> {unsupportedSdkLibrary.Message}");
                 returnCode = PackagerData.ExitCodeUnsupportedLibrarySDKVersion;
             }
+            catch (LoadErrorSdkLibraryException loadErrorSdkLibrary)
+            {
+                Console.WriteLine($"--> {loadErrorSdkLibrary.Message}");
+                returnCode = PackagerData.ExitCodeKnownError;
+            }
             catch (CommandParsingException cpe)
             {
                 Console.WriteLine(cpe.Message);

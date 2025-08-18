@@ -220,6 +220,10 @@ namespace CodeFactory.WinVs.Loader
                 //Throwing to the caller to notify which library could not be loaded due to SDK being out of date.
                 throw;
             }
+            catch(LoadErrorSdkLibraryException)
+            {
+                throw;
+            }
             catch (Exception loadFactoryLibrariesError)
             {
                 _logger.Error("Unhandled exception occurred see exception for details.", loadFactoryLibrariesError);

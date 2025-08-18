@@ -229,6 +229,11 @@ namespace CodeFactory.Packager.WinVs
                     throw;
                 }
 
+                catch (LoadErrorSdkLibraryException)
+                {
+                    throw;
+                }
+
                 catch (BadImageFormatException badImageError)
                 {
                     _logger.Error("A bad image error occurred while trying to load a dependent assembly.",
