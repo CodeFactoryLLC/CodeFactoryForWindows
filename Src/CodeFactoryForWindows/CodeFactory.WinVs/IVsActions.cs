@@ -94,6 +94,11 @@ namespace CodeFactory.WinVs
         /// </summary>
         IVsSourceActions SourceActions { get; }
 
+        /// <summary>
+        /// C# specific Visual Studio actions that work with C# source models.
+        /// </summary>
+        IVsCSharpActions CSharpActions { get; }
+
 
     }
 }
