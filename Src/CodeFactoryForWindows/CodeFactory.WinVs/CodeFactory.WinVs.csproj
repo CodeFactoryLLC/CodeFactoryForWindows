@@ -6,7 +6,7 @@
     <SignAssembly>True</SignAssembly>
     <AssemblyOriginatorKeyFile>CFSigner.snk</AssemblyOriginatorKeyFile>
 	  <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
-	  <Version>2.26129.0.1-PreRelease</Version>
+	  <Version>2.26148.0.1-PreRelease</Version>
 	  <Authors>CodeFactory, LLC.</Authors>
 	  <Company>CodeFactory, LLC.</Company>
 	  <Product>CodeFactory Base Library</Product>
@@ -17,36 +17,29 @@
 	  <IncludeSymbols>False</IncludeSymbols>
 	  <Title>CodeFactory API for Visual Studio - Windows </Title>
 	  <AssemblyVersion>2.0.0.0</AssemblyVersion>
-	  <FileVersion>2.26129.0.1</FileVersion>
+	  <FileVersion>2.26148.0.1</FileVersion>
 	  <PackageIcon>CFLogo128.png</PackageIcon>
+	  <PackageReadmeFile>README.md</PackageReadmeFile>
 	  <PackageReleaseNotes>
-		  Release Updates for 2.26129.0.1
+		  Release Updates for 2.26148.0.1
 
-		  Recompile Release:
-		  When you update your automation to this version of the SDK. 
-		  You will need to recompile your automation projects to the new version of the SDK, and make sure you have the CodeFactory runtime at least the same version or higher.
+          New
 
-		  Command External Configuration Updates:
-		  Deprecated the use of the CommandManager class. All command configuration is now done through the ExternalConfig class.
-		  ConfigParameter now supports multiple value types including string, bool, datetime and list.
+		  - **Visual Studio 2026 support** — This release targets the Visual Studio 2026 (v18.6) runtime. The CodeFactory runtime must be at version `2.26148.0.1` or higher to load automation built against this SDK.
+		  - **C# 13 language support** — The `CodeFactory` base library now compiles with `LangVersion 13`. C# 13 language features are available in automation projects via the [PolySharp](https://github.com/Sergio0694/PolySharp) polyfill package, which backfills required compiler attributes onto .NET Standard 2.0.
 
-		  External Configuration Editor:
-		  All CodeFactory command projects now have an external configuration editor that handles the configuration of the commands that are hosted in a CFA file.
-		  The editor is triggered by right clicking on the Solution node in solution explorer and selecting [cF] Automation Configuration.
+		  Changes
 
-		  Transaction History:
-		  CodeFactory now tracks the historical statics of all commands that write to files in projects and the solution.
-		  The following statics are tracked:
-		  - Name of the file updated.
-		  - Name of the project the file resides in or null if it is not part of a project.
-		  - Name of the solution the file resides.
-		  - Relative path of the file from the project or solution root.
-		  - Number of characters written to the file omitting the white space characters and line returns.
-		  - Number of lines written to the file, omitting the lines with no content.
+		  - **Updated SDK version range** — The supported SDK version window has been updated:
+		  - Minimum supported SDK version: `2.24224.0.1`
+		  - Maximum supported SDK version: `2.26148.0.1`
+		  - **Copyright year updated** — All library copyright notices updated to reflect 2026.
 
-		  Transaction Results:
-		  You can now get the transaction results from any insert or replace operation. This will return the above statics for the transaction.
+		 Breaking Changes / Recompile Required
 
+		  > **Action Required:** You must recompile your automation projects against this version of the SDK before deploying to a Visual Studio 2026 environment.
+		  >
+		  > Ensure the CodeFactory runtime installed in Visual Studio is at least version `2.26148.0.1`.
 	  </PackageReleaseNotes>
 	  <GenerateDocumentationFile>True</GenerateDocumentationFile>
   </PropertyGroup>
@@ -61,6 +54,13 @@
       <PackagePath>\</PackagePath>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
   </ItemGroup>
 
   <ItemGroup>

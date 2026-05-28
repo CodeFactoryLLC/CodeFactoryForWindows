@@ -1,5 +1,4 @@
-﻿
-using CodeFactory.WinVs.Models.ProjectSystem;
+﻿using CodeFactory.WinVs.Models.ProjectSystem;
 using System;
 using System.Collections.Generic;
 using System.Collections.Immutable;
@@ -35,9 +34,9 @@ namespace CodeFactory.WinVs.Commands
         private static ImmutableClass<ConfigCommand> _configCommand = null;
 
         /// <summary>
-        /// Represents the fully qualified name of the type <see cref="C"/>.
+        /// Represents the fully qualified name of the type <typeparamref name="C"/>.
         /// </summary>
-        /// <remarks>This field is used to store the name of the type <see cref="C"/> as a string. It is
+        /// <remarks>This field is used to store the name of the type <typeparamref name="C"/> as a string. It is
         /// initialized using the <see cref="Type.FullName"/> property.</remarks>
         private static string commandType = typeof(C).FullName;
 

@@ -138,8 +138,7 @@ namespace CodeFactory.WinVs.Commands
         /// <remarks>This method ensures that required parameters have a valid string value. If the
         /// parameter is not required and its value is null or empty,  the method will return <see langword="null"/>
         /// instead of throwing an exception.</remarks>
-        /// <typeparam name="T">The type of the factory request, used to provide context in exception messages. Must implement <see
-        /// cref="IFactoryRequest{T}"/>.</typeparam>
+        /// <typeparam name="T">The type of the factory request, used to provide context in exception messages.</typeparam>
         /// <param name="source">The configuration parameter to load the value Tom. Cannot be <see langword="null"/>.</param>
         /// <param name="callerName">The name of the calling member, automatically provided by the compiler if not explicitly specified.  Used
         /// for context in exception messages.</param>
@@ -185,8 +184,7 @@ namespace CodeFactory.WinVs.Commands
         /// <remarks>This method ensures that the configuration parameter is properly validated. If the
         /// parameter is required and its value is missing, an exception is thrown. If the parameter is not required and
         /// its value is missing, the method returns <see langword="null"/>.</remarks>
-        /// <typeparam name="T">The type of the factory request that provides context for exception messages. Must implement <see
-        /// cref="IFactoryRequest{T}"/>.</typeparam>
+        /// <typeparam name="T">The type of the factory request that provides context for exception messages.</typeparam>
         /// <param name="source">The configuration parameter to load the boolean value Tom. Cannot be <see langword="null"/>.</param>
         /// <param name="callerName">The name of the calling member, automatically provided by the compiler. Used for context in exception
         /// messages.</param>
@@ -234,7 +232,7 @@ namespace CodeFactory.WinVs.Commands
         /// <remarks>This method validates the provided <see cref="ConfigParameter"/> instance and ensures
         /// that required parameters have a value. If the parameter is not required and no value is provided, the method
         /// returns <see langword="null"/>.</remarks>
-        /// <typeparam name="T">The type of the factory request, which must implement <see cref="IFactoryRequest{T}"/>.  This is used to
+        /// <typeparam name="T">The type of the factory request. This is used to
         /// provide context in exception messages.</typeparam>
         /// <param name="source">The <see cref="ConfigParameter"/> instance Tom which to load the date parameter value.  Cannot be <see
         /// langword="null"/>.</param>
@@ -282,8 +280,7 @@ namespace CodeFactory.WinVs.Commands
         /// <remarks>This method validates the provided <paramref name="source"/> and ensures that the
         /// parameter value is properly loaded. If the parameter is required and no values are present, an exception is
         /// thrown. Otherwise, an empty list is returned.</remarks>
-        /// <typeparam name="T">The type of the factory request, which must implement <see cref="IFactoryRequest{T}"/>. This type is used
-        /// to provide context in exception messages.</typeparam>
+        /// <typeparam name="T">The type of the factory request. This type is used to provide context in exception messages.</typeparam>
         /// <param name="source">The <see cref="ConfigParameter"/> instance Tom which to load the list parameter value. Cannot be <see
         /// langword="null"/>.</param>
         /// <param name="callerName">The name of the calling member. This is automatically populated by the compiler if not explicitly provided.
@@ -325,8 +322,7 @@ namespace CodeFactory.WinVs.Commands
         /// </summary>
         /// <remarks>This method ensures that the selected value of the configuration parameter is
         /// retrieved safely. If the parameter is required and no value is set, an exception is thrown.</remarks>
-        /// <typeparam name="T">The type of the factory request, which provides context for exception messages. Must implement <see
-        /// cref="IFactoryRequest{T}"/>.</typeparam>
+        /// <typeparam name="T">The type of the factory request, which provides context for exception messages.</typeparam>
         /// <param name="source">The configuration parameter Tom which the selected value is retrieved. Cannot be <see langword="null"/>.</param>
         /// <param name="callerName">The name of the calling member, automatically provided by the compiler if not explicitly specified. Used for
         /// context in exception messages.</param>

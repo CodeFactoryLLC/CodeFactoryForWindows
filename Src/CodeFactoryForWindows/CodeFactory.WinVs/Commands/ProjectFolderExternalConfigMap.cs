@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace CodeFactory.WinVs.Commands
 {
+    /// <summary>
+    /// Project folder external configuration mapping class that represents the mapping of an external configuration for a project folder. This class is used to define the mapping of an external configuration for a project folder, including the path to the folder and the parent project associated with the folder.
+    /// </summary>
     public class ProjectFolderExternalConfigMap : ExternalConfigMap
     {
         /// <summary>

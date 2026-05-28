@@ -18,7 +18,6 @@ namespace CodeFactory.WinVs.Commands
         /// configuration maps.
         /// </summary>
         /// <param name="source">The list of external configuration maps to search. Cannot be <see langword="null"/>.</param>
-        /// <param name="commandType">The name of the command type to locate within the configuration maps.</param>
         /// <returns>The <see cref="CommandExternalConfigMap"/> corresponding to the specified command type,  or <see
         /// langword="null"/> if no matching configuration map is found.</returns>
         /// <exception cref="CodeFactoryException">Thrown if <paramref name="source"/> is <see langword="null"/>.</exception>
