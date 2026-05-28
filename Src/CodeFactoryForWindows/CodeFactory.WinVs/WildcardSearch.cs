@@ -23,7 +23,7 @@ namespace CodeFactory.WinVs
         /// Performs a wildcard match of the input string against the specified pattern, supporting **, *, and ? wildcards. Uses caching for compiled regular expressions to optimize performance on repeated patterns.
         /// </summary>
         /// <param name="input">The input string to match against the pattern.</param>
-        /// <param name="pattern">The wildcard pattern to match. Supports **, *, and ? wildcards.</param>
+        /// <param name="pattern">The wildcard pattern to match. Supports **, *, and ? wildcards. If you want to use a raw regular expression, enclose it in slashes (/).</param>
         /// <param name="ignoreCase">Whether the match should be case-insensitive.</param>
         /// <remarks>
         /// When using ** in the pattern, it matches any sequence of characters, including dots. A single * matches any sequence of characters except dots. A ? matches any single character. If the pattern does not contain any wildcard characters, a fast path is used for a simple case-insensitive equality check. For patterns with wildcards, compiled regular expressions are cached up to a specified limit to improve performance on repeated matches with the same pattern.
@@ -34,24 +34,44 @@ namespace CodeFactory.WinVs
             if (string.IsNullOrEmpty(pattern)) return true;
             if (string.IsNullOrEmpty(input)) return false;
 
-            // Check if pattern contains any wildcard characters
-            bool hasWildcard = pattern.Contains("*") || pattern.Contains("?");
+            string cacheKey = null;
 
-            if (!hasWildcard)
+            Regex regex = null;
+
+            // Check if pattern is explicitly marked as a raw regex (enclosed in slashes)
+            if (pattern.StartsWith("/") && pattern.EndsWith("/"))
             {
-                // Fast path: standard case-insensitive exact match
-                return input.Equals(pattern, ignoreCase
-                    ? StringComparison.OrdinalIgnoreCase
-                    : StringComparison.Ordinal);
+                // Treat pattern as a raw regex if it is enclosed in slashes
+                var regexPattern = pattern.Substring(1, pattern.Length - 2);
+
+                // Wildcard path: use cached regex
+                cacheKey = $"raw\0{pattern}\0{ignoreCase}";
+
+                regex = _regexCache.Count >= MaxCacheSize
+                    ? BuildCustomRegex(regexPattern, ignoreCase, compiled: false)
+                    : _regexCache.GetOrAdd(cacheKey, _ => BuildCustomRegex(regexPattern, ignoreCase, compiled: true));
+
             }
+            else
+            {
+                // Check if pattern contains any wildcard characters
+                bool hasWildcard = pattern.Contains("*") || pattern.Contains("?");
 
-            // Wildcard path: use cached regex
-            var cacheKey = $"{pattern}\0{ignoreCase}";
+                if (!hasWildcard)
+                {
+                    // Fast path: standard case-insensitive exact match
+                    return input.Equals(pattern, ignoreCase
+                        ? StringComparison.OrdinalIgnoreCase
+                        : StringComparison.Ordinal);
+                }
 
-            Regex regex = _regexCache.Count >= MaxCacheSize
-                ? BuildRegex(pattern, ignoreCase, compiled: false)
-                : _regexCache.GetOrAdd(cacheKey, _ => BuildRegex(pattern, ignoreCase, compiled: true));
+                // Wildcard path: use cached regex
+                cacheKey = $"{pattern}\0{ignoreCase}";
 
+                regex = _regexCache.Count >= MaxCacheSize
+                    ? BuildRegex(pattern, ignoreCase, compiled: false)
+                    : _regexCache.GetOrAdd(cacheKey, _ => BuildRegex(pattern, ignoreCase, compiled: true));
+            }
             return regex.IsMatch(input);
         }
 
@@ -78,6 +98,32 @@ namespace CodeFactory.WinVs
                 : (ignoreCase ? RegexOptions.IgnoreCase : RegexOptions.None);
 
             return new Regex(regexPattern, options);
+        }
+
+
+        /// <summary>
+        /// Builds a regular expression directly from the provided pattern without any escaping, treating it as a raw regex pattern. 
+        /// This is used when the pattern is explicitly marked as a regex by being enclosed in slashes (/pattern/). 
+        /// The method applies the specified options for case sensitivity and compilation based on the parameters.
+        /// </summary>
+        /// <param name="pattern">The raw regex pattern to use.</param>
+        /// <param name="ignoreCase">Whether the regex should ignore case.</param>
+        /// <param name="compiled">Whether the regex should be compiled for performance.</param>
+        /// <returns>A Regex object based on the provided pattern and options.</returns>
+        private static Regex BuildCustomRegex(string pattern, bool ignoreCase, bool compiled)
+        {
+            var options = compiled
+                ? RegexOptions.Compiled | (ignoreCase ? RegexOptions.IgnoreCase : RegexOptions.None)
+                : (ignoreCase ? RegexOptions.IgnoreCase : RegexOptions.None);
+
+            try
+            {
+                return new Regex(pattern, options);
+            }
+            catch (ArgumentException ex)
+            {
+                throw new ArgumentException($"Invalid regular expression pattern: {pattern}", nameof(pattern), ex);
+            }
         }
 
     }

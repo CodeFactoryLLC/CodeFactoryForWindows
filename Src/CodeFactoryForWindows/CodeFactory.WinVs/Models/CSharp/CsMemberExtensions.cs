@@ -112,6 +112,22 @@ namespace CodeFactory.WinVs.Models.CSharp
         }
 
 
-       
+        /// <summary>
+        /// Gets the <see cref="CsSource"/> model from the member.
+        /// </summary>
+        /// <param name="source">The member to retrieve the source from.</param>
+        /// <returns>The <see cref="CsSource"/> model.</returns>
+        /// <exception cref="ArgumentNullException"><paramref name="source"/> is null.</exception>
+        public static CsSource GetSource(this CsMember source)
+        {
+            if (source == null) throw new ArgumentNullException(nameof(source));
+
+            var result = source.GetModel<CsSource>(PathBuilderConstants.Source);
+
+            return result;
+
+        }
+
+
     }
 }

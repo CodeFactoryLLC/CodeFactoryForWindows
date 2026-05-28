@@ -94,6 +94,25 @@ namespace CodeFactory.WinVs.Models.CSharp
             return GetMissingContainerInterfaceMembers(source);
         }
 
+
+        /// <summary>
+        /// Gets the <see cref="CsSource"/> model from the container.
+        /// </summary>
+        /// <param name="source">The container to retrieve the source from.</param>
+        /// <returns>The <see cref="CsSource"/> model.</returns>
+        /// <exception cref="ArgumentNullException"><paramref name="source"/> is null.</exception>
+        public static CsSource GetSource(this CsContainer source)
+        {
+            if (source == null) throw new ArgumentNullException(nameof(source));
+
+            var result = source.GetModel<CsSource>(PathBuilderConstants.Source);
+
+            return result;
+
+        }
+
+
+
         /// <summary>
         /// Creates a list of the interface members that are not implemented in the <see cref="ICsContainer"/> model.
         /// </summary>
@@ -131,5 +150,7 @@ namespace CodeFactory.WinVs.Models.CSharp
                     where !sourceMembers.Any(m => m.Key == interfaceMember.Key)
                     select interfaceMember.Value).ToImmutableList();
         }
+
+      
     }
 }
