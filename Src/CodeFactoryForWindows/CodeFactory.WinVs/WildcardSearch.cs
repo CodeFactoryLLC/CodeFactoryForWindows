@@ -15,6 +15,11 @@ namespace CodeFactory.WinVs
         private const int MaxCacheSize = 512; // Limit cache size to prevent memory bloat
 
         /// <summary>
+        /// The timeout duration for regular expression operations. This is set to 2 seconds to prevent long-running regex operations from hanging the application, especially for complex patterns or large input strings. If a regex operation exceeds this timeout, it will throw a RegexMatchTimeoutException, which can be caught and handled appropriately by the caller.
+        /// </summary>
+        private static readonly TimeSpan RegexTimeout = TimeSpan.FromSeconds(2);
+
+        /// <summary>
         /// Cache for compiled regular expressions based on wildcard patterns to improve performance on repeated matches.
         /// </summary>
         private static readonly ConcurrentDictionary<string, Regex> _regexCache = new ConcurrentDictionary<string, Regex>();
@@ -26,7 +31,7 @@ namespace CodeFactory.WinVs
         /// <param name="pattern">The wildcard pattern to match. Supports **, *, and ? wildcards. If you want to use a raw regular expression, enclose it in slashes (/).</param>
         /// <param name="ignoreCase">Whether the match should be case-insensitive.</param>
         /// <remarks>
-        /// When using ** in the pattern, it matches any sequence of characters, including dots. A single * matches any sequence of characters except dots. A ? matches any single character. If the pattern does not contain any wildcard characters, a fast path is used for a simple case-insensitive equality check. For patterns with wildcards, compiled regular expressions are cached up to a specified limit to improve performance on repeated matches with the same pattern.
+        /// When using ** in the pattern, it matches any sequence of characters, including dots. A single * matches any sequence of characters except path separators. A ? matches any single character. If the pattern does not contain any wildcard characters, a fast path is used for a simple case-insensitive equality check. For patterns with wildcards, compiled regular expressions are cached up to a specified limit to improve performance on repeated matches with the same pattern.
         /// </remarks>
         /// <returns>True if the input matches the pattern; otherwise, false.</returns>
         public static bool Matches(string input, string pattern, bool ignoreCase = true)
@@ -39,10 +44,13 @@ namespace CodeFactory.WinVs
             Regex regex = null;
 
             // Check if pattern is explicitly marked as a raw regex (enclosed in slashes)
-            if (pattern.StartsWith("/") && pattern.EndsWith("/"))
+            if (pattern.Length > 2 && pattern.StartsWith("/") && pattern.EndsWith("/"))
             {
                 // Treat pattern as a raw regex if it is enclosed in slashes
                 var regexPattern = pattern.Substring(1, pattern.Length - 2);
+
+                if (string.IsNullOrWhiteSpace(regexPattern))
+                    return true; // empty pattern matches everything, consistent with line 39
 
                 // Wildcard path: use cached regex
                 cacheKey = $"raw\0{pattern}\0{ignoreCase}";
@@ -72,14 +80,26 @@ namespace CodeFactory.WinVs
                     ? BuildRegex(pattern, ignoreCase, compiled: false)
                     : _regexCache.GetOrAdd(cacheKey, _ => BuildRegex(pattern, ignoreCase, compiled: true));
             }
-            return regex.IsMatch(input);
+
+            bool result = false;
+            
+            try
+            { 
+                result = regex.IsMatch(input);
+            }
+            catch (RegexMatchTimeoutException)
+            {
+                result = false;
+            }
+
+            return result;
         }
 
 
         /// <summary>
         /// Builds a regular expression from a glob-style pattern with wildcard support.    
         /// </summary>
-        /// <param name="pattern">The glob-style pattern to convert. Supports ** (any characters), * (any characters except dot), and ?
+        /// <param name="pattern">The glob-style pattern to convert. Supports ** (any characters), * (any characters except path separators), and ?
         /// (single character).</param>
         /// <param name="ignoreCase">Whether the regular expression should perform case-insensitive matching.</param>
         /// <param name="compiled">Whether to compile the regular expression for improved performance.</param>
@@ -87,17 +107,17 @@ namespace CodeFactory.WinVs
         private static Regex BuildRegex(string pattern, bool ignoreCase, bool compiled)
         {
             var regexPattern = "^" +
-                Regex.Escape(pattern)
-                     .Replace("\\*\\*", ".*")
-                     .Replace("\\*", "[^.]*")
-                     .Replace("\\?", ".") +
-                "$";
+            Regex.Escape(pattern)
+                 .Replace("\\*\\*", ".*")
+                 .Replace("\\*", "[^/\\\\]*")   // exclude path separators, not dots
+                 .Replace("\\?", ".") +
+                 "$";
 
             var options = compiled
                 ? RegexOptions.Compiled | (ignoreCase ? RegexOptions.IgnoreCase : RegexOptions.None)
                 : (ignoreCase ? RegexOptions.IgnoreCase : RegexOptions.None);
 
-            return new Regex(regexPattern, options);
+            return new Regex(regexPattern, options,RegexTimeout);
         }
 
 
@@ -118,7 +138,7 @@ namespace CodeFactory.WinVs
 
             try
             {
-                return new Regex(pattern, options);
+                return new Regex(pattern, options, RegexTimeout);
             }
             catch (ArgumentException ex)
             {
