@@ -12,7 +12,7 @@ The base contracts and logic used by CodeFactory automation. This library provid
 | Property         | Value                          |
 |------------------|-------------------------------|
 | **Package ID**   | `CodeFactory`                 |
-| **Version**      | `2.26149.0.1-PreRelease`      |
+| **Version**      | `2.26150.0.1-PreRelease`      |
 | **Target Framework** | .NET Standard 2.0         |
 | **Authors**      | CodeFactory, LLC.             |
 | **License**      | MIT                           |
@@ -34,7 +34,7 @@ This package is a dependency of higher-level CodeFactory SDK packages such as `C
 
 Install via the NuGet Package Manager:
 ```
-Install-Package CodeFactory -Version 2.26149.0.1-PreRelease
+Install-Package CodeFactory -Version 2.26150.0.1-PreRelease
 ```
 
 
@@ -73,7 +73,7 @@ Represents a specific location within a source code file, used throughout the Co
 
 ## 📄 Release Notes
 
-### 2.26149.0.1
+### 2.26150.0.1
 
 Recompile Release:
 - When you update your automation to this version of the SDK.

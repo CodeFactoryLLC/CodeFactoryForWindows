@@ -34,7 +34,7 @@ namespace CodeFactory.WinVs.Models.CSharp
         ///  - ?: Matches any single character.
         /// </remarks>
         /// <returns>A task that represents the asynchronous operation. The task result contains a collection of models that match the search criteria. The collection is empty if no models are found.</returns>
-        Task<IReadOnlyList<CsModel>> FindCSharpModelsInProject(string projectName, CSharpModelSearchType searchType = CSharpModelSearchType.AllContainerTypes, IReadOnlyList<string> excludeNameSpaces = null, IReadOnlyList<string> includeNameSpaces = null, string name = null);
+        Task<IReadOnlyList<CsModel>> FindCSharpModelsInProjectAsync(string projectName, CSharpModelSearchType searchType = CSharpModelSearchType.AllContainerTypes, IReadOnlyList<string> excludeNameSpaces = null, IReadOnlyList<string> includeNameSpaces = null, string name = null);
 
 
     }
