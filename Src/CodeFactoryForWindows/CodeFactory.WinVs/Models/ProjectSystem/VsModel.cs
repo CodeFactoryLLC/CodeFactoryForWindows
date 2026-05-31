@@ -1,10 +1,10 @@
 ﻿//*****************************************************************************
 //* Code Factory SDK
-//* Copyright (c) 2020-2023 CodeFactory, LLC
+//* Copyright (c) 2026 CodeFactory, LLC
 //*****************************************************************************
 
+using System;
 using System.Collections.Generic;
-using System.Collections.Immutable;
 
 namespace CodeFactory.WinVs.Models.ProjectSystem
 {
@@ -33,7 +33,7 @@ namespace CodeFactory.WinVs.Models.ProjectSystem
         {
             _isLoaded = isLoaded;
             _hasErrors = hasErrors;
-            _modelErrors = modelErrors ?? ImmutableList<ModelException<VisualStudioModelType>>.Empty;
+            _modelErrors = modelErrors ?? Array.Empty<ModelException<VisualStudioModelType>>();
             _modelType = modelType;
             _name = name;
         }

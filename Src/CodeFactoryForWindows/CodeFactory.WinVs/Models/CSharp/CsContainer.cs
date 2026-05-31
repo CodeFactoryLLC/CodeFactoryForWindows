@@ -1,6 +1,6 @@
 ﻿//*****************************************************************************
 //* Code Factory SDK
-//* Copyright (c) 2020-2023 CodeFactory, LLC
+//* Copyright (c) 2020-2026 CodeFactory, LLC
 //*****************************************************************************
 
 using System;
@@ -81,13 +81,13 @@ namespace CodeFactory.WinVs.Models.CSharp
             string sourceDocument = null, ModelStore<ICsModel> modelStore = null, IReadOnlyList<ModelLoadException> modelErrors = null)
             : base(isLoaded, hasErrors, loadedFromSource, language, modelType, sourceDocument, modelStore, modelErrors)
         {
-            _attributes = attributes ?? ImmutableList<CsAttribute>.Empty;
+            _attributes = attributes ?? Array.Empty<CsAttribute>();
             _isGeneric = isGeneric;
             _hasStrongTypesInGenerics = hasStrongTypesInGenerics;
-            _genericParameters = genericParameters ?? ImmutableList<CsGenericParameter>.Empty;
-            _genericTypes = genericTypes ?? ImmutableList<CsType>.Empty;
+            _genericParameters = genericParameters ?? Array.Empty<CsGenericParameter>();
+            _genericTypes = genericTypes ?? Array.Empty<CsType>();
             _modelSourceFile = modelSourceFile;
-            _sourceFiles = sourceFiles ?? ImmutableList<string>.Empty;
+            _sourceFiles = sourceFiles ?? Array.Empty<string>();
             _hasDocumentation = hasDocumentation;
             _documentation = documentation;
             _lookupPath = lookupPath;
@@ -96,9 +96,9 @@ namespace CodeFactory.WinVs.Models.CSharp
             _parentPath = parentPath;
             _containerType = containerType;
             _security = security;
-            _inheritedInterfaces = inheritedInterfaces ?? ImmutableList<CsInterface>.Empty;
-            _directInheritedInterfaces = directInheritedInterfaces ?? ImmutableList<CsInterface>.Empty;
-            _members = members ?? ImmutableList<CsMember>.Empty;
+            _inheritedInterfaces = inheritedInterfaces ?? Array.Empty<CsInterface>();
+            _directInheritedInterfaces = directInheritedInterfaces ?? Array.Empty<CsInterface>();
+            _members = members ?? Array.Empty<CsMember>();
         }
 
         /// <summary>
@@ -225,22 +225,71 @@ namespace CodeFactory.WinVs.Models.CSharp
         /// <summary>
         ///     List of the methods that are implemented in this container.
         /// </summary>
-        public IReadOnlyList<CsMethod> Methods => _members.Where(m => m.MemberType == CsMemberType.Method)
-                                                      .Cast<CsMethod>().Where(m => m.MethodType == CsMethodType.Member | m.MethodType == CsMethodType.PartialImplementation | m.MethodType == CsMethodType.PartialDefinition)
-                                                      .ToImmutableList() ?? ImmutableList<CsMethod>.Empty;
+        public IReadOnlyList<CsMethod> Methods
+        {
+            get 
+            { 
+                var builder = ImmutableArray.CreateBuilder<CsMethod>(Members.Count);
+                foreach (var member in Members)
+                {
+                    if (member.MemberType == CsMemberType.Method)
+                    {
+                        var method = member as CsMethod;
+                        if (method != null && (method.MethodType == CsMethodType.Member || method.MethodType == CsMethodType.PartialImplementation || method.MethodType == CsMethodType.PartialDefinition))
+                        {
+                            builder.Add(method);
+                        }
+                    }
+                }
+                return builder.Count > 0 ? builder.ToImmutable() : Array.Empty<CsMethod>();
+            }
+        }
 
         /// <summary>
         ///     List of the properties that are implemented in this container.
         /// </summary>
-        public IReadOnlyList<CsProperty> Properties =>
-            _members.Where(m => m.MemberType == CsMemberType.Property).Cast<CsProperty>()
-                .ToImmutableList() ?? ImmutableList<CsProperty>.Empty;
+        public IReadOnlyList<CsProperty> Properties
+        {
+            get 
+            { 
+                var builder = ImmutableArray.CreateBuilder<CsProperty>(Members.Count);
+                foreach (var member in Members)
+                {
+                    if (member.MemberType == CsMemberType.Property)
+                    {
+                        var property = member as CsProperty;
+                        if (property != null)
+                        {
+                            builder.Add(property);
+                        }
+                    }
+                }
+                return builder.Count > 0 ? builder.ToImmutable() : Array.Empty<CsProperty>();
+            }
+        }
 
         /// <summary>
         ///     Enumeration of the events assigned to this container. If HasEvents is false this will be null.
         /// </summary>
-        public IReadOnlyList<CsEvent> Events => _members.Where(m => m.MemberType == CsMemberType.Event).Cast<CsEvent>()
-                                                    .ToImmutableList() ?? ImmutableList<CsEvent>.Empty;
+        public IReadOnlyList<CsEvent> Events
+        {
+            get
+            {
+                var builder = ImmutableArray.CreateBuilder<CsEvent>(Members.Count);
+                foreach (var member in Members)
+                {
+                    if (member.MemberType == CsMemberType.Event)
+                    {
+                        var @event = member as CsEvent;
+                        if (@event != null)
+                        {
+                            builder.Add(@event);
+                        }
+                    }
+                }
+                return builder.Count > 0 ? builder.ToImmutable() : Array.Empty<CsEvent>();
+            }
+        }
 
         /// <summary>
         /// The source code syntax that is stored in the body of the container model. This will be null if the container was not loaded from source code.

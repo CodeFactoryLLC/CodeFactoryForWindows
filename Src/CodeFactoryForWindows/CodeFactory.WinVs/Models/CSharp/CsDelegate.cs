@@ -1,8 +1,9 @@
 ﻿//*****************************************************************************
 //* Code Factory SDK
-//* Copyright (c) 2020-2023 CodeFactory, LLC
+//* Copyright (c) 2026 CodeFactory, LLC
 //*****************************************************************************
 
+using System;
 using System.Collections.Generic;
 using System.Collections.Immutable;
 using System.Linq;
@@ -79,16 +80,16 @@ namespace CodeFactory.WinVs.Models.CSharp
             CsMethod beginInvokeMethod, CsMethod endInvokeMethod, string sourceDocument = null, ModelStore<ICsModel> modelStore = null, IReadOnlyList<ModelLoadException> modelErrors = null)
             : base(isLoaded, hasErrors, loadedFromSource, language, CsModelType.Delegate, sourceDocument, modelStore, modelErrors)
         {
-            _attributes = attributes ?? ImmutableList<CsAttribute>.Empty;
+            _attributes = attributes ?? Array.Empty<CsAttribute>();
             _isGeneric = isGeneric;
             _hasStrongTypesInGenerics = hasStrongTypesInGenerics;
-            _genericParameters = genericParameters ?? ImmutableList<CsGenericParameter>.Empty;
-            _genericTypes = genericTypes ?? ImmutableList<CsType>.Empty;
+            _genericParameters = genericParameters ?? Array.Empty<CsGenericParameter>();
+            _genericTypes = genericTypes ?? Array.Empty<CsType>();
             _hasDocumentation = hasDocumentation;
             _documentation = documentation;
             _lookupPath = lookupPath;
             _modelSourceFile = modelSourceFile;
-            _sourceFiles = sourceFiles ?? ImmutableList<string>.Empty;
+            _sourceFiles = sourceFiles ?? Array.Empty<string>();
             _name = name;
             _ns = ns;
             _hasParameters = hasParameters;
@@ -96,7 +97,7 @@ namespace CodeFactory.WinVs.Models.CSharp
             _parentPath = parentPath;
             _security = security;
             _returnType = returnType;
-            _parameters = parameters ?? ImmutableList<CsParameter>.Empty;
+            _parameters = parameters ?? Array.Empty<CsParameter>();
             _invokeMethod = invokeMethod;
             _beginInvokeMethod = beginInvokeMethod;
             _endInvokeMethod = endInvokeMethod;

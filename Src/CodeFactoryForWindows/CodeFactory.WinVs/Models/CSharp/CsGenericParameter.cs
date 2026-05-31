@@ -1,8 +1,9 @@
 ﻿//*****************************************************************************
 //* Code Factory SDK
-//* Copyright (c) 2020-2023 CodeFactory, LLC
+//* Copyright (c) 2026 CodeFactory, LLC
 //*****************************************************************************
 
+using System;
 using System.Collections.Generic;
 using System.Collections.Immutable;
 using CodeFactory.SourceCode;
@@ -53,7 +54,7 @@ namespace CodeFactory.WinVs.Models.CSharp
             _hasClassConstraint = hasClassConstraint;
             _hasStructConstraint = hasStructConstraint;
             _hasConstraintTypes = hasConstraintTypes;
-            _constrainingTypes = constrainingTypes ?? ImmutableList<CsType>.Empty;
+            _constrainingTypes = constrainingTypes ?? Array.Empty<CsType>();
             _type = type;
         }
 

@@ -1,7 +1,5 @@
 ﻿using CodeFactory.WinVs.Models.CSharp.FormattedSyntax;
-using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Text;
 
 namespace CodeFactory.WinVs.Models.CSharp
@@ -20,14 +18,11 @@ namespace CodeFactory.WinVs.Models.CSharp
         /// <returns>The formatted attribute signature or null if data was missing to create the attribute.</returns>
         public static string GenerateCSharpAttributeSignature(this CsAttribute source, NamespaceManager manager = null, List<MapNamespace> mappedNamespaces = null)
         {
-            string formattedSyntax = null;
+            if (source == null || !source.IsLoaded) return null;
 
-            if(source == null || !source.IsLoaded) return formattedSyntax;
-            formattedSyntax = source.HasParameters == false
+            return source.HasParameters == false
                 ? $"[{source.Type.GenerateCSharpTypeName(manager, mappedNamespaces)}()]"
                 : $"[{source.Type.GenerateCSharpTypeName(manager, mappedNamespaces)}{source.Parameters.GenerateCSharpAttributeParametersSignature()}]";
-
-            return formattedSyntax;
         }
 
         /// <summary>
@@ -38,21 +33,16 @@ namespace CodeFactory.WinVs.Models.CSharp
         /// <param name="mappedNamespaces">Optional parameter that provides namespaces to be mapped to.</param>
         /// <returns>Fully formatted syntax for the attribute.</returns>
         public static IEnumerable<string> GenerateCSharpAttributeDeclarationEnumerator(this IReadOnlyList<CsAttribute> source,
-            NamespaceManager manager = null,List<MapNamespace> mappedNamespaces = null)
+            NamespaceManager manager = null, List<MapNamespace> mappedNamespaces = null)
         {
-            //No documentation was found for the model, stop the enumeration.
-            if (source == null) yield break;
+            if (source == null || source.Count == 0) yield break;
 
-            if (!source.Any()) yield break;
-
-
-            //iterate over each attribute and confirm it can be formatted as c# attribute syntax.
             foreach (CsAttribute attributeData in source)
             {
                 if (attributeData == null) continue;
                 if (!attributeData.IsLoaded) continue;
 
-                var declaration = attributeData.GenerateCSharpAttributeSignature(manager,mappedNamespaces);
+                var declaration = attributeData.GenerateCSharpAttributeSignature(manager, mappedNamespaces);
 
                 if (string.IsNullOrEmpty(declaration)) continue;
 
@@ -67,18 +57,18 @@ namespace CodeFactory.WinVs.Models.CSharp
         /// <returns>The fully formatted parameters section of a attribute declaration.</returns>
         public static string GenerateCSharpAttributeParametersSignature(this IReadOnlyList<CsAttributeParameter> source)
         {
-            if (source == null) return null;
-            if (!source.Any()) return null;
+            if (source == null || source.Count == 0) return null;
 
-            StringBuilder attributeParameterSignature = new StringBuilder(Symbols.ParametersDefinitionStart);
+            StringBuilder attributeParameterSignature = new StringBuilder(64);
+            attributeParameterSignature.Append(Symbols.ParametersDefinitionStart);
 
             int totalParameters = source.Count;
             int currentParameter = 0;
             foreach (var sourceParameter in source)
             {
                 currentParameter++;
-                string parameter = sourceParameter.HasNamedParameter == false 
-                    ? $"{sourceParameter.Value.GenerateCSharpAttributeParameterValueSignature()}" 
+                string parameter = sourceParameter.HasNamedParameter == false
+                    ? sourceParameter.Value.GenerateCSharpAttributeParameterValueSignature()
                     : $"{sourceParameter.Name} = {sourceParameter.Value.GenerateCSharpAttributeParameterValueSignature()}";
 
                 attributeParameterSignature.Append(parameter);
@@ -101,23 +91,26 @@ namespace CodeFactory.WinVs.Models.CSharp
 
             if (source.ParameterKind != AttributeParameterKind.Array)
                 return source.ParameterKind == AttributeParameterKind.Enum
-                    ? source.EnumValue 
+                    ? source.EnumValue
                     : source.TypeValue.GenerateCSharpValueSyntax(source.Value);
 
-            StringBuilder attributeValueSignature = new StringBuilder($"{Symbols.MultipleStatementStart}");
+            StringBuilder attributeValueSignature = new StringBuilder(64);
+            attributeValueSignature.Append(Symbols.MultipleStatementStart);
 
             int totalParameters = source.Values.Count;
             int currentValue = 0;
             foreach (var sourceValue in source.Values)
             {
                 currentValue++;
-                string value = sourceValue.ParameterKind != AttributeParameterKind.Array ? $"{sourceValue.TypeValue.GenerateCSharpValueSyntax(sourceValue.Value)}" : $"{sourceValue.GenerateCSharpAttributeParameterValueSignature()}";
+                string value = sourceValue.ParameterKind != AttributeParameterKind.Array
+                    ? sourceValue.TypeValue.GenerateCSharpValueSyntax(sourceValue.Value)
+                    : sourceValue.GenerateCSharpAttributeParameterValueSignature();
 
                 attributeValueSignature.Append(value);
-                if (totalParameters < currentValue) attributeValueSignature.Append(", ");
+                if (totalParameters > currentValue) attributeValueSignature.Append(", "); // Fixed: was < (bug)
             }
 
-            attributeValueSignature.Append($"{Symbols.MultipleStatementEnd}");
+            attributeValueSignature.Append(Symbols.MultipleStatementEnd);
 
             return attributeValueSignature.ToString();
         }

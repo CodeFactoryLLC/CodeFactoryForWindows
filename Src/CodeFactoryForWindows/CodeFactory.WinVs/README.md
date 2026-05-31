@@ -13,7 +13,7 @@ The **CodeFactory API for Visual Studio - Windows** is the core SDK library for 
 |---|---|
 | Target Framework | .NET Standard 2.0 |
 | Visual Studio | Visual Studio 2022 / Visual Studio 2026 (Windows) |
-| CodeFactory Runtime | [CodeFactory for Windows](https://marketplace.visualstudio.com/items?itemName=CodeFactoryLLC.CodeFactoryForWindows) ≥ 2.26150.0.1 |
+| CodeFactory Runtime | [CodeFactory for Windows](https://marketplace.visualstudio.com/items?itemName=CodeFactoryLLC.CodeFactoryForWindows) ≥ 2.26151.0.1 |
 | Command Library Project | .NET Framework 4.8 |
 
 > ⚠️ **Important:** When updating to a new version of this SDK you must **recompile** your automation (command library) projects and ensure the CodeFactory runtime installed in Visual Studio is at the same version or higher.
@@ -29,7 +29,7 @@ dotnet add package CodeFactory.WinVs
 
 Or in your `.csproj`:
 ```xml
-<PackageReference Include="CodeFactory.WinVs" Version="2.26150.0.1-PreRelease" />
+<PackageReference Include="CodeFactory.WinVs" Version="2.26151.0.1-PreRelease" />
 ```
 
 
@@ -110,26 +110,26 @@ Transaction results are returned from any insert or replace operation.
 
 ## 📄 Release Notes
 
-### 2.26150.0.1-PreRelease
+### 2.26151.0.1-PreRelease
 *Released: May 2026 — Branch: 2026-March*
 
 #### 🆕 New
 
-- **Visual Studio 2026 support** — This release targets the Visual Studio 2026 (v18.6) runtime. The CodeFactory runtime must be at version `2.26150.0.1` or higher to load automation built against this SDK.
+- **Visual Studio 2026 support** — This release targets the Visual Studio 2026 (v18.6) runtime. The CodeFactory runtime must be at version `2.26151.0.1` or higher to load automation built against this SDK.
 - **C# 13 language support** — The `CodeFactory` base library now compiles with `LangVersion 13`. C# 13 language features are available in automation projects via the [PolySharp](https://github.com/Sergio0694/PolySharp) polyfill package, which backfills required compiler attributes onto .NET Standard 2.0.
 
 #### 🔧 Changes
 
 - **Updated SDK version range** — The supported SDK version window has been updated:
   - Minimum supported SDK version: `2.24224.0.1`
-  - Maximum supported SDK version: `2.26150.0.1`
+  - Maximum supported SDK version: `2.26151.0.1`
 - **Copyright year updated** — All library copyright notices updated to reflect 2026.
 
 #### ⚠️ Breaking Changes / Recompile Required
 
 > **Action Required:** You must recompile your automation projects against this version of the SDK before deploying to a Visual Studio 2026 environment.
 >
-> Ensure the CodeFactory runtime installed in Visual Studio is at least version `2.26150.0.1`.
+> Ensure the CodeFactory runtime installed in Visual Studio is at least version `2.26151.0.1`.
 
 ---
 

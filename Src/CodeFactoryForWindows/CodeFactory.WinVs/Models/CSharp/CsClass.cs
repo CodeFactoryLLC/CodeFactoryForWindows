@@ -1,8 +1,9 @@
 ﻿//*****************************************************************************
 //* Code Factory SDK
-//* Copyright (c) 2020-2023 CodeFactory, LLC
+//* Copyright (c) 2020-2026 CodeFactory, LLC
 //*****************************************************************************
 
+using System;
 using System.Collections.Generic;
 using System.Collections.Immutable;
 using System.Linq;
@@ -86,9 +87,19 @@ namespace CodeFactory.WinVs.Models.CSharp
         /// <summary>
         ///     List of the fields implemented in this class.
         /// </summary>
-        public IReadOnlyList<CsField> Fields =>
-            Members.Where(m => m.MemberType == CsMemberType.Field).Cast<CsField>().ToImmutableList() ??
-            ImmutableList<CsField>.Empty;
+        public IReadOnlyList<CsField> Fields
+        {
+            get
+            {
+                var builder = ImmutableArray.CreateBuilder<CsField>(Members.Count);
+                foreach (var m in Members)
+                    if (m.MemberType == CsMemberType.Field)
+                        builder.Add((CsField)m);
+                return builder.Count > 0 ? builder.ToImmutable() : Array.Empty<CsField>();
+            }
+        
+        }
+
 
         /// <summary>
         ///     The base class assigned to this class. This will be null if HasBase is false.
@@ -98,11 +109,24 @@ namespace CodeFactory.WinVs.Models.CSharp
         /// <summary>
         /// List of the constructors implemented in this class.
         /// </summary>
-        public IReadOnlyList<CsMethod> Constructors =>
-            Members.Where(m => m.MemberType == CsMemberType.Method).Cast<CsMethod>()
-                .Where(m => m.MethodType == CsMethodType.Constructor).ToImmutableList() ??
-            ImmutableList<CsMethod>.Empty;
+        public IReadOnlyList<CsMethod> Constructors
+        {
+            get
+            {
+                var builder = ImmutableArray.CreateBuilder<CsMethod>(Members.Count);
+                foreach (var m in Members)
+                {
+                    if (m.MemberType == CsMemberType.Method)
+                    { 
+                        var method = (CsMethod)m;
 
+                        if(method.MethodType == CsMethodType.Constructor)
+                            builder.Add(method);
+                    }
+                }
+                return builder.Count > 0 ? builder.ToImmutable() : Array.Empty<CsMethod>();
+            }
+        }
         /// <summary>
         ///     Flag that determines if this class is static.
         /// </summary>

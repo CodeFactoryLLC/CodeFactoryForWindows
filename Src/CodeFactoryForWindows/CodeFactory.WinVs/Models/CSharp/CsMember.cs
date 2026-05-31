@@ -1,6 +1,6 @@
 ﻿//*****************************************************************************
 //* Code Factory SDK
-//* Copyright (c) 2020-2023 CodeFactory, LLC
+//* Copyright (c) 2026 CodeFactory, LLC
 //*****************************************************************************
 
 using System;
@@ -57,9 +57,9 @@ namespace CodeFactory.WinVs.Models.CSharp
             CsMemberType memberType, string sourceDocument = null, ModelStore<ICsModel> modelStore = null, IReadOnlyList<ModelLoadException> modelErrors = null)
             : base(isLoaded, hasErrors, loadedFromSource, language, modelType, sourceDocument, modelStore, modelErrors)
         {
-            _attributes = attributes ?? ImmutableList<CsAttribute>.Empty;
+            _attributes = attributes ?? Array.Empty<CsAttribute>();
             _modelSourceFile = modelSourceFile;
-            _sourceFiles = sourceFiles ?? ImmutableList<string>.Empty;
+            _sourceFiles = sourceFiles ?? Array.Empty<string>();
             _hasDocumentation = hasDocumentation;
             _documentation = documentation;
             _lookupPath = lookupPath;

@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+﻿using System.Linq;
 
 namespace CodeFactory.WinVs.Models.CSharp
 {
@@ -18,7 +15,7 @@ namespace CodeFactory.WinVs.Models.CSharp
         public static bool IsTaskType(this CsType source)
         {
             if (source == null) return false;
-            return (source.Namespace == "System.Threading.Tasks" & source.Name == "Task");
+            return source.Namespace == "System.Threading.Tasks" && source.Name == "Task";
         }
 
         /// <summary>
@@ -44,9 +41,7 @@ namespace CodeFactory.WinVs.Models.CSharp
             if (source == null) return null;
 
             if (!source.IsTaskType())
-            {
                 return source.WellKnownType == CsKnownLanguageType.Void ? null : source;
-            }
 
             if (!source.IsGeneric) return null;
 
@@ -69,18 +64,16 @@ namespace CodeFactory.WinVs.Models.CSharp
             if (source == null) return false;
             if (string.IsNullOrEmpty(targetNamespace)) return false;
 
-            bool result = false;
-            if (source.Namespace == "System" & source.Name == "Nullable")
+            if (source.Namespace == "System" && source.Name == "Nullable")
             {
                 var sourceType = source.GenericTypes.FirstOrDefault();
 
                 if (sourceType == null) throw new CodeFactoryException($"Could not get the nullable type information for type '{source.Name}'");
 
-                result = sourceType.Namespace == targetNamespace;
+                return sourceType.Namespace == targetNamespace;
             }
-            else result = source.Namespace == targetNamespace;
 
-            return result;
+            return source.Namespace == targetNamespace;
         }
 
         /// <summary>
@@ -91,20 +84,11 @@ namespace CodeFactory.WinVs.Models.CSharp
         /// <returns>True if found in the type or generic parameters assigned to the type, false if not found.</returns>
         public static bool TypeInNamespace(this CsType source, string nameSpace)
         {
-
             if (source == null) return false;
-
-
             if (source.Namespace == nameSpace) return true;
 
-            bool result = false;
-            if (source.HasStrongTypesInGenerics)
-            {
-                result = source.GenericParameters.Any(g => g.Type.TypeInTargetNamespace(nameSpace));
-            }
-
-            return result;
+            return source.HasStrongTypesInGenerics &&
+                   source.GenericParameters.Any(g => g.Type.TypeInTargetNamespace(nameSpace));
         }
-
     }
 }

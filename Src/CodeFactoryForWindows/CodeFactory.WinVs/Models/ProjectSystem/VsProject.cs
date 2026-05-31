@@ -1,9 +1,10 @@
 ﻿//*****************************************************************************
 //* Code Factory SDK
-//* Copyright (c) 2020-2023 CodeFactory, LLC
+//* Copyright (c) 2026 CodeFactory, LLC
 //*****************************************************************************
 
 using CodeFactory.WinVs.Models.CSharp;
+using System;
 using System.Collections.Generic;
 using System.Collections.Immutable;
 using System.Linq;
@@ -53,8 +54,8 @@ namespace CodeFactory.WinVs.Models.ProjectSystem
             _legacyProjectModel = legacyProjectModel;
             _defaultNamespace = defaultNamespace;
             _targetFrameworks = targetFrameworks;
-            _projectLanguages = projectLanguages ?? ImmutableList<ProjectLanguage>.Empty;
-            _targetFrameworks = targetFrameworks ?? ImmutableList<VsProjectFramework>.Empty;
+            _projectLanguages = projectLanguages ?? Array.Empty<ProjectLanguage>();
+            _targetFrameworks = targetFrameworks ?? Array.Empty<VsProjectFramework>();
         }
 
         /// <summary>
@@ -142,16 +143,17 @@ namespace CodeFactory.WinVs.Models.ProjectSystem
 
             var projectReferences = await GetProjectReferencesAsync();
 
-            if(!projectReferences.Any(r => r.Type == ProjectReferenceType.Project)) return ImmutableList<VsProject>.Empty;
+            if(!projectReferences.Any(r => r.Type == ProjectReferenceType.Project)) return Array.Empty<VsProject>();
 
-            var projects = new List<VsProject>();
+            var projects = ImmutableArray.CreateBuilder<VsProject>(projectReferences.Count);
+
             foreach (var vsProjectReference in projectReferences)
             {
                 var project = await vsProjectReference.GetReferencedProjectAsync();
                 if(project != null) projects.Add(project);
             }
 
-            return projects.Any() ? projects.ToImmutableList() : ImmutableList<VsProject>.Empty;
+            return projects.Count > 0  ? projects.ToImmutable() : Array.Empty<VsProject>();
         }
 
         /// <summary>

@@ -57,13 +57,13 @@ namespace CodeFactory.WinVs.Models.CSharp
             : base(isLoaded, hasErrors, loadedFromSource, language, CsModelType.EnumValue, sourceDocument, modelStore, modelErrors)
         {
 
-            _attributes = attributes ?? ImmutableList<CsAttribute>.Empty;
+            _attributes = attributes ?? Array.Empty<CsAttribute>();
             _parentPath = parentPath;
             _hasDocumentation = hasDocumentation;
             _documentation = documentation;
             _lookupPath = lookupPath;
             _modelSourceFile = modelSourceFile;
-            _sourceFiles = sourceFiles ?? ImmutableList<string>.Empty;
+            _sourceFiles = sourceFiles ?? Array.Empty<string>();
             _name = name;
             _value = value;
             _security = security;

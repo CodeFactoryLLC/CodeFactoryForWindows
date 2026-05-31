@@ -1,8 +1,9 @@
 ﻿//*****************************************************************************
 //* Code Factory SDK
-//* Copyright (c) 2020-2023 CodeFactory, LLC
+//* Copyright (c) 2020-2026 CodeFactory, LLC
 //*****************************************************************************
 
+using System;
 using System.Collections.Generic;
 using System.Collections.Immutable;
 using CodeFactory.SourceCode;
@@ -46,7 +47,7 @@ namespace CodeFactory.WinVs.Models.CSharp
             _value = value;
             _enumValue = enumValue;
             _typeValue = typeValue;
-            _values = values ?? ImmutableList<CsAttributeParameterValue>.Empty;
+            _values = values ?? Array.Empty<CsAttributeParameterValue>();
         }
 
         /// <summary>

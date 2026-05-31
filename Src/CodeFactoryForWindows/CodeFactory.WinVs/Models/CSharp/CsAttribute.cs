@@ -1,6 +1,6 @@
 ﻿//*****************************************************************************
 //* Code Factory SDK
-//* Copyright (c) 2020-2023 CodeFactory, LLC
+//* Copyright (c) 2020-2026 CodeFactory, LLC
 //*****************************************************************************
 
 using System;
@@ -47,10 +47,10 @@ namespace CodeFactory.WinVs.Models.CSharp
             : base(isLoaded, hasErrors, loadedFromSource, language, CsModelType.Attribute, sourceDocument, modelStore, modelErrors)
         {
             _modelSourceFile = modelSourceFile;
-            _sourceFiles = sourceFiles ?? ImmutableList<string>.Empty;
+            _sourceFiles = sourceFiles ?? Array.Empty<string>();
             _hasParameters = hasParameters;
             _parentPath = parentPath;
-            _parameters = parameters ?? ImmutableList<CsAttributeParameter>.Empty;
+            _parameters = parameters ?? Array.Empty<CsAttributeParameter>();
             _type = type;
         }
 

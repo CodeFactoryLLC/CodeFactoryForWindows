@@ -1,6 +1,6 @@
 ﻿//*****************************************************************************
 //* Code Factory SDK
-//* Copyright (c) 2020-2023 CodeFactory, LLC
+//* Copyright (c) 2026 CodeFactory, LLC
 //*****************************************************************************
 
 using System;
@@ -82,8 +82,8 @@ namespace CodeFactory.WinVs.Models.CSharp
         {
             _isGeneric = isGeneric;
             _hasStrongTypesInGenerics = hasStrongTypesInGenerics;
-            _genericParameters = genericParameters ?? ImmutableList<CsGenericParameter>.Empty;
-            _genericTypes = genericTypes ?? ImmutableList<CsType>.Empty;
+            _genericParameters = genericParameters ?? Array.Empty<CsGenericParameter>();
+            _genericTypes = genericTypes ?? Array.Empty<CsType>();
             _name = name;
             _ns = ns;
             _isWellKnownType = isWellKnownType;
@@ -94,12 +94,12 @@ namespace CodeFactory.WinVs.Models.CSharp
             _isStructure = isStructure;
             _isClass = isClass;
             _isArray = isArray;
-            _arrayDimensions = arrayDimensions ?? ImmutableList<int>.Empty;
+            _arrayDimensions = arrayDimensions ?? Array.Empty<int>();
             _isGenericPlaceHolder = isGenericPlaceHolder;
             _isEnum = isEnum;
             _isDelegate = isDelegate;
             _isTuple = isTuple;
-            _tupleTypes = tupleTypes ?? ImmutableList<CsTupleTypeParameter>.Empty;
+            _tupleTypes = tupleTypes ?? Array.Empty<CsTupleTypeParameter>();
             _wellKnownType = wellKnownType;
         }
 

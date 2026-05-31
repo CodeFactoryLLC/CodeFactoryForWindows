@@ -13,7 +13,7 @@ The **CodeFactory User Interface WPF for Visual Studio - Windows** library provi
 |---|---|
 | Target Framework | .NET Framework 4.8 |
 | Visual Studio | Visual Studio 2022 / Visual Studio 2026 (Windows) |
-| CodeFactory Runtime | [CodeFactory for Windows](https://marketplace.visualstudio.com/items?itemName=CodeFactoryLLC.CodeFactoryForWindows) ≥ 2.26150.0.1 |
+| CodeFactory Runtime | [CodeFactory for Windows](https://marketplace.visualstudio.com/items?itemName=CodeFactoryLLC.CodeFactoryForWindows) ≥ 2.26151.0.1 |
 | Command Library Project | .NET Framework 4.8 |
 
 > ⚠️ **Important:** When updating to a new version of this SDK you must **recompile** your automation (command library) projects and ensure the CodeFactory runtime installed in Visual Studio is at the same version or higher.
@@ -30,7 +30,7 @@ dotnet add package CodeFactory.WinVs.Wpf
 
 Or in your `.csproj`:
 ```xml
-<PackageReference Include="CodeFactory.WinVs.Wpf" Version="2.26150.0.1-PreRelease" />
+<PackageReference Include="CodeFactory.WinVs.Wpf" Version="2.26151.0.1-PreRelease" />
 ```
 
 
@@ -85,10 +85,10 @@ Use `IVsUIActions` (available on every CodeFactory command via `_visualStudioAct
 
 ## Release Notes
 
-### 2.26150.0.1-PreRelease
+### 2.26151.0.1-PreRelease
 
 - **Recompile Required:** Automation projects must be recompiled against this version of the SDK.
-- Aligned with `CodeFactory` and `CodeFactory.WinVs` package version `2.26150.0.1-PreRelease`.
+- Aligned with `CodeFactory` and `CodeFactory.WinVs` package version `2.26151.0.1-PreRelease`.
 
 ---
 

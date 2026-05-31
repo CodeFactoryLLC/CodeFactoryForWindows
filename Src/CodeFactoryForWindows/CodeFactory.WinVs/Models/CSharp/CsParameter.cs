@@ -1,10 +1,10 @@
 ﻿//*****************************************************************************
 //* Code Factory SDK
-//* Copyright (c) 2020-2023 CodeFactory, LLC
+//* Copyright (c) 2026 CodeFactory, LLC
 //*****************************************************************************
 
+using System;
 using System.Collections.Generic;
-using System.Collections.Immutable;
 using System.Linq;
 using CodeFactory.SourceCode;
 
@@ -59,7 +59,7 @@ namespace CodeFactory.WinVs.Models.CSharp
             IReadOnlyList<ModelLoadException> modelErrors = null)
             : base(isLoaded, hasErrors, loadedFromSource, language, CsModelType.Parameter, sourceDocument, modelStore, modelErrors)
         {
-            _attributes = attributes ?? ImmutableList<CsAttribute>.Empty;
+            _attributes = attributes ?? Array.Empty<CsAttribute>();
             _lookupPath = lookupPath;
             _name = name;
             _isOut = isOut;

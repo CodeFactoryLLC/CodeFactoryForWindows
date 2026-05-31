@@ -33,6 +33,6 @@ namespace CodeFactory.WinVs.Stats
         /// <summary>
         /// The summary of each file that was updated in the project.
         /// </summary>
-        public ImmutableList<FileTransactionsSummary> FileTransactions { get; set; }
+        public IReadOnlyList<FileTransactionsSummary> FileTransactions { get; set; }
     }
 }

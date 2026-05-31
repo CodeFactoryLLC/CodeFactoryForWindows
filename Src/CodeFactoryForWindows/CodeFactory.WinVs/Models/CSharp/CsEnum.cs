@@ -1,6 +1,6 @@
 ﻿//*****************************************************************************
 //* Code Factory SDK
-//* Copyright (c) 2020-2023 CodeFactory, LLC
+//* Copyright (c) 2026 CodeFactory, LLC
 //*****************************************************************************
 
 using System;
@@ -62,17 +62,17 @@ namespace CodeFactory.WinVs.Models.CSharp
             IReadOnlyList<string> sourceFiles, string name, string ns, CsSecurity security, IReadOnlyList<CsEnumValue> values, bool isNested,CsNestedType nestedType,
             string sourceDocument = null, ModelStore<ICsModel> modelStore = null, IReadOnlyList<ModelLoadException> modelErrors = null): base(isLoaded, hasErrors, loadedFromSource, language, CsModelType.Enum, sourceDocument, modelStore, modelErrors)
         {
-            _attributes = attributes ?? ImmutableList<CsAttribute>.Empty;
+            _attributes = attributes ?? Array.Empty<CsAttribute>();
             _parentPath = parentPath;
             _hasDocumentation = hasDocumentation;
             _documentation = documentation;
             _lookupPath = lookupPath;
             _modelSourceFile = modelSourceFile;
-            _sourceFiles = sourceFiles ?? ImmutableList<string>.Empty;
+            _sourceFiles = sourceFiles ?? Array.Empty<string>();
             _name = name;
             _ns = ns;
             _security = security;
-            _values = values ?? ImmutableList<CsEnumValue>.Empty;
+            _values = values ?? Array.Empty<CsEnumValue>();
             _isNested = isNested;
             _nestedType = nestedType;
 

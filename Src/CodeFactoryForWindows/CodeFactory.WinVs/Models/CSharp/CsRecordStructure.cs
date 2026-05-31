@@ -3,6 +3,7 @@
 //* Copyright (c) 2023 CodeFactory, LLC
 //*****************************************************************************
 
+using System;
 using System.Collections.Generic;
 using System.Collections.Immutable;
 using System.Linq;
@@ -60,9 +61,19 @@ namespace CodeFactory.WinVs.Models.CSharp
         /// <summary>
         ///     List of the fields for this record structure.
         /// </summary>
-        public IReadOnlyList<CsField> Fields =>
-            Members.Where(m => m.MemberType == CsMemberType.Field).Cast<CsField>().ToImmutableList() ??
-            ImmutableList<CsField>.Empty;
+        public IReadOnlyList<CsField> Fields
+        {
+            get 
+            { 
+                var builder = ImmutableArray.CreateBuilder<CsField>(Members.Count);
+                foreach (var member in Members)
+                {
+                    if (member.MemberType == CsMemberType.Field)
+                        builder.Add((CsField)member);
+                }
+                return builder.Count > 0 ? builder.ToImmutable() : Array.Empty<CsField>();
+            }
+        }
 
         /// <summary>
         /// List of the constructors for this record structure.

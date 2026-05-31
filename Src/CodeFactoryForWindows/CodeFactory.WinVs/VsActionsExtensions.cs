@@ -61,16 +61,16 @@ namespace CodeFactory.WinVs
 
             bool isNestedFolder = sourceConfig.Path.Contains("/");
 
-
             if (!isNestedFolder)
             {
                 var folders = await project.GetChildrenAsync(false);
 
-                targetFolder = folders.Where(m => m.ModelType == VisualStudioModelType.ProjectFolder)
-                    .Cast<VsProjectFolder>()
+                // Fix 1: Use OfType<> to filter and cast in a single pass instead of Where + Cast
+                targetFolder = folders.OfType<VsProjectFolder>()
                     .FirstOrDefault(f => f.Name == sourceConfig.Path.Trim());
 
-                if (targetFolder == null & addMissingFolder)
+                // Fix 2: Use && (short-circuit) instead of & (bitwise) to avoid evaluating addMissingFolder when targetFolder is not null
+                if (targetFolder == null && addMissingFolder)
                 {
                     targetFolder = await project.AddProjectFolderAsync(sourceConfig.Path.Trim());
                 }
@@ -85,11 +85,10 @@ namespace CodeFactory.WinVs
                 { 
                     if (isProjectLevel)
                     {
-
                         var folders = await project.GetChildrenAsync(false);
 
-                        currentFolder = folders.Where(m => m.ModelType == VisualStudioModelType.ProjectFolder)
-                            .Cast<VsProjectFolder>()
+                        // Fix 1: Use OfType<> to filter and cast in a single pass instead of Where + Cast
+                        currentFolder = folders.OfType<VsProjectFolder>()
                             .FirstOrDefault(f => f.Name == folder.Trim());
 
                         isProjectLevel = false;
@@ -102,18 +101,22 @@ namespace CodeFactory.WinVs
                     }
                     else
                     {
-                        var previousFolder = currentFolder;
-                        var folders = await previousFolder.GetChildrenAsync(false);
+                        // Fix 3: Capture currentFolder directly without an unnecessary temporary variable
+                        var folders = await currentFolder.GetChildrenAsync(false);
 
-                        currentFolder = folders.Where(m => m.ModelType == VisualStudioModelType.ProjectFolder)
-                            .Cast<VsProjectFolder>()
+                        // Fix 1: Use OfType<> to filter and cast in a single pass instead of Where + Cast
+                        var nextFolder = folders.OfType<VsProjectFolder>()
                             .FirstOrDefault(f => f.Name == folder.Trim());
 
-                        if (currentFolder != null) continue;
+                        if (nextFolder != null)
+                        {
+                            currentFolder = nextFolder;
+                            continue;
+                        }
 
                         if (!addMissingFolder) break;
 
-                        currentFolder = await previousFolder.AddProjectFolderAsync(folder.Trim());
+                        currentFolder = await currentFolder.AddProjectFolderAsync(folder.Trim());
                     }
                 }
 
@@ -208,7 +211,6 @@ namespace CodeFactory.WinVs
                 {
                     case VisualStudioModelType.CSharpSource:
 
-
                         var csSource = commandResult as VsCSharpSource;
 
                         if (csSource != null)
@@ -242,14 +244,12 @@ namespace CodeFactory.WinVs
                         break;
                 }
 
-
                 if (folderPath != null) result = await ExternalConfig.LoadCommandByFolderAsync(commandType, folderPath, commandResult);
             }
 
             result ??= await ExternalConfig.LoadCommandByProjectAsync(commandType, commandResult);
 
             return result;
-
         }
     }
 }

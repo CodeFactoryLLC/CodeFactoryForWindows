@@ -27,14 +27,14 @@ namespace CodeFactory.WinVs.Models.CSharp
         {
             if (source == null) throw new ArgumentNullException(nameof(source));
 
-            if (!source.Members.Any()) return ImmutableList<KeyValuePair<int, CsMember>>.Empty;
+            // Return empty singlton array if there are no members to avoid unnecessary allocations
+            if (source.Members.Count == 0) return Array.Empty<KeyValuePair<int, CsMember>>();
 
-            List<KeyValuePair<int, CsMember>> result = new List<KeyValuePair<int, CsMember>>();
+            // Use CreateBuilder to avoid intermediate List<T> allocation
+            var result = ImmutableArray.CreateBuilder<KeyValuePair<int, CsMember>>(source.Members.Count);
 
-            var members = source.Members.Select(m =>
-                new KeyValuePair<int, CsMember>(m.GetMemberComparisonHashCode(comparisonType), m));
-
-            result.AddRange(members);
+            foreach (var m in source.Members)
+                result.Add(new KeyValuePair<int, CsMember>(m.GetMemberComparisonHashCode(comparisonType), m));
 
             switch (source.ContainerType)
             {
@@ -47,7 +47,7 @@ namespace CodeFactory.WinVs.Models.CSharp
                         foreach (var inheritedInterface in interfaceContainer.InheritedInterfaces)
                         {
                             var interfaceMembers = inheritedInterface.GetComparisonMembers(comparisonType);
-                            if (interfaceMembers.Any()) result.AddRange(interfaceMembers);
+                            if (interfaceMembers.Count > 0) result.AddRange(interfaceMembers);
                         }
                     }
 
@@ -60,14 +60,13 @@ namespace CodeFactory.WinVs.Models.CSharp
                     {
                         var baseMembers = classContainer.BaseClass.GetComparisonMembers(comparisonType);
 
-                        if (baseMembers.Any()) result.AddRange(baseMembers);
+                        if (baseMembers.Count > 0) result.AddRange(baseMembers);
                     }
 
                     break;
-
             }
 
-            return result.ToImmutableArray();
+            return result.Count > 0 ? result.ToImmutable() : Array.Empty<KeyValuePair<int, CsMember>>();
         }
 
         /// <summary>
@@ -108,9 +107,7 @@ namespace CodeFactory.WinVs.Models.CSharp
             var result = source.GetModel<CsSource>(PathBuilderConstants.Source);
 
             return result;
-
         }
-
 
 
         /// <summary>
@@ -124,17 +121,21 @@ namespace CodeFactory.WinVs.Models.CSharp
         {
             if (source == null) throw new ArgumentNullException(nameof(source));
 
-            if (source.ContainerType == CsContainerType.Interface) return ImmutableList<CsMember>.Empty;
-            if (source.InheritedInterfaces == null) return ImmutableList<CsMember>.Empty;
+            // ImmutableArray<T>.Empty — struct, no heap allocation
+            if (source.ContainerType == CsContainerType.Interface) return ImmutableArray<CsMember>.Empty;
+            if (source.InheritedInterfaces == null) return ImmutableArray<CsMember>.Empty;
 
             var sourceMembers = source.GetComparisonMembers(MemberComparisonType.Security);
 
+            // Build a HashSet for O(1) lookup instead of O(n) per element
+            var sourceMemberKeys = new HashSet<int>(sourceMembers.Select(sm => sm.Key));
+            
             var interfaceMembers = new Dictionary<int, CsMember>();
 
             foreach (var inheritedInterface in source.InheritedInterfaces)
             {
                 var compareMembers = inheritedInterface.GetComparisonMembers(MemberComparisonType.Security);
-                if (!compareMembers.Any()) continue;
+                if (compareMembers.Count == 0) continue;
 
                 foreach (var compareMember in compareMembers)
                 {
@@ -143,14 +144,17 @@ namespace CodeFactory.WinVs.Models.CSharp
                 }
             }
 
-            if (!interfaceMembers.Any()) return ImmutableList<CsMember>.Empty;
+            if (interfaceMembers.Count == 0) return Array.Empty<CsMember>();
 
-            return (from interfaceMember in interfaceMembers
-                        // ReSharper disable once SimplifyLinqExpression
-                    where !sourceMembers.Any(m => m.Key == interfaceMember.Key)
-                    select interfaceMember.Value).ToImmutableList();
+            // O(1) HashSet lookup replaces O(n) Any() — overall O(n) instead of O(n²)
+            var missing = ImmutableArray.CreateBuilder<CsMember>(interfaceMembers.Count);
+            foreach (var interfaceMember in interfaceMembers)
+            {
+                if (!sourceMemberKeys.Contains(interfaceMember.Key))
+                    missing.Add(interfaceMember.Value);
+            }
+
+            return missing.Count > 0 ? missing.ToImmutable() : Array.Empty<CsMember>();
         }
-
-      
     }
 }

@@ -77,13 +77,13 @@ namespace CodeFactory.WinVs.Models.CSharp
             _security = security;
             _containerType = containerType;
             _isGenericContainer = isGenericContainer;
-            _genericParameters = genericParameters ?? ImmutableList<CsGenericParameter>.Empty;
+            _genericParameters = genericParameters ?? Array.Empty<CsGenericParameter>();
             _hasStrongTypesInGenerics = hasStrongTypesInGenerics;
-            _genericTypes = genericTypes ?? ImmutableList<CsType>.Empty;
+            _genericTypes = genericTypes ?? Array.Empty<CsType>();
             _hasBaseClass = hasBaseClass;
             _hasInheritedInterfaces = hasInheritedInterfaces;
             _hasAttributes = hasAttributes;
-            _attributes = attributes ?? ImmutableList<CsAttribute>.Empty;
+            _attributes = attributes ?? Array.Empty<CsAttribute>();
         }
 
         /// <summary>

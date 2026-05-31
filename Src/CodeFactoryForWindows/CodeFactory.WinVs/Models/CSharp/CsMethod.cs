@@ -90,8 +90,8 @@ namespace CodeFactory.WinVs.Models.CSharp
         {
             _isGeneric = isGeneric;
             _hasStrongTypesInGenerics = hasStrongTypesInGenerics;
-            _genericParameters = genericParameters ?? ImmutableList<CsGenericParameter>.Empty;
-            _genericTypes = genericTypes ?? ImmutableList<CsType>.Empty;
+            _genericParameters = genericParameters ?? Array.Empty<CsGenericParameter>();
+            _genericTypes = genericTypes ?? Array.Empty<CsType>();
             _hasParameters = hasParameters;
             _isAbstract = isAbstract;
             _isVirtual = isVirtual;
@@ -103,7 +103,7 @@ namespace CodeFactory.WinVs.Models.CSharp
             _isExtension = isExtension;
             _methodType = methodType;
             _returnType = returnType;
-            _parameters = parameters ?? ImmutableList<CsParameter>.Empty;
+            _parameters = parameters ?? Array.Empty<CsParameter>();
             _contentSyntax = contentSyntax;
         }
 

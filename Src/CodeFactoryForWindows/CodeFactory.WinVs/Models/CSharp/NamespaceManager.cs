@@ -1,6 +1,6 @@
 ﻿//*****************************************************************************
 //* Code Factory SDK
-//* Copyright (c) 2022-2023 CodeFactory, LLC
+//* Copyright (c) 2026 CodeFactory, LLC
 //*****************************************************************************
 
 using System;
@@ -16,9 +16,14 @@ namespace CodeFactory.WinVs.Models.CSharp
     public class NamespaceManager
     {
         /// <summary>
-        /// Field that holds all the using statement ordered from largest to smallest
+        /// Field that holds all the using statements ordered from largest to smallest.
         /// </summary>
         private readonly IReadOnlyList<IUsingStatementNamespace> _usingStatements;
+
+        /// <summary>
+        /// Dictionary for O(1) namespace lookups keyed by ReferenceNamespace.
+        /// </summary>
+        private readonly Dictionary<string, IUsingStatementNamespace> _namespaceLookup;
 
         /// <summary>
         /// Target namespace that code will be managed under.
@@ -32,8 +37,28 @@ namespace CodeFactory.WinVs.Models.CSharp
         /// <param name="targetNamespace">Additional namespace to check for that will be the target namespace the content will be managed under.</param>
         public NamespaceManager(IEnumerable<IUsingStatementNamespace> usingStatements = null, string targetNamespace = null)
         {
-            //Loading the namespace data in order for usage.
-            _usingStatements = usingStatements != null ? LoadDataInOrder(usingStatements):ImmutableList<IUsingStatementNamespace>.Empty ;
+            if (usingStatements != null)
+            {
+                // Enumerate once, avoiding double-enumeration.
+                var sorted = usingStatements
+                    .OrderByDescending(u => u.ReferenceNamespace.Length)
+                    .ToList();
+
+                _usingStatements = sorted.Count == 0
+                    ? ImmutableList<IUsingStatementNamespace>.Empty
+                    : ImmutableList.CreateRange(sorted);
+
+                _namespaceLookup = new Dictionary<string, IUsingStatementNamespace>(
+                    sorted.Count, StringComparer.InvariantCulture);
+
+                foreach (var s in sorted)
+                    _namespaceLookup[s.ReferenceNamespace] = s;
+            }
+            else
+            {
+                _usingStatements = ImmutableList<IUsingStatementNamespace>.Empty;
+                _namespaceLookup = new Dictionary<string, IUsingStatementNamespace>(StringComparer.InvariantCulture);
+            }
 
             _targetNamespace = targetNamespace;
         }
@@ -43,28 +68,6 @@ namespace CodeFactory.WinVs.Models.CSharp
         /// </summary>
         public IReadOnlyList<IUsingStatementNamespace> UsingStatements => _usingStatements;
 
-
-
-        /// <summary>
-        /// Sorts the using statements for easier use with namespace management.
-        /// </summary>
-        /// <param name="usingStatements">Using statements to process</param>
-        /// <returns>The sorted using statement. If no using statements were provided then will return an empty list.</returns>
-        private IReadOnlyList<IUsingStatementNamespace> LoadDataInOrder(IEnumerable<IUsingStatementNamespace> usingStatements)
-        {
-            //Bound check build an empty list and continue if no list was provided.
-            if (usingStatements == null) return ImmutableList<IUsingStatementNamespace>.Empty;
-            if (!usingStatements.Any()) return ImmutableList<IUsingStatementNamespace>.Empty;
-
-            //Resource the using statements in descending order largest first.
-            IEnumerable<IUsingStatementNamespace> sortedUsingStatements = from usingStatement in usingStatements
-                                                                   orderby usingStatement.ReferenceNamespace.Length descending
-                                                                   select usingStatement;
-
-            //Return the sorted using statements.
-            return ImmutableList<IUsingStatementNamespace>.Empty.AddRange(sortedUsingStatements);
-        }
-
         /// <summary>
         /// Determines if the provides namespace was found.
         /// </summary>
@@ -72,28 +75,17 @@ namespace CodeFactory.WinVs.Models.CSharp
         /// <returns>Returns a tuple that determine the namespace was found and if the found namespace had an alias.</returns>
         public (bool namespaceFound, bool hasAlias, string alias) ValidNameSpace(string nameSpace)
         {
-
-            bool namespaceFound = false;
-            bool hasAlias = false;
-            string alias = null;
-
-            var usingStatement = _usingStatements.FirstOrDefault(u => string.Compare(u.ReferenceNamespace, nameSpace, StringComparison.InvariantCulture) == 0);
-
-            if (usingStatement != null)
+            // O(1) dictionary lookup instead of O(n) linear scan.
+            if (_namespaceLookup.TryGetValue(nameSpace, out var usingStatement))
             {
-                namespaceFound = true;
-                hasAlias = usingStatement.HasAlias;
-
-                alias = hasAlias ? usingStatement.Alias : null;
-
-            }
-            else
-            {
-                if (string.Compare(_targetNamespace, nameSpace, StringComparison.InvariantCulture) == 0)
-                    namespaceFound = true;
+                var hasAlias = usingStatement.HasAlias;
+                return (true, hasAlias, hasAlias ? usingStatement.Alias : null);
             }
 
-            return (namespaceFound, hasAlias, alias);
+            if (string.Compare(_targetNamespace, nameSpace, StringComparison.InvariantCulture) == 0)
+                return (true, false, null);
+
+            return (false, false, null);
         }
 
         /// <summary>
@@ -105,9 +97,9 @@ namespace CodeFactory.WinVs.Models.CSharp
         {
             if (string.IsNullOrEmpty(nameSpace)) return null;
 
-            string result = null;
-
             var managedNamespace = ValidNameSpace(nameSpace);
+
+            string result;
 
             if (managedNamespace.namespaceFound) result = managedNamespace.hasAlias ? managedNamespace.alias : null;
 
@@ -125,16 +117,14 @@ namespace CodeFactory.WinVs.Models.CSharp
         {
             if (nameSpaces == null) return this;
 
-            var updatedNamespaces = _usingStatements.Any() ? new List<IUsingStatementNamespace>(_usingStatements) : new List<IUsingStatementNamespace>();
-
+            var updatedNamespaces = new List<IUsingStatementNamespace>(_usingStatements);
             updatedNamespaces.AddRange(nameSpaces);
 
             return new NamespaceManager(updatedNamespaces, _targetNamespace);
-
         }
 
         /// <summary>
-        /// Adds additional namespace to the namespace manager.
+        /// Adds an additional namespace to the namespace manager.
         /// </summary>
         /// <param name="nameSpace">Using statement to add to the namespace manager.</param>
         /// <returns>New instance of the namespace manager with the added using statements.</returns>
@@ -142,12 +132,9 @@ namespace CodeFactory.WinVs.Models.CSharp
         {
             if (nameSpace == null) return this;
 
-            var updatedNamespaces = _usingStatements.Any() ? new List<IUsingStatementNamespace>(_usingStatements) : new List<IUsingStatementNamespace>();
-
-            updatedNamespaces.Add(nameSpace);
+            var updatedNamespaces = new List<IUsingStatementNamespace>(_usingStatements) { nameSpace };
 
             return new NamespaceManager(updatedNamespaces, _targetNamespace);
-
         }
 
         /// <summary>
@@ -155,15 +142,14 @@ namespace CodeFactory.WinVs.Models.CSharp
         /// </summary>
         /// <param name="nameSpace">Target namespace to be added to the manager.</param>
         /// <param name="alias">Optional, the alias to assign to the target namespace.</param>
-        /// <returns></returns>
+        /// <returns>New instance of the namespace manager with the added namespace.</returns>
         public NamespaceManager AddNamespace(string nameSpace, string alias = null)
         {
             if (string.IsNullOrEmpty(nameSpace)) return this;
 
             var usingStatement = new ManualUsingStatementNamespace(nameSpace, alias != null, alias);
 
-            return this.AddNamespace(usingStatement);
+            return AddNamespace(usingStatement);
         }
-
     }
 }

@@ -1,8 +1,9 @@
 ﻿//*****************************************************************************
 //* Code Factory SDK
-//* Copyright (c) 2023 CodeFactory, LLC
+//* Copyright (c) 2026 CodeFactory, LLC
 //*****************************************************************************
 
+using System;
 using System.Collections.Generic;
 using System.Collections.Immutable;
 using System.Linq;
@@ -73,7 +74,7 @@ namespace CodeFactory.WinVs.Models.CSharp
         {
             _isNested = isNested;
             _nestedType = nestedType;
-            _nestedModels = nestedModels ?? ImmutableList<ICsNestedModel>.Empty;
+            _nestedModels = nestedModels ?? Array.Empty<ICsNestedModel>();
         }
 
         /// <summary>
@@ -84,26 +85,78 @@ namespace CodeFactory.WinVs.Models.CSharp
         /// <summary>
         /// Classes that are nested in this container.
         /// </summary>
-        public IReadOnlyList<CsClass> NestedClasses =>
-            _nestedModels.Where(n => n.NestedType == CsNestedType.Class).Cast<CsClass>().ToImmutableList();
+        public IReadOnlyList<CsClass> NestedClasses
+        {
+            get
+            {
+                var builder = ImmutableArray.CreateBuilder<CsClass>(_nestedModels.Count);
+                foreach (var nestedModel in _nestedModels)
+                {
+                    if (nestedModel.NestedType == CsNestedType.Class)
+                    {
+                        builder.Add((CsClass)nestedModel);
+                    }
+                }
+                return builder.Count > 0 ? builder.ToImmutable() : Array.Empty<CsClass>();
+            }
+        }
 
         /// <summary>
         /// Interfaces that are nested in this container.
         /// </summary>
-        public IReadOnlyList<CsInterface> NestedInterfaces =>
-            _nestedModels.Where(n => n.NestedType == CsNestedType.Interface).Cast<CsInterface>().ToImmutableList();
+        public IReadOnlyList<CsInterface> NestedInterfaces
+        {
+            get
+            {
+                var builder = ImmutableArray.CreateBuilder<CsInterface>(_nestedModels.Count);
+                foreach (var nestedModel in _nestedModels)
+                {
+                    if (nestedModel.NestedType == CsNestedType.Interface)
+                    {
+                        builder.Add((CsInterface)nestedModel);
+                    }
+                }
+                return builder.Count > 0 ? builder.ToImmutable() : Array.Empty<CsInterface>();
+            }
+        }
 
         /// <summary>
         /// Structures that are nested in this container.
         /// </summary>
-        public IReadOnlyList<CsStructure> NestedStructures =>
-            _nestedModels.Where(n => n.NestedType == CsNestedType.Structure).Cast<CsStructure>().ToImmutableList();
+        public IReadOnlyList<CsStructure> NestedStructures
+        {
+            get
+            {
+                var builder = ImmutableArray.CreateBuilder<CsStructure>(_nestedModels.Count);
+                foreach (var nestedModel in _nestedModels)
+                {
+                    if (nestedModel.NestedType == CsNestedType.Structure)
+                    {
+                        builder.Add((CsStructure)nestedModel);
+                    }
+                }
+                return builder.Count > 0 ? builder.ToImmutable() : Array.Empty<CsStructure>();
+            }
+        }
 
         /// <summary>
         /// Enums that are nested in this container.
         /// </summary>
-        public IReadOnlyList<CsEnum> NestedEnums =>
-            _nestedModels.Where(n => n.NestedType == CsNestedType.Enum).Cast<CsEnum>().ToImmutableList();
+        public IReadOnlyList<CsEnum> NestedEnums
+        {
+            get
+            {
+                var builder = ImmutableArray.CreateBuilder<CsEnum>(_nestedModels.Count);
+                foreach (var nestedModel in _nestedModels)
+                {
+                    if (nestedModel.NestedType == CsNestedType.Enum)
+                    {
+                        builder.Add((CsEnum)nestedModel);
+                    }
+                }
+                return builder.Count > 0 ? builder.ToImmutable() : Array.Empty<CsEnum>();
+            }
+        }
 
         /// <summary>
         /// Identifies the type of model that has been nested.

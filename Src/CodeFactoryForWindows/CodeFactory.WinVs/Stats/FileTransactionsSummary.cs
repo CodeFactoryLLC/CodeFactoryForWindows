@@ -6,7 +6,7 @@ using System.Text;
 namespace CodeFactory.WinVs.Stats
 {
     /// <summary>
-    /// 
+    /// Data model that represents the summary of transactions that were performed on a file. This includes the file information and the transactions that were performed on the file.
     /// </summary>
     public class FileTransactionsSummary:ITransactionFile
     {
@@ -38,7 +38,7 @@ namespace CodeFactory.WinVs.Stats
         /// <summary>
         /// The transactions that were performed on the file.
         /// </summary>
-        public ImmutableList<Transaction> Transactions { get; set; }
+        public IReadOnlyList<Transaction> Transactions { get; set; }
 
         /// <summary>
         /// The number of lines that were added or replaced in the transaction.Note: This is the total number of lines that had any content in the line.

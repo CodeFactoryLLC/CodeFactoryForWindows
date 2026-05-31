@@ -3,6 +3,7 @@
 //* Copyright (c) 2020-2023 CodeFactory, LLC
 //*****************************************************************************
 
+using System;
 using System.Collections.Generic;
 using System.Collections.Immutable;
 using System.Threading.Tasks;
@@ -66,15 +67,15 @@ namespace CodeFactory.WinVs.Models.CSharp
         {
             _lookupPath = lookupPath;
             _parentPath = parentPath;
-            _namespaceReferences = namespaceReferences ?? ImmutableList<CsUsingStatement>.Empty;
-            _interfaces = interfaces ?? ImmutableList<CsInterface>.Empty;
-            _classes = classes ?? ImmutableList<CsClass>.Empty;
-            _structures = structures ?? ImmutableList<CsStructure>.Empty;
-            _records = records ?? ImmutableList<CsRecord>.Empty;
-            _recordsStructure = recordStructures ?? ImmutableList<CsRecordStructure>.Empty;
-            _delegates = delegates ?? ImmutableList<CsDelegate>.Empty;
-            _enums = enums ?? ImmutableList<CsEnum>.Empty;
-            _namespaces = namespaces ?? ImmutableList<CsNamespace>.Empty;
+            _namespaceReferences = namespaceReferences ?? Array.Empty<CsUsingStatement>();
+            _interfaces = interfaces ?? Array.Empty<CsInterface>();
+            _classes = classes ?? Array.Empty<CsClass>();
+            _structures = structures ?? Array.Empty<CsStructure>();
+            _records = records ?? Array.Empty<CsRecord>();
+            _recordsStructure = recordStructures ?? Array.Empty<CsRecordStructure>();
+            _delegates = delegates ?? Array.Empty<CsDelegate>();
+            _enums = enums ?? Array.Empty<CsEnum>();
+            _namespaces = namespaces ?? Array.Empty<CsNamespace>();
             _hostedInProject = hostedInProject;
             _projectName = projectName; 
         }

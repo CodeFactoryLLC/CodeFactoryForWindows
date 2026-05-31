@@ -3,6 +3,7 @@
 //* Copyright (c) 2020-2023 CodeFactory, LLC
 //*****************************************************************************
 
+using System;
 using System.Collections.Generic;
 using System.Collections.Immutable;
 using CodeFactory.SourceCode;
@@ -43,7 +44,7 @@ namespace CodeFactory.WinVs.Models.CSharp
         {
             _lookupPath = lookupPath;
             _modelSourceFile = modelSourceFile;
-            _sourceFiles = sourceFiles ?? ImmutableList<string>.Empty;
+            _sourceFiles = sourceFiles ?? Array.Empty<string>();
             _name = name;
             _parentPath = parentPath;
         }
